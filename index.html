@@ -2,6 +2,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap">
+<script>
+/* Thème : clair par défaut, quel que soit le réglage du système d'exploitation.
+   Le sombre ne s'applique que si l'utilisateur l'a demandé lui-même ; son choix est
+   mémorisé. Ce script tourne avant la première peinture, pour éviter un clignotement. */
+(function(){
+  var choix = null;
+  try { choix = localStorage.getItem('fbs-theme'); } catch (e) {}
+  document.documentElement.setAttribute('data-theme', choix === 'dark' ? 'dark' : 'light');
+})();
+</script>
 <style>
 :root{
   color-scheme: light;
@@ -28,33 +38,6 @@
   --warn:#fab219;
 
   --shadow: 0 1px 2px rgba(14,26,38,.06), 0 8px 24px -16px rgba(14,26,38,.28);
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    color-scheme: dark;
-    --plane:#0A0F15;
-    --surface:#141C25;
-    --surface-2:#1B242F;
-    --ink:#E9EFF5;
-    --ink-2:#9FB0C0;
-    --ink-3:#71828F;
-    --rule:#27323D;
-    --rule-soft:#1F2933;
-    --accent:#6da7ec;
-    --grid:#222C36;
-    --axis:#34414D;
-
-    --s-base:#3987e5;
-    --s-scen:#d95926;
-    --pos:#3987e5;
-    --neg:#e66767;
-    --bar:#3987e5;
-    --bar-strong:#86b6ef;
-    --critical:#d03b3b;
-    --good:#0ca30c;
-    --warn:#fab219;
-    --shadow: 0 1px 2px rgba(0,0,0,.5), 0 10px 30px -20px rgba(0,0,0,.9);
-  }
 }
 :root[data-theme="dark"]{
   color-scheme: dark;
@@ -380,6 +363,20 @@ body.adv .simple-only{display:none!important}
 }
 .seg button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
 .seg button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+
+/* --- bascule de thème : discrète, poussée en bout de barre --- */
+.theme-toggle{
+  margin-left:auto;display:inline-flex;align-items:center;gap:7px;
+  border:1px solid var(--rule);border-radius:999px;background:var(--surface);
+  color:var(--ink-2);font:inherit;font-size:12.5px;padding:5px 13px 5px 11px;
+  cursor:pointer;transition:background .15s,color .15s,border-color .15s;
+}
+.theme-toggle:hover{color:var(--ink);border-color:var(--axis)}
+.theme-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.theme-toggle .ic{width:15px;height:15px;flex:0 0 15px}
+.theme-toggle .sun{display:none}
+:root[data-theme="dark"] .theme-toggle .moon{display:none}
+:root[data-theme="dark"] .theme-toggle .sun{display:inline-flex}
 .verdict{
   background:var(--surface);border:1px solid var(--rule);border-radius:10px;
   padding:20px 22px;display:grid;gap:12px;margin-bottom:16px;
@@ -417,13 +414,6 @@ body.adv .simple-only{display:none!important}
   --dep:#C81E1E;  --rec:#0B5CAE;  --coin:#E0982F;
   --pastille:#12224E; --pastille-ink:#FFFFFF;
   --ciel:#EAF3FA; --ciel-2:#D6E8F5;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --dep:#EE7B72; --rec:#6DA7EC; --coin:#E5AE60;
-    --pastille:#1D2F5C; --pastille-ink:#EAF1FA;
-    --ciel:#15202C; --ciel-2:#1C2937;
-  }
 }
 :root[data-theme="dark"]{
   --dep:#EE7B72; --rec:#6DA7EC; --coin:#E5AE60;
@@ -475,6 +465,65 @@ body.adv .simple-only{display:none!important}
 @media (max-width:900px){
   .masses{grid-template-columns:1fr}
   .balances{grid-template-columns:1fr}
+}
+</style>
+
+<style>
+/* --- Barre de rappel. Le choix fait à l'étape 1 disparaît dès qu'on descend :
+       cette barre le ramène en haut de l'écran, avec les deux chiffres qui en
+       découlent et les pastilles pour changer de candidat sans remonter. --- */
+.stickybar{
+  position:fixed;top:0;left:0;right:0;z-index:40;
+  background:color-mix(in srgb,var(--surface) 90%,transparent);
+  -webkit-backdrop-filter:blur(10px) saturate(1.4);backdrop-filter:blur(10px) saturate(1.4);
+  border-bottom:1px solid var(--rule);box-shadow:var(--shadow);
+  transform:translateY(-101%);opacity:0;visibility:hidden;
+  transition:transform .2s ease,opacity .2s ease,visibility 0s linear .2s;
+}
+.stickybar.on{transform:none;opacity:1;visibility:visible;transition-delay:0s}
+.sb-in{max-width:1180px;margin:0 auto;padding:8px 20px;display:flex;align-items:center;gap:16px}
+.sb-now{
+  display:flex;align-items:center;gap:10px;min-width:0;
+  background:none;border:0;padding:0;margin:0;font:inherit;color:inherit;text-align:left;
+  cursor:pointer;border-radius:8px;
+}
+.sb-now:hover .sb-name{color:var(--accent)}
+.sb-now:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.sb-av{width:32px;height:32px;font-size:11.5px}
+.sb-txt{min-width:0}
+.sb-name{display:block;font-size:13.5px;font-weight:600;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sb-sub{display:block;font-size:11px;color:var(--ink-2);line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sb-figs{display:flex;gap:18px;margin-left:auto;white-space:nowrap}
+.sb-fig{display:grid;gap:1px}
+.sb-fig .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.sb-fig .v{font-family:"IBM Plex Mono",monospace;font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.2}
+.sb-chips{display:flex;gap:5px;align-items:center;min-width:0;overflow-x:auto;scrollbar-width:none;padding:2px 0}
+.sb-chips::-webkit-scrollbar{display:none}
+.sb-chip{
+  display:flex;align-items:center;gap:6px;flex:none;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;letter-spacing:.06em;
+  padding:5px 10px;border-radius:999px;border:1px solid var(--rule);background:var(--surface);
+  color:var(--ink-2);cursor:pointer;white-space:nowrap;
+  transition:border-color .15s,color .15s,background .15s;
+}
+.sb-chip .d{width:7px;height:7px;border-radius:50%;background:var(--pc);flex:none}
+.sb-chip:hover{border-color:var(--ink-3);color:var(--ink)}
+.sb-chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sb-chip[aria-pressed="true"]{
+  color:var(--ink);background:var(--surface-2);border-color:var(--ink);
+  box-shadow:inset 0 0 0 1px var(--ink);
+}
+/* la barre couvre le haut de l'écran : les ancres internes se recalent dessous */
+section,[id]{scroll-margin-top:70px}
+
+@media (max-width:900px){
+  .sb-figs{display:none}
+  .sb-chips{margin-left:auto}
+}
+@media (max-width:620px){
+  .sb-in{gap:10px;padding:7px 16px}
+  .sb-av{width:28px;height:28px;font-size:10.5px}
+  .sb-sub{display:none}
 }
 </style>
 
@@ -594,6 +643,17 @@ body.adv .simple-only{display:none!important}
       </div>
       <span class="simple-only">Le mode avancé ouvre les 41 mesures, leurs fourchettes de chiffrage et les hypothèses économiques.</span>
       <span class="adv-only">Toutes les mesures et tous les réglages sont ouverts.</span>
+      <button type="button" id="themeToggle" class="theme-toggle">
+        <svg class="ic moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.3 14.6A8.4 8.4 0 0 1 9.4 3.7a8.4 8.4 0 1 0 10.9 10.9z"/>
+        </svg>
+        <svg class="ic sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2.6v2.2M12 19.2v2.2M4.3 4.3l1.6 1.6M18.1 18.1l1.6 1.6M2.6 12h2.2M19.2 12h2.2M4.3 19.7l1.6-1.6M18.1 5.9l1.6-1.6"/>
+        </svg>
+        <span class="moon">Thème sombre</span>
+        <span class="sun">Thème clair</span>
+      </button>
     </div>
     <div class="caveat">
       <div class="simple-only"><b>Les chiffres annoncés par les partis sont affichés tels quels, à côté de ce que
@@ -607,9 +667,29 @@ body.adv .simple-only{display:none!important}
   </div>
 </header>
 
+<!-- Rappel permanent du candidat chargé, révélé dès que les cartes de l'étape 1
+     sortent de l'écran. Les pastilles rejouent le clic sur la carte correspondante :
+     un seul chemin de sélection, donc un seul état à tenir. -->
+<div class="stickybar" id="stickybar">
+  <div class="sb-in">
+    <button type="button" class="sb-now" id="sbNow" title="Revenir au choix du candidat">
+      <span class="avatar sb-av" id="sbAv"></span>
+      <span class="sb-txt">
+        <span class="sb-name" id="sbName"></span>
+        <span class="sb-sub" id="sbSub"></span>
+      </span>
+    </button>
+    <div class="sb-figs">
+      <div class="sb-fig"><span class="k">Déficit 2032</span><span class="v" id="sbSolde"></span></div>
+      <div class="sb-fig"><span class="k">Dette 2032</span><span class="v" id="sbDette"></span></div>
+    </div>
+    <div class="sb-chips" id="sbChips" role="group" aria-label="Changer de candidat"></div>
+  </div>
+</div>
+
 <div class="wrap">
 
-  <section aria-labelledby="h-cand">
+  <section id="candidats" aria-labelledby="h-cand">
     <div class="sec-head">
       <div><div class="eyebrow">Étape 1</div><h2 id="h-cand">Choisissez un candidat</h2></div>
       <p id="candWarn"></p>
@@ -1108,6 +1188,11 @@ function render(){
     foot.appendChild(fv); box.appendChild(foot);
   }
 
+  const sbS = $('#sbSolde');
+  sbS.textContent = pc(-S32.soldePct);
+  sbS.style.color = S32.soldePct < -3 ? 'var(--critical)' : 'var(--good)';
+  $('#sbDette').textContent = pc(S32.dettePct, 0);
+
   renderVerdict(base, scen, split);
   renderCompare(base);
   renderFeed();
@@ -1355,7 +1440,7 @@ function partySet(p){
   return out;
 }
 function buildCards(){
-  const box = $('#cards');
+  const box = $('#cards'), chips = $('#sbChips');
   const mk = (id, sig, who, party, claim, badge, color, photo, avatar) => {
     const b = el('button','card'); b.type = 'button'; b.dataset.id = id;
     b.style.setProperty('--pc', color);
@@ -1380,6 +1465,15 @@ function buildCards(){
       syncCards(); render();
     });
     box.appendChild(b);
+
+    /* pastille jumelle dans la barre de rappel : elle rejoue le clic sur la carte */
+    const chip = el('button','sb-chip'); chip.type = 'button'; chip.dataset.id = id;
+    chip.style.setProperty('--pc', color);
+    chip.title = id === 'tend' ? "Aucune mesure nouvelle après 2026" : `${who} · ${party}`;
+    chip.appendChild(el('i','d'));
+    chip.appendChild(el('span', null, id === 'tend' ? 'Tendanciel' : sig));
+    chip.addEventListener('click', () => b.click());
+    chips.appendChild(chip);
   };
   mk('tend','—',"Tendanciel","Aucune mesure nouvelle après 2026","", null, 'var(--ink-3)', null);
   PARTIES.forEach(p => mk(p.id, p.sigle, p.candidat, p.nom,
@@ -1397,6 +1491,24 @@ function syncCards(){
     : (state.party === 'tend' ? "Trajectoire à politique inchangée."
        : `Scénario personnalisé — ${Object.keys(state.active).length} mesure(s) activée(s).`);
   $('#modeAnnonce').disabled = !p || p.annonce.revendique == null;
+  syncSticky(p);
+}
+
+/** Recopie le choix courant dans la barre de rappel : identité, sous-titre, pastilles.
+ *  Les deux chiffres, eux, viennent du calcul et sont posés par render(). */
+function syncSticky(p){
+  document.querySelectorAll('.sb-chip').forEach(c =>
+    c.setAttribute('aria-pressed', String(c.dataset.id === state.party)));
+  const av = $('#sbAv');
+  av.style.setProperty('--pc', p ? p.couleur : 'var(--ink-3)');
+  fillAvatar(av, p ? {nom:p.candidat, photo:p.photo, avatar:p.avatar} : {nom:'', ref:true});
+  const n = Object.keys(state.active).length;
+  $('#sbName').textContent = p ? p.candidat
+    : (state.party === 'tend' ? "Tendanciel" : "Scénario personnalisé");
+  $('#sbSub').textContent = p
+    ? p.nom + (state.annonce && p.annonce.revendique != null ? " · chiffres annoncés" : "")
+    : (state.party === 'tend' ? "aucune mesure nouvelle après 2026"
+       : n + (n > 1 ? " mesures activées" : " mesure activée"));
 }
 
 /* ---------- grand livre ---------- */
@@ -1895,6 +2007,11 @@ function setMode(adv, save){
 buildCards(); buildLedger(); buildParams(); buildCompo(); buildFeedChips();
 $('#mSimple').addEventListener('click', () => setMode(false, true));
 $('#mAdv').addEventListener('click', () => setMode(true, true));
+$('#themeToggle').addEventListener('click', () => {
+  const dark = document.documentElement.getAttribute('data-theme') !== 'dark';
+  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  try { localStorage.setItem('fbs-theme', dark ? 'dark' : 'light'); } catch (e) {}
+});
 $('#reset').addEventListener('click', () => {
   state.active = {}; state.party = 'tend'; state.annonce = false;
   $('#modeAnnonce').checked = false; syncCards(); render();
@@ -1906,6 +2023,18 @@ $('#modeAnnonce').addEventListener('change', e => {
   syncCards(); render();
 });
 document.querySelector('.card[data-id="rn"]').click();
+
+/* La barre n'apparaît que lorsque les cartes de l'étape 1 sont passées au-dessus de
+   l'écran — jamais quand on est encore devant elles, où elle ferait double emploi. */
+(() => {
+  const bar = $('#stickybar'), cards = $('#cards');
+  $('#sbNow').addEventListener('click', () =>
+    $('#candidats').scrollIntoView({behavior:'smooth', block:'start'}));
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([e]) => {
+    bar.classList.toggle('on', !e.isIntersecting && e.boundingClientRect.top < 0);
+  }, {threshold:0}).observe(cards);
+})();
 let saved = null;
 try { saved = localStorage.getItem('fbs-mode'); } catch (e) {}
 setMode(saved === 'adv', false);
