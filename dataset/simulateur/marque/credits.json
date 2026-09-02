@@ -1,0 +1,18 @@
+{
+  "_comment": "Le coq de la marque. coq-source.svg est le fichier d'origine, gardé intact pour que la recoloration reste vérifiable ; coq.svg est la version aux couleurs du thème clair — même géométrie, seuls les remplissages changent. build.py en dérive l'icône d'onglet (buste recadré sur tuile bleu ciel) et l'embarque dans index.html en data URI, plus favicon-32.png en repli pour les navigateurs qui ignorent les icônes SVG.",
+  "coq": {
+    "fichier": "coq.svg",
+    "source": "coq-source.svg",
+    "titre": "Rooster",
+    "origine": "SVG Repo",
+    "url": "https://www.svgrepo.com/",
+    "nom_original": "rooster-svgrepo-com.svg",
+    "collection": "Noto Emoji (le fichier porte la classe iconify--noto)",
+    "licence": null,
+    "verifie": false,
+    "note": "Le dessin vient de la collection Noto de Google, publiée sous Apache 2.0 — mais le fichier récupéré sur SVG Repo ne porte aucune mention de licence. À confirmer sur la page d'origine de l'icône, et à reporter ici, avant de s'en servir comme marque publique."
+  },
+  "derive": {
+    "favicon-32.png": "Produit par build.py avec rsvg-convert à partir de coq.svg. Commité pour que la construction reste possible sans librsvg installé ; ne pas le retoucher à la main, il est réécrit à chaque build."
+  }
+}
