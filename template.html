@@ -1507,14 +1507,6 @@ function syncCards(){
 function syncSticky(p){
   document.querySelectorAll('.sb-chip').forEach(c =>
     c.setAttribute('aria-pressed', String(c.dataset.id === state.party)));
-  /* sur petit écran la rangée de pastilles défile : ramener la pastille active
-     dans le cadre, sans toucher au défilement de la page */
-  const chips = $('#sbChips'), on = chips.querySelector('[aria-pressed="true"]');
-  if (on){
-    const l = on.offsetLeft, r = l + on.offsetWidth;
-    if (l < chips.scrollLeft) chips.scrollLeft = l - 8;
-    else if (r > chips.scrollLeft + chips.clientWidth) chips.scrollLeft = r - chips.clientWidth + 8;
-  }
   const av = $('#sbAv');
   av.style.setProperty('--pc', p ? p.couleur : 'var(--ink-3)');
   fillAvatar(av, p ? {nom:p.candidat, photo:p.photo, avatar:p.avatar} : {nom:'', ref:true});
@@ -1525,6 +1517,18 @@ function syncSticky(p){
     ? p.nom + (state.annonce && p.annonce.revendique != null ? " · chiffres annoncés" : "")
     : (state.party === 'tend' ? "aucune mesure nouvelle après 2026"
        : n + (n > 1 ? " mesures activées" : " mesure activée"));
+
+  /* Sur petit écran la rangée de pastilles défile : ramener l'active dans le cadre,
+     sans toucher au défilement de la page. Mesuré après l'écriture du nom, dont la
+     largeur décide de la place qui reste aux pastilles. */
+  const chips = $('#sbChips'), on = chips.querySelector('[aria-pressed="true"]');
+  if (on){
+    const l = on.offsetLeft, r = l + on.offsetWidth;
+    let x = chips.scrollLeft;
+    if (l < x) x = l;
+    else if (r > x + chips.clientWidth) x = r - chips.clientWidth;
+    chips.scrollLeft = Math.max(0, Math.min(x, chips.scrollWidth - chips.clientWidth));
+  }
 }
 
 /* ---------- grand livre ---------- */
