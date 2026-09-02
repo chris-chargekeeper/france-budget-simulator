@@ -6,6 +6,10 @@ le parti **annonce** et ce que le modèle **produit**.
 
 Hors périmètre de la plateforme EV — projet personnel, isolé dans `experiments/`.
 
+- **[REPRISE.md](REPRISE.md)** — où en est le travail, comment relancer chaque chaîne, ce qui reste
+  ouvert. À lire en premier après une interruption.
+- **[DECISIONS.md](DECISIONS.md)** — le pourquoi des choix, y compris les options écartées.
+
 ## Architecture
 
 ```
@@ -13,9 +17,10 @@ dataset/simulateur/baseline.json       cadrage APU 2025, ventilations dépenses 
 dataset/simulateur/measures.json       catalogue de 41 mesures avec bornes de chiffrage
 dataset/simulateur/parties.json        7 partis, candidat pressenti, annonces, mesures rattachées
 dataset/simulateur/announcements.json  journal daté et sourcé des annonces médiatiques
+dataset/simulateur/avatars/            bustes de candidat, injectés par build.py
 dataset/sources/                       données officielles aspirées, jamais éditées
 dataset/derive/                        budget de l'État structuré, régénérable
-template.html                          page complète, deux marqueurs : __DATA__ et __UPDATED__
+template.html                          page complète ; marqueurs __DATA__, __UPDATED__, __AVATARS__
 build.py                               valide les données, les injecte, écrit index.html
 index.html                             généré — ne pas éditer à la main
 ```
@@ -174,18 +179,37 @@ images externes, quelle que soit leur origine.
 
 ## Veille
 
-Le skill `france-budget-watch` (dans `.claude/skills/`) met les données à jour quotidiennement :
-recherche des chiffrages nouvellement publiés et des annonces faites dans les médias, rédaction d'un
-patch JSON, application contrôlée, reconstruction et republication.
+`dataset/simulateur/announcements.json` est **alimenté à la main**. Il n'y a pas d'automatisation.
+
+> Les versions précédentes de ce fichier décrivaient un skill `france-budget-watch` dans
+> `.claude/skills/`, avec un `watch.py` et sa ligne de commande. Vérification faite, **rien de tout
+> cela n'existe** : ni dans le dépôt, ni dans `~/.claude/skills/`, ni ailleurs sur la machine. La
+> description a été retirée plutôt que laissée à induire en erreur.
+
+Ce qu'il faudrait construire pour automatiser la veille — collecteur de déclarations chiffrées avec
+leurs URL, format de patch et applicateur contrôlé, déclencheur périodique — est détaillé dans
+[REPRISE.md](REPRISE.md). Les garde-fous existent déjà côté `build.py`, et vaudraient tels quels pour
+ce flux : source obligatoire, date au bon format et jamais dans le futur, contradiction expliquée,
+auteur ou fonction renseignés.
+
+## Travailler sur le projet
 
 ```bash
-python3 ../../.claude/skills/france-budget-watch/scripts/watch.py status
-python3 ../../.claude/skills/france-budget-watch/scripts/watch.py apply patch.json --write
-python3 build.py
+python3 build.py                    # reconstruit index.html
+python3 build.py --depuis-index     # remonte dans template.html ce qui a été retouché dans index.html
+python3 build.py --force            # écrase index.html sans sommation
 ```
 
-Le script refuse toute annonce sans URL source, sans date valide ou datée du futur, déduplique, interdit
-la modification des champs structurels d'une mesure, et ne supprime jamais rien.
+**`index.html` est généré.** L'éditer directement marche jusqu'à la prochaine construction, qui
+l'écrase. `build.py` compare le fichier à l'empreinte du dernier qu'il a produit et refuse de
+l'écraser s'il a bougé : `--depuis-index` remonte alors les retouches dans le gabarit, exactement ou
+pas du tout.
+
+Ce que `build.py` refuse de construire : une mesure inconnue référencée par un parti, une annonce
+sans source ou mal datée, une contradiction non expliquée, une ventilation qui ne somme pas à son
+agrégat, un poste sans icône ou avec une icône inconnue, un `avatar` sans fichier correspondant.
+
+Le travail vit sur la branche `dataset-officiel-et-vulgarisation`, un commit par étape.
 
 ## Limites
 
