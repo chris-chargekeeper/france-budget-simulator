@@ -26,6 +26,10 @@ Ce qui a été fait, en une phrase chacun :
 - **Vulgarisation.** Grandes masses, balance pilotée par l'écart réel, pastilles « sur 1 000 € »,
   17 pictogrammes de poste, bustes de candidat.
 - **Ergonomie.** Thème clair par défaut avec bascule mémorisée, barre de rappel du candidat chargé.
+- **Trou dans la raquette.** Nouvelle étape 4 : le total revendiqué par un parti confronté à ses propres
+  postes chiffrés, et chaque poste aux crédits qui existent. `dataset/simulateur/assises.json` adosse
+  six mesures d'économie à des lignes du budget aspiré ; `build.py` résout chaque renvoi à la
+  construction et s'arrête si un montant a dérivé de plus de 0,5 %.
 
 ## Relancer chaque chaîne
 
@@ -46,6 +50,7 @@ python3 build_dataset.py                      # reconstruit dataset/derive/
 | Fusion dans `master` | La branche n'est pas fusionnée. Aucune PR ouverte. |
 | Licence des bustes | `dataset/simulateur/avatars/credits.json` porte `"licence": null`. SVG Repo agrège des collections aux licences différentes et les fichiers ne la déclarent pas. `build.py` le signale à chaque construction. **À lever avant toute publication.** |
 | Skill de veille | **N'existe pas.** Voir ci-dessous. |
+| Assises manquantes | `ue` et `fraude` n'ont pas d'assise : la contribution au budget de l'UE et les concours aux collectivités passent par des **prélèvements sur recettes**, absents des crédits des missions et donc du dataset. Ces mesures ne sont opposées qu'à la fourchette du catalogue. À compléter si les PSR sont un jour aspirés. |
 | Ventilations `depenses` / `recettes` | Regroupements maison, non recoupés : ils ne correspondent à aucune nomenclature officielle. La COFOG publiée est dans `baseline.officiel.depensesFonction` pour comparaison. |
 | Axe « nature » 2018-2022 | Lacunaire à la source (1 à 2 Md€ manquants de 2019 à 2022, absent en 2018). Non corrigé. |
 | Poids du dépôt | 44 Mo, dont 17 Mo de captures vidéo entièrement retranscrites dans `reperes-2023.json` — supprimables sans perte. |

@@ -1,0 +1,85 @@
+{
+  "_comment": "L'assise budgétaire d'une mesure d'économie : les lignes du budget de l'État qui portent aujourd'hui la dépense visée. Sert à répondre à une question de fait — le poste que l'on promet de couper existe-t-il, et à quelle hauteur ? Les montants ne sont jamais saisis à la main : ils sont repris des données officielles aspirées dans dataset/, et le champ 'src' dit lequel. 'role' dit ce que ces lignes sont pour la mesure. 'perimetre' : la mesure propose de supprimer cette dépense, et son total est un vrai plafond — on ne peut pas économiser plus que ce qui est inscrit. 'assiette' : la mesure rabote un pourcentage d'une masse beaucoup plus large, qui situe l'ordre de grandeur sans rien plafonner. 'complet' à false = les lignes citées ne couvrent qu'une partie repérable du périmètre : aucun ratio n'en est tiré, aucune annonce n'est déclarée excessive contre elles.",
+  "updated": "2026-09-02",
+  "sources": {
+    "lfi2026cp": {
+      "t": "Budget de l'État, loi de finances initiale 2026, crédits de paiement",
+      "u": "https://www.budget.gouv.fr/budget-etat",
+      "f": "dataset/derive/budget-etat-lfi-2026.json"
+    },
+    "plrg2024": {
+      "t": "Opérateurs de l'État, projet de loi relatif aux résultats de la gestion 2024",
+      "u": "https://www.budget.gouv.fr/budget-etat",
+      "f": "dataset/sources/budget.gouv.fr/operateurs/plrg/2024.json"
+    }
+  },
+  "assises": {
+    "immigration": {
+      "role": "perimetre",
+      "complet": true,
+      "titre": "Ce que le budget de l'État consacre aujourd'hui à ce périmètre",
+      "dediees": [
+        {"nom": "Mission « Immigration, asile et intégration »", "v": 2.131, "src": "lfi2026cp", "ref": "mission:Immigration, asile et intégration",
+         "det": "asile, éloignement, lutte contre l'immigration irrégulière, intégration et accès à la nationalité"}
+      ],
+      "partielles": [
+        {"nom": "Programme « Hébergement, parcours vers le logement et insertion des personnes vulnérables »", "v": 3.071, "src": "lfi2026cp", "ref": "programme:Hébergement, parcours vers le logement et insertion des personnes vulnérables",
+         "det": "accueille toutes les personnes sans abri, sans distinction de nationalité ni de situation administrative : la part concernée n'est pas isolable dans le budget"}
+      ],
+      "note": "Une seule mission porte explicitement ce périmètre, et elle pèse 2,1 Md€. Retenir en plus la totalité de l'hébergement d'urgence — alors qu'il accueille aussi des personnes de nationalité française — est une hypothèse volontairement large, retenue ici pour ne pas sous-estimer le plafond.",
+      "hors": "L'aide médicale d'État (1,2 Md€) porte sa propre mesure dans ce catalogue : la compter ici la compterait deux fois. Les chiffrages qui atteignent 20 à 40 Md€ ne sont pas des lignes budgétaires : ils agrègent des prestations de droit commun — allocations familiales, aides au logement, RSA, retraites, scolarisation — versées à des personnes en situation régulière, et ne déduisent ni les cotisations ni les impôts que ces mêmes personnes acquittent. Supprimer ces prestations n'est pas une mesure d'immigration, et aucune de ces sommes n'est disponible dans le budget en l'état."
+    },
+    "ame": {
+      "role": "perimetre",
+      "complet": true,
+      "titre": "La ligne exacte que la suppression rendrait disponible",
+      "dediees": [
+        {"nom": "Programme « Protection maladie » (mission Santé)", "v": 1.216, "src": "lfi2026cp", "ref": "programme:Protection maladie",
+         "det": "l'aide médicale d'État en constitue la quasi-totalité"}
+      ],
+      "note": "C'est la seule mesure du catalogue dont l'annonce se lit directement sur une ligne du budget, au dixième de milliard près.",
+      "hors": "Avant tout report de charge : les soins non pris en charge en ville reviennent en partie aux urgences hospitalières, financées par l'assurance maladie."
+    },
+    "institutions": {
+      "role": "perimetre",
+      "complet": true,
+      "titre": "Tout ce que l'État consacre à ses institutions politiques",
+      "dediees": [
+        {"nom": "Mission « Pouvoirs publics »", "v": 1.14, "src": "lfi2026cp", "ref": "mission:Pouvoirs publics",
+         "det": "présidence de la République, Assemblée nationale, Sénat, Conseil constitutionnel, Cour de justice de la République"}
+      ],
+      "note": "Supprimer intégralement le financement des deux assemblées, de l'Élysée et du Conseil constitutionnel rapporterait 1,1 Md€, soit 0,07 % de la dépense publique."
+    },
+    "effectifs": {
+      "role": "assiette",
+      "complet": true,
+      "titre": "L'assiette sur laquelle porte la coupe",
+      "dediees": [
+        {"nom": "Titre 2 « Dépenses de personnel », budget général", "v": 160.412, "src": "lfi2026cp", "ref": "titre:Titre 2 : Dépenses de personnel:43",
+         "det": "hors compte d'affectation spéciale « Pensions », qui en porte 68,8 Md€ de plus"}
+      ],
+      "note": "Une baisse de 5 % des effectifs ne rend pas 5 % de cette somme, et sûrement pas la première année : le non-remplacement suit le rythme des départs en retraite, et la rémunération des partants est inférieure à la moyenne."
+    },
+    "agences": {
+      "role": "assiette",
+      "complet": true,
+      "titre": "Ce que l'État verse à ses opérateurs",
+      "dediees": [
+        {"nom": "Financement public de 184 opérateurs de l'État", "v": 71.8, "src": "plrg2024", "ref": "operateurs:financement-public",
+         "det": "subventions pour charges de service public et taxes affectées, sur 91,5 Md€ de ressources totales"}
+      ],
+      "note": "Supprimer un opérateur n'économise que la part que l'État finance, et seulement si la mission qu'il porte disparaît avec lui — sinon elle repart dans une administration, avec ses agents."
+    },
+    "collectivites": {
+      "role": "assiette",
+      "complet": false,
+      "titre": "Repère d'ordre de grandeur, ni plafond ni assiette complète",
+      "dediees": [],
+      "partielles": [
+        {"nom": "Mission « Relations avec les collectivités territoriales »", "v": 3.959, "src": "lfi2026cp", "ref": "mission:Relations avec les collectivités territoriales",
+         "det": "dotations d'investissement et compensations, une fraction seulement des concours de l'État"}
+      ],
+      "note": "L'essentiel des concours financiers aux collectivités passe par un prélèvement sur recettes — la dotation globale de fonctionnement au premier chef — qui n'apparaît pas dans les crédits des missions et ne figure pas dans les données officielles chargées ici. Cette ligne situe l'ordre de grandeur ; elle ne borne pas la mesure et n'en donne pas l'assiette, et aucun ratio n'en est tiré."
+    }
+  }
+}

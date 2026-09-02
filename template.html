@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Le Budget de la France</title>
+<title>quipaie2027.fr — Le budget de la France</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap">
@@ -86,6 +86,7 @@ a{color:var(--accent)}
   display:flex;gap:10px;align-items:center;flex-wrap:wrap;
 }
 .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--s-scen)}
+.kicker .brand{color:var(--ink);font-weight:600;letter-spacing:.06em;text-transform:none;font-size:12.5px}
 h1{
   font-family:Newsreader, Georgia, serif;
   font-weight:600;font-size:clamp(30px,4.6vw,52px);line-height:1.04;letter-spacing:-.015em;
@@ -218,7 +219,9 @@ th:first-child,td:first-child{text-align:left}
 th{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
 td{font-family:"IBM Plex Mono",monospace}
 .scroller{overflow-x:auto}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--ink-3);max-width:78ch}
+footer .fbrand{font-family:"IBM Plex Mono",ui-monospace,monospace;color:var(--ink);letter-spacing:.02em}
 .btn{border:1px solid var(--rule);background:var(--surface);color:var(--ink-2);border-radius:7px;padding:6px 12px;font:inherit;font-size:12.5px;cursor:pointer}
 .btn:hover{border-color:var(--accent);color:var(--ink)}
 .empty{color:var(--ink-3);font-size:13px;padding:26px 0;text-align:center}
@@ -291,6 +294,58 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);font-si
 .sub-list{font-size:11.5px;color:var(--ink-3);line-height:1.45;margin-top:2px}
 .hero-fig{font-family:"IBM Plex Mono",monospace;font-size:clamp(26px,3.4vw,38px);font-weight:600;letter-spacing:-.02em;line-height:1.05}
 @media (max-width:900px){.gap-grid{grid-template-columns:1fr}}
+
+/* --- le trou dans la raquette ---
+   La part d'un total annoncé qui ne se raccroche à rien doit se voir avant d'être lue :
+   plein pour ce qui tient, hachuré pour ce qui manque. La hachure est portée par le fond,
+   pas par une couleur seule — elle reste lisible en noir et blanc et pour un daltonien. */
+.trou-head{display:grid;grid-template-columns:minmax(200px,270px) 1fr;gap:18px 26px;align-items:center}
+.trou-lab{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);
+          font-family:"IBM Plex Mono",monospace;line-height:1.35}
+.trou-sub{font-size:13px;color:var(--ink-2);margin-top:5px;line-height:1.45}
+.trou-stack{display:flex;height:52px;border:1px solid var(--rule);border-radius:7px;overflow:hidden;background:var(--surface-2)}
+.trou-stack span{display:block;height:100%;min-width:2px}
+.trou-stack .tenu{background:var(--bar-strong)}
+.trou-stack .hors{
+  background:repeating-linear-gradient(135deg,
+    color-mix(in srgb,var(--critical) 46%,transparent) 0 5px,
+    color-mix(in srgb,var(--critical) 12%,transparent) 5px 11px);
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--critical) 55%,transparent);
+}
+.trou-stack .muet{
+  background:repeating-linear-gradient(135deg,
+    color-mix(in srgb,var(--critical) 26%,transparent) 0 2px,
+    color-mix(in srgb,var(--critical) 5%,transparent) 2px 9px);
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--critical) 40%,transparent);
+}
+.trou-legend{display:flex;gap:6px 20px;flex-wrap:wrap;margin:12px 0 2px;font-size:12.5px;color:var(--ink-2)}
+.trou-legend b{color:var(--ink);font-family:"IBM Plex Mono",monospace;font-weight:600}
+.trou-legend .k{display:inline-block;width:22px;height:11px;border-radius:2px;margin-right:7px;
+                vertical-align:-1px;border:1px solid var(--rule)}
+.trou-echelle{flex-basis:100%;font-size:12px;color:var(--ink-3);line-height:1.45}
+.trou-table{display:grid;min-width:680px;margin-top:6px}
+.trou-row{display:grid;grid-template-columns:minmax(210px,1.3fr) 84px 84px 1.1fr;gap:14px;
+          align-items:start;padding:11px 0;border-top:1px solid var(--rule-soft);font-size:13px}
+.trou-row.hdr{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);
+              font-family:"IBM Plex Mono",monospace;border-top:none;padding-bottom:6px}
+.trou-row .v{font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;text-align:right}
+.trou-row .n{color:var(--ink);line-height:1.3}
+.trou-row .why{font-size:12px;color:var(--ink-2);line-height:1.45;margin-top:2px}
+.trou-row .why em{font-style:normal;color:var(--critical);font-weight:600;
+                  font-family:"IBM Plex Mono",monospace}
+.trou-row .lignes{font-size:11.5px;color:var(--ink-3);line-height:1.45;margin-top:3px}
+.trou-row.over{background:color-mix(in srgb,var(--critical) 5%,transparent)}
+.trou-flag{margin-top:14px;border-left:3px solid var(--critical);padding:2px 0 2px 12px;
+           font-size:13px;color:var(--ink-2);line-height:1.5}
+.trou-flag b{color:var(--ink)}
+.trou-why{margin-top:16px;border:1px solid var(--rule);border-radius:8px;background:var(--surface-2);
+          padding:13px 15px}
+.trou-why h3{margin:0 0 4px;font-size:13.5px;font-weight:600;color:var(--ink)}
+.trou-why p{margin:0 0 7px;font-size:12.5px;color:var(--ink-2);line-height:1.55;max-width:74ch}
+.trou-why p:last-child{margin-bottom:0}
+.trou-why .quoi{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);
+                font-family:"IBM Plex Mono",monospace;display:block;margin-bottom:2px}
+@media (max-width:760px){.trou-head{grid-template-columns:1fr}}
 
 /* --- comparaison des programmes --- */
 .cmp{display:grid;min-width:760px}
@@ -389,6 +444,8 @@ body.adv .simple-only{display:none!important}
 .vlines .mark{width:7px;height:7px;border-radius:2px;background:var(--ink-3);transform:translateY(-2px)}
 .vlines .mark.bad{background:var(--critical)} .vlines .mark.good{background:var(--good)}
 .vlines b{font-family:"IBM Plex Mono",monospace;font-weight:600;font-variant-numeric:tabular-nums}
+.vlines a{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 40%,transparent)}
+.vlines a:hover{border-color:var(--accent)}
 .perk{font-size:13px;color:var(--ink-2);border-top:1px solid var(--rule-soft);padding-top:11px;max-width:74ch}
 .choices{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
 .choices button{
@@ -636,7 +693,8 @@ section,[id]{scroll-margin-top:70px}
 
 <header class="masthead">
   <div class="wrap">
-    <div class="kicker"><span class="dot"></span> Le budget de la France · données au __UPDATED__</div>
+    <div class="kicker"><span class="dot"></span><span class="brand">quipaie2027.fr</span>
+      <span>Le budget de la France · données au __UPDATED__</span></div>
     <h1>Le budget de la France,<br><em>et ce que les programmes en feraient</em></h1>
     <p class="standfirst">L'État dépense environ 1 690 milliards d'euros par an et n'en encaisse que 1 530.
       L'écart s'ajoute chaque année à la dette. Choisissez un candidat : vous verrez ce que son programme
@@ -758,6 +816,33 @@ section,[id]{scroll-margin-top:70px}
           <ul class="srclist" id="gapSrc"></ul>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="trou" aria-labelledby="h-trou">
+    <div class="sec-head">
+      <div><div class="eyebrow">Étape 4</div><h2 id="h-trou">Le trou dans la raquette</h2></div>
+      <p>Un total annoncé se vérifie deux fois : les postes chiffrés en font-ils la somme, et chacun
+        tient-il dans ce que le budget contient vraiment ?</p>
+    </div>
+    <div class="panel">
+      <div class="trou-head">
+        <div>
+          <div class="trou-lab" id="trouLab">Ce qui n'est adossé à rien</div>
+          <div class="hero-fig" id="trouFig">—</div>
+          <div class="trou-sub" id="trouSub"></div>
+        </div>
+        <div>
+          <div class="trou-stack" id="trouStack" role="img" aria-labelledby="trouAlt"></div>
+          <div class="trou-legend" id="trouLegend"></div>
+          <p class="sr-only" id="trouAlt"></p>
+        </div>
+      </div>
+      <div id="trouFlags"></div>
+      <div class="scroller"><div class="trou-table" id="trouTable"></div></div>
+      <div id="trouPourquoi"></div>
+      <p class="prose" id="trouProse" style="margin-top:14px"></p>
+      <ul class="srclist" id="trouSrc"></ul>
     </div>
   </section>
 
@@ -892,7 +977,7 @@ section,[id]{scroll-margin-top:70px}
   </section>
 
   <footer>
-    Prototype pédagogique, sans valeur officielle. Les montants sont des ordres de grandeur arrondis, cohérents
+    <b class="fbrand">quipaie2027.fr</b> — prototype pédagogique, sans valeur officielle. Les montants sont des ordres de grandeur arrondis, cohérents
     entre eux mais non issus d'un modèle macroéconométrique. Un chiffrage sérieux se fait avec un modèle bouclé
     (type Mésange à la direction générale du Trésor) et une revue contradictoire des hypothèses.
     Aucune photographie de candidat n'est reproduite : les portraits de presse sont protégés par le droit
@@ -1202,6 +1287,7 @@ function render(){
   renderCompare(base);
   renderFeed();
   renderGap(split);
+  renderTrou();
   renderBehav(split);
   syncLedger();
   renderTable(base, scen);
@@ -1348,9 +1434,12 @@ function renderVerdict(base, scen, split){
        : dPt > 0 ? `l'améliore de <b>${nf(Math.abs(dPt),1)} point</b>.`
                  : `l'aggrave de <b>${nf(Math.abs(dPt),1)} point</b>.`)]);
   if (p && p.annonce.revendique != null){
-    const couvre = Math.round(p.annonce.detaille / p.annonce.revendique * 100);
-    lines.push(['', `Le parti annonce <b>${md(p.annonce.revendique)}</b> ; le détail rendu public `
-      + `n'en couvre que <b>${couvre} %</b>.`]);
+    const A = auditer(p);
+    lines.push([A.trou / A.rev > 0.25 ? 'bad' : '',
+      `Le parti annonce <b>${md(A.rev)}</b>. <b>${md(A.trou,1)}</b> ne sont adossés à rien — `
+      + `ni détaillés, ni contenus dans ce que le budget peut rendre, soit `
+      + `<b>${nf(A.trou / A.rev * 100, 0)} %</b> du total `
+      + `(<a href="#trou">le détail</a>).`]);
   }
   const ul = el('ul','vlines');
   lines.forEach(([k, txt]) => {
@@ -1423,6 +1512,236 @@ function renderGap(split){
   prose.innerHTML = t;
   (p.sources || []).forEach(s => {
     const li = el('li'); const a2 = el('a', null, s.t);
+    a2.href = s.u; a2.target = '_blank'; a2.rel = 'noopener noreferrer';
+    li.appendChild(a2); src.appendChild(li);
+  });
+}
+
+/* ---------- le trou dans la raquette ----------
+   Deux questions de fait, posées à tous les partis de la même façon. Les postes
+   qu'un parti a chiffrés font-ils la somme qu'il revendique ? Et chaque poste
+   tient-il dans ce qui existe : la borne haute des chiffrages publiés, ou les
+   crédits réellement inscrits au budget de l'État ?
+   Le plafond retenu par poste est toujours le plus généreux des deux, si bien que
+   le trou affiché est un minimum, jamais une estimation haute. */
+const ASSISES = (DATA.assises && DATA.assises.assises) || {};
+const ASSISE_SRC = (DATA.assises && DATA.assises.sources) || {};
+const assiseLignes = a => (a.dediees || []).concat(a.partielles || []);
+/** Somme des crédits cités. null si les lignes ne couvrent pas tout le périmètre :
+ *  un total partiel ne se compare à rien. */
+function assiseTotal(a){
+  return (a && a.complet) ? assiseLignes(a).reduce((s, l) => s + l.v, 0) : null;
+}
+/** Ce total plafonne-t-il l'économie ? Seulement quand la mesure supprime la dépense.
+ *  Une mesure qui rabote un pourcentage d'une grande masse n'est pas bornée par elle :
+ *  la masse salariale de l'État ne dit rien de ce qu'une coupe de 5 % peut rendre. */
+function assisePlafond(a){
+  return (a && a.role === 'perimetre') ? assiseTotal(a) : null;
+}
+
+function auditer(p){
+  const rev = p.annonce.revendique, postes = [];
+  for (const id in p.set){
+    const e = p.set[id], m = M_BY_ID[id];
+    if (!m || (m.g !== 'dep-' && m.g !== 'rec+')) continue;   /* le total revendiqué ne porte que sur le redressement */
+    const chiffre = rev != null ? e.annonce : m[e.sim || 'mid'];
+    if (chiffre == null) continue;
+    const a = ASSISES[id] || null, pl = assisePlafond(a), tot = assiseTotal(a);
+    const plafond = pl == null ? m.hi : Math.max(m.hi, pl);
+    postes.push({id, m, a, annonce:chiffre, plafond, assise:tot,
+                 borne: pl != null && pl > m.hi ? 'budget' : 'chiffrages',
+                 delta: Math.max(0, chiffre - plafond)});
+  }
+  postes.sort((x, y) => y.delta - x.delta || y.annonce - x.annonce);
+  const chiffre = postes.reduce((s, x) => s + x.annonce, 0);
+  const horsPlafond = postes.reduce((s, x) => s + x.delta, 0);
+  return {rev, cote:p.annonce.cote, postes, chiffre, horsPlafond,
+          nonDetaille: rev == null ? 0 : Math.max(0, rev - chiffre),
+          excedent:    rev == null ? 0 : Math.max(0, chiffre - rev),
+          tenu: chiffre - horsPlafond,
+          trou: horsPlafond + (rev == null ? 0 : Math.max(0, rev - chiffre))};
+}
+
+/** La phrase qui dit, poste par poste, ce que le budget contient face à l'annonce. */
+function trouMotif(x, reconstitution){
+  const bouts = [];
+  if (x.delta > 0){
+    bouts.push(`<em>${md(x.delta,1)} au-delà</em> ${x.borne === 'budget'
+      ? "des crédits inscrits au budget"
+      : `de la borne haute des chiffrages publiés (${md(x.plafond,1)})`}.`);
+  }
+  if (x.assise != null){
+    const part = x.annonce / x.assise * 100, une = assiseLignes(x.a).length < 2;
+    const quoi = une ? "cette ligne" : "ces lignes";
+    if (part > 150) bouts.push(`L'annonce représente <em>${nf(part,0)} %</em> de ${quoi} : `
+      + `le budget ne contient pas la somme promise.`);
+    else if (part > 100) bouts.push(`L'annonce dépasse ce que ${quoi} contient — <em>${nf(part,0)} %</em>.`);
+    else bouts.push(`Soit ${nf(part, part < 10 ? 1 : 0)} % de ${quoi}`
+      + (x.a.role === 'assiette' ? ", qui n'est pas un plafond : la mesure n'en rabote qu'une part." : "."));
+  } else if (x.a){
+    bouts.push("Ces lignes ne couvrent qu'une partie du périmètre : aucun ratio n'en est tiré.");
+  }
+  if (!bouts.length){
+    bouts.push(reconstitution
+      ? `Retenu au niveau du catalogue, dans la fourchette publiée (${md(x.m.lo,1)} à ${md(x.m.hi,1)}).`
+      : `Tient dans la fourchette des chiffrages publiés (${md(x.m.lo,1)} à ${md(x.m.hi,1)}).`);
+  }
+  return bouts.join(' ');
+}
+
+function renderTrou(){
+  const p = PARTIES.find(x => x.id === state.party) || null;
+  const fig = $('#trouFig'), sub = $('#trouSub'), lab = $('#trouLab'), stack = $('#trouStack'),
+        leg = $('#trouLegend'), flags = $('#trouFlags'), table = $('#trouTable'),
+        prose = $('#trouProse'), src = $('#trouSrc'), alt = $('#trouAlt');
+  stack.textContent = ''; leg.textContent = ''; flags.textContent = '';
+  table.textContent = ''; src.textContent = ''; alt.textContent = '';
+
+  if (!p){
+    lab.textContent = "Aucun programme chargé";
+    fig.textContent = '—'; fig.style.color = 'var(--ink-3)';
+    sub.textContent = "";
+    stack.hidden = true;
+    prose.innerHTML = "Choisissez un candidat : ce bloc confronte alors le total qu'il revendique "
+      + "à ses propres postes chiffrés, et chaque poste aux crédits que le budget contient vraiment.";
+    return;
+  }
+
+  const A = auditer(p), reconstitution = A.rev == null;
+
+  /* le grand chiffre, puis la barre : la part d'un total qui ne se raccroche à rien */
+  if (reconstitution){
+    lab.textContent = "Rien à confronter";
+    fig.textContent = '—'; fig.style.color = 'var(--ink-3)';
+    sub.innerHTML = `<b>${p.nom}</b> n'a publié aucun total chiffré pour 2027.`;
+    stack.hidden = true;   /* une barre vide ne dit rien : mieux vaut pas de barre */
+  } else {
+    stack.hidden = false;
+    lab.textContent = "Ce qui n'est adossé à rien";
+    fig.textContent = md(A.trou, 1);
+    fig.style.color = A.trou > 0 ? 'var(--critical)' : 'var(--good)';
+    sub.innerHTML = A.trou > 0
+      ? `sur les ${md(A.rev)} annoncés, soit <b>${nf(A.trou / A.rev * 100, 0)} %</b> du total`
+      : `chaque euro annoncé est rattaché à un poste chiffré, dans les bornes publiées`;
+
+    /* la barre couvre tout ce qui est sur la table : le total revendiqué, ou la somme des
+       postes chiffrés quand elle le dépasse. Les trois parts en font toujours le compte. */
+    const base = Math.max(A.rev, A.chiffre);
+    const zones = [
+      {c:'tenu', n:"Adossé à un poste chiffré, dans les bornes publiées", v:A.tenu,
+       k:'background:var(--bar-strong)'},
+      {c:'hors', n:"Au-delà de ce qui existe", v:A.horsPlafond,
+       k:'background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--critical) 46%,transparent) 0 3px,color-mix(in srgb,var(--critical) 12%,transparent) 3px 7px)'},
+      {c:'muet', n:"Jamais détaillé", v:A.nonDetaille,
+       k:'background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--critical) 26%,transparent) 0 2px,color-mix(in srgb,var(--critical) 5%,transparent) 2px 6px)'}
+    ].filter(z => z.v > 0.05);
+    zones.forEach(z => {
+      const n = el('span', z.c);
+      n.style.width = (z.v / base * 100) + '%';
+      n.title = `${z.n} — ${md(z.v,1)}`;
+      stack.appendChild(n);
+    });
+    zones.forEach(z => {
+      const n = el('div');
+      const k = el('i','k'); k.style.cssText = z.k; n.appendChild(k);
+      n.appendChild(document.createTextNode(z.n + ' — '));
+      n.appendChild(el('b', null, md(z.v,1)));
+      n.appendChild(document.createTextNode(` (${nf(z.v / base * 100, 0)} %)`));
+      leg.appendChild(n);
+    });
+    const ech = el('div','trou-echelle');
+    ech.textContent = A.chiffre > A.rev + 0.05
+      ? `La barre couvre les ${md(A.chiffre,1)} que totalisent les postes chiffrés — plus que `
+        + `les ${md(A.rev)} revendiqués.`
+      : `La barre couvre les ${md(A.rev)} annoncés.`;
+    leg.appendChild(ech);
+    alt.textContent = `Sur ${md(base,1)} : ` + zones.map(z =>
+      `${z.n.toLowerCase()}, ${md(z.v,1)}`).join(' ; ') + '.';
+  }
+
+  /* les constats qui ne tiennent pas dans la barre */
+  const dits = [];
+  if (A.nonDetaille > 0.05){
+    dits.push(`<b>${md(A.nonDetaille,1)}</b> du total annoncé ne sont rattachés à aucun poste. `
+      + `Ce n'est pas un chiffrage contestable : il n'y a rien à contester, `
+      + `le détail n'a jamais été rendu public.`);
+  }
+  if (A.horsPlafond > 0.05){
+    const gros = A.postes.filter(x => x.delta > 0.05)
+      .map(x => `<i>${x.m.lab}</i> — ${md(x.annonce,1)} annoncés, plafond ${md(x.plafond,1)}`);
+    dits.push(`<b>${md(A.horsPlafond,1)}</b> dépassent ce que le poste peut rendre, même en retenant `
+      + `l'hypothèse la plus favorable : ${gros.join(' ; ')}.`);
+  }
+  if (A.excedent > 0.05){
+    dits.push(`Dans l'autre sens : les postes chiffrés par le parti totalisent <b>${md(A.chiffre,1)}</b>, `
+      + `soit ${md(A.excedent,1)} de plus que le total qu'il revendique. Le compte ne tombe pas juste non plus `
+      + `par excès — les mêmes euros servent probablement deux fois, ou le total public a été arrondi vers le bas.`);
+  }
+  if (reconstitution){
+    dits.push(`Aucun total n'ayant été publié, il n'y a rien à confronter — <b>ce n'est pas un bon point</b>. `
+      + `Le tableau ci-dessous montre ce que pèsent aujourd'hui les lignes visées par le scénario `
+      + `reconstitué ici, aux montants du catalogue, pas à ceux du parti.`);
+  }
+  dits.forEach(t => { const n = el('div','trou-flag'); n.innerHTML = t; flags.appendChild(n); });
+
+  /* le détail poste par poste */
+  const hdr = el('div','trou-row hdr');
+  ['Poste', reconstitution ? 'Retenu' : 'Annoncé', 'Plafond', 'Ce que le budget contient']
+    .forEach((t,i) => { const c = el('div', i === 1 || i === 2 ? 'v' : null, t); hdr.appendChild(c); });
+  table.appendChild(hdr);
+
+  A.postes.forEach(x => {
+    const r = el('div','trou-row' + (x.delta > 0.05 ? ' over' : ''));
+    const nom = el('div');
+    nom.appendChild(el('div','n', x.m.lab));
+    if (x.a){
+      const ls = assiseLignes(x.a);
+      let lignes = ls.map(l => `${l.nom} — ${md(l.v, l.v < 10 ? 2 : 1)}`).join(' · ');
+      if (ls.length > 1 && x.assise != null) lignes += `  =  ${md(x.assise,2)}`;
+      nom.appendChild(el('div','lignes', lignes));
+    }
+    r.appendChild(nom);
+    r.appendChild(el('div','v', md(x.annonce,1)));
+    r.appendChild(el('div','v', md(x.plafond,1)));
+    const why = el('div','why'); why.innerHTML = trouMotif(x, reconstitution);
+    r.appendChild(why);
+    table.appendChild(r);
+  });
+  if (!A.postes.length){
+    table.appendChild(el('div','empty', "Aucun poste de redressement chiffré dans ce scénario."));
+  }
+
+  /* ce qui coince, poste par poste, avec la note du catalogue et celle de l'assise :
+     un dépassement sans explication n'apprend rien à personne */
+  const pourquoi = $('#trouPourquoi'); pourquoi.textContent = '';
+  A.postes.filter(x => x.delta > 0.05 || (x.assise != null && x.annonce > x.assise)).forEach(x => {
+    const box = el('div','trou-why');
+    box.appendChild(el('h3', null, x.m.lab));
+    const bloc = (titre, txt) => {
+      if (!txt) return;
+      const n = el('p');
+      if (titre) n.appendChild(el('span','quoi', titre));
+      n.appendChild(document.createTextNode(txt));
+      box.appendChild(n);
+    };
+    bloc("Ce que disent les chiffrages", x.m.note);
+    if (x.a) bloc("Ce que porte le budget", x.a.note);
+    if (x.a && x.a.hors) bloc("Ce que les chiffrages plus élevés ajoutent", x.a.hors);
+    pourquoi.appendChild(box);
+  });
+
+  prose.innerHTML = "Le plafond d'un poste est le plus favorable des deux repères disponibles : la borne haute "
+    + "des chiffrages publiés, ou les crédits que le budget de l'État y consacre aujourd'hui, quand une ligne "
+    + "existe. <b>Le trou affiché est donc un minimum</b>. Ce test porte sur la matière des économies annoncées, "
+    + "pas sur le rendement d'un impôt nouveau : combien rapporte vraiment une taxe sur le capital est une autre "
+    + "question, traitée plus bas. Les montants des lignes budgétaires ne sont pas saisis à la main — ils sont "
+    + "relus dans les données officielles à chaque construction de la page, et une divergence l'interrompt.";
+
+  const vues = new Set();
+  A.postes.forEach(x => x.a && assiseLignes(x.a).forEach(l => vues.add(l.src)));
+  vues.forEach(k => {
+    const s = ASSISE_SRC[k]; if (!s) return;
+    const li = el('li'), a2 = el('a', null, s.t);
     a2.href = s.u; a2.target = '_blank'; a2.rel = 'noopener noreferrer';
     li.appendChild(a2); src.appendChild(li);
   });
@@ -1949,6 +2268,17 @@ $('#progBody').innerHTML = `
 publiquement, la part qu'il a effectivement <b>détaillée</b> poste par poste, et ce que le simulateur obtient en
 reprenant ces postes avec les bornes de son catalogue. L'écart entre le premier et le troisième est l'objet même
 de ce site ; il n'est pas un verdict, il est une question posée au parti.</p>
+<p><b>Le trou dans la raquette</b> pose deux questions de fait, aux sept partis de la même façon : les postes
+qu'un parti a chiffrés font-ils la somme qu'il revendique, et chacun tient-il dans ce qui existe ? Le plafond
+opposé à un poste est toujours le <b>plus favorable</b> des deux repères disponibles — la borne haute des
+chiffrages publiés, ou les crédits que le budget de l'État consacre aujourd'hui à cette dépense. Le trou affiché
+est donc un <b>minimum</b>. Les montants des lignes budgétaires ne sont pas saisis à la main : chacun renvoie à
+une mission, un programme ou un titre du budget aspiré, relu à chaque construction de la page.</p>
+<p>Ce test porte sur la <b>matière</b> d'une économie annoncée, jamais sur le <b>rendement</b> d'un impôt nouveau,
+qui n'est pas une ligne du budget et relève de l'érosion d'assiette. Deux limites s'ensuivent, assumées :
+une mesure qui rabote un pourcentage d'une grande masse — les effectifs, les opérateurs — n'est bornée que par
+les chiffrages publiés, la masse ne plafonnant rien ; et un parti qui n'a publié aucun total ne peut pas être
+pris en défaut, ce qui n'est pas un bon point.</p>
 <p>La case <b>« retenir les montants annoncés par le parti »</b> remplace les bornes du catalogue par les chiffres
 du parti lui-même, y compris quand ils dépassent la borne haute des chiffrages publiés. C'est la lecture la plus
 favorable possible au programme : si la trajectoire ne se redresse pas même dans ce cas, ce n'est pas un effet

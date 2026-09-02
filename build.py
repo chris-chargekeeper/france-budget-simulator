@@ -15,8 +15,11 @@ import sys
 
 ROOT = pathlib.Path(__file__).parent
 DATA = ROOT / "dataset" / "simulateur"
-FILES = ["baseline", "measures", "parties", "announcements"]
+FILES = ["baseline", "measures", "parties", "announcements", "assises"]
 CONTRADICTION = {"non", "programme", "annonce", "inconnu"}
+
+DERIVE = ROOT / "dataset" / "derive"
+SOURCES = ROOT / "dataset" / "sources"
 
 AVATARS = DATA / "avatars"
 STAMP = ROOT / ".build-stamp"   # empreinte du dernier index.html produit
@@ -165,6 +168,91 @@ def load():
 
 
 
+def resoudre(ref, src):
+    """Retrouve dans les données officielles le montant qu'une ligne d'assise prétend citer.
+
+    Une assise n'est jamais un chiffre saisi à la main : c'est un pointeur vers une ligne
+    du budget aspiré. Le pointeur est résolu ici, à chaque construction, et le montant
+    du fichier n'est qu'un cache — s'il diverge, la construction échoue plutôt que de
+    laisser la page affirmer un chiffre que la source ne dit plus.
+    """
+    quoi, _, reste = ref.partition(":")
+    if src == "lfi2026cp":
+        d = json.loads((DERIVE / "budget-etat-lfi-2026.json").read_text(encoding="utf-8"))
+        mil = next(m for m in d["millesimes"] if m["type_donnee"] == "cp")
+        if quoi == "mission":
+            for m in mil["missions"]:
+                if m["nom"] == reste:
+                    return m["total"]
+        elif quoi == "programme":
+            for m in mil["missions"]:
+                for p in m.get("programmes", []):
+                    if p["nom"] == reste:
+                        return p["total"]
+        elif quoi == "titre":
+            nom, _, groupe = reste.rpartition(":")
+            for t in mil["titres"]:
+                if t["nom"] == nom:
+                    return t["montants"].get(groupe)
+        return None
+    if src == "plrg2024":
+        ops = json.loads((SOURCES / "budget.gouv.fr" / "operateurs" / "plrg" / "2024.json")
+                         .read_text(encoding="utf-8"))
+        if quoi != "operateurs" or reste != "financement-public":
+            return None
+        total = 0.0
+        for o in ops:
+            ressources = sum(v["value"] for v in o["value"] if isinstance(v["value"], (int, float)))
+            for ligne in o.get("additional_data", []):
+                if ligne and "financement public" in ligne[0]["text"]:
+                    part = re.search(r"([\d.]+)\s*%", ligne[1]["text"])
+                    if part:
+                        total += ressources * float(part.group(1)) / 100
+        return total
+    return None
+
+
+def verifier_assises(payload):
+    """Croise les assises avec le catalogue, les partis et les données officielles."""
+    bloc = payload["assises"]
+    ids = {m["id"] for m in payload["measures"]["measures"]}
+    par_id = {m["id"]: m for m in payload["measures"]["measures"]}
+    controles = 0
+    for mid, a in bloc["assises"].items():
+        ou = f"dataset/simulateur/assises.json: {mid}"
+        if mid not in ids:
+            sys.exit(f"{ou} ne correspond à aucune mesure du catalogue")
+        if par_id[mid]["g"] not in ("dep-", "rec+"):
+            sys.exit(f"{ou}: une assise ne se pose que sous une mesure de redressement, "
+                     f"pas sous {par_id[mid]['g']!r}")
+        if not a.get("note"):
+            sys.exit(f"{ou}: une assise sans note ne dit pas ce qu'elle recouvre")
+        if a.get("role") not in ("perimetre", "assiette"):
+            sys.exit(f"{ou}: 'role' attendu — 'perimetre' si la mesure supprime cette dépense "
+                     f"(son total plafonne alors l'économie), 'assiette' si elle en rabote une part")
+        if not isinstance(a.get("complet"), bool):
+            sys.exit(f"{ou}: 'complet' doit dire si les lignes citées couvrent tout le périmètre")
+        lignes = a.get("dediees", []) + a.get("partielles", [])
+        if not lignes:
+            sys.exit(f"{ou}: aucune ligne budgétaire")
+        for l in lignes:
+            if l.get("src") not in bloc["sources"]:
+                sys.exit(f"{ou}: source inconnue {l.get('src')!r}; "
+                         f"connues: {sorted(bloc['sources'])}")
+            trouve = resoudre(l.get("ref", ""), l["src"])
+            if trouve is None:
+                sys.exit(f"{ou}: le renvoi {l.get('ref')!r} ne se retrouve pas dans "
+                         f"{bloc['sources'][l['src']]['f']}")
+            if abs(trouve - l["v"]) > max(0.01, abs(trouve) * 0.005):
+                sys.exit(f"{ou}: {l['nom']} porte {l['v']} Md€, la source en donne "
+                         f"{trouve:.3f}. Corriger le fichier, pas la source.")
+            controles += 1
+    for cle, s in bloc["sources"].items():
+        if not s.get("t") or not str(s.get("u", "")).startswith("http"):
+            sys.exit(f"dataset/simulateur/assises.json: source {cle} sans titre ou sans URL")
+    print(f"  + {controles} lignes d'assise recoupées contre les données officielles")
+
+
 def rendu(payload, template):
     """La substitution des trois marqueurs, au même endroit pour les deux sens."""
     avatars, payload["avatars"] = build_avatars()
@@ -211,6 +299,7 @@ def main():
     args = ap.parse_args()
 
     payload = load()
+    verifier_assises(payload)
     attach_portraits(payload["parties"]["parties"])
     if args.depuis_index:
         depuis_index(payload)

@@ -173,3 +173,56 @@ pouvoir revenir en arrière étape par étape.
 **Réserve honnête.** Le premier commit (`ff9d450`) regroupe trois échanges de travail qui vivaient
 encore dans l'arbre : il n'a pas pu être redécoupé proprement après coup. Les suivants sont
 découpés.
+
+---
+
+## 11. Le trou dans la raquette : deux tests, et le plafond le plus favorable
+
+**Contexte.** Un parti annonce 125 Md€ d'économies. La page savait déjà afficher ce qu'il revendique,
+ce qu'il a détaillé et ce que le modèle en tire — trois chiffres côte à côte, sans jamais dire si les
+postes annoncés existent dans le budget. Or c'est la question que tout le monde pose : couper 25 Md€
+sur l'immigration, ça se prend où ?
+
+**Décision.** Deux tests, posés à tous les partis de la même façon.
+
+1. **Le compte y est-il ?** Somme des postes chiffrés contre le total revendiqué. L'écart est
+   *jamais détaillé* : l'absence de chiffrage, pas un chiffrage contestable.
+2. **Le poste existe-t-il ?** Chaque montant annoncé contre un plafond, et le dépassement est ce qui
+   passe au-dessus.
+
+Le trou est la somme des deux, affiché en grand chiffre et en barre empilée hachurée.
+
+**Le plafond retenu est le plus favorable au parti** : la borne haute des chiffrages publiés, ou les
+crédits inscrits au budget, le plus élevé des deux. Le trou qui en sort est donc un **minimum**. Pour
+le RN : 76,4 Md€ sur 125, dont 59,4 jamais détaillés et 17,0 au-delà des plafonds. Pour LFI : 14,0 sur
+90, entièrement portés par la taxe sur les transactions financières annoncée à 20 Md€ quand le
+chiffrage le plus haut du catalogue en retient 6.
+
+**Pourquoi ce choix.** Un plafond serré donnerait un trou plus spectaculaire et une conclusion
+attaquable. Un plafond généreux donne un plancher indiscutable : même en accordant au parti tout ce
+qu'on peut lui accorder, il reste ça.
+
+**Périmètre ≠ assiette.** La première version prenait pour plafond le total des lignes citées, quelle
+que soit la mesure. La masse salariale de l'État (160,4 Md€) devenait alors le plafond d'une coupe de
+5 % des effectifs — un parti aurait pu annoncer 100 Md€ sans être signalé. D'où le champ `role` :
+`perimetre` (on supprime la dépense, son total plafonne) contre `assiette` (on en rabote une part, le
+total ne plafonne rien).
+
+**Écarté.**
+
+- *Chiffrer nous-mêmes le coût de l'immigration.* Ce serait prendre parti dans une controverse
+  ouverte. La page dit ce que le budget contient — mission « Immigration, asile et intégration »,
+  2,13 Md€ ; hébergement d'urgence, 3,07 Md€, non isolable — et pourquoi les chiffrages à 20 ou
+  40 Md€ ne sont pas des lignes supprimables : ils agrègent des prestations de droit commun versées
+  à des personnes en situation régulière, sans déduire ce qu'elles cotisent.
+- *Le plus petit plafond des deux.* Voir plus haut : spectaculaire et attaquable.
+- *Étendre le test aux recettes nouvelles.* Le rendement d'un impôt n'est pas une ligne du budget.
+  Il a déjà sa section, « Et si les riches partent ? ». La page le dit dans le bloc, pour qu'on ne
+  lise pas l'absence de test comme un blanc-seing.
+- *Saisir les montants à la main.* Chaque ligne d'assise porte un renvoi (`mission:…`, `programme:…`,
+  `titre:…`) que `build.py` résout dans les données officielles à chaque construction. Un écart de
+  plus de 0,5 % arrête la construction.
+
+**Réserve.** Un parti qui ne publie rien ne peut pas être pris en défaut : les cinq scénarios
+`reconstitution` n'ont pas de total à confronter. La page l'écrit — *ce n'est pas un bon point* —
+plutôt que de laisser un blanc passer pour un satisfecit.

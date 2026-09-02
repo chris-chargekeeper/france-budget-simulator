@@ -17,6 +17,7 @@ dataset/simulateur/baseline.json       cadrage APU 2025, ventilations dépenses 
 dataset/simulateur/measures.json       catalogue de 41 mesures avec bornes de chiffrage
 dataset/simulateur/parties.json        7 partis, candidat pressenti, annonces, mesures rattachées
 dataset/simulateur/announcements.json  journal daté et sourcé des annonces médiatiques
+dataset/simulateur/assises.json        lignes du budget qui portent chaque mesure d'économie
 dataset/simulateur/avatars/            bustes de candidat, injectés par build.py
 dataset/sources/                       données officielles aspirées, jamais éditées
 dataset/derive/                        budget de l'État structuré, régénérable
@@ -109,6 +110,52 @@ ouverte et lue), et surtout `contredit` :
 
 `build.py` refuse une contradiction non expliquée dans `ecart`, une source manquante, une date mal
 formée, ou une annonce sans auteur ni fonction.
+
+## Le trou dans la raquette
+
+Un total annoncé se vérifie deux fois, et la section « Le trou dans la raquette » pose les deux
+questions à tous les partis de la même façon :
+
+1. **les postes chiffrés font-ils la somme revendiquée ?** Ce qui reste est *jamais détaillé* — pas un
+   chiffrage contestable, mais l'absence de chiffrage ;
+2. **chaque poste tient-il dans ce qui existe ?** Le plafond d'un poste est le **plus favorable** des
+   deux repères disponibles : la borne haute des chiffrages publiés (`hi` du catalogue), ou les crédits
+   que le budget de l'État y consacre aujourd'hui. Le dépassement est ce qui excède ce plafond.
+
+Le trou affiché est la somme des deux. **C'est un minimum**, jamais une estimation haute : à chaque
+étape, l'hypothèse retenue est celle qui arrange le parti. Il s'affiche en grand chiffre rouge et en
+barre empilée où la part non adossée est hachurée — la hachure porte l'information, pas la seule
+couleur, pour rester lisible en noir et blanc et pour un daltonien.
+
+Le test porte sur la **matière** d'une économie annoncée, pas sur le **rendement** d'un impôt nouveau :
+savoir ce que rapporte vraiment une taxe sur le capital est une autre question, traitée par l'érosion
+d'assiette. Un parti qui n'a rien publié n'a rien à confronter, et la page le dit ainsi — ne pas
+chiffrer n'est pas un bon point.
+
+## Assises budgétaires
+
+`dataset/simulateur/assises.json` répond à une question de fait : le poste qu'on promet de couper
+existe-t-il dans le budget, et à quelle hauteur ? Une assise pose sous une mesure de redressement les
+lignes budgétaires qui portent aujourd'hui la dépense visée.
+
+| champ | sens |
+|---|---|
+| `dediees` | lignes entièrement comprises dans le périmètre de la mesure |
+| `partielles` | lignes dont une part seulement l'est, sans être isolable dans le budget |
+| `borne` | `true` si ces lignes plafonnent la mesure ; `false` si elles ne font que situer l'ordre de grandeur |
+| `note` | ce que la ligne recouvre, et ce qu'une coupe y rendrait vraiment |
+| `hors` | ce que les chiffrages plus élevés ajoutent, et pourquoi ce n'est pas une ligne supprimable |
+
+**Aucun montant n'est saisi à la main.** Chaque ligne porte un `ref` — `mission:…`, `programme:…`,
+`titre:…`, `operateurs:financement-public` — que `build.py` résout dans les données officielles
+aspirées à **chaque construction**. Un écart de plus de 0,5 % interrompt la construction : la page ne
+peut pas affirmer un chiffre que la source ne dit plus.
+
+`borne: false` est le garde-fou du raisonnement. Les concours de l'État aux collectivités passent
+pour l'essentiel par un prélèvement sur recettes, absent des crédits des missions : la mission
+« Relations avec les collectivités territoriales » situe l'ordre de grandeur mais ne borne rien, et
+**aucun dépassement n'est calculé contre elle**. Une mesure sans assise n'est jamais accusée de
+dépasser une ligne : seule la fourchette du catalogue lui est opposée.
 
 ## Comparaison des programmes
 
