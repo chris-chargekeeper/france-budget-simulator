@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Le Budget de la France</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -497,7 +499,7 @@ body.adv .simple-only{display:none!important}
 .sb-fig{display:grid;gap:1px}
 .sb-fig .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
 .sb-fig .v{font-family:"IBM Plex Mono",monospace;font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.2}
-.sb-chips{display:flex;gap:5px;align-items:center;min-width:0;overflow-x:auto;scrollbar-width:none;padding:2px 0}
+.sb-chips{position:relative;display:flex;gap:5px;align-items:center;min-width:0;overflow-x:auto;scrollbar-width:none;padding:2px 0}
 .sb-chips::-webkit-scrollbar{display:none}
 .sb-chip{
   display:flex;align-items:center;gap:6px;flex:none;
@@ -506,7 +508,8 @@ body.adv .simple-only{display:none!important}
   color:var(--ink-2);cursor:pointer;white-space:nowrap;
   transition:border-color .15s,color .15s,background .15s;
 }
-.sb-chip .d{width:7px;height:7px;border-radius:50%;background:var(--pc);flex:none}
+.sb-chip .d{width:7px;height:7px;border-radius:50%;background:var(--pc);flex:none;
+            box-shadow:0 0 0 1px color-mix(in srgb,var(--ink-3) 55%,transparent)}
 .sb-chip:hover{border-color:var(--ink-3);color:var(--ink)}
 .sb-chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .sb-chip[aria-pressed="true"]{
@@ -1328,6 +1331,11 @@ function renderVerdict(base, scen, split){
     + `<b>${perHab(manque)}</b> par habitant.`]);
   lines.push([S.dette > BASE.dette0 ? 'bad' : 'good',
     `La dette atteindrait <b>${md(S.dette)}</b>, contre <b>${md(BASE.dette0)}</b> aujourd'hui.`]);
+  const dHab = (S.dette - BASE.dette0) * 1000 / BL.apu.population;
+  lines.push([S.dette > BASE.dette0 ? 'bad' : 'good',
+    `Par habitant, elle passerait de <b>${perHab(BASE.dette0)}</b> à <b>${perHab(S.dette)}</b>, `
+    + (Math.abs(dHab) < 50 ? "soit un niveau quasi inchangé."
+       : `soit <b>${signed(Math.round(dHab), 0, ' €')}</b> en sept ans.`)]);
   lines.push([S.soldePct >= -3 ? 'good' : 'bad',
     `Le déficit serait de <b>${pc(-S.soldePct)}</b> de la richesse produite, `
     + (S.soldePct >= -3 ? "donc <b>sous</b> la limite européenne de 3 %."
@@ -1352,7 +1360,8 @@ function renderVerdict(base, scen, split){
   host.appendChild(ul);
   host.appendChild(el('div','perk',
     `Pour situer les ordres de grandeur : 1 milliard d'euros, c'est environ ${perHab(1)} par habitant. `
-    + `La dette actuelle représente ${perHab(BASE.dette0)} par habitant — une image de l'échelle, `
+    + `Ces montants par habitant sont calculés à population constante `
+    + `(${nf(BL.apu.population,1)} millions) — une image de l'échelle, `
     + `pas une somme que chacun devrait rembourser.`));
 }
 
@@ -1499,6 +1508,14 @@ function syncCards(){
 function syncSticky(p){
   document.querySelectorAll('.sb-chip').forEach(c =>
     c.setAttribute('aria-pressed', String(c.dataset.id === state.party)));
+  /* sur petit écran la rangée de pastilles défile : ramener la pastille active
+     dans le cadre, sans toucher au défilement de la page */
+  const chips = $('#sbChips'), on = chips.querySelector('[aria-pressed="true"]');
+  if (on){
+    const l = on.offsetLeft, r = l + on.offsetWidth;
+    if (l < chips.scrollLeft) chips.scrollLeft = l - 8;
+    else if (r > chips.scrollLeft + chips.clientWidth) chips.scrollLeft = r - chips.clientWidth + 8;
+  }
   const av = $('#sbAv');
   av.style.setProperty('--pc', p ? p.couleur : 'var(--ink-3)');
   fillAvatar(av, p ? {nom:p.candidat, photo:p.photo, avatar:p.avatar} : {nom:'', ref:true});

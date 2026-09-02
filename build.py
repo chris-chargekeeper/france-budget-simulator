@@ -5,7 +5,9 @@ The template carries two placeholders: __DATA__ (the JSON payload injected into 
 <script type="application/json"> tag) and __UPDATED__ (the freshness date shown in
 the masthead). Run this after any change under dataset/simulateur/.
 """
+import argparse
 import base64
+import hashlib
 import json
 import pathlib
 import re
@@ -17,6 +19,7 @@ FILES = ["baseline", "measures", "parties", "announcements"]
 CONTRADICTION = {"non", "programme", "annonce", "inconnu"}
 
 AVATARS = DATA / "avatars"
+STAMP = ROOT / ".build-stamp"   # empreinte du dernier index.html produit
 PORTRAITS = DATA / "portraits"
 PORTRAIT_TYPES = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp"}
 PORTRAIT_WARN = 120_000
@@ -161,18 +164,73 @@ def load():
     return payload
 
 
-def main():
-    payload = load()
-    attach_portraits(payload["parties"]["parties"])
+
+def rendu(payload, template):
+    """La substitution des trois marqueurs, au même endroit pour les deux sens."""
     avatars, payload["avatars"] = build_avatars()
-    template = (ROOT / "template.html").read_text(encoding="utf-8")
     blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     if "</script" in blob:
         sys.exit("le payload contient une balise fermante </script>")
-    html = (template.replace("__DATA__", blob)
+    return (template.replace("__DATA__", blob)
                     .replace("__UPDATED__", payload["parties"]["updated"])
-                    .replace("__AVATARS__", avatars))
-    (ROOT / "index.html").write_text(html, encoding="utf-8")
+                    .replace("__AVATARS__", avatars), blob, avatars)
+
+
+def depuis_index(payload):
+    """Remonte dans template.html des retouches faites à la main dans index.html.
+
+    index.html n'est que le gabarit avec trois substitutions : on refait le chemin en
+    sens inverse en recalculant les valeurs injectées, en les retrouvant dans le fichier
+    édité, et en remettant les marqueurs. Le report est exact ou il échoue — jamais
+    approximatif.
+    """
+    index = ROOT / "index.html"
+    if not index.is_file():
+        sys.exit("index.html absent : rien à remonter")
+    _, blob, avatars = rendu(payload, "")
+    html = index.read_text(encoding="utf-8")
+    for quoi, valeur, marqueur in (("le payload", blob, "__DATA__"),
+                                   ("les bustes", avatars, "__AVATARS__"),
+                                   ("la date de fraîcheur", payload["parties"]["updated"],
+                                    "__UPDATED__")):
+        n = html.count(valeur)
+        if n != 1:
+            sys.exit(f"impossible de remonter {quoi} : {n} occurrence(s) dans index.html, "
+                     f"attendu exactement 1. Le fichier a divergé trop loin du gabarit.")
+        html = html.replace(valeur, marqueur)
+    (ROOT / "template.html").write_text(html, encoding="utf-8")
+    print("template.html mis à jour depuis index.html")
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--depuis-index", action="store_true",
+                    help="remonter dans template.html les retouches faites dans index.html")
+    ap.add_argument("--force", action="store_true",
+                    help="écraser index.html même s'il a été modifié à la main")
+    args = ap.parse_args()
+
+    payload = load()
+    attach_portraits(payload["parties"]["parties"])
+    if args.depuis_index:
+        depuis_index(payload)
+        payload = load()
+        attach_portraits(payload["parties"]["parties"])
+
+    index = ROOT / "index.html"
+    # index.html est généré. S'il a bougé sans passer par ici, on refuse de l'écraser :
+    # le report se fait avec --depuis-index, l'abandon avec --force.
+    if not (args.depuis_index or args.force) and index.is_file() and STAMP.is_file():
+        actuel = hashlib.sha256(index.read_bytes()).hexdigest()
+        if actuel != STAMP.read_text(encoding="utf-8").strip():
+            sys.exit("index.html a été modifié à la main depuis la dernière construction.\n"
+                     "  python3 build.py --depuis-index   remonte ces retouches dans template.html\n"
+                     "  python3 build.py --force          les écrase")
+
+    template = (ROOT / "template.html").read_text(encoding="utf-8")
+    html, _, _ = rendu(payload, template)
+    index.write_text(html, encoding="utf-8")
+    STAMP.write_text(hashlib.sha256(html.encode("utf-8")).hexdigest() + "\n", encoding="utf-8")
     print(f"index.html écrit — {len(html):,} octets, "
           f"{len(payload['measures']['measures'])} mesures, "
           f"{len(payload['parties']['parties'])} partis, "
