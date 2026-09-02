@@ -1,0 +1,377 @@
+[
+ {
+  "name": "Fonction publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.201622188
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16535
+  },
+  "on_click": true
+ },
+ {
+  "name": "Gestion fiscale et financière de l'État et du secteur public local",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.020129378
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16541
+  },
+  "on_click": true
+ },
+ {
+  "name": "Régimes de retraite des mines, de la SEITA et divers",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.37681556
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16570
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage des politiques économiques et financières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.009387137
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16586
+  },
+  "on_click": true
+ },
+ {
+  "name": "Facilitation et sécurisation des échanges",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.53078526
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16593
+  },
+  "on_click": true
+ },
+ {
+  "name": "Rénovation des cités administratives et autres sites domaniaux multi-occupants",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.001844472
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16609
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds pour la transformation de l'action publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": null
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16610
+  },
+  "on_click": false
+ },
+ {
+  "name": "Présidence de la République",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.103
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16615
+  },
+  "on_click": true
+ },
+ {
+  "name": "Assemblée nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.51789
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16616
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sénat",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.323585
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16617
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conseil constitutionnel",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0117192
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16618
+  },
+  "on_click": true
+ },
+ {
+  "name": "Cour de justice de la République",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0008615
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16619
+  },
+  "on_click": true
+ },
+ {
+  "name": "La Chaîne parlementaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0346872
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16620
+  },
+  "on_click": true
+ },
+ {
+  "name": "Opérations immobilières et entretien des bâtiments de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.480626613
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16626
+  },
+  "on_click": true
+ },
+ {
+  "name": "Pensions civiles et militaires de retraite et allocations temporaires d'invalidité",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 54.742633123
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16629
+  },
+  "on_click": true
+ },
+ {
+  "name": "Ouvriers des établissements industriels de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 1.918266044
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16630
+  },
+  "on_click": true
+ },
+ {
+  "name": "Pensions militaires d'invalidité et des victimes de guerre et autres pensions",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 1.844138343
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16631
+  },
+  "on_click": true
+ },
+ {
+  "name": "Désendettement de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.48657
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16635
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 103.92984
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16651
+  },
+  "on_click": true
+ },
+ {
+  "name": "France Télévisions",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 2.56791
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16652
+  },
+  "on_click": true
+ },
+ {
+  "name": "ARTE France",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.285373
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16653
+  },
+  "on_click": true
+ },
+ {
+  "name": "Radio France",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.608792
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16654
+  },
+  "on_click": true
+ },
+ {
+  "name": "France Médias Monde",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.263163
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16655
+  },
+  "on_click": true
+ },
+ {
+  "name": "Institut national de l'audiovisuel",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.0904111
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16656
+  },
+  "on_click": true
+ },
+ {
+  "name": "TV5 Monde",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.0789744
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16657
+  },
+  "on_click": true
+ }
+]

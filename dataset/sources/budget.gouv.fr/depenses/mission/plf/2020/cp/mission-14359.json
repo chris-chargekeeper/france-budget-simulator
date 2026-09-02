@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Conduite et soutien des politiques sanitaires, sociales, du sport, de la jeunesse et de la vie associative",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.305594394
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14360
+  },
+  "on_click": true
+ },
+ {
+  "name": "Égalité entre les femmes et les hommes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.02984579
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14385
+  },
+  "on_click": true
+ },
+ {
+  "name": "Handicap et dépendance",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 12.222957927
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14376
+  },
+  "on_click": true
+ },
+ {
+  "name": "Inclusion sociale et protection des personnes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 11.933985351
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14389
+  },
+  "on_click": true
+ }
+]

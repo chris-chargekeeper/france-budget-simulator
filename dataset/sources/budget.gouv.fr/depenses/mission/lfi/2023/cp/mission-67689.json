@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Presse et médias",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.371009154
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 67692
+  },
+  "on_click": true
+ },
+ {
+  "name": "Livre et industries culturelles",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.333850731
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 67767
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Développement des entreprises et régulations",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.53342256399
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48658
+  },
+  "on_click": true
+ },
+ {
+  "name": "Statistiques et études économiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.445842386
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48691
+  },
+  "on_click": true
+ },
+ {
+  "name": "Stratégies économiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.4097150972
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48709
+  },
+  "on_click": true
+ },
+ {
+  "name": "Plan France Très haut débit",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.41751527
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48727
+  },
+  "on_click": true
+ },
+ {
+  "name": "Financement des opérations patrimoniales envisagées en 2021 et en 2022 sur le compte d'affectation spéciale « Participations financières de l'État »",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 11.4571
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48736
+  },
+  "on_click": true
+ }
+]

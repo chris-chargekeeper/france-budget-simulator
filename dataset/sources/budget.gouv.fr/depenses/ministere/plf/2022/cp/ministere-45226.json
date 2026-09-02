@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Conduite et soutien des politiques sanitaires et sociales",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.174510912
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51646
+  },
+  "on_click": true
+ },
+ {
+  "name": "Inclusion sociale et protection des personnes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 13.14189499
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51730
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prévention, sécurité sanitaire et offre de soins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.21286338
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51298
+  },
+  "on_click": true
+ },
+ {
+  "name": "Protection maladie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.087
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51289
+  },
+  "on_click": true
+ }
+]

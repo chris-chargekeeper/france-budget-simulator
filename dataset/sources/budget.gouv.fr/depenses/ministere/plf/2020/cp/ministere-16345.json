@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Sport",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.434726723
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14422
+  },
+  "on_click": true
+ },
+ {
+  "name": "Jeux olympiques et paralympiques 2024",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.12925
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14432
+  },
+  "on_click": true
+ }
+]

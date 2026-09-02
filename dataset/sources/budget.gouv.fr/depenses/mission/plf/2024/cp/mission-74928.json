@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Gestion fiscale et financière de l'État et du secteur public local",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.138123635
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 74931
+  },
+  "on_click": true
+ },
+ {
+  "name": "Facilitation et sécurisation des échanges",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.706954366
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 74997
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage des politiques économiques et financières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.054760149
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 74970
+  },
+  "on_click": true
+ }
+]

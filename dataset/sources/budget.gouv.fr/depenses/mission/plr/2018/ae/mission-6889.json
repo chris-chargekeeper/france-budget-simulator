@@ -1,0 +1,17 @@
+[
+ {
+  "name": "Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 103.92904
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16651
+  },
+  "on_click": true
+ }
+]

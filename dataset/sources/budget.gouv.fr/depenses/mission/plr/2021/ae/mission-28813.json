@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Conduite et soutien des politiques sanitaires et sociales",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.1409738426
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28816
+  },
+  "on_click": true
+ },
+ {
+  "name": "Égalité entre les femmes et les hommes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.048520625
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28888
+  },
+  "on_click": true
+ },
+ {
+  "name": "Handicap et dépendance",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 12.833021749
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28861
+  },
+  "on_click": true
+ },
+ {
+  "name": "Inclusion sociale et protection des personnes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 12.428405032799999
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28900
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prise en charge par l'Etat du financement de l'indemnité inflation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 52879
+  },
+  "on_click": true
+ }
+]

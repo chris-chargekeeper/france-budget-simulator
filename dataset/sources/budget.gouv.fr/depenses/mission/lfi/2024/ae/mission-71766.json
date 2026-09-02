@@ -1,0 +1,92 @@
+[
+ {
+  "name": "Aide à l'accès au logement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 13.6564
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 71769
+  },
+  "on_click": true
+ },
+ {
+  "name": "Impulsion et coordination de la politique d'aménagement du territoire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.3979314
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 71784
+  },
+  "on_click": true
+ },
+ {
+  "name": "Urbanisme, territoires et amélioration de l'habitat",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.91785776
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 71853
+  },
+  "on_click": true
+ },
+ {
+  "name": "Politique de la ville",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.63952913
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 72030
+  },
+  "on_click": true
+ },
+ {
+  "name": "Interventions territoriales de l'État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.080646332
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 72105
+  },
+  "on_click": true
+ },
+ {
+  "name": "Hébergement, parcours vers le logement et insertion des personnes vulnérables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.9009137
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 72222
+  },
+  "on_click": true
+ }
+]

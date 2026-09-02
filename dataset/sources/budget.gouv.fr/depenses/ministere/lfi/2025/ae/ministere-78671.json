@@ -1,0 +1,197 @@
+[
+ {
+  "name": "Impulsion et coordination de la politique d'aménagement du territoire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.29633354
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 79886
+  },
+  "on_click": true
+ },
+ {
+  "name": "Concours financiers aux collectivités territoriales et à leurs groupements",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.661377
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 84638
+  },
+  "on_click": true
+ },
+ {
+  "name": "Concours spécifiques et administration",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.252226151
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 84770
+  },
+  "on_click": true
+ },
+ {
+  "name": "Régimes de retraite et de sécurité sociale des marins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.7721449
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 84602
+  },
+  "on_click": true
+ },
+ {
+  "name": "Infrastructures et services de transports",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.80674921
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 81776
+  },
+  "on_click": true
+ },
+ {
+  "name": "Affaires maritimes, pêche et aquaculture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.253056751
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 81938
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.182843489
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82052
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds d'accélération de la transition écologique dans les territoires",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.15
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82316
+  },
+  "on_click": true
+ },
+ {
+  "name": "Navigation aérienne",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.607569
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 85940
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien aux prestations de l'aviation civile",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 1.7038894
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 85949
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transports aériens, surveillance et certification",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.04573495
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 85970
+  },
+  "on_click": true
+ },
+ {
+  "name": "Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.776778
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 86045
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à la société concessionnaire de la liaison express entre Paris et l'aéroport Paris - Charles-de-Gaulle",
+  "value": [
+   {
+    "groupe": 46,
+    "value": null
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 86459
+  },
+  "on_click": false
+ }
+]

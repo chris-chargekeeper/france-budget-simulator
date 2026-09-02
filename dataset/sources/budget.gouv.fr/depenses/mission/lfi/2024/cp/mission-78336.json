@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Prêts et avances pour le logement des agents de l'État",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 5e-05
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 78339
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts pour le développement économique et social",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.075
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 78345
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à la société concessionnaire de la liaison express entre Paris et l'aéroport Paris-Charles de Gaulle",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.3672
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 78354
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts octroyés dans le cadre des programmes des investissements d'avenir",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.011
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 78360
+  },
+  "on_click": true
+ }
+]

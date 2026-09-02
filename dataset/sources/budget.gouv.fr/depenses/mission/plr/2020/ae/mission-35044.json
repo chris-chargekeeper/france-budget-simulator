@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Renforcement exceptionnel des participations financières de l'État dans le cadre de la crise sanitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.304
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 35059
+  },
+  "on_click": true
+ },
+ {
+  "name": "Compensation à la sécurité sociale des allègements de prélèvements pour les entreprises les plus touchées par la crise sanitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.9
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 35065
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prise en charge du dispositif exceptionnel de chômage partiel à la suite de la crise sanitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 17.806211
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 35047
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds de solidarité pour les entreprises à la suite de la crise sanitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 11.8099
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 35053
+  },
+  "on_click": true
+ }
+]

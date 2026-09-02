@@ -1,0 +1,122 @@
+[
+ {
+  "name": "Enseignement supérieur et recherche agricoles",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.424138228
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 84146
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement technique agricole",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.714737957
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82829
+  },
+  "on_click": true
+ },
+ {
+  "name": "Compétitivité et durabilité de l'agriculture, de l'agroalimentaire et de la forêt",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.324794871
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 79130
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sécurité et qualité sanitaires de l'alimentation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.92107904
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 79337
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage des politiques de l'agriculture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.715254439
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 79475
+  },
+  "on_click": true
+ },
+ {
+  "name": "Allègements du coût du travail en agriculture (TODE-AG)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.4485
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 79595
+  },
+  "on_click": true
+ },
+ {
+  "name": "Développement et transfert en agriculture",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.06793
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 86060
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche appliquée et innovation en agriculture",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.07807
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 86069
+  },
+  "on_click": true
+ }
+]

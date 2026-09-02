@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Création",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.0103540598
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 64608
+  },
+  "on_click": true
+ },
+ {
+  "name": "Patrimoines",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.2120978289000002
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 64671
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien aux politiques du ministère de la culture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.809801975
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 64782
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transmission des savoirs et démocratisation de la culture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.8334443283999999
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 64824
+  },
+  "on_click": true
+ }
+]

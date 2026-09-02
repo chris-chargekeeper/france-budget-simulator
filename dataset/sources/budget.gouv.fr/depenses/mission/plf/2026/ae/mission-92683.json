@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Régimes de retraite des mines, de la SEITA, et divers",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.059391993
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 92686
+  },
+  "on_click": true
+ },
+ {
+  "name": "Régimes de retraite et de sécurité sociale des marins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.8019467
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 92710
+  },
+  "on_click": true
+ },
+ {
+  "name": "Régimes sociaux et de retraite des transports terrestres",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.1226782
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 92716
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Écologie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": -0.0012109776199999973
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68001
+  },
+  "on_click": false
+ },
+ {
+  "name": "Compétitivité",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0989432784
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68031
+  },
+  "on_click": true
+ },
+ {
+  "name": "Cohésion",
+  "value": [
+   {
+    "groupe": 43,
+    "value": -0.0794399517
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68055
+  },
+  "on_click": false
+ }
+]

@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Intégration et accès à la nationalité française",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.47824933410000003
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 49438
+  },
+  "on_click": true
+ },
+ {
+  "name": "Immigration et asile",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.736853208
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 49489
+  },
+  "on_click": true
+ }
+]

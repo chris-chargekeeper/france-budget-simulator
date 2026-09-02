@@ -1,0 +1,61 @@
+{
+ "url": "https://www.budget.gouv.fr/budget-etat/smb",
+ "methode": "POST",
+ "parametres": {
+  "annee": 2020,
+  "type_budget": "solde",
+  "mois": "decembre"
+ },
+ "recupere": "2026-09-02",
+ "graphes": [
+  {
+   "uuid": "e146336a-6940-485f-a722-1da27d6e19af",
+   "type": "areachart",
+   "unit": "milliards d'€",
+   "url": null,
+   "data": "[{\"date\":\"2020-01-01T01:00:00+01:00\",\"2019\":-17.3,\"2020\":-20},{\"date\":\"2020-02-01T01:00:00+01:00\",\"2019\":-36.9,\"2020\":-34.3},{\"date\":\"2020-03-01T01:00:00+01:00\",\"2019\":-40.7,\"2020\":-52.5},{\"date\":\"2020-04-01T01:00:00+01:00\",\"2019\":-67.2,\"2020\":-92.1},{\"date\":\"2020-05-01T01:00:00+01:00\",\"2019\":-83.9,\"2020\":-117.9},{\"date\":\"2020-06-01T01:00:00+01:00\",\"2019\":-77.3,\"2020\":-124.9},{\"date\":\"2020-07-01T01:00:00+01:00\",\"2019\":-109.7,\"2020\":-151},{\"date\":\"2020-08-01T01:00:00+01:00\",\"2019\":-123.1,\"2020\":-165.7},{\"date\":\"2020-09-01T01:00:00+01:00\",\"2019\":-109,\"2020\":-161.6},{\"date\":\"2020-10-01T01:00:00+01:00\",\"2019\":-107.7,\"2020\":-159.9},{\"date\":\"2020-11-01T01:00:00+01:00\",\"2019\":-113.9,\"2020\":-176.8},{\"date\":\"2020-12-01T01:00:00+01:00\",\"2019\":-92.8,\"2020\":-178.1}]"
+  },
+  {
+   "uuid": "4bc7fd42-7a54-4b89-9285-074a21c37394",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2020\",\"children\":[],\"color\":\"#c62253\",\"value\":-178.1,\"additional_text\":\"+92%\"}"
+  },
+  {
+   "uuid": "cbe80094-1f13-4b21-bb18-8eed83ab796c",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2019\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#c62253\",\"color_text\":\"#545c6b\",\"value\":-92.8}"
+  },
+  {
+   "uuid": "b5e3b5a6-ff1a-482c-91d9-31daf562c121",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2020\",\"children\":[],\"color\":\"#c62253\",\"value\":-5.4,\"additional_text\":\"-233%\"}"
+  },
+  {
+   "uuid": "193ed843-765f-4d60-bf6c-f78908696af2",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2019\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#c62253\",\"color_text\":\"#545c6b\",\"value\":4.1}"
+  },
+  {
+   "uuid": "6a6aa234-2080-45f0-876b-d4d896993270",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2020\",\"children\":[],\"color\":\"#c62253\",\"value\":-172.7,\"additional_text\":\"+78%\"}"
+  },
+  {
+   "uuid": "746e455d-7633-4961-b822-ffb9e51ffc07",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2019\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#c62253\",\"color_text\":\"#545c6b\",\"value\":-96.9}"
+  }
+ ]
+}

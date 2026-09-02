@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Aide économique et financière au développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.92918934
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16509
+  },
+  "on_click": true
+ },
+ {
+  "name": "Solidarité à l'égard des pays en développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.703615415
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16580
+  },
+  "on_click": true
+ }
+]

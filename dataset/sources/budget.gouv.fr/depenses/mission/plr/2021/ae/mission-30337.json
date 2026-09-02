@@ -1,0 +1,107 @@
+[
+ {
+  "name": "Enseignement supérieur et recherche agricoles",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.35038600803
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30409
+  },
+  "on_click": true
+ },
+ {
+  "name": "Formations supérieures et recherche universitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 13.93460026236
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30340
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherches scientifiques et technologiques pluridisciplinaires",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 7.206551888
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30568
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.6758919490500004
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30478
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche et enseignement supérieur en matière économique et industrielle",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.3318884871
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30742
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche spatiale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.6147044
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30634
+  },
+  "on_click": true
+ },
+ {
+  "name": "Vie étudiante",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.0435814511
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30697
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Conduite et pilotage des politiques de l'intérieur",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.7129035464199998
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70857
+  },
+  "on_click": true
+ },
+ {
+  "name": "Vie politique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.35512602484
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 71037
+  },
+  "on_click": true
+ },
+ {
+  "name": "Administration territoriale de l'État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.59397747368
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 71088
+  },
+  "on_click": true
+ }
+]

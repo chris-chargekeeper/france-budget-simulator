@@ -1,0 +1,92 @@
+[
+ {
+  "name": "Création",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.782461655
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 6993
+  },
+  "on_click": true
+ },
+ {
+  "name": "Patrimoines",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.046290098
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 6992
+  },
+  "on_click": true
+ },
+ {
+  "name": "Presse et médias",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.284047155
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 6995
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche culturelle et culture scientifique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.110758625
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 6997
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transmission des savoirs et démocratisation de la culture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.26805867
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 6994
+  },
+  "on_click": true
+ },
+ {
+  "name": "Livre et industries culturelles",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.282011044
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 6996
+  },
+  "on_click": true
+ }
+]

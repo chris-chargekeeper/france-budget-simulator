@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Fonction publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.295519898
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 69639
+  },
+  "on_click": true
+ },
+ {
+  "name": "Performance et résilience des bâtiments de l'Etat et de ses opérateurs",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.165909003
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 69678
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transformation publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.3026498
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 69699
+  },
+  "on_click": true
+ },
+ {
+  "name": "Innovation et transformation numériques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0106
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 69714
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage de la transformation et de la fonction publiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.04439611
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 69723
+  },
+  "on_click": true
+ }
+]

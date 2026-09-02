@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Environnement et prospective de la politique de défense",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.784537603
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15822
+  },
+  "on_click": true
+ },
+ {
+  "name": "Équipement des forces",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 13.699365175
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15628
+  },
+  "on_click": true
+ },
+ {
+  "name": "Préparation et emploi des forces",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 13.266480828
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15785
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien de la politique de la défense",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 22.110480618
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15710
+  },
+  "on_click": true
+ }
+]

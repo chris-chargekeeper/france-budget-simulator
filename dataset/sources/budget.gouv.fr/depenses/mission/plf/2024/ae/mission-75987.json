@@ -1,0 +1,122 @@
+[
+ {
+  "name": "Recherches scientifiques et technologiques pluridisciplinaires",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.622693888
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 76113
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche spatiale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.9001797
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 76320
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche et enseignement supérieur en matière économique et industrielle",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.678136241
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 76281
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.88858371
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 76179
+  },
+  "on_click": true
+ },
+ {
+  "name": "Formations supérieures et recherche universitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 15.277048299
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 76044
+  },
+  "on_click": true
+ },
+ {
+  "name": "Vie étudiante",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.3574104
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 76383
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche duale (civile et militaire)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.1500191
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 76269
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement supérieur et recherche agricoles",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.445100445
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 75990
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.655824
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15099
+  },
+  "on_click": true
+ },
+ {
+  "name": "Désendettement de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.342696
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15101
+  },
+  "on_click": true
+ },
+ {
+  "name": "Structures et dispositifs de sécurité routière",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.3015675
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15094
+  },
+  "on_click": true
+ },
+ {
+  "name": "Contrôle et modernisation de la politique de la circulation et du stationnement routiers",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.0262
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15103
+  },
+  "on_click": true
+ }
+]

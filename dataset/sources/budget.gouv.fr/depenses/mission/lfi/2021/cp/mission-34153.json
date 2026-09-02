@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Coordination du travail gouvernemental",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.707361999
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 34156
+  },
+  "on_click": true
+ },
+ {
+  "name": "Protection des droits et libertés",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.103091751
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 34228
+  },
+  "on_click": true
+ },
+ {
+  "name": "Présidence française du Conseil de l'Union européenne en 2022",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.04680521
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 34264
+  },
+  "on_click": true
+ }
+]

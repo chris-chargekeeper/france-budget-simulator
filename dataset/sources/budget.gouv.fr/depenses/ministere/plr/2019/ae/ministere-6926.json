@@ -1,0 +1,242 @@
+[
+ {
+  "name": "Soutien des progrès de l'enseignement et de la recherche",
+  "value": [
+   {
+    "groupe": 43,
+    "value": -0.01
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7055
+  },
+  "on_click": false
+ },
+ {
+  "name": "Valorisation de la recherche",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.1203
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7056
+  },
+  "on_click": true
+ },
+ {
+  "name": "Accélération de la modernisation des entreprises",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.3597
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7057
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conseil économique, social et environnemental",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.04682079
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7049
+  },
+  "on_click": true
+ },
+ {
+  "name": "Cour des comptes et autres juridictions financières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.230813228
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7050
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conseil d'État et autres juridictions administratives",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.407332315
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7048
+  },
+  "on_click": true
+ },
+ {
+  "name": "Haut Conseil des finances publiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.000337099
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7051
+  },
+  "on_click": true
+ },
+ {
+  "name": "Coordination du travail gouvernemental",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.603695005
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7052
+  },
+  "on_click": true
+ },
+ {
+  "name": "Protection des droits et libertés",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.094680005
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7053
+  },
+  "on_click": true
+ },
+ {
+  "name": "Moyens mutualisés des administrations déconcentrées",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.591432261
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7054
+  },
+  "on_click": true
+ },
+ {
+  "name": "Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la seconde guerre mondiale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.104186467
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7046
+  },
+  "on_click": true
+ },
+ {
+  "name": "Égalité entre les femmes et les hommes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.030589053
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7059
+  },
+  "on_click": true
+ },
+ {
+  "name": "Handicap et dépendance",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 11.99573757
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7058
+  },
+  "on_click": true
+ },
+ {
+  "name": "Interventions territoriales de l'État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.038519297
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7047
+  },
+  "on_click": true
+ },
+ {
+  "name": "Édition et diffusion",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.0394502
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7111
+  },
+  "on_click": true
+ },
+ {
+  "name": "Pilotage et ressources humaines",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.10061456
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7112
+  },
+  "on_click": true
+ }
+]

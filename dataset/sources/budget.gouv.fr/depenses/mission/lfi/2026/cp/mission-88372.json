@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Conseil économique, social et environnemental",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.034002596
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 88375
+  },
+  "on_click": true
+ },
+ {
+  "name": "Cour des comptes et autres juridictions financières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.266591512
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 88390
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conseil d'État et autres juridictions administratives",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.565522595
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 88420
+  },
+  "on_click": true
+ }
+]

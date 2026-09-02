@@ -1,0 +1,707 @@
+[
+ {
+  "name": "Justice",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.605886284
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 5410
+  },
+  "on_click": true
+ },
+ {
+  "name": "Travail et emploi",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 14.948723614
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6358
+  },
+  "on_click": true
+ },
+ {
+  "name": "Immigration, asile et intégration",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.554919673
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 5337
+  },
+  "on_click": true
+ },
+ {
+  "name": "Action extérieure de l'État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.963386784
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 3707
+  },
+  "on_click": true
+ },
+ {
+  "name": "Cohésion des territoires",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 17.826000394
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 3992
+  },
+  "on_click": true
+ },
+ {
+  "name": "Aide publique au développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.632804755
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 3931
+  },
+  "on_click": true
+ },
+ {
+  "name": "Écologie, développement et mobilité durables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 13.517421887
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 4595
+  },
+  "on_click": true
+ },
+ {
+  "name": "Engagements financiers de l'État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 42.119292561
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 4804
+  },
+  "on_click": true
+ },
+ {
+  "name": "Relations avec les collectivités territoriales",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.571854742
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 5998
+  },
+  "on_click": true
+ },
+ {
+  "name": "Outre-mer",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.113521355
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 5641
+  },
+  "on_click": true
+ },
+ {
+  "name": "Solidarité, insertion et égalité des chances",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 19.846656326
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6211
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conseil et contrôle de l'État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.66504096
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 4128
+  },
+  "on_click": true
+ },
+ {
+  "name": "Direction de l'action du Gouvernement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.386332627
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 4474
+  },
+  "on_click": true
+ },
+ {
+  "name": "Culture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.912996088
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 4225
+  },
+  "on_click": true
+ },
+ {
+  "name": "Économie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.812103751
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 4730
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement scolaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 71.661097357
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 4879
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche et enseignement supérieur",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 27.578624951
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 5674
+  },
+  "on_click": true
+ },
+ {
+  "name": "Défense",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 43.286555147
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 4316
+  },
+  "on_click": true
+ },
+ {
+  "name": "Gestion des finances publiques et des ressources humaines",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 10.761923963
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 5224
+  },
+  "on_click": true
+ },
+ {
+  "name": "Agriculture, alimentation, forêt et affaires rurales",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.442254521
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 3846
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sécurités",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 19.884459265
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6072
+  },
+  "on_click": true
+ },
+ {
+  "name": "Anciens combattants, mémoire et liens avec la nation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.432818249
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 3961
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sport, jeunesse et vie associative",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.93599324
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6298
+  },
+  "on_click": true
+ },
+ {
+  "name": "Médias, livre et industries culturelles",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.547398381
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 5594
+  },
+  "on_click": true
+ },
+ {
+  "name": "Santé",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.337776796
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6032
+  },
+  "on_click": true
+ },
+ {
+  "name": "Régimes sociaux et de retraite",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.44795196
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 5938
+  },
+  "on_click": true
+ },
+ {
+  "name": "Administration générale et territoriale de l'État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.821620006
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 3778
+  },
+  "on_click": true
+ },
+ {
+  "name": "Action et transformation publiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.001844472
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 3688
+  },
+  "on_click": true
+ },
+ {
+  "name": "Investissements d'avenir",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.113
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 5366
+  },
+  "on_click": true
+ },
+ {
+  "name": "Pouvoirs publics",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.9917429
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 5665
+  },
+  "on_click": true
+ },
+ {
+  "name": "Contrôle et exploitation aériens",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 2.17421222
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6486
+  },
+  "on_click": true
+ },
+ {
+  "name": "Publications officielles et information administrative",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.14655471
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6551
+  },
+  "on_click": true
+ },
+ {
+  "name": "Gestion du patrimoine immobilier de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.480626613
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6650
+  },
+  "on_click": true
+ },
+ {
+  "name": "Participations financières de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 3.9919642
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6662
+  },
+  "on_click": true
+ },
+ {
+  "name": "Pensions",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 58.50503751
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6685
+  },
+  "on_click": true
+ },
+ {
+  "name": "Contrôle de la circulation et du stationnement routiers",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 1.466397095
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6590
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transition énergétique",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 6.571192268
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6735
+  },
+  "on_click": true
+ },
+ {
+  "name": "Développement agricole et rural",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.131220329
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6610
+  },
+  "on_click": true
+ },
+ {
+  "name": "Services nationaux de transport conventionnés de voyageurs",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.707982823
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6718
+  },
+  "on_click": true
+ },
+ {
+  "name": "Financement national du développement et de la modernisation de l'apprentissage",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 1.689939699
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6643
+  },
+  "on_click": true
+ },
+ {
+  "name": "Aides à l'acquisition de véhicules propres",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.55081831
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6584
+  },
+  "on_click": true
+ },
+ {
+  "name": "Financement des aides aux collectivités pour l'électrification rurale",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.349443555
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6620
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à divers services de l'État ou organismes gérant des services publics",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 14.9962
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6748
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances aux collectivités territoriales",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 103.92984
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6889
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à l'audiovisuel public",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 3.8946235
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6761
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à des États étrangers",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 1.216221
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6898
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts et avances à des particuliers ou à des organismes privés",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.067623359
+   }
+  ],
+  "category": {
+   "type": "mission",
+   "type_name": "Mission",
+   "id": 6909
+  },
+  "on_click": true
+ }
+]

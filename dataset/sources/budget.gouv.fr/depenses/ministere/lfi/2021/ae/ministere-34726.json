@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Formations supérieures et recherche universitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 13.90478809
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30340
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherches scientifiques et technologiques pluridisciplinaires",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 7.315304797
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30568
+  },
+  "on_click": true
+ },
+ {
+  "name": "Vie étudiante",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.90188039
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30697
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Développement des entreprises et régulations",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.905455355
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7061
+  },
+  "on_click": true
+ },
+ {
+  "name": "Statistiques et études économiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.441644458
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7063
+  },
+  "on_click": true
+ },
+ {
+  "name": "Stratégie économique et fiscale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.420755882
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7064
+  },
+  "on_click": true
+ },
+ {
+  "name": "Plan France Très haut débit",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.175868
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7062
+  },
+  "on_click": true
+ }
+]

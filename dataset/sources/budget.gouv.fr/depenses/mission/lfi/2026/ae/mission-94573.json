@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 9
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 94576
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à des organismes distincts de l'État et gérant des services publics",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.21
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 94582
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts et avances à des services de l'État",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.03
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 94588
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à l'Office national d'indemnisation des accidents médicaux, des affections iatrogènes et des infections nosocomiales (ONIAM) au titre de l'indemnisation des victimes du Benfluorex",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.015
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 94594
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à FranceAgriMer au titre des préfinancements de fonds européens",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.04
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 94618
+  },
+  "on_click": true
+ }
+]

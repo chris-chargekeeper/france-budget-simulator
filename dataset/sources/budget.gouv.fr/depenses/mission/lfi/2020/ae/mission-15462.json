@@ -1,0 +1,92 @@
+[
+ {
+  "name": "Accès au droit et à la justice",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.53051303
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15522
+  },
+  "on_click": true
+ },
+ {
+  "name": "Administration pénitentiaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.582389926
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15463
+  },
+  "on_click": true
+ },
+ {
+  "name": "Justice judiciaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.610305336
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15468
+  },
+  "on_click": true
+ },
+ {
+  "name": "Protection judiciaire de la jeunesse",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.93093357
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15494
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage de la politique de la justice",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.452275801
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15530
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conseil supérieur de la magistrature",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.005974307
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15552
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Écologie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.2150764558400002
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 84023
+  },
+  "on_click": true
+ },
+ {
+  "name": "Compétitivité",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.2712877955
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 84053
+  },
+  "on_click": true
+ }
+]

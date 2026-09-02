@@ -1,0 +1,92 @@
+[
+ {
+  "name": "Patrimoines",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.010443018
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 33412
+  },
+  "on_click": true
+ },
+ {
+  "name": "Création",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.886086259
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 33523
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien aux politiques du ministère de la culture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.75616779
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 33586
+  },
+  "on_click": true
+ },
+ {
+  "name": "Presse et médias",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.288559154
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 32272
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transmission des savoirs et démocratisation de la culture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.583739065
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 33628
+  },
+  "on_click": true
+ },
+ {
+  "name": "Livre et industries culturelles",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.33672902
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 32341
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Avances aux collectivités et établissements publics, et à la Nouvelle-Calédonie",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.006
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70371
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 124.824794
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70386
+  },
+  "on_click": true
+ }
+]

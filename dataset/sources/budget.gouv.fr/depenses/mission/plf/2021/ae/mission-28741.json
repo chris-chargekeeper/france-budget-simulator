@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Innovation et transformation numériques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0106
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28804
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds pour la transformation de l'action publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.05
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28792
+  },
+  "on_click": true
+ },
+ {
+  "name": "Rénovation des cités administratives et autres sites domaniaux multi-occupants",
+  "value": [
+   {
+    "groupe": 43,
+    "value": null
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28780
+  },
+  "on_click": false
+ },
+ {
+  "name": "Fonds d'accompagnement interministériel Ressources humaines",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.05
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28798
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonction publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.22448688
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28744
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Enseignement privé du premier et du second degrés",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.918233985
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82586
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement scolaire public du premier degré",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 27.469502856
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82652
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement scolaire public du second degré",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 39.453700303
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82730
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien de la politique de l'éducation nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.987215621
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82967
+  },
+  "on_click": true
+ },
+ {
+  "name": "Vie de l'élève",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.110322578
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 83072
+  },
+  "on_click": true
+ }
+]

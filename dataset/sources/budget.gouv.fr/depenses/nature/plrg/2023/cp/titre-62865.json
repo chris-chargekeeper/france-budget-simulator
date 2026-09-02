@@ -1,0 +1,30 @@
+[
+ {
+  "name": "Intérêt de la dette financière négociable",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.0196155
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 62868
+  }
+ },
+ {
+  "name": "Charges financières diverses",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 54.77964111721
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 62874
+  }
+ }
+]

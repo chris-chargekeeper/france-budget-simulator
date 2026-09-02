@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Concours financiers aux collectivités territoriales et à leurs groupements",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.71179
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 76488
+  },
+  "on_click": true
+ },
+ {
+  "name": "Concours spécifiques et administration",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.249601211
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 76635
+  },
+  "on_click": true
+ }
+]

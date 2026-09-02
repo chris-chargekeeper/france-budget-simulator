@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Formations supérieures et recherche universitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 13.7380494
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14884
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherches scientifiques et technologiques pluridisciplinaires",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.959996597
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14977
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche spatiale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.0336246
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14999
+  },
+  "on_click": true
+ },
+ {
+  "name": "Vie étudiante",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.76393808
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15020
+  },
+  "on_click": true
+ }
+]

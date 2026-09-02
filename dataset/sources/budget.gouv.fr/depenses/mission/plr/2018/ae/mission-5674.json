@@ -1,0 +1,137 @@
+[
+ {
+  "name": "Enseignement supérieur et recherche agricoles",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.339174305
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16529
+  },
+  "on_click": true
+ },
+ {
+  "name": "Formations supérieures et recherche universitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 13.420737894
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16537
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherches scientifiques et technologiques pluridisciplinaires",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.649808702
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16554
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche culturelle et culture scientifique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.110884686
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16565
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.743902463
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16566
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche duale (civile et militaire)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.17468075
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16567
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche et enseignement supérieur en matière économique et industrielle",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.793539023
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16568
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche spatiale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.5976648
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16569
+  },
+  "on_click": true
+ },
+ {
+  "name": "Vie étudiante",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.64374817
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16591
+  },
+  "on_click": true
+ }
+]

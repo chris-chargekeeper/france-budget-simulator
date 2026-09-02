@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Électrification rurale",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.348443616
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16646
+  },
+  "on_click": true
+ },
+ {
+  "name": "Opérations de maîtrise de la demande d’électricité, de production d’électricité par des énergies renouvelables ou de production de proximité dans les zones non interconnectées, déclarations d’utilité publique et intempéries",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.000999939
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16647
+  },
+  "on_click": true
+ }
+]

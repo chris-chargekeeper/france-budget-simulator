@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Conduite et soutien des politiques sanitaires et sociales",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.2288599325999998
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77202
+  },
+  "on_click": true
+ },
+ {
+  "name": "Handicap et dépendance",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 15.31705479
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77265
+  },
+  "on_click": true
+ },
+ {
+  "name": "Inclusion sociale et protection des personnes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 14.31274547734
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77292
+  },
+  "on_click": true
+ }
+]

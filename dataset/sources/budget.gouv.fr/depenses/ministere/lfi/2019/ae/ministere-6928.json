@@ -1,0 +1,332 @@
+[
+ {
+  "name": "Paysages, eau et biodiversité",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.16410081
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7074
+  },
+  "on_click": true
+ },
+ {
+  "name": "Expertise, économie sociale et solidaire, information géographique et météorologie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.51300176
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7075
+  },
+  "on_click": true
+ },
+ {
+  "name": "Énergie, climat et après-mines",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.99613025
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7077
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prévention des risques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.838328874
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7076
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.76326411
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7080
+  },
+  "on_click": true
+ },
+ {
+  "name": "Régimes de retraite et de sécurité sociale des marins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.815698
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7082
+  },
+  "on_click": true
+ },
+ {
+  "name": "Régimes sociaux et de retraite des transports terrestres",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.163495
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7081
+  },
+  "on_click": true
+ },
+ {
+  "name": "Infrastructures et services de transports",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.365604466
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7072
+  },
+  "on_click": true
+ },
+ {
+  "name": "Affaires maritimes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.163055275
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7073
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.955851896
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7079
+  },
+  "on_click": true
+ },
+ {
+  "name": "Service public de l'énergie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.297502232
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7078
+  },
+  "on_click": true
+ },
+ {
+  "name": "Navigation aérienne",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.572223
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7114
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien aux prestations de l'aviation civile",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 1.50744
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7113
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transports aériens, surveillance et certification",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.042371
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7115
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien à la transition énergétique",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 5.4404
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7137
+  },
+  "on_click": true
+ },
+ {
+  "name": "Engagements financiers liés à la transition énergétique",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 1.839
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7138
+  },
+  "on_click": true
+ },
+ {
+  "name": "Exploitation des services nationaux de transport conventionnés",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.2862
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7135
+  },
+  "on_click": true
+ },
+ {
+  "name": "Matériel roulant des services nationaux de transport conventionnés",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.073
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7136
+  },
+  "on_click": true
+ },
+ {
+  "name": "Électrification rurale",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.3552
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7133
+  },
+  "on_click": true
+ },
+ {
+  "name": "Opérations de maîtrise de la demande d’électricité, de production d’électricité par des énergies renouvelables ou de production de proximité dans les zones non interconnectées",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.0048
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7134
+  },
+  "on_click": true
+ },
+ {
+  "name": null,
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.264
+   }
+  ],
+  "category": {
+   "type": null,
+   "type_name": null,
+   "id": ""
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à la société concessionnaire de la liaison express entre Paris et l'aéroport Paris-Charles de Gaulle",
+  "value": [
+   {
+    "groupe": 46,
+    "value": null
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7163
+  },
+  "on_click": false
+ }
+]

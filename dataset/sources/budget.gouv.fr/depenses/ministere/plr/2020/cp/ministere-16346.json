@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Protection maladie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.936048695
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14796
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prévention, sécurité sanitaire et offre de soins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.787985092
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14757
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et soutien des politiques sanitaires, sociales, du sport, de la jeunesse et de la vie associative",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.324688505
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14360
+  },
+  "on_click": true
+ },
+ {
+  "name": "Inclusion sociale et protection des personnes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 14.590787322
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14389
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,167 @@
+[
+ {
+  "name": "Intégration et accès à la nationalité française",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.437505274
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14176
+  },
+  "on_click": true
+ },
+ {
+  "name": "Gendarmerie nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 9.766811146
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14850
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sécurité civile",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.492819054
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14800
+  },
+  "on_click": true
+ },
+ {
+  "name": "Police nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 11.069772412
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14825
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sécurité et éducation routières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.04298874
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14867
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage des politiques de l'intérieur",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.351003433
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16056
+  },
+  "on_click": true
+ },
+ {
+  "name": "Vie politique, cultuelle et associative",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.242179486
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16035
+  },
+  "on_click": true
+ },
+ {
+  "name": "Immigration et asile",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.4960609
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14194
+  },
+  "on_click": true
+ },
+ {
+  "name": "Administration territoriale de l'État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.45953595
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16110
+  },
+  "on_click": true
+ },
+ {
+  "name": "Structures et dispositifs de sécurité routière",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.339543
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15094
+  },
+  "on_click": true
+ },
+ {
+  "name": "Contrôle et modernisation de la politique de la circulation et du stationnement routiers",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.0262
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15103
+  },
+  "on_click": true
+ }
+]

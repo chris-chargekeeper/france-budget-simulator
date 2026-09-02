@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Soutien à la transition énergétique",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 5.836223277
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14313
+  },
+  "on_click": true
+ },
+ {
+  "name": "Engagements financiers liés à la transition énergétique",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.8968
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14320
+  },
+  "on_click": true
+ }
+]

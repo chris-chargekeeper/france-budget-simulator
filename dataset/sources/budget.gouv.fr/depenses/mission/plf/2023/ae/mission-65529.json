@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Coordination du travail gouvernemental",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.810564598
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 65532
+  },
+  "on_click": true
+ },
+ {
+  "name": "Protection des droits et libertés",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.127164078
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 65604
+  },
+  "on_click": true
+ }
+]

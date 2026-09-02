@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Avances remboursables de droits de mutation à titre onéreux destinées à soutenir les départements et d'autres collectivités affectés par les conséquences économiques de l'épidémie de covid-19",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.352165
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 35137
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 108.185600184
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 13901
+  },
+  "on_click": true
+ }
+]

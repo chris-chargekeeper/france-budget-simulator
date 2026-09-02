@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Fonction publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.24936260356999998
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 85586
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transformation publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.03896690958
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 85643
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage de la transformation et de la fonction publiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.050972928
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 85655
+  },
+  "on_click": true
+ }
+]

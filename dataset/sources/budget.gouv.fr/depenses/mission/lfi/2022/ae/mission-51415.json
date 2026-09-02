@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Gendarmerie nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 9.941157892
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51418
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sécurité civile",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.677992541
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51469
+  },
+  "on_click": true
+ },
+ {
+  "name": "Police nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 11.999250059
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51538
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sécurité et éducation routières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.051026136
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51610
+  },
+  "on_click": true
+ }
+]

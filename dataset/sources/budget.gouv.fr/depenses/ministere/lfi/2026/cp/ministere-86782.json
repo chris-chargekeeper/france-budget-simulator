@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Jeunesse et vie associative",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.647015352
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 93622
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sport",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.548252867
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 93637
+  },
+  "on_click": true
+ },
+ {
+  "name": "Jeux olympiques et paralympiques d'hiver 2030",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.06362847
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 93658
+  },
+  "on_click": true
+ }
+]

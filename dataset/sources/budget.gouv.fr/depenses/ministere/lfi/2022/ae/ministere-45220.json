@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Impulsion et coordination de la politique d'aménagement du territoire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.2442347
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 46315
+  },
+  "on_click": true
+ },
+ {
+  "name": "Concours financiers aux collectivités territoriales et à leurs groupements",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.6574
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 50956
+  },
+  "on_click": true
+ },
+ {
+  "name": "Concours spécifiques et administration",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.25929613
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51097
+  },
+  "on_click": true
+ },
+ {
+  "name": "Politique de la ville",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.557981196
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 46555
+  },
+  "on_click": true
+ },
+ {
+  "name": "Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.600462
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 52294
+  },
+  "on_click": true
+ }
+]

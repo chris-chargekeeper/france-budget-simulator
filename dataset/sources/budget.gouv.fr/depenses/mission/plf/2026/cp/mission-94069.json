@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Pilotage et ressources humaines",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.10368489
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 94093
+  },
+  "on_click": true
+ },
+ {
+  "name": "Édition et diffusion",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.04372886
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 94072
+  },
+  "on_click": true
+ }
+]

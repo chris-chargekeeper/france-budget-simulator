@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Protection maladie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.00203442286
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30085
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prévention, sécurité sanitaire et offre de soins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.4931731579
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 29968
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et soutien des politiques sanitaires et sociales",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.1764607283
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28816
+  },
+  "on_click": true
+ },
+ {
+  "name": "Inclusion sociale et protection des personnes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 12.4258290358
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28900
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prise en charge par l'Etat du financement de l'indemnité inflation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 52879
+  },
+  "on_click": true
+ }
+]

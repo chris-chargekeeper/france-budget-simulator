@@ -1,0 +1,92 @@
+[
+ {
+  "name": "Reconnaissance et réparation en faveur du monde combattant, mémoire et liens avec la Nation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.8566481191600002
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 63909
+  },
+  "on_click": true
+ },
+ {
+  "name": "Environnement et prospective de la politique de défense",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.9000363293
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 64899
+  },
+  "on_click": true
+ },
+ {
+  "name": "Équipement des forces",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 20.246762316710004
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 64929
+  },
+  "on_click": true
+ },
+ {
+  "name": "Préparation et emploi des forces",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 15.39234829008
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 65190
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien de la politique de la défense",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 23.621563245919997
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 65301
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche duale (civile et militaire)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.15001913
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68430
+  },
+  "on_click": true
+ }
+]

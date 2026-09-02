@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 123.816874
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70386
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances remboursables de droits de mutation à titre onéreux destinées à soutenir les départements et d'autres collectivités affectés par les conséquences économiques de l'épidémie de covid-19",
+  "value": [
+   {
+    "groupe": 46,
+    "value": -0.00136415
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70401
+  },
+  "on_click": false
+ }
+]

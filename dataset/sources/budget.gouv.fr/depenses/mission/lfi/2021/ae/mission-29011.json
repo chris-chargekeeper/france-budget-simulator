@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Sport",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.433130366
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 29014
+  },
+  "on_click": true
+ },
+ {
+  "name": "Jeux olympiques et paralympiques 2024",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.35470024
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 29050
+  },
+  "on_click": true
+ },
+ {
+  "name": "Jeunesse et vie associative",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.69322899
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 29035
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 14.0128
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16648
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à des organismes distincts de l'État et gérant des services publics",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.143376
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16649
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à des services de l'État",
+  "value": [
+   {
+    "groupe": 46,
+    "value": -0.006
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16650
+  },
+  "on_click": false
+ }
+]

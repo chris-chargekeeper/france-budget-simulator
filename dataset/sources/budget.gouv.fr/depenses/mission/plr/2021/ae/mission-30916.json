@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Structures et dispositifs de sécurité routière",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.34736090874000003
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30919
+  },
+  "on_click": true
+ },
+ {
+  "name": "Contrôle et modernisation de la politique de la circulation et du stationnement routiers",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.0262
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30946
+  },
+  "on_click": true
+ },
+ {
+  "name": "Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.412053
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30934
+  },
+  "on_click": true
+ },
+ {
+  "name": "Désendettement de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.458946
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30940
+  },
+  "on_click": true
+ }
+]

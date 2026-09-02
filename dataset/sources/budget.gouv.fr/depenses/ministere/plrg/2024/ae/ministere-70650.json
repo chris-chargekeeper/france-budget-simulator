@@ -1,0 +1,257 @@
+[
+ {
+  "name": "Édition et diffusion",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.0393539456
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77883
+  },
+  "on_click": true
+ },
+ {
+  "name": "Pilotage et ressources humaines",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.10207313135
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77904
+  },
+  "on_click": true
+ },
+ {
+  "name": "Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la seconde guerre mondiale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0768130139
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 71694
+  },
+  "on_click": true
+ },
+ {
+  "name": "Interventions territoriales de l'État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.1035049487
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 72105
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conseil économique, social et environnemental",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.046218325
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 72315
+  },
+  "on_click": true
+ },
+ {
+  "name": "Cour des comptes et autres juridictions financières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.25090501982999996
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 72330
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conseil d'État et autres juridictions administratives",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.5196357769700001
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 72360
+  },
+  "on_click": true
+ },
+ {
+  "name": "Coordination du travail gouvernemental",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.842347344
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 73332
+  },
+  "on_click": true
+ },
+ {
+  "name": "Protection des droits et libertés",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.13315667165
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 73407
+  },
+  "on_click": true
+ },
+ {
+  "name": "Affaires maritimes, pêche et aquaculture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.33876600343
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 73830
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien des progrès de l'enseignement et de la recherche",
+  "value": [
+   {
+    "groupe": 43,
+    "value": null
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 75129
+  },
+  "on_click": false
+ },
+ {
+  "name": "Valorisation de la recherche",
+  "value": [
+   {
+    "groupe": 43,
+    "value": null
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 75153
+  },
+  "on_click": false
+ },
+ {
+  "name": "Accélération de la modernisation des entreprises",
+  "value": [
+   {
+    "groupe": 43,
+    "value": -0.09
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 75171
+  },
+  "on_click": false
+ },
+ {
+  "name": "Financement des investissements stratégiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.347136512
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 75201
+  },
+  "on_click": true
+ },
+ {
+  "name": "Financement structurel des écosystèmes d'innovation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.395
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 75222
+  },
+  "on_click": true
+ },
+ {
+  "name": "Régimes de retraite et de sécurité sociale des marins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.7744861
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 76452
+  },
+  "on_click": true
+ },
+ {
+  "name": "Égalité entre les femmes et les hommes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.1008410958
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77250
+  },
+  "on_click": true
+ }
+]

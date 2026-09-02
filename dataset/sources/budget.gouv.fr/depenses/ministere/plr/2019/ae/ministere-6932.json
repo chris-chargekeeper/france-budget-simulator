@@ -1,0 +1,107 @@
+[
+ {
+  "name": "Concours financiers aux collectivités territoriales et à leurs groupements",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.649279976
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7034
+  },
+  "on_click": true
+ },
+ {
+  "name": "Concours spécifiques et administration",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.197133122
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7035
+  },
+  "on_click": true
+ },
+ {
+  "name": "Aide à l'accès au logement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 14.06958603
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7094
+  },
+  "on_click": true
+ },
+ {
+  "name": "Impulsion et coordination de la politique d'aménagement du territoire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.182360038
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7096
+  },
+  "on_click": true
+ },
+ {
+  "name": "Urbanisme, territoires et amélioration de l'habitat",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.688052781
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7095
+  },
+  "on_click": true
+ },
+ {
+  "name": "Politique de la ville",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.471625562
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7097
+  },
+  "on_click": true
+ },
+ {
+  "name": "Hébergement, parcours vers le logement et insertion des personnes vulnérables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.091682621
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7093
+  },
+  "on_click": true
+ }
+]

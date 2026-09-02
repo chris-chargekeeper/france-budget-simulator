@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la seconde guerre mondiale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.105904648
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7046
+  },
+  "on_click": true
+ },
+ {
+  "name": "Liens entre la Nation et son armée",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.03370307
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7104
+  },
+  "on_click": true
+ },
+ {
+  "name": "Reconnaissance et réparation en faveur du monde combattant",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.1622673
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7105
+  },
+  "on_click": true
+ }
+]

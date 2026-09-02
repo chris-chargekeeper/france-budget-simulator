@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Dépenses accidentelles et imprévisibles",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.124
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 46936
+  },
+  "on_click": true
+ },
+ {
+  "name": "Provision relative aux rémunérations publiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.323667
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 46930
+  },
+  "on_click": true
+ }
+]

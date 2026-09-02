@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Contribution au financement de l'attribution d'aides à l'acquisition de véhicules propres au bénéfice des particuliers",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.1522784
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 20699
+  },
+  "on_click": true
+ },
+ {
+  "name": "Contribution au financement de l'attribution d'aides à l'acquisition de véhicules propres au bénéfice des personnes morales",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.176
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 20705
+  },
+  "on_click": true
+ }
+]

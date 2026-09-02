@@ -1,0 +1,305 @@
+[
+ {
+  "name": "Justice",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 10.031401501
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 16344
+  },
+  "on_click": true
+ },
+ {
+  "name": "Services du Premier ministre",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 14.953477812
+   },
+   {
+    "groupe": 46,
+    "value": 0.2
+   },
+   {
+    "groupe": 44,
+    "value": 0.12844613
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 16349
+  },
+  "on_click": true
+ },
+ {
+  "name": "Économie et finances",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 56.756951615
+   },
+   {
+    "groupe": 45,
+    "value": 12.181642207
+   },
+   {
+    "groupe": 46,
+    "value": 11.79058387
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 16337
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transition écologique et solidaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 23.650001712
+   },
+   {
+    "groupe": 45,
+    "value": 7.382991633
+   },
+   {
+    "groupe": 46,
+    "value": null
+   },
+   {
+    "groupe": 44,
+    "value": 2.09935648
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 16347
+  },
+  "on_click": true
+ },
+ {
+  "name": "Travail",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 30.735287338
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 16350
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement supérieur, recherche et innovation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 25.449203892
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 16338
+  },
+  "on_click": true
+ },
+ {
+  "name": "Outre-mer",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.382298436
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 16335
+  },
+  "on_click": true
+ },
+ {
+  "name": "Cohésion des territoires et relations avec les collectivités territoriales",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 22.097978748
+   },
+   {
+    "groupe": 45,
+    "value": 0.656815
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 16339
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sports",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.367696416
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 16345
+  },
+  "on_click": true
+ },
+ {
+  "name": "Solidarités et santé",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 17.74465965
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 16346
+  },
+  "on_click": true
+ },
+ {
+  "name": "Armées",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 53.063893523
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 16348
+  },
+  "on_click": true
+ },
+ {
+  "name": "Europe et affaires étrangères",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 5.693334571
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 34954
+  },
+  "on_click": true
+ },
+ {
+  "name": "Culture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.417750883
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 34957
+  },
+  "on_click": true
+ },
+ {
+  "name": "Agriculture et alimentation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.766149629
+   },
+   {
+    "groupe": 45,
+    "value": 0.135456958
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 34960
+  },
+  "on_click": true
+ },
+ {
+  "name": "Éducation nationale et jeunesse",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 73.264221196
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 34963
+  },
+  "on_click": true
+ },
+ {
+  "name": "Action et comptes publics",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 24.641706661
+   },
+   {
+    "groupe": 45,
+    "value": 60.284448952
+   },
+   {
+    "groupe": 46,
+    "value": 111.974626284
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 34966
+  },
+  "on_click": true
+ },
+ {
+  "name": "Intérieur",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 26.675175382
+   },
+   {
+    "groupe": 45,
+    "value": 0.338367649
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 34969
+  },
+  "on_click": true
+ }
+]

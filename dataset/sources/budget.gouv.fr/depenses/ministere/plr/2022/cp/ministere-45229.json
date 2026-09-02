@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Reconnaissance et réparation en faveur du monde combattant, mémoire et liens avec la Nation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.98604804596
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 46234
+  },
+  "on_click": true
+ },
+ {
+  "name": "Environnement et prospective de la politique de défense",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.8399475791
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 47236
+  },
+  "on_click": true
+ },
+ {
+  "name": "Équipement des forces",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 14.58014724518
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 47266
+  },
+  "on_click": true
+ },
+ {
+  "name": "Préparation et emploi des forces",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 12.516308188680002
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 47527
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien de la politique de la défense",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 22.791201808309996
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 47638
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,46 @@
+[
+ {
+  "name": "Dépenses de fonctionnement autres que celles de personnel",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 28.772930781
+   },
+   {
+    "groupe": 45,
+    "value": 0.9355306
+   },
+   {
+    "groupe": 46,
+    "value": null
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 8124
+  }
+ },
+ {
+  "name": "Subventions pour charges de service public",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 28.926090831
+   },
+   {
+    "groupe": 45,
+    "value": 0.1022
+   },
+   {
+    "groupe": 46,
+    "value": null
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 8125
+  }
+ }
+]

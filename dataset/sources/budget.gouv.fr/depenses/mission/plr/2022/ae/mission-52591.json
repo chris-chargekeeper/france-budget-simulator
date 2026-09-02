@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 8.08106
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 52594
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à des organismes distincts de l'État et gérant des services publics",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.0382027
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 52600
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à des services de l'État",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.352
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 52606
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances aux exploitants d'aéroports touchés par la crise de covid-19 au titre des dépenses de sûreté-sécurité",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.149895
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 52618
+  },
+  "on_click": true
+ }
+]

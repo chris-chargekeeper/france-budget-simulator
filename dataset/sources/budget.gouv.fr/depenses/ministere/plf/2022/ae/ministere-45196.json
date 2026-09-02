@@ -1,0 +1,167 @@
+[
+ {
+  "name": "Administration territoriale de l'État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.465738709
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 45631
+  },
+  "on_click": true
+ },
+ {
+  "name": "Vie politique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.492888404
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 45583
+  },
+  "on_click": true
+ },
+ {
+  "name": "Police nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 12.004802059
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51538
+  },
+  "on_click": true
+ },
+ {
+  "name": "Immigration et asile",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.55852894
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 49489
+  },
+  "on_click": true
+ },
+ {
+  "name": "Gendarmerie nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 9.947257892
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51418
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage des politiques de l'intérieur",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.452884462
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 45409
+  },
+  "on_click": true
+ },
+ {
+  "name": "Intégration et accès à la nationalité française",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.438660922
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 49438
+  },
+  "on_click": true
+ },
+ {
+  "name": "Contrôle et modernisation de la politique de la circulation et du stationnement routiers",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.0262
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 52288
+  },
+  "on_click": true
+ },
+ {
+  "name": "Structures et dispositifs de sécurité routière",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.3399503
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 52273
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sécurité civile",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.678492541
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51469
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sécurité et éducation routières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.054882036
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51610
+  },
+  "on_click": true
+ }
+]

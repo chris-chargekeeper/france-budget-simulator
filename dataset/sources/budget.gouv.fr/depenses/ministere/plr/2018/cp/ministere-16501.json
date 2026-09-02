@@ -1,0 +1,107 @@
+[
+ {
+  "name": "Environnement et prospective de la politique de défense",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.394974555
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16531
+  },
+  "on_click": true
+ },
+ {
+  "name": "Équipement des forces",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 10.009682986
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16533
+  },
+  "on_click": true
+ },
+ {
+  "name": "Liens entre la Nation et son armée",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.040355023
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16551
+  },
+  "on_click": true
+ },
+ {
+  "name": "Reconnaissance et réparation en faveur du monde combattant",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.2965638
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16553
+  },
+  "on_click": true
+ },
+ {
+  "name": "Préparation et emploi des forces",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.962769417
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16559
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche duale (civile et militaire)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.17468075
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16567
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien de la politique de la défense",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 22.919128189
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16581
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,92 @@
+[
+ {
+  "name": "France Télévisions",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 2.43051
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70332
+  },
+  "on_click": true
+ },
+ {
+  "name": "ARTE France",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.303464
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70338
+  },
+  "on_click": true
+ },
+ {
+  "name": "Radio France",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.623406
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70344
+  },
+  "on_click": true
+ },
+ {
+  "name": "France Médias Monde",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.284734
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70350
+  },
+  "on_click": true
+ },
+ {
+  "name": "Institut national de l'audiovisuel",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.093629
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70356
+  },
+  "on_click": true
+ },
+ {
+  "name": "TV5 Monde",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.0799663
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70362
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Protection maladie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.00203442286
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30085
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prévention, sécurité sanitaire et offre de soins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.4964501999
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 29968
+  },
+  "on_click": true
+ }
+]

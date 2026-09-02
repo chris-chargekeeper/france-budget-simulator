@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Remboursements et dégrèvements d'impôts d'État (crédits évaluatifs)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 136.84576821798
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 84860
+  },
+  "on_click": true
+ },
+ {
+  "name": "Remboursements et dégrèvements d'impôts locaux (crédits évaluatifs)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.519094736
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 84944
+  },
+  "on_click": true
+ }
+]

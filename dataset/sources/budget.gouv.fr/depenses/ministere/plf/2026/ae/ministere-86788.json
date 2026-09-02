@@ -1,0 +1,227 @@
+[
+ {
+  "name": "Concours financiers aux collectivités territoriales et à leurs groupements",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.511127
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 92746
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds d'accélération de la transition écologique dans les territoires",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.65
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 90430
+  },
+  "on_click": true
+ },
+ {
+  "name": "Impulsion et coordination de la politique d'aménagement du territoire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.28536564
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 87862
+  },
+  "on_click": true
+ },
+ {
+  "name": "Infrastructures et services de transports",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 5.9299981
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 89782
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien aux prestations de l'aviation civile",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 1.692234
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 94036
+  },
+  "on_click": true
+ },
+ {
+  "name": "Navigation aérienne",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.804423
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 94027
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à la société concessionnaire de la liaison express entre Paris et l'aéroport Paris - Charles-de-Gaulle",
+  "value": [
+   {
+    "groupe": 46,
+    "value": null
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 94549
+  },
+  "on_click": false
+ },
+ {
+  "name": "Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.151330181
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 90058
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transports aériens, surveillance et certification",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.048878745
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 94057
+  },
+  "on_click": true
+ },
+ {
+  "name": "Urbanisme, territoires et amélioration de l'habitat",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.9233412
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 87928
+  },
+  "on_click": true
+ },
+ {
+  "name": "Politique de la ville",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.651747054
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 88102
+  },
+  "on_click": true
+ },
+ {
+  "name": "Concours spécifiques et administration",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.25013915
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 92857
+  },
+  "on_click": true
+ },
+ {
+  "name": "Hébergement, parcours vers le logement et insertion des personnes vulnérables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.0466858
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 88282
+  },
+  "on_click": true
+ },
+ {
+  "name": "Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.806735
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 94132
+  },
+  "on_click": true
+ },
+ {
+  "name": "Aide à l'accès au logement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 16.1261
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 87847
+  },
+  "on_click": true
+ }
+]

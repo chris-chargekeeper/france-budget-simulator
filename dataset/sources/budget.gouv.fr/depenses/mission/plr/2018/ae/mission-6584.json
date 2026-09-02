@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Contribution au financement de l'attribution d'aides à l'acquisition de véhicules propres",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.18357678
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16644
+  },
+  "on_click": true
+ },
+ {
+  "name": "Contribution au financement de l'attribution d'aides au retrait de véhicules polluants",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.365
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16645
+  },
+  "on_click": true
+ }
+]

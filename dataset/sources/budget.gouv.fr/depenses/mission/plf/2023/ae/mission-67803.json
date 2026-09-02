@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Conditions de vie outre-mer",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.907479991
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 67806
+  },
+  "on_click": true
+ },
+ {
+  "name": "Emploi outre-mer",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.7581157
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 67926
+  },
+  "on_click": true
+ }
+]

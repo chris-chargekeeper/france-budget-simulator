@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Pensions civiles et militaires de retraite et allocations temporaires d'invalidité",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 60.93772228224
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70200
+  },
+  "on_click": true
+ },
+ {
+  "name": "Ouvriers des établissements industriels de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 2.0028772752
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70242
+  },
+  "on_click": true
+ },
+ {
+  "name": "Pensions militaires d'invalidité et des victimes de guerre et autres pensions",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 1.3633992158800001
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70257
+  },
+  "on_click": true
+ }
+]

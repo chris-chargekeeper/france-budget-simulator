@@ -1,0 +1,143 @@
+[
+ {
+  "name": "Dépenses d’intervention",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 127.567063373
+   },
+   {
+    "groupe": 45,
+    "value": 2.7867804
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 34816
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses de personnel",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 135.441203551
+   },
+   {
+    "groupe": 45,
+    "value": 58.68741738
+   },
+   {
+    "groupe": 44,
+    "value": 1.27660416
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 34774
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses de fonctionnement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 56.695452473
+   },
+   {
+    "groupe": 45,
+    "value": 1.004314618
+   },
+   {
+    "groupe": 44,
+    "value": 0.09505
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 34786
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses d’investissement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 18.131968366
+   },
+   {
+    "groupe": 45,
+    "value": 0.2204955
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 34807
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses d’opérations financières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.749747276
+   },
+   {
+    "groupe": 46,
+    "value": 128.7596962
+   },
+   {
+    "groupe": 45,
+    "value": 13.3412
+   },
+   {
+    "groupe": 44,
+    "value": 0.002
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 34834
+  },
+  "on_click": true
+ },
+ {
+  "name": "Charges de la dette de l’État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 37.103
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 34795
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dotations des pouvoirs publics",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.9939548
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 34768
+  },
+  "on_click": true
+ }
+]

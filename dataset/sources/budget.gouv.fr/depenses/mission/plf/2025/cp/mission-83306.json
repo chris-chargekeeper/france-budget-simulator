@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Valorisation de la recherche",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.2432
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 83333
+  },
+  "on_click": true
+ },
+ {
+  "name": "Financement structurel des écosystèmes d'innovation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.778634
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 83402
+  },
+  "on_click": true
+ },
+ {
+  "name": "Financement des investissements stratégiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.373406
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 83381
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien des progrès de l'enseignement et de la recherche",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.219
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 83309
+  },
+  "on_click": true
+ },
+ {
+  "name": "Accélération de la modernisation des entreprises",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.18576
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 83351
+  },
+  "on_click": true
+ }
+]

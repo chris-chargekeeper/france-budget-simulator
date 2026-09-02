@@ -1,0 +1,92 @@
+[
+ {
+  "name": "Présidence de la République",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.105316
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15226
+  },
+  "on_click": true
+ },
+ {
+  "name": "Assemblée nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.51789
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15224
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sénat",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.3235849
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15239
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conseil constitutionnel",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0125042
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15228
+  },
+  "on_click": true
+ },
+ {
+  "name": "Cour de justice de la République",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0008715
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15232
+  },
+  "on_click": true
+ },
+ {
+  "name": "La Chaîne parlementaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0342892
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15236
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Énergie, climat et après-mines",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 5.79291456
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 65742
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.67583041
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68340
+  },
+  "on_click": true
+ },
+ {
+  "name": "Service public de l'énergie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 21.000003137
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 66261
+  },
+  "on_click": true
+ },
+ {
+  "name": "Électrification rurale",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.3515
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70092
+  },
+  "on_click": true
+ },
+ {
+  "name": "Opérations de maîtrise de la demande d'électricité, de production d'électricité par des énergies renouvelables ou de production de proximité dans les zones non interconnectées",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.0085
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70122
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Fonction publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.303251777
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51907
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transformation publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0952
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51958
+  },
+  "on_click": true
+ },
+ {
+  "name": "Innovation et transformation numériques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0106
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51967
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage de la transformation et de la fonction publiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.038524795
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51976
+  },
+  "on_click": true
+ }
+]

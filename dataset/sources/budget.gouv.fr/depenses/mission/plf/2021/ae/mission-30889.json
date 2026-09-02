@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Prêts à l'Agence française de développement en vue de favoriser le développement économique et social dans des États étrangers",
+  "value": [
+   {
+    "groupe": 46,
+    "value": null
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30904
+  },
+  "on_click": false
+ },
+ {
+  "name": "Prêts du Trésor à des États étrangers en vue de faciliter la vente de biens et de services concourant au développement du commerce extérieur de la France",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 1
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30892
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à des États étrangers pour consolidation de dettes envers la France",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.554745
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30898
+  },
+  "on_click": true
+ }
+]

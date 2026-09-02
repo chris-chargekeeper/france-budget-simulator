@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Opérations de maîtrise de la demande d'électricité, de production d'électricité par des énergies renouvelables ou de production de proximité dans les zones non interconnectées",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.003
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 78009
+  },
+  "on_click": true
+ },
+ {
+  "name": "Électrification rurale",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.357
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77985
+  },
+  "on_click": true
+ }
+]

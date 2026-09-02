@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Transformation publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.18464368
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51958
+  },
+  "on_click": true
+ },
+ {
+  "name": "Innovation et transformation numériques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0121
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51967
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonction publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.288327816
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51907
+  },
+  "on_click": true
+ }
+]

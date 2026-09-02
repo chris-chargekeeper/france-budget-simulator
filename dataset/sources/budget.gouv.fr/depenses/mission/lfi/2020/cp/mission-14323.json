@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Soutien des progrès de l'enseignement et de la recherche",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.417
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14324
+  },
+  "on_click": true
+ },
+ {
+  "name": "Valorisation de la recherche",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.620325
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14332
+  },
+  "on_click": true
+ },
+ {
+  "name": "Accélération de la modernisation des entreprises",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.02
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14338
+  },
+  "on_click": true
+ }
+]

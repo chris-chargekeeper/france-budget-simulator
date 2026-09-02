@@ -1,0 +1,94 @@
+{
+ "_comment": "Repères 2023 sur les administrations publiques, repris de la rubrique « À quoi servent mes impôts ? » d'economie.gouv.fr. Périmètre APU (État + sécurité sociale + collectivités) : à ne pas confondre avec le budget de l'État de budget.gouv.fr, qui est cinq fois plus petit.",
+ "source": "https://www.economie.gouv.fr/aqsmi",
+ "source_statistique": "INSEE, comptes nationaux 2023",
+ "millesime": 2023,
+ "perimetre": "Administrations publiques (APU)",
+ "agregats": {
+  "unite": "Md€",
+  "recettes": 1455,
+  "depenses": 1609.9,
+  "solde": -154.9,
+  "note": "Solde recalculé : la vidéo affiche les deux plateaux de la balance, pas leur écart."
+ },
+ "prelevements": {
+  "_comment": "Part de chaque prélèvement dans le total des impôts, taxes et contributions payés en France. Deux ventilations du même total : la fine, transcrite de l'infographie, et la grossière, affichée par la vidéo. La ventilation fine somme à 99,9 % — arrondis de la source, non corrigés.",
+  "unite": "% du total",
+  "detail": [
+   {"nom": "Cotisations sociales", "part": 33.9},
+   {"nom": "TVA", "part": 16.8},
+   {"nom": "CSG", "part": 14.3},
+   {"nom": "Autres taxes et prélèvements divers", "part": 9.0},
+   {"nom": "Impôt sur le revenu", "part": 7.3},
+   {"nom": "Impôt sur les sociétés", "part": 4.6},
+   {"nom": "Taxe foncière", "part": 3.4},
+   {"nom": "TICPE", "part": 2.4},
+   {"nom": "Droits sur les dons et successions", "part": 1.7},
+   {"nom": "Taxes sur les tabacs et boissons", "part": 1.6},
+   {"nom": "Taxe sur les salaires", "part": 1.4},
+   {"nom": "Droits de mutation à titre onéreux", "part": 1.4},
+   {"nom": "Versement mobilité", "part": 0.9},
+   {"nom": "Cotisation foncière des entreprises", "part": 0.6},
+   {"nom": "CVAE", "part": 0.4},
+   {"nom": "Taxe d'habitation sur les résidences secondaires et les logements vacants", "part": 0.2}
+  ],
+  "agrege_video": [
+   {"nom": "Cotisations sociales", "part": 48.2, "note": "Cotisations sociales et CSG réunies."},
+   {"nom": "TVA", "part": 16.8},
+   {"nom": "Amendes, vente de biens publics, etc.", "part": 13.3},
+   {"nom": "Impôt sur le revenu", "part": 7.3},
+   {"nom": "Impôts sur les sociétés", "part": 6.4},
+   {"nom": "Taxes et cotisations foncières", "part": 4.0},
+   {"nom": "Autres impôts sur les produits", "part": 4.0}
+  ]
+ },
+ "mille_euros_impots": {
+  "_comment": "Emploi de 1 000 € d'impôts. La ventilation fine est celle de l'infographie ; la vidéo regroupe huit de ces postes sous « services publics » (272 €).",
+  "unite": "€ pour 1 000 € d'impôts",
+  "detail": [
+   {"nom": "Protection sociale", "montant": 561, "note": "Retraites, santé, famille, chômage, exclusion sociale, aides au logement."},
+   {"nom": "Éducation", "montant": 88},
+   {"nom": "Fonctionnement des administrations publiques", "montant": 66},
+   {"nom": "Soutien aux activités économiques", "montant": 59},
+   {"nom": "Transports et équipements collectifs", "montant": 50},
+   {"nom": "Charge de la dette", "montant": 31},
+   {"nom": "Défense", "montant": 31},
+   {"nom": "Recherche", "montant": 30},
+   {"nom": "Culture et loisirs", "montant": 26},
+   {"nom": "Sécurité", "montant": 25},
+   {"nom": "Environnement", "montant": 17},
+   {"nom": "Infrastructures", "montant": 11},
+   {"nom": "Justice", "montant": 5}
+  ],
+  "total": 1000,
+  "agrege_video": [
+   {"nom": "Protection sociale", "montant": 561},
+   {"nom": "Services publics", "montant": 272, "note": "Éducation, transports, défense, recherche, culture et loisirs, sécurité, environnement, justice."},
+   {"nom": "L'administration", "montant": 66},
+   {"nom": "Soutien aux activités économiques", "montant": 59},
+   {"nom": "La dette", "montant": 31},
+   {"nom": "Les infrastructures", "montant": 11}
+  ]
+ },
+ "video": {
+  "_comment": "Transcription des seize captures de video/, dans l'ordre. Le sous-titre est le texte incrusté au bas de l'image ; l'écran décrit ce qui est affiché.",
+  "images": [
+   {"image": "image-01.png", "sous_titre": "comme tous les budgets, a d'un côté des recettes et de l'autre des dépenses.", "ecran": "Balance déséquilibrée, plateaux « dépenses » et « recettes »."},
+   {"image": "image-02.png", "sous_titre": null, "ecran": "RECETTES : 1 455 MILLIARDS D'EUROS (INSEE 2023)."},
+   {"image": "image-03.png", "sous_titre": "Les cotisations sociales, la TVA, l'impôt…", "ecran": "48,2 % cotisations sociales · 16,8 % TVA · 7,3 % impôt sur le revenu · 1 % (poste suivant en cours d'apparition)."},
+   {"image": "image-04.png", "sous_titre": "les taxes et cotisations foncières, les taxes sur l'alcool,", "ecran": "16,8 % TVA · 7,3 % impôt sur le revenu · 6,4 % impôts sur les sociétés · 4 % taxes et cotisations foncières · 3 % autres impôts sur les produits."},
+   {"image": "image-05.png", "sous_titre": "le tabac ou l'essence et d'autres recettes.", "ecran": "6,4 % impôts sur les sociétés · 4 % taxes et cotisations foncières · 4 % autres impôts sur les produits · 13,3 % amendes, vente de biens publics, etc."},
+   {"image": "image-06.png", "sous_titre": null, "ecran": "MONTANT GLOBAL DES DÉPENSES : 1 609,9 MILLIARDS D'EUROS (INSEE 2023)."},
+   {"image": "image-07.png", "sous_titre": "retraite, santé, famille…", "ecran": "561 € — PROTECTION SOCIALE."},
+   {"image": "image-08.png", "sous_titre": "pour l'éducation, les transports ou la défense par exemple.", "ecran": "272 € — SERVICES PUBLICS."},
+   {"image": "image-09.png", "sous_titre": "notamment le salaire des agents ou l'entretien des bâtiments.", "ecran": "66 € — L'ADMINISTRATION."},
+   {"image": "image-10.png", "sous_titre": "Le soutien aux activités économiques, c'est-à-dire les aides aux entreprises.", "ecran": "59 € — SOUTIEN AUX ACTIVITÉS ÉCONOMIQUES."},
+   {"image": "image-11.png", "sous_titre": "Les infrastructures comme les routes, les ponts, les gares…", "ecran": "11 € — LES INFRASTRUCTURES."},
+   {"image": "image-12.png", "sous_titre": "Mais d'où vient cette dette ?", "ecran": "31 € — LA DETTE."},
+   {"image": "image-13.png", "sous_titre": "Il y a plus de dépenses que de recettes.", "ecran": "Balance : dépenses 1 609,9 Md€ contre recettes 1 455 Md€. L'unité affichée à l'écran est « M€ », mais il s'agit de milliards."},
+   {"image": "image-14.png", "sous_titre": "Ce déséquilibre crée un déficit qui est financé par des emprunts,", "ecran": "Titre « Déficit »."},
+   {"image": "image-15.png", "sous_titre": "Ces emprunts constituent une dette publique qui augmente depuis 40 ans.", "ecran": "Courbe croissante."},
+   {"image": "image-16.png", "sous_titre": "et parce que la France y est engagée.", "ecran": "Balance à l'équilibre."}
+  ]
+ }
+}

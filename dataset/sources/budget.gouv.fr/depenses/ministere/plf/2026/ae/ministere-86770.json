@@ -1,0 +1,122 @@
+[
+ {
+  "name": "Régimes de retraite et de sécurité sociale des marins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.8019467
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 92710
+  },
+  "on_click": true
+ },
+ {
+  "name": "Affaires maritimes, pêche et aquaculture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.290283878
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 89944
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prévention des risques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.646233284
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 89713
+  },
+  "on_click": true
+ },
+ {
+  "name": "Service public de l'énergie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.92993388
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 90310
+  },
+  "on_click": true
+ },
+ {
+  "name": "Énergie, climat et après-mines",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.2447248
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 89635
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.477777
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 92461
+  },
+  "on_click": true
+ },
+ {
+  "name": "Paysages, eau et biodiversité",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.378752626
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 89554
+  },
+  "on_click": true
+ },
+ {
+  "name": "Expertise, information géographique et météorologie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.67075495
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 89590
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Accès et retour à l'emploi",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 7.54317715
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77577
+  },
+  "on_click": true
+ },
+ {
+  "name": "Accompagnement des mutations économiques et développement de l'emploi",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 14.308731111
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77622
+  },
+  "on_click": true
+ },
+ {
+  "name": "Amélioration de la qualité de l'emploi et des relations du travail",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.110036201
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77697
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conception, gestion et évaluation des politiques de l'emploi et du travail",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.699040271
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77760
+  },
+  "on_click": true
+ }
+]

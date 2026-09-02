@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Conduite et soutien des politiques sanitaires, sociales, du sport, de la jeunesse et de la vie associative",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.499187875
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16518
+  },
+  "on_click": true
+ },
+ {
+  "name": "Protection maladie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.911055671
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16563
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prévention, sécurité sanitaire et offre de soins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.426721125
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16576
+  },
+  "on_click": true
+ },
+ {
+  "name": "Inclusion sociale et protection des personnes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.985810027
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16595
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,92 @@
+[
+ {
+  "name": "Enseignement privé du premier et du second degrés",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.811306281719999
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82586
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement scolaire public du premier degré",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 27.346320015
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82652
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement scolaire public du second degré",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 38.97285917835
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82730
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement technique agricole",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.6872607638900001
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82829
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien de la politique de l'éducation nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.9148350511100003
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82967
+  },
+  "on_click": true
+ },
+ {
+  "name": "Vie de l'élève",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 7.957621661359999
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 83072
+  },
+  "on_click": true
+ }
+]

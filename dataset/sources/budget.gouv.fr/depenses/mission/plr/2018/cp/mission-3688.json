@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Rénovation des cités administratives et autres sites domaniaux multi-occupants",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.001844472
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16609
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds pour la transformation de l'action publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": null
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16610
+  },
+  "on_click": false
+ }
+]

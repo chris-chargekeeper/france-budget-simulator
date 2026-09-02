@@ -1,0 +1,92 @@
+[
+ {
+  "name": "Interventions territoriales de l'État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.06156182
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 64302
+  },
+  "on_click": true
+ },
+ {
+  "name": "Politique de la ville",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.59754125
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 64227
+  },
+  "on_click": true
+ },
+ {
+  "name": "Urbanisme, territoires et amélioration de l'habitat",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.78077616
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 64053
+  },
+  "on_click": true
+ },
+ {
+  "name": "Aide à l'accès au logement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 13.3713
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 63969
+  },
+  "on_click": true
+ },
+ {
+  "name": "Hébergement, parcours vers le logement et insertion des personnes vulnérables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.7804137
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 64419
+  },
+  "on_click": true
+ },
+ {
+  "name": "Impulsion et coordination de la politique d'aménagement du territoire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.26244787
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 63984
+  },
+  "on_click": true
+ }
+]

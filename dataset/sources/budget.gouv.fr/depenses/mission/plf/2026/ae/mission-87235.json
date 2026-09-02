@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Sécurité et qualité sanitaires de l'alimentation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.839726455
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 87445
+  },
+  "on_click": true
+ },
+ {
+  "name": "Allègements du coût du travail en agriculture (TODE-AG)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.449
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 87697
+  },
+  "on_click": true
+ },
+ {
+  "name": "Compétitivité et durabilité de l'agriculture, de l'agroalimentaire et de la forêt",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.962489166
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 87238
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage des politiques de l'agriculture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.647230364
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 87577
+  },
+  "on_click": true
+ }
+]

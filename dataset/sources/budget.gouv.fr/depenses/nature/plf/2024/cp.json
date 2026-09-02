@@ -1,0 +1,151 @@
+[
+ {
+  "name": "Dépenses de personnel",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 153.46165217
+   },
+   {
+    "groupe": 45,
+    "value": 66.29241364
+   },
+   {
+    "groupe": 44,
+    "value": 1.4074023
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 78441
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses d’intervention",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 273.946449072
+   },
+   {
+    "groupe": 45,
+    "value": 2.450099626
+   },
+   {
+    "groupe": 44,
+    "value": 0.004461
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 78486
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses d’opérations financières",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 148.6452552
+   },
+   {
+    "groupe": 43,
+    "value": 7.667605827
+   },
+   {
+    "groupe": 45,
+    "value": 9.86195
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 78504
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses d’investissement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 21.660406397
+   },
+   {
+    "groupe": 45,
+    "value": 0.29375
+   },
+   {
+    "groupe": 44,
+    "value": 0.30414759
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 78474
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses de fonctionnement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 71.03142388
+   },
+   {
+    "groupe": 45,
+    "value": 1.04854476
+   },
+   {
+    "groupe": 44,
+    "value": 0.67462861
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 78453
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dotations des pouvoirs publics",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.1378427
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 78435
+  },
+  "on_click": true
+ },
+ {
+  "name": "Charges de la dette de l’État",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.0239752
+   },
+   {
+    "groupe": 43,
+    "value": 52.182
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 78462
+  },
+  "on_click": true
+ }
+]

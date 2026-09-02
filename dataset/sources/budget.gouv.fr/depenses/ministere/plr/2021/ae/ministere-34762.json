@@ -1,0 +1,287 @@
+[
+ {
+  "name": "Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la seconde guerre mondiale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.08730545964
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 31015
+  },
+  "on_click": true
+ },
+ {
+  "name": "Interventions territoriales de l'État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.08712837979
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 27508
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conseil économique, social et environnemental",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.04472989
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 33118
+  },
+  "on_click": true
+ },
+ {
+  "name": "Cour des comptes et autres juridictions financières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.2154612466
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 33151
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conseil d'État et autres juridictions administratives",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.45654748041000004
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 33178
+  },
+  "on_click": true
+ },
+ {
+  "name": "Haut Conseil des finances publiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.00055428627
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 33211
+  },
+  "on_click": true
+ },
+ {
+  "name": "Coordination du travail gouvernemental",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.6337925300499999
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 34156
+  },
+  "on_click": true
+ },
+ {
+  "name": "Protection des droits et libertés",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.10191699053999999
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 34228
+  },
+  "on_click": true
+ },
+ {
+  "name": "Présidence française du Conseil de l'Union européenne en 2022",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.03644726
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 34264
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien des progrès de l'enseignement et de la recherche",
+  "value": [
+   {
+    "groupe": 43,
+    "value": -0.318
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28642
+  },
+  "on_click": false
+ },
+ {
+  "name": "Valorisation de la recherche",
+  "value": [
+   {
+    "groupe": 43,
+    "value": -0.08
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28666
+  },
+  "on_click": false
+ },
+ {
+  "name": "Accélération de la modernisation des entreprises",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.242
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28684
+  },
+  "on_click": true
+ },
+ {
+  "name": "Financement des investissements stratégiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 10.5
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28714
+  },
+  "on_click": true
+ },
+ {
+  "name": "Financement structurel des écosystèmes d'innovation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.75
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28732
+  },
+  "on_click": true
+ },
+ {
+  "name": "Égalité entre les femmes et les hommes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.048520625
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28888
+  },
+  "on_click": true
+ },
+ {
+  "name": "Handicap et dépendance",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 12.833021749
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28861
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts octroyés dans le cadre des programmes des investissements d'avenir",
+  "value": [
+   {
+    "groupe": 46,
+    "value": null
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 31255
+  },
+  "on_click": false
+ },
+ {
+  "name": "Édition et diffusion",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.03700038
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28195
+  },
+  "on_click": true
+ },
+ {
+  "name": "Pilotage et ressources humaines",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.09854794
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28204
+  },
+  "on_click": true
+ }
+]

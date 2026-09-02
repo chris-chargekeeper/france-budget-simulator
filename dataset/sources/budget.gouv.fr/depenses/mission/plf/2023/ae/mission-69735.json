@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Conception, gestion et évaluation des politiques de l'emploi et du travail",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.686609865
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 69867
+  },
+  "on_click": true
+ },
+ {
+  "name": "Accompagnement des mutations économiques et développement de l'emploi",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 11.8981957
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 69765
+  },
+  "on_click": true
+ },
+ {
+  "name": "Accès et retour à l'emploi",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 7.63040632
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 69738
+  },
+  "on_click": true
+ },
+ {
+  "name": "Amélioration de la qualité de l'emploi et des relations du travail",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.073747801
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 69804
+  },
+  "on_click": true
+ }
+]

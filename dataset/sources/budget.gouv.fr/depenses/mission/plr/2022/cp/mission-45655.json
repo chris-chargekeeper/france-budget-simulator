@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Compétitivité et durabilité de l'agriculture, de l'agroalimentaire, de la forêt, de la pêche et de l'aquaculture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.2830535025499996
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 45658
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sécurité et qualité sanitaires de l'alimentation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.79168101249
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 45871
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage des politiques de l'agriculture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.5961617059800001
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 45976
+  },
+  "on_click": true
+ }
+]

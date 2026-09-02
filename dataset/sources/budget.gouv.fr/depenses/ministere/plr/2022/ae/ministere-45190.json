@@ -1,0 +1,122 @@
+[
+ {
+  "name": "Enseignement privé du premier et du second degrés",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.049297315579999
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48838
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement scolaire public du premier degré",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 24.3932810232
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48904
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement scolaire public du second degré",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 34.92817803029
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48979
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien de la politique de l'éducation nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.8036321256
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 49201
+  },
+  "on_click": true
+ },
+ {
+  "name": "Vie de l'élève",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.9013040333
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 49306
+  },
+  "on_click": true
+ },
+ {
+  "name": "Jeunesse et vie associative",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.6812090582
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51853
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sport",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.6342984267899999
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51868
+  },
+  "on_click": true
+ },
+ {
+  "name": "Jeux olympiques et paralympiques 2024",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.1499806
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51889
+  },
+  "on_click": true
+ }
+]

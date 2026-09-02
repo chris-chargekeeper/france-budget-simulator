@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Navigation aérienne",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.6506829
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77838
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien aux prestations de l'aviation civile",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 1.517057304
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77847
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transports aériens, surveillance et certification",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.0532680385
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 77868
+  },
+  "on_click": true
+ }
+]

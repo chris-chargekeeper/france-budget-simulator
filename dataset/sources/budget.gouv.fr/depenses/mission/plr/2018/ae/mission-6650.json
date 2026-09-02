@@ -1,0 +1,17 @@
+[
+ {
+  "name": "Opérations immobilières et entretien des bâtiments de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.362550962
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16626
+  },
+  "on_click": true
+ }
+]

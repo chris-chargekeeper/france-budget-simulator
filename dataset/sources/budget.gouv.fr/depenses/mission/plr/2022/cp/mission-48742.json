@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Appels en garantie de l'État (crédits évaluatifs)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.512559265
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48745
+  },
+  "on_click": true
+ },
+ {
+  "name": "Charge de la dette et trésorerie de l'État (crédits évaluatifs)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 50.71342
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48784
+  },
+  "on_click": true
+ },
+ {
+  "name": "Épargne",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0560249322
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48793
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds de soutien relatif aux prêts et contrats financiers structurés à risque",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.17504685509999998
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48814
+  },
+  "on_click": true
+ },
+ {
+  "name": "Amortissement de la dette de l'État liée à la covid-19",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.88505
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48829
+  },
+  "on_click": true
+ }
+]

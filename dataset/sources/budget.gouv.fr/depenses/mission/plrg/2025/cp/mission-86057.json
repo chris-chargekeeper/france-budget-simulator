@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Développement et transfert en agriculture",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.0658847
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 86060
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche appliquée et innovation en agriculture",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.072810689
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 86069
+  },
+  "on_click": true
+ }
+]

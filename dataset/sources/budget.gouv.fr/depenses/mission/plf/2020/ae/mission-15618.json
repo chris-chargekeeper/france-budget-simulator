@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Opérations en capital intéressant les participations financières de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 10.18
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15619
+  },
+  "on_click": true
+ },
+ {
+  "name": "Désendettement de l'État et d'établissements publics de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 2
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15625
+  },
+  "on_click": true
+ }
+]

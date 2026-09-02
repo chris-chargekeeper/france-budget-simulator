@@ -1,0 +1,92 @@
+[
+ {
+  "name": "Accès et retour à l'emploi",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 5.788844853
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7083
+  },
+  "on_click": true
+ },
+ {
+  "name": "Accompagnement des mutations économiques et développement de l'emploi",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.142969094
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7084
+  },
+  "on_click": true
+ },
+ {
+  "name": "Amélioration de la qualité de l'emploi et des relations du travail",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.046010221
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7085
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conception, gestion et évaluation des politiques de l'emploi et du travail",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.686540805
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7086
+  },
+  "on_click": true
+ },
+ {
+  "name": "Répartition régionale de la ressource consacrée au développement de l'apprentissage",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 1.38454
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7139
+  },
+  "on_click": true
+ },
+ {
+  "name": "Correction financière des disparités régionales de taxe d'apprentissage et incitations au développement de l'apprentissage",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.324763271
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7140
+  },
+  "on_click": true
+ }
+]

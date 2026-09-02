@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Jeunesse et vie associative",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.8337134714000001
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 85532
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sport",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.520463322
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 85547
+  },
+  "on_click": true
+ },
+ {
+  "name": "Jeux olympiques et paralympiques 2024",
+  "value": [
+   {
+    "groupe": 43,
+    "value": -0.0121857095
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 85568
+  },
+  "on_click": false
+ },
+ {
+  "name": "Jeux olympiques et paralympiques d'hiver 2030",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.008899409
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 86639
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,107 @@
+[
+ {
+  "name": "Enseignement supérieur et recherche agricoles",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.339852005
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16529
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement technique agricole",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.429681515
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16530
+  },
+  "on_click": true
+ },
+ {
+  "name": "Compétitivité et durabilité de l'agriculture, de l'agroalimentaire, de la forêt, de la pêche et de l'aquaculture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.244009591
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16536
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sécurité et qualité sanitaires de l'alimentation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.552422929
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16578
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage des politiques de l'agriculture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.645822001
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16583
+  },
+  "on_click": true
+ },
+ {
+  "name": "Développement et transfert en agriculture",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.062209664
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16638
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche appliquée et innovation en agriculture",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.069010665
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16639
+  },
+  "on_click": true
+ }
+]

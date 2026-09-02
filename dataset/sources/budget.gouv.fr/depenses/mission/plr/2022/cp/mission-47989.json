@@ -1,0 +1,137 @@
+[
+ {
+  "name": "Paysages, eau et biodiversité",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.31067889156
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 47992
+  },
+  "on_click": true
+ },
+ {
+  "name": "Expertise, information géographique et météorologie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.4797900712
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48052
+  },
+  "on_click": true
+ },
+ {
+  "name": "Énergie, climat et après-mines",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 9.21803071472
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48088
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prévention des risques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.04110061579
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48163
+  },
+  "on_click": true
+ },
+ {
+  "name": "Infrastructures et services de transports",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.75514448538
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48226
+  },
+  "on_click": true
+ },
+ {
+  "name": "Affaires maritimes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.24004063825
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48379
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.015548463449999
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48469
+  },
+  "on_click": true
+ },
+ {
+  "name": "Service public de l'énergie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 12.138753591
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48577
+  },
+  "on_click": true
+ },
+ {
+  "name": "Charge de la dette de SNCF Réseau reprise par l'État (crédits évaluatifs)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.824405
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 48649
+  },
+  "on_click": true
+ }
+]

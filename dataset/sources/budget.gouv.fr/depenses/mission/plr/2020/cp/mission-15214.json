@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 8.10821
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15215
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à des organismes distincts de l'État et gérant des services publics",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.09
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15217
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à des services de l'État",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 1.25
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15219
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances aux exploitants d'aéroports touchés par la crise de covid-19 au titre des dépenses de sûreté-sécurité",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.299763
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 35122
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances remboursables destinées à soutenir Île-de-France Mobilités à la suite des conséquences de l'épidémie de la covid-19",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 1.175
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 35128
+  },
+  "on_click": true
+ }
+]

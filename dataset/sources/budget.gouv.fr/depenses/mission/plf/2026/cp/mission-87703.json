@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Solidarité à l'égard des pays en développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.5419298
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 87802
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds de solidarité pour le développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.738
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 87838
+  },
+  "on_click": true
+ },
+ {
+  "name": "Aide économique et financière au développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.2891068
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 87706
+  },
+  "on_click": true
+ },
+ {
+  "name": "Renforcement des fonds propres de l'Agence française de développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.1
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 87823
+  },
+  "on_click": true
+ }
+]

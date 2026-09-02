@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Action de la France en Europe et dans le monde",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.02476182904
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 62922
+  },
+  "on_click": true
+ },
+ {
+  "name": "Français à l'étranger et affaires consulaires",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.38999194255
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 63024
+  },
+  "on_click": true
+ },
+ {
+  "name": "Diplomatie culturelle et d'influence",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.7424311257799999
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 63063
+  },
+  "on_click": true
+ },
+ {
+  "name": "Solidarité à l'égard des pays en développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.7218797311999996
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 63867
+  },
+  "on_click": true
+ }
+]

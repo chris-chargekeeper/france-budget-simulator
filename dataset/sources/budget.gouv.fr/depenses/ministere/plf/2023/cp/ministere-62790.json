@@ -1,0 +1,902 @@
+[
+ {
+  "name": "Statistiques et études économiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.454831928
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 66405
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage des politiques économiques et financières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.965557528
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 67122
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances aux collectivités et établissements publics, et à la Nouvelle-Calédonie",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.006
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70371
+  },
+  "on_click": true
+ },
+ {
+  "name": "Développement des entreprises et régulations",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.279006298
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 66372
+  },
+  "on_click": true
+ },
+ {
+  "name": "Performance et résilience des bâtiments de l'Etat et de ses opérateurs",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.5527152
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 69678
+  },
+  "on_click": true
+ },
+ {
+  "name": "Stratégies économiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.715866811
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 66423
+  },
+  "on_click": true
+ },
+ {
+  "name": "Opérations immobilières et entretien des bâtiments de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.34
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70155
+  },
+  "on_click": true
+ },
+ {
+  "name": "Facilitation et sécurisation des échanges",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.602526166
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 67149
+  },
+  "on_click": true
+ },
+ {
+  "name": "Institut national de l'audiovisuel",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.093629
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70356
+  },
+  "on_click": true
+ },
+ {
+  "name": "France Médias Monde",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.284734
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70350
+  },
+  "on_click": true
+ },
+ {
+  "name": "Opérations en capital intéressant les participations financières de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 10.531
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70173
+  },
+  "on_click": true
+ },
+ {
+  "name": "Ouvriers des établissements industriels de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 2.028564429
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70242
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à des organismes distincts de l'État et gérant des services publics",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.2088
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70491
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts et avances à des services de l'État",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.198377
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70497
+  },
+  "on_click": true
+ },
+ {
+  "name": "Désendettement de l'État et d'établissements publics de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 6.58649
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70191
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 124.824794
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70386
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts pour le développement économique et social",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.075
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70443
+  },
+  "on_click": true
+ },
+ {
+  "name": "France Télévisions",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 2.43051
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70332
+  },
+  "on_click": true
+ },
+ {
+  "name": "ARTE France",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.303464
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70338
+  },
+  "on_click": true
+ },
+ {
+  "name": "Radio France",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.623406
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70344
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sénat",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.3462949
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68097
+  },
+  "on_click": true
+ },
+ {
+  "name": "La Chaîne parlementaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0344958
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68133
+  },
+  "on_click": true
+ },
+ {
+  "name": "Pensions militaires d'invalidité et des victimes de guerre et autres pensions",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 1.331282737
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70257
+  },
+  "on_click": true
+ },
+ {
+  "name": "Cour de justice de la République",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.000984
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68121
+  },
+  "on_click": true
+ },
+ {
+  "name": "Provision relative aux rémunérations publiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.08
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 64593
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 10
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70485
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts du Trésor à des États étrangers en vue de faciliter la vente de biens et de services concourant au développement du commerce extérieur de la France",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.647512
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70410
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à des États étrangers pour consolidation de dettes envers la France",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.217112
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70416
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à l'Agence française de développement en vue de favoriser le développement économique et social dans des États étrangers",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.15
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70422
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts et avances pour le logement des agents de l'État",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 5e-05
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70437
+  },
+  "on_click": true
+ },
+ {
+  "name": "Régimes de retraite des mines, de la SEITA et divers",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.056303664
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68604
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche spatiale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.8656848
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68493
+  },
+  "on_click": true
+ },
+ {
+  "name": "Pensions civiles et militaires de retraite et allocations temporaires d'invalidité",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 60.999819
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70200
+  },
+  "on_click": true
+ },
+ {
+  "name": "Présidence de la République",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.11046
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68085
+  },
+  "on_click": true
+ },
+ {
+  "name": "Assemblée nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.571006
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68091
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses accidentelles et imprévisibles",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.774
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 64599
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conseil constitutionnel",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.013295
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68109
+  },
+  "on_click": true
+ },
+ {
+  "name": "Écologie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.556379605
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68001
+  },
+  "on_click": true
+ },
+ {
+  "name": "Compétitivité",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.38041
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68031
+  },
+  "on_click": true
+ },
+ {
+  "name": "Cohésion",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.46069
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68055
+  },
+  "on_click": true
+ },
+ {
+  "name": "Gestion fiscale et financière de l'État et du secteur public local",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 7.968889639
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 67083
+  },
+  "on_click": true
+ },
+ {
+  "name": "Renforcement des fonds propres de l'Agence française de développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.15
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 63882
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à FranceAgriMer au titre des préfinancements de fonds européens",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.1
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70533
+  },
+  "on_click": true
+ },
+ {
+  "name": "Remboursements et dégrèvements d'impôts d'État (crédits évaluatifs)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 123.76309
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68892
+  },
+  "on_click": true
+ },
+ {
+  "name": "Appels en garantie de l'État (crédits évaluatifs)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.482736
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 66462
+  },
+  "on_click": true
+ },
+ {
+  "name": "Aide économique et financière au développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.33791166
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 63771
+  },
+  "on_click": true
+ },
+ {
+  "name": "Épargne",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.05921
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 66513
+  },
+  "on_click": true
+ },
+ {
+  "name": "Charge de la dette et trésorerie de l'État (crédits évaluatifs)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 50.825
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 66504
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds de soutien relatif aux prêts et contrats financiers structurés à risque",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.18585
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 66534
+  },
+  "on_click": true
+ },
+ {
+  "name": "Plan France Très haut débit",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.43773377
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 66444
+  },
+  "on_click": true
+ },
+ {
+  "name": "TV5 Monde",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.0799663
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70362
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à l'Office national d'indemnisation des accidents médicaux, des affections iatrogènes et des infections nosocomiales (ONIAM) au titre de l'indemnisation des victimes du Benfluorex",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.015
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70503
+  },
+  "on_click": true
+ },
+ {
+  "name": "Désendettement de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.618165
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70056
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dotation du Mécanisme européen de stabilité",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.05
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 66522
+  },
+  "on_click": true
+ },
+ {
+  "name": "Régimes sociaux et de retraite des transports terrestres",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.278609
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68628
+  },
+  "on_click": true
+ },
+ {
+  "name": "Remboursements et dégrèvements d'impôts locaux (crédits évaluatifs)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.582985
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68976
+  },
+  "on_click": true
+ },
+ {
+  "name": "Charge de la dette de SNCF Réseau reprise par l'État (crédits évaluatifs)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.9
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 66351
+  },
+  "on_click": true
+ },
+ {
+  "name": "Amortissement de la dette de l'État liée à la covid-19",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.58649
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 66549
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts destinés au financement des infrastructures de transports collectifs du quotidien de la métropole d'Aix-Marseille-Provence",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.1
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70527
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche et enseignement supérieur en matière économique et industrielle",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.693735413
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 68445
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,131 @@
+[
+ {
+  "name": "Dépenses de personnel",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 133.672501314
+   },
+   {
+    "groupe": 45,
+    "value": 57.99923637
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 16353
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses de fonctionnement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 52.559028595
+   },
+   {
+    "groupe": 45,
+    "value": 1.2202326
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 16357
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses d’intervention",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 95.438424913
+   },
+   {
+    "groupe": 45,
+    "value": 9.612970328
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 16367
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses d’investissement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 14.944297666
+   },
+   {
+    "groupe": 45,
+    "value": 0.28859
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 16364
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses d’opérations financières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.537952508
+   },
+   {
+    "groupe": 45,
+    "value": 12.074
+   },
+   {
+    "groupe": 46,
+    "value": 128.8360961
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 16373
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dotations des pouvoirs publics",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.9944558
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 16351
+  },
+  "on_click": true
+ },
+ {
+  "name": "Charges de la dette de l’État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 38.5578
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 16360
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Coordination du travail gouvernemental",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.6921389
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7052
+  },
+  "on_click": true
+ },
+ {
+  "name": "Protection des droits et libertés",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.098528
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7053
+  },
+  "on_click": true
+ },
+ {
+  "name": "Moyens mutualisés des administrations déconcentrées",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.539360638
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7054
+  },
+  "on_click": true
+ }
+]

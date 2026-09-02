@@ -1,0 +1,362 @@
+[
+ {
+  "name": "Aide économique et financière au développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.14478657
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16001
+  },
+  "on_click": true
+ },
+ {
+  "name": "Appels en garantie de l'État (crédits évaluatifs)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0941
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15594
+  },
+  "on_click": true
+ },
+ {
+  "name": "Charge de la dette et trésorerie de l'État (crédits évaluatifs)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 38.149
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15606
+  },
+  "on_click": true
+ },
+ {
+  "name": "Développement des entreprises et régulations",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.047426553
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16119
+  },
+  "on_click": true
+ },
+ {
+  "name": "Épargne",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.087179053
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15591
+  },
+  "on_click": true
+ },
+ {
+  "name": "Recherche et enseignement supérieur en matière économique et industrielle",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.78453035
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15035
+  },
+  "on_click": true
+ },
+ {
+  "name": "Statistiques et études économiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.433133688
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16130
+  },
+  "on_click": true
+ },
+ {
+  "name": "Stratégie économique et fiscale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.404721583
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16143
+  },
+  "on_click": true
+ },
+ {
+  "name": "Plan France Très haut débit",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.44
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 16147
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds de soutien relatif aux prêts et contrats financiers structurés à risque",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.174898
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15613
+  },
+  "on_click": true
+ },
+ {
+  "name": "Charge de la dette de SNCF Réseau reprise par l'État (crédits évaluatifs)",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.4088
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14688
+  },
+  "on_click": true
+ },
+ {
+  "name": "Opérations en capital intéressant les participations financières de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 10.18
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15619
+  },
+  "on_click": true
+ },
+ {
+  "name": "Désendettement de l'État et d'établissements publics de l'État",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 2
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15625
+  },
+  "on_click": true
+ },
+ {
+  "name": "Versement de la France à la Grèce au titre de la restitution à cet État des revenus perçus sur les titres grecs",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.26371
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14691
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 10
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15215
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à des organismes distincts de l'État et gérant des services publics",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.32
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15217
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à des services de l'État",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.05
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15219
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à l'Office national d'indemnisation des accidents médicaux, des affections iatrogènes et des infections nosocomiales (ONIAM) au titre de l'indemnisation des victimes du Benfluorex",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.015
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15221
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances aux collectivités et établissements publics, et à la Nouvelle-Calédonie",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.006
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 13896
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts du Trésor à des États étrangers en vue de faciliter la vente de biens et de services concourant au développement du commerce extérieur de la France",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.367073
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15085
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à des États étrangers pour consolidation de dettes envers la France",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.250297
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15087
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à l'Agence française de développement en vue de favoriser le développement économique et social dans des États étrangers",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.4243
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15089
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts et avances pour le logement des agents de l'État",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 5e-05
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15206
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts pour le développement économique et social",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.075
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15208
+  },
+  "on_click": true
+ }
+]

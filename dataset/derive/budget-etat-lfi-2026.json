@@ -1,0 +1,7110 @@
+{
+ "_comment": "Budget de l'État tel que publié par budget.gouv.fr. Montants en milliards d'euros. Un millésime = une année, un texte financier (PLF, LFI, PLRG, PLR) et un type de crédit (AE ou CP). Les mêmes crédits sont ventilés trois fois : par ministère, par mission et par nature de dépense — ne pas additionner les axes entre eux.",
+ "source": "https://www.budget.gouv.fr/budget-etat",
+ "licence": "Licence Ouverte / Open Licence (Etalab)",
+ "aspire": "2026-09-02",
+ "genere": "2026-09-02",
+ "unite": "Md€",
+ "referentiels": {
+  "annees": {
+   "2018": 54,
+   "2019": 55,
+   "2020": 74,
+   "2021": 118,
+   "2022": 124,
+   "2023": 135,
+   "2024": 143,
+   "2025": 212,
+   "2026": 247
+  },
+  "lois_finances": {
+   "plf": {
+    "tid": 50,
+    "libelle": "Projet de loi de finances"
+   },
+   "lfi": {
+    "tid": 47,
+    "libelle": "Loi de finances initiale"
+   },
+   "plrg": {
+    "tid": 245,
+    "libelle": "Projet de loi relatif aux résultats de la gestion"
+   },
+   "plr": {
+    "tid": 52,
+    "libelle": "Projet de loi de règlement"
+   }
+  },
+  "types_budget": {
+   "43": "Budget général",
+   "44": "Budgets annexes",
+   "45": "Comptes d'affectation spéciale",
+   "46": "Comptes de concours financiers"
+  },
+  "types_donnee": {
+   "ae": "Autorisations d'engagement",
+   "cp": "Crédits de paiement",
+   "budget": "Budget de l'opérateur"
+  }
+ },
+ "millesimes": [
+  {
+   "annee": 2026,
+   "loi": "lfi",
+   "type_donnee": "ae",
+   "ministeres": [
+    {
+     "id": 86764,
+     "nom": "Justice",
+     "montants": {
+      "43": 12.589503218
+     },
+     "total": 12.589503218,
+     "programmes": [
+      {
+       "id": 91522,
+       "nom": "Accès au droit et à la justice",
+       "montants": {
+        "43": 0.8064776
+       },
+       "total": 0.8064776
+      },
+      {
+       "id": 91543,
+       "nom": "Administration pénitentiaire",
+       "montants": {
+        "43": 5.16299706
+       },
+       "total": 5.16299706
+      },
+      {
+       "id": 91558,
+       "nom": "Justice judiciaire",
+       "montants": {
+        "43": 4.676345986
+       },
+       "total": 4.676345986
+      },
+      {
+       "id": 91636,
+       "nom": "Protection judiciaire de la jeunesse",
+       "montants": {
+        "43": 1.156380218
+       },
+       "total": 1.156380218
+      },
+      {
+       "id": 91729,
+       "nom": "Conduite et pilotage de la politique de la justice",
+       "montants": {
+        "43": 0.781840309
+       },
+       "total": 0.781840309
+      },
+      {
+       "id": 91807,
+       "nom": "Conseil supérieur de la magistrature",
+       "montants": {
+        "43": 0.005462045
+       },
+       "total": 0.005462045
+      }
+     ]
+    },
+    {
+     "id": 86773,
+     "nom": "Travail et solidarités",
+     "montants": {
+      "43": 34.810586432
+     },
+     "total": 34.810586432,
+     "programmes": [
+      {
+       "id": 93757,
+       "nom": "Accès et retour à l'emploi",
+       "montants": {
+        "43": 6.807356083
+       },
+       "total": 6.807356083
+      },
+      {
+       "id": 93802,
+       "nom": "Accompagnement des mutations économiques et développement de l'emploi",
+       "montants": {
+        "43": 11.210280236
+       },
+       "total": 11.210280236
+      },
+      {
+       "id": 93877,
+       "nom": "Amélioration de la qualité de l'emploi et des relations du travail",
+       "montants": {
+        "43": 0.040590773
+       },
+       "total": 0.040590773
+      },
+      {
+       "id": 93940,
+       "nom": "Soutien des ministères sociaux",
+       "montants": {
+        "43": 1.96845558
+       },
+       "total": 1.96845558
+      },
+      {
+       "id": 93475,
+       "nom": "Inclusion sociale et protection des personnes",
+       "montants": {
+        "43": 14.78390376
+       },
+       "total": 14.78390376
+      }
+     ]
+    },
+    {
+     "id": 86761,
+     "nom": "Intérieur",
+     "montants": {
+      "43": 33.682984955,
+      "45": 0.3705206
+     },
+     "total": 34.053505555,
+     "programmes": [
+      {
+       "id": 91312,
+       "nom": "Intégration et accès à la nationalité française",
+       "montants": {
+        "43": 0.36400754
+       },
+       "total": 0.36400754
+      },
+      {
+       "id": 93196,
+       "nom": "Gendarmerie nationale",
+       "montants": {
+        "43": 11.12270047
+       },
+       "total": 11.12270047
+      },
+      {
+       "id": 93247,
+       "nom": "Sécurité civile",
+       "montants": {
+        "43": 0.986942591
+       },
+       "total": 0.986942591
+      },
+      {
+       "id": 93316,
+       "nom": "Police nationale",
+       "montants": {
+        "43": 14.28952889
+       },
+       "total": 14.28952889
+      },
+      {
+       "id": 93397,
+       "nom": "Sécurité et éducation routières",
+       "montants": {
+        "43": 0.07862263
+       },
+       "total": 0.07862263
+      },
+      {
+       "id": 86968,
+       "nom": "Conduite et pilotage des politiques de l'intérieur",
+       "montants": {
+        "43": 1.906992367
+       },
+       "total": 1.906992367
+      },
+      {
+       "id": 87160,
+       "nom": "Vie politique",
+       "montants": {
+        "43": 0.299561357
+       },
+       "total": 0.299561357
+      },
+      {
+       "id": 91345,
+       "nom": "Immigration et asile",
+       "montants": {
+        "43": 1.8450051
+       },
+       "total": 1.8450051
+      },
+      {
+       "id": 87211,
+       "nom": "Administration territoriale de l'État",
+       "montants": {
+        "43": 2.78962401
+       },
+       "total": 2.78962401
+      },
+      {
+       "id": 94111,
+       "nom": "Structures et dispositifs de sécurité routière",
+       "montants": {
+        "45": 0.3443399
+       },
+       "total": 0.3443399
+      },
+      {
+       "id": 94126,
+       "nom": "Contrôle et modernisation de la politique de la circulation et du stationnement routiers",
+       "montants": {
+        "45": 0.0261807
+       },
+       "total": 0.0261807
+      }
+     ]
+    },
+    {
+     "id": 86746,
+     "nom": "Europe et affaires étrangères",
+     "montants": {
+      "43": 6.374278154
+     },
+     "total": 6.374278154,
+     "programmes": [
+      {
+       "id": 86803,
+       "nom": "Action de la France en Europe et dans le monde",
+       "montants": {
+        "43": 2.685599559
+       },
+       "total": 2.685599559
+      },
+      {
+       "id": 86917,
+       "nom": "Français à l'étranger et affaires consulaires",
+       "montants": {
+        "43": 0.1525274
+       },
+       "total": 0.1525274
+      },
+      {
+       "id": 86950,
+       "nom": "Diplomatie culturelle et d'influence",
+       "montants": {
+        "43": 0.611326585
+       },
+       "total": 0.611326585
+      },
+      {
+       "id": 87802,
+       "nom": "Solidarité à l'égard des pays en développement",
+       "montants": {
+        "43": 1.08113461
+       },
+       "total": 1.08113461
+      },
+      {
+       "id": 87838,
+       "nom": "Fonds de solidarité pour le développement",
+       "montants": {
+        "43": 1.84369
+       },
+       "total": 1.84369
+      }
+     ]
+    },
+    {
+     "id": 86779,
+     "nom": "Ville et logement",
+     "montants": {
+      "43": 22.093874054
+     },
+     "total": 22.093874054,
+     "programmes": [
+      {
+       "id": 87847,
+       "nom": "Aide à l'accès au logement",
+       "montants": {
+        "43": 16.5721
+       },
+       "total": 16.5721
+      },
+      {
+       "id": 87928,
+       "nom": "Urbanisme, territoires et amélioration de l'habitat",
+       "montants": {
+        "43": 1.8383412
+       },
+       "total": 1.8383412
+      },
+      {
+       "id": 88102,
+       "nom": "Politique de la ville",
+       "montants": {
+        "43": 0.636747054
+       },
+       "total": 0.636747054
+      },
+      {
+       "id": 88282,
+       "nom": "Hébergement, parcours vers le logement et insertion des personnes vulnérables",
+       "montants": {
+        "43": 3.0466858
+       },
+       "total": 3.0466858
+      }
+     ]
+    },
+    {
+     "id": 94705,
+     "nom": "Économie, finances et souveraineté industrielle, énergétique et numérique",
+     "montants": {
+      "43": 78.804133296,
+      "45": 5.74199,
+      "46": 10.677843
+     },
+     "total": 95.223966296,
+     "programmes": [
+      {
+       "id": 87706,
+       "nom": "Aide économique et financière au développement",
+       "montants": {
+        "43": 1.301609
+       },
+       "total": 1.301609
+      },
+      {
+       "id": 90613,
+       "nom": "Appels en garantie de l'État (crédits évaluatifs)",
+       "montants": {
+        "43": 0.790363
+       },
+       "total": 0.790363
+      },
+      {
+       "id": 90655,
+       "nom": "Charge de la dette et trésorerie de l'État (crédits évaluatifs)",
+       "montants": {
+        "43": 58.615
+       },
+       "total": 58.615
+      },
+      {
+       "id": 90520,
+       "nom": "Développement des entreprises et régulations",
+       "montants": {
+        "43": 2.490703657
+       },
+       "total": 2.490703657
+      },
+      {
+       "id": 90664,
+       "nom": "Épargne",
+       "montants": {
+        "43": 0.0961666
+       },
+       "total": 0.0961666
+      },
+      {
+       "id": 89635,
+       "nom": "Énergie, climat et après-mines",
+       "montants": {
+        "43": 1.10883203
+       },
+       "total": 1.10883203
+      },
+      {
+       "id": 92461,
+       "nom": "Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+       "montants": {
+        "43": 1.473952
+       },
+       "total": 1.473952
+      },
+      {
+       "id": 92542,
+       "nom": "Recherche et enseignement supérieur en matière économique et industrielle",
+       "montants": {
+        "43": 0.565920844
+       },
+       "total": 0.565920844
+      },
+      {
+       "id": 90553,
+       "nom": "Statistiques et études économiques",
+       "montants": {
+        "43": 0.487634002
+       },
+       "total": 0.487634002
+      },
+      {
+       "id": 90301,
+       "nom": "Sûreté nucléaire et radioprotection",
+       "montants": {
+        "43": 0.3429589
+       },
+       "total": 0.3429589
+      },
+      {
+       "id": 90571,
+       "nom": "Stratégies économiques",
+       "montants": {
+        "43": 0.664278673
+       },
+       "total": 0.664278673
+      },
+      {
+       "id": 90673,
+       "nom": "Dotation du Mécanisme européen de stabilité",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 90592,
+       "nom": "Plan France Très haut débit",
+       "montants": {
+        "43": 0.01590671
+       },
+       "total": 0.01590671
+      },
+      {
+       "id": 90685,
+       "nom": "Fonds de soutien relatif aux prêts et contrats financiers structurés à risque",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 90310,
+       "nom": "Service public de l'énergie",
+       "montants": {
+        "43": 10.08980788
+       },
+       "total": 10.08980788
+      },
+      {
+       "id": 90700,
+       "nom": "Charge de la dette de SNCF Réseau reprise par l'État (crédits évaluatifs)",
+       "montants": {
+        "43": 0.661
+       },
+       "total": 0.661
+      },
+      {
+       "id": 87823,
+       "nom": "Renforcement des fonds propres de l'Agence française de développement",
+       "montants": {
+        "43": 0.1
+       },
+       "total": 0.1
+      },
+      {
+       "id": 94249,
+       "nom": "Opérations en capital intéressant les participations financières de l'État",
+       "montants": {
+        "45": 5.38369
+       },
+       "total": 5.38369
+      },
+      {
+       "id": 94174,
+       "nom": "Électrification rurale",
+       "montants": {
+        "45": 0.3553
+       },
+       "total": 0.3553
+      },
+      {
+       "id": 94204,
+       "nom": "Opérations de maîtrise de la demande d'électricité, de production d'électricité par des énergies renouvelables ou de production de proximité dans les zones non interconnectées",
+       "montants": {
+        "45": 0.003
+       },
+       "total": 0.003
+      },
+      {
+       "id": 94576,
+       "nom": "Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune",
+       "montants": {
+        "46": 9
+       },
+       "total": 9
+      },
+      {
+       "id": 94582,
+       "nom": "Avances à des organismes distincts de l'État et gérant des services publics",
+       "montants": {
+        "46": 0.21
+       },
+       "total": 0.21
+      },
+      {
+       "id": 94588,
+       "nom": "Prêts et avances à des services de l'État",
+       "montants": {
+        "46": 0.03
+       },
+       "total": 0.03
+      },
+      {
+       "id": 94594,
+       "nom": "Avances à l'Office national d'indemnisation des accidents médicaux, des affections iatrogènes et des infections nosocomiales (ONIAM) au titre de l'indemnisation des victimes du Benfluorex",
+       "montants": {
+        "46": 0.015
+       },
+       "total": 0.015
+      },
+      {
+       "id": 94618,
+       "nom": "Prêts à FranceAgriMer au titre des préfinancements de fonds européens",
+       "montants": {
+        "46": 0.04
+       },
+       "total": 0.04
+      },
+      {
+       "id": 94468,
+       "nom": "Avances aux collectivités et établissements publics, à la Nouvelle-Calédonie et aux collectivités régies par l’article 74 de la Constitution",
+       "montants": {
+        "46": 0.206
+       },
+       "total": 0.206
+      },
+      {
+       "id": 94510,
+       "nom": "Prêts du Trésor à des États étrangers en vue de faciliter la vente de biens et de services concourant au développement du commerce extérieur de la France",
+       "montants": {
+        "46": 0.6
+       },
+       "total": 0.6
+      },
+      {
+       "id": 94516,
+       "nom": "Prêts à des États étrangers pour consolidation de dettes envers la France",
+       "montants": {
+        "46": 0.211793
+       },
+       "total": 0.211793
+      },
+      {
+       "id": 94522,
+       "nom": "Prêts à l'Agence française de développement en vue de favoriser le développement économique et social dans des États étrangers",
+       "montants": {
+        "46": null
+       },
+       "total": null
+      },
+      {
+       "id": 94537,
+       "nom": "Prêts et avances pour le logement des agents de l'État",
+       "montants": {
+        "46": 5e-05
+       },
+       "total": 5e-05
+      },
+      {
+       "id": 94543,
+       "nom": "Prêts pour le développement économique et social",
+       "montants": {
+        "46": 0.075
+       },
+       "total": 0.075
+      },
+      {
+       "id": 94567,
+       "nom": "Soutien à la filière nickel en Nouvelle Calédonie",
+       "montants": {
+        "46": 0.29
+       },
+       "total": 0.29
+      }
+     ]
+    },
+    {
+     "id": 86788,
+     "nom": "Aménagement du territoire et de la décentralisation",
+     "montants": {
+      "43": 4.90551479,
+      "45": 0.806735
+     },
+     "total": 5.71224979,
+     "programmes": [
+      {
+       "id": 87862,
+       "nom": "Impulsion et coordination de la politique d'aménagement du territoire",
+       "montants": {
+        "43": 0.27961664
+       },
+       "total": 0.27961664
+      },
+      {
+       "id": 92746,
+       "nom": "Concours financiers aux collectivités territoriales et à leurs groupements",
+       "montants": {
+        "43": 3.477652
+       },
+       "total": 3.477652
+      },
+      {
+       "id": 92857,
+       "nom": "Concours spécifiques et administration",
+       "montants": {
+        "43": 0.31075815
+       },
+       "total": 0.31075815
+      },
+      {
+       "id": 90430,
+       "nom": "Fonds d'accélération de la transition écologique dans les territoires",
+       "montants": {
+        "43": 0.837488
+       },
+       "total": 0.837488
+      },
+      {
+       "id": 94132,
+       "nom": "Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières",
+       "montants": {
+        "45": 0.806735
+       },
+       "total": 0.806735
+      }
+     ]
+    },
+    {
+     "id": 86770,
+     "nom": "Transition écologique, biodiversité et négociations internationales sur le climat et la nature",
+     "montants": {
+      "43": 7.951089337
+     },
+     "total": 7.951089337,
+     "programmes": [
+      {
+       "id": 89554,
+       "nom": "Paysages, eau et biodiversité",
+       "montants": {
+        "43": 0.375462626
+       },
+       "total": 0.375462626
+      },
+      {
+       "id": 89590,
+       "nom": "Expertise, information géographique et météorologie",
+       "montants": {
+        "43": 0.66820195
+       },
+       "total": 0.66820195
+      },
+      {
+       "id": 89713,
+       "nom": "Prévention des risques",
+       "montants": {
+        "43": 2.597898284
+       },
+       "total": 2.597898284
+      },
+      {
+       "id": 92710,
+       "nom": "Régimes de retraite et de sécurité sociale des marins",
+       "montants": {
+        "43": 0.8112677
+       },
+       "total": 0.8112677
+      },
+      {
+       "id": 89944,
+       "nom": "Affaires maritimes, pêche et aquaculture",
+       "montants": {
+        "43": 0.350283678
+       },
+       "total": 0.350283678
+      },
+      {
+       "id": 90058,
+       "nom": "Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+       "montants": {
+        "43": 3.147975099
+       },
+       "total": 3.147975099
+      }
+     ]
+    },
+    {
+     "id": 86785,
+     "nom": "Outre-Mer",
+     "montants": {
+      "43": 3.552528146
+     },
+     "total": 3.552528146,
+     "programmes": [
+      {
+       "id": 92011,
+       "nom": "Conditions de vie outre-mer",
+       "montants": {
+        "43": 1.379028286
+       },
+       "total": 1.379028286
+      },
+      {
+       "id": 92131,
+       "nom": "Emploi outre-mer",
+       "montants": {
+        "43": 2.17349986
+       },
+       "total": 2.17349986
+      }
+     ]
+    },
+    {
+     "id": 86767,
+     "nom": "Services du Premier ministre",
+     "montants": {
+      "43": 2.559114403,
+      "44": 0.14569435
+     },
+     "total": 2.704808753,
+     "programmes": [
+      {
+       "id": 88375,
+       "nom": "Conseil économique, social et environnemental",
+       "montants": {
+        "43": 0.033956466
+       },
+       "total": 0.033956466
+      },
+      {
+       "id": 89425,
+       "nom": "Coordination du travail gouvernemental",
+       "montants": {
+        "43": 0.88203983
+       },
+       "total": 0.88203983
+      },
+      {
+       "id": 93433,
+       "nom": "Égalité entre les femmes et les hommes",
+       "montants": {
+        "43": 0.098647633
+       },
+       "total": 0.098647633
+      },
+      {
+       "id": 91933,
+       "nom": "Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la seconde guerre mondiale",
+       "montants": {
+        "43": 0.076423885
+       },
+       "total": 0.076423885
+      },
+      {
+       "id": 88177,
+       "nom": "Interventions territoriales de l'État",
+       "montants": {
+        "43": 0.079825249
+       },
+       "total": 0.079825249
+      },
+      {
+       "id": 88390,
+       "nom": "Cour des comptes et autres juridictions financières",
+       "montants": {
+        "43": 0.263848212
+       },
+       "total": 0.263848212
+      },
+      {
+       "id": 88420,
+       "nom": "Conseil d'État et autres juridictions administratives",
+       "montants": {
+        "43": 0.535649755
+       },
+       "total": 0.535649755
+      },
+      {
+       "id": 89515,
+       "nom": "Protection des droits et libertés",
+       "montants": {
+        "43": 0.138723373
+       },
+       "total": 0.138723373
+      },
+      {
+       "id": 91414,
+       "nom": "Soutien des progrès de l'enseignement et de la recherche",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 91438,
+       "nom": "Valorisation de la recherche",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 91456,
+       "nom": "Accélération de la modernisation des entreprises",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 91486,
+       "nom": "Financement des investissements stratégiques",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 91507,
+       "nom": "Financement structurel des écosystèmes d'innovation",
+       "montants": {
+        "43": 0.45
+       },
+       "total": 0.45
+      },
+      {
+       "id": 94072,
+       "nom": "Édition et diffusion",
+       "montants": {
+        "44": 0.04246346
+       },
+       "total": 0.04246346
+      },
+      {
+       "id": 94093,
+       "nom": "Pilotage et ressources humaines",
+       "montants": {
+        "44": 0.10323089
+       },
+       "total": 0.10323089
+      }
+     ]
+    },
+    {
+     "id": 86749,
+     "nom": "Culture",
+     "montants": {
+      "43": 4.473699231,
+      "46": 3.8633165
+     },
+     "total": 8.337015731,
+     "programmes": [
+      {
+       "id": 88474,
+       "nom": "Création",
+       "montants": {
+        "43": 1.068252795
+       },
+       "total": 1.068252795
+      },
+      {
+       "id": 88537,
+       "nom": "Patrimoines",
+       "montants": {
+        "43": 1.059488088
+       },
+       "total": 1.059488088
+      },
+      {
+       "id": 91816,
+       "nom": "Presse et médias",
+       "montants": {
+        "43": 0.363312354
+       },
+       "total": 0.363312354
+      },
+      {
+       "id": 88648,
+       "nom": "Soutien aux politiques du ministère de la culture",
+       "montants": {
+        "43": 0.86924033
+       },
+       "total": 0.86924033
+      },
+      {
+       "id": 91894,
+       "nom": "Livre et industries culturelles",
+       "montants": {
+        "43": 0.357208494
+       },
+       "total": 0.357208494
+      },
+      {
+       "id": 88693,
+       "nom": "Transmission des savoirs et démocratisation de la culture",
+       "montants": {
+        "43": 0.75619717
+       },
+       "total": 0.75619717
+      },
+      {
+       "id": 94408,
+       "nom": "France Télévisions",
+       "montants": {
+        "46": 2.42558
+       },
+       "total": 2.42558
+      },
+      {
+       "id": 94414,
+       "nom": "ARTE France",
+       "montants": {
+        "46": 0.298115
+       },
+       "total": 0.298115
+      },
+      {
+       "id": 94420,
+       "nom": "Radio France",
+       "montants": {
+        "46": 0.648034
+       },
+       "total": 0.648034
+      },
+      {
+       "id": 94426,
+       "nom": "France Médias Monde",
+       "montants": {
+        "46": 0.303884
+       },
+       "total": 0.303884
+      },
+      {
+       "id": 94432,
+       "nom": "Institut national de l'audiovisuel",
+       "montants": {
+        "46": 0.103461
+       },
+       "total": 0.103461
+      },
+      {
+       "id": 94438,
+       "nom": "TV5 Monde",
+       "montants": {
+        "46": 0.0842425
+       },
+       "total": 0.0842425
+      }
+     ]
+    },
+    {
+     "id": 86755,
+     "nom": "Éducation nationale",
+     "montants": {
+      "43": 87.851512353
+     },
+     "total": 87.851512353,
+     "programmes": [
+      {
+       "id": 90709,
+       "nom": "Enseignement privé du premier et du second degrés",
+       "montants": {
+        "43": 8.870671422
+       },
+       "total": 8.870671422
+      },
+      {
+       "id": 90775,
+       "nom": "Enseignement scolaire public du premier degré",
+       "montants": {
+        "43": 27.909689203
+       },
+       "total": 27.909689203
+      },
+      {
+       "id": 90853,
+       "nom": "Enseignement scolaire public du second degré",
+       "montants": {
+        "43": 40.001673836
+       },
+       "total": 40.001673836
+      },
+      {
+       "id": 91072,
+       "nom": "Soutien de la politique de l'éducation nationale",
+       "montants": {
+        "43": 3.012678406
+       },
+       "total": 3.012678406
+      },
+      {
+       "id": 91177,
+       "nom": "Vie de l'élève",
+       "montants": {
+        "43": 8.056799486
+       },
+       "total": 8.056799486
+      }
+     ]
+    },
+    {
+     "id": 86752,
+     "nom": "Agriculture, agro-alimentaire et souveraineté alimentaire",
+     "montants": {
+      "43": 6.305164115,
+      "45": 0.171
+     },
+     "total": 6.476164115,
+     "programmes": [
+      {
+       "id": 92272,
+       "nom": "Enseignement supérieur et recherche agricoles",
+       "montants": {
+        "43": 0.468009063
+       },
+       "total": 0.468009063
+      },
+      {
+       "id": 90952,
+       "nom": "Enseignement technique agricole",
+       "montants": {
+        "43": 1.748675487
+       },
+       "total": 1.748675487
+      },
+      {
+       "id": 87238,
+       "nom": "Compétitivité et durabilité de l'agriculture, de l'agroalimentaire et de la forêt",
+       "montants": {
+        "43": 2.163981166
+       },
+       "total": 2.163981166
+      },
+      {
+       "id": 87445,
+       "nom": "Sécurité et qualité sanitaires de l'alimentation",
+       "montants": {
+        "43": 0.833796254
+       },
+       "total": 0.833796254
+      },
+      {
+       "id": 87577,
+       "nom": "Conduite et pilotage des politiques de l'agriculture",
+       "montants": {
+        "43": 0.641702145
+       },
+       "total": 0.641702145
+      },
+      {
+       "id": 87697,
+       "nom": "Allègements du coût du travail en agriculture (TODE-AG)",
+       "montants": {
+        "43": 0.449
+       },
+       "total": 0.449
+      },
+      {
+       "id": 94147,
+       "nom": "Développement et transfert en agriculture",
+       "montants": {
+        "45": 0.06793
+       },
+       "total": 0.06793
+      },
+      {
+       "id": 94156,
+       "nom": "Recherche appliquée et innovation en agriculture",
+       "montants": {
+        "45": 0.10307
+       },
+       "total": 0.10307
+      }
+     ]
+    },
+    {
+     "id": 86797,
+     "nom": "Armées et anciens combattants",
+     "montants": {
+      "43": 94.624089267
+     },
+     "total": 94.624089267,
+     "programmes": [
+      {
+       "id": 88753,
+       "nom": "Environnement et prospective de la politique de défense",
+       "montants": {
+        "43": 2.728516083
+       },
+       "total": 2.728516083
+      },
+      {
+       "id": 88783,
+       "nom": "Équipement des forces",
+       "montants": {
+        "43": 47.130266669
+       },
+       "total": 47.130266669
+      },
+      {
+       "id": 91948,
+       "nom": "Reconnaissance et réparation en faveur du monde combattant, mémoire et liens avec la Nation",
+       "montants": {
+        "43": 1.6461833
+       },
+       "total": 1.6461833
+      },
+      {
+       "id": 89053,
+       "nom": "Préparation et emploi des forces",
+       "montants": {
+        "43": 17.140285604
+       },
+       "total": 17.140285604
+      },
+      {
+       "id": 92530,
+       "nom": "Recherche duale (civile et militaire)",
+       "montants": {
+        "43": 0.1494134
+       },
+       "total": 0.1494134
+      },
+      {
+       "id": 89185,
+       "nom": "Soutien de la politique de la défense",
+       "montants": {
+        "43": 25.829424211
+       },
+       "total": 25.829424211
+      }
+     ]
+    },
+    {
+     "id": 86758,
+     "nom": "Action et comptes publics",
+     "montants": {
+      "43": 164.464157196,
+      "45": 70.885012343,
+      "46": 135.69574
+     },
+     "total": 371.044909539,
+     "programmes": [
+      {
+       "id": 93673,
+       "nom": "Fonction publique",
+       "montants": {
+        "43": 0.22451106
+       },
+       "total": 0.22451106
+      },
+      {
+       "id": 91216,
+       "nom": "Gestion fiscale et financière de l'État et du secteur public local",
+       "montants": {
+        "43": 8.280991833
+       },
+       "total": 8.280991833
+      },
+      {
+       "id": 92686,
+       "nom": "Régimes de retraite des mines, de la SEITA, et divers",
+       "montants": {
+        "43": 1.070727503
+       },
+       "total": 1.070727503
+      },
+      {
+       "id": 92716,
+       "nom": "Régimes sociaux et de retraite des transports terrestres",
+       "montants": {
+        "43": 4.1858876
+       },
+       "total": 4.1858876
+      },
+      {
+       "id": 92944,
+       "nom": "Remboursements et dégrèvements d'impôts d'État (crédits évaluatifs)",
+       "montants": {
+        "43": 141.17432
+       },
+       "total": 141.17432
+      },
+      {
+       "id": 93031,
+       "nom": "Remboursements et dégrèvements d'impôts locaux (crédits évaluatifs)",
+       "montants": {
+        "43": 4.426
+       },
+       "total": 4.426
+      },
+      {
+       "id": 91255,
+       "nom": "Conduite et pilotage des politiques économiques et financières",
+       "montants": {
+        "43": 1.040365959
+       },
+       "total": 1.040365959
+      },
+      {
+       "id": 91282,
+       "nom": "Facilitation et sécurisation des échanges",
+       "montants": {
+        "43": 1.833471524
+       },
+       "total": 1.833471524
+      },
+      {
+       "id": 93709,
+       "nom": "Performance et résilience des bâtiments de l'État et de ses opérateurs",
+       "montants": {
+        "43": 0.2172925
+       },
+       "total": 0.2172925
+      },
+      {
+       "id": 93730,
+       "nom": "Transformation publique",
+       "montants": {
+        "43": 0.0425523
+       },
+       "total": 0.0425523
+      },
+      {
+       "id": 93742,
+       "nom": "Conduite et pilotage de la transformation et de la fonction publiques",
+       "montants": {
+        "43": 0.052857117
+       },
+       "total": 0.052857117
+      },
+      {
+       "id": 92206,
+       "nom": "Présidence de la République",
+       "montants": {
+        "43": 0.122564
+       },
+       "total": 0.122564
+      },
+      {
+       "id": 92212,
+       "nom": "Assemblée nationale",
+       "montants": {
+        "43": 0.607648
+       },
+       "total": 0.607648
+      },
+      {
+       "id": 92218,
+       "nom": "Sénat",
+       "montants": {
+        "43": 0.3534709
+       },
+       "total": 0.3534709
+      },
+      {
+       "id": 92230,
+       "nom": "Conseil constitutionnel",
+       "montants": {
+        "43": 0.02
+       },
+       "total": 0.02
+      },
+      {
+       "id": 92242,
+       "nom": "Cour de justice de la République",
+       "montants": {
+        "43": 0.0009
+       },
+       "total": 0.0009
+      },
+      {
+       "id": 92254,
+       "nom": "La Chaîne parlementaire",
+       "montants": {
+        "43": 0.0355969
+       },
+       "total": 0.0355969
+      },
+      {
+       "id": 88459,
+       "nom": "Provision relative aux rémunérations publiques",
+       "montants": {
+        "43": 0.35
+       },
+       "total": 0.35
+      },
+      {
+       "id": 88465,
+       "nom": "Dépenses accidentelles et imprévisibles",
+       "montants": {
+        "43": 0.425
+       },
+       "total": 0.425
+      },
+      {
+       "id": 94231,
+       "nom": "Opérations immobilières et entretien des bâtiments de l'État",
+       "montants": {
+        "45": 0.204
+       },
+       "total": 0.204
+      },
+      {
+       "id": 94276,
+       "nom": "Pensions civiles et militaires de retraite et allocations temporaires d'invalidité",
+       "montants": {
+        "45": 66.6564341
+       },
+       "total": 66.6564341
+      },
+      {
+       "id": 94318,
+       "nom": "Ouvriers des établissements industriels de l'État",
+       "montants": {
+        "45": 2.102709694
+       },
+       "total": 2.102709694
+      },
+      {
+       "id": 94333,
+       "nom": "Pensions militaires d'invalidité et des victimes de guerre et autres pensions",
+       "montants": {
+        "45": 1.170424549
+       },
+       "total": 1.170424549
+      },
+      {
+       "id": 94138,
+       "nom": "Désendettement de l'État",
+       "montants": {
+        "45": 0.751444
+       },
+       "total": 0.751444
+      },
+      {
+       "id": 94486,
+       "nom": "Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes",
+       "montants": {
+        "46": 135.69574
+       },
+       "total": 135.69574
+      }
+     ]
+    },
+    {
+     "id": 86776,
+     "nom": "Enseignement supérieur, recherche et espace",
+     "montants": {
+      "43": 29.415349573
+     },
+     "total": 29.415349573,
+     "programmes": [
+      {
+       "id": 92326,
+       "nom": "Formations supérieures et recherche universitaire",
+       "montants": {
+        "43": 15.767241543
+       },
+       "total": 15.767241543
+      },
+      {
+       "id": 92395,
+       "nom": "Recherches scientifiques et technologiques pluridisciplinaires",
+       "montants": {
+        "43": 8.52763353
+       },
+       "total": 8.52763353
+      },
+      {
+       "id": 92581,
+       "nom": "Recherche spatiale",
+       "montants": {
+        "43": 1.83075076
+       },
+       "total": 1.83075076
+      },
+      {
+       "id": 92644,
+       "nom": "Vie étudiante",
+       "montants": {
+        "43": 3.28972374
+       },
+       "total": 3.28972374
+      }
+     ]
+    },
+    {
+     "id": 94708,
+     "nom": "Santé, familles, autonomie et personnes handicapées",
+     "montants": {
+      "43": 18.280016027
+     },
+     "total": 18.280016027,
+     "programmes": [
+      {
+       "id": 93448,
+       "nom": "Handicap et dépendance",
+       "montants": {
+        "43": 16.39521278
+       },
+       "total": 16.39521278
+      },
+      {
+       "id": 93061,
+       "nom": "Protection maladie",
+       "montants": {
+        "43": 1.2163
+       },
+       "total": 1.2163
+      },
+      {
+       "id": 93070,
+       "nom": "Prévention, sécurité sanitaire et offre de soins",
+       "montants": {
+        "43": 0.426503247
+       },
+       "total": 0.426503247
+      },
+      {
+       "id": 93187,
+       "nom": "Reversement à la sécurité sociale des recettes de la Facilité pour la Relance et la Résilience (FRR) européenne au titre du volet « Ségur investissement » du plan national de relance et de résilience (PNRR)",
+       "montants": {
+        "43": 0.242
+       },
+       "total": 0.242
+      }
+     ]
+    },
+    {
+     "id": 86782,
+     "nom": "Sports, jeunesse et vie associative",
+     "montants": {
+      "43": 1.609484629
+     },
+     "total": 1.609484629,
+     "programmes": [
+      {
+       "id": 93622,
+       "nom": "Jeunesse et vie associative",
+       "montants": {
+        "43": 0.647015352
+       },
+       "total": 0.647015352
+      },
+      {
+       "id": 93637,
+       "nom": "Sport",
+       "montants": {
+        "43": 0.561761587
+       },
+       "total": 0.561761587
+      },
+      {
+       "id": 93658,
+       "nom": "Jeux olympiques et paralympiques d'hiver 2030",
+       "montants": {
+        "43": 0.40070769
+       },
+       "total": 0.40070769
+      }
+     ]
+    },
+    {
+     "id": 94711,
+     "nom": "Transports",
+     "montants": {
+      "43": 5.9020821,
+      "44": 2.545535736,
+      "46": null
+     },
+     "total": 8.447617836,
+     "programmes": [
+      {
+       "id": 89782,
+       "nom": "Infrastructures et services de transports",
+       "montants": {
+        "43": 5.9020821
+       },
+       "total": 5.9020821
+      },
+      {
+       "id": 94027,
+       "nom": "Navigation aérienne",
+       "montants": {
+        "44": 0.785323
+       },
+       "total": 0.785323
+      },
+      {
+       "id": 94036,
+       "nom": "Soutien aux prestations de l'aviation civile",
+       "montants": {
+        "44": 1.712334
+       },
+       "total": 1.712334
+      },
+      {
+       "id": 94057,
+       "nom": "Transports aériens, surveillance et certification",
+       "montants": {
+        "44": 0.047878736
+       },
+       "total": 0.047878736
+      },
+      {
+       "id": 94549,
+       "nom": "Prêts à la société concessionnaire de la liaison express entre Paris et l'aéroport Paris - Charles-de-Gaulle",
+       "montants": {
+        "46": null
+       },
+       "total": null
+      }
+     ]
+    }
+   ],
+   "missions": [
+    {
+     "id": 91519,
+     "nom": "Justice",
+     "montants": {
+      "43": 12.589503218
+     },
+     "total": 12.589503218,
+     "programmes": [
+      {
+       "id": 91522,
+       "nom": "Accès au droit et à la justice",
+       "montants": {
+        "43": 0.8064776
+       },
+       "total": 0.8064776
+      },
+      {
+       "id": 91543,
+       "nom": "Administration pénitentiaire",
+       "montants": {
+        "43": 5.16299706
+       },
+       "total": 5.16299706
+      },
+      {
+       "id": 91558,
+       "nom": "Justice judiciaire",
+       "montants": {
+        "43": 4.676345986
+       },
+       "total": 4.676345986
+      },
+      {
+       "id": 91636,
+       "nom": "Protection judiciaire de la jeunesse",
+       "montants": {
+        "43": 1.156380218
+       },
+       "total": 1.156380218
+      },
+      {
+       "id": 91729,
+       "nom": "Conduite et pilotage de la politique de la justice",
+       "montants": {
+        "43": 0.781840309
+       },
+       "total": 0.781840309
+      },
+      {
+       "id": 91807,
+       "nom": "Conseil supérieur de la magistrature",
+       "montants": {
+        "43": 0.005462045
+       },
+       "total": 0.005462045
+      }
+     ]
+    },
+    {
+     "id": 93754,
+     "nom": "Travail, emploi et administration des ministères sociaux",
+     "montants": {
+      "43": 20.026682672
+     },
+     "total": 20.026682672,
+     "programmes": [
+      {
+       "id": 93757,
+       "nom": "Accès et retour à l'emploi",
+       "montants": {
+        "43": 6.807356083
+       },
+       "total": 6.807356083
+      },
+      {
+       "id": 93802,
+       "nom": "Accompagnement des mutations économiques et développement de l'emploi",
+       "montants": {
+        "43": 11.210280236
+       },
+       "total": 11.210280236
+      },
+      {
+       "id": 93877,
+       "nom": "Amélioration de la qualité de l'emploi et des relations du travail",
+       "montants": {
+        "43": 0.040590773
+       },
+       "total": 0.040590773
+      },
+      {
+       "id": 93940,
+       "nom": "Soutien des ministères sociaux",
+       "montants": {
+        "43": 1.96845558
+       },
+       "total": 1.96845558
+      }
+     ]
+    },
+    {
+     "id": 91309,
+     "nom": "Immigration, asile et intégration",
+     "montants": {
+      "43": 2.20901264
+     },
+     "total": 2.20901264,
+     "programmes": [
+      {
+       "id": 91312,
+       "nom": "Intégration et accès à la nationalité française",
+       "montants": {
+        "43": 0.36400754
+       },
+       "total": 0.36400754
+      },
+      {
+       "id": 91345,
+       "nom": "Immigration et asile",
+       "montants": {
+        "43": 1.8450051
+       },
+       "total": 1.8450051
+      }
+     ]
+    },
+    {
+     "id": 86800,
+     "nom": "Action extérieure de l'État",
+     "montants": {
+      "43": 3.449453544
+     },
+     "total": 3.449453544,
+     "programmes": [
+      {
+       "id": 86803,
+       "nom": "Action de la France en Europe et dans le monde",
+       "montants": {
+        "43": 2.685599559
+       },
+       "total": 2.685599559
+      },
+      {
+       "id": 86917,
+       "nom": "Français à l'étranger et affaires consulaires",
+       "montants": {
+        "43": 0.1525274
+       },
+       "total": 0.1525274
+      },
+      {
+       "id": 86950,
+       "nom": "Diplomatie culturelle et d'influence",
+       "montants": {
+        "43": 0.611326585
+       },
+       "total": 0.611326585
+      }
+     ]
+    },
+    {
+     "id": 87844,
+     "nom": "Cohésion des territoires",
+     "montants": {
+      "43": 22.453315943
+     },
+     "total": 22.453315943,
+     "programmes": [
+      {
+       "id": 87847,
+       "nom": "Aide à l'accès au logement",
+       "montants": {
+        "43": 16.5721
+       },
+       "total": 16.5721
+      },
+      {
+       "id": 87862,
+       "nom": "Impulsion et coordination de la politique d'aménagement du territoire",
+       "montants": {
+        "43": 0.27961664
+       },
+       "total": 0.27961664
+      },
+      {
+       "id": 87928,
+       "nom": "Urbanisme, territoires et amélioration de l'habitat",
+       "montants": {
+        "43": 1.8383412
+       },
+       "total": 1.8383412
+      },
+      {
+       "id": 88102,
+       "nom": "Politique de la ville",
+       "montants": {
+        "43": 0.636747054
+       },
+       "total": 0.636747054
+      },
+      {
+       "id": 88177,
+       "nom": "Interventions territoriales de l'État",
+       "montants": {
+        "43": 0.079825249
+       },
+       "total": 0.079825249
+      },
+      {
+       "id": 88282,
+       "nom": "Hébergement, parcours vers le logement et insertion des personnes vulnérables",
+       "montants": {
+        "43": 3.0466858
+       },
+       "total": 3.0466858
+      }
+     ]
+    },
+    {
+     "id": 87703,
+     "nom": "Aide publique au développement",
+     "montants": {
+      "43": 4.32643361
+     },
+     "total": 4.32643361,
+     "programmes": [
+      {
+       "id": 87706,
+       "nom": "Aide économique et financière au développement",
+       "montants": {
+        "43": 1.301609
+       },
+       "total": 1.301609
+      },
+      {
+       "id": 87802,
+       "nom": "Solidarité à l'égard des pays en développement",
+       "montants": {
+        "43": 1.08113461
+       },
+       "total": 1.08113461
+      },
+      {
+       "id": 87823,
+       "nom": "Renforcement des fonds propres de l'Agence française de développement",
+       "montants": {
+        "43": 0.1
+       },
+       "total": 0.1
+      },
+      {
+       "id": 87838,
+       "nom": "Fonds de solidarité pour le développement",
+       "montants": {
+        "43": 1.84369
+       },
+       "total": 1.84369
+      }
+     ]
+    },
+    {
+     "id": 89551,
+     "nom": "Écologie, développement et mobilité durables",
+     "montants": {
+      "43": 25.420990547
+     },
+     "total": 25.420990547,
+     "programmes": [
+      {
+       "id": 89554,
+       "nom": "Paysages, eau et biodiversité",
+       "montants": {
+        "43": 0.375462626
+       },
+       "total": 0.375462626
+      },
+      {
+       "id": 89590,
+       "nom": "Expertise, information géographique et météorologie",
+       "montants": {
+        "43": 0.66820195
+       },
+       "total": 0.66820195
+      },
+      {
+       "id": 89635,
+       "nom": "Énergie, climat et après-mines",
+       "montants": {
+        "43": 1.10883203
+       },
+       "total": 1.10883203
+      },
+      {
+       "id": 89713,
+       "nom": "Prévention des risques",
+       "montants": {
+        "43": 2.597898284
+       },
+       "total": 2.597898284
+      },
+      {
+       "id": 89782,
+       "nom": "Infrastructures et services de transports",
+       "montants": {
+        "43": 5.9020821
+       },
+       "total": 5.9020821
+      },
+      {
+       "id": 89944,
+       "nom": "Affaires maritimes, pêche et aquaculture",
+       "montants": {
+        "43": 0.350283678
+       },
+       "total": 0.350283678
+      },
+      {
+       "id": 90058,
+       "nom": "Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+       "montants": {
+        "43": 3.147975099
+       },
+       "total": 3.147975099
+      },
+      {
+       "id": 90301,
+       "nom": "Sûreté nucléaire et radioprotection",
+       "montants": {
+        "43": 0.3429589
+       },
+       "total": 0.3429589
+      },
+      {
+       "id": 90310,
+       "nom": "Service public de l'énergie",
+       "montants": {
+        "43": 10.08980788
+       },
+       "total": 10.08980788
+      },
+      {
+       "id": 90430,
+       "nom": "Fonds d'accélération de la transition écologique dans les territoires",
+       "montants": {
+        "43": 0.837488
+       },
+       "total": 0.837488
+      }
+     ]
+    },
+    {
+     "id": 90610,
+     "nom": "Engagements financiers de l'État",
+     "montants": {
+      "43": 60.1625296
+     },
+     "total": 60.1625296,
+     "programmes": [
+      {
+       "id": 90613,
+       "nom": "Appels en garantie de l'État (crédits évaluatifs)",
+       "montants": {
+        "43": 0.790363
+       },
+       "total": 0.790363
+      },
+      {
+       "id": 90655,
+       "nom": "Charge de la dette et trésorerie de l'État (crédits évaluatifs)",
+       "montants": {
+        "43": 58.615
+       },
+       "total": 58.615
+      },
+      {
+       "id": 90664,
+       "nom": "Épargne",
+       "montants": {
+        "43": 0.0961666
+       },
+       "total": 0.0961666
+      },
+      {
+       "id": 90673,
+       "nom": "Dotation du Mécanisme européen de stabilité",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 90685,
+       "nom": "Fonds de soutien relatif aux prêts et contrats financiers structurés à risque",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 90700,
+       "nom": "Charge de la dette de SNCF Réseau reprise par l'État (crédits évaluatifs)",
+       "montants": {
+        "43": 0.661
+       },
+       "total": 0.661
+      }
+     ]
+    },
+    {
+     "id": 92743,
+     "nom": "Relations avec les collectivités territoriales",
+     "montants": {
+      "43": 3.78841015
+     },
+     "total": 3.78841015,
+     "programmes": [
+      {
+       "id": 92746,
+       "nom": "Concours financiers aux collectivités territoriales et à leurs groupements",
+       "montants": {
+        "43": 3.477652
+       },
+       "total": 3.477652
+      },
+      {
+       "id": 92857,
+       "nom": "Concours spécifiques et administration",
+       "montants": {
+        "43": 0.31075815
+       },
+       "total": 0.31075815
+      }
+     ]
+    },
+    {
+     "id": 92008,
+     "nom": "Outre-mer",
+     "montants": {
+      "43": 3.552528146
+     },
+     "total": 3.552528146,
+     "programmes": [
+      {
+       "id": 92011,
+       "nom": "Conditions de vie outre-mer",
+       "montants": {
+        "43": 1.379028286
+       },
+       "total": 1.379028286
+      },
+      {
+       "id": 92131,
+       "nom": "Emploi outre-mer",
+       "montants": {
+        "43": 2.17349986
+       },
+       "total": 2.17349986
+      }
+     ]
+    },
+    {
+     "id": 88372,
+     "nom": "Conseil et contrôle de l'État",
+     "montants": {
+      "43": 0.833454433
+     },
+     "total": 0.833454433,
+     "programmes": [
+      {
+       "id": 88375,
+       "nom": "Conseil économique, social et environnemental",
+       "montants": {
+        "43": 0.033956466
+       },
+       "total": 0.033956466
+      },
+      {
+       "id": 88390,
+       "nom": "Cour des comptes et autres juridictions financières",
+       "montants": {
+        "43": 0.263848212
+       },
+       "total": 0.263848212
+      },
+      {
+       "id": 88420,
+       "nom": "Conseil d'État et autres juridictions administratives",
+       "montants": {
+        "43": 0.535649755
+       },
+       "total": 0.535649755
+      }
+     ]
+    },
+    {
+     "id": 89422,
+     "nom": "Direction de l'action du Gouvernement",
+     "montants": {
+      "43": 1.020763203
+     },
+     "total": 1.020763203,
+     "programmes": [
+      {
+       "id": 89425,
+       "nom": "Coordination du travail gouvernemental",
+       "montants": {
+        "43": 0.88203983
+       },
+       "total": 0.88203983
+      },
+      {
+       "id": 89515,
+       "nom": "Protection des droits et libertés",
+       "montants": {
+        "43": 0.138723373
+       },
+       "total": 0.138723373
+      }
+     ]
+    },
+    {
+     "id": 88471,
+     "nom": "Culture",
+     "montants": {
+      "43": 3.753178383
+     },
+     "total": 3.753178383,
+     "programmes": [
+      {
+       "id": 88474,
+       "nom": "Création",
+       "montants": {
+        "43": 1.068252795
+       },
+       "total": 1.068252795
+      },
+      {
+       "id": 88537,
+       "nom": "Patrimoines",
+       "montants": {
+        "43": 1.059488088
+       },
+       "total": 1.059488088
+      },
+      {
+       "id": 88648,
+       "nom": "Soutien aux politiques du ministère de la culture",
+       "montants": {
+        "43": 0.86924033
+       },
+       "total": 0.86924033
+      },
+      {
+       "id": 88693,
+       "nom": "Transmission des savoirs et démocratisation de la culture",
+       "montants": {
+        "43": 0.75619717
+       },
+       "total": 0.75619717
+      }
+     ]
+    },
+    {
+     "id": 90517,
+     "nom": "Économie",
+     "montants": {
+      "43": 3.658523042
+     },
+     "total": 3.658523042,
+     "programmes": [
+      {
+       "id": 90520,
+       "nom": "Développement des entreprises et régulations",
+       "montants": {
+        "43": 2.490703657
+       },
+       "total": 2.490703657
+      },
+      {
+       "id": 90553,
+       "nom": "Statistiques et études économiques",
+       "montants": {
+        "43": 0.487634002
+       },
+       "total": 0.487634002
+      },
+      {
+       "id": 90571,
+       "nom": "Stratégies économiques",
+       "montants": {
+        "43": 0.664278673
+       },
+       "total": 0.664278673
+      },
+      {
+       "id": 90592,
+       "nom": "Plan France Très haut débit",
+       "montants": {
+        "43": 0.01590671
+       },
+       "total": 0.01590671
+      }
+     ]
+    },
+    {
+     "id": 93430,
+     "nom": "Solidarité, insertion et égalité des chances",
+     "montants": {
+      "43": 31.277764173
+     },
+     "total": 31.277764173,
+     "programmes": [
+      {
+       "id": 93433,
+       "nom": "Égalité entre les femmes et les hommes",
+       "montants": {
+        "43": 0.098647633
+       },
+       "total": 0.098647633
+      },
+      {
+       "id": 93448,
+       "nom": "Handicap et dépendance",
+       "montants": {
+        "43": 16.39521278
+       },
+       "total": 16.39521278
+      },
+      {
+       "id": 93475,
+       "nom": "Inclusion sociale et protection des personnes",
+       "montants": {
+        "43": 14.78390376
+       },
+       "total": 14.78390376
+      }
+     ]
+    },
+    {
+     "id": 90706,
+     "nom": "Enseignement scolaire",
+     "montants": {
+      "43": 89.60018784
+     },
+     "total": 89.60018784,
+     "programmes": [
+      {
+       "id": 90709,
+       "nom": "Enseignement privé du premier et du second degrés",
+       "montants": {
+        "43": 8.870671422
+       },
+       "total": 8.870671422
+      },
+      {
+       "id": 90775,
+       "nom": "Enseignement scolaire public du premier degré",
+       "montants": {
+        "43": 27.909689203
+       },
+       "total": 27.909689203
+      },
+      {
+       "id": 90853,
+       "nom": "Enseignement scolaire public du second degré",
+       "montants": {
+        "43": 40.001673836
+       },
+       "total": 40.001673836
+      },
+      {
+       "id": 90952,
+       "nom": "Enseignement technique agricole",
+       "montants": {
+        "43": 1.748675487
+       },
+       "total": 1.748675487
+      },
+      {
+       "id": 91072,
+       "nom": "Soutien de la politique de l'éducation nationale",
+       "montants": {
+        "43": 3.012678406
+       },
+       "total": 3.012678406
+      },
+      {
+       "id": 91177,
+       "nom": "Vie de l'élève",
+       "montants": {
+        "43": 8.056799486
+       },
+       "total": 8.056799486
+      }
+     ]
+    },
+    {
+     "id": 92269,
+     "nom": "Recherche et enseignement supérieur",
+     "montants": {
+      "43": 32.07264488
+     },
+     "total": 32.07264488,
+     "programmes": [
+      {
+       "id": 92272,
+       "nom": "Enseignement supérieur et recherche agricoles",
+       "montants": {
+        "43": 0.468009063
+       },
+       "total": 0.468009063
+      },
+      {
+       "id": 92326,
+       "nom": "Formations supérieures et recherche universitaire",
+       "montants": {
+        "43": 15.767241543
+       },
+       "total": 15.767241543
+      },
+      {
+       "id": 92395,
+       "nom": "Recherches scientifiques et technologiques pluridisciplinaires",
+       "montants": {
+        "43": 8.52763353
+       },
+       "total": 8.52763353
+      },
+      {
+       "id": 92461,
+       "nom": "Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+       "montants": {
+        "43": 1.473952
+       },
+       "total": 1.473952
+      },
+      {
+       "id": 92530,
+       "nom": "Recherche duale (civile et militaire)",
+       "montants": {
+        "43": 0.1494134
+       },
+       "total": 0.1494134
+      },
+      {
+       "id": 92542,
+       "nom": "Recherche et enseignement supérieur en matière économique et industrielle",
+       "montants": {
+        "43": 0.565920844
+       },
+       "total": 0.565920844
+      },
+      {
+       "id": 92581,
+       "nom": "Recherche spatiale",
+       "montants": {
+        "43": 1.83075076
+       },
+       "total": 1.83075076
+      },
+      {
+       "id": 92644,
+       "nom": "Vie étudiante",
+       "montants": {
+        "43": 3.28972374
+       },
+       "total": 3.28972374
+      }
+     ]
+    },
+    {
+     "id": 88750,
+     "nom": "Défense",
+     "montants": {
+      "43": 92.828492567
+     },
+     "total": 92.828492567,
+     "programmes": [
+      {
+       "id": 88753,
+       "nom": "Environnement et prospective de la politique de défense",
+       "montants": {
+        "43": 2.728516083
+       },
+       "total": 2.728516083
+      },
+      {
+       "id": 88783,
+       "nom": "Équipement des forces",
+       "montants": {
+        "43": 47.130266669
+       },
+       "total": 47.130266669
+      },
+      {
+       "id": 89053,
+       "nom": "Préparation et emploi des forces",
+       "montants": {
+        "43": 17.140285604
+       },
+       "total": 17.140285604
+      },
+      {
+       "id": 89185,
+       "nom": "Soutien de la politique de la défense",
+       "montants": {
+        "43": 25.829424211
+       },
+       "total": 25.829424211
+      }
+     ]
+    },
+    {
+     "id": 93670,
+     "nom": "Transformation et fonction publiques",
+     "montants": {
+      "43": 0.537212977
+     },
+     "total": 0.537212977,
+     "programmes": [
+      {
+       "id": 93673,
+       "nom": "Fonction publique",
+       "montants": {
+        "43": 0.22451106
+       },
+       "total": 0.22451106
+      },
+      {
+       "id": 93709,
+       "nom": "Performance et résilience des bâtiments de l'État et de ses opérateurs",
+       "montants": {
+        "43": 0.2172925
+       },
+       "total": 0.2172925
+      },
+      {
+       "id": 93730,
+       "nom": "Transformation publique",
+       "montants": {
+        "43": 0.0425523
+       },
+       "total": 0.0425523
+      },
+      {
+       "id": 93742,
+       "nom": "Conduite et pilotage de la transformation et de la fonction publiques",
+       "montants": {
+        "43": 0.052857117
+       },
+       "total": 0.052857117
+      }
+     ]
+    },
+    {
+     "id": 87235,
+     "nom": "Agriculture, alimentation, forêt et affaires rurales",
+     "montants": {
+      "43": 4.088479565
+     },
+     "total": 4.088479565,
+     "programmes": [
+      {
+       "id": 87238,
+       "nom": "Compétitivité et durabilité de l'agriculture, de l'agroalimentaire et de la forêt",
+       "montants": {
+        "43": 2.163981166
+       },
+       "total": 2.163981166
+      },
+      {
+       "id": 87445,
+       "nom": "Sécurité et qualité sanitaires de l'alimentation",
+       "montants": {
+        "43": 0.833796254
+       },
+       "total": 0.833796254
+      },
+      {
+       "id": 87577,
+       "nom": "Conduite et pilotage des politiques de l'agriculture",
+       "montants": {
+        "43": 0.641702145
+       },
+       "total": 0.641702145
+      },
+      {
+       "id": 87697,
+       "nom": "Allègements du coût du travail en agriculture (TODE-AG)",
+       "montants": {
+        "43": 0.449
+       },
+       "total": 0.449
+      }
+     ]
+    },
+    {
+     "id": 93193,
+     "nom": "Sécurités",
+     "montants": {
+      "43": 26.477794581
+     },
+     "total": 26.477794581,
+     "programmes": [
+      {
+       "id": 93196,
+       "nom": "Gendarmerie nationale",
+       "montants": {
+        "43": 11.12270047
+       },
+       "total": 11.12270047
+      },
+      {
+       "id": 93247,
+       "nom": "Sécurité civile",
+       "montants": {
+        "43": 0.986942591
+       },
+       "total": 0.986942591
+      },
+      {
+       "id": 93316,
+       "nom": "Police nationale",
+       "montants": {
+        "43": 14.28952889
+       },
+       "total": 14.28952889
+      },
+      {
+       "id": 93397,
+       "nom": "Sécurité et éducation routières",
+       "montants": {
+        "43": 0.07862263
+       },
+       "total": 0.07862263
+      }
+     ]
+    },
+    {
+     "id": 91213,
+     "nom": "Gestion des finances publiques",
+     "montants": {
+      "43": 11.154829316
+     },
+     "total": 11.154829316,
+     "programmes": [
+      {
+       "id": 91216,
+       "nom": "Gestion fiscale et financière de l'État et du secteur public local",
+       "montants": {
+        "43": 8.280991833
+       },
+       "total": 8.280991833
+      },
+      {
+       "id": 91255,
+       "nom": "Conduite et pilotage des politiques économiques et financières",
+       "montants": {
+        "43": 1.040365959
+       },
+       "total": 1.040365959
+      },
+      {
+       "id": 91282,
+       "nom": "Facilitation et sécurisation des échanges",
+       "montants": {
+        "43": 1.833471524
+       },
+       "total": 1.833471524
+      }
+     ]
+    },
+    {
+     "id": 91930,
+     "nom": "Monde combattant, mémoire et liens avec la Nation",
+     "montants": {
+      "43": 1.722607185
+     },
+     "total": 1.722607185,
+     "programmes": [
+      {
+       "id": 91933,
+       "nom": "Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la seconde guerre mondiale",
+       "montants": {
+        "43": 0.076423885
+       },
+       "total": 0.076423885
+      },
+      {
+       "id": 91948,
+       "nom": "Reconnaissance et réparation en faveur du monde combattant, mémoire et liens avec la Nation",
+       "montants": {
+        "43": 1.6461833
+       },
+       "total": 1.6461833
+      }
+     ]
+    },
+    {
+     "id": 93619,
+     "nom": "Sport, jeunesse et vie associative",
+     "montants": {
+      "43": 1.609484629
+     },
+     "total": 1.609484629,
+     "programmes": [
+      {
+       "id": 93622,
+       "nom": "Jeunesse et vie associative",
+       "montants": {
+        "43": 0.647015352
+       },
+       "total": 0.647015352
+      },
+      {
+       "id": 93637,
+       "nom": "Sport",
+       "montants": {
+        "43": 0.561761587
+       },
+       "total": 0.561761587
+      },
+      {
+       "id": 93658,
+       "nom": "Jeux olympiques et paralympiques d'hiver 2030",
+       "montants": {
+        "43": 0.40070769
+       },
+       "total": 0.40070769
+      }
+     ]
+    },
+    {
+     "id": 91813,
+     "nom": "Médias, livre et industries culturelles",
+     "montants": {
+      "43": 0.720520848
+     },
+     "total": 0.720520848,
+     "programmes": [
+      {
+       "id": 91816,
+       "nom": "Presse et médias",
+       "montants": {
+        "43": 0.363312354
+       },
+       "total": 0.363312354
+      },
+      {
+       "id": 91894,
+       "nom": "Livre et industries culturelles",
+       "montants": {
+        "43": 0.357208494
+       },
+       "total": 0.357208494
+      }
+     ]
+    },
+    {
+     "id": 93058,
+     "nom": "Santé",
+     "montants": {
+      "43": 1.884803247
+     },
+     "total": 1.884803247,
+     "programmes": [
+      {
+       "id": 93061,
+       "nom": "Protection maladie",
+       "montants": {
+        "43": 1.2163
+       },
+       "total": 1.2163
+      },
+      {
+       "id": 93070,
+       "nom": "Prévention, sécurité sanitaire et offre de soins",
+       "montants": {
+        "43": 0.426503247
+       },
+       "total": 0.426503247
+      },
+      {
+       "id": 93187,
+       "nom": "Reversement à la sécurité sociale des recettes de la Facilité pour la Relance et la Résilience (FRR) européenne au titre du volet « Ségur investissement » du plan national de relance et de résilience (PNRR)",
+       "montants": {
+        "43": 0.242
+       },
+       "total": 0.242
+      }
+     ]
+    },
+    {
+     "id": 92683,
+     "nom": "Régimes sociaux et de retraite",
+     "montants": {
+      "43": 6.067882803
+     },
+     "total": 6.067882803,
+     "programmes": [
+      {
+       "id": 92686,
+       "nom": "Régimes de retraite des mines, de la SEITA, et divers",
+       "montants": {
+        "43": 1.070727503
+       },
+       "total": 1.070727503
+      },
+      {
+       "id": 92710,
+       "nom": "Régimes de retraite et de sécurité sociale des marins",
+       "montants": {
+        "43": 0.8112677
+       },
+       "total": 0.8112677
+      },
+      {
+       "id": 92716,
+       "nom": "Régimes sociaux et de retraite des transports terrestres",
+       "montants": {
+        "43": 4.1858876
+       },
+       "total": 4.1858876
+      }
+     ]
+    },
+    {
+     "id": 92941,
+     "nom": "Remboursements et dégrèvements",
+     "montants": {
+      "43": 145.60032
+     },
+     "total": 145.60032,
+     "programmes": [
+      {
+       "id": 92944,
+       "nom": "Remboursements et dégrèvements d'impôts d'État (crédits évaluatifs)",
+       "montants": {
+        "43": 141.17432
+       },
+       "total": 141.17432
+      },
+      {
+       "id": 93031,
+       "nom": "Remboursements et dégrèvements d'impôts locaux (crédits évaluatifs)",
+       "montants": {
+        "43": 4.426
+       },
+       "total": 4.426
+      }
+     ]
+    },
+    {
+     "id": 86965,
+     "nom": "Administration générale et territoriale de l'État",
+     "montants": {
+      "43": 4.996177734
+     },
+     "total": 4.996177734,
+     "programmes": [
+      {
+       "id": 86968,
+       "nom": "Conduite et pilotage des politiques de l'intérieur",
+       "montants": {
+        "43": 1.906992367
+       },
+       "total": 1.906992367
+      },
+      {
+       "id": 87160,
+       "nom": "Vie politique",
+       "montants": {
+        "43": 0.299561357
+       },
+       "total": 0.299561357
+      },
+      {
+       "id": 87211,
+       "nom": "Administration territoriale de l'État",
+       "montants": {
+        "43": 2.78962401
+       },
+       "total": 2.78962401
+      }
+     ]
+    },
+    {
+     "id": 91411,
+     "nom": "Investir pour la France de 2030",
+     "montants": {
+      "43": 0.45
+     },
+     "total": 0.45,
+     "programmes": [
+      {
+       "id": 91414,
+       "nom": "Soutien des progrès de l'enseignement et de la recherche",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 91438,
+       "nom": "Valorisation de la recherche",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 91456,
+       "nom": "Accélération de la modernisation des entreprises",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 91486,
+       "nom": "Financement des investissements stratégiques",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 91507,
+       "nom": "Financement structurel des écosystèmes d'innovation",
+       "montants": {
+        "43": 0.45
+       },
+       "total": 0.45
+      }
+     ]
+    },
+    {
+     "id": 92203,
+     "nom": "Pouvoirs publics",
+     "montants": {
+      "43": 1.1401798
+     },
+     "total": 1.1401798,
+     "programmes": [
+      {
+       "id": 92206,
+       "nom": "Présidence de la République",
+       "montants": {
+        "43": 0.122564
+       },
+       "total": 0.122564
+      },
+      {
+       "id": 92212,
+       "nom": "Assemblée nationale",
+       "montants": {
+        "43": 0.607648
+       },
+       "total": 0.607648
+      },
+      {
+       "id": 92218,
+       "nom": "Sénat",
+       "montants": {
+        "43": 0.3534709
+       },
+       "total": 0.3534709
+      },
+      {
+       "id": 92230,
+       "nom": "Conseil constitutionnel",
+       "montants": {
+        "43": 0.02
+       },
+       "total": 0.02
+      },
+      {
+       "id": 92242,
+       "nom": "Cour de justice de la République",
+       "montants": {
+        "43": 0.0009
+       },
+       "total": 0.0009
+      },
+      {
+       "id": 92254,
+       "nom": "La Chaîne parlementaire",
+       "montants": {
+        "43": 0.0355969
+       },
+       "total": 0.0355969
+      }
+     ]
+    },
+    {
+     "id": 88456,
+     "nom": "Crédits non répartis",
+     "montants": {
+      "43": 0.775
+     },
+     "total": 0.775,
+     "programmes": [
+      {
+       "id": 88459,
+       "nom": "Provision relative aux rémunérations publiques",
+       "montants": {
+        "43": 0.35
+       },
+       "total": 0.35
+      },
+      {
+       "id": 88465,
+       "nom": "Dépenses accidentelles et imprévisibles",
+       "montants": {
+        "43": 0.425
+       },
+       "total": 0.425
+      }
+     ]
+    },
+    {
+     "id": 94024,
+     "nom": "Contrôle et exploitation aériens",
+     "montants": {
+      "44": 2.545535736
+     },
+     "total": 2.545535736,
+     "programmes": [
+      {
+       "id": 94027,
+       "nom": "Navigation aérienne",
+       "montants": {
+        "44": 0.785323
+       },
+       "total": 0.785323
+      },
+      {
+       "id": 94036,
+       "nom": "Soutien aux prestations de l'aviation civile",
+       "montants": {
+        "44": 1.712334
+       },
+       "total": 1.712334
+      },
+      {
+       "id": 94057,
+       "nom": "Transports aériens, surveillance et certification",
+       "montants": {
+        "44": 0.047878736
+       },
+       "total": 0.047878736
+      }
+     ]
+    },
+    {
+     "id": 94069,
+     "nom": "Publications officielles et information administrative",
+     "montants": {
+      "44": 0.14569435
+     },
+     "total": 0.14569435,
+     "programmes": [
+      {
+       "id": 94072,
+       "nom": "Édition et diffusion",
+       "montants": {
+        "44": 0.04246346
+       },
+       "total": 0.04246346
+      },
+      {
+       "id": 94093,
+       "nom": "Pilotage et ressources humaines",
+       "montants": {
+        "44": 0.10323089
+       },
+       "total": 0.10323089
+      }
+     ]
+    },
+    {
+     "id": 94222,
+     "nom": "Gestion du patrimoine immobilier de l'État",
+     "montants": {
+      "45": 0.204
+     },
+     "total": 0.204,
+     "programmes": [
+      {
+       "id": 94231,
+       "nom": "Opérations immobilières et entretien des bâtiments de l'État",
+       "montants": {
+        "45": 0.204
+       },
+       "total": 0.204
+      }
+     ]
+    },
+    {
+     "id": 94246,
+     "nom": "Participations financières de l'État",
+     "montants": {
+      "45": 5.38369
+     },
+     "total": 5.38369,
+     "programmes": [
+      {
+       "id": 94249,
+       "nom": "Opérations en capital intéressant les participations financières de l'État",
+       "montants": {
+        "45": 5.38369
+       },
+       "total": 5.38369
+      }
+     ]
+    },
+    {
+     "id": 94273,
+     "nom": "Pensions",
+     "montants": {
+      "45": 69.929568343
+     },
+     "total": 69.929568343,
+     "programmes": [
+      {
+       "id": 94276,
+       "nom": "Pensions civiles et militaires de retraite et allocations temporaires d'invalidité",
+       "montants": {
+        "45": 66.6564341
+       },
+       "total": 66.6564341
+      },
+      {
+       "id": 94318,
+       "nom": "Ouvriers des établissements industriels de l'État",
+       "montants": {
+        "45": 2.102709694
+       },
+       "total": 2.102709694
+      },
+      {
+       "id": 94333,
+       "nom": "Pensions militaires d'invalidité et des victimes de guerre et autres pensions",
+       "montants": {
+        "45": 1.170424549
+       },
+       "total": 1.170424549
+      }
+     ]
+    },
+    {
+     "id": 94108,
+     "nom": "Contrôle de la circulation et du stationnement routiers",
+     "montants": {
+      "45": 1.9286996
+     },
+     "total": 1.9286996,
+     "programmes": [
+      {
+       "id": 94111,
+       "nom": "Structures et dispositifs de sécurité routière",
+       "montants": {
+        "45": 0.3443399
+       },
+       "total": 0.3443399
+      },
+      {
+       "id": 94126,
+       "nom": "Contrôle et modernisation de la politique de la circulation et du stationnement routiers",
+       "montants": {
+        "45": 0.0261807
+       },
+       "total": 0.0261807
+      },
+      {
+       "id": 94132,
+       "nom": "Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières",
+       "montants": {
+        "45": 0.806735
+       },
+       "total": 0.806735
+      },
+      {
+       "id": 94138,
+       "nom": "Désendettement de l'État",
+       "montants": {
+        "45": 0.751444
+       },
+       "total": 0.751444
+      }
+     ]
+    },
+    {
+     "id": 94144,
+     "nom": "Développement agricole et rural",
+     "montants": {
+      "45": 0.171
+     },
+     "total": 0.171,
+     "programmes": [
+      {
+       "id": 94147,
+       "nom": "Développement et transfert en agriculture",
+       "montants": {
+        "45": 0.06793
+       },
+       "total": 0.06793
+      },
+      {
+       "id": 94156,
+       "nom": "Recherche appliquée et innovation en agriculture",
+       "montants": {
+        "45": 0.10307
+       },
+       "total": 0.10307
+      }
+     ]
+    },
+    {
+     "id": 94171,
+     "nom": "Financement des aides aux collectivités pour l'électrification rurale",
+     "montants": {
+      "45": 0.3583
+     },
+     "total": 0.3583,
+     "programmes": [
+      {
+       "id": 94174,
+       "nom": "Électrification rurale",
+       "montants": {
+        "45": 0.3553
+       },
+       "total": 0.3553
+      },
+      {
+       "id": 94204,
+       "nom": "Opérations de maîtrise de la demande d'électricité, de production d'électricité par des énergies renouvelables ou de production de proximité dans les zones non interconnectées",
+       "montants": {
+        "45": 0.003
+       },
+       "total": 0.003
+      }
+     ]
+    },
+    {
+     "id": 94573,
+     "nom": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+     "montants": {
+      "46": 9.295
+     },
+     "total": 9.295,
+     "programmes": [
+      {
+       "id": 94576,
+       "nom": "Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune",
+       "montants": {
+        "46": 9
+       },
+       "total": 9
+      },
+      {
+       "id": 94582,
+       "nom": "Avances à des organismes distincts de l'État et gérant des services publics",
+       "montants": {
+        "46": 0.21
+       },
+       "total": 0.21
+      },
+      {
+       "id": 94588,
+       "nom": "Prêts et avances à des services de l'État",
+       "montants": {
+        "46": 0.03
+       },
+       "total": 0.03
+      },
+      {
+       "id": 94594,
+       "nom": "Avances à l'Office national d'indemnisation des accidents médicaux, des affections iatrogènes et des infections nosocomiales (ONIAM) au titre de l'indemnisation des victimes du Benfluorex",
+       "montants": {
+        "46": 0.015
+       },
+       "total": 0.015
+      },
+      {
+       "id": 94618,
+       "nom": "Prêts à FranceAgriMer au titre des préfinancements de fonds européens",
+       "montants": {
+        "46": 0.04
+       },
+       "total": 0.04
+      }
+     ]
+    },
+    {
+     "id": 94465,
+     "nom": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+     "montants": {
+      "46": 135.90174
+     },
+     "total": 135.90174,
+     "programmes": [
+      {
+       "id": 94468,
+       "nom": "Avances aux collectivités et établissements publics, à la Nouvelle-Calédonie et aux collectivités régies par l’article 74 de la Constitution",
+       "montants": {
+        "46": 0.206
+       },
+       "total": 0.206
+      },
+      {
+       "id": 94486,
+       "nom": "Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes",
+       "montants": {
+        "46": 135.69574
+       },
+       "total": 135.69574
+      }
+     ]
+    },
+    {
+     "id": 94405,
+     "nom": "Avances à l'audiovisuel public",
+     "montants": {
+      "46": 3.8633165
+     },
+     "total": 3.8633165,
+     "programmes": [
+      {
+       "id": 94408,
+       "nom": "France Télévisions",
+       "montants": {
+        "46": 2.42558
+       },
+       "total": 2.42558
+      },
+      {
+       "id": 94414,
+       "nom": "ARTE France",
+       "montants": {
+        "46": 0.298115
+       },
+       "total": 0.298115
+      },
+      {
+       "id": 94420,
+       "nom": "Radio France",
+       "montants": {
+        "46": 0.648034
+       },
+       "total": 0.648034
+      },
+      {
+       "id": 94426,
+       "nom": "France Médias Monde",
+       "montants": {
+        "46": 0.303884
+       },
+       "total": 0.303884
+      },
+      {
+       "id": 94432,
+       "nom": "Institut national de l'audiovisuel",
+       "montants": {
+        "46": 0.103461
+       },
+       "total": 0.103461
+      },
+      {
+       "id": 94438,
+       "nom": "TV5 Monde",
+       "montants": {
+        "46": 0.0842425
+       },
+       "total": 0.0842425
+      }
+     ]
+    },
+    {
+     "id": 94507,
+     "nom": "Prêts à des États étrangers",
+     "montants": {
+      "46": 0.811793
+     },
+     "total": 0.811793,
+     "programmes": [
+      {
+       "id": 94510,
+       "nom": "Prêts du Trésor à des États étrangers en vue de faciliter la vente de biens et de services concourant au développement du commerce extérieur de la France",
+       "montants": {
+        "46": 0.6
+       },
+       "total": 0.6
+      },
+      {
+       "id": 94516,
+       "nom": "Prêts à des États étrangers pour consolidation de dettes envers la France",
+       "montants": {
+        "46": 0.211793
+       },
+       "total": 0.211793
+      },
+      {
+       "id": 94522,
+       "nom": "Prêts à l'Agence française de développement en vue de favoriser le développement économique et social dans des États étrangers",
+       "montants": {
+        "46": null
+       },
+       "total": null
+      }
+     ]
+    },
+    {
+     "id": 94534,
+     "nom": "Prêts et avances à des particuliers ou à des organismes privés",
+     "montants": {
+      "46": 0.36505
+     },
+     "total": 0.36505,
+     "programmes": [
+      {
+       "id": 94537,
+       "nom": "Prêts et avances pour le logement des agents de l'État",
+       "montants": {
+        "46": 5e-05
+       },
+       "total": 5e-05
+      },
+      {
+       "id": 94543,
+       "nom": "Prêts pour le développement économique et social",
+       "montants": {
+        "46": 0.075
+       },
+       "total": 0.075
+      },
+      {
+       "id": 94549,
+       "nom": "Prêts à la société concessionnaire de la liaison express entre Paris et l'aéroport Paris - Charles-de-Gaulle",
+       "montants": {
+        "46": null
+       },
+       "total": null
+      },
+      {
+       "id": 94567,
+       "nom": "Soutien à la filière nickel en Nouvelle Calédonie",
+       "montants": {
+        "46": 0.29
+       },
+       "total": 0.29
+      }
+     ]
+    }
+   ],
+   "titres": [
+    {
+     "id": 94642,
+     "nom": "Titre 3 : Dépenses de fonctionnement",
+     "montants": {
+      "43": 74.516771351,
+      "44": 0.76043831,
+      "45": 1.154126845
+     },
+     "total": 76.431336506,
+     "categories": [
+      {
+       "id": 94645,
+       "nom": "Dépenses de fonctionnement autres que celles de personnel",
+       "montants": {
+        "43": 40.564506667,
+        "44": 0.65395531,
+        "45": 1.045644245
+       },
+       "total": 42.264106222
+      },
+      {
+       "id": 94648,
+       "nom": "Subventions pour charges de service public",
+       "montants": {
+        "43": 33.952264684,
+        "44": 0.106483,
+        "45": 0.1084826
+       },
+       "total": 34.167230284
+      }
+     ]
+    },
+    {
+     "id": 94675,
+     "nom": "Titre 6 : Dépenses d’intervention",
+     "montants": {
+      "43": 273.386619041,
+      "44": 0.026197,
+      "45": 2.489689537,
+      "46": 3.8633165
+     },
+     "total": 279.765822078,
+     "categories": [
+      {
+       "id": 94690,
+       "nom": "Transferts aux ménages",
+       "montants": {
+        "43": 85.130343027,
+        "45": 1.152384537
+       },
+       "total": 86.282727564
+      },
+      {
+       "id": 94681,
+       "nom": "Transferts aux autres collectivités",
+       "montants": {
+        "43": 29.584875606,
+        "44": 0.001681,
+        "45": 0.17297
+       },
+       "total": 29.759526606
+      },
+      {
+       "id": 94687,
+       "nom": "Transferts aux collectivités territoriales",
+       "montants": {
+        "43": 13.126916166,
+        "45": 1.164335
+       },
+       "total": 14.291251166
+      },
+      {
+       "id": 94678,
+       "nom": "Transferts aux entreprises",
+       "montants": {
+        "43": 144.754121242,
+        "44": 0.024516,
+        "46": 3.8633165
+       },
+       "total": 148.641953742
+      },
+      {
+       "id": 94684,
+       "nom": "Appels en garantie",
+       "montants": {
+        "43": 0.790363
+       },
+       "total": 0.790363
+      }
+     ]
+    },
+    {
+     "id": 94663,
+     "nom": "Titre 5 : Dépenses d’investissement",
+     "montants": {
+      "43": 50.999057861,
+      "44": 0.375608266,
+      "45": 0.18075
+     },
+     "total": 51.555416127,
+     "categories": [
+      {
+       "id": 94669,
+       "nom": "Subventions pour charges d'investissement",
+       "montants": {
+        "43": 1.212454037,
+        "44": 0.002,
+        "45": 0.019
+       },
+       "total": 1.233454037
+      },
+      {
+       "id": 94672,
+       "nom": "Dépenses pour immobilisations corporelles de l’État",
+       "montants": {
+        "43": 49.171467957,
+        "44": 0.150393845,
+        "45": 0.16175
+       },
+       "total": 49.483611802
+      },
+      {
+       "id": 94666,
+       "nom": "Dépenses pour immobilisations incorporelles de l’État",
+       "montants": {
+        "43": 0.615135867,
+        "44": 0.223214421
+       },
+       "total": 0.838350288
+      }
+     ]
+    },
+    {
+     "id": 94630,
+     "nom": "Titre 2 : Dépenses de personnel",
+     "montants": {
+      "43": 160.411628349,
+      "44": 1.51678201,
+      "45": 68.767001561
+     },
+     "total": 230.69541192,
+     "categories": [
+      {
+       "id": 94633,
+       "nom": "Rémunérations d’activité",
+       "montants": {
+        "43": 91.712726789,
+        "44": 1.0407572
+       },
+       "total": 92.753483989
+      },
+      {
+       "id": 94639,
+       "nom": "Cotisations et contributions sociales",
+       "montants": {
+        "43": 67.010870155,
+        "44": 0.4549046,
+        "45": 0.8465811
+       },
+       "total": 68.312355855
+      },
+      {
+       "id": 94636,
+       "nom": "Prestations sociales et allocations diverses",
+       "montants": {
+        "43": 1.688031405,
+        "44": 0.02112021,
+        "45": 67.920420461
+       },
+       "total": 69.629572076
+      }
+     ]
+    },
+    {
+     "id": 94693,
+     "nom": "Titre 7 : Dépenses d’opérations financières",
+     "montants": {
+      "43": 0.518904874,
+      "45": 5.38369,
+      "46": 146.373583
+     },
+     "total": 152.276177874,
+     "categories": [
+      {
+       "id": 94696,
+       "nom": "Dépenses de participations financières",
+       "montants": {
+        "43": 0.2747,
+        "45": 5.38369
+       },
+       "total": 5.65839
+      },
+      {
+       "id": 94699,
+       "nom": "Prêts et avances",
+       "montants": {
+        "43": 0.210245544,
+        "46": 146.373583
+       },
+       "total": 146.583828544
+      },
+      {
+       "id": 94702,
+       "nom": "Dotations en fonds propres",
+       "montants": {
+        "43": 0.03395933
+       },
+       "total": 0.03395933
+      }
+     ]
+    },
+    {
+     "id": 94651,
+     "nom": "Titre 4 : Charges de la dette de l’État",
+     "montants": {
+      "43": 59.276,
+      "44": 0.0122045
+     },
+     "total": 59.2882045,
+     "categories": [
+      {
+       "id": 94654,
+       "nom": "Intérêt de la dette financière négociable",
+       "montants": {
+        "43": 58.016,
+        "44": 0.0122045
+       },
+       "total": 58.0282045
+      },
+      {
+       "id": 94660,
+       "nom": "Charges financières diverses",
+       "montants": {
+        "43": 1.26
+       },
+       "total": 1.26
+      }
+     ]
+    },
+    {
+     "id": 94624,
+     "nom": "Titre 1 : Dotations des pouvoirs publics",
+     "montants": {
+      "43": 1.1401798
+     },
+     "total": 1.1401798,
+     "categories": [
+      {
+       "id": 94627,
+       "nom": "Cat Dotations des pouvoirs publics\n\n",
+       "montants": {
+        "43": 1.1401798
+       },
+       "total": 1.1401798
+      }
+     ]
+    }
+   ],
+   "total_ministeres": 851.152549,
+   "total_missions": 851.152549
+  },
+  {
+   "annee": 2026,
+   "loi": "lfi",
+   "type_donnee": "cp",
+   "ministeres": [
+    {
+     "id": 86764,
+     "nom": "Justice",
+     "montants": {
+      "43": 12.966571358
+     },
+     "total": 12.966571358,
+     "programmes": [
+      {
+       "id": 91522,
+       "nom": "Accès au droit et à la justice",
+       "montants": {
+        "43": 0.8066519
+       },
+       "total": 0.8066519
+      },
+      {
+       "id": 91543,
+       "nom": "Administration pénitentiaire",
+       "montants": {
+        "43": 5.50547706
+       },
+       "total": 5.50547706
+      },
+      {
+       "id": 91558,
+       "nom": "Justice judiciaire",
+       "montants": {
+        "43": 4.742407986
+       },
+       "total": 4.742407986
+      },
+      {
+       "id": 91636,
+       "nom": "Protection judiciaire de la jeunesse",
+       "montants": {
+        "43": 1.149682688
+       },
+       "total": 1.149682688
+      },
+      {
+       "id": 91729,
+       "nom": "Conduite et pilotage de la politique de la justice",
+       "montants": {
+        "43": 0.755917869
+       },
+       "total": 0.755917869
+      },
+      {
+       "id": 91807,
+       "nom": "Conseil supérieur de la magistrature",
+       "montants": {
+        "43": 0.006433855
+       },
+       "total": 0.006433855
+      }
+     ]
+    },
+    {
+     "id": 86773,
+     "nom": "Travail et solidarités",
+     "montants": {
+      "43": 35.605667351
+     },
+     "total": 35.605667351,
+     "programmes": [
+      {
+       "id": 93757,
+       "nom": "Accès et retour à l'emploi",
+       "montants": {
+        "43": 6.886583558
+       },
+       "total": 6.886583558
+      },
+      {
+       "id": 93802,
+       "nom": "Accompagnement des mutations économiques et développement de l'emploi",
+       "montants": {
+        "43": 11.80434271
+       },
+       "total": 11.80434271
+      },
+      {
+       "id": 93877,
+       "nom": "Amélioration de la qualité de l'emploi et des relations du travail",
+       "montants": {
+        "43": 0.076324853
+       },
+       "total": 0.076324853
+      },
+      {
+       "id": 93940,
+       "nom": "Soutien des ministères sociaux",
+       "montants": {
+        "43": 2.05329997
+       },
+       "total": 2.05329997
+      },
+      {
+       "id": 93475,
+       "nom": "Inclusion sociale et protection des personnes",
+       "montants": {
+        "43": 14.78511626
+       },
+       "total": 14.78511626
+      }
+     ]
+    },
+    {
+     "id": 86761,
+     "nom": "Intérieur",
+     "montants": {
+      "43": 33.056733945,
+      "45": 0.3705206
+     },
+     "total": 33.427254545,
+     "programmes": [
+      {
+       "id": 91312,
+       "nom": "Intégration et accès à la nationalité française",
+       "montants": {
+        "43": 0.36385697
+       },
+       "total": 0.36385697
+      },
+      {
+       "id": 93196,
+       "nom": "Gendarmerie nationale",
+       "montants": {
+        "43": 11.05490247
+       },
+       "total": 11.05490247
+      },
+      {
+       "id": 93247,
+       "nom": "Sécurité civile",
+       "montants": {
+        "43": 0.874722991
+       },
+       "total": 0.874722991
+      },
+      {
+       "id": 93316,
+       "nom": "Police nationale",
+       "montants": {
+        "43": 13.83786399
+       },
+       "total": 13.83786399
+      },
+      {
+       "id": 93397,
+       "nom": "Sécurité et éducation routières",
+       "montants": {
+        "43": 0.07711516
+       },
+       "total": 0.07711516
+      },
+      {
+       "id": 86968,
+       "nom": "Conduite et pilotage des politiques de l'intérieur",
+       "montants": {
+        "43": 2.041569267
+       },
+       "total": 2.041569267
+      },
+      {
+       "id": 87160,
+       "nom": "Vie politique",
+       "montants": {
+        "43": 0.300925387
+       },
+       "total": 0.300925387
+      },
+      {
+       "id": 91345,
+       "nom": "Immigration et asile",
+       "montants": {
+        "43": 1.7667273
+       },
+       "total": 1.7667273
+      },
+      {
+       "id": 87211,
+       "nom": "Administration territoriale de l'État",
+       "montants": {
+        "43": 2.73905041
+       },
+       "total": 2.73905041
+      },
+      {
+       "id": 94111,
+       "nom": "Structures et dispositifs de sécurité routière",
+       "montants": {
+        "45": 0.3443399
+       },
+       "total": 0.3443399
+      },
+      {
+       "id": 94126,
+       "nom": "Contrôle et modernisation de la politique de la circulation et du stationnement routiers",
+       "montants": {
+        "45": 0.0261807
+       },
+       "total": 0.0261807
+      }
+     ]
+    },
+    {
+     "id": 86746,
+     "nom": "Europe et affaires étrangères",
+     "montants": {
+      "43": 5.685529044
+     },
+     "total": 5.685529044,
+     "programmes": [
+      {
+       "id": 86803,
+       "nom": "Action de la France en Europe et dans le monde",
+       "montants": {
+        "43": 2.690168359
+       },
+       "total": 2.690168359
+      },
+      {
+       "id": 86917,
+       "nom": "Français à l'étranger et affaires consulaires",
+       "montants": {
+        "43": 0.1529311
+       },
+       "total": 0.1529311
+      },
+      {
+       "id": 86950,
+       "nom": "Diplomatie culturelle et d'influence",
+       "montants": {
+        "43": 0.611326585
+       },
+       "total": 0.611326585
+      },
+      {
+       "id": 87802,
+       "nom": "Solidarité à l'égard des pays en développement",
+       "montants": {
+        "43": 1.493103
+       },
+       "total": 1.493103
+      },
+      {
+       "id": 87838,
+       "nom": "Fonds de solidarité pour le développement",
+       "montants": {
+        "43": 0.738
+       },
+       "total": 0.738
+      }
+     ]
+    },
+    {
+     "id": 86779,
+     "nom": "Ville et logement",
+     "montants": {
+      "43": 22.225743554
+     },
+     "total": 22.225743554,
+     "programmes": [
+      {
+       "id": 87847,
+       "nom": "Aide à l'accès au logement",
+       "montants": {
+        "43": 16.5721
+       },
+       "total": 16.5721
+      },
+      {
+       "id": 87928,
+       "nom": "Urbanisme, territoires et amélioration de l'habitat",
+       "montants": {
+        "43": 1.9454507
+       },
+       "total": 1.9454507
+      },
+      {
+       "id": 88102,
+       "nom": "Politique de la ville",
+       "montants": {
+        "43": 0.636747054
+       },
+       "total": 0.636747054
+      },
+      {
+       "id": 88282,
+       "nom": "Hébergement, parcours vers le logement et insertion des personnes vulnérables",
+       "montants": {
+        "43": 3.0714458
+       },
+       "total": 3.0714458
+      }
+     ]
+    },
+    {
+     "id": 94705,
+     "nom": "Économie, finances et souveraineté industrielle, énergétique et numérique",
+     "montants": {
+      "43": 78.301422486,
+      "45": 5.74199,
+      "46": 11.006483
+     },
+     "total": 95.049895486,
+     "programmes": [
+      {
+       "id": 87706,
+       "nom": "Aide économique et financière au développement",
+       "montants": {
+        "43": 1.2382808
+       },
+       "total": 1.2382808
+      },
+      {
+       "id": 90613,
+       "nom": "Appels en garantie de l'État (crédits évaluatifs)",
+       "montants": {
+        "43": 0.790363
+       },
+       "total": 0.790363
+      },
+      {
+       "id": 90655,
+       "nom": "Charge de la dette et trésorerie de l'État (crédits évaluatifs)",
+       "montants": {
+        "43": 58.615
+       },
+       "total": 58.615
+      },
+      {
+       "id": 90520,
+       "nom": "Développement des entreprises et régulations",
+       "montants": {
+        "43": 2.080477727
+       },
+       "total": 2.080477727
+      },
+      {
+       "id": 90664,
+       "nom": "Épargne",
+       "montants": {
+        "43": 0.0961666
+       },
+       "total": 0.0961666
+      },
+      {
+       "id": 89635,
+       "nom": "Énergie, climat et après-mines",
+       "montants": {
+        "43": 1.12614573
+       },
+       "total": 1.12614573
+      },
+      {
+       "id": 92461,
+       "nom": "Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+       "montants": {
+        "43": 1.482022
+       },
+       "total": 1.482022
+      },
+      {
+       "id": 92542,
+       "nom": "Recherche et enseignement supérieur en matière économique et industrielle",
+       "montants": {
+        "43": 0.569920844
+       },
+       "total": 0.569920844
+      },
+      {
+       "id": 90553,
+       "nom": "Statistiques et études économiques",
+       "montants": {
+        "43": 0.484053802
+       },
+       "total": 0.484053802
+      },
+      {
+       "id": 90301,
+       "nom": "Sûreté nucléaire et radioprotection",
+       "montants": {
+        "43": 0.3475684
+       },
+       "total": 0.3475684
+      },
+      {
+       "id": 90571,
+       "nom": "Stratégies économiques",
+       "montants": {
+        "43": 0.665794703
+       },
+       "total": 0.665794703
+      },
+      {
+       "id": 90673,
+       "nom": "Dotation du Mécanisme européen de stabilité",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 90592,
+       "nom": "Plan France Très haut débit",
+       "montants": {
+        "43": 0.2822797
+       },
+       "total": 0.2822797
+      },
+      {
+       "id": 90685,
+       "nom": "Fonds de soutien relatif aux prêts et contrats financiers structurés à risque",
+       "montants": {
+        "43": 0.17868
+       },
+       "total": 0.17868
+      },
+      {
+       "id": 90310,
+       "nom": "Service public de l'énergie",
+       "montants": {
+        "43": 9.58366918
+       },
+       "total": 9.58366918
+      },
+      {
+       "id": 90700,
+       "nom": "Charge de la dette de SNCF Réseau reprise par l'État (crédits évaluatifs)",
+       "montants": {
+        "43": 0.661
+       },
+       "total": 0.661
+      },
+      {
+       "id": 87823,
+       "nom": "Renforcement des fonds propres de l'Agence française de développement",
+       "montants": {
+        "43": 0.1
+       },
+       "total": 0.1
+      },
+      {
+       "id": 94249,
+       "nom": "Opérations en capital intéressant les participations financières de l'État",
+       "montants": {
+        "45": 5.38369
+       },
+       "total": 5.38369
+      },
+      {
+       "id": 94174,
+       "nom": "Électrification rurale",
+       "montants": {
+        "45": 0.3553
+       },
+       "total": 0.3553
+      },
+      {
+       "id": 94204,
+       "nom": "Opérations de maîtrise de la demande d'électricité, de production d'électricité par des énergies renouvelables ou de production de proximité dans les zones non interconnectées",
+       "montants": {
+        "45": 0.003
+       },
+       "total": 0.003
+      },
+      {
+       "id": 94576,
+       "nom": "Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune",
+       "montants": {
+        "46": 9
+       },
+       "total": 9
+      },
+      {
+       "id": 94582,
+       "nom": "Avances à des organismes distincts de l'État et gérant des services publics",
+       "montants": {
+        "46": 0.21
+       },
+       "total": 0.21
+      },
+      {
+       "id": 94588,
+       "nom": "Prêts et avances à des services de l'État",
+       "montants": {
+        "46": 0.03
+       },
+       "total": 0.03
+      },
+      {
+       "id": 94594,
+       "nom": "Avances à l'Office national d'indemnisation des accidents médicaux, des affections iatrogènes et des infections nosocomiales (ONIAM) au titre de l'indemnisation des victimes du Benfluorex",
+       "montants": {
+        "46": 0.015
+       },
+       "total": 0.015
+      },
+      {
+       "id": 94618,
+       "nom": "Prêts à FranceAgriMer au titre des préfinancements de fonds européens",
+       "montants": {
+        "46": 0.04
+       },
+       "total": 0.04
+      },
+      {
+       "id": 94468,
+       "nom": "Avances aux collectivités et établissements publics, à la Nouvelle-Calédonie et aux collectivités régies par l’article 74 de la Constitution",
+       "montants": {
+        "46": 0.206
+       },
+       "total": 0.206
+      },
+      {
+       "id": 94510,
+       "nom": "Prêts du Trésor à des États étrangers en vue de faciliter la vente de biens et de services concourant au développement du commerce extérieur de la France",
+       "montants": {
+        "46": 0.82864
+       },
+       "total": 0.82864
+      },
+      {
+       "id": 94516,
+       "nom": "Prêts à des États étrangers pour consolidation de dettes envers la France",
+       "montants": {
+        "46": 0.211793
+       },
+       "total": 0.211793
+      },
+      {
+       "id": 94522,
+       "nom": "Prêts à l'Agence française de développement en vue de favoriser le développement économique et social dans des États étrangers",
+       "montants": {
+        "46": 0.1
+       },
+       "total": 0.1
+      },
+      {
+       "id": 94537,
+       "nom": "Prêts et avances pour le logement des agents de l'État",
+       "montants": {
+        "46": 5e-05
+       },
+       "total": 5e-05
+      },
+      {
+       "id": 94543,
+       "nom": "Prêts pour le développement économique et social",
+       "montants": {
+        "46": 0.075
+       },
+       "total": 0.075
+      },
+      {
+       "id": 94567,
+       "nom": "Soutien à la filière nickel en Nouvelle Calédonie",
+       "montants": {
+        "46": 0.29
+       },
+       "total": 0.29
+      }
+     ]
+    },
+    {
+     "id": 86788,
+     "nom": "Aménagement du territoire et de la décentralisation",
+     "montants": {
+      "43": 5.29401018,
+      "45": 0.806735
+     },
+     "total": 6.10074518,
+     "programmes": [
+      {
+       "id": 87862,
+       "nom": "Impulsion et coordination de la politique d'aménagement du territoire",
+       "montants": {
+        "43": 0.26502903
+       },
+       "total": 0.26502903
+      },
+      {
+       "id": 92746,
+       "nom": "Concours financiers aux collectivités territoriales et à leurs groupements",
+       "montants": {
+        "43": 3.6421247
+       },
+       "total": 3.6421247
+      },
+      {
+       "id": 92857,
+       "nom": "Concours spécifiques et administration",
+       "montants": {
+        "43": 0.31692445
+       },
+       "total": 0.31692445
+      },
+      {
+       "id": 90430,
+       "nom": "Fonds d'accélération de la transition écologique dans les territoires",
+       "montants": {
+        "43": 1.069932
+       },
+       "total": 1.069932
+      },
+      {
+       "id": 94132,
+       "nom": "Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières",
+       "montants": {
+        "45": 0.806735
+       },
+       "total": 0.806735
+      }
+     ]
+    },
+    {
+     "id": 86770,
+     "nom": "Transition écologique, biodiversité et négociations internationales sur le climat et la nature",
+     "montants": {
+      "43": 6.838871684
+     },
+     "total": 6.838871684,
+     "programmes": [
+      {
+       "id": 89554,
+       "nom": "Paysages, eau et biodiversité",
+       "montants": {
+        "43": 0.391492755
+       },
+       "total": 0.391492755
+      },
+      {
+       "id": 89590,
+       "nom": "Expertise, information géographique et météorologie",
+       "montants": {
+        "43": 0.66820195
+       },
+       "total": 0.66820195
+      },
+      {
+       "id": 89713,
+       "nom": "Prévention des risques",
+       "montants": {
+        "43": 1.458914374
+       },
+       "total": 1.458914374
+      },
+      {
+       "id": 92710,
+       "nom": "Régimes de retraite et de sécurité sociale des marins",
+       "montants": {
+        "43": 0.8112677
+       },
+       "total": 0.8112677
+      },
+      {
+       "id": 89944,
+       "nom": "Affaires maritimes, pêche et aquaculture",
+       "montants": {
+        "43": 0.309702906
+       },
+       "total": 0.309702906
+      },
+      {
+       "id": 90058,
+       "nom": "Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+       "montants": {
+        "43": 3.199291999
+       },
+       "total": 3.199291999
+      }
+     ]
+    },
+    {
+     "id": 86785,
+     "nom": "Outre-Mer",
+     "montants": {
+      "43": 3.277443318
+     },
+     "total": 3.277443318,
+     "programmes": [
+      {
+       "id": 92011,
+       "nom": "Conditions de vie outre-mer",
+       "montants": {
+        "43": 1.141003768
+       },
+       "total": 1.141003768
+      },
+      {
+       "id": 92131,
+       "nom": "Emploi outre-mer",
+       "montants": {
+        "43": 2.13643955
+       },
+       "total": 2.13643955
+      }
+     ]
+    },
+    {
+     "id": 86767,
+     "nom": "Services du Premier ministre",
+     "montants": {
+      "43": 6.571590066,
+      "44": 0.14741375
+     },
+     "total": 6.719003816,
+     "programmes": [
+      {
+       "id": 88375,
+       "nom": "Conseil économique, social et environnemental",
+       "montants": {
+        "43": 0.034002596
+       },
+       "total": 0.034002596
+      },
+      {
+       "id": 89425,
+       "nom": "Coordination du travail gouvernemental",
+       "montants": {
+        "43": 0.91231118
+       },
+       "total": 0.91231118
+      },
+      {
+       "id": 93433,
+       "nom": "Égalité entre les femmes et les hommes",
+       "montants": {
+        "43": 0.098647633
+       },
+       "total": 0.098647633
+      },
+      {
+       "id": 91933,
+       "nom": "Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la seconde guerre mondiale",
+       "montants": {
+        "43": 0.076423885
+       },
+       "total": 0.076423885
+      },
+      {
+       "id": 88177,
+       "nom": "Interventions territoriales de l'État",
+       "montants": {
+        "43": 0.080097712
+       },
+       "total": 0.080097712
+      },
+      {
+       "id": 88390,
+       "nom": "Cour des comptes et autres juridictions financières",
+       "montants": {
+        "43": 0.266591512
+       },
+       "total": 0.266591512
+      },
+      {
+       "id": 88420,
+       "nom": "Conseil d'État et autres juridictions administratives",
+       "montants": {
+        "43": 0.565522595
+       },
+       "total": 0.565522595
+      },
+      {
+       "id": 89515,
+       "nom": "Protection des droits et libertés",
+       "montants": {
+        "43": 0.140164263
+       },
+       "total": 0.140164263
+      },
+      {
+       "id": 91414,
+       "nom": "Soutien des progrès de l'enseignement et de la recherche",
+       "montants": {
+        "43": 0.2006931
+       },
+       "total": 0.2006931
+      },
+      {
+       "id": 91438,
+       "nom": "Valorisation de la recherche",
+       "montants": {
+        "43": 0.03216159
+       },
+       "total": 0.03216159
+      },
+      {
+       "id": 91456,
+       "nom": "Accélération de la modernisation des entreprises",
+       "montants": {
+        "43": 0.13666
+       },
+       "total": 0.13666
+      },
+      {
+       "id": 91486,
+       "nom": "Financement des investissements stratégiques",
+       "montants": {
+        "43": 2.653875
+       },
+       "total": 2.653875
+      },
+      {
+       "id": 91507,
+       "nom": "Financement structurel des écosystèmes d'innovation",
+       "montants": {
+        "43": 1.374439
+       },
+       "total": 1.374439
+      },
+      {
+       "id": 94072,
+       "nom": "Édition et diffusion",
+       "montants": {
+        "44": 0.04372886
+       },
+       "total": 0.04372886
+      },
+      {
+       "id": 94093,
+       "nom": "Pilotage et ressources humaines",
+       "montants": {
+        "44": 0.10368489
+       },
+       "total": 0.10368489
+      }
+     ]
+    },
+    {
+     "id": 86749,
+     "nom": "Culture",
+     "montants": {
+      "43": 4.447520472,
+      "46": 3.8633165
+     },
+     "total": 8.310836972,
+     "programmes": [
+      {
+       "id": 88474,
+       "nom": "Création",
+       "montants": {
+        "43": 0.99783909
+       },
+       "total": 0.99783909
+      },
+      {
+       "id": 88537,
+       "nom": "Patrimoines",
+       "montants": {
+        "43": 1.137478624
+       },
+       "total": 1.137478624
+      },
+      {
+       "id": 91816,
+       "nom": "Presse et médias",
+       "montants": {
+        "43": 0.362329354
+       },
+       "total": 0.362329354
+      },
+      {
+       "id": 88648,
+       "nom": "Soutien aux politiques du ministère de la culture",
+       "montants": {
+        "43": 0.86810044
+       },
+       "total": 0.86810044
+      },
+      {
+       "id": 91894,
+       "nom": "Livre et industries culturelles",
+       "montants": {
+        "43": 0.340644154
+       },
+       "total": 0.340644154
+      },
+      {
+       "id": 88693,
+       "nom": "Transmission des savoirs et démocratisation de la culture",
+       "montants": {
+        "43": 0.74112881
+       },
+       "total": 0.74112881
+      },
+      {
+       "id": 94408,
+       "nom": "France Télévisions",
+       "montants": {
+        "46": 2.42558
+       },
+       "total": 2.42558
+      },
+      {
+       "id": 94414,
+       "nom": "ARTE France",
+       "montants": {
+        "46": 0.298115
+       },
+       "total": 0.298115
+      },
+      {
+       "id": 94420,
+       "nom": "Radio France",
+       "montants": {
+        "46": 0.648034
+       },
+       "total": 0.648034
+      },
+      {
+       "id": 94426,
+       "nom": "France Médias Monde",
+       "montants": {
+        "46": 0.303884
+       },
+       "total": 0.303884
+      },
+      {
+       "id": 94432,
+       "nom": "Institut national de l'audiovisuel",
+       "montants": {
+        "46": 0.103461
+       },
+       "total": 0.103461
+      },
+      {
+       "id": 94438,
+       "nom": "TV5 Monde",
+       "montants": {
+        "46": 0.0842425
+       },
+       "total": 0.0842425
+      }
+     ]
+    },
+    {
+     "id": 86755,
+     "nom": "Éducation nationale",
+     "montants": {
+      "43": 87.891076813
+     },
+     "total": 87.891076813,
+     "programmes": [
+      {
+       "id": 90709,
+       "nom": "Enseignement privé du premier et du second degrés",
+       "montants": {
+        "43": 8.870636422
+       },
+       "total": 8.870636422
+      },
+      {
+       "id": 90775,
+       "nom": "Enseignement scolaire public du premier degré",
+       "montants": {
+        "43": 27.912132363
+       },
+       "total": 27.912132363
+      },
+      {
+       "id": 90853,
+       "nom": "Enseignement scolaire public du second degré",
+       "montants": {
+        "43": 40.001617336
+       },
+       "total": 40.001617336
+      },
+      {
+       "id": 91072,
+       "nom": "Soutien de la politique de l'éducation nationale",
+       "montants": {
+        "43": 3.045963306
+       },
+       "total": 3.045963306
+      },
+      {
+       "id": 91177,
+       "nom": "Vie de l'élève",
+       "montants": {
+        "43": 8.060727386
+       },
+       "total": 8.060727386
+      }
+     ]
+    },
+    {
+     "id": 86752,
+     "nom": "Agriculture, agro-alimentaire et souveraineté alimentaire",
+     "montants": {
+      "43": 6.282428072,
+      "45": 0.171
+     },
+     "total": 6.453428072,
+     "programmes": [
+      {
+       "id": 92272,
+       "nom": "Enseignement supérieur et recherche agricoles",
+       "montants": {
+        "43": 0.426639663
+       },
+       "total": 0.426639663
+      },
+      {
+       "id": 90952,
+       "nom": "Enseignement technique agricole",
+       "montants": {
+        "43": 1.729931857
+       },
+       "total": 1.729931857
+      },
+      {
+       "id": 87238,
+       "nom": "Compétitivité et durabilité de l'agriculture, de l'agroalimentaire et de la forêt",
+       "montants": {
+        "43": 2.188026656
+       },
+       "total": 2.188026656
+      },
+      {
+       "id": 87445,
+       "nom": "Sécurité et qualité sanitaires de l'alimentation",
+       "montants": {
+        "43": 0.832757381
+       },
+       "total": 0.832757381
+      },
+      {
+       "id": 87577,
+       "nom": "Conduite et pilotage des politiques de l'agriculture",
+       "montants": {
+        "43": 0.656072515
+       },
+       "total": 0.656072515
+      },
+      {
+       "id": 87697,
+       "nom": "Allègements du coût du travail en agriculture (TODE-AG)",
+       "montants": {
+        "43": 0.449
+       },
+       "total": 0.449
+      },
+      {
+       "id": 94147,
+       "nom": "Développement et transfert en agriculture",
+       "montants": {
+        "45": 0.06793
+       },
+       "total": 0.06793
+      },
+      {
+       "id": 94156,
+       "nom": "Recherche appliquée et innovation en agriculture",
+       "montants": {
+        "45": 0.10307
+       },
+       "total": 0.10307
+      }
+     ]
+    },
+    {
+     "id": 86797,
+     "nom": "Armées et anciens combattants",
+     "montants": {
+      "43": 68.278454735
+     },
+     "total": 68.278454735,
+     "programmes": [
+      {
+       "id": 88753,
+       "nom": "Environnement et prospective de la politique de défense",
+       "montants": {
+        "43": 2.26848207
+       },
+       "total": 2.26848207
+      },
+      {
+       "id": 88783,
+       "nom": "Équipement des forces",
+       "montants": {
+        "43": 22.845477542
+       },
+       "total": 22.845477542
+      },
+      {
+       "id": 91948,
+       "nom": "Reconnaissance et réparation en faveur du monde combattant, mémoire et liens avec la Nation",
+       "montants": {
+        "43": 1.6535638
+       },
+       "total": 1.6535638
+      },
+      {
+       "id": 89053,
+       "nom": "Préparation et emploi des forces",
+       "montants": {
+        "43": 15.745127633
+       },
+       "total": 15.745127633
+      },
+      {
+       "id": 92530,
+       "nom": "Recherche duale (civile et militaire)",
+       "montants": {
+        "43": 0.1494134
+       },
+       "total": 0.1494134
+      },
+      {
+       "id": 89185,
+       "nom": "Soutien de la politique de la défense",
+       "montants": {
+        "43": 25.61639029
+       },
+       "total": 25.61639029
+      }
+     ]
+    },
+    {
+     "id": 86758,
+     "nom": "Action et comptes publics",
+     "montants": {
+      "43": 164.008293427,
+      "45": 70.996512343,
+      "46": 135.69574
+     },
+     "total": 370.70054577,
+     "programmes": [
+      {
+       "id": 93673,
+       "nom": "Fonction publique",
+       "montants": {
+        "43": 0.22621197
+       },
+       "total": 0.22621197
+      },
+      {
+       "id": 91216,
+       "nom": "Gestion fiscale et financière de l'État et du secteur public local",
+       "montants": {
+        "43": 8.211147133
+       },
+       "total": 8.211147133
+      },
+      {
+       "id": 92686,
+       "nom": "Régimes de retraite des mines, de la SEITA, et divers",
+       "montants": {
+        "43": 1.070727503
+       },
+       "total": 1.070727503
+      },
+      {
+       "id": 92716,
+       "nom": "Régimes sociaux et de retraite des transports terrestres",
+       "montants": {
+        "43": 4.1858876
+       },
+       "total": 4.1858876
+      },
+      {
+       "id": 92944,
+       "nom": "Remboursements et dégrèvements d'impôts d'État (crédits évaluatifs)",
+       "montants": {
+        "43": 141.17432
+       },
+       "total": 141.17432
+      },
+      {
+       "id": 93031,
+       "nom": "Remboursements et dégrèvements d'impôts locaux (crédits évaluatifs)",
+       "montants": {
+        "43": 4.426
+       },
+       "total": 4.426
+      },
+      {
+       "id": 91255,
+       "nom": "Conduite et pilotage des politiques économiques et financières",
+       "montants": {
+        "43": 0.99197965
+       },
+       "total": 0.99197965
+      },
+      {
+       "id": 91282,
+       "nom": "Facilitation et sécurisation des échanges",
+       "montants": {
+        "43": 1.814759004
+       },
+       "total": 1.814759004
+      },
+      {
+       "id": 93709,
+       "nom": "Performance et résilience des bâtiments de l'État et de ses opérateurs",
+       "montants": {
+        "43": 0.20067135
+       },
+       "total": 0.20067135
+      },
+      {
+       "id": 93730,
+       "nom": "Transformation publique",
+       "montants": {
+        "43": 0.0385523
+       },
+       "total": 0.0385523
+      },
+      {
+       "id": 93742,
+       "nom": "Conduite et pilotage de la transformation et de la fonction publiques",
+       "montants": {
+        "43": 0.052857117
+       },
+       "total": 0.052857117
+      },
+      {
+       "id": 92206,
+       "nom": "Présidence de la République",
+       "montants": {
+        "43": 0.122564
+       },
+       "total": 0.122564
+      },
+      {
+       "id": 92212,
+       "nom": "Assemblée nationale",
+       "montants": {
+        "43": 0.607648
+       },
+       "total": 0.607648
+      },
+      {
+       "id": 92218,
+       "nom": "Sénat",
+       "montants": {
+        "43": 0.3534709
+       },
+       "total": 0.3534709
+      },
+      {
+       "id": 92230,
+       "nom": "Conseil constitutionnel",
+       "montants": {
+        "43": 0.02
+       },
+       "total": 0.02
+      },
+      {
+       "id": 92242,
+       "nom": "Cour de justice de la République",
+       "montants": {
+        "43": 0.0009
+       },
+       "total": 0.0009
+      },
+      {
+       "id": 92254,
+       "nom": "La Chaîne parlementaire",
+       "montants": {
+        "43": 0.0355969
+       },
+       "total": 0.0355969
+      },
+      {
+       "id": 88459,
+       "nom": "Provision relative aux rémunérations publiques",
+       "montants": {
+        "43": 0.35
+       },
+       "total": 0.35
+      },
+      {
+       "id": 88465,
+       "nom": "Dépenses accidentelles et imprévisibles",
+       "montants": {
+        "43": 0.125
+       },
+       "total": 0.125
+      },
+      {
+       "id": 94231,
+       "nom": "Opérations immobilières et entretien des bâtiments de l'État",
+       "montants": {
+        "45": 0.3155
+       },
+       "total": 0.3155
+      },
+      {
+       "id": 94276,
+       "nom": "Pensions civiles et militaires de retraite et allocations temporaires d'invalidité",
+       "montants": {
+        "45": 66.6564341
+       },
+       "total": 66.6564341
+      },
+      {
+       "id": 94318,
+       "nom": "Ouvriers des établissements industriels de l'État",
+       "montants": {
+        "45": 2.102709694
+       },
+       "total": 2.102709694
+      },
+      {
+       "id": 94333,
+       "nom": "Pensions militaires d'invalidité et des victimes de guerre et autres pensions",
+       "montants": {
+        "45": 1.170424549
+       },
+       "total": 1.170424549
+      },
+      {
+       "id": 94138,
+       "nom": "Désendettement de l'État",
+       "montants": {
+        "45": 0.751444
+       },
+       "total": 0.751444
+      },
+      {
+       "id": 94486,
+       "nom": "Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes",
+       "montants": {
+        "46": 135.69574
+       },
+       "total": 135.69574
+      }
+     ]
+    },
+    {
+     "id": 86776,
+     "nom": "Enseignement supérieur, recherche et espace",
+     "montants": {
+      "43": 29.005950733
+     },
+     "total": 29.005950733,
+     "programmes": [
+      {
+       "id": 92326,
+       "nom": "Formations supérieures et recherche universitaire",
+       "montants": {
+        "43": 15.724201223
+       },
+       "total": 15.724201223
+      },
+      {
+       "id": 92395,
+       "nom": "Recherches scientifiques et technologiques pluridisciplinaires",
+       "montants": {
+        "43": 8.17611281
+       },
+       "total": 8.17611281
+      },
+      {
+       "id": 92581,
+       "nom": "Recherche spatiale",
+       "montants": {
+        "43": 1.83075076
+       },
+       "total": 1.83075076
+      },
+      {
+       "id": 92644,
+       "nom": "Vie étudiante",
+       "montants": {
+        "43": 3.27488594
+       },
+       "total": 3.27488594
+      }
+     ]
+    },
+    {
+     "id": 94708,
+     "nom": "Santé, familles, autonomie et personnes handicapées",
+     "montants": {
+      "43": 18.285896607
+     },
+     "total": 18.285896607,
+     "programmes": [
+      {
+       "id": 93448,
+       "nom": "Handicap et dépendance",
+       "montants": {
+        "43": 16.39776338
+       },
+       "total": 16.39776338
+      },
+      {
+       "id": 93061,
+       "nom": "Protection maladie",
+       "montants": {
+        "43": 1.2163
+       },
+       "total": 1.2163
+      },
+      {
+       "id": 93070,
+       "nom": "Prévention, sécurité sanitaire et offre de soins",
+       "montants": {
+        "43": 0.429833227
+       },
+       "total": 0.429833227
+      },
+      {
+       "id": 93187,
+       "nom": "Reversement à la sécurité sociale des recettes de la Facilité pour la Relance et la Résilience (FRR) européenne au titre du volet « Ségur investissement » du plan national de relance et de résilience (PNRR)",
+       "montants": {
+        "43": 0.242
+       },
+       "total": 0.242
+      }
+     ]
+    },
+    {
+     "id": 86782,
+     "nom": "Sports, jeunesse et vie associative",
+     "montants": {
+      "43": 1.258896689
+     },
+     "total": 1.258896689,
+     "programmes": [
+      {
+       "id": 93622,
+       "nom": "Jeunesse et vie associative",
+       "montants": {
+        "43": 0.647015352
+       },
+       "total": 0.647015352
+      },
+      {
+       "id": 93637,
+       "nom": "Sport",
+       "montants": {
+        "43": 0.548252867
+       },
+       "total": 0.548252867
+      },
+      {
+       "id": 93658,
+       "nom": "Jeux olympiques et paralympiques d'hiver 2030",
+       "montants": {
+        "43": 0.06362847
+       },
+       "total": 0.06362847
+      }
+     ]
+    },
+    {
+     "id": 94711,
+     "nom": "Transports",
+     "montants": {
+      "43": 4.60789441,
+      "44": 2.425535407,
+      "46": 0.15
+     },
+     "total": 7.183429817,
+     "programmes": [
+      {
+       "id": 89782,
+       "nom": "Infrastructures et services de transports",
+       "montants": {
+        "43": 4.60789441
+       },
+       "total": 4.60789441
+      },
+      {
+       "id": 94027,
+       "nom": "Navigation aérienne",
+       "montants": {
+        "44": 0.6814374
+       },
+       "total": 0.6814374
+      },
+      {
+       "id": 94036,
+       "nom": "Soutien aux prestations de l'aviation civile",
+       "montants": {
+        "44": 1.697584
+       },
+       "total": 1.697584
+      },
+      {
+       "id": 94057,
+       "nom": "Transports aériens, surveillance et certification",
+       "montants": {
+        "44": 0.046514007
+       },
+       "total": 0.046514007
+      },
+      {
+       "id": 94549,
+       "nom": "Prêts à la société concessionnaire de la liaison express entre Paris et l'aéroport Paris - Charles-de-Gaulle",
+       "montants": {
+        "46": 0.15
+       },
+       "total": 0.15
+      }
+     ]
+    }
+   ],
+   "missions": [
+    {
+     "id": 91519,
+     "nom": "Justice",
+     "montants": {
+      "43": 12.966571358
+     },
+     "total": 12.966571358,
+     "programmes": [
+      {
+       "id": 91522,
+       "nom": "Accès au droit et à la justice",
+       "montants": {
+        "43": 0.8066519
+       },
+       "total": 0.8066519
+      },
+      {
+       "id": 91543,
+       "nom": "Administration pénitentiaire",
+       "montants": {
+        "43": 5.50547706
+       },
+       "total": 5.50547706
+      },
+      {
+       "id": 91558,
+       "nom": "Justice judiciaire",
+       "montants": {
+        "43": 4.742407986
+       },
+       "total": 4.742407986
+      },
+      {
+       "id": 91636,
+       "nom": "Protection judiciaire de la jeunesse",
+       "montants": {
+        "43": 1.149682688
+       },
+       "total": 1.149682688
+      },
+      {
+       "id": 91729,
+       "nom": "Conduite et pilotage de la politique de la justice",
+       "montants": {
+        "43": 0.755917869
+       },
+       "total": 0.755917869
+      },
+      {
+       "id": 91807,
+       "nom": "Conseil supérieur de la magistrature",
+       "montants": {
+        "43": 0.006433855
+       },
+       "total": 0.006433855
+      }
+     ]
+    },
+    {
+     "id": 93754,
+     "nom": "Travail, emploi et administration des ministères sociaux",
+     "montants": {
+      "43": 20.820551091
+     },
+     "total": 20.820551091,
+     "programmes": [
+      {
+       "id": 93757,
+       "nom": "Accès et retour à l'emploi",
+       "montants": {
+        "43": 6.886583558
+       },
+       "total": 6.886583558
+      },
+      {
+       "id": 93802,
+       "nom": "Accompagnement des mutations économiques et développement de l'emploi",
+       "montants": {
+        "43": 11.80434271
+       },
+       "total": 11.80434271
+      },
+      {
+       "id": 93877,
+       "nom": "Amélioration de la qualité de l'emploi et des relations du travail",
+       "montants": {
+        "43": 0.076324853
+       },
+       "total": 0.076324853
+      },
+      {
+       "id": 93940,
+       "nom": "Soutien des ministères sociaux",
+       "montants": {
+        "43": 2.05329997
+       },
+       "total": 2.05329997
+      }
+     ]
+    },
+    {
+     "id": 91309,
+     "nom": "Immigration, asile et intégration",
+     "montants": {
+      "43": 2.13058427
+     },
+     "total": 2.13058427,
+     "programmes": [
+      {
+       "id": 91312,
+       "nom": "Intégration et accès à la nationalité française",
+       "montants": {
+        "43": 0.36385697
+       },
+       "total": 0.36385697
+      },
+      {
+       "id": 91345,
+       "nom": "Immigration et asile",
+       "montants": {
+        "43": 1.7667273
+       },
+       "total": 1.7667273
+      }
+     ]
+    },
+    {
+     "id": 86800,
+     "nom": "Action extérieure de l'État",
+     "montants": {
+      "43": 3.454426044
+     },
+     "total": 3.454426044,
+     "programmes": [
+      {
+       "id": 86803,
+       "nom": "Action de la France en Europe et dans le monde",
+       "montants": {
+        "43": 2.690168359
+       },
+       "total": 2.690168359
+      },
+      {
+       "id": 86917,
+       "nom": "Français à l'étranger et affaires consulaires",
+       "montants": {
+        "43": 0.1529311
+       },
+       "total": 0.1529311
+      },
+      {
+       "id": 86950,
+       "nom": "Diplomatie culturelle et d'influence",
+       "montants": {
+        "43": 0.611326585
+       },
+       "total": 0.611326585
+      }
+     ]
+    },
+    {
+     "id": 87844,
+     "nom": "Cohésion des territoires",
+     "montants": {
+      "43": 22.570870296
+     },
+     "total": 22.570870296,
+     "programmes": [
+      {
+       "id": 87847,
+       "nom": "Aide à l'accès au logement",
+       "montants": {
+        "43": 16.5721
+       },
+       "total": 16.5721
+      },
+      {
+       "id": 87862,
+       "nom": "Impulsion et coordination de la politique d'aménagement du territoire",
+       "montants": {
+        "43": 0.26502903
+       },
+       "total": 0.26502903
+      },
+      {
+       "id": 87928,
+       "nom": "Urbanisme, territoires et amélioration de l'habitat",
+       "montants": {
+        "43": 1.9454507
+       },
+       "total": 1.9454507
+      },
+      {
+       "id": 88102,
+       "nom": "Politique de la ville",
+       "montants": {
+        "43": 0.636747054
+       },
+       "total": 0.636747054
+      },
+      {
+       "id": 88177,
+       "nom": "Interventions territoriales de l'État",
+       "montants": {
+        "43": 0.080097712
+       },
+       "total": 0.080097712
+      },
+      {
+       "id": 88282,
+       "nom": "Hébergement, parcours vers le logement et insertion des personnes vulnérables",
+       "montants": {
+        "43": 3.0714458
+       },
+       "total": 3.0714458
+      }
+     ]
+    },
+    {
+     "id": 87703,
+     "nom": "Aide publique au développement",
+     "montants": {
+      "43": 3.5693838
+     },
+     "total": 3.5693838,
+     "programmes": [
+      {
+       "id": 87706,
+       "nom": "Aide économique et financière au développement",
+       "montants": {
+        "43": 1.2382808
+       },
+       "total": 1.2382808
+      },
+      {
+       "id": 87802,
+       "nom": "Solidarité à l'égard des pays en développement",
+       "montants": {
+        "43": 1.493103
+       },
+       "total": 1.493103
+      },
+      {
+       "id": 87823,
+       "nom": "Renforcement des fonds propres de l'Agence française de développement",
+       "montants": {
+        "43": 0.1
+       },
+       "total": 0.1
+      },
+      {
+       "id": 87838,
+       "nom": "Fonds de solidarité pour le développement",
+       "montants": {
+        "43": 0.738
+       },
+       "total": 0.738
+      }
+     ]
+    },
+    {
+     "id": 89551,
+     "nom": "Écologie, développement et mobilité durables",
+     "montants": {
+      "43": 22.762813704
+     },
+     "total": 22.762813704,
+     "programmes": [
+      {
+       "id": 89554,
+       "nom": "Paysages, eau et biodiversité",
+       "montants": {
+        "43": 0.391492755
+       },
+       "total": 0.391492755
+      },
+      {
+       "id": 89590,
+       "nom": "Expertise, information géographique et météorologie",
+       "montants": {
+        "43": 0.66820195
+       },
+       "total": 0.66820195
+      },
+      {
+       "id": 89635,
+       "nom": "Énergie, climat et après-mines",
+       "montants": {
+        "43": 1.12614573
+       },
+       "total": 1.12614573
+      },
+      {
+       "id": 89713,
+       "nom": "Prévention des risques",
+       "montants": {
+        "43": 1.458914374
+       },
+       "total": 1.458914374
+      },
+      {
+       "id": 89782,
+       "nom": "Infrastructures et services de transports",
+       "montants": {
+        "43": 4.60789441
+       },
+       "total": 4.60789441
+      },
+      {
+       "id": 89944,
+       "nom": "Affaires maritimes, pêche et aquaculture",
+       "montants": {
+        "43": 0.309702906
+       },
+       "total": 0.309702906
+      },
+      {
+       "id": 90058,
+       "nom": "Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+       "montants": {
+        "43": 3.199291999
+       },
+       "total": 3.199291999
+      },
+      {
+       "id": 90301,
+       "nom": "Sûreté nucléaire et radioprotection",
+       "montants": {
+        "43": 0.3475684
+       },
+       "total": 0.3475684
+      },
+      {
+       "id": 90310,
+       "nom": "Service public de l'énergie",
+       "montants": {
+        "43": 9.58366918
+       },
+       "total": 9.58366918
+      },
+      {
+       "id": 90430,
+       "nom": "Fonds d'accélération de la transition écologique dans les territoires",
+       "montants": {
+        "43": 1.069932
+       },
+       "total": 1.069932
+      }
+     ]
+    },
+    {
+     "id": 90610,
+     "nom": "Engagements financiers de l'État",
+     "montants": {
+      "43": 60.3412096
+     },
+     "total": 60.3412096,
+     "programmes": [
+      {
+       "id": 90613,
+       "nom": "Appels en garantie de l'État (crédits évaluatifs)",
+       "montants": {
+        "43": 0.790363
+       },
+       "total": 0.790363
+      },
+      {
+       "id": 90655,
+       "nom": "Charge de la dette et trésorerie de l'État (crédits évaluatifs)",
+       "montants": {
+        "43": 58.615
+       },
+       "total": 58.615
+      },
+      {
+       "id": 90664,
+       "nom": "Épargne",
+       "montants": {
+        "43": 0.0961666
+       },
+       "total": 0.0961666
+      },
+      {
+       "id": 90673,
+       "nom": "Dotation du Mécanisme européen de stabilité",
+       "montants": {
+        "43": null
+       },
+       "total": null
+      },
+      {
+       "id": 90685,
+       "nom": "Fonds de soutien relatif aux prêts et contrats financiers structurés à risque",
+       "montants": {
+        "43": 0.17868
+       },
+       "total": 0.17868
+      },
+      {
+       "id": 90700,
+       "nom": "Charge de la dette de SNCF Réseau reprise par l'État (crédits évaluatifs)",
+       "montants": {
+        "43": 0.661
+       },
+       "total": 0.661
+      }
+     ]
+    },
+    {
+     "id": 92743,
+     "nom": "Relations avec les collectivités territoriales",
+     "montants": {
+      "43": 3.95904915
+     },
+     "total": 3.95904915,
+     "programmes": [
+      {
+       "id": 92746,
+       "nom": "Concours financiers aux collectivités territoriales et à leurs groupements",
+       "montants": {
+        "43": 3.6421247
+       },
+       "total": 3.6421247
+      },
+      {
+       "id": 92857,
+       "nom": "Concours spécifiques et administration",
+       "montants": {
+        "43": 0.31692445
+       },
+       "total": 0.31692445
+      }
+     ]
+    },
+    {
+     "id": 92008,
+     "nom": "Outre-mer",
+     "montants": {
+      "43": 3.277443318
+     },
+     "total": 3.277443318,
+     "programmes": [
+      {
+       "id": 92011,
+       "nom": "Conditions de vie outre-mer",
+       "montants": {
+        "43": 1.141003768
+       },
+       "total": 1.141003768
+      },
+      {
+       "id": 92131,
+       "nom": "Emploi outre-mer",
+       "montants": {
+        "43": 2.13643955
+       },
+       "total": 2.13643955
+      }
+     ]
+    },
+    {
+     "id": 88372,
+     "nom": "Conseil et contrôle de l'État",
+     "montants": {
+      "43": 0.866116703
+     },
+     "total": 0.866116703,
+     "programmes": [
+      {
+       "id": 88375,
+       "nom": "Conseil économique, social et environnemental",
+       "montants": {
+        "43": 0.034002596
+       },
+       "total": 0.034002596
+      },
+      {
+       "id": 88390,
+       "nom": "Cour des comptes et autres juridictions financières",
+       "montants": {
+        "43": 0.266591512
+       },
+       "total": 0.266591512
+      },
+      {
+       "id": 88420,
+       "nom": "Conseil d'État et autres juridictions administratives",
+       "montants": {
+        "43": 0.565522595
+       },
+       "total": 0.565522595
+      }
+     ]
+    },
+    {
+     "id": 89422,
+     "nom": "Direction de l'action du Gouvernement",
+     "montants": {
+      "43": 1.052475443
+     },
+     "total": 1.052475443,
+     "programmes": [
+      {
+       "id": 89425,
+       "nom": "Coordination du travail gouvernemental",
+       "montants": {
+        "43": 0.91231118
+       },
+       "total": 0.91231118
+      },
+      {
+       "id": 89515,
+       "nom": "Protection des droits et libertés",
+       "montants": {
+        "43": 0.140164263
+       },
+       "total": 0.140164263
+      }
+     ]
+    },
+    {
+     "id": 88471,
+     "nom": "Culture",
+     "montants": {
+      "43": 3.744546964
+     },
+     "total": 3.744546964,
+     "programmes": [
+      {
+       "id": 88474,
+       "nom": "Création",
+       "montants": {
+        "43": 0.99783909
+       },
+       "total": 0.99783909
+      },
+      {
+       "id": 88537,
+       "nom": "Patrimoines",
+       "montants": {
+        "43": 1.137478624
+       },
+       "total": 1.137478624
+      },
+      {
+       "id": 88648,
+       "nom": "Soutien aux politiques du ministère de la culture",
+       "montants": {
+        "43": 0.86810044
+       },
+       "total": 0.86810044
+      },
+      {
+       "id": 88693,
+       "nom": "Transmission des savoirs et démocratisation de la culture",
+       "montants": {
+        "43": 0.74112881
+       },
+       "total": 0.74112881
+      }
+     ]
+    },
+    {
+     "id": 90517,
+     "nom": "Économie",
+     "montants": {
+      "43": 3.512605932
+     },
+     "total": 3.512605932,
+     "programmes": [
+      {
+       "id": 90520,
+       "nom": "Développement des entreprises et régulations",
+       "montants": {
+        "43": 2.080477727
+       },
+       "total": 2.080477727
+      },
+      {
+       "id": 90553,
+       "nom": "Statistiques et études économiques",
+       "montants": {
+        "43": 0.484053802
+       },
+       "total": 0.484053802
+      },
+      {
+       "id": 90571,
+       "nom": "Stratégies économiques",
+       "montants": {
+        "43": 0.665794703
+       },
+       "total": 0.665794703
+      },
+      {
+       "id": 90592,
+       "nom": "Plan France Très haut débit",
+       "montants": {
+        "43": 0.2822797
+       },
+       "total": 0.2822797
+      }
+     ]
+    },
+    {
+     "id": 93430,
+     "nom": "Solidarité, insertion et égalité des chances",
+     "montants": {
+      "43": 31.281527273
+     },
+     "total": 31.281527273,
+     "programmes": [
+      {
+       "id": 93433,
+       "nom": "Égalité entre les femmes et les hommes",
+       "montants": {
+        "43": 0.098647633
+       },
+       "total": 0.098647633
+      },
+      {
+       "id": 93448,
+       "nom": "Handicap et dépendance",
+       "montants": {
+        "43": 16.39776338
+       },
+       "total": 16.39776338
+      },
+      {
+       "id": 93475,
+       "nom": "Inclusion sociale et protection des personnes",
+       "montants": {
+        "43": 14.78511626
+       },
+       "total": 14.78511626
+      }
+     ]
+    },
+    {
+     "id": 90706,
+     "nom": "Enseignement scolaire",
+     "montants": {
+      "43": 89.62100867
+     },
+     "total": 89.62100867,
+     "programmes": [
+      {
+       "id": 90709,
+       "nom": "Enseignement privé du premier et du second degrés",
+       "montants": {
+        "43": 8.870636422
+       },
+       "total": 8.870636422
+      },
+      {
+       "id": 90775,
+       "nom": "Enseignement scolaire public du premier degré",
+       "montants": {
+        "43": 27.912132363
+       },
+       "total": 27.912132363
+      },
+      {
+       "id": 90853,
+       "nom": "Enseignement scolaire public du second degré",
+       "montants": {
+        "43": 40.001617336
+       },
+       "total": 40.001617336
+      },
+      {
+       "id": 90952,
+       "nom": "Enseignement technique agricole",
+       "montants": {
+        "43": 1.729931857
+       },
+       "total": 1.729931857
+      },
+      {
+       "id": 91072,
+       "nom": "Soutien de la politique de l'éducation nationale",
+       "montants": {
+        "43": 3.045963306
+       },
+       "total": 3.045963306
+      },
+      {
+       "id": 91177,
+       "nom": "Vie de l'élève",
+       "montants": {
+        "43": 8.060727386
+       },
+       "total": 8.060727386
+      }
+     ]
+    },
+    {
+     "id": 92269,
+     "nom": "Recherche et enseignement supérieur",
+     "montants": {
+      "43": 31.63394664
+     },
+     "total": 31.63394664,
+     "programmes": [
+      {
+       "id": 92272,
+       "nom": "Enseignement supérieur et recherche agricoles",
+       "montants": {
+        "43": 0.426639663
+       },
+       "total": 0.426639663
+      },
+      {
+       "id": 92326,
+       "nom": "Formations supérieures et recherche universitaire",
+       "montants": {
+        "43": 15.724201223
+       },
+       "total": 15.724201223
+      },
+      {
+       "id": 92395,
+       "nom": "Recherches scientifiques et technologiques pluridisciplinaires",
+       "montants": {
+        "43": 8.17611281
+       },
+       "total": 8.17611281
+      },
+      {
+       "id": 92461,
+       "nom": "Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+       "montants": {
+        "43": 1.482022
+       },
+       "total": 1.482022
+      },
+      {
+       "id": 92530,
+       "nom": "Recherche duale (civile et militaire)",
+       "montants": {
+        "43": 0.1494134
+       },
+       "total": 0.1494134
+      },
+      {
+       "id": 92542,
+       "nom": "Recherche et enseignement supérieur en matière économique et industrielle",
+       "montants": {
+        "43": 0.569920844
+       },
+       "total": 0.569920844
+      },
+      {
+       "id": 92581,
+       "nom": "Recherche spatiale",
+       "montants": {
+        "43": 1.83075076
+       },
+       "total": 1.83075076
+      },
+      {
+       "id": 92644,
+       "nom": "Vie étudiante",
+       "montants": {
+        "43": 3.27488594
+       },
+       "total": 3.27488594
+      }
+     ]
+    },
+    {
+     "id": 88750,
+     "nom": "Défense",
+     "montants": {
+      "43": 66.475477535
+     },
+     "total": 66.475477535,
+     "programmes": [
+      {
+       "id": 88753,
+       "nom": "Environnement et prospective de la politique de défense",
+       "montants": {
+        "43": 2.26848207
+       },
+       "total": 2.26848207
+      },
+      {
+       "id": 88783,
+       "nom": "Équipement des forces",
+       "montants": {
+        "43": 22.845477542
+       },
+       "total": 22.845477542
+      },
+      {
+       "id": 89053,
+       "nom": "Préparation et emploi des forces",
+       "montants": {
+        "43": 15.745127633
+       },
+       "total": 15.745127633
+      },
+      {
+       "id": 89185,
+       "nom": "Soutien de la politique de la défense",
+       "montants": {
+        "43": 25.61639029
+       },
+       "total": 25.61639029
+      }
+     ]
+    },
+    {
+     "id": 93670,
+     "nom": "Transformation et fonction publiques",
+     "montants": {
+      "43": 0.518292737
+     },
+     "total": 0.518292737,
+     "programmes": [
+      {
+       "id": 93673,
+       "nom": "Fonction publique",
+       "montants": {
+        "43": 0.22621197
+       },
+       "total": 0.22621197
+      },
+      {
+       "id": 93709,
+       "nom": "Performance et résilience des bâtiments de l'État et de ses opérateurs",
+       "montants": {
+        "43": 0.20067135
+       },
+       "total": 0.20067135
+      },
+      {
+       "id": 93730,
+       "nom": "Transformation publique",
+       "montants": {
+        "43": 0.0385523
+       },
+       "total": 0.0385523
+      },
+      {
+       "id": 93742,
+       "nom": "Conduite et pilotage de la transformation et de la fonction publiques",
+       "montants": {
+        "43": 0.052857117
+       },
+       "total": 0.052857117
+      }
+     ]
+    },
+    {
+     "id": 87235,
+     "nom": "Agriculture, alimentation, forêt et affaires rurales",
+     "montants": {
+      "43": 4.125856552
+     },
+     "total": 4.125856552,
+     "programmes": [
+      {
+       "id": 87238,
+       "nom": "Compétitivité et durabilité de l'agriculture, de l'agroalimentaire et de la forêt",
+       "montants": {
+        "43": 2.188026656
+       },
+       "total": 2.188026656
+      },
+      {
+       "id": 87445,
+       "nom": "Sécurité et qualité sanitaires de l'alimentation",
+       "montants": {
+        "43": 0.832757381
+       },
+       "total": 0.832757381
+      },
+      {
+       "id": 87577,
+       "nom": "Conduite et pilotage des politiques de l'agriculture",
+       "montants": {
+        "43": 0.656072515
+       },
+       "total": 0.656072515
+      },
+      {
+       "id": 87697,
+       "nom": "Allègements du coût du travail en agriculture (TODE-AG)",
+       "montants": {
+        "43": 0.449
+       },
+       "total": 0.449
+      }
+     ]
+    },
+    {
+     "id": 93193,
+     "nom": "Sécurités",
+     "montants": {
+      "43": 25.844604611
+     },
+     "total": 25.844604611,
+     "programmes": [
+      {
+       "id": 93196,
+       "nom": "Gendarmerie nationale",
+       "montants": {
+        "43": 11.05490247
+       },
+       "total": 11.05490247
+      },
+      {
+       "id": 93247,
+       "nom": "Sécurité civile",
+       "montants": {
+        "43": 0.874722991
+       },
+       "total": 0.874722991
+      },
+      {
+       "id": 93316,
+       "nom": "Police nationale",
+       "montants": {
+        "43": 13.83786399
+       },
+       "total": 13.83786399
+      },
+      {
+       "id": 93397,
+       "nom": "Sécurité et éducation routières",
+       "montants": {
+        "43": 0.07711516
+       },
+       "total": 0.07711516
+      }
+     ]
+    },
+    {
+     "id": 91213,
+     "nom": "Gestion des finances publiques",
+     "montants": {
+      "43": 11.017885787
+     },
+     "total": 11.017885787,
+     "programmes": [
+      {
+       "id": 91216,
+       "nom": "Gestion fiscale et financière de l'État et du secteur public local",
+       "montants": {
+        "43": 8.211147133
+       },
+       "total": 8.211147133
+      },
+      {
+       "id": 91255,
+       "nom": "Conduite et pilotage des politiques économiques et financières",
+       "montants": {
+        "43": 0.99197965
+       },
+       "total": 0.99197965
+      },
+      {
+       "id": 91282,
+       "nom": "Facilitation et sécurisation des échanges",
+       "montants": {
+        "43": 1.814759004
+       },
+       "total": 1.814759004
+      }
+     ]
+    },
+    {
+     "id": 91930,
+     "nom": "Monde combattant, mémoire et liens avec la Nation",
+     "montants": {
+      "43": 1.729987685
+     },
+     "total": 1.729987685,
+     "programmes": [
+      {
+       "id": 91933,
+       "nom": "Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la seconde guerre mondiale",
+       "montants": {
+        "43": 0.076423885
+       },
+       "total": 0.076423885
+      },
+      {
+       "id": 91948,
+       "nom": "Reconnaissance et réparation en faveur du monde combattant, mémoire et liens avec la Nation",
+       "montants": {
+        "43": 1.6535638
+       },
+       "total": 1.6535638
+      }
+     ]
+    },
+    {
+     "id": 93619,
+     "nom": "Sport, jeunesse et vie associative",
+     "montants": {
+      "43": 1.258896689
+     },
+     "total": 1.258896689,
+     "programmes": [
+      {
+       "id": 93622,
+       "nom": "Jeunesse et vie associative",
+       "montants": {
+        "43": 0.647015352
+       },
+       "total": 0.647015352
+      },
+      {
+       "id": 93637,
+       "nom": "Sport",
+       "montants": {
+        "43": 0.548252867
+       },
+       "total": 0.548252867
+      },
+      {
+       "id": 93658,
+       "nom": "Jeux olympiques et paralympiques d'hiver 2030",
+       "montants": {
+        "43": 0.06362847
+       },
+       "total": 0.06362847
+      }
+     ]
+    },
+    {
+     "id": 91813,
+     "nom": "Médias, livre et industries culturelles",
+     "montants": {
+      "43": 0.702973508
+     },
+     "total": 0.702973508,
+     "programmes": [
+      {
+       "id": 91816,
+       "nom": "Presse et médias",
+       "montants": {
+        "43": 0.362329354
+       },
+       "total": 0.362329354
+      },
+      {
+       "id": 91894,
+       "nom": "Livre et industries culturelles",
+       "montants": {
+        "43": 0.340644154
+       },
+       "total": 0.340644154
+      }
+     ]
+    },
+    {
+     "id": 93058,
+     "nom": "Santé",
+     "montants": {
+      "43": 1.888133227
+     },
+     "total": 1.888133227,
+     "programmes": [
+      {
+       "id": 93061,
+       "nom": "Protection maladie",
+       "montants": {
+        "43": 1.2163
+       },
+       "total": 1.2163
+      },
+      {
+       "id": 93070,
+       "nom": "Prévention, sécurité sanitaire et offre de soins",
+       "montants": {
+        "43": 0.429833227
+       },
+       "total": 0.429833227
+      },
+      {
+       "id": 93187,
+       "nom": "Reversement à la sécurité sociale des recettes de la Facilité pour la Relance et la Résilience (FRR) européenne au titre du volet « Ségur investissement » du plan national de relance et de résilience (PNRR)",
+       "montants": {
+        "43": 0.242
+       },
+       "total": 0.242
+      }
+     ]
+    },
+    {
+     "id": 92683,
+     "nom": "Régimes sociaux et de retraite",
+     "montants": {
+      "43": 6.067882803
+     },
+     "total": 6.067882803,
+     "programmes": [
+      {
+       "id": 92686,
+       "nom": "Régimes de retraite des mines, de la SEITA, et divers",
+       "montants": {
+        "43": 1.070727503
+       },
+       "total": 1.070727503
+      },
+      {
+       "id": 92710,
+       "nom": "Régimes de retraite et de sécurité sociale des marins",
+       "montants": {
+        "43": 0.8112677
+       },
+       "total": 0.8112677
+      },
+      {
+       "id": 92716,
+       "nom": "Régimes sociaux et de retraite des transports terrestres",
+       "montants": {
+        "43": 4.1858876
+       },
+       "total": 4.1858876
+      }
+     ]
+    },
+    {
+     "id": 92941,
+     "nom": "Remboursements et dégrèvements",
+     "montants": {
+      "43": 145.60032
+     },
+     "total": 145.60032,
+     "programmes": [
+      {
+       "id": 92944,
+       "nom": "Remboursements et dégrèvements d'impôts d'État (crédits évaluatifs)",
+       "montants": {
+        "43": 141.17432
+       },
+       "total": 141.17432
+      },
+      {
+       "id": 93031,
+       "nom": "Remboursements et dégrèvements d'impôts locaux (crédits évaluatifs)",
+       "montants": {
+        "43": 4.426
+       },
+       "total": 4.426
+      }
+     ]
+    },
+    {
+     "id": 86965,
+     "nom": "Administration générale et territoriale de l'État",
+     "montants": {
+      "43": 5.081545064
+     },
+     "total": 5.081545064,
+     "programmes": [
+      {
+       "id": 86968,
+       "nom": "Conduite et pilotage des politiques de l'intérieur",
+       "montants": {
+        "43": 2.041569267
+       },
+       "total": 2.041569267
+      },
+      {
+       "id": 87160,
+       "nom": "Vie politique",
+       "montants": {
+        "43": 0.300925387
+       },
+       "total": 0.300925387
+      },
+      {
+       "id": 87211,
+       "nom": "Administration territoriale de l'État",
+       "montants": {
+        "43": 2.73905041
+       },
+       "total": 2.73905041
+      }
+     ]
+    },
+    {
+     "id": 91411,
+     "nom": "Investir pour la France de 2030",
+     "montants": {
+      "43": 4.39782869
+     },
+     "total": 4.39782869,
+     "programmes": [
+      {
+       "id": 91414,
+       "nom": "Soutien des progrès de l'enseignement et de la recherche",
+       "montants": {
+        "43": 0.2006931
+       },
+       "total": 0.2006931
+      },
+      {
+       "id": 91438,
+       "nom": "Valorisation de la recherche",
+       "montants": {
+        "43": 0.03216159
+       },
+       "total": 0.03216159
+      },
+      {
+       "id": 91456,
+       "nom": "Accélération de la modernisation des entreprises",
+       "montants": {
+        "43": 0.13666
+       },
+       "total": 0.13666
+      },
+      {
+       "id": 91486,
+       "nom": "Financement des investissements stratégiques",
+       "montants": {
+        "43": 2.653875
+       },
+       "total": 2.653875
+      },
+      {
+       "id": 91507,
+       "nom": "Financement structurel des écosystèmes d'innovation",
+       "montants": {
+        "43": 1.374439
+       },
+       "total": 1.374439
+      }
+     ]
+    },
+    {
+     "id": 92203,
+     "nom": "Pouvoirs publics",
+     "montants": {
+      "43": 1.1401798
+     },
+     "total": 1.1401798,
+     "programmes": [
+      {
+       "id": 92206,
+       "nom": "Présidence de la République",
+       "montants": {
+        "43": 0.122564
+       },
+       "total": 0.122564
+      },
+      {
+       "id": 92212,
+       "nom": "Assemblée nationale",
+       "montants": {
+        "43": 0.607648
+       },
+       "total": 0.607648
+      },
+      {
+       "id": 92218,
+       "nom": "Sénat",
+       "montants": {
+        "43": 0.3534709
+       },
+       "total": 0.3534709
+      },
+      {
+       "id": 92230,
+       "nom": "Conseil constitutionnel",
+       "montants": {
+        "43": 0.02
+       },
+       "total": 0.02
+      },
+      {
+       "id": 92242,
+       "nom": "Cour de justice de la République",
+       "montants": {
+        "43": 0.0009
+       },
+       "total": 0.0009
+      },
+      {
+       "id": 92254,
+       "nom": "La Chaîne parlementaire",
+       "montants": {
+        "43": 0.0355969
+       },
+       "total": 0.0355969
+      }
+     ]
+    },
+    {
+     "id": 88456,
+     "nom": "Crédits non répartis",
+     "montants": {
+      "43": 0.475
+     },
+     "total": 0.475,
+     "programmes": [
+      {
+       "id": 88459,
+       "nom": "Provision relative aux rémunérations publiques",
+       "montants": {
+        "43": 0.35
+       },
+       "total": 0.35
+      },
+      {
+       "id": 88465,
+       "nom": "Dépenses accidentelles et imprévisibles",
+       "montants": {
+        "43": 0.125
+       },
+       "total": 0.125
+      }
+     ]
+    },
+    {
+     "id": 94024,
+     "nom": "Contrôle et exploitation aériens",
+     "montants": {
+      "44": 2.425535407
+     },
+     "total": 2.425535407,
+     "programmes": [
+      {
+       "id": 94027,
+       "nom": "Navigation aérienne",
+       "montants": {
+        "44": 0.6814374
+       },
+       "total": 0.6814374
+      },
+      {
+       "id": 94036,
+       "nom": "Soutien aux prestations de l'aviation civile",
+       "montants": {
+        "44": 1.697584
+       },
+       "total": 1.697584
+      },
+      {
+       "id": 94057,
+       "nom": "Transports aériens, surveillance et certification",
+       "montants": {
+        "44": 0.046514007
+       },
+       "total": 0.046514007
+      }
+     ]
+    },
+    {
+     "id": 94069,
+     "nom": "Publications officielles et information administrative",
+     "montants": {
+      "44": 0.14741375
+     },
+     "total": 0.14741375,
+     "programmes": [
+      {
+       "id": 94072,
+       "nom": "Édition et diffusion",
+       "montants": {
+        "44": 0.04372886
+       },
+       "total": 0.04372886
+      },
+      {
+       "id": 94093,
+       "nom": "Pilotage et ressources humaines",
+       "montants": {
+        "44": 0.10368489
+       },
+       "total": 0.10368489
+      }
+     ]
+    },
+    {
+     "id": 94222,
+     "nom": "Gestion du patrimoine immobilier de l'État",
+     "montants": {
+      "45": 0.3155
+     },
+     "total": 0.3155,
+     "programmes": [
+      {
+       "id": 94231,
+       "nom": "Opérations immobilières et entretien des bâtiments de l'État",
+       "montants": {
+        "45": 0.3155
+       },
+       "total": 0.3155
+      }
+     ]
+    },
+    {
+     "id": 94246,
+     "nom": "Participations financières de l'État",
+     "montants": {
+      "45": 5.38369
+     },
+     "total": 5.38369,
+     "programmes": [
+      {
+       "id": 94249,
+       "nom": "Opérations en capital intéressant les participations financières de l'État",
+       "montants": {
+        "45": 5.38369
+       },
+       "total": 5.38369
+      }
+     ]
+    },
+    {
+     "id": 94273,
+     "nom": "Pensions",
+     "montants": {
+      "45": 69.929568343
+     },
+     "total": 69.929568343,
+     "programmes": [
+      {
+       "id": 94276,
+       "nom": "Pensions civiles et militaires de retraite et allocations temporaires d'invalidité",
+       "montants": {
+        "45": 66.6564341
+       },
+       "total": 66.6564341
+      },
+      {
+       "id": 94318,
+       "nom": "Ouvriers des établissements industriels de l'État",
+       "montants": {
+        "45": 2.102709694
+       },
+       "total": 2.102709694
+      },
+      {
+       "id": 94333,
+       "nom": "Pensions militaires d'invalidité et des victimes de guerre et autres pensions",
+       "montants": {
+        "45": 1.170424549
+       },
+       "total": 1.170424549
+      }
+     ]
+    },
+    {
+     "id": 94108,
+     "nom": "Contrôle de la circulation et du stationnement routiers",
+     "montants": {
+      "45": 1.9286996
+     },
+     "total": 1.9286996,
+     "programmes": [
+      {
+       "id": 94111,
+       "nom": "Structures et dispositifs de sécurité routière",
+       "montants": {
+        "45": 0.3443399
+       },
+       "total": 0.3443399
+      },
+      {
+       "id": 94126,
+       "nom": "Contrôle et modernisation de la politique de la circulation et du stationnement routiers",
+       "montants": {
+        "45": 0.0261807
+       },
+       "total": 0.0261807
+      },
+      {
+       "id": 94132,
+       "nom": "Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières",
+       "montants": {
+        "45": 0.806735
+       },
+       "total": 0.806735
+      },
+      {
+       "id": 94138,
+       "nom": "Désendettement de l'État",
+       "montants": {
+        "45": 0.751444
+       },
+       "total": 0.751444
+      }
+     ]
+    },
+    {
+     "id": 94144,
+     "nom": "Développement agricole et rural",
+     "montants": {
+      "45": 0.171
+     },
+     "total": 0.171,
+     "programmes": [
+      {
+       "id": 94147,
+       "nom": "Développement et transfert en agriculture",
+       "montants": {
+        "45": 0.06793
+       },
+       "total": 0.06793
+      },
+      {
+       "id": 94156,
+       "nom": "Recherche appliquée et innovation en agriculture",
+       "montants": {
+        "45": 0.10307
+       },
+       "total": 0.10307
+      }
+     ]
+    },
+    {
+     "id": 94171,
+     "nom": "Financement des aides aux collectivités pour l'électrification rurale",
+     "montants": {
+      "45": 0.3583
+     },
+     "total": 0.3583,
+     "programmes": [
+      {
+       "id": 94174,
+       "nom": "Électrification rurale",
+       "montants": {
+        "45": 0.3553
+       },
+       "total": 0.3553
+      },
+      {
+       "id": 94204,
+       "nom": "Opérations de maîtrise de la demande d'électricité, de production d'électricité par des énergies renouvelables ou de production de proximité dans les zones non interconnectées",
+       "montants": {
+        "45": 0.003
+       },
+       "total": 0.003
+      }
+     ]
+    },
+    {
+     "id": 94573,
+     "nom": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+     "montants": {
+      "46": 9.295
+     },
+     "total": 9.295,
+     "programmes": [
+      {
+       "id": 94576,
+       "nom": "Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune",
+       "montants": {
+        "46": 9
+       },
+       "total": 9
+      },
+      {
+       "id": 94582,
+       "nom": "Avances à des organismes distincts de l'État et gérant des services publics",
+       "montants": {
+        "46": 0.21
+       },
+       "total": 0.21
+      },
+      {
+       "id": 94588,
+       "nom": "Prêts et avances à des services de l'État",
+       "montants": {
+        "46": 0.03
+       },
+       "total": 0.03
+      },
+      {
+       "id": 94594,
+       "nom": "Avances à l'Office national d'indemnisation des accidents médicaux, des affections iatrogènes et des infections nosocomiales (ONIAM) au titre de l'indemnisation des victimes du Benfluorex",
+       "montants": {
+        "46": 0.015
+       },
+       "total": 0.015
+      },
+      {
+       "id": 94618,
+       "nom": "Prêts à FranceAgriMer au titre des préfinancements de fonds européens",
+       "montants": {
+        "46": 0.04
+       },
+       "total": 0.04
+      }
+     ]
+    },
+    {
+     "id": 94465,
+     "nom": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+     "montants": {
+      "46": 135.90174
+     },
+     "total": 135.90174,
+     "programmes": [
+      {
+       "id": 94468,
+       "nom": "Avances aux collectivités et établissements publics, à la Nouvelle-Calédonie et aux collectivités régies par l’article 74 de la Constitution",
+       "montants": {
+        "46": 0.206
+       },
+       "total": 0.206
+      },
+      {
+       "id": 94486,
+       "nom": "Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes",
+       "montants": {
+        "46": 135.69574
+       },
+       "total": 135.69574
+      }
+     ]
+    },
+    {
+     "id": 94405,
+     "nom": "Avances à l'audiovisuel public",
+     "montants": {
+      "46": 3.8633165
+     },
+     "total": 3.8633165,
+     "programmes": [
+      {
+       "id": 94408,
+       "nom": "France Télévisions",
+       "montants": {
+        "46": 2.42558
+       },
+       "total": 2.42558
+      },
+      {
+       "id": 94414,
+       "nom": "ARTE France",
+       "montants": {
+        "46": 0.298115
+       },
+       "total": 0.298115
+      },
+      {
+       "id": 94420,
+       "nom": "Radio France",
+       "montants": {
+        "46": 0.648034
+       },
+       "total": 0.648034
+      },
+      {
+       "id": 94426,
+       "nom": "France Médias Monde",
+       "montants": {
+        "46": 0.303884
+       },
+       "total": 0.303884
+      },
+      {
+       "id": 94432,
+       "nom": "Institut national de l'audiovisuel",
+       "montants": {
+        "46": 0.103461
+       },
+       "total": 0.103461
+      },
+      {
+       "id": 94438,
+       "nom": "TV5 Monde",
+       "montants": {
+        "46": 0.0842425
+       },
+       "total": 0.0842425
+      }
+     ]
+    },
+    {
+     "id": 94507,
+     "nom": "Prêts à des États étrangers",
+     "montants": {
+      "46": 1.140433
+     },
+     "total": 1.140433,
+     "programmes": [
+      {
+       "id": 94510,
+       "nom": "Prêts du Trésor à des États étrangers en vue de faciliter la vente de biens et de services concourant au développement du commerce extérieur de la France",
+       "montants": {
+        "46": 0.82864
+       },
+       "total": 0.82864
+      },
+      {
+       "id": 94516,
+       "nom": "Prêts à des États étrangers pour consolidation de dettes envers la France",
+       "montants": {
+        "46": 0.211793
+       },
+       "total": 0.211793
+      },
+      {
+       "id": 94522,
+       "nom": "Prêts à l'Agence française de développement en vue de favoriser le développement économique et social dans des États étrangers",
+       "montants": {
+        "46": 0.1
+       },
+       "total": 0.1
+      }
+     ]
+    },
+    {
+     "id": 94534,
+     "nom": "Prêts et avances à des particuliers ou à des organismes privés",
+     "montants": {
+      "46": 0.51505
+     },
+     "total": 0.51505,
+     "programmes": [
+      {
+       "id": 94537,
+       "nom": "Prêts et avances pour le logement des agents de l'État",
+       "montants": {
+        "46": 5e-05
+       },
+       "total": 5e-05
+      },
+      {
+       "id": 94543,
+       "nom": "Prêts pour le développement économique et social",
+       "montants": {
+        "46": 0.075
+       },
+       "total": 0.075
+      },
+      {
+       "id": 94549,
+       "nom": "Prêts à la société concessionnaire de la liaison express entre Paris et l'aéroport Paris - Charles-de-Gaulle",
+       "montants": {
+        "46": 0.15
+       },
+       "total": 0.15
+      },
+      {
+       "id": 94567,
+       "nom": "Soutien à la filière nickel en Nouvelle Calédonie",
+       "montants": {
+        "46": 0.29
+       },
+       "total": 0.29
+      }
+     ]
+    }
+   ],
+   "titres": [
+    {
+     "id": 94642,
+     "nom": "Titre 3 : Dépenses de fonctionnement",
+     "montants": {
+      "43": 70.12349415,
+      "44": 0.74453027,
+      "45": 1.173126845
+     },
+     "total": 72.041151265,
+     "categories": [
+      {
+       "id": 94645,
+       "nom": "Dépenses de fonctionnement autres que celles de personnel",
+       "montants": {
+        "43": 36.171220762,
+        "44": 0.63804727,
+        "45": 1.064644245
+       },
+       "total": 37.873912277
+      },
+      {
+       "id": 94648,
+       "nom": "Subventions pour charges de service public",
+       "montants": {
+        "43": 33.952273388,
+        "44": 0.106483,
+        "45": 0.1084826
+       },
+       "total": 34.167238988
+      }
+     ]
+    },
+    {
+     "id": 94675,
+     "nom": "Titre 6 : Dépenses d’intervention",
+     "montants": {
+      "43": 273.159040056,
+      "44": 0.026197,
+      "45": 2.489689537,
+      "46": 3.8633165
+     },
+     "total": 279.538243093,
+     "categories": [
+      {
+       "id": 94690,
+       "nom": "Transferts aux ménages",
+       "montants": {
+        "43": 85.135872993,
+        "45": 1.152384537
+       },
+       "total": 86.28825753
+      },
+      {
+       "id": 94681,
+       "nom": "Transferts aux autres collectivités",
+       "montants": {
+        "43": 29.376047501,
+        "44": 0.001681,
+        "45": 0.17297
+       },
+       "total": 29.550698501
+      },
+      {
+       "id": 94687,
+       "nom": "Transferts aux collectivités territoriales",
+       "montants": {
+        "43": 13.348160999,
+        "45": 1.164335
+       },
+       "total": 14.512495999
+      },
+      {
+       "id": 94678,
+       "nom": "Transferts aux entreprises",
+       "montants": {
+        "43": 144.508595563,
+        "44": 0.024516,
+        "46": 3.8633165
+       },
+       "total": 148.396428063
+      },
+      {
+       "id": 94684,
+       "nom": "Appels en garantie",
+       "montants": {
+        "43": 0.790363
+       },
+       "total": 0.790363
+      }
+     ]
+    },
+    {
+     "id": 94663,
+     "nom": "Titre 5 : Dépenses d’investissement",
+     "montants": {
+      "43": 29.173167416,
+      "44": 0.273235377,
+      "45": 0.27325
+     },
+     "total": 29.719652793,
+     "categories": [
+      {
+       "id": 94669,
+       "nom": "Subventions pour charges d'investissement",
+       "montants": {
+        "43": 1.166712053,
+        "44": 0.0110613,
+        "45": 0.019
+       },
+       "total": 1.196773353
+      },
+      {
+       "id": 94672,
+       "nom": "Dépenses pour immobilisations corporelles de l’État",
+       "montants": {
+        "43": 27.483691708,
+        "44": 0.084757318,
+        "45": 0.25425
+       },
+       "total": 27.822699026
+      },
+      {
+       "id": 94666,
+       "nom": "Dépenses pour immobilisations incorporelles de l’État",
+       "montants": {
+        "43": 0.522763655,
+        "44": 0.177416759
+       },
+       "total": 0.700180414
+      }
+     ]
+    },
+    {
+     "id": 94630,
+     "nom": "Titre 2 : Dépenses de personnel",
+     "montants": {
+      "43": 160.411628349,
+      "44": 1.51678201,
+      "45": 68.767001561
+     },
+     "total": 230.69541192,
+     "categories": [
+      {
+       "id": 94633,
+       "nom": "Rémunérations d’activité",
+       "montants": {
+        "43": 91.712726789,
+        "44": 1.0407572
+       },
+       "total": 92.753483989
+      },
+      {
+       "id": 94639,
+       "nom": "Cotisations et contributions sociales",
+       "montants": {
+        "43": 67.010870155,
+        "44": 0.4549046,
+        "45": 0.8465811
+       },
+       "total": 68.312355855
+      },
+      {
+       "id": 94636,
+       "nom": "Prestations sociales et allocations diverses",
+       "montants": {
+        "43": 1.688031405,
+        "44": 0.02112021,
+        "45": 67.920420461
+       },
+       "total": 69.629572076
+      }
+     ]
+    },
+    {
+     "id": 94693,
+     "nom": "Titre 7 : Dépenses d’opérations financières",
+     "montants": {
+      "43": 0.606485173,
+      "45": 5.38369,
+      "46": 146.852223
+     },
+     "total": 152.842398173,
+     "categories": [
+      {
+       "id": 94696,
+       "nom": "Dépenses de participations financières",
+       "montants": {
+        "43": 0.3667798,
+        "45": 5.38369
+       },
+       "total": 5.7504698
+      },
+      {
+       "id": 94699,
+       "nom": "Prêts et avances",
+       "montants": {
+        "43": 0.223744713,
+        "46": 146.852223
+       },
+       "total": 147.075967713
+      },
+      {
+       "id": 94702,
+       "nom": "Dotations en fonds propres",
+       "montants": {
+        "43": 0.01596066
+       },
+       "total": 0.01596066
+      }
+     ]
+    },
+    {
+     "id": 94651,
+     "nom": "Titre 4 : Charges de la dette de l’État",
+     "montants": {
+      "43": 59.276,
+      "44": 0.0122045
+     },
+     "total": 59.2882045,
+     "categories": [
+      {
+       "id": 94654,
+       "nom": "Intérêt de la dette financière négociable",
+       "montants": {
+        "43": 58.016,
+        "44": 0.0122045
+       },
+       "total": 58.0282045
+      },
+      {
+       "id": 94660,
+       "nom": "Charges financières diverses",
+       "montants": {
+        "43": 1.26
+       },
+       "total": 1.26
+      }
+     ]
+    },
+    {
+     "id": 94624,
+     "nom": "Titre 1 : Dotations des pouvoirs publics",
+     "montants": {
+      "43": 1.1401798
+     },
+     "total": 1.1401798,
+     "categories": [
+      {
+       "id": 94627,
+       "nom": "Cat Dotations des pouvoirs publics\n\n",
+       "montants": {
+        "43": 1.1401798
+       },
+       "total": 1.1401798
+      }
+     ]
+    }
+   ],
+   "total_ministeres": 825.265242,
+   "total_missions": 825.265242
+  }
+ ]
+}

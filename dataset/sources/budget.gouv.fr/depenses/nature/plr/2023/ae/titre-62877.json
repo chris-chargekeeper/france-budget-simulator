@@ -1,0 +1,68 @@
+[
+ {
+  "name": "Dépenses pour immobilisations corporelles de l’État",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.08098323283
+   },
+   {
+    "groupe": 43,
+    "value": 18.474391914309994
+   },
+   {
+    "groupe": 45,
+    "value": 0.24469342
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 62883
+  }
+ },
+ {
+  "name": "Dépenses pour immobilisations incorporelles de l’État",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.110505037
+   },
+   {
+    "groupe": 43,
+    "value": 3.1458186777099995
+   },
+   {
+    "groupe": 45,
+    "value": 0.03029147
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 62886
+  }
+ },
+ {
+  "name": "Subventions pour charges d'investissement",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.003
+   },
+   {
+    "groupe": 43,
+    "value": 0.277372043
+   },
+   {
+    "groupe": 45,
+    "value": 0.01675
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 62880
+  }
+ }
+]

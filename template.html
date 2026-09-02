@@ -207,7 +207,7 @@ section{margin-top:38px}
 }
 
 /* ---------- composition ---------- */
-.compo-row{display:grid;grid-template-columns:minmax(150px,1.1fr) 3fr auto;gap:12px;align-items:center;padding:5px 0;font-size:13px}
+.compo-row{display:grid;grid-template-columns:minmax(178px,1.2fr) 3fr auto;gap:12px;align-items:center;padding:5px 0;font-size:13px}
 .compo-row .n{color:var(--ink-2);line-height:1.25}
 .compo-bar{height:12px;border-radius:0 3px 3px 0;background:var(--bar)}
 .compo-row .v{font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;color:var(--ink)}
@@ -246,7 +246,7 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);font-si
 @media (max-width:560px){
   .cockpit{grid-template-columns:1fr}
   .params{grid-template-columns:1fr}
-  .compo-row{grid-template-columns:minmax(110px,1fr) 2fr auto}
+  .compo-row{grid-template-columns:minmax(132px,1fr) 2fr auto}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style><style>
@@ -269,6 +269,7 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);font-si
   color:var(--pc);font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:600;letter-spacing:.02em;
   box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--pc) 35%,transparent);
 }
+.avatar svg,.cmp-av svg{width:100%;height:100%;display:block;color:var(--pc)}
 .avatar img{width:100%;height:100%;object-fit:cover;display:block}
 .card .who{font-size:15px;font-weight:600;line-height:1.2}
 .card .party{font-size:12px;color:var(--ink-2);line-height:1.3}
@@ -404,9 +405,185 @@ body.adv .simple-only{display:none!important}
 }
 .compo-row.hdr{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);
   font-family:"IBM Plex Mono",monospace;padding-bottom:6px;border-bottom:1px solid var(--rule-soft);margin-bottom:4px}
-.compo-row.four{grid-template-columns:minmax(150px,1.1fr) 3fr auto auto;gap:12px}
+.compo-row.four{grid-template-columns:minmax(178px,1.2fr) 3fr auto auto;gap:12px}
 .compo-row .v{min-width:56px;text-align:right}
+
+/* ---------- registre pédagogique ----------
+   Palette relevée au compte-gouttes sur les captures de la vidéo « À quoi servent mes
+   impôts ? » d'economie.gouv.fr : rouge pour la dépense, bleu pour la recette, ambre
+   pour l'argent, bleu nuit pour les pastilles chiffrées. Réservée aux blocs de
+   vulgarisation — jamais au codage d'une série dans un graphique. */
+:root{
+  --dep:#C81E1E;  --rec:#0B5CAE;  --coin:#E0982F;
+  --pastille:#12224E; --pastille-ink:#FFFFFF;
+  --ciel:#EAF3FA; --ciel-2:#D6E8F5;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --dep:#EE7B72; --rec:#6DA7EC; --coin:#E5AE60;
+    --pastille:#1D2F5C; --pastille-ink:#EAF1FA;
+    --ciel:#15202C; --ciel-2:#1C2937;
+  }
+}
+:root[data-theme="dark"]{
+  --dep:#EE7B72; --rec:#6DA7EC; --coin:#E5AE60;
+  --pastille:#1D2F5C; --pastille-ink:#EAF1FA;
+  --ciel:#15202C; --ciel-2:#1C2937;
+}
+
+.ic{width:20px;height:20px;flex:0 0 20px;stroke:currentColor;fill:none;
+    stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* les trois grandes masses, dans le registre du grand chiffre plein cadre */
+.masses{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.mass{background:var(--surface);border:1px solid var(--rule);border-radius:10px;
+      padding:15px 16px 13px;display:grid;gap:3px;align-content:start}
+.mass .lab{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;
+           text-transform:uppercase;color:var(--ink-3);display:flex;gap:7px;align-items:center}
+.mass .val{font-weight:700;font-size:clamp(28px,4vw,44px);line-height:1;
+           letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.mass .unit{font-size:12.5px;color:var(--ink-2);line-height:1.35}
+.mass.dep .val,.mass.dep .lab{color:var(--dep)}
+.mass.rec .val,.mass.rec .lab{color:var(--rec)}
+.mass.ecart .val,.mass.ecart .lab{color:var(--dep)}
+
+/* la balance : la métaphore centrale de la vidéo, ici pilotée par les montants réels */
+.balances{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.bal{background:var(--ciel);border:1px solid var(--rule);border-radius:10px;padding:12px 14px 8px}
+.bal h4{margin:0 0 2px;font-size:13px;font-weight:600;color:var(--ink)}
+.bal .when{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;
+           text-transform:uppercase;color:var(--ink-3)}
+.bal svg{width:100%;height:auto;display:block;margin-top:2px}
+.bal .note{font-size:12.5px;color:var(--ink-2);padding:2px 2px 4px;line-height:1.45}
+.bal .note b{color:var(--ink);font-weight:600}
+
+/* la bande « sur 1 000 € », pastilles rondes comme les cartons de la vidéo */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:10px;margin-top:14px}
+.strip .cell{display:grid;justify-items:center;gap:6px;text-align:center}
+.pastille{width:62px;height:62px;border-radius:50%;background:var(--pastille);
+          color:var(--pastille-ink);display:grid;place-content:center;
+          font-weight:700;font-size:15px;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.strip .cell .ic{width:22px;height:22px;flex:none;color:var(--ink-3)}
+.strip .cell .who{font-size:11.5px;line-height:1.25;color:var(--ink-2)}
+.strip .rest{grid-column:1/-1;font-size:12px;color:var(--ink-3);line-height:1.4;
+             border-top:1px solid var(--rule);padding-top:9px;margin-top:2px}
+
+.compo-row .n{display:flex;gap:8px;align-items:flex-start}
+.compo-row .n .ic{margin-top:1px;color:var(--ink-3)}
+.compo-row .n .txt{min-width:0}
+
+@media (max-width:900px){
+  .masses{grid-template-columns:1fr}
+  .balances{grid-template-columns:1fr}
+}
 </style>
+
+<!-- Jeu d'icônes. Tracé seul, 24×24, hérite de la couleur du texte : une icône est un
+     repère de lecture, pas une couleur de plus. Référencées par <use href="#ic-…">,
+     le nom vient du champ `icone` des données. -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+
+ <!-- Bustes de candidat, dans le registre de l'affiche de campagne : silhouette pleine,
+      buste de trois quarts, coupé par le cercle. Deux variantes, choisies par le champ
+      `avatar` de parties.json — ce sont des pictogrammes génériques, aucune ressemblance
+      avec une personne réelle n'est recherchée. Le col est évidé (fill-rule evenodd) :
+      c'est le fond de la pastille qui fait la chemise, à n'importe quel thème. -->
+ <symbol id="av-h" viewBox="0 0 48 48">
+ <path fill="currentColor" fill-rule="evenodd" d="M25.6 26.6C11.4 26.6 1.4 34-.8 45.2V48h49.4v-2.8C46.4 34.6 37.4 27.4 25.6 26.6Z M21.6 27.1l4.2 7.5 4.2-7.5z"/>
+ <path fill="currentColor" d="M23.9 27.3l1.9 7.1 1.9-7.1z"/>
+ <path fill="currentColor" d="M22.9 17.6c0 4.8-.6 7.6-2.1 9.6h11.4c-1.8-2-2.7-4.8-2.7-9.6z"/>
+ <ellipse fill="currentColor" cx="27.2" cy="11.6" rx="8" ry="6.4" transform="rotate(-6 27.2 11.6)"/>
+ <ellipse fill="currentColor" cx="26.6" cy="14.9" rx="7.4" ry="7.9" transform="rotate(-6 26.6 14.9)"/>
+ <path fill="currentColor" d="M19.6 17.2c-1.9.5-3.4 1.3-4.1 2.1.9 1 2.4 1.6 4.3 1.9z"/>
+ </symbol>
+
+ <symbol id="av-f" viewBox="0 0 48 48">
+ <path fill="currentColor" fill-rule="evenodd" d="M25.6 26.6C11.4 26.6 1.4 34-.8 45.2V48h49.4v-2.8C46.4 34.6 37.4 27.4 25.6 26.6Z M21.5 27.1l4.1 6.6 4.1-6.6z"/>
+ <path fill="currentColor" d="M22.9 17.6c0 4.8-.6 7.6-2.1 9.6h11.4c-1.8-2-2.7-4.8-2.7-9.6z"/>
+ <path fill="currentColor" d="M31.6 7.7c4.1 5.2 4.9 16.8 2.9 24.8h-6.1c1.9-7.6 1.6-15.8-.5-20.5z"/>
+ <path fill="currentColor" d="M22.4 7.7c-4.2 5.2-5 15.6-3.4 22.6h4.9c-1.4-6.6-1-14 .9-18.1z"/>
+ <ellipse fill="currentColor" cx="26.8" cy="10.9" rx="9" ry="7" transform="rotate(-6 26.8 10.9)"/>
+ <ellipse fill="currentColor" cx="26.6" cy="14.9" rx="7.4" ry="7.9" transform="rotate(-6 26.6 14.9)"/>
+ <path fill="currentColor" d="M19.6 17.2c-1.9.5-3.4 1.3-4.1 2.1.9 1 2.4 1.6 4.3 1.9z"/>
+ </symbol>
+ <symbol id="ic-retraite" viewBox="0 0 24 24">
+  <circle cx="9.6" cy="5.2" r="2.7"/><path d="M9.6 7.9v6.8"/>
+  <path d="M6.2 10.6 9.6 9.4l3 1.3"/><path d="M9.6 14.7 7.6 20.8M9.6 14.7l2 6.1"/>
+  <path d="M15.4 11.4v9.4M14 11.4h2.8"/>
+ </symbol>
+ <symbol id="ic-sante" viewBox="0 0 24 24">
+  <rect x="3.6" y="3.6" width="16.8" height="16.8" rx="4.4"/>
+  <path d="M12 8.2v7.6M8.2 12h7.6"/>
+ </symbol>
+ <symbol id="ic-mairie" viewBox="0 0 24 24">
+  <path d="M2.8 9.4 12 4l9.2 5.4"/><path d="M2.8 20.2h18.4"/>
+  <path d="M6.4 9.6v10.6M12 9.6v10.6M17.6 9.6v10.6"/>
+ </symbol>
+ <symbol id="ic-famille" viewBox="0 0 24 24">
+  <circle cx="8.4" cy="6.6" r="2.7"/><circle cx="16.4" cy="8.4" r="2.1"/>
+  <path d="M3.8 20.4c0-3.5 2-5.4 4.6-5.4s4.6 1.9 4.6 5.4"/>
+  <path d="M14.2 20.4c0-2.7 1.1-4.2 2.9-4.2s2.9 1.5 2.9 4.2"/>
+ </symbol>
+ <symbol id="ic-ecole" viewBox="0 0 24 24">
+  <path d="M12 7.4C10.4 6.1 8 5.6 3.8 5.8v11.8c4.2-.2 6.6.3 8.2 1.6 1.6-1.3 4-1.8 8.2-1.6V5.8c-4.2-.2-6.6.3-8.2 1.6z"/>
+  <path d="M12 7.4v11.8"/>
+ </symbol>
+ <symbol id="ic-transport" viewBox="0 0 24 24">
+  <path d="M2.4 11.6h19.2"/><path d="M4 11.6C6.6 5.6 17.4 5.6 20 11.6"/>
+  <path d="M7.4 11.6V19M16.6 11.6V19"/><path d="M2.4 19h19.2"/>
+ </symbol>
+ <symbol id="ic-entreprise" viewBox="0 0 24 24">
+  <path d="M3.2 9.2 4.9 4.8h14.2l1.7 4.4z"/><path d="M4.8 9.2v10.6h14.4V9.2"/>
+  <path d="M9.6 19.8v-5.4h4.8v5.4"/>
+ </symbol>
+ <symbol id="ic-defense" viewBox="0 0 24 24">
+  <path d="M12 3.4 19 6v5.4c0 4.6-3 7.5-7 9.2-4-1.7-7-4.6-7-9.2V6z"/>
+ </symbol>
+ <symbol id="ic-culture" viewBox="0 0 24 24">
+  <path d="M4 7.6h16v3.2a1.9 1.9 0 0 0 0 3.8v3.8H4v-3.8a1.9 1.9 0 0 0 0-3.8z"/>
+  <path d="M12 9.6v1.7M12 12.9v1.7M12 16.2v1.6"/>
+ </symbol>
+ <symbol id="ic-dette" viewBox="0 0 24 24">
+  <path d="M9.2 3.8h5.6l-1.5 2.6h-2.6z"/>
+  <path d="M10.7 6.4C6.7 8.4 4.7 11.6 4.7 15.2c0 3.2 2.8 5.3 7.3 5.3s7.3-2.1 7.3-5.3c0-3.6-2-6.8-6-8.8"/>
+  <path d="M14.2 12.4a2.9 2.9 0 1 0 0 4.6M10.3 13.6h4.2M10.3 15.4h4.2"/>
+ </symbol>
+ <symbol id="ic-salaire" viewBox="0 0 24 24">
+  <path d="M7.4 11V4.4h9.2V11"/><path d="M9.6 6.8h4.8M9.6 8.8h4.8"/>
+  <path d="M3.4 10.6h17.2v9H3.4z"/><path d="m3.4 10.6 8.6 5.6 8.6-5.6"/>
+ </symbol>
+ <symbol id="ic-panier" viewBox="0 0 24 24">
+  <path d="M8.6 8.4V6.6a3.4 3.4 0 0 1 6.8 0v1.8"/>
+  <path d="M3.6 8.4h16.8l-1.7 10.6H5.3z"/><path d="M9.4 11.6v4.4M14.6 11.6v4.4"/>
+ </symbol>
+ <symbol id="ic-maison" viewBox="0 0 24 24">
+  <path d="m2.8 11.2 9.2-7.2 9.2 7.2"/><path d="M5.4 9.6v10.6h13.2V9.6"/>
+  <path d="M9.9 20.2v-5.4h4.2v5.4"/>
+ </symbol>
+ <symbol id="ic-piece" viewBox="0 0 24 24">
+  <ellipse cx="12" cy="6.8" rx="7.2" ry="2.9"/>
+  <path d="M4.8 6.8v3.5c0 1.6 3.2 2.9 7.2 2.9s7.2-1.3 7.2-2.9V6.8"/>
+  <path d="M4.8 12.5V16c0 1.6 3.2 2.9 7.2 2.9s7.2-1.3 7.2-2.9v-3.5"/>
+ </symbol>
+ <symbol id="ic-europe" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="8.4"/>
+  <circle cx="12" cy="7.2" r="1" fill="currentColor" stroke="none"/>
+  <circle cx="16.2" cy="9.6" r="1" fill="currentColor" stroke="none"/>
+  <circle cx="16.2" cy="14.4" r="1" fill="currentColor" stroke="none"/>
+  <circle cx="12" cy="16.8" r="1" fill="currentColor" stroke="none"/>
+  <circle cx="7.8" cy="14.4" r="1" fill="currentColor" stroke="none"/>
+  <circle cx="7.8" cy="9.6" r="1" fill="currentColor" stroke="none"/>
+ </symbol>
+ <symbol id="ic-monde" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="8.4"/><path d="M3.6 12h16.8"/>
+  <path d="M12 3.6c3.3 3.5 3.3 13.3 0 16.8-3.3-3.5-3.3-13.3 0-16.8"/>
+ </symbol>
+ <symbol id="ic-agent" viewBox="0 0 24 24">
+  <circle cx="12" cy="6.6" r="3"/>
+  <path d="M4.6 20.4c0-4.1 3.3-6.4 7.4-6.4s7.4 2.3 7.4 6.4"/>
+  <path d="m9.9 14.2 2.1 2.9 2.1-2.9"/>
+ </symbol>
+</svg>
 
 <header class="masthead">
   <div class="wrap">
@@ -560,7 +737,18 @@ body.adv .simple-only{display:none!important}
       <p>Une idée répandue veut que la dépense publique parte d'abord dans les privilèges de l'État. Voici les
         montants réels — et ce qu'ils représentent sur 1 000 € dépensés.</p>
     </div>
-    <div class="grid2">
+
+    <div class="masses" id="masses"></div>
+    <div class="balances" id="balances"></div>
+
+    <div class="panel" style="margin-top:16px">
+      <h3>Sur 1 000 € de dépense publique</h3>
+      <p class="sub">La ventilation du dessous, ramenée à mille euros — l'échelle à laquelle un ordre de
+        grandeur redevient tangible.</p>
+      <div class="strip" id="strip1000"></div>
+    </div>
+
+    <div class="grid2" style="margin-top:16px">
       <div class="panel">
         <h3>Où vont 1 000 € de dépense publique</h3>
         <p class="sub">Total : 1 690 milliards par an, soit environ 24 700 € par habitant.</p>
@@ -871,6 +1059,8 @@ function render(){
     ck.appendChild(n);
   });
 
+  renderBalances(scen, base);
+
   /* trajectoires */
   const [sLo, sHi] = niceBounds([...base.map(r=>r.soldePct), ...scen.map(r=>r.soldePct), -3], 1);
   lineChart($('#chSolde'), {
@@ -932,6 +1122,25 @@ function render(){
 }
 
 /* ---------- comparaison de tous les programmes ---------- */
+/** Remplit une pastille de candidat : photo si on en a une et qu'elle est créditée,
+ *  sinon le buste correspondant au champ `avatar`, sinon le monogramme. */
+function fillAvatar(host, o){
+  host.textContent = '';
+  if (o.photo){
+    const img = el('img');
+    img.src = o.photo; img.alt = ''; img.loading = 'lazy';
+    host.appendChild(img);
+    return;
+  }
+  if (o.avatar === 'h' || o.avatar === 'f'){
+    const svg = sv('svg', {viewBox: '0 0 48 48', 'aria-hidden': 'true', focusable: 'false'});
+    svg.appendChild(sv('use', {href: '#av-' + o.avatar}));
+    host.appendChild(svg);
+    return;
+  }
+  host.textContent = o.ref ? '—' : initials(o.nom);
+}
+
 const initials = n => {
   const w = String(n).split(/[\s-]+/).filter(x => /^\p{L}/u.test(x));
   if (!w.length) return '—';
@@ -945,12 +1154,12 @@ function renderCompare(base){
     const active = partySet(p);
     const scen = run(state.P, active);
     const S = scen[scen.length-1];
-    return {id:p.id, nom:p.candidat, sub:p.nom, couleur:p.couleur, photo:p.photo,
+    return {id:p.id, nom:p.candidat, sub:p.nom, couleur:p.couleur, photo:p.photo, avatar:p.avatar,
             statut:p.statut, vals:scen.map(r => r.soldePct),
             solde:S.soldePct, dette:S.dettePct, net:activeSplit(active).net};
   });
   rows.push({id:'tend', nom:"Si rien ne change", sub:"aucune mesure nouvelle", couleur:'var(--ink-3)',
-             photo:null, statut:null, vals:refVals, ref:true,
+             photo:null, avatar:null, statut:null, vals:refVals, ref:true,
              solde:base[base.length-1].soldePct, dette:base[base.length-1].dettePct, net:0});
   rows.sort((a,b) => b.solde - a.solde);
 
@@ -972,8 +1181,7 @@ function renderCompare(base){
 
     const who = el('div','cmp-who');
     const av = el('div','cmp-av');
-    if (r.photo){ const im = el('img'); im.src = r.photo; im.alt = ''; av.appendChild(im); }
-    else av.textContent = r.ref ? '—' : initials(r.nom);
+    fillAvatar(av, r);
     const tx = el('div');
     tx.appendChild(el('div','cmp-name', r.nom));
     tx.appendChild(el('div','cmp-sub', r.statut === 'reconstitution' ? 'reconstitution' : r.sub));
@@ -1152,18 +1360,12 @@ function partySet(p){
 }
 function buildCards(){
   const box = $('#cards');
-  const mk = (id, sig, who, party, claim, badge, color, photo) => {
+  const mk = (id, sig, who, party, claim, badge, color, photo, avatar) => {
     const b = el('button','card'); b.type = 'button'; b.dataset.id = id;
     b.style.setProperty('--pc', color);
     const top = el('div','card-top');
     const av = el('div','avatar');
-    if (photo){
-      const img = el('img');
-      img.src = photo; img.alt = ''; img.loading = 'lazy';
-      av.appendChild(img);
-    } else {
-      av.textContent = initials(who);
-    }
+    fillAvatar(av, {nom:who, photo, avatar});
     const txt = el('div');
     txt.appendChild(el('div','sig', sig));
     txt.appendChild(el('div','who', who));
@@ -1187,7 +1389,7 @@ function buildCards(){
   PARTIES.forEach(p => mk(p.id, p.sigle, p.candidat, p.nom,
     p.annonce.revendique != null ? p.annonce.titre : "Programme non chiffré",
     p.statut === 'reconstitution' ? ['rec','reconstitution'] : ['pub','chiffres publics'],
-    p.couleur, p.photo));
+    p.couleur, p.photo, p.avatar));
   $('#candWarn').textContent = DATA.parties.avertissement;
 }
 function syncCards(){
@@ -1313,6 +1515,125 @@ function syncErosion(){
     b.setAttribute('aria-pressed', String(parseFloat(b.dataset.v) === state.P.erosion)));
 }
 
+/* ---------- registre pédagogique ----------
+   Trois blocs repris de la grammaire des vidéos de vulgarisation de Bercy : le grand
+   chiffre plein cadre, la balance, et la pastille « sur 1 000 € ». Ils ne disent rien
+   que les tableaux ne disent déjà — ils le disent à une échelle qu'on lit d'un coup. */
+
+/** Icône du sprite, par son nom dans les données. Hérite de la couleur du texte. */
+function icon(name, cls){
+  const n = sv('svg', {class: cls || 'ic', 'aria-hidden': 'true', focusable: 'false'});
+  n.appendChild(sv('use', {href: '#ic-' + name}));
+  return n;
+}
+
+/** Les trois masses de départ. Fixes : c'est le cadre, pas le résultat d'un scénario. */
+function renderMasses(){
+  const host = $('#masses'); if (!host) return;
+  host.textContent = '';
+  const dep = BL.apu.depenses, rec = BL.apu.recettes, ecart = dep - rec;
+  [{k:'dep', ic:'piece', lab:'Dépenses publiques', v:dep,
+    sub:perHab(dep) + " par habitant et par an"},
+   {k:'rec', ic:'salaire', lab:'Recettes', v:rec,
+    sub:nf(rec / dep * 100) + " % des dépenses couvertes"},
+   {k:'ecart', ic:'dette', lab:'Ce qui manque chaque année', v:ecart,
+    sub:pc(ecart / BL.apu.pib * 100) + " du PIB, emprunté"}
+  ].forEach(t => {
+    const n = el('div', 'mass ' + t.k);
+    const lab = el('div', 'lab');
+    lab.appendChild(icon(t.ic));
+    lab.appendChild(el('span', null, t.lab));
+    n.appendChild(lab);
+    n.appendChild(el('div', 'val', nf(t.v)));
+    n.appendChild(el('div', 'unit', 'milliards d’euros · ' + t.sub));
+    host.appendChild(n);
+  });
+}
+
+/** Une balance dont l'inclinaison suit l'écart réel entre dépenses et recettes. */
+function balance(host, o){
+  const card = el('div', 'bal');
+  card.appendChild(el('div', 'when', o.when));
+  card.appendChild(el('h4', null, o.titre));
+  const svg = sv('svg', {viewBox: '0 0 300 126', role: 'img',
+    'aria-label': `${o.titre} : ${md(o.dep)} de dépenses contre ${md(o.rec)} de recettes.`});
+
+  const CX = 150, CY = 44, L = 104;
+  // 14° au maximum : au-delà, les plateaux se croisent et la lecture se perd.
+  const t = Math.max(-14, Math.min(14, (o.dep - o.rec) / Math.max(o.dep, o.rec) * 70)) * Math.PI / 180;
+  const dx = L * Math.cos(t), dy = L * Math.sin(t);
+  const pans = [{x: CX - dx, y: CY + dy, v: o.dep, lab: 'Dépenses', c: 'var(--dep)'},
+                {x: CX + dx, y: CY - dy, v: o.rec, lab: 'Recettes', c: 'var(--rec)'}];
+
+  svg.appendChild(sv('path', {d: `M136 92 L${CX} 48 L164 92 Z`,
+    fill: 'var(--ink-2)', stroke: 'none'}));
+  svg.appendChild(sv('rect', {x: 116, y: 92, width: 68, height: 6, rx: 3,
+    fill: 'var(--coin)', stroke: 'none'}));
+  svg.appendChild(sv('line', {x1: pans[0].x, y1: pans[0].y, x2: pans[1].x, y2: pans[1].y,
+    stroke: 'var(--ink-2)', 'stroke-width': 5, 'stroke-linecap': 'round'}));
+  svg.appendChild(sv('circle', {cx: CX, cy: CY, r: 5,
+    fill: 'var(--surface)', stroke: 'var(--ink-2)', 'stroke-width': 3}));
+
+  pans.forEach(pan => {
+    svg.appendChild(sv('line', {x1: pan.x, y1: pan.y, x2: pan.x, y2: pan.y + 12,
+      stroke: 'var(--ink-2)', 'stroke-width': 2}));
+    svg.appendChild(sv('path', {
+      d: `M${pan.x - 38} ${pan.y + 12} a38 22 0 0 0 76 0 z`,
+      fill: pan.c, stroke: 'none'}));
+    const v = sv('text', {x: pan.x, y: pan.y + 30, 'text-anchor': 'middle',
+      fill: '#fff', 'font-size': 14, 'font-weight': 700});
+    v.textContent = nf(pan.v);
+    svg.appendChild(v);
+    const lab = sv('text', {x: pan.x, y: pan.y + 50, 'text-anchor': 'middle',
+      fill: pan.c, 'font-size': 11, 'font-weight': 600, 'letter-spacing': '.08em'});
+    lab.textContent = pan.lab.toUpperCase();
+    svg.appendChild(lab);
+  });
+  card.appendChild(svg);
+  card.appendChild(el('div', 'note')).innerHTML = o.note;
+  host.appendChild(card);
+}
+
+/** Aujourd'hui, puis le même écart en 2032 avec le programme chargé. */
+function renderBalances(scen, base){
+  const host = $('#balances'); if (!host) return;
+  host.textContent = '';
+  const now = scen[0], end = scen[scen.length - 1], ref = base[base.length - 1];
+  const p = PARTIES.find(x => x.id === state.party);
+
+  balance(host, {
+    when: 'Aujourd’hui', titre: 'Le point de départ', dep: now.dep, rec: now.rec,
+    note: `Il manque <b>${md(now.dep - now.rec)}</b> par an, soit `
+      + `<b>${pc(-now.soldePct)}</b> du PIB. L’écart s’ajoute à la dette.`});
+
+  const manque = -end.solde, delta = end.solde - ref.solde;
+  balance(host, {
+    when: '2032', titre: p ? p.nom : 'Sans mesure nouvelle', dep: end.dep, rec: end.rec,
+    note: `Il manquerait <b>${md(manque)}</b>, soit <b>${pc(-end.soldePct)}</b> du PIB — `
+      + (p ? manqueDelta(delta).replace(/^i/, 'I') + '.'
+           : 'ce que produit l’inaction.')});
+}
+
+/** La bande des pastilles : les gros postes ramenés à 1 000 €, le reste agrégé. */
+function renderStrip(){
+  const host = $('#strip1000'); if (!host) return;
+  host.textContent = '';
+  const tot = BL.apu.depenses;
+  const dep = [...BL.depenses].sort((a, b) => b.v - a.v);
+  const tete = dep.slice(0, 6), reste = dep.slice(6);
+  tete.forEach(d => {
+    const cell = el('div', 'cell');
+    cell.appendChild(el('div', 'pastille', nf(d.v / tot * 1000) + ' €'));
+    cell.appendChild(icon(d.icone));
+    cell.appendChild(el('div', 'who', d.nom));
+    host.appendChild(cell);
+  });
+  const somme = reste.reduce((s, d) => s + d.v, 0);
+  host.appendChild(el('div', 'rest',
+    `… et ${nf(somme / tot * 1000)} € pour le reste : `
+    + reste.map(d => d.nom).join(' · ') + '.'));
+}
+
 /* ---------- compositions & repères ---------- */
 function barRows(host, rows, max, strong, header){
   host.textContent = '';
@@ -1323,8 +1644,11 @@ function barRows(host, rows, max, strong, header){
   }
   rows.forEach(r => {
     const n = el('div','compo-row' + (header ? ' four' : ''));
-    const nm = el('div','n', r.nom);
-    if (r.sub){ const s = el('div','sub-list', r.sub); nm.appendChild(s); }
+    const nm = el('div','n');
+    if (r.icone) nm.appendChild(icon(r.icone));
+    const txt = el('div','txt', r.nom);
+    if (r.sub){ txt.appendChild(el('div','sub-list', r.sub)); }
+    nm.appendChild(txt);
     n.appendChild(nm);
     const track = el('div','compo-track');
     const bar = el('div','compo-bar');
@@ -1340,7 +1664,7 @@ function buildCompo(){
   const totDep = BL.apu.depenses;
   const dep = [...BL.depenses].sort((a,b) => b.v - a.v);
   barRows($('#compoDep'), dep.map(d => ({
-    nom:d.nom, v:d.v, sub:d.note, per:nf(d.v / totDep * 1000) + ' €'
+    nom:d.nom, v:d.v, sub:d.note, icone:d.icone, per:nf(d.v / totDep * 1000) + ' €'
   })), dep[0].v, r => r.nom === "Charge de la dette", ['Md€', 'sur 1 000 €']);
 
   const agg = {};
@@ -1349,7 +1673,7 @@ function buildCompo(){
     nom: BL.payeurs[k].nom,
     v: agg[k].reduce((s,x) => s + x.v, 0),
     sub: agg[k].sort((a,b) => b.v - a.v).map(x => `${x.nom} ${nf(x.v)}`).join(' · '),
-    key: k
+    icone: BL.payeurs[k].icone, key: k
   })).sort((a,b) => b.v - a.v);
   const tot = pay.reduce((s,x) => s + x.v, 0);
   barRows($('#compoPay'), pay.map(p => ({...p, per:nf(p.v / tot * 100) + ' €'})),
@@ -1357,10 +1681,13 @@ function buildCompo(){
 
   const rp = [...BL.reperes].sort((a,b) => b.v - a.v);
   barRows($('#reperes'), rp.map(r => ({
-    nom: r.nom, v: r.v, sub: r.note,
+    nom: r.nom, v: r.v, sub: r.note, icone: r.icone,
     txt: nf(r.v, r.v < 10 ? 2 : 0),
     per: nf(r.v / totDep * 1000, r.v < 10 ? 2 : 0) + ' €'
   })), rp[0].v, r => r.v < 5, ['Md€', 'sur 1 000 €']);
+
+  renderMasses();
+  renderStrip();
 }
 
 /* ---------- veille : base des annonces ---------- */

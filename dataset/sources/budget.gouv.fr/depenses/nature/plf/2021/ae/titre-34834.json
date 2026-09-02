@@ -1,0 +1,60 @@
+[
+ {
+  "name": "Dotations en fonds propres",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.941483386
+   },
+   {
+    "groupe": 45,
+    "value": 0.016
+   },
+   {
+    "groupe": 44,
+    "value": 0.002
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 34840
+  }
+ },
+ {
+  "name": "Dépenses de participations financières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.08
+   },
+   {
+    "groupe": 45,
+    "value": 13.3252
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 34843
+  }
+ },
+ {
+  "name": "Prêts et avances",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 128.5981382
+   },
+   {
+    "groupe": 43,
+    "value": 0.983342
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 34837
+  }
+ }
+]

@@ -1,0 +1,83 @@
+{
+ "url": "https://www.budget.gouv.fr/budget-etat",
+ "recupere": "2026-09-02",
+ "graphes": [
+  {
+   "uuid": "05889254-7824-4ee4-8d8f-83d9a5566102",
+   "type": "treemapchart",
+   "unit": "En Md€",
+   "url": null,
+   "data": "[{\"name\":\"Recettes Budgets annexes et comptes sp\\u00e9ciaux\",\"children\":[],\"color\":\"#0097ac\",\"value\":300,\"diff_name\":\"Solde Budgets annexes et comptes sp\\u00e9ciaux\"},{\"name\":\"D\\u00e9penses Budgets annexes et comptes sp\\u00e9ciaux\",\"children\":[],\"color\":\"#0097ac\",\"value\":301,\"diff_name\":\"Solde Budgets annexes et comptes sp\\u00e9ciaux\"}]"
+  },
+  {
+   "uuid": "149cf3c7-a620-4afe-83d0-0612aaa5ab85",
+   "type": "bubblechart",
+   "unit": "Md€",
+   "url": null,
+   "data": "[{\"name\":\"Compte de concours financiers\",\"groupe\":\"Comptes sp\\u00e9ciaux\",\"value\":151},{\"name\":\"Comptes d'affectation sp\\u00e9ciale\",\"groupe\":\"Comptes sp\\u00e9ciaux\",\"value\":78},{\"name\":\"Budgets Annexes\",\"groupe\":\"Budgets Annexes\",\"value\":3}]"
+  },
+  {
+   "uuid": "0512307d-ac7c-44d1-8734-a2372d22c16c",
+   "type": "keyfigures",
+   "unit": "En Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9penses budgets annexes et comptes sp\\u00e9ciaux\",\"children\":[],\"color\":\"#0097ac\",\"value\":301}"
+  },
+  {
+   "uuid": "5526989f-d5db-47a6-8367-1cf42e9465d7",
+   "type": "bubblechart",
+   "unit": "Md€",
+   "url": null,
+   "data": "[{\"name\":\"Comptes d'affectation sp\\u00e9ciale\",\"groupe\":\"Comptes sp\\u00e9ciaux\",\"value\":77},{\"name\":\"Compte de concours financiers\",\"groupe\":\"Comptes sp\\u00e9ciaux\",\"value\":150},{\"name\":\"Comptes de commerces et comptes d'op\\u00e9rations mon\\u00e9taires\",\"groupe\":\"Comptes sp\\u00e9ciaux\",\"value\":70},{\"name\":\"Budgets Annexes\",\"groupe\":\"Budgets Annexes\",\"value\":3}]"
+  },
+  {
+   "uuid": "f95a09e7-7256-4126-b9f7-76d409b327fe",
+   "type": "keyfigures",
+   "unit": "En Md€",
+   "url": null,
+   "data": "{\"name\":\"Recettes budgets annexes et comptes sp\\u00e9ciaux\",\"children\":[],\"color\":\"#0097ac\",\"value\":300}"
+  },
+  {
+   "uuid": "5cd72f10-78a3-424d-8728-1f352b1d9d0a",
+   "type": "treemapchart",
+   "unit": "En Md€",
+   "url": null,
+   "data": "[{\"name\":\"Recettes nettes du budget g\\u00e9n\\u00e9ral \",\"children\":[],\"color\":\"#5fc5ab\",\"value\":325,\"diff_name\":\"Solde du budget g\\u00e9n\\u00e9ral\"},{\"name\":\"D\\u00e9penses nettes du budget g\\u00e9n\\u00e9ral\",\"children\":[],\"color\":\"#5fc5ab\",\"value\":459,\"diff_name\":\"Solde du budget g\\u00e9n\\u00e9ral\"}]"
+  },
+  {
+   "uuid": "12e879ee-4787-4760-96d6-503b9853f7c5",
+   "type": "keyfigures",
+   "unit": "En Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9penses nettes du budget g\\u00e9n\\u00e9ral\",\"children\":[],\"color\":\"#5fc5ab\",\"value\":459,\"before_value\":\"-141\",\"before_name\":\"Remboursement et d\\u00e9gr\\u00e8vements\",\"before_color\":\"#f7f8f9\"}"
+  },
+  {
+   "uuid": "355a284e-7b66-4a0b-8cf5-6beae0252b99",
+   "type": "bubblechart",
+   "unit": "Md€",
+   "url": null,
+   "data": "[{\"name\":\"D\\u00e9penses relatives aux missions\",\"groupe\":\"D\\u00e9penses relatives aux missions\",\"value\":459},{\"name\":\"Fonds de concours\",\"groupe\":\"Fonds de concours\",\"value\":6}]"
+  },
+  {
+   "uuid": "747e9431-31f1-436b-bf73-303996b89dee",
+   "type": "keyfigures",
+   "unit": "En Md€",
+   "url": null,
+   "data": "{\"name\":\"Recettes nettes du budget g\\u00e9n\\u00e9ral\",\"children\":[],\"color\":\"#5fc5ab\",\"value\":325,\"before_value\":\"-141\",\"before_name\":\"Remboursement et d\\u00e9gr\\u00e8vements\",\"before_color\":\"#f7f8f9\",\"after_value\":\"-73\",\"after_name\":\"Pr\\u00e9l\\u00e8vement sur les recettes de l'\\u00c9tat au profit des collectivit\\u00e9s territoriales et de l'Union europ\\u00e9nne\",\"after_color\":\"#f7f8f9\"}"
+  },
+  {
+   "uuid": "50c51e68-82aa-4434-b606-02943367d2ca",
+   "type": "bubblechart",
+   "unit": "Md€",
+   "url": null,
+   "data": "[{\"name\":\"Imp\\u00f4t sur le revenu\",\"groupe\":\"Recettes fiscales\",\"value\":100},{\"name\":\"Imp\\u00f4t sur les soci\\u00e9t\\u00e9\",\"groupe\":\"Recettes fiscales\",\"value\":62},{\"name\":\"TICPE\",\"groupe\":\"Recettes fiscales\",\"value\":25},{\"name\":\"TVA\",\"groupe\":\"Recettes fiscales\",\"value\":100},{\"name\":\"Autres contributions fiscales\",\"groupe\":\"Recettes fiscales\",\"value\":77},{\"name\":\"Recettes non fiscales\",\"groupe\":\"Recettes non fiscales\",\"value\":29},{\"name\":\"Fonds de concours\",\"groupe\":\"Fonds de concours\",\"value\":6}]"
+  },
+  {
+   "uuid": "3428f6da-7dbb-4703-9aac-5600c635d98e",
+   "type": "treemapchart",
+   "unit": "En Md€",
+   "url": null,
+   "data": "[{\"name\":\"Recettes totales\",\"color\":\"#0097ac\",\"children\":[{\"name\":\"Recettes nettes du budget G\\u00e9n\\u00e9ral\",\"value\":325,\"color\":\"#5fc5ab\"},{\"name\":\"Recettes des Budgets annexes et comptes sp\\u00e9ciaux\",\"color\":\"#0097ac\",\"value\":300}],\"diff_name\":\"Solde total\"},{\"name\":\"D\\u00e9penses totales\",\"color\":\"#0097ac\",\"children\":[{\"name\":\"D\\u00e9penses nettes du budget G\\u00e9n\\u00e9ral\",\"color\":\"#5fc5ab\",\"value\":459},{\"name\":\"D\\u00e9penses des Budgets annexes et comptes sp\\u00e9ciaux\",\"color\":\"#0097ac\",\"value\":301}],\"diff_name\":\"D\\u00e9penses totales\"}]"
+  }
+ ]
+}

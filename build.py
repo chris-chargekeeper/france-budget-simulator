@@ -3,7 +3,7 @@
 
 The template carries two placeholders: __DATA__ (the JSON payload injected into a
 <script type="application/json"> tag) and __UPDATED__ (the freshness date shown in
-the masthead). Run this after any change under data/.
+the masthead). Run this after any change under dataset/simulateur/.
 """
 import base64
 import json
@@ -12,7 +12,7 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).parent
-DATA = ROOT / "data"
+DATA = ROOT / "dataset" / "simulateur"
 FILES = ["baseline", "measures", "parties", "announcements"]
 CONTRADICTION = {"non", "programme", "annonce", "inconnu"}
 
@@ -44,7 +44,7 @@ def attach_portraits(parties):
             continue
         credit = credits.get(party["id"])
         if not credit or not credit.get("auteur") or not credit.get("licence"):
-            print(f"  ! {path.name} ignoré : crédit manquant dans data/portraits/credits.json")
+            print(f"  ! {path.name} ignoré : crédit manquant dans dataset/simulateur/portraits/credits.json")
             continue
         if size > PORTRAIT_WARN:
             print(f"  ~ {path.name} pèse {size:,} octets — 256×256 px suffit pour un cercle de 48 px")
@@ -64,16 +64,23 @@ def load():
 
     ids = {m["id"] for m in payload["measures"]["measures"]}
     if len(ids) != len(payload["measures"]["measures"]):
-        sys.exit("data/measures.json: identifiants en double")
+        sys.exit("dataset/simulateur/measures.json: identifiants en double")
 
     for party in payload["parties"]["parties"]:
         unknown = sorted(set(party["set"]) - ids)
         if unknown:
-            sys.exit(f"data/parties.json: {party['id']} référence des mesures inconnues: {unknown}")
+            sys.exit(f"dataset/simulateur/parties.json: {party['id']} référence des mesures inconnues: {unknown}")
+
+    bustes = set(re.findall(r'id="av-([a-z]+)"', (ROOT / "template.html").read_text(encoding="utf-8")))
+    for party in payload["parties"]["parties"]:
+        av = party.get("avatar")
+        if av is not None and av not in bustes:
+            sys.exit(f"dataset/simulateur/parties.json: {party['id']} demande le buste {av!r}; "
+                     f"template.html en déclare {sorted(bustes)} (ou null pour le monogramme)")
 
     party_ids = {p["id"] for p in payload["parties"]["parties"]}
     for item in payload["announcements"]["items"]:
-        where = f"data/announcements.json ({item.get('date')} / {item.get('qui') or item.get('fonction')})"
+        where = f"dataset/simulateur/announcements.json ({item.get('date')} / {item.get('qui') or item.get('fonction')})"
         if item.get("mesure") and item["mesure"] not in ids:
             sys.exit(f"{where}: mesure inconnue {item['mesure']!r}")
         if item.get("parti") and item["parti"] not in party_ids:
@@ -89,12 +96,26 @@ def load():
         if not item.get("qui") and not item.get("fonction"):
             sys.exit(f"{where}: renseigner 'qui' ou, à défaut, 'fonction'")
 
+    icones = set(re.findall(r'id="ic-([a-z-]+)"', (ROOT / "template.html").read_text(encoding="utf-8")))
+    porteurs = [("depenses", payload["baseline"]["depenses"]),
+                ("reperes", payload["baseline"]["reperes"]),
+                ("payeurs", list(payload["baseline"]["payeurs"].values()))]
+    for bloc, entrees in porteurs:
+        for e in entrees:
+            nom = e.get("nom", "?")
+            if not e.get("icone"):
+                sys.exit(f"dataset/simulateur/baseline.json: {bloc} — {nom!r} n'a pas d'icône")
+            if e["icone"] not in icones:
+                sys.exit(f"dataset/simulateur/baseline.json: {bloc} — {nom!r} pointe sur "
+                         f"l'icône inconnue {e['icone']!r}; template.html en déclare "
+                         f"{sorted(icones)}")
+
     dep = sum(x["v"] for x in payload["baseline"]["depenses"])
     rec = sum(x["v"] for x in payload["baseline"]["recettes"])
     apu = payload["baseline"]["apu"]
     for label, got, want in (("dépenses", dep, apu["depenses"]), ("recettes", rec, apu["recettes"])):
         if abs(got - want) > 1:
-            sys.exit(f"data/baseline.json: la ventilation des {label} ({got}) ne somme pas à {want}")
+            sys.exit(f"dataset/simulateur/baseline.json: la ventilation des {label} ({got}) ne somme pas à {want}")
     return payload
 
 

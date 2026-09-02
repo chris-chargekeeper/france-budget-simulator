@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 7.93563
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70485
+  },
+  "on_click": true
+ },
+ {
+  "name": "Avances à des organismes distincts de l'État et gérant des services publics",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.0424
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70491
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts et avances à des services de l'État",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.05
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70497
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à FranceAgriMer au titre des préfinancements de fonds européens",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.1
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70533
+  },
+  "on_click": true
+ }
+]

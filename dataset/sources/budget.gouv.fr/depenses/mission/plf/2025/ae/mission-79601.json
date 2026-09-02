@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Restitution des « biens mal acquis »",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.140328
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 79718
+  },
+  "on_click": true
+ },
+ {
+  "name": "Solidarité à l'égard des pays en développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.13114722
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 79700
+  },
+  "on_click": true
+ },
+ {
+  "name": "Aide économique et financière au développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.51923
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 79604
+  },
+  "on_click": true
+ },
+ {
+  "name": "Renforcement des fonds propres de l'Agence française de développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.145
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 79712
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds de solidarité pour le développement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.738
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 79727
+  },
+  "on_click": true
+ }
+]

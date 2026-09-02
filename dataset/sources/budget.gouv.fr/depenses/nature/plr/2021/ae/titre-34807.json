@@ -1,0 +1,38 @@
+[
+ {
+  "name": "Dépenses pour immobilisations corporelles de l’État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 16.77485508678
+   },
+   {
+    "groupe": 45,
+    "value": 0.18261521
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 34810
+  }
+ },
+ {
+  "name": "Dépenses pour immobilisations incorporelles de l’État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 9.979084866860001
+   },
+   {
+    "groupe": 45,
+    "value": 0.032965739
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 34813
+  }
+ }
+]

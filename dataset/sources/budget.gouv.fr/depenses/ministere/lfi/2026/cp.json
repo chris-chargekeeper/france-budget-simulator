@@ -1,0 +1,331 @@
+[
+ {
+  "name": "Justice",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 12.966571358
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86764
+  },
+  "on_click": true
+ },
+ {
+  "name": "Travail et solidarités",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 35.605667351
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86773
+  },
+  "on_click": true
+ },
+ {
+  "name": "Intérieur",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 33.056733945
+   },
+   {
+    "groupe": 45,
+    "value": 0.3705206
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86761
+  },
+  "on_click": true
+ },
+ {
+  "name": "Europe et affaires étrangères",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 5.685529044
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86746
+  },
+  "on_click": true
+ },
+ {
+  "name": "Ville et logement",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 22.225743554
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86779
+  },
+  "on_click": true
+ },
+ {
+  "name": "Économie, finances et souveraineté industrielle, énergétique et numérique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 78.301422486
+   },
+   {
+    "groupe": 45,
+    "value": 5.74199
+   },
+   {
+    "groupe": 46,
+    "value": 11.006483
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 94705
+  },
+  "on_click": true
+ },
+ {
+  "name": "Aménagement du territoire et de la décentralisation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 5.29401018
+   },
+   {
+    "groupe": 45,
+    "value": 0.806735
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86788
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transition écologique, biodiversité et négociations internationales sur le climat et la nature",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.838871684
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86770
+  },
+  "on_click": true
+ },
+ {
+  "name": "Outre-Mer",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.277443318
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86785
+  },
+  "on_click": true
+ },
+ {
+  "name": "Services du Premier ministre",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.571590066
+   },
+   {
+    "groupe": 44,
+    "value": 0.14741375
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86767
+  },
+  "on_click": true
+ },
+ {
+  "name": "Culture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.447520472
+   },
+   {
+    "groupe": 46,
+    "value": 3.8633165
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86749
+  },
+  "on_click": true
+ },
+ {
+  "name": "Éducation nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 87.891076813
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86755
+  },
+  "on_click": true
+ },
+ {
+  "name": "Agriculture, agro-alimentaire et souveraineté alimentaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.282428072
+   },
+   {
+    "groupe": 45,
+    "value": 0.171
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86752
+  },
+  "on_click": true
+ },
+ {
+  "name": "Armées et anciens combattants",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 68.278454735
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86797
+  },
+  "on_click": true
+ },
+ {
+  "name": "Action et comptes publics",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 164.008293427
+   },
+   {
+    "groupe": 45,
+    "value": 70.996512343
+   },
+   {
+    "groupe": 46,
+    "value": 135.69574
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86758
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement supérieur, recherche et espace",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 29.005950733
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86776
+  },
+  "on_click": true
+ },
+ {
+  "name": "Santé, familles, autonomie et personnes handicapées",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 18.285896607
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 94708
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sports, jeunesse et vie associative",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.258896689
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86782
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transports",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.60789441
+   },
+   {
+    "groupe": 44,
+    "value": 2.425535407
+   },
+   {
+    "groupe": 46,
+    "value": 0.15
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 94711
+  },
+  "on_click": true
+ }
+]

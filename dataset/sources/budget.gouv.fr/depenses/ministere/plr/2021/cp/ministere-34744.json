@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Fonction publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.21638223736
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28744
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds pour la transformation de l'action publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.13391969
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28792
+  },
+  "on_click": true
+ },
+ {
+  "name": "Innovation et transformation numériques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.014718506
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 28804
+  },
+  "on_click": true
+ }
+]

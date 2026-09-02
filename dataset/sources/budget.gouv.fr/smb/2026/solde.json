@@ -1,0 +1,61 @@
+{
+ "url": "https://www.budget.gouv.fr/budget-etat/smb",
+ "methode": "POST",
+ "parametres": {
+  "annee": 2026,
+  "type_budget": "solde",
+  "mois": "decembre"
+ },
+ "recupere": "2026-09-02",
+ "graphes": [
+  {
+   "uuid": "ebbd528a-2e09-4420-b5e2-3ca7b0e497bf",
+   "type": "areachart",
+   "unit": "milliards d'€",
+   "url": null,
+   "data": "[{\"name\":\"2026-01-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":-17.3},{\"groupe\":\"2026\",\"value\":-9.7}]},{\"name\":\"2026-02-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":-40.3},{\"groupe\":\"2026\",\"value\":-32.1}]},{\"name\":\"2026-03-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":-47},{\"groupe\":\"2026\",\"value\":-42.9}]},{\"name\":\"2026-04-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":-69.3},{\"groupe\":\"2026\",\"value\":-69.9}]},{\"name\":\"2026-05-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":-94},{\"groupe\":\"2026\",\"value\":-93.3}]},{\"name\":\"2026-06-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":-100.4},{\"groupe\":\"2026\",\"value\":-106.8}]},{\"name\":\"2026-07-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":-142},{\"groupe\":\"2026\",\"value\":-145.9}]},{\"name\":\"2026-08-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":-157.5},{\"groupe\":\"2026\",\"value\":null}]},{\"name\":\"2026-09-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":-155.4},{\"groupe\":\"2026\",\"value\":null}]},{\"name\":\"2026-10-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":-136.2},{\"groupe\":\"2026\",\"value\":null}]},{\"name\":\"2026-11-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":-155.4},{\"groupe\":\"2026\",\"value\":null}]},{\"name\":\"2026-12-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":-124.7},{\"groupe\":\"2026\",\"value\":null}]}]"
+  },
+  {
+   "uuid": "1533d1fe-5731-46a5-b4a6-340eb1c1d274",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"Juillet 2026\",\"children\":[],\"color\":\"#c62253\",\"value\":-145.9,\"additional_text\":\"+3%\"}"
+  },
+  {
+   "uuid": "23a84be1-0be8-40cf-9c6e-8af9f61323cc",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"Juillet 2025\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#c62253\",\"color_text\":\"#545c6b\",\"value\":-142}"
+  },
+  {
+   "uuid": "1531e843-08e6-4c2b-b1d8-fe0a133a1b9e",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"Juillet 2026\",\"children\":[],\"color\":\"#c62253\",\"value\":-22.5,\"additional_text\":\"-17%\"}"
+  },
+  {
+   "uuid": "f0ac84b7-4c01-4ae2-b3b8-9190fc3f86d7",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"Juillet 2025\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#c62253\",\"color_text\":\"#545c6b\",\"value\":-27.1}"
+  },
+  {
+   "uuid": "51d05df5-ed26-4632-926f-95fa7b80fd07",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"Juillet 2026\",\"children\":[],\"color\":\"#c62253\",\"value\":-123.4,\"additional_text\":\"+7%\"}"
+  },
+  {
+   "uuid": "5fe0061d-a5b9-4080-84fe-52184db2c977",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"Juillet 2025\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#c62253\",\"color_text\":\"#545c6b\",\"value\":-114.9}"
+  }
+ ]
+}

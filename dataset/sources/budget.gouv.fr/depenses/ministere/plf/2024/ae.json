@@ -1,0 +1,297 @@
+[
+ {
+  "name": "Services du Premier ministre",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.168873789
+   },
+   {
+    "groupe": 46,
+    "value": null
+   },
+   {
+    "groupe": 44,
+    "value": 0.15916736
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70650
+  },
+  "on_click": true
+ },
+ {
+  "name": "Budget et comptes publics",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 222.900373678
+   },
+   {
+    "groupe": 46,
+    "value": 148.3550522
+   },
+   {
+    "groupe": 45,
+    "value": 78.413073706
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70641
+  },
+  "on_click": true
+ },
+ {
+  "name": "Travail et emploi",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 22.866701489
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70659
+  },
+  "on_click": true
+ },
+ {
+  "name": "Agriculture, souveraineté alimentaire et forêt",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 7.485175835
+   },
+   {
+    "groupe": 45,
+    "value": 0.141
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70635
+  },
+  "on_click": true
+ },
+ {
+  "name": "Armées et anciens combattants",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 69.839905598
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70677
+  },
+  "on_click": true
+ },
+ {
+  "name": "Éducation nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 86.141020078
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70638
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sports, jeunesse et vie associative",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.803011239
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70665
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transition écologique, énergie, climat et prévention des risques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 36.075965807
+   },
+   {
+    "groupe": 44,
+    "value": 2.45119713
+   },
+   {
+    "groupe": 45,
+    "value": 0.666844
+   },
+   {
+    "groupe": 46,
+    "value": 0.3
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70653
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonction publique, simplification et transformation de l'action publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.543705267
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70671
+  },
+  "on_click": true
+ },
+ {
+  "name": "Culture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.924737369
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70632
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transition énergétique",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.36
+   },
+   {
+    "groupe": 43,
+    "value": 13.673765192
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70668
+  },
+  "on_click": true
+ },
+ {
+  "name": "Intérieur",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.36584032
+   },
+   {
+    "groupe": 43,
+    "value": 35.291152676
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70644
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement supérieur et recherche",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 27.257152587
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70662
+  },
+  "on_click": true
+ },
+ {
+  "name": "Solidarités, autonomie et égalité entre les femmes et les hommes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 30.671446029
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70674
+  },
+  "on_click": true
+ },
+ {
+  "name": "Europe et affaires étrangères",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.924319879
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70629
+  },
+  "on_click": true
+ },
+ {
+  "name": "Justice",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 14.235842944
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70647
+  },
+  "on_click": true
+ },
+ {
+  "name": "Santé et accès aux soins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.34328126
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 70656
+  },
+  "on_click": true
+ }
+]

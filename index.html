@@ -207,7 +207,7 @@ section{margin-top:38px}
 }
 
 /* ---------- composition ---------- */
-.compo-row{display:grid;grid-template-columns:minmax(150px,1.1fr) 3fr auto;gap:12px;align-items:center;padding:5px 0;font-size:13px}
+.compo-row{display:grid;grid-template-columns:minmax(178px,1.2fr) 3fr auto;gap:12px;align-items:center;padding:5px 0;font-size:13px}
 .compo-row .n{color:var(--ink-2);line-height:1.25}
 .compo-bar{height:12px;border-radius:0 3px 3px 0;background:var(--bar)}
 .compo-row .v{font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;color:var(--ink)}
@@ -246,7 +246,7 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);font-si
 @media (max-width:560px){
   .cockpit{grid-template-columns:1fr}
   .params{grid-template-columns:1fr}
-  .compo-row{grid-template-columns:minmax(110px,1fr) 2fr auto}
+  .compo-row{grid-template-columns:minmax(132px,1fr) 2fr auto}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style><style>
@@ -269,6 +269,7 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);font-si
   color:var(--pc);font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:600;letter-spacing:.02em;
   box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--pc) 35%,transparent);
 }
+.avatar svg,.cmp-av svg{width:100%;height:100%;display:block;color:var(--pc)}
 .avatar img{width:100%;height:100%;object-fit:cover;display:block}
 .card .who{font-size:15px;font-weight:600;line-height:1.2}
 .card .party{font-size:12px;color:var(--ink-2);line-height:1.3}
@@ -404,9 +405,185 @@ body.adv .simple-only{display:none!important}
 }
 .compo-row.hdr{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);
   font-family:"IBM Plex Mono",monospace;padding-bottom:6px;border-bottom:1px solid var(--rule-soft);margin-bottom:4px}
-.compo-row.four{grid-template-columns:minmax(150px,1.1fr) 3fr auto auto;gap:12px}
+.compo-row.four{grid-template-columns:minmax(178px,1.2fr) 3fr auto auto;gap:12px}
 .compo-row .v{min-width:56px;text-align:right}
+
+/* ---------- registre pédagogique ----------
+   Palette relevée au compte-gouttes sur les captures de la vidéo « À quoi servent mes
+   impôts ? » d'economie.gouv.fr : rouge pour la dépense, bleu pour la recette, ambre
+   pour l'argent, bleu nuit pour les pastilles chiffrées. Réservée aux blocs de
+   vulgarisation — jamais au codage d'une série dans un graphique. */
+:root{
+  --dep:#C81E1E;  --rec:#0B5CAE;  --coin:#E0982F;
+  --pastille:#12224E; --pastille-ink:#FFFFFF;
+  --ciel:#EAF3FA; --ciel-2:#D6E8F5;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --dep:#EE7B72; --rec:#6DA7EC; --coin:#E5AE60;
+    --pastille:#1D2F5C; --pastille-ink:#EAF1FA;
+    --ciel:#15202C; --ciel-2:#1C2937;
+  }
+}
+:root[data-theme="dark"]{
+  --dep:#EE7B72; --rec:#6DA7EC; --coin:#E5AE60;
+  --pastille:#1D2F5C; --pastille-ink:#EAF1FA;
+  --ciel:#15202C; --ciel-2:#1C2937;
+}
+
+.ic{width:20px;height:20px;flex:0 0 20px;stroke:currentColor;fill:none;
+    stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* les trois grandes masses, dans le registre du grand chiffre plein cadre */
+.masses{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.mass{background:var(--surface);border:1px solid var(--rule);border-radius:10px;
+      padding:15px 16px 13px;display:grid;gap:3px;align-content:start}
+.mass .lab{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;
+           text-transform:uppercase;color:var(--ink-3);display:flex;gap:7px;align-items:center}
+.mass .val{font-weight:700;font-size:clamp(28px,4vw,44px);line-height:1;
+           letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.mass .unit{font-size:12.5px;color:var(--ink-2);line-height:1.35}
+.mass.dep .val,.mass.dep .lab{color:var(--dep)}
+.mass.rec .val,.mass.rec .lab{color:var(--rec)}
+.mass.ecart .val,.mass.ecart .lab{color:var(--dep)}
+
+/* la balance : la métaphore centrale de la vidéo, ici pilotée par les montants réels */
+.balances{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.bal{background:var(--ciel);border:1px solid var(--rule);border-radius:10px;padding:12px 14px 8px}
+.bal h4{margin:0 0 2px;font-size:13px;font-weight:600;color:var(--ink)}
+.bal .when{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;
+           text-transform:uppercase;color:var(--ink-3)}
+.bal svg{width:100%;height:auto;display:block;margin-top:2px}
+.bal .note{font-size:12.5px;color:var(--ink-2);padding:2px 2px 4px;line-height:1.45}
+.bal .note b{color:var(--ink);font-weight:600}
+
+/* la bande « sur 1 000 € », pastilles rondes comme les cartons de la vidéo */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:10px;margin-top:14px}
+.strip .cell{display:grid;justify-items:center;gap:6px;text-align:center}
+.pastille{width:62px;height:62px;border-radius:50%;background:var(--pastille);
+          color:var(--pastille-ink);display:grid;place-content:center;
+          font-weight:700;font-size:15px;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.strip .cell .ic{width:22px;height:22px;flex:none;color:var(--ink-3)}
+.strip .cell .who{font-size:11.5px;line-height:1.25;color:var(--ink-2)}
+.strip .rest{grid-column:1/-1;font-size:12px;color:var(--ink-3);line-height:1.4;
+             border-top:1px solid var(--rule);padding-top:9px;margin-top:2px}
+
+.compo-row .n{display:flex;gap:8px;align-items:flex-start}
+.compo-row .n .ic{margin-top:1px;color:var(--ink-3)}
+.compo-row .n .txt{min-width:0}
+
+@media (max-width:900px){
+  .masses{grid-template-columns:1fr}
+  .balances{grid-template-columns:1fr}
+}
 </style>
+
+<!-- Jeu d'icônes. Tracé seul, 24×24, hérite de la couleur du texte : une icône est un
+     repère de lecture, pas une couleur de plus. Référencées par <use href="#ic-…">,
+     le nom vient du champ `icone` des données. -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+
+ <!-- Bustes de candidat, dans le registre de l'affiche de campagne : silhouette pleine,
+      buste de trois quarts, coupé par le cercle. Deux variantes, choisies par le champ
+      `avatar` de parties.json — ce sont des pictogrammes génériques, aucune ressemblance
+      avec une personne réelle n'est recherchée. Le col est évidé (fill-rule evenodd) :
+      c'est le fond de la pastille qui fait la chemise, à n'importe quel thème. -->
+ <symbol id="av-h" viewBox="0 0 48 48">
+ <path fill="currentColor" fill-rule="evenodd" d="M25.6 26.6C11.4 26.6 1.4 34-.8 45.2V48h49.4v-2.8C46.4 34.6 37.4 27.4 25.6 26.6Z M21.6 27.1l4.2 7.5 4.2-7.5z"/>
+ <path fill="currentColor" d="M23.9 27.3l1.9 7.1 1.9-7.1z"/>
+ <path fill="currentColor" d="M22.9 17.6c0 4.8-.6 7.6-2.1 9.6h11.4c-1.8-2-2.7-4.8-2.7-9.6z"/>
+ <ellipse fill="currentColor" cx="27.2" cy="11.6" rx="8" ry="6.4" transform="rotate(-6 27.2 11.6)"/>
+ <ellipse fill="currentColor" cx="26.6" cy="14.9" rx="7.4" ry="7.9" transform="rotate(-6 26.6 14.9)"/>
+ <path fill="currentColor" d="M19.6 17.2c-1.9.5-3.4 1.3-4.1 2.1.9 1 2.4 1.6 4.3 1.9z"/>
+ </symbol>
+
+ <symbol id="av-f" viewBox="0 0 48 48">
+ <path fill="currentColor" fill-rule="evenodd" d="M25.6 26.6C11.4 26.6 1.4 34-.8 45.2V48h49.4v-2.8C46.4 34.6 37.4 27.4 25.6 26.6Z M21.5 27.1l4.1 6.6 4.1-6.6z"/>
+ <path fill="currentColor" d="M22.9 17.6c0 4.8-.6 7.6-2.1 9.6h11.4c-1.8-2-2.7-4.8-2.7-9.6z"/>
+ <path fill="currentColor" d="M31.6 7.7c4.1 5.2 4.9 16.8 2.9 24.8h-6.1c1.9-7.6 1.6-15.8-.5-20.5z"/>
+ <path fill="currentColor" d="M22.4 7.7c-4.2 5.2-5 15.6-3.4 22.6h4.9c-1.4-6.6-1-14 .9-18.1z"/>
+ <ellipse fill="currentColor" cx="26.8" cy="10.9" rx="9" ry="7" transform="rotate(-6 26.8 10.9)"/>
+ <ellipse fill="currentColor" cx="26.6" cy="14.9" rx="7.4" ry="7.9" transform="rotate(-6 26.6 14.9)"/>
+ <path fill="currentColor" d="M19.6 17.2c-1.9.5-3.4 1.3-4.1 2.1.9 1 2.4 1.6 4.3 1.9z"/>
+ </symbol>
+ <symbol id="ic-retraite" viewBox="0 0 24 24">
+  <circle cx="9.6" cy="5.2" r="2.7"/><path d="M9.6 7.9v6.8"/>
+  <path d="M6.2 10.6 9.6 9.4l3 1.3"/><path d="M9.6 14.7 7.6 20.8M9.6 14.7l2 6.1"/>
+  <path d="M15.4 11.4v9.4M14 11.4h2.8"/>
+ </symbol>
+ <symbol id="ic-sante" viewBox="0 0 24 24">
+  <rect x="3.6" y="3.6" width="16.8" height="16.8" rx="4.4"/>
+  <path d="M12 8.2v7.6M8.2 12h7.6"/>
+ </symbol>
+ <symbol id="ic-mairie" viewBox="0 0 24 24">
+  <path d="M2.8 9.4 12 4l9.2 5.4"/><path d="M2.8 20.2h18.4"/>
+  <path d="M6.4 9.6v10.6M12 9.6v10.6M17.6 9.6v10.6"/>
+ </symbol>
+ <symbol id="ic-famille" viewBox="0 0 24 24">
+  <circle cx="8.4" cy="6.6" r="2.7"/><circle cx="16.4" cy="8.4" r="2.1"/>
+  <path d="M3.8 20.4c0-3.5 2-5.4 4.6-5.4s4.6 1.9 4.6 5.4"/>
+  <path d="M14.2 20.4c0-2.7 1.1-4.2 2.9-4.2s2.9 1.5 2.9 4.2"/>
+ </symbol>
+ <symbol id="ic-ecole" viewBox="0 0 24 24">
+  <path d="M12 7.4C10.4 6.1 8 5.6 3.8 5.8v11.8c4.2-.2 6.6.3 8.2 1.6 1.6-1.3 4-1.8 8.2-1.6V5.8c-4.2-.2-6.6.3-8.2 1.6z"/>
+  <path d="M12 7.4v11.8"/>
+ </symbol>
+ <symbol id="ic-transport" viewBox="0 0 24 24">
+  <path d="M2.4 11.6h19.2"/><path d="M4 11.6C6.6 5.6 17.4 5.6 20 11.6"/>
+  <path d="M7.4 11.6V19M16.6 11.6V19"/><path d="M2.4 19h19.2"/>
+ </symbol>
+ <symbol id="ic-entreprise" viewBox="0 0 24 24">
+  <path d="M3.2 9.2 4.9 4.8h14.2l1.7 4.4z"/><path d="M4.8 9.2v10.6h14.4V9.2"/>
+  <path d="M9.6 19.8v-5.4h4.8v5.4"/>
+ </symbol>
+ <symbol id="ic-defense" viewBox="0 0 24 24">
+  <path d="M12 3.4 19 6v5.4c0 4.6-3 7.5-7 9.2-4-1.7-7-4.6-7-9.2V6z"/>
+ </symbol>
+ <symbol id="ic-culture" viewBox="0 0 24 24">
+  <path d="M4 7.6h16v3.2a1.9 1.9 0 0 0 0 3.8v3.8H4v-3.8a1.9 1.9 0 0 0 0-3.8z"/>
+  <path d="M12 9.6v1.7M12 12.9v1.7M12 16.2v1.6"/>
+ </symbol>
+ <symbol id="ic-dette" viewBox="0 0 24 24">
+  <path d="M9.2 3.8h5.6l-1.5 2.6h-2.6z"/>
+  <path d="M10.7 6.4C6.7 8.4 4.7 11.6 4.7 15.2c0 3.2 2.8 5.3 7.3 5.3s7.3-2.1 7.3-5.3c0-3.6-2-6.8-6-8.8"/>
+  <path d="M14.2 12.4a2.9 2.9 0 1 0 0 4.6M10.3 13.6h4.2M10.3 15.4h4.2"/>
+ </symbol>
+ <symbol id="ic-salaire" viewBox="0 0 24 24">
+  <path d="M7.4 11V4.4h9.2V11"/><path d="M9.6 6.8h4.8M9.6 8.8h4.8"/>
+  <path d="M3.4 10.6h17.2v9H3.4z"/><path d="m3.4 10.6 8.6 5.6 8.6-5.6"/>
+ </symbol>
+ <symbol id="ic-panier" viewBox="0 0 24 24">
+  <path d="M8.6 8.4V6.6a3.4 3.4 0 0 1 6.8 0v1.8"/>
+  <path d="M3.6 8.4h16.8l-1.7 10.6H5.3z"/><path d="M9.4 11.6v4.4M14.6 11.6v4.4"/>
+ </symbol>
+ <symbol id="ic-maison" viewBox="0 0 24 24">
+  <path d="m2.8 11.2 9.2-7.2 9.2 7.2"/><path d="M5.4 9.6v10.6h13.2V9.6"/>
+  <path d="M9.9 20.2v-5.4h4.2v5.4"/>
+ </symbol>
+ <symbol id="ic-piece" viewBox="0 0 24 24">
+  <ellipse cx="12" cy="6.8" rx="7.2" ry="2.9"/>
+  <path d="M4.8 6.8v3.5c0 1.6 3.2 2.9 7.2 2.9s7.2-1.3 7.2-2.9V6.8"/>
+  <path d="M4.8 12.5V16c0 1.6 3.2 2.9 7.2 2.9s7.2-1.3 7.2-2.9v-3.5"/>
+ </symbol>
+ <symbol id="ic-europe" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="8.4"/>
+  <circle cx="12" cy="7.2" r="1" fill="currentColor" stroke="none"/>
+  <circle cx="16.2" cy="9.6" r="1" fill="currentColor" stroke="none"/>
+  <circle cx="16.2" cy="14.4" r="1" fill="currentColor" stroke="none"/>
+  <circle cx="12" cy="16.8" r="1" fill="currentColor" stroke="none"/>
+  <circle cx="7.8" cy="14.4" r="1" fill="currentColor" stroke="none"/>
+  <circle cx="7.8" cy="9.6" r="1" fill="currentColor" stroke="none"/>
+ </symbol>
+ <symbol id="ic-monde" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="8.4"/><path d="M3.6 12h16.8"/>
+  <path d="M12 3.6c3.3 3.5 3.3 13.3 0 16.8-3.3-3.5-3.3-13.3 0-16.8"/>
+ </symbol>
+ <symbol id="ic-agent" viewBox="0 0 24 24">
+  <circle cx="12" cy="6.6" r="3"/>
+  <path d="M4.6 20.4c0-4.1 3.3-6.4 7.4-6.4s7.4 2.3 7.4 6.4"/>
+  <path d="m9.9 14.2 2.1 2.9 2.1-2.9"/>
+ </symbol>
+</svg>
 
 <header class="masthead">
   <div class="wrap">
@@ -560,7 +737,18 @@ body.adv .simple-only{display:none!important}
       <p>Une idée répandue veut que la dépense publique parte d'abord dans les privilèges de l'État. Voici les
         montants réels — et ce qu'ils représentent sur 1 000 € dépensés.</p>
     </div>
-    <div class="grid2">
+
+    <div class="masses" id="masses"></div>
+    <div class="balances" id="balances"></div>
+
+    <div class="panel" style="margin-top:16px">
+      <h3>Sur 1 000 € de dépense publique</h3>
+      <p class="sub">La ventilation du dessous, ramenée à mille euros — l'échelle à laquelle un ordre de
+        grandeur redevient tangible.</p>
+      <div class="strip" id="strip1000"></div>
+    </div>
+
+    <div class="grid2" style="margin-top:16px">
       <div class="panel">
         <h3>Où vont 1 000 € de dépense publique</h3>
         <p class="sub">Total : 1 690 milliards par an, soit environ 24 700 € par habitant.</p>
@@ -632,7 +820,7 @@ body.adv .simple-only{display:none!important}
 </div>
 
 <div id="tip" role="status" aria-live="polite"></div>
-<script id="payload" type="application/json">{"baseline":{"_comment":"Cadrage des administrations publiques. Ordres de grandeur arrondis, en Md€ courants. Millesime 2025.","vintage":2025,"updated":"2026-09-01","apu":{"pib":2950,"depenses":1690,"recettes":1530,"dette":3420,"charge":59,"tauxApparent":1.85,"partRefinancee":0.11,"population":68.5,"menages":31.5},"depenses":[{"nom":"Retraites","v":390,"note":"Tous régimes. Premier poste de la dépense publique, loin devant tout le reste."},{"nom":"Santé et hôpital","v":300,"note":"ONDAM et dépenses hospitalières."},{"nom":"Services publics locaux et généraux","v":215,"note":"Communes, départements, régions : voirie, écoles, action sociale, administration."},{"nom":"Autres prestations sociales","v":185,"note":"Famille, chômage, logement, minima sociaux, autonomie."},{"nom":"Éducation et recherche","v":130,"note":"Premier budget de l'État au sens strict."},{"nom":"Transports, logement, écologie","v":125,"note":"Infrastructures, aides au logement, transition énergétique."},{"nom":"Économie, agriculture, entreprises","v":110,"note":"Aides aux entreprises, agriculture, emploi."},{"nom":"Défense, sécurité, justice","v":110,"note":"Dont environ 57 Md€ pour la mission Défense en 2026."},{"nom":"Culture, sport, divers","v":66,"note":"Dont l'audiovisuel public, environ 4 Md€."},{"nom":"Charge de la dette","v":59,"note":"Intérêts versés aux créanciers. Le poste qui progresse le plus vite."}],"recettes":[{"nom":"Cotisations sociales employeurs","v":250,"payeur":"entreprises"},{"nom":"Cotisations sociales salariés et indépendants","v":205,"payeur":"travail"},{"nom":"TVA","v":210,"payeur":"consommation"},{"nom":"Recettes non fiscales (ventes, domaine, transferts)","v":210,"payeur":"autres"},{"nom":"Autres impôts sur la production","v":150,"payeur":"entreprises"},{"nom":"CSG-CRDS sur les revenus d'activité","v":105,"payeur":"travail"},{"nom":"Impôt sur le revenu","v":95,"payeur":"travail"},{"nom":"Impôts fonciers et locaux","v":80,"payeur":"patrimoine"},{"nom":"Impôt sur les sociétés","v":60,"payeur":"entreprises"},{"nom":"CSG sur le capital et les revenus de remplacement","v":50,"payeur":"patrimoine"},{"nom":"Fiscalité de l'énergie (TICPE, accises)","v":40,"payeur":"consommation"},{"nom":"Prélèvements sur les revenus du capital (PFU, prélèvements sociaux)","v":38,"payeur":"patrimoine"},{"nom":"Droits de succession et de mutation","v":35,"payeur":"patrimoine"},{"nom":"IFI et impôts sur la fortune","v":2,"payeur":"patrimoine"}],"payeurs":{"entreprises":{"nom":"Entreprises","note":"Cotisations employeurs, impôts de production, impôt sur les sociétés."},"travail":{"nom":"Revenus du travail","note":"Cotisations salariales, CSG d'activité, impôt sur le revenu."},"consommation":{"nom":"Consommation","note":"TVA et accises. Prélèvement proportionnel à la dépense, non au revenu."},"patrimoine":{"nom":"Patrimoine et capital","note":"Foncier, revenus du capital, successions, IFI."},"autres":{"nom":"Recettes non fiscales","note":"Ventes de services publics, revenus du domaine, transferts."}},"reperes":[{"nom":"Institutions de la République (Élysée, Assemblée, Sénat, Conseil constitutionnel)","v":1.14,"note":"Mission « Pouvoirs publics » du budget de l'État. Soit environ un euro pour mille euros de dépense publique."},{"nom":"Aide médicale d'État","v":1.3,"note":"Soins des étrangers en situation irrégulière. Régulièrement citée comme un gisement d'économies."},{"nom":"Audiovisuel public","v":4.0,"note":"France Télévisions, Radio France, Arte, INA."},{"nom":"Contribution nette au budget de l'Union européenne","v":12.0,"note":"Contribution brute d'environ 27 Md€, retours d'environ 15 Md€ (PAC, fonds régionaux)."},{"nom":"Aide publique au développement","v":15.0,"note":"Aide bilatérale et multilatérale."},{"nom":"Rémunération des 5,7 millions d'agents publics","v":340.0,"note":"Trois fonctions publiques réunies. C'est ici, et non dans le train de vie des institutions, que se trouve la masse."},{"nom":"Charge de la dette","v":59.0,"note":"Déjà supérieure au budget de la Défense. Elle double d'ici 2032 au fil du refinancement."}],"assiettes":[{"nom":"Patrimoine des foyers de plus de 100 M€","v":1000,"note":"Environ 1 800 foyers. C'est l'assiette de la « taxe Zucman » : un prélèvement de 2 % porte sur ce stock, pas sur un flux de revenu."},{"nom":"Bénéfices imposables des sociétés","v":300,"note":"Assiette de l'impôt sur les sociétés, qui rapporte environ 60 Md€ à un taux de 25 %."},{"nom":"Dividendes versés par les sociétés françaises","v":100,"note":"Dont une large part à des non-résidents et à des sociétés mères, hors de portée du barème des particuliers."},{"nom":"Allègements de cotisations sur les bas salaires","v":75,"note":"Le plus gros dispositif d'aide aux entreprises, et le premier visé par les rabots."},{"nom":"Écart fiscal estimé (fraude)","v":80,"note":"Estimation de l'écart entre l'impôt dû et l'impôt perçu. Les montants effectivement recouvrés sont d'un ordre de grandeur inférieur."}],"sources":[{"nom":"INSEE — Comptes des administrations publiques","url":"https://www.insee.fr/fr/statistiques/2381416"},{"nom":"Projet de loi de finances pour 2026 — Évaluation des voies et moyens","url":"https://www.assemblee-nationale.fr/dyn/opendata/PRJLANR5L17B1906.html"},{"nom":"Sénat — Rapport général sur le PLF 2026","url":"https://www.senat.fr/rap/l25-139-1/l25-139-19.html"},{"nom":"DGFiP Statistiques — recettes fiscales","url":"https://www.impots.gouv.fr/sites/default/files/media/9_statistiques/0_etudes_et_stats/0_publications/dgfip_statistiques/2026/num43_03/dgfip_stat43_budget_2025.pdf"},{"nom":"Observatoire de l'éthique publique — budget du Parlement","url":"https://www.observatoireethiquepublique.com/nos-propositions/dans-la-presse/2024/faut-il-sindigner-de-la-hausse-du-budget-du-parlement-francais.html"}],"sourcesOfficielles":[{"nom":"Budget de l'État — portail officiel","url":"https://www.budget.gouv.fr/budget-etat","quoi":"Dépenses et recettes de l'État, présentation officielle"},{"nom":"Budget de l'État par ministère","url":"https://www.budget.gouv.fr/budget-etat/ministere","quoi":"Ventilation des crédits ministère par ministère"},{"nom":"Budget de l'État — données ouvertes","url":"https://www.budget.gouv.fr/budget-etat/smb","quoi":"Séries détaillées réutilisables"},{"nom":"Le budget de la France à la loupe — ministère de l'Économie","url":"https://www.economie.gouv.fr/a-la-loupe-le-budget-de-la-france","quoi":"Agrégats et répartitions, présentation pédagogique"},{"nom":"INSEE — comptes des administrations publiques","url":"https://www.insee.fr/fr/statistiques/2381416","quoi":"Périmètre APU, le seul cohérent avec ce simulateur"}],"verification":{"etat":"non recoupé","note":"Les agrégats de cette page sont des ordres de grandeur repris de publications publiques, et n'ont pas encore été recoupés ligne à ligne contre les portails officiels ci-dessus. Ce recoupement est la première tâche du skill de veille, à exécuter depuis un environnement ayant accès à ces sites. Attention au périmètre : budget.gouv.fr décrit le budget de l'État (environ 500 Md€ de dépenses), ce simulateur raisonne sur les administrations publiques (1 690 Md€, État + sécurité sociale + collectivités). Les deux chiffres sont justes et ne se comparent pas directement."}},"measures":{"_comment":"Catalogue de mesures. lo/mid/hi = bornes de chiffrage publiées, en Md€ à plein régime. ramp = années pour atteindre le plein régime à partir de 2027. behav = assiette exposée à une réaction des contribuables (capital, profit) ou null.","measures":[{"id":"zucman","g":"rec+","inst":"imp","lo":5,"mid":8,"hi":20,"ramp":2,"behav":"capital","disp":true,"lab":"Impôt plancher de 2 % sur les patrimoines supérieurs à 100 M€","note":"Environ 1 800 foyers, un patrimoine agrégé de l'ordre de 1 000 Md€. Gabriel Zucman avance 15 à 25 Md€ ; l'administration et plusieurs économistes retiennent plutôt 5 Md€. L'écart ne porte pas sur le taux mais sur l'assiette retenue et sur la réaction des redevables. Rejetée par l'Assemblée nationale le 31 octobre 2025."},{"id":"isf","g":"rec+","inst":"imp","lo":2,"mid":4,"hi":6,"ramp":1,"behav":"capital","lab":"Rétablissement d'un impôt sur la fortune au-delà de l'IFI","note":"L'ISF rapportait environ 5 Md€ en 2017 ; l'IFI qui l'a remplacé en rapporte environ 2. L'écart donne l'ordre de grandeur du rétablissement."},{"id":"isfclim","g":"rec+","inst":"imp","lo":5,"mid":10,"hi":15,"ramp":2,"behav":"capital","disp":true,"lab":"ISF climatique (assiette élargie, barème progressif)","note":"Chiffré à 12 Md€ par les programmes de gauche. Combine un ISF renforcé et une modulation selon l'empreinte carbone des actifs, dont le rendement propre n'a jamais été mesuré."},{"id":"csgcap","g":"rec+","inst":"imp","lo":2,"mid":3,"hi":4,"ramp":1,"behav":"capital","lab":"CSG sur les revenus du capital : +2 points","note":"Assiette d'environ 150 Md€ de revenus du patrimoine et de placement."},{"id":"pfu","g":"rec+","inst":"imp","lo":2,"mid":4,"hi":6,"ramp":1,"behav":"capital","disp":true,"lab":"Fin du prélèvement forfaitaire unique : dividendes au barème progressif","note":"Rendement très sensible au comportement de distribution : la réforme de 2018 avait été suivie d'une forte hausse des dividendes versés. Une bonne part des 100 Md€ de dividendes va à des non-résidents ou à des sociétés mères, hors de portée du barème des particuliers."},{"id":"isgrandes","g":"rec+","inst":"imp","lo":4,"mid":8,"hi":12,"ramp":2,"behav":"profit","disp":true,"lab":"Surtaxe d'impôt sur les sociétés pour les grandes entreprises","note":"L'IS rapporte environ 60 Md€ sur 300 Md€ de bénéfices imposables. Les surtaxes votées en 2025 ont montré qu'un rendement affiché se réduit vite par optimisation du résultat imposable et localisation des charges."},{"id":"superp","g":"rec+","inst":"imp","lo":2,"mid":4,"hi":15,"ramp":1,"behav":"profit","disp":true,"lab":"Contribution sur les superprofits (énergie, transport, finance)","note":"Chiffrée jusqu'à 15 Md€ dans les programmes de gauche. Rendement structurellement volatil : il dépend du prix de l'énergie et des taux, donc il ne finance pas une dépense pérenne."},{"id":"rachats","g":"rec+","inst":"imp","lo":0.5,"mid":1,"hi":2,"ramp":1,"behav":"profit","lab":"Taxe sur les rachats d'actions","note":"La taxe instaurée en 2024 rapporte quelques centaines de millions. Élargie, elle reste d'un ordre de grandeur inférieur aux annonces qui l'accompagnent."},{"id":"minimum15","g":"rec+","inst":"imp","lo":1,"mid":1.5,"hi":3,"ramp":2,"lab":"Impôt minimum mondial de 15 % sur les multinationales","note":"Le pilier 2 de l'accord OCDE est déjà transposé. Son rendement français est estimé entre 1 et 3 Md€, très en deçà des attentes initiales."},{"id":"ttf","g":"rec+","inst":"imp","lo":1,"mid":3,"hi":6,"ramp":2,"behav":"profit","disp":true,"lab":"Taxe sur les transactions financières élargie","note":"Chiffrée à 20 Md€ dans certains programmes. La TTF française actuelle rapporte environ 2 Md€ ; l'élargissement aux produits dérivés déplace une partie de l'activité hors de France, ce que les chiffrages hauts ne prennent pas en compte."},{"id":"exit","g":"rec+","inst":"imp","lo":0.2,"mid":0.5,"hi":1,"ramp":2,"behav":"capital","lab":"Renforcement de l'exit tax","note":"Mesure défensive : son intérêt n'est pas son rendement propre mais la réduction de l'érosion d'assiette des autres impôts sur le capital."},{"id":"succ","g":"rec+","inst":"imp","lo":2,"mid":3,"hi":5,"ramp":2,"behav":"capital","lab":"Réforme des droits de succession sur les hauts patrimoines","note":"Les droits de mutation à titre gratuit rapportent environ 35 Md€ ; l'essentiel des transmissions est déjà exonéré, et les grandes transmissions d'entreprises le sont par le pacte Dutreil."},{"id":"tva1","g":"rec+","inst":"imp","lo":8,"mid":9,"hi":10,"ramp":1,"lab":"TVA : +1 point sur le taux normal (20 → 21 %)","note":"Un point de taux normal représente environ 9 Md€. C'est l'un des rares leviers de rendement immédiat et massif — et le plus régressif."},{"id":"cir","g":"rec+","inst":"imp","lo":2,"mid":3,"hi":7,"ramp":2,"lab":"Rabot du crédit d'impôt recherche","note":"Le CIR coûte environ 7,7 Md€ par an. Son efficacité sur la R&D privée fait l'objet d'évaluations contradictoires."},{"id":"alleg","g":"rec+","inst":"imp","lo":3,"mid":6,"hi":12,"ramp":2,"disp":true,"lab":"Réduction des allègements de cotisations sur les bas salaires","note":"Environ 75 Md€ d'allègements. Le rapport Bozio-Wasmer souligne que le rendement budgétaire se paie en partie en emplois détruits, donc en recettes perdues ailleurs."},{"id":"fraude","g":"rec+","inst":"imp","lo":1,"mid":3,"hi":15,"ramp":3,"disp":true,"lab":"Renforcement de la lutte contre la fraude fiscale et sociale","note":"Chiffré à 15 Md€ par le RN, jusqu'à 80 Md€ par LFI. L'écart fiscal estimé est effectivement de cet ordre, mais il mesure l'impôt manquant, pas l'impôt récupérable : les redressements notifiés dépassent 15 Md€ par an, les encaissements réels sont autour de 10, et l'essentiel serait recouvré même sans mesure nouvelle."},{"id":"irbaisse","g":"rec-","inst":"imp","lo":3,"mid":5,"hi":10,"ramp":1,"lab":"Baisse de l'impôt sur le revenu","note":"L'IR rapporte environ 95 Md€ et est acquitté par un peu moins de la moitié des foyers."},{"id":"tvaener","g":"rec-","inst":"imp","lo":6,"mid":10,"hi":14,"ramp":1,"lab":"TVA à 5,5 % sur l'électricité, le gaz et les carburants","note":"La fiscalité de l'énergie rapporte environ 40 Md€, la TVA sur l'énergie environ 12. Mesure portée par le RN comme par une partie de la gauche."},{"id":"prod","g":"rec-","inst":"imp","lo":3,"mid":5,"hi":8,"ramp":2,"lab":"Nouvelle baisse des impôts de production","note":"Après la CVAE, il reste principalement la CFE et la taxe foncière des entreprises."},{"id":"csgbaisse","g":"rec-","inst":"imp","lo":5,"mid":8,"hi":12,"ramp":1,"lab":"Baisse de la CSG ou des cotisations sur les revenus d'activité","note":"La CSG d'activité rapporte environ 105 Md€ : un point vaut à peu près 9 Md€."},{"id":"retr62","g":"dep+","inst":"dep","lo":8,"mid":13,"hi":18,"ramp":5,"lab":"Retour de l'âge légal à 62 ans","note":"Environ 3 Md€ dès la première année, la charge montant au fil des générations. Les retraites pèsent 390 Md€, soit près d'un quart de la dépense publique."},{"id":"retr60","g":"dep+","inst":"dep","lo":20,"mid":30,"hi":45,"ramp":6,"disp":true,"lab":"Retraite à 60 ans à taux plein","note":"Les chiffrages publiés vont de 20 à 45 Md€ à horizon 2035 selon la durée de cotisation exigée et l'hypothèse d'emploi des seniors. C'est la mesure la plus coûteuse du catalogue."},{"id":"indexation","g":"dep+","inst":"dep","lo":2,"mid":4,"hi":6,"ramp":3,"lab":"Indexation intégrale des retraites et prestations sur l'inflation","note":"Chaque point de sous-indexation des pensions représente environ 4 Md€ d'économie — et réciproquement."},{"id":"defense","g":"dep+","inst":"dep","lo":12,"mid":22,"hi":32,"ramp":5,"lab":"Effort de défense porté vers 3 % du PIB","note":"La mission Défense pèse environ 57 Md€ en 2026, soit un peu moins de 2 % du PIB."},{"id":"services","g":"dep+","inst":"dep","lo":2,"mid":4,"hi":8,"ramp":3,"lab":"Recrutements dans la santé, l'école et la justice","note":"Un poste coûte en moyenne 45 à 55 k€ par an, charges comprises : 50 000 postes représentent environ 2,5 Md€."},{"id":"ecolo","g":"dep+","inst":"dep","lo":5,"mid":10,"hi":30,"ramp":3,"lab":"Plan d'investissement écologique (rénovation, réseaux, ferroviaire)","note":"Le rapport Pisani-Ferry / Mahfouz chiffre le besoin d'investissement public additionnel autour de 25 à 30 Md€ par an."},{"id":"age","g":"dep+","inst":"dep","lo":3,"mid":5,"hi":9,"ramp":4,"lab":"Montée en charge de la branche autonomie (grand âge)","note":"La branche autonomie pèse environ 40 Md€ ; le nombre de personnes de plus de 85 ans double d'ici 2040."},{"id":"pointindice","g":"dep+","inst":"dep","lo":4,"mid":6,"hi":8,"ramp":2,"lab":"Revalorisation du point d'indice de la fonction publique (+3 %)","note":"Un point d'indice vaut environ 2 Md€ pour l'ensemble des trois fonctions publiques."},{"id":"smic","g":"dep+","inst":"dep","lo":2,"mid":4,"hi":7,"ramp":2,"lab":"Hausse du SMIC et des bas salaires du secteur public","note":"Effet budgétaire direct par la fonction publique et par le glissement des allègements de cotisations, qui se déclenchent en proportion du SMIC."},{"id":"effectifs","g":"dep-","inst":"dep","lo":3,"mid":4,"hi":6,"ramp":4,"lab":"Réduction de 5 % des effectifs de l'État et de ses opérateurs","note":"2,5 millions d'agents pour l'État et ses opérateurs. Une baisse de 5 % suppose de ne pas remplacer environ 125 000 départs."},{"id":"collectivites","g":"dep-","inst":"dep","lo":3,"mid":5,"hi":10,"ramp":2,"lab":"Baisse des concours financiers aux collectivités","note":"Les collectivités portent environ 290 Md€ de dépenses, dont l'essentiel de l'investissement public civil."},{"id":"chomage","g":"dep-","inst":"dep","lo":2,"mid":4,"hi":6,"ramp":2,"lab":"Nouvelle réforme de l'assurance chômage","note":"L'Unédic verse environ 32 Md€ d'allocations. Le rendement dépend de la conjoncture : il s'effondre en récession."},{"id":"niches","g":"dep-","inst":"dep","lo":5,"mid":10,"hi":25,"ramp":3,"disp":true,"lab":"Rabot des niches fiscales et des aides aux entreprises","note":"Selon le périmètre retenu, les aides publiques aux entreprises sont estimées entre 110 et 200 Md€. Le désaccord porte sur ce qui compte comme « aide » : les allègements de cotisations en représentent à eux seuls 75."},{"id":"blanche","g":"dep-","inst":"dep","lo":5,"mid":7,"hi":10,"ramp":1,"lab":"Année blanche : gel des barèmes et des prestations","note":"Économie immédiate et large, mais non reconductible indéfiniment : elle se rattrape en partie l'année suivante."},{"id":"age65","g":"dep-","inst":"dep","lo":5,"mid":9,"hi":14,"ramp":6,"lab":"Âge légal de départ porté à 65 ans","note":"Le rendement d'une réforme des retraites est lent : il croît avec chaque génération concernée."},{"id":"ondam","g":"dep-","inst":"dep","lo":3,"mid":5,"hi":9,"ramp":2,"lab":"Freinage de l'ONDAM (dépenses d'assurance maladie)","note":"L'ONDAM approche 270 Md€ : un ralentissement de 0,5 point de sa progression représente environ 1,4 Md€ par an."},{"id":"agences","g":"dep-","inst":"dep","lo":1,"mid":2,"hi":3,"ramp":3,"lab":"Suppression ou fusion d'agences et d'opérateurs de l'État","note":"Les rapports parlementaires convergent vers 2 à 3 Md€, à condition de supprimer les missions et pas seulement les structures."},{"id":"immigration","g":"dep-","inst":"dep","lo":1,"mid":3,"hi":10,"ramp":3,"disp":true,"lab":"Réduction des dépenses liées à l'immigration","note":"Chiffrée à 25 Md€ par le RN. Les postes identifiables sont d'un tout autre ordre : aide médicale d'État 1,3 Md€, hébergement d'urgence et demande d'asile environ 3 Md€, aide au retour quelques centaines de millions. Les chiffrages hauts agrègent des prestations de droit commun versées à des personnes en situation régulière, et ne déduisent pas les cotisations et impôts que ces mêmes personnes acquittent."},{"id":"ue","g":"dep-","inst":"dep","lo":0,"mid":2,"hi":8,"ramp":3,"disp":true,"lab":"Réduction de la contribution française au budget de l'Union européenne","note":"Chiffrée à 10 Md€ par le RN. La contribution brute est d'environ 27 Md€ pour environ 15 Md€ de retours. La réduire unilatéralement n'est pas possible : le cadre financier pluriannuel se décide à l'unanimité et la contribution est une ressource propre de l'Union."},{"id":"ame","g":"dep-","inst":"dep","lo":0.5,"mid":0.9,"hi":1.3,"ramp":1,"lab":"Suppression de l'aide médicale d'État","note":"1,3 Md€, soit 0,08 % de la dépense publique — l'équivalent de neuf jours de charge de la dette. Cette ligne figure ici précisément pour être comparée aux autres."},{"id":"institutions","g":"dep-","inst":"dep","lo":0.05,"mid":0.15,"hi":0.3,"ramp":2,"lab":"Réduction du train de vie des institutions et du nombre de parlementaires","note":"L'ensemble Élysée, Assemblée, Sénat et Conseil constitutionnel coûte 1,14 Md€, soit un euro pour mille euros de dépense publique. Même supprimé en totalité, ce poste ne changerait pas la trajectoire — c'est le principal enseignement de cette ligne."}]},"parties":{"_comment":"Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution.","updated":"2026-09-01","avertissement":"Aucune candidature n'est officiellement déposée à ce stade. Les noms retenus sont les candidats pressentis par parti au vu des déclarations publiques et des sondages de 2026 ; ils changeront. Les programmes 2027 ne sont pour la plupart pas publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.","parties":[{"id":"rn","nom":"Rassemblement national","sigle":"RN","candidat":"Marine Le Pen","couleur":"#1C3F63","statutCandidature":"Candidature annoncée ; Jordan Bardella cité comme alternative","statut":"partiel","annonce":{"titre":"125 Md€ d'économies","texte":"Marine Le Pen a annoncé une trajectoire de redressement des finances publiques reposant sur 125 Md€ d'économies. Environ 60 Md€ ont été rattachés publiquement à quatre postes : immigration, fraude fiscale et sociale, contribution au budget de l'Union européenne, organisation de l'État. Le solde, soit près de la moitié du total, n'a pas fait l'objet d'un détail public.","revendique":125,"detaille":65,"cote":"economie"},"set":{"immigration":{"sim":"hi","annonce":25},"fraude":{"sim":"mid","annonce":15},"ue":{"sim":"mid","annonce":10},"agences":{"sim":"hi","annonce":3},"effectifs":{"sim":"mid","annonce":6},"collectivites":{"sim":"lo","annonce":5},"ame":{"sim":"hi","annonce":1.3},"institutions":{"sim":"mid","annonce":0.3},"tvaener":{"sim":"mid","annonce":10},"retr62":{"sim":"mid","annonce":13}},"sources":[{"t":"Le RN et son équation budgétaire impossible — Le Temps","u":"https://www.letemps.ch/monde/france/le-rn-et-son-equation-budgetaire-impossible-quand-le-chiffrage-economique-releve-davantage-de-l-ideologie"},{"t":"Contre-budget du RN — Public Sénat","u":"https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale"},{"t":"Programme économique du RN — OFCE législatives 2024","u":"https://www.ofce-legislatives2024.fr/programmes/rn.html"}]},{"id":"lfi","nom":"La France insoumise","sigle":"LFI","candidat":"Jean-Luc Mélenchon","couleur":"#C1272D","statutCandidature":"Candidature annoncée","statut":"partiel","annonce":{"titre":"≈ 90 Md€ de recettes nouvelles","texte":"Les chiffrages du programme de gauche retiennent environ 90 Md€ de recettes fiscales supplémentaires par an (fourchette de 60 à 120 Md€), portées par les 10 % de ménages les plus aisés et par les grandes entreprises : ISF climatique 12 Md€, contribution sur les superprofits 15 Md€, taxe sur les transactions financières 20 Md€, plus la lutte contre l'évasion fiscale, chiffrée à partir d'un écart estimé à 80 Md€ par an. Côté dépenses, la retraite à 60 ans et le plan d'investissement écologique sont les deux postes dominants.","revendique":90,"detaille":90,"cote":"recette"},"set":{"isfclim":{"sim":"mid","annonce":12},"superp":{"sim":"mid","annonce":15},"ttf":{"sim":"mid","annonce":20},"zucman":{"sim":"mid","annonce":20},"pfu":{"sim":"mid","annonce":6},"succ":{"sim":"mid","annonce":5},"isgrandes":{"sim":"mid","annonce":12},"minimum15":{"sim":"mid"},"fraude":{"sim":"mid"},"alleg":{"sim":"mid","annonce":12},"niches":{"sim":"mid","annonce":15},"retr60":{"sim":"mid","annonce":20},"smic":{"sim":"mid"},"services":{"sim":"hi"},"ecolo":{"sim":"mid","annonce":30},"age":{"sim":"mid"},"pointindice":{"sim":"mid"},"indexation":{"sim":"mid"}},"sources":[{"t":"Chiffrage des recettes fiscales du programme — La Grande Conversation","u":"https://www.lagrandeconversation.com/economie/chiffrage-des-recettes-fiscales-duprogramme-du-nouveau-front-populaire/"},{"t":"Les pistes de la gauche pour augmenter les recettes — Public Sénat","u":"https://www.publicsenat.fr/actualites/politique/programme-du-nouveau-front-populaire-les-pistes-de-la-gauche-pour-augmenter-les-recettes-fiscales-et-redistribuer-les-richesses"},{"t":"Taxe Zucman — Wikipédia (état du débat parlementaire)","u":"https://fr.wikipedia.org/wiki/Taxe_Zucman"}]},{"id":"lr","nom":"Les Républicains","sigle":"LR","candidat":"Bruno Retailleau","couleur":"#2E6FB7","statutCandidature":"Président du parti, candidature pressentie","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Aucun chiffrage d'ensemble n'a été publié à ce jour. Le scénario ci-dessous est une reconstitution du simulateur à partir de positions publiques : priorité aux économies de dépense, allongement de la durée du travail, baisse des impôts de production. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"effectifs":{"sim":"hi"},"chomage":{"sim":"mid"},"age65":{"sim":"mid"},"niches":{"sim":"mid"},"collectivites":{"sim":"mid"},"ondam":{"sim":"mid"},"blanche":{"sim":"mid"},"immigration":{"sim":"lo"},"prod":{"sim":"mid"},"irbaisse":{"sim":"lo"},"defense":{"sim":"mid"}},"sources":[]},{"id":"ren","nom":"Renaissance","sigle":"REN","candidat":"Gabriel Attal","couleur":"#D9A227","statutCandidature":"Candidature pressentie","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Reconstitution du simulateur à partir de positions publiques : maîtrise de la dépense sans hausse générale des prélèvements, poursuite de la baisse des impôts de production, effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"blanche":{"sim":"mid"},"ondam":{"sim":"mid"},"agences":{"sim":"mid"},"effectifs":{"sim":"mid"},"chomage":{"sim":"mid"},"niches":{"sim":"lo"},"defense":{"sim":"mid"},"prod":{"sim":"lo"}},"sources":[]},{"id":"hor","nom":"Horizons","sigle":"HOR","candidat":"Édouard Philippe","couleur":"#4FB0C6","statutCandidature":"Candidature annoncée","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Reconstitution du simulateur à partir de positions publiques : allongement de la durée du travail, effort d'économies large et rapide, effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"age65":{"sim":"mid"},"blanche":{"sim":"hi"},"niches":{"sim":"mid"},"effectifs":{"sim":"mid"},"ondam":{"sim":"mid"},"collectivites":{"sim":"mid"},"defense":{"sim":"mid"},"agences":{"sim":"mid"}},"sources":[]},{"id":"ps","nom":"Parti socialiste / Place publique","sigle":"PS","candidat":"Raphaël Glucksmann","couleur":"#E4557A","statutCandidature":"Candidature pressentie, primaire à gauche en cours","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Reconstitution du simulateur à partir de positions publiques : fiscalité du patrimoine renforcée sans rupture avec le cadre européen, retour partiel sur la réforme des retraites, investissement écologique et effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"isf":{"sim":"mid"},"zucman":{"sim":"lo"},"succ":{"sim":"mid"},"isgrandes":{"sim":"lo"},"niches":{"sim":"mid"},"indexation":{"sim":"mid"},"services":{"sim":"mid"},"ecolo":{"sim":"mid"},"defense":{"sim":"mid"},"retr62":{"sim":"lo"}},"sources":[]},{"id":"eco","nom":"Les Écologistes","sigle":"ÉCO","candidat":"Marine Tondelier","couleur":"#4C9A54","statutCandidature":"Candidature pressentie, primaire à gauche en cours","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Reconstitution du simulateur à partir de positions publiques : investissement écologique de l'ordre du besoin identifié par le rapport Pisani-Ferry, financé par la fiscalité du patrimoine et le rabot des aides aux entreprises. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"ecolo":{"sim":"hi"},"isfclim":{"sim":"mid"},"superp":{"sim":"mid"},"cir":{"sim":"mid"},"niches":{"sim":"mid"},"succ":{"sim":"mid"},"age":{"sim":"mid"},"services":{"sim":"mid"}},"sources":[]}],"sourceOfficielle":{"nom":"Ministère de l'Intérieur — programmes officiels des candidats","url":"https://www.interieur.gouv.fr/archives/actualites/actualites-du-ministere/election-presidentielle-programme-des-candidats-est-disponible","statut":"attendue","note":"Le ministère de l'Intérieur publie, une fois les candidatures validées par le Conseil constitutionnel, la profession de foi et le programme officiel de chaque candidat. C'est la seule source de rang officiel pour un programme : dès sa mise en ligne, elle remplace ici toute reprise de presse, et les scénarios « reconstitution » sont rebâtis à partir d'elle. Non disponible à ce jour pour 2027."}},"announcements":{"_comment":"Base des annonces, une entrée par déclaration publique. Alimentée par le skill france-budget-watch. Champs : date (AAAA-MM-JJ ou AAAA-MM si le jour n'est pas établi), parti (id ou null), qui (la personne, ou null si l'auteur n'est pas identifié), fonction, media (où la déclaration a été faite), quoi, verbatim, mesure (id du catalogue ou null), montant (Md€ ou null), type (economie|recette|depense|contexte), source (URL obligatoire), verifie (la source a-t-elle été ouverte et lue intégralement), contredit (non|programme|annonce|inconnu), ecart (explication si contredit != non).","updated":"2026-09-01","items":[{"date":"2025-10-20","parti":"rn","qui":"Marine Le Pen","fonction":"Députée, Rassemblement national","media":"Déclaration publique avant le débat budgétaire","quoi":"Annonce d'une trajectoire de redressement des finances publiques reposant sur 125 Md€ d'économies.","verbatim":null,"mesure":null,"montant":125,"type":"economie","source":"https://www.letemps.ch/monde/france/le-rn-et-son-equation-budgetaire-impossible-quand-le-chiffrage-economique-releve-davantage-de-l-ideologie","verifie":false,"contredit":"inconnu","ecart":"Le détail rendu public ne couvre qu'environ la moitié du total annoncé : la cohérence de l'autre moitié avec un programme écrit ne peut pas être établie."},{"date":"2025-10-20","parti":"rn","qui":"Marine Le Pen","fonction":"Députée, Rassemblement national","media":"Déclaration publique","quoi":"Défense d'un retour de l'âge de départ à la retraite à 60 ou 62 ans.","verbatim":null,"mesure":"retr62","montant":13,"type":"depense","source":"https://www.epochtimes.fr/marine-le-pen-promet-125-milliards-deuros-deconomies-et-defend-une-retraite-a-60-ou-62-ans-3335415.html","verifie":false,"contredit":"annonce","ecart":"Annoncée le même jour que le plan de 125 Md€ d'économies, cette mesure en consomme une part importante sans que le plan soit relevé d'autant."},{"date":"2025-10-20","parti":"rn","qui":"Marine Le Pen","fonction":"Députée, Rassemblement national","media":"Déclaration publique","quoi":"Quatre postes d'économies identifiés : immigration 25 Md€, fraude fiscale et sociale 15 Md€, contribution au budget de l'Union européenne 10 Md€, organisation de l'État.","verbatim":null,"mesure":"immigration","montant":60,"type":"economie","source":"https://www.letemps.ch/monde/france/le-rn-et-son-equation-budgetaire-impossible-quand-le-chiffrage-economique-releve-davantage-de-l-ideologie","verifie":false,"contredit":"programme","ecart":"La contribution au budget de l'Union européenne ne peut pas être réduite unilatéralement : le cadre financier pluriannuel se décide à l'unanimité et la contribution est une ressource propre de l'Union."},{"date":"2026-08","parti":"lr","qui":"Bruno Retailleau","fonction":"Président des Républicains","media":"Premier débat des candidats, université d'été du MEDEF","quoi":"Annonce de 120 Md€ d'économies, obtenues exclusivement par la baisse de la dépense, sans hausse d'impôts.","verbatim":null,"mesure":null,"montant":120,"type":"economie","source":"https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle","verifie":false,"contredit":"inconnu","ecart":"Aucun détail poste par poste n'est public à ce jour : la cohérence avec un programme écrit ne peut pas être établie."},{"date":"2026-08","parti":"ps","qui":"Raphaël Glucksmann","fonction":"Député européen, Place publique","media":"Premier débat des candidats, université d'été du MEDEF","quoi":"Proposition de taxer le 1 % des successions les plus élevées, avec un objectif de 15 Md€ de recettes.","verbatim":null,"mesure":"succ","montant":15,"type":"recette","source":"https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle","verifie":false,"contredit":"inconnu","ecart":"Les droits de succession et de mutation rapportent aujourd'hui environ 35 Md€ au total. Obtenir 15 Md€ de plus sur 1 % des successions suppose un barème très fortement relevé sur ces transmissions."},{"date":"2026-08","parti":"ren","qui":"Gabriel Attal","fonction":"Renaissance","media":"Premier débat des candidats, université d'été du MEDEF","quoi":"Volonté de faire travailler les salariés plus longtemps et d'instaurer un pilier de capitalisation pour les retraites.","verbatim":null,"mesure":null,"montant":null,"type":"contexte","source":"https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle","verifie":false,"contredit":"non","ecart":"Annonce non chiffrée : elle ne peut pas être portée au simulateur en l'état."},{"date":"2026-08","parti":"hor","qui":"Édouard Philippe","fonction":"Horizons","media":"Premier débat des candidats, université d'été du MEDEF","quoi":"Volonté de faire travailler les salariés plus longtemps.","verbatim":null,"mesure":null,"montant":null,"type":"contexte","source":"https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle","verifie":false,"contredit":"non","ecart":"Annonce non chiffrée : elle ne peut pas être portée au simulateur en l'état."},{"date":"2026-08","parti":null,"qui":"Sébastien Lecornu","fonction":"Premier ministre","media":"Déclaration sur le projet de loi de finances pour 2027","quoi":"Annonce d'un budget 2027 de premier semestre, « réversible » après l'élection présidentielle, et confirmation qu'il n'est pas candidat.","verbatim":null,"mesure":null,"montant":null,"type":"contexte","source":"https://www.legifiscal.fr/actualites-fiscales/4620-budget-2027-sebastien-lecornu-esquisse-plf-2027-reversible","verifie":false,"contredit":"non","ecart":null},{"date":"2025-10-31","parti":null,"qui":null,"fonction":"Assemblée nationale","media":"Séance publique, examen du projet de loi de finances pour 2026","quoi":"Rejet de la taxe Zucman.","verbatim":null,"mesure":"zucman","montant":null,"type":"contexte","source":"https://www.legifiscal.fr/actualites-fiscales/4302-plf-2026-taxe-zucman-rejetee-assemblee-nationale.html","verifie":false,"contredit":"non","ecart":null},{"date":"2025-10-15","parti":null,"qui":null,"fonction":"Gouvernement","media":"Débat sur le budget 2026","quoi":"Opposition à la taxe Zucman, motivée par le risque de départ des contribuables concernés.","verbatim":null,"mesure":"zucman","montant":null,"type":"contexte","source":"https://www.franceinfo.fr/economie/budget/budget-2026-le-gouvernement-s-oppose-a-la-taxe-zucman-craignant-une-fuite-des-ultra-riches_7380325.html","verifie":false,"contredit":"non","ecart":null}]}}</script>
+<script id="payload" type="application/json">{"baseline":{"_comment":"Cadrage des administrations publiques. Ordres de grandeur arrondis, en Md€ courants. Millesime 2025.","vintage":2025,"updated":"2026-09-01","apu":{"pib":2950,"depenses":1690,"recettes":1530,"dette":3420,"charge":59,"tauxApparent":1.85,"partRefinancee":0.11,"population":68.5,"menages":31.5},"depenses":[{"nom":"Retraites","v":390,"note":"Tous régimes. Premier poste de la dépense publique, loin devant tout le reste.","icone":"retraite"},{"nom":"Santé et hôpital","v":300,"note":"ONDAM et dépenses hospitalières.","icone":"sante"},{"nom":"Services publics locaux et généraux","v":215,"note":"Communes, départements, régions : voirie, écoles, action sociale, administration.","icone":"mairie"},{"nom":"Autres prestations sociales","v":185,"note":"Famille, chômage, logement, minima sociaux, autonomie.","icone":"famille"},{"nom":"Éducation et recherche","v":130,"note":"Premier budget de l'État au sens strict.","icone":"ecole"},{"nom":"Transports, logement, écologie","v":125,"note":"Infrastructures, aides au logement, transition énergétique.","icone":"transport"},{"nom":"Économie, agriculture, entreprises","v":110,"note":"Aides aux entreprises, agriculture, emploi.","icone":"entreprise"},{"nom":"Défense, sécurité, justice","v":110,"note":"Dont environ 57 Md€ pour la mission Défense en 2026. Au sens des fonctions COFOG, la défense seule pèse 51,6 Md€ en 2024.","icone":"defense"},{"nom":"Culture, sport, divers","v":66,"note":"Dont l'audiovisuel public, environ 4 Md€.","icone":"culture"},{"nom":"Charge de la dette","v":59,"note":"Intérêts versés aux créanciers. Le poste qui progresse le plus vite.","icone":"dette"}],"recettes":[{"nom":"Cotisations sociales employeurs","v":250,"payeur":"entreprises"},{"nom":"Cotisations sociales salariés et indépendants","v":205,"payeur":"travail"},{"nom":"TVA","v":210,"payeur":"consommation"},{"nom":"Recettes non fiscales (ventes, domaine, transferts)","v":210,"payeur":"autres"},{"nom":"Autres impôts sur la production","v":150,"payeur":"entreprises"},{"nom":"CSG-CRDS sur les revenus d'activité","v":105,"payeur":"travail"},{"nom":"Impôt sur le revenu","v":95,"payeur":"travail"},{"nom":"Impôts fonciers et locaux","v":80,"payeur":"patrimoine"},{"nom":"Impôt sur les sociétés","v":60,"payeur":"entreprises"},{"nom":"CSG sur le capital et les revenus de remplacement","v":50,"payeur":"patrimoine"},{"nom":"Fiscalité de l'énergie (TICPE, accises)","v":40,"payeur":"consommation"},{"nom":"Prélèvements sur les revenus du capital (PFU, prélèvements sociaux)","v":38,"payeur":"patrimoine"},{"nom":"Droits de succession et de mutation","v":35,"payeur":"patrimoine"},{"nom":"IFI et impôts sur la fortune","v":2,"payeur":"patrimoine"}],"payeurs":{"entreprises":{"nom":"Entreprises","note":"Cotisations employeurs, impôts de production, impôt sur les sociétés.","icone":"entreprise"},"travail":{"nom":"Revenus du travail","note":"Cotisations salariales, CSG d'activité, impôt sur le revenu.","icone":"salaire"},"consommation":{"nom":"Consommation","note":"TVA et accises. Prélèvement proportionnel à la dépense, non au revenu.","icone":"panier"},"patrimoine":{"nom":"Patrimoine et capital","note":"Foncier, revenus du capital, successions, IFI.","icone":"maison"},"autres":{"nom":"Recettes non fiscales","note":"Ventes de services publics, revenus du domaine, transferts.","icone":"piece"}},"reperes":[{"nom":"Institutions de la République (Élysée, Assemblée, Sénat, Conseil constitutionnel)","v":1.14,"note":"Mission « Pouvoirs publics » du budget de l'État. Soit environ un euro pour mille euros de dépense publique.","icone":"mairie"},{"nom":"Aide médicale d'État","v":1.3,"note":"Soins des étrangers en situation irrégulière. Régulièrement citée comme un gisement d'économies.","icone":"sante"},{"nom":"Audiovisuel public","v":4.0,"note":"France Télévisions, Radio France, Arte, INA.","icone":"culture"},{"nom":"Contribution nette au budget de l'Union européenne","v":12.0,"note":"Contribution brute d'environ 27 Md€, retours d'environ 15 Md€ (PAC, fonds régionaux).","icone":"europe"},{"nom":"Aide publique au développement","v":15.0,"note":"Aide bilatérale et multilatérale.","icone":"monde"},{"nom":"Rémunération des 5,7 millions d'agents publics","v":340.0,"note":"Trois fonctions publiques réunies. C'est ici, et non dans le train de vie des institutions, que se trouve la masse.","icone":"agent"},{"nom":"Charge de la dette","v":59.0,"note":"Déjà supérieure au budget de la Défense. Elle double d'ici 2032 au fil du refinancement.","icone":"dette"}],"assiettes":[{"nom":"Patrimoine des foyers de plus de 100 M€","v":1000,"note":"Environ 1 800 foyers. C'est l'assiette de la « taxe Zucman » : un prélèvement de 2 % porte sur ce stock, pas sur un flux de revenu."},{"nom":"Bénéfices imposables des sociétés","v":300,"note":"Assiette de l'impôt sur les sociétés, qui rapporte environ 60 Md€ à un taux de 25 %."},{"nom":"Dividendes versés par les sociétés françaises","v":100,"note":"Dont une large part à des non-résidents et à des sociétés mères, hors de portée du barème des particuliers."},{"nom":"Allègements de cotisations sur les bas salaires","v":75,"note":"Le plus gros dispositif d'aide aux entreprises, et le premier visé par les rabots."},{"nom":"Écart fiscal estimé (fraude)","v":80,"note":"Estimation de l'écart entre l'impôt dû et l'impôt perçu. Les montants effectivement recouvrés sont d'un ordre de grandeur inférieur."}],"sources":[{"nom":"INSEE — Comptes des administrations publiques","url":"https://www.insee.fr/fr/statistiques/2381416"},{"nom":"Projet de loi de finances pour 2026 — Évaluation des voies et moyens","url":"https://www.assemblee-nationale.fr/dyn/opendata/PRJLANR5L17B1906.html"},{"nom":"Sénat — Rapport général sur le PLF 2026","url":"https://www.senat.fr/rap/l25-139-1/l25-139-19.html"},{"nom":"DGFiP Statistiques — recettes fiscales","url":"https://www.impots.gouv.fr/sites/default/files/media/9_statistiques/0_etudes_et_stats/0_publications/dgfip_statistiques/2026/num43_03/dgfip_stat43_budget_2025.pdf"},{"nom":"Observatoire de l'éthique publique — budget du Parlement","url":"https://www.observatoireethiquepublique.com/nos-propositions/dans-la-presse/2024/faut-il-sindigner-de-la-hausse-du-budget-du-parlement-francais.html"}],"sourcesOfficielles":[{"nom":"Budget de l'État — portail officiel","url":"https://www.budget.gouv.fr/budget-etat","quoi":"Dépenses et recettes de l'État, présentation officielle"},{"nom":"Budget de l'État par ministère","url":"https://www.budget.gouv.fr/budget-etat/ministere","quoi":"Ventilation des crédits ministère par ministère"},{"nom":"Budget de l'État — données ouvertes","url":"https://www.budget.gouv.fr/budget-etat/smb","quoi":"Séries détaillées réutilisables"},{"nom":"Le budget de la France à la loupe — ministère de l'Économie","url":"https://www.economie.gouv.fr/a-la-loupe-le-budget-de-la-france","quoi":"Agrégats et répartitions, présentation pédagogique"},{"nom":"INSEE — comptes des administrations publiques","url":"https://www.insee.fr/fr/statistiques/2381416","quoi":"Périmètre APU, le seul cohérent avec ce simulateur"}],"verification":{"etat":"recoupé","date":"2026-09-02","note":"Le cadrage APU 2025 a été recoupé contre le constat officiel 2024 aspiré depuis budget.gouv.fr (bloc `officiel`). Tout tient dans une progression annuelle plausible : dépenses 1 670 → 1 690 (+1,2 %), recettes 1 502 → 1 530 (+1,9 %), dette 3 305 → 3 420 (+3,5 %), PIB implicite 2 925 → 2 950 (+0,9 %). Aucun agrégat n'a été corrigé. Restent non recoupées les ventilations `depenses` et `recettes` : ce sont des regroupements propres à ce simulateur, qui ne correspondent à aucune nomenclature officielle. La ventilation COFOG publiée figure dans `officiel.depensesFonction` pour comparaison."},"officiel":{"_comment":"Constat officiel des administrations publiques, millésime 2024, relevé sur le panorama des finances publiques de budget.gouv.fr. Même périmètre que le cadrage `apu` ci-dessus, avec un an de retard : il sert à le vérifier, pas à le remplacer.","millesime":2024,"source":"https://www.budget.gouv.fr/panorama-finances-publiques","licence":"Licence Ouverte / Open Licence (Etalab)","apu":{"depenses":1670.2,"recettes":1501.6,"solde":-168.6,"soldePib":-5.8,"dette":3305.3,"dettePib":113},"sousSecteurs":{"_comment":"ODAC recouvre l'État et ses organismes divers, ASSO les administrations de sécurité sociale, APUL les administrations publiques locales. Ces ventilations sont publiées sans consolidation : elles somment au-dessus des agrégats parce que les transferts entre administrations y comptent deux fois.","depenses":{"État et ODAC":670.3,"ASSO":776.8,"APUL":329.7},"recettes":{"État et ODAC":516.2,"ASSO":779.1,"APUL":313},"dette":{"État et ODAC":2756.8,"ASSO":286.6,"APUL":261.9}},"depensesFonction":[{"nom":"Services généraux des administrations publiques","v":227.2,"sousSecteurs":{"ODAC":159.1,"ASSO":6.5,"APUL":61.6}},{"nom":"Défense","v":51.6,"sousSecteurs":{"ODAC":51.6,"ASSO":0,"APUL":0}},{"nom":"Ordre et sécurité publics","v":49.1,"sousSecteurs":{"ODAC":39.3,"ASSO":0,"APUL":9.8}},{"nom":"Affaires économiques","v":190.3,"sousSecteurs":{"ODAC":132.2,"ASSO":0.1,"APUL":58.0}},{"nom":"Protection de l'environnement","v":30.0,"sousSecteurs":{"ODAC":5.5,"ASSO":0,"APUL":24.5}},{"nom":"Logements et équipements collectifs","v":37.4,"sousSecteurs":{"ODAC":8.1,"ASSO":0,"APUL":29.3}},{"nom":"Santé","v":256.7,"sousSecteurs":{"ODAC":15.1,"ASSO":239.4,"APUL":2.1}},{"nom":"Loisirs, culture et culte","v":42.4,"sousSecteurs":{"ODAC":13.8,"ASSO":0,"APUL":28.6}},{"nom":"Enseignement","v":145.8,"sousSecteurs":{"ODAC":101.3,"ASSO":0,"APUL":44.4}},{"nom":"Protection sociale","v":687.4,"sousSecteurs":{"ODAC":138.7,"ASSO":491.5,"APUL":57.3}}],"recettesNature":[{"nom":"Recettes de production","v":121.3,"sousSecteurs":{"ODAC":48.4,"ASSO":26.3,"APUL":46.7}},{"nom":"Impôt sur la production et les importations","v":443.5,"sousSecteurs":{"ODAC":161.1,"ASSO":117.6,"APUL":164.8}},{"nom":"Impôts courants sur le revenu et le patrimoine","v":357.3,"sousSecteurs":{"ODAC":187.7,"ASSO":166.1,"APUL":3.4}},{"nom":"Cotisations sociales nettes","v":462.3,"sousSecteurs":{"ODAC":54.8,"ASSO":406.6,"APUL":0.9}},{"nom":"Transferts courants entre APU","v":93.7,"sousSecteurs":{"ODAC":15.5,"ASSO":24.3,"APUL":53.9}},{"nom":"Autres","v":85.2,"sousSecteurs":{"ODAC":41.1,"ASSO":8.2,"APUL":35.9}}],"note":"Sommes non consolidées : 1 776,8 Md€ de dépenses et 1 608,3 Md€ de recettes par sous-secteur, 1 717,8 et 1 563,2 par fonction et par nature, contre 1 670,2 et 1 501,6 pour les agrégats. L'écart est celui des transferts internes aux administrations, à ne pas prendre pour une erreur."},"etat":{"_comment":"Budget de l'État voté pour 2026. Périmètre bien plus étroit que les APU : l'État ne porte ni l'assurance maladie, ni les retraites du privé, ni les budgets des collectivités. Ne jamais comparer ces montants à ceux du bloc `apu`.","millesime":2026,"loi":"Loi de finances initiale","source":"https://www.budget.gouv.fr/budget-etat","depensesTotales":760,"recettesTotales":625,"solde":-135,"budgetGeneral":{"depensesNettes":459,"recettesNettes":325,"remboursementsDegrevements":141},"axesBruts":{"_comment":"Total des axes ministère et mission, montants bruts. L'écart avec les dépenses totales tient aux remboursements et dégrèvements, comptés ici et retranchés là, et aux comptes de commerce, absents de ces axes.","ae":851.2,"cp":825.3},"dataset":"dataset/derive/budget-etat.json"}},"measures":{"_comment":"Catalogue de mesures. lo/mid/hi = bornes de chiffrage publiées, en Md€ à plein régime. ramp = années pour atteindre le plein régime à partir de 2027. behav = assiette exposée à une réaction des contribuables (capital, profit) ou null.","measures":[{"id":"zucman","g":"rec+","inst":"imp","lo":5,"mid":8,"hi":20,"ramp":2,"behav":"capital","disp":true,"lab":"Impôt plancher de 2 % sur les patrimoines supérieurs à 100 M€","note":"Environ 1 800 foyers, un patrimoine agrégé de l'ordre de 1 000 Md€. Gabriel Zucman avance 15 à 25 Md€ ; l'administration et plusieurs économistes retiennent plutôt 5 Md€. L'écart ne porte pas sur le taux mais sur l'assiette retenue et sur la réaction des redevables. Rejetée par l'Assemblée nationale le 31 octobre 2025."},{"id":"isf","g":"rec+","inst":"imp","lo":2,"mid":4,"hi":6,"ramp":1,"behav":"capital","lab":"Rétablissement d'un impôt sur la fortune au-delà de l'IFI","note":"L'ISF rapportait environ 5 Md€ en 2017 ; l'IFI qui l'a remplacé en rapporte environ 2. L'écart donne l'ordre de grandeur du rétablissement."},{"id":"isfclim","g":"rec+","inst":"imp","lo":5,"mid":10,"hi":15,"ramp":2,"behav":"capital","disp":true,"lab":"ISF climatique (assiette élargie, barème progressif)","note":"Chiffré à 12 Md€ par les programmes de gauche. Combine un ISF renforcé et une modulation selon l'empreinte carbone des actifs, dont le rendement propre n'a jamais été mesuré."},{"id":"csgcap","g":"rec+","inst":"imp","lo":2,"mid":3,"hi":4,"ramp":1,"behav":"capital","lab":"CSG sur les revenus du capital : +2 points","note":"Assiette d'environ 150 Md€ de revenus du patrimoine et de placement."},{"id":"pfu","g":"rec+","inst":"imp","lo":2,"mid":4,"hi":6,"ramp":1,"behav":"capital","disp":true,"lab":"Fin du prélèvement forfaitaire unique : dividendes au barème progressif","note":"Rendement très sensible au comportement de distribution : la réforme de 2018 avait été suivie d'une forte hausse des dividendes versés. Une bonne part des 100 Md€ de dividendes va à des non-résidents ou à des sociétés mères, hors de portée du barème des particuliers."},{"id":"isgrandes","g":"rec+","inst":"imp","lo":4,"mid":8,"hi":12,"ramp":2,"behav":"profit","disp":true,"lab":"Surtaxe d'impôt sur les sociétés pour les grandes entreprises","note":"L'IS rapporte environ 60 Md€ sur 300 Md€ de bénéfices imposables. Les surtaxes votées en 2025 ont montré qu'un rendement affiché se réduit vite par optimisation du résultat imposable et localisation des charges."},{"id":"superp","g":"rec+","inst":"imp","lo":2,"mid":4,"hi":15,"ramp":1,"behav":"profit","disp":true,"lab":"Contribution sur les superprofits (énergie, transport, finance)","note":"Chiffrée jusqu'à 15 Md€ dans les programmes de gauche. Rendement structurellement volatil : il dépend du prix de l'énergie et des taux, donc il ne finance pas une dépense pérenne."},{"id":"rachats","g":"rec+","inst":"imp","lo":0.5,"mid":1,"hi":2,"ramp":1,"behav":"profit","lab":"Taxe sur les rachats d'actions","note":"La taxe instaurée en 2024 rapporte quelques centaines de millions. Élargie, elle reste d'un ordre de grandeur inférieur aux annonces qui l'accompagnent."},{"id":"minimum15","g":"rec+","inst":"imp","lo":1,"mid":1.5,"hi":3,"ramp":2,"lab":"Impôt minimum mondial de 15 % sur les multinationales","note":"Le pilier 2 de l'accord OCDE est déjà transposé. Son rendement français est estimé entre 1 et 3 Md€, très en deçà des attentes initiales."},{"id":"ttf","g":"rec+","inst":"imp","lo":1,"mid":3,"hi":6,"ramp":2,"behav":"profit","disp":true,"lab":"Taxe sur les transactions financières élargie","note":"Chiffrée à 20 Md€ dans certains programmes. La TTF française actuelle rapporte environ 2 Md€ ; l'élargissement aux produits dérivés déplace une partie de l'activité hors de France, ce que les chiffrages hauts ne prennent pas en compte."},{"id":"exit","g":"rec+","inst":"imp","lo":0.2,"mid":0.5,"hi":1,"ramp":2,"behav":"capital","lab":"Renforcement de l'exit tax","note":"Mesure défensive : son intérêt n'est pas son rendement propre mais la réduction de l'érosion d'assiette des autres impôts sur le capital."},{"id":"succ","g":"rec+","inst":"imp","lo":2,"mid":3,"hi":5,"ramp":2,"behav":"capital","lab":"Réforme des droits de succession sur les hauts patrimoines","note":"Les droits de mutation à titre gratuit rapportent environ 35 Md€ ; l'essentiel des transmissions est déjà exonéré, et les grandes transmissions d'entreprises le sont par le pacte Dutreil."},{"id":"tva1","g":"rec+","inst":"imp","lo":8,"mid":9,"hi":10,"ramp":1,"lab":"TVA : +1 point sur le taux normal (20 → 21 %)","note":"Un point de taux normal représente environ 9 Md€. C'est l'un des rares leviers de rendement immédiat et massif — et le plus régressif."},{"id":"cir","g":"rec+","inst":"imp","lo":2,"mid":3,"hi":7,"ramp":2,"lab":"Rabot du crédit d'impôt recherche","note":"Le CIR coûte environ 7,7 Md€ par an. Son efficacité sur la R&D privée fait l'objet d'évaluations contradictoires."},{"id":"alleg","g":"rec+","inst":"imp","lo":3,"mid":6,"hi":12,"ramp":2,"disp":true,"lab":"Réduction des allègements de cotisations sur les bas salaires","note":"Environ 75 Md€ d'allègements. Le rapport Bozio-Wasmer souligne que le rendement budgétaire se paie en partie en emplois détruits, donc en recettes perdues ailleurs."},{"id":"fraude","g":"rec+","inst":"imp","lo":1,"mid":3,"hi":15,"ramp":3,"disp":true,"lab":"Renforcement de la lutte contre la fraude fiscale et sociale","note":"Chiffré à 15 Md€ par le RN, jusqu'à 80 Md€ par LFI. L'écart fiscal estimé est effectivement de cet ordre, mais il mesure l'impôt manquant, pas l'impôt récupérable : les redressements notifiés dépassent 15 Md€ par an, les encaissements réels sont autour de 10, et l'essentiel serait recouvré même sans mesure nouvelle."},{"id":"irbaisse","g":"rec-","inst":"imp","lo":3,"mid":5,"hi":10,"ramp":1,"lab":"Baisse de l'impôt sur le revenu","note":"L'IR rapporte environ 95 Md€ et est acquitté par un peu moins de la moitié des foyers."},{"id":"tvaener","g":"rec-","inst":"imp","lo":6,"mid":10,"hi":14,"ramp":1,"lab":"TVA à 5,5 % sur l'électricité, le gaz et les carburants","note":"La fiscalité de l'énergie rapporte environ 40 Md€, la TVA sur l'énergie environ 12. Mesure portée par le RN comme par une partie de la gauche."},{"id":"prod","g":"rec-","inst":"imp","lo":3,"mid":5,"hi":8,"ramp":2,"lab":"Nouvelle baisse des impôts de production","note":"Après la CVAE, il reste principalement la CFE et la taxe foncière des entreprises."},{"id":"csgbaisse","g":"rec-","inst":"imp","lo":5,"mid":8,"hi":12,"ramp":1,"lab":"Baisse de la CSG ou des cotisations sur les revenus d'activité","note":"La CSG d'activité rapporte environ 105 Md€ : un point vaut à peu près 9 Md€."},{"id":"retr62","g":"dep+","inst":"dep","lo":8,"mid":13,"hi":18,"ramp":5,"lab":"Retour de l'âge légal à 62 ans","note":"Environ 3 Md€ dès la première année, la charge montant au fil des générations. Les retraites pèsent 390 Md€, soit près d'un quart de la dépense publique."},{"id":"retr60","g":"dep+","inst":"dep","lo":20,"mid":30,"hi":45,"ramp":6,"disp":true,"lab":"Retraite à 60 ans à taux plein","note":"Les chiffrages publiés vont de 20 à 45 Md€ à horizon 2035 selon la durée de cotisation exigée et l'hypothèse d'emploi des seniors. C'est la mesure la plus coûteuse du catalogue."},{"id":"indexation","g":"dep+","inst":"dep","lo":2,"mid":4,"hi":6,"ramp":3,"lab":"Indexation intégrale des retraites et prestations sur l'inflation","note":"Chaque point de sous-indexation des pensions représente environ 4 Md€ d'économie — et réciproquement."},{"id":"defense","g":"dep+","inst":"dep","lo":12,"mid":22,"hi":32,"ramp":5,"lab":"Effort de défense porté vers 3 % du PIB","note":"La mission Défense pèse environ 57 Md€ en 2026, soit un peu moins de 2 % du PIB."},{"id":"services","g":"dep+","inst":"dep","lo":2,"mid":4,"hi":8,"ramp":3,"lab":"Recrutements dans la santé, l'école et la justice","note":"Un poste coûte en moyenne 45 à 55 k€ par an, charges comprises : 50 000 postes représentent environ 2,5 Md€."},{"id":"ecolo","g":"dep+","inst":"dep","lo":5,"mid":10,"hi":30,"ramp":3,"lab":"Plan d'investissement écologique (rénovation, réseaux, ferroviaire)","note":"Le rapport Pisani-Ferry / Mahfouz chiffre le besoin d'investissement public additionnel autour de 25 à 30 Md€ par an."},{"id":"age","g":"dep+","inst":"dep","lo":3,"mid":5,"hi":9,"ramp":4,"lab":"Montée en charge de la branche autonomie (grand âge)","note":"La branche autonomie pèse environ 40 Md€ ; le nombre de personnes de plus de 85 ans double d'ici 2040."},{"id":"pointindice","g":"dep+","inst":"dep","lo":4,"mid":6,"hi":8,"ramp":2,"lab":"Revalorisation du point d'indice de la fonction publique (+3 %)","note":"Un point d'indice vaut environ 2 Md€ pour l'ensemble des trois fonctions publiques."},{"id":"smic","g":"dep+","inst":"dep","lo":2,"mid":4,"hi":7,"ramp":2,"lab":"Hausse du SMIC et des bas salaires du secteur public","note":"Effet budgétaire direct par la fonction publique et par le glissement des allègements de cotisations, qui se déclenchent en proportion du SMIC."},{"id":"effectifs","g":"dep-","inst":"dep","lo":3,"mid":4,"hi":6,"ramp":4,"lab":"Réduction de 5 % des effectifs de l'État et de ses opérateurs","note":"2,5 millions d'agents pour l'État et ses opérateurs. Une baisse de 5 % suppose de ne pas remplacer environ 125 000 départs."},{"id":"collectivites","g":"dep-","inst":"dep","lo":3,"mid":5,"hi":10,"ramp":2,"lab":"Baisse des concours financiers aux collectivités","note":"Les collectivités portent environ 290 Md€ de dépenses, dont l'essentiel de l'investissement public civil."},{"id":"chomage","g":"dep-","inst":"dep","lo":2,"mid":4,"hi":6,"ramp":2,"lab":"Nouvelle réforme de l'assurance chômage","note":"L'Unédic verse environ 32 Md€ d'allocations. Le rendement dépend de la conjoncture : il s'effondre en récession."},{"id":"niches","g":"dep-","inst":"dep","lo":5,"mid":10,"hi":25,"ramp":3,"disp":true,"lab":"Rabot des niches fiscales et des aides aux entreprises","note":"Selon le périmètre retenu, les aides publiques aux entreprises sont estimées entre 110 et 200 Md€. Le désaccord porte sur ce qui compte comme « aide » : les allègements de cotisations en représentent à eux seuls 75."},{"id":"blanche","g":"dep-","inst":"dep","lo":5,"mid":7,"hi":10,"ramp":1,"lab":"Année blanche : gel des barèmes et des prestations","note":"Économie immédiate et large, mais non reconductible indéfiniment : elle se rattrape en partie l'année suivante."},{"id":"age65","g":"dep-","inst":"dep","lo":5,"mid":9,"hi":14,"ramp":6,"lab":"Âge légal de départ porté à 65 ans","note":"Le rendement d'une réforme des retraites est lent : il croît avec chaque génération concernée."},{"id":"ondam","g":"dep-","inst":"dep","lo":3,"mid":5,"hi":9,"ramp":2,"lab":"Freinage de l'ONDAM (dépenses d'assurance maladie)","note":"L'ONDAM approche 270 Md€ : un ralentissement de 0,5 point de sa progression représente environ 1,4 Md€ par an."},{"id":"agences","g":"dep-","inst":"dep","lo":1,"mid":2,"hi":3,"ramp":3,"lab":"Suppression ou fusion d'agences et d'opérateurs de l'État","note":"Les rapports parlementaires convergent vers 2 à 3 Md€, à condition de supprimer les missions et pas seulement les structures."},{"id":"immigration","g":"dep-","inst":"dep","lo":1,"mid":3,"hi":10,"ramp":3,"disp":true,"lab":"Réduction des dépenses liées à l'immigration","note":"Chiffrée à 25 Md€ par le RN. Les postes identifiables sont d'un tout autre ordre : aide médicale d'État 1,3 Md€, hébergement d'urgence et demande d'asile environ 3 Md€, aide au retour quelques centaines de millions. Les chiffrages hauts agrègent des prestations de droit commun versées à des personnes en situation régulière, et ne déduisent pas les cotisations et impôts que ces mêmes personnes acquittent."},{"id":"ue","g":"dep-","inst":"dep","lo":0,"mid":2,"hi":8,"ramp":3,"disp":true,"lab":"Réduction de la contribution française au budget de l'Union européenne","note":"Chiffrée à 10 Md€ par le RN. La contribution brute est d'environ 27 Md€ pour environ 15 Md€ de retours. La réduire unilatéralement n'est pas possible : le cadre financier pluriannuel se décide à l'unanimité et la contribution est une ressource propre de l'Union."},{"id":"ame","g":"dep-","inst":"dep","lo":0.5,"mid":0.9,"hi":1.3,"ramp":1,"lab":"Suppression de l'aide médicale d'État","note":"1,3 Md€, soit 0,08 % de la dépense publique — l'équivalent de neuf jours de charge de la dette. Cette ligne figure ici précisément pour être comparée aux autres."},{"id":"institutions","g":"dep-","inst":"dep","lo":0.05,"mid":0.15,"hi":0.3,"ramp":2,"lab":"Réduction du train de vie des institutions et du nombre de parlementaires","note":"L'ensemble Élysée, Assemblée, Sénat et Conseil constitutionnel coûte 1,14 Md€, soit un euro pour mille euros de dépense publique. Même supprimé en totalité, ce poste ne changerait pas la trajectoire — c'est le principal enseignement de cette ligne."}]},"parties":{"_comment":"Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.","updated":"2026-09-01","avertissement":"Aucune candidature n'est officiellement déposée à ce stade. Les noms retenus sont les candidats pressentis par parti au vu des déclarations publiques et des sondages de 2026 ; ils changeront. Les programmes 2027 ne sont pour la plupart pas publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.","parties":[{"id":"rn","nom":"Rassemblement national","sigle":"RN","candidat":"Marine Le Pen","avatar":"f","couleur":"#1C3F63","statutCandidature":"Candidature annoncée ; Jordan Bardella cité comme alternative","statut":"partiel","annonce":{"titre":"125 Md€ d'économies","texte":"Marine Le Pen a annoncé une trajectoire de redressement des finances publiques reposant sur 125 Md€ d'économies. Environ 60 Md€ ont été rattachés publiquement à quatre postes : immigration, fraude fiscale et sociale, contribution au budget de l'Union européenne, organisation de l'État. Le solde, soit près de la moitié du total, n'a pas fait l'objet d'un détail public.","revendique":125,"detaille":65,"cote":"economie"},"set":{"immigration":{"sim":"hi","annonce":25},"fraude":{"sim":"mid","annonce":15},"ue":{"sim":"mid","annonce":10},"agences":{"sim":"hi","annonce":3},"effectifs":{"sim":"mid","annonce":6},"collectivites":{"sim":"lo","annonce":5},"ame":{"sim":"hi","annonce":1.3},"institutions":{"sim":"mid","annonce":0.3},"tvaener":{"sim":"mid","annonce":10},"retr62":{"sim":"mid","annonce":13}},"sources":[{"t":"Le RN et son équation budgétaire impossible — Le Temps","u":"https://www.letemps.ch/monde/france/le-rn-et-son-equation-budgetaire-impossible-quand-le-chiffrage-economique-releve-davantage-de-l-ideologie"},{"t":"Contre-budget du RN — Public Sénat","u":"https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale"},{"t":"Programme économique du RN — OFCE législatives 2024","u":"https://www.ofce-legislatives2024.fr/programmes/rn.html"}]},{"id":"lfi","nom":"La France insoumise","sigle":"LFI","candidat":"Jean-Luc Mélenchon","avatar":"h","couleur":"#C1272D","statutCandidature":"Candidature annoncée","statut":"partiel","annonce":{"titre":"≈ 90 Md€ de recettes nouvelles","texte":"Les chiffrages du programme de gauche retiennent environ 90 Md€ de recettes fiscales supplémentaires par an (fourchette de 60 à 120 Md€), portées par les 10 % de ménages les plus aisés et par les grandes entreprises : ISF climatique 12 Md€, contribution sur les superprofits 15 Md€, taxe sur les transactions financières 20 Md€, plus la lutte contre l'évasion fiscale, chiffrée à partir d'un écart estimé à 80 Md€ par an. Côté dépenses, la retraite à 60 ans et le plan d'investissement écologique sont les deux postes dominants.","revendique":90,"detaille":90,"cote":"recette"},"set":{"isfclim":{"sim":"mid","annonce":12},"superp":{"sim":"mid","annonce":15},"ttf":{"sim":"mid","annonce":20},"zucman":{"sim":"mid","annonce":20},"pfu":{"sim":"mid","annonce":6},"succ":{"sim":"mid","annonce":5},"isgrandes":{"sim":"mid","annonce":12},"minimum15":{"sim":"mid"},"fraude":{"sim":"mid"},"alleg":{"sim":"mid","annonce":12},"niches":{"sim":"mid","annonce":15},"retr60":{"sim":"mid","annonce":20},"smic":{"sim":"mid"},"services":{"sim":"hi"},"ecolo":{"sim":"mid","annonce":30},"age":{"sim":"mid"},"pointindice":{"sim":"mid"},"indexation":{"sim":"mid"}},"sources":[{"t":"Chiffrage des recettes fiscales du programme — La Grande Conversation","u":"https://www.lagrandeconversation.com/economie/chiffrage-des-recettes-fiscales-duprogramme-du-nouveau-front-populaire/"},{"t":"Les pistes de la gauche pour augmenter les recettes — Public Sénat","u":"https://www.publicsenat.fr/actualites/politique/programme-du-nouveau-front-populaire-les-pistes-de-la-gauche-pour-augmenter-les-recettes-fiscales-et-redistribuer-les-richesses"},{"t":"Taxe Zucman — Wikipédia (état du débat parlementaire)","u":"https://fr.wikipedia.org/wiki/Taxe_Zucman"}]},{"id":"lr","nom":"Les Républicains","sigle":"LR","candidat":"Bruno Retailleau","avatar":"h","couleur":"#2E6FB7","statutCandidature":"Président du parti, candidature pressentie","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Aucun chiffrage d'ensemble n'a été publié à ce jour. Le scénario ci-dessous est une reconstitution du simulateur à partir de positions publiques : priorité aux économies de dépense, allongement de la durée du travail, baisse des impôts de production. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"effectifs":{"sim":"hi"},"chomage":{"sim":"mid"},"age65":{"sim":"mid"},"niches":{"sim":"mid"},"collectivites":{"sim":"mid"},"ondam":{"sim":"mid"},"blanche":{"sim":"mid"},"immigration":{"sim":"lo"},"prod":{"sim":"mid"},"irbaisse":{"sim":"lo"},"defense":{"sim":"mid"}},"sources":[]},{"id":"ren","nom":"Renaissance","sigle":"REN","candidat":"Gabriel Attal","avatar":"h","couleur":"#D9A227","statutCandidature":"Candidature pressentie","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Reconstitution du simulateur à partir de positions publiques : maîtrise de la dépense sans hausse générale des prélèvements, poursuite de la baisse des impôts de production, effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"blanche":{"sim":"mid"},"ondam":{"sim":"mid"},"agences":{"sim":"mid"},"effectifs":{"sim":"mid"},"chomage":{"sim":"mid"},"niches":{"sim":"lo"},"defense":{"sim":"mid"},"prod":{"sim":"lo"}},"sources":[]},{"id":"hor","nom":"Horizons","sigle":"HOR","candidat":"Édouard Philippe","avatar":"h","couleur":"#4FB0C6","statutCandidature":"Candidature annoncée","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Reconstitution du simulateur à partir de positions publiques : allongement de la durée du travail, effort d'économies large et rapide, effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"age65":{"sim":"mid"},"blanche":{"sim":"hi"},"niches":{"sim":"mid"},"effectifs":{"sim":"mid"},"ondam":{"sim":"mid"},"collectivites":{"sim":"mid"},"defense":{"sim":"mid"},"agences":{"sim":"mid"}},"sources":[]},{"id":"ps","nom":"Parti socialiste / Place publique","sigle":"PS","candidat":"Raphaël Glucksmann","avatar":"h","couleur":"#E4557A","statutCandidature":"Candidature pressentie, primaire à gauche en cours","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Reconstitution du simulateur à partir de positions publiques : fiscalité du patrimoine renforcée sans rupture avec le cadre européen, retour partiel sur la réforme des retraites, investissement écologique et effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"isf":{"sim":"mid"},"zucman":{"sim":"lo"},"succ":{"sim":"mid"},"isgrandes":{"sim":"lo"},"niches":{"sim":"mid"},"indexation":{"sim":"mid"},"services":{"sim":"mid"},"ecolo":{"sim":"mid"},"defense":{"sim":"mid"},"retr62":{"sim":"lo"}},"sources":[]},{"id":"eco","nom":"Les Écologistes","sigle":"ÉCO","candidat":"Marine Tondelier","avatar":"f","couleur":"#4C9A54","statutCandidature":"Candidature pressentie, primaire à gauche en cours","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Reconstitution du simulateur à partir de positions publiques : investissement écologique de l'ordre du besoin identifié par le rapport Pisani-Ferry, financé par la fiscalité du patrimoine et le rabot des aides aux entreprises. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"ecolo":{"sim":"hi"},"isfclim":{"sim":"mid"},"superp":{"sim":"mid"},"cir":{"sim":"mid"},"niches":{"sim":"mid"},"succ":{"sim":"mid"},"age":{"sim":"mid"},"services":{"sim":"mid"}},"sources":[]}],"sourceOfficielle":{"nom":"Ministère de l'Intérieur — programmes officiels des candidats","url":"https://www.interieur.gouv.fr/archives/actualites/actualites-du-ministere/election-presidentielle-programme-des-candidats-est-disponible","statut":"attendue","note":"Le ministère de l'Intérieur publie, une fois les candidatures validées par le Conseil constitutionnel, la profession de foi et le programme officiel de chaque candidat. C'est la seule source de rang officiel pour un programme : dès sa mise en ligne, elle remplace ici toute reprise de presse, et les scénarios « reconstitution » sont rebâtis à partir d'elle. Non disponible à ce jour pour 2027."}},"announcements":{"_comment":"Base des annonces, une entrée par déclaration publique. Alimentée par le skill france-budget-watch. Champs : date (AAAA-MM-JJ ou AAAA-MM si le jour n'est pas établi), parti (id ou null), qui (la personne, ou null si l'auteur n'est pas identifié), fonction, media (où la déclaration a été faite), quoi, verbatim, mesure (id du catalogue ou null), montant (Md€ ou null), type (economie|recette|depense|contexte), source (URL obligatoire), verifie (la source a-t-elle été ouverte et lue intégralement), contredit (non|programme|annonce|inconnu), ecart (explication si contredit != non).","updated":"2026-09-01","items":[{"date":"2025-10-20","parti":"rn","qui":"Marine Le Pen","fonction":"Députée, Rassemblement national","media":"Déclaration publique avant le débat budgétaire","quoi":"Annonce d'une trajectoire de redressement des finances publiques reposant sur 125 Md€ d'économies.","verbatim":null,"mesure":null,"montant":125,"type":"economie","source":"https://www.letemps.ch/monde/france/le-rn-et-son-equation-budgetaire-impossible-quand-le-chiffrage-economique-releve-davantage-de-l-ideologie","verifie":false,"contredit":"inconnu","ecart":"Le détail rendu public ne couvre qu'environ la moitié du total annoncé : la cohérence de l'autre moitié avec un programme écrit ne peut pas être établie."},{"date":"2025-10-20","parti":"rn","qui":"Marine Le Pen","fonction":"Députée, Rassemblement national","media":"Déclaration publique","quoi":"Défense d'un retour de l'âge de départ à la retraite à 60 ou 62 ans.","verbatim":null,"mesure":"retr62","montant":13,"type":"depense","source":"https://www.epochtimes.fr/marine-le-pen-promet-125-milliards-deuros-deconomies-et-defend-une-retraite-a-60-ou-62-ans-3335415.html","verifie":false,"contredit":"annonce","ecart":"Annoncée le même jour que le plan de 125 Md€ d'économies, cette mesure en consomme une part importante sans que le plan soit relevé d'autant."},{"date":"2025-10-20","parti":"rn","qui":"Marine Le Pen","fonction":"Députée, Rassemblement national","media":"Déclaration publique","quoi":"Quatre postes d'économies identifiés : immigration 25 Md€, fraude fiscale et sociale 15 Md€, contribution au budget de l'Union européenne 10 Md€, organisation de l'État.","verbatim":null,"mesure":"immigration","montant":60,"type":"economie","source":"https://www.letemps.ch/monde/france/le-rn-et-son-equation-budgetaire-impossible-quand-le-chiffrage-economique-releve-davantage-de-l-ideologie","verifie":false,"contredit":"programme","ecart":"La contribution au budget de l'Union européenne ne peut pas être réduite unilatéralement : le cadre financier pluriannuel se décide à l'unanimité et la contribution est une ressource propre de l'Union."},{"date":"2026-08","parti":"lr","qui":"Bruno Retailleau","fonction":"Président des Républicains","media":"Premier débat des candidats, université d'été du MEDEF","quoi":"Annonce de 120 Md€ d'économies, obtenues exclusivement par la baisse de la dépense, sans hausse d'impôts.","verbatim":null,"mesure":null,"montant":120,"type":"economie","source":"https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle","verifie":false,"contredit":"inconnu","ecart":"Aucun détail poste par poste n'est public à ce jour : la cohérence avec un programme écrit ne peut pas être établie."},{"date":"2026-08","parti":"ps","qui":"Raphaël Glucksmann","fonction":"Député européen, Place publique","media":"Premier débat des candidats, université d'été du MEDEF","quoi":"Proposition de taxer le 1 % des successions les plus élevées, avec un objectif de 15 Md€ de recettes.","verbatim":null,"mesure":"succ","montant":15,"type":"recette","source":"https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle","verifie":false,"contredit":"inconnu","ecart":"Les droits de succession et de mutation rapportent aujourd'hui environ 35 Md€ au total. Obtenir 15 Md€ de plus sur 1 % des successions suppose un barème très fortement relevé sur ces transmissions."},{"date":"2026-08","parti":"ren","qui":"Gabriel Attal","fonction":"Renaissance","media":"Premier débat des candidats, université d'été du MEDEF","quoi":"Volonté de faire travailler les salariés plus longtemps et d'instaurer un pilier de capitalisation pour les retraites.","verbatim":null,"mesure":null,"montant":null,"type":"contexte","source":"https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle","verifie":false,"contredit":"non","ecart":"Annonce non chiffrée : elle ne peut pas être portée au simulateur en l'état."},{"date":"2026-08","parti":"hor","qui":"Édouard Philippe","fonction":"Horizons","media":"Premier débat des candidats, université d'été du MEDEF","quoi":"Volonté de faire travailler les salariés plus longtemps.","verbatim":null,"mesure":null,"montant":null,"type":"contexte","source":"https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle","verifie":false,"contredit":"non","ecart":"Annonce non chiffrée : elle ne peut pas être portée au simulateur en l'état."},{"date":"2026-08","parti":null,"qui":"Sébastien Lecornu","fonction":"Premier ministre","media":"Déclaration sur le projet de loi de finances pour 2027","quoi":"Annonce d'un budget 2027 de premier semestre, « réversible » après l'élection présidentielle, et confirmation qu'il n'est pas candidat.","verbatim":null,"mesure":null,"montant":null,"type":"contexte","source":"https://www.legifiscal.fr/actualites-fiscales/4620-budget-2027-sebastien-lecornu-esquisse-plf-2027-reversible","verifie":false,"contredit":"non","ecart":null},{"date":"2025-10-31","parti":null,"qui":null,"fonction":"Assemblée nationale","media":"Séance publique, examen du projet de loi de finances pour 2026","quoi":"Rejet de la taxe Zucman.","verbatim":null,"mesure":"zucman","montant":null,"type":"contexte","source":"https://www.legifiscal.fr/actualites-fiscales/4302-plf-2026-taxe-zucman-rejetee-assemblee-nationale.html","verifie":false,"contredit":"non","ecart":null},{"date":"2025-10-15","parti":null,"qui":null,"fonction":"Gouvernement","media":"Débat sur le budget 2026","quoi":"Opposition à la taxe Zucman, motivée par le risque de départ des contribuables concernés.","verbatim":null,"mesure":"zucman","montant":null,"type":"contexte","source":"https://www.franceinfo.fr/economie/budget/budget-2026-le-gouvernement-s-oppose-a-la-taxe-zucman-craignant-une-fuite-des-ultra-riches_7380325.html","verifie":false,"contredit":"non","ecart":null}]}}</script>
 <script>
 "use strict";
 const DATA = JSON.parse(document.getElementById('payload').textContent);
@@ -871,6 +1059,8 @@ function render(){
     ck.appendChild(n);
   });
 
+  renderBalances(scen, base);
+
   /* trajectoires */
   const [sLo, sHi] = niceBounds([...base.map(r=>r.soldePct), ...scen.map(r=>r.soldePct), -3], 1);
   lineChart($('#chSolde'), {
@@ -932,6 +1122,25 @@ function render(){
 }
 
 /* ---------- comparaison de tous les programmes ---------- */
+/** Remplit une pastille de candidat : photo si on en a une et qu'elle est créditée,
+ *  sinon le buste correspondant au champ `avatar`, sinon le monogramme. */
+function fillAvatar(host, o){
+  host.textContent = '';
+  if (o.photo){
+    const img = el('img');
+    img.src = o.photo; img.alt = ''; img.loading = 'lazy';
+    host.appendChild(img);
+    return;
+  }
+  if (o.avatar === 'h' || o.avatar === 'f'){
+    const svg = sv('svg', {viewBox: '0 0 48 48', 'aria-hidden': 'true', focusable: 'false'});
+    svg.appendChild(sv('use', {href: '#av-' + o.avatar}));
+    host.appendChild(svg);
+    return;
+  }
+  host.textContent = o.ref ? '—' : initials(o.nom);
+}
+
 const initials = n => {
   const w = String(n).split(/[\s-]+/).filter(x => /^\p{L}/u.test(x));
   if (!w.length) return '—';
@@ -945,12 +1154,12 @@ function renderCompare(base){
     const active = partySet(p);
     const scen = run(state.P, active);
     const S = scen[scen.length-1];
-    return {id:p.id, nom:p.candidat, sub:p.nom, couleur:p.couleur, photo:p.photo,
+    return {id:p.id, nom:p.candidat, sub:p.nom, couleur:p.couleur, photo:p.photo, avatar:p.avatar,
             statut:p.statut, vals:scen.map(r => r.soldePct),
             solde:S.soldePct, dette:S.dettePct, net:activeSplit(active).net};
   });
   rows.push({id:'tend', nom:"Si rien ne change", sub:"aucune mesure nouvelle", couleur:'var(--ink-3)',
-             photo:null, statut:null, vals:refVals, ref:true,
+             photo:null, avatar:null, statut:null, vals:refVals, ref:true,
              solde:base[base.length-1].soldePct, dette:base[base.length-1].dettePct, net:0});
   rows.sort((a,b) => b.solde - a.solde);
 
@@ -972,8 +1181,7 @@ function renderCompare(base){
 
     const who = el('div','cmp-who');
     const av = el('div','cmp-av');
-    if (r.photo){ const im = el('img'); im.src = r.photo; im.alt = ''; av.appendChild(im); }
-    else av.textContent = r.ref ? '—' : initials(r.nom);
+    fillAvatar(av, r);
     const tx = el('div');
     tx.appendChild(el('div','cmp-name', r.nom));
     tx.appendChild(el('div','cmp-sub', r.statut === 'reconstitution' ? 'reconstitution' : r.sub));
@@ -1152,18 +1360,12 @@ function partySet(p){
 }
 function buildCards(){
   const box = $('#cards');
-  const mk = (id, sig, who, party, claim, badge, color, photo) => {
+  const mk = (id, sig, who, party, claim, badge, color, photo, avatar) => {
     const b = el('button','card'); b.type = 'button'; b.dataset.id = id;
     b.style.setProperty('--pc', color);
     const top = el('div','card-top');
     const av = el('div','avatar');
-    if (photo){
-      const img = el('img');
-      img.src = photo; img.alt = ''; img.loading = 'lazy';
-      av.appendChild(img);
-    } else {
-      av.textContent = initials(who);
-    }
+    fillAvatar(av, {nom:who, photo, avatar});
     const txt = el('div');
     txt.appendChild(el('div','sig', sig));
     txt.appendChild(el('div','who', who));
@@ -1187,7 +1389,7 @@ function buildCards(){
   PARTIES.forEach(p => mk(p.id, p.sigle, p.candidat, p.nom,
     p.annonce.revendique != null ? p.annonce.titre : "Programme non chiffré",
     p.statut === 'reconstitution' ? ['rec','reconstitution'] : ['pub','chiffres publics'],
-    p.couleur, p.photo));
+    p.couleur, p.photo, p.avatar));
   $('#candWarn').textContent = DATA.parties.avertissement;
 }
 function syncCards(){
@@ -1313,6 +1515,125 @@ function syncErosion(){
     b.setAttribute('aria-pressed', String(parseFloat(b.dataset.v) === state.P.erosion)));
 }
 
+/* ---------- registre pédagogique ----------
+   Trois blocs repris de la grammaire des vidéos de vulgarisation de Bercy : le grand
+   chiffre plein cadre, la balance, et la pastille « sur 1 000 € ». Ils ne disent rien
+   que les tableaux ne disent déjà — ils le disent à une échelle qu'on lit d'un coup. */
+
+/** Icône du sprite, par son nom dans les données. Hérite de la couleur du texte. */
+function icon(name, cls){
+  const n = sv('svg', {class: cls || 'ic', 'aria-hidden': 'true', focusable: 'false'});
+  n.appendChild(sv('use', {href: '#ic-' + name}));
+  return n;
+}
+
+/** Les trois masses de départ. Fixes : c'est le cadre, pas le résultat d'un scénario. */
+function renderMasses(){
+  const host = $('#masses'); if (!host) return;
+  host.textContent = '';
+  const dep = BL.apu.depenses, rec = BL.apu.recettes, ecart = dep - rec;
+  [{k:'dep', ic:'piece', lab:'Dépenses publiques', v:dep,
+    sub:perHab(dep) + " par habitant et par an"},
+   {k:'rec', ic:'salaire', lab:'Recettes', v:rec,
+    sub:nf(rec / dep * 100) + " % des dépenses couvertes"},
+   {k:'ecart', ic:'dette', lab:'Ce qui manque chaque année', v:ecart,
+    sub:pc(ecart / BL.apu.pib * 100) + " du PIB, emprunté"}
+  ].forEach(t => {
+    const n = el('div', 'mass ' + t.k);
+    const lab = el('div', 'lab');
+    lab.appendChild(icon(t.ic));
+    lab.appendChild(el('span', null, t.lab));
+    n.appendChild(lab);
+    n.appendChild(el('div', 'val', nf(t.v)));
+    n.appendChild(el('div', 'unit', 'milliards d’euros · ' + t.sub));
+    host.appendChild(n);
+  });
+}
+
+/** Une balance dont l'inclinaison suit l'écart réel entre dépenses et recettes. */
+function balance(host, o){
+  const card = el('div', 'bal');
+  card.appendChild(el('div', 'when', o.when));
+  card.appendChild(el('h4', null, o.titre));
+  const svg = sv('svg', {viewBox: '0 0 300 126', role: 'img',
+    'aria-label': `${o.titre} : ${md(o.dep)} de dépenses contre ${md(o.rec)} de recettes.`});
+
+  const CX = 150, CY = 44, L = 104;
+  // 14° au maximum : au-delà, les plateaux se croisent et la lecture se perd.
+  const t = Math.max(-14, Math.min(14, (o.dep - o.rec) / Math.max(o.dep, o.rec) * 70)) * Math.PI / 180;
+  const dx = L * Math.cos(t), dy = L * Math.sin(t);
+  const pans = [{x: CX - dx, y: CY + dy, v: o.dep, lab: 'Dépenses', c: 'var(--dep)'},
+                {x: CX + dx, y: CY - dy, v: o.rec, lab: 'Recettes', c: 'var(--rec)'}];
+
+  svg.appendChild(sv('path', {d: `M136 92 L${CX} 48 L164 92 Z`,
+    fill: 'var(--ink-2)', stroke: 'none'}));
+  svg.appendChild(sv('rect', {x: 116, y: 92, width: 68, height: 6, rx: 3,
+    fill: 'var(--coin)', stroke: 'none'}));
+  svg.appendChild(sv('line', {x1: pans[0].x, y1: pans[0].y, x2: pans[1].x, y2: pans[1].y,
+    stroke: 'var(--ink-2)', 'stroke-width': 5, 'stroke-linecap': 'round'}));
+  svg.appendChild(sv('circle', {cx: CX, cy: CY, r: 5,
+    fill: 'var(--surface)', stroke: 'var(--ink-2)', 'stroke-width': 3}));
+
+  pans.forEach(pan => {
+    svg.appendChild(sv('line', {x1: pan.x, y1: pan.y, x2: pan.x, y2: pan.y + 12,
+      stroke: 'var(--ink-2)', 'stroke-width': 2}));
+    svg.appendChild(sv('path', {
+      d: `M${pan.x - 38} ${pan.y + 12} a38 22 0 0 0 76 0 z`,
+      fill: pan.c, stroke: 'none'}));
+    const v = sv('text', {x: pan.x, y: pan.y + 30, 'text-anchor': 'middle',
+      fill: '#fff', 'font-size': 14, 'font-weight': 700});
+    v.textContent = nf(pan.v);
+    svg.appendChild(v);
+    const lab = sv('text', {x: pan.x, y: pan.y + 50, 'text-anchor': 'middle',
+      fill: pan.c, 'font-size': 11, 'font-weight': 600, 'letter-spacing': '.08em'});
+    lab.textContent = pan.lab.toUpperCase();
+    svg.appendChild(lab);
+  });
+  card.appendChild(svg);
+  card.appendChild(el('div', 'note')).innerHTML = o.note;
+  host.appendChild(card);
+}
+
+/** Aujourd'hui, puis le même écart en 2032 avec le programme chargé. */
+function renderBalances(scen, base){
+  const host = $('#balances'); if (!host) return;
+  host.textContent = '';
+  const now = scen[0], end = scen[scen.length - 1], ref = base[base.length - 1];
+  const p = PARTIES.find(x => x.id === state.party);
+
+  balance(host, {
+    when: 'Aujourd’hui', titre: 'Le point de départ', dep: now.dep, rec: now.rec,
+    note: `Il manque <b>${md(now.dep - now.rec)}</b> par an, soit `
+      + `<b>${pc(-now.soldePct)}</b> du PIB. L’écart s’ajoute à la dette.`});
+
+  const manque = -end.solde, delta = end.solde - ref.solde;
+  balance(host, {
+    when: '2032', titre: p ? p.nom : 'Sans mesure nouvelle', dep: end.dep, rec: end.rec,
+    note: `Il manquerait <b>${md(manque)}</b>, soit <b>${pc(-end.soldePct)}</b> du PIB — `
+      + (p ? manqueDelta(delta).replace(/^i/, 'I') + '.'
+           : 'ce que produit l’inaction.')});
+}
+
+/** La bande des pastilles : les gros postes ramenés à 1 000 €, le reste agrégé. */
+function renderStrip(){
+  const host = $('#strip1000'); if (!host) return;
+  host.textContent = '';
+  const tot = BL.apu.depenses;
+  const dep = [...BL.depenses].sort((a, b) => b.v - a.v);
+  const tete = dep.slice(0, 6), reste = dep.slice(6);
+  tete.forEach(d => {
+    const cell = el('div', 'cell');
+    cell.appendChild(el('div', 'pastille', nf(d.v / tot * 1000) + ' €'));
+    cell.appendChild(icon(d.icone));
+    cell.appendChild(el('div', 'who', d.nom));
+    host.appendChild(cell);
+  });
+  const somme = reste.reduce((s, d) => s + d.v, 0);
+  host.appendChild(el('div', 'rest',
+    `… et ${nf(somme / tot * 1000)} € pour le reste : `
+    + reste.map(d => d.nom).join(' · ') + '.'));
+}
+
 /* ---------- compositions & repères ---------- */
 function barRows(host, rows, max, strong, header){
   host.textContent = '';
@@ -1323,8 +1644,11 @@ function barRows(host, rows, max, strong, header){
   }
   rows.forEach(r => {
     const n = el('div','compo-row' + (header ? ' four' : ''));
-    const nm = el('div','n', r.nom);
-    if (r.sub){ const s = el('div','sub-list', r.sub); nm.appendChild(s); }
+    const nm = el('div','n');
+    if (r.icone) nm.appendChild(icon(r.icone));
+    const txt = el('div','txt', r.nom);
+    if (r.sub){ txt.appendChild(el('div','sub-list', r.sub)); }
+    nm.appendChild(txt);
     n.appendChild(nm);
     const track = el('div','compo-track');
     const bar = el('div','compo-bar');
@@ -1340,7 +1664,7 @@ function buildCompo(){
   const totDep = BL.apu.depenses;
   const dep = [...BL.depenses].sort((a,b) => b.v - a.v);
   barRows($('#compoDep'), dep.map(d => ({
-    nom:d.nom, v:d.v, sub:d.note, per:nf(d.v / totDep * 1000) + ' €'
+    nom:d.nom, v:d.v, sub:d.note, icone:d.icone, per:nf(d.v / totDep * 1000) + ' €'
   })), dep[0].v, r => r.nom === "Charge de la dette", ['Md€', 'sur 1 000 €']);
 
   const agg = {};
@@ -1349,7 +1673,7 @@ function buildCompo(){
     nom: BL.payeurs[k].nom,
     v: agg[k].reduce((s,x) => s + x.v, 0),
     sub: agg[k].sort((a,b) => b.v - a.v).map(x => `${x.nom} ${nf(x.v)}`).join(' · '),
-    key: k
+    icone: BL.payeurs[k].icone, key: k
   })).sort((a,b) => b.v - a.v);
   const tot = pay.reduce((s,x) => s + x.v, 0);
   barRows($('#compoPay'), pay.map(p => ({...p, per:nf(p.v / tot * 100) + ' €'})),
@@ -1357,10 +1681,13 @@ function buildCompo(){
 
   const rp = [...BL.reperes].sort((a,b) => b.v - a.v);
   barRows($('#reperes'), rp.map(r => ({
-    nom: r.nom, v: r.v, sub: r.note,
+    nom: r.nom, v: r.v, sub: r.note, icone: r.icone,
     txt: nf(r.v, r.v < 10 ? 2 : 0),
     per: nf(r.v / totDep * 1000, r.v < 10 ? 2 : 0) + ' €'
   })), rp[0].v, r => r.v < 5, ['Md€', 'sur 1 000 €']);
+
+  renderMasses();
+  renderStrip();
 }
 
 /* ---------- veille : base des annonces ---------- */

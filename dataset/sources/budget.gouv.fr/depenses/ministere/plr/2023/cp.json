@@ -1,0 +1,297 @@
+[
+ {
+  "name": "Transition écologique et cohésion des territoires",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 2.105255846
+   },
+   {
+    "groupe": 43,
+    "value": 36.6599583548
+   },
+   {
+    "groupe": 45,
+    "value": 0.646288
+   },
+   {
+    "groupe": 46,
+    "value": 0.352159
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62802
+  },
+  "on_click": true
+ },
+ {
+  "name": "Services du Premier ministre",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.14264694354
+   },
+   {
+    "groupe": 43,
+    "value": 9.14077516709
+   },
+   {
+    "groupe": 46,
+    "value": 0.031
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62799
+  },
+  "on_click": true
+ },
+ {
+  "name": "Europe et affaires étrangères",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.28881095758
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62778
+  },
+  "on_click": true
+ },
+ {
+  "name": "Intérieur et outre-mer",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 33.10380713314999
+   },
+   {
+    "groupe": 45,
+    "value": 0.39216544302999995
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62793
+  },
+  "on_click": true
+ },
+ {
+  "name": "Agriculture et souveraineté alimentaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.667862822230001
+   },
+   {
+    "groupe": 45,
+    "value": 0.14175369338000002
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62784
+  },
+  "on_click": true
+ },
+ {
+  "name": "Économie, finances et souveraineté industrielle et numérique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 237.06283327170001
+   },
+   {
+    "groupe": 45,
+    "value": 81.02726808612002
+   },
+   {
+    "groupe": 46,
+    "value": 136.37603769
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62790
+  },
+  "on_click": true
+ },
+ {
+  "name": "Armées",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 56.828635898170006
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62835
+  },
+  "on_click": true
+ },
+ {
+  "name": "Culture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.5913452927
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62781
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transition énergétique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 27.235594381
+   },
+   {
+    "groupe": 45,
+    "value": 0.367219281
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62820
+  },
+  "on_click": true
+ },
+ {
+  "name": "Éducation nationale et  jeunesse",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 81.27572501330997
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62787
+  },
+  "on_click": true
+ },
+ {
+  "name": "Justice",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 11.311928183589998
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62796
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement supérieur et recherche",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 25.769313480330005
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62814
+  },
+  "on_click": true
+ },
+ {
+  "name": "Santé et prévention",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.6096281765
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62808
+  },
+  "on_click": true
+ },
+ {
+  "name": "Solidarités, autonomie et personnes handicapées",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 29.92153512746
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62832
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sports et jeux olympiques et paralympiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.923133858
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62817
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transformation et fonction publiques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.5562456234900001
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62829
+  },
+  "on_click": true
+ },
+ {
+  "name": "Travail, plein emploi et insertion",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 20.940108312820005
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 62811
+  },
+  "on_click": true
+ }
+]

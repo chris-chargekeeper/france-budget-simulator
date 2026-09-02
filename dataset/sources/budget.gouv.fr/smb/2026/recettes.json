@@ -1,0 +1,68 @@
+{
+ "url": "https://www.budget.gouv.fr/budget-etat/smb",
+ "methode": "POST",
+ "parametres": {
+  "annee": 2026,
+  "type_budget": "recettes",
+  "mois": "decembre"
+ },
+ "recupere": "2026-09-02",
+ "graphes": [
+  {
+   "uuid": "5c7c1d20-130e-4ae4-a40b-fad81882120e",
+   "type": "areachart",
+   "unit": "milliards d'€",
+   "url": null,
+   "data": "[{\"name\":\"2026-01-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"\\u00c9cart 2026-2025\",\"value\":12}]},{\"name\":\"2026-02-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"\\u00c9cart 2026-2025\",\"value\":7.2}]},{\"name\":\"2026-03-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"\\u00c9cart 2026-2025\",\"value\":9.2}]},{\"name\":\"2026-04-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"\\u00c9cart 2026-2025\",\"value\":8.4}]},{\"name\":\"2026-05-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"\\u00c9cart 2026-2025\",\"value\":8.5}]},{\"name\":\"2026-06-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"\\u00c9cart 2026-2025\",\"value\":5.2}]},{\"name\":\"2026-07-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"\\u00c9cart 2026-2025\",\"value\":6.6}]},{\"name\":\"2026-08-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"\\u00c9cart 2026-2025\",\"value\":null}]},{\"name\":\"2026-09-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"\\u00c9cart 2026-2025\",\"value\":null}]},{\"name\":\"2026-10-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"\\u00c9cart 2026-2025\",\"value\":null}]},{\"name\":\"2026-11-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"\\u00c9cart 2026-2025\",\"value\":null}]},{\"name\":\"2026-12-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"\\u00c9cart 2026-2025\",\"value\":null}]}]"
+  },
+  {
+   "uuid": "5892660b-ccb7-4949-8a54-afc67b2848bb",
+   "type": "areachart",
+   "unit": "milliards d'€",
+   "url": null,
+   "data": "[{\"name\":\"2026-01-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":24.3},{\"groupe\":\"2026\",\"value\":36.3}]},{\"name\":\"2026-02-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":45.2},{\"groupe\":\"2026\",\"value\":52.5}]},{\"name\":\"2026-03-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":77.6},{\"groupe\":\"2026\",\"value\":86.8}]},{\"name\":\"2026-04-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":105.6},{\"groupe\":\"2026\",\"value\":114.1}]},{\"name\":\"2026-05-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":141},{\"groupe\":\"2026\",\"value\":149.5}]},{\"name\":\"2026-06-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":182.5},{\"groupe\":\"2026\",\"value\":187.7}]},{\"name\":\"2026-07-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":198.2},{\"groupe\":\"2026\",\"value\":204.7}]},{\"name\":\"2026-08-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":221.7},{\"groupe\":\"2026\",\"value\":null}]},{\"name\":\"2026-09-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":264.3},{\"groupe\":\"2026\",\"value\":null}]},{\"name\":\"2026-10-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":299.2},{\"groupe\":\"2026\",\"value\":null}]},{\"name\":\"2026-11-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":331.8},{\"groupe\":\"2026\",\"value\":null}]},{\"name\":\"2026-12-01T01:00:00+01:00\",\"values\":[{\"groupe\":\"2025\",\"value\":387.7},{\"groupe\":\"2026\",\"value\":null}]}]"
+  },
+  {
+   "uuid": "a9fe4700-b29d-427f-a1df-c343784be5d9",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"Juillet 2026\",\"children\":[],\"color\":\"#003c57\",\"value\":204.7,\"additional_text\":\"+3%\"}"
+  },
+  {
+   "uuid": "97633bd8-d65a-4c14-ae28-bddc8776eeb8",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"Juillet 2025\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#003c57\",\"color_text\":\"#545c6b\",\"value\":198.2}"
+  },
+  {
+   "uuid": "ceaf0f98-ac11-4ae9-9b63-b8afda6d4dfc",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"Juillet 2026\",\"children\":[],\"color\":\"#003c57\",\"value\":18.3,\"additional_text\":\"+13%\"}"
+  },
+  {
+   "uuid": "13f629cf-2a7b-437a-8d06-4348e3766dc3",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"Juillet 2025\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#003c57\",\"color_text\":\"#545c6b\",\"value\":16.2}"
+  },
+  {
+   "uuid": "c6a814ac-7c1f-4b49-81ef-8ad9019c3a34",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"Juillet 2026\",\"children\":[],\"color\":\"#003c57\",\"value\":182.9,\"additional_text\":\"+3%\"}"
+  },
+  {
+   "uuid": "759c57d6-d4c9-458a-b8d1-7693fa058b31",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"Juillet 2025\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#003c57\",\"color_text\":\"#545c6b\",\"value\":176.9}"
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "url": "https://www.budget.gouv.fr/budget-etat/smb",
+ "methode": "POST",
+ "parametres": {
+  "annee": 2022,
+  "type_budget": "solde",
+  "mois": "decembre"
+ },
+ "recupere": "2026-09-02",
+ "graphes": [
+  {
+   "uuid": "e8850ff7-c926-49e3-8cbb-f16cd158f63f",
+   "type": "areachart",
+   "unit": "milliards d'€",
+   "url": null,
+   "data": "[{\"date\":\"2022-01-01T01:00:00+01:00\",\"2021\":-21.9,\"2022\":-15.9},{\"date\":\"2022-02-01T01:00:00+01:00\",\"2021\":-47.5,\"2022\":-37.6},{\"date\":\"2022-03-01T01:00:00+01:00\",\"2021\":-60.1,\"2022\":-38.3},{\"date\":\"2022-04-01T01:00:00+01:00\",\"2021\":-91.4,\"2022\":-67.3},{\"date\":\"2022-05-01T01:00:00+01:00\",\"2021\":-118.8,\"2022\":-82.3},{\"date\":\"2022-06-01T01:00:00+01:00\",\"2021\":-131.3,\"2022\":-76.1},{\"date\":\"2022-07-01T01:00:00+01:00\",\"2021\":-166.6,\"2022\":-131.2},{\"date\":\"2022-08-01T01:00:00+01:00\",\"2021\":-178,\"2022\":-149.9},{\"date\":\"2022-09-01T01:00:00+01:00\",\"2021\":-175.1,\"2022\":-146.6},{\"date\":\"2022-10-01T01:00:00+01:00\",\"2021\":-171.6,\"2022\":-143.2},{\"date\":\"2022-11-01T01:00:00+01:00\",\"2021\":-181,\"2022\":-159.3},{\"date\":\"2022-12-01T01:00:00+01:00\",\"2021\":-169.1,\"2022\":-151.5}]"
+  },
+  {
+   "uuid": "ffd75326-ebd0-4fc8-b21d-e7237e57f01a",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2022\",\"children\":[],\"color\":\"#c62253\",\"value\":-151.5,\"additional_text\":\"-10%\"}"
+  },
+  {
+   "uuid": "a7c14934-e31c-4356-b0d3-7331803ce4ae",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2021\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#c62253\",\"color_text\":\"#545c6b\",\"value\":-169.1}"
+  },
+  {
+   "uuid": "28fa3b2f-4d2d-4268-a0e7-697d9bd20f9c",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2022\",\"children\":[],\"color\":\"#c62253\",\"value\":6.7,\"additional_text\":\"+178%\"}"
+  },
+  {
+   "uuid": "37e45272-dcf4-43a4-b59f-498b9d5004e2",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2021\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#c62253\",\"color_text\":\"#545c6b\",\"value\":2.4}"
+  },
+  {
+   "uuid": "dc00864e-c785-4fd6-bee1-eaa7b8acfa22",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2022\",\"children\":[],\"color\":\"#c62253\",\"value\":-158.2,\"additional_text\":\"-8%\"}"
+  },
+  {
+   "uuid": "7891b1cf-0fb2-4e00-8ba4-d3312a27a4cd",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2021\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#c62253\",\"color_text\":\"#545c6b\",\"value\":-171.5}"
+  }
+ ]
+}

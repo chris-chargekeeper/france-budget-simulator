@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Fonds de solidarité pour les entreprises à la suite de la crise sanitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 5.6
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 27331
+  },
+  "on_click": true
+ },
+ {
+  "name": "Matériels sanitaires pour faire face à la crise de la covid-19",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.43
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 34921
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,17 @@
+[
+ {
+  "name": "Matériels sanitaires pour faire face à la crise de la covid-19",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.2
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 50281
+  },
+  "on_click": true
+ }
+]

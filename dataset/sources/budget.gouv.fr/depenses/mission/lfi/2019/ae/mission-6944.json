@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Rénovation des cités administratives et autres sites domaniaux multi-occupants",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.9
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7009
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds pour la transformation de l'action publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.245
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7010
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds d'accompagnement interministériel Ressources humaines",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.05
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 7011
+  },
+  "on_click": true
+ },
+ {
+  "name": null,
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0072
+   }
+  ],
+  "category": {
+   "type": null,
+   "type_name": null,
+   "id": ""
+  },
+  "on_click": true
+ }
+]

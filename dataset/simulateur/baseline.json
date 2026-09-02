@@ -1,0 +1,503 @@
+{
+  "_comment": "Cadrage des administrations publiques. Ordres de grandeur arrondis, en Md€ courants. Millesime 2025.",
+  "vintage": 2025,
+  "updated": "2026-09-01",
+  "apu": {
+    "pib": 2950,
+    "depenses": 1690,
+    "recettes": 1530,
+    "dette": 3420,
+    "charge": 59,
+    "tauxApparent": 1.85,
+    "partRefinancee": 0.11,
+    "population": 68.5,
+    "menages": 31.5
+  },
+  "depenses": [
+    {
+      "nom": "Retraites",
+      "v": 390,
+      "note": "Tous régimes. Premier poste de la dépense publique, loin devant tout le reste.",
+      "icone": "retraite"
+    },
+    {
+      "nom": "Santé et hôpital",
+      "v": 300,
+      "note": "ONDAM et dépenses hospitalières.",
+      "icone": "sante"
+    },
+    {
+      "nom": "Services publics locaux et généraux",
+      "v": 215,
+      "note": "Communes, départements, régions : voirie, écoles, action sociale, administration.",
+      "icone": "mairie"
+    },
+    {
+      "nom": "Autres prestations sociales",
+      "v": 185,
+      "note": "Famille, chômage, logement, minima sociaux, autonomie.",
+      "icone": "famille"
+    },
+    {
+      "nom": "Éducation et recherche",
+      "v": 130,
+      "note": "Premier budget de l'État au sens strict.",
+      "icone": "ecole"
+    },
+    {
+      "nom": "Transports, logement, écologie",
+      "v": 125,
+      "note": "Infrastructures, aides au logement, transition énergétique.",
+      "icone": "transport"
+    },
+    {
+      "nom": "Économie, agriculture, entreprises",
+      "v": 110,
+      "note": "Aides aux entreprises, agriculture, emploi.",
+      "icone": "entreprise"
+    },
+    {
+      "nom": "Défense, sécurité, justice",
+      "v": 110,
+      "note": "Dont environ 57 Md€ pour la mission Défense en 2026. Au sens des fonctions COFOG, la défense seule pèse 51,6 Md€ en 2024.",
+      "icone": "defense"
+    },
+    {
+      "nom": "Culture, sport, divers",
+      "v": 66,
+      "note": "Dont l'audiovisuel public, environ 4 Md€.",
+      "icone": "culture"
+    },
+    {
+      "nom": "Charge de la dette",
+      "v": 59,
+      "note": "Intérêts versés aux créanciers. Le poste qui progresse le plus vite.",
+      "icone": "dette"
+    }
+  ],
+  "recettes": [
+    {
+      "nom": "Cotisations sociales employeurs",
+      "v": 250,
+      "payeur": "entreprises"
+    },
+    {
+      "nom": "Cotisations sociales salariés et indépendants",
+      "v": 205,
+      "payeur": "travail"
+    },
+    {
+      "nom": "TVA",
+      "v": 210,
+      "payeur": "consommation"
+    },
+    {
+      "nom": "Recettes non fiscales (ventes, domaine, transferts)",
+      "v": 210,
+      "payeur": "autres"
+    },
+    {
+      "nom": "Autres impôts sur la production",
+      "v": 150,
+      "payeur": "entreprises"
+    },
+    {
+      "nom": "CSG-CRDS sur les revenus d'activité",
+      "v": 105,
+      "payeur": "travail"
+    },
+    {
+      "nom": "Impôt sur le revenu",
+      "v": 95,
+      "payeur": "travail"
+    },
+    {
+      "nom": "Impôts fonciers et locaux",
+      "v": 80,
+      "payeur": "patrimoine"
+    },
+    {
+      "nom": "Impôt sur les sociétés",
+      "v": 60,
+      "payeur": "entreprises"
+    },
+    {
+      "nom": "CSG sur le capital et les revenus de remplacement",
+      "v": 50,
+      "payeur": "patrimoine"
+    },
+    {
+      "nom": "Fiscalité de l'énergie (TICPE, accises)",
+      "v": 40,
+      "payeur": "consommation"
+    },
+    {
+      "nom": "Prélèvements sur les revenus du capital (PFU, prélèvements sociaux)",
+      "v": 38,
+      "payeur": "patrimoine"
+    },
+    {
+      "nom": "Droits de succession et de mutation",
+      "v": 35,
+      "payeur": "patrimoine"
+    },
+    {
+      "nom": "IFI et impôts sur la fortune",
+      "v": 2,
+      "payeur": "patrimoine"
+    }
+  ],
+  "payeurs": {
+    "entreprises": {
+      "nom": "Entreprises",
+      "note": "Cotisations employeurs, impôts de production, impôt sur les sociétés.",
+      "icone": "entreprise"
+    },
+    "travail": {
+      "nom": "Revenus du travail",
+      "note": "Cotisations salariales, CSG d'activité, impôt sur le revenu.",
+      "icone": "salaire"
+    },
+    "consommation": {
+      "nom": "Consommation",
+      "note": "TVA et accises. Prélèvement proportionnel à la dépense, non au revenu.",
+      "icone": "panier"
+    },
+    "patrimoine": {
+      "nom": "Patrimoine et capital",
+      "note": "Foncier, revenus du capital, successions, IFI.",
+      "icone": "maison"
+    },
+    "autres": {
+      "nom": "Recettes non fiscales",
+      "note": "Ventes de services publics, revenus du domaine, transferts.",
+      "icone": "piece"
+    }
+  },
+  "reperes": [
+    {
+      "nom": "Institutions de la République (Élysée, Assemblée, Sénat, Conseil constitutionnel)",
+      "v": 1.14,
+      "note": "Mission « Pouvoirs publics » du budget de l'État. Soit environ un euro pour mille euros de dépense publique.",
+      "icone": "mairie"
+    },
+    {
+      "nom": "Aide médicale d'État",
+      "v": 1.3,
+      "note": "Soins des étrangers en situation irrégulière. Régulièrement citée comme un gisement d'économies.",
+      "icone": "sante"
+    },
+    {
+      "nom": "Audiovisuel public",
+      "v": 4.0,
+      "note": "France Télévisions, Radio France, Arte, INA.",
+      "icone": "culture"
+    },
+    {
+      "nom": "Contribution nette au budget de l'Union européenne",
+      "v": 12.0,
+      "note": "Contribution brute d'environ 27 Md€, retours d'environ 15 Md€ (PAC, fonds régionaux).",
+      "icone": "europe"
+    },
+    {
+      "nom": "Aide publique au développement",
+      "v": 15.0,
+      "note": "Aide bilatérale et multilatérale.",
+      "icone": "monde"
+    },
+    {
+      "nom": "Rémunération des 5,7 millions d'agents publics",
+      "v": 340.0,
+      "note": "Trois fonctions publiques réunies. C'est ici, et non dans le train de vie des institutions, que se trouve la masse.",
+      "icone": "agent"
+    },
+    {
+      "nom": "Charge de la dette",
+      "v": 59.0,
+      "note": "Déjà supérieure au budget de la Défense. Elle double d'ici 2032 au fil du refinancement.",
+      "icone": "dette"
+    }
+  ],
+  "assiettes": [
+    {
+      "nom": "Patrimoine des foyers de plus de 100 M€",
+      "v": 1000,
+      "note": "Environ 1 800 foyers. C'est l'assiette de la « taxe Zucman » : un prélèvement de 2 % porte sur ce stock, pas sur un flux de revenu."
+    },
+    {
+      "nom": "Bénéfices imposables des sociétés",
+      "v": 300,
+      "note": "Assiette de l'impôt sur les sociétés, qui rapporte environ 60 Md€ à un taux de 25 %."
+    },
+    {
+      "nom": "Dividendes versés par les sociétés françaises",
+      "v": 100,
+      "note": "Dont une large part à des non-résidents et à des sociétés mères, hors de portée du barème des particuliers."
+    },
+    {
+      "nom": "Allègements de cotisations sur les bas salaires",
+      "v": 75,
+      "note": "Le plus gros dispositif d'aide aux entreprises, et le premier visé par les rabots."
+    },
+    {
+      "nom": "Écart fiscal estimé (fraude)",
+      "v": 80,
+      "note": "Estimation de l'écart entre l'impôt dû et l'impôt perçu. Les montants effectivement recouvrés sont d'un ordre de grandeur inférieur."
+    }
+  ],
+  "sources": [
+    {
+      "nom": "INSEE — Comptes des administrations publiques",
+      "url": "https://www.insee.fr/fr/statistiques/2381416"
+    },
+    {
+      "nom": "Projet de loi de finances pour 2026 — Évaluation des voies et moyens",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/PRJLANR5L17B1906.html"
+    },
+    {
+      "nom": "Sénat — Rapport général sur le PLF 2026",
+      "url": "https://www.senat.fr/rap/l25-139-1/l25-139-19.html"
+    },
+    {
+      "nom": "DGFiP Statistiques — recettes fiscales",
+      "url": "https://www.impots.gouv.fr/sites/default/files/media/9_statistiques/0_etudes_et_stats/0_publications/dgfip_statistiques/2026/num43_03/dgfip_stat43_budget_2025.pdf"
+    },
+    {
+      "nom": "Observatoire de l'éthique publique — budget du Parlement",
+      "url": "https://www.observatoireethiquepublique.com/nos-propositions/dans-la-presse/2024/faut-il-sindigner-de-la-hausse-du-budget-du-parlement-francais.html"
+    }
+  ],
+  "sourcesOfficielles": [
+    {
+      "nom": "Budget de l'État — portail officiel",
+      "url": "https://www.budget.gouv.fr/budget-etat",
+      "quoi": "Dépenses et recettes de l'État, présentation officielle"
+    },
+    {
+      "nom": "Budget de l'État par ministère",
+      "url": "https://www.budget.gouv.fr/budget-etat/ministere",
+      "quoi": "Ventilation des crédits ministère par ministère"
+    },
+    {
+      "nom": "Budget de l'État — données ouvertes",
+      "url": "https://www.budget.gouv.fr/budget-etat/smb",
+      "quoi": "Séries détaillées réutilisables"
+    },
+    {
+      "nom": "Le budget de la France à la loupe — ministère de l'Économie",
+      "url": "https://www.economie.gouv.fr/a-la-loupe-le-budget-de-la-france",
+      "quoi": "Agrégats et répartitions, présentation pédagogique"
+    },
+    {
+      "nom": "INSEE — comptes des administrations publiques",
+      "url": "https://www.insee.fr/fr/statistiques/2381416",
+      "quoi": "Périmètre APU, le seul cohérent avec ce simulateur"
+    }
+  ],
+  "verification": {
+    "etat": "recoupé",
+    "date": "2026-09-02",
+    "note": "Le cadrage APU 2025 a été recoupé contre le constat officiel 2024 aspiré depuis budget.gouv.fr (bloc `officiel`). Tout tient dans une progression annuelle plausible : dépenses 1 670 → 1 690 (+1,2 %), recettes 1 502 → 1 530 (+1,9 %), dette 3 305 → 3 420 (+3,5 %), PIB implicite 2 925 → 2 950 (+0,9 %). Aucun agrégat n'a été corrigé. Restent non recoupées les ventilations `depenses` et `recettes` : ce sont des regroupements propres à ce simulateur, qui ne correspondent à aucune nomenclature officielle. La ventilation COFOG publiée figure dans `officiel.depensesFonction` pour comparaison."
+  },
+  "officiel": {
+    "_comment": "Constat officiel des administrations publiques, millésime 2024, relevé sur le panorama des finances publiques de budget.gouv.fr. Même périmètre que le cadrage `apu` ci-dessus, avec un an de retard : il sert à le vérifier, pas à le remplacer.",
+    "millesime": 2024,
+    "source": "https://www.budget.gouv.fr/panorama-finances-publiques",
+    "licence": "Licence Ouverte / Open Licence (Etalab)",
+    "apu": {
+      "depenses": 1670.2,
+      "recettes": 1501.6,
+      "solde": -168.6,
+      "soldePib": -5.8,
+      "dette": 3305.3,
+      "dettePib": 113
+    },
+    "sousSecteurs": {
+      "_comment": "ODAC recouvre l'État et ses organismes divers, ASSO les administrations de sécurité sociale, APUL les administrations publiques locales. Ces ventilations sont publiées sans consolidation : elles somment au-dessus des agrégats parce que les transferts entre administrations y comptent deux fois.",
+      "depenses": {
+        "État et ODAC": 670.3,
+        "ASSO": 776.8,
+        "APUL": 329.7
+      },
+      "recettes": {
+        "État et ODAC": 516.2,
+        "ASSO": 779.1,
+        "APUL": 313
+      },
+      "dette": {
+        "État et ODAC": 2756.8,
+        "ASSO": 286.6,
+        "APUL": 261.9
+      }
+    },
+    "depensesFonction": [
+      {
+        "nom": "Services généraux des administrations publiques",
+        "v": 227.2,
+        "sousSecteurs": {
+          "ODAC": 159.1,
+          "ASSO": 6.5,
+          "APUL": 61.6
+        }
+      },
+      {
+        "nom": "Défense",
+        "v": 51.6,
+        "sousSecteurs": {
+          "ODAC": 51.6,
+          "ASSO": 0,
+          "APUL": 0
+        }
+      },
+      {
+        "nom": "Ordre et sécurité publics",
+        "v": 49.1,
+        "sousSecteurs": {
+          "ODAC": 39.3,
+          "ASSO": 0,
+          "APUL": 9.8
+        }
+      },
+      {
+        "nom": "Affaires économiques",
+        "v": 190.3,
+        "sousSecteurs": {
+          "ODAC": 132.2,
+          "ASSO": 0.1,
+          "APUL": 58.0
+        }
+      },
+      {
+        "nom": "Protection de l'environnement",
+        "v": 30.0,
+        "sousSecteurs": {
+          "ODAC": 5.5,
+          "ASSO": 0,
+          "APUL": 24.5
+        }
+      },
+      {
+        "nom": "Logements et équipements collectifs",
+        "v": 37.4,
+        "sousSecteurs": {
+          "ODAC": 8.1,
+          "ASSO": 0,
+          "APUL": 29.3
+        }
+      },
+      {
+        "nom": "Santé",
+        "v": 256.7,
+        "sousSecteurs": {
+          "ODAC": 15.1,
+          "ASSO": 239.4,
+          "APUL": 2.1
+        }
+      },
+      {
+        "nom": "Loisirs, culture et culte",
+        "v": 42.4,
+        "sousSecteurs": {
+          "ODAC": 13.8,
+          "ASSO": 0,
+          "APUL": 28.6
+        }
+      },
+      {
+        "nom": "Enseignement",
+        "v": 145.8,
+        "sousSecteurs": {
+          "ODAC": 101.3,
+          "ASSO": 0,
+          "APUL": 44.4
+        }
+      },
+      {
+        "nom": "Protection sociale",
+        "v": 687.4,
+        "sousSecteurs": {
+          "ODAC": 138.7,
+          "ASSO": 491.5,
+          "APUL": 57.3
+        }
+      }
+    ],
+    "recettesNature": [
+      {
+        "nom": "Recettes de production",
+        "v": 121.3,
+        "sousSecteurs": {
+          "ODAC": 48.4,
+          "ASSO": 26.3,
+          "APUL": 46.7
+        }
+      },
+      {
+        "nom": "Impôt sur la production et les importations",
+        "v": 443.5,
+        "sousSecteurs": {
+          "ODAC": 161.1,
+          "ASSO": 117.6,
+          "APUL": 164.8
+        }
+      },
+      {
+        "nom": "Impôts courants sur le revenu et le patrimoine",
+        "v": 357.3,
+        "sousSecteurs": {
+          "ODAC": 187.7,
+          "ASSO": 166.1,
+          "APUL": 3.4
+        }
+      },
+      {
+        "nom": "Cotisations sociales nettes",
+        "v": 462.3,
+        "sousSecteurs": {
+          "ODAC": 54.8,
+          "ASSO": 406.6,
+          "APUL": 0.9
+        }
+      },
+      {
+        "nom": "Transferts courants entre APU",
+        "v": 93.7,
+        "sousSecteurs": {
+          "ODAC": 15.5,
+          "ASSO": 24.3,
+          "APUL": 53.9
+        }
+      },
+      {
+        "nom": "Autres",
+        "v": 85.2,
+        "sousSecteurs": {
+          "ODAC": 41.1,
+          "ASSO": 8.2,
+          "APUL": 35.9
+        }
+      }
+    ],
+    "note": "Sommes non consolidées : 1 776,8 Md€ de dépenses et 1 608,3 Md€ de recettes par sous-secteur, 1 717,8 et 1 563,2 par fonction et par nature, contre 1 670,2 et 1 501,6 pour les agrégats. L'écart est celui des transferts internes aux administrations, à ne pas prendre pour une erreur."
+  },
+  "etat": {
+    "_comment": "Budget de l'État voté pour 2026. Périmètre bien plus étroit que les APU : l'État ne porte ni l'assurance maladie, ni les retraites du privé, ni les budgets des collectivités. Ne jamais comparer ces montants à ceux du bloc `apu`.",
+    "millesime": 2026,
+    "loi": "Loi de finances initiale",
+    "source": "https://www.budget.gouv.fr/budget-etat",
+    "depensesTotales": 760,
+    "recettesTotales": 625,
+    "solde": -135,
+    "budgetGeneral": {
+      "depensesNettes": 459,
+      "recettesNettes": 325,
+      "remboursementsDegrevements": 141
+    },
+    "axesBruts": {
+      "_comment": "Total des axes ministère et mission, montants bruts. L'écart avec les dépenses totales tient aux remboursements et dégrèvements, comptés ici et retranchés là, et aux comptes de commerce, absents de ces axes.",
+      "ae": 851.2,
+      "cp": 825.3
+    },
+    "dataset": "dataset/derive/budget-etat.json"
+  }
+}

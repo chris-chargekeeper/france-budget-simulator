@@ -1,0 +1,152 @@
+[
+ {
+  "name": "Paysages, eau et biodiversité",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.35810207879999995
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 81557
+  },
+  "on_click": true
+ },
+ {
+  "name": "Expertise, information géographique et météorologie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.51268481001
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 81602
+  },
+  "on_click": true
+ },
+ {
+  "name": "Énergie, climat et après-mines",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.42292243701
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 81638
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prévention des risques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.2512931688600002
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 81716
+  },
+  "on_click": true
+ },
+ {
+  "name": "Infrastructures et services de transports",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 8.2847084169
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 81776
+  },
+  "on_click": true
+ },
+ {
+  "name": "Affaires maritimes, pêche et aquaculture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.280981929
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 81938
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.11980435864
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82052
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sûreté nucléaire et radioprotection",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.3559416995
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82217
+  },
+  "on_click": true
+ },
+ {
+  "name": "Service public de l'énergie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 9.715082924899999
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82226
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds d'accélération de la transition écologique dans les territoires",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.809189638
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 82316
+  },
+  "on_click": true
+ }
+]

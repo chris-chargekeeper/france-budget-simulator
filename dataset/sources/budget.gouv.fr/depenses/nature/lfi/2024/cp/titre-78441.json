@@ -1,0 +1,64 @@
+[
+ {
+  "name": "Rémunérations d’activité",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 90.117941856
+   },
+   {
+    "groupe": 44,
+    "value": 0.965706
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 78450
+  }
+ },
+ {
+  "name": "Cotisations et contributions sociales",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 62.2743045
+   },
+   {
+    "groupe": 44,
+    "value": 0.4070359
+   },
+   {
+    "groupe": 45,
+    "value": 0.747683
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 78444
+  }
+ },
+ {
+  "name": "Prestations sociales et allocations diverses",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.149947143
+   },
+   {
+    "groupe": 44,
+    "value": 0.0346604
+   },
+   {
+    "groupe": 45,
+    "value": 65.54473064
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 78447
+  }
+ }
+]

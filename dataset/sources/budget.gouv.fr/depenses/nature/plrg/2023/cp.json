@@ -1,0 +1,151 @@
+[
+ {
+  "name": "Dépenses de fonctionnement",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.69169821
+   },
+   {
+    "groupe": 43,
+    "value": 77.51254972700002
+   },
+   {
+    "groupe": 45,
+    "value": 1.2259505376600004
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 62856
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses d’intervention",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.00227682354
+   },
+   {
+    "groupe": 43,
+    "value": 292.3029433282401
+   },
+   {
+    "groupe": 45,
+    "value": 2.5082880681299997
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 62889
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses d’investissement",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.212048696
+   },
+   {
+    "groupe": 43,
+    "value": 18.696311660110002
+   },
+   {
+    "groupe": 45,
+    "value": 0.32571087919999997
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 62877
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses de personnel",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 1.32226356
+   },
+   {
+    "groupe": 43,
+    "value": 144.80745938809994
+   },
+   {
+    "groupe": 45,
+    "value": 62.94781875054
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 62844
+  },
+  "on_click": true
+ },
+ {
+  "name": "Charges de la dette de l’État",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.0196155
+   },
+   {
+    "groupe": 43,
+    "value": 54.77964111721
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 62865
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dépenses d’opérations financières",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.71180013326
+   },
+   {
+    "groupe": 45,
+    "value": 15.566926268
+   },
+   {
+    "groupe": 46,
+    "value": 136.75919669
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 62907
+  },
+  "on_click": true
+ },
+ {
+  "name": "Dotations des pouvoirs publics",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.0765357
+   }
+  ],
+  "category": {
+   "type": "titre",
+   "type_name": "Titre",
+   "id": 62838
+  },
+  "on_click": true
+ }
+]

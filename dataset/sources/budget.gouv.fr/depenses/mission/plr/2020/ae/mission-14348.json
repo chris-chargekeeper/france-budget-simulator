@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Rénovation des cités administratives et autres sites domaniaux multi-occupants",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.165707215
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14349
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds pour la transformation de l'action publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.15189742
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14353
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds pour l'accélération du financement des start-up d'État",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.009650199
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14357
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,96 @@
+[
+ {
+  "name": "Transferts aux autres collectivités",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.0034527252000000003
+   },
+   {
+    "groupe": 43,
+    "value": 26.802693830560006
+   },
+   {
+    "groupe": 45,
+    "value": 0.1275745966
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 86600
+  }
+ },
+ {
+  "name": "Transferts aux entreprises",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 4.77e-09
+   },
+   {
+    "groupe": 43,
+    "value": 140.23735629264002
+   },
+   {
+    "groupe": 45,
+    "value": 0.022414169
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 86591
+  }
+ },
+ {
+  "name": "Transferts aux ménages",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 87.73731343271001
+   },
+   {
+    "groupe": 45,
+    "value": 1.2435889388299999
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 86588
+  }
+ },
+ {
+  "name": "Transferts aux collectivités territoriales",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 15.53440513508
+   },
+   {
+    "groupe": 45,
+    "value": 1.1524553504000001
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 86597
+  }
+ },
+ {
+  "name": "Appels en garantie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.2730182775599999
+   }
+  ],
+  "category": {
+   "type": "categorie",
+   "type_name": null,
+   "id": 86594
+  }
+ }
+]

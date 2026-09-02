@@ -9,14 +9,18 @@ Hors périmètre de la plateforme EV — projet personnel, isolé dans `experime
 ## Architecture
 
 ```
-data/baseline.json       cadrage APU 2025, ventilations dépenses / recettes / repères
-data/measures.json       catalogue de 41 mesures avec bornes de chiffrage
-data/parties.json        7 partis, candidat pressenti, annonces chiffrées, mesures rattachées
-data/announcements.json  journal daté et sourcé des annonces médiatiques
-template.html            page complète, deux marqueurs : __DATA__ et __UPDATED__
-build.py                 valide les données, les injecte, écrit index.html
-index.html               généré — ne pas éditer à la main
+dataset/simulateur/baseline.json       cadrage APU 2025, ventilations dépenses / recettes / repères
+dataset/simulateur/measures.json       catalogue de 41 mesures avec bornes de chiffrage
+dataset/simulateur/parties.json        7 partis, candidat pressenti, annonces, mesures rattachées
+dataset/simulateur/announcements.json  journal daté et sourcé des annonces médiatiques
+dataset/sources/                       données officielles aspirées, jamais éditées
+dataset/derive/                        budget de l'État structuré, régénérable
+template.html                          page complète, deux marqueurs : __DATA__ et __UPDATED__
+build.py                               valide les données, les injecte, écrit index.html
+index.html                             généré — ne pas éditer à la main
 ```
+
+`dataset/README.md` décrit l'aspiration de budget.gouv.fr et la structure des données officielles.
 
 ```bash
 python3 build.py     # revalide tout et régénère index.html
@@ -39,26 +43,54 @@ Les seules ressources externes sont les polices Google Fonts.
 
 ## Sources officielles
 
-`data/baseline.json` et `data/parties.json` portent la liste des sources qui font foi :
+`dataset/simulateur/baseline.json` et `dataset/simulateur/parties.json` portent la liste des sources qui font foi :
 `budget.gouv.fr` (budget de l'État, par ministère, données ouvertes), `economie.gouv.fr`,
 l'INSEE pour le périmètre APU, et `interieur.gouv.fr` pour les programmes officiels des candidats,
 publiés après validation des candidatures par le Conseil constitutionnel.
 
 Deux états sont suivis explicitement dans la page :
 
-- `baseline.verification.etat` — le cadrage n'a pas encore été recoupé ligne à ligne contre les
-  portails officiels. C'est l'étape 1 bis du skill.
+- `baseline.verification.etat` — **recoupé** le 2 septembre 2026 contre le constat officiel APU 2024
+  aspiré depuis `budget.gouv.fr` (bloc `baseline.officiel`). Les agrégats 2025 tiennent tous dans une
+  progression annuelle plausible ; aucun n'a été corrigé. Restent hors recoupement les ventilations
+  `depenses` et `recettes`, qui sont des regroupements propres à ce simulateur — la ventilation COFOG
+  officielle est disponible dans `baseline.officiel.depensesFonction` pour comparaison.
 - `parties.sourceOfficielle.statut` — la page programmes du ministère de l'Intérieur ne publie rien
   pour 2027 à ce jour. Dès qu'elle publie, elle écrase toute reprise de presse et les scénarios
   `reconstitution` sont rebâtis à partir des textes déposés.
 
-**Piège de périmètre** : `budget.gouv.fr` décrit le budget de l'**État** (~500 Md€ de dépenses), ce
-simulateur raisonne sur les **administrations publiques** (1 690 Md€ : État + sécurité sociale +
-collectivités). Les deux chiffres sont justes et ne se comparent pas directement.
+**Piège de périmètre** : `budget.gouv.fr` décrit le budget de l'**État** — 760 Md€ de dépenses
+totales en loi de finances 2026, dont 459 Md€ pour le seul budget général net. Ce simulateur raisonne
+sur les **administrations publiques** (1 690 Md€ : État + sécurité sociale + collectivités). Les deux
+chiffres sont justes et ne se comparent pas directement. `baseline.etat` porte le cadrage de l'État,
+`baseline.apu` celui des APU, et les deux blocs se disent explicitement incomparables.
+
+## Registre de vulgarisation
+
+La section « Où va l'argent, qui le paie » ouvre sur trois blocs empruntés à la grammaire des vidéos
+pédagogiques de Bercy — grand chiffre plein cadre, balance, pastille « sur 1 000 € » — dans une
+palette relevée au compte-gouttes sur les captures conservées dans
+`dataset/sources/economie.gouv.fr/ou-va-argent-impots/video/` : rouge pour la dépense, bleu pour la
+recette, ambre pour l'argent, bleu nuit pour les pastilles chiffrées.
+
+Trois règles tiennent ce registre à sa place :
+
+- il est **réservé aux blocs de vulgarisation**. Les graphiques de série gardent la palette
+  d'origine — sept teintes dans une courbe ne passent aucun test de lisibilité pour daltoniens ;
+- la balance n'est pas un décor : son inclinaison suit l'écart réel entre dépenses et recettes,
+  plafonnée à 14° pour que les plateaux ne se croisent pas. Elle est affichée deux fois, aujourd'hui
+  et en 2032 avec le programme chargé, ce que la vidéo d'origine ne peut pas faire ;
+- les **icônes viennent des données**, pas du gabarit. Chaque poste de `baseline.depenses`,
+  `baseline.reperes` et `baseline.payeurs` porte un champ `icone` qui pointe sur un symbole du sprite
+  SVG de `template.html`. `build.py` refuse un poste sans icône ou dont l'icône n'existe pas.
+
+Le sprite compte 17 symboles en tracé seul, 24 × 24, qui héritent de la couleur du texte : une icône
+est un repère de lecture, pas une couleur de plus. Aucune illustration de Bercy n'est reproduite —
+seule la grammaire visuelle est reprise, les tracés sont originaux.
 
 ## Base des annonces
 
-`data/announcements.json` est une entrée par déclaration publique chiffrée : date (jour, ou mois
+`dataset/simulateur/announcements.json` est une entrée par déclaration publique chiffrée : date (jour, ou mois
 quand le jour n'est pas établi), parti, auteur et sa fonction, média où elle a été faite, verbatim,
 mesure du catalogue concernée, montant, source (URL obligatoire), `verifie` (la source a-t-elle été
 ouverte et lue), et surtout `contredit` :
@@ -107,11 +139,21 @@ reproduite (droit d'auteur sur les portraits de presse).
 
 ## Portraits des candidats
 
-Les cartes affichent un monogramme par défaut. Déposer `data/portraits/<id>.jpg` et renseigner
-`data/portraits/credits.json` suffit à les remplacer par des photos : `build.py` les encode en data
+Les cartes affichent un **buste dessiné**, dans le registre de l'affiche de campagne : silhouette
+pleine de trois quarts, coupée par la pastille, teintée de la couleur du parti. Deux variantes, `h`
+et `f`, choisies par le champ `avatar` de `parties.json` — c'est une donnée explicite, éditable, pas
+une déduction faite au rendu ; une valeur absente retombe sur le monogramme. `build.py` refuse un
+`avatar` qui ne correspond à aucun symbole du gabarit.
+
+Ce sont des pictogrammes génériques : aucune ressemblance avec une personne réelle n'est recherchée,
+et le col est évidé plutôt que peint, pour que la chemise reste le fond de la pastille en clair
+comme en sombre.
+
+Déposer `dataset/simulateur/portraits/<id>.jpg` et renseigner
+`dataset/simulateur/portraits/credits.json` suffit à les remplacer par des photos : `build.py` les encode en data
 URI, les injecte dans la page et affiche le crédit dans la section « D'où viennent les chiffres ».
 
-Deux contraintes, documentées dans `data/portraits/README.md` :
+Deux contraintes, documentées dans `dataset/simulateur/portraits/README.md` :
 
 - **Licence** — les portraits de presse sont protégés. Seules des images sous CC BY, CC BY-SA, CC0
   ou domaine public sont utilisables, et l'attribution est obligatoire. `build.py` refuse un

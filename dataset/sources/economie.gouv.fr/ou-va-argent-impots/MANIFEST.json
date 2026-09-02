@@ -1,0 +1,39 @@
+{
+ "_comment": "Repères pédagogiques repris de la rubrique « À quoi servent mes impôts ? » d'economie.gouv.fr. Périmètre : administrations publiques (APU), pas budget de l'État — 1 610 Md€ de dépenses contre 760 Md€ pour le seul budget de l'État. Les deux ne se comparent pas.",
+ "source": "https://www.economie.gouv.fr/aqsmi",
+ "licence": "Licence Ouverte / Open Licence (Etalab)",
+ "millesime": 2023,
+ "source_statistique": "INSEE, comptes nationaux 2023 (millésime affiché par la vidéo)",
+ "entrees": [
+  {
+   "fichier": "1000-euros-impots.txt",
+   "titre": "Que financent 1 000 € d'impôts ?",
+   "page": "https://www.economie.gouv.fr/aqsmi/comment-sont-utilises-mes-impots",
+   "nature": "transcription manuelle d'une infographie",
+   "verifie": true,
+   "note": "La page porte aujourd'hui le millésime 2024 (source Insee/DGTrésor) ; les valeurs transcrites ici sont celles de 2023, identiques à celles de la vidéo."
+  },
+  {
+   "fichier": "impots-taxes-contributions.txt",
+   "titre": "Quels sont les impôts, taxes et contributions que l'on paie en France ?",
+   "page": "https://www.economie.gouv.fr/aqsmi/les-impots-de-quoi-parle-t",
+   "nature": "transcription manuelle d'une infographie",
+   "verifie": false,
+   "note": "Page non rouverte lors du rangement (protection anti-bot). Cotisations sociales 33,90 % + CSG 14,30 % = 48,2 %, ce que la vidéo agrège sous « cotisations sociales »."
+  },
+  {
+   "fichier": "reperes-2023.json",
+   "titre": "Les deux infographies et la transcription de la vidéo, normalisées",
+   "nature": "dérivé des trois autres entrées, écrit à la main",
+   "verifie": true
+  },
+  {
+   "fichier": "video/image-01.png … image-16.png",
+   "titre": "Vidéo pédagogique « À quoi servent mes impôts ? »",
+   "page": "https://www.economie.gouv.fr/aqsmi",
+   "nature": "captures d'écran de la vidéo, renommées dans l'ordre de capture",
+   "verifie": true,
+   "note": "Contenu retranscrit dans reperes-2023.json ; les images ne sont pas nécessaires à l'exploitation des données."
+  }
+ ]
+}

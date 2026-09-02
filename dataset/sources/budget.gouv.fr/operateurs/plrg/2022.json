@@ -1,0 +1,8420 @@
+[
+ {
+  "name": "Académie des technologies",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.001754
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21830"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "83.87 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ADEME - Agence de l'environnement et de la maîtrise de l'énergie",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.937538
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21833"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.94 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "91.98 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "AEFE - Agence pour l'enseignement français à l'étranger",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 1.10586
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21836"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "1.11 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "46.71 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "AFA - Agence française de l'adoption",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.00224776
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21839"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "97.19 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "AFITF - Agence de financement des infrastructures de transport de France",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 3.33189
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21842"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "3.33 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "98.67 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "2.55 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "AFPA - Agence nationale pour la formation professionnelle des adultes",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.823582
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21845"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.82 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "24.87 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "AFR - Académie de France à Rome",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0112354
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21848"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "52.21 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Agences de l'eau",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 2.51875
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21851"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "2.52 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "91.74 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "2.31 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "AGRASC - Agence de gestion et de recouvrement des avoirs saisis et confisqués",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0225777
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21854"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "82 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ANACT - Agence nationale pour l'amélioration des conditions de travail",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0230912
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21857"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "87.74 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ANAH - Agence nationale de l'habitat",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 2.83615
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21860"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "2.84 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "98.84 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.48 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ANCOLS - Agence nationale de contrôle du logement social",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0180024
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21863"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "98.79 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ANCT - Agence nationale de la cohésion des territoires",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.110373
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21866"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.11 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "92.48 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ANDRA - Agence nationale pour la gestion des déchets radioactifs",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.261039
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21869"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.26 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "53.93 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.13 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ANFr - Agence nationale des fréquences",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.040858
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21872"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.04 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "97.14 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ANGDM - Agence nationale pour la garantie des droits des mineurs",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.276072
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21875"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.28 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "91.49 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ANR - Agence nationale de la recherche",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 1.20312
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21878"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "1.2 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "96.31 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ANS - Agence nationale du sport",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.487296
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21881"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.49 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "99.74 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.15 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ANSC - Agence nationale du numérique de la sécurité civile",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.008672290000000001
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21884"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "79.01 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ANSéS - Agence nationale de sécurité sanitaire, de l'alimentation, de l'environnement et du travail",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.161546
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21887"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.16 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "93.65 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ANTAI - Agence nationale de traitement automatisé des infractions",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.124201
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21890"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.12 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "74.89 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ANTS - Agence nationale des titres sécurisés",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.295782
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21893"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.3 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "90.12 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.24 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "APIJ - Agence publique pour l'immobilier de la Justice",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.014549600000000001
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21896"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "98.24 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ARS - Agences régionales de santé",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.790905
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21899"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.79 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "97.33 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ASC - Agence du service civique",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.494696
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21902"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.49 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "99.43 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ASP - Agence de services et de paiement",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.314824
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21905"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.31 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "64.26 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Associations de coordination technique agricole et des industries agroalimentaires",
+  "value": [
+   {
+    "groupe": "43",
+    "value": "0"
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21908"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Atout-France",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.07654
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21911"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.08 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "51.93 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Autres opérateurs d'enseignement supérieur et de recherche",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 1.40197
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21914"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "1.4 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "72.06 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "BnF - Bibliothèque nationale de France",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.269437
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21917"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.27 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "73.7 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "BPI - Bibliothèque publique d'information",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.010772299999999999
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21920"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "94.32 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "BRGM - Bureau de recherches géologiques et minières",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.142207
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21923"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.14 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "58.07 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Business France",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.435762
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21926"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.44 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "22.8 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CAMPUS France",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0252015
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21929"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "22.72 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CAPA - Cité de l'architecture et du patrimoine",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.023974099999999998
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21932"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "78.19 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CEA - Commissariat à l'énergie atomique et aux énergies alternatives",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 8.396
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21935"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "8.4 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "33.47 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CELRL - Conservatoire de l'espace littoral et des rivages lacustres",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0497349
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21938"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.05 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "84.29 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.04 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Centre info - Centre pour le développement de l'information sur la formation permanente",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.00697792
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21941"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "54 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CEREMA - Centre d'études et d'expertise sur les risques, l'environnement, la mobilité et l'aménagement",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.369304
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21944"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.37 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "83.81 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CEREQ - Centre d'Etudes et de Recherches sur les Qualifications",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.00958608
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21947"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "89.72 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CGLLS - Caisse de garantie du logement locatif social",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.480973
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21950"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.48 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "88.63 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.43 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Chaillot – Théâtre national de la Danse",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0205584
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21953"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "67.18 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Cinémathèque française",
+  "value": [
+   {
+    "groupe": "43",
+    "value": "0"
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21956"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CIRAD - Centre de coopération internationale en recherche agronomique pour le développement",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.221665
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21959"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.22 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "58.55 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CITEPA - Centre interprofessionnel technique d'études de la pollution atmosphérique",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.00423
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21962"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "39.72 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CMN - Centre des monuments nationaux",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.197204
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21965"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.2 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "44.37 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNAC - Centre national des arts du cirque",
+  "value": [
+   {
+    "groupe": "43",
+    "value": "0"
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21968"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNAC-GP - Centre national d'art et de culture - Georges Pompidou",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.133605
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21971"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.13 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "58.94 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNAP - Centre national des arts plastiques",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0108203
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21974"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "92.51 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNAPS - Conseil national des activités privées de sécurité",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0177682
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21977"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "97.22 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNC - Centre national du cinéma et de l'image animée",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.821002
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21980"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.82 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "95.36 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.78 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CND - Centre national de la danse",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0124844
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21983"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "76.86 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNED - Centre national d'enseignement à distance",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.101381
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21986"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.1 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "36.69 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNES - Centre national d'études spatiales",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 1.41116
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21989"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "1.41 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "55.71 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNL - Centre national du livre",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0302693
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21992"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "98.17 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNM - Centre national de la musique",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.121002
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21995"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.12 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "79.64 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.04 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNPF - Centre national de la propriété forestière",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0332386
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "21998"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "92.59 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNRS - Centre national de la recherche scientifique",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 3.81426
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22001"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "3.81 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "90.96 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNSAD - Conservatoire national supérieur d'art dramatique",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.004765060000000001
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22004"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "93.89 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNSMD Lyon - Conservatoire national supérieur de musique et de danse de Lyon",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0161534
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22007"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "87.71 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "CNSMD Paris - Conservatoire national supérieur de musique et de danse de Paris",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.033736
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22010"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "78.7 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Comédie Française",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0414116
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22013"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.04 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "61.56 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Communautés d'universités et d'établissements",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.159892
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22016"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.16 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "73.03 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Conseil national des communes « Compagnon de la Libération »",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0034605
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22019"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "49.41 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Ecole de l'air et de l'espace",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0276449
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22022"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "95.97 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Ecole du Louvre",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.007822550000000001
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22025"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "26.55 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Ecole navale",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0352076
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22028"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.04 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "94.12 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Ecoles d'architecture - Ecoles nationales supérieures d'architecture",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0856557
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22031"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.09 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "68.02 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Ecoles d'art en Région",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.016597
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22034"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "76.06 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Ecoles d'enseignement supérieur agricole et vétérinaire",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.244891
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22037"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.24 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "36.88 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Ecoles et formations d'ingénieurs",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 1.22825
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22040"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "1.23 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "71.76 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Ecoles nationales des sports",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0235349
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22043"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "53.3 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ECPAD - Etablissement de communication et de production audiovisuelle de la défense",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0242162
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22046"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "78.32 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENA - Ecole nationale d'administration",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.046168
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22049"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.05 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "84.52 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENAC - Ecole nationale de l'aviation civile",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.129619
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22052"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.13 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "74.13 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENAP - Ecole nationale de l'administration pénitentiaire",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0346584
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22055"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "95.81 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENIM - Etablissement national des invalides de la marine",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 1.54341
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22058"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "1.54 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "88.2 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.04 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENM - Ecole nationale de la magistrature",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.034789
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22061"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "96.19 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENPC - Ecole nationale des Ponts et Chaussées",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.051354
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22064"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.05 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "63.55 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENSAD - Ecole nationale supérieure des arts décoratifs",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0164189
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22067"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "76.72 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENSBA - Ecole nationale supérieure des beaux-arts",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.013973200000000002
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22070"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "67.48 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENSCI - Ecole nationale supérieure de création industrielle",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0156391
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22073"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "39.24 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Ensemble intercontemporain",
+  "value": [
+   {
+    "groupe": "43",
+    "value": "0"
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22076"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENSM - Ecole nationale supérieure maritime",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.029464
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22079"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "78.78 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENSMIS - Ecole nationale supérieure des métiers de l'image et du son",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0113652
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22082"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "79.82 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENSPolice - Ecole nationale supérieure de la police",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.030556200000000002
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22085"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "91.25 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENSTA Bretagne - Ecole nationale supérieure de techniques avancées Bretagne",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.027218
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22088"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "77.6 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENSTA Paris - Ecole nationale supérieure de techniques avancées",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.031009
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22091"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "80.02 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ENTPE - Ecole nationale des travaux publics de l'Etat",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0249728
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22094"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "88.8 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "EPAURIF - Etablissement public d'aménagement universitaire de la région Ile-de-France",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.00929081
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22097"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "88.51 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "EPCCSL - Etablissement public Cité de la céramique - Sèvres et Limoges",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.007265140000000001
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22100"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "61.74 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "EPCMPP - Etablissement public de la Cité de la musique - Philharmonie de Paris",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.11161
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22103"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.11 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "56.36 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "EPIDE - Etablissement pour l'insertion dans l'emploi",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.120939
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22106"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.12 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "89.56 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "EPMQB - Etablissement public du musée du quai Branly",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.061244099999999996
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22109"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.06 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "73.94 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "EPMSM - Etablissement public du Mont-Saint-Michel",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0115553
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22112"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "41.79 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "EPPD - Etablissement public du palais de la porte Dorée",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0129811
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22115"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "82.83 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "EPPGHV - Etablissement public du parc et de la grande halle de la Villette",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.054454800000000005
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22118"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.05 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "46.97 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "EPRNDP - Etablissement public chargé de la conservation et de la restauration de la cathédrale Notre-Dame de Paris",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0108354
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22121"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "54.33 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "EPSF - Etablissement public de sécurité ferroviaire",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.014693399999999999
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22124"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "88.55 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "EPV - Etablissement public du musée et du domaine national de Versailles",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.137545
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22127"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.14 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "33.04 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Etablissement public du château de Fontainebleau",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.00789813
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22130"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "41.02 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Etablissement public du Marais poitevin",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.00168372
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22133"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "88.14 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Etablissement public du Mobilier National",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0102799
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22136"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "81.07 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "FEI – France éducation international",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0318542
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22139"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "12.95 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "FNAP - Fonds national des aides à la pierre",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.636677
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22142"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.64 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "11.78 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.08 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "France Compétences",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 14.644
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22145"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "14.64 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "97.39 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "10.26 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "France Travail",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 7.04444
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22148"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "7.04 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "89.41 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "FranceAgriMer",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.504939
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22151"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.5 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "99.17 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "GENES - Groupe des écoles nationales d'économie et statistique",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0329158
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22154"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "79.25 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Génopole",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.015473
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22157"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "45.95 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "GEODERIS",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.00503
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22160"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "99.15 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "GIP - BIO - Agence française pour le développement et la promotion de l'agriculture biologique",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.011582
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22163"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "91.37 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Grande Chancellerie de la Légion d'Honneur",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0316468
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22166"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "82.89 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Groupe Mines Télécom",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.463734
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22169"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.46 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "74.19 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "IERDJ - Institut des études et de la recherche sur le droit et la justice",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.00175464
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22172"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "99.94 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "IFCE - Institut français du cheval et de l'équitation",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.063048
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22175"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.06 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "72.84 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "IFPEN - IFP Energies Nouvelles",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.264834
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22178"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.26 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "50.53 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "IFREMER - Institut français de recherche pour l'exploitation de la mer",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.276001
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22181"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.28 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "80.17 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "IGN - Institut national de l'information géographique et forestière",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.191791
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22184"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.19 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "50.51 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "IHEDN - Institut des hautes études de Défense nationale",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0117253
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22187"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "59.1 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "IHEST - Institut des Hautes Etudes pour la Science et la Technologie",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.00178677
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22190"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "90.13 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INAO - Institut national de l'origine et de la qualité",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0251021
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22193"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "96.54 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INCa - Institut National du Cancer",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.129488
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22196"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.13 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "98.24 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INED - Institut national d'études démographiques",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.029312400000000002
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22199"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "83.02 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INERIS - Institut national de l'environnement industriel et des risques",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.074649
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22202"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.07 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "57.57 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INFOMA - Institut national de formation des personnels du ministère de l'agriculture",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.00229293
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22205"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "69.63 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INI - Institution nationale des Invalides",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.038760300000000004
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22208"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.04 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "72.34 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INP - Institut national du patrimoine",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0098851
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22211"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "81.7 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INPI - Institut national de la propriété industrielle",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.119559
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22214"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.12 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INRAE - Institut national pour la recherche en agriculture, alimentation et environnement",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 1.05267
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22217"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "1.05 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "91.5 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INRAP - Institut national de recherches archéologiques préventives",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.187808
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22220"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.19 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "50.09 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INRIA - Institut national de recherche en informatique et en automatique",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.274882
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22223"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.27 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "82.09 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INSEP - Institut national du sport, de l'expertise et de la performance",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0466202
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22226"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.05 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "54.65 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INSERM - Institut national de la santé et de la recherche médicale",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 1.04361
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22229"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "1.04 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "88.88 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Institut Français",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0433215
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22232"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.04 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "85.66 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "INTEFP - Institut national du travail, de l'emploi et de la formation professionnelle",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0151339
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22235"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "92.95 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "IPEV - Institut polaire français Paul-Emile Victor",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.020981299999999998
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22238"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "95.61 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "IPP - Institut Polytechnique de Paris",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0133865
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22241"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "76.47 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "IRA - Instituts régionaux d'administration",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0455751
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22244"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.05 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "96.7 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "IRD - Institut de recherche pour le développement",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.262428
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22247"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.26 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "97.78 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "IRSN - Institut de radioprotection et de sûreté nucléaire",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.298012
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22250"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.3 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "80.34 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.06 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ISAE - Institut supérieur de l'aéronautique et de l'espace",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0682378
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22253"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.07 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "69.2 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "LADOM - L'agence de l'Outre-mer pour la mobilité",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0332755
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22256"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "95.87 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "LNE - Laboratoire national de métrologie et d'essais",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.07172880000000001
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22259"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.07 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "23.46 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Météo-France",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.398884
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22262"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.4 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "60.54 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "MNS - Musée national du sport",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.004395
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22265"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "72.96 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "MuCEM - Musée des civilisations de l'Europe et de la Méditerranée",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.033893099999999995
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22268"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "52.8 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Musée de l'air et de l'espace",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0118879
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22271"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "65.17 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Musée de l'armée",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.026979700000000002
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22274"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "53.49 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Musée des arts décoratifs",
+  "value": [
+   {
+    "groupe": "43",
+    "value": "0"
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22277"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Musée d'Orsay et musée de l'Orangerie",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.083364
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22280"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.08 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "45.9 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Musée du Louvre",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.248037
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22283"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.25 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "39.71 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Musée Guimet",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.00719982
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22286"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "60.65 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Musée Henner-Moreau",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0011718800000000001
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22289"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "64.75 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Musée national de la marine",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.014025600000000001
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22292"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "78.6 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Musée Picasso",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.012388799999999998
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22295"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "35.21 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ODEADOM - Office de développement de l'économie agricole d'Outre-mer",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.012661799999999999
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22298"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "94.76 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "OFB - Office français de la biodiversité",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.546432
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22301"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.55 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "94.86 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "OFDT - Observatoire Français des Drogues et des Toxicomanies",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.00375212
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22304"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "75.36 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "OFII - Office français de l'immigration et de l'intégration",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.289264
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22307"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.29 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "96.58 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "OFPRA - Office français de protection des réfugiés et apatrides",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.093646
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22310"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.09 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "98.99 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ONAC-VG - Office national des anciens combattants et victimes de guerre",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.207678
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22313"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.21 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "98.74 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ONERA - Office national d'études et de recherches aérospatiales",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.274819
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22316"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.27 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "41.38 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ONF - Office national des forêts",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.995772
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22319"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "1 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "33.04 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "ONISEP - Office national d'information sur les enseignements et les professions",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0287468
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22322"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.03 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "86.08 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Opéra comique",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0212249
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22325"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "60.41 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Opéra national de Paris",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.224539
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22328"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.22 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "45.41 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Opérateurs de soutien à l'enseignement supérieur et à la recherche",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.487152
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22331"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.49 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "83.43 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "OPPIC - Opérateur du patrimoine et des projets immobiliers de la Culture",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.013397899999999999
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22334"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "97.4 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Parcs nationaux",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.091354
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22337"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.09 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "91.98 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Réseau Canopé",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.118389
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22340"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.12 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "84.66 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Réseau des œuvres universitaires et scolaires",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 1.34722
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22343"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "1.35 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "35.16 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Rmn-GP - Réunion des musées nationaux - Grand Palais",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.154899
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22346"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.15 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "23.67 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "SGP - Société du Grand Paris",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.829937
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22349"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.83 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "93.5 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.78 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "SHOM - Service hydrographique et océanographique de la marine",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0662403
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22352"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.07 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "73.02 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "SOLIDEO - Société de livraison des équipements olympiques et paralympiques",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.37192
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22355"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.37 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "97.05 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "TNC - Théâtre national de la Colline",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0130148
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22358"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "76.58 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "TNO - Théâtre national de l'Odéon",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0186927
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22361"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.02 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "66.68 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "TNS - Théâtre national de Strasbourg",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.0136217
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22364"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.01 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "75.13 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Universcience",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.13925
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22367"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.14 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "70.19 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "Universités et assimilés",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 15.9205
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22370"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "15.92 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "84.14 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0.1 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "VNF - Voies navigables de France",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.625578
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22373"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.63 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "41.16 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "-",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ },
+ {
+  "name": "X - Ecole polytechnique",
+  "value": [
+   {
+    "groupe": "43",
+    "value": 0.15886
+   }
+  ],
+  "category": {
+   "type": "operateur",
+   "type_name": "Opérateur",
+   "id": "22376"
+  },
+  "additional_data": [
+   [
+    {
+     "text": "Ressources ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "0.16 Md€",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Part du financement public ",
+     "class": "additional_data-p-title sort"
+    },
+    {
+     "text": "73.58 %",
+     "class": "additional_data-p-value"
+    }
+   ],
+   [
+    {
+     "text": "Dont taxes affectées ",
+     "class": "additional_data-p-title italic details--short"
+    },
+    {
+     "text": "0 Md€",
+     "class": "additional_data-p-value"
+    }
+   ]
+  ]
+ }
+]

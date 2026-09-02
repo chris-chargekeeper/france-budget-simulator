@@ -1,0 +1,61 @@
+{
+ "url": "https://www.budget.gouv.fr/budget-etat/smb",
+ "methode": "POST",
+ "parametres": {
+  "annee": 2024,
+  "type_budget": "solde",
+  "mois": "decembre"
+ },
+ "recupere": "2026-09-02",
+ "graphes": [
+  {
+   "uuid": "cbc8b775-e21a-48cb-a5f7-d7fe7d56ca02",
+   "type": "areachart",
+   "unit": "milliards d'€",
+   "url": null,
+   "data": "[{\"date\":\"2024-01-01T01:00:00+01:00\",\"2023\":-21.1,\"2024\":-25.7},{\"date\":\"2024-02-01T01:00:00+01:00\",\"2023\":-50.3,\"2024\":-44},{\"date\":\"2024-03-01T01:00:00+01:00\",\"2023\":-54.7,\"2024\":-52.8},{\"date\":\"2024-04-01T01:00:00+01:00\",\"2023\":-83.7,\"2024\":-91.6},{\"date\":\"2024-05-01T01:00:00+01:00\",\"2023\":-107.2,\"2024\":-113.5},{\"date\":\"2024-06-01T01:00:00+01:00\",\"2023\":-116.2,\"2024\":-103.5},{\"date\":\"2024-07-01T01:00:00+01:00\",\"2023\":-169,\"2024\":-156.9},{\"date\":\"2024-08-01T01:00:00+01:00\",\"2023\":-187.9,\"2024\":-171.9},{\"date\":\"2024-09-01T01:00:00+01:00\",\"2023\":-186.1,\"2024\":-173.8},{\"date\":\"2024-10-01T01:00:00+01:00\",\"2023\":-177.7,\"2024\":-157.4},{\"date\":\"2024-11-01T01:00:00+01:00\",\"2023\":-198,\"2024\":-172.5},{\"date\":\"2024-12-01T01:00:00+01:00\",\"2023\":-173.3,\"2024\":-156.3}]"
+  },
+  {
+   "uuid": "fd62edde-e7c3-4337-8c9e-bfb1476b3491",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2024\",\"children\":[],\"color\":\"#c62253\",\"value\":-156.3,\"additional_text\":\"-10%\"}"
+  },
+  {
+   "uuid": "582555f0-5fe1-43c8-a53c-1a61a3b3e497",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2023\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#c62253\",\"color_text\":\"#545c6b\",\"value\":-173.3}"
+  },
+  {
+   "uuid": "6ab615dc-9720-4bd2-a84d-cc68eea3c7a3",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2024\",\"children\":[],\"color\":\"#c62253\",\"value\":-2.4,\"additional_text\":\"-54%\"}"
+  },
+  {
+   "uuid": "52326776-c862-44e2-8c64-c10902426d47",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2023\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#c62253\",\"color_text\":\"#545c6b\",\"value\":-5.1}"
+  },
+  {
+   "uuid": "b5a573a0-c11e-49c2-bb1f-9f2e9de7c903",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2024\",\"children\":[],\"color\":\"#c62253\",\"value\":-153.9,\"additional_text\":\"-8%\"}"
+  },
+  {
+   "uuid": "8c26dbba-d729-45b9-820d-72e1df49a6ef",
+   "type": "keyfigures",
+   "unit": "Md€",
+   "url": null,
+   "data": "{\"name\":\"D\\u00e9cembre 2023\",\"children\":[],\"color\":\"#f7f8f9\",\"color_value\":\"#c62253\",\"color_text\":\"#545c6b\",\"value\":-168.2}"
+  }
+ ]
+}

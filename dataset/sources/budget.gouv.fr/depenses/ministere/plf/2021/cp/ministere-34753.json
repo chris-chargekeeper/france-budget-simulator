@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Affaires maritimes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.159398562
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 29398
+  },
+  "on_click": true
+ },
+ {
+  "name": "Régimes de retraite et de sécurité sociale des marins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.8095911
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 30844
+  },
+  "on_click": true
+ }
+]

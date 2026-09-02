@@ -1,0 +1,107 @@
+[
+ {
+  "name": "Protection maladie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.0220206766
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51289
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prévention, sécurité sanitaire et offre de soins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.3928344
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51298
+  },
+  "on_click": true
+ },
+ {
+  "name": "Carte vitale biométrique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0043
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70584
+  },
+  "on_click": true
+ },
+ {
+  "name": "Compensation à la Sécurité sociale du coût des dons de vaccins à des pays tiers et reversement des recettes de la Facilité pour la Relance et la Résilience (FRR) européenne au titre du volet « Ségur investissement » du plan national de relance et de rési",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.35846
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70590
+  },
+  "on_click": true
+ },
+ {
+  "name": "Conduite et soutien des politiques sanitaires et sociales",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.2606939736599998
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51646
+  },
+  "on_click": true
+ },
+ {
+  "name": "Inclusion sociale et protection des personnes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 15.0698392335
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 51730
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prise en charge par l'Etat du financement de l'indemnité inflation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.429886
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 70605
+  },
+  "on_click": true
+ }
+]

@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Exploitation des services nationaux de transport conventionnés",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.230092186
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15106
+  },
+  "on_click": true
+ },
+ {
+  "name": "Matériel roulant des services nationaux de transport conventionnés",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.0666
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 15110
+  },
+  "on_click": true
+ }
+]

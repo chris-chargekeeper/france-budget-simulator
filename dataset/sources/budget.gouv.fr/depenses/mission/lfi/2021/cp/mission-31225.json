@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Prêts octroyés dans le cadre des programmes des investissements d'avenir",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.026
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 31255
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts à la société concessionnaire de la liaison express entre Paris et l'aéroport Paris-Charles de Gaulle",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.416
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 31234
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts et avances pour le logement des agents de l'État",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 5e-05
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 31228
+  },
+  "on_click": true
+ },
+ {
+  "name": "Prêts pour le développement économique et social",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.075
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 31240
+  },
+  "on_click": true
+ },
+ {
+  "name": "Soutien à la filière nickel en Nouvelle Calédonie",
+  "value": [
+   {
+    "groupe": 46,
+    "value": 0.2
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 34948
+  },
+  "on_click": true
+ }
+]

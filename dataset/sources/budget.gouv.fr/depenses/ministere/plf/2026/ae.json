@@ -1,0 +1,263 @@
+[
+ {
+  "name": "Action et comptes publics",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 232.038839509
+   },
+   {
+    "groupe": 46,
+    "value": 145.783583
+   },
+   {
+    "groupe": 45,
+    "value": 76.074932343
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86758
+  },
+  "on_click": true
+ },
+ {
+  "name": "Armées et anciens combattants",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 94.881009037
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86797
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transition écologique, biodiversité et négociations internationales sur le climat et la nature",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 16.440407118
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86770
+  },
+  "on_click": true
+ },
+ {
+  "name": "Culture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.444217918
+   },
+   {
+    "groupe": 46,
+    "value": 3.8783165
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86749
+  },
+  "on_click": true
+ },
+ {
+  "name": "Aménagement du territoire et de la décentralisation",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 35.525834125
+   },
+   {
+    "groupe": 44,
+    "value": 2.545535745
+   },
+   {
+    "groupe": 46,
+    "value": null
+   },
+   {
+    "groupe": 45,
+    "value": 0.806735
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86788
+  },
+  "on_click": true
+ },
+ {
+  "name": "Services du Premier ministre",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.566315742
+   },
+   {
+    "groupe": 44,
+    "value": 0.14569435
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86767
+  },
+  "on_click": true
+ },
+ {
+  "name": "Outre-Mer",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 2.90964389
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86785
+  },
+  "on_click": true
+ },
+ {
+  "name": "Intérieur",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 33.851257534
+   },
+   {
+    "groupe": 45,
+    "value": 0.3705206
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86761
+  },
+  "on_click": true
+ },
+ {
+  "name": "Travail et solidarités",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 47.907496592
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86773
+  },
+  "on_click": true
+ },
+ {
+  "name": "Action publique, fonction publique et simplification",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.323318177
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86791
+  },
+  "on_click": true
+ },
+ {
+  "name": "Europe et affaires étrangères",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.426105139
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86746
+  },
+  "on_click": true
+ },
+ {
+  "name": "Justice",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 12.677789628
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86764
+  },
+  "on_click": true
+ },
+ {
+  "name": "Éducation nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 115.320314232
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86755
+  },
+  "on_click": true
+ },
+ {
+  "name": "Agriculture, agro-alimentaire et souveraineté alimentaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.101629535
+   },
+   {
+    "groupe": 45,
+    "value": 0.171
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86752
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sports, jeunesse et vie associative",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.595267649
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 86782
+  },
+  "on_click": true
+ }
+]

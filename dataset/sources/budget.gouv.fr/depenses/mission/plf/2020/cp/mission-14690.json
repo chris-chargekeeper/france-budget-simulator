@@ -1,0 +1,17 @@
+[
+ {
+  "name": "Versement de la France à la Grèce au titre de la restitution à cet État des revenus perçus sur les titres grecs",
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.26371
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 14691
+  },
+  "on_click": true
+ }
+]

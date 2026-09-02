@@ -1,0 +1,346 @@
+[
+ {
+  "name": "Partenariat avec les territoires et décentralisation",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 2.3009782662
+   },
+   {
+    "groupe": 43,
+    "value": 17.611438227439994
+   },
+   {
+    "groupe": 45,
+    "value": 0.778345372
+   },
+   {
+    "groupe": 46,
+    "value": 0.200803
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78671
+  },
+  "on_click": true
+ },
+ {
+  "name": "Services du Premier ministre",
+  "value": [
+   {
+    "groupe": 44,
+    "value": 0.14127428117000002
+   },
+   {
+    "groupe": 43,
+    "value": 5.4376391355900004
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78644
+  },
+  "on_click": true
+ },
+ {
+  "name": "Europe et affaires étrangères",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 5.982241289479999
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78623
+  },
+  "on_click": true
+ },
+ {
+  "name": "Intérieur",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 32.633266421719995
+   },
+   {
+    "groupe": 45,
+    "value": 0.3568237038
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78638
+  },
+  "on_click": true
+ },
+ {
+  "name": "Agriculture, souveraineté alimentaire et forêt",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 6.153779117219998
+   },
+   {
+    "groupe": 45,
+    "value": 0.138695389
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78629
+  },
+  "on_click": true
+ },
+ {
+  "name": "Économie, finances et industrie",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 60.56616275154
+   },
+   {
+    "groupe": 45,
+    "value": 3.39882906
+   },
+   {
+    "groupe": 46,
+    "value": 7.947559
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78647
+  },
+  "on_click": true
+ },
+ {
+  "name": "Armées et anciens combattants",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 64.03678558099
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78680
+  },
+  "on_click": true
+ },
+ {
+  "name": "Logement et rénovation urbaine",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 23.187940655109998
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78662
+  },
+  "on_click": true
+ },
+ {
+  "name": "Culture",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 4.5610324775
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78626
+  },
+  "on_click": true
+ },
+ {
+  "name": "Transition écologique, énergie, climat et prévention des risques",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 15.22999596708
+   },
+   {
+    "groupe": 45,
+    "value": 0.37456455159999996
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78650
+  },
+  "on_click": true
+ },
+ {
+  "name": "Éducation nationale",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 86.05759866903001
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78632
+  },
+  "on_click": true
+ },
+ {
+  "name": "Budget et comptes publics",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 160.19442193491997
+   },
+   {
+    "groupe": 45,
+    "value": 70.33364397532
+   },
+   {
+    "groupe": 46,
+    "value": 133.897150012
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78635
+  },
+  "on_click": true
+ },
+ {
+  "name": "Justice",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 12.380280664730002
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78641
+  },
+  "on_click": true
+ },
+ {
+  "name": "Outre-Mer",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 3.04116500451
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78668
+  },
+  "on_click": true
+ },
+ {
+  "name": "Enseignement supérieur et recherche",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 26.42209795446
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78659
+  },
+  "on_click": true
+ },
+ {
+  "name": "Santé et accès aux soins",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.5375930153
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78653
+  },
+  "on_click": true
+ },
+ {
+  "name": "Solidarités, autonomie et égalité entre les femmes et les hommes",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 30.856944081859996
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78677
+  },
+  "on_click": true
+ },
+ {
+  "name": "Sports, jeunesse et vie associative",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.3508904929
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78665
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonction publique, simplification et transformation de l'action publique",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.35342885297
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78674
+  },
+  "on_click": true
+ },
+ {
+  "name": "Travail et emploi",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 20.45192775724
+   }
+  ],
+  "category": {
+   "type": "ministere",
+   "type_name": "Ministère",
+   "id": 78656
+  },
+  "on_click": true
+ }
+]

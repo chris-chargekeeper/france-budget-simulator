@@ -1,0 +1,478 @@
+{
+ "_comment": "Exports CSV téléchargés à la main depuis les dataviz de budget.gouv.fr. Le nom d'origine ne portait aucune information : chaque fichier a été rattaché à son ministère en vérifiant que la somme de ses programmes retombe sur le montant publié par l'API.",
+ "source": "https://www.budget.gouv.fr/budget-etat/ministere",
+ "millesime": {
+  "annee": 2026,
+  "loi": "Loi de finances initiale pour 2026",
+  "type_donnee": "Autorisations d'engagement (AE)"
+ },
+ "unite": "Md€",
+ "range": "2026-09-02",
+ "ministeres_absents": [
+  "Services du Premier ministre"
+ ],
+ "entrees": [
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/action-et-comptes-publics.csv",
+   "telecharge_sous": "donnée (1).csv",
+   "doublons": [
+    "donnée.csv",
+    "donnée (-1).csv",
+    "donnée-.csv"
+   ],
+   "md5": "95635044e90a130ff7c986ad372e6e6d",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général",
+    "Comptes d'affectation spéciale",
+    "Comptes de concours financiers"
+   ],
+   "lignes": 25,
+   "ministere": {
+    "id": 86758,
+    "nom": "Action et comptes publics"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 164.464157196,
+     "Comptes de concours financiers": 135.69574,
+     "Comptes d'affectation spéciale": 70.885012343
+    },
+    "montant_api": {
+     "Budget général": 164.464157196,
+     "Comptes d'affectation spéciale": 70.885012343,
+     "Comptes de concours financiers": 135.69574
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/agriculture-agro-alimentaire-et-souverainete.csv",
+   "telecharge_sous": "donnée (14).csv",
+   "doublons": [],
+   "md5": "2ad339bdf50f651e3dc3c9940641831d",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général",
+    "Comptes d'affectation spéciale"
+   ],
+   "lignes": 8,
+   "ministere": {
+    "id": 86752,
+    "nom": "Agriculture, agro-alimentaire et souveraineté alimentaire"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 6.305164115,
+     "Comptes d'affectation spéciale": 0.171
+    },
+    "montant_api": {
+     "Budget général": 6.305164115,
+     "Comptes d'affectation spéciale": 0.171
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/amenagement-du-territoire-et-de-la.csv",
+   "telecharge_sous": "donnée (16).csv",
+   "doublons": [],
+   "md5": "411ed664b6155103dbc104fce7fcd6a7",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général",
+    "Comptes d'affectation spéciale"
+   ],
+   "lignes": 5,
+   "ministere": {
+    "id": 86788,
+    "nom": "Aménagement du territoire et de la décentralisation"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 4.90551479,
+     "Comptes d'affectation spéciale": 0.806735
+    },
+    "montant_api": {
+     "Budget général": 4.90551479,
+     "Comptes d'affectation spéciale": 0.806735
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/armees-et-anciens-combattants.csv",
+   "telecharge_sous": "donnée (3).csv",
+   "doublons": [],
+   "md5": "6722efc755a4b5cbca07ecc7d2c4db95",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général"
+   ],
+   "lignes": 6,
+   "ministere": {
+    "id": 86797,
+    "nom": "Armées et anciens combattants"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 94.624089267
+    },
+    "montant_api": {
+     "Budget général": 94.624089267
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/culture.csv",
+   "telecharge_sous": "donnée (12).csv",
+   "doublons": [],
+   "md5": "8d32edecebcdd30669bdb49c2f3b4b8c",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général",
+    "Comptes de concours financiers"
+   ],
+   "lignes": 12,
+   "ministere": {
+    "id": 86749,
+    "nom": "Culture"
+   },
+   "controle": {
+    "somme_csv": {
+     "Comptes de concours financiers": 3.8633165,
+     "Budget général": 4.473699231
+    },
+    "montant_api": {
+     "Budget général": 4.473699231,
+     "Comptes de concours financiers": 3.8633165
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/depenses-par-ministere.csv",
+   "telecharge_sous": "Dépenses par ministère.csv",
+   "doublons": [
+    "Tous les budgets.csv"
+   ],
+   "md5": "0c0dc9e89abf430c03b7095460b14685",
+   "portee": "tous les ministères",
+   "colonnes": [
+    "Budget général",
+    "Budgets annexes",
+    "Comptes d'affectation spéciale",
+    "Comptes de concours financiers"
+   ],
+   "lignes": 19
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/economie-finances-et-souverainete-industrielle.csv",
+   "telecharge_sous": "donnée (2).csv",
+   "doublons": [],
+   "md5": "f4cd54ff3db845ce7fe4914bcfe66ab0",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général",
+    "Comptes d'affectation spéciale",
+    "Comptes de concours financiers"
+   ],
+   "lignes": 32,
+   "ministere": {
+    "id": 94705,
+    "nom": "Économie, finances et souveraineté industrielle, énergétique et numérique"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 78.804133296,
+     "Comptes de concours financiers": 10.677843,
+     "Comptes d'affectation spéciale": 5.74199
+    },
+    "montant_api": {
+     "Budget général": 78.804133296,
+     "Comptes d'affectation spéciale": 5.74199,
+     "Comptes de concours financiers": 10.677843
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/education-nationale.csv",
+   "telecharge_sous": "donnée (4).csv",
+   "doublons": [],
+   "md5": "b0aadc34c3f83f50b9d5fa40bf958913",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général"
+   ],
+   "lignes": 5,
+   "ministere": {
+    "id": 86755,
+    "nom": "Éducation nationale"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 87.851512353
+    },
+    "montant_api": {
+     "Budget général": 87.851512353
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/enseignement-superieur-recherche-et-espace.csv",
+   "telecharge_sous": "donnée (7).csv",
+   "doublons": [],
+   "md5": "e4442e480f6358c44d13d9331f1551cc",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général"
+   ],
+   "lignes": 4,
+   "ministere": {
+    "id": 86776,
+    "nom": "Enseignement supérieur, recherche et espace"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 29.415349573
+    },
+    "montant_api": {
+     "Budget général": 29.415349573
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/europe-et-affaires-etrangeres.csv",
+   "telecharge_sous": "donnée (15).csv",
+   "doublons": [],
+   "md5": "4596615d2224049182dba4a9cfe60ab4",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général"
+   ],
+   "lignes": 5,
+   "ministere": {
+    "id": 86746,
+    "nom": "Europe et affaires étrangères"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 6.374278154
+    },
+    "montant_api": {
+     "Budget général": 6.374278154
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/interieur.csv",
+   "telecharge_sous": "donnée (6).csv",
+   "doublons": [],
+   "md5": "df55248d1d3c9039c573bae5d14bd476",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général",
+    "Comptes d'affectation spéciale"
+   ],
+   "lignes": 11,
+   "ministere": {
+    "id": 86761,
+    "nom": "Intérieur"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 33.682984955,
+     "Comptes d'affectation spéciale": 0.3705206
+    },
+    "montant_api": {
+     "Budget général": 33.682984955,
+     "Comptes d'affectation spéciale": 0.3705206
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/justice.csv",
+   "telecharge_sous": "donnée (10).csv",
+   "doublons": [],
+   "md5": "d3e6c645d8304bddb059ce351321b437",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général"
+   ],
+   "lignes": 6,
+   "ministere": {
+    "id": 86764,
+    "nom": "Justice"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 12.589503218
+    },
+    "montant_api": {
+     "Budget général": 12.589503218
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/outre-mer.csv",
+   "telecharge_sous": "donnée (17).csv",
+   "doublons": [],
+   "md5": "3ac83bfaca9451c41335e2e5c0882fb3",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général"
+   ],
+   "lignes": 2,
+   "ministere": {
+    "id": 86785,
+    "nom": "Outre-Mer"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 3.552528146
+    },
+    "montant_api": {
+     "Budget général": 3.552528146
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/sante-familles-autonomie-et-personnes.csv",
+   "telecharge_sous": "donnée (9).csv",
+   "doublons": [],
+   "md5": "6c536c861350ae959883038f5ebe8a34",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général"
+   ],
+   "lignes": 4,
+   "ministere": {
+    "id": 94708,
+    "nom": "Santé, familles, autonomie et personnes handicapées"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 18.280016027
+    },
+    "montant_api": {
+     "Budget général": 18.280016027
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/sports-jeunesse-et-vie-associative.csv",
+   "telecharge_sous": "donnée (18).csv",
+   "doublons": [],
+   "md5": "944f1d86b239a9c5c787a569b1e80470",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général"
+   ],
+   "lignes": 3,
+   "ministere": {
+    "id": 86782,
+    "nom": "Sports, jeunesse et vie associative"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 1.609484629
+    },
+    "montant_api": {
+     "Budget général": 1.609484629
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/transition-ecologique-biodiversite-et.csv",
+   "telecharge_sous": "donnée (13).csv",
+   "doublons": [],
+   "md5": "767967d857529f1ad333743b53b788c4",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général"
+   ],
+   "lignes": 6,
+   "ministere": {
+    "id": 86770,
+    "nom": "Transition écologique, biodiversité et négociations internationales sur le climat et la nature"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 7.951089337
+    },
+    "montant_api": {
+     "Budget général": 7.951089337
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/transports.csv",
+   "telecharge_sous": "donnée (11).csv",
+   "doublons": [],
+   "md5": "c2faba1e580f498d9ee015da48627609",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général",
+    "Budgets annexes",
+    "Comptes de concours financiers"
+   ],
+   "lignes": 5,
+   "ministere": {
+    "id": 94711,
+    "nom": "Transports"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 5.9020821,
+     "Budgets annexes": 2.545535736
+    },
+    "montant_api": {
+     "Budget général": 5.9020821,
+     "Budgets annexes": 2.545535736
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/travail-et-solidarites.csv",
+   "telecharge_sous": "donnée (5).csv",
+   "doublons": [],
+   "md5": "c6967b907bd9e4f6a4f41ca709b3ce13",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général"
+   ],
+   "lignes": 5,
+   "ministere": {
+    "id": 86773,
+    "nom": "Travail et solidarités"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 34.810586432
+    },
+    "montant_api": {
+     "Budget général": 34.810586432
+    }
+   }
+  },
+  {
+   "fichier": "sources/budget.gouv.fr/export-csv/lfi-2026-ae/ville-et-logement.csv",
+   "telecharge_sous": "donnée (8).csv",
+   "doublons": [],
+   "md5": "bf6895bb5baed373d28229c250c52f8a",
+   "portee": "programmes d'un ministère",
+   "colonnes": [
+    "Budget général"
+   ],
+   "lignes": 4,
+   "ministere": {
+    "id": 86779,
+    "nom": "Ville et logement"
+   },
+   "controle": {
+    "somme_csv": {
+     "Budget général": 22.093874054
+    },
+    "montant_api": {
+     "Budget général": 22.093874054
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+[
+ {
+  "name": null,
+  "value": [
+   {
+    "groupe": 45,
+    "value": 0.264
+   }
+  ],
+  "category": {
+   "type": null,
+   "type_name": null,
+   "id": ""
+  },
+  "on_click": true
+ }
+]

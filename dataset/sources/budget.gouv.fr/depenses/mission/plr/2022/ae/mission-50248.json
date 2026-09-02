@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Prise en charge du chômage partiel et financement des aides d'urgence aux employeurs et aux actifs précaires à la suite de la crise sanitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.095417427
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 50251
+  },
+  "on_click": true
+ },
+ {
+  "name": "Fonds de solidarité pour les entreprises à la suite de la crise sanitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.726054077
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 50263
+  },
+  "on_click": true
+ },
+ {
+  "name": "Renforcement exceptionnel des participations financières de l'État dans le cadre de la crise sanitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.128068
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 50269
+  },
+  "on_click": true
+ },
+ {
+  "name": "Compensation à la sécurité sociale des allègements de prélèvements pour les entreprises les plus touchées par la crise sanitaire",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 1.25
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 50275
+  },
+  "on_click": true
+ },
+ {
+  "name": "Matériels sanitaires pour faire face à la crise de la covid-19",
+  "value": [
+   {
+    "groupe": 43,
+    "value": 0.0438378
+   }
+  ],
+  "category": {
+   "type": "programme",
+   "type_name": "Programme",
+   "id": 50281
+  },
+  "on_click": true
+ }
+]
