@@ -1,0 +1,4 @@
+{
+  "_comment": "Un crédit par portrait déposé. Obligatoire pour toute licence CC BY / CC BY-SA. build.py refuse un portrait dont le crédit manque. Voir README.md dans ce dossier.",
+  "credits": {}
+}

@@ -1,0 +1,412 @@
+{
+  "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution.",
+  "updated": "2026-09-01",
+  "avertissement": "Aucune candidature n'est officiellement déposée à ce stade. Les noms retenus sont les candidats pressentis par parti au vu des déclarations publiques et des sondages de 2026 ; ils changeront. Les programmes 2027 ne sont pour la plupart pas publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
+  "parties": [
+    {
+      "id": "rn",
+      "nom": "Rassemblement national",
+      "sigle": "RN",
+      "candidat": "Marine Le Pen",
+      "couleur": "#1C3F63",
+      "statutCandidature": "Candidature annoncée ; Jordan Bardella cité comme alternative",
+      "statut": "partiel",
+      "annonce": {
+        "titre": "125 Md€ d'économies",
+        "texte": "Marine Le Pen a annoncé une trajectoire de redressement des finances publiques reposant sur 125 Md€ d'économies. Environ 60 Md€ ont été rattachés publiquement à quatre postes : immigration, fraude fiscale et sociale, contribution au budget de l'Union européenne, organisation de l'État. Le solde, soit près de la moitié du total, n'a pas fait l'objet d'un détail public.",
+        "revendique": 125,
+        "detaille": 65,
+        "cote": "economie"
+      },
+      "set": {
+        "immigration": {
+          "sim": "hi",
+          "annonce": 25
+        },
+        "fraude": {
+          "sim": "mid",
+          "annonce": 15
+        },
+        "ue": {
+          "sim": "mid",
+          "annonce": 10
+        },
+        "agences": {
+          "sim": "hi",
+          "annonce": 3
+        },
+        "effectifs": {
+          "sim": "mid",
+          "annonce": 6
+        },
+        "collectivites": {
+          "sim": "lo",
+          "annonce": 5
+        },
+        "ame": {
+          "sim": "hi",
+          "annonce": 1.3
+        },
+        "institutions": {
+          "sim": "mid",
+          "annonce": 0.3
+        },
+        "tvaener": {
+          "sim": "mid",
+          "annonce": 10
+        },
+        "retr62": {
+          "sim": "mid",
+          "annonce": 13
+        }
+      },
+      "sources": [
+        {
+          "t": "Le RN et son équation budgétaire impossible — Le Temps",
+          "u": "https://www.letemps.ch/monde/france/le-rn-et-son-equation-budgetaire-impossible-quand-le-chiffrage-economique-releve-davantage-de-l-ideologie"
+        },
+        {
+          "t": "Contre-budget du RN — Public Sénat",
+          "u": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale"
+        },
+        {
+          "t": "Programme économique du RN — OFCE législatives 2024",
+          "u": "https://www.ofce-legislatives2024.fr/programmes/rn.html"
+        }
+      ]
+    },
+    {
+      "id": "lfi",
+      "nom": "La France insoumise",
+      "sigle": "LFI",
+      "candidat": "Jean-Luc Mélenchon",
+      "couleur": "#C1272D",
+      "statutCandidature": "Candidature annoncée",
+      "statut": "partiel",
+      "annonce": {
+        "titre": "≈ 90 Md€ de recettes nouvelles",
+        "texte": "Les chiffrages du programme de gauche retiennent environ 90 Md€ de recettes fiscales supplémentaires par an (fourchette de 60 à 120 Md€), portées par les 10 % de ménages les plus aisés et par les grandes entreprises : ISF climatique 12 Md€, contribution sur les superprofits 15 Md€, taxe sur les transactions financières 20 Md€, plus la lutte contre l'évasion fiscale, chiffrée à partir d'un écart estimé à 80 Md€ par an. Côté dépenses, la retraite à 60 ans et le plan d'investissement écologique sont les deux postes dominants.",
+        "revendique": 90,
+        "detaille": 90,
+        "cote": "recette"
+      },
+      "set": {
+        "isfclim": {
+          "sim": "mid",
+          "annonce": 12
+        },
+        "superp": {
+          "sim": "mid",
+          "annonce": 15
+        },
+        "ttf": {
+          "sim": "mid",
+          "annonce": 20
+        },
+        "zucman": {
+          "sim": "mid",
+          "annonce": 20
+        },
+        "pfu": {
+          "sim": "mid",
+          "annonce": 6
+        },
+        "succ": {
+          "sim": "mid",
+          "annonce": 5
+        },
+        "isgrandes": {
+          "sim": "mid",
+          "annonce": 12
+        },
+        "minimum15": {
+          "sim": "mid"
+        },
+        "fraude": {
+          "sim": "mid"
+        },
+        "alleg": {
+          "sim": "mid",
+          "annonce": 12
+        },
+        "niches": {
+          "sim": "mid",
+          "annonce": 15
+        },
+        "retr60": {
+          "sim": "mid",
+          "annonce": 20
+        },
+        "smic": {
+          "sim": "mid"
+        },
+        "services": {
+          "sim": "hi"
+        },
+        "ecolo": {
+          "sim": "mid",
+          "annonce": 30
+        },
+        "age": {
+          "sim": "mid"
+        },
+        "pointindice": {
+          "sim": "mid"
+        },
+        "indexation": {
+          "sim": "mid"
+        }
+      },
+      "sources": [
+        {
+          "t": "Chiffrage des recettes fiscales du programme — La Grande Conversation",
+          "u": "https://www.lagrandeconversation.com/economie/chiffrage-des-recettes-fiscales-duprogramme-du-nouveau-front-populaire/"
+        },
+        {
+          "t": "Les pistes de la gauche pour augmenter les recettes — Public Sénat",
+          "u": "https://www.publicsenat.fr/actualites/politique/programme-du-nouveau-front-populaire-les-pistes-de-la-gauche-pour-augmenter-les-recettes-fiscales-et-redistribuer-les-richesses"
+        },
+        {
+          "t": "Taxe Zucman — Wikipédia (état du débat parlementaire)",
+          "u": "https://fr.wikipedia.org/wiki/Taxe_Zucman"
+        }
+      ]
+    },
+    {
+      "id": "lr",
+      "nom": "Les Républicains",
+      "sigle": "LR",
+      "candidat": "Bruno Retailleau",
+      "couleur": "#2E6FB7",
+      "statutCandidature": "Président du parti, candidature pressentie",
+      "statut": "reconstitution",
+      "annonce": {
+        "titre": "Pas de chiffrage 2027 publié",
+        "texte": "Aucun chiffrage d'ensemble n'a été publié à ce jour. Le scénario ci-dessous est une reconstitution du simulateur à partir de positions publiques : priorité aux économies de dépense, allongement de la durée du travail, baisse des impôts de production. Les montants sont ceux du catalogue, pas ceux du parti.",
+        "revendique": null,
+        "detaille": null,
+        "cote": null
+      },
+      "set": {
+        "effectifs": {
+          "sim": "hi"
+        },
+        "chomage": {
+          "sim": "mid"
+        },
+        "age65": {
+          "sim": "mid"
+        },
+        "niches": {
+          "sim": "mid"
+        },
+        "collectivites": {
+          "sim": "mid"
+        },
+        "ondam": {
+          "sim": "mid"
+        },
+        "blanche": {
+          "sim": "mid"
+        },
+        "immigration": {
+          "sim": "lo"
+        },
+        "prod": {
+          "sim": "mid"
+        },
+        "irbaisse": {
+          "sim": "lo"
+        },
+        "defense": {
+          "sim": "mid"
+        }
+      },
+      "sources": []
+    },
+    {
+      "id": "ren",
+      "nom": "Renaissance",
+      "sigle": "REN",
+      "candidat": "Gabriel Attal",
+      "couleur": "#D9A227",
+      "statutCandidature": "Candidature pressentie",
+      "statut": "reconstitution",
+      "annonce": {
+        "titre": "Pas de chiffrage 2027 publié",
+        "texte": "Reconstitution du simulateur à partir de positions publiques : maîtrise de la dépense sans hausse générale des prélèvements, poursuite de la baisse des impôts de production, effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.",
+        "revendique": null,
+        "detaille": null,
+        "cote": null
+      },
+      "set": {
+        "blanche": {
+          "sim": "mid"
+        },
+        "ondam": {
+          "sim": "mid"
+        },
+        "agences": {
+          "sim": "mid"
+        },
+        "effectifs": {
+          "sim": "mid"
+        },
+        "chomage": {
+          "sim": "mid"
+        },
+        "niches": {
+          "sim": "lo"
+        },
+        "defense": {
+          "sim": "mid"
+        },
+        "prod": {
+          "sim": "lo"
+        }
+      },
+      "sources": []
+    },
+    {
+      "id": "hor",
+      "nom": "Horizons",
+      "sigle": "HOR",
+      "candidat": "Édouard Philippe",
+      "couleur": "#4FB0C6",
+      "statutCandidature": "Candidature annoncée",
+      "statut": "reconstitution",
+      "annonce": {
+        "titre": "Pas de chiffrage 2027 publié",
+        "texte": "Reconstitution du simulateur à partir de positions publiques : allongement de la durée du travail, effort d'économies large et rapide, effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.",
+        "revendique": null,
+        "detaille": null,
+        "cote": null
+      },
+      "set": {
+        "age65": {
+          "sim": "mid"
+        },
+        "blanche": {
+          "sim": "hi"
+        },
+        "niches": {
+          "sim": "mid"
+        },
+        "effectifs": {
+          "sim": "mid"
+        },
+        "ondam": {
+          "sim": "mid"
+        },
+        "collectivites": {
+          "sim": "mid"
+        },
+        "defense": {
+          "sim": "mid"
+        },
+        "agences": {
+          "sim": "mid"
+        }
+      },
+      "sources": []
+    },
+    {
+      "id": "ps",
+      "nom": "Parti socialiste / Place publique",
+      "sigle": "PS",
+      "candidat": "Raphaël Glucksmann",
+      "couleur": "#E4557A",
+      "statutCandidature": "Candidature pressentie, primaire à gauche en cours",
+      "statut": "reconstitution",
+      "annonce": {
+        "titre": "Pas de chiffrage 2027 publié",
+        "texte": "Reconstitution du simulateur à partir de positions publiques : fiscalité du patrimoine renforcée sans rupture avec le cadre européen, retour partiel sur la réforme des retraites, investissement écologique et effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.",
+        "revendique": null,
+        "detaille": null,
+        "cote": null
+      },
+      "set": {
+        "isf": {
+          "sim": "mid"
+        },
+        "zucman": {
+          "sim": "lo"
+        },
+        "succ": {
+          "sim": "mid"
+        },
+        "isgrandes": {
+          "sim": "lo"
+        },
+        "niches": {
+          "sim": "mid"
+        },
+        "indexation": {
+          "sim": "mid"
+        },
+        "services": {
+          "sim": "mid"
+        },
+        "ecolo": {
+          "sim": "mid"
+        },
+        "defense": {
+          "sim": "mid"
+        },
+        "retr62": {
+          "sim": "lo"
+        }
+      },
+      "sources": []
+    },
+    {
+      "id": "eco",
+      "nom": "Les Écologistes",
+      "sigle": "ÉCO",
+      "candidat": "Marine Tondelier",
+      "couleur": "#4C9A54",
+      "statutCandidature": "Candidature pressentie, primaire à gauche en cours",
+      "statut": "reconstitution",
+      "annonce": {
+        "titre": "Pas de chiffrage 2027 publié",
+        "texte": "Reconstitution du simulateur à partir de positions publiques : investissement écologique de l'ordre du besoin identifié par le rapport Pisani-Ferry, financé par la fiscalité du patrimoine et le rabot des aides aux entreprises. Les montants sont ceux du catalogue, pas ceux du parti.",
+        "revendique": null,
+        "detaille": null,
+        "cote": null
+      },
+      "set": {
+        "ecolo": {
+          "sim": "hi"
+        },
+        "isfclim": {
+          "sim": "mid"
+        },
+        "superp": {
+          "sim": "mid"
+        },
+        "cir": {
+          "sim": "mid"
+        },
+        "niches": {
+          "sim": "mid"
+        },
+        "succ": {
+          "sim": "mid"
+        },
+        "age": {
+          "sim": "mid"
+        },
+        "services": {
+          "sim": "mid"
+        }
+      },
+      "sources": []
+    }
+  ],
+  "sourceOfficielle": {
+    "nom": "Ministère de l'Intérieur — programmes officiels des candidats",
+    "url": "https://www.interieur.gouv.fr/archives/actualites/actualites-du-ministere/election-presidentielle-programme-des-candidats-est-disponible",
+    "statut": "attendue",
+    "note": "Le ministère de l'Intérieur publie, une fois les candidatures validées par le Conseil constitutionnel, la profession de foi et le programme officiel de chaque candidat. C'est la seule source de rang officiel pour un programme : dès sa mise en ligne, elle remplace ici toute reprise de presse, et les scénarios « reconstitution » sont rebâtis à partir d'elle. Non disponible à ce jour pour 2027."
+  }
+}

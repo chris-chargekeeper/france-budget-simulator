@@ -1,0 +1,1577 @@
+<title>Le Budget de la France</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --plane:#E7EBEF;
+  --surface:#FBFCFD;
+  --surface-2:#F1F4F7;
+  --ink:#0E1A26;
+  --ink-2:#4A5A6B;
+  --ink-3:#7C8C9B;
+  --rule:#D6DDE4;
+  --rule-soft:#E5EAEF;
+  --accent:#1c5cab;
+  --grid:#E5EAEF;
+  --axis:#C2CCD6;
+
+  --s-base:#2a78d6;      /* tendanciel */
+  --s-scen:#eb6834;      /* scenario */
+  --pos:#2a78d6;         /* ameliore le solde */
+  --neg:#d03b3b;         /* degrade le solde */
+  --bar:#6da7ec;
+  --bar-strong:#1c5cab;
+  --critical:#d03b3b;
+  --good:#0ca30c;
+  --warn:#fab219;
+
+  --shadow: 0 1px 2px rgba(14,26,38,.06), 0 8px 24px -16px rgba(14,26,38,.28);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --plane:#0A0F15;
+    --surface:#141C25;
+    --surface-2:#1B242F;
+    --ink:#E9EFF5;
+    --ink-2:#9FB0C0;
+    --ink-3:#71828F;
+    --rule:#27323D;
+    --rule-soft:#1F2933;
+    --accent:#6da7ec;
+    --grid:#222C36;
+    --axis:#34414D;
+
+    --s-base:#3987e5;
+    --s-scen:#d95926;
+    --pos:#3987e5;
+    --neg:#e66767;
+    --bar:#3987e5;
+    --bar-strong:#86b6ef;
+    --critical:#d03b3b;
+    --good:#0ca30c;
+    --warn:#fab219;
+    --shadow: 0 1px 2px rgba(0,0,0,.5), 0 10px 30px -20px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --plane:#0A0F15;
+  --surface:#141C25;
+  --surface-2:#1B242F;
+  --ink:#E9EFF5;
+  --ink-2:#9FB0C0;
+  --ink-3:#71828F;
+  --rule:#27323D;
+  --rule-soft:#1F2933;
+  --accent:#6da7ec;
+  --grid:#222C36;
+  --axis:#34414D;
+  --s-base:#3987e5;
+  --s-scen:#d95926;
+  --pos:#3987e5;
+  --neg:#e66767;
+  --bar:#3987e5;
+  --bar-strong:#86b6ef;
+  --shadow: 0 1px 2px rgba(0,0,0,.5), 0 10px 30px -20px rgba(0,0,0,.9);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--plane);
+  color:var(--ink);
+  font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size:15px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px 72px}
+h1,h2,h3{margin:0;text-wrap:balance}
+a{color:var(--accent)}
+
+/* ---------- masthead ---------- */
+.masthead{border-bottom:1px solid var(--rule);background:var(--surface);}
+.masthead .wrap{padding-top:26px;padding-bottom:22px;display:grid;gap:14px}
+.kicker{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+  display:flex;gap:10px;align-items:center;flex-wrap:wrap;
+}
+.kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--s-scen)}
+h1{
+  font-family:Newsreader, Georgia, serif;
+  font-weight:600;font-size:clamp(30px,4.6vw,52px);line-height:1.04;letter-spacing:-.015em;
+}
+h1 em{font-style:italic;color:var(--ink-2);font-weight:400}
+.standfirst{max-width:64ch;color:var(--ink-2);font-size:16px}
+.caveat{
+  display:flex;gap:10px;align-items:flex-start;
+  border-left:2px solid var(--warn);padding:8px 0 8px 12px;
+  font-size:13px;color:var(--ink-2);max-width:78ch;
+}
+.caveat b{color:var(--ink);font-weight:600}
+
+/* ---------- sections ---------- */
+section{margin-top:38px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:14px}
+.sec-head h2{
+  font-family:Newsreader,Georgia,serif;font-weight:600;font-size:24px;letter-spacing:-.01em;
+}
+.sec-head p{margin:0;color:var(--ink-2);font-size:13.5px;max-width:60ch}
+.eyebrow{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-3);
+}
+
+/* ---------- presets ---------- */
+.presets{display:flex;gap:8px;flex-wrap:wrap}
+.preset{
+  border:1px solid var(--rule);background:var(--surface);color:var(--ink-2);
+  border-radius:999px;padding:7px 14px;font:inherit;font-size:13px;cursor:pointer;
+  transition:border-color .15s, color .15s, background .15s;
+}
+.preset:hover{border-color:var(--accent);color:var(--ink)}
+.preset[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.preset:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.preset-note{margin-top:10px;font-size:13px;color:var(--ink-2);min-height:1.5em}
+
+/* ---------- cockpit ---------- */
+.cockpit{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:10px;overflow:hidden;margin-top:16px}
+.tile{background:var(--surface);padding:16px 18px 18px;display:grid;gap:5px;align-content:start}
+.tile .lab{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
+.tile .val{font-family:"IBM Plex Mono",monospace;font-size:30px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
+.tile .sub{font-size:12.5px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.delta{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-family:"IBM Plex Mono",monospace;font-weight:500}
+.delta.good{color:var(--good)}
+.delta.bad{color:var(--critical)}
+.delta.flat{color:var(--ink-3)}
+
+/* ---------- panels & charts ---------- */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:16px 18px 12px}
+.panel h3{font-size:14px;font-weight:600;letter-spacing:-.005em}
+.panel .sub{font-size:12.5px;color:var(--ink-2);margin:2px 0 10px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink-2);margin:0 0 6px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.swatch{width:14px;height:3px;border-radius:2px;display:inline-block}
+.chart{width:100%;height:auto;display:block;overflow:visible}
+.chart text{font-family:"IBM Plex Sans",system-ui,sans-serif}
+.tick{fill:var(--ink-3);font-size:10.5px;font-variant-numeric:tabular-nums}
+.gridline{stroke:var(--grid);stroke-width:1}
+.axisline{stroke:var(--axis);stroke-width:1}
+.reflabel{fill:var(--ink-3);font-size:10px;font-family:"IBM Plex Mono",monospace}
+.endlabel{font-size:11.5px;font-weight:600;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+
+#tip{
+  position:fixed;pointer-events:none;z-index:50;opacity:0;transition:opacity .1s;
+  background:var(--surface);border:1px solid var(--rule);border-radius:8px;
+  box-shadow:var(--shadow);padding:8px 10px;font-size:12.5px;min-width:150px;
+}
+#tip .t-title{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;color:var(--ink-3);text-transform:uppercase;margin-bottom:4px}
+#tip .t-row{display:flex;justify-content:space-between;gap:14px;font-variant-numeric:tabular-nums}
+#tip .t-row b{font-family:"IBM Plex Mono",monospace;font-weight:600}
+#tip .t-key{display:inline-flex;align-items:center;gap:6px;color:var(--ink-2)}
+
+/* ---------- ledger ---------- */
+.ledger{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.ledger-col{display:grid;gap:16px;align-content:start}
+.col{background:var(--surface);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+.col > header{
+  padding:11px 16px;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;
+  align-items:baseline;gap:10px;background:var(--surface-2);
+}
+.col > header .name{font-size:13px;font-weight:600}
+.col > header .sum{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
+.col.improve > header .sum{color:var(--pos)}
+.col.degrade > header .sum{color:var(--neg)}
+.m{padding:11px 16px;border-top:1px solid var(--rule-soft);display:grid;grid-template-columns:auto 1fr auto;gap:10px 11px;align-items:start}
+.m:first-of-type{border-top:none}
+.m input[type=checkbox]{margin:3px 0 0;width:15px;height:15px;accent-color:var(--accent);cursor:pointer}
+.m .lab{font-size:13.5px;line-height:1.35;cursor:pointer}
+.m .amt{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--ink-3)}
+.m.on .amt{color:var(--ink)}
+.m.on .lab{font-weight:500}
+.m .meta{grid-column:2/4;display:none;gap:8px;flex-direction:column}
+.m.on .meta{display:flex}
+.m .note{font-size:11.5px;color:var(--ink-2);line-height:1.45}
+.m input[type=range]{width:100%;accent-color:var(--accent);margin:0}
+.m .scale{display:flex;justify-content:space-between;font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--ink-3)}
+.chip{
+  display:inline-block;font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+  font-family:"IBM Plex Mono",monospace;padding:1px 6px;border-radius:4px;
+  background:color-mix(in srgb, var(--warn) 18%, transparent);color:var(--ink-2);
+  border:1px solid color-mix(in srgb, var(--warn) 45%, transparent);vertical-align:1px;margin-left:6px;
+}
+
+/* ---------- composition ---------- */
+.compo-row{display:grid;grid-template-columns:minmax(150px,1.1fr) 3fr auto;gap:12px;align-items:center;padding:5px 0;font-size:13px}
+.compo-row .n{color:var(--ink-2);line-height:1.25}
+.compo-bar{height:12px;border-radius:0 3px 3px 0;background:var(--bar)}
+.compo-row .v{font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;color:var(--ink)}
+.compo-track{background:var(--rule-soft);height:12px;border-radius:0 3px 3px 0}
+
+/* ---------- params & method ---------- */
+.params{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 22px}
+.p{display:grid;gap:4px}
+.p label{font-size:12.5px;color:var(--ink-2)}
+.p .pv{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+.p input[type=range]{width:100%;accent-color:var(--accent)}
+details{border-top:1px solid var(--rule);padding:12px 0}
+summary{cursor:pointer;font-weight:600;font-size:14px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"＋";color:var(--ink-3);margin-right:8px;font-family:"IBM Plex Mono",monospace}
+details[open] summary::before{content:"−"}
+details .body{padding-top:10px;color:var(--ink-2);font-size:13.5px;max-width:74ch}
+details .body p{margin:0 0 10px}
+details .body code{font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:var(--surface-2);padding:1px 5px;border-radius:4px;color:var(--ink)}
+table{border-collapse:collapse;width:100%;font-size:12.5px;font-variant-numeric:tabular-nums}
+th,td{text-align:right;padding:6px 10px;border-bottom:1px solid var(--rule-soft)}
+th:first-child,td:first-child{text-align:left}
+th{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+td{font-family:"IBM Plex Mono",monospace}
+.scroller{overflow-x:auto}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--ink-3);max-width:78ch}
+.btn{border:1px solid var(--rule);background:var(--surface);color:var(--ink-2);border-radius:7px;padding:6px 12px;font:inherit;font-size:12.5px;cursor:pointer}
+.btn:hover{border-color:var(--accent);color:var(--ink)}
+.empty{color:var(--ink-3);font-size:13px;padding:26px 0;text-align:center}
+
+@media (max-width:900px){
+  .cockpit{grid-template-columns:1fr 1fr}
+  .grid2,.ledger{grid-template-columns:1fr}
+  .params{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .cockpit{grid-template-columns:1fr}
+  .params{grid-template-columns:1fr}
+  .compo-row{grid-template-columns:minmax(110px,1fr) 2fr auto}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style><style>
+/* --- additions : candidats, annonce vs modelise, veille --- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+.card{
+  position:relative;text-align:left;background:var(--surface);border:1px solid var(--rule);
+  border-radius:10px;padding:13px 14px 14px;cursor:pointer;font:inherit;color:inherit;
+  display:grid;gap:3px;align-content:start;transition:border-color .15s,box-shadow .15s;
+  border-top:3px solid var(--pc,var(--rule));
+}
+.card:hover{border-color:var(--ink-3)}
+.card[aria-pressed="true"]{border-color:var(--ink);box-shadow:var(--shadow)}
+.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card .sig{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;color:var(--pc);font-weight:600}
+.card-top{display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:center}
+.avatar{
+  width:46px;height:46px;border-radius:50%;overflow:hidden;flex:none;
+  display:grid;place-items:center;background:color-mix(in srgb,var(--pc) 16%,transparent);
+  color:var(--pc);font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:600;letter-spacing:.02em;
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--pc) 35%,transparent);
+}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.card .who{font-size:15px;font-weight:600;line-height:1.2}
+.card .party{font-size:12px;color:var(--ink-2);line-height:1.3}
+.card .claim{font-family:"IBM Plex Mono",monospace;font-size:12.5px;margin-top:6px;color:var(--ink)}
+.badge{
+  display:inline-block;margin-top:7px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+  font-family:"IBM Plex Mono",monospace;padding:2px 7px;border-radius:4px;border:1px solid var(--rule);color:var(--ink-2);
+}
+.badge.pub{border-color:color-mix(in srgb,var(--good) 50%,transparent);background:color-mix(in srgb,var(--good) 12%,transparent)}
+.badge.rec{border-color:color-mix(in srgb,var(--warn) 55%,transparent);background:color-mix(in srgb,var(--warn) 15%,transparent)}
+.toggle{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--ink-2);cursor:pointer;margin-top:12px}
+.toggle input{width:16px;height:16px;accent-color:var(--accent);cursor:pointer}
+.gap-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px;align-items:start}
+.gapbar{display:grid;gap:9px;margin-top:4px}
+.gapbar .r{display:grid;grid-template-columns:minmax(140px,auto) 1fr auto;gap:12px;align-items:center;font-size:13px}
+.gapbar .r .n{color:var(--ink-2)}
+.gapbar .r .b{height:16px;border-radius:0 3px 3px 0;min-width:2px}
+.gapbar .r .v{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:13px;font-variant-numeric:tabular-nums}
+.prose{font-size:13.5px;color:var(--ink-2);line-height:1.55;max-width:62ch}
+.prose b{color:var(--ink)}
+.srclist{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:5px;font-size:12px}
+.srclist a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--rule)}
+.srclist a:hover{color:var(--accent);border-color:var(--accent)}
+.feed{display:grid;gap:0}
+.fitem{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--rule-soft);font-size:13.5px}
+.fitem:first-child{border-top:none}
+.fitem time{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);white-space:nowrap;padding-top:2px}
+.fitem .q{color:var(--ink)}
+.fitem .w{font-weight:600}
+.fitem .e{margin-top:4px;font-size:12px;color:var(--ink-2);border-left:2px solid var(--warn);padding-left:9px}
+.fitem a.src{font-size:11.5px;color:var(--ink-3);text-decoration:none;border-bottom:1px solid var(--rule)}
+.fitem a.src:hover{color:var(--accent)}
+.params{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.sub-list{font-size:11.5px;color:var(--ink-3);line-height:1.45;margin-top:2px}
+.hero-fig{font-family:"IBM Plex Mono",monospace;font-size:clamp(26px,3.4vw,38px);font-weight:600;letter-spacing:-.02em;line-height:1.05}
+@media (max-width:900px){.gap-grid{grid-template-columns:1fr}}
+
+/* --- comparaison des programmes --- */
+.cmp{display:grid;min-width:760px}
+.cmp-row{
+  display:grid;grid-template-columns:212px 156px 1fr 78px 84px;gap:14px;align-items:center;
+  padding:9px 8px;border-top:1px solid var(--rule-soft);border-radius:6px;
+  background:none;border-left:0;border-right:0;border-bottom:0;font:inherit;color:inherit;
+  text-align:left;width:100%;cursor:pointer;
+}
+.cmp-row:hover{background:var(--surface-2)}
+.cmp-row[aria-pressed="true"]{background:var(--surface-2);box-shadow:inset 2px 0 0 var(--ink)}
+.cmp-row:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.cmp-head{
+  display:grid;grid-template-columns:212px 156px 1fr 78px 84px;gap:14px;padding:0 8px 7px;
+  font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-3);border-bottom:1px solid var(--rule);
+}
+.cmp-head .r{text-align:right}
+.cmp-who{display:grid;grid-template-columns:auto 1fr;gap:9px;align-items:center;min-width:0}
+.cmp-av{
+  width:28px;height:28px;border-radius:50%;flex:none;display:grid;place-items:center;overflow:hidden;
+  background:color-mix(in srgb,var(--pc) 16%,transparent);color:var(--pc);
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:600;
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--pc) 35%,transparent);
+}
+.cmp-av img{width:100%;height:100%;object-fit:cover;display:block}
+.cmp-name{font-size:13.5px;font-weight:600;line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cmp-sub{font-size:11px;color:var(--ink-3);line-height:1.3}
+.cmp-spark{display:block;width:156px;height:38px}
+.cmp-bar{position:relative;height:16px}
+.cmp-bar .fill{position:absolute;left:0;top:2px;height:12px;border-radius:0 3px 3px 0}
+.cmp-bar .lim{position:absolute;top:-2px;bottom:-2px;width:1px;background:var(--axis)}
+.cmp-bar .lab{position:absolute;top:0;font-family:"IBM Plex Mono",monospace;font-size:11.5px;
+  font-weight:600;font-variant-numeric:tabular-nums;line-height:16px}
+.cmp-num{font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;text-align:right}
+.cmp-row.ref .cmp-name{font-weight:500;color:var(--ink-2)}
+
+/* --- fil des annonces --- */
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:4px}
+.chips button{
+  border:1px solid var(--rule);background:var(--surface);color:var(--ink-2);border-radius:999px;
+  padding:5px 12px;font:inherit;font-size:12.5px;cursor:pointer;display:inline-flex;gap:7px;align-items:center;
+}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.chips button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chips .dotc{width:7px;height:7px;border-radius:50%;background:var(--pc)}
+.chips .n{font-family:"IBM Plex Mono",monospace;font-size:11px;opacity:.75}
+.pill{
+  display:inline-block;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
+  font-family:"IBM Plex Mono",monospace;padding:2px 7px;border-radius:4px;border:1px solid var(--rule);
+  color:var(--ink-2);white-space:nowrap;
+}
+.pill.ko{border-color:color-mix(in srgb,var(--critical) 55%,transparent);background:color-mix(in srgb,var(--critical) 12%,transparent);color:var(--critical)}
+.pill.warn{border-color:color-mix(in srgb,var(--warn) 60%,transparent);background:color-mix(in srgb,var(--warn) 16%,transparent)}
+.fhead{display:flex;gap:9px;align-items:baseline;flex-wrap:wrap}
+.fmeta{font-size:11.5px;color:var(--ink-3);margin-top:2px}
+.fbot{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:6px}
+.fmontant{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;color:var(--ink)}
+.unver{font-size:11px;color:var(--ink-3);font-style:italic}
+@media (max-width:700px){.cmp-head{display:none}}
+</style>
+
+<style>
+/* --- mode simple / avancé --- */
+body:not(.adv) .adv-only{display:none!important}
+body.adv .simple-only{display:none!important}
+.modebar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--ink-2)}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{
+  border:0;background:transparent;color:var(--ink-2);font:inherit;font-size:13px;
+  padding:6px 16px;cursor:pointer;transition:background .15s,color .15s;
+}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
+.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.verdict{
+  background:var(--surface);border:1px solid var(--rule);border-radius:10px;
+  padding:20px 22px;display:grid;gap:12px;margin-bottom:16px;
+}
+.verdict h3{font-family:Newsreader,Georgia,serif;font-weight:600;font-size:20px;letter-spacing:-.01em}
+.vlines{display:grid;gap:9px;margin:0;padding:0;list-style:none;max-width:74ch}
+.vlines li{display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:baseline;font-size:15px;line-height:1.5}
+.vlines .mark{width:7px;height:7px;border-radius:2px;background:var(--ink-3);transform:translateY(-2px)}
+.vlines .mark.bad{background:var(--critical)} .vlines .mark.good{background:var(--good)}
+.vlines b{font-family:"IBM Plex Mono",monospace;font-weight:600;font-variant-numeric:tabular-nums}
+.perk{font-size:13px;color:var(--ink-2);border-top:1px solid var(--rule-soft);padding-top:11px;max-width:74ch}
+.choices{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+.choices button{
+  border:1px solid var(--rule);background:var(--surface);color:var(--ink-2);border-radius:7px;
+  padding:6px 12px;font:inherit;font-size:12.5px;cursor:pointer;
+}
+.choices button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.choices button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.moreline{font-size:12.5px;color:var(--ink-3);padding:9px 0 2px}
+.thousand{
+  font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.compo-row.hdr{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);
+  font-family:"IBM Plex Mono",monospace;padding-bottom:6px;border-bottom:1px solid var(--rule-soft);margin-bottom:4px}
+.compo-row.four{grid-template-columns:minmax(150px,1.1fr) 3fr auto auto;gap:12px}
+.compo-row .v{min-width:56px;text-align:right}
+</style>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="kicker"><span class="dot"></span> Le budget de la France · données au 2026-09-01</div>
+    <h1>Le budget de la France,<br><em>et ce que les programmes en feraient</em></h1>
+    <p class="standfirst">L'État dépense environ 1 690 milliards d'euros par an et n'en encaisse que 1 530.
+      L'écart s'ajoute chaque année à la dette. Choisissez un candidat : vous verrez ce que son programme
+      changerait vraiment, et l'écart entre ce qu'il annonce et ce que ça donne.</p>
+    <div class="modebar">
+      <div class="seg" role="group" aria-label="Niveau de détail">
+        <button type="button" id="mSimple" aria-pressed="true">Vue simple</button>
+        <button type="button" id="mAdv" aria-pressed="false">Mode avancé</button>
+      </div>
+      <span class="simple-only">Le mode avancé ouvre les 41 mesures, leurs fourchettes de chiffrage et les hypothèses économiques.</span>
+      <span class="adv-only">Toutes les mesures et tous les réglages sont ouverts.</span>
+    </div>
+    <div class="caveat">
+      <div class="simple-only"><b>Les chiffres annoncés par les partis sont affichés tels quels, à côté de ce que
+        produit le calcul.</b> Les deux ne coïncident presque jamais, et c'est l'objet de ce site.</div>
+      <div class="adv-only"><b>Quand un parti annonce un chiffre, ce chiffre est affiché tel quel, à côté de ce que
+        produit le modèle.</b> Les mesures sont chiffrées en ordres de grandeur issus de travaux publics (INSEE,
+        Cour des comptes, HCFP, OFCE, IPP, rapports parlementaires) ; chaque montant est réglable entre une borne
+        basse et une borne haute, parce que le chiffrage lui-même est souvent l'objet du désaccord.
+        Voir <a href="#methode">méthode, sources et limites</a>.</div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section aria-labelledby="h-cand">
+    <div class="sec-head">
+      <div><div class="eyebrow">Étape 1</div><h2 id="h-cand">Choisissez un candidat</h2></div>
+      <p id="candWarn"></p>
+    </div>
+    <div class="cards" id="cards"></div>
+    <label class="toggle"><input type="checkbox" id="modeAnnonce">
+      Utiliser les chiffres annoncés par le parti — la lecture la plus favorable à son programme</label>
+    <p class="preset-note" id="presetNote"></p>
+  </section>
+
+  <section aria-labelledby="h-ck">
+    <div class="sec-head">
+      <div><div class="eyebrow">Étape 2</div><h2 id="h-ck">Ce que ça donne en 2032</h2></div>
+      <p>Les mesures s'appliquent à partir de 2027, comme un programme voté en début de mandat.</p>
+    </div>
+    <div class="verdict" id="verdict"></div>
+    <div class="cockpit" id="cockpit"></div>
+    <div class="grid2" style="margin-top:16px">
+      <div class="panel">
+        <h3>Le déficit, année par année</h3>
+        <p class="sub">En % du PIB, c'est-à-dire de tout ce que la France produit en un an. L'Europe fixe la limite à 3 %.</p>
+        <div class="legend">
+          <span><i class="swatch" style="background:var(--s-base)"></i> Si rien ne change</span>
+          <span><i class="swatch" style="background:var(--s-scen)"></i> Avec ce programme</span>
+        </div>
+        <svg class="chart" id="chSolde" viewBox="0 0 620 290" role="img" aria-label="Trajectoire du déficit public en pourcentage du PIB"></svg>
+      </div>
+      <div class="panel">
+        <h3>La dette, année par année</h3>
+        <p class="sub">Aussi en % du PIB. La référence européenne est de 60 % ; la France en est à 116 %.</p>
+        <div class="legend">
+          <span><i class="swatch" style="background:var(--s-base)"></i> Si rien ne change</span>
+          <span><i class="swatch" style="background:var(--s-scen)"></i> Avec ce programme</span>
+        </div>
+        <svg class="chart" id="chDette" viewBox="0 0 620 290" role="img" aria-label="Trajectoire de la dette publique en pourcentage du PIB"></svg>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-cmp">
+    <div class="sec-head">
+      <div><div class="eyebrow">Vue d'ensemble</div><h2 id="h-cmp">Les sept programmes côte à côte</h2></div>
+      <p>Même calcul, même échelle, pour tous. Cliquez sur une ligne pour la charger et en voir le détail.</p>
+    </div>
+    <div class="panel">
+      <div class="scroller"><div id="cmp"></div></div>
+      <p class="sub" id="cmpNote" style="margin-top:12px"></p>
+    </div>
+  </section>
+
+  <section id="ecart" aria-labelledby="h-ecart">
+    <div class="sec-head">
+      <div><div class="eyebrow">Étape 3</div><h2 id="h-ecart">Entre l'annonce et le budget</h2></div>
+      <p>Ce que le parti revendique, la part qu'il a vraiment détaillée, et ce que le calcul en tire.</p>
+    </div>
+    <div class="panel">
+      <div class="gap-grid">
+        <div><div class="gapbar" id="gapbar"></div></div>
+        <div>
+          <p class="prose" id="gapProse"></p>
+          <ul class="srclist" id="gapSrc"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-imp">
+    <div class="sec-head">
+      <div><div class="eyebrow">Le détail</div><h2 id="h-imp">Ce que pèse chaque mesure</h2></div>
+      <p>Effet sur le budget en 2032. À droite, ce qui rapporte ou économise ; à gauche, ce qui coûte.</p>
+    </div>
+    <div class="panel">
+      <div class="legend" style="margin-bottom:10px">
+        <span><i class="swatch" style="background:var(--neg)"></i> Ça coûte</span>
+        <span><i class="swatch" style="background:var(--pos)"></i> Ça rapporte ou ça économise</span>
+      </div>
+      <div id="impactRows"></div>
+      <div class="moreline" id="impactMore" hidden></div>
+      <p class="empty" id="impactEmpty">Aucune mesure activée — rien ne change par rapport à aujourd'hui.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-behav">
+    <div class="sec-head">
+      <div><div class="eyebrow">Le point le plus contesté</div><h2 id="h-behav">« Et si les riches partent ? »</h2></div>
+      <p>Les impôts sur la fortune et sur les profits ne rapportent jamais leur montant théorique. De combien
+        moins, personne ne le sait — alors le site vous laisse choisir l'hypothèse.</p>
+    </div>
+    <div class="panel">
+      <div class="gap-grid">
+        <div>
+          <div style="font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-family:'IBM Plex Mono',monospace">Ce que rapportent vraiment ces mesures en 2032</div>
+          <div class="hero-fig" id="behavFig">—</div>
+          <div id="behavSub" style="font-size:13px;color:var(--ink-2)"></div>
+          <div class="gapbar" id="behavBar" style="margin-top:14px"></div>
+          <div class="choices simple-only" id="erChoices" role="group" aria-label="Hypothèse de perte d'assiette"></div>
+          <div class="p adv-only" style="max-width:340px;margin-top:14px">
+            <label for="pp-erosion">Érosion d'assiette · <span class="pv" id="pv-erosion"></span></label>
+            <input type="range" id="pp-erosion" min="0" max="60" step="5">
+          </div>
+        </div>
+        <div>
+          <p class="prose">L'impôt sur la fortune rapportait environ 5 milliards avant sa suppression, pour une base
+            qui n'a jamais cessé de s'éroder. À l'inverse, la « taxe Zucman » vise environ <b>1 800 foyers</b> :
+            son rendement dépend des décisions d'un très petit nombre de personnes, ce qui le rend, de l'aveu des
+            économistes qui s'y sont essayés, <b>impossible à estimer avec précision</b>. Les chiffrages publiés
+            vont de 5 à 25 milliards, et une étude patronale conclut même à une perte nette.</p>
+          <p class="prose">Départ à l'étranger, holdings, report du versement des dividendes, revenus requalifiés :
+            le bouton ci-contre représente tout cela en bloc. À 0 %, on retient le chiffre affiché par les
+            promoteurs de ces mesures ; à 50 %, celui de leurs contradicteurs. La réalité dépend aussi de mesures
+            défensives — impôt maintenu cinq ans après le départ, exit tax — qui figurent dans la liste des mesures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-compo">
+    <div class="sec-head">
+      <div><div class="eyebrow">Pour comparer</div><h2 id="h-compo">Où va l'argent, qui le paie</h2></div>
+      <p>Une idée répandue veut que la dépense publique parte d'abord dans les privilèges de l'État. Voici les
+        montants réels — et ce qu'ils représentent sur 1 000 € dépensés.</p>
+    </div>
+    <div class="grid2">
+      <div class="panel">
+        <h3>Où vont 1 000 € de dépense publique</h3>
+        <p class="sub">Total : 1 690 milliards par an, soit environ 24 700 € par habitant.</p>
+        <div id="compoDep"></div>
+      </div>
+      <div class="panel">
+        <h3>Qui verse 100 € de recettes</h3>
+        <p class="sub">Attention : qui verse n'est pas qui supporte. La TVA est versée par les entreprises et payée
+          par les consommateurs ; une part des cotisations employeurs pèse au bout du compte sur les salaires.</p>
+        <div id="compoPay"></div>
+      </div>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3>Les repères qui manquent au débat</h3>
+      <p class="sub">Les postes les plus cités dans les discussions, remis à leur échelle réelle.</p>
+      <div id="reperes"></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-veille">
+    <div class="sec-head">
+      <div><div class="eyebrow">Veille</div><h2 id="h-veille">Les annonces, au fil de l'eau</h2></div>
+      <p>Chaque déclaration publique chiffrée, avec sa date, son auteur, sa source, et si elle contredit ou non
+        le programme écrit. Une annonce faite en plateau n'a pas le statut d'un programme.</p>
+    </div>
+    <div class="panel">
+      <div class="chips" id="feedChips"></div>
+      <div class="feed" id="feed"></div>
+      <p class="empty" id="feedEmpty" hidden>Aucune annonce relevée pour ce parti à ce jour.</p>
+    </div>
+  </section>
+
+  <section class="adv-only" aria-labelledby="h-led">
+    <div class="sec-head">
+      <div><div class="eyebrow">Mode avancé</div><h2 id="h-led">Les 41 mesures</h2></div>
+      <p>Cochez, puis réglez le montant entre la borne basse et la borne haute des chiffrages publiés.
+        <button class="btn" id="reset" type="button">Tout décocher</button></p>
+    </div>
+    <div class="ledger" id="ledger"></div>
+  </section>
+
+  <section class="adv-only" aria-labelledby="h-hyp">
+    <div class="sec-head">
+      <div><div class="eyebrow">Mode avancé</div><h2 id="h-hyp">Hypothèses économiques</h2></div>
+      <p>Le résultat d'un chiffrage dépend autant de ces curseurs que des mesures elles-mêmes.</p>
+    </div>
+    <div class="panel"><div class="params" id="params"></div></div>
+  </section>
+
+  <section id="methode" aria-labelledby="h-met">
+    <div class="sec-head">
+      <div><div class="eyebrow">Transparence</div><h2 id="h-met">Méthode, sources et limites</h2></div>
+    </div>
+    <div class="panel" style="padding-top:4px">
+      <details><summary>Comment le calcul est fait</summary><div class="body" id="methodBody"></div></details>
+      <details><summary>Comment les programmes sont traités</summary><div class="body" id="progBody"></div></details>
+      <details><summary>Ce que ce simulateur ne sait pas faire</summary><div class="body" id="limitBody"></div></details>
+      <details class="adv-only"><summary>Trajectoire année par année (tableau)</summary><div class="body"><div class="scroller"><table id="tbl"></table></div></div></details>
+      <details><summary>D'où viennent les chiffres</summary><div class="body" id="srcBody"></div></details>
+    </div>
+  </section>
+
+  <footer>
+    Prototype pédagogique, sans valeur officielle. Les montants sont des ordres de grandeur arrondis, cohérents
+    entre eux mais non issus d'un modèle macroéconométrique. Un chiffrage sérieux se fait avec un modèle bouclé
+    (type Mésange à la direction générale du Trésor) et une revue contradictoire des hypothèses.
+    Aucune photographie de candidat n'est reproduite : les portraits de presse sont protégés par le droit d'auteur.
+  </footer>
+</div>
+
+<div id="tip" role="status" aria-live="polite"></div>
+<script id="payload" type="application/json">{"baseline":{"_comment":"Cadrage des administrations publiques. Ordres de grandeur arrondis, en Md€ courants. Millesime 2025.","vintage":2025,"updated":"2026-09-01","apu":{"pib":2950,"depenses":1690,"recettes":1530,"dette":3420,"charge":59,"tauxApparent":1.85,"partRefinancee":0.11,"population":68.5,"menages":31.5},"depenses":[{"nom":"Retraites","v":390,"note":"Tous régimes. Premier poste de la dépense publique, loin devant tout le reste."},{"nom":"Santé et hôpital","v":300,"note":"ONDAM et dépenses hospitalières."},{"nom":"Services publics locaux et généraux","v":215,"note":"Communes, départements, régions : voirie, écoles, action sociale, administration."},{"nom":"Autres prestations sociales","v":185,"note":"Famille, chômage, logement, minima sociaux, autonomie."},{"nom":"Éducation et recherche","v":130,"note":"Premier budget de l'État au sens strict."},{"nom":"Transports, logement, écologie","v":125,"note":"Infrastructures, aides au logement, transition énergétique."},{"nom":"Économie, agriculture, entreprises","v":110,"note":"Aides aux entreprises, agriculture, emploi."},{"nom":"Défense, sécurité, justice","v":110,"note":"Dont environ 57 Md€ pour la mission Défense en 2026."},{"nom":"Culture, sport, divers","v":66,"note":"Dont l'audiovisuel public, environ 4 Md€."},{"nom":"Charge de la dette","v":59,"note":"Intérêts versés aux créanciers. Le poste qui progresse le plus vite."}],"recettes":[{"nom":"Cotisations sociales employeurs","v":250,"payeur":"entreprises"},{"nom":"Cotisations sociales salariés et indépendants","v":205,"payeur":"travail"},{"nom":"TVA","v":210,"payeur":"consommation"},{"nom":"Recettes non fiscales (ventes, domaine, transferts)","v":210,"payeur":"autres"},{"nom":"Autres impôts sur la production","v":150,"payeur":"entreprises"},{"nom":"CSG-CRDS sur les revenus d'activité","v":105,"payeur":"travail"},{"nom":"Impôt sur le revenu","v":95,"payeur":"travail"},{"nom":"Impôts fonciers et locaux","v":80,"payeur":"patrimoine"},{"nom":"Impôt sur les sociétés","v":60,"payeur":"entreprises"},{"nom":"CSG sur le capital et les revenus de remplacement","v":50,"payeur":"patrimoine"},{"nom":"Fiscalité de l'énergie (TICPE, accises)","v":40,"payeur":"consommation"},{"nom":"Prélèvements sur les revenus du capital (PFU, prélèvements sociaux)","v":38,"payeur":"patrimoine"},{"nom":"Droits de succession et de mutation","v":35,"payeur":"patrimoine"},{"nom":"IFI et impôts sur la fortune","v":2,"payeur":"patrimoine"}],"payeurs":{"entreprises":{"nom":"Entreprises","note":"Cotisations employeurs, impôts de production, impôt sur les sociétés."},"travail":{"nom":"Revenus du travail","note":"Cotisations salariales, CSG d'activité, impôt sur le revenu."},"consommation":{"nom":"Consommation","note":"TVA et accises. Prélèvement proportionnel à la dépense, non au revenu."},"patrimoine":{"nom":"Patrimoine et capital","note":"Foncier, revenus du capital, successions, IFI."},"autres":{"nom":"Recettes non fiscales","note":"Ventes de services publics, revenus du domaine, transferts."}},"reperes":[{"nom":"Institutions de la République (Élysée, Assemblée, Sénat, Conseil constitutionnel)","v":1.14,"note":"Mission « Pouvoirs publics » du budget de l'État. Soit environ un euro pour mille euros de dépense publique."},{"nom":"Aide médicale d'État","v":1.3,"note":"Soins des étrangers en situation irrégulière. Régulièrement citée comme un gisement d'économies."},{"nom":"Audiovisuel public","v":4.0,"note":"France Télévisions, Radio France, Arte, INA."},{"nom":"Contribution nette au budget de l'Union européenne","v":12.0,"note":"Contribution brute d'environ 27 Md€, retours d'environ 15 Md€ (PAC, fonds régionaux)."},{"nom":"Aide publique au développement","v":15.0,"note":"Aide bilatérale et multilatérale."},{"nom":"Rémunération des 5,7 millions d'agents publics","v":340.0,"note":"Trois fonctions publiques réunies. C'est ici, et non dans le train de vie des institutions, que se trouve la masse."},{"nom":"Charge de la dette","v":59.0,"note":"Déjà supérieure au budget de la Défense. Elle double d'ici 2032 au fil du refinancement."}],"assiettes":[{"nom":"Patrimoine des foyers de plus de 100 M€","v":1000,"note":"Environ 1 800 foyers. C'est l'assiette de la « taxe Zucman » : un prélèvement de 2 % porte sur ce stock, pas sur un flux de revenu."},{"nom":"Bénéfices imposables des sociétés","v":300,"note":"Assiette de l'impôt sur les sociétés, qui rapporte environ 60 Md€ à un taux de 25 %."},{"nom":"Dividendes versés par les sociétés françaises","v":100,"note":"Dont une large part à des non-résidents et à des sociétés mères, hors de portée du barème des particuliers."},{"nom":"Allègements de cotisations sur les bas salaires","v":75,"note":"Le plus gros dispositif d'aide aux entreprises, et le premier visé par les rabots."},{"nom":"Écart fiscal estimé (fraude)","v":80,"note":"Estimation de l'écart entre l'impôt dû et l'impôt perçu. Les montants effectivement recouvrés sont d'un ordre de grandeur inférieur."}],"sources":[{"nom":"INSEE — Comptes des administrations publiques","url":"https://www.insee.fr/fr/statistiques/2381416"},{"nom":"Projet de loi de finances pour 2026 — Évaluation des voies et moyens","url":"https://www.assemblee-nationale.fr/dyn/opendata/PRJLANR5L17B1906.html"},{"nom":"Sénat — Rapport général sur le PLF 2026","url":"https://www.senat.fr/rap/l25-139-1/l25-139-19.html"},{"nom":"DGFiP Statistiques — recettes fiscales","url":"https://www.impots.gouv.fr/sites/default/files/media/9_statistiques/0_etudes_et_stats/0_publications/dgfip_statistiques/2026/num43_03/dgfip_stat43_budget_2025.pdf"},{"nom":"Observatoire de l'éthique publique — budget du Parlement","url":"https://www.observatoireethiquepublique.com/nos-propositions/dans-la-presse/2024/faut-il-sindigner-de-la-hausse-du-budget-du-parlement-francais.html"}],"sourcesOfficielles":[{"nom":"Budget de l'État — portail officiel","url":"https://www.budget.gouv.fr/budget-etat","quoi":"Dépenses et recettes de l'État, présentation officielle"},{"nom":"Budget de l'État par ministère","url":"https://www.budget.gouv.fr/budget-etat/ministere","quoi":"Ventilation des crédits ministère par ministère"},{"nom":"Budget de l'État — données ouvertes","url":"https://www.budget.gouv.fr/budget-etat/smb","quoi":"Séries détaillées réutilisables"},{"nom":"Le budget de la France à la loupe — ministère de l'Économie","url":"https://www.economie.gouv.fr/a-la-loupe-le-budget-de-la-france","quoi":"Agrégats et répartitions, présentation pédagogique"},{"nom":"INSEE — comptes des administrations publiques","url":"https://www.insee.fr/fr/statistiques/2381416","quoi":"Périmètre APU, le seul cohérent avec ce simulateur"}],"verification":{"etat":"non recoupé","note":"Les agrégats de cette page sont des ordres de grandeur repris de publications publiques, et n'ont pas encore été recoupés ligne à ligne contre les portails officiels ci-dessus. Ce recoupement est la première tâche du skill de veille, à exécuter depuis un environnement ayant accès à ces sites. Attention au périmètre : budget.gouv.fr décrit le budget de l'État (environ 500 Md€ de dépenses), ce simulateur raisonne sur les administrations publiques (1 690 Md€, État + sécurité sociale + collectivités). Les deux chiffres sont justes et ne se comparent pas directement."}},"measures":{"_comment":"Catalogue de mesures. lo/mid/hi = bornes de chiffrage publiées, en Md€ à plein régime. ramp = années pour atteindre le plein régime à partir de 2027. behav = assiette exposée à une réaction des contribuables (capital, profit) ou null.","measures":[{"id":"zucman","g":"rec+","inst":"imp","lo":5,"mid":8,"hi":20,"ramp":2,"behav":"capital","disp":true,"lab":"Impôt plancher de 2 % sur les patrimoines supérieurs à 100 M€","note":"Environ 1 800 foyers, un patrimoine agrégé de l'ordre de 1 000 Md€. Gabriel Zucman avance 15 à 25 Md€ ; l'administration et plusieurs économistes retiennent plutôt 5 Md€. L'écart ne porte pas sur le taux mais sur l'assiette retenue et sur la réaction des redevables. Rejetée par l'Assemblée nationale le 31 octobre 2025."},{"id":"isf","g":"rec+","inst":"imp","lo":2,"mid":4,"hi":6,"ramp":1,"behav":"capital","lab":"Rétablissement d'un impôt sur la fortune au-delà de l'IFI","note":"L'ISF rapportait environ 5 Md€ en 2017 ; l'IFI qui l'a remplacé en rapporte environ 2. L'écart donne l'ordre de grandeur du rétablissement."},{"id":"isfclim","g":"rec+","inst":"imp","lo":5,"mid":10,"hi":15,"ramp":2,"behav":"capital","disp":true,"lab":"ISF climatique (assiette élargie, barème progressif)","note":"Chiffré à 12 Md€ par les programmes de gauche. Combine un ISF renforcé et une modulation selon l'empreinte carbone des actifs, dont le rendement propre n'a jamais été mesuré."},{"id":"csgcap","g":"rec+","inst":"imp","lo":2,"mid":3,"hi":4,"ramp":1,"behav":"capital","lab":"CSG sur les revenus du capital : +2 points","note":"Assiette d'environ 150 Md€ de revenus du patrimoine et de placement."},{"id":"pfu","g":"rec+","inst":"imp","lo":2,"mid":4,"hi":6,"ramp":1,"behav":"capital","disp":true,"lab":"Fin du prélèvement forfaitaire unique : dividendes au barème progressif","note":"Rendement très sensible au comportement de distribution : la réforme de 2018 avait été suivie d'une forte hausse des dividendes versés. Une bonne part des 100 Md€ de dividendes va à des non-résidents ou à des sociétés mères, hors de portée du barème des particuliers."},{"id":"isgrandes","g":"rec+","inst":"imp","lo":4,"mid":8,"hi":12,"ramp":2,"behav":"profit","disp":true,"lab":"Surtaxe d'impôt sur les sociétés pour les grandes entreprises","note":"L'IS rapporte environ 60 Md€ sur 300 Md€ de bénéfices imposables. Les surtaxes votées en 2025 ont montré qu'un rendement affiché se réduit vite par optimisation du résultat imposable et localisation des charges."},{"id":"superp","g":"rec+","inst":"imp","lo":2,"mid":4,"hi":15,"ramp":1,"behav":"profit","disp":true,"lab":"Contribution sur les superprofits (énergie, transport, finance)","note":"Chiffrée jusqu'à 15 Md€ dans les programmes de gauche. Rendement structurellement volatil : il dépend du prix de l'énergie et des taux, donc il ne finance pas une dépense pérenne."},{"id":"rachats","g":"rec+","inst":"imp","lo":0.5,"mid":1,"hi":2,"ramp":1,"behav":"profit","lab":"Taxe sur les rachats d'actions","note":"La taxe instaurée en 2024 rapporte quelques centaines de millions. Élargie, elle reste d'un ordre de grandeur inférieur aux annonces qui l'accompagnent."},{"id":"minimum15","g":"rec+","inst":"imp","lo":1,"mid":1.5,"hi":3,"ramp":2,"lab":"Impôt minimum mondial de 15 % sur les multinationales","note":"Le pilier 2 de l'accord OCDE est déjà transposé. Son rendement français est estimé entre 1 et 3 Md€, très en deçà des attentes initiales."},{"id":"ttf","g":"rec+","inst":"imp","lo":1,"mid":3,"hi":6,"ramp":2,"behav":"profit","disp":true,"lab":"Taxe sur les transactions financières élargie","note":"Chiffrée à 20 Md€ dans certains programmes. La TTF française actuelle rapporte environ 2 Md€ ; l'élargissement aux produits dérivés déplace une partie de l'activité hors de France, ce que les chiffrages hauts ne prennent pas en compte."},{"id":"exit","g":"rec+","inst":"imp","lo":0.2,"mid":0.5,"hi":1,"ramp":2,"behav":"capital","lab":"Renforcement de l'exit tax","note":"Mesure défensive : son intérêt n'est pas son rendement propre mais la réduction de l'érosion d'assiette des autres impôts sur le capital."},{"id":"succ","g":"rec+","inst":"imp","lo":2,"mid":3,"hi":5,"ramp":2,"behav":"capital","lab":"Réforme des droits de succession sur les hauts patrimoines","note":"Les droits de mutation à titre gratuit rapportent environ 35 Md€ ; l'essentiel des transmissions est déjà exonéré, et les grandes transmissions d'entreprises le sont par le pacte Dutreil."},{"id":"tva1","g":"rec+","inst":"imp","lo":8,"mid":9,"hi":10,"ramp":1,"lab":"TVA : +1 point sur le taux normal (20 → 21 %)","note":"Un point de taux normal représente environ 9 Md€. C'est l'un des rares leviers de rendement immédiat et massif — et le plus régressif."},{"id":"cir","g":"rec+","inst":"imp","lo":2,"mid":3,"hi":7,"ramp":2,"lab":"Rabot du crédit d'impôt recherche","note":"Le CIR coûte environ 7,7 Md€ par an. Son efficacité sur la R&D privée fait l'objet d'évaluations contradictoires."},{"id":"alleg","g":"rec+","inst":"imp","lo":3,"mid":6,"hi":12,"ramp":2,"disp":true,"lab":"Réduction des allègements de cotisations sur les bas salaires","note":"Environ 75 Md€ d'allègements. Le rapport Bozio-Wasmer souligne que le rendement budgétaire se paie en partie en emplois détruits, donc en recettes perdues ailleurs."},{"id":"fraude","g":"rec+","inst":"imp","lo":1,"mid":3,"hi":15,"ramp":3,"disp":true,"lab":"Renforcement de la lutte contre la fraude fiscale et sociale","note":"Chiffré à 15 Md€ par le RN, jusqu'à 80 Md€ par LFI. L'écart fiscal estimé est effectivement de cet ordre, mais il mesure l'impôt manquant, pas l'impôt récupérable : les redressements notifiés dépassent 15 Md€ par an, les encaissements réels sont autour de 10, et l'essentiel serait recouvré même sans mesure nouvelle."},{"id":"irbaisse","g":"rec-","inst":"imp","lo":3,"mid":5,"hi":10,"ramp":1,"lab":"Baisse de l'impôt sur le revenu","note":"L'IR rapporte environ 95 Md€ et est acquitté par un peu moins de la moitié des foyers."},{"id":"tvaener","g":"rec-","inst":"imp","lo":6,"mid":10,"hi":14,"ramp":1,"lab":"TVA à 5,5 % sur l'électricité, le gaz et les carburants","note":"La fiscalité de l'énergie rapporte environ 40 Md€, la TVA sur l'énergie environ 12. Mesure portée par le RN comme par une partie de la gauche."},{"id":"prod","g":"rec-","inst":"imp","lo":3,"mid":5,"hi":8,"ramp":2,"lab":"Nouvelle baisse des impôts de production","note":"Après la CVAE, il reste principalement la CFE et la taxe foncière des entreprises."},{"id":"csgbaisse","g":"rec-","inst":"imp","lo":5,"mid":8,"hi":12,"ramp":1,"lab":"Baisse de la CSG ou des cotisations sur les revenus d'activité","note":"La CSG d'activité rapporte environ 105 Md€ : un point vaut à peu près 9 Md€."},{"id":"retr62","g":"dep+","inst":"dep","lo":8,"mid":13,"hi":18,"ramp":5,"lab":"Retour de l'âge légal à 62 ans","note":"Environ 3 Md€ dès la première année, la charge montant au fil des générations. Les retraites pèsent 390 Md€, soit près d'un quart de la dépense publique."},{"id":"retr60","g":"dep+","inst":"dep","lo":20,"mid":30,"hi":45,"ramp":6,"disp":true,"lab":"Retraite à 60 ans à taux plein","note":"Les chiffrages publiés vont de 20 à 45 Md€ à horizon 2035 selon la durée de cotisation exigée et l'hypothèse d'emploi des seniors. C'est la mesure la plus coûteuse du catalogue."},{"id":"indexation","g":"dep+","inst":"dep","lo":2,"mid":4,"hi":6,"ramp":3,"lab":"Indexation intégrale des retraites et prestations sur l'inflation","note":"Chaque point de sous-indexation des pensions représente environ 4 Md€ d'économie — et réciproquement."},{"id":"defense","g":"dep+","inst":"dep","lo":12,"mid":22,"hi":32,"ramp":5,"lab":"Effort de défense porté vers 3 % du PIB","note":"La mission Défense pèse environ 57 Md€ en 2026, soit un peu moins de 2 % du PIB."},{"id":"services","g":"dep+","inst":"dep","lo":2,"mid":4,"hi":8,"ramp":3,"lab":"Recrutements dans la santé, l'école et la justice","note":"Un poste coûte en moyenne 45 à 55 k€ par an, charges comprises : 50 000 postes représentent environ 2,5 Md€."},{"id":"ecolo","g":"dep+","inst":"dep","lo":5,"mid":10,"hi":30,"ramp":3,"lab":"Plan d'investissement écologique (rénovation, réseaux, ferroviaire)","note":"Le rapport Pisani-Ferry / Mahfouz chiffre le besoin d'investissement public additionnel autour de 25 à 30 Md€ par an."},{"id":"age","g":"dep+","inst":"dep","lo":3,"mid":5,"hi":9,"ramp":4,"lab":"Montée en charge de la branche autonomie (grand âge)","note":"La branche autonomie pèse environ 40 Md€ ; le nombre de personnes de plus de 85 ans double d'ici 2040."},{"id":"pointindice","g":"dep+","inst":"dep","lo":4,"mid":6,"hi":8,"ramp":2,"lab":"Revalorisation du point d'indice de la fonction publique (+3 %)","note":"Un point d'indice vaut environ 2 Md€ pour l'ensemble des trois fonctions publiques."},{"id":"smic","g":"dep+","inst":"dep","lo":2,"mid":4,"hi":7,"ramp":2,"lab":"Hausse du SMIC et des bas salaires du secteur public","note":"Effet budgétaire direct par la fonction publique et par le glissement des allègements de cotisations, qui se déclenchent en proportion du SMIC."},{"id":"effectifs","g":"dep-","inst":"dep","lo":3,"mid":4,"hi":6,"ramp":4,"lab":"Réduction de 5 % des effectifs de l'État et de ses opérateurs","note":"2,5 millions d'agents pour l'État et ses opérateurs. Une baisse de 5 % suppose de ne pas remplacer environ 125 000 départs."},{"id":"collectivites","g":"dep-","inst":"dep","lo":3,"mid":5,"hi":10,"ramp":2,"lab":"Baisse des concours financiers aux collectivités","note":"Les collectivités portent environ 290 Md€ de dépenses, dont l'essentiel de l'investissement public civil."},{"id":"chomage","g":"dep-","inst":"dep","lo":2,"mid":4,"hi":6,"ramp":2,"lab":"Nouvelle réforme de l'assurance chômage","note":"L'Unédic verse environ 32 Md€ d'allocations. Le rendement dépend de la conjoncture : il s'effondre en récession."},{"id":"niches","g":"dep-","inst":"dep","lo":5,"mid":10,"hi":25,"ramp":3,"disp":true,"lab":"Rabot des niches fiscales et des aides aux entreprises","note":"Selon le périmètre retenu, les aides publiques aux entreprises sont estimées entre 110 et 200 Md€. Le désaccord porte sur ce qui compte comme « aide » : les allègements de cotisations en représentent à eux seuls 75."},{"id":"blanche","g":"dep-","inst":"dep","lo":5,"mid":7,"hi":10,"ramp":1,"lab":"Année blanche : gel des barèmes et des prestations","note":"Économie immédiate et large, mais non reconductible indéfiniment : elle se rattrape en partie l'année suivante."},{"id":"age65","g":"dep-","inst":"dep","lo":5,"mid":9,"hi":14,"ramp":6,"lab":"Âge légal de départ porté à 65 ans","note":"Le rendement d'une réforme des retraites est lent : il croît avec chaque génération concernée."},{"id":"ondam","g":"dep-","inst":"dep","lo":3,"mid":5,"hi":9,"ramp":2,"lab":"Freinage de l'ONDAM (dépenses d'assurance maladie)","note":"L'ONDAM approche 270 Md€ : un ralentissement de 0,5 point de sa progression représente environ 1,4 Md€ par an."},{"id":"agences","g":"dep-","inst":"dep","lo":1,"mid":2,"hi":3,"ramp":3,"lab":"Suppression ou fusion d'agences et d'opérateurs de l'État","note":"Les rapports parlementaires convergent vers 2 à 3 Md€, à condition de supprimer les missions et pas seulement les structures."},{"id":"immigration","g":"dep-","inst":"dep","lo":1,"mid":3,"hi":10,"ramp":3,"disp":true,"lab":"Réduction des dépenses liées à l'immigration","note":"Chiffrée à 25 Md€ par le RN. Les postes identifiables sont d'un tout autre ordre : aide médicale d'État 1,3 Md€, hébergement d'urgence et demande d'asile environ 3 Md€, aide au retour quelques centaines de millions. Les chiffrages hauts agrègent des prestations de droit commun versées à des personnes en situation régulière, et ne déduisent pas les cotisations et impôts que ces mêmes personnes acquittent."},{"id":"ue","g":"dep-","inst":"dep","lo":0,"mid":2,"hi":8,"ramp":3,"disp":true,"lab":"Réduction de la contribution française au budget de l'Union européenne","note":"Chiffrée à 10 Md€ par le RN. La contribution brute est d'environ 27 Md€ pour environ 15 Md€ de retours. La réduire unilatéralement n'est pas possible : le cadre financier pluriannuel se décide à l'unanimité et la contribution est une ressource propre de l'Union."},{"id":"ame","g":"dep-","inst":"dep","lo":0.5,"mid":0.9,"hi":1.3,"ramp":1,"lab":"Suppression de l'aide médicale d'État","note":"1,3 Md€, soit 0,08 % de la dépense publique — l'équivalent de neuf jours de charge de la dette. Cette ligne figure ici précisément pour être comparée aux autres."},{"id":"institutions","g":"dep-","inst":"dep","lo":0.05,"mid":0.15,"hi":0.3,"ramp":2,"lab":"Réduction du train de vie des institutions et du nombre de parlementaires","note":"L'ensemble Élysée, Assemblée, Sénat et Conseil constitutionnel coûte 1,14 Md€, soit un euro pour mille euros de dépense publique. Même supprimé en totalité, ce poste ne changerait pas la trajectoire — c'est le principal enseignement de cette ligne."}]},"parties":{"_comment":"Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution.","updated":"2026-09-01","avertissement":"Aucune candidature n'est officiellement déposée à ce stade. Les noms retenus sont les candidats pressentis par parti au vu des déclarations publiques et des sondages de 2026 ; ils changeront. Les programmes 2027 ne sont pour la plupart pas publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.","parties":[{"id":"rn","nom":"Rassemblement national","sigle":"RN","candidat":"Marine Le Pen","couleur":"#1C3F63","statutCandidature":"Candidature annoncée ; Jordan Bardella cité comme alternative","statut":"partiel","annonce":{"titre":"125 Md€ d'économies","texte":"Marine Le Pen a annoncé une trajectoire de redressement des finances publiques reposant sur 125 Md€ d'économies. Environ 60 Md€ ont été rattachés publiquement à quatre postes : immigration, fraude fiscale et sociale, contribution au budget de l'Union européenne, organisation de l'État. Le solde, soit près de la moitié du total, n'a pas fait l'objet d'un détail public.","revendique":125,"detaille":65,"cote":"economie"},"set":{"immigration":{"sim":"hi","annonce":25},"fraude":{"sim":"mid","annonce":15},"ue":{"sim":"mid","annonce":10},"agences":{"sim":"hi","annonce":3},"effectifs":{"sim":"mid","annonce":6},"collectivites":{"sim":"lo","annonce":5},"ame":{"sim":"hi","annonce":1.3},"institutions":{"sim":"mid","annonce":0.3},"tvaener":{"sim":"mid","annonce":10},"retr62":{"sim":"mid","annonce":13}},"sources":[{"t":"Le RN et son équation budgétaire impossible — Le Temps","u":"https://www.letemps.ch/monde/france/le-rn-et-son-equation-budgetaire-impossible-quand-le-chiffrage-economique-releve-davantage-de-l-ideologie"},{"t":"Contre-budget du RN — Public Sénat","u":"https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale"},{"t":"Programme économique du RN — OFCE législatives 2024","u":"https://www.ofce-legislatives2024.fr/programmes/rn.html"}]},{"id":"lfi","nom":"La France insoumise","sigle":"LFI","candidat":"Jean-Luc Mélenchon","couleur":"#C1272D","statutCandidature":"Candidature annoncée","statut":"partiel","annonce":{"titre":"≈ 90 Md€ de recettes nouvelles","texte":"Les chiffrages du programme de gauche retiennent environ 90 Md€ de recettes fiscales supplémentaires par an (fourchette de 60 à 120 Md€), portées par les 10 % de ménages les plus aisés et par les grandes entreprises : ISF climatique 12 Md€, contribution sur les superprofits 15 Md€, taxe sur les transactions financières 20 Md€, plus la lutte contre l'évasion fiscale, chiffrée à partir d'un écart estimé à 80 Md€ par an. Côté dépenses, la retraite à 60 ans et le plan d'investissement écologique sont les deux postes dominants.","revendique":90,"detaille":90,"cote":"recette"},"set":{"isfclim":{"sim":"mid","annonce":12},"superp":{"sim":"mid","annonce":15},"ttf":{"sim":"mid","annonce":20},"zucman":{"sim":"mid","annonce":20},"pfu":{"sim":"mid","annonce":6},"succ":{"sim":"mid","annonce":5},"isgrandes":{"sim":"mid","annonce":12},"minimum15":{"sim":"mid"},"fraude":{"sim":"mid"},"alleg":{"sim":"mid","annonce":12},"niches":{"sim":"mid","annonce":15},"retr60":{"sim":"mid","annonce":20},"smic":{"sim":"mid"},"services":{"sim":"hi"},"ecolo":{"sim":"mid","annonce":30},"age":{"sim":"mid"},"pointindice":{"sim":"mid"},"indexation":{"sim":"mid"}},"sources":[{"t":"Chiffrage des recettes fiscales du programme — La Grande Conversation","u":"https://www.lagrandeconversation.com/economie/chiffrage-des-recettes-fiscales-duprogramme-du-nouveau-front-populaire/"},{"t":"Les pistes de la gauche pour augmenter les recettes — Public Sénat","u":"https://www.publicsenat.fr/actualites/politique/programme-du-nouveau-front-populaire-les-pistes-de-la-gauche-pour-augmenter-les-recettes-fiscales-et-redistribuer-les-richesses"},{"t":"Taxe Zucman — Wikipédia (état du débat parlementaire)","u":"https://fr.wikipedia.org/wiki/Taxe_Zucman"}]},{"id":"lr","nom":"Les Républicains","sigle":"LR","candidat":"Bruno Retailleau","couleur":"#2E6FB7","statutCandidature":"Président du parti, candidature pressentie","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Aucun chiffrage d'ensemble n'a été publié à ce jour. Le scénario ci-dessous est une reconstitution du simulateur à partir de positions publiques : priorité aux économies de dépense, allongement de la durée du travail, baisse des impôts de production. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"effectifs":{"sim":"hi"},"chomage":{"sim":"mid"},"age65":{"sim":"mid"},"niches":{"sim":"mid"},"collectivites":{"sim":"mid"},"ondam":{"sim":"mid"},"blanche":{"sim":"mid"},"immigration":{"sim":"lo"},"prod":{"sim":"mid"},"irbaisse":{"sim":"lo"},"defense":{"sim":"mid"}},"sources":[]},{"id":"ren","nom":"Renaissance","sigle":"REN","candidat":"Gabriel Attal","couleur":"#D9A227","statutCandidature":"Candidature pressentie","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Reconstitution du simulateur à partir de positions publiques : maîtrise de la dépense sans hausse générale des prélèvements, poursuite de la baisse des impôts de production, effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"blanche":{"sim":"mid"},"ondam":{"sim":"mid"},"agences":{"sim":"mid"},"effectifs":{"sim":"mid"},"chomage":{"sim":"mid"},"niches":{"sim":"lo"},"defense":{"sim":"mid"},"prod":{"sim":"lo"}},"sources":[]},{"id":"hor","nom":"Horizons","sigle":"HOR","candidat":"Édouard Philippe","couleur":"#4FB0C6","statutCandidature":"Candidature annoncée","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Reconstitution du simulateur à partir de positions publiques : allongement de la durée du travail, effort d'économies large et rapide, effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"age65":{"sim":"mid"},"blanche":{"sim":"hi"},"niches":{"sim":"mid"},"effectifs":{"sim":"mid"},"ondam":{"sim":"mid"},"collectivites":{"sim":"mid"},"defense":{"sim":"mid"},"agences":{"sim":"mid"}},"sources":[]},{"id":"ps","nom":"Parti socialiste / Place publique","sigle":"PS","candidat":"Raphaël Glucksmann","couleur":"#E4557A","statutCandidature":"Candidature pressentie, primaire à gauche en cours","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Reconstitution du simulateur à partir de positions publiques : fiscalité du patrimoine renforcée sans rupture avec le cadre européen, retour partiel sur la réforme des retraites, investissement écologique et effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"isf":{"sim":"mid"},"zucman":{"sim":"lo"},"succ":{"sim":"mid"},"isgrandes":{"sim":"lo"},"niches":{"sim":"mid"},"indexation":{"sim":"mid"},"services":{"sim":"mid"},"ecolo":{"sim":"mid"},"defense":{"sim":"mid"},"retr62":{"sim":"lo"}},"sources":[]},{"id":"eco","nom":"Les Écologistes","sigle":"ÉCO","candidat":"Marine Tondelier","couleur":"#4C9A54","statutCandidature":"Candidature pressentie, primaire à gauche en cours","statut":"reconstitution","annonce":{"titre":"Pas de chiffrage 2027 publié","texte":"Reconstitution du simulateur à partir de positions publiques : investissement écologique de l'ordre du besoin identifié par le rapport Pisani-Ferry, financé par la fiscalité du patrimoine et le rabot des aides aux entreprises. Les montants sont ceux du catalogue, pas ceux du parti.","revendique":null,"detaille":null,"cote":null},"set":{"ecolo":{"sim":"hi"},"isfclim":{"sim":"mid"},"superp":{"sim":"mid"},"cir":{"sim":"mid"},"niches":{"sim":"mid"},"succ":{"sim":"mid"},"age":{"sim":"mid"},"services":{"sim":"mid"}},"sources":[]}],"sourceOfficielle":{"nom":"Ministère de l'Intérieur — programmes officiels des candidats","url":"https://www.interieur.gouv.fr/archives/actualites/actualites-du-ministere/election-presidentielle-programme-des-candidats-est-disponible","statut":"attendue","note":"Le ministère de l'Intérieur publie, une fois les candidatures validées par le Conseil constitutionnel, la profession de foi et le programme officiel de chaque candidat. C'est la seule source de rang officiel pour un programme : dès sa mise en ligne, elle remplace ici toute reprise de presse, et les scénarios « reconstitution » sont rebâtis à partir d'elle. Non disponible à ce jour pour 2027."}},"announcements":{"_comment":"Base des annonces, une entrée par déclaration publique. Alimentée par le skill france-budget-watch. Champs : date (AAAA-MM-JJ ou AAAA-MM si le jour n'est pas établi), parti (id ou null), qui (la personne, ou null si l'auteur n'est pas identifié), fonction, media (où la déclaration a été faite), quoi, verbatim, mesure (id du catalogue ou null), montant (Md€ ou null), type (economie|recette|depense|contexte), source (URL obligatoire), verifie (la source a-t-elle été ouverte et lue intégralement), contredit (non|programme|annonce|inconnu), ecart (explication si contredit != non).","updated":"2026-09-01","items":[{"date":"2025-10-20","parti":"rn","qui":"Marine Le Pen","fonction":"Députée, Rassemblement national","media":"Déclaration publique avant le débat budgétaire","quoi":"Annonce d'une trajectoire de redressement des finances publiques reposant sur 125 Md€ d'économies.","verbatim":null,"mesure":null,"montant":125,"type":"economie","source":"https://www.letemps.ch/monde/france/le-rn-et-son-equation-budgetaire-impossible-quand-le-chiffrage-economique-releve-davantage-de-l-ideologie","verifie":false,"contredit":"inconnu","ecart":"Le détail rendu public ne couvre qu'environ la moitié du total annoncé : la cohérence de l'autre moitié avec un programme écrit ne peut pas être établie."},{"date":"2025-10-20","parti":"rn","qui":"Marine Le Pen","fonction":"Députée, Rassemblement national","media":"Déclaration publique","quoi":"Défense d'un retour de l'âge de départ à la retraite à 60 ou 62 ans.","verbatim":null,"mesure":"retr62","montant":13,"type":"depense","source":"https://www.epochtimes.fr/marine-le-pen-promet-125-milliards-deuros-deconomies-et-defend-une-retraite-a-60-ou-62-ans-3335415.html","verifie":false,"contredit":"annonce","ecart":"Annoncée le même jour que le plan de 125 Md€ d'économies, cette mesure en consomme une part importante sans que le plan soit relevé d'autant."},{"date":"2025-10-20","parti":"rn","qui":"Marine Le Pen","fonction":"Députée, Rassemblement national","media":"Déclaration publique","quoi":"Quatre postes d'économies identifiés : immigration 25 Md€, fraude fiscale et sociale 15 Md€, contribution au budget de l'Union européenne 10 Md€, organisation de l'État.","verbatim":null,"mesure":"immigration","montant":60,"type":"economie","source":"https://www.letemps.ch/monde/france/le-rn-et-son-equation-budgetaire-impossible-quand-le-chiffrage-economique-releve-davantage-de-l-ideologie","verifie":false,"contredit":"programme","ecart":"La contribution au budget de l'Union européenne ne peut pas être réduite unilatéralement : le cadre financier pluriannuel se décide à l'unanimité et la contribution est une ressource propre de l'Union."},{"date":"2026-08","parti":"lr","qui":"Bruno Retailleau","fonction":"Président des Républicains","media":"Premier débat des candidats, université d'été du MEDEF","quoi":"Annonce de 120 Md€ d'économies, obtenues exclusivement par la baisse de la dépense, sans hausse d'impôts.","verbatim":null,"mesure":null,"montant":120,"type":"economie","source":"https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle","verifie":false,"contredit":"inconnu","ecart":"Aucun détail poste par poste n'est public à ce jour : la cohérence avec un programme écrit ne peut pas être établie."},{"date":"2026-08","parti":"ps","qui":"Raphaël Glucksmann","fonction":"Député européen, Place publique","media":"Premier débat des candidats, université d'été du MEDEF","quoi":"Proposition de taxer le 1 % des successions les plus élevées, avec un objectif de 15 Md€ de recettes.","verbatim":null,"mesure":"succ","montant":15,"type":"recette","source":"https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle","verifie":false,"contredit":"inconnu","ecart":"Les droits de succession et de mutation rapportent aujourd'hui environ 35 Md€ au total. Obtenir 15 Md€ de plus sur 1 % des successions suppose un barème très fortement relevé sur ces transmissions."},{"date":"2026-08","parti":"ren","qui":"Gabriel Attal","fonction":"Renaissance","media":"Premier débat des candidats, université d'été du MEDEF","quoi":"Volonté de faire travailler les salariés plus longtemps et d'instaurer un pilier de capitalisation pour les retraites.","verbatim":null,"mesure":null,"montant":null,"type":"contexte","source":"https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle","verifie":false,"contredit":"non","ecart":"Annonce non chiffrée : elle ne peut pas être portée au simulateur en l'état."},{"date":"2026-08","parti":"hor","qui":"Édouard Philippe","fonction":"Horizons","media":"Premier débat des candidats, université d'été du MEDEF","quoi":"Volonté de faire travailler les salariés plus longtemps.","verbatim":null,"mesure":null,"montant":null,"type":"contexte","source":"https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle","verifie":false,"contredit":"non","ecart":"Annonce non chiffrée : elle ne peut pas être portée au simulateur en l'état."},{"date":"2026-08","parti":null,"qui":"Sébastien Lecornu","fonction":"Premier ministre","media":"Déclaration sur le projet de loi de finances pour 2027","quoi":"Annonce d'un budget 2027 de premier semestre, « réversible » après l'élection présidentielle, et confirmation qu'il n'est pas candidat.","verbatim":null,"mesure":null,"montant":null,"type":"contexte","source":"https://www.legifiscal.fr/actualites-fiscales/4620-budget-2027-sebastien-lecornu-esquisse-plf-2027-reversible","verifie":false,"contredit":"non","ecart":null},{"date":"2025-10-31","parti":null,"qui":null,"fonction":"Assemblée nationale","media":"Séance publique, examen du projet de loi de finances pour 2026","quoi":"Rejet de la taxe Zucman.","verbatim":null,"mesure":"zucman","montant":null,"type":"contexte","source":"https://www.legifiscal.fr/actualites-fiscales/4302-plf-2026-taxe-zucman-rejetee-assemblee-nationale.html","verifie":false,"contredit":"non","ecart":null},{"date":"2025-10-15","parti":null,"qui":null,"fonction":"Gouvernement","media":"Débat sur le budget 2026","quoi":"Opposition à la taxe Zucman, motivée par le risque de départ des contribuables concernés.","verbatim":null,"mesure":"zucman","montant":null,"type":"contexte","source":"https://www.franceinfo.fr/economie/budget/budget-2026-le-gouvernement-s-oppose-a-la-taxe-zucman-craignant-une-fuite-des-ultra-riches_7380325.html","verifie":false,"contredit":"non","ecart":null}]}}</script>
+<script>
+"use strict";
+const DATA = JSON.parse(document.getElementById('payload').textContent);
+const BL = DATA.baseline, MEASURES = DATA.measures.measures, PARTIES = DATA.parties.parties;
+const BASE = {pib0:BL.apu.pib, dep0:BL.apu.depenses, rec0:BL.apu.recettes,
+              dette0:BL.apu.dette, charge0:BL.apu.charge, taux0:BL.apu.tauxApparent, refi:BL.apu.partRefinancee};
+const M_BY_ID = Object.fromEntries(MEASURES.map(m => [m.id, m]));
+
+const DEFAULTS = {g:1.0, infl:1.6, drift:0.7, rmkt:3.4, mult:0.9, spread:2, erosion:25};
+const PARAMS = [
+  {k:'g',      lab:"Croissance en volume",         min:0,   max:2.5, step:0.1,  unit:"%/an",
+   help:"Le consensus des prévisionnistes se situe autour de 1 % à moyen terme."},
+  {k:'infl',   lab:"Inflation",                     min:0.5, max:4,   step:0.1,  unit:"%/an",
+   help:"Cible BCE 2 %. Elle gonfle recettes et dépenses, et allège la dette en points de PIB."},
+  {k:'drift',  lab:"Dérive des dépenses en volume", min:0,   max:2,   step:0.1,  unit:"%/an",
+   help:"Vieillissement, santé, salaires : la dépense progresse même sans décision nouvelle."},
+  {k:'rmkt',   lab:"Taux d'emprunt à 10 ans",       min:1.5, max:6,   step:0.1,  unit:"%",
+   help:"Il ne s'applique qu'à la dette refinancée chaque année, environ 11 % du stock."},
+  {k:'mult',   lab:"Multiplicateur budgétaire",     min:0,   max:1.5, step:0.05, unit:"",
+   help:"Effet de court terme d'1 € de dépense en plus sur le PIB. Celui des prélèvements vaut 60 % de cette valeur."},
+  {k:'spread', lab:"Prime de risque souveraine",    min:0,   max:10,  step:0.5,  unit:"pb / pt de dette",
+   help:"Surcoût d'emprunt par point de dette/PIB au-dessus du niveau de 2025."}
+];
+const GROUPS = [
+  {k:'rec+', name:"Recettes — hausses",   cls:'improve'},
+  {k:'rec-', name:"Recettes — baisses",   cls:'degrade'},
+  {k:'dep-', name:"Dépenses — économies", cls:'improve'},
+  {k:'dep+', name:"Dépenses — hausses",   cls:'degrade'}
+];
+const YEARS = [2025,2026,2027,2028,2029,2030,2031,2032];
+const START = 2027;
+
+/* ---------- modèle ---------- */
+function erosionFactor(m, y, P){
+  if (!m.behav || y < START) return 1;
+  return 1 - (P.erosion / 100) * Math.min(1, (y - START + 1) / 3);
+}
+function amountAt(m, val, y, P){
+  if (y < START) return 0;
+  return val * Math.min(1, (y - START + 1) / m.ramp) * erosionFactor(m, y, P);
+}
+function measuresAt(active, y, P){
+  let dDep = 0, dRec = 0, impDep = 0, impTax = 0;
+  for (const id in active){
+    const m = M_BY_ID[id]; if (!m) continue;
+    const a = amountAt(m, active[id], y, P);
+    if (m.g === 'dep+'){ dDep += a; impDep += a; }
+    else if (m.g === 'dep-'){ dDep -= a; impDep -= a; }
+    else if (m.g === 'rec+'){ dRec += a; impTax -= a; }
+    else if (m.g === 'rec-'){ dRec -= a; impTax += a; }
+  }
+  return {dDep, dRec, impDep, impTax};
+}
+function run(P, active){
+  const rows = [], nom = (P.g + P.infl) / 100, RHO = 0.6;
+  let pibBase = BASE.pib0, depPrim = BASE.dep0 - BASE.charge0, recBase = BASE.rec0;
+  let dette = BASE.dette0, taux = BASE.taux0, gap = 0, impPrev = 0;
+  const dette0Pct = BASE.dette0 / BASE.pib0 * 100;
+  rows.push({y:2025, pib:BASE.pib0, dep:BASE.dep0, rec:BASE.rec0, charge:BASE.charge0,
+             solde:BASE.rec0 - BASE.dep0, dette:BASE.dette0,
+             soldePct:(BASE.rec0 - BASE.dep0)/BASE.pib0*100, dettePct:dette0Pct, mes:0});
+  for (let y = 2026; y <= 2032; y++){
+    pibBase *= (1 + nom);
+    depPrim *= (1 + (P.drift + P.infl) / 100);
+    recBase *= (1 + nom);
+    const dettePrevPct = dette / rows[rows.length-1].pib * 100;
+    const rMkt = P.rmkt + (P.spread / 100) * Math.max(0, dettePrevPct - dette0Pct);
+    taux = taux + (rMkt - taux) * BASE.refi;
+    const charge = dette * taux / 100;
+    const m = measuresAt(active, y, P);
+    const imp = P.mult * m.impDep + P.mult * 0.6 * m.impTax;
+    gap = RHO * gap + (imp - impPrev); impPrev = imp;
+    const pib = pibBase + gap;
+    const rec = recBase * (pib / pibBase) + m.dRec;
+    const dep = depPrim + m.dDep + charge;
+    const solde = rec - dep;
+    dette = dette - solde;
+    rows.push({y, pib, dep, rec, charge, solde, dette,
+               soldePct:solde/pib*100, dettePct:dette/pib*100, mes:m.dRec - m.dDep});
+  }
+  return rows;
+}
+
+/* ---------- état & format ---------- */
+const state = {P:{...DEFAULTS}, active:{}, party:'tend', annonce:false, adv:false, feed:'all'};
+const nf = (v, d=0) => new Intl.NumberFormat('fr-FR',{minimumFractionDigits:d, maximumFractionDigits:d}).format(v);
+const sign = s => String(s).replace(/-/g,'−');
+const md = (v, d=0) => sign(nf(v,d)) + ' Md€';
+const pc = (v, d=1) => sign(nf(v,d)) + ' %';
+const signed = (v, d=1, u=' Md€') => (v > 0 ? '+' : '') + sign(nf(v,d)) + u;
+const perHab = v => nf(Math.round(v * 1000 / BL.apu.population)) + ' €';
+/** Formule l'écart au tendanciel en français, du point de vue « ce qui manque ». */
+const manqueDelta = d => Math.abs(d) < .5 ? "identique à l'inaction"
+  : md(Math.abs(d), 0) + (d > 0 ? " de moins" : " de plus") + " qu'en l'absence de mesures";
+const $ = s => document.querySelector(s);
+const el = (t, c, x) => { const n = document.createElement(t); if (c) n.className = c; if (x != null) n.textContent = x; return n; };
+const NS = 'http://www.w3.org/2000/svg';
+const sv = (t, a) => { const n = document.createElementNS(NS,t); for (const k in a) n.setAttribute(k, a[k]); return n; };
+const tip = $('#tip');
+
+function showTip(x, y, html){
+  tip.innerHTML = html; tip.style.opacity = 1;
+  const r = tip.getBoundingClientRect();
+  let left = x + 14, top = y - r.height / 2;
+  if (left + r.width > innerWidth - 8) left = x - r.width - 14;
+  top = Math.max(8, Math.min(top, innerHeight - r.height - 8));
+  tip.style.left = left + 'px'; tip.style.top = top + 'px';
+}
+const hideTip = () => { tip.style.opacity = 0; };
+
+function lineChart(svg, o){
+  svg.textContent = '';
+  const W = 620, H = 290, L = 48, R = 58, T = 16, B = 34;
+  const n = o.years.length;
+  const x = i => L + i * (W - L - R) / (n - 1);
+  const y = v => T + (o.yMax - v) / (o.yMax - o.yMin) * (H - T - B);
+
+  for (let t = o.yMin; t <= o.yMax + 1e-9; t += o.step){
+    const yy = y(t);
+    svg.appendChild(sv('line',{x1:L, x2:W-R, y1:yy, y2:yy, class:'gridline'}));
+    const lab = sv('text',{x:L-9, y:yy+3.5, class:'tick', 'text-anchor':'end'});
+    lab.textContent = sign(nf(t, o.dec||0)) + ' %';
+    svg.appendChild(lab);
+  }
+  svg.appendChild(sv('line',{x1:L, x2:W-R, y1:H-B, y2:H-B, class:'axisline'}));
+
+  o.years.forEach((yr,i) => {
+    const t = sv('text',{x:x(i), y:H-B+16, class:'tick', 'text-anchor':'middle'});
+    t.textContent = yr; svg.appendChild(t);
+  });
+
+  if (o.ref != null){
+    const yy = y(o.ref);
+    svg.appendChild(sv('line',{x1:L, x2:W-R, y1:yy, y2:yy, stroke:'var(--axis)',
+      'stroke-width':1, 'stroke-dasharray':'4 4'}));
+    const t = sv('text',{x:L+6, y:yy-6, class:'reflabel'});
+    t.textContent = o.refLabel; svg.appendChild(t);
+  }
+
+  o.series.forEach(s => {
+    const d = s.vals.map((v,i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ');
+    svg.appendChild(sv('path',{d, fill:'none', stroke:s.color, 'stroke-width':2,
+      'stroke-linejoin':'round', 'stroke-linecap':'round'}));
+    const last = s.vals.length - 1;
+    svg.appendChild(sv('circle',{cx:x(last), cy:y(s.vals[last]), r:3.5, fill:s.color,
+      stroke:'var(--surface)', 'stroke-width':2}));
+    const t = sv('text',{x:x(last)+9, y:y(s.vals[last])+4, class:'endlabel', fill:s.color});
+    t.textContent = sign(nf(s.vals[last], o.dec||0)) + ' %';
+    svg.appendChild(t);
+  });
+
+  const cross = sv('line',{x1:0,x2:0,y1:T,y2:H-B, stroke:'var(--axis)','stroke-width':1, opacity:0});
+  svg.appendChild(cross);
+  const dots = o.series.map(s => {
+    const c = sv('circle',{r:4, fill:s.color, stroke:'var(--surface)','stroke-width':2, opacity:0});
+    svg.appendChild(c); return c;
+  });
+  const hit = sv('rect',{x:L, y:T, width:W-L-R, height:H-T-B, fill:'transparent'});
+  svg.appendChild(hit);
+
+  hit.addEventListener('pointermove', ev => {
+    const box = svg.getBoundingClientRect();
+    const px = (ev.clientX - box.left) / box.width * W;
+    let i = Math.round((px - L) / ((W - L - R) / (n - 1)));
+    i = Math.max(0, Math.min(n - 1, i));
+    cross.setAttribute('x1', x(i)); cross.setAttribute('x2', x(i)); cross.setAttribute('opacity', 1);
+    o.series.forEach((s,k) => {
+      dots[k].setAttribute('cx', x(i)); dots[k].setAttribute('cy', y(s.vals[i])); dots[k].setAttribute('opacity', 1);
+    });
+    const rows = o.series.map(s =>
+      `<div class="t-row"><span class="t-key"><i class="swatch" style="background:${s.color}"></i>${s.name}</span>`
+      + `<b>${sign(nf(s.vals[i], o.dec||0))} %</b></div>`).join('');
+    const extra = o.extra ? o.extra(i) : '';
+    showTip(ev.clientX, ev.clientY, `<div class="t-title">${o.years[i]}</div>${rows}${extra}`);
+  });
+  hit.addEventListener('pointerleave', () => {
+    hideTip(); cross.setAttribute('opacity', 0); dots.forEach(d => d.setAttribute('opacity', 0));
+  });
+}
+
+
+/* ============================================================
+   Rendu
+   ============================================================ */
+function niceBounds(vals, pad){
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  return [Math.floor((lo - pad) / pad) * pad, Math.ceil((hi + pad) / pad) * pad];
+}
+const improves = m => m.g === 'rec+' || m.g === 'dep-';
+
+function activeSplit(active){
+  active = active || state.active;
+  let up = 0, down = 0, behavGross = 0, behavNet = 0;
+  for (const id in active){
+    const m = M_BY_ID[id];
+    const v = amountAt(m, active[id], 2032, state.P);
+    if (improves(m)) up += v; else down += v;
+    if (m.behav){
+      behavNet += v;
+      behavGross += amountAt(m, active[id], 2032, {...state.P, erosion:0});
+    }
+  }
+  return {up, down, net: up - down, behavGross, behavNet};
+}
+
+function render(){
+  const base = run(state.P, {});
+  const scen = run(state.P, state.active);
+  const last = scen.length - 1, B32 = base[last], S32 = scen[last];
+  const split = activeSplit();
+
+  /* cockpit */
+  const under3 = scen.findIndex((r,i) => i > 0 && r.soldePct >= -3);
+  const dS = S32.soldePct - B32.soldePct, dD = S32.dettePct - B32.dettePct;
+  const ck = $('#cockpit'); ck.textContent = '';
+  [{lab:"Ce qui manque en 2032", val:md(-S32.solde), color:true,
+    sub:pc(-S32.soldePct) + " du PIB · " + perHab(-S32.solde) + " par habitant",
+    dtxt:manqueDelta(S32.solde - B32.solde), good:dS > .05, bad:dS < -.05},
+   {lab:"La dette en 2032", val:md(S32.dette),
+    sub:pc(S32.dettePct,0) + " du PIB · " + perHab(S32.dette) + " par habitant",
+    dtxt:"contre " + md(BASE.dette0) + " aujourd'hui", good:dD < -.5, bad:dD > .5},
+   {lab:"Les intérêts de la dette", val:md(S32.charge),
+    sub:"contre " + md(BASE.charge0) + " aujourd'hui",
+    dtxt:"soit " + nf(S32.charge / S32.rec * 100, 1) + " % de tout ce que l'État encaisse"},
+   {lab:"Sous la limite des 3 % ?", val:under3 > 0 ? String(scen[under3].y) : "jamais",
+    sub:under3 > 0 ? "première année sous la limite" : "pas d'ici 2032",
+    dtxt:"effort net du programme : " + signed(split.net, 0), good:under3 > 0}
+  ].forEach(t => {
+    const n = el('div','tile');
+    n.appendChild(el('div','lab', t.lab));
+    const v = el('div','val', t.val);
+    if (t.color) v.style.color = S32.soldePct < -3 ? 'var(--critical)' : 'var(--good)';
+    v.style.fontSize = t.val.length > 9 ? '26px' : '';
+    n.appendChild(v); n.appendChild(el('div','sub', t.sub));
+    n.appendChild(el('div','delta ' + (t.good ? 'good' : t.bad ? 'bad' : 'flat'), t.dtxt));
+    ck.appendChild(n);
+  });
+
+  /* trajectoires */
+  const [sLo, sHi] = niceBounds([...base.map(r=>r.soldePct), ...scen.map(r=>r.soldePct), -3], 1);
+  lineChart($('#chSolde'), {
+    years:YEARS, yMin:sLo, yMax:Math.max(sHi,0), step:1, dec:1, ref:-3, refLabel:"limite européenne · 3 %",
+    series:[{name:"Tendanciel", color:'var(--s-base)', vals:base.map(r=>r.soldePct)},
+            {name:"Scénario",   color:'var(--s-scen)', vals:scen.map(r=>r.soldePct)}],
+    extra:i => `<div class="t-row"><span class="t-key">Solde, scénario</span><b>${md(scen[i].solde)}</b></div>`});
+  const [dLo, dHi] = niceBounds([...base.map(r=>r.dettePct), ...scen.map(r=>r.dettePct)], 5);
+  lineChart($('#chDette'), {
+    years:YEARS, yMin:dLo, yMax:dHi, step:5, dec:0, ref:base[0].dettePct, refLabel:"niveau 2025",
+    series:[{name:"Tendanciel", color:'var(--s-base)', vals:base.map(r=>r.dettePct)},
+            {name:"Scénario",   color:'var(--s-scen)', vals:scen.map(r=>r.dettePct)}],
+    extra:i => `<div class="t-row"><span class="t-key">Dette, scénario</span><b>${md(scen[i].dette)}</b></div>`});
+
+  /* impact par mesure */
+  let items = Object.keys(state.active).map(id => {
+    const m = M_BY_ID[id];
+    return {m, v:(improves(m) ? 1 : -1) * amountAt(m, state.active[id], 2032, state.P)};
+  }).sort((a,b) => b.v - a.v);
+  const more = $('#impactMore'), total = items.length, CAP = 8;
+  if (!state.adv && total > CAP){
+    const keep = new Set([...items].sort((a,b) => Math.abs(b.v) - Math.abs(a.v)).slice(0, CAP));
+    items = items.filter(i => keep.has(i));
+    more.textContent = `+ ${total - CAP} autres mesures, plus petites — passez en mode avancé pour toutes les voir.`;
+    more.hidden = false;
+  } else { more.hidden = true; }
+  const box = $('#impactRows'); box.textContent = '';
+  $('#impactEmpty').hidden = total > 0;
+  if (items.length){
+    const maxAbs = Math.max(...items.map(i => Math.abs(i.v)));
+    items.forEach(({m,v}) => {
+      const row = el('div','compo-row');
+      row.appendChild(el('div','n', m.lab));
+      const track = el('div'); track.style.cssText = 'position:relative;height:14px';
+      const mid = el('div'); mid.style.cssText = 'position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--axis)';
+      const bar = el('div'), w = Math.abs(v) / maxAbs * 48;
+      bar.style.cssText = `position:absolute;top:1px;height:12px;border-radius:2px;background:${v>=0?'var(--pos)':'var(--neg)'};`
+        + (v >= 0 ? `left:50%;width:${w}%` : `right:50%;width:${w}%`);
+      track.append(bar, mid); row.appendChild(track);
+      const val = el('div','v', signed(v,1)); val.style.color = v >= 0 ? 'var(--pos)' : 'var(--neg)';
+      row.appendChild(val); row.title = m.note; box.appendChild(row);
+    });
+    const foot = el('div','compo-row');
+    foot.style.cssText = 'border-top:1px solid var(--rule);margin-top:8px;padding-top:10px;font-weight:600';
+    foot.appendChild(el('div','n',"Effet net direct sur le solde 2032"));
+    foot.appendChild(el('div'));
+    const fv = el('div','v', signed(split.net,1));
+    fv.style.color = split.net >= 0 ? 'var(--pos)' : 'var(--neg)';
+    foot.appendChild(fv); box.appendChild(foot);
+  }
+
+  renderVerdict(base, scen, split);
+  renderCompare(base);
+  renderFeed();
+  renderGap(split);
+  renderBehav(split);
+  syncLedger();
+  renderTable(base, scen);
+}
+
+/* ---------- comparaison de tous les programmes ---------- */
+const initials = n => {
+  const w = String(n).split(/[\s-]+/).filter(x => /^\p{L}/u.test(x));
+  if (!w.length) return '—';
+  return (w[0][0] + (w.length > 1 ? w[w.length - 1][0] : '')).toUpperCase();
+};
+
+function renderCompare(base){
+  const host = $('#cmp'); host.textContent = '';
+  const refVals = base.map(r => r.soldePct);
+  const rows = PARTIES.map(p => {
+    const active = partySet(p);
+    const scen = run(state.P, active);
+    const S = scen[scen.length-1];
+    return {id:p.id, nom:p.candidat, sub:p.nom, couleur:p.couleur, photo:p.photo,
+            statut:p.statut, vals:scen.map(r => r.soldePct),
+            solde:S.soldePct, dette:S.dettePct, net:activeSplit(active).net};
+  });
+  rows.push({id:'tend', nom:"Si rien ne change", sub:"aucune mesure nouvelle", couleur:'var(--ink-3)',
+             photo:null, statut:null, vals:refVals, ref:true,
+             solde:base[base.length-1].soldePct, dette:base[base.length-1].dettePct, net:0});
+  rows.sort((a,b) => b.solde - a.solde);
+
+  const all = rows.flatMap(r => r.vals);
+  const lo = Math.min(...all), hi = Math.max(...all), padY = Math.max(.15, (hi - lo) * .12);
+  const yLo = lo - padY, yHi = hi + padY;
+  const worst = Math.max(...rows.map(r => Math.abs(r.solde)), 3);
+
+  const head = el('div','cmp-head');
+  ['Candidat', 'Déficit 2025 → 2032 (gris : sans mesure)', 'Déficit en 2032, et la limite de 3 %', 'Dette', 'Effort']
+    .forEach((t,i) => { const d = el('div', i > 2 ? 'r' : null, t); head.appendChild(d); });
+  host.appendChild(head);
+
+  rows.forEach(r => {
+    const b = el('button','cmp-row' + (r.ref ? ' ref' : ''));
+    b.type = 'button'; b.style.setProperty('--pc', r.couleur);
+    b.setAttribute('aria-pressed', String(r.id === state.party));
+    b.addEventListener('click', () => document.querySelector(`.card[data-id="${r.id}"]`).click());
+
+    const who = el('div','cmp-who');
+    const av = el('div','cmp-av');
+    if (r.photo){ const im = el('img'); im.src = r.photo; im.alt = ''; av.appendChild(im); }
+    else av.textContent = r.ref ? '—' : initials(r.nom);
+    const tx = el('div');
+    tx.appendChild(el('div','cmp-name', r.nom));
+    tx.appendChild(el('div','cmp-sub', r.statut === 'reconstitution' ? 'reconstitution' : r.sub));
+    who.append(av, tx); b.appendChild(who);
+
+    b.appendChild(spark(r.vals, refVals, yLo, yHi, r.ref));
+
+    const bar = el('div','cmp-bar');
+    const fill = el('div','fill');
+    fill.style.width = (Math.abs(r.solde) / worst * 74) + '%';
+    fill.style.background = r.solde >= -3 ? 'var(--good)' : (r.ref ? 'var(--ink-3)' : 'var(--neg)');
+    const lim = el('div','lim'); lim.style.left = (3 / worst * 74) + '%';
+    const lab = el('div','lab', pc(-r.solde));
+    lab.style.left = 'calc(' + (Math.abs(r.solde) / worst * 74) + '% + 8px)';
+    lab.style.color = r.solde >= -3 ? 'var(--good)' : 'var(--ink)';
+    bar.append(fill, lim, lab); b.appendChild(bar);
+
+    b.appendChild(el('div','cmp-num', pc(r.dette, 0)));
+    const net = el('div','cmp-num', r.ref ? '—' : signed(r.net, 0));
+    if (!r.ref) net.style.color = r.net >= 0 ? 'var(--pos)' : 'var(--neg)';
+    b.appendChild(net);
+    host.appendChild(b);
+  });
+
+  const best = rows.find(r => !r.ref);
+  $('#cmpNote').textContent = "Trié du déficit le plus faible au plus élevé en 2032. « Effort » = effet net direct "
+    + "des mesures sur le budget. Le trait vertical marque la limite européenne de 3 %. "
+    + (state.annonce ? "Les montants annoncés par les partis sont retenus quand ils existent."
+                     : "Les bornes centrales du catalogue sont retenues ; cochez la case plus haut pour prendre "
+                       + "les montants annoncés par les partis.")
+    + (best && best.solde < -3 ? " Aucun programme ne repasse sous la limite d'ici 2032." : "");
+}
+
+/** Mini-courbe du déficit, échelle commune, avec le tendanciel en repère. */
+function spark(vals, ref, yLo, yHi, isRef){
+  const W = 156, H = 38, P = 3;
+  const svg = sv('svg', {class:'cmp-spark', viewBox:`0 0 ${W} ${H}`, 'aria-hidden':'true'});
+  const x = i => P + i * (W - 2*P) / (vals.length - 1);
+  const y = v => P + (yHi - v) / (yHi - yLo) * (H - 2*P);
+  const path = a => a.map((v,i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ');
+  if (!isRef) svg.appendChild(sv('path', {d:path(ref), fill:'none', stroke:'var(--rule)', 'stroke-width':1.5}));
+  svg.appendChild(sv('path', {d:path(vals), fill:'none', stroke:isRef ? 'var(--ink-3)' : 'var(--s-scen)',
+    'stroke-width':2, 'stroke-linejoin':'round', 'stroke-linecap':'round'}));
+  svg.appendChild(sv('circle', {cx:x(vals.length-1), cy:y(vals[vals.length-1]), r:2.6,
+    fill:isRef ? 'var(--ink-3)' : 'var(--s-scen)'}));
+  return svg;
+}
+
+/* ---------- verdict en langage courant ---------- */
+function renderVerdict(base, scen, split){
+  const S = scen[scen.length-1], B = base[base.length-1];
+  const p = PARTIES.find(x => x.id === state.party);
+  const host = $('#verdict'); host.textContent = '';
+  const manque = -S.solde, dPt = S.soldePct - B.soldePct;
+  const h = el('h3', null, p ? `Avec le programme de ${p.candidat}, en 2032`
+              : (state.party === 'tend' ? "Si aucune mesure n'est prise, en 2032"
+                                        : "Avec les mesures sélectionnées, en 2032"));
+  host.appendChild(h);
+
+  const lines = [];
+  lines.push([manque > 0 ? 'bad' : 'good',
+    `Il manquerait <b>${md(manque)}</b> dans les caisses sur l'année — l'équivalent de `
+    + `<b>${perHab(manque)}</b> par habitant.`]);
+  lines.push([S.dette > BASE.dette0 ? 'bad' : 'good',
+    `La dette atteindrait <b>${md(S.dette)}</b>, contre <b>${md(BASE.dette0)}</b> aujourd'hui.`]);
+  lines.push([S.soldePct >= -3 ? 'good' : 'bad',
+    `Le déficit serait de <b>${pc(-S.soldePct)}</b> de la richesse produite, `
+    + (S.soldePct >= -3 ? "donc <b>sous</b> la limite européenne de 3 %."
+                        : "soit <b>au-dessus</b> de la limite européenne de 3 %.")]);
+  lines.push([Math.abs(dPt) < .1 ? '' : (dPt > 0 ? 'good' : 'bad'),
+    `Sans aucune mesure nouvelle, il serait de <b>${pc(-B.soldePct)}</b>. Ce programme `
+    + (Math.abs(dPt) < .1 ? "n'y change presque rien."
+       : dPt > 0 ? `l'améliore de <b>${nf(Math.abs(dPt),1)} point</b>.`
+                 : `l'aggrave de <b>${nf(Math.abs(dPt),1)} point</b>.`)]);
+  if (p && p.annonce.revendique != null){
+    const couvre = Math.round(p.annonce.detaille / p.annonce.revendique * 100);
+    lines.push(['', `Le parti annonce <b>${md(p.annonce.revendique)}</b> ; le détail rendu public `
+      + `n'en couvre que <b>${couvre} %</b>.`]);
+  }
+  const ul = el('ul','vlines');
+  lines.forEach(([k, txt]) => {
+    const li = el('li');
+    li.appendChild(el('i','mark' + (k ? ' ' + k : '')));
+    const sp = el('span'); sp.innerHTML = txt; li.appendChild(sp);
+    ul.appendChild(li);
+  });
+  host.appendChild(ul);
+  host.appendChild(el('div','perk',
+    `Pour situer les ordres de grandeur : 1 milliard d'euros, c'est environ ${perHab(1)} par habitant. `
+    + `La dette actuelle représente ${perHab(BASE.dette0)} par habitant — une image de l'échelle, `
+    + `pas une somme que chacun devrait rembourser.`));
+}
+
+/* ---------- annoncé vs modélisé ---------- */
+function bars(host, rows){
+  host.textContent = '';
+  const max = Math.max(1, ...rows.map(r => Math.abs(r.v)));
+  rows.forEach(r => {
+    const n = el('div','r');
+    n.appendChild(el('div','n', r.n));
+    const b = el('div','b');
+    b.style.width = (Math.abs(r.v) / max * 100) + '%';
+    b.style.background = r.c;
+    n.appendChild(b);
+    const v = el('div','v', r.txt != null ? r.txt : md(r.v,0));
+    v.style.color = r.vc || 'var(--ink)';
+    n.appendChild(v); host.appendChild(n);
+  });
+}
+
+function renderGap(split){
+  const p = PARTIES.find(x => x.id === state.party);
+  const host = $('#gapbar'), prose = $('#gapProse'), src = $('#gapSrc');
+  src.textContent = '';
+  if (!p){
+    bars(host, [{n:"Aucune mesure", v:0, c:'var(--axis)', txt:"—"}]);
+    prose.innerHTML = "Aucun programme n'est chargé. La trajectoire affichée est le tendanciel : "
+      + "ce que produit l'inaction, et l'étalon auquel comparer chaque programme.";
+    return;
+  }
+  const a = p.annonce, rev = a.revendique, det = a.detaille;
+  const rows = [];
+  if (rev != null) rows.push({n:"Annoncé par le parti", v:rev, c:'var(--bar-strong)'});
+  if (det != null) rows.push({n:"Détaillé publiquement", v:det, c:'var(--bar)'});
+  rows.push({n:"Retenu ici, côté redressement", v:split.up, c:'var(--pos)', txt:md(split.up,0)});
+  rows.push({n:"Dépenses nouvelles et baisses d'impôts", v:split.down, c:'var(--neg)', txt:md(split.down,0)});
+  rows.push({n:"Effet net sur le solde 2032", v:Math.abs(split.net), c:'var(--axis)',
+             txt:signed(split.net,0), vc:split.net >= 0 ? 'var(--pos)' : 'var(--neg)'});
+  bars(host, rows);
+
+  const cote = a.cote === 'recette' ? "de recettes nouvelles" : "d'économies";
+  let t = '';
+  if (rev != null){
+    const partDet = Math.round(det / rev * 100);
+    t = `<b>${p.candidat}</b> revendique <b>${md(rev)}</b> ${cote}. La part rattachée publiquement à des postes `
+      + `identifiés représente <b>${md(det)}</b>, soit ${partDet} % du total annoncé — le reste n'a pas fait l'objet `
+      + `d'un détail vérifiable. En reprenant ces postes avec les bornes du catalogue, le simulateur obtient `
+      + `<b>${md(split.up)}</b> de redressement en 2032, contre <b>${md(split.down)}</b> de dépenses nouvelles ou de `
+      + `baisses de prélèvements annoncées par ailleurs. Effet net sur le solde : <b>${signed(split.net,0)}</b>.`;
+  } else {
+    t = `<b>${p.nom}</b> n'a pas publié de chiffrage d'ensemble pour 2027. Le scénario chargé est une `
+      + `<b>reconstitution de ce simulateur</b> à partir de positions publiques : les montants sont ceux du catalogue, `
+      + `pas ceux du parti. Il produit <b>${md(split.up)}</b> de redressement et <b>${md(split.down)}</b> de dépenses `
+      + `nouvelles, soit <b>${signed(split.net,0)}</b> net en 2032.`;
+  }
+  t += `<br><br>${a.texte}`;
+  prose.innerHTML = t;
+  (p.sources || []).forEach(s => {
+    const li = el('li'); const a2 = el('a', null, s.t);
+    a2.href = s.u; a2.target = '_blank'; a2.rel = 'noopener noreferrer';
+    li.appendChild(a2); src.appendChild(li);
+  });
+}
+
+function renderBehav(split){
+  const g = split.behavGross, n = split.behavNet;
+  $('#behavFig').textContent = g > 0 ? md(n,1) : '—';
+  $('#behavFig').style.color = g > 0 ? 'var(--ink)' : 'var(--ink-3)';
+  $('#behavSub').textContent = g > 0
+    ? `sur ${md(g,1)} de rendement affiché, soit ${md(n - g, 1)} d'assiette perdue`
+    : "aucune mesure sur le capital ou les profits n'est activée";
+  bars($('#behavBar'), [
+    {n:"Rendement affiché", v:g, c:'var(--bar)', txt:md(g,1)},
+    {n:"Rendement retenu",  v:n, c:'var(--pos)', txt:md(n,1)}
+  ]);
+}
+
+/* ---------- cartes candidats ---------- */
+function partySet(p){
+  const out = {};
+  for (const id in p.set){
+    const e = p.set[id], m = M_BY_ID[id]; if (!m) continue;
+    out[id] = (state.annonce && e.annonce != null) ? e.annonce : m[e.sim || 'mid'];
+  }
+  return out;
+}
+function buildCards(){
+  const box = $('#cards');
+  const mk = (id, sig, who, party, claim, badge, color, photo) => {
+    const b = el('button','card'); b.type = 'button'; b.dataset.id = id;
+    b.style.setProperty('--pc', color);
+    const top = el('div','card-top');
+    const av = el('div','avatar');
+    if (photo){
+      const img = el('img');
+      img.src = photo; img.alt = ''; img.loading = 'lazy';
+      av.appendChild(img);
+    } else {
+      av.textContent = initials(who);
+    }
+    const txt = el('div');
+    txt.appendChild(el('div','sig', sig));
+    txt.appendChild(el('div','who', who));
+    txt.appendChild(el('div','party', party));
+    top.append(av, txt);
+    b.appendChild(top);
+    if (claim) b.appendChild(el('div','claim', claim));
+    const nA = annOf(id).length, nC = contraOf(id);
+    if (nA) b.appendChild(el('div','cmp-sub',
+      nA + (nA > 1 ? ' annonces' : ' annonce') + (nC ? ' · ' + nC + (nC > 1 ? ' contradictions' : ' contradiction') : '')));
+    if (badge) b.appendChild(el('span','badge ' + badge[0], badge[1]));
+    b.addEventListener('click', () => {
+      state.party = id;
+      state.active = id === 'tend' ? {} : partySet(PARTIES.find(x => x.id === id));
+      state.feed = annOf(id).length ? id : 'all';
+      syncCards(); render();
+    });
+    box.appendChild(b);
+  };
+  mk('tend','—',"Tendanciel","Aucune mesure nouvelle après 2026","", null, 'var(--ink-3)', null);
+  PARTIES.forEach(p => mk(p.id, p.sigle, p.candidat, p.nom,
+    p.annonce.revendique != null ? p.annonce.titre : "Programme non chiffré",
+    p.statut === 'reconstitution' ? ['rec','reconstitution'] : ['pub','chiffres publics'],
+    p.couleur, p.photo));
+  $('#candWarn').textContent = DATA.parties.avertissement;
+}
+function syncCards(){
+  document.querySelectorAll('.card').forEach(b =>
+    b.setAttribute('aria-pressed', String(b.dataset.id === state.party)));
+  const p = PARTIES.find(x => x.id === state.party);
+  $('#presetNote').textContent = p
+    ? `${p.candidat} · ${p.statutCandidature} · ${Object.keys(state.active).length} mesures chargées`
+    : (state.party === 'tend' ? "Trajectoire à politique inchangée."
+       : `Scénario personnalisé — ${Object.keys(state.active).length} mesure(s) activée(s).`);
+  $('#modeAnnonce').disabled = !p || p.annonce.revendique == null;
+}
+
+/* ---------- grand livre ---------- */
+const nodes = {};
+function buildLedger(){
+  const wrap = $('#ledger');
+  const cols = [el('div','ledger-col'), el('div','ledger-col')];
+  wrap.append(cols[0], cols[1]);
+  GROUPS.forEach((g, gi) => {
+    const col = el('div','col ' + g.cls);
+    const head = el('header');
+    head.appendChild(el('div','name', g.name));
+    const sum = el('div','sum','—'); head.appendChild(sum);
+    col.appendChild(head);
+    MEASURES.filter(m => m.g === g.k).forEach(m => {
+      const row = el('div','m');
+      const cb = el('input'); cb.type = 'checkbox'; cb.id = 'cb-' + m.id;
+      const lab = el('label','lab'); lab.htmlFor = cb.id; lab.textContent = m.lab;
+      if (m.disp) lab.appendChild(el('span','chip','chiffrage contesté'));
+      if (m.behav) lab.appendChild(el('span','chip','assiette mobile'));
+      const amt = el('div','amt','—');
+      const meta = el('div','meta');
+      meta.appendChild(el('div','note', m.note));
+      const rng = el('input'); rng.type = 'range';
+      rng.min = m.lo; rng.max = m.hi; rng.step = (m.hi - m.lo) <= 2 ? 0.05 : 0.5; rng.value = m.mid;
+      rng.setAttribute('aria-label', 'Montant retenu pour : ' + m.lab);
+      meta.appendChild(rng);
+      const scale = el('div','scale');
+      scale.appendChild(el('span', null, 'borne basse ' + nf(m.lo,1) + ' Md€'));
+      scale.appendChild(el('span', null, nf(m.hi,1) + ' Md€ borne haute'));
+      meta.appendChild(scale);
+      row.append(cb, lab, amt, meta);
+      col.appendChild(row);
+      nodes[m.id] = {row, cb, amt, rng, scale};
+      cb.addEventListener('change', () => {
+        if (cb.checked) state.active[m.id] = parseFloat(rng.value); else delete state.active[m.id];
+        state.party = null; syncCards(); render();
+      });
+      rng.addEventListener('input', () => {
+        cb.checked = true;
+        state.active[m.id] = parseFloat(rng.value);
+        state.party = null; syncCards(); render();
+      });
+    });
+    col.dataset.group = g.k; col._sum = sum;
+    cols[gi < 2 ? 0 : 1].appendChild(col);
+  });
+}
+function syncLedger(){
+  for (const m of MEASURES){
+    const nd = nodes[m.id], v = state.active[m.id], on = v != null;
+    nd.row.classList.toggle('on', on);
+    if (nd.cb.checked !== on) nd.cb.checked = on;
+    if (on){
+      const mx = Math.max(m.hi, v);
+      if (parseFloat(nd.rng.max) !== mx) nd.rng.max = mx;
+      if (parseFloat(nd.rng.value) !== v) nd.rng.value = v;
+      nd.scale.lastChild.textContent = nf(mx,1) + ' Md€ borne haute'
+        + (mx > m.hi ? ' (montant annoncé)' : '');
+    }
+    nd.amt.textContent = on ? nf(v,1) + ' Md€' : '—';
+    nd.amt.style.color = on ? (improves(m) ? 'var(--pos)' : 'var(--neg)') : '';
+  }
+  document.querySelectorAll('.col').forEach(col => {
+    const tot = MEASURES.filter(m => m.g === col.dataset.group && state.active[m.id] != null)
+                        .reduce((s,m) => s + state.active[m.id], 0);
+    col._sum.textContent = tot ? nf(tot,1) + ' Md€' : '—';
+  });
+}
+
+/* ---------- paramètres ---------- */
+function buildParams(){
+  const box = $('#params');
+  PARAMS.forEach(p => {
+    const n = el('div','p');
+    const lab = el('label'); lab.htmlFor = 'pp-' + p.k;
+    lab.innerHTML = p.lab + ' · <span class="pv" id="pv-' + p.k + '"></span>';
+    const r = el('input'); r.type = 'range'; r.id = 'pp-' + p.k;
+    r.min = p.min; r.max = p.max; r.step = p.step; r.value = state.P[p.k];
+    const h = el('div'); h.style.cssText = 'font-size:11.5px;color:var(--ink-3);line-height:1.4';
+    h.textContent = p.help;
+    r.addEventListener('input', () => {
+      state.P[p.k] = parseFloat(r.value);
+      $('#pv-' + p.k).textContent = nf(state.P[p.k], p.step < 1 ? 1 : 0) + (p.unit ? ' ' + p.unit : '');
+      render();
+    });
+    n.append(lab, r, h); box.appendChild(n);
+  });
+  PARAMS.forEach(p => { $('#pv-' + p.k).textContent = nf(state.P[p.k], p.step < 1 ? 1 : 0) + (p.unit ? ' ' + p.unit : ''); });
+  const er = $('#pp-erosion');
+  er.value = state.P.erosion;
+  er.addEventListener('input', () => { setErosion(parseFloat(er.value)); });
+
+  const CHOICES = [[0, "Aucune perte"], [25, "Hypothèse centrale"], [50, "Perte forte"]];
+  const choiceBox = $('#erChoices');
+  CHOICES.forEach(([v, lab]) => {
+    const btn = el('button', null, `${lab} · ${v} %`);
+    btn.type = 'button'; btn.dataset.v = v;
+    btn.addEventListener('click', () => setErosion(v));
+    choiceBox.appendChild(btn);
+  });
+  syncErosion();
+}
+function setErosion(v){
+  state.P.erosion = v;
+  $('#pp-erosion').value = v;
+  syncErosion(); render();
+}
+function syncErosion(){
+  $('#pv-erosion').textContent = nf(state.P.erosion, 0) + " % de l'assiette";
+  document.querySelectorAll('#erChoices button').forEach(b =>
+    b.setAttribute('aria-pressed', String(parseFloat(b.dataset.v) === state.P.erosion)));
+}
+
+/* ---------- compositions & repères ---------- */
+function barRows(host, rows, max, strong, header){
+  host.textContent = '';
+  if (header){
+    const h = el('div','compo-row four hdr');
+    ['', '', header[0], header[1]].forEach(t => h.appendChild(el('div', null, t)));
+    host.appendChild(h);
+  }
+  rows.forEach(r => {
+    const n = el('div','compo-row' + (header ? ' four' : ''));
+    const nm = el('div','n', r.nom);
+    if (r.sub){ const s = el('div','sub-list', r.sub); nm.appendChild(s); }
+    n.appendChild(nm);
+    const track = el('div','compo-track');
+    const bar = el('div','compo-bar');
+    bar.style.width = Math.max(0.4, r.v / max * 100) + '%';
+    if (strong && strong(r)) bar.style.background = 'var(--bar-strong)';
+    track.appendChild(bar); n.appendChild(track);
+    n.appendChild(el('div','v', r.txt != null ? r.txt : nf(r.v)));
+    if (header) n.appendChild(el('div','thousand', r.per));
+    host.appendChild(n);
+  });
+}
+function buildCompo(){
+  const totDep = BL.apu.depenses;
+  const dep = [...BL.depenses].sort((a,b) => b.v - a.v);
+  barRows($('#compoDep'), dep.map(d => ({
+    nom:d.nom, v:d.v, sub:d.note, per:nf(d.v / totDep * 1000) + ' €'
+  })), dep[0].v, r => r.nom === "Charge de la dette", ['Md€', 'sur 1 000 €']);
+
+  const agg = {};
+  BL.recettes.forEach(r => { (agg[r.payeur] = agg[r.payeur] || []).push(r); });
+  const pay = Object.keys(agg).map(k => ({
+    nom: BL.payeurs[k].nom,
+    v: agg[k].reduce((s,x) => s + x.v, 0),
+    sub: agg[k].sort((a,b) => b.v - a.v).map(x => `${x.nom} ${nf(x.v)}`).join(' · '),
+    key: k
+  })).sort((a,b) => b.v - a.v);
+  const tot = pay.reduce((s,x) => s + x.v, 0);
+  barRows($('#compoPay'), pay.map(p => ({...p, per:nf(p.v / tot * 100) + ' €'})),
+          pay[0].v, r => r.key === 'patrimoine', ['Md€', 'sur 100 €']);
+
+  const rp = [...BL.reperes].sort((a,b) => b.v - a.v);
+  barRows($('#reperes'), rp.map(r => ({
+    nom: r.nom, v: r.v, sub: r.note,
+    txt: nf(r.v, r.v < 10 ? 2 : 0),
+    per: nf(r.v / totDep * 1000, r.v < 10 ? 2 : 0) + ' €'
+  })), rp[0].v, r => r.v < 5, ['Md€', 'sur 1 000 €']);
+}
+
+/* ---------- veille : base des annonces ---------- */
+const ANN = DATA.announcements.items;
+const P_BY_ID = Object.fromEntries(PARTIES.map(p => [p.id, p]));
+const CONTRA = {
+  non:       ['',     "cohérent avec le programme"],
+  programme: ['ko',   "contredit le programme"],
+  annonce:   ['warn', "en tension avec une autre annonce"],
+  inconnu:   ['warn', "non vérifiable en l'état"]
+};
+const annOf = id => ANN.filter(a => a.parti === id);
+const contraOf = id => annOf(id).filter(a => a.contredit && a.contredit !== 'non').length;
+const fmtDate = d => d.length === 10
+  ? new Date(d).toLocaleDateString('fr-FR', {day:'numeric', month:'short', year:'numeric'})
+  : new Date(d + '-01').toLocaleDateString('fr-FR', {month:'long', year:'numeric'});
+
+function buildFeedChips(){
+  const host = $('#feedChips');
+  const mk = (id, label, color, n) => {
+    const b = el('button'); b.type = 'button'; b.dataset.id = id;
+    if (color){ b.style.setProperty('--pc', color); b.appendChild(el('i','dotc')); }
+    b.appendChild(el('span', null, label));
+    b.appendChild(el('span','n', String(n)));
+    b.addEventListener('click', () => { state.feed = id; renderFeed(); });
+    host.appendChild(b);
+  };
+  mk('all', "Toutes les annonces", null, ANN.length);
+  PARTIES.forEach(p => mk(p.id, p.sigle, p.couleur, annOf(p.id).length));
+  mk('none', "Hors partis", 'var(--ink-3)', ANN.filter(a => !a.parti).length);
+}
+
+function renderFeed(){
+  document.querySelectorAll('#feedChips button').forEach(b =>
+    b.setAttribute('aria-pressed', String(b.dataset.id === state.feed)));
+  const items = ANN.filter(a => state.feed === 'all' || (state.feed === 'none' ? !a.parti : a.parti === state.feed))
+                   .sort((a,b) => b.date.localeCompare(a.date));
+  const host = $('#feed'); host.textContent = '';
+  $('#feedEmpty').hidden = items.length > 0;
+  items.forEach(it => {
+    const n = el('div','fitem');
+    n.appendChild(el('time', null, fmtDate(it.date)));
+    const body = el('div');
+
+    const head = el('div','fhead');
+    const p = P_BY_ID[it.parti];
+    const who = el('div','w', (it.qui || it.fonction) + (p ? ' · ' + p.sigle : ''));
+    if (p) who.style.color = p.couleur;
+    head.appendChild(who);
+    const [cls, lab] = CONTRA[it.contredit] || CONTRA.inconnu;
+    head.appendChild(el('span','pill' + (cls ? ' ' + cls : ''), lab));
+    body.appendChild(head);
+
+    if (it.media || (it.qui && it.fonction))
+      body.appendChild(el('div','fmeta', [it.qui ? it.fonction : null, it.media].filter(Boolean).join(' · ')));
+    body.appendChild(el('div','q', it.quoi));
+    if (it.verbatim) body.appendChild(el('div','e', '« ' + it.verbatim + ' »'));
+    if (it.ecart) body.appendChild(el('div','e', it.ecart));
+
+    const bot = el('div','fbot');
+    if (it.montant != null){
+      const TL = {economie:"d'économies", recette:'de recettes', depense:'de dépenses'};
+      bot.appendChild(el('span','fmontant', md(it.montant) + (TL[it.type] ? ' ' + TL[it.type] : '')));
+    }
+    const a = el('a','src', "source"); a.href = it.source; a.target = '_blank'; a.rel = 'noopener noreferrer';
+    bot.appendChild(a);
+    if (it.verifie === false) bot.appendChild(el('span','unver', "source non ouverte, chiffre rapporté par la presse"));
+    body.appendChild(bot);
+    n.appendChild(body); host.appendChild(n);
+  });
+}
+
+function renderTable(base, scen){
+  const t = $('#tbl');
+  t.innerHTML = '<thead><tr><th>Année</th><th>PIB</th><th>Recettes</th><th>Dépenses</th>'
+    + '<th>dont dette</th><th>Solde</th><th>Solde %PIB</th><th>Tendanciel %PIB</th><th>Dette %PIB</th></tr></thead>';
+  const tb = el('tbody');
+  scen.forEach((r,i) => {
+    const tr = el('tr');
+    [r.y, nf(r.pib), nf(r.rec), nf(r.dep), nf(r.charge), md(r.solde),
+     pc(r.soldePct), pc(base[i].soldePct), pc(r.dettePct,0)].forEach(c => tr.appendChild(el('td',null,String(c))));
+    tb.appendChild(tr);
+  });
+  t.appendChild(tb);
+}
+
+/* ---------- textes de méthode ---------- */
+$('#methodBody').innerHTML = `
+<p>Le point de départ est l'ensemble des administrations publiques en 2025 : <code>2 950</code> Md€ de PIB,
+<code>1 690</code> Md€ de dépenses, <code>1 530</code> Md€ de recettes, <code>3 420</code> Md€ de dette,
+<code>59</code> Md€ d'intérêts. Ces montants sont des ordres de grandeur arrondis.</p>
+<p><b>Le tendanciel</b> prolonge cette situation sans décision nouvelle : le PIB nominal croît de la croissance
+en volume plus l'inflation, les recettes suivent le PIB à élasticité 1, les dépenses primaires progressent de
+l'inflation plus une dérive en volume. Il ne reproduit donc pas la cible de <code>4,7 %</code> du budget 2026,
+qui supposait déjà une trentaine de milliards d'économies : ces économies sont elles-mêmes des mesures.</p>
+<p><b>Les intérêts</b> sont calculés sur un taux apparent, pas sur le taux du jour : chaque année, environ
+<code>11 %</code> du stock est refinancé au taux de marché, ce qui fait converger lentement le taux apparent
+(1,85 % en 2025) vers le taux d'emprunt. C'est ce décalage qui explique pourquoi la charge de la dette continue
+de monter même à taux stables.</p>
+<p><b>Les mesures</b> s'appliquent à partir de 2027 et montent en charge linéairement sur la durée propre à chacune —
+un point d'impôt produit son plein effet en un an, une réforme des retraites en cinq ou six.</p>
+<p><b>L'érosion d'assiette</b> ne s'applique qu'aux mesures marquées « assiette mobile » (capital, profits). Elle
+réduit leur rendement d'un pourcentage réglable, atteint en trois ans. Elle représente en bloc l'exil, les
+holdings, le report de distribution des dividendes et la requalification de revenus : c'est une convention, pas
+une estimation.</p>
+<p><b>Le retour macroéconomique</b> passe par un multiplicateur appliqué à l'<i>impulsion</i> budgétaire,
+c'est-à-dire à la variation annuelle de l'orientation, et non à son niveau : un plan d'économies pèse sur
+l'activité pendant sa montée en charge, puis l'écart de production se referme progressivement
+(<code>60 %</code> subsiste d'une année sur l'autre). Le PIB ainsi modifié fait varier les recettes à leur taux
+moyen, puis le solde, puis la dette, puis les intérêts de l'année suivante — c'est l'effet « boule de neige ».
+Une prime de risque optionnelle renchérit l'emprunt quand la dette dépasse son niveau de 2025.</p>`;
+
+$('#progBody').innerHTML = `
+<p>Un parti apparaît ici avec <b>trois chiffres distincts</b>, jamais confondus : ce qu'il <b>revendique</b>
+publiquement, la part qu'il a effectivement <b>détaillée</b> poste par poste, et ce que le simulateur obtient en
+reprenant ces postes avec les bornes de son catalogue. L'écart entre le premier et le troisième est l'objet même
+de ce site ; il n'est pas un verdict, il est une question posée au parti.</p>
+<p>La case <b>« retenir les montants annoncés par le parti »</b> remplace les bornes du catalogue par les chiffres
+du parti lui-même, y compris quand ils dépassent la borne haute des chiffrages publiés. C'est la lecture la plus
+favorable possible au programme : si la trajectoire ne se redresse pas même dans ce cas, ce n'est pas un effet
+des hypothèses retenues ici.</p>
+<p>Les scénarios marqués <b>« reconstitution »</b> ne sont pas des programmes. Ce sont des assemblages faits par ce
+simulateur à partir de positions publiques, pour les partis qui n'ont pas publié de chiffrage 2027. Les montants
+sont ceux du catalogue. Ils seront remplacés par les chiffrages réels au fur et à mesure de leur publication.</p>
+<p><b>La source officielle n'existe pas encore.</b> ${(function(){const o=DATA.parties.sourceOfficielle;
+return o ? `${o.note} <a href="${o.url}" target="_blank" rel="noopener noreferrer">Page du ministère de l'Intérieur</a>.` : '';})()}</p>
+<p>Les candidats retenus sont, pour chaque parti, celui que les déclarations publiques et les sondages désignent
+comme le plus probable à la date indiquée en haut de page. <b>Aucune candidature n'est officiellement déposée</b>,
+et cette liste changera. Aucune photographie n'est reproduite : les portraits de presse sont protégés par le droit
+d'auteur, et une identité visuelle de parti n'ajouterait rien à la lecture des chiffres.</p>`;
+
+$('#limitBody').innerHTML = `
+<p><b>Il n'y a pas de bouclage macroéconomique.</b> Emploi, salaires, prix, balance commerciale et comportements
+d'épargne ne sont pas modélisés. Un vrai chiffrage passe par un modèle bouclé — Mésange à la direction générale
+du Trésor, e-mod.fr à l'OFCE — où ces variables se déterminent ensemble.</p>
+<p><b>Le multiplicateur est unique.</b> Dans la littérature il varie fortement selon l'instrument, le moment du
+cycle et le niveau des taux : investissement public et minima sociaux ont un multiplicateur élevé, une baisse
+d'impôt sur les hauts revenus un multiplicateur faible. Ici, une seule valeur s'applique à toutes les dépenses.</p>
+<p><b>L'érosion d'assiette est une convention, pas une mesure.</b> Le rendement de la taxe Zucman dépend des
+décisions d'environ 1 800 foyers, sans précédent comparable à l'étranger ; plusieurs économistes jugent qu'il est
+impossible à estimer avec précision. Le curseur rend ce désaccord manipulable, il ne le résout pas.</p>
+<p><b>La répartition « qui paie » indique qui verse, pas qui supporte.</b> L'incidence économique d'un impôt diffère
+de son redevable légal : la TVA est versée par les entreprises et supportée par les consommateurs, une part des
+cotisations employeurs pèse in fine sur les salaires. Aucun consensus n'existe sur le partage exact.</p>
+<p><b>La faisabilité juridique et politique est ignorée.</b> Le simulateur additionne des milliards ; il ne dit rien
+du Conseil constitutionnel, du droit européen — réduire unilatéralement la contribution au budget de l'Union n'est
+pas juridiquement possible —, du calendrier parlementaire ni de l'acceptabilité sociale.</p>`;
+
+(function(){
+  const list = (arr) => '<ul class="srclist">' + arr.map(s =>
+    `<li><a href="${s.u || s.url}" target="_blank" rel="noopener noreferrer">${s.t || s.nom}</a></li>`).join('') + '</ul>';
+  const partySrc = PARTIES.flatMap(p => (p.sources || []).map(s => ({...s, t:`${p.sigle} — ${s.t}`})));
+  const photoSrc = PARTIES.filter(p => p.photoCredit).map(p => ({
+    t: `${p.candidat} — photographie de ${p.photoCredit.auteur}, ${p.photoCredit.licence}`,
+    u: p.photoCredit.url || '#'
+  }));
+  const off = DATA.parties.sourceOfficielle;
+  $('#srcBody').innerHTML = `
+<p><b>Sources officielles de référence.</b> Ce sont elles qui font foi ; tout ce qui suit doit s'y recouper.</p>
+${list(BL.sourcesOfficielles)}
+<p style="margin-top:10px"><b>État du recoupement : ${BL.verification.etat}.</b> ${BL.verification.note}</p>
+<p style="margin-top:14px"><b>Programmes des candidats.</b> ${off.note}
+<a href="${off.url}" target="_blank" rel="noopener noreferrer">Page du ministère de l'Intérieur</a>.</p>
+<p style="margin-top:14px">Les agrégats retenus aujourd'hui reprennent les publications de l'INSEE sur les comptes
+des administrations publiques et les documents budgétaires annexés aux projets de loi de finances et de financement
+de la sécurité sociale.</p>
+${list(BL.sources)}
+<p style="margin-top:14px">Les fourchettes de chiffrage des mesures reprennent celles qui circulent dans le débat
+public : rapports de la Cour des comptes, avis du Haut Conseil des finances publiques, travaux de l'OFCE, de
+l'Institut des politiques publiques, du Conseil d'analyse économique, du Conseil d'orientation des retraites,
+rapports parlementaires et rapports d'inspection.</p>
+<p>Sources rattachées aux programmes :</p>
+${partySrc.length ? list(partySrc) : '<p>—</p>'}
+${photoSrc.length
+  ? '<p style="margin-top:14px">Portraits, et leurs auteurs :</p>' + list(photoSrc)
+  : '<p style="margin-top:14px">Aucune photographie de candidat n\'est reproduite : les portraits de presse '
+    + 'sont protégés par le droit d\'auteur. Des portraits sous licence libre peuvent être déposés dans '
+    + '<code>data/portraits/</code>, avec leur crédit — ils apparaîtront alors sur les cartes et seront '
+    + 'crédités ici.</p>'}
+<p style="margin-top:14px"><b>Aucun chiffre n'a été recalculé à partir des données sources</b> : ce sont des ordres
+de grandeur repris et arrondis. Toute valeur qui compte pour une décision doit être vérifiée dans le document
+d'origine. Les montants sont en euros courants, sans actualisation. Données mises à jour le
+${new Date(DATA.parties.updated).toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'})}.</p>`;
+})();
+
+/* ---------- vue simple / mode avancé ---------- */
+function setMode(adv, save){
+  state.adv = adv;
+  document.body.classList.toggle('adv', adv);
+  $('#mSimple').setAttribute('aria-pressed', String(!adv));
+  $('#mAdv').setAttribute('aria-pressed', String(adv));
+  if (save) { try { localStorage.setItem('fbs-mode', adv ? 'adv' : 'simple'); } catch (e) {} }
+  render();
+}
+
+/* ---------- amorçage ---------- */
+buildCards(); buildLedger(); buildParams(); buildCompo(); buildFeedChips();
+$('#mSimple').addEventListener('click', () => setMode(false, true));
+$('#mAdv').addEventListener('click', () => setMode(true, true));
+$('#reset').addEventListener('click', () => {
+  state.active = {}; state.party = 'tend'; state.annonce = false;
+  $('#modeAnnonce').checked = false; syncCards(); render();
+});
+$('#modeAnnonce').addEventListener('change', e => {
+  state.annonce = e.target.checked;
+  const p = PARTIES.find(x => x.id === state.party);
+  if (p) state.active = partySet(p);
+  syncCards(); render();
+});
+document.querySelector('.card[data-id="rn"]').click();
+let saved = null;
+try { saved = localStorage.getItem('fbs-mode'); } catch (e) {}
+setMode(saved === 'adv', false);
+</script>
