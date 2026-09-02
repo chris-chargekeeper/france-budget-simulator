@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>quipaie2027.fr — Le budget de la France</title>
+__FAVICON__
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap">
@@ -1596,6 +1597,7 @@ function renderTrou(){
         prose = $('#trouProse'), src = $('#trouSrc'), alt = $('#trouAlt');
   stack.textContent = ''; leg.textContent = ''; flags.textContent = '';
   table.textContent = ''; src.textContent = ''; alt.textContent = '';
+  $('#trouPourquoi').textContent = '';
 
   if (!p){
     lab.textContent = "Aucun programme chargé";
@@ -1713,7 +1715,7 @@ function renderTrou(){
 
   /* ce qui coince, poste par poste, avec la note du catalogue et celle de l'assise :
      un dépassement sans explication n'apprend rien à personne */
-  const pourquoi = $('#trouPourquoi'); pourquoi.textContent = '';
+  const pourquoi = $('#trouPourquoi');
   A.postes.filter(x => x.delta > 0.05 || (x.assise != null && x.annonce > x.assise)).forEach(x => {
     const box = el('div','trou-why');
     box.appendChild(el('h3', null, x.m.lab));
@@ -2352,7 +2354,7 @@ ${photoSrc.length
 <p style="margin-top:14px"><b>Icônes.</b> Les bustes des cartes de candidat viennent de
 <a href="https://www.svgrepo.com/" target="_blank" rel="noopener">SVG Repo</a> ; ils sont recolorés, pas
 redessinés. ${avatarLic}
-Les pictogrammes des postes de dépense et de recette sont dessinés pour cette page.</p>
+Les pictogrammes des postes de dépense et de recette sont dessinés pour cette page. Le coq de l'icône d'onglet vient de la même source — collection Noto de Google, publiée sous Apache 2.0, mais le fichier récupéré ne porte pas la mention ; il est recoloré aux couleurs de la page, pas redessiné.</p>
 <p style="margin-top:14px"><b>Aucun chiffre n'a été recalculé à partir des données sources</b> : ce sont des ordres
 de grandeur repris et arrondis. Toute valeur qui compte pour une décision doit être vérifiée dans le document
 d'origine. Les montants sont en euros courants, sans actualisation. Données mises à jour le

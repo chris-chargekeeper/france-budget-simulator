@@ -11,6 +11,8 @@ import hashlib
 import json
 import pathlib
 import re
+import shutil
+import subprocess
 import sys
 
 ROOT = pathlib.Path(__file__).parent
@@ -22,6 +24,7 @@ DERIVE = ROOT / "dataset" / "derive"
 SOURCES = ROOT / "dataset" / "sources"
 
 AVATARS = DATA / "avatars"
+MARQUE = DATA / "marque"        # le coq de la marque et l'icône d'onglet qui en dérive
 STAMP = ROOT / ".build-stamp"   # empreinte du dernier index.html produit
 PORTRAITS = DATA / "portraits"
 PORTRAIT_TYPES = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp"}
@@ -100,6 +103,49 @@ def build_avatars():
                   f"dataset/simulateur/avatars/credits.json")
     print(f"  + {len(noms)} bustes de candidat ({', '.join(noms)})")
     return "\n ".join(symboles), credits
+
+
+def build_favicon():
+    """Dérive l'icône d'onglet du coq de dataset/simulateur/marque/coq.svg.
+
+    Deux formes, embarquées en data URI parce que deploy.sh ne met en ligne qu'un seul
+    fichier : index.html. La première est le SVG lui-même, recadré sur le buste — les
+    pattes sont retirées, elles ne pèsent plus rien à 16 px et volent la place au reste.
+    La seconde est un PNG de repli pour les navigateurs qui ignorent les icônes SVG
+    (Safari), régénéré ici quand rsvg-convert est installé, et repris du dépôt sinon.
+    """
+    brut = (MARQUE / "coq.svg").read_text(encoding="utf-8")
+    corps = re.sub(r"^.*?<svg[^>]*>|</svg>\s*$", "", brut, flags=re.S)
+    corps = re.sub(r"<!--.*?-->|<title>.*?</title>", "", corps, flags=re.S)
+    corps = re.sub(r'<path id="pattes".*?</path>', "", corps, flags=re.S)
+    corps = " ".join(corps.split())
+    if 'id="pattes"' in corps or "<path" not in corps:
+        sys.exit("dataset/simulateur/marque/coq.svg : le recadrage du buste a échoué")
+    # tuile arrondie dans le bleu ciel du thème clair : l'icône tient sur un onglet
+    # blanc comme sur un onglet sombre. Le buste est centré sur son encombrement réel.
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">'
+           '<rect width="128" height="128" rx="26" fill="#EAF3FA"/>'
+           '<g transform="translate(64,64) scale(1.041) translate(-66.875,-53.625)">'
+           f'{corps}</g></svg>')
+
+    png = MARQUE / "favicon-32.png"
+    outil = shutil.which("rsvg-convert")
+    if outil:
+        subprocess.run([outil, "-w", "32", "-h", "32", "-o", str(png)],
+                       input=svg.encode("utf-8"), check=True)
+    elif not png.is_file():
+        sys.exit(f"{png.name} absent et rsvg-convert introuvable : installer librsvg "
+                 f"(brew install librsvg) ou récupérer le fichier depuis le dépôt")
+    else:
+        print("  ~ rsvg-convert introuvable : favicon-32.png repris tel quel du dépôt")
+
+    b64 = base64.b64encode(svg.encode("utf-8")).decode("ascii")
+    repli = base64.b64encode(png.read_bytes()).decode("ascii")
+    print(f"  + icône d'onglet ({len(svg):,} octets de SVG, "
+          f"{png.stat().st_size:,} octets de PNG de repli)")
+    return (f'<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,{b64}">\n'
+            f'<link rel="alternate icon" type="image/png" sizes="32x32" '
+            f'href="data:image/png;base64,{repli}">')
 
 
 def load():
@@ -254,20 +300,22 @@ def verifier_assises(payload):
 
 
 def rendu(payload, template):
-    """La substitution des trois marqueurs, au même endroit pour les deux sens."""
+    """La substitution des quatre marqueurs, au même endroit pour les deux sens."""
     avatars, payload["avatars"] = build_avatars()
+    favicon = build_favicon()
     blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     if "</script" in blob:
         sys.exit("le payload contient une balise fermante </script>")
     return (template.replace("__DATA__", blob)
                     .replace("__UPDATED__", payload["parties"]["updated"])
-                    .replace("__AVATARS__", avatars), blob, avatars)
+                    .replace("__AVATARS__", avatars)
+                    .replace("__FAVICON__", favicon), blob, avatars, favicon)
 
 
 def depuis_index(payload):
     """Remonte dans template.html des retouches faites à la main dans index.html.
 
-    index.html n'est que le gabarit avec trois substitutions : on refait le chemin en
+    index.html n'est que le gabarit avec quatre substitutions : on refait le chemin en
     sens inverse en recalculant les valeurs injectées, en les retrouvant dans le fichier
     édité, et en remettant les marqueurs. Le report est exact ou il échoue — jamais
     approximatif.
@@ -275,10 +323,11 @@ def depuis_index(payload):
     index = ROOT / "index.html"
     if not index.is_file():
         sys.exit("index.html absent : rien à remonter")
-    _, blob, avatars = rendu(payload, "")
+    _, blob, avatars, favicon = rendu(payload, "")
     html = index.read_text(encoding="utf-8")
     for quoi, valeur, marqueur in (("le payload", blob, "__DATA__"),
                                    ("les bustes", avatars, "__AVATARS__"),
+                                   ("l'icône d'onglet", favicon, "__FAVICON__"),
                                    ("la date de fraîcheur", payload["parties"]["updated"],
                                     "__UPDATED__")):
         n = html.count(valeur)
@@ -317,7 +366,7 @@ def main():
                      "  python3 build.py --force          les écrase")
 
     template = (ROOT / "template.html").read_text(encoding="utf-8")
-    html, _, _ = rendu(payload, template)
+    html, _, _, _ = rendu(payload, template)
     index.write_text(html, encoding="utf-8")
     STAMP.write_text(hashlib.sha256(html.encode("utf-8")).hexdigest() + "\n", encoding="utf-8")
     print(f"index.html écrit — {len(html):,} octets, "
