@@ -226,3 +226,36 @@ total ne plafonne rien).
 **Réserve.** Un parti qui ne publie rien ne peut pas être pris en défaut : les cinq scénarios
 `reconstitution` n'ont pas de total à confronter. La page l'écrit — *ce n'est pas un bon point* —
 plutôt que de laisser un blanc passer pour un satisfecit.
+
+---
+
+## 12. Le coq : un seul fichier, trois usages
+
+**Contexte.** Un coq récupéré sur SVG Repo, déposé à la racine. La page n'avait ni marque ni icône
+d'onglet — l'onglet montrait le globe par défaut.
+
+**Décision.** `dataset/simulateur/marque/coq.svg` est la seule source. Le fichier d'origine reste à
+côté sous le nom `coq-source.svg`, intact : `coq.svg` en reprend la géométrie trait pour trait et ne
+change que les remplissages, pour que la recoloration soit vérifiable d'un `diff`. `build.py` en tire
+le symbole du bandeau (`__COQ__`) et l'icône d'onglet (`__FAVICON__`).
+
+**Les couleurs sortent du thème**, pas d'un tricolore générique : blanc `--surface`, rouge `--dep`,
+bleu `--accent` filant vers `--pastille`, ambre `--coin` pour le bec et les pattes. L'oiseau se lit
+blanc, rouge, bleu de gauche à droite. Le bec et les pattes restent ambre : sans eux il cesse de se
+lire comme un coq.
+
+**Écarté**, après comparaison à 16 / 32 / 64 px sur onglet clair et sur onglet sombre :
+
+| Piste | Pourquoi non |
+|---|---|
+| L'oiseau entier comme icône | À 16 px les pattes et la marge mangent la moitié du carré ; il ne reste qu'une tache. Le buste seul tient. |
+| Tuile bleu nuit | Le corps bleu et la queue s'y noient. |
+| Aucune tuile | Sur un onglet sombre, la queue `--pastille` disparaît dans le fond. |
+| Un `favicon.svg` écrit à côté | Deux fichiers qui divergent à la première retouche. Le recadrage est calculé à la construction. |
+| Des fichiers déposés sur l'hébergement | `deploy.sh` n'envoie qu'`index.html`. D'où les data URI. |
+| SVG seul | Safari ignore les icônes SVG. D'où `favicon-32.png`, commité pour que la construction tienne sans `librsvg`, et réécrit quand `rsvg-convert` est là. |
+
+**Point ouvert.** Même réserve que pour les bustes : SVG Repo ne déclare pas la licence. La classe
+`iconify--noto` du fichier d'origine désigne la collection Noto de Google, publiée sous Apache 2.0,
+mais la mention n'est pas dans le fichier. `credits.json` le dit, la page l'écrit. À confirmer avant
+d'en faire une marque publique.

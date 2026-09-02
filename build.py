@@ -25,6 +25,7 @@ SOURCES = ROOT / "dataset" / "sources"
 
 AVATARS = DATA / "avatars"
 MARQUE = DATA / "marque"        # le coq de la marque et l'icône d'onglet qui en dérive
+CADRE = "15 5.5 104 117"        # encombrement du coq entier dans le viewBox 128 de coq.svg
 STAMP = ROOT / ".build-stamp"   # empreinte du dernier index.html produit
 PORTRAITS = DATA / "portraits"
 PORTRAIT_TYPES = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp"}
@@ -105,28 +106,48 @@ def build_avatars():
     return "\n ".join(symboles), credits
 
 
-def build_favicon():
-    """Dérive l'icône d'onglet du coq de dataset/simulateur/marque/coq.svg.
+def build_marque():
+    """Le coq : un symbole inline pour le bandeau, une icône pour l'onglet.
 
-    Deux formes, embarquées en data URI parce que deploy.sh ne met en ligne qu'un seul
-    fichier : index.html. La première est le SVG lui-même, recadré sur le buste — les
-    pattes sont retirées, elles ne pèsent plus rien à 16 px et volent la place au reste.
-    La seconde est un PNG de repli pour les navigateurs qui ignorent les icônes SVG
-    (Safari), régénéré ici quand rsvg-convert est installé, et repris du dépôt sinon.
+    Les deux sortent du même fichier, dataset/simulateur/marque/coq.svg, pour qu'ils ne
+    puissent pas diverger. Le bandeau prend l'oiseau entier ; l'icône prend le buste
+    seul — à 16 px les pattes ne pèsent rien et volent la place au reste — posé sur une
+    tuile arrondie qui tient sur un onglet blanc comme sur un onglet sombre.
+
+    Tout est embarqué dans la page : deploy.sh ne met en ligne qu'un fichier,
+    index.html. D'où les data URI, et le PNG de repli pour les navigateurs qui ignorent
+    les icônes SVG (Safari) — régénéré ici quand rsvg-convert est installé, repris du
+    dépôt sinon.
     """
     brut = (MARQUE / "coq.svg").read_text(encoding="utf-8")
     corps = re.sub(r"^.*?<svg[^>]*>|</svg>\s*$", "", brut, flags=re.S)
     corps = re.sub(r"<!--.*?-->|<title>.*?</title>", "", corps, flags=re.S)
-    corps = re.sub(r'<path id="pattes".*?</path>', "", corps, flags=re.S)
     corps = " ".join(corps.split())
-    if 'id="pattes"' in corps or "<path" not in corps:
-        sys.exit("dataset/simulateur/marque/coq.svg : le recadrage du buste a échoué")
-    # tuile arrondie dans le bleu ciel du thème clair : l'icône tient sur un onglet
-    # blanc comme sur un onglet sombre. Le buste est centré sur son encombrement réel.
+    buste = re.sub(r'<path id="pattes".*?</path>', "", corps, flags=re.S)
+    if buste == corps or "<path" not in buste:
+        sys.exit("dataset/simulateur/marque/coq.svg : pas de <path id=\"pattes\"> à retirer "
+                 "pour le buste de l'icône d'onglet")
+    # Dans le bandeau seul, les trois arrêts du dégradé passent par des variables CSS :
+    # sur fond sombre, le bleu nuit de la queue se confond avec la surface. Les variables
+    # personnalisées traversent l'arbre d'ombre de <use>, contrairement à stop-color. Le
+    # fichier, lui, garde ses couleurs en dur — c'est lui que rsvg-convert rastérise.
+    plumes = corps
+    for var, valeur in (("coq-corps", "#1C5CAB"), ("coq-milieu", "#164C90"),
+                        ("coq-queue", "#12224E")):
+        avant = f'stop-color="{valeur}"'
+        if avant not in plumes:
+            sys.exit(f"coq.svg : arrêt de dégradé {valeur} introuvable, le bandeau ne "
+                     f"pourra pas suivre le thème")
+        plumes = plumes.replace(avant, f'stop-color="var(--{var},{valeur})"')
+    # viewBox serré sur l'encombrement du tracé, mesuré une fois : dans le bandeau,
+    # le coq s'aligne alors au pixel près sur la marge du titre, sans blanc parasite.
+    symbole = f'<symbol id="coq" viewBox="{CADRE}">{plumes}</symbol>'
+
+    # le buste est centré sur son encombrement réel, mesuré une fois sur le tracé
     svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">'
            '<rect width="128" height="128" rx="26" fill="#EAF3FA"/>'
            '<g transform="translate(64,64) scale(1.041) translate(-66.875,-53.625)">'
-           f'{corps}</g></svg>')
+           f'{buste}</g></svg>')
 
     png = MARQUE / "favicon-32.png"
     outil = shutil.which("rsvg-convert")
@@ -141,11 +162,12 @@ def build_favicon():
 
     b64 = base64.b64encode(svg.encode("utf-8")).decode("ascii")
     repli = base64.b64encode(png.read_bytes()).decode("ascii")
-    print(f"  + icône d'onglet ({len(svg):,} octets de SVG, "
+    print(f"  + coq du bandeau et icône d'onglet ({len(svg):,} octets de SVG, "
           f"{png.stat().st_size:,} octets de PNG de repli)")
-    return (f'<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,{b64}">\n'
-            f'<link rel="alternate icon" type="image/png" sizes="32x32" '
-            f'href="data:image/png;base64,{repli}">')
+    liens = (f'<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,{b64}">\n'
+             f'<link rel="alternate icon" type="image/png" sizes="32x32" '
+             f'href="data:image/png;base64,{repli}">')
+    return liens, symbole
 
 
 def load():
@@ -300,22 +322,23 @@ def verifier_assises(payload):
 
 
 def rendu(payload, template):
-    """La substitution des quatre marqueurs, au même endroit pour les deux sens."""
+    """La substitution des cinq marqueurs, au même endroit pour les deux sens."""
     avatars, payload["avatars"] = build_avatars()
-    favicon = build_favicon()
+    favicon, coq = build_marque()
     blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     if "</script" in blob:
         sys.exit("le payload contient une balise fermante </script>")
     return (template.replace("__DATA__", blob)
                     .replace("__UPDATED__", payload["parties"]["updated"])
                     .replace("__AVATARS__", avatars)
-                    .replace("__FAVICON__", favicon), blob, avatars, favicon)
+                    .replace("__FAVICON__", favicon)
+                    .replace("__COQ__", coq), blob, avatars, favicon, coq)
 
 
 def depuis_index(payload):
     """Remonte dans template.html des retouches faites à la main dans index.html.
 
-    index.html n'est que le gabarit avec quatre substitutions : on refait le chemin en
+    index.html n'est que le gabarit avec cinq substitutions : on refait le chemin en
     sens inverse en recalculant les valeurs injectées, en les retrouvant dans le fichier
     édité, et en remettant les marqueurs. Le report est exact ou il échoue — jamais
     approximatif.
@@ -323,11 +346,12 @@ def depuis_index(payload):
     index = ROOT / "index.html"
     if not index.is_file():
         sys.exit("index.html absent : rien à remonter")
-    _, blob, avatars, favicon = rendu(payload, "")
+    _, blob, avatars, favicon, coq = rendu(payload, "")
     html = index.read_text(encoding="utf-8")
     for quoi, valeur, marqueur in (("le payload", blob, "__DATA__"),
                                    ("les bustes", avatars, "__AVATARS__"),
                                    ("l'icône d'onglet", favicon, "__FAVICON__"),
+                                   ("le coq du bandeau", coq, "__COQ__"),
                                    ("la date de fraîcheur", payload["parties"]["updated"],
                                     "__UPDATED__")):
         n = html.count(valeur)
@@ -366,7 +390,7 @@ def main():
                      "  python3 build.py --force          les écrase")
 
     template = (ROOT / "template.html").read_text(encoding="utf-8")
-    html, _, _, _ = rendu(payload, template)
+    html, *_ = rendu(payload, template)
     index.write_text(html, encoding="utf-8")
     STAMP.write_text(hashlib.sha256(html.encode("utf-8")).hexdigest() + "\n", encoding="utf-8")
     print(f"index.html écrit — {len(html):,} octets, "

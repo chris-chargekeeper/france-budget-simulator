@@ -314,7 +314,8 @@ def controler(d):
     html = index.read_text(encoding="utf-8")
     ennuis = []
 
-    restants = [m for m in ("__DATA__", "__UPDATED__", "__AVATARS__") if m in html]
+    restants = [m for m in ("__DATA__", "__UPDATED__", "__AVATARS__",
+                            "__FAVICON__", "__COQ__") if m in html]
     if restants:
         ennuis.append(f"marqueurs non substitués dans index.html : {restants}")
 
