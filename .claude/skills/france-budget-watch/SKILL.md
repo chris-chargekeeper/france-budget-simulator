@@ -76,21 +76,54 @@ python3 .claude/skills/france-budget-watch/scripts/watch.py valider patch.json
 Le script montre ce que le patch ferait, puis refuse en bloc s'il trouve quoi que ce soit. Corrigez
 le patch, jamais le script.
 
-### 5. Appliquer et reconstruire
+### 5. Appliquer, reconstruire, contrôler
 
 ```bash
 python3 .claude/skills/france-budget-watch/scripts/watch.py appliquer patch.json --write
 python3 build.py
+python3 .claude/skills/france-budget-watch/scripts/watch.py controler
 ```
 
-Le patch et la trace de ce qu'il a changé sont archivés dans `dataset/veille/AAAA-MM-JJ.json`.
+`appliquer` archive le patch et la trace de ce qu'il a changé dans `dataset/veille/AAAA-MM-JJ.json`.
 
-### 6. Rendre compte, puis committer
+`controler` vérifie que `index.html` dit **exactement** ce que disent les fichiers de données :
+marqueurs tous substitués, payload lisible, données embarquées identiques à celles du disque, aucune
+annonce sans URL ni mal datée. Il sort en échec si quoi que ce soit a divergé. **S'il échoue, on
+s'arrête là** : on ne committe pas une page qui ne correspond plus à ses sources.
 
-Dites ce qui a été ajouté, ce qui a été révisé et **avec quelle source**, et surtout ce que vous
-n'avez pas trouvé. Un jour sans annonce est un résultat, pas un échec — ne comblez pas le vide.
+### 6. Regarder la page
 
-Un commit par relève, sur la branche de travail.
+Ouvrez `index.html` et vérifiez de vos yeux que la relève a atterri : les nouvelles annonces dans la
+veille, les chiffres révisés là où ils doivent être, aucune erreur en console. Le contrôle
+automatique vérifie la cohérence, pas la lisibilité.
+
+Si un chiffrage révisé a déplacé le déficit 2032 d'un parti, relevez le montant avant et après :
+c'est l'information la plus utile du compte rendu.
+
+### 7. Committer, et s'arrêter là
+
+```bash
+git add dataset/simulateur dataset/veille index.html
+git commit -m "[MOD] Veille du AAAA-MM-JJ : …"
+git push origin <branche de veille>
+```
+
+**Le skill ne publie jamais.** La mise en ligne sur l'hébergement est faite par la CI
+(`.github/workflows/publier.yml`), au moment où `master` bouge. Une relève poussée sur la branche de
+veille est donc préparée et vérifiée, mais pas publiée : c'est la fusion dans `master` qui met en
+ligne, et c'est une décision humaine.
+
+Ne lancez pas `deploy.sh`, ne fusionnez pas dans `master`, n'ouvrez pas de pull request sans qu'on
+vous l'ait demandé.
+
+### 8. Rendre compte
+
+Dites ce qui a été ajouté, ce qui a été révisé et **avec quelle source**, ce que ça déplace dans les
+chiffres, et surtout **ce que vous n'avez pas trouvé**. Un jour sans annonce est un résultat, pas un
+échec — ne comblez pas le vide, ne remontez pas d'une déclaration ancienne pour avoir quelque chose à
+dire.
+
+Terminez par une phrase qui dit si la relève mérite d'être mise en ligne, et pourquoi.
 
 ## Ce qu'un patch n'a pas le droit de faire
 
@@ -108,7 +141,24 @@ Le script l'applique, ce n'est pas une question de discipline :
 Si une correction sort de ce cadre — retirer une annonce erronée, changer la nature d'une mesure —
 c'est une modification de fond : elle se fait à la main, hors veille, et elle se discute.
 
-## Lancer la veille tous les jours
+## La chaîne complète
+
+```
+  veille quotidienne (ce skill)          CI (.github/workflows/publier.yml)
+  ────────────────────────────           ──────────────────────────────────
+  chercher → patch → valider             sur push vers master :
+  → appliquer → build → contrôler          rebuild, refus si la page est périmée,
+  → commit + push sur la branche           contrôle, puis envoi FTP sur TLS
+                                           vers quipaie2027.fr
+                    └──── fusion dans master, à la main ────┘
+```
+
+La coupure est volontaire : un agent qui tourne seul tous les jours prépare et vérifie, mais ce qui
+part en ligne sur un site public passe par une décision humaine. Pour publier automatiquement à
+chaque relève, il suffirait de faire pousser la veille sur `master` — c'est un choix à assumer, pas
+un réglage à changer en passant.
+
+## Planification
 
 Rien n'est planifié par défaut. Deux façons de le faire, au choix de l'utilisateur :
 

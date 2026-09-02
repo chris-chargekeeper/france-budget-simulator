@@ -8,6 +8,7 @@ l'applique sans jamais rien supprimer (`appliquer`).
     python3 watch.py etat
     python3 watch.py valider patch.json
     python3 watch.py appliquer patch.json --write
+    python3 watch.py controler
 
 Trois principes, dans cet ordre :
 
@@ -298,6 +299,65 @@ def appliquer(d, patch, ecrire_vraiment):
     return trace
 
 
+# ------------------------------------------------------------------- contrôle
+
+def controler(d):
+    """La page servie dit-elle exactement ce que disent les fichiers de données ?
+
+    Se lance après `build.py`. Ne reconstruit rien : c'est un contrôle, et un contrôle
+    qui répare ne contrôle plus. Sort en échec si la page a divergé — la CI publie ce
+    fichier, il ne doit pas partir en avance ou en retard sur ses sources.
+    """
+    index = RACINE / "index.html"
+    if not index.is_file():
+        sys.exit("index.html absent — lancer python3 build.py")
+    html = index.read_text(encoding="utf-8")
+    ennuis = []
+
+    restants = [m for m in ("__DATA__", "__UPDATED__", "__AVATARS__") if m in html]
+    if restants:
+        ennuis.append(f"marqueurs non substitués dans index.html : {restants}")
+
+    m = re.search(r'<script id="payload" type="application/json">(.*?)</script>', html, re.S)
+    if not m:
+        sys.exit("payload introuvable dans index.html — la page n'est pas exploitable")
+    try:
+        embarque = json.loads(m.group(1))
+    except json.JSONDecodeError as exc:
+        sys.exit(f"le payload d'index.html n'est pas du JSON valide : {exc}")
+
+    for nom in ("announcements", "parties", "measures"):
+        if embarque.get(nom) != d[nom]:
+            ennuis.append(f"{nom}.json a changé depuis la dernière construction — "
+                          f"la page ne dit plus ce que disent les données")
+
+    items = d["announcements"]["items"]
+    sans_url = [a for a in items if not str(a.get("source", "")).startswith("http")]
+    if sans_url:
+        ennuis.append(f"{len(sans_url)} annonce(s) sans URL source dans la base")
+    futures = [a for a in items if not date_valide(a.get("date"))[0]]
+    if futures:
+        ennuis.append(f"{len(futures)} annonce(s) mal datée(s) : "
+                      + ", ".join(str(a.get("date")) for a in futures[:3]))
+
+    if ennuis:
+        print("Contrôle en échec :")
+        for e in ennuis:
+            print(f"  ! {e}")
+        sys.exit("\nLa page ne peut pas être publiée en l'état.")
+
+    non_lues = sum(1 for a in items if not a.get("verifie"))
+    print(f"Contrôle passé — index.html ({len(html):,} octets) dit exactement ce que disent "
+          f"les données.".replace(",", " "))
+    print(f"  {len(items)} annonces, {len(d['parties']['parties'])} partis, "
+          f"{len(d['measures']['measures'])} mesures")
+    print(f"  fraîcheur affichée : {d['parties']['updated']}")
+    if non_lues:
+        print(f"  ~ {non_lues} annonce(s) dont la source n'a pas été lue "
+              f"(champ 'verifie' à false)")
+
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -308,11 +368,15 @@ def main():
     a = sub.add_parser("appliquer", help="appliquer un patch")
     a.add_argument("patch")
     a.add_argument("--write", action="store_true", help="écrire pour de bon")
+    sub.add_parser("controler", help="vérifier que index.html est en phase avec les données")
     args = ap.parse_args()
 
     d = charger()
     if args.cmd == "etat":
         etat(d)
+        return
+    if args.cmd == "controler":
+        controler(d)
         return
 
     patch = json.loads(pathlib.Path(args.patch).read_text(encoding="utf-8"))

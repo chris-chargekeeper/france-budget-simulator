@@ -1,0 +1,64 @@
+name: Publier sur quipaie2027.fr
+
+# La publication est un acte délibéré : elle se déclenche sur `master`, jamais sur une
+# branche de travail. La veille quotidienne pousse ses relèves sur sa propre branche ;
+# c'est la fusion dans `master` qui met en ligne.
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'template.html'
+      - 'build.py'
+      - 'dataset/simulateur/**'
+      - '.github/workflows/publier.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: publication
+  cancel-in-progress: true
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # On reconstruit plutôt que de faire confiance au fichier versionné : si la page
+      # committée ne correspond plus à ses données, mieux vaut le savoir ici que le
+      # publier. --force parce que le CI part d'une copie neuve, sans empreinte locale.
+      - name: Reconstruire la page
+        run: python3 build.py --force
+
+      - name: Refuser une page périmée
+        run: |
+          if ! git diff --quiet -- index.html; then
+            echo "::error::index.html versionné ne correspond pas à ses données."
+            echo "Reconstruire en local (python3 build.py) et committer le résultat."
+            git diff --stat -- index.html
+            exit 1
+          fi
+          echo "index.html est en phase avec ses données."
+
+      - name: Contrôler la page
+        run: python3 .claude/skills/france-budget-watch/scripts/watch.py controler
+
+      - name: Envoyer sur l'hébergement
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+          FTP_DIR: ${{ secrets.FTP_DIR }}
+        run: |
+          : "${FTP_HOST:?secret FTP_HOST manquant}"
+          : "${FTP_USER:?secret FTP_USER manquant}"
+          : "${FTP_PASS:?secret FTP_PASS manquant}"
+          # --ssl-reqd : on refuse d'envoyer le mot de passe si le serveur ne propose pas TLS.
+          curl --fail --silent --show-error --ssl-reqd \
+               --user "$FTP_USER:$FTP_PASS" \
+               --upload-file index.html \
+               "ftp://$FTP_HOST/${FTP_DIR:-public_html}/index.html"
+          echo "En ligne : https://quipaie2027.fr"

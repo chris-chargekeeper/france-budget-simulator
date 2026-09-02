@@ -49,7 +49,8 @@ python3 build_dataset.py                      # reconstruit dataset/derive/
 |---|---|
 | Fusion dans `master` | La branche n'est pas fusionnée. Aucune PR ouverte. |
 | Licence des bustes | `dataset/simulateur/avatars/credits.json` porte `"licence": null`. SVG Repo agrège des collections aux licences différentes et les fichiers ne la déclarent pas. `build.py` le signale à chaque construction. **À lever avant toute publication.** |
-| Skill de veille | Écrit et testé (`.claude/skills/france-budget-watch/`). **Aucune planification n'est en place** : il faut le lancer, ou le programmer. |
+| Skill de veille | Écrit et testé (`.claude/skills/france-budget-watch/`). **Aucune planification n'est en place.** |
+| Secrets de publication | La CI attend `FTP_HOST`, `FTP_USER`, `FTP_PASS`, `FTP_DIR` dans les secrets du dépôt GitHub. **Non renseignés à ce jour** : la publication échouera tant qu'ils manquent. |
 | Assises manquantes | `ue` et `fraude` n'ont pas d'assise : la contribution au budget de l'UE et les concours aux collectivités passent par des **prélèvements sur recettes**, absents des crédits des missions et donc du dataset. Ces mesures ne sont opposées qu'à la fourchette du catalogue. À compléter si les PSR sont un jour aspirés. |
 | Ventilations `depenses` / `recettes` | Regroupements maison, non recoupés : ils ne correspondent à aucune nomenclature officielle. La COFOG publiée est dans `baseline.officiel.depensesFonction` pour comparaison. |
 | Axe « nature » 2018-2022 | Lacunaire à la source (1 à 2 Md€ manquants de 2019 à 2022, absent en 2018). Non corrigé. |
@@ -72,8 +73,31 @@ datée ou datée du futur, une contradiction non expliquée, une révision de ch
 bornes désordonnées, et toute tentative de toucher aux champs structurels d'une mesure. Il ne
 supprime jamais rien, déduplique, et archive chaque patch appliqué dans `dataset/veille/`.
 
-Pour l'automatiser : `/loop 1d /france-budget-watch`, ou le skill `schedule` pour un agent planifié.
-**À décider — rien n'a été mis en place sans demande.**
+## La chaîne de publication
+
+```
+  veille quotidienne (skill)             CI (.github/workflows/publier.yml)
+  ──────────────────────────             ──────────────────────────────────
+  chercher → patch → valider             sur push vers master :
+  → appliquer → build → contrôler          rebuild, refus si la page est périmée,
+  → commit + push sur la branche           contrôle, puis FTP sur TLS
+                                           vers quipaie2027.fr
+                  └──── fusion dans master, à la main ────┘
+```
+
+**Le skill ne publie pas** ; la CI publie, et seulement depuis `master`. Une relève quotidienne est
+donc préparée et vérifiée sur sa branche, sans partir en ligne : c'est la fusion qui met en ligne.
+
+La CI reconstruit la page plutôt que de faire confiance au fichier versionné, et **refuse de publier
+si `index.html` ne correspond plus à ses données**.
+
+Pour publier automatiquement à chaque relève, il suffirait de faire pousser la veille sur `master`.
+C'est un choix à assumer, pas un réglage à changer en passant : ce qui part en ligne sur un site
+public sur la politique française mérite un regard.
+
+**Reste à faire :** renseigner les quatre secrets FTP dans GitHub (Settings › Secrets and variables ›
+Actions), et décider de la planification — `/loop 1d /france-budget-watch` en session ouverte, ou le
+skill `schedule` pour un agent qui tourne sans session.
 
 ## Pièges qui font perdre du temps
 

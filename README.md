@@ -22,7 +22,8 @@ dataset/simulateur/avatars/            bustes de candidat, injectés par build.p
 dataset/simulateur/marque/             le coq de la marque, et l'icône d'onglet qui en dérive
 dataset/sources/                       données officielles aspirées, jamais éditées
 dataset/derive/                        budget de l'État structuré, régénérable
-template.html                          page complète ; marqueurs __DATA__, __UPDATED__, __AVATARS__, __FAVICON__
+template.html                          page complète ; marqueurs __DATA__, __UPDATED__, __AVATARS__,
+                                       __FAVICON__, __COQ__
 build.py                               valide les données, les injecte, écrit index.html
 index.html                             généré — ne pas éditer à la main
 ```
@@ -234,7 +235,12 @@ changent**, et ils sortent du thème clair — blanc `--surface` pour la tête e
 et la queue, ambre `--coin` pour le bec et les pattes. L'oiseau se lit blanc, rouge, bleu de gauche à
 droite ; le bec et les pattes restent ambre, sans quoi il cesse de se lire comme un coq.
 
-`build.py` en dérive l'icône d'onglet à la place du marqueur `__FAVICON__` : il retire les pattes
+Le coq est injecté deux fois dans la page, toujours depuis ce fichier. À la place du marqueur
+`__COQ__`, comme symbole SVG : il tient la gauche du titre dans le bandeau, aligné sur la première
+ligne, et passe au-dessus d'elle sous 520 px. Contrairement aux bustes de candidat, il garde ses
+couleurs — c'est un dessin, pas un pictogramme.
+
+À la place du marqueur `__FAVICON__`, comme icône d'onglet : il retire les pattes
 — à 16 px elles ne pèsent rien et volent la place au reste — recadre sur le buste et le pose sur une
 tuile arrondie `--ciel`, qui tient sur un onglet blanc comme sur un onglet sombre. Deux liens sont
 écrits dans la page, tous deux en data URI puisque `deploy.sh` ne met en ligne que `index.html` :
@@ -270,6 +276,19 @@ Le format de patch est décrit dans
 
 **Rien n'est planifié.** La veille se lance à la demande, ou se programme avec `/loop` ou le skill
 `schedule`.
+
+## Publication
+
+`.github/workflows/publier.yml` met la page en ligne sur `quipaie2027.fr` à chaque poussée sur
+`master`. Il reconstruit la page, **refuse de publier si `index.html` ne correspond plus à ses
+données**, la contrôle, puis l'envoie par FTP explicite sur TLS.
+
+Quatre secrets à renseigner dans GitHub (Settings › Secrets and variables › Actions) :
+`FTP_HOST`, `FTP_USER`, `FTP_PASS`, `FTP_DIR`. `deploy.sh` fait la même chose depuis un poste, avec
+`deploy.env`.
+
+La veille ne publie pas : elle pousse sur sa branche, et c'est la fusion dans `master` qui met en
+ligne.
 
 ## Travailler sur le projet
 
