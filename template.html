@@ -527,6 +527,9 @@ section,[id]{scroll-margin-top:70px}
   .sb-in{gap:10px;padding:7px 16px}
   .sb-av{width:28px;height:28px;font-size:10.5px}
   .sb-sub{display:none}
+  /* le nom passe avant les pastilles : c'est lui qui répond à « qui est chargé ? » */
+  .sb-now{min-width:156px}
+  .sb-chips{flex:1 1 0}
 }
 </style>
 
@@ -702,7 +705,7 @@ section,[id]{scroll-margin-top:70px}
     <p class="preset-note" id="presetNote"></p>
   </section>
 
-  <section aria-labelledby="h-ck">
+  <section id="resultat" aria-labelledby="h-ck">
     <div class="sec-head">
       <div><div class="eyebrow">Étape 2</div><h2 id="h-ck">Ce que ça donne en 2032</h2></div>
       <p>Les mesures s'appliquent à partir de 2027, comme un programme voté en début de mandat.</p>
@@ -1447,6 +1450,14 @@ function partySet(p){
   }
   return out;
 }
+/** Amène une section en haut de l'écran, sous la barre de rappel (le décalage vient
+ *  du scroll-margin-top des sections). Saut sec si le visiteur a demandé moins
+ *  d'animations. */
+function allerA(sel){
+  $(sel).scrollIntoView({block:'start',
+    behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+}
+
 function buildCards(){
   const box = $('#cards'), chips = $('#sbChips');
   const mk = (id, sig, who, party, claim, badge, color, photo, avatar) => {
@@ -1466,11 +1477,16 @@ function buildCards(){
     if (nA) b.appendChild(el('div','cmp-sub',
       nA + (nA > 1 ? ' annonces' : ' annonce') + (nC ? ' · ' + nC + (nC > 1 ? ' contradictions' : ' contradiction') : '')));
     if (badge) b.appendChild(el('span','badge ' + badge[0], badge[1]));
-    b.addEventListener('click', () => {
+    b.addEventListener('click', e => {
       state.party = id;
       state.active = id === 'tend' ? {} : partySet(PARTIES.find(x => x.id === id));
       state.feed = annOf(id).length ? id : 'all';
       syncCards(); render();
+      /* Un clic réel sur une carte de l'étape 1 enchaîne sur le résultat : les cartes
+         passent au-dessus de l'écran, la barre de rappel prend le relais. Les clics
+         rejoués (pastilles, tableau comparatif, amorçage) ne bougent pas la page :
+         on y est déjà, et le lecteur n'a rien demandé. */
+      if (e.isTrusted) allerA('#resultat');
     });
     box.appendChild(b);
 
@@ -2045,15 +2061,18 @@ $('#modeAnnonce').addEventListener('change', e => {
 document.querySelector('.card[data-id="rn"]').click();
 
 /* La barre n'apparaît que lorsque les cartes de l'étape 1 sont passées au-dessus de
-   l'écran — jamais quand on est encore devant elles, où elle ferait double emploi. */
+   l'écran — jamais quand on est encore devant elles, où elle ferait double emploi.
+   Test au défilement plutôt qu'IntersectionObserver : un saut d'ancre peut franchir
+   les cartes sans jamais les croiser, et l'observateur ne se réveillerait pas. */
 (() => {
   const bar = $('#stickybar'), cards = $('#cards');
-  $('#sbNow').addEventListener('click', () =>
-    $('#candidats').scrollIntoView({behavior:'smooth', block:'start'}));
-  if (!('IntersectionObserver' in window)) return;
-  new IntersectionObserver(([e]) => {
-    bar.classList.toggle('on', !e.isIntersecting && e.boundingClientRect.top < 0);
-  }, {threshold:0}).observe(cards);
+  $('#sbNow').addEventListener('click', () => allerA('#candidats'));
+  let attente = false;
+  const relire = () => { attente = false; bar.classList.toggle('on', cards.getBoundingClientRect().bottom < 0); };
+  const planifier = () => { if (!attente){ attente = true; requestAnimationFrame(relire); } };
+  addEventListener('scroll', planifier, {passive:true});
+  addEventListener('resize', planifier, {passive:true});
+  relire();
 })();
 let saved = null;
 try { saved = localStorage.getItem('fbs-mode'); } catch (e) {}
