@@ -139,15 +139,22 @@ reproduite (droit d'auteur sur les portraits de presse).
 
 ## Portraits des candidats
 
-Les cartes affichent un **buste dessiné**, dans le registre de l'affiche de campagne : silhouette
-pleine de trois quarts, coupée par la pastille, teintée de la couleur du parti. Deux variantes, `h`
-et `f`, choisies par le champ `avatar` de `parties.json` — c'est une donnée explicite, éditable, pas
-une déduction faite au rendu ; une valeur absente retombe sur le monogramme. `build.py` refuse un
-`avatar` qui ne correspond à aucun symbole du gabarit.
+Les cartes affichent un **buste** teinté de la couleur du parti. Deux variantes, `h` et `f`, choisies
+par le champ `avatar` de `parties.json` — c'est une donnée explicite, éditable, pas une déduction faite
+au rendu ; une valeur absente retombe sur le monogramme.
 
-Ce sont des pictogrammes génériques : aucune ressemblance avec une personne réelle n'est recherchée,
-et le col est évidé plutôt que peint, pour que la chemise reste le fond de la pastille en clair
-comme en sombre.
+Les tracés ne sont pas dans le gabarit : ce sont les fichiers de `dataset/simulateur/avatars/<variante>.svg`,
+que `build.py` nettoie (feuille de style interne retirée, couleur forcée à `currentColor`) et injecte dans
+la page comme symboles SVG. **Remplacer un fichier et relancer `build.py` suffit à changer l'avatar** — le
+nom du fichier donne la valeur acceptée par le champ `avatar`, et `build.py` refuse un `avatar` sans
+fichier correspondant.
+
+Les bustes actuels viennent de [SVG Repo](https://www.svgrepo.com/) et sont recolorés, pas redessinés.
+`dataset/simulateur/avatars/credits.json` porte leur origine. **Leur licence n'y est pas encore
+renseignée** : SVG Repo agrège des collections aux licences différentes et le fichier ne la porte pas.
+`build.py` le signale à chaque construction, et la page affiche la réserve telle quelle dans « D'où
+viennent les chiffres » plutôt que de laisser croire que le point est réglé. À vérifier sur la page
+d'origine de chaque icône avant toute publication.
 
 Déposer `dataset/simulateur/portraits/<id>.jpg` et renseigner
 `dataset/simulateur/portraits/credits.json` suffit à les remplacer par des photos : `build.py` les encode en data

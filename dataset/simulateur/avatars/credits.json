@@ -1,0 +1,25 @@
+{
+  "_comment": "Bustes affichés sur les cartes de candidat. Un fichier par variante, nommé d'après la valeur du champ `avatar` de parties.json. build.py les normalise (couleur forcée à currentColor) et les injecte dans la page comme symboles SVG : remplacer un fichier et relancer build.py suffit à changer l'avatar.",
+  "avatars": {
+    "h": {
+      "fichier": "h.svg",
+      "titre": "Businessman person 2",
+      "origine": "SVG Repo",
+      "url": "https://www.svgrepo.com/",
+      "nom_original": "businessman-person-2-svgrepo-com.svg",
+      "licence": null,
+      "verifie": false,
+      "note": "Licence non portée par le fichier. SVG Repo agrège des collections aux licences différentes (CC0, MIT, CC BY…). À renseigner depuis la page de l'icône avant toute publication."
+    },
+    "f": {
+      "fichier": "f.svg",
+      "titre": "Businesswoman",
+      "origine": "SVG Repo",
+      "url": "https://www.svgrepo.com/",
+      "nom_original": "businesswoman-svgrepo-com.svg",
+      "licence": null,
+      "verifie": false,
+      "note": "Même réserve que pour h.svg."
+    }
+  }
+}

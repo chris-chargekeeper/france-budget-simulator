@@ -16,6 +16,7 @@ DATA = ROOT / "dataset" / "simulateur"
 FILES = ["baseline", "measures", "parties", "announcements"]
 CONTRADICTION = {"non", "programme", "annonce", "inconnu"}
 
+AVATARS = DATA / "avatars"
 PORTRAITS = DATA / "portraits"
 PORTRAIT_TYPES = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp"}
 PORTRAIT_WARN = 120_000
@@ -55,6 +56,46 @@ def attach_portraits(parties):
         print(f"  + portrait {party['id']} ({size:,} octets, {credit['licence']})")
 
 
+
+def build_avatars():
+    """Normalise les bustes de dataset/simulateur/avatars/ en symboles SVG.
+
+    Les fichiers viennent de bibliothèques d'icônes : ils arrivent avec un DOCTYPE, une
+    feuille de style interne et une couleur en dur. On ne garde que la géométrie et on
+    force la couleur à currentColor, pour que le buste prenne la teinte du parti et
+    fonctionne en thème clair comme en thème sombre.
+    """
+    symboles, noms = [], []
+    for path in sorted(AVATARS.glob("*.svg")):
+        variante = path.stem
+        brut = path.read_text(encoding="utf-8")
+        vb = re.search(r'viewBox="([^"]+)"', brut)
+        if not vb:
+            sys.exit(f"{path}: pas de viewBox, impossible de le cadrer")
+        corps = re.sub(r"^.*?<svg[^>]*>|</svg>\s*$", "", brut, flags=re.S)
+        corps = re.sub(r"<style.*?</style>", "", corps, flags=re.S)
+        corps = re.sub(r"<!--.*?-->", "", corps, flags=re.S)
+        corps = re.sub(r'\s*class="[^"]*"', "", corps)
+        corps = re.sub(r'\s*fill="(?!none)[^"]*"', "", corps)
+        corps = " ".join(corps.split())
+        if "<" not in corps:
+            sys.exit(f"{path}: aucune forme après nettoyage")
+        symboles.append(f'<symbol id="av-{variante}" viewBox="{vb.group(1)}">{corps}</symbol>')
+        noms.append(variante)
+
+    credits = {}
+    fichier = AVATARS / "credits.json"
+    if fichier.is_file():
+        credits = json.loads(fichier.read_text(encoding="utf-8"))["avatars"]
+    for variante in noms:
+        c = credits.get(variante) or {}
+        if not c.get("licence"):
+            print(f"  ~ avatar {variante} : licence non renseignée dans "
+                  f"dataset/simulateur/avatars/credits.json")
+    print(f"  + {len(noms)} bustes de candidat ({', '.join(noms)})")
+    return "\n ".join(symboles), credits
+
+
 def load():
     """Read every data file and fail loudly on a broken reference."""
     payload = {}
@@ -71,12 +112,13 @@ def load():
         if unknown:
             sys.exit(f"dataset/simulateur/parties.json: {party['id']} référence des mesures inconnues: {unknown}")
 
-    bustes = set(re.findall(r'id="av-([a-z]+)"', (ROOT / "template.html").read_text(encoding="utf-8")))
+    bustes = {p.stem for p in AVATARS.glob("*.svg")}
     for party in payload["parties"]["parties"]:
         av = party.get("avatar")
         if av is not None and av not in bustes:
             sys.exit(f"dataset/simulateur/parties.json: {party['id']} demande le buste {av!r}; "
-                     f"template.html en déclare {sorted(bustes)} (ou null pour le monogramme)")
+                     f"dataset/simulateur/avatars/ contient {sorted(bustes)} "
+                     f"(ou null pour le monogramme)")
 
     party_ids = {p["id"] for p in payload["parties"]["parties"]}
     for item in payload["announcements"]["items"]:
@@ -122,11 +164,14 @@ def load():
 def main():
     payload = load()
     attach_portraits(payload["parties"]["parties"])
+    avatars, payload["avatars"] = build_avatars()
     template = (ROOT / "template.html").read_text(encoding="utf-8")
     blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     if "</script" in blob:
         sys.exit("le payload contient une balise fermante </script>")
-    html = template.replace("__DATA__", blob).replace("__UPDATED__", payload["parties"]["updated"])
+    html = (template.replace("__DATA__", blob)
+                    .replace("__UPDATED__", payload["parties"]["updated"])
+                    .replace("__AVATARS__", avatars))
     (ROOT / "index.html").write_text(html, encoding="utf-8")
     print(f"index.html écrit — {len(html):,} octets, "
           f"{len(payload['measures']['measures'])} mesures, "
