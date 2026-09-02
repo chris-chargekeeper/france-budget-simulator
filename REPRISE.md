@@ -49,29 +49,31 @@ python3 build_dataset.py                      # reconstruit dataset/derive/
 |---|---|
 | Fusion dans `master` | La branche n'est pas fusionnée. Aucune PR ouverte. |
 | Licence des bustes | `dataset/simulateur/avatars/credits.json` porte `"licence": null`. SVG Repo agrège des collections aux licences différentes et les fichiers ne la déclarent pas. `build.py` le signale à chaque construction. **À lever avant toute publication.** |
-| Skill de veille | **N'existe pas.** Voir ci-dessous. |
+| Skill de veille | Écrit et testé (`.claude/skills/france-budget-watch/`). **Aucune planification n'est en place** : il faut le lancer, ou le programmer. |
 | Assises manquantes | `ue` et `fraude` n'ont pas d'assise : la contribution au budget de l'UE et les concours aux collectivités passent par des **prélèvements sur recettes**, absents des crédits des missions et donc du dataset. Ces mesures ne sont opposées qu'à la fourchette du catalogue. À compléter si les PSR sont un jour aspirés. |
 | Ventilations `depenses` / `recettes` | Regroupements maison, non recoupés : ils ne correspondent à aucune nomenclature officielle. La COFOG publiée est dans `baseline.officiel.depensesFonction` pour comparaison. |
 | Axe « nature » 2018-2022 | Lacunaire à la source (1 à 2 Md€ manquants de 2019 à 2022, absent en 2018). Non corrigé. |
 | Poids du dépôt | 44 Mo, dont 17 Mo de captures vidéo entièrement retranscrites dans `reperes-2023.json` — supprimables sans perte. |
 
-## La veille automatique n'existe pas
+## La veille
 
-Le README a longtemps décrit un skill `france-budget-watch` dans `.claude/skills/`, avec un
-`watch.py` et sa ligne de commande. **Rien de tout cela n'est présent** : ni dans le dépôt, ni dans
-`~/.claude/skills/`, ni ailleurs sur la machine. La section a été corrigée ; il ne reste rien à
-exécuter.
+Le skill `france-budget-watch` existe depuis le 2 septembre 2026, dans
+`.claude/skills/france-budget-watch/`. Il ne tourne pas tout seul : rien n'est planifié.
 
-Concrètement, `announcements.json` est alimenté à la main. Ce qu'il faudrait construire pour
-automatiser, et qui n'existe pas encore :
+```bash
+python3 .claude/skills/france-budget-watch/scripts/watch.py etat      # quoi chercher
+python3 .claude/skills/france-budget-watch/scripts/watch.py valider patch.json
+python3 .claude/skills/france-budget-watch/scripts/watch.py appliquer patch.json --write
+python3 build.py
+```
 
-1. un collecteur — recherche des déclarations chiffrées et des chiffrages publiés, avec leur URL ;
-2. un format de patch et un applicateur contrôlé — refus d'une annonce sans source, sans date valide
-   ou datée du futur, déduplication, interdiction de toucher aux champs structurels d'une mesure ;
-3. un déclencheur périodique.
+La recherche est faite par Claude ; le script est le garde-fou. Il refuse une annonce sans URL, mal
+datée ou datée du futur, une contradiction non expliquée, une révision de chiffrage sans source, des
+bornes désordonnées, et toute tentative de toucher aux champs structurels d'une mesure. Il ne
+supprime jamais rien, déduplique, et archive chaque patch appliqué dans `dataset/veille/`.
 
-Les garde-fous de `build.py` (source obligatoire, date au bon format, contradiction expliquée)
-existent déjà et vaudraient pour ce flux : ils sont la moitié du travail.
+Pour l'automatiser : `/loop 1d /france-budget-watch`, ou le skill `schedule` pour un agent planifié.
+**À décider — rien n'a été mis en place sans demande.**
 
 ## Pièges qui font perdre du temps
 

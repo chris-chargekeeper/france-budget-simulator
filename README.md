@@ -19,9 +19,10 @@ dataset/simulateur/parties.json        7 partis, candidat pressenti, annonces, m
 dataset/simulateur/announcements.json  journal daté et sourcé des annonces médiatiques
 dataset/simulateur/assises.json        lignes du budget qui portent chaque mesure d'économie
 dataset/simulateur/avatars/            bustes de candidat, injectés par build.py
+dataset/simulateur/marque/             le coq de la marque, et l'icône d'onglet qui en dérive
 dataset/sources/                       données officielles aspirées, jamais éditées
 dataset/derive/                        budget de l'État structuré, régénérable
-template.html                          page complète ; marqueurs __DATA__, __UPDATED__, __AVATARS__
+template.html                          page complète ; marqueurs __DATA__, __UPDATED__, __AVATARS__, __FAVICON__
 build.py                               valide les données, les injecte, écrit index.html
 index.html                             généré — ne pas éditer à la main
 ```
@@ -224,20 +225,51 @@ Deux contraintes, documentées dans `dataset/simulateur/portraits/README.md` :
 L'affichage en data URI est de toute façon obligatoire : le visualiseur d'artefacts bloque les
 images externes, quelle que soit leur origine.
 
+## Coq et icône d'onglet
+
+`dataset/simulateur/marque/coq.svg` est le coq de la page, en bleu-blanc-rouge. Sa géométrie est
+celle de `coq-source.svg`, gardé intact à côté : **rien n'est redessiné, seuls les remplissages
+changent**, et ils sortent du thème clair — blanc `--surface` pour la tête et le poitrail, rouge
+`--dep` pour la crête et l'aile, bleu `--accent` filant vers le bleu nuit `--pastille` pour le corps
+et la queue, ambre `--coin` pour le bec et les pattes. L'oiseau se lit blanc, rouge, bleu de gauche à
+droite ; le bec et les pattes restent ambre, sans quoi il cesse de se lire comme un coq.
+
+`build.py` en dérive l'icône d'onglet à la place du marqueur `__FAVICON__` : il retire les pattes
+— à 16 px elles ne pèsent rien et volent la place au reste — recadre sur le buste et le pose sur une
+tuile arrondie `--ciel`, qui tient sur un onglet blanc comme sur un onglet sombre. Deux liens sont
+écrits dans la page, tous deux en data URI puisque `deploy.sh` ne met en ligne que `index.html` :
+le SVG, et `favicon-32.png` en repli pour les navigateurs qui ignorent les icônes SVG. Ce PNG est
+régénéré à chaque construction quand `rsvg-convert` est installé (`brew install librsvg`), et repris
+du dépôt sinon — il y est commité pour cette raison, pas pour être retouché à la main.
+
+Même réserve de licence que pour les bustes : le fichier vient de [SVG Repo](https://www.svgrepo.com/),
+il porte la classe `iconify--noto` — donc la collection Noto de Google, publiée sous Apache 2.0 — mais
+la mention n'est pas dans le fichier. `dataset/simulateur/marque/credits.json` le dit, et la page
+l'écrit dans « D'où viennent les chiffres ». À confirmer avant d'en faire une marque publique.
+
 ## Veille
 
-`dataset/simulateur/announcements.json` est **alimenté à la main**. Il n'y a pas d'automatisation.
+Le skill `france-budget-watch` (`.claude/skills/france-budget-watch/`) tient à jour la base
+d'annonces : il dit ce qu'il faut chercher, valide un patch, l'applique et archive la trace.
 
-> Les versions précédentes de ce fichier décrivaient un skill `france-budget-watch` dans
-> `.claude/skills/`, avec un `watch.py` et sa ligne de commande. Vérification faite, **rien de tout
-> cela n'existe** : ni dans le dépôt, ni dans `~/.claude/skills/`, ni ailleurs sur la machine. La
-> description a été retirée plutôt que laissée à induire en erreur.
+```bash
+python3 .claude/skills/france-budget-watch/scripts/watch.py etat
+python3 .claude/skills/france-budget-watch/scripts/watch.py valider patch.json
+python3 .claude/skills/france-budget-watch/scripts/watch.py appliquer patch.json --write
+python3 build.py
+```
 
-Ce qu'il faudrait construire pour automatiser la veille — collecteur de déclarations chiffrées avec
-leurs URL, format de patch et applicateur contrôlé, déclencheur périodique — est détaillé dans
-[REPRISE.md](REPRISE.md). Les garde-fous existent déjà côté `build.py`, et vaudraient tels quels pour
-ce flux : source obligatoire, date au bon format et jamais dans le futur, contradiction expliquée,
-auteur ou fonction renseignés.
+La collecte est faite par Claude, qui lit les sources ; le script ne va rien chercher sur le web. Il
+refuse toute annonce sans URL, sans date valide ou datée du futur, déduplique, exige qu'une
+contradiction soit expliquée, interdit de modifier les champs structurels d'une mesure — `id`, `g`,
+`inst`, `lab`, `ramp`, `behav` décrivent le modèle, pas l'actualité — et ne supprime jamais rien.
+Chaque patch appliqué est archivé dans `dataset/veille/` avec la trace de ce qu'il a changé.
+
+Le format de patch est décrit dans
+`.claude/skills/france-budget-watch/references/patch.md`.
+
+**Rien n'est planifié.** La veille se lance à la demande, ou se programme avec `/loop` ou le skill
+`schedule`.
 
 ## Travailler sur le projet
 
