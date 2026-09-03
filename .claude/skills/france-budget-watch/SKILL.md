@@ -102,16 +102,25 @@ c'est l'information la plus utile du compte rendu.
 
 ### 7. Committer, et s'arrêter là
 
+La relève vit sur la branche **`veille`**, jamais ailleurs :
+
 ```bash
+git fetch origin
+git checkout veille 2>/dev/null || git checkout -b veille origin/master
+git merge --ff-only origin/master        # repartir de ce qui est en ligne
+# … relève, build, contrôle …
 git add dataset/simulateur dataset/veille index.html
 git commit -m "[MOD] Veille du AAAA-MM-JJ : …"
-git push origin <branche de veille>
+git push origin veille
 ```
 
-**Le skill ne publie jamais.** La mise en ligne sur l'hébergement est faite par la CI
-(`.github/workflows/publier.yml`), au moment où `master` bouge. Une relève poussée sur la branche de
-veille est donc préparée et vérifiée, mais pas publiée : c'est la fusion dans `master` qui met en
-ligne, et c'est une décision humaine.
+Si le `merge --ff-only` échoue, la branche a divergé : dites-le et arrêtez-vous, ne forcez rien.
+
+**Le skill ne publie jamais.** La mise en ligne est faite par la CI
+(`.github/workflows/publier.yml`), quand `master` bouge. Une relève poussée sur `veille` est donc
+préparée et vérifiée, mais pas en ligne : c'est la fusion dans `master` qui publie, et c'est une
+décision humaine — arbitrée le 3 septembre 2026, précisément pour qu'une source mal lue ne devienne
+pas une affirmation publique avant que quiconque l'ait relue.
 
 Ne lancez pas `deploy.sh`, ne fusionnez pas dans `master`, n'ouvrez pas de pull request sans qu'on
 vous l'ait demandé.
@@ -148,7 +157,7 @@ c'est une modification de fond : elle se fait à la main, hors veille, et elle s
   ────────────────────────────           ──────────────────────────────────
   chercher → patch → valider             sur push vers master :
   → appliquer → build → contrôler          rebuild, refus si la page est périmée,
-  → commit + push sur la branche           contrôle, puis envoi FTP sur TLS
+  → commit + push sur `veille`             contrôle, puis envoi FTP sur TLS
                                            vers quipaie2027.fr
                     └──── fusion dans master, à la main ────┘
 ```
@@ -160,9 +169,9 @@ un réglage à changer en passant.
 
 ## Planification
 
-Rien n'est planifié par défaut. Deux façons de le faire, au choix de l'utilisateur :
+Relève quotidienne à **06h00 Europe/Paris** : elle balaie la soirée de la veille et la nuit —
+meetings, plateaux de fin de soirée, éditions du matin — et elle est prête à l'ouverture de la
+journée.
 
-- `/loop 1d /france-budget-watch` — dans une session ouverte ;
-- le skill `schedule`, pour un agent planifié qui tourne sans session ouverte.
-
-Ne mettez pas en place une planification sans qu'on vous l'ait demandé.
+Cadence et horaire arbitrés le 3 septembre 2026. Ne les changez pas, et ne mettez pas en place
+d'autre planification, sans qu'on vous l'ait demandé.
