@@ -139,9 +139,14 @@ def build_marque():
             sys.exit(f"coq.svg : arrêt de dégradé {valeur} introuvable, le bandeau ne "
                      f"pourra pas suivre le thème")
         plumes = plumes.replace(avant, f'stop-color="var(--{var},{valeur})"')
-    # viewBox serré sur l'encombrement du tracé, mesuré une fois : dans le bandeau,
-    # le coq s'aligne alors au pixel près sur la marge du titre, sans blanc parasite.
-    symbole = f'<symbol id="coq" viewBox="{CADRE}">{plumes}</symbol>'
+    # Le coq du bandeau est injecté comme <svg> complet, pas comme <symbol> repris par
+    # <use> : sur un symbole, <use> ouvre un viewport à x=0 y=0 du système courant, que
+    # le viewBox serré décale — le bec et la crête se faisaient rogner. Un <svg> inline
+    # n'a pas cette indirection, et les variables CSS l'atteignent sans arbre d'ombre.
+    # Le viewBox est serré sur l'encombrement du tracé, mesuré une fois : le coq s'aligne
+    # ainsi sur la marge du titre, sans blanc parasite.
+    bandeau = (f'<svg class="coq" viewBox="{CADRE}" role="img" aria-label="Coq tricolore">'
+               f'{plumes}</svg>')
 
     # le buste est centré sur son encombrement réel, mesuré une fois sur le tracé
     svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">'
@@ -167,7 +172,7 @@ def build_marque():
     liens = (f'<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,{b64}">\n'
              f'<link rel="alternate icon" type="image/png" sizes="32x32" '
              f'href="data:image/png;base64,{repli}">')
-    return liens, symbole
+    return liens, bandeau
 
 
 def load():
