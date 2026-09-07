@@ -326,6 +326,17 @@ def verifier_assises(payload):
     print(f"  + {controles} lignes d'assise recoupées contre les données officielles")
 
 
+def fraicheur(payload):
+    """La date affichée au bandeau : la plus récente des quatre sources de données.
+
+    Une relève qui n'ajoute que des annonces ne touche pas parties.json. Lire la seule
+    date de ce fichier faisait vieillir le bandeau d'autant, et la page annonçait des
+    données plus anciennes que celles qu'elle portait.
+    """
+    return max(payload[bloc]["updated"] for bloc in FILES
+               if isinstance(payload.get(bloc), dict) and payload[bloc].get("updated"))
+
+
 def rendu(payload, template):
     """La substitution des cinq marqueurs, au même endroit pour les deux sens."""
     avatars, payload["avatars"] = build_avatars()
@@ -334,7 +345,7 @@ def rendu(payload, template):
     if "</script" in blob:
         sys.exit("le payload contient une balise fermante </script>")
     return (template.replace("__DATA__", blob)
-                    .replace("__UPDATED__", payload["parties"]["updated"])
+                    .replace("__UPDATED__", fraicheur(payload))
                     .replace("__AVATARS__", avatars)
                     .replace("__FAVICON__", favicon)
                     .replace("__COQ__", coq), blob, avatars, favicon, coq)
@@ -357,7 +368,7 @@ def depuis_index(payload):
                                    ("les bustes", avatars, "__AVATARS__"),
                                    ("l'icône d'onglet", favicon, "__FAVICON__"),
                                    ("le coq du bandeau", coq, "__COQ__"),
-                                   ("la date de fraîcheur", payload["parties"]["updated"],
+                                   ("la date de fraîcheur", fraicheur(payload),
                                     "__UPDATED__")):
         n = html.count(valeur)
         if n != 1:

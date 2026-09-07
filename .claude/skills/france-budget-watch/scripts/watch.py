@@ -332,6 +332,19 @@ def controler(d):
             ennuis.append(f"{nom}.json a changé depuis la dernière construction — "
                           f"la page ne dit plus ce que disent les données")
 
+    # La date du bandeau est la plus récente des dates de mise à jour des fichiers, pas
+    # celle de parties.json seule : une relève qui n'ajoute que des annonces ne touche
+    # pas les partis, et la page annoncerait des données plus anciennes qu'elle n'en
+    # porte. Ce contrôle lit la date réellement écrite dans la page.
+    attendue = max(bloc["updated"] for bloc in d.values()
+                   if isinstance(bloc, dict) and bloc.get("updated"))
+    vue = re.search(r"données au (\d{4}-\d{2}-\d{2})", html)
+    if not vue:
+        ennuis.append("date de fraîcheur introuvable dans le bandeau d'index.html")
+    elif vue.group(1) != attendue:
+        ennuis.append(f"le bandeau annonce des données au {vue.group(1)}, "
+                      f"les fichiers vont jusqu'au {attendue}")
+
     items = d["announcements"]["items"]
     sans_url = [a for a in items if not str(a.get("source", "")).startswith("http")]
     if sans_url:
@@ -352,7 +365,7 @@ def controler(d):
           f"les données.".replace(",", " "))
     print(f"  {len(items)} annonces, {len(d['parties']['parties'])} partis, "
           f"{len(d['measures']['measures'])} mesures")
-    print(f"  fraîcheur affichée : {d['parties']['updated']}")
+    print(f"  fraîcheur affichée : {vue.group(1)}")
     if non_lues:
         print(f"  ~ {non_lues} annonce(s) dont la source n'a pas été lue "
               f"(champ 'verifie' à false)")
