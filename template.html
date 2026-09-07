@@ -2234,7 +2234,11 @@ function renderFeed(){
     const bot = el('div','fbot');
     if (it.montant != null){
       const TL = {economie:"d'économies", recette:'de recettes', depense:'de dépenses'};
-      bot.appendChild(el('span','fmontant', md(it.montant) + (TL[it.type] ? ' ' + TL[it.type] : '')));
+      // Le journal rapporte le chiffre tel qu'il a été annoncé : une décimale quand
+      // l'annonce en porte une, sinon rien. md() arrondit à l'entier par défaut, ce qui
+      // transformait « 6,4 Md€ pour la Défense » en « 6 Md€ ».
+      const dec = Number.isInteger(it.montant) ? 0 : 1;
+      bot.appendChild(el('span','fmontant', md(it.montant, dec) + (TL[it.type] ? ' ' + TL[it.type] : '')));
     }
     const a = el('a','src', "source"); a.href = it.source; a.target = '_blank'; a.rel = 'noopener noreferrer';
     bot.appendChild(a);
