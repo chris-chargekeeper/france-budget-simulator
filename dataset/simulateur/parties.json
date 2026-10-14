@@ -1,6 +1,6 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-09-01",
+  "updated": "2026-10-14",
   "avertissement": "Aucune candidature n'est officiellement déposée à ce stade. Les noms retenus sont les candidats pressentis par parti au vu des déclarations publiques et des sondages de 2026 ; ils changeront. Les programmes 2027 ne sont pour la plupart pas publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
@@ -13,9 +13,9 @@
       "statutCandidature": "Candidature annoncée ; Jordan Bardella cité comme alternative",
       "statut": "partiel",
       "annonce": {
-        "titre": "125 Md€ d'économies",
-        "texte": "Marine Le Pen a annoncé une trajectoire de redressement des finances publiques reposant sur 125 Md€ d'économies. Environ 60 Md€ ont été rattachés publiquement à quatre postes : immigration, fraude fiscale et sociale, contribution au budget de l'Union européenne, organisation de l'État. Le solde, soit près de la moitié du total, n'a pas fait l'objet d'un détail public.",
-        "revendique": 125,
+        "titre": "140 Md€ d'économies",
+        "texte": "Marine Le Pen et Jordan Bardella ont présenté le 6 octobre 2026 une trajectoire reposant sur 140 Md€ d'économies nettes, relevée des 125 Md€ annoncés le 27 août. Il s'agit d'un niveau atteint en 2032, non d'une coupe dans le budget 2027. Environ 65 Md€ restent rattachés publiquement à des postes identifiés : immigration, fraude fiscale et sociale, contribution au budget de l'Union européenne, organisation de l'État. La ventilation du total annoncé n'a pas été publiée, et la cible d'un déficit sous 3 % est datée de 2030, deux ans avant que ces économies soient atteintes.",
+        "revendique": 140,
         "detaille": 65,
         "cote": "economie"
       },
@@ -73,6 +73,10 @@
         {
           "t": "Programme économique du RN — OFCE législatives 2024",
           "u": "https://www.ofce-legislatives2024.fr/programmes/rn.html"
+        },
+        {
+          "t": "Présidentielle : Marine Le Pen promet « 140 milliards d'euros nets d'économies » d'ici 2032 — dépêche, 6 octobre 2026",
+          "u": "https://www.boursorama.com/actualite-economique/actualites/presidentielle-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032-70784e1d524f6a627b04d825118d0b51"
         }
       ]
     },
@@ -184,8 +188,8 @@
       "statutCandidature": "Président du parti, candidature pressentie",
       "statut": "reconstitution",
       "annonce": {
-        "titre": "Pas de chiffrage 2027 publié",
-        "texte": "Aucun chiffrage d'ensemble n'a été publié à ce jour. Le scénario ci-dessous est une reconstitution du simulateur à partir de positions publiques : priorité aux économies de dépense, allongement de la durée du travail, baisse des impôts de production. Les montants sont ceux du catalogue, pas ceux du parti.",
+        "titre": "197 Md€ d'économies annoncés, sans ventilation par poste",
+        "texte": "Bruno Retailleau a annoncé le 12 octobre 2026 un plan de près de 197 Md€ d'économies d'ici 2032 — premier chiffrage d'ensemble du parti — dont 146 Md€ affectés au déficit et à la dette et 51 Md€ rendus en baisses d'impôts, pour un déficit sous 3 % du PIB en 2031 et sans hausse d'impôts. La ventilation publiée s'arrête aux grandes sphères de dépense : 96 Md€ pour l'État, 91 Md€ pour le social, 10 Md€ pour les collectivités. Faute de montants poste par poste, le scénario ci-dessous reste une reconstitution du simulateur, et les montants sont ceux du catalogue, pas ceux du parti.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -225,7 +229,12 @@
           "sim": "mid"
         }
       },
-      "sources": []
+      "sources": [
+        {
+          "t": "Présidentielle : Retailleau sort le « bulldozer » pour réduire la dépense publique — AFP, 12 octobre 2026",
+          "u": "https://www.france24.com/fr/info-en-continu/20261012-pr%C3%A9sidentielle-retailleau-sort-le-bulldozer-pour-r%C3%A9duire-la-d%C3%A9pense-publique"
+        }
+      ]
     },
     {
       "id": "ren",
