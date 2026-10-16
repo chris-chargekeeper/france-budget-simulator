@@ -1,7 +1,23 @@
 {
   "_comment": "Base des annonces, une entrée par déclaration publique. Alimentée par le skill france-budget-watch. Champs : date (AAAA-MM-JJ ou AAAA-MM si le jour n'est pas établi), parti (id ou null), qui (la personne, ou null si l'auteur n'est pas identifié), fonction, media (où la déclaration a été faite), quoi, verbatim, mesure (id du catalogue ou null), montant (Md€ ou null), type (economie|recette|depense|contexte), source (URL obligatoire), verifie (la source a-t-elle été ouverte et lue intégralement), contredit (non|programme|annonce|inconnu), ecart (explication si contredit != non).",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "items": [
+    {
+      "date": "2026-10-15",
+      "parti": "ren",
+      "qui": "Gabriel Attal",
+      "fonction": "Candidat de Renaissance à l'élection présidentielle",
+      "media": "« Lettre aux Français » (600 000 exemplaires), reprise par dépêche AFP",
+      "quoi": "Publication d'une « lettre aux Français » annonçant un « frein d'urgence » de 20 Md€ sur les dépenses dès son élection, au nom d'une « double règle d'or » budgétaire selon laquelle les dépenses de fonctionnement ne pourraient plus dépasser les dépenses d'avenir ; les deux tiers de l'effort viseraient les dépenses sociales (arrêts maladie, assurance chômage, retraites).",
+      "verbatim": null,
+      "mesure": null,
+      "montant": 20,
+      "type": "economie",
+      "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/presidentielle-attal-pour-une-coalition-des-democrates-afp-c05632fbd562f9aeb0a73a6eed3f4b3476b8570d",
+      "verifie": true,
+      "contredit": "inconnu",
+      "ecart": "Aucun chiffrage global n'a été publié par Renaissance à ce jour. Ce frein de 20 Md€ s'ajoute à un plan antérieur évoqué dès juillet 2026 (120 à 150 Md€ d'économies sur dix ans, déficit sous 3 % avant 2032, équilibre budgétaire en 2037), sans que la correspondance entre les deux chiffrages soit précisée et sans détail poste par poste vérifiable."
+    },
     {
       "date": "2026-10-14",
       "parti": "lfi",

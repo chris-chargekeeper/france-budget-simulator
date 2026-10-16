@@ -1,0 +1,39 @@
+{
+  "patch": {
+    "_comment": "Veille du 2026-10-16, faite depuis la branche veille (dernière relève : 2026-10-15). Recherche par outil de recherche web uniquement : l'accès direct aux pages (WebFetch) est bloqué par la politique réseau de cet environnement, donc la lecture des sources passe par la synthèse du moteur de recherche, recoupée sur plusieurs médias indépendants avant toute entrée 'verifie: true'. RN (depuis 2026-10-06), LR (depuis 2026-10-12), HOR (depuis 2026-10-13), LFI (depuis 2026-10-14), PS (depuis 2026-09-16) et ÉCO (depuis 2026-08-27) : rien de nouveau et chiffré trouvé au-delà de ce qui est déjà dans la base. Seul REN a produit une annonce chiffrée nouvelle.",
+    "releve": "2026-10-16",
+    "annonces": [
+      {
+        "date": "2026-10-15",
+        "parti": "ren",
+        "qui": "Gabriel Attal",
+        "fonction": "Candidat de Renaissance à l'élection présidentielle",
+        "media": "« Lettre aux Français » (600 000 exemplaires), reprise par dépêche AFP",
+        "quoi": "Publication d'une « lettre aux Français » annonçant un « frein d'urgence » de 20 Md€ sur les dépenses dès son élection, au nom d'une « double règle d'or » budgétaire selon laquelle les dépenses de fonctionnement ne pourraient plus dépasser les dépenses d'avenir ; les deux tiers de l'effort viseraient les dépenses sociales (arrêts maladie, assurance chômage, retraites).",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 20,
+        "type": "economie",
+        "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/presidentielle-attal-pour-une-coalition-des-democrates-afp-c05632fbd562f9aeb0a73a6eed3f4b3476b8570d",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucun chiffrage global n'a été publié par Renaissance à ce jour. Ce frein de 20 Md€ s'ajoute à un plan antérieur évoqué dès juillet 2026 (120 à 150 Md€ d'économies sur dix ans, déficit sous 3 % avant 2032, équilibre budgétaire en 2037), sans que la correspondance entre les deux chiffrages soit précisée et sans détail poste par poste vérifiable."
+      }
+    ],
+    "partis": {},
+    "mesures": {}
+  },
+  "trace": {
+    "releve": "2026-10-16",
+    "applique": "2026-10-16",
+    "ajouts": [
+      {
+        "date": "2026-10-15",
+        "parti": "ren",
+        "quoi": "Publication d'une « lettre aux Français » annonçant un « frein d'urgence » de 20 Md€ sur les dépenses dès son élection, au nom d'une « double règle d'or » budgétaire selon laquelle les dépenses de fonctionnement ne pourraient plus dépasser les dépenses d'avenir ; les deux tiers de l'effort viseraient les dépenses sociales (arrêts maladie, assurance chômage, retraites).",
+        "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/presidentielle-attal-pour-une-coalition-des-democrates-afp-c05632fbd562f9aeb0a73a6eed3f4b3476b8570d"
+      }
+    ],
+    "revisions": []
+  }
+}
