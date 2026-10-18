@@ -1,0 +1,36 @@
+{
+  "patch": {
+    "_comment": "Relève du 2026-10-18. Base au 2026-10-16, dernière annonce au 2026-10-15 : la fenêtre réellement nouvelle est le 16, le 17 et le 18 octobre. Un seul fait chiffré s'y trouve — le rejet de l'impôt plancher par l'Assemblée le vendredi 16 au soir, après le passage de la relève précédente. Rien de nouveau des candidats le 17 ni le 18. AVERTISSEMENT : la politique réseau de cette session refuse tout hôte sortant hors API Anthropic (403 au CONNECT sur boursorama, france24, publicsenat, franceinfo, acteurspublics, assemblee-nationale.fr, interieur.gouv.fr, ofce.sciences-po.fr, institutmontaigne.org, ccomptes.fr — tous testés, et WebFetch ne résout aucun nom). La source n'a donc pas pu être ouverte : 'verifie' est à false et la page le signalera. Aucune révision de 'partis' ni de 'mesures' : aucun chiffrage OFCE / Montaigne / Cour des comptes / IPP n'a été publié dans la fenêtre, et l'Institut Montaigne a annoncé le 6 octobre que le chiffrage des programmes n'arriverait qu'au premier trimestre 2027.",
+    "releve": "2026-10-18",
+    "annonces": [
+      {
+        "date": "2026-10-16",
+        "parti": null,
+        "qui": null,
+        "fonction": "Assemblée nationale — séance publique, examen de la première partie du projet de loi de finances pour 2027",
+        "media": "Dépêche AFP reprise par Boursorama, 16 octobre 2026 à 20h46",
+        "quoi": "Les députés rejettent les amendements instaurant un impôt plancher de 2 % sur les patrimoines supérieurs à 100 M€, déposés par la gauche après l'article 4 : la mesure ne figurait pas dans le texte initial du PLF 2027, et le gouvernement comme le rapporteur général Philippe Juvin y étaient défavorables.",
+        "verbatim": null,
+        "mesure": "zucman",
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.boursorama.com/actualite-economique/actualites/budget-l-assemblee-rejette-la-taxe-zucman-sur-les-ultrariches-e71826192f37b09c9cd1224ba69cc9f5",
+        "verifie": false,
+        "contredit": "non"
+      }
+    ]
+  },
+  "trace": {
+    "releve": "2026-10-18",
+    "applique": "2026-10-18",
+    "ajouts": [
+      {
+        "date": "2026-10-16",
+        "parti": null,
+        "quoi": "Les députés rejettent les amendements instaurant un impôt plancher de 2 % sur les patrimoines supérieurs à 100 M€, déposés par la gauche après l'article 4 : la mesure ne figurait pas dans le texte initial du PLF 2027, et le gouvernement comme le rapporteur général Philippe Juvin y étaient défavorables.",
+        "source": "https://www.boursorama.com/actualite-economique/actualites/budget-l-assemblee-rejette-la-taxe-zucman-sur-les-ultrariches-e71826192f37b09c9cd1224ba69cc9f5"
+      }
+    ],
+    "revisions": []
+  }
+}

@@ -1,7 +1,23 @@
 {
   "_comment": "Base des annonces, une entrée par déclaration publique. Alimentée par le skill france-budget-watch. Champs : date (AAAA-MM-JJ ou AAAA-MM si le jour n'est pas établi), parti (id ou null), qui (la personne, ou null si l'auteur n'est pas identifié), fonction, media (où la déclaration a été faite), quoi, verbatim, mesure (id du catalogue ou null), montant (Md€ ou null), type (economie|recette|depense|contexte), source (URL obligatoire), verifie (la source a-t-elle été ouverte et lue intégralement), contredit (non|programme|annonce|inconnu), ecart (explication si contredit != non).",
-  "updated": "2026-10-16",
+  "updated": "2026-10-18",
   "items": [
+    {
+      "date": "2026-10-16",
+      "parti": null,
+      "qui": null,
+      "fonction": "Assemblée nationale — séance publique, examen de la première partie du projet de loi de finances pour 2027",
+      "media": "Dépêche AFP reprise par Boursorama, 16 octobre 2026 à 20h46",
+      "quoi": "Les députés rejettent les amendements instaurant un impôt plancher de 2 % sur les patrimoines supérieurs à 100 M€, déposés par la gauche après l'article 4 : la mesure ne figurait pas dans le texte initial du PLF 2027, et le gouvernement comme le rapporteur général Philippe Juvin y étaient défavorables.",
+      "verbatim": null,
+      "mesure": "zucman",
+      "montant": null,
+      "type": "contexte",
+      "source": "https://www.boursorama.com/actualite-economique/actualites/budget-l-assemblee-rejette-la-taxe-zucman-sur-les-ultrariches-e71826192f37b09c9cd1224ba69cc9f5",
+      "verifie": false,
+      "contredit": "non",
+      "ecart": null
+    },
     {
       "date": "2026-10-15",
       "parti": "ren",
