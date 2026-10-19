@@ -1,6 +1,6 @@
 {
   "_comment": "Base des annonces, une entrée par déclaration publique. Alimentée par le skill france-budget-watch. Champs : date (AAAA-MM-JJ ou AAAA-MM si le jour n'est pas établi), parti (id ou null), qui (la personne, ou null si l'auteur n'est pas identifié), fonction, media (où la déclaration a été faite), quoi, verbatim, mesure (id du catalogue ou null), montant (Md€ ou null), type (economie|recette|depense|contexte), source (URL obligatoire), verifie (la source a-t-elle été ouverte et lue intégralement), contredit (non|programme|annonce|inconnu), ecart (explication si contredit != non).",
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "items": [
     {
       "date": "2026-10-16",
@@ -193,6 +193,22 @@
       "verifie": false,
       "contredit": "inconnu",
       "ecart": "Le plan ne publie pas la part des 96 Md€ attribués à l'État qui vient des non-remplacements et celle qui vient de la suppression d'agences et d'opérateurs. Le volume annoncé — 400 000 départs non remplacés d'ici 2032 — suppose de ne remplacer presque aucun départ en retraite sur la période, et le périmètre retenu, fonction publique d'État seule ou trois versants, n'est pas précisé."
+    },
+    {
+      "date": "2026-10-11",
+      "parti": "ps",
+      "qui": "Raphaël Glucksmann",
+      "fonction": "Député européen, candidat désigné de la gauche sociale-démocrate à l'élection présidentielle",
+      "media": "Résultat de la primaire de la gauche sociale-démocrate, dépêche AFP relayée par Boursorama",
+      "quoi": "Raphaël Glucksmann est désigné dès le premier tour candidat de la gauche sociale-démocrate à la présidentielle, avec environ 66 % des voix sur 120 787 votants ; il n'a publié à ce jour aucun chiffrage d'ensemble de son programme.",
+      "verbatim": null,
+      "mesure": null,
+      "montant": null,
+      "type": "contexte",
+      "source": "https://www.boursorama.com/actualite-economique/actualites/glucksmann-largement-elu-candidat-de-la-gauche-sociale-democrate-a-la-presidentielle-cfdc15f832689ea47117b51fc88f58bf",
+      "verifie": false,
+      "contredit": "inconnu",
+      "ecart": "Le candidat est désormais désigné, mais le PS reste sans chiffrage 2027 publié : les seuls montants rattachés au parti dans cette base viennent du contre-budget du groupe Socialistes à l'Assemblée (39,5 Md€ de recettes nouvelles, 16 septembre 2026), pas du candidat. Le scénario PS de la page demeure une reconstitution, et c'est de lui qu'on attend désormais un chiffrage."
     },
     {
       "date": "2026-10-06",

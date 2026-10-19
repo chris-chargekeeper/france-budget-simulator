@@ -1,0 +1,39 @@
+{
+  "patch": {
+    "_comment": "Relève du 2026-10-19. Fenêtre réelle très courte : la base était à jour au 2026-10-18 et les trois contre-budgets (RN 140 Md€, LR 197 Md€, LFI 106,4 Md€) sont déjà entrés les 14, 15 et 16 octobre. Rien trouvé sur le week-end du 17-18 octobre. Seul manque comblé : la désignation du candidat socialiste le 11 octobre, dans la fenêtre PS ouverte depuis le 16 septembre et jamais relevée. Aucune source n'a pu être ouverte : l'accès réseau de cette session est restreint à GitHub, WebFetch et curl échouent sur tous les domaines de presse. Tout est donc porté verifie: false, et aucune borne de mesure n'est touchée.",
+    "releve": "2026-10-19",
+    "annonces": [
+      {
+        "date": "2026-10-11",
+        "parti": "ps",
+        "qui": "Raphaël Glucksmann",
+        "fonction": "Député européen, candidat désigné de la gauche sociale-démocrate à l'élection présidentielle",
+        "media": "Résultat de la primaire de la gauche sociale-démocrate, dépêche AFP relayée par Boursorama",
+        "quoi": "Raphaël Glucksmann est désigné dès le premier tour candidat de la gauche sociale-démocrate à la présidentielle, avec environ 66 % des voix sur 120 787 votants ; il n'a publié à ce jour aucun chiffrage d'ensemble de son programme.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.boursorama.com/actualite-economique/actualites/glucksmann-largement-elu-candidat-de-la-gauche-sociale-democrate-a-la-presidentielle-cfdc15f832689ea47117b51fc88f58bf",
+        "verifie": false,
+        "contredit": "inconnu",
+        "ecart": "Le candidat est désormais désigné, mais le PS reste sans chiffrage 2027 publié : les seuls montants rattachés au parti dans cette base viennent du contre-budget du groupe Socialistes à l'Assemblée (39,5 Md€ de recettes nouvelles, 16 septembre 2026), pas du candidat. Le scénario PS de la page demeure une reconstitution, et c'est de lui qu'on attend désormais un chiffrage."
+      }
+    ],
+    "partis": {},
+    "mesures": {}
+  },
+  "trace": {
+    "releve": "2026-10-19",
+    "applique": "2026-10-19",
+    "ajouts": [
+      {
+        "date": "2026-10-11",
+        "parti": "ps",
+        "quoi": "Raphaël Glucksmann est désigné dès le premier tour candidat de la gauche sociale-démocrate à la présidentielle, avec environ 66 % des voix sur 120 787 votants ; il n'a publié à ce jour aucun chiffrage d'ensemble de son programme.",
+        "source": "https://www.boursorama.com/actualite-economique/actualites/glucksmann-largement-elu-candidat-de-la-gauche-sociale-democrate-a-la-presidentielle-cfdc15f832689ea47117b51fc88f58bf"
+      }
+    ],
+    "revisions": []
+  }
+}
