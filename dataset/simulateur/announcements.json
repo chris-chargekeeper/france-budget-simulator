@@ -1,7 +1,23 @@
 {
   "_comment": "Base des annonces, une entrée par déclaration publique. Alimentée par le skill france-budget-watch. Champs : date (AAAA-MM-JJ ou AAAA-MM si le jour n'est pas établi), parti (id ou null), qui (la personne, ou null si l'auteur n'est pas identifié), fonction, media (où la déclaration a été faite), quoi, verbatim, mesure (id du catalogue ou null), montant (Md€ ou null), type (economie|recette|depense|contexte), source (URL obligatoire), verifie (la source a-t-elle été ouverte et lue intégralement), contredit (non|programme|annonce|inconnu), ecart (explication si contredit != non).",
-  "updated": "2026-10-19",
+  "updated": "2026-10-21",
   "items": [
+    {
+      "date": "2026-10-19",
+      "parti": null,
+      "qui": null,
+      "fonction": "Assemblée nationale — séance publique, examen de la première partie du projet de loi de finances pour 2027",
+      "media": "La Gazette des communes (Club Finances), recoupé par Maire-info (AMF) et Banque des Territoires (Localtis)",
+      "quoi": "Les députés effacent en séance les deux principales ponctions sur les collectivités du PLF 2027 : la contribution progressive à l'effort budgétaire (CPEB, 2,5 Md€, qui devait remplacer le Dilico) est supprimée par une dizaine d'amendements identiques venus de la gauche comme de la droite, et la réduction de cinq points du taux de FCTVA est retirée pour l'essentiel de l'investissement local ; soit 4,6 Md€ d'économies attendues des collectivités qui disparaissent du texte. Le vote final de la partie « recettes » est reporté, l'examen reprenant après le PLFSS.",
+      "verbatim": null,
+      "mesure": "collectivites",
+      "montant": 4.6,
+      "type": "contexte",
+      "source": "https://www.lagazettedescommunes.com/club-finances/finances-publiques/lois-de-finances/plf-2027-les-deputes-recalent-en-seance-publique-la-cpeb-et-les-autres-mesures-phares-sur-les-collectivites-locales-le-vote-final-de-la-partie-recettes-reporte.FE7OXDCSNREFZIHAVHRFSAJ25Y.html",
+      "verifie": false,
+      "contredit": "programme",
+      "ecart": "Le vote prend à contre-pied les deux contre-budgets de droite déjà enregistrés dans cette base, qui gagent une part de leur trajectoire sur les collectivités : le RN demande 8,2 Md€ dès la première année et jusqu'à 18,4 Md€ en 2031 (6 octobre 2026), LR 10 Md€ sur les 197 Md€ de son plan (12 octobre 2026). Or l'Assemblée vient de refuser, par des amendements venus aussi de la droite, un prélèvement de 2,5 Md€ — moins d'un tiers de ce que le RN inscrit pour 2027 — et d'y ajouter le retrait du rabot de FCTVA, 4,6 Md€ au total. La contrainte est politique et non juridique : un prélèvement refusé en 2026 reste légiférable en 2027. Mais elle documente l'écart entre ce que ces programmes chiffrent sur les collectivités et ce que leurs propres groupes votent quand le prélèvement est soumis au Parlement. Réserve à porter au compte rendu : les sources consultées établissent que les amendements venaient « de la gauche et de la droite » et que le recentrage du FCTVA était contesté jusque dans la majorité gouvernementale, mais elles ne détaillent pas le vote groupe par groupe — rien ici n'établit comment les députés RN ont voté."
+    },
     {
       "date": "2026-10-16",
       "parti": null,
