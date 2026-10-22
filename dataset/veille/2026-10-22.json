@@ -1,0 +1,59 @@
+{
+  "patch": {
+    "_comment": "Relève du 2026-10-22. Base au 2026-10-21 : la fenêtre réellement nouvelle est la soirée du mercredi 21 et la nuit vers le jeudi 22 octobre. Elle est VIDE, et pour une raison vérifiable : l'examen de la partie « recettes » du PLF 2027 a été suspendu le lundi 19 octobre, faute de temps pour les quelque 2 600 amendements restants, et ne reprend que le 27 octobre — il n'y a donc pas eu de séance budgétaire les 20, 21 et 22. Aucune déclaration chiffrée de candidat sur la fenêtre : RN, LR, LFI, HOR, REN, PS et ÉCO sont muets, les contre-budgets d'octobre sont tous déjà entrés. Aucun chiffrage nouvellement publié : rien de l'OFCE, de la Cour des comptes ni de l'IPP, et l'Institut Montaigne maintient le chiffrage des programmes au premier trimestre 2027. Programmes officiels du ministère de l'Intérieur toujours attendus (premier tour le 18 avril 2027). Les deux entrées ci-dessous ne viennent donc pas de la fenêtre du jour : elles comblent une omission des relèves du 15 et du 16 octobre, qui avaient retenu le rejet de l'impôt plancher mais pas le vote du mercredi 14 octobre au soir sur la contribution au budget de l'UE — seul fait de la période qui touche une mesure du catalogue ('ue') et contredit un montant revendiqué par un parti. AVERTISSEMENT inchangé depuis le 19 octobre : aucune source n'a pu être ouverte. WebFetch n'a plus de résolution DNS (ENOTFOUND sur tous les hôtes, wikipedia comprise) et curl est refusé au CONNECT par la politique réseau du proxy (403). Seule la recherche, qui tourne côté serveur, répond : ce qui suit repose sur des extraits cités, pas sur la lecture intégrale des articles. 'verifie' est donc à false. Aucune borne de mesure n'est touchée : un vote parlementaire n'est pas un chiffrage publié, et rien ici ne déplace lo/mid/hi. Aucune fiche de parti n'est révisée.",
+    "releve": "2026-10-22",
+    "annonces": [
+      {
+        "date": "2026-10-14",
+        "parti": null,
+        "qui": null,
+        "fonction": "Assemblée nationale, séance publique du mercredi 14 octobre au soir — examen du projet de loi de finances pour 2027",
+        "media": "LCP",
+        "quoi": "Les députés adoptent, par 111 voix contre 93, l'article du PLF 2027 fixant à 30,9 Md€ le prélèvement sur recettes au bénéfice du budget de l'Union européenne, contre 28,4 Md€ l'année précédente.",
+        "verbatim": null,
+        "mesure": "ue",
+        "montant": 30.9,
+        "type": "contexte",
+        "source": "https://lcp.fr/actualites/l-assemblee-nationale-valide-la-contribution-francaise-au-budget-de-l-ue-malgre-l",
+        "verifie": false,
+        "contredit": "non",
+        "ecart": null
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "rn",
+        "qui": null,
+        "fonction": "Groupe Rassemblement national à l'Assemblée nationale",
+        "media": "CNews et LCP, comptes rendus de la séance du 14 octobre",
+        "quoi": "Le groupe RN dépose un amendement retirant 11 Md€ à la contribution française au budget de l'Union européenne, afin que la contribution nette « se limite à 5 milliards d'euros » ; l'amendement est rejeté, comme ceux de LFI visant le même article.",
+        "verbatim": null,
+        "mesure": "ue",
+        "montant": 11,
+        "type": "economie",
+        "source": "https://www.cnews.fr/france/2026-10-15/budget-2027-une-contribution-de-309-milliards-deuros-en-faveur-de-lue-adoptee-par",
+        "verifie": false,
+        "contredit": "annonce",
+        "ecart": "Trois chiffres ne se recoupent pas. La fiche RN de cette base rattache 10 Md€ à la réduction de la contribution européenne ; l'amendement déposé par le groupe en demande 11 ; et la borne haute du catalogue pour cette mesure est de 8 Md€, pour un montant central de 2 Md€. Le vote tranche en outre dans l'autre sens : l'amendement a été rejeté et la contribution adoptée à 30,9 Md€, en hausse de 2,5 Md€ sur un an, de sorte que l'économie revendiquée n'est pas acquise dans le budget 2027 — alors qu'elle est l'un des quatre postes sur lesquels le parti appuie sa trajectoire de 140 Md€. Les bornes de la mesure ne sont pas modifiées : un amendement rejeté n'est pas un chiffrage publié."
+      }
+    ]
+  },
+  "trace": {
+    "releve": "2026-10-22",
+    "applique": "2026-10-22",
+    "ajouts": [
+      {
+        "date": "2026-10-14",
+        "parti": null,
+        "quoi": "Les députés adoptent, par 111 voix contre 93, l'article du PLF 2027 fixant à 30,9 Md€ le prélèvement sur recettes au bénéfice du budget de l'Union européenne, contre 28,4 Md€ l'année précédente.",
+        "source": "https://lcp.fr/actualites/l-assemblee-nationale-valide-la-contribution-francaise-au-budget-de-l-ue-malgre-l"
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "rn",
+        "quoi": "Le groupe RN dépose un amendement retirant 11 Md€ à la contribution française au budget de l'Union européenne, afin que la contribution nette « se limite à 5 milliards d'euros » ; l'amendement est rejeté, comme ceux de LFI visant le même article.",
+        "source": "https://www.cnews.fr/france/2026-10-15/budget-2027-une-contribution-de-309-milliards-deuros-en-faveur-de-lue-adoptee-par"
+      }
+    ],
+    "revisions": []
+  }
+}

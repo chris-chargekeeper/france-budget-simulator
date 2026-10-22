@@ -1,6 +1,6 @@
 {
   "_comment": "Base des annonces, une entrée par déclaration publique. Alimentée par le skill france-budget-watch. Champs : date (AAAA-MM-JJ ou AAAA-MM si le jour n'est pas établi), parti (id ou null), qui (la personne, ou null si l'auteur n'est pas identifié), fonction, media (où la déclaration a été faite), quoi, verbatim, mesure (id du catalogue ou null), montant (Md€ ou null), type (economie|recette|depense|contexte), source (URL obligatoire), verifie (la source a-t-elle été ouverte et lue intégralement), contredit (non|programme|annonce|inconnu), ecart (explication si contredit != non).",
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "items": [
     {
       "date": "2026-10-19",
@@ -49,6 +49,22 @@
       "verifie": true,
       "contredit": "inconnu",
       "ecart": "Aucun chiffrage global n'a été publié par Renaissance à ce jour. Ce frein de 20 Md€ s'ajoute à un plan antérieur évoqué dès juillet 2026 (120 à 150 Md€ d'économies sur dix ans, déficit sous 3 % avant 2032, équilibre budgétaire en 2037), sans que la correspondance entre les deux chiffrages soit précisée et sans détail poste par poste vérifiable."
+    },
+    {
+      "date": "2026-10-14",
+      "parti": "rn",
+      "qui": null,
+      "fonction": "Groupe Rassemblement national à l'Assemblée nationale",
+      "media": "CNews et LCP, comptes rendus de la séance du 14 octobre",
+      "quoi": "Le groupe RN dépose un amendement retirant 11 Md€ à la contribution française au budget de l'Union européenne, afin que la contribution nette « se limite à 5 milliards d'euros » ; l'amendement est rejeté, comme ceux de LFI visant le même article.",
+      "verbatim": null,
+      "mesure": "ue",
+      "montant": 11,
+      "type": "economie",
+      "source": "https://www.cnews.fr/france/2026-10-15/budget-2027-une-contribution-de-309-milliards-deuros-en-faveur-de-lue-adoptee-par",
+      "verifie": false,
+      "contredit": "annonce",
+      "ecart": "Trois chiffres ne se recoupent pas. La fiche RN de cette base rattache 10 Md€ à la réduction de la contribution européenne ; l'amendement déposé par le groupe en demande 11 ; et la borne haute du catalogue pour cette mesure est de 8 Md€, pour un montant central de 2 Md€. Le vote tranche en outre dans l'autre sens : l'amendement a été rejeté et la contribution adoptée à 30,9 Md€, en hausse de 2,5 Md€ sur un an, de sorte que l'économie revendiquée n'est pas acquise dans le budget 2027 — alors qu'elle est l'un des quatre postes sur lesquels le parti appuie sa trajectoire de 140 Md€. Les bornes de la mesure ne sont pas modifiées : un amendement rejeté n'est pas un chiffrage publié."
     },
     {
       "date": "2026-10-14",
@@ -126,6 +142,22 @@
       "montant": 22,
       "type": "recette",
       "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817",
+      "verifie": false,
+      "contredit": "non",
+      "ecart": null
+    },
+    {
+      "date": "2026-10-14",
+      "parti": null,
+      "qui": null,
+      "fonction": "Assemblée nationale, séance publique du mercredi 14 octobre au soir — examen du projet de loi de finances pour 2027",
+      "media": "LCP",
+      "quoi": "Les députés adoptent, par 111 voix contre 93, l'article du PLF 2027 fixant à 30,9 Md€ le prélèvement sur recettes au bénéfice du budget de l'Union européenne, contre 28,4 Md€ l'année précédente.",
+      "verbatim": null,
+      "mesure": "ue",
+      "montant": 30.9,
+      "type": "contexte",
+      "source": "https://lcp.fr/actualites/l-assemblee-nationale-valide-la-contribution-francaise-au-budget-de-l-ue-malgre-l",
       "verifie": false,
       "contredit": "non",
       "ecart": null
