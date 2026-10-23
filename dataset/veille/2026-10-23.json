@@ -1,0 +1,59 @@
+{
+  "patch": {
+    "_comment": "Relève du 2026-10-23. Base au 2026-10-22. La fenêtre réellement nouvelle — soirée du jeudi 22 et nuit vers le vendredi 23 octobre — est VIDE, et pour la raison déjà établie le 22 : l'examen de la partie « recettes » du PLF 2027 est suspendu depuis le lundi 19 octobre et ne reprend que le 27, il n'y a donc pas de séance budgétaire. Aucune déclaration chiffrée de candidat sur la fenêtre : RN, LR, LFI, HOR, REN, PS muets, les contre-budgets d'octobre sont tous déjà entrés. Les deux entrées ci-dessous ne viennent pas de la fenêtre du jour : elles comblent une omission des relèves de septembre, qui ont retenu le contre-budget du PS du 16 septembre et l'effort de 54 Md€ du 17 septembre mais pas la note de la Cour des comptes du 21 septembre sur la fiscalité du patrimoine des ménages — seule publication de la période qui soit un chiffrage au sens de la famille (b), et la première qui pourrait déplacer des bornes du catalogue. ÉCO (Marine Tondelier) reste le trou de la base : rien depuis le 27 août, soit 57 jours, et la recherche ne remonte sur elle que des sites compilateurs sans date ni auteur (IFRAP, Poligraph, Polradar, francebudget.fr, votons-2027.fr, france-vote.fr) dont cette relève ne prend rien. AVERTISSEMENT inchangé depuis le 19 octobre : aucune source n'a pu être ouverte. WebFetch n'a plus de résolution DNS (ENOTFOUND sur tous les hôtes) et curl est refusé au CONNECT par la politique réseau du proxy (403 sur publicsenat.fr, lcp.fr, boursorama.com, france24.com, ofce.fr, institutmontaigne.org, wikipedia comprise) ; le point de diagnostic du proxy confirme 'connect_rejected — gateway answered 403 to CONNECT (policy denial)'. Seule la recherche, qui tourne côté serveur, répond : ce qui suit repose sur des titres et des extraits cités, recoupés sur plusieurs requêtes, pas sur la lecture intégrale des articles ni de la note. 'verifie' est donc à false. AUCUNE BORNE N'EST TOUCHÉE, bien que ce soit le cas de figure qui l'autoriserait : la révision candidate est isf.lo 2 → 1.4 Md€, et elle attend qu'un humain ait lu la note de 48 pages — voir l'ecart de la seconde entrée. Aucune fiche de parti n'est révisée.",
+    "releve": "2026-10-23",
+    "annonces": [
+      {
+        "date": "2026-09-21",
+        "parti": null,
+        "qui": null,
+        "fonction": "Cour des comptes",
+        "media": "Public Sénat",
+        "quoi": "Publication de la note « La fiscalité du patrimoine des ménages : pour une réforme d'équité et d'efficacité », qui propose un nouvel impôt sur la fortune, l'extension de la taxe sur les holdings patrimoniales et une révision du pacte Dutreil, et qui juge que, après les hausses de prélèvements de 2025 et 2026, le redressement doit reposer principalement sur la maîtrise de la dépense.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.publicsenat.fr/actualites/politique/nouvel-impot-sur-la-fortune-taxe-sur-les-holdings-revision-du-pacte-dutreil-les-pistes-de-la-cour-des-comptes-accueillies-froidement-par-la-majorite-senatoriale",
+        "verifie": false,
+        "contredit": "inconnu",
+        "ecart": "C'est la première publication d'un organisme de chiffrage que cette base enregistre sur la fiscalité du patrimoine, et elle arrive à contre-courant de la façon dont les candidats l'utilisent : la Cour propose bien de rétablir de la progressivité au sommet, mais elle en attend un rendement de l'ordre du milliard d'euros, là où les contre-budgets de septembre et d'octobre chiffrent les mêmes assiettes en dizaines de milliards — 15 Md€ pour l'impôt plancher côté PS comme côté LFI, 10 Md€ pour l'ISF climatique, 20 Md€ pour les droits de succession. Aucun de ces écarts n'est arbitré ici : la note n'a pas pu être ouverte depuis cette session, et l'accueil « froid » de la majorité sénatoriale rapporté par Public Sénat indique que ses recommandations ne sont pas acquises. La Cour recommande par ailleurs de baisser le barème des successions de cinq points, soit l'inverse du sens de la mesure 'succ' du catalogue : ce n'est pas un désaccord de chiffrage mais de cadrage, et il se discute hors veille."
+      },
+      {
+        "date": "2026-09-21",
+        "parti": null,
+        "qui": null,
+        "fonction": "Cour des comptes",
+        "media": "Boursorama",
+        "quoi": "Chiffrage des pistes de la note : environ 1,4 Md€ pour une contribution différentielle sur la fortune personnelle, environ 1 Md€ pour l'extension de la taxe sur les holdings patrimoniales, environ 1,3 Md€ pour le resserrement du pacte Dutreil.",
+        "verbatim": null,
+        "mesure": "isf",
+        "montant": 1.4,
+        "type": "recette",
+        "source": "https://www.boursorama.com/epargne/assurance-vie/actualites/fiscalite-du-patrimoine-les-cinq-pistes-de-la-cour-des-comptes-pour-changer-les-regles-8667e69ae446c13f12ed80794ffd9353",
+        "verifie": false,
+        "contredit": "inconnu",
+        "ecart": "RÉVISION DE BORNES EN ATTENTE, VOLONTAIREMENT NON APPLIQUÉE. Les 1,4 Md€ de la contribution différentielle sur la fortune relèvent de la mesure 'isf' du catalogue — Public Sénat titre sur un « nouvel impôt sur la fortune » et l'IFRAP lit la note comme « le retour de l'ISF sans le nommer » — et ils tombent sous la borne basse actuelle de cette mesure (2 Md€). Le format du patch voudrait alors élargir la fourchette sans la remplacer, soit isf.lo 2 → 1.4, les bornes restant ordonnées (1,4 ≤ 4 ≤ 6). Cette relève ne l'applique pas, pour deux raisons tenables : aucune source n'a pu être ouverte, et déplacer une borne change ce que la page calcule pour tous les scénarios qui mobilisent cette mesure ; et l'instrument chiffré par la Cour est précis — taux moyen de 0,5 % au-delà de 3 M€ de patrimoine net, sans plafonnement — là où la mesure du catalogue vise un rétablissement d'ISF au-delà de l'IFI, de sorte que l'identité des deux objets est un jugement de modélisation, pas une mise à jour d'actualité. Une reprise de presse évoque en outre un solde net de l'ordre de 1,8 Md€ pour l'ensemble des seize recommandations, chiffre que cette relève n'a pas pu rattacher à un média daté et signé. À arbitrer après lecture de la note."
+      }
+    ]
+  },
+  "trace": {
+    "releve": "2026-10-23",
+    "applique": "2026-10-23",
+    "ajouts": [
+      {
+        "date": "2026-09-21",
+        "parti": null,
+        "quoi": "Publication de la note « La fiscalité du patrimoine des ménages : pour une réforme d'équité et d'efficacité », qui propose un nouvel impôt sur la fortune, l'extension de la taxe sur les holdings patrimoniales et une révision du pacte Dutreil, et qui juge que, après les hausses de prélèvements de 2025 et 2026, le redressement doit reposer principalement sur la maîtrise de la dépense.",
+        "source": "https://www.publicsenat.fr/actualites/politique/nouvel-impot-sur-la-fortune-taxe-sur-les-holdings-revision-du-pacte-dutreil-les-pistes-de-la-cour-des-comptes-accueillies-froidement-par-la-majorite-senatoriale"
+      },
+      {
+        "date": "2026-09-21",
+        "parti": null,
+        "quoi": "Chiffrage des pistes de la note : environ 1,4 Md€ pour une contribution différentielle sur la fortune personnelle, environ 1 Md€ pour l'extension de la taxe sur les holdings patrimoniales, environ 1,3 Md€ pour le resserrement du pacte Dutreil.",
+        "source": "https://www.boursorama.com/epargne/assurance-vie/actualites/fiscalite-du-patrimoine-les-cinq-pistes-de-la-cour-des-comptes-pour-changer-les-regles-8667e69ae446c13f12ed80794ffd9353"
+      }
+    ],
+    "revisions": []
+  }
+}
