@@ -1,0 +1,127 @@
+{
+  "patch": {
+    "_comment": "Veille du 2026-10-24. La relève des 6-14 octobre (contre-budgets RN et LFI, plan Retailleau, budget alternatif Horizons) était déjà couverte par les relèves précédentes sur la branche veille : ce patch ne porte que sur les éléments qui manquaient encore (vérifiés contre la base au 2026-10-23, pas contre une recherche indépendante du calendrier). Rien de nouveau trouvé depuis le 15/10 pour REN, et rien de chiffré par un parti ou candidat lui-même pour PS et ÉCO.",
+    "releve": "2026-10-24",
+    "annonces": [
+      {
+        "date": "2026-10-06",
+        "parti": "rn",
+        "qui": "Marine Le Pen",
+        "fonction": "Candidate du Rassemblement national à l'élection présidentielle",
+        "media": "Conférence de presse, Paris — présentation du contre-budget RN 2027, dépêche AFP",
+        "quoi": "Annonce la création d'un pilier de capitalisation des retraites, présenté comme devant rapporter 15 à 20 Md€.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.france24.com/fr/info-en-continu/20261006-140-milliards-d-%C3%A9conomies-ce-qu-il-faut-retenir-de-l-intervention-de-marine-le-pen",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Ni l'assiette ni le calendrier de ce pilier de capitalisation ne sont précisés, et la fourchette annoncée (15 à 20 Md€) ne se rattache à aucun instrument du catalogue ; elle s'ajoute aux 140 Md€ d'économies déjà annoncés sans qu'on sache si elle y est déjà comptée."
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "qui": "Éric Coquerel",
+        "fonction": "Député, porte-parole budgétaire de La France insoumise",
+        "media": "Présentation d'un budget « rectificatif » pour 2027 avec Jean-Luc Mélenchon, rapportée par LCP",
+        "quoi": "Chiffre la taxe Zucman, ciblée sur les patrimoines supérieurs à 100 millions d'euros, à 15 Md€ de recettes dans le budget rectificatif.",
+        "verbatim": null,
+        "mesure": "zucman",
+        "montant": 15,
+        "type": "recette",
+        "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Ce simulateur retient par ailleurs 20 Md€ pour cette taxe côté LFI, chiffrage repris du Nouveau Front populaire de 2024 ; le budget rectificatif du 14 octobre l'évalue à 15 Md€, dans la partie haute de la fourchette du catalogue (5 à 20 Md€)."
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Candidat des Républicains à l'élection présidentielle",
+        "media": "Présentation du plan d'économies 2027-2032, rapportée par Public Sénat",
+        "quoi": "Chiffre à 25 Md€ l'économie tirée du non-remplacement de 400 000 fonctionnaires partant à la retraite, volet central des 96 Md€ portés par l'État.",
+        "verbatim": null,
+        "mesure": "effectifs",
+        "montant": 25,
+        "type": "economie",
+        "source": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "L'ordre de grandeur dépasse largement la mesure du catalogue : une réduction de 5 % des effectifs de l'État et de ses opérateurs (3 à 6 Md€) représente environ 125 000 postes, soit un tiers des 400 000 départs non remplacés chiffrés ici à 25 Md€. LR n'a publié aucun programme écrit détaillant la méthode."
+      },
+      {
+        "date": "2026-09-29",
+        "parti": "hor",
+        "qui": "Édouard Philippe",
+        "fonction": "Candidat d'Horizons à l'élection présidentielle",
+        "media": "Vidéo de présentation du projet de réforme des retraites",
+        "quoi": "Présente son projet de réforme des retraites : rétablir d'abord la réforme de 2023 (64 ans, 43 annuités), puis porter l'âge légal à 65 ans et la durée de cotisation à 45 annuités en moins de dix ans, avec un étage de capitalisation collective obligatoire alimenté par les excédents de l'Agirc-Arrco.",
+        "verbatim": null,
+        "mesure": "age65",
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.publicsenat.fr/actualites/politique/retraites-edouard-philippe-sort-du-bois-et-propose-un-age-de-depart-a-65-ans",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le 2 septembre, le candidat avait reporté la présentation détaillée de sa réforme sans fixer d'âge de départ ; il tranche ici pour 65 ans et 45 annuités, sans chiffrage budgétaire associé. Le catalogue retient 5 à 14 Md€ pour le passage à 65 ans, et le candidat reconnaît lui-même que l'étage de capitalisation ne produira pas d'effet avant quinze à vingt ans."
+      },
+      {
+        "date": "2026-10-08",
+        "parti": "hor",
+        "qui": "Édouard Philippe",
+        "fonction": "Candidat d'Horizons à l'élection présidentielle",
+        "media": "Entretien, France 2",
+        "quoi": "Propose de ne pas remplacer un agent public sur trois partant à la retraite, soit environ 250 000 suppressions de postes sur cinq ans selon Euronews.",
+        "verbatim": null,
+        "mesure": "effectifs",
+        "montant": null,
+        "type": "economie",
+        "source": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Seul Euronews chiffre cette mesure à environ 250 000 postes sur cinq ans parmi les comptes rendus consultés ; d'autres articles sur le même entretien emploient « un sur trois » pour décrire une proportion de salariés épargnés par la réforme des retraites plutôt qu'un volume de postes de fonctionnaires, et la formulation exacte reste à confirmer. Aucun montant en Md€ n'est avancé."
+      }
+    ],
+    "partis": {},
+    "mesures": {}
+  },
+  "trace": {
+    "releve": "2026-10-24",
+    "applique": "2026-10-24",
+    "ajouts": [
+      {
+        "date": "2026-10-06",
+        "parti": "rn",
+        "quoi": "Annonce la création d'un pilier de capitalisation des retraites, présenté comme devant rapporter 15 à 20 Md€.",
+        "source": "https://www.france24.com/fr/info-en-continu/20261006-140-milliards-d-%C3%A9conomies-ce-qu-il-faut-retenir-de-l-intervention-de-marine-le-pen"
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "quoi": "Chiffre la taxe Zucman, ciblée sur les patrimoines supérieurs à 100 millions d'euros, à 15 Md€ de recettes dans le budget rectificatif.",
+        "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "quoi": "Chiffre à 25 Md€ l'économie tirée du non-remplacement de 400 000 fonctionnaires partant à la retraite, volet central des 96 Md€ portés par l'État.",
+        "source": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu"
+      },
+      {
+        "date": "2026-09-29",
+        "parti": "hor",
+        "quoi": "Présente son projet de réforme des retraites : rétablir d'abord la réforme de 2023 (64 ans, 43 annuités), puis porter l'âge légal à 65 ans et la durée de cotisation à 45 annuités en moins de dix ans, avec un étage de capitalisation collective obligatoire alimenté par les excédents de l'Agirc-Arrco.",
+        "source": "https://www.publicsenat.fr/actualites/politique/retraites-edouard-philippe-sort-du-bois-et-propose-un-age-de-depart-a-65-ans"
+      },
+      {
+        "date": "2026-10-08",
+        "parti": "hor",
+        "quoi": "Propose de ne pas remplacer un agent public sur trois partant à la retraite, soit environ 250 000 suppressions de postes sur cinq ans selon Euronews.",
+        "source": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ"
+      }
+    ],
+    "revisions": []
+  }
+}
