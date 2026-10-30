@@ -661,7 +661,7 @@ body.adv .simple-only{display:none!important}
 .seg.cot,.repart-leg .c-cot{background:var(--rec)}
 .seg.etat,.repart-leg .c-etat{background:var(--coin)}
 .seg.autre,.repart-leg .c-autre{background:var(--ink-3)}
-.seg.fin{background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--rec) 75%,var(--surface)) 0 8px,color-mix(in srgb,var(--coin) 75%,var(--surface)) 8px 16px)}
+.seg.fin,.repart-leg .c-fin{background:#5B6B82}
 .seg.manque,.repart-leg .c-manque{background:var(--dep)}
 .rc-dit{font-size:14px;font-weight:700;color:var(--ink)}
 .rc-dit.alerte{color:var(--dep)}
@@ -1475,7 +1475,9 @@ footer{padding-bottom:120px}
       <div class="repart-cols" id="repartCols"></div>
       <div class="repart-leg">
         <span><i class="c-cot"></i>Cotisations</span><span><i class="c-etat"></i>État (impôts, budget)</span>
-        <span><i class="c-autre"></i>Autres caisses</span><span><i class="c-manque"></i>Non financé</span>
+        <span><i class="c-autre"></i>Autres caisses</span>
+        <span><i class="c-fin"></i>Financé en 2070 (cotisations et État, partage non projeté)</span>
+        <span><i class="c-manque"></i>Non financé</span>
       </div>
       <div class="repart-plus adv-only">
         <div class="repart-box">
@@ -2812,7 +2814,7 @@ function renderRepartition(){
     col.appendChild(big);
     col.appendChild(el('div', 'rc-pib', `Retraites : ${c.pib} du PIB`));
     const bar = el('div', 'rc-bar');
-    c.bar.forEach(([k, v]) => { const seg = el('span', 'seg ' + k, v >= 10 ? v + ' €' : '');
+    c.bar.forEach(([k, v]) => { const seg = el('span', 'seg ' + k, k === 'fin' ? v + ' € financés' : v >= 10 ? v + ' €' : '');
       seg.style.flexBasis = v + '%'; bar.appendChild(seg); });
     col.appendChild(el('div', 'rc-k', 'Sur 100 € de pension'));
     col.appendChild(bar);
