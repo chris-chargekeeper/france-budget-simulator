@@ -703,12 +703,173 @@
   "sondages": [
     {
       "terrain_fin": "2026-10-22",
-      "note": "Vague 3 ; questionnaire en ligne ; scores entiers, sans décimale.",
-      "institut": "OpinionWay",
+      "terrain_debut": "2026-10-21",
+      "scores": {
+        "rn": 33.5,
+        "lfi": 17,
+        "lr": 7.5,
+        "ren": 4,
+        "hor": 13,
+        "ps": 13,
+        "eco": 3.5,
+        "rec": 4.5
+      },
+      "date": "2026-10-24",
+      "institut": "Ipsos BVA",
+      "echantillon": 1500,
+      "source": {
+        "t": "Notice technique Ipsos bva pour Le Parisien, Commission des sondages (n° 10338)",
+        "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10338-pres-iv-ipsos-bva-le-parisien-24-octobre.pdf"
+      },
+      "commanditaire": "Le Parisien",
+      "hypothese": "Hypothèse Gabriel Attal et Édouard Philippe"
+    },
+    {
+      "terrain_fin": "2026-10-22",
+      "terrain_debut": "2026-10-21",
+      "scores": {
+        "rn": 36,
+        "lfi": 16,
+        "lr": 6,
+        "ren": 4,
+        "hor": 12,
+        "ps": 13,
+        "eco": 1,
+        "ne": 6,
+        "rec": 4
+      },
       "date": "2026-10-22",
+      "institut": "OpinionWay",
       "echantillon": 973,
+      "source": {
+        "t": "OpinionWay pour CNEWS – Intentions de vote à l'élection présidentielle 2027, 22 octobre 2026",
+        "u": "https://www.opinion-way.com/wp-content/uploads/2026/10/OpinionWay-pour-CNEWS-Les-intentions-de-vote-a-lelection-presidentielle-2027-22-octobre-2026.pdf"
+      },
       "commanditaire": "CNEWS",
-      "hypothese": "Le Pen, Mélenchon, Glucksmann, Philippe, Retailleau, Lisnard, Attal, Zemmour, Tondelier (plus Roussel, Dupont-Aignan, Arthaud, Bouamrane)",
+      "hypothese": "Hypothèse unique"
+    },
+    {
+      "terrain_fin": "2026-10-22",
+      "terrain_debut": "2026-10-19",
+      "scores": {
+        "rn": 33,
+        "lfi": 18.5,
+        "lr": 8,
+        "hor": 16,
+        "ps": 13,
+        "eco": 2,
+        "rec": 4
+      },
+      "date": "2026-10-26",
+      "institut": "Cluster17",
+      "echantillon": 2817,
+      "source": {
+        "t": "Notice Cluster17 pour Politico, Commission des sondages (n° 10339)",
+        "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10339-pres-iv-cluster17-politico-26-octobre.pdf"
+      },
+      "commanditaire": "Politico",
+      "hypothese": "Hypothèse 1 – Édouard Philippe"
+    },
+    {
+      "terrain_fin": "2026-10-21",
+      "terrain_debut": "2026-10-19",
+      "scores": {
+        "rn": 35,
+        "lfi": 17,
+        "lr": 6,
+        "ren": 5,
+        "hor": 13,
+        "ps": 12,
+        "eco": 2,
+        "rec": 6
+      },
+      "date": "2026-10-23",
+      "institut": "Toluna Harris Interactive",
+      "echantillon": 2094,
+      "source": {
+        "t": "Rapport Toluna Harris Interactive – Baromètre présidentielle 2027 vague 8 pour M6 et RTL, 23 octobre 2026",
+        "u": "https://tolunacorporate.com/wp-content/uploads/2026/10/Rapport-Toluna-Barometre-Presidentielle-2027-Vague-8-M6-RTL-23-octobre-2026-1.pdf"
+      },
+      "commanditaire": "M6 et RTL",
+      "hypothese": "Hypothèse Gabriel Attal et Édouard Philippe"
+    },
+    {
+      "terrain_fin": "2026-10-19",
+      "terrain_debut": "2026-10-17",
+      "scores": {
+        "rn": 34,
+        "lfi": 15,
+        "lr": 5.5,
+        "ren": 4,
+        "hor": 12,
+        "ps": 12,
+        "eco": 2.5,
+        "ne": 5.5,
+        "rec": 3
+      },
+      "date": "2026-10-20",
+      "institut": "Ifop-Fiducial",
+      "echantillon": 1928,
+      "source": {
+        "t": "Notice Ifop-Fiducial, Baromètre de l'élection présidentielle vague 7, Commission des sondages (n° 10327)",
+        "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10327-pres-barometre-election-v7-ifop-20-octobre.pdf"
+      },
+      "commanditaire": "LCI, Le Figaro et Sud Radio",
+      "hypothese": "Hypothèse F"
+    },
+    {
+      "terrain_fin": "2026-10-16",
+      "terrain_debut": "2026-10-14",
+      "scores": {
+        "rn": 32.5,
+        "lfi": 15.5,
+        "lr": 7.5,
+        "ren": 4.5,
+        "hor": 13.5,
+        "ps": 15.5,
+        "eco": 2.5,
+        "rec": 3.5
+      },
+      "date": "2026-10-17",
+      "institut": "Elabe",
+      "echantillon": 1701,
+      "source": {
+        "t": "Notice technique Elabe, Commission des sondages (n° 10324)",
+        "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10324-pres-iv-elabe-17-octobre.pdf"
+      },
+      "commanditaire": "BFMTV et La Tribune Dimanche",
+      "hypothese": "Q7 – Hypothèse Gabriel Attal et Édouard Philippe"
+    },
+    {
+      "terrain_fin": "2026-10-15",
+      "terrain_debut": "2026-10-12",
+      "scores": {
+        "rn": 35,
+        "lfi": 13,
+        "lr": 5,
+        "ren": 6,
+        "hor": 8,
+        "ps": 12,
+        "eco": 5,
+        "ne": 4,
+        "rec": 4
+      },
+      "date": "2026-10-18",
+      "institut": "YouGov",
+      "echantillon": 1094,
+      "source": {
+        "t": "Notice YouGov pour Le HuffPost, Commission des sondages (n° 10323)",
+        "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10323-pres-iv-yougov-le-huffpost-18-octobre.pdf"
+      },
+      "commanditaire": "Le HuffPost",
+      "hypothese": "Hypothèse 5"
+    }
+  ],
+  "sondages_historique": [
+    {
+      "institut": "OpinionWay",
+      "commanditaire": "CNEWS",
+      "terrain_fin": "2026-10-22",
       "scores": {
         "rn": 36,
         "lfi": 16,
@@ -720,11 +881,7 @@
         "rec": 4,
         "eco": 1
       },
-      "terrain_debut": "2026-10-21",
-      "source": {
-        "t": "OpinionWay pour CNEWS — Les intentions de vote à l'élection présidentielle 2027, 22 octobre 2026",
-        "u": "https://www.opinion-way.com/wp-content/uploads/2026/10/OpinionWay-pour-CNEWS-Les-intentions-de-vote-a-lelection-presidentielle-2027-22-octobre-2026.pdf"
-      }
+      "u": "https://www.opinion-way.com/wp-content/uploads/2026/10/OpinionWay-pour-CNEWS-Les-intentions-de-vote-a-lelection-presidentielle-2027-22-octobre-2026.pdf"
     }
   ]
 }
