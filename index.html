@@ -1620,16 +1620,22 @@ function renderCompare(base){
       : r.statut === 'reconstitution' ? 'reconstitution' : r.sub));
     who.append(av, tx); b.appendChild(who);
 
-    b.appendChild(spark(r.vals, refVals, yLo, yHi, r.ref));
+    // Vert : le déficit baisse d'ici 2032 (ou passe sous 3 %). Bleu : il se creuse, mais moins
+    // que sans rien faire. Rouge : il se creuse autant ou plus que sans rien faire.
+    const refEnd = refVals[refVals.length-1];
+    const tone = r.ref ? 'var(--ink-3)'
+      : (r.solde >= -3 || r.solde > r.vals[0]) ? 'var(--good)'
+      : r.solde > refEnd + 0.05 ? 'var(--pos)' : 'var(--neg)';
+    b.appendChild(spark(r.vals, refVals, yLo, yHi, r.ref, tone));
 
     const bar = el('div','cmp-bar');
     const fill = el('div','fill');
     fill.style.width = (Math.abs(r.solde) / worst * 74) + '%';
-    fill.style.background = r.solde >= -3 ? 'var(--good)' : (r.ref ? 'var(--ink-3)' : 'var(--neg)');
+    fill.style.background = tone;
     const lim = el('div','lim'); lim.style.left = (3 / worst * 74) + '%';
     const lab = el('div','lab', pc(-r.solde));
     lab.style.left = 'calc(' + (Math.abs(r.solde) / worst * 74) + '% + 8px)';
-    lab.style.color = r.solde >= -3 ? 'var(--good)' : 'var(--ink)';
+    lab.style.color = tone === 'var(--good)' ? 'var(--good)' : 'var(--ink)';
     bar.append(fill, lim, lab); b.appendChild(bar);
 
     b.appendChild(el('div','cmp-num', pc(r.dette, 0)));
@@ -1642,6 +1648,8 @@ function renderCompare(base){
   const best = rows.find(r => !r.ref);
   $('#cmpNote').textContent = "Trié du déficit le plus faible au plus élevé en 2032. « Effort » = effet net direct "
     + "des mesures sur le budget. Le trait vertical marque la limite européenne de 3 %. "
+    + "Rouge : le déficit se creuse autant ou plus que si rien ne change. Bleu : il se creuse moins. "
+    + "Vert : il baisse d'ici 2032. "
     + (state.annonce ? "Les montants annoncés par les partis sont retenus quand ils existent."
                      : "Les bornes centrales du catalogue sont retenues ; cochez la case plus haut pour prendre "
                        + "les montants annoncés par les partis.")
@@ -1649,17 +1657,17 @@ function renderCompare(base){
 }
 
 /** Mini-courbe du déficit, échelle commune, avec le tendanciel en repère. */
-function spark(vals, ref, yLo, yHi, isRef){
+function spark(vals, ref, yLo, yHi, isRef, tone){
   const W = 156, H = 38, P = 3;
   const svg = sv('svg', {class:'cmp-spark', viewBox:`0 0 ${W} ${H}`, 'aria-hidden':'true'});
   const x = i => P + i * (W - 2*P) / (vals.length - 1);
   const y = v => P + (yHi - v) / (yHi - yLo) * (H - 2*P);
   const path = a => a.map((v,i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ');
   if (!isRef) svg.appendChild(sv('path', {d:path(ref), fill:'none', stroke:'var(--rule)', 'stroke-width':1.5}));
-  svg.appendChild(sv('path', {d:path(vals), fill:'none', stroke:isRef ? 'var(--ink-3)' : 'var(--s-scen)',
+  svg.appendChild(sv('path', {d:path(vals), fill:'none', stroke:tone || (isRef ? 'var(--ink-3)' : 'var(--s-scen)'),
     'stroke-width':2, 'stroke-linejoin':'round', 'stroke-linecap':'round'}));
   svg.appendChild(sv('circle', {cx:x(vals.length-1), cy:y(vals[vals.length-1]), r:2.6,
-    fill:isRef ? 'var(--ink-3)' : 'var(--s-scen)'}));
+    fill:tone || (isRef ? 'var(--ink-3)' : 'var(--s-scen)')}));
   return svg;
 }
 
