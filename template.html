@@ -789,6 +789,39 @@ body:not(.adv) .charts .chart{max-height:320px}
 .ia-why.prog{background:var(--surface-2);border-color:var(--rule)}
 .ia-why.prog h4{color:var(--ink-2)}
 .ia-ann{color:var(--ink-3);font-size:11.5px}
+/* --- accueil : le choix du candidat d'abord, surtout sur téléphone --- */
+#candidats .modebar{margin-top:14px}
+.poll-note{margin:10px 0 0;font-size:12px;color:var(--ink-3)}
+.foot-theme{margin-bottom:12px}
+.foot-theme .theme-toggle{margin-left:0}
+@media (max-width:620px){
+  body:not(.adv) .hero-stats .hs:not(.live){display:none}
+  body:not(.adv) .hero-stats{grid-template-columns:1fr}
+  .hero .kicker > span:last-child{display:none}
+  .hs.live{padding:10px 14px}
+  .veille-strip .vs-c:nth-of-type(3),.veille-strip .vs-c:nth-of-type(n+5){display:none}
+  .veille-strip{margin-top:-4px;gap:2px 12px}
+  .hero .kicker{display:none}
+  .hs.live .k{font-size:11px}
+  .hs.live .v{font-size:22px}
+  .hs.live .s{font-size:11px}
+  /* le bouton magique attend qu'on commence à jouer : le premier écran est aux candidats */
+  .masque.repos{opacity:0;transform:translateY(130%);pointer-events:none}
+  .masque{transition:opacity .35s,transform .45s cubic-bezier(.3,1.4,.5,1)}
+  #candidats{margin-top:22px}
+  #candidats .sec-head{margin-bottom:10px}
+  #candidats .sec-head h2{font-size:22px}
+  body:not(.adv) .cards{grid-template-columns:1fr 1fr;gap:8px}
+  body:not(.adv) .card{padding:10px 10px 9px}
+  body:not(.adv) .card .avatar{width:38px;height:38px}
+  body:not(.adv) .card-top{gap:8px}
+  body:not(.adv) .card .who{font-size:13.5px}
+  body:not(.adv) .card .party{font-size:11px}
+  body:not(.adv) .card .claim,body:not(.adv) .card .cmp-sub,body:not(.adv) .card .badge{display:none}
+  body:not(.adv) .card .poll{margin-top:7px;padding-top:6px}
+  body:not(.adv) .card .poll-v{font-size:14px}
+  body:not(.adv) .card .poll-k{display:none}
+}
 .card .poll{margin-top:10px;padding-top:9px;border-top:1px dashed var(--rule);display:grid;
   grid-template-columns:auto 1fr;grid-template-areas:"v bar" "k k";gap:2px 10px;align-items:center}
 .poll-v{grid-area:v;font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:17px;color:var(--pc);letter-spacing:-.02em}
@@ -1022,31 +1055,10 @@ footer{padding-bottom:120px}
         <span class="s">+ <b id="debtRate"></b> par seconde · estimation du simulateur</span></div>
     </div>
     <div class="veille-strip" id="veilleStrip" aria-label="Ce que la veille quotidienne a passé au crible"></div>
-    <p class="standfirst">Choisissez un candidat : vous verrez en un coup d'œil ce que son programme
+    <p class="standfirst adv-only">Choisissez un candidat : vous verrez en un coup d'œil ce que son programme
       changerait vraiment d'ici 2032, et l'écart entre ce qu'il promet et ce que ça donne.</p>
-    <div class="modebar">
-      <div class="seg" role="group" aria-label="Niveau de détail">
-        <button type="button" id="mSimple" aria-pressed="true">Vue simple</button>
-        <button type="button" id="mAdv" aria-pressed="false">Mode avancé</button>
-      </div>
-      <span class="simple-only">Le mode avancé ouvre les 41 mesures, leurs fourchettes de chiffrage et les hypothèses économiques.</span>
-      <span class="adv-only">Toutes les mesures et tous les réglages sont ouverts.</span>
-      <button type="button" id="themeToggle" class="theme-toggle">
-        <svg class="ic moon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M20.3 14.6A8.4 8.4 0 0 1 9.4 3.7a8.4 8.4 0 1 0 10.9 10.9z"/>
-        </svg>
-        <svg class="ic sun" viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="12" cy="12" r="4"/>
-          <path d="M12 2.6v2.2M12 19.2v2.2M4.3 4.3l1.6 1.6M18.1 18.1l1.6 1.6M2.6 12h2.2M19.2 12h2.2M4.3 19.7l1.6-1.6M18.1 5.9l1.6-1.6"/>
-        </svg>
-        <span class="moon">Thème sombre</span>
-        <span class="sun">Thème clair</span>
-      </button>
-    </div>
-    <div class="caveat">
-      <div class="simple-only"><b>Les chiffres annoncés par les partis sont affichés tels quels, à côté de ce que
-        produit le calcul.</b> Les deux ne coïncident presque jamais, et c'est l'objet de ce site.</div>
-      <div class="adv-only"><b>Quand un parti annonce un chiffre, ce chiffre est affiché tel quel, à côté de ce que
+    <div class="caveat adv-only">
+      <div><b>Quand un parti annonce un chiffre, ce chiffre est affiché tel quel, à côté de ce que
         produit le modèle.</b> Les mesures sont chiffrées en ordres de grandeur issus de travaux publics (INSEE,
         Cour des comptes, HCFP, OFCE, IPP, rapports parlementaires) ; chaque montant est réglable entre une borne
         basse et une borne haute, parce que le chiffrage lui-même est souvent l'objet du désaccord.
@@ -1102,10 +1114,18 @@ footer{padding-bottom:120px}
   <section id="candidats" aria-labelledby="h-cand">
     <div class="sec-head">
       <div><div class="eyebrow">Étape 1</div><h2 id="h-cand">Choisissez un candidat</h2></div>
-      <p id="candWarn"></p>
+      <p id="candWarn" class="adv-only"></p>
     </div>
     <div class="cards" id="cards"></div>
-    <p class="masque-hint">Par défaut, chaque mesure est chiffrée par des sources indépendantes. Le bouton
+    <p class="poll-note" id="pollNote"></p>
+    <div class="modebar">
+      <div class="seg" role="group" aria-label="Niveau de détail">
+        <button type="button" id="mSimple" aria-pressed="true">Vue simple</button>
+        <button type="button" id="mAdv" aria-pressed="false">Mode détaillé</button>
+      </div>
+      <span class="adv-only">Toutes les mesures, les explications et les réglages sont ouverts.</span>
+    </div>
+    <p class="masque-hint adv-only">Par défaut, chaque mesure est chiffrée par des sources indépendantes. Le bouton
       <b>en bas de l’écran</b> bascule à tout moment vers les chiffres que les partis annoncent eux-mêmes.</p>
     <p class="preset-note" id="presetNote"></p>
   </section>
@@ -1150,9 +1170,9 @@ footer{padding-bottom:120px}
       <p class="sub" id="cmpNote" style="margin-top:12px"></p>
     </div>
     <div class="more-cta simple-only">
-      <div><b>Envie de creuser ?</b> Le mode avancé montre l'écart entre chaque promesse et ce que le budget
+      <div><b>Envie de creuser ?</b> Le mode détaillé montre l'écart entre chaque promesse et ce que le budget
         contient, mesure par mesure, et vous laisse régler toutes les hypothèses vous-même.</div>
-      <button type="button" class="cta" data-go-adv="#ecart">Passer en mode avancé →</button>
+      <button type="button" class="cta" data-go-adv="#ecart">Passer en mode détaillé →</button>
     </div>
   </section>
 
@@ -1312,7 +1332,7 @@ footer{padding-bottom:120px}
 
   <section class="adv-only" aria-labelledby="h-led">
     <div class="sec-head">
-      <div><div class="eyebrow">Mode avancé</div><h2 id="h-led">Les 41 mesures</h2></div>
+      <div><div class="eyebrow">Mode détaillé</div><h2 id="h-led">Les 41 mesures</h2></div>
       <p>Cochez, puis réglez le montant entre la borne basse et la borne haute des chiffrages publiés.
         <button class="btn" id="reset" type="button">Tout décocher</button></p>
     </div>
@@ -1321,7 +1341,7 @@ footer{padding-bottom:120px}
 
   <section class="adv-only" aria-labelledby="h-hyp">
     <div class="sec-head">
-      <div><div class="eyebrow">Mode avancé</div><h2 id="h-hyp">Hypothèses économiques</h2></div>
+      <div><div class="eyebrow">Mode détaillé</div><h2 id="h-hyp">Hypothèses économiques</h2></div>
       <p>Le résultat d'un chiffrage dépend autant de ces curseurs que des mesures elles-mêmes.</p>
     </div>
     <div class="panel"><div class="params" id="params"></div></div>
@@ -1341,6 +1361,17 @@ footer{padding-bottom:120px}
   </section>
 
   <footer>
+    <div class="foot-theme"><button type="button" id="themeToggle" class="theme-toggle">
+        <svg class="ic moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.3 14.6A8.4 8.4 0 0 1 9.4 3.7a8.4 8.4 0 1 0 10.9 10.9z"/>
+        </svg>
+        <svg class="ic sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2.6v2.2M12 19.2v2.2M4.3 4.3l1.6 1.6M18.1 18.1l1.6 1.6M2.6 12h2.2M19.2 12h2.2M4.3 19.7l1.6-1.6M18.1 5.9l1.6-1.6"/>
+        </svg>
+        <span class="moon">Thème sombre</span>
+        <span class="sun">Thème clair</span>
+      </button></div>
     <b class="fbrand">quipaie2027.fr</b> — prototype pédagogique, sans valeur officielle. Les montants sont des ordres de grandeur arrondis, cohérents
     entre eux mais non issus d'un modèle macroéconométrique. Un chiffrage sérieux se fait avec un modèle bouclé
     (type Mésange à la direction générale du Trésor) et une revue contradictoire des hypothèses.
@@ -1365,7 +1396,7 @@ const pollOf = id => {
   return v == null ? null : {v: Array.isArray(v) ? (v[0] + v[v.length-1]) / 2 : v, brut: [].concat(v)};
 };
 /* Ordre des cartes : du mieux placé au moins bien placé dans le dernier sondage ; les candidats
-   non testés ensuite ; le candidat IA ferme la marche. */
+   non testés ensuite ; le candidat IA après les vrais candidats. */
 const PARTIES = ALL_PARTIES.filter(p => !p.retire)
   .sort((a, b) => (!!a.horsCourse - !!b.horsCourse)
     || ((pollOf(b.id) || {v:-1}).v - (pollOf(a.id) || {v:-1}).v));
@@ -1632,7 +1663,7 @@ function render(){
   if (!state.adv && total > CAP){
     const keep = new Set([...items].sort((a,b) => Math.abs(b.v) - Math.abs(a.v)).slice(0, CAP));
     items = items.filter(i => keep.has(i));
-    more.textContent = `+ ${total - CAP} autres mesures, plus petites — passez en mode avancé pour toutes les voir.`;
+    more.textContent = `+ ${total - CAP} autres mesures, plus petites — passez en mode détaillé pour toutes les voir.`;
     more.hidden = false;
   } else { more.hidden = true; }
   const box = $('#impactRows'); box.textContent = '';
@@ -2183,7 +2214,7 @@ function buildCards(){
     b.style.setProperty('--pc', color);
     const top = el('div','card-top');
     const av = el('div','avatar');
-    fillAvatar(av, {nom:who, photo, avatar});
+    fillAvatar(av, id === 'tend' ? {nom:'', ref:true} : {nom:who, photo, avatar});
     const txt = el('div');
     txt.appendChild(el('div','sig', sig));
     txt.appendChild(el('div','who', who));
@@ -2228,13 +2259,16 @@ function buildCards(){
     chip.addEventListener('click', () => b.click());
     chips.appendChild(chip);
   };
-  mk('tend','—',"Tendanciel","Aucune mesure nouvelle après 2026","", null, 'var(--ink-3)', null);
   PARTIES.forEach(p => mk(p.id, p.sigle, p.candidat, p.nom,
     p.horsCourse ? p.annonce.titre
       : p.annonce.revendique != null ? p.annonce.titre : "Programme non chiffré",
     p.horsCourse ? ['ia','hors course · pour jouer']
       : p.statut === 'reconstitution' ? ['rec','reconstitution'] : ['pub','chiffres publics'],
     p.couleur, p.photo, p.avatar, p.horsCourse));
+  /* le point de repère ferme la marche : en mode jeu, les candidats d'abord */
+  mk('tend','—',"Si rien ne change","Le repère : aucune mesure nouvelle après 2026","", null, 'var(--ink-3)', null);
+  if (SONDAGE) $('#pollNote').textContent = `Classés selon le dernier sondage : ${SONDAGE.institut}`
+    + `${SONDAGE.commanditaire ? ' pour ' + SONDAGE.commanditaire : ''}, ${fmtDate(SONDAGE.terrain_fin)}.`;
   $('#candWarn').textContent = DATA.parties.avertissement
     + (SONDAGE ? ` Classés selon le dernier sondage retenu : ${SONDAGE.institut}`
         + `${SONDAGE.commanditaire ? ' pour ' + SONDAGE.commanditaire : ''}, terrain jusqu'au `
@@ -3109,6 +3143,12 @@ function setAnnonce(v, dire){
     clearTimeout(setAnnonce.t); setAnnonce.t = setTimeout(() => t.classList.remove('on'), 4200);
   }
 }
+/* Sur téléphone, le bouton reste rangé tant qu'on est tout en haut, devant les candidats. */
+(() => {
+  const m = $('#masque'), petit = matchMedia('(max-width:620px)');
+  const voir = () => m.classList.toggle('repos', petit.matches && scrollY < 60);
+  addEventListener('scroll', voir, {passive:true}); petit.addEventListener('change', voir); voir();
+})();
 /* Le reflet s'arrête au premier clic, et ne revient pas aux visites suivantes. */
 try { if (localStorage.getItem('fbs-masque-vu')) $('#masque').classList.remove('tease'); } catch (e) {}
 document.querySelectorAll('#masque [data-annonce]').forEach(b => b.addEventListener('click', () => {
