@@ -682,6 +682,13 @@ section{margin-top:56px;scroll-margin-top:76px}
 .hero .caveat b{color:#fff}
 .hero .caveat a{color:#AFC4F5}
 @media (max-width:820px){.hero-stats{grid-template-columns:1fr 1fr}.hs.live{grid-column:1/-1}}
+.veille-strip{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;margin-top:-6px;font-size:12.5px;color:#AFC0E4}
+.veille-strip b{font-family:"IBM Plex Mono",monospace;font-weight:600;color:#fff;font-size:13.5px}
+.vs-tete{display:inline-flex;align-items:center;gap:7px;color:#D6E0F7;font-weight:600}
+.vs-dot{width:7px;height:7px;border-radius:50%;background:#2FCB74;box-shadow:0 0 0 0 rgba(47,203,116,.7);animation:pulseV 2s infinite}
+@keyframes pulseV{70%{box-shadow:0 0 0 7px rgba(47,203,116,0)}100%{box-shadow:0 0 0 0 rgba(47,203,116,0)}}
+@media (prefers-reduced-motion:reduce){.vs-dot{animation:none}}
+@media (max-width:520px){.veille-strip{gap:4px 12px}.vs-tete{flex-basis:100%}}
 
 /* --- le contexte --- */
 .ctx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:12px}
@@ -983,6 +990,7 @@ footer{padding-bottom:90px}
         <span class="v" id="debtLive" aria-live="off"></span>
         <span class="s">+ <b id="debtRate"></b> par seconde · estimation du simulateur</span></div>
     </div>
+    <div class="veille-strip" id="veilleStrip" aria-label="Ce que la veille quotidienne a passé au crible"></div>
     <p class="standfirst">Choisissez un candidat : vous verrez en un coup d'œil ce que son programme
       changerait vraiment d'ici 2032, et l'écart entre ce qu'il promet et ce que ça donne.</p>
     <div class="modebar">
@@ -2967,6 +2975,24 @@ function renderContexte(){
   const tic = () => { out.textContent = fmt.format(dette(new Date())) + ' €'; };
   tic();
   if (!matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(tic, 120);
+})();
+
+/* La veille en chiffres : tout est compté sur les données embarquées, rien n'est saisi à la main. */
+(() => {
+  const host = $('#veilleStrip');
+  const items = DATA.announcements.items;
+  const urls = new Set(document.getElementById('payload').textContent.match(/https?:\/\/[^"\s]+/g) || []);
+  const contra = items.filter(a => a.contredit && a.contredit !== 'non' && a.contredit !== 'inconnu').length;
+  const candidats = PARTIES.filter(p => !p.horsCourse).length;
+  const last = DATA.announcements.updated || DATA.parties.updated;
+  const tete = el('span','vs-tete'); tete.appendChild(el('i','vs-dot'));
+  tete.appendChild(document.createTextNode('Veille chaque matin · ' + (last ? 'dernière le ' + fmtDate(last) : '')));
+  host.appendChild(tete);
+  [[items.length, 'déclarations relevées'], [urls.size, 'sources citées'], [contra, 'contradictions repérées'],
+   [MEASURES.length, 'mesures chiffrées'], [candidats, 'candidats suivis']].forEach(([n, lab]) => {
+    const c = el('span','vs-c'); c.appendChild(el('b', null, String(n))); c.appendChild(document.createTextNode(' ' + lab));
+    host.appendChild(c);
+  });
 })();
 
 /* Les liens « passer en mode avancé » ouvrent le détail à l'endroit annoncé. */
