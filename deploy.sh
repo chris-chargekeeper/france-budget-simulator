@@ -11,15 +11,20 @@ cd "$(dirname "$0")"
 . ./deploy.env
 : "${FTP_HOST:?}" "${FTP_USER:?}" "${FTP_PASS:?}"
 FTP_DIR="${FTP_DIR:-public_html}"
+# Certificat Hostinger *.hstgr.io : voir FTP_TLS_NAME dans deploy.env.example.
+cible="$FTP_HOST"; resolve=()
+if [ -n "${FTP_TLS_NAME:-}" ]; then
+  resolve=(--resolve "${FTP_TLS_NAME}:21:${FTP_HOST}"); cible="$FTP_TLS_NAME"
+fi
 
 echo "== build =="
 python3 build.py
 
 echo "== upload vers ${FTP_HOST}/${FTP_DIR}/ =="
 # --ssl-reqd : refuse d'envoyer le mot de passe si le serveur ne propose pas TLS.
-curl --fail --silent --show-error --ssl-reqd \
+curl --fail --silent --show-error --ssl-reqd ${resolve[@]+"${resolve[@]}"} \
      --user "${FTP_USER}:${FTP_PASS}" \
      --upload-file index.html \
-     "ftp://${FTP_HOST}/${FTP_DIR}/index.html"
+     "ftp://${cible}/${FTP_DIR}/index.html"
 
 echo "== en ligne : https://quipaie2027.fr =="

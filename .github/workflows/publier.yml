@@ -61,15 +61,23 @@ jobs:
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASS: ${{ secrets.FTP_PASS }}
           FTP_DIR: ${{ secrets.FTP_DIR }}
+          FTP_TLS_NAME: ${{ vars.FTP_TLS_NAME }}
         run: |
           : "${FTP_HOST:?secret FTP_HOST manquant}"
           : "${FTP_USER:?secret FTP_USER manquant}"
           : "${FTP_PASS:?secret FTP_PASS manquant}"
+          # Hostinger présente un certificat *.hstgr.io, qui ne couvre ni l'IP ni
+          # ftp.<domaine>. FTP_TLS_NAME (ex. ftp.hstgr.io) fait vérifier le certificat
+          # sous ce nom tout en se connectant à l'IP de FTP_HOST.
+          cible="$FTP_HOST"; resolve=()
+          if [ -n "$FTP_TLS_NAME" ]; then
+            resolve=(--resolve "$FTP_TLS_NAME:21:$FTP_HOST"); cible="$FTP_TLS_NAME"
+          fi
           # --ssl-reqd : on refuse d'envoyer le mot de passe si le serveur ne propose pas TLS.
-          curl --fail --silent --show-error --ssl-reqd \
+          curl --fail --silent --show-error --ssl-reqd "${resolve[@]}" \
                --user "$FTP_USER:$FTP_PASS" \
                --upload-file index.html \
-               "ftp://$FTP_HOST/${FTP_DIR:-public_html}/index.html"
+               "ftp://$cible/${FTP_DIR:-public_html}/index.html"
           echo "En ligne : https://quipaie2027.fr"
 
       # Une page vide ou tronquée répondrait quand même 200 : on vérifie que la page
