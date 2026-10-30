@@ -1,6 +1,6 @@
 # Format de patch
 
-Un patch est un JSON à trois sections, toutes facultatives. Un patch qui ne contient que des
+Un patch est un JSON à cinq sections, toutes facultatives. Un patch qui ne contient que des
 annonces est le cas courant ; toucher aux partis ou aux mesures est plus rare et exige toujours une
 source.
 
@@ -10,7 +10,9 @@ source.
   "releve": "2026-09-03",
   "annonces": [],
   "partis": {},
-  "mesures": {}
+  "nouveaux_partis": [],
+  "mesures": {},
+  "contexte": {}
 }
 ```
 
@@ -117,6 +119,78 @@ actuelle l'élargit, il ne la remplace pas : c'est le désaccord entre chiffrage
 représentent, pas une incertitude statistique.
 
 La source est ajoutée à la liste `sources` de la mesure, avec la date de relève.
+
+---
+
+## `partis` — suivre les candidatures
+
+Le même bloc `partis` tient aussi l'état des candidatures. Toujours avec une `source`.
+
+```json
+"partis": {
+  "ps":  {"statutCandidature": "Investi : vainqueur de la primaire (66 %, 11 octobre 2026)",
+          "source": {"t": "…", "u": "https://…"}},
+  "rn":  {"candidat": "Jordan Bardella", "avatar": "h",
+          "statutCandidature": "Candidat, en remplacement de Marine Le Pen",
+          "source": {"t": "…", "u": "https://…"}},
+  "eco": {"retrait": {"date": "2026-12-13", "motif": "Se retire au profit de Raphaël Glucksmann"},
+          "source": {"t": "…", "u": "https://…"}}
+}
+```
+
+| champ | règle |
+|---|---|
+| `candidat`, `statutCandidature` | texte libre ; le statut dit où en est la candidature, daté. |
+| `avatar` | `h`, `f` ou `null`. |
+| `retrait` | `date` et `motif` obligatoires. Le candidat disparaît de la page ; ses annonces et ses données restent. |
+
+Le scénario d'un parti existant (`set`, `statut`) ne se modifie pas par la veille. Le candidat IA
+(`horsCourse`) non plus : il est maintenu à la main.
+
+---
+
+## `nouveaux_partis` — une candidature qui pèse
+
+Une entrée par candidat nouveau, au moins environ 3 % dans un sondage récent nommé, ou une
+couverture nationale soutenue.
+
+```json
+"nouveaux_partis": [{
+  "id": "ne", "nom": "Nouvelle Énergie", "sigle": "NE", "candidat": "David Lisnard",
+  "avatar": "h", "couleur": "#0E7C86",
+  "statutCandidature": "Candidat déclaré (31 mars 2026) ; 6,5 % chez Ipsos (21-22 octobre 2026)",
+  "statut": "partiel",
+  "annonce": {"titre": "200 Md€ d'économies d'ici 2032", "texte": "…", "revendique": 200, "detaille": 2.5, "cote": "economie"},
+  "set": {"effectifs": {"sim": "hi"}, "immigration": {"sim": "lo", "annonce": 2.5}},
+  "source": {"t": "…", "u": "https://…"}
+}]
+```
+
+`id` : minuscules, 2 à 12 caractères, inédit. `couleur` : `#RRGGBB`, distincte des autres.
+`statut` : `publie`, `partiel` ou `reconstitution`. `set` : uniquement des mesures du catalogue, avec
+`sim` parmi `lo`, `mid`, `hi`. Sans chiffrage publié, `statut: "reconstitution"`, un `set` bâti sur
+ses positions publiques constantes, et un `texte` qui le dit.
+
+---
+
+## `contexte` — les indicateurs macroéconomiques
+
+```json
+"contexte": {
+  "oat10": {"valeur": 4.93, "date": "2026-10-30",
+            "detail": "Plus haut à 5,14 % le 22 octobre.",
+            "source": {"t": "…", "u": "https://…"}}
+}
+```
+
+Modifiables : `valeur`, `date`, `note`, `detail`, `source`. L'ancienne valeur part dans `historique`.
+Une valeur plus ancienne que celle en base est refusée ; une valeur hors des `bornes` aussi.
+Un indicateur nouveau exige en plus `lab`, `unite` et `groupe` (`marches`, `notation`,
+`previsions`, `finances`).
+
+`hypothese` et `bornes` ne passent jamais par un patch. Trois indicateurs portent une hypothèse :
+`oat10` → taux de marché, `pib27` → croissance, `infl27` → inflation. Les changer déplace les
+projections de tous les candidats : seulement sur une valeur publiée et datée.
 
 ---
 

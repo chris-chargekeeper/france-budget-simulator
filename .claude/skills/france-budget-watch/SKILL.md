@@ -1,6 +1,6 @@
 ---
 name: france-budget-watch
-description: Met à jour la base d'annonces du simulateur budgétaire — recherche les déclarations chiffrées et les chiffrages nouvellement publiés par les candidats et partis pour 2027, rédige un patch JSON, le fait valider, l'applique et reconstruit la page. À utiliser pour la veille quotidienne du projet france-budget-simulator, ou quand on demande d'actualiser les annonces, les chiffrages ou les programmes.
+description: Met à jour la base du simulateur budgétaire — candidatures à la présidentielle 2027 (déclarations, retraits, primaires, nouveaux entrants), déclarations chiffrées, chiffrages indépendants et contexte macroéconomique (taux, notation, prévisions) — rédige un patch JSON, le fait valider, l'applique et reconstruit la page. À utiliser pour la veille quotidienne du projet france-budget-simulator, ou quand on demande d'actualiser les annonces, les chiffrages ou les programmes.
 ---
 
 # Veille des annonces budgétaires
@@ -17,7 +17,8 @@ mal formé et archivé s'il est appliqué.
 python3 .claude/skills/france-budget-watch/scripts/watch.py etat
 ```
 
-Affiche, par parti, la date de la dernière annonce relevée et son statut. Les partis marqués
+Affiche les candidatures suivies, l'âge de chaque indicateur de contexte, puis, par parti, la
+date de la dernière annonce relevée et son statut. Les partis marqués
 `RECONSTITUTION` n'ont publié aucun chiffrage : ce sont eux qu'il faut surveiller en priorité,
 puisque leur scénario est aujourd'hui un assemblage de ce simulateur et non un programme.
 
@@ -25,14 +26,35 @@ puisque leur scénario est aujourd'hui un assemblage de ce simulateur et non un 
 
 Ne cherchez que ce que l'étape 1 désigne, et **depuis les dates qu'elle affiche** — pas plus loin.
 
-Trois familles, par ordre d'autorité :
+**Chaque jour, d'abord, la liste des candidats.** Les candidatures apparaissent et disparaissent :
+déclaration, désignation par une primaire, retrait, ralliement, inéligibilité. Vérifiez pour chaque
+candidat suivi que son statut est toujours exact, et cherchez les **nouvelles candidatures qui
+pèsent** — au moins environ 3 % dans un sondage récent nommé (institut, date), ou une couverture
+nationale soutenue. Un candidat nouveau entre par `nouveaux_partis`, avec un scénario reconstitué à
+partir de ses positions publiques et du catalogue existant (`statut: "reconstitution"`) ; un
+candidat qui renonce sort par `retrait` — il est masqué de la page, jamais effacé. Le candidat IA
+(`horsCourse`) n'est pas un candidat : la veille n'y touche pas.
+
+**Chaque jour aussi, le contexte.** Rafraîchissez les indicateurs de `contexte.json` dont une
+valeur plus récente a été publiée : taux de l'OAT à 10 ans et écart avec le Bund (Agence France
+Trésor, Banque de France, presse financière datée), taux de dépôt de la BCE, notes de S&P,
+Moody's et Fitch (communiqués des agences), prévisions de croissance et d'inflation (FMI, Banque de
+France, Commission européenne, INSEE), déficit et dette (INSEE, PLF, avis du Haut Conseil des
+finances publiques). Trois indicateurs portent une `hypothese` : leur nouvelle valeur déplace les
+projections de **tous** les candidats. Ne les changez que sur une valeur publiée et datée,
+jamais sur une moyenne que vous auriez calculée.
+
+Puis trois familles, par ordre d'autorité :
 
 1. **Les programmes officiels** déposés au ministère de l'Intérieur après validation des
    candidatures. Ils écrasent toute reprise de presse : dès qu'ils paraissent, les scénarios
    `reconstitution` sont à rebâtir à partir des textes, et il faut le signaler plutôt que de bricoler
    un patch.
-2. **Les chiffrages publiés** — OFCE, Institut Montaigne, Cour des comptes, IPP, rapports
-   parlementaires. Ils font bouger les bornes `lo` / `mid` / `hi` d'une mesure.
+2. **Les chiffrages publiés par des économistes non partisans** — Cour des comptes, Haut Conseil
+   des finances publiques, OFCE, IPP, Conseil d'analyse économique, Fipeco, Banque de France,
+   FMI, Commission européenne, rapports parlementaires ; Institut Montaigne et Rexecode aussi,
+   en sachant leur sensibilité. Ils font bouger les bornes `lo` / `mid` / `hi` d'une mesure. Un
+   think tank de parti, ou le chiffrage d'un parti par lui-même, n'en font pas partie.
 3. **Les déclarations chiffrées** en meeting, en plateau, dans la presse. Elles alimentent le journal
    des annonces.
 
@@ -116,13 +138,13 @@ git push origin veille
 
 Si le `merge --ff-only` échoue, la branche a divergé : dites-le et arrêtez-vous, ne forcez rien.
 
-**Le skill ne publie jamais.** La mise en ligne est faite par la CI
-(`.github/workflows/publier.yml`), quand `master` bouge. Une relève poussée sur `veille` est donc
-préparée et vérifiée, mais pas en ligne : c'est la fusion dans `master` qui publie, et c'est une
-décision humaine — arbitrée le 3 septembre 2026, précisément pour qu'une source mal lue ne devienne
-pas une affirmation publique avant que quiconque l'ait relue.
+**Le skill ne publie pas lui-même, mais pousser, c'est publier.** Depuis le 30 octobre 2026, la
+CI (`.github/workflows/publier.yml`) met en ligne sur quipaie2027.fr chaque relève poussée sur
+`veille`, dès qu'elle passe les contrôles, puis avance `master`. Personne ne relit avant la mise en
+ligne : le seul filet, c'est `valider`, `controler`, et votre rigueur sur les sources. Dans le doute
+sur une source, `"verifie": false` ou rien.
 
-Ne lancez pas `deploy.sh`, ne fusionnez pas dans `master`, n'ouvrez pas de pull request sans qu'on
+Ne lancez pas `deploy.sh`, ne poussez pas sur `master`, n'ouvrez pas de pull request sans qu'on
 vous l'ait demandé.
 
 ### 8. Rendre compte
@@ -155,17 +177,14 @@ c'est une modification de fond : elle se fait à la main, hors veille, et elle s
 ```
   veille quotidienne (ce skill)          CI (.github/workflows/publier.yml)
   ────────────────────────────           ──────────────────────────────────
-  chercher → patch → valider             sur push vers master :
+  chercher → patch → valider             sur push vers veille :
   → appliquer → build → contrôler          rebuild, refus si la page est périmée,
-  → commit + push sur `veille`             contrôle, puis envoi FTP sur TLS
-                                           vers quipaie2027.fr
-                    └──── fusion dans master, à la main ────┘
+  → commit + push sur `veille`  ───────►   contrôle, envoi FTP sur TLS,
+                                           vérification de la page servie,
+                                           puis master ← veille
 ```
 
-La coupure est volontaire : un agent qui tourne seul tous les jours prépare et vérifie, mais ce qui
-part en ligne sur un site public passe par une décision humaine. Pour publier automatiquement à
-chaque relève, il suffirait de faire pousser la veille sur `master` — c'est un choix à assumer, pas
-un réglage à changer en passant.
+La publication est automatique depuis le 30 octobre 2026, à la demande du propriétaire du site.
 
 ## Planification
 
