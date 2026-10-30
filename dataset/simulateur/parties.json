@@ -94,10 +94,10 @@
       "statutCandidature": "Candidat déclaré (3 mai 2026)",
       "statut": "partiel",
       "annonce": {
-        "titre": "≈ 90 Md€ de recettes nouvelles",
-        "texte": "Les chiffrages du programme de gauche retiennent environ 90 Md€ de recettes fiscales supplémentaires par an (fourchette de 60 à 120 Md€), portées par les 10 % de ménages les plus aisés et par les grandes entreprises : ISF climatique 12 Md€, contribution sur les superprofits 15 Md€, taxe sur les transactions financières 20 Md€, plus la lutte contre l'évasion fiscale, chiffrée à partir d'un écart estimé à 80 Md€ par an. Côté dépenses, la retraite à 60 ans et le plan d'investissement écologique sont les deux postes dominants.",
-        "revendique": 90,
-        "detaille": 90,
+        "titre": "106,4 Md€ de recettes nouvelles en 2027",
+        "texte": "Le budget « rectificatif » pour 2027 présenté le 14 octobre 2026 par Jean-Luc Mélenchon et Éric Coquerel prévoit 106,4 Md€ de recettes supplémentaires et 81,7 Md€ de dépenses nouvelles, l'écart d'environ 25 Md€ allant à la réduction de la dette. Recettes chiffrées poste par poste : niches fiscales 22 Md€, droits de succession 20 Md€, taxe Zucman 15 Md€, ISF climatique 10 Md€, fin de la flat tax 9 Md€, taxe sur les transactions financières 5 Md€, IS progressif 3 Md€. Le programme présidentiel complet est annoncé pour novembre 2026 et son chiffrage pour le début de 2027.",
+        "revendique": 106.4,
+        "detaille": 84,
         "cote": "recette"
       },
       "set": {
@@ -183,6 +183,10 @@
         {
           "t": "Jean-Luc Mélenchon officialise sa candidature à la présidentielle 2027 — RTL, 3 mai 2026",
           "u": "https://www.rtl.fr/actu/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-a-un-an-du-scrutin-7900630247"
+        },
+        {
+          "t": "Contre-budget : LFI propose 106,4 milliards d'euros de recettes supplémentaires et 81,7 milliards de dépenses nouvelles — LCP, 14 octobre 2026",
+          "u": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
         }
       ]
     },
@@ -196,11 +200,11 @@
       "statutCandidature": "Investi par les militants LR (19 avril 2026) ; ouvert à une primaire si Édouard Philippe y participe",
       "statut": "reconstitution",
       "annonce": {
-        "titre": "197 Md€ d'économies annoncés, sans ventilation par poste",
-        "texte": "Bruno Retailleau a annoncé le 12 octobre 2026 un plan de près de 197 Md€ d'économies d'ici 2032 — premier chiffrage d'ensemble du parti — dont 146 Md€ affectés au déficit et à la dette et 51 Md€ rendus en baisses d'impôts, pour un déficit sous 3 % du PIB en 2031 et sans hausse d'impôts. La ventilation publiée s'arrête aux grandes sphères de dépense : 96 Md€ pour l'État, 91 Md€ pour le social, 10 Md€ pour les collectivités. Faute de montants poste par poste, le scénario ci-dessous reste une reconstitution du simulateur, et les montants sont ceux du catalogue, pas ceux du parti.",
-        "revendique": null,
-        "detaille": null,
-        "cote": null
+        "titre": "197 Md€ d'économies par an en 2032, chiffrées poste par poste",
+        "texte": "Le 12 octobre 2026, Bruno Retailleau a publié des fiches presse qui chiffrent son plan poste par poste : 197 Md€ d'économies par an atteintes en 2032 (12 Md€ dès 2027), dont 146 Md€ affectés au déficit et 51 Md€ rendus en baisses de prélèvements (30 Md€ aux entreprises, 21 Md€ aux ménages). Le déficit passerait sous 3 % en 2031, à 2,2 % en 2032, sans impôt nouveau. La ventilation : 96 Md€ pour l'État (dont 25 Md€ de 400 000 départs non remplacés et 7,5 Md€ d'agences supprimées), 91 Md€ pour le social (dont 42 Md€ sur les retraites et 30 Md€ sur le chômage et les aides, restitués en baisses de cotisations) et 10 Md€ pour les collectivités. Le scénario ci-dessous reste une reconstitution du simulateur : il n'a pas encore été réaligné sur ces montants, souvent bien au-dessus des bornes du catalogue.",
+        "revendique": 197,
+        "detaille": 197,
+        "cote": "economie"
       },
       "set": {
         "effectifs": {
@@ -245,6 +249,10 @@
         {
           "t": "Bruno Retailleau estime qu'une primaire « ne sert à rien » si Édouard Philippe n'y participe pas — BFMTV, 28 octobre 2026",
           "u": "https://www.bfmtv.com/politique/les-republicains/presidentielle-2027-favorable-a-une-primaire-bruno-retailleau-estime-qu-elle-ne-sert-a-rien-si-edouard-philippe-n-y-participe-pas_AN-202610280400.html"
+        },
+        {
+          "t": "Les Républicains — Fiches presse « Rétablir l'ordre dans les comptes publics », 12 octobre 2026",
+          "u": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
         }
       ]
     },
@@ -258,11 +266,11 @@
       "statutCandidature": "Candidat déclaré (22 mai 2026) ; appelle à « une grande primaire des démocrates »",
       "statut": "reconstitution",
       "annonce": {
-        "titre": "Pas de chiffrage 2027 publié",
-        "texte": "Reconstitution du simulateur à partir de positions publiques : maîtrise de la dépense sans hausse générale des prélèvements, poursuite de la baisse des impôts de production, effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.",
-        "revendique": null,
-        "detaille": null,
-        "cote": null
+        "titre": "150 Md€ d'économies sur le quinquennat",
+        "texte": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis 150 Md€ d'économies sur le quinquennat, dont deux tiers sur les dépenses sociales ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. Seuls deux postes sont chiffrés : 7 Md€ par an de réorganisation de l'État et des collectivités, 5 Md€ sur l'assurance chômage.",
+        "revendique": 150,
+        "detaille": 12,
+        "cote": "economie"
       },
       "set": {
         "blanche": {
@@ -294,6 +302,10 @@
         {
           "t": "« Une grande primaire des démocrates » : l'appel de Gabriel Attal dans le 20H de TF1 — TF1 Info, 28 octobre 2026",
           "u": "https://www.tf1info.fr/politique/elections/presidentielle/video-une-grande-primaire-des-democrates-l-appel-de-gabriel-attal-dans-le-20h-de-tf1-2472572.html"
+        },
+        {
+          "t": "Lettre de Gabriel Attal aux Français sur les finances publiques — Renaissance, 15 octobre 2026",
+          "u": "https://doc.parti.re/2026/Lettre-finances-publiques.pdf"
         }
       ]
     },

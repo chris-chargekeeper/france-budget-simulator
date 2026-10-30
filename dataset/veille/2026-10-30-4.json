@@ -1,0 +1,1857 @@
+{
+  "patch": {
+    "_comment": "Recherche rétroactive 1er sept.-30 oct. 2026, neuf candidats",
+    "releve": "2026-10-30",
+    "annonces": [
+      {
+        "date": "2026-10-05",
+        "parti": "eco",
+        "qui": "Eva Sas",
+        "fonction": "Députée, groupe Écologiste et Social (première signataire ; amendement cosigné par les 38 membres du groupe, dont sa présidente Cyrielle Chatelain)",
+        "media": "Assemblée nationale — PLF 2027, amendement n° I-38 (séance publique)",
+        "quoi": "Le groupe écologiste dépose un impôt plancher de 2 % sur les patrimoines de plus de 100 M€ (taxe Zucman), dont il chiffre le rendement à 15 à 25 Md€ en citant Gabriel Zucman (montant retenu : le bas de la fourchette). Rejeté le 16 octobre 2026, scrutin n° 8861 : 35 pour, 70 contre ; seuls 8 des 38 députés écologistes ont pris part au vote.",
+        "verbatim": "Selon l’économiste Gabriel Zucman, une telle contribution pourrait générer entre 15 et 25 milliards de recettes supplémentaires.",
+        "mesure": "zucman",
+        "montant": 15,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/38",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Les Écologistes n'ont publié aucun chiffrage global : le simulateur reconstitue leur scénario sans la mesure « zucman » (l'impôt plancher y est porté par l'ISF climatique, « isfclim »). Le groupe revendique 15 à 25 Md€, au-dessus du point médian du catalogue (8 Md€) et jusqu'au-delà de sa borne haute (20 Md€)."
+      },
+      {
+        "date": "2026-10-05",
+        "parti": "eco",
+        "qui": "Eva Sas",
+        "fonction": "Députée, groupe Écologiste et Social (première signataire ; amendement cosigné par le groupe, dont sa présidente Cyrielle Chatelain)",
+        "media": "Assemblée nationale — PLF 2027, amendement n° I-39 (séance publique)",
+        "quoi": "Contribution temporaire de 33 % sur le chiffre d'affaires additionnel réalisé en France en 2026 et 2027 (par rapport à 2025) par les entreprises pétro-gazières, chiffrée par le groupe à 2,8 Md€ et affectée à un plan d'urgence pour les ménages face à la hausse des prix de l'énergie. Amendement de repli, rejeté le 28 octobre 2026.",
+        "verbatim": "Les recettes de cette contribution, estimées à 2,8 milliards d’euros, doivent être mises au service d’un plan d’urgence pour accompagner les ménages face à la hausse des prix de l’énergie",
+        "mesure": "superp",
+        "montant": 2.8,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/39",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Pas de chiffrage global publié par le parti. Le scénario reconstitué retient « superp » au point médian du catalogue (4 Md€) ; le groupe chiffre lui-même sa version, limitée au pétrole et au gaz et à deux exercices, à 2,8 Md€, et en affecte le produit à des dépenses nouvelles (aides aux ménages) plutôt qu'au déficit."
+      },
+      {
+        "date": "2026-10-05",
+        "parti": "eco",
+        "qui": "Eva Sas",
+        "fonction": "Députée, groupe Écologiste et Social (première signataire ; amendement cosigné par le groupe, dont sa présidente Cyrielle Chatelain)",
+        "media": "Assemblée nationale — PLF 2027, amendement n° I-54 (séance publique)",
+        "quoi": "ISF climatique pour les patrimoines nets de plus de 1,3 M€ : socle de 0,5 %, composante « chapeau » de 1 % à 3 % à partir de 10 M€, plancher de 2 % au-delà de 100 M€ (taxe Zucman), bonus-malus climatique sur l'immobilier et majoration de 1,5 de la valeur des yachts et jets privés. Aucun rendement chiffré dans l'exposé ; rejeté le 16 octobre 2026.",
+        "verbatim": null,
+        "mesure": "isfclim",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/54",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Cohérent avec la reconstitution (« isfclim » au point médian, 10 Md€), mais le groupe ne chiffre pas le rendement de son ISF climatique : la seule donnée de l'exposé est la perte de 4,5 Md€ par an attribuée à la suppression de l'ISF par France Stratégie."
+      },
+      {
+        "date": "2026-10-05",
+        "parti": "eco",
+        "qui": "Eva Sas",
+        "fonction": "Députée, groupe Écologiste et Social (première signataire ; amendement cosigné par le groupe, dont sa présidente Cyrielle Chatelain)",
+        "media": "Assemblée nationale — PLF 2027, amendement n° I-53 (séance publique)",
+        "quoi": "Fin de la « purge » des plus-values latentes lors des successions et donations pour les parts nettes de plus de 1,3 M€ (imposition constatée à la transmission, payée à la revente), rendement chiffré par le groupe à près de 4 Md€ par an en régime de croisière. Rejeté le 16 octobre 2026.",
+        "verbatim": "le rendement de cette mesure peut être estimé, à terme, à près de 4 milliards d’euros par an",
+        "mesure": null,
+        "montant": 4,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/53",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Mesure absente du catalogue (la plus proche, « succ », porte sur les droits de succession eux-mêmes) et du scénario reconstitué ; le groupe précise que les 4 Md€ sont un rendement « à terme », pas une recette de la première année."
+      },
+      {
+        "date": "2026-10-10",
+        "parti": "eco",
+        "qui": "Christine Arrighi",
+        "fonction": "Députée, groupe Écologiste et Social (première signataire ; amendement cosigné par le groupe, dont sa présidente Cyrielle Chatelain)",
+        "media": "Assemblée nationale — PLF 2027, amendement n° I-3701 (séance publique)",
+        "quoi": "Affecter 1,5 Md€ supplémentaires par an à l'Agence de financement des infrastructures de transport de France pour la régénération du réseau ferroviaire, par réaffectation de taxes existantes (taxe sur les infrastructures de transport longue distance, solidarité sur les billets d'avion) aujourd'hui reversées au budget général. Non encore examiné au 30 octobre.",
+        "verbatim": "Cet amendement affecte 1,5 milliard d’euros supplémentaires à l’Agence de financement des infrastructures de transport de France, afin de financer la régénération et la modernisation du réseau ferroviaire.",
+        "mesure": "ecolo",
+        "montant": 1.5,
+        "type": "depense",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/3701",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Va dans le sens du plan d'investissement écologique que la reconstitution place en borne haute (30 Md€), mais ne porte que sur 1,5 Md€ et sans impôt nouveau : la dépense est gagée sur des recettes qui alimentent aujourd'hui le budget général, donc elle creuse le solde d'autant."
+      },
+      {
+        "date": "2026-10-10",
+        "parti": "eco",
+        "qui": "Marie-Charlotte Garin",
+        "fonction": "Députée, groupe Écologiste et Social (première signataire ; amendement cosigné par le groupe, dont sa présidente Cyrielle Chatelain)",
+        "media": "Assemblée nationale — PLF 2027, amendement n° I-3859 rectifié (séance publique)",
+        "quoi": "Création d'un fonds de 800 M€ pour les départements afin d'accompagner jusqu'à 21 ans les jeunes majeurs sortant de l'aide sociale à l'enfance. Amendement adopté le 27 octobre 2026.",
+        "verbatim": "cet amendement a pour objet de créer un fonds dédié de 800 millions d’euros",
+        "mesure": null,
+        "montant": 0.8,
+        "type": "depense",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/3859",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Dépense absente du scénario reconstitué et du catalogue ; adoptée en séance, elle pèse sur le solde du PLF 2027 sans recette affectée dans l'exposé."
+      },
+      {
+        "date": "2026-10-09",
+        "parti": "eco",
+        "qui": "Lisa Belluco",
+        "fonction": "Députée, groupe Écologiste et Social (première signataire ; amendement cosigné par le groupe, dont sa présidente Cyrielle Chatelain)",
+        "media": "Assemblée nationale — PLF 2027, amendement n° I-2111 (séance publique)",
+        "quoi": "Abaisser à 1 400 kg, à partir de 2028, le seuil du malus poids et l'étendre aux véhicules électriques mal notés, pour 1 Md€ de recettes supplémentaires selon une modélisation du WWF citée par le groupe. Non encore examiné au 30 octobre.",
+        "verbatim": "permettraient de rapporter 1 milliard d’euros supplémentaires",
+        "mesure": null,
+        "montant": 1,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/2111",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Mesure absente du catalogue et du scénario reconstitué ; le chiffre n'est pas celui du groupe mais celui d'une modélisation du WWF et de l'Institut des mobilités en transition, et il ne vaut qu'à partir de 2028."
+      },
+      {
+        "date": "2026-09-17",
+        "parti": "hor",
+        "qui": "Édouard Philippe",
+        "fonction": "Candidat d'Horizons à l'élection présidentielle",
+        "media": "Discours aux Ponts-de-Cé (Maine-et-Loire), compte rendu franceinfo",
+        "quoi": "Propose un « fonds unique d'adaptation au changement climatique » doté de 2 Md€ par an, dans le cadre d'une « politique de sécurité climatique ».",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 2,
+        "type": "depense",
+        "source": "https://www.franceinfo.fr/elections/presidentielle/edouard-philippe-souhaite-doter-la-france-d-une-veritable-politique-de-securite-climatique_8197976.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucun financement n'est indiqué. Selon les reprises de l'AFP, le fonds réunirait le Fonds Barnier et le Fonds vert existants : le surcoût net est donc inférieur aux 2 Md€ affichés, mais il n'est pas chiffré. Aucune mesure du catalogue ne correspond exactement à un fonds d'adaptation."
+      },
+      {
+        "date": "2026-09-24",
+        "parti": "hor",
+        "qui": "Édouard Philippe",
+        "fonction": "Candidat d'Horizons à l'élection présidentielle",
+        "media": "Face à Fogiel, RTL",
+        "quoi": "Demande que les 450 M€ de nouvelles aides ciblées sur les carburants soient financés « par des économies » ; selon Acteurs publics, il propose pour cela de recruter 7 000 fonctionnaires de moins l'année suivante, par non-remplacement de départs à la retraite (123 000 recrutements au lieu de 130 000).",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 0.45,
+        "type": "depense",
+        "source": "https://www.rtl.fr/programmes/face-a-fogiel/7900676407-edouard-philippe-candidat-horizons-a-la-presidentielle-appelle-a-financer-450-millions-d-euros-d-aides-ciblees-sur-les-carburants-par-des-economies",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le montant de 450 M€ figure sur la page de l'émission, mais il s'agit du coût des mesures du gouvernement (chiffre du ministre David Amiel), que le candidat propose de financer. La piste des 7 000 postes n'a été lue que dans Acteurs publics (25 septembre 2026), pas sur la page RTL ; elle n'est pas chiffrée en euros. Le 16 septembre, sur X, il demandait le « doublement immédiat des aides ciblées », sans montant."
+      },
+      {
+        "date": "2026-10-08",
+        "parti": "hor",
+        "qui": "Édouard Philippe",
+        "fonction": "Candidat d'Horizons à l'élection présidentielle",
+        "media": "L'Heure de vérité, France 2",
+        "quoi": "Propose de refondre les allocations familiales en une allocation familiale unique de 350 € par mois versée dès le premier enfant, familles monoparentales comprises.",
+        "verbatim": "une allocation familiale unique qui permet de verser 350 euros dès le premier enfant",
+        "mesure": null,
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.franceinfo.fr/elections/presidentielle/edouard-philippe-veut-aider-les-familles-des-le-premier-enfant-et-via-une-reduction-d-impot_8229028.html",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Ni coût ni financement ne sont annoncés. Étendre une prestation au premier enfant, qui n'ouvre pas droit aux allocations familiales aujourd'hui, est une dépense nouvelle, alors que le même soir le candidat dit vouloir faire porter 50 % de l'effort budgétaire sur les dépenses sociales. La dégressivité selon l'impôt sur le revenu, évoquée par d'autres comptes rendus, en réduirait le coût sans qu'on puisse le chiffrer."
+      },
+      {
+        "date": "2026-10-08",
+        "parti": "hor",
+        "qui": "Édouard Philippe",
+        "fonction": "Candidat d'Horizons à l'élection présidentielle",
+        "media": "L'Heure de vérité, France 2",
+        "quoi": "Propose une réduction d'impôt sur le revenu d'environ 3 000 € pour les familles qui travaillent et ont des enfants, pendant les trois années suivant une naissance.",
+        "verbatim": "une réduction d'impôt d'environ 3 000 euros",
+        "mesure": "irbaisse",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.franceinfo.fr/elections/presidentielle/edouard-philippe-veut-aider-les-familles-des-le-premier-enfant-et-via-une-reduction-d-impot_8229028.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucun coût annoncé, et la source ne dit pas si les 3 000 € s'entendent par enfant ou au total. Baisse d'impôt ciblée sur les naissances, plus étroite que la baisse générale de l'impôt sur le revenu du catalogue (3 à 10 Md€), à laquelle elle n'est rattachée que faute de mesure plus proche."
+      },
+      {
+        "date": "2026-10-08",
+        "parti": "hor",
+        "qui": "Édouard Philippe",
+        "fonction": "Candidat d'Horizons à l'élection présidentielle",
+        "media": "L'Heure de vérité, France 2",
+        "quoi": "Fixe la répartition de son effort budgétaire : la moitié sur les dépenses sociales ; ne remplacer, sur le quinquennat, que deux des 750 000 départs à la retraite de fonctionnaires sur trois ; réduire l'indemnisation du chômage de 18 à 12 mois ; exonérer de cotisations deux heures supplémentaires par semaine, soit environ 1 000 € de plus par an au niveau du SMIC.",
+        "verbatim": "consacrer 50% de l'effort sur la plus grande masse de la dépense publique",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.franceinfo.fr/politique/edouard-philippe/immigration-retraites-allocations-familiales-parcoursup-ce-qu-il-faut-retenir-de-l-interview-d-edouard-philippe-dans-l-emission-l-heure-de-verite_8228416.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucun montant global d'effort n'est donné : la clé de répartition (50 % sur le social) porte sur un total que le candidat ne chiffre pas. Les 750 000 départs dont un sur trois non remplacé font environ 250 000 postes en moins sur cinq ans, ce qui confirme sur la source originale le chiffre jusqu'ici tiré d'Euronews. L'exonération des heures supplémentaires est une perte de recettes non chiffrée, qui s'ajoute à l'allocation à 350 € et à la réduction d'impôt annoncées le même soir."
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "hor",
+        "qui": "Félicie Gérard",
+        "fonction": "Députée, oratrice du groupe Horizons & indépendants dans la discussion générale du PLF 2027",
+        "media": "Assemblée nationale, discussion générale du projet de loi de finances pour 2027",
+        "quoi": "Le groupe Horizons confirme dans l'hémicycle son « budget alternatif » : supprimer près de 10 Md€ de hausses d'impôts du PLF 2027 et les compenser par près de 10 Md€ d'économies, moitié État, moitié comptes sociaux, avec 5 % de déficit maximum en 2027 comme ligne rouge. Déclaration d'une députée parlant au nom du groupe, non du candidat.",
+        "verbatim": "Au total, nous proposerons de supprimer près de 10 milliards d'euros de hausses d'impôt qui pèseraient sur les Français, les entreprises et les communes, et de les compenser intégralement par près de 10 milliards d'euros d'économies, pour moitié sur l'État et pour moitié sur les comptes sociaux.",
+        "mesure": null,
+        "montant": 10,
+        "type": "economie",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Même chiffre que l'entretien de Laurent Marcangeli du 13 octobre, ici au compte rendu officiel. Il porte sur une seule année et sur le budget du gouvernement, pas sur un quinquennat : ce n'est pas un chiffrage présidentiel. Les votes du groupe dans les jours suivants (FCTVA le 19 octobre, allègements de cotisations le 22 octobre) ont retiré plus de recettes ou d'économies qu'ils n'en ont ajouté."
+      },
+      {
+        "date": "2026-10-19",
+        "parti": "hor",
+        "qui": "Félicie Gérard",
+        "fonction": "Députée, groupe Horizons & indépendants",
+        "media": "Assemblée nationale, PLF 2027, amendement n° 2287 du groupe Horizons & indépendants",
+        "quoi": "Le groupe Horizons dépose et fait adopter (avec 15 amendements identiques, 125 voix contre 16) la suppression de l'article 35 du PLF 2027, qui abaissait de 16,404 % à 11,404 % le taux du FCTVA et dont le gouvernement attendait 2,1 Md€ d'économies sur les collectivités.",
+        "verbatim": "Cet amendement du groupe Horizons & indépendants vise à supprimer l'article 35, qui abaisse de 16,404 % à 11,404 % le taux du FCTVA pour la plupart des investissements des collectivités territoriales.",
+        "mesure": "collectivites",
+        "montant": 2.1,
+        "type": "depense",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-lundi-19-octobre-2026",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Les 2,1 Md€ sont le rendement attendu par le gouvernement, cité dans la même séance, pas un chiffre du groupe. Le 14 octobre, le groupe promettait de ne pas « dégrader l'équilibre général » et de compenser chaque baisse de recette ; ici il supprime une économie de 2,1 Md€ sans compensation identifiée dans le débat (son amendement n° 2288 proposait seulement de moduler la contribution selon la gestion des collectivités). Le scénario reconstitué d'Horizons dans le simulateur retient au contraire une baisse des concours aux collectivités."
+      },
+      {
+        "date": "2026-10-22",
+        "parti": "hor",
+        "qui": "Nathalie Colin-Oesterlé",
+        "fonction": "Députée, oratrice du groupe Horizons & indépendants sur le PLFSS 2027",
+        "media": "Assemblée nationale, PLFSS 2027, article 7, amendements identiques n° 350, 887 et 2791",
+        "quoi": "Le groupe Horizons vote la suppression des alinéas de l'article 7 du PLFSS qui intégraient intéressement, participation et prime de partage de la valeur dans le calcul des allègements généraux de cotisations, soit 3,7 Md€ de recettes pour la Sécurité sociale (adopté, 101 voix contre 68). L'oratrice avait annoncé ce refus le 20 octobre en discussion générale, en proposant en échange des économies non chiffrées et le retour au calendrier initial de la réforme des retraites.",
+        "verbatim": "Le groupe Horizons & indépendants s'oppose aux hausses de prélèvements, qu'elles affectent les ménages ou les entreprises. Nous voterons donc évidemment pour la suppression de ces alinéas.",
+        "mesure": "alleg",
+        "montant": 3.7,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-22-octobre-2026",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le 27 août, Édouard Philippe proposait de supprimer 50 Md€ d'aides aux entreprises, dont les allègements de cotisations sont de loin la plus grosse part ; son groupe refuse ici un rabot de 3,7 Md€ sur ces mêmes allègements. Le ministre avait prévenu dans la séance que, sans ces 3,7 Md€, l'objectif d'un déficit de la Sécurité sociale ramené à environ 12 Md€ devenait inatteignable."
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "qui": "Clémence Guetté",
+        "fonction": "Députée LFI, vice-présidente de l'Assemblée nationale",
+        "media": "franceinfo, l'invité politique de la matinale (« Le 7.40 »)",
+        "quoi": "Quelques heures avant la présentation officielle, annonce un contre-budget d'environ 108 Md€ de recettes pour 80 Md€ de dépenses.",
+        "verbatim": "On est environ à 108 milliards de recettes pour 80 milliards de dépenses.",
+        "mesure": null,
+        "montant": 108,
+        "type": "recette",
+        "source": "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-mercredi-14-octobre-2026_8207213.html",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le même jour, Éric Coquerel et Jean-Luc Mélenchon présentent 106,4 Md€ de recettes et 81,7 Md€ de dépenses. L'écart est faible (environ 1,6 Md€ de part et d'autre), mais les chiffres de la matinale ne sont pas ceux du document présenté l'après-midi."
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "qui": "Éric Coquerel",
+        "fonction": "Député LFI, président de la commission des finances de l'Assemblée nationale",
+        "media": "Présentation du budget « rectificatif » pour 2027 avec Jean-Luc Mélenchon, détaillée par LCP",
+        "quoi": "La hausse du point d'indice de la fonction publique est chiffrée à 17 Md€ de dépenses dans le contre-budget pour 2027.",
+        "verbatim": null,
+        "mesure": "pointindice",
+        "montant": 17,
+        "type": "depense",
+        "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le taux de revalorisation n'est pas précisé par LCP. À environ 2 Md€ le point de pourcentage, 17 Md€ correspondent à une hausse de l'ordre de 8 %, bien au-delà de la mesure du catalogue (+3 %, 4 à 8 Md€). L'amendement LFI n° I-2566 sur la taxe Zucman évoque d'ailleurs une revalorisation de 10 %."
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "qui": "Jean-Luc Mélenchon",
+        "fonction": "Candidat de La France insoumise à l'élection présidentielle",
+        "media": "Contre-budget de LFI, détaillé par LCP",
+        "quoi": "La taxe sur les transactions financières est chiffrée à 5 Md€ de recettes dans le budget rectificatif pour 2027.",
+        "verbatim": null,
+        "mesure": "ttf",
+        "montant": 5,
+        "type": "recette",
+        "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "La carte LFI reprend 20 Md€ pour la TTF, chiffrage du programme de gauche de 2024 ; le contre-budget du 14 octobre n'en attend que 5 Md€, soit quatre fois moins, ce qui le rapproche de la fourchette du catalogue (1 à 6 Md€)."
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "qui": "Jean-Luc Mélenchon",
+        "fonction": "Candidat de La France insoumise à l'élection présidentielle",
+        "media": "Contre-budget de LFI, détaillé par LCP",
+        "quoi": "Un impôt sur les sociétés progressif est chiffré à 3 Md€ de recettes dans le budget rectificatif pour 2027.",
+        "verbatim": null,
+        "mesure": "isgrandes",
+        "montant": 3,
+        "type": "recette",
+        "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "La carte LFI retient 12 Md€ pour la surtaxe d'IS sur les grandes entreprises ; le contre-budget n'en attend que 3 Md€ en 2027, sous le bas de la fourchette du catalogue (4 à 12 Md€). Le rattachement à la mesure « isgrandes » est une approximation : LCP parle d'un IS « progressif » sans en donner le barème."
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "qui": "Jean-Luc Mélenchon",
+        "fonction": "Candidat de La France insoumise à l'élection présidentielle",
+        "media": "Présentation du budget « rectificatif » pour 2027, rapportée par Public Sénat",
+        "quoi": "L'abrogation de la réforme Borne, avec retour de l'âge de départ à 62 ans, est chiffrée à 9 Md€ de dépenses dans le budget rectificatif pour 2027.",
+        "verbatim": null,
+        "mesure": "retr62",
+        "montant": 9,
+        "type": "depense",
+        "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le programme LFI et la déclaration du 27 août 2026 portent la retraite à 60 ans ; le contre-budget ne chiffre que le retour à 62 ans, pour 9 Md€, dans le bas de la fourchette du catalogue (8 à 18 Md€). LCP, sur le même contre-budget, ne donne aucun coût pour ce poste."
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "qui": "Jean-Luc Mélenchon",
+        "fonction": "Candidat de La France insoumise à l'élection présidentielle",
+        "media": "Présentation du budget « rectificatif » pour 2027, rapportée par Public Sénat",
+        "quoi": "Une « garantie d'autonomie » pour les jeunes, de 1 337 € par mois, est chiffrée à 9,5 Md€ par an dans le budget rectificatif.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 9.5,
+        "type": "depense",
+        "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucune mesure du catalogue ne correspond et le scénario LFI du simulateur n'en tient pas compte. Ni le public visé ni les conditions de ressources ne sont publiés : 9,5 Md€ pour une allocation de 1 337 € par mois supposent environ 600 000 bénéficiaires, bien moins que la classe d'âge."
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "qui": "Arnaud Le Gall",
+        "fonction": "Député LFI, premier signataire d'un amendement du groupe La France insoumise (cosigné notamment par Manuel Bompard, Éric Coquerel, Clémence Guetté et Mathilde Panot)",
+        "media": "Assemblée nationale — amendement n° I-954 au PLF 2027, article 55, rejeté au scrutin public n° 8710",
+        "quoi": "Le groupe LFI propose de ramener le prélèvement sur recettes au profit de l'Union européenne de 30,9 à 25,3 Md€ (−5,6 Md€) pour que la France cesse d'être contributrice nette. Rejeté par 126 voix contre 102 ; les 27 votants LFI et 73 députés RN ont voté pour.",
+        "verbatim": "nous proposons que la France cesse d'être contributrice nette d'une Union qui a le pour seul horizon politique un néolibéralisme autoritaire.",
+        "mesure": "ue",
+        "montant": 5.6,
+        "type": "economie",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/954",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "La baisse de la contribution européenne ne figure ni dans le scénario LFI du simulateur ni dans le contre-budget présenté le même jour. Le même groupe a déposé sur le même article un amendement de Coquerel (n° I-966, scrutin n° 8719) qui ne la minore que de 10 %, soit environ 3,1 Md€ par calcul, tant que les règles des 3 % et 60 % ne sont pas abrogées. Une réduction unilatérale est juridiquement contestable (cadre financier pluriannuel adopté à l'unanimité)."
+      },
+      {
+        "date": "2026-10-16",
+        "parti": "lfi",
+        "qui": "Éric Coquerel",
+        "fonction": "Député LFI, président de la commission des finances, premier signataire d'un amendement du groupe La France insoumise",
+        "media": "Assemblée nationale — amendement n° I-1083 au PLF 2027, après l'article 4, rejeté au scrutin public n° 8823",
+        "quoi": "En repli, le groupe LFI propose de relever le prélèvement forfaitaire unique de 12,8 % à 22,8 % et s'engage à l'abroger entièrement si Jean-Luc Mélenchon est élu.",
+        "verbatim": "À défaut d'en obtenir l'abrogation totale, ce que nous ferons une fois Jean-Luc Mélenchon à l'Élysée, permettant de rétablir la progressivité de l'impôt sur le revenu, nous estimons indispensable de relever son taux de 10 points",
+        "mesure": "pfu",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/1083",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "L'exposé de l'amendement chiffre la perte de recettes due au PFU à « plus de 3 milliards d'euros par an ». L'amendement n° I-2517 du même groupe la chiffre à 9 Md€ par an, comme le contre-budget du 14 octobre. Les deux montants ne se concilient pas, et le catalogue plafonne le rendement d'un retour au barème à 6 Md€."
+      },
+      {
+        "date": "2026-10-16",
+        "parti": "lfi",
+        "qui": "Aurélien Le Coq",
+        "fonction": "Député LFI, premier signataire d'un amendement du groupe La France insoumise",
+        "media": "Assemblée nationale — amendement n° I-1079 au PLF 2027, après l'article 4, rejeté au scrutin public n° 8870",
+        "quoi": "En repli, le groupe LFI propose de rétablir l'ISF, avec un barème de 0,5 % à 3 % au-delà de 800 000 €, pour des recettes nettes estimées à 3,5 Md€.",
+        "verbatim": "Les recettes nettes attendues d'un tel rétablissement sont estimées à 3,5 milliards d'euros",
+        "mesure": "isf",
+        "montant": 3.5,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/1079",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "L'amendement est présenté comme un repli sur l'« ISF climatique », que le contre-budget du 14 octobre chiffre à 10 Md€ et la carte LFI à 12 Md€. Le chiffre de 3,5 Md€ est cohérent avec le catalogue (2 à 6 Md€), mais un ISF classique rapporte trois fois moins que ce que LFI attend de sa version climatique."
+      },
+      {
+        "date": "2026-10-15",
+        "parti": "lfi",
+        "qui": "Éric Coquerel",
+        "fonction": "Député LFI, président de la commission des finances, premier signataire d'un amendement du groupe La France insoumise",
+        "media": "Assemblée nationale — amendement n° I-2517 au PLF 2027, après l'article 3, rejeté au scrutin public n° 8797",
+        "quoi": "Le groupe LFI propose de tripler la contribution exceptionnelle sur les hauts revenus (taux portés de 3 % et 4 % à 9 % et 12 %), qui rapporte aujourd'hui 1,41 Md€, pour « plusieurs milliards » de recettes supplémentaires.",
+        "verbatim": "Tripler la CEHR rapporterait plusieurs milliards d'euros supplémentaires chaque année",
+        "mesure": null,
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/2517",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "La mesure ne figure pas au catalogue et n'est pas chiffrée précisément. Un triplement mécanique des taux donnerait environ 2,8 Md€ de plus avant réaction des contribuables (calcul de la relève, pas de l'amendement). On ne sait pas si elle fait partie des 106,4 Md€ du contre-budget."
+      },
+      {
+        "date": "2026-10-05",
+        "parti": "lfi",
+        "qui": "Éric Coquerel",
+        "fonction": "Député LFI, président et rapporteur d'une mission flash de la commission des finances de l'Assemblée nationale",
+        "media": "Présentation d'une mission flash devant la commission des finances, rapportée par LCP",
+        "quoi": "Chiffre le coût des canicules, sécheresses et incendies de l'été 2026 à environ 16 Md€ et juge nécessaire d'engager entre 8,75 et 12,3 Md€ de dépenses publiques supplémentaires en 2027 (dont 8,4 à 11,9 Md€ sur le budget de l'État). Il annonce des amendements au PLF 2027. Il s'exprime ici comme rapporteur de la commission, pas au nom de LFI.",
+        "verbatim": "est nécessaire d'engager entre 8,75 et 12,3 milliards d'euros des dépenses publiques supplémentaires",
+        "mesure": null,
+        "montant": 12.3,
+        "type": "depense",
+        "source": "https://lcp.fr/actualites/les-canicules-et-les-incendies-de-cet-ete-ont-coute-au-moins-16-milliards-d-euros-selon",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le montant retenu est le haut de la fourchette, entre 8,75 et 12,3 Md€. On ignore si ces dépenses d'adaptation sont comptées dans les 81,7 Md€ du contre-budget présenté neuf jours plus tard : ni LCP ni Public Sénat ne les y mentionnent. Elles se distinguent du plan d'investissement écologique (« ecolo ») du catalogue."
+      },
+      {
+        "date": "2026-09-22",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Candidat des Républicains à l'élection présidentielle",
+        "media": "Interview sur LCI, compte rendu TF1 Info",
+        "quoi": "Détaille sa réforme des retraites — âge minimal de départ à 63 ans avec une décote de 7 % par an, taux plein automatique à 65 ans indexé sur l'espérance de vie — et en chiffre le rendement à environ 40 Md€ d'économies cumulées sur cinq ans.",
+        "verbatim": "Il faut pousser l'âge à partir duquel on va quitter le travail, c'est une question de prospérité",
+        "mesure": null,
+        "montant": 40,
+        "type": "economie",
+        "source": "https://www.tf1info.fr/politique/presidentielle-2027-age-minimal-de-depart-a-63-ans-a-taux-plein-a-65-ans-bruno-retailleau-devoile-sur-lci-ses-propositions-pour-les-retraites-2465712.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Les 40 Md€ sont un cumul sur cinq ans, quand le plan du 12 octobre raisonne en économies annuelles en 2032 : 42 Md€ par an sur les retraites, dont 12 Md€ seulement pour les mesures d'âge (63/65 ans). Les deux chiffres ne se comparent pas directement ; avec une montée en charge régulière, 12 Md€ par an en 2032 donnent un cumul de l'ordre de 35 à 40 Md€, compatible, mais le parti n'a pas publié le profil annuel."
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Président des Républicains, candidat à l'élection présidentielle",
+        "media": "Fiches presse « Rétablir l'ordre dans les comptes publics » (12 octobre 2026), campagne Bruno Retailleau",
+        "quoi": "Le dossier de presse du plan précise que les 197 Md€ sont des économies annuelles atteintes en 2032 (12 Md€ en 2027, 58 en 2028, 95 en 2029, 131 en 2030, 169 en 2031), dont 146 Md€ affectés au déficit : 4,8 % du PIB en 2027, 2,8 % en 2031, 2,2 % en 2032, excédent primaire dès 2030, dette au plus haut à 123,8 % du PIB en 2030.",
+        "verbatim": "197 Md€ d’économies en 2032, dont 146 Md€ pour le déficit et 51 Md€ rendus",
+        "mesure": null,
+        "montant": 146,
+        "type": "economie",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": "Ce document tranche la divergence entre comptes rendus : la dépêche AFP (et LCP) parlait d'« économies cumulées jusqu'en 2032 » ; le dossier du parti donne un niveau annuel atteint en 2032, montée en charge année par année à l'appui. C'est la lecture haute, celle du tweet du candidat cité par Epoch Times."
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Président des Républicains, candidat à l'élection présidentielle",
+        "media": "Fiches presse « Rétablir l'ordre dans les comptes publics » (12 octobre 2026), campagne Bruno Retailleau",
+        "quoi": "Chiffre à 7,5 Md€ en 2032 la suppression ou le rapatriement des 1 153 agences, comités et opérateurs recensés par le Sénat : 4 Md€ sur les structures et 3,5 Md€ de concours recentrés.",
+        "verbatim": null,
+        "mesure": "agences",
+        "montant": 7.5,
+        "type": "economie",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": "Le montant dépasse plus de deux fois la borne haute du catalogue (1 à 3 Md€), qui suit les rapports parlementaires ; la commission d'enquête sénatoriale de 2025 n'avait documenté qu'un demi-milliard sur le fonctionnement des agences. Le scénario du simulateur n'inclut pas cette mesure."
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Président des Républicains, candidat à l'élection présidentielle",
+        "media": "Fiches presse « Rétablir l'ordre dans les comptes publics » (12 octobre 2026), campagne Bruno Retailleau",
+        "quoi": "Chiffre à 14 Md€ en 2032 la réforme de l'assurance chômage : application des règles de juin 2024 (durée maximale ramenée de 18 à 15 mois), plafonnement de l'indemnisation après rupture conventionnelle, indemnisation des frontaliers sur un salaire français, suspension au troisième refus d'une offre raisonnable.",
+        "verbatim": null,
+        "mesure": "chomage",
+        "montant": 14,
+        "type": "economie",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": "Plus du double de la borne haute du catalogue (2 à 6 Md€, sur environ 32 Md€ d'allocations Unédic ; le parti retient 45 Md€). Le scénario reconstitué du simulateur retient la valeur médiane (4 Md€), très en dessous du chiffre du parti."
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Président des Républicains, candidat à l'élection présidentielle",
+        "media": "Fiches presse « Rétablir l'ordre dans les comptes publics » (12 octobre 2026), campagne Bruno Retailleau",
+        "quoi": "Chiffre à 10 Md€ en 2032 un « compte social unique » plafonnant l'ensemble des aides non contributives à 70 % du SMIC net par adulte, hors handicap, dépendance et vieillesse ; s'y ajoutent 2 Md€ d'un revenu d'incitation à l'activité fusionnant RSA, prime d'activité et ASS.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 10,
+        "type": "economie",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": "Aucune mesure du catalogue ne correspond. Les économies de la fiche « Travail gagnant » (30 Md€ au total) sont intégralement restituées en baisses de cotisations (15 Md€ aux salariés, 15 Md€ aux employeurs) : elles n'améliorent pas le solde."
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Président des Républicains, candidat à l'élection présidentielle",
+        "media": "Fiches presse « Rétablir l'ordre dans les comptes publics » (12 octobre 2026), campagne Bruno Retailleau",
+        "quoi": "Chiffre à 9 Md€ en 2032 la lutte contre les fraudes : 5 Md€ de fraude fiscale et aux aides publiques (gel des avoirs sur les grands montages, ciblage des contrôles par l'IA) et 4 Md€ de fraude sociale (meilleur recouvrement des prestations indues, encaissement des redressements pour travail dissimulé).",
+        "verbatim": null,
+        "mesure": "fraude",
+        "montant": 9,
+        "type": "economie",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": "Au-dessus de la valeur médiane du catalogue (3 Md€), dans sa fourchette haute (1 à 15 Md€). Le parti ajoute 3 Md€ sur les « abus des associations », hors de cette mesure."
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Président des Républicains, candidat à l'élection présidentielle",
+        "media": "Fiches presse « Rétablir l'ordre dans les comptes publics » (12 octobre 2026), campagne Bruno Retailleau",
+        "quoi": "Chiffre à 10 Md€ en 2032 les économies liées à l'immigration (7 Md€ côté social, 3 Md€ côté État), dont 3,6 Md€ pour la condition de cinq ans de séjour et de travail pour les prestations de solidarité et 0,9 Md€ pour l'asile examiné hors des frontières, deux mesures conditionnées à une révision constitutionnelle par référendum.",
+        "verbatim": null,
+        "mesure": "immigration",
+        "montant": 10,
+        "type": "economie",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": "Le montant atteint la borne haute du catalogue (1 à 10 Md€) quand le scénario du simulateur retient la borne basse (1 Md€). Près de la moitié du total (4,5 Md€) dépend d'une révision constitutionnelle non acquise."
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Président des Républicains, candidat à l'élection présidentielle",
+        "media": "Fiches presse « Rétablir l'ordre dans les comptes publics » (12 octobre 2026), campagne Bruno Retailleau",
+        "quoi": "Demande 10 Md€ d'effort en 2032 aux 2 232 collectivités de plus de 10 M€ de budget, sur leurs seules dépenses de fonctionnement hors personnel et hors prestations sociales, l'investissement local n'étant pas touché.",
+        "verbatim": null,
+        "mesure": "collectivites",
+        "montant": 10,
+        "type": "economie",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": "L'instrument diffère de la mesure du catalogue (baisse des concours de l'État, 3 à 10 Md€) : le plan vise une maîtrise des dépenses décidée par les collectivités, sans dire par quel levier l'État l'obtiendrait. Le montant atteint la borne haute ; le scénario reconstitué retient 5 Md€."
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Président des Républicains, candidat à l'élection présidentielle",
+        "media": "Fiches presse « Rétablir l'ordre dans les comptes publics » (12 octobre 2026), campagne Bruno Retailleau",
+        "quoi": "Prévoit 15 Md€ de suppression d'impôts de production en 2032, gagés sur des économies générales, dans les 30 Md€ rendus aux entreprises (avec 15 Md€ de cotisations patronales en moins).",
+        "verbatim": null,
+        "mesure": "prod",
+        "montant": 15,
+        "type": "recette",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": "Près du double de la borne haute du catalogue (3 à 8 Md€). Le scénario reconstitué retient la valeur médiane (5 Md€)."
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Président des Républicains, candidat à l'élection présidentielle",
+        "media": "Fiches presse « Rétablir l'ordre dans les comptes publics » (12 octobre 2026), campagne Bruno Retailleau",
+        "quoi": "Chiffre à 4 Md€ en 2032 les économies sur les arrêts maladie et précise que les gains d'efficience du système de santé seront intégralement réinvestis dans le soin, hors des 197 Md€.",
+        "verbatim": "ils ne sont pas dans les 197 Md€",
+        "mesure": "ondam",
+        "montant": 4,
+        "type": "economie",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": "Le scénario reconstitué du simulateur applique un freinage de l'ONDAM à sa valeur médiane (5 Md€) ; le parti exclut tout freinage au-delà des indemnités journalières. Les 4 Md€ des arrêts maladie figuraient déjà dans l'annonce du 12 octobre sur les retraites, sans rattachement à une mesure."
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Président des Républicains, candidat à l'élection présidentielle",
+        "media": "Fiches presse « Rétablir l'ordre dans les comptes publics » (12 octobre 2026), campagne Bruno Retailleau",
+        "quoi": "Chiffre à 12 Md€ en 2032 les seules mesures d'âge de la réforme des retraites (liberté de départ à 63 ans avec décote, taux plein à 65 ans) ; le reste des 42 Md€ vient de produits financiers des réserves (7,5), de l'alignement sur l'Agirc-Arrco (7,2), d'une cotisation dédiée de 1 % (6), du doublement de la RAFP (4,3), de la fin des régimes spéciaux (3) et de la fraude (2).",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 12,
+        "type": "economie",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": "Ce détail lève une bonne part de l'écart relevé sur les 42 Md€ : les mesures d'âge ne pèsent que 12 Md€ par an, dans la fourchette du catalogue pour un report de l'âge légal à 65 ans (5 à 14 Md€). Les 30 Md€ restants reposent sur des postes que le catalogue ne chiffre pas, dont une cotisation nouvelle de 1 % qui ressemble à un prélèvement supplémentaire."
+      },
+      {
+        "date": "2026-10-04",
+        "parti": "lr",
+        "qui": "Laurent Wauquiez",
+        "fonction": "Président du groupe Droite républicaine à l'Assemblée nationale",
+        "media": "Entretien aux Échos, dépêche AFP reprise par France 24",
+        "quoi": "Annonce que LR ne censurera pas le budget 2027 et propose un plan de 20 Md€ d'économies en plus des 43 Md€ du gouvernement : 50 000 postes de fonctionnaires supprimés (3 Md€), 5 Md€ de coupes dans les agences, 7 Md€ sur le RSA limité à deux ans, 5 Md€ sur l'immigration, et des aides sociales plafonnées à 70 % du SMIC.",
+        "verbatim": "il n'y a pas besoin de ponctionner les retraités",
+        "mesure": null,
+        "montant": 20,
+        "type": "economie",
+        "source": "https://www.france24.com/fr/info-en-continu/20261004-budget-2027-wauquiez-affirme-que-lr-ne-pratiquera-pas-le-petit-jeu-de-la-censure",
+        "verifie": false,
+        "contredit": "inconnu",
+        "ecart": "Chiffres lus dans la dépêche AFP, pas dans l'entretien original des Échos, introuvable en accès libre. Le plan vaut pour 2027 seul ; celui du candidat ne programme que 12 Md€ d'économies en 2027, sur une base qui suppose le PLF partiellement exécuté : les deux ne sont pas incompatibles, mais LR avance deux calendriers d'effort différents."
+      },
+      {
+        "date": "2026-10-27",
+        "parti": "lr",
+        "qui": null,
+        "fonction": "Députés du groupe Droite républicaine, dont le rapporteur général du budget Philippe Juvin",
+        "media": "Assemblée nationale, scrutin public n° 9123 (PLF 2027, première lecture)",
+        "quoi": "Sur la suppression de l'article 15 du PLF 2027, qui reconduisait la surtaxe sur les bénéfices des grandes entreprises (environ 5 Md€ selon la presse), le groupe Droite républicaine se divise : 7 députés votent contre la suppression, donc pour maintenir la surtaxe, dont Philippe Juvin ; 4 votent pour. La suppression est adoptée par 79 voix contre 77.",
+        "verbatim": null,
+        "mesure": "isgrandes",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9123",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le 4 octobre, Laurent Wauquiez promettait que les députés LR se battraient pour supprimer les hausses d'impôts sur les entreprises, et le candidat assure qu'il n'y aura « pas d'impôt nouveau ». Une majorité des députés DR présents a pourtant voté pour maintenir la surtaxe, en suivant l'avis du rapporteur général. Seuls 11 des 47 membres du groupe ont voté."
+      },
+      {
+        "date": "2026-09-17",
+        "parti": "ne",
+        "qui": "David Lisnard",
+        "fonction": "Maire de Cannes, candidat à la présidentielle",
+        "media": "franceinfo, L'invité politique",
+        "quoi": "Interrogé sur son objectif de 80 Md€ d'économies dès la première année, cite en premier exemple les 3,2 Md€ versés par l'État pour l'hébergement d'urgence en hôtels, sans dire quelle part il en retrancherait.",
+        "verbatim": "on va verser 3 milliards, j'ai appris ça hier, 3,2 milliards d'euros pour l'hébergement d'urgence dans des hôtels",
+        "mesure": null,
+        "montant": 3.2,
+        "type": "economie",
+        "source": "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-jeudi-17-septembre-2026_8182328.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "3,2 Md€ est le coût du poste, pas une économie chiffrée : le candidat ne dit pas combien il en supprimerait. Aucun programme ventilé n'a été publié."
+      },
+      {
+        "date": "2026-09-17",
+        "parti": "ne",
+        "qui": "David Lisnard",
+        "fonction": "Maire de Cannes, candidat à la présidentielle",
+        "media": "franceinfo, L'invité politique",
+        "quoi": "Désigne les agences et organismes publics comme gisement d'économies : 450 000 recrutements en vingt ans dans 1 153 établissements, « plus de 100 milliards de dépenses » ; propose de ramener les 11 agences environnementales et les 14 organismes de santé à un seul chacun.",
+        "verbatim": "C'est plus de 100 milliards de dépenses.",
+        "mesure": "agences",
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-jeudi-17-septembre-2026_8182328.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Les 100 Md€ sont le coût total qu'il attribue à ces organismes, pas l'économie attendue ; aucun montant d'économie n'est avancé pour ce poste."
+      },
+      {
+        "date": "2026-09-25",
+        "parti": "ne",
+        "qui": "David Lisnard",
+        "fonction": "Maire de Cannes, candidat à la présidentielle",
+        "media": "Réunion publique à Benfeld (Bas-Rhin), rapportée par le site de Nouvelle Énergie",
+        "quoi": "Dit avoir documenté une baisse de sept points de PIB de la dépense publique, aujourd'hui à 57,5 % de la richesse produite selon lui.",
+        "verbatim": "on a documenté pour arriver à baisser de sept points la dépense par rapport à la richesse produite",
+        "mesure": null,
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.unenouvelleenergie.fr/questions/le-programme-de-david-lisnard-est-il-chiffre/",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Source militante (page « questions » du site du parti, mise à jour le 16 octobre 2026) ; la réunion de Benfeld n'a pas été retrouvée dans la presse. « Documenté » n'est accompagné d'aucune ventilation publiée."
+      },
+      {
+        "date": "2026-10-27",
+        "parti": "ne",
+        "qui": "David Lisnard",
+        "fonction": "Maire de Cannes, candidat à la présidentielle",
+        "media": "« Objectif Élysée 2027 », CNews et Europe 1 (Laurence Ferrari)",
+        "quoi": "Propose d'aligner la CSG sur les revenus d'activité sur le taux des inactifs, soit de 9,2 % à 6,6 %, pour redonner du salaire net : « cotiser moins pour gagner plus ».",
+        "verbatim": "Sur les salaires, nous allons baisser les cotisations : cotiser moins pour gagner plus.",
+        "mesure": "csgbaisse",
+        "montant": null,
+        "type": "recette",
+        "source": "https://europe1.fr/politique/en-direct-emeutes-parcoursup-primaire-a-droite-ce-quil-faut-retenir-de-linterview-de-david-lisnard-dans-objectif-elysee-2027-1186743",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": null
+      },
+      {
+        "date": "2026-10-27",
+        "parti": "ne",
+        "qui": "David Lisnard",
+        "fonction": "Maire de Cannes, candidat à la présidentielle",
+        "media": "« Objectif Élysée 2027 », CNews et Europe 1 (Laurence Ferrari)",
+        "quoi": "Propose un gel des retraites supérieures à 2 200 € par mois (pas un gel général), avec la suppression de certaines prestations, la non-indexation d'autres et la réduction des allocations non contributives versées aux étrangers ; c'est à cet ensemble qu'il rattache « 2 à 3 Md€ dès la première année ».",
+        "verbatim": "Je ne propose pas un gel total des retraites, mais un gel des retraites de plus de 2200 euros.",
+        "mesure": null,
+        "montant": null,
+        "type": "economie",
+        "source": "https://europe1.fr/politique/en-direct-emeutes-parcoursup-primaire-a-droite-ce-quil-faut-retenir-de-linterview-de-david-lisnard-dans-objectif-elysee-2027-1186743",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Sur la page d'Europe 1, les 2 à 3 Md€ couvrent tout ce paquet (gel des pensions au-delà de 2 200 €, suppressions et désindexations, prestations aux étrangers), alors que la base les attribue aux seules prestations versées aux étrangers. Le site du parti prête par ailleurs à Lisnard environ 8 Md€ par an pour la seule condition de cinq ans de résidence (discours de La Gagne, 29 août 2026)."
+      },
+      {
+        "date": "2026-09-16",
+        "parti": "ps",
+        "qui": null,
+        "fonction": "Groupe Socialistes et apparentés, Assemblée nationale",
+        "media": "Présentation du contre-budget socialiste pour 2027, compte rendu de LCP",
+        "quoi": "Le contre-budget du groupe socialiste attend 10 Md€ d'une CSG sur les gros héritages, ciblant selon Estelle Mercier les 10 % d'héritiers qui reçoivent le plus.",
+        "verbatim": null,
+        "mesure": "succ",
+        "montant": 10,
+        "type": "recette",
+        "source": "https://lcp.fr/actualites/budget-a-l-assemblee-les-socialistes-presentent-leurs-propositions-et-previennent-qu-ils",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le candidat Raphaël Glucksmann chiffre de son côté à 15 Md€ la taxation du 1 % des plus grosses successions, au-delà de deux millions d'euros (débat du 4 octobre), alors que le groupe vise 10 Md€ avec une CSG touchant les héritiers au-delà de 500 000 € (10 % des héritiers) : assiette plus large, rendement plus faible. Le catalogue borne la mesure de 2 à 5 Md€."
+      },
+      {
+        "date": "2026-09-16",
+        "parti": "ps",
+        "qui": null,
+        "fonction": "Groupe Socialistes et apparentés, Assemblée nationale",
+        "media": "Présentation du contre-budget socialiste pour 2027, compte rendu de LCP",
+        "quoi": "Le contre-budget socialiste prévoit une taxe sur les géants du numérique d'un rendement de 10 Md€.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 10,
+        "type": "recette",
+        "source": "https://lcp.fr/actualites/budget-a-l-assemblee-les-socialistes-presentent-leurs-propositions-et-previennent-qu-ils",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucune mesure du catalogue ne correspond, et le PS n'a pas publié de chiffrage présidentiel. Le montant est très supérieur au rendement de la taxe actuelle sur les services numériques, de l'ordre du milliard d'euros par an, et aucun détail d'assiette ni de taux n'est donné dans la source."
+      },
+      {
+        "date": "2026-09-16",
+        "parti": "ps",
+        "qui": "Estelle Mercier",
+        "fonction": "Députée, cheffe de file du groupe Socialistes et apparentés sur le budget de l'État",
+        "media": "Présentation du contre-budget socialiste pour 2027, compte rendu de LCP",
+        "quoi": "Détaille un plan d'économies de 12,1 Md€ dans le contre-budget socialiste, par la lutte contre la fraude fiscale et la réduction du train de vie de l'État, « sans rogner sur les services publics essentiels ».",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 12.1,
+        "type": "economie",
+        "source": "https://lcp.fr/actualites/budget-a-l-assemblee-les-socialistes-presentent-leurs-propositions-et-previennent-qu-ils",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "D'autres comptes rendus du même contre-budget (Journal du Net) retiennent 17,5 Md€ d'économies : l'écart de plus de 5 Md€ porte sur le même document, présenté le même jour."
+      },
+      {
+        "date": "2026-09-16",
+        "parti": "ps",
+        "qui": null,
+        "fonction": "Groupe Socialistes et apparentés, Assemblée nationale",
+        "media": "Présentation du contre-budget socialiste pour 2027, compte rendu de LCP",
+        "quoi": "Le contre-budget socialiste prévoit d'investir 10 Md€ dans la lutte contre le réchauffement climatique, à côté de 3 Md€ pour l'hôpital et les Ehpad publics.",
+        "verbatim": null,
+        "mesure": "ecolo",
+        "montant": 10,
+        "type": "depense",
+        "source": "https://lcp.fr/actualites/budget-a-l-assemblee-les-socialistes-presentent-leurs-propositions-et-previennent-qu-ils",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le montant coïncide avec le milieu de fourchette que le simulateur retient pour le scénario reconstitué du PS, mais il porte sur la seule année 2027 et ne vient pas d'un programme présidentiel publié."
+      },
+      {
+        "date": "2026-09-22",
+        "parti": "ps",
+        "qui": "Boris Vallaud",
+        "fonction": "Président du groupe Socialistes et apparentés à l'Assemblée nationale",
+        "media": "Matinale de Public Sénat",
+        "quoi": "Défend un contre-budget de 39,5 Md€ de recettes nouvelles (taxe Zucman, CSG sur les héritages au-delà de 500 000 € par héritier), présenté par l'article comme une réduction du déficit de 24 Md€.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 39.5,
+        "type": "recette",
+        "source": "https://www.publicsenat.fr/actualites/politique/budget-2027-boris-vallaud-ps-denonce-un-budget-qui-risque-de-nous-enfoncer-dans-la-crise",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Les 24 Md€ de réduction du déficit ne se retrouvent pas dans les autres comptes rendus du même contre-budget : 39,5 Md€ de recettes moins 22 Md€ de dépenses nouvelles laissent 17,5 Md€, et y ajouter 12,1 Md€ d'économies donnerait près de 30 Md€. Le chiffre de 24 Md€ est rapporté par l'article, pas cité entre guillemets."
+      },
+      {
+        "date": "2026-10-04",
+        "parti": "ps",
+        "qui": "Raphaël Glucksmann",
+        "fonction": "Candidat à la primaire de la gauche sociale-démocrate (PS – Place publique)",
+        "media": "Troisième débat de la primaire, BFMTV (compte rendu de LCP)",
+        "quoi": "S'engage à abroger la réforme des retraites de 2023 et à ramener l'âge légal à 62 ans, en excluant un retour à 60 ans.",
+        "verbatim": "Nous abrogerons la réforme injuste de 2023. (...) On ne pourra pas faire 60 ans, ce sera 62 ans",
+        "mesure": "retr62",
+        "montant": null,
+        "type": "depense",
+        "source": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "L'engagement est cohérent avec le scénario reconstitué du PS, qui inclut le retour à 62 ans, mais il n'est ni chiffré ni financé dans la déclaration ; le catalogue estime la mesure entre 8 et 18 Md€ par an. Glucksmann a aussi dit que certains partiraient plus tard, sans préciser lesquels ni l'économie attendue."
+      },
+      {
+        "date": "2026-10-04",
+        "parti": "ps",
+        "qui": "Raphaël Glucksmann",
+        "fonction": "Candidat à la primaire de la gauche sociale-démocrate (PS – Place publique)",
+        "media": "Troisième débat de la primaire, BFMTV (compte rendu de LCP)",
+        "quoi": "Propose de taxer les « méga héritages » au-delà de deux millions d'euros pour financer une baisse de la CSG sur les salaires.",
+        "verbatim": null,
+        "mesure": "succ",
+        "montant": null,
+        "type": "recette",
+        "source": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le seuil de deux millions d'euros diffère de celui du contre-budget du groupe socialiste (CSG sur les héritages au-delà de 500 000 € par héritier, 10 Md€). Glucksmann attendait par ailleurs 15 Md€ de cette taxation en août ; ce montant n'est pas repris dans ce compte rendu."
+      },
+      {
+        "date": "2026-10-16",
+        "parti": "ps",
+        "qui": null,
+        "fonction": "Groupe Socialistes et apparentés (amendement de Mickaël Bouloux, cosigné par Boris Vallaud et Estelle Mercier)",
+        "media": "Assemblée nationale, PLF 2027, amendement n° I-471 (déposé le 8 octobre, rejeté en séance le 16 octobre 2026)",
+        "quoi": "Le groupe socialiste redépose l'impôt plancher de 2 % sur les patrimoines nets supérieurs à 100 M€ (taxe Zucman), dont il chiffre le rendement entre 15 et 25 Md€ par an ; l'amendement est rejeté.",
+        "verbatim": "La taxe Zucman sur le patrimoine des ultra-riches devrait concerner environ 1 800 foyers fiscaux et dégager un rendement annuel estimé entre 15 et 25 milliards d’euros.",
+        "mesure": "zucman",
+        "montant": 15,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/471",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le montant retenu ici est le bas de la fourchette de l'amendement (15 à 25 Md€). Le catalogue borne la mesure de 5 à 20 Md€ selon les comportements, avec un milieu à 8 Md€, et le scénario reconstitué du PS la place au bas de cette fourchette : le groupe revendique un rendement deux à trois fois supérieur."
+      },
+      {
+        "date": "2026-10-30",
+        "parti": "ps",
+        "qui": null,
+        "fonction": "Groupe Socialistes et apparentés (amendement d'Estelle Mercier et Christine Pirès Beaune)",
+        "media": "Assemblée nationale, PLF 2027, amendement n° I-470 (déposé le 8 octobre, adopté en séance le 30 octobre 2026)",
+        "quoi": "L'Assemblée adopte un amendement socialiste qui rétablit l'exit tax en portant de deux à quinze ans le délai de détention au-delà duquel l'impôt sur la plus-value latente est dégrevé ; aucun rendement n'est chiffré.",
+        "verbatim": "Cet amendement présenté par le Groupe socialistes et apparentés vise à rétablir l’exit tax.",
+        "mesure": "exit",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/470",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "La mesure ne figure pas dans le scénario reconstitué du PS et l'amendement ne donne aucun rendement ; le catalogue l'estime entre 0,2 et 1 Md€. Son adoption en séance ne vaut que si la première partie du PLF 2027 est votée."
+      },
+      {
+        "date": "2026-09-18",
+        "parti": "rec",
+        "qui": "Sarah Knafo",
+        "fonction": "Députée européenne, Reconquête",
+        "media": "Les 4 Vérités, France 2",
+        "quoi": "Propose de ne pas remplacer 800 000 postes de la fonction publique, pour une économie annuelle chiffrée à 40 Md€.",
+        "verbatim": "D'abord, ne pas remplacer 800 000 postes de la fonction publique. Ça, ça nous fait une économie annuelle de 40 milliards d'euros.",
+        "mesure": "effectifs",
+        "montant": 40,
+        "type": "economie",
+        "source": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le scénario reconstitué retient la mesure « effectifs » du catalogue (baisse de 5 % des effectifs de l'État et de ses opérateurs, 3 à 6 Md€) ; 800 000 postes vont bien au-delà et touchent les trois fonctions publiques. François Ecalle, cité par franceinfo le 8 septembre 2026, juge l'ordre de grandeur de 30 à 40 Md€ plausible mais la baisse irréaliste sans réorganisation profonde."
+      },
+      {
+        "date": "2026-09-18",
+        "parti": "rec",
+        "qui": "Sarah Knafo",
+        "fonction": "Députée européenne, Reconquête",
+        "media": "Les 4 Vérités, France 2",
+        "quoi": "Propose de supprimer l'aide publique au développement, chiffrée à 14 Md€.",
+        "verbatim": "Ensuite, supprimer l'aide publique au développement, 14 milliards d'euros.",
+        "mesure": null,
+        "montant": 14,
+        "type": "economie",
+        "source": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucune mesure du catalogue ne porte sur l'aide publique au développement : le scénario reconstitué ne compte pas ce poste."
+      },
+      {
+        "date": "2026-09-18",
+        "parti": "rec",
+        "qui": "Sarah Knafo",
+        "fonction": "Députée européenne, Reconquête",
+        "media": "Les 4 Vérités, France 2",
+        "quoi": "Propose de réserver les prestations sociales non contributives aux Français, pour une économie allant jusqu'à 20 Md€.",
+        "verbatim": "Réserver les prestations sociales non contributives aux Français, jusqu'à 20 milliards d'euros.",
+        "mesure": "immigration",
+        "montant": 20,
+        "type": "economie",
+        "source": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le scénario reconstitué place la mesure « immigration » à sa borne haute du catalogue (10 Md€) ; le chiffre annoncé est le double. C'est le montant que le programme Zemmour de 2022 retenait déjà pour ce poste."
+      },
+      {
+        "date": "2026-09-18",
+        "parti": "rec",
+        "qui": "Sarah Knafo",
+        "fonction": "Députée européenne, Reconquête",
+        "media": "Les 4 Vérités, France 2",
+        "quoi": "Interrogée sur les 140 Md€ d'économies de son livre « Le Casse du siècle », ne conteste pas le chiffre et en détaille les premiers postes (fonction publique, aide au développement, prestations non contributives).",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 140,
+        "type": "economie",
+        "source": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le chiffre de 140 Md€ est formulé par l'intervieweur (Francis Letellier), pas par Sarah Knafo. Plusieurs comptes rendus du livre parlent de 130 Md€. Le parti n'a publié aucun chiffrage d'ensemble : les trois postes chiffrés à l'antenne font 74 Md€."
+      },
+      {
+        "date": "2026-09-18",
+        "parti": "rec",
+        "qui": "Sarah Knafo",
+        "fonction": "Députée européenne, Reconquête",
+        "media": "Les 4 Vérités, France 2",
+        "quoi": "Fait de toute hausse d'impôt une ligne rouge : Reconquête censurerait un budget qui en comporterait une seule.",
+        "verbatim": "L'année dernière, ils ont inventé 34 milliards d'euros d'impôts, c'est une ligne rouge pour nous.",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": null
+      },
+      {
+        "date": "2026-10-28",
+        "parti": "rec",
+        "qui": "Sarah Knafo",
+        "fonction": "Députée européenne, Reconquête",
+        "media": "8h30 franceinfo",
+        "quoi": "Promet une hausse de 10 % des salaires nets de tous les actifs par la suppression de la CSG sur les revenus d'activité, financée par des baisses de dépenses.",
+        "verbatim": null,
+        "mesure": "csgbaisse",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/attentat-raciste-a-trappes-mobilisations-sociales-pouvoir-d-achat-le-8h30-franceinfo-de-sarah-knafo_8236288.html",
+        "verifie": false,
+        "contredit": "inconnu",
+        "ecart": "La page franceinfo n'a pas de retranscription, seulement l'audio : le contenu vient du compte rendu de Capital du 28 octobre 2026, qui ne cite aucun coût. La mesure « csgbaisse » du catalogue va de 5 à 12 Md€, alors qu'une suppression de la CSG sur les revenus d'activité coûterait bien davantage. Le scénario reconstitué ne contient pas cette mesure."
+      },
+      {
+        "date": "2026-09-17",
+        "parti": "rec",
+        "qui": "Éric Zemmour",
+        "fonction": "Président de Reconquête, candidat à la présidentielle",
+        "media": "BFMTV",
+        "quoi": "En annonçant sa candidature, propose d'expulser tout étranger, même en situation régulière, qui « pèse sur les finances publiques », notamment après un an de chômage.",
+        "verbatim": null,
+        "mesure": "immigration",
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/je-serai-candidat-eric-zemmour-annonce-sur-bfmtv-qu-il-se-presentera-a-l-election-presidentielle_AV-202609170947.html",
+        "verifie": false,
+        "contredit": "inconnu",
+        "ecart": "La page BFMTV n'a pas pu être ouverte. Le contenu est lu dans les comptes rendus d'Europe 1 et de franceinfo du 17 septembre 2026, qui ne donnent aucun montant. Le scénario place déjà la mesure « immigration » à sa borne haute."
+      },
+      {
+        "date": "2026-09-23",
+        "parti": "ren",
+        "qui": "Gabriel Attal",
+        "fonction": "Candidat de Renaissance à l'élection présidentielle",
+        "media": "Conférence de presse « plan de désendettement » avec sept économistes (compte rendu sur attalpresident.fr)",
+        "quoi": "Présente un plan de 150 Md€ d'économies, dont les deux tiers sur les dépenses sociales, avec un déficit sous 3 % du PIB avant la fin du mandat, des comptes sociaux à l'équilibre en 2032 et l'équilibre des finances publiques en 2037.",
+        "verbatim": "150 milliards d'euros d'économies, dont les deux tiers sur les dépenses sociales",
+        "mesure": null,
+        "montant": 150,
+        "type": "economie",
+        "source": "https://attalpresident.fr/actualites/gabriel-attal-presente-un-plan-de-desendettement-et-un-messmer-ii-pour-sortir-des-dependances-francaises",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "En juillet 2026 (Le Parisien), le plan était présenté comme une fourchette de 120 à 150 Md€ d'économies, sur dix ans selon la presse ; il devient 150 Md€ sur le quinquennat. Aucune ventilation poste par poste n'est publiée au-delà de la part « deux tiers sur les dépenses sociales »."
+      },
+      {
+        "date": "2026-10-04",
+        "parti": "ren",
+        "qui": "Gabriel Attal",
+        "fonction": "Candidat de Renaissance à l'élection présidentielle",
+        "media": "Entretien au Parisien, repris sur attalpresident.fr",
+        "quoi": "Annonce un « frein d'urgence » budgétaire de 15 Md€ actionné dès son arrivée à l'Élysée, avant le plan de 150 Md€ d'économies sur le mandat.",
+        "verbatim": "Dès son arrivée à l'Élysée, Gabriel Attal sera en mesure d'actionner un frein d'urgence budgétaire de 15 milliards d'euros",
+        "mesure": null,
+        "montant": 15,
+        "type": "economie",
+        "source": "https://attalpresident.fr/actualites/gabriel-attal-dans-le-parisien-rassemblement-jeunesse-et-dette",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Six jours plus tard (meeting de Lyon, 10 octobre) puis dans la lettre aux Français (15 octobre), le même frein d'urgence passe à 20 Md€, sans explication de la hausse. Le verbatim est la reformulation du site de campagne, l'article du Parisien (daté du 3 octobre dans son URL) n'ayant pas pu être ouvert."
+      },
+      {
+        "date": "2026-10-10",
+        "parti": "ren",
+        "qui": "Gabriel Attal",
+        "fonction": "Candidat de Renaissance à l'élection présidentielle",
+        "media": "Meeting de Lyon (« Pacte pour la jeunesse »), liste des mesures publiée sur attalpresident.fr",
+        "quoi": "Le frein d'urgence passe à 20 Md€ dès l'élection, inclus dans les 150 Md€ d'économies du quinquennat.",
+        "verbatim": "150 milliards d'euros d'économies, dont un frein d'urgence de 20 milliards d'euros dès l'élection.",
+        "mesure": null,
+        "montant": 20,
+        "type": "economie",
+        "source": "https://attalpresident.fr/actualites/gabriel-attal-presente-ses-mesures-pour-la-jeunesse-et-l-avenir-de-la-france",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le 4 octobre, le site de campagne annonçait un frein d'urgence de 15 Md€ (entretien au Parisien) ; il est porté à 20 Md€ six jours plus tard. Le contenu du frein n'est pas détaillé (le 20 septembre sur France 2, il était décrit comme un frein sur l'ensemble des dépenses sociales avec une année blanche)."
+      },
+      {
+        "date": "2026-10-10",
+        "parti": "ren",
+        "qui": "Gabriel Attal",
+        "fonction": "Candidat de Renaissance à l'élection présidentielle",
+        "media": "Meeting de Lyon (« Pacte pour la jeunesse »), liste des mesures publiée sur attalpresident.fr",
+        "quoi": "Promet une revalorisation des enseignants de 200 à 500 € nets par mois, sans chiffrage du coût total.",
+        "verbatim": "200 à 500 euros nets de plus par mois pour les enseignants",
+        "mesure": null,
+        "montant": null,
+        "type": "depense",
+        "source": "https://attalpresident.fr/actualites/gabriel-attal-presente-ses-mesures-pour-la-jeunesse-et-l-avenir-de-la-france",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Dépense nouvelle non chiffrée par le candidat, à financer dans un plan qui prévoit par ailleurs 150 Md€ d'économies et 100 000 postes de fonctionnaires en moins ; son coût n'est pas intégré à un chiffrage global publié."
+      },
+      {
+        "date": "2026-10-15",
+        "parti": "ren",
+        "qui": "Gabriel Attal",
+        "fonction": "Candidat de Renaissance à l'élection présidentielle",
+        "media": "« Lettre de Gabriel Attal aux Français sur les finances publiques » (document PDF de Renaissance)",
+        "quoi": "Chiffre à plus de 7 Md€ par an les économies tirées de la réorganisation de l'État et des collectivités (suppression d'échelons, simplification), en plus d'un plan de départs volontaires de 100 000 postes de fonctionnaires.",
+        "verbatim": "Il faudra notamment tout changer dans notre organisation, supprimer des échelons, tout simplifier. Plus de 7 milliards d'euros pourront ainsi être économisés chaque année.",
+        "mesure": null,
+        "montant": 7,
+        "type": "economie",
+        "source": "https://doc.parti.re/2026/Lettre-finances-publiques.pdf",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "La lettre ne dit pas si les 7 Md€ incluent la suppression des 100 000 postes (la presse de juillet attribuait environ 7 Md€ de masse salariale à ces suppressions) ; rattachement au catalogue (effectifs, collectivités) laissé à null faute de précision. La même lettre promet un système de retraite « sans âge légal »."
+      },
+      {
+        "date": "2026-10-15",
+        "parti": "ren",
+        "qui": "Gabriel Attal",
+        "fonction": "Président du groupe Ensemble pour la République, candidat de Renaissance",
+        "media": "Assemblée nationale, PLF 2027, amendement n° I-3650 (adopté en séance le 15 octobre 2026)",
+        "quoi": "Fait adopter une revalorisation plancher de 10 % du barème kilométrique pour les revenus 2026, au coût estimé par l'exposé sommaire entre 250 et 400 M€ (montant retenu : milieu de fourchette).",
+        "verbatim": "elle a un coût borné, estimé entre 250 et 400 millions d'euros au regard des revalorisations de 2022 et 2023.",
+        "mesure": null,
+        "montant": 0.33,
+        "type": "depense",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/3650",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": "Dépense fiscale ciblée présentée comme cohérente avec la mesure « des aides directes ciblées plutôt que des baisses de taxes » ; elle s'ajoute néanmoins au déficit 2027 alors que le candidat promet un frein d'urgence de 20 Md€."
+      },
+      {
+        "date": "2026-10-10",
+        "parti": "ren",
+        "qui": "Gabriel Attal",
+        "fonction": "Président du groupe Ensemble pour la République, candidat de Renaissance",
+        "media": "Assemblée nationale, PLF 2027, amendement n° I-3663 du groupe EPR (déposé le 10 octobre 2026)",
+        "quoi": "Propose d'annuler la baisse de 125 M€ du plafond de la taxe pour frais de chambres de commerce et d'industrie prévue par l'article 42 du PLF 2027 (plafond porté de 110,1 à 235,1 M€ sur la ligne visée).",
+        "verbatim": "Une réduction supplémentaire de 125 millions d'euros ne pourrait être absorbée par de nouveaux gains d'efficience.",
+        "mesure": "agences",
+        "montant": 0.125,
+        "type": "depense",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/3663",
+        "verifie": true,
+        "contredit": "programme",
+        "ecart": "Le candidat demande que « l'État et les collectivités locales montrent l'exemple » et le scénario du simulateur retient la suppression ou fusion d'agences et d'opérateurs ; ici son groupe s'oppose à une économie de 125 M€ sur un réseau consulaire. Sort de l'amendement non établi à la date de la relève (« à discuter »)."
+      },
+      {
+        "date": "2026-10-28",
+        "parti": "ren",
+        "qui": "Gabriel Attal",
+        "fonction": "Candidat de Renaissance à l'élection présidentielle",
+        "media": "Conférence de presse sur la vision économique, siège de Renaissance (compte rendu sur attalpresident.fr)",
+        "quoi": "Propose des « baby bonds » de 1 000 € à chaque naissance, alimentant un fonds d'investissement à hauteur de 660 M€ par an.",
+        "verbatim": "à hauteur de 660 millions d'euros par an",
+        "mesure": null,
+        "montant": 0.66,
+        "type": "depense",
+        "source": "https://attalpresident.fr/actualites/gabriel-attal-vision-economique-liberer-innover-independance-france",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Dépense nouvelle annuelle non rattachée à une économie identifiée ; la même page chiffre aussi à 20 Md€ par an le gain attendu pour les entreprises d'une réduction d'un quart de la charge administrative, gain économique et non budgétaire."
+      },
+      {
+        "date": "2026-10-28",
+        "parti": "ren",
+        "qui": "Gabriel Attal",
+        "fonction": "Candidat de Renaissance à l'élection présidentielle",
+        "media": "Conférence de presse sur le programme économique, dépêche AFP reprise par Maddyness",
+        "quoi": "Fixe à 200 Md€ d'ici 2040 l'investissement dans l'IA et l'informatique quantique, à parts égales entre financements publics et privés (soit environ 100 Md€ publics).",
+        "verbatim": "200 milliards d'euros d'investissements d'ici 2040, répartis à parts égales entre financements publics et privés",
+        "mesure": null,
+        "montant": 200,
+        "type": "depense",
+        "source": "https://www.maddyness.com/2026/10/28/presidentielle-2027-gabriel-attal-veut-investir-200-milliards-deuros-dans-lia-et-le-quantique/",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "La fiche programme « plan France 2040 » (juin 2026) annonçait les 200 Md€ « d'ici dix ans » ; l'horizon glisse à 2040. La part publique (environ 100 Md€) n'est ni annualisée ni financée dans le plan de 150 Md€ d'économies. Citation reformulée par l'AFP, pas de transcription de la conférence."
+      },
+      {
+        "date": "2026-09-12",
+        "parti": "rn",
+        "qui": "Marine Le Pen",
+        "fonction": "Candidate du Rassemblement national à l'élection présidentielle",
+        "media": "Journées parlementaires du RN au Touquet, rapportées par franceinfo",
+        "quoi": "Exclut toute hausse d'impôt dans le budget 2027 et préfère un budget « imparfait, opérationnel » adopté avant la présidentielle à une loi spéciale, tout en exigeant des économies non chiffrées.",
+        "verbatim": "Nous n'accepterons aucune hausse d'impôt et aucune injustice sociale contre la France du travail",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.franceinfo.fr/politique/marine-le-pen/marine-le-pen-prefere-un-budget-imparfait-operationnel-avant-la-presidentielle-plutot-qu-une-loi-speciale_8189900.html",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": null
+      },
+      {
+        "date": "2026-10-06",
+        "parti": "rn",
+        "qui": "Jordan Bardella",
+        "fonction": "Président du Rassemblement national",
+        "media": "Conférence de presse de présentation du contre-budget du RN, rapportée par Public Sénat",
+        "quoi": "Chiffre à 9 Md€ l'économie attendue sur la contribution française au budget de l'Union européenne.",
+        "verbatim": "9 milliards d'euros sur notre contribution à l'Union européenne",
+        "mesure": "ue",
+        "montant": 9,
+        "type": "economie",
+        "source": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le même jour, le même poste reçoit quatre chiffres différents : 9 Md€ dans la bouche de Jordan Bardella, « -8,9 milliards nets » selon la dépêche AFP reprise par France 24, 11,1 Md€ dès 2027 (puis jusqu'à 20 Md€ par an) dans le contre-budget selon franceinfo, et 11 Md€ dans l'amendement du groupe déposé le 14 octobre. La fiche RN de cette base retient 10 Md€, et la borne haute du catalogue est de 8 Md€."
+      },
+      {
+        "date": "2026-10-06",
+        "parti": "rn",
+        "qui": null,
+        "fonction": "Rassemblement national — contre-budget 2027 présenté le 6 octobre 2026",
+        "media": "Public Sénat",
+        "quoi": "Le contre-budget attend 20,7 Md€ d'économies dès 2027 de la « réorganisation de l'État », présentée comme la « mère des batailles ».",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 20.7,
+        "type": "economie",
+        "source": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "La fiche RN de cette base rattache à l'organisation de l'État environ 9 Md€ (agences 3 Md€, effectifs 6 Md€), sur la foi des annonces antérieures : le contre-budget en attend plus du double, et dès la première année. Les bornes hautes du catalogue pour ces deux postes cumulées plafonnent à 9 Md€. La ventilation des 20,7 Md€ entre agences, effectifs, collectivités et autres postes n'apparaît pas dans l'article."
+      },
+      {
+        "date": "2026-10-06",
+        "parti": "rn",
+        "qui": null,
+        "fonction": "Rassemblement national — contre-budget 2027 présenté le 6 octobre 2026",
+        "media": "Public Sénat",
+        "quoi": "La suppression de « la quasi-totalité des agences » doit rapporter 3,4 Md€ de baisse de dépense en 2027 selon le contre-budget.",
+        "verbatim": null,
+        "mesure": "agences",
+        "montant": 3.4,
+        "type": "economie",
+        "source": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "3,4 Md€ dès 2027 dépassent la borne haute du catalogue (3 Md€) ; Public Sénat rappelle qu'une commission d'enquête du Sénat sur les agences de l'État estimait les économies possibles à « tout juste 500 millions d'euros »."
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "rn",
+        "qui": "Marine Le Pen",
+        "fonction": "Candidate du Rassemblement national à l'élection présidentielle",
+        "media": "Conférence de presse à Bruxelles, veille du sommet européen sur le budget de l'Union — dépêche AFP publiée par France 24",
+        "quoi": "S'engage à défendre un « plafonnement strict » de la contribution nette de la France au budget de l'Union européenne à 5 Md€ par an.",
+        "verbatim": null,
+        "mesure": "ue",
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.france24.com/fr/info-en-continu/20261014-%C3%A0-bruxelles-le-pen-tente-de-peser-sur-le-futur-budget-europ%C3%A9en",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "La cible est exprimée en contribution nette, alors que le contre-budget chiffre l'économie sur la contribution brute (11,1 Md€ dès 2027 selon franceinfo, 9 Md€ selon Jordan Bardella). Selon The Connexion, qui relaie sa vidéo, la candidate évalue la contribution nette actuelle à « environ 10 milliards » : le plafond n'y vaudrait alors qu'environ 5 Md€ d'économie, soit la moitié des 10 Md€ retenus dans la fiche RN. Une réduction unilatérale reste par ailleurs juridiquement impossible (ressource propre, cadre financier pluriannuel voté à l'unanimité)."
+      },
+      {
+        "date": "2026-10-15",
+        "parti": "rn",
+        "qui": "Jean-Philippe Tanguy",
+        "fonction": "Député de la Somme, chargé du contre-budget du RN",
+        "media": "« Les 4V », France 2, rapporté par franceinfo",
+        "quoi": "Au lendemain du vote de la contribution européenne à 31 Md€, annonce qu'une victoire du RN se traduirait par un budget rectificatif ramenant la contribution nette à 5 Md€, et exclut toute hausse d'impôts sur les ménages et les entreprises.",
+        "verbatim": "Cinq milliards net.",
+        "mesure": "ue",
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.franceinfo.fr/politique/il-faut-qu-ils-partent-le-depute-rn-jean-philippe-tanguy-demande-de-depart-d-emmanuel-moulin-gouverneur-de-la-banque-de-france-et-de-richard-ferrand-president-du-conseil-constitutionnel_8238322.html",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": null
+      },
+      {
+        "date": "2026-10-16",
+        "parti": "rn",
+        "qui": "Laure Lavalette",
+        "fonction": "Porte-parole de campagne de Marine Le Pen",
+        "media": "« 8.30 franceinfo »",
+        "quoi": "Annonce que la France ne peut plus financer l'aide à l'Ukraine, dont elle évalue le total versé à 26 milliards.",
+        "verbatim": "Nous ne pouvons plus financièrement aider l'Ukraine",
+        "mesure": null,
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.franceinfo.fr/politique/marine-le-pen/nous-ne-pouvons-plus-financierement-aider-l-ukraine-affirme-laure-lavalette-porte-parole-du-rassemblement-national_8240248.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Ni l'économie annuelle attendue ni sa place dans les 140 Md€ du contre-budget ne sont précisées ; les 26 milliards cités sont un cumul d'aide passée, pas une économie annuelle."
+      },
+      {
+        "date": "2026-10-22",
+        "parti": "rn",
+        "qui": "Gaëtan Dussausaye",
+        "fonction": "Député des Vosges, porte-parole de campagne de Marine Le Pen",
+        "media": "Assemblée nationale, première séance du 22 octobre 2026 (PLFSS 2027), amendement n° 1301 rectifié",
+        "quoi": "Le groupe RN propose de réécrire l'article 7 du PLFSS pour supprimer la réduction des allègements de cotisations (3,7 Md€ de recettes attendues) ; le ministre chiffre le coût de l'amendement à 4 Md€. Rejeté par 68 voix contre 41.",
+        "verbatim": null,
+        "mesure": "alleg",
+        "montant": 4,
+        "type": "depense",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-22-octobre-2026",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": null
+      },
+      {
+        "date": "2026-10-22",
+        "parti": "rn",
+        "qui": "Gaëtan Dussausaye",
+        "fonction": "Député des Vosges, porte-parole de campagne de Marine Le Pen",
+        "media": "Assemblée nationale, première séance du 22 octobre 2026 (PLFSS 2027)",
+        "quoi": "Affirme en séance que le contre-budget du RN prévoit 20 Md€ d'économies sur les dépenses sociales.",
+        "verbatim": "D'ici là, vous pouvez consulter notre contre-budget qui propose 20 milliards d'économies sur les dépenses sociales",
+        "mesure": null,
+        "montant": 20,
+        "type": "economie",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-22-octobre-2026",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le total ne recoupe pas les postes annoncés le 6 octobre : la réserve des prestations de solidarité aux étrangers doit à elle seule rapporter 15 Md€ dès 2027 et 29 Md€ en année pleine (franceinfo), et les retraites 15 à 20 Md€ « à terme » (France 24, Boursorama). Les deux postes sociaux cumulés dépassent 20 Md€ dès 2027 et atteignent 44 à 49 Md€ en année pleine."
+      }
+    ],
+    "partis": {
+      "lfi": {
+        "annonce": {
+          "titre": "106,4 Md€ de recettes nouvelles en 2027",
+          "texte": "Le budget « rectificatif » pour 2027 présenté le 14 octobre 2026 par Jean-Luc Mélenchon et Éric Coquerel prévoit 106,4 Md€ de recettes supplémentaires et 81,7 Md€ de dépenses nouvelles, l'écart d'environ 25 Md€ allant à la réduction de la dette. Recettes chiffrées poste par poste : niches fiscales 22 Md€, droits de succession 20 Md€, taxe Zucman 15 Md€, ISF climatique 10 Md€, fin de la flat tax 9 Md€, taxe sur les transactions financières 5 Md€, IS progressif 3 Md€. Le programme présidentiel complet est annoncé pour novembre 2026 et son chiffrage pour le début de 2027.",
+          "revendique": 106.4,
+          "detaille": 84,
+          "cote": "recette"
+        },
+        "source": {
+          "t": "Contre-budget : LFI propose 106,4 milliards d'euros de recettes supplémentaires et 81,7 milliards de dépenses nouvelles — LCP, 14 octobre 2026",
+          "u": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+        }
+      },
+      "lr": {
+        "annonce": {
+          "revendique": 197,
+          "detaille": 197,
+          "cote": "economie",
+          "titre": "197 Md€ d'économies par an en 2032, chiffrées poste par poste",
+          "texte": "Le 12 octobre 2026, Bruno Retailleau a publié des fiches presse qui chiffrent son plan poste par poste : 197 Md€ d'économies par an atteintes en 2032 (12 Md€ dès 2027), dont 146 Md€ affectés au déficit et 51 Md€ rendus en baisses de prélèvements (30 Md€ aux entreprises, 21 Md€ aux ménages). Le déficit passerait sous 3 % en 2031, à 2,2 % en 2032, sans impôt nouveau. La ventilation : 96 Md€ pour l'État (dont 25 Md€ de 400 000 départs non remplacés et 7,5 Md€ d'agences supprimées), 91 Md€ pour le social (dont 42 Md€ sur les retraites et 30 Md€ sur le chômage et les aides, restitués en baisses de cotisations) et 10 Md€ pour les collectivités. Le scénario ci-dessous reste une reconstitution du simulateur : il n'a pas encore été réaligné sur ces montants, souvent bien au-dessus des bornes du catalogue."
+        },
+        "source": {
+          "t": "Les Républicains — Fiches presse « Rétablir l'ordre dans les comptes publics », 12 octobre 2026",
+          "u": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+        }
+      },
+      "ren": {
+        "annonce": {
+          "titre": "150 Md€ d'économies sur le quinquennat",
+          "texte": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis 150 Md€ d'économies sur le quinquennat, dont deux tiers sur les dépenses sociales ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. Seuls deux postes sont chiffrés : 7 Md€ par an de réorganisation de l'État et des collectivités, 5 Md€ sur l'assurance chômage.",
+          "revendique": 150,
+          "detaille": 12,
+          "cote": "economie"
+        },
+        "source": {
+          "t": "Lettre de Gabriel Attal aux Français sur les finances publiques — Renaissance, 15 octobre 2026",
+          "u": "https://doc.parti.re/2026/Lettre-finances-publiques.pdf"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-10-30",
+    "applique": "2026-10-30",
+    "ajouts": [
+      {
+        "date": "2026-10-05",
+        "parti": "eco",
+        "quoi": "Le groupe écologiste dépose un impôt plancher de 2 % sur les patrimoines de plus de 100 M€ (taxe Zucman), dont il chiffre le rendement à 15 à 25 Md€ en citant Gabriel Zucman (montant retenu : le bas de la fourchette). Rejeté le 16 octobre 2026, scrutin n° 8861 : 35 pour, 70 contre ; seuls 8 des 38 députés écologistes ont pris part au vote.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/38"
+      },
+      {
+        "date": "2026-10-05",
+        "parti": "eco",
+        "quoi": "Contribution temporaire de 33 % sur le chiffre d'affaires additionnel réalisé en France en 2026 et 2027 (par rapport à 2025) par les entreprises pétro-gazières, chiffrée par le groupe à 2,8 Md€ et affectée à un plan d'urgence pour les ménages face à la hausse des prix de l'énergie. Amendement de repli, rejeté le 28 octobre 2026.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/39"
+      },
+      {
+        "date": "2026-10-05",
+        "parti": "eco",
+        "quoi": "ISF climatique pour les patrimoines nets de plus de 1,3 M€ : socle de 0,5 %, composante « chapeau » de 1 % à 3 % à partir de 10 M€, plancher de 2 % au-delà de 100 M€ (taxe Zucman), bonus-malus climatique sur l'immobilier et majoration de 1,5 de la valeur des yachts et jets privés. Aucun rendement chiffré dans l'exposé ; rejeté le 16 octobre 2026.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/54"
+      },
+      {
+        "date": "2026-10-05",
+        "parti": "eco",
+        "quoi": "Fin de la « purge » des plus-values latentes lors des successions et donations pour les parts nettes de plus de 1,3 M€ (imposition constatée à la transmission, payée à la revente), rendement chiffré par le groupe à près de 4 Md€ par an en régime de croisière. Rejeté le 16 octobre 2026.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/53"
+      },
+      {
+        "date": "2026-10-10",
+        "parti": "eco",
+        "quoi": "Affecter 1,5 Md€ supplémentaires par an à l'Agence de financement des infrastructures de transport de France pour la régénération du réseau ferroviaire, par réaffectation de taxes existantes (taxe sur les infrastructures de transport longue distance, solidarité sur les billets d'avion) aujourd'hui reversées au budget général. Non encore examiné au 30 octobre.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/3701"
+      },
+      {
+        "date": "2026-10-10",
+        "parti": "eco",
+        "quoi": "Création d'un fonds de 800 M€ pour les départements afin d'accompagner jusqu'à 21 ans les jeunes majeurs sortant de l'aide sociale à l'enfance. Amendement adopté le 27 octobre 2026.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/3859"
+      },
+      {
+        "date": "2026-10-09",
+        "parti": "eco",
+        "quoi": "Abaisser à 1 400 kg, à partir de 2028, le seuil du malus poids et l'étendre aux véhicules électriques mal notés, pour 1 Md€ de recettes supplémentaires selon une modélisation du WWF citée par le groupe. Non encore examiné au 30 octobre.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/2111"
+      },
+      {
+        "date": "2026-09-17",
+        "parti": "hor",
+        "quoi": "Propose un « fonds unique d'adaptation au changement climatique » doté de 2 Md€ par an, dans le cadre d'une « politique de sécurité climatique ».",
+        "source": "https://www.franceinfo.fr/elections/presidentielle/edouard-philippe-souhaite-doter-la-france-d-une-veritable-politique-de-securite-climatique_8197976.html"
+      },
+      {
+        "date": "2026-09-24",
+        "parti": "hor",
+        "quoi": "Demande que les 450 M€ de nouvelles aides ciblées sur les carburants soient financés « par des économies » ; selon Acteurs publics, il propose pour cela de recruter 7 000 fonctionnaires de moins l'année suivante, par non-remplacement de départs à la retraite (123 000 recrutements au lieu de 130 000).",
+        "source": "https://www.rtl.fr/programmes/face-a-fogiel/7900676407-edouard-philippe-candidat-horizons-a-la-presidentielle-appelle-a-financer-450-millions-d-euros-d-aides-ciblees-sur-les-carburants-par-des-economies"
+      },
+      {
+        "date": "2026-10-08",
+        "parti": "hor",
+        "quoi": "Propose de refondre les allocations familiales en une allocation familiale unique de 350 € par mois versée dès le premier enfant, familles monoparentales comprises.",
+        "source": "https://www.franceinfo.fr/elections/presidentielle/edouard-philippe-veut-aider-les-familles-des-le-premier-enfant-et-via-une-reduction-d-impot_8229028.html"
+      },
+      {
+        "date": "2026-10-08",
+        "parti": "hor",
+        "quoi": "Propose une réduction d'impôt sur le revenu d'environ 3 000 € pour les familles qui travaillent et ont des enfants, pendant les trois années suivant une naissance.",
+        "source": "https://www.franceinfo.fr/elections/presidentielle/edouard-philippe-veut-aider-les-familles-des-le-premier-enfant-et-via-une-reduction-d-impot_8229028.html"
+      },
+      {
+        "date": "2026-10-08",
+        "parti": "hor",
+        "quoi": "Fixe la répartition de son effort budgétaire : la moitié sur les dépenses sociales ; ne remplacer, sur le quinquennat, que deux des 750 000 départs à la retraite de fonctionnaires sur trois ; réduire l'indemnisation du chômage de 18 à 12 mois ; exonérer de cotisations deux heures supplémentaires par semaine, soit environ 1 000 € de plus par an au niveau du SMIC.",
+        "source": "https://www.franceinfo.fr/politique/edouard-philippe/immigration-retraites-allocations-familiales-parcoursup-ce-qu-il-faut-retenir-de-l-interview-d-edouard-philippe-dans-l-emission-l-heure-de-verite_8228416.html"
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "hor",
+        "quoi": "Le groupe Horizons confirme dans l'hémicycle son « budget alternatif » : supprimer près de 10 Md€ de hausses d'impôts du PLF 2027 et les compenser par près de 10 Md€ d'économies, moitié État, moitié comptes sociaux, avec 5 % de déficit maximum en 2027 comme ligne rouge. Déclaration d'une députée parlant au nom du groupe, non du candidat.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+      },
+      {
+        "date": "2026-10-19",
+        "parti": "hor",
+        "quoi": "Le groupe Horizons dépose et fait adopter (avec 15 amendements identiques, 125 voix contre 16) la suppression de l'article 35 du PLF 2027, qui abaissait de 16,404 % à 11,404 % le taux du FCTVA et dont le gouvernement attendait 2,1 Md€ d'économies sur les collectivités.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-lundi-19-octobre-2026"
+      },
+      {
+        "date": "2026-10-22",
+        "parti": "hor",
+        "quoi": "Le groupe Horizons vote la suppression des alinéas de l'article 7 du PLFSS qui intégraient intéressement, participation et prime de partage de la valeur dans le calcul des allègements généraux de cotisations, soit 3,7 Md€ de recettes pour la Sécurité sociale (adopté, 101 voix contre 68). L'oratrice avait annoncé ce refus le 20 octobre en discussion générale, en proposant en échange des économies non chiffrées et le retour au calendrier initial de la réforme des retraites.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-22-octobre-2026"
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "quoi": "Quelques heures avant la présentation officielle, annonce un contre-budget d'environ 108 Md€ de recettes pour 80 Md€ de dépenses.",
+        "source": "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-mercredi-14-octobre-2026_8207213.html"
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "quoi": "La hausse du point d'indice de la fonction publique est chiffrée à 17 Md€ de dépenses dans le contre-budget pour 2027.",
+        "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "quoi": "La taxe sur les transactions financières est chiffrée à 5 Md€ de recettes dans le budget rectificatif pour 2027.",
+        "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "quoi": "Un impôt sur les sociétés progressif est chiffré à 3 Md€ de recettes dans le budget rectificatif pour 2027.",
+        "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "quoi": "L'abrogation de la réforme Borne, avec retour de l'âge de départ à 62 ans, est chiffrée à 9 Md€ de dépenses dans le budget rectificatif pour 2027.",
+        "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027"
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "quoi": "Une « garantie d'autonomie » pour les jeunes, de 1 337 € par mois, est chiffrée à 9,5 Md€ par an dans le budget rectificatif.",
+        "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027"
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "lfi",
+        "quoi": "Le groupe LFI propose de ramener le prélèvement sur recettes au profit de l'Union européenne de 30,9 à 25,3 Md€ (−5,6 Md€) pour que la France cesse d'être contributrice nette. Rejeté par 126 voix contre 102 ; les 27 votants LFI et 73 députés RN ont voté pour.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/954"
+      },
+      {
+        "date": "2026-10-16",
+        "parti": "lfi",
+        "quoi": "En repli, le groupe LFI propose de relever le prélèvement forfaitaire unique de 12,8 % à 22,8 % et s'engage à l'abroger entièrement si Jean-Luc Mélenchon est élu.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/1083"
+      },
+      {
+        "date": "2026-10-16",
+        "parti": "lfi",
+        "quoi": "En repli, le groupe LFI propose de rétablir l'ISF, avec un barème de 0,5 % à 3 % au-delà de 800 000 €, pour des recettes nettes estimées à 3,5 Md€.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/1079"
+      },
+      {
+        "date": "2026-10-15",
+        "parti": "lfi",
+        "quoi": "Le groupe LFI propose de tripler la contribution exceptionnelle sur les hauts revenus (taux portés de 3 % et 4 % à 9 % et 12 %), qui rapporte aujourd'hui 1,41 Md€, pour « plusieurs milliards » de recettes supplémentaires.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/2517"
+      },
+      {
+        "date": "2026-10-05",
+        "parti": "lfi",
+        "quoi": "Chiffre le coût des canicules, sécheresses et incendies de l'été 2026 à environ 16 Md€ et juge nécessaire d'engager entre 8,75 et 12,3 Md€ de dépenses publiques supplémentaires en 2027 (dont 8,4 à 11,9 Md€ sur le budget de l'État). Il annonce des amendements au PLF 2027. Il s'exprime ici comme rapporteur de la commission, pas au nom de LFI.",
+        "source": "https://lcp.fr/actualites/les-canicules-et-les-incendies-de-cet-ete-ont-coute-au-moins-16-milliards-d-euros-selon"
+      },
+      {
+        "date": "2026-09-22",
+        "parti": "lr",
+        "quoi": "Détaille sa réforme des retraites — âge minimal de départ à 63 ans avec une décote de 7 % par an, taux plein automatique à 65 ans indexé sur l'espérance de vie — et en chiffre le rendement à environ 40 Md€ d'économies cumulées sur cinq ans.",
+        "source": "https://www.tf1info.fr/politique/presidentielle-2027-age-minimal-de-depart-a-63-ans-a-taux-plein-a-65-ans-bruno-retailleau-devoile-sur-lci-ses-propositions-pour-les-retraites-2465712.html"
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "quoi": "Le dossier de presse du plan précise que les 197 Md€ sont des économies annuelles atteintes en 2032 (12 Md€ en 2027, 58 en 2028, 95 en 2029, 131 en 2030, 169 en 2031), dont 146 Md€ affectés au déficit : 4,8 % du PIB en 2027, 2,8 % en 2031, 2,2 % en 2032, excédent primaire dès 2030, dette au plus haut à 123,8 % du PIB en 2030.",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "quoi": "Chiffre à 7,5 Md€ en 2032 la suppression ou le rapatriement des 1 153 agences, comités et opérateurs recensés par le Sénat : 4 Md€ sur les structures et 3,5 Md€ de concours recentrés.",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "quoi": "Chiffre à 14 Md€ en 2032 la réforme de l'assurance chômage : application des règles de juin 2024 (durée maximale ramenée de 18 à 15 mois), plafonnement de l'indemnisation après rupture conventionnelle, indemnisation des frontaliers sur un salaire français, suspension au troisième refus d'une offre raisonnable.",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "quoi": "Chiffre à 10 Md€ en 2032 un « compte social unique » plafonnant l'ensemble des aides non contributives à 70 % du SMIC net par adulte, hors handicap, dépendance et vieillesse ; s'y ajoutent 2 Md€ d'un revenu d'incitation à l'activité fusionnant RSA, prime d'activité et ASS.",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "quoi": "Chiffre à 9 Md€ en 2032 la lutte contre les fraudes : 5 Md€ de fraude fiscale et aux aides publiques (gel des avoirs sur les grands montages, ciblage des contrôles par l'IA) et 4 Md€ de fraude sociale (meilleur recouvrement des prestations indues, encaissement des redressements pour travail dissimulé).",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "quoi": "Chiffre à 10 Md€ en 2032 les économies liées à l'immigration (7 Md€ côté social, 3 Md€ côté État), dont 3,6 Md€ pour la condition de cinq ans de séjour et de travail pour les prestations de solidarité et 0,9 Md€ pour l'asile examiné hors des frontières, deux mesures conditionnées à une révision constitutionnelle par référendum.",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "quoi": "Demande 10 Md€ d'effort en 2032 aux 2 232 collectivités de plus de 10 M€ de budget, sur leurs seules dépenses de fonctionnement hors personnel et hors prestations sociales, l'investissement local n'étant pas touché.",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "quoi": "Prévoit 15 Md€ de suppression d'impôts de production en 2032, gagés sur des économies générales, dans les 30 Md€ rendus aux entreprises (avec 15 Md€ de cotisations patronales en moins).",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "quoi": "Chiffre à 4 Md€ en 2032 les économies sur les arrêts maladie et précise que les gains d'efficience du système de santé seront intégralement réinvestis dans le soin, hors des 197 Md€.",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "date": "2026-10-12",
+        "parti": "lr",
+        "quoi": "Chiffre à 12 Md€ en 2032 les seules mesures d'âge de la réforme des retraites (liberté de départ à 63 ans avec décote, taux plein à 65 ans) ; le reste des 42 Md€ vient de produits financiers des réserves (7,5), de l'alignement sur l'Agirc-Arrco (7,2), d'une cotisation dédiée de 1 % (6), du doublement de la RAFP (4,3), de la fin des régimes spéciaux (3) et de la fraude (2).",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "date": "2026-10-04",
+        "parti": "lr",
+        "quoi": "Annonce que LR ne censurera pas le budget 2027 et propose un plan de 20 Md€ d'économies en plus des 43 Md€ du gouvernement : 50 000 postes de fonctionnaires supprimés (3 Md€), 5 Md€ de coupes dans les agences, 7 Md€ sur le RSA limité à deux ans, 5 Md€ sur l'immigration, et des aides sociales plafonnées à 70 % du SMIC.",
+        "source": "https://www.france24.com/fr/info-en-continu/20261004-budget-2027-wauquiez-affirme-que-lr-ne-pratiquera-pas-le-petit-jeu-de-la-censure"
+      },
+      {
+        "date": "2026-10-27",
+        "parti": "lr",
+        "quoi": "Sur la suppression de l'article 15 du PLF 2027, qui reconduisait la surtaxe sur les bénéfices des grandes entreprises (environ 5 Md€ selon la presse), le groupe Droite républicaine se divise : 7 députés votent contre la suppression, donc pour maintenir la surtaxe, dont Philippe Juvin ; 4 votent pour. La suppression est adoptée par 79 voix contre 77.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9123"
+      },
+      {
+        "date": "2026-09-17",
+        "parti": "ne",
+        "quoi": "Interrogé sur son objectif de 80 Md€ d'économies dès la première année, cite en premier exemple les 3,2 Md€ versés par l'État pour l'hébergement d'urgence en hôtels, sans dire quelle part il en retrancherait.",
+        "source": "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-jeudi-17-septembre-2026_8182328.html"
+      },
+      {
+        "date": "2026-09-17",
+        "parti": "ne",
+        "quoi": "Désigne les agences et organismes publics comme gisement d'économies : 450 000 recrutements en vingt ans dans 1 153 établissements, « plus de 100 milliards de dépenses » ; propose de ramener les 11 agences environnementales et les 14 organismes de santé à un seul chacun.",
+        "source": "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-jeudi-17-septembre-2026_8182328.html"
+      },
+      {
+        "date": "2026-09-25",
+        "parti": "ne",
+        "quoi": "Dit avoir documenté une baisse de sept points de PIB de la dépense publique, aujourd'hui à 57,5 % de la richesse produite selon lui.",
+        "source": "https://www.unenouvelleenergie.fr/questions/le-programme-de-david-lisnard-est-il-chiffre/"
+      },
+      {
+        "date": "2026-10-27",
+        "parti": "ne",
+        "quoi": "Propose d'aligner la CSG sur les revenus d'activité sur le taux des inactifs, soit de 9,2 % à 6,6 %, pour redonner du salaire net : « cotiser moins pour gagner plus ».",
+        "source": "https://europe1.fr/politique/en-direct-emeutes-parcoursup-primaire-a-droite-ce-quil-faut-retenir-de-linterview-de-david-lisnard-dans-objectif-elysee-2027-1186743"
+      },
+      {
+        "date": "2026-10-27",
+        "parti": "ne",
+        "quoi": "Propose un gel des retraites supérieures à 2 200 € par mois (pas un gel général), avec la suppression de certaines prestations, la non-indexation d'autres et la réduction des allocations non contributives versées aux étrangers ; c'est à cet ensemble qu'il rattache « 2 à 3 Md€ dès la première année ».",
+        "source": "https://europe1.fr/politique/en-direct-emeutes-parcoursup-primaire-a-droite-ce-quil-faut-retenir-de-linterview-de-david-lisnard-dans-objectif-elysee-2027-1186743"
+      },
+      {
+        "date": "2026-09-16",
+        "parti": "ps",
+        "quoi": "Le contre-budget du groupe socialiste attend 10 Md€ d'une CSG sur les gros héritages, ciblant selon Estelle Mercier les 10 % d'héritiers qui reçoivent le plus.",
+        "source": "https://lcp.fr/actualites/budget-a-l-assemblee-les-socialistes-presentent-leurs-propositions-et-previennent-qu-ils"
+      },
+      {
+        "date": "2026-09-16",
+        "parti": "ps",
+        "quoi": "Le contre-budget socialiste prévoit une taxe sur les géants du numérique d'un rendement de 10 Md€.",
+        "source": "https://lcp.fr/actualites/budget-a-l-assemblee-les-socialistes-presentent-leurs-propositions-et-previennent-qu-ils"
+      },
+      {
+        "date": "2026-09-16",
+        "parti": "ps",
+        "quoi": "Détaille un plan d'économies de 12,1 Md€ dans le contre-budget socialiste, par la lutte contre la fraude fiscale et la réduction du train de vie de l'État, « sans rogner sur les services publics essentiels ».",
+        "source": "https://lcp.fr/actualites/budget-a-l-assemblee-les-socialistes-presentent-leurs-propositions-et-previennent-qu-ils"
+      },
+      {
+        "date": "2026-09-16",
+        "parti": "ps",
+        "quoi": "Le contre-budget socialiste prévoit d'investir 10 Md€ dans la lutte contre le réchauffement climatique, à côté de 3 Md€ pour l'hôpital et les Ehpad publics.",
+        "source": "https://lcp.fr/actualites/budget-a-l-assemblee-les-socialistes-presentent-leurs-propositions-et-previennent-qu-ils"
+      },
+      {
+        "date": "2026-09-22",
+        "parti": "ps",
+        "quoi": "Défend un contre-budget de 39,5 Md€ de recettes nouvelles (taxe Zucman, CSG sur les héritages au-delà de 500 000 € par héritier), présenté par l'article comme une réduction du déficit de 24 Md€.",
+        "source": "https://www.publicsenat.fr/actualites/politique/budget-2027-boris-vallaud-ps-denonce-un-budget-qui-risque-de-nous-enfoncer-dans-la-crise"
+      },
+      {
+        "date": "2026-10-04",
+        "parti": "ps",
+        "quoi": "S'engage à abroger la réforme des retraites de 2023 et à ramener l'âge légal à 62 ans, en excluant un retour à 60 ans.",
+        "source": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat"
+      },
+      {
+        "date": "2026-10-04",
+        "parti": "ps",
+        "quoi": "Propose de taxer les « méga héritages » au-delà de deux millions d'euros pour financer une baisse de la CSG sur les salaires.",
+        "source": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat"
+      },
+      {
+        "date": "2026-10-16",
+        "parti": "ps",
+        "quoi": "Le groupe socialiste redépose l'impôt plancher de 2 % sur les patrimoines nets supérieurs à 100 M€ (taxe Zucman), dont il chiffre le rendement entre 15 et 25 Md€ par an ; l'amendement est rejeté.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/471"
+      },
+      {
+        "date": "2026-10-30",
+        "parti": "ps",
+        "quoi": "L'Assemblée adopte un amendement socialiste qui rétablit l'exit tax en portant de deux à quinze ans le délai de détention au-delà duquel l'impôt sur la plus-value latente est dégrevé ; aucun rendement n'est chiffré.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/470"
+      },
+      {
+        "date": "2026-09-18",
+        "parti": "rec",
+        "quoi": "Propose de ne pas remplacer 800 000 postes de la fonction publique, pour une économie annuelle chiffrée à 40 Md€.",
+        "source": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html"
+      },
+      {
+        "date": "2026-09-18",
+        "parti": "rec",
+        "quoi": "Propose de supprimer l'aide publique au développement, chiffrée à 14 Md€.",
+        "source": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html"
+      },
+      {
+        "date": "2026-09-18",
+        "parti": "rec",
+        "quoi": "Propose de réserver les prestations sociales non contributives aux Français, pour une économie allant jusqu'à 20 Md€.",
+        "source": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html"
+      },
+      {
+        "date": "2026-09-18",
+        "parti": "rec",
+        "quoi": "Interrogée sur les 140 Md€ d'économies de son livre « Le Casse du siècle », ne conteste pas le chiffre et en détaille les premiers postes (fonction publique, aide au développement, prestations non contributives).",
+        "source": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html"
+      },
+      {
+        "date": "2026-09-18",
+        "parti": "rec",
+        "quoi": "Fait de toute hausse d'impôt une ligne rouge : Reconquête censurerait un budget qui en comporterait une seule.",
+        "source": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html"
+      },
+      {
+        "date": "2026-10-28",
+        "parti": "rec",
+        "quoi": "Promet une hausse de 10 % des salaires nets de tous les actifs par la suppression de la CSG sur les revenus d'activité, financée par des baisses de dépenses.",
+        "source": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/attentat-raciste-a-trappes-mobilisations-sociales-pouvoir-d-achat-le-8h30-franceinfo-de-sarah-knafo_8236288.html"
+      },
+      {
+        "date": "2026-09-17",
+        "parti": "rec",
+        "quoi": "En annonçant sa candidature, propose d'expulser tout étranger, même en situation régulière, qui « pèse sur les finances publiques », notamment après un an de chômage.",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/je-serai-candidat-eric-zemmour-annonce-sur-bfmtv-qu-il-se-presentera-a-l-election-presidentielle_AV-202609170947.html"
+      },
+      {
+        "date": "2026-09-23",
+        "parti": "ren",
+        "quoi": "Présente un plan de 150 Md€ d'économies, dont les deux tiers sur les dépenses sociales, avec un déficit sous 3 % du PIB avant la fin du mandat, des comptes sociaux à l'équilibre en 2032 et l'équilibre des finances publiques en 2037.",
+        "source": "https://attalpresident.fr/actualites/gabriel-attal-presente-un-plan-de-desendettement-et-un-messmer-ii-pour-sortir-des-dependances-francaises"
+      },
+      {
+        "date": "2026-10-04",
+        "parti": "ren",
+        "quoi": "Annonce un « frein d'urgence » budgétaire de 15 Md€ actionné dès son arrivée à l'Élysée, avant le plan de 150 Md€ d'économies sur le mandat.",
+        "source": "https://attalpresident.fr/actualites/gabriel-attal-dans-le-parisien-rassemblement-jeunesse-et-dette"
+      },
+      {
+        "date": "2026-10-10",
+        "parti": "ren",
+        "quoi": "Le frein d'urgence passe à 20 Md€ dès l'élection, inclus dans les 150 Md€ d'économies du quinquennat.",
+        "source": "https://attalpresident.fr/actualites/gabriel-attal-presente-ses-mesures-pour-la-jeunesse-et-l-avenir-de-la-france"
+      },
+      {
+        "date": "2026-10-10",
+        "parti": "ren",
+        "quoi": "Promet une revalorisation des enseignants de 200 à 500 € nets par mois, sans chiffrage du coût total.",
+        "source": "https://attalpresident.fr/actualites/gabriel-attal-presente-ses-mesures-pour-la-jeunesse-et-l-avenir-de-la-france"
+      },
+      {
+        "date": "2026-10-15",
+        "parti": "ren",
+        "quoi": "Chiffre à plus de 7 Md€ par an les économies tirées de la réorganisation de l'État et des collectivités (suppression d'échelons, simplification), en plus d'un plan de départs volontaires de 100 000 postes de fonctionnaires.",
+        "source": "https://doc.parti.re/2026/Lettre-finances-publiques.pdf"
+      },
+      {
+        "date": "2026-10-15",
+        "parti": "ren",
+        "quoi": "Fait adopter une revalorisation plancher de 10 % du barème kilométrique pour les revenus 2026, au coût estimé par l'exposé sommaire entre 250 et 400 M€ (montant retenu : milieu de fourchette).",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/3650"
+      },
+      {
+        "date": "2026-10-10",
+        "parti": "ren",
+        "quoi": "Propose d'annuler la baisse de 125 M€ du plafond de la taxe pour frais de chambres de commerce et d'industrie prévue par l'article 42 du PLF 2027 (plafond porté de 110,1 à 235,1 M€ sur la ligne visée).",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/3663"
+      },
+      {
+        "date": "2026-10-28",
+        "parti": "ren",
+        "quoi": "Propose des « baby bonds » de 1 000 € à chaque naissance, alimentant un fonds d'investissement à hauteur de 660 M€ par an.",
+        "source": "https://attalpresident.fr/actualites/gabriel-attal-vision-economique-liberer-innover-independance-france"
+      },
+      {
+        "date": "2026-10-28",
+        "parti": "ren",
+        "quoi": "Fixe à 200 Md€ d'ici 2040 l'investissement dans l'IA et l'informatique quantique, à parts égales entre financements publics et privés (soit environ 100 Md€ publics).",
+        "source": "https://www.maddyness.com/2026/10/28/presidentielle-2027-gabriel-attal-veut-investir-200-milliards-deuros-dans-lia-et-le-quantique/"
+      },
+      {
+        "date": "2026-09-12",
+        "parti": "rn",
+        "quoi": "Exclut toute hausse d'impôt dans le budget 2027 et préfère un budget « imparfait, opérationnel » adopté avant la présidentielle à une loi spéciale, tout en exigeant des économies non chiffrées.",
+        "source": "https://www.franceinfo.fr/politique/marine-le-pen/marine-le-pen-prefere-un-budget-imparfait-operationnel-avant-la-presidentielle-plutot-qu-une-loi-speciale_8189900.html"
+      },
+      {
+        "date": "2026-10-06",
+        "parti": "rn",
+        "quoi": "Chiffre à 9 Md€ l'économie attendue sur la contribution française au budget de l'Union européenne.",
+        "source": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f"
+      },
+      {
+        "date": "2026-10-06",
+        "parti": "rn",
+        "quoi": "Le contre-budget attend 20,7 Md€ d'économies dès 2027 de la « réorganisation de l'État », présentée comme la « mère des batailles ».",
+        "source": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f"
+      },
+      {
+        "date": "2026-10-06",
+        "parti": "rn",
+        "quoi": "La suppression de « la quasi-totalité des agences » doit rapporter 3,4 Md€ de baisse de dépense en 2027 selon le contre-budget.",
+        "source": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f"
+      },
+      {
+        "date": "2026-10-14",
+        "parti": "rn",
+        "quoi": "S'engage à défendre un « plafonnement strict » de la contribution nette de la France au budget de l'Union européenne à 5 Md€ par an.",
+        "source": "https://www.france24.com/fr/info-en-continu/20261014-%C3%A0-bruxelles-le-pen-tente-de-peser-sur-le-futur-budget-europ%C3%A9en"
+      },
+      {
+        "date": "2026-10-15",
+        "parti": "rn",
+        "quoi": "Au lendemain du vote de la contribution européenne à 31 Md€, annonce qu'une victoire du RN se traduirait par un budget rectificatif ramenant la contribution nette à 5 Md€, et exclut toute hausse d'impôts sur les ménages et les entreprises.",
+        "source": "https://www.franceinfo.fr/politique/il-faut-qu-ils-partent-le-depute-rn-jean-philippe-tanguy-demande-de-depart-d-emmanuel-moulin-gouverneur-de-la-banque-de-france-et-de-richard-ferrand-president-du-conseil-constitutionnel_8238322.html"
+      },
+      {
+        "date": "2026-10-16",
+        "parti": "rn",
+        "quoi": "Annonce que la France ne peut plus financer l'aide à l'Ukraine, dont elle évalue le total versé à 26 milliards.",
+        "source": "https://www.franceinfo.fr/politique/marine-le-pen/nous-ne-pouvons-plus-financierement-aider-l-ukraine-affirme-laure-lavalette-porte-parole-du-rassemblement-national_8240248.html"
+      },
+      {
+        "date": "2026-10-22",
+        "parti": "rn",
+        "quoi": "Le groupe RN propose de réécrire l'article 7 du PLFSS pour supprimer la réduction des allègements de cotisations (3,7 Md€ de recettes attendues) ; le ministre chiffre le coût de l'amendement à 4 Md€. Rejeté par 68 voix contre 41.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-22-octobre-2026"
+      },
+      {
+        "date": "2026-10-22",
+        "parti": "rn",
+        "quoi": "Affirme en séance que le contre-budget du RN prévoit 20 Md€ d'économies sur les dépenses sociales.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-22-octobre-2026"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "parties.lfi.annonce.titre",
+        "avant": "≈ 90 Md€ de recettes nouvelles",
+        "apres": "106,4 Md€ de recettes nouvelles en 2027",
+        "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+      },
+      {
+        "quoi": "parties.lfi.annonce.texte",
+        "avant": "Les chiffrages du programme de gauche retiennent environ 90 Md€ de recettes fiscales supplémentaires par an (fourchette de 60 à 120 Md€), portées par les 10 % de ménages les plus aisés et par les grandes entreprises : ISF climatique 12 Md€, contribution sur les superprofits 15 Md€, taxe sur les transactions financières 20 Md€, plus la lutte contre l'évasion fiscale, chiffrée à partir d'un écart estimé à 80 Md€ par an. Côté dépenses, la retraite à 60 ans et le plan d'investissement écologique sont les deux postes dominants.",
+        "apres": "Le budget « rectificatif » pour 2027 présenté le 14 octobre 2026 par Jean-Luc Mélenchon et Éric Coquerel prévoit 106,4 Md€ de recettes supplémentaires et 81,7 Md€ de dépenses nouvelles, l'écart d'environ 25 Md€ allant à la réduction de la dette. Recettes chiffrées poste par poste : niches fiscales 22 Md€, droits de succession 20 Md€, taxe Zucman 15 Md€, ISF climatique 10 Md€, fin de la flat tax 9 Md€, taxe sur les transactions financières 5 Md€, IS progressif 3 Md€. Le programme présidentiel complet est annoncé pour novembre 2026 et son chiffrage pour le début de 2027.",
+        "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+      },
+      {
+        "quoi": "parties.lfi.annonce.revendique",
+        "avant": 90,
+        "apres": 106.4,
+        "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+      },
+      {
+        "quoi": "parties.lfi.annonce.detaille",
+        "avant": 90,
+        "apres": 84,
+        "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+      },
+      {
+        "quoi": "parties.lr.annonce.revendique",
+        "avant": null,
+        "apres": 197,
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "quoi": "parties.lr.annonce.detaille",
+        "avant": null,
+        "apres": 197,
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "quoi": "parties.lr.annonce.cote",
+        "avant": null,
+        "apres": "economie",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "quoi": "parties.lr.annonce.titre",
+        "avant": "197 Md€ d'économies annoncés, sans ventilation par poste",
+        "apres": "197 Md€ d'économies par an en 2032, chiffrées poste par poste",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "quoi": "parties.lr.annonce.texte",
+        "avant": "Bruno Retailleau a annoncé le 12 octobre 2026 un plan de près de 197 Md€ d'économies d'ici 2032 — premier chiffrage d'ensemble du parti — dont 146 Md€ affectés au déficit et à la dette et 51 Md€ rendus en baisses d'impôts, pour un déficit sous 3 % du PIB en 2031 et sans hausse d'impôts. La ventilation publiée s'arrête aux grandes sphères de dépense : 96 Md€ pour l'État, 91 Md€ pour le social, 10 Md€ pour les collectivités. Faute de montants poste par poste, le scénario ci-dessous reste une reconstitution du simulateur, et les montants sont ceux du catalogue, pas ceux du parti.",
+        "apres": "Le 12 octobre 2026, Bruno Retailleau a publié des fiches presse qui chiffrent son plan poste par poste : 197 Md€ d'économies par an atteintes en 2032 (12 Md€ dès 2027), dont 146 Md€ affectés au déficit et 51 Md€ rendus en baisses de prélèvements (30 Md€ aux entreprises, 21 Md€ aux ménages). Le déficit passerait sous 3 % en 2031, à 2,2 % en 2032, sans impôt nouveau. La ventilation : 96 Md€ pour l'État (dont 25 Md€ de 400 000 départs non remplacés et 7,5 Md€ d'agences supprimées), 91 Md€ pour le social (dont 42 Md€ sur les retraites et 30 Md€ sur le chômage et les aides, restitués en baisses de cotisations) et 10 Md€ pour les collectivités. Le scénario ci-dessous reste une reconstitution du simulateur : il n'a pas encore été réaligné sur ces montants, souvent bien au-dessus des bornes du catalogue.",
+        "source": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+      },
+      {
+        "quoi": "parties.ren.annonce.titre",
+        "avant": "Pas de chiffrage 2027 publié",
+        "apres": "150 Md€ d'économies sur le quinquennat",
+        "source": "https://doc.parti.re/2026/Lettre-finances-publiques.pdf"
+      },
+      {
+        "quoi": "parties.ren.annonce.texte",
+        "avant": "Reconstitution du simulateur à partir de positions publiques : maîtrise de la dépense sans hausse générale des prélèvements, poursuite de la baisse des impôts de production, effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.",
+        "apres": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis 150 Md€ d'économies sur le quinquennat, dont deux tiers sur les dépenses sociales ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. Seuls deux postes sont chiffrés : 7 Md€ par an de réorganisation de l'État et des collectivités, 5 Md€ sur l'assurance chômage.",
+        "source": "https://doc.parti.re/2026/Lettre-finances-publiques.pdf"
+      },
+      {
+        "quoi": "parties.ren.annonce.revendique",
+        "avant": null,
+        "apres": 150,
+        "source": "https://doc.parti.re/2026/Lettre-finances-publiques.pdf"
+      },
+      {
+        "quoi": "parties.ren.annonce.detaille",
+        "avant": null,
+        "apres": 12,
+        "source": "https://doc.parti.re/2026/Lettre-finances-publiques.pdf"
+      },
+      {
+        "quoi": "parties.ren.annonce.cote",
+        "avant": null,
+        "apres": "economie",
+        "source": "https://doc.parti.re/2026/Lettre-finances-publiques.pdf"
+      }
+    ]
+  }
+}
