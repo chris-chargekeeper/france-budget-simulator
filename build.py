@@ -17,7 +17,7 @@ import sys
 
 ROOT = pathlib.Path(__file__).parent
 DATA = ROOT / "dataset" / "simulateur"
-FILES = ["baseline", "measures", "parties", "announcements", "assises"]
+FILES = ["baseline", "measures", "parties", "announcements", "assises", "contexte"]
 CONTRADICTION = {"non", "programme", "annonce", "inconnu"}
 
 DERIVE = ROOT / "dataset" / "derive"

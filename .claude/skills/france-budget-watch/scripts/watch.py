@@ -42,10 +42,32 @@ CHAMPS_PARTI = {"titre", "texte", "revendique", "detaille", "cote"}
 CHAMPS_MESURE = {"lo", "mid", "hi", "note"}
 STRUCTURELS = {"id", "g", "inst", "lab", "ramp", "behav", "disp"}
 
+# Les candidatures bougent : un candidat change, se déclare, se retire. Un patch peut le dire,
+# avec une source ; il ne peut pas toucher au scénario chiffré d'un parti existant.
+CHAMPS_PARTI_HAUT = {"annonce", "source", "candidat", "statutCandidature", "avatar", "retrait"}
+CHAMPS_NOUVEAU = {"id", "nom", "sigle", "candidat", "avatar", "couleur", "statutCandidature",
+                  "statut", "annonce", "set", "source"}
+STATUTS = {"publie", "partiel", "reconstitution"}
+SIMS = {"lo", "mid", "hi"}
+SLUG = re.compile(r"^[a-z][a-z0-9]{1,11}$")
+COULEUR = re.compile(r"^#[0-9A-Fa-f]{6}$")
+
+# Le contexte macroéconomique : des valeurs datées et sourcées. Le lien entre un indicateur et
+# une hypothèse du simulateur (`hypothese`) et ses bornes de vraisemblance se règlent à la main.
+CHAMPS_INDICATEUR = {"valeur", "date", "note", "source", "lab", "unite", "groupe", "detail"}
+GROUPES = {"marches", "notation", "previsions", "finances"}
+
 
 def charger():
-    return {n: json.loads((DATA / f"{n}.json").read_text(encoding="utf-8"))
-            for n in ("baseline", "measures", "parties", "announcements")}
+    noms = ["baseline", "measures", "parties", "announcements"]
+    if (DATA / "contexte.json").is_file():
+        noms.append("contexte")
+    return {n: json.loads((DATA / f"{n}.json").read_text(encoding="utf-8")) for n in noms}
+
+
+def source_ok(src):
+    src = src or {}
+    return str(src.get("u", "")).startswith("http") and bool(src.get("t"))
 
 
 def ecrire(nom, obj):
@@ -76,9 +98,37 @@ def date_valide(s):
 
 def etat(d):
     """Ce qu'il y a, et surtout ce qui manque — le brief de la recherche à mener."""
-    partis = d["parties"]["parties"]
+    tous = d["parties"]["parties"]
+    partis = [p for p in tous if not p.get("retire") and not p.get("horsCourse")]
     items = d["announcements"]["items"]
     mesures = {m["id"]: m for m in d["measures"]["measures"]}
+
+    print("Candidatures suivies (à revérifier à chaque relève : déclarations, retraits, "
+          "primaires, ralliements, nouveaux entrants) :")
+    for p in tous:
+        if p.get("horsCourse"):
+            continue
+        if p.get("retire"):
+            print(f"  ✗ {p['sigle']:5} {p['candidat']:22} retiré le {p['retire']['date']} — "
+                  f"{p['retire']['motif']}")
+        else:
+            print(f"  · {p['sigle']:5} {p['candidat']:22} {p.get('statutCandidature', '')}")
+    print()
+
+    ctx = (d.get("contexte") or {}).get("indicateurs", [])
+    if ctx:
+        print("Contexte macroéconomique (valeur, date, âge) — à rafraîchir dès qu'une valeur "
+              "plus récente est publiée :")
+        for x in ctx:
+            age = "—"
+            if x.get("date") and date_valide(x["date"])[0]:
+                d0 = datetime.date.fromisoformat(x["date"] if len(x["date"]) == 10
+                                                 else x["date"] + "-01")
+                age = f"{(aujourdhui() - d0).days} j"
+            lien = f"  ⇒ {x['hypothese']}" if x.get("hypothese") else ""
+            print(f"  {x['id']:16} {str(x.get('valeur')):>8} {x.get('unite', ''):4} "
+                  f"{x.get('date', '—'):>10}  {age:>6}{lien}")
+        print()
 
     print(f"Base au {d['announcements']['updated']} — {len(items)} annonces, "
           f"{len(partis)} partis, {len(mesures)} mesures.\n")
@@ -130,7 +180,9 @@ def valider(d, patch):
     ids_partis = {p["id"] for p in d["parties"]["parties"]}
     existantes = d["announcements"]["items"]
 
-    inconnu = set(patch) - {"_comment", "releve", "annonces", "partis", "mesures"}
+    inconnu = set(patch) - {"_comment", "releve", "annonces", "partis", "mesures",
+                            "nouveaux_partis", "contexte"}
+    ids_partis |= {n.get("id") for n in patch.get("nouveaux_partis", [])}
     if inconnu:
         erreurs.append(f"clés inconnues dans le patch : {sorted(inconnu)}")
 
@@ -172,23 +224,123 @@ def valider(d, patch):
             plan.append(f"  + annonce {a.get('date')} {a.get('parti') or '—'} "
                         f"{str(a.get('quoi'))[:60]}")
 
+    existants = {p["id"]: p for p in d["parties"]["parties"]}
     for pid, maj in (patch.get("partis") or {}).items():
         ou = f"partis.{pid}"
-        if pid not in ids_partis:
-            erreurs.append(f"{ou} : parti inconnu")
+        if pid not in existants:
+            erreurs.append(f"{ou} : parti inconnu — un nouveau candidat passe par "
+                           f"'nouveaux_partis'")
             continue
+        parti = existants[pid]
+        if parti.get("horsCourse"):
+            erreurs.append(f"{ou} : scénario hors course, maintenu à la main, pas par la veille")
+            continue
+        trop = set(maj) - CHAMPS_PARTI_HAUT
+        if trop:
+            erreurs.append(f"{ou} : champs non autorisés {sorted(trop)} — le scénario chiffré "
+                           f"d'un parti ne se modifie pas par la veille")
         trop = set(maj.get("annonce", {})) - CHAMPS_PARTI
         if trop:
             erreurs.append(f"{ou} : champs non autorisés dans 'annonce' {sorted(trop)}")
-        src = maj.get("source") or {}
-        if not str(src.get("u", "")).startswith("http") or not src.get("t"):
-            erreurs.append(f"{ou} : une révision du chiffrage d'un parti exige une source "
-                           f"(titre + URL)")
-        parti = next(p for p in d["parties"]["parties"] if p["id"] == pid)
+        if not source_ok(maj.get("source")):
+            erreurs.append(f"{ou} : toute révision d'un parti ou d'une candidature exige une "
+                           f"source (titre + URL)")
+        if "avatar" in maj and maj["avatar"] not in ("h", "f", None):
+            erreurs.append(f"{ou} : 'avatar' attendu parmi 'h', 'f' ou null")
+        if "retrait" in maj:
+            r = maj["retrait"] or {}
+            ok, pourquoi = date_valide(r.get("date"))
+            if not ok:
+                erreurs.append(f"{ou}.retrait : {pourquoi}")
+            if not r.get("motif"):
+                erreurs.append(f"{ou}.retrait : dire pourquoi dans 'motif' (renonce, battu à "
+                               f"une primaire, rallié à…)")
+            plan.append(f"  - {pid} retiré de la course le {r.get('date')} : {r.get('motif')} "
+                        f"(masqué de la page, conservé dans les données)")
+        for champ in ("candidat", "statutCandidature", "avatar"):
+            if champ in maj and parti.get(champ) != maj[champ]:
+                plan.append(f"  ± {pid}.{champ} : {parti.get(champ)!r} → {maj[champ]!r}")
         for champ, val in maj.get("annonce", {}).items():
             ancien = parti["annonce"].get(champ)
             if ancien != val:
                 plan.append(f"  ± {pid}.annonce.{champ} : {ancien!r} → {val!r}")
+
+    ids_mesures_cat = {m["id"] for m in d["measures"]["measures"]}
+    for i, n in enumerate(patch.get("nouveaux_partis", [])):
+        ou = f"nouveaux_partis[{i}]"
+        manque = {"id", "nom", "sigle", "candidat", "couleur", "statutCandidature", "statut",
+                  "annonce", "source"} - set(n)
+        if manque:
+            erreurs.append(f"{ou} : champs obligatoires manquants {sorted(manque)}")
+        trop = set(n) - CHAMPS_NOUVEAU
+        if trop:
+            erreurs.append(f"{ou} : champs non autorisés {sorted(trop)}")
+        if not SLUG.match(str(n.get("id", ""))):
+            erreurs.append(f"{ou} : 'id' en minuscules sans espace, 2 à 12 caractères")
+        elif n["id"] in existants:
+            erreurs.append(f"{ou} : l'identifiant {n['id']!r} existe déjà — passer par 'partis'")
+        if not COULEUR.match(str(n.get("couleur", ""))):
+            erreurs.append(f"{ou} : 'couleur' attendue au format #RRGGBB")
+        if n.get("statut") not in STATUTS:
+            erreurs.append(f"{ou} : 'statut' attendu parmi {sorted(STATUTS)}")
+        if n.get("avatar") not in ("h", "f", None):
+            erreurs.append(f"{ou} : 'avatar' attendu parmi 'h', 'f' ou null")
+        a = n.get("annonce") or {}
+        if not a.get("titre") or not a.get("texte"):
+            erreurs.append(f"{ou} : 'annonce' doit porter un 'titre' et un 'texte'")
+        if set(a) - CHAMPS_PARTI:
+            erreurs.append(f"{ou} : champs non autorisés dans 'annonce' {sorted(set(a) - CHAMPS_PARTI)}")
+        for mid, s in (n.get("set") or {}).items():
+            if mid not in ids_mesures_cat:
+                erreurs.append(f"{ou}.set : mesure inconnue {mid!r}")
+            if not isinstance(s, dict) or s.get("sim") not in SIMS:
+                erreurs.append(f"{ou}.set.{mid} : 'sim' attendu parmi {sorted(SIMS)}")
+        if not source_ok(n.get("source")):
+            erreurs.append(f"{ou} : une candidature nouvelle exige une source (titre + URL)")
+        plan.append(f"  + candidat {n.get('candidat')} ({n.get('sigle')}), "
+                    f"{len(n.get('set') or {})} mesure(s) au scénario")
+
+    ctx = {x["id"]: x for x in (d.get("contexte") or {}).get("indicateurs", [])}
+    if patch.get("contexte") and not d.get("contexte"):
+        erreurs.append("contexte : dataset/simulateur/contexte.json absent")
+    for iid, maj in (patch.get("contexte") or {}).items():
+        ou = f"contexte.{iid}"
+        trop = set(maj) - CHAMPS_INDICATEUR
+        if trop:
+            erreurs.append(f"{ou} : champs non autorisés {sorted(trop)} — 'hypothese' et "
+                           f"'bornes' se règlent à la main")
+        ok, pourquoi = date_valide(maj.get("date"))
+        if not ok:
+            erreurs.append(f"{ou} : {pourquoi}")
+        if not source_ok(maj.get("source")):
+            erreurs.append(f"{ou} : un indicateur exige une source (titre + URL)")
+        if "valeur" not in maj:
+            erreurs.append(f"{ou} : 'valeur' manquante")
+        ind = ctx.get(iid)
+        if ind is None:
+            if not SLUG.match(iid.replace("_", "")):
+                erreurs.append(f"{ou} : identifiant en minuscules, sans espace")
+            if not maj.get("lab") or "unite" not in maj or maj.get("groupe") not in GROUPES:
+                erreurs.append(f"{ou} : un indicateur nouveau exige 'lab', 'unite' et un "
+                               f"'groupe' parmi {sorted(GROUPES)}")
+            plan.append(f"  + indicateur {iid} = {maj.get('valeur')!r} {maj.get('unite', '')}")
+            continue
+        v = maj.get("valeur")
+        if isinstance(ind.get("valeur"), (int, float)) != isinstance(v, (int, float)):
+            erreurs.append(f"{ou} : 'valeur' doit rester du même type ({type(ind['valeur']).__name__})")
+        elif isinstance(v, (int, float)) and ind.get("bornes"):
+            lo, hi = ind["bornes"]
+            if not lo <= v <= hi:
+                erreurs.append(f"{ou} : {v} hors des bornes de vraisemblance [{lo}, {hi}] — "
+                               f"vérifier l'unité, ou élargir les bornes à la main")
+        if ind.get("date") and maj.get("date") and maj["date"] < ind["date"]:
+            erreurs.append(f"{ou} : valeur datée du {maj['date']}, plus ancienne que celle en "
+                           f"base ({ind['date']})")
+        if ind.get("valeur") != v or ind.get("date") != maj.get("date"):
+            plan.append(f"  ± {iid} : {ind.get('valeur')!r} ({ind.get('date')}) → "
+                        f"{v!r} ({maj.get('date')})"
+                        + (f"  ⇒ hypothèse « {ind['hypothese']} » du simulateur"
+                           if ind.get("hypothese") else ""))
 
     for mid, maj in (patch.get("mesures") or {}).items():
         ou = f"mesures.{mid}"
@@ -228,6 +380,18 @@ def appliquer(d, patch, ecrire_vraiment):
     trace = {"releve": releve, "applique": aujourdhui().isoformat(),
              "ajouts": [], "revisions": []}
 
+    # Les nouveaux candidats d'abord : les annonces du même patch peuvent s'y rattacher.
+    for n in patch.get("nouveaux_partis", []):
+        entree = {k: n.get(k) for k in ("id", "nom", "sigle", "candidat", "avatar", "couleur",
+                                         "statutCandidature", "statut")}
+        entree["annonce"] = dict(n["annonce"])
+        entree["set"] = n.get("set") or {}
+        entree["sources"] = [{"t": n["source"]["t"], "u": n["source"]["u"]}]
+        entree["depuis"] = releve
+        d["parties"]["parties"].append(entree)
+        trace["ajouts"].append({"candidat": entree["candidat"], "parti": entree["id"],
+                                "source": n["source"]["u"]})
+
     existantes = d["announcements"]["items"]
     for a in patch.get("annonces", []):
         if any(b.get("source") == a.get("source") and b.get("date") == a.get("date")
@@ -246,6 +410,17 @@ def appliquer(d, patch, ecrire_vraiment):
 
     for pid, maj in (patch.get("partis") or {}).items():
         parti = next(p for p in d["parties"]["parties"] if p["id"] == pid)
+        for champ in ("candidat", "statutCandidature", "avatar"):
+            if champ in maj and parti.get(champ) != maj[champ]:
+                trace["revisions"].append({"quoi": f"parties.{pid}.{champ}",
+                                           "avant": parti.get(champ), "apres": maj[champ],
+                                           "source": maj["source"]["u"]})
+                parti[champ] = maj[champ]
+        if "retrait" in maj:
+            parti["retire"] = {"date": maj["retrait"]["date"], "motif": maj["retrait"]["motif"],
+                               "u": maj["source"]["u"]}
+            trace["revisions"].append({"quoi": f"parties.{pid}.retire", "avant": None,
+                                       "apres": parti["retire"], "source": maj["source"]["u"]})
         for champ, val in maj.get("annonce", {}).items():
             if parti["annonce"].get(champ) != val:
                 trace["revisions"].append({"quoi": f"parties.{pid}.annonce.{champ}",
@@ -256,8 +431,30 @@ def appliquer(d, patch, ecrire_vraiment):
         parti.setdefault("sources", [])
         if not any(s["u"] == src["u"] for s in parti["sources"]):
             parti["sources"].append({"t": src["t"], "u": src["u"]})
-    if patch.get("partis"):
+    if patch.get("partis") or patch.get("nouveaux_partis"):
         d["parties"]["updated"] = releve
+
+    if patch.get("contexte"):
+        inds = d["contexte"]["indicateurs"]
+        for iid, maj in patch["contexte"].items():
+            ind = next((x for x in inds if x["id"] == iid), None)
+            src = {"t": maj["source"]["t"], "u": maj["source"]["u"]}
+            if ind is None:
+                ind = {"id": iid, "lab": maj["lab"], "unite": maj["unite"],
+                       "groupe": maj["groupe"], "historique": []}
+                inds.append(ind)
+            elif ind.get("valeur") != maj["valeur"] or ind.get("date") != maj["date"]:
+                # l'ancienne valeur part dans l'historique : rien ne s'efface
+                ind.setdefault("historique", []).insert(
+                    0, {"valeur": ind.get("valeur"), "date": ind.get("date"),
+                        "u": (ind.get("source") or {}).get("u")})
+                trace["revisions"].append({"quoi": f"contexte.{iid}", "avant": ind.get("valeur"),
+                                           "apres": maj["valeur"], "source": src["u"]})
+            for champ in ("valeur", "date", "note", "lab", "unite", "detail"):
+                if champ in maj:
+                    ind[champ] = maj[champ]
+            ind["source"] = src
+        d["contexte"]["updated"] = releve
 
     for mid, maj in (patch.get("mesures") or {}).items():
         m = next(x for x in d["measures"]["measures"] if x["id"] == mid)
@@ -279,8 +476,10 @@ def appliquer(d, patch, ecrire_vraiment):
         return trace
 
     ecrire("announcements", d["announcements"])
-    if patch.get("partis"):
+    if patch.get("partis") or patch.get("nouveaux_partis"):
         ecrire("parties", d["parties"])
+    if patch.get("contexte"):
+        ecrire("contexte", d["contexte"])
     if patch.get("mesures"):
         ecrire("measures", d["measures"])
 
@@ -327,8 +526,8 @@ def controler(d):
     except json.JSONDecodeError as exc:
         sys.exit(f"le payload d'index.html n'est pas du JSON valide : {exc}")
 
-    for nom in ("announcements", "parties", "measures"):
-        if embarque.get(nom) != d[nom]:
+    for nom in ("announcements", "parties", "measures", "contexte"):
+        if nom in d and embarque.get(nom) != d[nom]:
             ennuis.append(f"{nom}.json a changé depuis la dernière construction — "
                           f"la page ne dit plus ce que disent les données")
 
