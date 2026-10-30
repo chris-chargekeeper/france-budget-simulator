@@ -501,13 +501,13 @@ body.adv .simple-only{display:none!important}
    vulgarisation — jamais au codage d'une série dans un graphique. */
 :root{
   --dep:#C81E1E;  --rec:#0B5CAE;  --coin:#E0982F;
-  --pastille:#12224E; --pastille-ink:#FFFFFF;
+  --pastille:#12224E; --pastille-ink:#FFFFFF; --pastille-clair:#9CC0EE; --pastille-ink-clair:#12224E;
   --dep-vif:#A50E0E; --dep-doux:#E07A72; --rec-vif:#0A4F9C; --rec-pale:#9DBBDD;
   --ciel:#EAF3FA; --ciel-2:#D6E8F5;
 }
 :root[data-theme="dark"]{
   --dep:#EE7B72; --rec:#6DA7EC; --coin:#E5AE60;
-  --pastille:#1D2F5C; --pastille-ink:#EAF1FA;
+  --pastille:#1D2F5C; --pastille-ink:#EAF1FA; --pastille-clair:#6E9BD8; --pastille-ink-clair:#0E1A33;
   --dep-vif:#FF5A52; --dep-doux:#A9605A; --rec-vif:#7FB6FF; --rec-pale:#3F5875;
   --ciel:#15202C; --ciel-2:#1C2937;
 }
@@ -578,6 +578,8 @@ body.adv .simple-only{display:none!important}
           color:var(--pastille-ink);display:grid;place-content:center;
           font-weight:700;font-size:15px;
           letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.pastille.clair{color:var(--pastille-ink-clair)}
+.pastille{box-shadow:0 6px 16px -8px rgba(18,34,78,.55)}
 .strip .cell .ic{width:22px;height:22px;flex:none;color:var(--ink-3)}
 .strip .cell .who{font-size:11.5px;line-height:1.25;color:var(--ink-2)}
 .strip .rest{flex:0 0 100%;font-size:12px;color:var(--ink-3);line-height:1.4;
@@ -2691,11 +2693,17 @@ function renderStrip(){
   // rapport au plus gros poste. --d-max, côté CSS, fixe le disque du plus gros et
   // s'adapte à la largeur ; ici on ne pose que le rapport, sans unité.
   const vmax = tete[0].v;
+  const vmin = tete[tete.length - 1].v;
   tete.forEach(d => {
     const cell = el('div', 'cell');
     const box = el('div', 'pbox');
     const past = el('div', 'pastille', nf(d.v / tot * 1000) + ' €');
     past.style.setProperty('--r', (Math.sqrt(d.v / vmax)).toFixed(4));
+    // teinte : bleu nuit pour le poste le plus lourd, bleu clair pour le plus léger (une seule
+    // couleur, pour ne pas dire « bonne » ou « mauvaise » dépense)
+    const k = (d.v - vmin) / (vmax - vmin || 1);
+    past.style.background = `color-mix(in srgb, var(--pastille) ${Math.round(k * 100)}%, var(--pastille-clair))`;
+    if (k < .35) past.classList.add('clair');
     box.appendChild(past);
     cell.appendChild(box);
     cell.appendChild(icon(d.icone));
