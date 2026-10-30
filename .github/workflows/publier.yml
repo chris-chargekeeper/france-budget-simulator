@@ -74,10 +74,20 @@ jobs:
             resolve=(--resolve "$FTP_TLS_NAME:21:$FTP_HOST"); cible="$FTP_TLS_NAME"
           fi
           # --ssl-reqd : on refuse d'envoyer le mot de passe si le serveur ne propose pas TLS.
-          curl --fail --silent --show-error --ssl-reqd "${resolve[@]}" \
-               --user "$FTP_USER:$FTP_PASS" \
-               --upload-file index.html \
-               "ftp://$cible/${FTP_DIR:-public_html}/index.html"
+          ftp() { curl --fail --silent --show-error --ssl-reqd "${resolve[@]}" \
+                       --user "$FTP_USER:$FTP_PASS" "$@"; }
+          # Selon le compte FTP, Hostinger ouvre la session à la racine du plan, du site
+          # ou directement dans public_html. On prend le premier dossier qui existe ;
+          # l'étape suivante vérifie que c'est bien celui que sert le site.
+          dossier=""
+          for d in "${FTP_DIR:-public_html}" public_html domains/quipaie2027.fr/public_html .; do
+            if ftp --list-only "ftp://$cible/$d/" -o liste.txt 2>/dev/null; then
+              if [ "$d" != "." ] || grep -qx 'index.html' liste.txt; then dossier="$d"; break; fi
+            fi
+          done
+          [ -n "$dossier" ] || { echo "::error::aucun dossier web trouvé sur le FTP"; cat liste.txt 2>/dev/null; exit 1; }
+          echo "Dossier web : $dossier"
+          ftp --upload-file index.html "ftp://$cible/$dossier/index.html"
           echo "En ligne : https://quipaie2027.fr"
 
       # Une page vide ou tronquée répondrait quand même 200 : on vérifie que la page
