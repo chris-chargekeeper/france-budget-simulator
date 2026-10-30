@@ -49,7 +49,7 @@ python3 build_dataset.py                      # reconstruit dataset/derive/
 |---|---|
 | Publication | Automatique depuis le 30 octobre 2026 : chaque relève poussée sur `veille` part en ligne si elle passe les contrôles, puis la CI avance `master`. |
 | Licence des bustes | `dataset/simulateur/avatars/credits.json` porte `"licence": null`. SVG Repo agrège des collections aux licences différentes et les fichiers ne la déclarent pas. `build.py` le signale à chaque construction. **Toujours ouvert, alors que les bustes sont en ligne depuis le 2 septembre.** |
-| Routines de veille | Deux routines cloud tournent chaque jour à 06h00 (Opus et Sonnet) et font le même travail : une seule suffirait. |
+| Routines de veille | Une routine cloud active, chaque jour à 06h00 (Opus, `trig_01QBCgW6WrvsENeVqphHBG8B`). Le doublon sous Sonnet (`trig_013mvwKtCFj77FBsrZWCVE2k`) est désactivé depuis le 30 octobre 2026, pas supprimé. |
 | Assises manquantes | `ue` et `fraude` n'ont pas d'assise : la contribution au budget de l'UE et les concours aux collectivités passent par des **prélèvements sur recettes**, absents des crédits des missions et donc du dataset. Ces mesures ne sont opposées qu'à la fourchette du catalogue. À compléter si les PSR sont un jour aspirés. |
 | Ventilations `depenses` / `recettes` | Regroupements maison, non recoupés : ils ne correspondent à aucune nomenclature officielle. La COFOG publiée est dans `baseline.officiel.depensesFonction` pour comparaison. |
 | Axe « nature » 2018-2022 | Lacunaire à la source (1 à 2 Md€ manquants de 2019 à 2022, absent en 2018). Non corrigé. |
