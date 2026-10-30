@@ -758,6 +758,15 @@ section{margin-top:56px;scroll-margin-top:76px}
 .score-head .avatar{width:58px;height:58px;background:color-mix(in srgb,var(--pc) 14%,var(--surface))}
 .score-who{font-family:Newsreader,Georgia,serif;font-size:clamp(22px,2.6vw,30px);font-weight:600;line-height:1.1}
 .score-sub{font-size:13px;color:var(--ink-2)}
+.score-intro{padding:12px 24px 0;display:grid;gap:8px}
+.si-statut{margin:0;font-size:14px;line-height:1.45;color:var(--ink-2);max-width:75ch}
+.si-tags{display:flex;flex-wrap:wrap;gap:6px}
+.si-tag{font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;color:var(--ink-2);
+  background:color-mix(in srgb,var(--pc) 10%,var(--surface-2));border:1px solid color-mix(in srgb,var(--pc) 25%,transparent)}
+.si-prog summary{cursor:pointer;font-size:13.5px;color:var(--ink);list-style:revert}
+.si-prog p{margin:6px 0 0;font-size:13.5px;line-height:1.5;color:var(--ink-2);max-width:75ch}
+#presetNote:empty{display:none}
+@media (max-width:520px){.score-intro{padding:10px 18px 0}}
 .score-main{padding:18px 24px 6px}
 .score-big{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px}
 .score-big .lbl{flex-basis:100%;font-size:13px;color:var(--ink-2);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
@@ -2322,8 +2331,8 @@ function syncCards(){
   document.querySelectorAll('.card').forEach(b =>
     b.setAttribute('aria-pressed', String(b.dataset.id === state.party)));
   const p = PARTIES.find(x => x.id === state.party);
-  $('#presetNote').textContent = p
-    ? `${p.candidat} · ${p.statutCandidature} · ${Object.keys(state.active).length} mesures chargées`
+  /* la présentation d'un candidat est dans sa carte résultat, juste avant le déficit */
+  $('#presetNote').textContent = p ? ''
     : (state.party === 'tend' ? "Trajectoire à politique inchangée."
        : `Scénario personnalisé — ${Object.keys(state.active).length} mesure(s) activée(s).`);
   syncSticky(p);
@@ -2879,9 +2888,10 @@ function renderScore(base, scen, split){
   const ht = el('div');
   ht.appendChild(el('div','score-who', p ? p.candidat
     : (state.party === 'tend' ? "Si rien ne change" : "Votre scénario")));
-  ht.appendChild(el('div','score-sub', p ? (p.horsCourse ? p.statutCandidature : p.nom + ' · ' + p.statutCandidature)
+  ht.appendChild(el('div','score-sub', p ? (p.horsCourse ? p.statutCandidature : p.nom)
     : "aucune mesure nouvelle après 2026"));
   head.append(av, ht); host.appendChild(head);
+  if (p && !p.horsCourse) host.appendChild(presentation(p));
 
   /* le chiffre et la jauge */
   const ok = S.soldePct >= -3;
@@ -2973,6 +2983,30 @@ function listTotal(items){
   tot.append(lab, el('div','it-v', signed(net, 1)));
   t.appendChild(tot);
   return t;
+}
+
+/** Qui est le candidat, où en est sa candidature, ce que dit son programme : avant les chiffres. */
+function presentation(p){
+  const box = el('div','score-intro');
+  box.appendChild(el('p','si-statut', p.statutCandidature));
+  const tags = el('div','si-tags');
+  const sd = pollOf(p.id);
+  if (sd){
+    const r = Math.round(sd.v * 2) / 2;
+    tags.appendChild(el('span','si-tag', `${sign(nf(r, r % 1 ? 1 : 0))} % dans les sondages`
+      + (sd.n > 1 ? ` (moyenne de ${sd.n})` : '')));
+  }
+  tags.appendChild(el('span','si-tag', p.statut === 'reconstitution' ? "Programme non chiffré : reconstitué"
+    : p.statut === 'partiel' ? "Programme en partie chiffré" : "Programme chiffré publié"));
+  tags.appendChild(el('span','si-tag', Object.keys(state.active).length + " mesures chargées"));
+  box.appendChild(tags);
+  if (p.annonce && p.annonce.texte){
+    const d = el('details','si-prog');
+    const su = el('summary'); su.appendChild(el('b', null, p.annonce.titre)); d.appendChild(su);
+    d.appendChild(el('p', null, p.annonce.texte));
+    box.appendChild(d);
+  }
+  return box;
 }
 
 /** Les mesures d'un candidat réel, en clair, du plus gros au plus petit. */
