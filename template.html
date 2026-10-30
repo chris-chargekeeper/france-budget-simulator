@@ -634,45 +634,42 @@ body.adv .simple-only{display:none!important}
   .mass{padding:12px 14px 11px}
 }
 
-/* la répartition en pictogrammes */
+/* qui paie les retraites */
 .repart{margin-top:16px;background:linear-gradient(160deg,color-mix(in srgb,var(--rec) 7%,var(--surface)),var(--surface) 60%)}
-.panel .repart-t,.repart-t{font-family:Newsreader,serif;font-size:24px;font-weight:600;margin:4px 0 6px;color:var(--ink)}
-.repart-intro{margin:0 0 14px;font-size:14.5px;line-height:1.55;color:var(--ink-2);max-width:72ch}
+.panel .repart-t,.repart-t{font-family:Newsreader,serif;font-size:26px;font-weight:600;margin:4px 0 4px;color:var(--ink)}
+.repart-intro{margin:0 0 14px;font-size:14.5px;line-height:1.5;color:var(--ink-2);max-width:70ch}
 .repart-intro b{color:var(--ink)}
-.repart-rows{display:grid;gap:10px;margin-bottom:16px}
-.repart-row{display:grid;grid-template-columns:56px minmax(0,1fr) minmax(170px,.8fr);gap:14px;align-items:center;
-  background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:12px 16px}
-.repart-row.proj{border-style:dashed;background:transparent}
-.repart-an{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:15px;color:var(--ink-2)}
-.repart-fig{display:flex;align-items:flex-end;gap:10px;min-width:0}
-.repart-actifs{display:flex;gap:4px}
+.repart-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.rc{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:14px 16px;display:grid;gap:8px;align-content:start}
+.rc.proj{border-style:dashed}
+.rc-an{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--ink-3);text-transform:uppercase}
+.rc-fig{display:flex;align-items:flex-end;gap:7px;height:36px}
+.rc-act{display:flex;gap:3px}
 .pw{display:block;overflow:hidden;flex:none}
-.pers{width:26px;height:40px;display:block}
-.pers.actif{fill:var(--rec)}
-.pers.retraite{fill:var(--coin)}
-.repart-row.proj .pers.actif{fill:color-mix(in srgb,var(--rec) 55%,var(--surface))}
-.repart-pour{font-size:12px;color:var(--ink-3);padding-bottom:10px}
-.repart-lab{display:grid;gap:1px}
-.repart-lab b{font-size:28px;line-height:1;letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums}
-.repart-lab span{font-size:13px;color:var(--ink-2);line-height:1.3}
-.repart-lab small{font-size:11.5px;color:var(--ink-3)}
-.repart-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.repart-box{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:14px 16px}
-.repart-box h4{margin:0 0 8px;font-size:14px;color:var(--ink)}
-.repart-box ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:13.5px;line-height:1.45;color:var(--ink-2)}
-.repart-box ul b{color:var(--ink)}
-.repart-box p{margin:10px 0 0;font-size:13.5px;line-height:1.5;color:var(--ink-2)}
-.repart-levers{display:flex;flex-wrap:wrap;gap:6px}
-.repart-levers span{font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;color:var(--ink);
-  background:color-mix(in srgb,var(--coin) 18%,var(--surface));border:1px solid color-mix(in srgb,var(--coin) 45%,transparent)}
-.repart-src{margin:12px 0 0;font-size:11.5px;line-height:1.45;color:var(--ink-3)}
-@media (max-width:620px){
-  .panel .repart-t{font-size:21px}
-  .repart-row{grid-template-columns:1fr auto;grid-template-areas:"an lab" "fig fig";padding:12px 14px;gap:8px 10px}
-  .repart-an{grid-area:an} .repart-lab{grid-area:lab;text-align:right;justify-items:end}
-  .repart-fig{grid-area:fig}
-  .repart-lab span{max-width:180px}
-  .repart-grid{grid-template-columns:1fr}
+.pers{width:22px;height:34px;display:block}
+.pers.actif{fill:var(--rec)} .pers.retraite{fill:var(--coin)}
+.rc.proj .pers.actif{fill:color-mix(in srgb,var(--rec) 55%,var(--surface))}
+.rc-pour{font-size:11.5px;color:var(--ink-3);padding-bottom:6px}
+.rc-big{display:flex;align-items:baseline;gap:8px}
+.rc-big b{font-size:34px;line-height:1;letter-spacing:-.03em;color:var(--ink);font-variant-numeric:tabular-nums}
+.rc-big span{font-size:13px;color:var(--ink-2);line-height:1.2}
+.rc-pib{font-size:13px;color:var(--ink-2)}
+.rc-k{font-size:11px;font-family:"IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin-top:4px}
+.rc-bar{display:flex;height:30px;border-radius:8px;overflow:hidden;gap:2px}
+.rc-bar .seg{display:grid;place-content:center;font-size:12.5px;font-weight:700;color:#fff;white-space:nowrap}
+.seg.cot,.repart-leg .c-cot{background:var(--rec)}
+.seg.etat,.repart-leg .c-etat{background:var(--coin)}
+.seg.autre,.repart-leg .c-autre{background:var(--ink-3)}
+.seg.fin{background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--rec) 75%,var(--surface)) 0 8px,color-mix(in srgb,var(--coin) 75%,var(--surface)) 8px 16px)}
+.seg.manque,.repart-leg .c-manque{background:var(--dep)}
+.rc-dit{font-size:14px;font-weight:700;color:var(--ink)}
+.rc-dit.alerte{color:var(--dep)}
+.repart-leg{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:12.5px;color:var(--ink-2)}
+.repart-leg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.repart-src{margin:10px 0 0;font-size:11px;line-height:1.45;color:var(--ink-3)}
+@media (max-width:760px){
+  .repart-cols{grid-template-columns:1fr}
+  .panel .repart-t{font-size:22px}
 }
 
 @media (max-width:900px){
@@ -1457,35 +1454,18 @@ footer{padding-bottom:120px}
     </div>
     <div class="panel repart" id="repartition">
       <div class="eyebrow">Pour comprendre</div>
-      <h3 class="repart-t">La retraite par répartition, en une image</h3>
-      <p class="repart-intro">En France, les retraites ne sont pas mises de côté : <b>les cotisations prélevées
-        sur les salaires d'aujourd'hui paient les pensions d'aujourd'hui.</b> Ce système, généralisé avec la
-        Sécurité sociale en 1945, tient donc à un équilibre simple : combien de personnes cotisent pour
-        chaque retraité.</p>
-      <div class="repart-rows" id="repartRows"></div>
-      <div class="repart-grid">
-        <div class="repart-box">
-          <h4>Pourquoi ce chiffre baisse</h4>
-          <ul>
-            <li><b>Le baby-boom part à la retraite</b> : les générations nombreuses nées après 1945 quittent l'emploi.</li>
-            <li><b>On vit plus longtemps</b> : chaque retraite est versée plus d'années.</li>
-            <li><b>Il naît moins d'enfants</b> : moins d'actifs demain pour cotiser.</li>
-          </ul>
-        </div>
-        <div class="repart-box">
-          <h4>Pour garder l'équilibre, trois leviers</h4>
-          <div class="repart-levers">
-            <span>Cotiser plus</span><span>Partir plus tard</span><span>Ajuster les pensions</span>
-          </div>
-          <p>Les programmes les combinent chacun à leur manière. Faute d'équilibre, c'est l'impôt ou la dette qui
-            comble l'écart. Les retraites représentent <b>14,1 % du PIB</b> en 2025, le premier poste de la
-            dépense publique.</p>
-        </div>
+      <h3 class="repart-t">Qui paie les retraites ?</h3>
+      <p class="repart-intro">Les cotisations de ceux qui travaillent paient les pensions de ceux qui sont à la retraite.
+        <b>Moins il y a d'actifs par retraité, plus il faut d'argent d'ailleurs.</b></p>
+      <div class="repart-cols" id="repartCols"></div>
+      <div class="repart-leg">
+        <span><i class="c-cot"></i>Cotisations</span><span><i class="c-etat"></i>État (impôts, budget)</span>
+        <span><i class="c-autre"></i>Autres caisses</span><span><i class="c-manque"></i>Non financé</span>
       </div>
-      <p class="repart-src">Sources : Cnav, abrégés statistiques (régime général, 1960) ; Insee d'après la Drees,
-        « Cotisants, retraités et rapport démographique tous régimes », décembre 2025 (2023) ; COR, rapport annuel
-        de juin 2026 (projection et part du PIB). Les deux premiers chiffres ne couvrent pas le même champ :
-        salariés du régime général en 1960, tous régimes en 2023.</p>
+      <p class="repart-src">Sources : Cnav (1960, régime général) ; Insee-Drees (actifs par retraité, 2023) ; COR, rapport
+        annuel de juin 2026 (financement 2025, projection 2070 à règles inchangées). En 1960, le régime général était
+        financé par les seules cotisations ; les régimes spéciaux recevaient déjà une aide de l'État, non chiffrée ici.
+        En 2070, le COR compte les personnes de 20 à 64 ans pour une de 65 ans et plus.</p>
     </div>
 
     <div class="more-cta simple-only" style="margin-top:22px">
@@ -2757,35 +2737,42 @@ function renderBalances(scen, base){
       + `dépenses comme recettes. Pour comparer à aujourd’hui, ce sont les parts du PIB qui comptent.</span>`});
 }
 
-/** La répartition en pictogrammes : des actifs pour un retraité, à trois moments. */
+/** Qui paie les retraites : actifs par retraité, poids dans le PIB, et qui finance 100 € de pension. */
 function renderRepartition(){
-  const host = $('#repartRows'); if (!host) return;
+  const host = $('#repartCols'); if (!host) return;
+  host.textContent = '';
   const pers = cls => { const g = sv('svg', {viewBox: '0 0 20 32', class: 'pers ' + cls, 'aria-hidden': 'true'});
     g.appendChild(sv('circle', {cx: 10, cy: 7, r: 5.5}));
     g.appendChild(sv('path', {d: 'M2 32 V20 a8 8 0 0 1 16 0 V32 Z'})); return g; };
-  [{an: '1960', v: 4.14, txt: 'cotisants pour 1 retraité', note: 'salariés du régime général'},
-   {an: '2023', v: 1.77, txt: 'cotisant pour 1 retraité', note: 'tous régimes confondus'},
-   {an: '2070', v: 1.62, txt: 'personne de 20 à 64 ans pour 1 de 65 ans et plus', note: 'projection, contre 2,5 en 2025', proj: true}
-  ].forEach(r => {
-    const row = el('div', 'repart-row' + (r.proj ? ' proj' : ''));
-    row.appendChild(el('div', 'repart-an', r.an));
-    const fig = el('div', 'repart-fig');
-    const actifs = el('div', 'repart-actifs');
-    for (let i = 0; i < Math.ceil(r.v); i++){
-      const f = Math.min(1, r.v - i);
-      const w = el('span', 'pw'); w.style.width = (f * 26).toFixed(1) + 'px';
-      w.appendChild(pers('actif')); actifs.appendChild(w);
+  [{an: '1960', ratio: 4.1, pib: '5 %', bar: [['cot', 100]], dit: 'Les cotisations suffisent'},
+   {an: 'Aujourd’hui', ratio: 1.77, pib: '14 %', bar: [['cot', 66], ['etat', 29], ['autre', 5]],
+    dit: 'L’État paie déjà 29 € sur 100'},
+   {an: '2070', ratio: 1.62, pib: '15 %', bar: [['fin', 84], ['manque', 16]], proj: true,
+    dit: '16 € sur 100 non financés'}
+  ].forEach(c => {
+    const col = el('div', 'rc' + (c.proj ? ' proj' : ''));
+    col.appendChild(el('div', 'rc-an', c.an + (c.proj ? ' · projection' : '')));
+    const fig = el('div', 'rc-fig');
+    const act = el('div', 'rc-act');
+    for (let i = 0; i < Math.ceil(c.ratio); i++){
+      const w = el('span', 'pw'); w.style.width = (Math.min(1, c.ratio - i) * 22).toFixed(1) + 'px';
+      w.appendChild(pers('actif')); act.appendChild(w);
     }
-    fig.appendChild(actifs);
-    fig.appendChild(el('span', 'repart-pour', 'pour'));
-    const ret = el('div', 'repart-ret'); ret.appendChild(pers('retraite')); fig.appendChild(ret);
-    row.appendChild(fig);
-    const lab = el('div', 'repart-lab');
-    lab.appendChild(el('b', null, nf(r.v, r.v === Math.round(r.v) ? 0 : (r.an === '1960' ? 1 : 2))));
-    lab.appendChild(el('span', null, r.txt));
-    lab.appendChild(el('small', null, r.note));
-    row.appendChild(lab);
-    host.appendChild(row);
+    fig.appendChild(act); fig.appendChild(el('span', 'rc-pour', 'pour'));
+    fig.appendChild(pers('retraite'));
+    col.appendChild(fig);
+    const big = el('div', 'rc-big');
+    big.appendChild(el('b', null, nf(c.ratio, 1).replace(/,0$/, '')));
+    big.appendChild(el('span', null, 'actifs pour 1 retraité'));
+    col.appendChild(big);
+    col.appendChild(el('div', 'rc-pib', `Retraites : ${c.pib} du PIB`));
+    const bar = el('div', 'rc-bar');
+    c.bar.forEach(([k, v]) => { const seg = el('span', 'seg ' + k, v >= 10 ? v + ' €' : '');
+      seg.style.flexBasis = v + '%'; bar.appendChild(seg); });
+    col.appendChild(el('div', 'rc-k', 'Sur 100 € de pension'));
+    col.appendChild(bar);
+    col.appendChild(el('div', 'rc-dit ' + (c.proj ? 'alerte' : ''), c.dit));
+    host.appendChild(col);
   });
 }
 
