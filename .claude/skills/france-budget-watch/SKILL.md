@@ -37,8 +37,13 @@ candidat qui renonce sort par `retrait` — il est masqué de la page, jamais ef
 
 **Chaque jour aussi, les sondages.** La page affiche la moyenne des derniers sondages, un par
 institut. Pour chaque institut reconnu (Ifop, Ipsos BVA, Elabe, Odoxa, OpinionWay, Harris
-Interactive Toluna, Cluster17, Viavoice), cherchez un sondage d'intentions de vote au premier tour
-plus récent que celui affiché par `etat`, ou le premier d'un institut absent. Chacun entre
+Interactive Toluna, Cluster17, Viavoice, YouGov, CSA, Verian), cherchez un sondage d'intentions de
+vote au premier tour plus récent que celui affiché par `etat`, ou le premier d'un institut absent.
+Le plus sûr est la liste du mois de la Commission des sondages
+(commission-des-sondages.fr, rubrique « notices ») : chaque sondage publié y dépose sa notice, avec
+les scores de chaque hypothèse. Lisez les chiffres dans cette notice ou chez l'institut, jamais dans
+un article qui les reprend. Quand plusieurs hypothèses existent, prenez celle qui teste le plus de
+candidats suivis, et à égalité celle où figurent Attal et Philippe. Chacun entre
 **entier** par la section `sondages` du patch et remplace le précédent du même institut. Pas de
 nouveau sondage, rien à faire.
 
