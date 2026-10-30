@@ -747,6 +747,12 @@ section{margin-top:56px;scroll-margin-top:76px}
   box-shadow:var(--shadow-lg);overflow:hidden;position:relative}
 .score::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:var(--pc)}
 .score.is-ia::before{background:linear-gradient(90deg,var(--ia),var(--ia-2))}
+.score.is-ia .score-big .num{color:var(--ia)}
+.score.is-ia .vpill{color:var(--ia);background:color-mix(in srgb,var(--ia) 12%,transparent)}
+.score.is-ia .g-fill{background:linear-gradient(90deg,var(--ia-2),var(--ia))}
+.score.is-ia .st .v{color:var(--ia)}
+.ia-why:not(.prog) .it-net{--tone:var(--ia)}
+:root[data-theme="dark"] .score.is-ia .score-big .num,:root[data-theme="dark"] .score.is-ia .st .v{color:#B79BFF}
 .score-head{display:flex;gap:14px;align-items:center;padding:22px 24px 0}
 .score-head .avatar{width:58px;height:58px;background:color-mix(in srgb,var(--pc) 14%,var(--surface))}
 .score-who{font-family:Newsreader,Georgia,serif;font-size:clamp(22px,2.6vw,30px);font-weight:600;line-height:1.1}
@@ -1796,6 +1802,7 @@ function renderCompare(base){
     // que sans rien faire. Rouge : il se creuse autant ou plus que sans rien faire.
     const refEnd = refVals[refVals.length-1];
     const tone = r.ref ? 'var(--ink-3)'
+      : r.statut === 'ia' ? 'var(--ia)'            // fictif : ni bon ni mauvais élève, violet
       : (r.solde >= -3 || r.solde > r.vals[0]) ? 'var(--good)'
       : r.solde > refEnd + 0.05 ? 'var(--pos)' : 'var(--neg)';
     b.appendChild(spark(r.vals, refVals, yLo, yHi, r.ref, tone));
@@ -1807,7 +1814,7 @@ function renderCompare(base){
     const lim = el('div','lim'); lim.style.left = (3 / worst * 74) + '%';
     const lab = el('div','lab', pc(-r.solde));
     lab.style.left = 'calc(' + (Math.abs(r.solde) / worst * 74) + '% + 8px)';
-    lab.style.color = tone === 'var(--good)' ? 'var(--good)' : 'var(--ink)';
+    lab.style.color = (tone === 'var(--good)' || tone === 'var(--ia)') ? tone : 'var(--ink)';
     bar.append(fill, lim, lab); b.appendChild(bar);
 
     b.appendChild(el('div','cmp-num', pc(r.dette, 0)));
