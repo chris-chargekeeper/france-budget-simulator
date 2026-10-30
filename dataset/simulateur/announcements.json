@@ -67,11 +67,11 @@
       "ecart": "La page franceinfo n'a pas de retranscription, seulement l'audio : le contenu vient du compte rendu de Capital du 28 octobre 2026, qui ne cite aucun coût. La mesure « csgbaisse » du catalogue va de 5 à 12 Md€, alors qu'une suppression de la CSG sur les revenus d'activité coûterait bien davantage. Le scénario reconstitué ne contient pas cette mesure."
     },
     {
-      "date": "2026-10-28",
+      "date": "2026-10-27",
       "parti": "ne",
       "qui": "David Lisnard",
       "fonction": "Maire de Cannes, candidat à la présidentielle",
-      "media": "CNews et Europe 1, repris par le site de Nouvelle Énergie",
+      "media": "« Objectif Élysée 2027 », CNews et Europe 1 (27 octobre), repris par le site de Nouvelle Énergie",
       "quoi": "Annonce 80 Md€ d'économies de dépenses dès la première année, et 200 Md€ à l'horizon 2032.",
       "verbatim": "80 milliards d'euros d'économies dès la première année",
       "mesure": null,
@@ -83,12 +83,12 @@
       "ecart": "Aucune ventilation poste par poste n'a été publiée. Source militante : le site du parti du candidat."
     },
     {
-      "date": "2026-10-28",
+      "date": "2026-10-27",
       "parti": "ne",
       "qui": "David Lisnard",
       "fonction": "Maire de Cannes, candidat à la présidentielle",
-      "media": "CNews et Europe 1, repris par le site de Nouvelle Énergie",
-      "quoi": "Chiffre à 2 à 3 Md€ dès la première année l'économie sur les prestations non contributives versées aux étrangers.",
+      "media": "« Objectif Élysée 2027 », CNews et Europe 1 (27 octobre), repris par le site de Nouvelle Énergie",
+      "quoi": "Chiffre à 2 à 3 Md€ dès la première année un paquet d'économies sociales : gel des retraites au-delà de 2 200 €, suppressions et désindexations de prestations, allocations non contributives réservées aux étrangers résidant depuis cinq ans.",
       "verbatim": "2 à 3 milliards d'euros d'économies dès la première année",
       "mesure": "immigration",
       "montant": 2.5,
@@ -151,14 +151,14 @@
       "parti": "eco",
       "qui": "Marine Tondelier",
       "fonction": "Secrétaire nationale des Écologistes, candidate à l'élection présidentielle",
-      "media": "France 2, dépêche AFP reprise par Boursorama",
+      "media": "« Les 4 Vérités », France 2, rapporté par France 3 Hauts-de-France",
       "quoi": "N'exclut pas de se retirer de la présidentielle au profit d'un autre candidat de gauche « s'il y a un chemin de victoire », sous quatre conditions : accord de gouvernement, accord aux législatives, accord programmatique et accord sur le dispositif de campagne. Les adhérents écologistes trancheront le 13 décembre.",
       "verbatim": "s'il y a un chemin de victoire",
       "mesure": null,
       "montant": null,
       "type": "contexte",
-      "source": "https://www.boursorama.com/actualite-economique/actualites/presidentielle-tondelier-n-exclut-pas-de-se-retirer-s-il-y-a-un-chemin-de-victoire-c8c50da1b618fd777078b82e9e7fe90c",
-      "verifie": false,
+      "source": "https://france3-regions.franceinfo.fr/hauts-de-france/pas-calais/lens/s-il-y-a-un-chemin-de-victoire-a-gauche-marine-tondelier-n-exclut-pas-de-se-retirer-de-la-presidentielle-2027-3439452.html",
+      "verifie": true,
       "contredit": "inconnu",
       "ecart": "Première déclaration des Écologistes relevée depuis le 27 août 2026, et elle ne porte aucun chiffre : le scénario ÉCO affiché ici reste une reconstitution intégrale, sans chiffrage publié, et la candidature qui le porterait est désormais conditionnelle — son maintien sera tranché par les adhérents le 13 décembre 2026."
     },
@@ -535,14 +535,14 @@
       "parti": "rn",
       "qui": null,
       "fonction": "Groupe Rassemblement national à l'Assemblée nationale",
-      "media": "CNews et LCP, comptes rendus de la séance du 14 octobre",
+      "media": "LCP — Assemblée nationale",
       "quoi": "Le groupe RN dépose un amendement retirant 11 Md€ à la contribution française au budget de l'Union européenne, afin que la contribution nette « se limite à 5 milliards d'euros » ; l'amendement est rejeté, comme ceux de LFI visant le même article.",
       "verbatim": null,
       "mesure": "ue",
       "montant": 11,
       "type": "economie",
-      "source": "https://www.cnews.fr/france/2026-10-15/budget-2027-une-contribution-de-309-milliards-deuros-en-faveur-de-lue-adoptee-par",
-      "verifie": false,
+      "source": "https://lcp.fr/actualites/l-assemblee-nationale-valide-la-contribution-francaise-au-budget-de-l-ue-malgre-l",
+      "verifie": true,
       "contredit": "annonce",
       "ecart": "Trois chiffres ne se recoupent pas. La fiche RN de cette base rattache 10 Md€ à la réduction de la contribution européenne ; l'amendement déposé par le groupe en demande 11 ; et la borne haute du catalogue pour cette mesure est de 8 Md€, pour un montant central de 2 Md€. Le vote tranche en outre dans l'autre sens : l'amendement a été rejeté et la contribution adoptée à 30,9 Md€, en hausse de 2,5 Md€ sur un an, de sorte que l'économie revendiquée n'est pas acquise dans le budget 2027 — alors qu'elle est l'un des quatre postes sur lesquels le parti appuie sa trajectoire de 140 Md€. Les bornes de la mesure ne sont pas modifiées : un amendement rejeté n'est pas un chiffrage publié."
     },
@@ -574,9 +574,9 @@
       "montant": 106.4,
       "type": "recette",
       "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
-      "verifie": false,
+      "verifie": true,
       "contredit": "annonce",
-      "ecart": "Deux écarts. D'une part, le chiffrage d'ensemble que porte la carte LFI — environ 90 Md€ de recettes nouvelles, repris du chiffrage du Nouveau Front populaire de 2024 — est dépassé : 106,4 Md€ sont ici attendus pour la seule année 2027, sans que l'articulation entre les deux exercices soit explicitée. D'autre part, les postes de recettes rapportés par LCP et Public Sénat (ISF climatique 10 Md€, suppression de la flat tax 9 Md€, taxe Zucman 15 Md€, droits de succession 20 Md€, niches fiscales 22 Md€) totalisent environ 76 Md€ : près de 30 Md€ du total annoncé ne sont rattachés à aucun poste public."
+      "ecart": "Deux écarts. D'une part, le chiffrage d'ensemble que porte la carte LFI — environ 90 Md€ de recettes nouvelles, repris du chiffrage du Nouveau Front populaire de 2024 — est dépassé : 106,4 Md€ sont ici attendus pour la seule année 2027, sans que l'articulation entre les deux exercices soit explicitée. D'autre part, les postes de recettes rapportés par LCP et Public Sénat (niches fiscales 22 Md€, droits de succession 20 Md€, taxe Zucman 15 Md€, ISF climatique 10 Md€, suppression de la flat tax 9 Md€, taxe sur les transactions financières 5 Md€, IS progressif 3 Md€) totalisent 84 Md€ : environ 22 Md€ du total annoncé ne sont rattachés à aucun poste public."
     },
     {
       "date": "2026-10-14",
@@ -590,7 +590,7 @@
       "montant": 10,
       "type": "recette",
       "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
-      "verifie": false,
+      "verifie": true,
       "contredit": "non",
       "ecart": null
     },
@@ -606,7 +606,7 @@
       "montant": 9,
       "type": "recette",
       "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817",
-      "verifie": false,
+      "verifie": true,
       "contredit": "inconnu",
       "ecart": "Les chiffrages publiés d'un retour des dividendes au barème progressif plafonnent à 6 Md€ dans le catalogue. LFI en attend 9 Md€ sans publier l'hypothèse de comportement — arbitrage entre distribution et mise en réserve, détention à l'étranger — qui soutiendrait cet écart de moitié."
     },
@@ -622,9 +622,9 @@
       "montant": 20,
       "type": "recette",
       "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817",
-      "verifie": false,
+      "verifie": true,
       "contredit": "inconnu",
-      "ecart": "LCP est la seule source à rapporter ce poste, et il n'est pas établi si les 20 Md€ sont un supplément de recettes ou le rendement total de l'impôt : les droits de succession et de donation rapportent déjà environ 20 Md€ par an, de sorte qu'un supplément de ce montant reviendrait à doubler le rendement de l'impôt en une seule année. Les chiffrages publiés d'une réforme des droits de succession sur les hauts patrimoines plafonnent, eux, à 5 Md€."
+      "ecart": "LCP et Public Sénat rapportent tous deux 20 Md€, sans dire s'il s'agit d'un supplément de recettes ou du rendement total de l'impôt. Un supplément net est peu plausible : les droits de succession et de donation rapportent déjà environ 20 Md€ par an, et l'amendement LFI n° I-319 au PLF 2027 allège au contraire les héritages de moins de 550 000 € (rien à payer sur les 150 000 premiers euros). Les chiffrages publiés d'une réforme sur les hauts patrimoines plafonnent à 5 Md€."
     },
     {
       "date": "2026-10-14",
@@ -638,7 +638,7 @@
       "montant": 22,
       "type": "recette",
       "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817",
-      "verifie": false,
+      "verifie": true,
       "contredit": "non",
       "ecart": null
     },
@@ -670,7 +670,7 @@
       "montant": null,
       "type": "depense",
       "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817",
-      "verifie": false,
+      "verifie": true,
       "contredit": "annonce",
       "ecart": "Le programme de LFI porte la retraite à 60 ans à taux plein, position redite par Jean-Luc Mélenchon le 27 août 2026 au débat du Medef — « le plus vite possible ». Le contre-budget chiffré du 14 octobre ne rétablit que les 62 ans, sans dater le passage aux 60 ans. L'écart entre les deux n'est pas mince : 20 à 45 Md€ pour les 60 ans contre 8 à 18 Md€ pour les 62 ans dans les chiffrages retenus ici, soit l'ordre de grandeur de tout le volet dépenses du contre-budget."
     },
@@ -846,7 +846,7 @@
       "montant": 10,
       "type": "economie",
       "source": "https://www.franceinfo.fr/economie/budget/horizons-propose-un-budget-alternatif-avec-10-milliards-d-economies-supplementaires_8234875.html",
-      "verifie": false,
+      "verifie": true,
       "contredit": "inconnu",
       "ecart": "Ce chiffrage porte sur une seule année et sur un amendement au budget du gouvernement, pas sur un quinquennat : il ne constitue pas le chiffrage présidentiel d'Horizons, toujours absent, et le scénario du parti reste ici une reconstitution du simulateur. Le parti revendique d'ailleurs la même cible de déficit que l'exécutif pour 2027, ce qui ne dit rien de sa trajectoire jusqu'en 2032."
     },
@@ -862,7 +862,7 @@
       "montant": 1,
       "type": "economie",
       "source": "https://www.franceinfo.fr/economie/budget/horizons-propose-un-budget-alternatif-avec-10-milliards-d-economies-supplementaires_8234875.html",
-      "verifie": false,
+      "verifie": true,
       "contredit": "inconnu",
       "ecart": "Le montant est un effet de première année, non un régime établi : il n'est pas comparable aux 8 à 18 Md€ que le catalogue retient pour un mouvement d'âge légal, et il ne peut pas être rapporté à une trajectoire d'ensemble que le parti n'a pas publiée."
     },
@@ -872,15 +872,15 @@
       "qui": "Bruno Retailleau",
       "fonction": "Président des Républicains, candidat à l'élection présidentielle",
       "media": "Présentation de son plan d'économies — dépêche AFP reprise par France 24",
-      "quoi": "Premier chiffrage d'ensemble des Républicains : près de 197 Md€ d'économies cumulées jusqu'en 2032, dont 51 Md€ rendus en baisses d'impôts (30 Md€ aux entreprises, notamment par la suppression d'impôts de production, et 21 Md€ aux ménages), pour un déficit ramené sous 3 % du PIB dès 2031 sans hausse d'impôts.",
+      "quoi": "Premier chiffrage d'ensemble des Républicains : 197 Md€ d'économies par an atteintes en 2032, dont 51 Md€ rendus aux Français (30 Md€ aux entreprises, notamment par la suppression d'impôts de production, et 21 Md€ aux ménages, surtout en cotisations salariales), pour un déficit ramené sous 3 % du PIB dès 2031 sans hausse d'impôts.",
       "verbatim": null,
       "mesure": null,
       "montant": 197,
       "type": "economie",
       "source": "https://www.france24.com/fr/info-en-continu/20261012-pr%C3%A9sidentielle-retailleau-sort-le-bulldozer-pour-r%C3%A9duire-la-d%C3%A9pense-publique",
-      "verifie": false,
+      "verifie": true,
       "contredit": "inconnu",
-      "ecart": "Les Républicains n'avaient publié aucun chiffrage : leur scénario, ici, est encore une reconstitution de ce simulateur, faite de montants de catalogue. Ce plan est le premier total revendiqué par le parti, mais il n'est pas rattachable poste par poste — la ventilation s'arrête aux grandes sphères de dépense — et il reste donc invérifiable mesure par mesure."
+      "ecart": "La dépêche AFP parle d'économies « cumulées » ; le dossier de presse du parti et le candidat lui-même parlent d'un niveau annuel en 2032 : c'est cette lecture qui est retenue. Le simulateur n'a pas encore réaligné le scénario LR sur les montants du dossier, souvent bien au-dessus des bornes du catalogue."
     },
     {
       "date": "2026-10-12",
@@ -894,9 +894,9 @@
       "montant": null,
       "type": "economie",
       "source": "https://www.epochtimes.fr/cest-ca-ou-la-grece-bruno-retailleau-promet-197-milliards-deuros-deconomies-dici-a-2032-3368344.html",
-      "verifie": false,
+      "verifie": true,
       "contredit": "inconnu",
-      "ecart": "Les comptes rendus du même discours ne disent pas la même chose du total : la dépêche AFP parle d'économies cumulées jusqu'en 2032, ce compte rendu cite le candidat évoquant des économies annuelles à cet horizon. Entre les deux lectures, l'effort annoncé varie d'un facteur proche de cinq. La ventilation reste par sphère, pas par poste, et rien ne permet encore de la confronter aux crédits inscrits."
+      "ecart": "Le total se lit comme un niveau annuel en 2032 : le candidat parle de « 197 milliards d'euros d'économies annuelles à l'horizon 2032 », et son dossier de presse le confirme. L'article parle aussi d'économies « cumulées », ce que le dossier contredit."
     },
     {
       "date": "2026-10-12",
@@ -910,9 +910,9 @@
       "montant": null,
       "type": "economie",
       "source": "https://www.epochtimes.fr/cest-ca-ou-la-grece-bruno-retailleau-promet-197-milliards-deuros-deconomies-dici-a-2032-3368344.html",
-      "verifie": false,
+      "verifie": true,
       "contredit": "inconnu",
-      "ecart": "Le plan ne publie pas la part des 96 Md€ attribués à l'État qui vient des non-remplacements et celle qui vient de la suppression d'agences et d'opérateurs. Le volume annoncé — 400 000 départs non remplacés d'ici 2032 — suppose de ne remplacer presque aucun départ en retraite sur la période, et le périmètre retenu, fonction publique d'État seule ou trois versants, n'est pas précisé."
+      "ecart": "Le dossier de presse du parti chiffre le volet : 25 Md€ pour les 400 000 départs non remplacés d'ici 2032, sur les trois versants de la fonction publique, et 7,5 Md€ pour les agences et opérateurs supprimés. Ne remplacer aucun de ces départs revient à ne remplacer presque aucun départ en retraite sur la période."
     },
     {
       "date": "2026-10-12",
@@ -942,9 +942,9 @@
       "montant": 42,
       "type": "economie",
       "source": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu",
-      "verifie": false,
-      "contredit": "programme",
-      "ecart": "42 Md€ représente trois fois la borne haute des chiffrages publiés retenue ici pour un report de l'âge légal à 65 ans (5 à 14 Md€) — alors que le plan ne porte l'âge légal qu'à 63 ans, en repoussant le seul taux plein à 65 : il réclame donc trois fois le rendement d'une réforme plus dure que la sienne. L'écart n'est adossé à aucun chiffrage public, LR n'ayant pas publié le détail poste par poste."
+      "verifie": true,
+      "contredit": "inconnu",
+      "ecart": "Selon l'article et le dossier de presse du parti, le recul de l'âge ne compte que pour 12 Md€ des 42 : c'est dans la fourchette des chiffrages publiés pour un report de l'âge légal (5 à 14 Md€). Les 30 autres milliards viennent d'autres leviers sur les retraites, que seul le parti a chiffrés."
     },
     {
       "date": "2026-10-12",
@@ -1294,7 +1294,7 @@
       "montant": 140,
       "type": "economie",
       "source": "https://www.boursorama.com/actualite-economique/actualites/presidentielle-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032-70784e1d524f6a627b04d825118d0b51",
-      "verifie": false,
+      "verifie": true,
       "contredit": "annonce",
       "ecart": "Le 27 août, au débat du Medef, la candidate annonçait 125 Md€ et promettait d'en publier la trajectoire détaillée avant le débat budgétaire de l'automne. Le total annoncé change de montant et d'horizon — 140 Md€ en 2032, là où les comptes rendus du 27 août retenaient 125 Md€ à l'horizon 2030 — et il s'agit d'un niveau atteint en 2032, non d'une coupe dans le budget 2027. La ventilation poste par poste, elle, n'est toujours pas publiée : environ 65 Md€ seulement restent rattachés à des postes identifiés, soit un écart non détaillé qui passe de 60 à 75 Md€."
     },
@@ -1310,7 +1310,7 @@
       "montant": null,
       "type": "contexte",
       "source": "https://www.boursorama.com/actualite-economique/actualites/marine-le-pen-veut-ramener-le-deficit-budgetaire-a-3-d-ici-2030-e234d02e0ea563e2766ea6142c4a1bdc",
-      "verifie": false,
+      "verifie": true,
       "contredit": "annonce",
       "ecart": "La cible de déficit est datée de 2030, soit deux ans avant que les 140 Md€ d'économies annoncés le même jour soient atteints, et l'équilibre primaire en dix-huit mois supposerait l'essentiel de l'effort dès 2027-2028. Aucun profil annuel n'a été publié qui rende les deux engagements compatibles."
     },
@@ -1320,15 +1320,15 @@
       "qui": "Marine Le Pen",
       "fonction": "Candidate du Rassemblement national à l'élection présidentielle",
       "media": "Présentation de la trajectoire budgétaire du RN — dépêche reprise par Boursorama",
-      "quoi": "Au moins 30 Md€ de baisses d'impôts nettes, dont 20 Md€ portant sur les impôts de production.",
+      "quoi": "Au moins 30 Md€ de baisses d'impôts nettes, sans ventilation publiée.",
       "verbatim": null,
-      "mesure": "prod",
-      "montant": 20,
+      "mesure": null,
+      "montant": 30,
       "type": "recette",
-      "source": "https://www.boursorama.com/actualite-economique/actualites/marine-le-pen-veut-ramener-le-deficit-budgetaire-a-3-d-ici-2030-e234d02e0ea563e2766ea6142c4a1bdc",
-      "verifie": false,
+      "source": "https://www.boursorama.com/actualite-economique/actualites/presidentielle-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032-70784e1d524f6a627b04d825118d0b51",
+      "verifie": true,
       "contredit": "inconnu",
-      "ecart": "Faute de ventilation publiée, ces baisses d'impôts ne peuvent pas être rapprochées des 140 Md€ d'économies annoncés le même jour : on ne sait pas si elles sont comprises dans le net ou s'y ajoutent. Les 20 Md€ dépassent par ailleurs de plus du double la borne haute des chiffrages retenus ici pour une nouvelle baisse des impôts de production (8 Md€)."
+      "ecart": "Faute de ventilation publiée, ces baisses d'impôts ne peuvent pas être rapprochées des 140 Md€ d'économies annoncés le même jour : on ne sait pas si elles sont comprises dans le net ou s'y ajoutent. Le chiffre de 20 Md€ sur les impôts de production, relevé ici auparavant, n'a été retrouvé dans aucune source."
     },
     {
       "date": "2026-10-06",
@@ -1374,7 +1374,7 @@
       "montant": 15,
       "type": "economie",
       "source": "https://www.franceinfo.fr/politique/front-national/ce-n-est-pas-du-tout-credible-le-budget-de-marine-le-pen-et-ses-140-milliards-d-economies-sous-le-feu-des-critiques_8227204.html",
-      "verifie": false,
+      "verifie": true,
       "contredit": "programme",
       "ecart": "Deux obstacles. Juridique : réserver les prestations de solidarité aux étrangers ayant travaillé cinq ans est une préférence nationale, que les économistes cités par franceinfo jugent exposée à la censure du Conseil constitutionnel. Arithmétique : 15 Md€ dès 2027, et 29 Md€ en année pleine, dépassent largement la fourchette des chiffrages publiés retenue ici pour ce poste (1 à 10 Md€), et plusieurs études citées concluent à un effet neutre d'une baisse de l'immigration sur les finances publiques. Le RN annonçait par ailleurs 25 Md€ sur ce même poste en octobre 2025."
     },
@@ -1390,7 +1390,7 @@
       "montant": 11.4,
       "type": "recette",
       "source": "https://www.franceinfo.fr/politique/front-national/ce-n-est-pas-du-tout-credible-le-budget-de-marine-le-pen-et-ses-140-milliards-d-economies-sous-le-feu-des-critiques_8227204.html",
-      "verifie": false,
+      "verifie": true,
       "contredit": "programme",
       "ecart": "Les chiffrages publiés situent le rendement d'une taxe sur les rachats d'actions entre 0,5 et 2 Md€ : 11,4 Md€ dès 2027, c'est six à vingt fois plus. L'économiste Nathalie Janson, citée par franceinfo, juge la prévision irréaliste parce qu'elle ignore l'adaptation des entreprises à la taxe — c'est-à-dire l'assiette même qu'elle prétend frapper."
     },
@@ -1928,13 +1928,13 @@
       "qui": null,
       "fonction": "Groupe Socialistes et apparentés, Assemblée nationale",
       "media": "Présentation du contre-budget socialiste pour le PLF 2027, compte rendu du Journal du Net",
-      "quoi": "Contre-budget pour le PLF 2027 : 39,5 Md€ de recettes nouvelles, dont 22 Md€ affectés à des dépenses nouvelles (11 Md€ pour le soutien à la croissance) et le solde à la réduction du déficit, pour une cible de 4,9 % du PIB en 2027.",
+      "quoi": "Contre-budget pour le PLF 2027 : 39,5 Md€ de recettes nouvelles, dont 22 Md€ affectés à des dépenses nouvelles (11 Md€ pour le soutien à la croissance) et le solde à la réduction du déficit.",
       "verbatim": null,
       "mesure": null,
       "montant": 39.5,
       "type": "recette",
       "source": "https://www.journaldunet.com/business/action-publique/1554951-le-parti-socialiste-propose-un-contre-budget-pour-2027-a-l-assemblee-nationale/",
-      "verifie": false,
+      "verifie": true,
       "contredit": "inconnu",
       "ecart": "Le PS n'a publié aucun chiffrage présidentiel : son scénario reste ici une reconstitution du simulateur, et ce contre-budget porte sur une seule année — celle du PLF 2027 — et non sur un quinquennat. Les comptes rendus du même document divergent par ailleurs sur la part d'économies qu'il contient : 12,1 Md€ selon la dépêche d'AEF info, 17,5 Md€ selon d'autres reprises, soit un tiers du total en écart sur un poste que le parti présente comme acquis."
     },
@@ -2371,66 +2371,50 @@
       "ecart": "Les Écologistes n'ont publié aucun programme chiffré pour 2027 : ni le coût budgétaire du relèvement du SMIC, ni celui du plan d'aide aux PME censé l'accompagner, ne sont avancés. Première déclaration chiffrée relevée pour ce parti."
     },
     {
-      "date": "2026-08",
+      "date": "2026-08-27",
       "parti": "ren",
       "qui": "Gabriel Attal",
       "fonction": "Renaissance",
       "media": "Premier débat des candidats, université d'été du MEDEF",
-      "quoi": "Volonté de faire travailler les salariés plus longtemps et d'instaurer un pilier de capitalisation pour les retraites.",
+      "quoi": "Propose « un nouveau système universel libre qui se fonde sur la durée de cotisation », avec une dose de capitalisation pour les retraites.",
       "verbatim": null,
       "mesure": null,
       "montant": null,
       "type": "contexte",
       "source": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
-      "verifie": false,
-      "contredit": "non",
-      "ecart": "Annonce non chiffrée : elle ne peut pas être portée au simulateur en l'état."
+      "verifie": true,
+      "contredit": "annonce",
+      "ecart": "Le compte rendu range aussi Attal parmi ceux qui veulent relever l'âge légal (résumé de la rédaction, pas une citation) ; sa lettre du 15 octobre 2026 promet au contraire un système « sans âge légal ». Annonce non chiffrée."
     },
     {
-      "date": "2026-08",
+      "date": "2026-08-24",
       "parti": "ps",
       "qui": "Raphaël Glucksmann",
       "fonction": "Député européen, Place publique",
-      "media": "Premier débat des candidats, université d'été du MEDEF",
-      "quoi": "Proposition de taxer le 1 % des successions les plus élevées, avec un objectif de 15 Md€ de recettes.",
-      "verbatim": null,
+      "media": "Public Sénat",
+      "quoi": "Propose de taxer les « méga-héritages » pour financer une hausse du salaire net, avec un objectif de 15 Md€ de recettes.",
+      "verbatim": "Cela nous permettra de récupérer 15 milliards d'euros",
       "mesure": "succ",
       "montant": 15,
       "type": "recette",
-      "source": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
-      "verifie": false,
+      "source": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
+      "verifie": true,
       "contredit": "inconnu",
       "ecart": "Les droits de succession et de mutation rapportent aujourd'hui environ 35 Md€ au total. Obtenir 15 Md€ de plus sur 1 % des successions suppose un barème très fortement relevé sur ces transmissions."
     },
     {
-      "date": "2026-08",
-      "parti": "lr",
-      "qui": "Bruno Retailleau",
-      "fonction": "Président des Républicains",
-      "media": "Premier débat des candidats, université d'été du MEDEF",
-      "quoi": "Annonce de 120 Md€ d'économies, obtenues exclusivement par la baisse de la dépense, sans hausse d'impôts.",
-      "verbatim": null,
-      "mesure": null,
-      "montant": 120,
-      "type": "economie",
-      "source": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
-      "verifie": false,
-      "contredit": "inconnu",
-      "ecart": "Aucun détail poste par poste n'est public à ce jour : la cohérence avec un programme écrit ne peut pas être établie."
-    },
-    {
-      "date": "2026-08",
+      "date": "2026-08-27",
       "parti": "hor",
       "qui": "Édouard Philippe",
       "fonction": "Horizons",
       "media": "Premier débat des candidats, université d'été du MEDEF",
-      "quoi": "Volonté de faire travailler les salariés plus longtemps.",
+      "quoi": "Axe son propos sur la réduction du déficit par l'allongement du temps de travail (paraphrase du compte rendu, pas une citation).",
       "verbatim": null,
       "mesure": null,
       "montant": null,
       "type": "contexte",
       "source": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
-      "verifie": false,
+      "verifie": true,
       "contredit": "non",
       "ecart": "Annonce non chiffrée : elle ne peut pas être portée au simulateur en l'état."
     },
@@ -2483,20 +2467,20 @@
       "ecart": "Le détail rendu public ne couvre qu'environ la moitié du total annoncé : la cohérence de l'autre moitié avec un programme écrit ne peut pas être établie."
     },
     {
-      "date": "2025-10-20",
+      "date": "2026-08-27",
       "parti": "rn",
       "qui": "Marine Le Pen",
       "fonction": "Députée, Rassemblement national",
-      "media": "Déclaration publique",
-      "quoi": "Défense d'un retour de l'âge de départ à la retraite à 60 ou 62 ans.",
+      "media": "Premier débat des candidats, université d'été du MEDEF (Epoch Times)",
+      "quoi": "Défend la retraite à 60 ans pour les carrières commencées avant 20 ans et un âge légal ramené à 62 ans.",
       "verbatim": null,
       "mesure": "retr62",
-      "montant": 13,
+      "montant": null,
       "type": "depense",
       "source": "https://www.epochtimes.fr/marine-le-pen-promet-125-milliards-deuros-deconomies-et-defend-une-retraite-a-60-ou-62-ans-3335415.html",
-      "verifie": false,
+      "verifie": true,
       "contredit": "annonce",
-      "ecart": "Annoncée le même jour que le plan de 125 Md€ d'économies, cette mesure en consomme une part importante sans que le plan soit relevé d'autant."
+      "ecart": "Annoncée le même jour que le plan de 125 Md€ d'économies, cette mesure en consomme une part sans que le plan soit relevé d'autant. Le seul coût chiffré ce jour-là est de 9 Md€, pour la suppression des cotisations des seniors qui prolongent."
     },
     {
       "date": "2025-10-20",
