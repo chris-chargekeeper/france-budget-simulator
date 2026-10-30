@@ -1,7 +1,39 @@
 {
   "_comment": "Base des annonces, une entrée par déclaration publique. Alimentée par le skill france-budget-watch. Champs : date (AAAA-MM-JJ ou AAAA-MM si le jour n'est pas établi), parti (id ou null), qui (la personne, ou null si l'auteur n'est pas identifié), fonction, media (où la déclaration a été faite), quoi, verbatim, mesure (id du catalogue ou null), montant (Md€ ou null), type (economie|recette|depense|contexte), source (URL obligatoire), verifie (la source a-t-elle été ouverte et lue intégralement), contredit (non|programme|annonce|inconnu), ecart (explication si contredit != non).",
-  "updated": "2026-10-27",
+  "updated": "2026-10-30",
   "items": [
+    {
+      "date": "2026-10-28",
+      "parti": "ne",
+      "qui": "David Lisnard",
+      "fonction": "Maire de Cannes, candidat à la présidentielle",
+      "media": "CNews et Europe 1, repris par le site de Nouvelle Énergie",
+      "quoi": "Annonce 80 Md€ d'économies de dépenses dès la première année, et 200 Md€ à l'horizon 2032.",
+      "verbatim": "80 milliards d'euros d'économies dès la première année",
+      "mesure": null,
+      "montant": 200,
+      "type": "economie",
+      "source": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/",
+      "verifie": true,
+      "contredit": "inconnu",
+      "ecart": "Aucune ventilation poste par poste n'a été publiée. Source militante : le site du parti du candidat."
+    },
+    {
+      "date": "2026-10-28",
+      "parti": "ne",
+      "qui": "David Lisnard",
+      "fonction": "Maire de Cannes, candidat à la présidentielle",
+      "media": "CNews et Europe 1, repris par le site de Nouvelle Énergie",
+      "quoi": "Chiffre à 2 à 3 Md€ dès la première année l'économie sur les prestations non contributives versées aux étrangers.",
+      "verbatim": "2 à 3 milliards d'euros d'économies dès la première année",
+      "mesure": "immigration",
+      "montant": 2.5,
+      "type": "economie",
+      "source": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/",
+      "verifie": true,
+      "contredit": "non",
+      "ecart": null
+    },
     {
       "date": "2026-10-26",
       "parti": "eco",
@@ -17,6 +49,22 @@
       "verifie": false,
       "contredit": "inconnu",
       "ecart": "Première déclaration des Écologistes relevée depuis le 27 août 2026, et elle ne porte aucun chiffre : le scénario ÉCO affiché ici reste une reconstitution intégrale, sans chiffrage publié, et la candidature qui le porterait est désormais conditionnelle — son maintien sera tranché par les adhérents le 13 décembre 2026."
+    },
+    {
+      "date": "2026-10-23",
+      "parti": "ne",
+      "qui": "Hugo Spring-Ragain",
+      "fonction": "Économiste, GénérationLibre",
+      "media": "Atlantico",
+      "quoi": "Rappelle que les 200 Md€ d'économies du plan Lisnard ne réduisent pas le déficit d'autant : 120 Md€ sont rendus en salaires nets et 40 Md€ en baisse des impôts de production.",
+      "verbatim": null,
+      "mesure": null,
+      "montant": 40,
+      "type": "contexte",
+      "source": "https://atlantico.fr/article/decryptage/baisse-depenses-hausse-salaires-nets-ce-que-vaut-vraiment-plan-david-lisnard-presidentielle-2027-hugo-spring-ragain",
+      "verifie": true,
+      "contredit": "annonce",
+      "ecart": "Sur les 200 Md€ affichés, seuls 40 Md€ au plus iraient à la dette ou à la modernisation de l'État."
     },
     {
       "date": "2026-10-23",
@@ -323,6 +371,22 @@
       "ecart": null
     },
     {
+      "date": "2026-10-14",
+      "parti": null,
+      "qui": "Raul Sampognaro",
+      "fonction": "Économiste, OFCE",
+      "media": "OFCE, « Des finances publiques sous tension »",
+      "quoi": "Prévoit un déficit de 5,5 % du PIB en 2026 et 5,4 % en 2027, contre 5,0 % visés par le gouvernement, avec une croissance de 0,5 % et une dette au-delà de 122 % du PIB.",
+      "verbatim": null,
+      "mesure": null,
+      "montant": null,
+      "type": "contexte",
+      "source": "https://www.ofce.fr/prev/prev2609/france/fipu.html",
+      "verifie": true,
+      "contredit": "non",
+      "ecart": null
+    },
+    {
       "date": "2026-10-13",
       "parti": "hor",
       "qui": "Laurent Marcangeli",
@@ -625,6 +689,22 @@
       "verifie": true,
       "contredit": "annonce",
       "ecart": "Le 2 septembre, le candidat avait reporté la présentation détaillée de sa réforme sans fixer d'âge de départ ; il tranche ici pour 65 ans et 45 annuités, sans chiffrage budgétaire associé. Le catalogue retient 5 à 14 Md€ pour le passage à 65 ans, et le candidat reconnaît lui-même que l'étage de capitalisation ne produira pas d'effet avant quinze à vingt ans."
+    },
+    {
+      "date": "2026-09-25",
+      "parti": null,
+      "qui": null,
+      "fonction": "Haut Conseil des finances publiques",
+      "media": "Avis n° 2026-5 sur les projets de loi de finances et de financement de la sécurité sociale pour 2027",
+      "quoi": "Juge la croissance de 1 % retenue pour 2027 « optimiste », estime l'effort structurel à environ 28 Md€ seulement, largement absorbé par la charge d'intérêts, et un retour sous 3 % en 2029 « très peu vraisemblable ».",
+      "verbatim": "l'ambition de réduction du déficit affichée pour 2027 est un minimum",
+      "mesure": null,
+      "montant": null,
+      "type": "contexte",
+      "source": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+      "verifie": true,
+      "contredit": "non",
+      "ecart": null
     },
     {
       "date": "2026-09-21",

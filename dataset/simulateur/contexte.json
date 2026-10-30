@@ -1,6 +1,214 @@
 {
   "_comment": "Contexte macroéconomique et financier, tenu à jour par la veille quotidienne. Chaque indicateur porte une valeur, une date et une source. `hypothese` (réglé à la main) relie un indicateur à une hypothèse du simulateur, qui remplace alors la valeur par défaut : rmkt (taux d'emprunt à 10 ans), g (croissance en volume), infl (inflation). `bornes` (réglé à la main) refuse une valeur invraisemblable. L'ancienne valeur part dans `historique` : rien ne s'efface.",
-  "updated": "2026-10-27",
-  "avertissement": "",
-  "indicateurs": []
+  "updated": "2026-10-30",
+  "avertissement": "Trois valeurs nourrissent le calcul : le taux à 10 ans remplace l'hypothèse de taux de marché, la croissance et l'inflation prévues pour 2027 sont prolongées jusqu'en 2032. Elles restent réglables en mode avancé.",
+  "indicateurs": [
+    {
+      "id": "oat10",
+      "lab": "Taux d'emprunt de l'État à 10 ans (OAT)",
+      "unite": "%",
+      "groupe": "marches",
+      "historique": [],
+      "valeur": 4.93,
+      "date": "2026-10-30",
+      "detail": "Plus haut à 5,14 % le 22 octobre, du jamais vu depuis 2002. Il était à 3,66 % fin juin.",
+      "source": {
+        "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur",
+        "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      },
+      "hypothese": "rmkt",
+      "bornes": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "spread",
+      "lab": "Surcoût d'emprunt par rapport à l'Allemagne",
+      "unite": "pb",
+      "groupe": "marches",
+      "historique": [],
+      "valeur": 159,
+      "date": "2026-10-30",
+      "detail": "Écart avec le Bund à 10 ans, en points de base. Environ 70 pb fin juin ; 168 pb le 22 octobre, le plus large depuis 2011.",
+      "source": {
+        "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur",
+        "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      },
+      "bornes": [
+        0,
+        800
+      ]
+    },
+    {
+      "id": "bce",
+      "lab": "Taux de dépôt de la BCE",
+      "unite": "%",
+      "groupe": "marches",
+      "historique": [],
+      "valeur": 2.5,
+      "date": "2026-10-29",
+      "detail": "Inchangé le 29 octobre, après deux hausses en juin et septembre 2026.",
+      "source": {
+        "t": "Key ECB interest rates — Banque centrale européenne",
+        "u": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+      },
+      "bornes": [
+        -1,
+        10
+      ]
+    },
+    {
+      "id": "moodys",
+      "lab": "Note de la France chez Moody's",
+      "unite": "",
+      "groupe": "notation",
+      "historique": [],
+      "valeur": "Aa3",
+      "date": "2026-10-23",
+      "detail": "Perspective négative. Maintenue le 23 octobre alors qu'une dégradation était attendue.",
+      "source": {
+        "t": "Moody's maintient la note souveraine de la France à « Aa3 » — Reuters via Boursorama, 23 octobre 2026",
+        "u": "https://www.boursorama.com/actualite-economique/actualites/moody-s-maintient-la-note-souveraine-de-la-france-a-aa3-52e9ef42bff0b0b16c1ab1b8c10ca511"
+      }
+    },
+    {
+      "id": "sp",
+      "lab": "Note de la France chez S&P",
+      "unite": "",
+      "groupe": "notation",
+      "historique": [],
+      "valeur": "A+",
+      "date": "2025-10",
+      "detail": "Perspective stable. Dernière action en octobre 2025.",
+      "source": {
+        "t": "L'agence Moody's maintient la note Aa3 de la France, mais avec perspective négative — Toute l'Europe, 24 octobre 2026",
+        "u": "https://www.touteleurope.eu/economie-et-social/l-agence-moody-s-maintient-la-note-de-la-france-aa3-mais-avec-perspective-negative/"
+      }
+    },
+    {
+      "id": "fitch",
+      "lab": "Note de la France chez Fitch",
+      "unite": "",
+      "groupe": "notation",
+      "historique": [],
+      "valeur": "A+",
+      "date": "2025-09",
+      "detail": "Perspective stable. Dernière action en septembre 2025.",
+      "source": {
+        "t": "L'agence Moody's maintient la note Aa3 de la France, mais avec perspective négative — Toute l'Europe, 24 octobre 2026",
+        "u": "https://www.touteleurope.eu/economie-et-social/l-agence-moody-s-maintient-la-note-de-la-france-aa3-mais-avec-perspective-negative/"
+      }
+    },
+    {
+      "id": "pib27",
+      "lab": "Croissance prévue en 2027 (consensus des prévisionnistes)",
+      "unite": "%",
+      "groupe": "previsions",
+      "historique": [],
+      "valeur": 0.8,
+      "date": "2026-09-17",
+      "detail": "Gouvernement 1,0 % (jugé « optimiste » par le HCFP), Banque de France 0,9 %, FMI 0,7 %, OFCE 0,5 %.",
+      "source": {
+        "t": "Avis du Haut Conseil des finances publiques n° 2026-5, tableau des prévisions (Consensus Forecasts du 17 septembre 2026)",
+        "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+      },
+      "hypothese": "g",
+      "bornes": [
+        -5,
+        6
+      ]
+    },
+    {
+      "id": "infl27",
+      "lab": "Inflation prévue en 2027",
+      "unite": "%",
+      "groupe": "previsions",
+      "historique": [],
+      "valeur": 1.8,
+      "date": "2026-09-25",
+      "detail": "Prévision du gouvernement, jugée « consensuelle » par le HCFP ; 1,9 % pour l'OFCE.",
+      "source": {
+        "t": "Avis du Haut Conseil des finances publiques n° 2026-5",
+        "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+      },
+      "hypothese": "infl",
+      "bornes": [
+        -2,
+        10
+      ]
+    },
+    {
+      "id": "ipch",
+      "lab": "Inflation sur un an, octobre 2026",
+      "unite": "%",
+      "groupe": "previsions",
+      "historique": [],
+      "valeur": 3.8,
+      "date": "2026-10-30",
+      "detail": "Indice harmonisé, estimation provisoire. Énergie : +24 % sur un an.",
+      "source": {
+        "t": "En octobre 2026, les prix à la consommation augmenteraient de 3,4 % sur un an — INSEE, Informations rapides n° 266",
+        "u": "https://www.insee.fr/fr/statistiques/9107965"
+      },
+      "bornes": [
+        -5,
+        20
+      ]
+    },
+    {
+      "id": "deficit27",
+      "lab": "Déficit public visé pour 2027 (projet de budget)",
+      "unite": "% du PIB",
+      "groupe": "finances",
+      "historique": [],
+      "valeur": 5.0,
+      "date": "2026-10-01",
+      "detail": "Après 5,4 % attendus en 2026. L'OFCE prévoit 5,4 % en 2027.",
+      "source": {
+        "t": "Budget 2027 : le gouvernement dévoile son projet, sous la pression des marchés — France 24 avec AFP, 1er octobre 2026",
+        "u": "https://www.france24.com/fr/france/20261001-budget-2027-le-gouvernement-d%C3%A9voile-son-projet-sous-la-pression-des-march%C3%A9s"
+      },
+      "bornes": [
+        0,
+        20
+      ]
+    },
+    {
+      "id": "dette",
+      "lab": "Dette publique",
+      "unite": "% du PIB",
+      "groupe": "finances",
+      "historique": [],
+      "valeur": 119.0,
+      "date": "2026-09-29",
+      "detail": "3 596 Md€ à la fin du deuxième trimestre 2026.",
+      "source": {
+        "t": "À la fin du deuxième trimestre 2026, le ratio de dette publique s'établit à 119,0 % du PIB — INSEE, Informations rapides n° 239",
+        "u": "https://www.insee.fr/fr/statistiques/9053525"
+      },
+      "bornes": [
+        50,
+        250
+      ]
+    },
+    {
+      "id": "charge27",
+      "lab": "Intérêts de la dette prévus en 2027",
+      "unite": "Md€",
+      "groupe": "finances",
+      "historique": [],
+      "valeur": 91,
+      "date": "2026-09-25",
+      "detail": "Toutes administrations publiques, d'après le projet de budget : après 79 Md€ en 2026.",
+      "source": {
+        "t": "Avis du Haut Conseil des finances publiques n° 2026-5",
+        "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+      },
+      "bornes": [
+        20,
+        300
+      ]
+    }
+  ]
 }

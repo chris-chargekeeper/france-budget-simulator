@@ -1,0 +1,472 @@
+{
+  "patch": {
+    "_comment": "Relève du 30 octobre 2026 : première mise à jour des candidatures et du contexte macroéconomique. Sources ouvertes et lues par l'agent de recherche ; Wikipédia jamais citée.",
+    "releve": "2026-10-30",
+    "partis": {
+      "ps": {
+        "statutCandidature": "Investi : vainqueur de la primaire PS – Place publique – GRS dès le premier tour (66 %, 11 octobre 2026)",
+        "source": {
+          "t": "Primaire de la gauche : Raphaël Glucksmann plie le match et remporte le scrutin dès le premier tour avec 66 % — Public Sénat, 11 octobre 2026",
+          "u": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66"
+        }
+      },
+      "eco": {
+        "statutCandidature": "Candidate, mais prête à se retirer pour une union de la gauche ; les adhérents tranchent le 13 décembre 2026",
+        "source": {
+          "t": "Marine Tondelier prête à retirer sa candidature « s'il y a un chemin de victoire » pour la gauche — BFMTV avec AFP, 26 octobre 2026",
+          "u": "https://fr.news.yahoo.com/marine-tondelier-prete-a-retirer-114947363.html"
+        }
+      },
+      "rn": {
+        "statutCandidature": "Candidate ; éligible après l'arrêt d'appel du 7 juillet 2026 ; Jordan Bardella la soutient",
+        "source": {
+          "t": "Condamnée en appel, Marine Le Pen pourra se présenter en 2027 — RTS avec AFP, 7 juillet 2026",
+          "u": "https://www.rts.ch/info/monde/2026/article/condamnee-en-appel-marine-le-pen-pourra-se-presenter-en-2027-29296439.html"
+        }
+      },
+      "lr": {
+        "statutCandidature": "Investi par les militants LR (19 avril 2026) ; ouvert à une primaire si Édouard Philippe y participe",
+        "source": {
+          "t": "Bruno Retailleau estime qu'une primaire « ne sert à rien » si Édouard Philippe n'y participe pas — BFMTV, 28 octobre 2026",
+          "u": "https://www.bfmtv.com/politique/les-republicains/presidentielle-2027-favorable-a-une-primaire-bruno-retailleau-estime-qu-elle-ne-sert-a-rien-si-edouard-philippe-n-y-participe-pas_AN-202610280400.html"
+        }
+      },
+      "ren": {
+        "statutCandidature": "Candidat déclaré (22 mai 2026) ; appelle à « une grande primaire des démocrates »",
+        "source": {
+          "t": "« Une grande primaire des démocrates » : l'appel de Gabriel Attal dans le 20H de TF1 — TF1 Info, 28 octobre 2026",
+          "u": "https://www.tf1info.fr/politique/elections/presidentielle/video-une-grande-primaire-des-democrates-l-appel-de-gabriel-attal-dans-le-20h-de-tf1-2472572.html"
+        }
+      },
+      "hor": {
+        "statutCandidature": "Candidat déclaré depuis septembre 2024",
+        "source": {
+          "t": "Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? — franceinfo, liste au 22 octobre 2026",
+          "u": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+        }
+      },
+      "lfi": {
+        "statutCandidature": "Candidat déclaré (3 mai 2026)",
+        "source": {
+          "t": "Jean-Luc Mélenchon officialise sa candidature à la présidentielle 2027 — RTL, 3 mai 2026",
+          "u": "https://www.rtl.fr/actu/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-a-un-an-du-scrutin-7900630247"
+        }
+      }
+    },
+    "nouveaux_partis": [
+      {
+        "id": "ne",
+        "nom": "Nouvelle Énergie",
+        "sigle": "NE",
+        "candidat": "David Lisnard",
+        "avatar": "h",
+        "couleur": "#0E7C86",
+        "statutCandidature": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite ; 6,5 % chez Ipsos (21-22 octobre 2026)",
+        "statut": "partiel",
+        "annonce": {
+          "titre": "200 Md€ d'économies d'ici 2032",
+          "texte": "David Lisnard annonce 80 Md€ d'économies dès la première année et 200 Md€ à l'horizon 2032. Mais il ne les affecte pas au déficit : 120 Md€ seraient rendus aux actifs en salaire net et 40 Md€ en baisse des impôts de production, les 40 Md€ restants allant à la dette ou à la modernisation de l'État. Seul un poste est chiffré publiquement : 2 à 3 Md€ sur les prestations non contributives versées aux étrangers. Le scénario chargé reprend ses orientations avec les bornes du catalogue, qui ne contient pas de baisse de cotisations de l'ampleur annoncée.",
+          "revendique": 200,
+          "detaille": 2.5,
+          "cote": "economie"
+        },
+        "set": {
+          "effectifs": {
+            "sim": "hi"
+          },
+          "agences": {
+            "sim": "hi"
+          },
+          "collectivites": {
+            "sim": "hi"
+          },
+          "chomage": {
+            "sim": "hi"
+          },
+          "niches": {
+            "sim": "mid"
+          },
+          "ondam": {
+            "sim": "mid"
+          },
+          "age65": {
+            "sim": "mid"
+          },
+          "immigration": {
+            "sim": "lo",
+            "annonce": 2.5
+          },
+          "institutions": {
+            "sim": "hi"
+          },
+          "csgbaisse": {
+            "sim": "hi"
+          },
+          "prod": {
+            "sim": "hi"
+          }
+        },
+        "source": {
+          "t": "Le maire de Cannes, David Lisnard, annonce sa candidature à l'élection présidentielle — franceinfo, 31 mars 2026",
+          "u": "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-cannes-david-lisnard-annonce-sa-candidature-a-l-election-presidentielle-et-officialise-son-depart-des-republicains_7907063.html"
+        }
+      },
+      {
+        "id": "rec",
+        "nom": "Reconquête",
+        "sigle": "REC",
+        "candidat": "Éric Zemmour",
+        "avatar": "h",
+        "couleur": "#3B3F8F",
+        "statutCandidature": "Candidat déclaré (17 septembre 2026) ; 4 à 4,5 % chez Ipsos (21-22 octobre 2026)",
+        "statut": "reconstitution",
+        "annonce": {
+          "titre": "Pas de chiffrage 2027 publié",
+          "texte": "Reconstitution du simulateur à partir des positions publiques constantes du candidat : réduction des dépenses liées à l'immigration, suppression de l'aide médicale d'État, baisse de la contribution française au budget européen, réduction du train de vie de l'État. Aucun chiffrage d'ensemble n'a été publié pour 2027 : les montants sont ceux du catalogue."
+        },
+        "set": {
+          "immigration": {
+            "sim": "hi"
+          },
+          "ame": {
+            "sim": "hi"
+          },
+          "ue": {
+            "sim": "mid"
+          },
+          "agences": {
+            "sim": "mid"
+          },
+          "effectifs": {
+            "sim": "mid"
+          },
+          "institutions": {
+            "sim": "mid"
+          }
+        },
+        "source": {
+          "t": "« Je serai candidat » : Éric Zemmour annonce sur BFMTV qu'il se présentera à l'élection présidentielle — BFMTV, 17 septembre 2026",
+          "u": "https://www.bfmtv.com/politique/elections/presidentielle/je-serai-candidat-eric-zemmour-annonce-sur-bfmtv-qu-il-se-presentera-a-l-election-presidentielle_AV-202609170947.html"
+        }
+      }
+    ],
+    "annonces": [
+      {
+        "date": "2026-10-28",
+        "parti": "ne",
+        "qui": "David Lisnard",
+        "fonction": "Maire de Cannes, candidat à la présidentielle",
+        "media": "CNews et Europe 1, repris par le site de Nouvelle Énergie",
+        "quoi": "Annonce 80 Md€ d'économies de dépenses dès la première année, et 200 Md€ à l'horizon 2032.",
+        "verbatim": "80 milliards d'euros d'économies dès la première année",
+        "mesure": null,
+        "montant": 200,
+        "type": "economie",
+        "source": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucune ventilation poste par poste n'a été publiée. Source militante : le site du parti du candidat."
+      },
+      {
+        "date": "2026-10-28",
+        "parti": "ne",
+        "qui": "David Lisnard",
+        "fonction": "Maire de Cannes, candidat à la présidentielle",
+        "media": "CNews et Europe 1, repris par le site de Nouvelle Énergie",
+        "quoi": "Chiffre à 2 à 3 Md€ dès la première année l'économie sur les prestations non contributives versées aux étrangers.",
+        "verbatim": "2 à 3 milliards d'euros d'économies dès la première année",
+        "mesure": "immigration",
+        "montant": 2.5,
+        "type": "economie",
+        "source": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": null
+      },
+      {
+        "date": "2026-10-23",
+        "parti": "ne",
+        "qui": "Hugo Spring-Ragain",
+        "fonction": "Économiste, GénérationLibre",
+        "media": "Atlantico",
+        "quoi": "Rappelle que les 200 Md€ d'économies du plan Lisnard ne réduisent pas le déficit d'autant : 120 Md€ sont rendus en salaires nets et 40 Md€ en baisse des impôts de production.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 40,
+        "type": "contexte",
+        "source": "https://atlantico.fr/article/decryptage/baisse-depenses-hausse-salaires-nets-ce-que-vaut-vraiment-plan-david-lisnard-presidentielle-2027-hugo-spring-ragain",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Sur les 200 Md€ affichés, seuls 40 Md€ au plus iraient à la dette ou à la modernisation de l'État."
+      },
+      {
+        "date": "2026-09-25",
+        "parti": null,
+        "qui": null,
+        "fonction": "Haut Conseil des finances publiques",
+        "media": "Avis n° 2026-5 sur les projets de loi de finances et de financement de la sécurité sociale pour 2027",
+        "quoi": "Juge la croissance de 1 % retenue pour 2027 « optimiste », estime l'effort structurel à environ 28 Md€ seulement, largement absorbé par la charge d'intérêts, et un retour sous 3 % en 2029 « très peu vraisemblable ».",
+        "verbatim": "l'ambition de réduction du déficit affichée pour 2027 est un minimum",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": null
+      },
+      {
+        "date": "2026-10-14",
+        "parti": null,
+        "qui": "Raul Sampognaro",
+        "fonction": "Économiste, OFCE",
+        "media": "OFCE, « Des finances publiques sous tension »",
+        "quoi": "Prévoit un déficit de 5,5 % du PIB en 2026 et 5,4 % en 2027, contre 5,0 % visés par le gouvernement, avec une croissance de 0,5 % et une dette au-delà de 122 % du PIB.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.ofce.fr/prev/prev2609/france/fipu.html",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": null
+      }
+    ],
+    "contexte": {
+      "oat10": {
+        "lab": "Taux d'emprunt de l'État à 10 ans (OAT)",
+        "unite": "%",
+        "groupe": "marches",
+        "valeur": 4.93,
+        "date": "2026-10-30",
+        "detail": "Plus haut à 5,14 % le 22 octobre, du jamais vu depuis 2002. Il était à 3,66 % fin juin.",
+        "source": {
+          "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      },
+      "spread": {
+        "lab": "Surcoût d'emprunt par rapport à l'Allemagne",
+        "unite": "pb",
+        "groupe": "marches",
+        "valeur": 159,
+        "date": "2026-10-30",
+        "detail": "Écart avec le Bund à 10 ans, en points de base. Environ 70 pb fin juin ; 168 pb le 22 octobre, le plus large depuis 2011.",
+        "source": {
+          "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      },
+      "bce": {
+        "lab": "Taux de dépôt de la BCE",
+        "unite": "%",
+        "groupe": "marches",
+        "valeur": 2.5,
+        "date": "2026-10-29",
+        "detail": "Inchangé le 29 octobre, après deux hausses en juin et septembre 2026.",
+        "source": {
+          "t": "Key ECB interest rates — Banque centrale européenne",
+          "u": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+        }
+      },
+      "moodys": {
+        "lab": "Note de la France chez Moody's",
+        "unite": "",
+        "groupe": "notation",
+        "valeur": "Aa3",
+        "date": "2026-10-23",
+        "detail": "Perspective négative. Maintenue le 23 octobre alors qu'une dégradation était attendue.",
+        "source": {
+          "t": "Moody's maintient la note souveraine de la France à « Aa3 » — Reuters via Boursorama, 23 octobre 2026",
+          "u": "https://www.boursorama.com/actualite-economique/actualites/moody-s-maintient-la-note-souveraine-de-la-france-a-aa3-52e9ef42bff0b0b16c1ab1b8c10ca511"
+        }
+      },
+      "sp": {
+        "lab": "Note de la France chez S&P",
+        "unite": "",
+        "groupe": "notation",
+        "valeur": "A+",
+        "date": "2025-10",
+        "detail": "Perspective stable. Dernière action en octobre 2025.",
+        "source": {
+          "t": "L'agence Moody's maintient la note Aa3 de la France, mais avec perspective négative — Toute l'Europe, 24 octobre 2026",
+          "u": "https://www.touteleurope.eu/economie-et-social/l-agence-moody-s-maintient-la-note-de-la-france-aa3-mais-avec-perspective-negative/"
+        }
+      },
+      "fitch": {
+        "lab": "Note de la France chez Fitch",
+        "unite": "",
+        "groupe": "notation",
+        "valeur": "A+",
+        "date": "2025-09",
+        "detail": "Perspective stable. Dernière action en septembre 2025.",
+        "source": {
+          "t": "L'agence Moody's maintient la note Aa3 de la France, mais avec perspective négative — Toute l'Europe, 24 octobre 2026",
+          "u": "https://www.touteleurope.eu/economie-et-social/l-agence-moody-s-maintient-la-note-de-la-france-aa3-mais-avec-perspective-negative/"
+        }
+      },
+      "pib27": {
+        "lab": "Croissance prévue en 2027 (consensus des prévisionnistes)",
+        "unite": "%",
+        "groupe": "previsions",
+        "valeur": 0.8,
+        "date": "2026-09-17",
+        "detail": "Gouvernement 1,0 % (jugé « optimiste » par le HCFP), Banque de France 0,9 %, FMI 0,7 %, OFCE 0,5 %.",
+        "source": {
+          "t": "Avis du Haut Conseil des finances publiques n° 2026-5, tableau des prévisions (Consensus Forecasts du 17 septembre 2026)",
+          "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+        }
+      },
+      "infl27": {
+        "lab": "Inflation prévue en 2027",
+        "unite": "%",
+        "groupe": "previsions",
+        "valeur": 1.8,
+        "date": "2026-09-25",
+        "detail": "Prévision du gouvernement, jugée « consensuelle » par le HCFP ; 1,9 % pour l'OFCE.",
+        "source": {
+          "t": "Avis du Haut Conseil des finances publiques n° 2026-5",
+          "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+        }
+      },
+      "ipch": {
+        "lab": "Inflation sur un an, octobre 2026",
+        "unite": "%",
+        "groupe": "previsions",
+        "valeur": 3.8,
+        "date": "2026-10-30",
+        "detail": "Indice harmonisé, estimation provisoire. Énergie : +24 % sur un an.",
+        "source": {
+          "t": "En octobre 2026, les prix à la consommation augmenteraient de 3,4 % sur un an — INSEE, Informations rapides n° 266",
+          "u": "https://www.insee.fr/fr/statistiques/9107965"
+        }
+      },
+      "deficit27": {
+        "lab": "Déficit public visé pour 2027 (projet de budget)",
+        "unite": "% du PIB",
+        "groupe": "finances",
+        "valeur": 5.0,
+        "date": "2026-10-01",
+        "detail": "Après 5,4 % attendus en 2026. L'OFCE prévoit 5,4 % en 2027.",
+        "source": {
+          "t": "Budget 2027 : le gouvernement dévoile son projet, sous la pression des marchés — France 24 avec AFP, 1er octobre 2026",
+          "u": "https://www.france24.com/fr/france/20261001-budget-2027-le-gouvernement-d%C3%A9voile-son-projet-sous-la-pression-des-march%C3%A9s"
+        }
+      },
+      "dette": {
+        "lab": "Dette publique",
+        "unite": "% du PIB",
+        "groupe": "finances",
+        "valeur": 119.0,
+        "date": "2026-09-29",
+        "detail": "3 596 Md€ à la fin du deuxième trimestre 2026.",
+        "source": {
+          "t": "À la fin du deuxième trimestre 2026, le ratio de dette publique s'établit à 119,0 % du PIB — INSEE, Informations rapides n° 239",
+          "u": "https://www.insee.fr/fr/statistiques/9053525"
+        }
+      },
+      "charge27": {
+        "lab": "Intérêts de la dette prévus en 2027",
+        "unite": "Md€",
+        "groupe": "finances",
+        "valeur": 91,
+        "date": "2026-09-25",
+        "detail": "Toutes administrations publiques, d'après le projet de budget : après 79 Md€ en 2026.",
+        "source": {
+          "t": "Avis du Haut Conseil des finances publiques n° 2026-5",
+          "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-10-30",
+    "applique": "2026-10-30",
+    "ajouts": [
+      {
+        "candidat": "David Lisnard",
+        "parti": "ne",
+        "source": "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-cannes-david-lisnard-annonce-sa-candidature-a-l-election-presidentielle-et-officialise-son-depart-des-republicains_7907063.html"
+      },
+      {
+        "candidat": "Éric Zemmour",
+        "parti": "rec",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/je-serai-candidat-eric-zemmour-annonce-sur-bfmtv-qu-il-se-presentera-a-l-election-presidentielle_AV-202609170947.html"
+      },
+      {
+        "date": "2026-10-28",
+        "parti": "ne",
+        "quoi": "Annonce 80 Md€ d'économies de dépenses dès la première année, et 200 Md€ à l'horizon 2032.",
+        "source": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/"
+      },
+      {
+        "date": "2026-10-28",
+        "parti": "ne",
+        "quoi": "Chiffre à 2 à 3 Md€ dès la première année l'économie sur les prestations non contributives versées aux étrangers.",
+        "source": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/"
+      },
+      {
+        "date": "2026-10-23",
+        "parti": "ne",
+        "quoi": "Rappelle que les 200 Md€ d'économies du plan Lisnard ne réduisent pas le déficit d'autant : 120 Md€ sont rendus en salaires nets et 40 Md€ en baisse des impôts de production.",
+        "source": "https://atlantico.fr/article/decryptage/baisse-depenses-hausse-salaires-nets-ce-que-vaut-vraiment-plan-david-lisnard-presidentielle-2027-hugo-spring-ragain"
+      },
+      {
+        "date": "2026-09-25",
+        "parti": null,
+        "quoi": "Juge la croissance de 1 % retenue pour 2027 « optimiste », estime l'effort structurel à environ 28 Md€ seulement, largement absorbé par la charge d'intérêts, et un retour sous 3 % en 2029 « très peu vraisemblable ».",
+        "source": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+      },
+      {
+        "date": "2026-10-14",
+        "parti": null,
+        "quoi": "Prévoit un déficit de 5,5 % du PIB en 2026 et 5,4 % en 2027, contre 5,0 % visés par le gouvernement, avec une croissance de 0,5 % et une dette au-delà de 122 % du PIB.",
+        "source": "https://www.ofce.fr/prev/prev2609/france/fipu.html"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "parties.ps.statutCandidature",
+        "avant": "Candidature pressentie, primaire à gauche en cours",
+        "apres": "Investi : vainqueur de la primaire PS – Place publique – GRS dès le premier tour (66 %, 11 octobre 2026)",
+        "source": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66"
+      },
+      {
+        "quoi": "parties.eco.statutCandidature",
+        "avant": "Candidature pressentie, primaire à gauche en cours",
+        "apres": "Candidate, mais prête à se retirer pour une union de la gauche ; les adhérents tranchent le 13 décembre 2026",
+        "source": "https://fr.news.yahoo.com/marine-tondelier-prete-a-retirer-114947363.html"
+      },
+      {
+        "quoi": "parties.rn.statutCandidature",
+        "avant": "Candidature annoncée ; Jordan Bardella cité comme alternative",
+        "apres": "Candidate ; éligible après l'arrêt d'appel du 7 juillet 2026 ; Jordan Bardella la soutient",
+        "source": "https://www.rts.ch/info/monde/2026/article/condamnee-en-appel-marine-le-pen-pourra-se-presenter-en-2027-29296439.html"
+      },
+      {
+        "quoi": "parties.lr.statutCandidature",
+        "avant": "Président du parti, candidature pressentie",
+        "apres": "Investi par les militants LR (19 avril 2026) ; ouvert à une primaire si Édouard Philippe y participe",
+        "source": "https://www.bfmtv.com/politique/les-republicains/presidentielle-2027-favorable-a-une-primaire-bruno-retailleau-estime-qu-elle-ne-sert-a-rien-si-edouard-philippe-n-y-participe-pas_AN-202610280400.html"
+      },
+      {
+        "quoi": "parties.ren.statutCandidature",
+        "avant": "Candidature pressentie",
+        "apres": "Candidat déclaré (22 mai 2026) ; appelle à « une grande primaire des démocrates »",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/video-une-grande-primaire-des-democrates-l-appel-de-gabriel-attal-dans-le-20h-de-tf1-2472572.html"
+      },
+      {
+        "quoi": "parties.hor.statutCandidature",
+        "avant": "Candidature annoncée",
+        "apres": "Candidat déclaré depuis septembre 2024",
+        "source": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+      },
+      {
+        "quoi": "parties.lfi.statutCandidature",
+        "avant": "Candidature annoncée",
+        "apres": "Candidat déclaré (3 mai 2026)",
+        "source": "https://www.rtl.fr/actu/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-a-un-an-du-scrutin-7900630247"
+      }
+    ]
+  }
+}

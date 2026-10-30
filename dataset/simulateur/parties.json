@@ -1,7 +1,7 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-10-14",
-  "avertissement": "Aucune candidature n'est officiellement déposée à ce stade. Les noms retenus sont les candidats pressentis par parti au vu des déclarations publiques et des sondages de 2026 ; ils changeront. Les programmes 2027 ne sont pour la plupart pas publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
+  "updated": "2026-10-30",
+  "avertissement": "Les candidatures ne seront officielles qu'après validation des parrainages par le Conseil constitutionnel, au printemps 2027. Le site suit les candidats déclarés ou investis qui pèsent dans les sondages ; la liste est revérifiée chaque matin. Les programmes 2027 sont pour la plupart non publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
       "id": "rn",
@@ -10,7 +10,7 @@
       "candidat": "Marine Le Pen",
       "avatar": "f",
       "couleur": "#1C3F63",
-      "statutCandidature": "Candidature annoncée ; Jordan Bardella cité comme alternative",
+      "statutCandidature": "Candidate ; éligible après l'arrêt d'appel du 7 juillet 2026 ; Jordan Bardella la soutient",
       "statut": "partiel",
       "annonce": {
         "titre": "140 Md€ d'économies",
@@ -77,6 +77,10 @@
         {
           "t": "Présidentielle : Marine Le Pen promet « 140 milliards d'euros nets d'économies » d'ici 2032 — dépêche, 6 octobre 2026",
           "u": "https://www.boursorama.com/actualite-economique/actualites/presidentielle-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032-70784e1d524f6a627b04d825118d0b51"
+        },
+        {
+          "t": "Condamnée en appel, Marine Le Pen pourra se présenter en 2027 — RTS avec AFP, 7 juillet 2026",
+          "u": "https://www.rts.ch/info/monde/2026/article/condamnee-en-appel-marine-le-pen-pourra-se-presenter-en-2027-29296439.html"
         }
       ]
     },
@@ -87,7 +91,7 @@
       "candidat": "Jean-Luc Mélenchon",
       "avatar": "h",
       "couleur": "#C1272D",
-      "statutCandidature": "Candidature annoncée",
+      "statutCandidature": "Candidat déclaré (3 mai 2026)",
       "statut": "partiel",
       "annonce": {
         "titre": "≈ 90 Md€ de recettes nouvelles",
@@ -175,6 +179,10 @@
         {
           "t": "Taxe Zucman — Wikipédia (état du débat parlementaire)",
           "u": "https://fr.wikipedia.org/wiki/Taxe_Zucman"
+        },
+        {
+          "t": "Jean-Luc Mélenchon officialise sa candidature à la présidentielle 2027 — RTL, 3 mai 2026",
+          "u": "https://www.rtl.fr/actu/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-a-un-an-du-scrutin-7900630247"
         }
       ]
     },
@@ -185,7 +193,7 @@
       "candidat": "Bruno Retailleau",
       "avatar": "h",
       "couleur": "#2E6FB7",
-      "statutCandidature": "Président du parti, candidature pressentie",
+      "statutCandidature": "Investi par les militants LR (19 avril 2026) ; ouvert à une primaire si Édouard Philippe y participe",
       "statut": "reconstitution",
       "annonce": {
         "titre": "197 Md€ d'économies annoncés, sans ventilation par poste",
@@ -233,6 +241,10 @@
         {
           "t": "Présidentielle : Retailleau sort le « bulldozer » pour réduire la dépense publique — AFP, 12 octobre 2026",
           "u": "https://www.france24.com/fr/info-en-continu/20261012-pr%C3%A9sidentielle-retailleau-sort-le-bulldozer-pour-r%C3%A9duire-la-d%C3%A9pense-publique"
+        },
+        {
+          "t": "Bruno Retailleau estime qu'une primaire « ne sert à rien » si Édouard Philippe n'y participe pas — BFMTV, 28 octobre 2026",
+          "u": "https://www.bfmtv.com/politique/les-republicains/presidentielle-2027-favorable-a-une-primaire-bruno-retailleau-estime-qu-elle-ne-sert-a-rien-si-edouard-philippe-n-y-participe-pas_AN-202610280400.html"
         }
       ]
     },
@@ -243,7 +255,7 @@
       "candidat": "Gabriel Attal",
       "avatar": "h",
       "couleur": "#D9A227",
-      "statutCandidature": "Candidature pressentie",
+      "statutCandidature": "Candidat déclaré (22 mai 2026) ; appelle à « une grande primaire des démocrates »",
       "statut": "reconstitution",
       "annonce": {
         "titre": "Pas de chiffrage 2027 publié",
@@ -278,7 +290,12 @@
           "sim": "lo"
         }
       },
-      "sources": []
+      "sources": [
+        {
+          "t": "« Une grande primaire des démocrates » : l'appel de Gabriel Attal dans le 20H de TF1 — TF1 Info, 28 octobre 2026",
+          "u": "https://www.tf1info.fr/politique/elections/presidentielle/video-une-grande-primaire-des-democrates-l-appel-de-gabriel-attal-dans-le-20h-de-tf1-2472572.html"
+        }
+      ]
     },
     {
       "id": "hor",
@@ -287,7 +304,7 @@
       "candidat": "Édouard Philippe",
       "avatar": "h",
       "couleur": "#4FB0C6",
-      "statutCandidature": "Candidature annoncée",
+      "statutCandidature": "Candidat déclaré depuis septembre 2024",
       "statut": "reconstitution",
       "annonce": {
         "titre": "Pas de chiffrage 2027 publié",
@@ -322,7 +339,12 @@
           "sim": "mid"
         }
       },
-      "sources": []
+      "sources": [
+        {
+          "t": "Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? — franceinfo, liste au 22 octobre 2026",
+          "u": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+        }
+      ]
     },
     {
       "id": "ps",
@@ -331,7 +353,7 @@
       "candidat": "Raphaël Glucksmann",
       "avatar": "h",
       "couleur": "#E4557A",
-      "statutCandidature": "Candidature pressentie, primaire à gauche en cours",
+      "statutCandidature": "Investi : vainqueur de la primaire PS – Place publique – GRS dès le premier tour (66 %, 11 octobre 2026)",
       "statut": "reconstitution",
       "annonce": {
         "titre": "Pas de chiffrage 2027 publié",
@@ -372,7 +394,12 @@
           "sim": "lo"
         }
       },
-      "sources": []
+      "sources": [
+        {
+          "t": "Primaire de la gauche : Raphaël Glucksmann plie le match et remporte le scrutin dès le premier tour avec 66 % — Public Sénat, 11 octobre 2026",
+          "u": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66"
+        }
+      ]
     },
     {
       "id": "eco",
@@ -381,7 +408,7 @@
       "candidat": "Marine Tondelier",
       "avatar": "f",
       "couleur": "#4C9A54",
-      "statutCandidature": "Candidature pressentie, primaire à gauche en cours",
+      "statutCandidature": "Candidate, mais prête à se retirer pour une union de la gauche ; les adhérents tranchent le 13 décembre 2026",
       "statut": "reconstitution",
       "annonce": {
         "titre": "Pas de chiffrage 2027 publié",
@@ -416,7 +443,12 @@
           "sim": "mid"
         }
       },
-      "sources": []
+      "sources": [
+        {
+          "t": "Marine Tondelier prête à retirer sa candidature « s'il y a un chemin de victoire » pour la gauche — BFMTV avec AFP, 26 octobre 2026",
+          "u": "https://fr.news.yahoo.com/marine-tondelier-prete-a-retirer-114947363.html"
+        }
+      ]
     },
     {
       "id": "ia",
@@ -430,13 +462,13 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget arbitré, pas promis",
-        "texte": "Ce scénario n'est le programme de personne. Il a été composé par l'IA qui tient ce site, avec une seule consigne : remettre les comptes d'aplomb en ménageant la croissance et sans faire porter l'effort sur un groupe désigné. Il puise uniquement dans les 41 mesures chiffrées du simulateur, aux mêmes bornes que pour les partis. Ses arbitrages sont des choix de valeurs, pas des vérités : chacun est expliqué ci-dessous, et contestable.",
+        "texte": "Ce scénario n'est le programme de personne. Il a été composé par l'IA qui tient ce site, avec une seule consigne : remettre les comptes d'aplomb en ménageant la croissance et sans faire porter l'effort sur un groupe désigné. Il puise uniquement dans les 41 mesures chiffrées du simulateur, aux mêmes bornes que pour les partis. Ce qu'il montre surtout : avec un taux d'emprunt proche de 5 %, supérieur à la croissance, les intérêts font boule de neige, et même un effort de cette ampleur peine à arrêter la dette. Ses arbitrages sont des choix de valeurs, pas des vérités : chacun est expliqué ci-dessous, et contestable.",
         "revendique": null,
         "detaille": null,
         "cote": null
       },
       "criteres": [
-        "Stabiliser la dette en part du PIB avant 2032, puis viser la limite des 3 %.",
+        "Freiner la dette autant que possible d'ici 2032, puis viser la limite des 3 %.",
         "Répartir l'effort à peu près pour moitié entre recettes et dépenses.",
         "Faire contribuer davantage ceux qui ont le plus : patrimoines, successions, revenus du capital.",
         "Couper d'abord ce qui est peu efficace selon les évaluations publiques : niches, aides sans contrepartie, dépenses redondantes.",
@@ -457,31 +489,34 @@
           "sim": "mid"
         },
         "pfu": {
-          "sim": "mid"
+          "sim": "hi"
         },
         "minimum15": {
-          "sim": "mid"
+          "sim": "hi"
         },
         "fraude": {
           "sim": "mid"
         },
         "cir": {
-          "sim": "mid"
+          "sim": "hi"
         },
         "alleg": {
-          "sim": "mid"
+          "sim": "hi"
         },
         "isgrandes": {
-          "sim": "mid"
+          "sim": "hi"
         },
         "rachats": {
-          "sim": "mid"
+          "sim": "hi"
         },
         "superp": {
-          "sim": "lo"
+          "sim": "mid"
         },
         "ttf": {
-          "sim": "lo"
+          "sim": "mid"
+        },
+        "exit": {
+          "sim": "mid"
         },
         "ondam": {
           "sim": "hi"
@@ -493,13 +528,13 @@
           "sim": "hi"
         },
         "collectivites": {
-          "sim": "mid"
+          "sim": "hi"
         },
         "chomage": {
-          "sim": "mid"
+          "sim": "hi"
         },
         "institutions": {
-          "sim": "mid"
+          "sim": "hi"
         },
         "age65": {
           "sim": "mid"
@@ -522,26 +557,27 @@
         "succ": "Les successions concentrent les inégalités de patrimoine ; une réforme limitée aux hauts patrimoines fait consensus chez des économistes de sensibilités différentes.",
         "csgcap": "Aligner la contribution des revenus du capital sur celle du travail : large assiette, faible taux, peu de distorsions.",
         "zucman": "Retenue au chiffrage central, sans parier sur le haut de fourchette : le rendement dépend d'un très petit nombre de foyers.",
-        "pfu": "Les dividendes rejoignent le barème : l'effort porte sur les revenus du capital élevés.",
-        "minimum15": "Application d'un accord international déjà signé : rendement modeste mais sûr.",
+        "pfu": "Les dividendes rejoignent le barème de l'impôt sur le revenu : l'effort porte sur les revenus du capital élevés.",
+        "minimum15": "Application complète d'un accord international déjà signé : rendement modeste mais sûr.",
         "fraude": "Retenue au chiffrage central, pas au haut de fourchette : la fraude se recouvre lentement.",
         "cir": "Rabot ciblé sur les grands groupes : les évaluations publiques concluent à un effet faible au-delà d'un certain montant.",
-        "alleg": "Les allègements au-dessus de 1,6 SMIC ont un effet sur l'emploi peu démontré, selon les rapports publics de 2024.",
-        "isgrandes": "Surtaxe limitée aux très grandes entreprises, au chiffrage central.",
-        "rachats": "Mesure de faible rendement, retenue pour sa cohérence avec l'effort demandé aux autres.",
-        "superp": "Retenue à la borne basse : le rendement dépend de la conjoncture.",
-        "ttf": "Retenue à la borne basse : l'assiette se déplace facilement.",
+        "alleg": "Les allègements au-dessus de 1,6 SMIC ont un effet sur l'emploi peu démontré, selon les rapports publics de 2024 ; ceux proches du SMIC sont préservés.",
+        "isgrandes": "Surtaxe limitée aux très grandes entreprises, maintenue tant que le déficit dépasse 3 %.",
+        "rachats": "Faible rendement, retenue pour sa cohérence avec l'effort demandé aux autres.",
+        "superp": "Retenue au chiffrage central : le rendement dépend de la conjoncture des secteurs visés.",
+        "ttf": "Retenue au chiffrage central : l'assiette se déplace facilement.",
         "ondam": "Freiner la progression des dépenses de santé par la pertinence des soins, pas par le déremboursement.",
         "agences": "Rationaliser les opérateurs redondants : économie modeste mais sans victime désignée.",
         "effectifs": "Non-remplacement partiel, hors santé, école et justice, dont les besoins sont couverts par ailleurs.",
-        "collectivites": "Effort partagé avec les collectivités, au chiffrage central.",
-        "chomage": "Réforme au chiffrage central, sans toucher aux minima sociaux.",
+        "collectivites": "Effort demandé aux collectivités à proportion de leur poids dans la dépense publique.",
+        "chomage": "Réforme de l'assurance chômage, sans toucher aux minima sociaux.",
         "institutions": "Symbolique en montant, retenue parce que l'effort doit commencer au sommet.",
         "age65": "Le choix le plus discutable du scénario. Allonger la durée d'activité reste, dans tous les chiffrages publics, le levier le plus puissant sur les comptes sociaux ; la montée en charge est lente.",
         "blanche": "Un an de gel des barèmes et des prestations, partagé par tous. Il pèse plus lourd pour les ménages modestes : c'est le prix de l'effort, et la principale entorse au critère d'équité.",
         "defense": "Le minimum de l'engagement pris envers les alliés : un budget qui l'ignorerait ne serait pas réaliste.",
         "ecolo": "Investissement de borne basse, dont le rendement est de long terme (énergie importée, dégâts climatiques).",
-        "age": "Le vieillissement n'est pas un choix : la dépense de grand âge montera de toute façon."
+        "age": "Le vieillissement n'est pas un choix : la dépense de grand âge montera de toute façon.",
+        "exit": "Complément logique de l'impôt plancher : limite les départs motivés par l'impôt."
       },
       "ecartees": {
         "immigration": "Rendement très incertain, et vise une population désignée.",
@@ -555,6 +591,107 @@
         "isf": "Redondant avec l'impôt plancher et la réforme des successions retenus."
       },
       "sources": []
+    },
+    {
+      "id": "ne",
+      "nom": "Nouvelle Énergie",
+      "sigle": "NE",
+      "candidat": "David Lisnard",
+      "avatar": "h",
+      "couleur": "#0E7C86",
+      "statutCandidature": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite ; 6,5 % chez Ipsos (21-22 octobre 2026)",
+      "statut": "partiel",
+      "annonce": {
+        "titre": "200 Md€ d'économies d'ici 2032",
+        "texte": "David Lisnard annonce 80 Md€ d'économies dès la première année et 200 Md€ à l'horizon 2032. Mais il ne les affecte pas au déficit : 120 Md€ seraient rendus aux actifs en salaire net et 40 Md€ en baisse des impôts de production, les 40 Md€ restants allant à la dette ou à la modernisation de l'État. Seul un poste est chiffré publiquement : 2 à 3 Md€ sur les prestations non contributives versées aux étrangers. Le scénario chargé reprend ses orientations avec les bornes du catalogue, qui ne contient pas de baisse de cotisations de l'ampleur annoncée.",
+        "revendique": 200,
+        "detaille": 2.5,
+        "cote": "economie"
+      },
+      "set": {
+        "effectifs": {
+          "sim": "hi"
+        },
+        "agences": {
+          "sim": "hi"
+        },
+        "collectivites": {
+          "sim": "hi"
+        },
+        "chomage": {
+          "sim": "hi"
+        },
+        "niches": {
+          "sim": "mid"
+        },
+        "ondam": {
+          "sim": "mid"
+        },
+        "age65": {
+          "sim": "mid"
+        },
+        "immigration": {
+          "sim": "lo",
+          "annonce": 2.5
+        },
+        "institutions": {
+          "sim": "hi"
+        },
+        "csgbaisse": {
+          "sim": "hi"
+        },
+        "prod": {
+          "sim": "hi"
+        }
+      },
+      "sources": [
+        {
+          "t": "Le maire de Cannes, David Lisnard, annonce sa candidature à l'élection présidentielle — franceinfo, 31 mars 2026",
+          "u": "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-cannes-david-lisnard-annonce-sa-candidature-a-l-election-presidentielle-et-officialise-son-depart-des-republicains_7907063.html"
+        }
+      ],
+      "depuis": "2026-10-30"
+    },
+    {
+      "id": "rec",
+      "nom": "Reconquête",
+      "sigle": "REC",
+      "candidat": "Éric Zemmour",
+      "avatar": "h",
+      "couleur": "#3B3F8F",
+      "statutCandidature": "Candidat déclaré (17 septembre 2026) ; 4 à 4,5 % chez Ipsos (21-22 octobre 2026)",
+      "statut": "reconstitution",
+      "annonce": {
+        "titre": "Pas de chiffrage 2027 publié",
+        "texte": "Reconstitution du simulateur à partir des positions publiques constantes du candidat : réduction des dépenses liées à l'immigration, suppression de l'aide médicale d'État, baisse de la contribution française au budget européen, réduction du train de vie de l'État. Aucun chiffrage d'ensemble n'a été publié pour 2027 : les montants sont ceux du catalogue."
+      },
+      "set": {
+        "immigration": {
+          "sim": "hi"
+        },
+        "ame": {
+          "sim": "hi"
+        },
+        "ue": {
+          "sim": "mid"
+        },
+        "agences": {
+          "sim": "mid"
+        },
+        "effectifs": {
+          "sim": "mid"
+        },
+        "institutions": {
+          "sim": "mid"
+        }
+      },
+      "sources": [
+        {
+          "t": "« Je serai candidat » : Éric Zemmour annonce sur BFMTV qu'il se présentera à l'élection présidentielle — BFMTV, 17 septembre 2026",
+          "u": "https://www.bfmtv.com/politique/elections/presidentielle/je-serai-candidat-eric-zemmour-annonce-sur-bfmtv-qu-il-se-presentera-a-l-election-presidentielle_AV-202609170947.html"
+        }
+      ],
+      "depuis": "2026-10-30"
     }
   ],
   "sourceOfficielle": {
