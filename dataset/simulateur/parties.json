@@ -700,29 +700,31 @@
     "statut": "attendue",
     "note": "Le ministère de l'Intérieur publie, une fois les candidatures validées par le Conseil constitutionnel, la profession de foi et le programme officiel de chaque candidat. C'est la seule source de rang officiel pour un programme : dès sa mise en ligne, elle remplace ici toute reprise de presse, et les scénarios « reconstitution » sont rebâtis à partir d'elle. Non disponible à ce jour pour 2027."
   },
-  "sondage": {
-    "terrain_fin": "2026-10-22",
-    "note": "Vague 3 ; questionnaire en ligne ; scores entiers, sans décimale.",
-    "institut": "OpinionWay",
-    "date": "2026-10-22",
-    "echantillon": 973,
-    "commanditaire": "CNEWS",
-    "hypothese": "Le Pen, Mélenchon, Glucksmann, Philippe, Retailleau, Lisnard, Attal, Zemmour, Tondelier (plus Roussel, Dupont-Aignan, Arthaud, Bouamrane)",
-    "scores": {
-      "rn": 36,
-      "lfi": 16,
-      "ps": 13,
-      "hor": 12,
-      "lr": 6,
-      "ne": 6,
-      "ren": 4,
-      "rec": 4,
-      "eco": 1
-    },
-    "terrain_debut": "2026-10-21",
-    "source": {
-      "t": "OpinionWay pour CNEWS — Les intentions de vote à l'élection présidentielle 2027, 22 octobre 2026",
-      "u": "https://www.opinion-way.com/wp-content/uploads/2026/10/OpinionWay-pour-CNEWS-Les-intentions-de-vote-a-lelection-presidentielle-2027-22-octobre-2026.pdf"
+  "sondages": [
+    {
+      "terrain_fin": "2026-10-22",
+      "note": "Vague 3 ; questionnaire en ligne ; scores entiers, sans décimale.",
+      "institut": "OpinionWay",
+      "date": "2026-10-22",
+      "echantillon": 973,
+      "commanditaire": "CNEWS",
+      "hypothese": "Le Pen, Mélenchon, Glucksmann, Philippe, Retailleau, Lisnard, Attal, Zemmour, Tondelier (plus Roussel, Dupont-Aignan, Arthaud, Bouamrane)",
+      "scores": {
+        "rn": 36,
+        "lfi": 16,
+        "ps": 13,
+        "hor": 12,
+        "lr": 6,
+        "ne": 6,
+        "ren": 4,
+        "rec": 4,
+        "eco": 1
+      },
+      "terrain_debut": "2026-10-21",
+      "source": {
+        "t": "OpinionWay pour CNEWS — Les intentions de vote à l'élection présidentielle 2027, 22 octobre 2026",
+        "u": "https://www.opinion-way.com/wp-content/uploads/2026/10/OpinionWay-pour-CNEWS-Les-intentions-de-vote-a-lelection-presidentielle-2027-22-octobre-2026.pdf"
+      }
     }
-  }
+  ]
 }

@@ -13,7 +13,7 @@ source.
   "nouveaux_partis": [],
   "mesures": {},
   "contexte": {},
-  "sondage": {}
+  "sondages": []
 }
 ```
 
@@ -195,31 +195,34 @@ projections de tous les candidats : seulement sur une valeur publiée et datée.
 
 ---
 
-## `sondage` — les intentions de vote au premier tour
+## `sondages` — les intentions de vote au premier tour
 
-Un seul sondage à la fois, **entier** : tous les scores viennent de la même enquête et de la
-même hypothèse, sinon ils ne se comparent pas. Il classe les cartes et s'affiche dessus.
+La page affiche la **moyenne** des derniers sondages, un par institut, pour qu'aucun institut ni
+aucun média commanditaire ne fasse à lui seul le classement. La section est une liste : chaque
+sondage **remplace le précédent du même institut**, ou s'ajoute si l'institut n'y est pas encore.
+Chaque sondage entre **entier** : une seule hypothèse, tous ses scores.
 
 ```json
-"sondage": {
-  "institut": "Ipsos BVA", "commanditaire": "La Tribune Dimanche",
-  "terrain_debut": "2026-10-21", "terrain_fin": "2026-10-22", "date": "2026-10-25",
+"sondages": [{
+  "institut": "Ipsos BVA", "commanditaire": "Le Parisien",
+  "terrain_debut": "2026-10-21", "terrain_fin": "2026-10-22", "date": "2026-10-24",
   "echantillon": 1500,
   "hypothese": "Le Pen candidate, Glucksmann pour le PS, Attal et Philippe présents",
-  "scores": {"rn": 33, "lfi": 12, "rec": [4, 4.5]},
+  "scores": {"rn": 33.5, "lfi": 17, "rec": [4, 4.5]},
   "source": {"t": "…", "u": "https://…"}
-}
+}]
 ```
 
 | champ | règle |
 |---|---|
-| `institut`, `source` | obligatoires ; la source est la page de l'institut ou du média commanditaire |
-| `terrain_fin`, `date` | fin du terrain et date de publication ; jamais plus ancien que le sondage en place |
+| `institut`, `source` | obligatoires ; la source est la page de l'institut ou du média commanditaire, lue |
+| `terrain_fin`, `date` | fin du terrain et publication ; jamais plus ancien que le sondage en place du même institut |
 | `scores` | en %, de 0 à 60, ou `[bas, haut]` si seule une fourchette est publiée ; uniquement des candidats suivis |
-| `hypothese` | l'hypothèse retenue, quand l'enquête en teste plusieurs : celle qui colle au champ réel |
+| `hypothese` | celle qui colle le mieux au champ réel (le plus de candidats suivis, les bons titulaires) |
 
-Un candidat suivi absent de l'hypothèse reste affiché, sans score, après les autres. Le sondage
-remplacé part dans `sondages_historique`. Ne faites jamais de moyenne entre instituts.
+La page ne moyenne que les sondages achevés moins de 21 jours avant le plus récent, et chaque
+candidat sur les sondages qui l'ont testé. Ne calculez jamais de moyenne vous-même : la page le fait.
+Le sondage remplacé part dans `sondages_historique`.
 
 ---
 

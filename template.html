@@ -1413,13 +1413,25 @@ const BL = DATA.baseline, MEASURES = DATA.measures.measures;
 /* Un candidat retiré (renonce, battu à une primaire, rallié) reste dans les données — ses
    annonces aussi — mais ne figure plus parmi les choix. */
 const ALL_PARTIES = DATA.parties.parties;
-/* Le dernier sondage retenu par la veille. Un score peut être une fourchette [bas, haut]. */
-const SONDAGE = DATA.parties.sondage || null;
+/* Les sondages : le dernier de chaque institut, tenu par la veille. On affiche leur moyenne,
+   pour qu'aucun institut ni aucun média commanditaire ne fasse à lui seul le classement. Seuls
+   comptent les sondages dont le terrain finit moins de 21 jours avant le plus récent ; un score
+   en fourchette [bas, haut] compte pour son milieu. Chaque candidat est moyenné sur les sondages
+   qui l'ont testé. */
+const SONDAGES = (() => {
+  const l = DATA.parties.sondages || (DATA.parties.sondage ? [DATA.parties.sondage] : []);
+  if (!l.length) return [];
+  const fin = l.map(x => x.terrain_fin).sort().pop();
+  const limite = new Date(new Date(fin) - 21 * 864e5).toISOString().slice(0, 10);
+  return l.filter(x => x.terrain_fin >= limite).sort((a, b) => b.terrain_fin.localeCompare(a.terrain_fin));
+})();
+const sdNom = x => x.institut + (x.commanditaire ? ' pour ' + x.commanditaire : '');
 const pollOf = id => {
-  const v = SONDAGE && SONDAGE.scores ? SONDAGE.scores[id] : null;
-  return v == null ? null : {v: Array.isArray(v) ? (v[0] + v[v.length-1]) / 2 : v, brut: [].concat(v)};
+  const vus = SONDAGES.filter(x => x.scores && x.scores[id] != null)
+    .map(x => { const v = x.scores[id]; return {x, v: Array.isArray(v) ? (v[0] + v[v.length-1]) / 2 : v}; });
+  return vus.length ? {v: vus.reduce((t, o) => t + o.v, 0) / vus.length, n: vus.length, vus} : null;
 };
-/* Ordre des cartes : du mieux placé au moins bien placé dans le dernier sondage ; les candidats
+/* Ordre des cartes : du mieux placé au moins bien placé dans la moyenne des sondages ; les candidats
    non testés ensuite ; le candidat IA après les vrais candidats. */
 const PARTIES = ALL_PARTIES.filter(p => !p.retire)
   .sort((a, b) => (!!a.horsCourse - !!b.horsCourse)
@@ -2254,12 +2266,13 @@ function buildCards(){
     const sd = pollOf(id);
     if (sd){
       const pl = el('div','poll');
-      pl.title = `${SONDAGE.institut}${SONDAGE.commanditaire ? ' pour ' + SONDAGE.commanditaire : ''}, `
-        + `terrain jusqu'au ${fmtDate(SONDAGE.terrain_fin)} — intentions de vote au premier tour`;
+      pl.title = 'Intentions de vote au premier tour — '
+        + sd.vus.map(o => `${sdNom(o.x)} (${fmtDate(o.x.terrain_fin)}) : ${sign(nf(o.v, o.v % 1 ? 1 : 0))} %`).join(' · ');
       const bar = el('i','poll-bar'); bar.style.setProperty('--w', Math.min(100, sd.v / 40 * 100) + '%');
-      pl.appendChild(el('span','poll-v', sd.brut.map(x => sign(nf(x, x % 1 ? 1 : 0))).join(' à ') + ' %'));
+      const r = Math.round(sd.v * 2) / 2;
+      pl.appendChild(el('span','poll-v', sign(nf(r, r % 1 ? 1 : 0)) + ' %'));
       pl.appendChild(bar);
-      pl.appendChild(el('span','poll-k', 'dans les sondages'));
+      pl.appendChild(el('span','poll-k', sd.n > 1 ? `moyenne de ${sd.n} sondages` : `1 sondage (${SONDAGES.length > 1 ? 'seul à le tester' : sd.vus[0].x.institut})`));
       b.appendChild(pl);
     }
     b.addEventListener('click', e => {
@@ -2292,12 +2305,15 @@ function buildCards(){
     p.couleur, p.photo, p.avatar, p.horsCourse));
   /* le point de repère ferme la marche : en mode jeu, les candidats d'abord */
   mk('tend','—',"Si rien ne change","Le repère : aucune mesure nouvelle après 2026","", null, 'var(--ink-3)', null);
-  if (SONDAGE) $('#pollNote').textContent = `Classés selon le dernier sondage : ${SONDAGE.institut}`
-    + `${SONDAGE.commanditaire ? ' pour ' + SONDAGE.commanditaire : ''}, ${fmtDate(SONDAGE.terrain_fin)}.`;
-  $('#candWarn').textContent = DATA.parties.avertissement
-    + (SONDAGE ? ` Classés selon le dernier sondage retenu : ${SONDAGE.institut}`
-        + `${SONDAGE.commanditaire ? ' pour ' + SONDAGE.commanditaire : ''}, terrain jusqu'au `
-        + `${fmtDate(SONDAGE.terrain_fin)}, intentions de vote au premier tour.` : '');
+  if (SONDAGES.length){
+    const dates = SONDAGES.map(x => x.terrain_fin).sort();
+    const liste = SONDAGES.map(sdNom).join(', ');
+    $('#pollNote').textContent = SONDAGES.length > 1
+      ? `Classés selon la moyenne de ${SONDAGES.length} sondages (${liste}), terrains achevés entre le `
+        + `${fmtDate(dates[0])} et le ${fmtDate(dates[dates.length-1])}.`
+      : `Classés selon le dernier sondage : ${liste}, ${fmtDate(dates[0])}.`;
+  }
+  $('#candWarn').textContent = DATA.parties.avertissement;
 }
 function syncCards(){
   document.querySelectorAll('.card').forEach(b =>

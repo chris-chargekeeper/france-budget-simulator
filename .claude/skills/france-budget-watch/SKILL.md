@@ -35,11 +35,12 @@ partir de ses positions publiques et du catalogue existant (`statut: "reconstitu
 candidat qui renonce sort par `retrait` — il est masqué de la page, jamais effacé. Le candidat IA
 (`horsCourse`) n'est pas un candidat : la veille n'y touche pas.
 
-**Chaque jour aussi, les sondages.** Cherchez le sondage d'intentions de vote au premier tour le
-plus récent d'un institut reconnu (Ifop, Ipsos BVA, Elabe, Odoxa, OpinionWay, Harris Interactive
-Toluna, Cluster17, Viavoice) dont le terrain est postérieur à celui affiché par `etat`. S'il y en a
-un, il entre **entier** par la section `sondage` du patch : il classe les cartes des candidats et
-s'affiche dessus. Pas de nouveau sondage, rien à faire.
+**Chaque jour aussi, les sondages.** La page affiche la moyenne des derniers sondages, un par
+institut. Pour chaque institut reconnu (Ifop, Ipsos BVA, Elabe, Odoxa, OpinionWay, Harris
+Interactive Toluna, Cluster17, Viavoice), cherchez un sondage d'intentions de vote au premier tour
+plus récent que celui affiché par `etat`, ou le premier d'un institut absent. Chacun entre
+**entier** par la section `sondages` du patch et remplace le précédent du même institut. Pas de
+nouveau sondage, rien à faire.
 
 **Chaque jour aussi, le contexte.** Rafraîchissez les indicateurs de `contexte.json` dont une
 valeur plus récente a été publiée : taux de l'OAT à 10 ans et écart avec le Bund (Agence France
