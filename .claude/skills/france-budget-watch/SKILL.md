@@ -58,6 +58,28 @@ Puis trois familles, par ordre d'autorité :
 3. **Les déclarations chiffrées** en meeting, en plateau, dans la presse. Elles alimentent le journal
    des annonces.
 
+**Les grandes interviews politiques, chaque jour.** C'est là que les candidats et leurs
+lieutenants lâchent des chiffres, souvent sans reprise écrite. Passez en revue les invités de la
+veille et de la nuit dans ces émissions :
+
+| média | émissions à regarder |
+|---|---|
+| franceinfo | l'invité politique de la matinale (vers 8 h 30), le « 8h30 franceinfo » |
+| France Inter | le grand entretien de la matinale (vers 7 h 50 et 8 h 20) |
+| TF1 | les invités du 13 h et du 20 h, les interviews politiques du week-end |
+| France 2 | « Les 4 Vérités » (7 h 40), les invités du 20 h, « L'Événement » |
+| RTL | l'invité de la matinale (7 h 40) ; le Grand Jury RTL / Le Figaro / M6 le dimanche |
+| BFMTV / RMC | l'interview politique de la matinale (8 h 30), « BFM Politique » le dimanche |
+| Europe 1 / CNews | la grande interview de la matinale (8 h 15) |
+| LCI | l'invité politique du matin et du soir |
+| Sud Radio | l'invité politique de la matinale (8 h 15) |
+
+Ne relevez que ce qui est **chiffré** ou qui engage un programme. La source est la page de
+l'émission ou sa retranscription (le replay ou l'article du média lui-même), avec la date,
+l'invité et sa fonction ; une reprise par un autre média n'est qu'un indice pour trouver
+l'original. Une interview de la matinée du jour sera relevée le lendemain : la relève de 6 h
+ne court pas après l'antenne.
+
 Pour chaque trouvaille, il faut **une URL**, une date, un auteur ou au moins sa fonction. Sans ça,
 n'entrez rien : le script refusera, et il aura raison.
 
