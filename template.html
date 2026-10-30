@@ -563,6 +563,45 @@ body.adv .simple-only{display:none!important}
 .compo-row .n .ic{margin-top:1px;color:var(--ink-3)}
 .compo-row .n .txt{min-width:0}
 
+/* où va l'argent, qui le paie : couleur de la vidéo pédagogique, rouge dépense, bleu recette */
+#compoDep .compo-bar{background:color-mix(in srgb,var(--dep) 45%,var(--surface))}
+#compoDep .compo-bar.fort{background:var(--dep)}
+#compoPay .compo-bar{background:color-mix(in srgb,var(--rec) 45%,var(--surface))}
+#compoPay .compo-bar.fort{background:var(--rec)}
+.compo-bar.fort{background:var(--bar-strong)}
+@media (max-width:620px){
+  /* sur téléphone, chaque poste devient une petite fiche : le montant sur 1 000 € en grand,
+     une barre pleine largeur, le détail au toucher */
+  .compo-row.hdr{display:none}
+  .compo-row,.compo-row.four{grid-template-columns:1fr auto;grid-template-areas:"n th" "bar v";
+    gap:6px 12px;padding:11px 0;border-bottom:1px solid var(--rule-soft);font-size:14px}
+  .compo-row:last-child{border-bottom:0}
+  .compo-row .n{grid-area:n;align-items:center;font-weight:600;color:var(--ink)}
+  .compo-row .n .ic{margin-top:0;width:22px;height:22px;flex-basis:22px}
+  .compo-track{grid-area:bar;align-self:center;height:9px;border-radius:99px}
+  .compo-bar{height:9px;border-radius:99px}
+  .compo-row .v{grid-area:v;min-width:0;font-size:11.5px;color:var(--ink-3)}
+  .compo-row .v::after{content:" Md€"}
+  .compo-row .thousand{grid-area:th;font-family:"IBM Plex Sans",sans-serif;font-size:19px;font-weight:700;
+    letter-spacing:-.02em;color:var(--ink);align-self:center}
+  #compoDep .thousand{color:var(--dep)} #compoPay .thousand{color:var(--rec)}
+  .compo-row .sub-list{display:none;font-weight:400;font-size:12.5px;margin-top:4px}
+  .compo-row.open .sub-list{display:block}
+  .compo-row.open .n{align-items:flex-start}
+  .compo-row.has-sub{cursor:pointer}
+  .compo-row.has-sub .nm::after{content:"";display:inline-block;width:6px;height:6px;margin:0 0 3px 8px;
+    border-right:1.6px solid var(--ink-3);border-bottom:1.6px solid var(--ink-3);transform:rotate(45deg);
+    transition:transform .2s}
+  .compo-row.has-sub.open .nm::after{transform:rotate(-135deg);margin-bottom:-1px}
+  /* les pastilles « sur 1 000 € » : trois par ligne au lieu de deux */
+  .strip{--d-max:76px;gap:14px 6px;justify-content:space-around}
+  .strip .cell{flex:0 0 calc(33.3% - 6px);max-width:none}
+  .pastille{font-size:13.5px}
+  .strip .cell .who{font-size:11px}
+  .masses{gap:8px}
+  .mass{padding:12px 14px 11px}
+}
+
 @media (max-width:900px){
   .masses{grid-template-columns:1fr}
   .balances{grid-template-columns:1fr}
@@ -1202,11 +1241,6 @@ footer{padding-bottom:120px}
       <div class="scroller"><div id="cmp"></div></div>
       <p class="sub" id="cmpNote" style="margin-top:12px"></p>
     </div>
-    <div class="more-cta simple-only">
-      <div><b>Envie de creuser ?</b> Le mode détaillé montre l'écart entre chaque promesse et ce que le budget
-        contient, mesure par mesure, et vous laisse régler toutes les hypothèses vous-même.</div>
-      <button type="button" class="cta" data-go-adv="#ecart">Passer en mode détaillé →</button>
-    </div>
   </section>
 
   <section id="contexte" class="adv-only" aria-labelledby="h-ctx">
@@ -1312,7 +1346,7 @@ footer{padding-bottom:120px}
     </div>
   </section>
 
-  <section class="adv-only" aria-labelledby="h-compo">
+  <section id="argent" aria-labelledby="h-compo">
     <div class="sec-head">
       <div><div class="eyebrow">Pour comparer</div><h2 id="h-compo">Où va l'argent, qui le paie</h2></div>
       <p>Une idée répandue veut que la dépense publique parte d'abord dans les privilèges de l'État. Voici les
@@ -1346,6 +1380,11 @@ footer{padding-bottom:120px}
       <h3>Les repères qui manquent au débat</h3>
       <p class="sub">Les postes les plus cités dans les discussions, remis à leur échelle réelle.</p>
       <div id="reperes"></div>
+    </div>
+    <div class="more-cta simple-only" style="margin-top:22px">
+      <div><b>Envie de creuser ?</b> Le mode détaillé montre l'écart entre chaque promesse et ce que le budget
+        contient, mesure par mesure, et vous laisse régler toutes les hypothèses vous-même.</div>
+      <button type="button" class="cta" data-go-adv="#ecart">Passer en mode détaillé →</button>
     </div>
   </section>
 
@@ -2615,17 +2654,19 @@ function barRows(host, rows, max, strong, header){
     const n = el('div','compo-row' + (header ? ' four' : ''));
     const nm = el('div','n');
     if (r.icone) nm.appendChild(icon(r.icone));
-    const txt = el('div','txt', r.nom);
+    const txt = el('div','txt'); txt.appendChild(el('span','nm', r.nom));
     if (r.sub){ txt.appendChild(el('div','sub-list', r.sub)); }
     nm.appendChild(txt);
     n.appendChild(nm);
     const track = el('div','compo-track');
     const bar = el('div','compo-bar');
     bar.style.width = Math.max(0.4, r.v / max * 100) + '%';
-    if (strong && strong(r)) bar.style.background = 'var(--bar-strong)';
+    if (strong && strong(r)) bar.classList.add('fort');
     track.appendChild(bar); n.appendChild(track);
     n.appendChild(el('div','v', r.txt != null ? r.txt : nf(r.v)));
     if (header) n.appendChild(el('div','thousand', r.per));
+    if (r.sub){ n.classList.add('has-sub');
+      n.addEventListener('click', () => n.classList.toggle('open')); }
     host.appendChild(n);
   });
 }
