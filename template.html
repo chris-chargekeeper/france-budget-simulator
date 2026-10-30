@@ -788,6 +788,12 @@ body:not(.adv) .charts .chart{max-height:320px}
 .ia-why.prog{background:var(--surface-2);border-color:var(--rule)}
 .ia-why.prog h4{color:var(--ink-2)}
 .ia-ann{color:var(--ink-3);font-size:11.5px}
+.card .poll{margin-top:10px;padding-top:9px;border-top:1px dashed var(--rule);display:grid;
+  grid-template-columns:auto 1fr;grid-template-areas:"v bar" "k k";gap:2px 10px;align-items:center}
+.poll-v{grid-area:v;font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:17px;color:var(--pc);letter-spacing:-.02em}
+.poll-bar{grid-area:bar;height:6px;border-radius:999px;background:var(--rule-soft);position:relative;overflow:hidden}
+.poll-bar::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--w);border-radius:999px;background:var(--pc)}
+.poll-k{grid-area:k;font-size:11px;color:var(--ink-3)}
 .ia-amt.up{color:var(--good)} .ia-amt.down{color:var(--critical)}
 .ia-total{margin-top:6px;border-top:2px solid var(--rule);padding-top:8px;display:grid;gap:4px}
 .it-row{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--ink-2)}
@@ -1311,8 +1317,17 @@ const BL = DATA.baseline, MEASURES = DATA.measures.measures;
 /* Un candidat retiré (renonce, battu à une primaire, rallié) reste dans les données — ses
    annonces aussi — mais ne figure plus parmi les choix. */
 const ALL_PARTIES = DATA.parties.parties;
+/* Le dernier sondage retenu par la veille. Un score peut être une fourchette [bas, haut]. */
+const SONDAGE = DATA.parties.sondage || null;
+const pollOf = id => {
+  const v = SONDAGE && SONDAGE.scores ? SONDAGE.scores[id] : null;
+  return v == null ? null : {v: Array.isArray(v) ? (v[0] + v[v.length-1]) / 2 : v, brut: [].concat(v)};
+};
+/* Ordre des cartes : du mieux placé au moins bien placé dans le dernier sondage ; les candidats
+   non testés ensuite ; le candidat IA ferme la marche. */
 const PARTIES = ALL_PARTIES.filter(p => !p.retire)
-  .sort((a, b) => !!a.horsCourse - !!b.horsCourse);   /* le candidat IA ferme la marche */
+  .sort((a, b) => (!!a.horsCourse - !!b.horsCourse)
+    || ((pollOf(b.id) || {v:-1}).v - (pollOf(a.id) || {v:-1}).v));
 const CTX = (DATA.contexte && DATA.contexte.indicateurs) || [];
 const BASE = {pib0:BL.apu.pib, dep0:BL.apu.depenses, rec0:BL.apu.recettes,
               dette0:BL.apu.dette, charge0:BL.apu.charge, taux0:BL.apu.tauxApparent, refi:BL.apu.partRefinancee};
@@ -2139,6 +2154,17 @@ function buildCards(){
     if (nA) b.appendChild(el('div','cmp-sub',
       nA + (nA > 1 ? ' annonces' : ' annonce') + (nC ? ' · ' + nC + (nC > 1 ? ' contradictions' : ' contradiction') : '')));
     if (badge) b.appendChild(el('span','badge ' + badge[0], badge[1]));
+    const sd = pollOf(id);
+    if (sd){
+      const pl = el('div','poll');
+      pl.title = `${SONDAGE.institut}${SONDAGE.commanditaire ? ' pour ' + SONDAGE.commanditaire : ''}, `
+        + `terrain jusqu'au ${fmtDate(SONDAGE.terrain_fin)} — intentions de vote au premier tour`;
+      const bar = el('i','poll-bar'); bar.style.setProperty('--w', Math.min(100, sd.v / 40 * 100) + '%');
+      pl.appendChild(el('span','poll-v', sd.brut.map(x => sign(nf(x, x % 1 ? 1 : 0))).join(' à ') + ' %'));
+      pl.appendChild(bar);
+      pl.appendChild(el('span','poll-k', 'dans les sondages'));
+      b.appendChild(pl);
+    }
     b.addEventListener('click', e => {
       state.party = id;
       state.active = id === 'tend' ? {} : partySet(PARTIES.find(x => x.id === id));
@@ -2168,7 +2194,10 @@ function buildCards(){
     p.horsCourse ? ['ia','hors course · pour jouer']
       : p.statut === 'reconstitution' ? ['rec','reconstitution'] : ['pub','chiffres publics'],
     p.couleur, p.photo, p.avatar, p.horsCourse));
-  $('#candWarn').textContent = DATA.parties.avertissement;
+  $('#candWarn').textContent = DATA.parties.avertissement
+    + (SONDAGE ? ` Classés selon le dernier sondage retenu : ${SONDAGE.institut}`
+        + `${SONDAGE.commanditaire ? ' pour ' + SONDAGE.commanditaire : ''}, terrain jusqu'au `
+        + `${fmtDate(SONDAGE.terrain_fin)}, intentions de vote au premier tour.` : '');
 }
 function syncCards(){
   document.querySelectorAll('.card').forEach(b =>
