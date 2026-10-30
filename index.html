@@ -502,11 +502,13 @@ body.adv .simple-only{display:none!important}
 :root{
   --dep:#C81E1E;  --rec:#0B5CAE;  --coin:#E0982F;
   --pastille:#12224E; --pastille-ink:#FFFFFF;
+  --dep-vif:#A50E0E; --dep-doux:#E07A72; --rec-vif:#0A4F9C; --rec-pale:#9DBBDD;
   --ciel:#EAF3FA; --ciel-2:#D6E8F5;
 }
 :root[data-theme="dark"]{
   --dep:#EE7B72; --rec:#6DA7EC; --coin:#E5AE60;
   --pastille:#1D2F5C; --pastille-ink:#EAF1FA;
+  --dep-vif:#FF5A52; --dep-doux:#A9605A; --rec-vif:#7FB6FF; --rec-pale:#3F5875;
   --ciel:#15202C; --ciel-2:#1C2937;
 }
 
@@ -521,6 +523,7 @@ body.adv .simple-only{display:none!important}
            text-transform:uppercase;color:var(--ink-3);display:flex;gap:7px;align-items:center}
 .mass .val{font-weight:700;font-size:clamp(28px,4vw,44px);line-height:1;
            letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.mass .val .md{font-size:.48em;font-weight:700;letter-spacing:0;margin-left:.22em;opacity:.9}
 .mass .unit{font-size:12.5px;color:var(--ink-2);line-height:1.35}
 .mass.dep .val,.mass.dep .lab{color:var(--dep)}
 .mass.rec .val,.mass.rec .lab{color:var(--rec)}
@@ -528,13 +531,33 @@ body.adv .simple-only{display:none!important}
 
 /* la balance : la métaphore centrale de la vidéo, ici pilotée par les montants réels */
 .balances{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
-.bal{background:var(--ciel);border:1px solid var(--rule);border-radius:10px;padding:12px 14px 8px}
-.bal h4{margin:0 0 2px;font-size:13px;font-weight:600;color:var(--ink)}
+.bal{background:var(--ciel);border:1px solid var(--rule);border-radius:14px;padding:14px 16px 12px;
+     display:flex;flex-direction:column;gap:6px;--bal-pied:#3E4A5C}
+.bal.is-party{background:color-mix(in srgb,var(--pc) 7%,var(--surface));
+     border:2px solid color-mix(in srgb,var(--pc) 55%,transparent);
+     box-shadow:0 10px 28px -16px color-mix(in srgb,var(--pc) 70%,transparent)}
+:root[data-theme="dark"] .bal{--bal-pied:#8C9AB0}
+.bal-head{display:flex;gap:10px;align-items:center;min-height:44px}
+.bal-av{width:44px;height:44px;flex:none}
+.bal h4{margin:0;font-family:Newsreader,serif;font-size:19px;font-weight:600;color:var(--ink);line-height:1.1}
+.bal-sous{font-size:12.5px;color:var(--ink-2)}
 .bal .when{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;
            text-transform:uppercase;color:var(--ink-3)}
-.bal svg{width:100%;height:auto;display:block;margin-top:2px}
-.bal .note{font-size:12.5px;color:var(--ink-2);padding:2px 2px 4px;line-height:1.45}
-.bal .note b{color:var(--ink);font-weight:600}
+.bal.is-party .when{color:var(--pc);font-weight:600}
+.bal svg{width:100%;max-width:380px;height:auto;display:block;margin:0 auto}
+.bal-alerte{filter:drop-shadow(0 0 6px color-mix(in srgb,var(--dep-vif) 70%,transparent))}
+.bal-leg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.bal-k{border-radius:10px;padding:7px 10px;display:grid;gap:1px;background:var(--surface);border:1px solid var(--rule-soft)}
+.bal-k .k{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.bal-k.dep .k{color:var(--dep)} .bal-k.rec .k{color:var(--rec)}
+.bal-k b{font-size:15px;color:var(--ink);font-variant-numeric:tabular-nums}
+.bal-k .d{font-size:12px;font-weight:600;color:var(--ink-3)}
+.bal-k.pire{background:color-mix(in srgb,var(--dep-vif) 12%,var(--surface));border-color:color-mix(in srgb,var(--dep-vif) 45%,transparent)}
+.bal-k.pire .d{color:var(--dep-vif)}
+.bal-k.mieux .d{color:var(--rec-vif)}
+.bal-note{font-size:13px;color:var(--ink-2);line-height:1.45;padding:4px 2px 0}
+.bal-note b{color:var(--ink);font-weight:700}
+.bal-note.pire b{color:var(--dep-vif)} .bal-note.mieux b{color:var(--rec-vif)} .bal-note.bon b{color:var(--good)}
 
 /* la bande « sur 1 000 € », pastilles rondes comme les cartons de la vidéo */
 /* Le diamètre est porté par --r, que le script pose par cellule : c'est le rapport
@@ -565,11 +588,17 @@ body.adv .simple-only{display:none!important}
 .compo-row .n .txt{min-width:0}
 
 /* où va l'argent, qui le paie : couleur de la vidéo pédagogique, rouge dépense, bleu recette */
-#compoDep .compo-bar{background:color-mix(in srgb,var(--dep) 45%,var(--surface))}
-#compoDep .compo-bar.fort{background:var(--dep)}
-#compoPay .compo-bar{background:color-mix(in srgb,var(--rec) 45%,var(--surface))}
-#compoPay .compo-bar.fort{background:var(--rec)}
-.compo-bar.fort{background:var(--bar-strong)}
+#compoDep .compo-bar,#compoDep .compo-bar.fort{background:linear-gradient(90deg,color-mix(in srgb,var(--dep) 80%,#fff),var(--dep))}
+#compoPay .compo-bar,#compoPay .compo-bar.fort{background:linear-gradient(90deg,color-mix(in srgb,var(--rec) 80%,#fff),var(--rec))}
+.compo-bar,.compo-bar.fort{background:linear-gradient(90deg,var(--bar),var(--bar-strong));min-width:4px}
+/* colonnes fixes et communes : barres et montants alignés d'une ligne à l'autre */
+.compo-row.four{grid-template-columns:minmax(0,1.6fr) minmax(0,1.3fr) 52px 84px;gap:14px;padding:9px 0;
+  border-bottom:1px solid var(--rule-soft)}
+.compo-row.four:last-child{border-bottom:0}
+.compo-row.four.hdr{padding:0 0 6px;white-space:nowrap}
+.compo-row.four > :nth-child(3),.compo-row.four > :nth-child(4){text-align:right}
+.compo-row .compo-track,.compo-row .compo-bar{height:10px;border-radius:99px}
+.compo-row .thousand{font-weight:600;color:var(--ink-2)}
 @media (max-width:620px){
   /* sur téléphone, chaque poste devient une petite fiche : le montant sur 1 000 € en grand,
      une barre pleine largeur, le détail au toucher */
@@ -2547,74 +2576,108 @@ function renderMasses(){
     lab.appendChild(icon(t.ic));
     lab.appendChild(el('span', null, t.lab));
     n.appendChild(lab);
-    n.appendChild(el('div', 'val', nf(t.v)));
-    n.appendChild(el('div', 'unit', 'milliards d’euros · ' + t.sub));
+    const val = el('div', 'val', nf(t.v));
+    val.appendChild(el('span', 'md', 'Md€'));
+    n.appendChild(val);
+    n.appendChild(el('div', 'unit', t.sub));
     host.appendChild(n);
   });
 }
 
-/** Une balance dont l'inclinaison suit l'écart réel entre dépenses et recettes. */
+/** Une balance dont l'inclinaison suit le déficit, en part des dépenses.
+ *  o.ref (facultatif) : les parts du PIB d'aujourd'hui, pour dire ce qui s'alourdit
+ *  ou s'allège. Une dépense qui grossit fonce et s'avive ; une recette qui fond pâlit. */
 function balance(host, o){
-  const card = el('div', 'bal');
-  card.appendChild(el('div', 'when', o.when));
-  card.appendChild(el('h4', null, o.titre));
-  const svg = sv('svg', {viewBox: '0 0 300 126', role: 'img',
+  const card = el('div', 'bal' + (o.party ? ' is-party' : ''));
+  if (o.party) card.style.setProperty('--pc', o.party.couleur);
+  const head = el('div', 'bal-head');
+  if (o.party){
+    const av = el('div', 'bal-av'); fillAvatar(av, o.party); head.appendChild(av);
+  }
+  const ht = el('div');
+  ht.appendChild(el('div', 'when', o.when));
+  ht.appendChild(el('h4', null, o.titre));
+  if (o.sous) ht.appendChild(el('div', 'bal-sous', o.sous));
+  head.appendChild(ht);
+  card.appendChild(head);
+
+  const depP = o.dep / o.pib * 100, recP = o.rec / o.pib * 100;
+  const dDep = o.ref ? depP - o.ref.dep : 0, dRec = o.ref ? recP - o.ref.rec : 0;
+  const etat = (d, sensMal) => Math.abs(d) < .3 ? 'egal' : ((d > 0) === sensMal ? 'pire' : 'mieux');
+  const eDep = etat(dDep, true), eRec = etat(dRec, false);
+
+  const svg = sv('svg', {viewBox: '0 0 300 136', role: 'img',
     'aria-label': `${o.titre} : ${md(o.dep)} de dépenses contre ${md(o.rec)} de recettes.`});
-
-  const CX = 150, CY = 44, L = 104;
-  // 14° au maximum : au-delà, les plateaux se croisent et la lecture se perd.
-  const t = Math.max(-14, Math.min(14, (o.dep - o.rec) / Math.max(o.dep, o.rec) * 70)) * Math.PI / 180;
+  const CX = 150, CY = 40, L = 100;
+  // l'inclinaison suit la part des dépenses non couverte ; 16° au plus
+  const t = Math.max(-16, Math.min(16, (o.dep - o.rec) / o.dep * 110)) * Math.PI / 180;
   const dx = L * Math.cos(t), dy = L * Math.sin(t);
-  const pans = [{x: CX - dx, y: CY + dy, v: o.dep, lab: 'Dépenses', c: 'var(--dep)'},
-                {x: CX + dx, y: CY - dy, v: o.rec, lab: 'Recettes', c: 'var(--rec)'}];
-
-  svg.appendChild(sv('path', {d: `M136 92 L${CX} 48 L164 92 Z`,
-    fill: 'var(--ink-2)', stroke: 'none'}));
-  svg.appendChild(sv('rect', {x: 116, y: 92, width: 68, height: 6, rx: 3,
-    fill: 'var(--coin)', stroke: 'none'}));
+  const colDep = eDep === 'pire' ? 'var(--dep-vif)' : eDep === 'mieux' ? 'var(--dep-doux)' : 'var(--dep)';
+  const colRec = eRec === 'pire' ? 'var(--rec-pale)' : eRec === 'mieux' ? 'var(--rec-vif)' : 'var(--rec)';
+  const pans = [{x: CX - dx, y: CY + dy, v: o.dep, c: colDep, glow: eDep === 'pire'},
+                {x: CX + dx, y: CY - dy, v: o.rec, c: colRec}];
+  svg.appendChild(sv('path', {d: `M134 104 L${CX} ${CY + 4} L166 104 Z`, fill: 'var(--bal-pied)'}));
+  svg.appendChild(sv('rect', {x: 112, y: 104, width: 76, height: 7, rx: 3.5, fill: 'var(--coin)'}));
   svg.appendChild(sv('line', {x1: pans[0].x, y1: pans[0].y, x2: pans[1].x, y2: pans[1].y,
-    stroke: 'var(--ink-2)', 'stroke-width': 5, 'stroke-linecap': 'round'}));
-  svg.appendChild(sv('circle', {cx: CX, cy: CY, r: 5,
-    fill: 'var(--surface)', stroke: 'var(--ink-2)', 'stroke-width': 3}));
-
+    stroke: 'var(--bal-pied)', 'stroke-width': 5, 'stroke-linecap': 'round'}));
+  svg.appendChild(sv('circle', {cx: CX, cy: CY, r: 5.5, fill: 'var(--surface)',
+    stroke: 'var(--bal-pied)', 'stroke-width': 3}));
   pans.forEach(pan => {
-    svg.appendChild(sv('line', {x1: pan.x, y1: pan.y, x2: pan.x, y2: pan.y + 12,
-      stroke: 'var(--ink-2)', 'stroke-width': 2}));
-    svg.appendChild(sv('path', {
-      d: `M${pan.x - 38} ${pan.y + 12} a38 22 0 0 0 76 0 z`,
-      fill: pan.c, stroke: 'none'}));
-    const v = sv('text', {x: pan.x, y: pan.y + 30, 'text-anchor': 'middle',
-      fill: '#fff', 'font-size': 14, 'font-weight': 700});
+    const top = pan.y + 14;
+    svg.appendChild(sv('line', {x1: pan.x - 30, y1: top, x2: pan.x, y2: pan.y, stroke: 'var(--bal-pied)', 'stroke-width': 1.6}));
+    svg.appendChild(sv('line', {x1: pan.x + 30, y1: top, x2: pan.x, y2: pan.y, stroke: 'var(--bal-pied)', 'stroke-width': 1.6}));
+    const bowl = sv('path', {d: `M${pan.x - 44} ${top} h88 a44 30 0 0 1 -88 0 z`, fill: pan.c});
+    if (pan.glow) bowl.setAttribute('class', 'bal-alerte');
+    svg.appendChild(bowl);
+    const v = sv('text', {x: pan.x, y: top + 17, 'text-anchor': 'middle', 'dominant-baseline': 'middle',
+      fill: '#fff', 'font-size': 17, 'font-weight': 700});
     v.textContent = nf(pan.v);
     svg.appendChild(v);
-    const lab = sv('text', {x: pan.x, y: pan.y + 50, 'text-anchor': 'middle',
-      fill: pan.c, 'font-size': 11, 'font-weight': 600, 'letter-spacing': '.08em'});
-    lab.textContent = pan.lab.toUpperCase();
-    svg.appendChild(lab);
   });
   card.appendChild(svg);
-  card.appendChild(el('div', 'note')).innerHTML = o.note;
+
+  // les deux plateaux, en clair, avec leur sens par rapport à aujourd'hui
+  const leg = el('div', 'bal-leg');
+  [['dep', 'Dépenses', depP, dDep, eDep], ['rec', 'Recettes', recP, dRec, eRec]].forEach(([k, lab, v, d, e]) => {
+    const c = el('div', 'bal-k ' + k + ' ' + e);
+    c.appendChild(el('span', 'k', lab));
+    c.appendChild(el('b', null, nf(v, 1) + ' % du PIB'));
+    if (o.ref) c.appendChild(el('span', 'd', e === 'egal' ? '= aujourd’hui'
+      : (d > 0 ? '▲ +' : '▼ −') + nf(Math.abs(d), 1) + ' pt'));
+    leg.appendChild(c);
+  });
+  card.appendChild(leg);
+
+  const n = el('div', 'bal-note ' + (o.ton || ''));
+  n.innerHTML = o.note;
+  card.appendChild(n);
   host.appendChild(card);
 }
 
-/** Aujourd'hui, puis le même écart en 2032 avec le programme chargé. */
+/** Aujourd'hui, puis 2032 avec le candidat chargé : même échelle, écarts signalés. */
 function renderBalances(scen, base){
   const host = $('#balances'); if (!host) return;
   host.textContent = '';
   const now = scen[0], end = scen[scen.length - 1], ref = base[base.length - 1];
   const p = PARTIES.find(x => x.id === state.party);
+  const auj = {dep: now.dep / now.pib * 100, rec: now.rec / now.pib * 100};
 
   balance(host, {
-    when: 'Aujourd’hui', titre: 'Le point de départ', dep: now.dep, rec: now.rec,
-    note: `Il manque <b>${md(now.dep - now.rec)}</b> par an, soit `
-      + `<b>${pc(-now.soldePct)}</b> du PIB. L’écart s’ajoute à la dette.`});
+    when: 'Aujourd’hui', titre: 'Le point de départ', sous: 'Budget de la France, 2025',
+    dep: now.dep, rec: now.rec, pib: now.pib,
+    note: `Déficit : <b>${nf(-now.soldePct, 1)} % du PIB</b>, ${md(now.dep - now.rec)} par an, `
+      + `qui s’ajoutent à la dette.`});
 
-  const manque = -end.solde, delta = end.solde - ref.solde;
+  const delta = end.solde - ref.solde, dPt = -end.soldePct - (-now.soldePct);
+  const ton = -end.soldePct <= 3 ? 'bon' : dPt > .1 ? 'pire' : 'mieux';
+  const fin = p ? manqueDelta(delta) : 'ce que produit l’inaction';
   balance(host, {
-    when: '2032', titre: p ? p.nom : 'Sans mesure nouvelle', dep: end.dep, rec: end.rec,
-    note: `Il manquerait <b>${md(manque)}</b>, soit <b>${pc(-end.soldePct)}</b> du PIB — `
-      + (p ? manqueDelta(delta).replace(/^i/, 'I') + '.'
-           : 'ce que produit l’inaction.')});
+    when: 'En 2032', party: p || {nom: '', ref: true, couleur: 'var(--ink-3)'},
+    titre: p ? p.candidat : 'Si rien ne change', sous: p ? p.nom : 'aucune mesure nouvelle',
+    dep: end.dep, rec: end.rec, pib: end.pib, ref: auj, ton,
+    note: `Déficit : <b>${nf(-end.soldePct, 1)} % du PIB</b> `
+      + (Math.abs(dPt) < .1 ? '(comme aujourd’hui)' : `(${dPt > 0 ? '+' : '−'}${nf(Math.abs(dPt), 1)} pt par rapport à aujourd’hui)`)
+      + ` : ${md(-end.solde)} manqueraient, ${fin}.`});
 }
 
 /** La bande des pastilles : les gros postes ramenés à 1 000 €, le reste agrégé. */
