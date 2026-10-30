@@ -47,10 +47,9 @@ python3 build_dataset.py                      # reconstruit dataset/derive/
 
 | Sujet | État |
 |---|---|
-| Fusion dans `master` | La branche n'est pas fusionnée. Aucune PR ouverte. |
-| Licence des bustes | `dataset/simulateur/avatars/credits.json` porte `"licence": null`. SVG Repo agrège des collections aux licences différentes et les fichiers ne la déclarent pas. `build.py` le signale à chaque construction. **À lever avant toute publication.** |
-| Skill de veille | Écrit et testé (`.claude/skills/france-budget-watch/`). **Aucune planification n'est en place.** |
-| Secrets de publication | La CI attend `FTP_HOST`, `FTP_USER`, `FTP_PASS`, `FTP_DIR` dans les secrets du dépôt GitHub. **Non renseignés à ce jour** : la publication échouera tant qu'ils manquent. |
+| Publication | Automatique depuis le 30 octobre 2026 : chaque relève poussée sur `veille` part en ligne si elle passe les contrôles, puis la CI avance `master`. |
+| Licence des bustes | `dataset/simulateur/avatars/credits.json` porte `"licence": null`. SVG Repo agrège des collections aux licences différentes et les fichiers ne la déclarent pas. `build.py` le signale à chaque construction. **Toujours ouvert, alors que les bustes sont en ligne depuis le 2 septembre.** |
+| Routines de veille | Deux routines cloud tournent chaque jour à 06h00 (Opus et Sonnet) et font le même travail : une seule suffirait. |
 | Assises manquantes | `ue` et `fraude` n'ont pas d'assise : la contribution au budget de l'UE et les concours aux collectivités passent par des **prélèvements sur recettes**, absents des crédits des missions et donc du dataset. Ces mesures ne sont opposées qu'à la fourchette du catalogue. À compléter si les PSR sont un jour aspirés. |
 | Ventilations `depenses` / `recettes` | Regroupements maison, non recoupés : ils ne correspondent à aucune nomenclature officielle. La COFOG publiée est dans `baseline.officiel.depensesFonction` pour comparaison. |
 | Axe « nature » 2018-2022 | Lacunaire à la source (1 à 2 Md€ manquants de 2019 à 2022, absent en 2018). Non corrigé. |
@@ -59,7 +58,7 @@ python3 build_dataset.py                      # reconstruit dataset/derive/
 ## La veille
 
 Le skill `france-budget-watch` existe depuis le 2 septembre 2026, dans
-`.claude/skills/france-budget-watch/`. Il ne tourne pas tout seul : rien n'est planifié.
+`.claude/skills/france-budget-watch/`. Il tourne chaque jour à 06h00 (Europe/Paris) en routine cloud et pousse sur `veille`.
 
 ```bash
 python3 .claude/skills/france-budget-watch/scripts/watch.py etat      # quoi chercher
@@ -78,26 +77,25 @@ supprime jamais rien, déduplique, et archive chaque patch appliqué dans `datas
 ```
   veille quotidienne (skill)             CI (.github/workflows/publier.yml)
   ──────────────────────────             ──────────────────────────────────
-  chercher → patch → valider             sur push vers master :
+  chercher → patch → valider             sur push vers veille (ou master) :
   → appliquer → build → contrôler          rebuild, refus si la page est périmée,
   → commit + push sur la branche           contrôle, puis FTP sur TLS
-                                           vers quipaie2027.fr
-                  └──── fusion dans master, à la main ────┘
+                                           vers quipaie2027.fr, vérification de
+                                           la page servie, puis master ← veille
 ```
 
-**Le skill ne publie pas** ; la CI publie, et seulement depuis `master`. Une relève quotidienne est
-donc préparée et vérifiée sur sa branche, sans partir en ligne : c'est la fusion qui met en ligne.
+**Le skill ne publie pas** ; la CI publie, automatiquement, à chaque relève poussée sur `veille`.
+Choix assumé le 30 octobre 2026 : le site se met à jour sans intervention humaine. Le garde-fou est
+la chaîne de contrôles : une relève qui en échoue un ne part pas, et le site garde la version d'avant.
 
-La CI reconstruit la page plutôt que de faire confiance au fichier versionné, et **refuse de publier
-si `index.html` ne correspond plus à ses données**.
+La CI reconstruit la page plutôt que de faire confiance au fichier versionné, **refuse de publier
+si `index.html` ne correspond plus à ses données**, et vérifie après l'envoi que la page servie se
+termine comme la page envoyée.
 
-Pour publier automatiquement à chaque relève, il suffirait de faire pousser la veille sur `master`.
-C'est un choix à assumer, pas un réglage à changer en passant : ce qui part en ligne sur un site
-public sur la politique française mérite un regard.
-
-**Reste à faire :** renseigner les quatre secrets FTP dans GitHub (Settings › Secrets and variables ›
-Actions), et décider de la planification — `/loop 1d /france-budget-watch` en session ouverte, ou le
-skill `schedule` pour un agent qui tourne sans session.
+**Hébergement Hostinger** (plan Premium multi-sites). Secrets GitHub : `FTP_HOST` (IP FTP de hPanel),
+`FTP_USER`, `FTP_PASS`, `FTP_DIR` ; variable `FTP_TLS_NAME=ftp.hstgr.io`, parce que le certificat
+FTP est un `*.hstgr.io` qui ne couvre ni l'IP ni `ftp.quipaie2027.fr`. Le dossier web, vu depuis la
+session FTP, est `domains/quipaie2027.fr/public_html` ; la CI le retrouve seule si `FTP_DIR` est faux.
 
 ## Pièges qui font perdre du temps
 
