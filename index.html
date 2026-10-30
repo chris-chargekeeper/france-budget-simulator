@@ -661,10 +661,10 @@ body.adv .simple-only{display:none!important}
 .seg.cot,.repart-leg .c-cot{background:var(--rec)}
 .seg.etat,.repart-leg .c-etat{background:var(--coin)}
 .seg.autre,.repart-leg .c-autre{background:var(--ink-3)}
-.seg.fin,.repart-leg .c-fin{background:#5B6B82}
 .seg.manque,.repart-leg .c-manque{background:var(--dep)}
 .rc-dit{font-size:14px;font-weight:700;color:var(--ink)}
 .rc-dit.alerte{color:var(--dep)}
+.rc-sous{font-size:12.5px;color:var(--ink-2);margin-top:-4px}
 .repart-leg{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:12.5px;color:var(--ink-2)}
 .repart-leg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
 .repart-plus{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
@@ -1476,7 +1476,6 @@ footer{padding-bottom:120px}
       <div class="repart-leg">
         <span><i class="c-cot"></i>Cotisations</span><span><i class="c-etat"></i>État (impôts, budget)</span>
         <span><i class="c-autre"></i>Autres caisses</span>
-        <span><i class="c-fin"></i>Financé en 2070 (cotisations et État, partage non projeté)</span>
         <span><i class="c-manque"></i>Non financé</span>
       </div>
       <div class="repart-plus adv-only">
@@ -1510,7 +1509,9 @@ footer{padding-bottom:120px}
         </div>
       </div>
       <p class="repart-src">Sources : Cnav (1960, régime général) ; Insee-Drees (actifs par retraité, 2023) ; COR, rapport
-        annuel de juin 2026 (financement 2025, projection 2070 à règles inchangées). En 1960, le régime général était
+        annuel de juin 2026 (financement 2025, projection 2070). Pour 2070, calcul du simulateur sur les chiffres du COR :
+        retraites à 15,3 % du PIB, ressources hors aide de l'État à 11,8 %, et l'État gardant son effort de 2025
+        (4,1 % du PIB : impôts affectés et contributions d'équilibre). En 1960, le régime général était
         financé par les seules cotisations ; les régimes spéciaux recevaient déjà une aide de l'État, non chiffrée ici.
         En 2070, le COR compte les personnes de 20 à 64 ans pour une de 65 ans et plus.</p>
     </div>
@@ -2794,8 +2795,10 @@ function renderRepartition(){
   [{an: '1960', ratio: 4.1, pib: '5 %', bar: [['cot', 100]], dit: 'Les cotisations suffisent'},
    {an: 'Aujourd’hui', ratio: 1.77, pib: '14 %', bar: [['cot', 66], ['etat', 29], ['autre', 5]],
     dit: 'L’État paie déjà 29 € sur 100'},
-   {an: '2070', ratio: 1.62, pib: '15 %', bar: [['fin', 84], ['manque', 16]], proj: true,
-    dit: '16 € sur 100 non financés'}
+   {an: '2070', ratio: 1.62, pib: '15 %', bar: [['cot', 60], ['etat', 27], ['autre', 3], ['manque', 10]], proj: true,
+    k: 'Sur 100 € de pension, si l’État paie autant qu’aujourd’hui',
+    dit: 'Il manque quand même 10 €',
+    sous: 'À règles inchangées, l’État verse moins : il manque 16 €.'}
   ].forEach(c => {
     const col = el('div', 'rc' + (c.proj ? ' proj' : ''));
     col.appendChild(el('div', 'rc-an', c.an + (c.proj ? ' · projection' : '')));
@@ -2814,11 +2817,12 @@ function renderRepartition(){
     col.appendChild(big);
     col.appendChild(el('div', 'rc-pib', `Retraites : ${c.pib} du PIB`));
     const bar = el('div', 'rc-bar');
-    c.bar.forEach(([k, v]) => { const seg = el('span', 'seg ' + k, k === 'fin' ? v + ' € financés' : v >= 10 ? v + ' €' : '');
+    c.bar.forEach(([k, v]) => { const seg = el('span', 'seg ' + k, v >= 10 ? v + ' €' : '');
       seg.style.flexBasis = v + '%'; bar.appendChild(seg); });
-    col.appendChild(el('div', 'rc-k', 'Sur 100 € de pension'));
+    col.appendChild(el('div', 'rc-k', c.k || 'Sur 100 € de pension'));
     col.appendChild(bar);
     col.appendChild(el('div', 'rc-dit ' + (c.proj ? 'alerte' : ''), c.dit));
+    if (c.sous) col.appendChild(el('div', 'rc-sous', c.sous));
     host.appendChild(col);
   });
 }
