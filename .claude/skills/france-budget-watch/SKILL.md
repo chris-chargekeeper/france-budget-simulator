@@ -80,6 +80,24 @@ l'invité et sa fonction ; une reprise par un autre média n'est qu'un indice po
 l'original. Une interview de la matinée du jour sera relevée le lendemain : la relève de 6 h
 ne court pas après l'antenne.
 
+**Le Parlement, chaque jour de séance.** Ce qui s'y dit est retranscrit mot pour mot, daté, et
+les votes montrent ce que les partis font, pas seulement ce qu'ils disent. À parcourir :
+
+- les **comptes rendus intégraux** des séances de l'Assemblée nationale
+  (assemblee-nationale.fr, rubrique comptes rendus) et du Sénat (senat.fr) — surtout pendant
+  l'examen du budget (PLF, PLFSS) ;
+- les **questions au gouvernement** (mardi et mercredi après-midi à l'Assemblée, mercredi au
+  Sénat), où les groupes avancent souvent un chiffre ;
+- les **amendements** déposés par les groupes sur le budget, avec leur chiffrage, et les
+  **scrutins publics** : un groupe qui vote contre une mesure de son propre programme, c'est
+  une `contredit: "programme"` ;
+- les auditions de la **commission des finances** (rapporteur général, Cour des comptes, HCFP).
+
+La source est le compte rendu, l'amendement ou la fiche de scrutin officiels, pas leur reprise
+dans la presse. Un député n'engage son parti que s'il en est porte-parole, président de groupe
+ou responsable du programme ; sinon renseignez `fonction` et rattachez l'annonce au parti
+avec prudence, en le disant dans `quoi`.
+
 Pour chaque trouvaille, il faut **une URL**, une date, un auteur ou au moins sa fonction. Sans ça,
 n'entrez rien : le script refusera, et il aura raison.
 
