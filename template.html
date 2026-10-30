@@ -795,8 +795,10 @@ body:not(.adv) .charts .chart{max-height:320px}
 .foot-theme{margin-bottom:12px}
 .foot-theme .theme-toggle{margin-left:0}
 @media (max-width:620px){
-  body:not(.adv) .hero-stats .hs:not(.live){display:none}
-  body:not(.adv) .hero-stats{grid-template-columns:1fr}
+  .hero-stats{gap:8px}
+  .hs{padding:9px 12px;border-radius:13px}
+  .hs:not(.live) .k{font-size:11px;line-height:1.25}
+  .hs:not(.live) .v{font-size:19px}
   .hero .kicker > span:last-child{display:none}
   .hs.live{padding:10px 14px}
   .veille-strip .vs-c:nth-of-type(3),.veille-strip .vs-c:nth-of-type(n+5){display:none}
