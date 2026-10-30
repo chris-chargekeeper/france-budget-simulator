@@ -35,6 +35,12 @@ partir de ses positions publiques et du catalogue existant (`statut: "reconstitu
 candidat qui renonce sort par `retrait` — il est masqué de la page, jamais effacé. Le candidat IA
 (`horsCourse`) n'est pas un candidat : la veille n'y touche pas.
 
+**Chaque jour aussi, les sondages.** Cherchez le sondage d'intentions de vote au premier tour le
+plus récent d'un institut reconnu (Ifop, Ipsos BVA, Elabe, Odoxa, OpinionWay, Harris Interactive
+Toluna, Cluster17, Viavoice) dont le terrain est postérieur à celui affiché par `etat`. S'il y en a
+un, il entre **entier** par la section `sondage` du patch : il classe les cartes des candidats et
+s'affiche dessus. Pas de nouveau sondage, rien à faire.
+
 **Chaque jour aussi, le contexte.** Rafraîchissez les indicateurs de `contexte.json` dont une
 valeur plus récente a été publiée : taux de l'OAT à 10 ans et écart avec le Bund (Agence France
 Trésor, Banque de France, presse financière datée), taux de dépôt de la BCE, notes de S&P,

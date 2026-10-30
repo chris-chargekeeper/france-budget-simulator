@@ -44,6 +44,8 @@ STRUCTURELS = {"id", "g", "inst", "lab", "ramp", "behav", "disp"}
 
 # Les candidatures bougent : un candidat change, se déclare, se retire. Un patch peut le dire,
 # avec une source ; il ne peut pas toucher au scénario chiffré d'un parti existant.
+CHAMPS_SONDAGE = {"institut", "commanditaire", "terrain_debut", "terrain_fin", "date", "echantillon",
+                  "hypothese", "note", "source", "scores"}
 CHAMPS_PARTI_HAUT = {"annonce", "source", "candidat", "statutCandidature", "avatar", "retrait"}
 CHAMPS_NOUVEAU = {"id", "nom", "sigle", "candidat", "avatar", "couleur", "statutCandidature",
                   "statut", "annonce", "set", "source"}
@@ -113,6 +115,9 @@ def etat(d):
                   f"{p['retire']['motif']}")
         else:
             print(f"  · {p['sigle']:5} {p['candidat']:22} {p.get('statutCandidature', '')}")
+    sd = d["parties"].get("sondage")
+    print(f"  Sondage affiché : {sd['institut']}, terrain jusqu'au {sd['terrain_fin']} — "
+          f"chercher plus récent." if sd else "  Aucun sondage affiché — en chercher un.")
     print()
 
     ctx = (d.get("contexte") or {}).get("indicateurs", [])
@@ -181,7 +186,7 @@ def valider(d, patch):
     existantes = d["announcements"]["items"]
 
     inconnu = set(patch) - {"_comment", "releve", "annonces", "partis", "mesures",
-                            "nouveaux_partis", "contexte"}
+                            "nouveaux_partis", "contexte", "sondage"}
     ids_partis |= {n.get("id") for n in patch.get("nouveaux_partis", [])}
     if inconnu:
         erreurs.append(f"clés inconnues dans le patch : {sorted(inconnu)}")
@@ -370,6 +375,45 @@ def valider(d, patch):
 
     if not plan:
         plan.append("  (patch sans effet : rien à ajouter ni à modifier)")
+    # Le sondage : un seul à la fois, entier, pour que les scores restent comparables.
+    sd = patch.get("sondage")
+    if sd:
+        ou = "sondage"
+        trop = set(sd) - CHAMPS_SONDAGE
+        if trop:
+            erreurs.append(f"{ou} : champs non autorisés {sorted(trop)}")
+        if not sd.get("institut"):
+            erreurs.append(f"{ou} : 'institut' obligatoire (Ifop, Ipsos BVA, Elabe…)")
+        for champ in ("date", "terrain_fin"):
+            ok, pourquoi = date_valide(sd.get(champ))
+            if not ok:
+                erreurs.append(f"{ou}.{champ} : {pourquoi}")
+        if not source_ok(sd.get("source")):
+            erreurs.append(f"{ou} : une source (titre + URL) est obligatoire")
+        actuel = d["parties"].get("sondage") or {}
+        if actuel.get("terrain_fin") and str(sd.get("terrain_fin", "")) < actuel["terrain_fin"]:
+            erreurs.append(f"{ou} : terrain plus ancien que le sondage en place "
+                           f"({actuel['terrain_fin']})")
+        scores = sd.get("scores") or {}
+        if not scores:
+            erreurs.append(f"{ou} : 'scores' vide")
+        suivis = {p["id"] for p in d["parties"]["parties"]
+                  if not p.get("horsCourse") and not p.get("retire")}
+        for pid, v in scores.items():
+            if pid not in ids_partis or pid not in suivis | {n.get("id") for n in patch.get("nouveaux_partis", [])}:
+                erreurs.append(f"{ou}.scores : candidat inconnu ou hors course {pid!r}")
+            borne = v if isinstance(v, list) else [v]
+            if not (1 <= len(borne) <= 2) or not all(isinstance(x, (int, float)) and 0 <= x <= 60
+                                                     for x in borne):
+                erreurs.append(f"{ou}.scores.{pid} : un nombre entre 0 et 60, ou [bas, haut]")
+        absents = suivis - set(scores)
+        if absents:
+            plan.append(f"  ~ sondage : non testés dans cette hypothèse {sorted(absents)} "
+                        f"(affichés sans score)")
+        plan.append(f"  ± sondage {sd.get('institut')} (terrain jusqu'au {sd.get('terrain_fin')}) : "
+                    + ", ".join(f"{k} {v}" for k, v in sorted(scores.items(),
+                                key=lambda kv: -(kv[1][0] if isinstance(kv[1], list) else kv[1]))))
+
     return erreurs, plan
 
 
@@ -431,7 +475,7 @@ def appliquer(d, patch, ecrire_vraiment):
         parti.setdefault("sources", [])
         if not any(s["u"] == src["u"] for s in parti["sources"]):
             parti["sources"].append({"t": src["t"], "u": src["u"]})
-    if patch.get("partis") or patch.get("nouveaux_partis"):
+    if patch.get("partis") or patch.get("nouveaux_partis") or patch.get("sondage"):
         d["parties"]["updated"] = releve
 
     if patch.get("contexte"):
@@ -471,12 +515,23 @@ def appliquer(d, patch, ecrire_vraiment):
         if not any(s["u"] == src["u"] for s in m["sources"]):
             m["sources"].append({"t": src["t"], "u": src["u"], "d": releve})
 
+    sd = patch.get("sondage")
+    if sd:
+        ancien = d["parties"].get("sondage")
+        if ancien:
+            hist = d["parties"].setdefault("sondages_historique", [])
+            hist.insert(0, {k: ancien.get(k) for k in ("institut", "terrain_fin", "scores")}
+                        | {"u": (ancien.get("source") or {}).get("u")})
+        d["parties"]["sondage"] = {k: sd[k] for k in CHAMPS_SONDAGE if k in sd}
+        trace["revisions"].append({"quoi": "parties.sondage", "avant": (ancien or {}).get("scores"),
+                                   "apres": sd["scores"], "source": sd["source"]["u"]})
+
     if not ecrire_vraiment:
         print("\nRien n'a été écrit — relancer avec --write pour appliquer.")
         return trace
 
     ecrire("announcements", d["announcements"])
-    if patch.get("partis") or patch.get("nouveaux_partis"):
+    if patch.get("partis") or patch.get("nouveaux_partis") or patch.get("sondage"):
         ecrire("parties", d["parties"])
     if patch.get("contexte"):
         ecrire("contexte", d["contexte"])
