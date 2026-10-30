@@ -1,11 +1,13 @@
 name: Publier sur quipaie2027.fr
 
-# La publication est un acte délibéré : elle se déclenche sur `master`, jamais sur une
-# branche de travail. La veille quotidienne pousse ses relèves sur sa propre branche ;
-# c'est la fusion dans `master` qui met en ligne.
+# Publication automatique : chaque relève poussée sur `veille` part en ligne dès
+# qu'elle passe les contrôles ci-dessous, sans intervention humaine. Une relève qui
+# échoue à un contrôle ne publie rien et le site garde la version précédente.
+# Après publication, `master` est avancé sur `veille` : il reste le reflet de ce qui
+# est en ligne.
 on:
   push:
-    branches: [master]
+    branches: [master, veille]
     paths:
       - 'template.html'
       - 'build.py'
@@ -13,17 +15,24 @@ on:
       - '.github/workflows/publier.yml'
   workflow_dispatch:
 
+# Les publications se suivent sans s'interrompre : couper un envoi FTP en cours
+# laisserait une page tronquée en ligne.
 concurrency:
   group: publication
-  cancel-in-progress: true
+  cancel-in-progress: false
+
+permissions:
+  contents: write
 
 jobs:
   publier:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -62,3 +71,28 @@ jobs:
                --upload-file index.html \
                "ftp://$FTP_HOST/${FTP_DIR:-public_html}/index.html"
           echo "En ligne : https://quipaie2027.fr"
+
+      # Une page vide ou tronquée répondrait quand même 200 : on vérifie que la page
+      # servie se termine comme la page envoyée.
+      - name: Vérifier la page en ligne
+        run: |
+          sleep 5
+          curl --fail --silent --show-error -H 'Cache-Control: no-cache' \
+               "https://quipaie2027.fr/?v=${GITHUB_SHA}" -o servi.html
+          echo "envoyé : $(wc -c < index.html) octets — servi : $(wc -c < servi.html) octets"
+          if [ "$(tail -c 300 servi.html)" != "$(tail -c 300 index.html)" ]; then
+            echo "::error::la page servie ne se termine pas comme la page envoyée (tronquée, ou cache)"
+            exit 1
+          fi
+
+      # `master` suit ce qui est en ligne. Fast-forward strict : si les branches ont
+      # divergé, on le signale sans rien forcer (le site, lui, est déjà à jour).
+      - name: Avancer master sur la relève publiée
+        if: github.ref == 'refs/heads/veille'
+        run: |
+          git fetch origin master
+          if git merge-base --is-ancestor origin/master HEAD; then
+            git push origin HEAD:master
+          else
+            echo "::warning::master a divergé de veille : non avancé, à regarder."
+          fi
