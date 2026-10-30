@@ -417,6 +417,144 @@
         }
       },
       "sources": []
+    },
+    {
+      "id": "ia",
+      "nom": "Exercice hors course — programme d'une IA",
+      "sigle": "IA",
+      "candidat": "Le candidat IA",
+      "avatar": "ia",
+      "couleur": "#7C3AED",
+      "statutCandidature": "Pas un candidat : un exercice proposé par ce site",
+      "statut": "ia",
+      "horsCourse": true,
+      "annonce": {
+        "titre": "Un budget arbitré, pas promis",
+        "texte": "Ce scénario n'est le programme de personne. Il a été composé par l'IA qui tient ce site, avec une seule consigne : remettre les comptes d'aplomb en ménageant la croissance et sans faire porter l'effort sur un groupe désigné. Il puise uniquement dans les 41 mesures chiffrées du simulateur, aux mêmes bornes que pour les partis. Ses arbitrages sont des choix de valeurs, pas des vérités : chacun est expliqué ci-dessous, et contestable.",
+        "revendique": null,
+        "detaille": null,
+        "cote": null
+      },
+      "criteres": [
+        "Stabiliser la dette en part du PIB avant 2032, puis viser la limite des 3 %.",
+        "Répartir l'effort à peu près pour moitié entre recettes et dépenses.",
+        "Faire contribuer davantage ceux qui ont le plus : patrimoines, successions, revenus du capital.",
+        "Couper d'abord ce qui est peu efficace selon les évaluations publiques : niches, aides sans contrepartie, dépenses redondantes.",
+        "Ne cibler aucune population désignée, et ne retenir aucune mesure dont le rendement relève du slogan.",
+        "Garder l'investissement qui rapporte à long terme : transition écologique, grand âge, défense au minimum de l'engagement."
+      ],
+      "set": {
+        "niches": {
+          "sim": "hi"
+        },
+        "succ": {
+          "sim": "hi"
+        },
+        "csgcap": {
+          "sim": "hi"
+        },
+        "zucman": {
+          "sim": "mid"
+        },
+        "pfu": {
+          "sim": "mid"
+        },
+        "minimum15": {
+          "sim": "mid"
+        },
+        "fraude": {
+          "sim": "mid"
+        },
+        "cir": {
+          "sim": "mid"
+        },
+        "alleg": {
+          "sim": "mid"
+        },
+        "isgrandes": {
+          "sim": "mid"
+        },
+        "rachats": {
+          "sim": "mid"
+        },
+        "superp": {
+          "sim": "lo"
+        },
+        "ttf": {
+          "sim": "lo"
+        },
+        "ondam": {
+          "sim": "hi"
+        },
+        "agences": {
+          "sim": "hi"
+        },
+        "effectifs": {
+          "sim": "hi"
+        },
+        "collectivites": {
+          "sim": "mid"
+        },
+        "chomage": {
+          "sim": "mid"
+        },
+        "institutions": {
+          "sim": "mid"
+        },
+        "age65": {
+          "sim": "mid"
+        },
+        "blanche": {
+          "sim": "mid"
+        },
+        "defense": {
+          "sim": "lo"
+        },
+        "ecolo": {
+          "sim": "lo"
+        },
+        "age": {
+          "sim": "lo"
+        }
+      },
+      "pourquoi": {
+        "niches": "Le gisement le plus large et le mieux documenté : la Cour des comptes et l'Inspection des finances relèvent depuis des années des dispositifs coûteux dont l'effet n'est pas démontré.",
+        "succ": "Les successions concentrent les inégalités de patrimoine ; une réforme limitée aux hauts patrimoines fait consensus chez des économistes de sensibilités différentes.",
+        "csgcap": "Aligner la contribution des revenus du capital sur celle du travail : large assiette, faible taux, peu de distorsions.",
+        "zucman": "Retenue au chiffrage central, sans parier sur le haut de fourchette : le rendement dépend d'un très petit nombre de foyers.",
+        "pfu": "Les dividendes rejoignent le barème : l'effort porte sur les revenus du capital élevés.",
+        "minimum15": "Application d'un accord international déjà signé : rendement modeste mais sûr.",
+        "fraude": "Retenue au chiffrage central, pas au haut de fourchette : la fraude se recouvre lentement.",
+        "cir": "Rabot ciblé sur les grands groupes : les évaluations publiques concluent à un effet faible au-delà d'un certain montant.",
+        "alleg": "Les allègements au-dessus de 1,6 SMIC ont un effet sur l'emploi peu démontré, selon les rapports publics de 2024.",
+        "isgrandes": "Surtaxe limitée aux très grandes entreprises, au chiffrage central.",
+        "rachats": "Mesure de faible rendement, retenue pour sa cohérence avec l'effort demandé aux autres.",
+        "superp": "Retenue à la borne basse : le rendement dépend de la conjoncture.",
+        "ttf": "Retenue à la borne basse : l'assiette se déplace facilement.",
+        "ondam": "Freiner la progression des dépenses de santé par la pertinence des soins, pas par le déremboursement.",
+        "agences": "Rationaliser les opérateurs redondants : économie modeste mais sans victime désignée.",
+        "effectifs": "Non-remplacement partiel, hors santé, école et justice, dont les besoins sont couverts par ailleurs.",
+        "collectivites": "Effort partagé avec les collectivités, au chiffrage central.",
+        "chomage": "Réforme au chiffrage central, sans toucher aux minima sociaux.",
+        "institutions": "Symbolique en montant, retenue parce que l'effort doit commencer au sommet.",
+        "age65": "Le choix le plus discutable du scénario. Allonger la durée d'activité reste, dans tous les chiffrages publics, le levier le plus puissant sur les comptes sociaux ; la montée en charge est lente.",
+        "blanche": "Un an de gel des barèmes et des prestations, partagé par tous. Il pèse plus lourd pour les ménages modestes : c'est le prix de l'effort, et la principale entorse au critère d'équité.",
+        "defense": "Le minimum de l'engagement pris envers les alliés : un budget qui l'ignorerait ne serait pas réaliste.",
+        "ecolo": "Investissement de borne basse, dont le rendement est de long terme (énergie importée, dégâts climatiques).",
+        "age": "Le vieillissement n'est pas un choix : la dépense de grand âge montera de toute façon."
+      },
+      "ecartees": {
+        "immigration": "Rendement très incertain, et vise une population désignée.",
+        "ame": "Économie de l'ordre du milliard, avec un risque sanitaire et un report de coûts sur l'hôpital.",
+        "ue": "Une baisse unilatérale de la contribution n'est pas à la main de la France.",
+        "tva1": "Rapporte vite, mais pèse proportionnellement plus sur les ménages modestes.",
+        "tvaener": "Coûteuse, et profite davantage aux plus gros consommateurs d'énergie.",
+        "retr60": "Coût hors de portée dans la situation des comptes.",
+        "retr62": "Coût élevé, pour un effet contraire à l'objectif de redressement.",
+        "irbaisse": "Pas de baisse d'impôt financée à crédit.",
+        "isf": "Redondant avec l'impôt plancher et la réforme des successions retenus."
+      },
+      "sources": []
     }
   ],
   "sourceOfficielle": {

@@ -20,6 +20,16 @@
       "licence": null,
       "verifie": false,
       "note": "Même réserve que pour h.svg."
+    },
+    "ia": {
+      "fichier": "ia.svg",
+      "titre": "Tête de robot",
+      "origine": "Dessin original pour quipaie2027.fr",
+      "url": null,
+      "nom_original": null,
+      "licence": "CC0 — dessin original, versé au domaine public",
+      "verifie": true,
+      "note": "Pictogramme du candidat IA, scénario hors course."
     }
   }
 }
