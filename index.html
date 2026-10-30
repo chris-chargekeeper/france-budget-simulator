@@ -782,6 +782,12 @@ body:not(.adv) .charts .chart{max-height:320px}
 .ia-why.prog{background:var(--surface-2);border-color:var(--rule)}
 .ia-why.prog h4{color:var(--ink-2)}
 .ia-ann{color:var(--ink-3);font-size:11.5px}
+.ia-amt.up{color:var(--good)} .ia-amt.down{color:var(--critical)}
+.ia-total{margin-top:6px;border-top:2px solid var(--rule);padding-top:8px;display:grid;gap:4px}
+.it-row{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--ink-2)}
+.it-row.net{font-size:14.5px;font-weight:700;color:var(--ink);padding-top:4px}
+.it-row.net .ia-amt{font-size:14.5px;font-weight:700}
+.it-row.net.up .ia-amt{color:var(--good)} .it-row.net.down .ia-amt{color:var(--critical)}
 
 /* --- bouton flottant « bas les masques » --- */
 .masque-hint{margin:14px 0 0;font-size:13.5px;color:var(--ink-2)}
@@ -2779,6 +2785,25 @@ function renderScore(base, scen, split){
   else if (p) host.appendChild(progList(p));
 }
 
+/** Montant d'une mesure vu du budget : + si elle rapporte ou économise, − si elle coûte. */
+function amtBudget(m, v, d=1){ return signed(improves(m) ? v : -v, d); }
+/** Ligne de bilan sous une liste de mesures : économies, coûts, et le net. */
+function listTotal(items){
+  let plus = 0, moins = 0;
+  items.forEach(({m, v}) => { if (improves(m)) plus += v; else moins += v; });
+  const net = plus - moins;
+  const t = el('div','ia-total');
+  const row = (lab, val, cls) => {
+    const r = el('div','it-row' + (cls ? ' ' + cls : ''));
+    r.appendChild(el('span', null, lab)); r.appendChild(el('span','ia-amt', val)); t.appendChild(r);
+  };
+  row("Économies et recettes nouvelles", signed(plus, 1));
+  row("Dépenses nouvelles et baisses d'impôts", signed(-moins, 1));
+  row(net >= 0 ? "Gain net pour le budget en 2032" : "Coût net pour le budget en 2032", signed(net, 1),
+      'net ' + (net >= 0 ? 'up' : 'down'));
+  return t;
+}
+
 /** Les mesures d'un candidat réel, en clair, du plus gros au plus petit. */
 function progList(p){
   const box = el('div','ia-why prog');
@@ -2798,9 +2823,9 @@ function progList(p){
     const s = el('summary');
     s.appendChild(el('span','ia-sign ' + (improves(m) ? 'up' : 'down'), improves(m) ? '+' : '−'));
     s.appendChild(el('span','ia-lab', m.lab));
-    const amt = el('span','ia-amt', md(v, 1));
+    const amt = el('span','ia-amt ' + (improves(m) ? 'up' : 'down'), amtBudget(m, v));
     if (e.annonce != null && Math.abs(e.annonce - v) >= .5){
-      amt.appendChild(el('small','ia-ann', ' (annoncé : ' + md(e.annonce, 1) + ')'));
+      amt.appendChild(el('small','ia-ann', ' (annoncé : ' + amtBudget(m, e.annonce) + ')'));
     }
     s.appendChild(amt);
     d.appendChild(s);
@@ -2808,6 +2833,7 @@ function progList(p){
     dl.appendChild(d);
   });
   box.appendChild(dl);
+  box.appendChild(listTotal(kept));
   return box;
 }
 
@@ -2828,12 +2854,12 @@ function iaWhy(p){
     const s = el('summary');
     s.appendChild(el('span','ia-sign ' + (improves(m) ? 'up' : 'down'), improves(m) ? '+' : '−'));
     s.appendChild(el('span','ia-lab', m.lab));
-    s.appendChild(el('span','ia-amt', md(v, 1)));
+    s.appendChild(el('span','ia-amt ' + (improves(m) ? 'up' : 'down'), amtBudget(m, v)));
     d.appendChild(s);
     d.appendChild(el('p', null, (p.pourquoi || {})[id] || m.note || ''));
     dl.appendChild(d);
   });
-  col2.appendChild(dl); c.appendChild(col2);
+  col2.appendChild(dl); col2.appendChild(listTotal(kept)); c.appendChild(col2);
   box.appendChild(c);
   const ec = el('div','ia-out'); ec.appendChild(el('h4', null, "Ce qu'il écarte, et pourquoi"));
   const ul2 = el('ul');
