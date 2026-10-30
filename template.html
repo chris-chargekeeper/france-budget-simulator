@@ -666,9 +666,21 @@ body.adv .simple-only{display:none!important}
 .rc-dit.alerte{color:var(--dep)}
 .repart-leg{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:12.5px;color:var(--ink-2)}
 .repart-leg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.repart-plus{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.repart-box{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:14px 16px}
+.repart-box h4{margin:12px 0 6px;font-size:14px;color:var(--ink)} .repart-box h4:first-child{margin-top:0}
+.repart-box p{margin:6px 0 0;font-size:13.5px;line-height:1.5;color:var(--ink-2)}
+.repart-box ul{margin:0;padding-left:18px;display:grid;gap:5px;font-size:13.5px;line-height:1.45;color:var(--ink-2)}
+.repart-box ul b{color:var(--ink)}
+.repart-tab{width:100%;border-collapse:collapse;font-size:13px;color:var(--ink-2)}
+.repart-tab td{font-family:"IBM Plex Sans",sans-serif;padding:5px 0;border-bottom:1px solid var(--rule-soft)}
+.repart-tab td:last-child{text-align:right;font-family:"IBM Plex Mono",monospace;color:var(--ink);white-space:nowrap;padding-left:10px}
+.repart-levers{display:flex;flex-wrap:wrap;gap:6px}
+.repart-levers span{font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;color:var(--ink);
+  background:color-mix(in srgb,var(--coin) 18%,var(--surface));border:1px solid color-mix(in srgb,var(--coin) 45%,transparent)}
 .repart-src{margin:10px 0 0;font-size:11px;line-height:1.45;color:var(--ink-3)}
 @media (max-width:760px){
-  .repart-cols{grid-template-columns:1fr}
+  .repart-cols,.repart-plus{grid-template-columns:1fr}
   .panel .repart-t{font-size:22px}
 }
 
@@ -1461,6 +1473,36 @@ footer{padding-bottom:120px}
       <div class="repart-leg">
         <span><i class="c-cot"></i>Cotisations</span><span><i class="c-etat"></i>État (impôts, budget)</span>
         <span><i class="c-autre"></i>Autres caisses</span><span><i class="c-manque"></i>Non financé</span>
+      </div>
+      <div class="repart-plus adv-only">
+        <div class="repart-box">
+          <h4>Le principe</h4>
+          <p>Généralisée avec la Sécurité sociale en 1945, la répartition ne met rien de côté : les cotisations de
+            l'année paient les pensions de l'année. Le régime général a été conçu sans participation de l'État.</p>
+          <h4>Pourquoi le nombre d'actifs par retraité baisse</h4>
+          <ul>
+            <li><b>Le baby-boom part à la retraite</b> : les générations nombreuses nées après 1945 quittent l'emploi.</li>
+            <li><b>On vit plus longtemps</b> : chaque retraite est versée plus d'années.</li>
+            <li><b>Il naît moins d'enfants</b> : le COR retient désormais 1,45 enfant par femme, contre 1,8 auparavant.</li>
+          </ul>
+          <p>Par âge : 3,6 personnes de 20 à 64 ans pour une de 65 ans et plus en 2009, 2,5 en 2025, environ 1,6
+            en 2070. Le régime des fonctionnaires de l'État ne comptait que 1,29 cotisant par retraité en 2020.</p>
+        </div>
+        <div class="repart-box">
+          <h4>D'où viennent les 422 Md€ de 2025</h4>
+          <table class="repart-tab">
+            <tr><td>Cotisations des actifs et des employeurs</td><td>277,0 Md€</td></tr>
+            <tr><td>Impôts affectés et CSG</td><td>64,7 Md€</td></tr>
+            <tr><td>Contribution d'équilibre de l'État pour ses fonctionnaires</td><td>49,3 Md€</td></tr>
+            <tr><td>Transferts d'autres caisses (allocations familiales, Unédic)</td><td>16,5 Md€</td></tr>
+            <tr><td>Subventions d'équilibre aux régimes spéciaux</td><td>7,7 Md€</td></tr>
+            <tr><td>Produits financiers et divers</td><td>7,0 Md€</td></tr>
+          </table>
+          <h4>Pour garder l'équilibre, trois leviers</h4>
+          <div class="repart-levers"><span>Cotiser plus</span><span>Partir plus tard</span><span>Ajuster les pensions</span></div>
+          <p>Les programmes les combinent chacun à leur manière ; faute d'équilibre, l'impôt ou la dette comblent l'écart.
+            Le COR projette un déficit de 2,4 points de PIB en 2070, l'âge moyen de départ passant de 63,1 à 64,6 ans.</p>
+        </div>
       </div>
       <p class="repart-src">Sources : Cnav (1960, régime général) ; Insee-Drees (actifs par retraité, 2023) ; COR, rapport
         annuel de juin 2026 (financement 2025, projection 2070 à règles inchangées). En 1960, le régime général était
