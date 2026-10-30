@@ -88,6 +88,8 @@ jobs:
           [ -n "$dossier" ] || { echo "::error::aucun dossier web trouvé sur le FTP"; cat liste.txt 2>/dev/null; exit 1; }
           echo "Dossier web : $dossier"
           ftp --upload-file index.html "ftp://$cible/$dossier/index.html"
+          # l'image d'aperçu des liens partagés (balises og:image de la page)
+          ftp --upload-file dataset/simulateur/marque/partage.jpg "ftp://$cible/$dossier/partage.jpg"
           echo "En ligne : https://quipaie2027.fr"
 
       # Une page vide ou tronquée répondrait quand même 200 : on vérifie que la page

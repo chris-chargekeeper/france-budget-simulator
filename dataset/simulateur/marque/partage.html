@@ -1,0 +1,50 @@
+<!doctype html>
+<!--
+  L'image d'aperçu des liens partagés (WhatsApp, iMessage, X, LinkedIn…), 1200 × 630.
+  Rien de daté dessus : elle n'a pas à suivre la veille. Pour la régénérer :
+
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new \
+      --hide-scrollbars --window-size=1200,630 --virtual-time-budget=4000 \
+      --screenshot=/tmp/partage.png \
+      "file://$PWD/dataset/simulateur/marque/partage.html" && \
+    sips -s format jpeg -s formatOptions 86 /tmp/partage.png --out dataset/simulateur/marque/partage.jpg
+
+  La CI envoie partage.jpg à côté de index.html ; les balises og:image de template.html
+  pointent dessus.
+-->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=IBM+Plex+Sans:wght@500;600&family=Newsreader:ital,opsz,wght@0,6..72,600;1,6..72,400&display=block">
+<style>
+  html,body{margin:0;width:1200px;height:630px;overflow:hidden}
+  body{position:relative;font-family:"IBM Plex Sans",sans-serif;color:#fff;
+    background:radial-gradient(900px 500px at 85% 0%,rgba(227,38,59,.30),transparent 60%),
+               radial-gradient(800px 600px at 0% 100%,rgba(36,83,216,.45),transparent 60%),
+               linear-gradient(160deg,#121B3A,#0B1430 55%,#1A1240)}
+  .tri{position:absolute;inset:0 0 auto 0;height:12px;display:flex}
+  .tri i{flex:1} .tri i:nth-child(1){background:#2453D8} .tri i:nth-child(2){background:#F4F6FA} .tri i:nth-child(3){background:#E3263B}
+  .main{position:absolute;left:64px;right:56px;top:108px;display:flex;align-items:center;gap:40px}
+  .coq{width:270px;height:270px;flex:none;filter:drop-shadow(0 18px 30px rgba(0,0,0,.45))}
+  h1{margin:0;font-family:Newsreader,serif;font-weight:600;font-size:74px;line-height:1;letter-spacing:-.02em;white-space:nowrap}
+  h1 em{display:block;margin-top:10px;font-weight:400;font-size:60px;color:#AFC4F5;line-height:1.05;margin-top:14px}
+  .pied{position:absolute;left:70px;right:70px;bottom:52px;display:flex;align-items:center;justify-content:space-between}
+  .accroche{font-size:27px;font-weight:500;color:#D6E0F7}
+  .accroche b{color:#fff}
+  .url{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:28px;color:#fff;
+    padding:12px 22px;border-radius:999px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22)}
+  .url i{display:inline-block;width:12px;height:12px;border-radius:50%;background:#E3263B;margin-right:12px;vertical-align:middle}
+</style>
+</head>
+<body>
+  <div class="tri"><i></i><i></i><i></i></div>
+  <div class="main">
+    <img class="coq" src="coq.svg" alt="">
+    <h1>Le budget de la France,<em>et ce que les programmes<br>en feraient</em></h1>
+  </div>
+  <div class="pied">
+    <div class="accroche">Choisissez un candidat, <b>voyez ce que ça donne en 2032.</b></div>
+    <div class="url"><i></i>quipaie2027.fr</div>
+  </div>
+</body>
+</html>
