@@ -1471,7 +1471,9 @@ footer{padding-bottom:120px}
         <b>Moins il y a d'actifs par retraité, plus il faut d'argent d'ailleurs.</b></p>
       <div class="repart-cols" id="repartCols"></div>
       <div class="repart-leg">
-        <span><i class="c-cot"></i>Cotisations</span><span><i class="c-etat"></i>État et autres financements publics</span>
+        <span><i class="c-cot"></i>Cotisations</span><span class="simple-only"><i class="c-etat"></i>État et autres financements publics</span>
+        <span class="adv-only"><i class="c-etat"></i>État (impôts, budget)</span>
+        <span class="adv-only"><i class="c-autre"></i>Autres caisses (Cnaf, Unédic)</span>
         <span><i class="c-manque"></i>Non financé</span>
       </div>
       <div class="repart-plus adv-only">
@@ -1504,7 +1506,9 @@ footer{padding-bottom:120px}
             Le COR projette un déficit de 2,4 points de PIB en 2070, l'âge moyen de départ passant de 63,1 à 64,6 ans.</p>
         </div>
       </div>
-      <p class="repart-src">Sources : Cnav (1960, régime général) ; Insee-Drees (actifs par retraité, 2023) ; COR, rapport
+      <p class="repart-src simple-only">Sources : Cnav, Insee-Drees, Conseil d'orientation des retraites (juin 2026).
+        Le détail des calculs est en mode détaillé.</p>
+      <p class="repart-src adv-only">Sources : Cnav (1960, régime général) ; Insee-Drees (actifs par retraité, 2023) ; COR, rapport
         annuel de juin 2026 (financement 2025, projection 2070). Pour 2070, calcul du simulateur sur les chiffres du COR :
         retraites à 15,3 % du PIB, ressources hors aide de l'État à 11,8 %, et l'État gardant son effort de 2025
         (4,1 % du PIB : impôts affectés et contributions d'équilibre). « Autres financements publics » : surtout la Cnaf
@@ -2790,9 +2794,9 @@ function renderRepartition(){
     g.appendChild(sv('circle', {cx: 10, cy: 7, r: 5.5}));
     g.appendChild(sv('path', {d: 'M2 32 V20 a8 8 0 0 1 16 0 V32 Z'})); return g; };
   [{an: '1960', ratio: 4.1, pib: '5 %', bar: [['cot', 100]], dit: 'Les cotisations suffisent'},
-   {an: 'Aujourd’hui', ratio: 1.77, pib: '14 %', bar: [['cot', 66], ['etat', 34]],
+   {an: 'Aujourd’hui', ratio: 1.77, pib: '14 %', bar: [['cot', 66], ['etat', 34]], detail: [['cot', 66], ['etat', 29], ['autre', 5]],
     dit: '34 € viennent déjà d’ailleurs'},
-   {an: '2070', ratio: 1.62, pib: '15 %', bar: [['cot', 60], ['etat', 30], ['manque', 10]], proj: true,
+   {an: '2070', ratio: 1.62, pib: '15 %', bar: [['cot', 60], ['etat', 30], ['manque', 10]], detail: [['cot', 60], ['etat', 27], ['autre', 3], ['manque', 10]], proj: true,
     k: 'Sur 100 € de pension, si l’État paie autant qu’aujourd’hui',
     dit: 'Il manque quand même 10 €',
     sous: 'À règles inchangées, l’État verse moins : il manque 16 €.'}
@@ -2813,11 +2817,13 @@ function renderRepartition(){
     big.appendChild(el('span', null, 'actifs pour 1 retraité'));
     col.appendChild(big);
     col.appendChild(el('div', 'rc-pib', `Retraites : ${c.pib} du PIB`));
-    const bar = el('div', 'rc-bar');
-    c.bar.forEach(([k, v]) => { const seg = el('span', 'seg ' + k, v >= 10 ? v + ' €' : '');
-      seg.style.flexBasis = v + '%'; bar.appendChild(seg); });
+    const mkBar = (segs, cls) => { const bar = el('div', 'rc-bar' + (cls ? ' ' + cls : ''));
+      segs.forEach(([k, v]) => { const seg = el('span', 'seg ' + k, v >= 10 ? v + ' €' : '');
+        seg.style.flexBasis = v + '%'; bar.appendChild(seg); }); return bar; };
     col.appendChild(el('div', 'rc-k', c.k || 'Sur 100 € de pension'));
-    col.appendChild(bar);
+    // vue simple : deux couleurs ; mode détaillé : l'État à part des autres caisses
+    col.appendChild(mkBar(c.bar, c.detail ? 'simple-only' : ''));
+    if (c.detail) col.appendChild(mkBar(c.detail, 'adv-only'));
     col.appendChild(el('div', 'rc-dit ' + (c.proj ? 'alerte' : ''), c.dit));
     if (c.sous) col.appendChild(el('div', 'rc-sous', c.sous));
     host.appendChild(col);
