@@ -785,8 +785,22 @@ body:not(.adv) .charts .chart{max-height:320px}
 .ia-amt.up{color:var(--good)} .ia-amt.down{color:var(--critical)}
 .ia-total{margin-top:6px;border-top:2px solid var(--rule);padding-top:8px;display:grid;gap:4px}
 .it-row{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--ink-2)}
-.it-row.net{font-size:14.5px;font-weight:700;color:var(--ink);padding-top:4px}
-.it-row.net .ia-amt{font-size:14.5px;font-weight:700}
+.it-row.net{align-items:baseline;font-size:17px;font-weight:700;color:var(--ink);margin-top:8px;
+  padding:14px 16px;border-radius:12px;background:var(--surface);border:2px solid var(--rule)}
+.it-row.net .ia-amt{font-size:clamp(24px,4vw,32px);font-weight:700;letter-spacing:-.02em}
+.it-row.net.up{border-color:color-mix(in srgb,var(--good) 45%,transparent)}
+.it-row.net.down{border-color:color-mix(in srgb,var(--critical) 45%,transparent)}
+.ecart-cta{margin-top:12px;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;
+  font-size:13.5px;color:var(--ink-2)}
+.ecart-cta p{margin:0;flex:1 1 320px}
+.ecart-cta b{color:var(--ink)}
+.ec-link{border:1px solid var(--rule);background:var(--surface);border-radius:999px;padding:7px 14px;font:inherit;
+  font-size:13px;font-weight:600;color:var(--ink-2);cursor:pointer}
+.ecart-cta.fort{padding:16px 18px;border-radius:14px;color:#FFE9E0;
+  background:linear-gradient(135deg,#7A1820,#B4232F 60%,#E0731A)}
+.ecart-cta.fort b{color:#fff}
+.ecart-cta .ec-k{flex-basis:100%;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#FFD9A0}
+.ecart-cta.fort .cta{color:#7A1820}
 .it-row.net.up .ia-amt{color:var(--good)} .it-row.net.down .ia-amt{color:var(--critical)}
 
 /* --- bouton flottant « bas les masques » --- */
@@ -2834,6 +2848,42 @@ function progList(p){
   });
   box.appendChild(dl);
   box.appendChild(listTotal(kept));
+  box.appendChild(ecartPromesse(p));
+  return box;
+}
+
+/** Bas de facture : si le parti chiffre son programme plus haut que les chiffrages
+ *  indépendants, le dire, et inviter à basculer. Rien quand l'écart est négligeable. */
+function ecartPromesse(p){
+  let reel = 0, promis = 0;
+  for (const id in p.set){
+    const m = M_BY_ID[id], e = p.set[id]; if (!m) continue;
+    const sg = improves(m) ? 1 : -1, ind = m[e.sim || 'mid'];
+    reel   += sg * amountAt(m, ind, 2032, state.P);
+    promis += sg * amountAt(m, e.annonce != null ? e.annonce : ind, 2032, state.P);
+  }
+  const ecart = promis - reel;
+  const box = el('div','ecart-cta');
+  if (ecart < 5){ box.hidden = true; return box; }   // sous 5 Md€, ce n'est pas un masque
+  if (state.annonce){
+    box.classList.add('fort');
+    box.appendChild(el('div','ec-k', "Attention, facture flatteuse"));
+    const t = el('p');
+    t.innerHTML = `Ce total, c'est ce que le parti <b>annonce</b>. Les chiffrages indépendants (Cour des comptes, `
+      + `OFCE, IPP…) donnent <b>${signed(reel, 1)}</b> : il manque <b>${md(ecart, 1)}</b> à sa promesse.`;
+    box.appendChild(t);
+    const b = el('button','cta', "Voir ce que disent les chiffres →"); b.type = 'button';
+    b.addEventListener('click', () => setAnnonce(false, true));
+    box.appendChild(b);
+  } else {
+    const t = el('p');
+    t.innerHTML = `Le parti, lui, annonce <b>${signed(promis, 1)}</b> pour ces mêmes mesures : `
+      + `<b>${md(ecart, 1)}</b> de plus que les chiffrages indépendants.`;
+    box.appendChild(t);
+    const b = el('button','ec-link', "Voir sa version"); b.type = 'button';
+    b.addEventListener('click', () => setAnnonce(true, true));
+    box.appendChild(b);
+  }
   return box;
 }
 
