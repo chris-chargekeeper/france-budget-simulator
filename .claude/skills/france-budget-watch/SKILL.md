@@ -74,6 +74,10 @@ veille et de la nuit dans ces émissions :
 | LCI | l'invité politique du matin et du soir |
 | Sud Radio | l'invité politique de la matinale (8 h 15) |
 
+Pour savoir qui guetter, la liste des porte-parole, directeurs de campagne et spécialistes du
+budget de chaque camp est dans [references/porte-voix.md](references/porte-voix.md) : quand l'un
+d'eux est invité, son chiffre engage le candidat. Tenez-la à jour quand une source la contredit.
+
 Ne relevez que ce qui est **chiffré** ou qui engage un programme. La source est la page de
 l'émission ou sa retranscription (le replay ou l'article du média lui-même), avec la date,
 l'invité et sa fonction ; une reprise par un autre média n'est qu'un indice pour trouver
