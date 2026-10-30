@@ -1401,7 +1401,8 @@ footer{padding-bottom:120px}
         <div id="compoDep"></div>
       </div>
       <div class="panel">
-        <h3>Qui verse 100 € de recettes</h3>
+        <h3>Qui verse 1 000 € de recettes</h3>
+        <p class="sub" id="payTotal"></p>
         <p class="sub">Attention : qui verse n'est pas qui supporte. La TVA est versée par les entreprises et payée
           par les consommateurs ; une part des cotisations employeurs pèse au bout du compte sur les salaires.</p>
         <div id="compoPay"></div>
@@ -2757,8 +2758,11 @@ function buildCompo(){
     icone: BL.payeurs[k].icone, key: k
   })).sort((a,b) => b.v - a.v);
   const tot = pay.reduce((s,x) => s + x.v, 0);
-  barRows($('#compoPay'), pay.map(p => ({...p, per:nf(p.v / tot * 100) + ' €'})),
-          pay[0].v, r => r.key === 'patrimoine', ['Md€', 'sur 100 €']);
+  barRows($('#compoPay'), pay.map(p => ({...p, per:nf(p.v / tot * 1000) + ' €'})),
+          pay[0].v, r => r.key === 'patrimoine', ['Md€', 'sur 1 000 €']);
+  // même échelle des deux côtés : pour 1 000 € dépensés, combien rentrent
+  $('#payTotal').innerHTML = `Total : ${nf(BL.apu.recettes)} milliards par an. Pour 1 000 € dépensés, `
+    + `il n'en rentre que <b>${nf(BL.apu.recettes / BL.apu.depenses * 1000)} €</b> : le reste est emprunté.`;
 
   const rp = [...BL.reperes].sort((a,b) => b.v - a.v);
   barRows($('#reperes'), rp.map(r => ({
