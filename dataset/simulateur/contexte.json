@@ -1,6 +1,6 @@
 {
   "_comment": "Contexte macroéconomique et financier, tenu à jour par la veille quotidienne. Chaque indicateur porte une valeur, une date et une source. `hypothese` (réglé à la main) relie un indicateur à une hypothèse du simulateur, qui remplace alors la valeur par défaut : rmkt (taux d'emprunt à 10 ans), g (croissance en volume), infl (inflation). `bornes` (réglé à la main) refuse une valeur invraisemblable. L'ancienne valeur part dans `historique` : rien ne s'efface.",
-  "updated": "2026-10-30",
+  "updated": "2026-11-01",
   "avertissement": "Trois valeurs nourrissent le calcul : le taux à 10 ans remplace l'hypothèse de taux de marché, la croissance et l'inflation prévues pour 2027 sont prolongées jusqu'en 2032. Elles restent réglables en mode avancé.",
   "indicateurs": [
     {
@@ -77,13 +77,19 @@
       "lab": "Note de la France chez S&P",
       "unite": "",
       "groupe": "notation",
-      "historique": [],
+      "historique": [
+        {
+          "valeur": "A+",
+          "date": "2025-10",
+          "u": "https://www.touteleurope.eu/economie-et-social/l-agence-moody-s-maintient-la-note-de-la-france-aa3-mais-avec-perspective-negative/"
+        }
+      ],
       "valeur": "A+",
-      "date": "2025-10",
-      "detail": "Perspective stable. Dernière action en octobre 2025.",
+      "date": "2026-05-29",
+      "detail": "Note inchangée, perspective stable, lors de la revue du 29 mai 2026.",
       "source": {
-        "t": "L'agence Moody's maintient la note Aa3 de la France, mais avec perspective négative — Toute l'Europe, 24 octobre 2026",
-        "u": "https://www.touteleurope.eu/economie-et-social/l-agence-moody-s-maintient-la-note-de-la-france-aa3-mais-avec-perspective-negative/"
+        "t": "Dette de la France : S&P laisse la note de la France inchangée à A+ (franceinfo, 29 mai 2026)",
+        "u": "https://www.franceinfo.fr/economie/budget/dette-de-la-france-l-agende-de-notation-standard-poor-s-s-p-laisse-la-note-de-la-france-inchangee-a-a_8036402.html"
       }
     },
     {
@@ -91,13 +97,19 @@
       "lab": "Note de la France chez Fitch",
       "unite": "",
       "groupe": "notation",
-      "historique": [],
+      "historique": [
+        {
+          "valeur": "A+",
+          "date": "2025-09",
+          "u": "https://www.touteleurope.eu/economie-et-social/l-agence-moody-s-maintient-la-note-de-la-france-aa3-mais-avec-perspective-negative/"
+        }
+      ],
       "valeur": "A+",
-      "date": "2025-09",
-      "detail": "Perspective stable. Dernière action en septembre 2025.",
+      "date": "2026-10-30",
+      "detail": "Note maintenue, perspective abaissée de stable à négative le vendredi 30 octobre au soir : croissance plus faible, nouvelle dégradation budgétaire, taux plus élevés.",
       "source": {
-        "t": "L'agence Moody's maintient la note Aa3 de la France, mais avec perspective négative — Toute l'Europe, 24 octobre 2026",
-        "u": "https://www.touteleurope.eu/economie-et-social/l-agence-moody-s-maintient-la-note-de-la-france-aa3-mais-avec-perspective-negative/"
+        "t": "L'agence de notation Fitch maintient la note A+ de la France, mais abaisse sa perspective (franceinfo avec AFP, 30 octobre 2026)",
+        "u": "https://www.franceinfo.fr/economie/crise/crise-de-la-dette/l-agence-de-notation-fitch-maintient-la-note-a-de-la-france-mais-abaisse-sa-perspective_8261105.html"
       }
     },
     {

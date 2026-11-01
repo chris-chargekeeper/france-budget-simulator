@@ -1,6 +1,6 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-10-30",
+  "updated": "2026-11-01",
   "avertissement": "Les candidatures ne seront officielles qu'après validation des parrainages par le Conseil constitutionnel, au printemps 2027. Le site suit les candidats déclarés ou investis qui pèsent dans les sondages ; la liste est revérifiée chaque matin. Les programmes 2027 sont pour la plupart non publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
@@ -879,6 +879,28 @@
       },
       "commanditaire": "Le HuffPost",
       "hypothese": "Hypothèse 5"
+    },
+    {
+      "date": "2026-10-14",
+      "terrain_debut": "2026-09-24",
+      "commanditaire": "Backbone, Public Sénat, la presse régionale et Le Nouvel Obs",
+      "echantillon": 12005,
+      "scores": {
+        "rn": 37,
+        "lfi": 18,
+        "lr": 6.5,
+        "hor": 17,
+        "ps": 9.5,
+        "eco": 3,
+        "rec": 4.5
+      },
+      "institut": "Odoxa",
+      "hypothese": "Hypothèse principale : Édouard Philippe candidat, Le Pen pour le RN, Glucksmann pour le PS (mesuré avant la primaire socialiste) ; Attal non testé dans cette hypothèse",
+      "terrain_fin": "2026-10-07",
+      "source": {
+        "t": "Odoxa, intentions de vote à l'élection présidentielle de 2027, rapport complet (p. 12)",
+        "u": "https://www.odoxa.fr/wp-content/uploads/2026/10/Odoxa-Backbone-pour-la-Presse-Regionale-Public-Senat-et-le-Nouvel-Obs-IV-a-lelection-presidentielle-de-2027.pdf"
+      }
     }
   ],
   "sondages_historique": [
