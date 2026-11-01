@@ -513,10 +513,10 @@
           "sim": "lo"
         },
         "alleg": {
-          "sim": "hi"
+          "sim": "lo"
         },
         "isgrandes": {
-          "sim": "hi"
+          "sim": "mid"
         },
         "rachats": {
           "sim": "hi"
@@ -576,8 +576,8 @@
         "minimum15": "Application complète d'un accord international déjà signé : rendement modeste mais sûr.",
         "fraude": "Retenue au chiffrage central, pas au haut de fourchette : la fraude se recouvre lentement.",
         "cir": "Recentré sur les grands groupes : ils reçoivent 2,9 Md€ sur les 6,9 Md€ du CIR recherche (2021). Les 2 Md€ retenus restent dans cette enveloppe : le crédit des PME et des ETI n'est pas touché.",
-        "alleg": "Les allègements au-dessus de 1,6 SMIC ont un effet sur l'emploi peu démontré, selon les rapports publics de 2024 ; ceux proches du SMIC sont préservés.",
-        "isgrandes": "Surtaxe limitée aux très grandes entreprises, maintenue tant que le déficit dépasse 3 %.",
+        "alleg": "Retenu au bas de la fourchette : seuls les allègements au-dessus de 1,6 SMIC, dont l'effet sur l'emploi est peu démontré selon le rapport Bozio-Wasmer, sont réduits ; ceux proches du SMIC sont préservés. Le chômage remonte en France alors qu'il reste au plus bas dans la zone euro (Rexecode, Sénat, 21 octobre 2026), et renchérir le travail peu payé irait à contresens.",
+        "isgrandes": "Retenu au chiffrage central, pas au maximum : les entreprises françaises ont l'un des taux de marge les plus faibles d'Europe (12,8 % contre 17 % en Allemagne en 2025, selon Rexecode) et les défaillances sont au plus haut. Surtaxe limitée aux très grandes entreprises, maintenue tant que le déficit dépasse 3 %.",
         "rachats": "Faible rendement, retenue pour sa cohérence avec l'effort demandé aux autres.",
         "superp": "Retenue au chiffrage central : le rendement dépend de la conjoncture des secteurs visés.",
         "ttf": "Retenue au chiffrage central : l'assiette se déplace facilement.",
@@ -606,7 +606,16 @@
         "irbaisse": "Pas de baisse d'impôt financée à crédit.",
         "isf": "Redondant avec l'impôt plancher et la réforme des successions retenus."
       },
-      "sources": []
+      "sources": [
+        {
+          "t": "« Budget 2027 : qu'en pensent les économistes ? » — audition de Rexecode, de l'IFE et de GSA, commission des finances du Sénat, 21 octobre 2026",
+          "u": "https://www.senat.fr/travaux-parlementaires/commissions/commission-des-finances/detail-actualite/audition-plf-2027-sur-les-perspectives-de-leconomie-francaise-et-la-situation-des-finances-publiques-8474.html"
+        },
+        {
+          "t": "Taux de marge des entreprises et effet boule de neige — présentation de Rexecode au Sénat, 21 octobre 2026",
+          "u": "https://www.senat.fr/fileadmin/cru-1792598966/Commissions/Finances/2026-2027/Divers/Presentation_TableRonde_20261021_Rexecode.pdf"
+        }
+      ]
     },
     {
       "id": "ne",
