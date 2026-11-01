@@ -1,0 +1,30 @@
+{
+  "patch": {
+    "_comment": "Relève du 1er novembre 2026. Fenêtre 2026-10-30 → 2026-11-01. Session sans accès réseau aux sites sources : seul le moteur de recherche répond, aucune page n'a pu être ouverte. Seule entrée retenue : l'action Fitch du 30 octobre, attestée par les titres datés de Boursorama (Reuters/AFP) et CNews, et sourcée comme l'est déjà Moody's dans la base. Aucune annonce, aucun sondage, aucun chiffrage : rien n'a pu être lu à la source.",
+    "releve": "2026-11-01",
+    "contexte": {
+      "fitch": {
+        "valeur": "A+",
+        "date": "2026-10-30",
+        "detail": "Perspective abaissée de stable à négative le 30 octobre 2026, note A+ maintenue. Fitch invoque une croissance plus faible, un déficit plus large et des taux d'emprunt plus élevés, et ne voit pas le débat d'avant-présidentielle renforcer la perspective d'un redressement durable. Revue non programmée ; la précédente action, fin août 2026, confirmait A+ avec perspective stable.",
+        "source": {
+          "t": "Fitch maintient la note de la France à A+, abaisse sa perspective à négative — Reuters/AFP via Boursorama, 30 octobre 2026",
+          "u": "https://www.boursorama.com/impots/actualites/fitch-maintient-la-note-de-la-france-a-a-abaisse-sa-perspective-a-negative-b62dafbd7cf42e6e013bc1a2bd40b05b"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-11-01",
+    "applique": "2026-11-01",
+    "ajouts": [],
+    "revisions": [
+      {
+        "quoi": "contexte.fitch",
+        "avant": "A+",
+        "apres": "A+",
+        "source": "https://www.boursorama.com/impots/actualites/fitch-maintient-la-note-de-la-france-a-a-abaisse-sa-perspective-a-negative-b62dafbd7cf42e6e013bc1a2bd40b05b"
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "_comment": "Base des annonces, une entrée par déclaration publique. Alimentée par le skill france-budget-watch. Champs : date (AAAA-MM-JJ ou AAAA-MM si le jour n'est pas établi), parti (id ou null), qui (la personne, ou null si l'auteur n'est pas identifié), fonction, media (où la déclaration a été faite), quoi, verbatim, mesure (id du catalogue ou null), montant (Md€ ou null), type (economie|recette|depense|contexte), source (URL obligatoire), verifie (la source a-t-elle été ouverte et lue intégralement), contredit (non|programme|annonce|inconnu), ecart (explication si contredit != non).",
-  "updated": "2026-10-30",
+  "updated": "2026-11-01",
   "items": [
     {
       "date": "2026-10-30",
@@ -2212,6 +2212,22 @@
     },
     {
       "date": "2026-08-27",
+      "parti": "rn",
+      "qui": "Marine Le Pen",
+      "fonction": "Députée, Rassemblement national",
+      "media": "Premier débat des candidats, université d'été du MEDEF (Epoch Times)",
+      "quoi": "Défend la retraite à 60 ans pour les carrières commencées avant 20 ans et un âge légal ramené à 62 ans.",
+      "verbatim": null,
+      "mesure": "retr62",
+      "montant": null,
+      "type": "depense",
+      "source": "https://www.epochtimes.fr/marine-le-pen-promet-125-milliards-deuros-deconomies-et-defend-une-retraite-a-60-ou-62-ans-3335415.html",
+      "verifie": true,
+      "contredit": "annonce",
+      "ecart": "Annoncée le même jour que le plan de 125 Md€ d'économies, cette mesure en consomme une part sans que le plan soit relevé d'autant. Le seul coût chiffré ce jour-là est de 9 Md€, pour la suppression des cotisations des seniors qui prolongent."
+    },
+    {
+      "date": "2026-08-27",
       "parti": "ren",
       "qui": "Gabriel Attal",
       "fonction": "Candidat de Renaissance à l'élection présidentielle",
@@ -2225,6 +2241,22 @@
       "verifie": true,
       "contredit": "inconnu",
       "ecart": "La trajectoire est datée mais non chiffrée : aucun montant d'économies n'est rattaché aux trois postes cités (assurance maladie, arrêts maladie, assurance chômage), dont deux relèvent de l'ONDAM, et Renaissance n'a publié aucun programme budgétaire détaillé permettant de les reconstituer. Le rattachement à l'ONDAM est celui de cette relève, pas celui du candidat."
+    },
+    {
+      "date": "2026-08-27",
+      "parti": "ren",
+      "qui": "Gabriel Attal",
+      "fonction": "Renaissance",
+      "media": "Premier débat des candidats, université d'été du MEDEF",
+      "quoi": "Propose « un nouveau système universel libre qui se fonde sur la durée de cotisation », avec une dose de capitalisation pour les retraites.",
+      "verbatim": null,
+      "mesure": null,
+      "montant": null,
+      "type": "contexte",
+      "source": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
+      "verifie": true,
+      "contredit": "annonce",
+      "ecart": "Le compte rendu range aussi Attal parmi ceux qui veulent relever l'âge légal (résumé de la rédaction, pas une citation) ; sa lettre du 15 octobre 2026 promet au contraire un système « sans âge légal ». Annonce non chiffrée."
     },
     {
       "date": "2026-08-27",
@@ -2356,6 +2388,22 @@
     },
     {
       "date": "2026-08-27",
+      "parti": "hor",
+      "qui": "Édouard Philippe",
+      "fonction": "Horizons",
+      "media": "Premier débat des candidats, université d'été du MEDEF",
+      "quoi": "Axe son propos sur la réduction du déficit par l'allongement du temps de travail (paraphrase du compte rendu, pas une citation).",
+      "verbatim": null,
+      "mesure": null,
+      "montant": null,
+      "type": "contexte",
+      "source": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
+      "verifie": true,
+      "contredit": "non",
+      "ecart": "Annonce non chiffrée : elle ne peut pas être portée au simulateur en l'état."
+    },
+    {
+      "date": "2026-08-27",
       "parti": "eco",
       "qui": "Marine Tondelier",
       "fonction": "Candidate des Écologistes à l'élection présidentielle",
@@ -2369,22 +2417,6 @@
       "verifie": true,
       "contredit": "inconnu",
       "ecart": "Les Écologistes n'ont publié aucun programme chiffré pour 2027 : ni le coût budgétaire du relèvement du SMIC, ni celui du plan d'aide aux PME censé l'accompagner, ne sont avancés. Première déclaration chiffrée relevée pour ce parti."
-    },
-    {
-      "date": "2026-08-27",
-      "parti": "ren",
-      "qui": "Gabriel Attal",
-      "fonction": "Renaissance",
-      "media": "Premier débat des candidats, université d'été du MEDEF",
-      "quoi": "Propose « un nouveau système universel libre qui se fonde sur la durée de cotisation », avec une dose de capitalisation pour les retraites.",
-      "verbatim": null,
-      "mesure": null,
-      "montant": null,
-      "type": "contexte",
-      "source": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
-      "verifie": true,
-      "contredit": "annonce",
-      "ecart": "Le compte rendu range aussi Attal parmi ceux qui veulent relever l'âge légal (résumé de la rédaction, pas une citation) ; sa lettre du 15 octobre 2026 promet au contraire un système « sans âge légal ». Annonce non chiffrée."
     },
     {
       "date": "2026-08-24",
@@ -2401,22 +2433,6 @@
       "verifie": true,
       "contredit": "inconnu",
       "ecart": "Les droits de succession et de mutation rapportent aujourd'hui environ 35 Md€ au total. Obtenir 15 Md€ de plus sur 1 % des successions suppose un barème très fortement relevé sur ces transmissions."
-    },
-    {
-      "date": "2026-08-27",
-      "parti": "hor",
-      "qui": "Édouard Philippe",
-      "fonction": "Horizons",
-      "media": "Premier débat des candidats, université d'été du MEDEF",
-      "quoi": "Axe son propos sur la réduction du déficit par l'allongement du temps de travail (paraphrase du compte rendu, pas une citation).",
-      "verbatim": null,
-      "mesure": null,
-      "montant": null,
-      "type": "contexte",
-      "source": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
-      "verifie": true,
-      "contredit": "non",
-      "ecart": "Annonce non chiffrée : elle ne peut pas être portée au simulateur en l'état."
     },
     {
       "date": "2026-08",
@@ -2465,22 +2481,6 @@
       "verifie": false,
       "contredit": "inconnu",
       "ecart": "Le détail rendu public ne couvre qu'environ la moitié du total annoncé : la cohérence de l'autre moitié avec un programme écrit ne peut pas être établie."
-    },
-    {
-      "date": "2026-08-27",
-      "parti": "rn",
-      "qui": "Marine Le Pen",
-      "fonction": "Députée, Rassemblement national",
-      "media": "Premier débat des candidats, université d'été du MEDEF (Epoch Times)",
-      "quoi": "Défend la retraite à 60 ans pour les carrières commencées avant 20 ans et un âge légal ramené à 62 ans.",
-      "verbatim": null,
-      "mesure": "retr62",
-      "montant": null,
-      "type": "depense",
-      "source": "https://www.epochtimes.fr/marine-le-pen-promet-125-milliards-deuros-deconomies-et-defend-une-retraite-a-60-ou-62-ans-3335415.html",
-      "verifie": true,
-      "contredit": "annonce",
-      "ecart": "Annoncée le même jour que le plan de 125 Md€ d'économies, cette mesure en consomme une part sans que le plan soit relevé d'autant. Le seul coût chiffré ce jour-là est de 9 Md€, pour la suppression des cotisations des seniors qui prolongent."
     },
     {
       "date": "2025-10-20",

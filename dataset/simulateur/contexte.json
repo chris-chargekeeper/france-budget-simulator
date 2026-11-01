@@ -1,6 +1,6 @@
 {
   "_comment": "Contexte macroéconomique et financier, tenu à jour par la veille quotidienne. Chaque indicateur porte une valeur, une date et une source. `hypothese` (réglé à la main) relie un indicateur à une hypothèse du simulateur, qui remplace alors la valeur par défaut : rmkt (taux d'emprunt à 10 ans), g (croissance en volume), infl (inflation). `bornes` (réglé à la main) refuse une valeur invraisemblable. L'ancienne valeur part dans `historique` : rien ne s'efface.",
-  "updated": "2026-10-30",
+  "updated": "2026-11-01",
   "avertissement": "Trois valeurs nourrissent le calcul : le taux à 10 ans remplace l'hypothèse de taux de marché, la croissance et l'inflation prévues pour 2027 sont prolongées jusqu'en 2032. Elles restent réglables en mode avancé.",
   "indicateurs": [
     {
@@ -91,13 +91,19 @@
       "lab": "Note de la France chez Fitch",
       "unite": "",
       "groupe": "notation",
-      "historique": [],
+      "historique": [
+        {
+          "valeur": "A+",
+          "date": "2025-09",
+          "u": "https://www.touteleurope.eu/economie-et-social/l-agence-moody-s-maintient-la-note-de-la-france-aa3-mais-avec-perspective-negative/"
+        }
+      ],
       "valeur": "A+",
-      "date": "2025-09",
-      "detail": "Perspective stable. Dernière action en septembre 2025.",
+      "date": "2026-10-30",
+      "detail": "Perspective abaissée de stable à négative le 30 octobre 2026, note A+ maintenue. Fitch invoque une croissance plus faible, un déficit plus large et des taux d'emprunt plus élevés, et ne voit pas le débat d'avant-présidentielle renforcer la perspective d'un redressement durable. Revue non programmée ; la précédente action, fin août 2026, confirmait A+ avec perspective stable.",
       "source": {
-        "t": "L'agence Moody's maintient la note Aa3 de la France, mais avec perspective négative — Toute l'Europe, 24 octobre 2026",
-        "u": "https://www.touteleurope.eu/economie-et-social/l-agence-moody-s-maintient-la-note-de-la-france-aa3-mais-avec-perspective-negative/"
+        "t": "Fitch maintient la note de la France à A+, abaisse sa perspective à négative — Reuters/AFP via Boursorama, 30 octobre 2026",
+        "u": "https://www.boursorama.com/impots/actualites/fitch-maintient-la-note-de-la-france-a-a-abaisse-sa-perspective-a-negative-b62dafbd7cf42e6e013bc1a2bd40b05b"
       }
     },
     {
