@@ -474,7 +474,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget arbitré, pas promis",
-        "texte": "Ce scénario n'est le programme de personne. Il a été composé par l'IA qui tient ce site, avec une seule consigne : remettre les comptes d'aplomb en ménageant la croissance et sans faire porter l'effort sur un groupe désigné. Il puise uniquement dans les 41 mesures chiffrées du simulateur, aux mêmes bornes que pour les partis. Ce qu'il montre surtout : avec un taux d'emprunt proche de 5 %, supérieur à la croissance, les intérêts font boule de neige, et même un effort de cette ampleur peine à arrêter la dette. Ses arbitrages sont des choix de valeurs, pas des vérités : chacun est expliqué ci-dessous, et contestable.",
+        "texte": "Ce scénario n'est le programme de personne. Il a été composé par l'IA qui tient ce site, avec une seule consigne : remettre les comptes d'aplomb en ménageant la croissance et sans faire porter l'effort sur un groupe désigné. Il puise uniquement dans les 42 mesures chiffrées du simulateur, aux mêmes bornes que pour les partis. Ce qu'il montre surtout : avec un taux d'emprunt proche de 5 %, supérieur à la croissance, les intérêts font boule de neige, et même un effort de cette ampleur peine à arrêter la dette. Ses arbitrages sont des choix de valeurs, pas des vérités : chacun est expliqué ci-dessous, et contestable.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -483,13 +483,13 @@
         "Freiner la dette autant que possible d'ici 2032, puis viser la limite des 3 %.",
         "Répartir l'effort à peu près pour moitié entre recettes et dépenses.",
         "Faire contribuer davantage ceux qui ont le plus : patrimoines, successions, revenus du capital.",
-        "Couper d'abord ce qui est peu efficace selon les évaluations publiques : niches, aides sans contrepartie, dépenses redondantes.",
+        "Couper d'abord ce qui est peu efficace selon les évaluations publiques : niches, aides sans contrepartie, dépenses redondantes, en épargnant ce qui fait l'emploi et l'innovation des TPE, PME et ETI.",
         "Ne cibler aucune population désignée, et ne retenir aucune mesure dont le rendement relève du slogan.",
-        "Garder l'investissement qui rapporte à long terme : transition écologique, grand âge, défense au minimum de l'engagement."
+        "Garder l'investissement qui rapporte à long terme : innovation et souveraineté technologique, transition écologique, grand âge, défense au minimum de l'engagement."
       ],
       "set": {
         "niches": {
-          "sim": "hi"
+          "sim": "mid"
         },
         "succ": {
           "sim": "hi"
@@ -510,7 +510,7 @@
           "sim": "mid"
         },
         "cir": {
-          "sim": "hi"
+          "sim": "lo"
         },
         "alleg": {
           "sim": "hi"
@@ -560,19 +560,22 @@
         "ecolo": {
           "sim": "lo"
         },
+        "innov": {
+          "sim": "mid"
+        },
         "age": {
           "sim": "lo"
         }
       },
       "pourquoi": {
-        "niches": "Le gisement le plus large et le mieux documenté : la Cour des comptes et l'Inspection des finances relèvent depuis des années des dispositifs coûteux dont l'effet n'est pas démontré.",
+        "niches": "Retenu au chiffrage central, pas au maximum : le rabot vise les dispositifs dont la Cour des comptes et l'Inspection des finances jugent l'effet non démontré, et épargne les aides à l'innovation et aux petites entreprises. Un rabot uniforme toucherait autant ce qui crée de l'emploi que ce qui n'en crée pas.",
         "succ": "Les successions concentrent les inégalités de patrimoine ; une réforme limitée aux hauts patrimoines fait consensus chez des économistes de sensibilités différentes.",
         "csgcap": "Aligner la contribution des revenus du capital sur celle du travail : large assiette, faible taux, peu de distorsions.",
         "zucman": "Retenue au chiffrage central, sans parier sur le haut de fourchette : le rendement dépend d'un très petit nombre de foyers.",
         "pfu": "Les dividendes rejoignent le barème de l'impôt sur le revenu : l'effort porte sur les revenus du capital élevés.",
         "minimum15": "Application complète d'un accord international déjà signé : rendement modeste mais sûr.",
         "fraude": "Retenue au chiffrage central, pas au haut de fourchette : la fraude se recouvre lentement.",
-        "cir": "Rabot ciblé sur les grands groupes : les évaluations publiques concluent à un effet faible au-delà d'un certain montant.",
+        "cir": "Recentré sur les grands groupes : ils reçoivent 2,9 Md€ sur les 6,9 Md€ du CIR recherche (2021). Les 2 Md€ retenus restent dans cette enveloppe : le crédit des PME et des ETI n'est pas touché.",
         "alleg": "Les allègements au-dessus de 1,6 SMIC ont un effet sur l'emploi peu démontré, selon les rapports publics de 2024 ; ceux proches du SMIC sont préservés.",
         "isgrandes": "Surtaxe limitée aux très grandes entreprises, maintenue tant que le déficit dépasse 3 %.",
         "rachats": "Faible rendement, retenue pour sa cohérence avec l'effort demandé aux autres.",
@@ -588,6 +591,7 @@
         "blanche": "Un an de gel des barèmes et des prestations, partagé par tous. Il pèse plus lourd pour les ménages modestes : c'est le prix de l'effort, et la principale entorse au critère d'équité.",
         "defense": "Le minimum de l'engagement pris envers les alliés : un budget qui l'ignorerait ne serait pas réaliste.",
         "ecolo": "Investissement de borne basse, dont le rendement est de long terme (énergie importée, dégâts climatiques).",
+        "innov": "Retenu au chiffrage central : revenir au rythme de France 2030 de 2024 plutôt que le laisser s'éteindre. L'IA, les semi-conducteurs ou le nucléaire se jouent maintenant ; un pays qui coupe là économise aujourd'hui et le paie en croissance et en dépendance ensuite.",
         "age": "Le vieillissement n'est pas un choix : la dépense de grand âge montera de toute façon.",
         "exit": "Complément logique de l'impôt plancher : limite les départs motivés par l'impôt."
       },
