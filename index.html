@@ -436,8 +436,9 @@ footer .fbrand{font-family:"IBM Plex Mono",ui-monospace,monospace;color:var(--in
 .fmontant{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;color:var(--ink)}
 .unver{font-size:11px;color:var(--ink-3);font-style:italic}
 @media (max-width:700px){.cmp-head{display:none}}
-.cmp-exp{position:sticky;left:0;width:min(100%,calc(100vw - 48px));padding:4px 0 14px;border-left:3px solid var(--pc);margin:0 0 6px;background:var(--surface-2);border-radius:0 0 8px 8px}
-.cmp-exp .panel{border:0;box-shadow:none;background:transparent;margin:0}
+.cmp-exp{position:sticky;left:0;width:min(100%,calc(100vw - 48px));padding:4px 0 14px;box-shadow:inset 2px 0 0 var(--ink);margin:0 0 6px;background:var(--surface-2);border-radius:0 0 8px 8px}
+.cmp-exp .panel{border:0;box-shadow:none;background:transparent;margin:0;max-width:680px}
+.cmp-exp .chart{max-width:640px}
 @media (max-width:560px){.cmp-exp .panel{padding:12px 8px 8px}}
 .cmp-row[aria-expanded="true"]{border-radius:6px 6px 0 0}
 body:not(.adv) #resultat .charts{display:none}
@@ -1851,14 +1852,21 @@ function lineChart(svg, o){
     t.textContent = o.refLabel; svg.appendChild(t);
   }
 
-  o.series.forEach(s => {
+  /* Étiquettes de fin : écartées d'au moins 13 unités quand les courbes finissent côte à côte. */
+  const fin = o.series.map((s, k) => ({k, y: y(s.vals[s.vals.length - 1]) + 4})).sort((a, b) => a.y - b.y);
+  for (let i = 1; i < fin.length; i++){
+    const manque = 13 - (fin[i].y - fin[i-1].y);
+    if (manque > 0){ fin[i-1].y -= manque / 2; fin[i].y += manque / 2; }
+  }
+  const finY = Object.fromEntries(fin.map(f => [f.k, f.y]));
+  o.series.forEach((s, k) => {
     const d = s.vals.map((v,i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ');
     svg.appendChild(sv('path',{d, fill:'none', stroke:s.color, 'stroke-width':2,
       'stroke-linejoin':'round', 'stroke-linecap':'round'}));
     const last = s.vals.length - 1;
     svg.appendChild(sv('circle',{cx:x(last), cy:y(s.vals[last]), r:3.5, fill:s.color,
       stroke:'var(--surface)', 'stroke-width':2}));
-    const t = sv('text',{x:x(last)+9, y:y(s.vals[last])+4, class:'endlabel', fill:s.color});
+    const t = sv('text',{x:x(last)+9, y:finY[k], class:'endlabel', fill:s.color});
     t.textContent = sign(nf(s.vals[last], o.dec||0)) + ' %';
     svg.appendChild(t);
   });
