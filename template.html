@@ -1103,6 +1103,8 @@ footer{padding-bottom:120px}
 .qp-net.perte{color:var(--perte)} .qp-net.gain{color:var(--gain)} .qp-net.zero{color:var(--ink-3)}
 .qp-row.nul .qp-lab b{color:var(--ink-3);font-weight:500}
 .qp-det{padding:4px 4px 14px;display:grid;gap:10px}
+.qp-court,.qp-qui{display:none}
+.qp-qui{font-size:12.5px;color:var(--ink-3);line-height:1.4}
 .qp-pg{font-size:12.5px;color:var(--ink-2);font-family:"IBM Plex Mono",monospace}
 .qp-it{display:grid;grid-template-columns:auto 1fr auto;gap:4px 10px;align-items:baseline;font-size:13.5px}
 .qp-it .sg{width:18px;height:18px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;background:var(--perte)}
@@ -1127,6 +1129,11 @@ footer{padding-bottom:120px}
   .qp-net small{line-height:1.2}
   .qp-pct{display:block;margin:0 0 1px;font-size:11px;line-height:1.1}
   .qp-ico{flex-basis:30px;width:30px;height:30px}
+  .qp-lab > div > span{display:none}
+  .qp-lab b{font-size:15px}
+  .qp-row > summary,.qp-row.nul > .qp-line{padding:11px 2px 10px;gap:7px 10px}
+  .qp-long,.qp-leg .qp-long{display:none}
+  .qp-court,.qp-qui{display:block}
 }
 .tile .val{font-size:28px}
 .cockpit{border-radius:var(--radius)}
@@ -3653,10 +3660,14 @@ function renderVerso(host, p){
   top.appendChild(el('div','qp-kick', p ? (p.horsCourse ? "Le candidat IA" : "Avec le programme de " + p.candidat)
     : state.party === 'tend' ? "Si rien ne change" : "Votre scénario"));
   top.appendChild(el('h3', null, "Qui paie, qui reçoit en 2032"));
-  top.appendChild(el('p', null, "Montants par an, en 2032, une fois toutes les mesures en place : ni par mois, ni cumulés sur le mandat. Par personne, ou par foyer et par entreprise quand c'est indiqué. Touchez une ligne pour le détail."));
+  /* Sur téléphone, une version courte de l'introduction et de la légende : la carte respire. */
+  const intro = el('p');
+  intro.append(el('span','qp-long', "Montants par an, en 2032, une fois toutes les mesures en place : ni par mois, ni cumulés sur le mandat. Par personne, ou par foyer et par entreprise quand c'est indiqué. Touchez une ligne pour le détail."),
+               el('span','qp-court', "Montants par an, en 2032, une fois les mesures en place. Touchez une ligne pour le détail."));
+  top.appendChild(intro);
   const leg = el('div','qp-leg');
-  const l1 = el('span'); l1.append(el('i'), document.createTextNode("perd : impôts en plus, aides en moins"));
-  const l2 = el('span','g'); l2.append(el('i'), document.createTextNode("reçoit : impôts en moins, aides en plus"));
+  const l1 = el('span'); l1.append(el('i'), document.createTextNode("perd"), el('span','qp-long', " : impôts en plus, aides en moins"));
+  const l2 = el('span','g'); l2.append(el('i'), document.createTextNode("reçoit"), el('span','qp-long', " : impôts en moins, aides en plus"));
   leg.append(l1, l2); top.appendChild(leg);
   box.appendChild(top);
 
@@ -3709,6 +3720,7 @@ function renderVerso(host, p){
       const d = el('details','qp-row'), su = el('summary');
       su.append(lab, bar, nv); d.appendChild(su);
       const det = el('div','qp-det');
+      det.appendChild(el('div','qp-qui', `${r.g.sous} · ${effTxt(r.g.effectif)}`));
       det.appendChild(el('div','qp-pg', `par an : perd ${eurU(r.perte)} · reçoit ${eurU(r.gain)} · ${r.g.par}`
         + (INC_PAR_PERSONNE.includes(r.g.id) && Math.abs(net) >= 12 ? ` — soit ${eurS(net / 12)} par mois` : '')));
       if (r.g.revenu && r.g.revenu.v > 0 && Math.abs(net) >= .5){
