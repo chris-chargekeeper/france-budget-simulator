@@ -1,0 +1,200 @@
+{
+  "patch": {
+    "_comment": "Relève du 3 novembre 2026 (tâche locale de 6 h 30). Couvre le lundi 2 novembre : séance de l'Assemblée sur la 1re partie du PLF 2027 (TVA énergie, CVAE, TVA transports), Face-à-Face de Glucksmann sur BFMTV-RMC, extraits BFMTV de Nikolic et Coquerel (titres seuls, non vérifiés). Clôture de l'OAT et du spread du 2 novembre. Aucun nouveau sondage (dernière notice de la Commission des sondages : n° 10346 du 30 octobre, hors intentions de vote). Pas de séance au Sénat. S&P : prochaine revue de la France prévue le 27 novembre.",
+    "releve": "2026-11-03",
+    "annonces": [
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "qui": "Jean-Philippe Tanguy",
+        "fonction": "Député RN, auteur du contre-budget du Rassemblement national",
+        "media": "Assemblée nationale, PLF 2027, 1re séance du 2 novembre 2026, amendements n° I-635 (Marine Le Pen) et I-749 (Tanguy), rejetés",
+        "quoi": "Défend la TVA à 5,5 % sur toutes les énergies (gaz, électricité, fioul, carburants), « mesure centrale du programme de Marine Le Pen », en concédant un coût qui pourrait atteindre 17 Md€. L'amendement I-635 est rejeté (40 contre 28) ; le repli sur l'électricité seule (I-749) tombe à égalité (26-26) ; les replis carburants-fioul et gaz sont rejetés.",
+        "verbatim": "Monsieur le ministre, quand bien même la baisse de TVA que nous proposons coûterait 17 milliards, ce ne serait que 1 % des dépenses publiques !",
+        "mesure": "tvaener",
+        "montant": 17,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-lundi-02-novembre-2026",
+        "verifie": true,
+        "contredit": "programme",
+        "ecart": "Le chiffrage du RN retient 10 Md€ pour cette mesure, et le catalogue la borne entre 6 et 14 Md€ ; Tanguy concède 17 Md€, au-dessus de la borne haute. En séance, Denis Masséglia (EPR) relève l'écart entre les 10 Md€ du contre-budget et les 17 Md€ ; le rapporteur général Juvin chiffre les replis à 9 Md€ (carburants et fioul) et 4 Md€ (gaz)."
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "qui": "Jean-Philippe Tanguy",
+        "fonction": "Député RN, auteur du contre-budget du Rassemblement national",
+        "media": "Assemblée nationale, PLF 2027, amendement n° I-672 (identique à I-1467 d'Alexandre Loubet), rejeté en 1re séance du 2 novembre 2026",
+        "quoi": "Le RN propose de supprimer la CVAE dès le 1er janvier 2027, « promesse » faite aux entrepreneurs. Rejeté par 35 voix contre 15. Ni l'amendement ni Tanguy n'en donnent le coût ; le rapporteur général l'estime à près de 4 Md€.",
+        "verbatim": "il s’agit d’appliquer une promesse que vous avez faite aux entrepreneurs français, à savoir la baisse des impôts de productions, en l’occurrence celle de la cotisation sur la valeur ajoutée des entreprises (CVAE).",
+        "mesure": "prod",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/672",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "La suppression de la CVAE ne figure pas dans le chiffrage partiel publié par le RN : environ 4 Md€ de recettes en moins (estimation du rapporteur général) qu'il ne compte pas. Le catalogue borne la mesure entre 3 et 8 Md€."
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "ren",
+        "qui": "Paul Midy",
+        "fonction": "Député EPR, chargé du programme de Gabriel Attal",
+        "media": "Assemblée nationale, PLF 2027, amendement n° I-1433 (cosigné notamment par Violette Spillebout), rejeté en 1re séance du 2 novembre 2026",
+        "quoi": "Renaissance propose de supprimer entièrement la CVAE dès 2027, pour « aller jusqu'au bout » de sa baisse. Midy ne chiffre pas l'amendement ; le rapporteur général l'estime à près de 4 Md€. Rejeté par 27 voix contre 20.",
+        "verbatim": "Le présent amendement vise à signifier qu’il faut aller jusqu’au bout, jusqu’à la suppression de cette cotisation.",
+        "mesure": "prod",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/1433",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Renaissance n'a pas publié de programme. Le scénario reconstitué retient la borne basse de la mesure (3 Md€) ; la suppression totale coûterait près de 4 Md€ selon le rapporteur général."
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "eco",
+        "qui": "Eva Sas",
+        "fonction": "Députée du groupe Écologiste et social, oratrice du groupe sur la 1re partie du PLF (amendement de Christine Arrighi, cosigné par Cyrielle Chatelain)",
+        "media": "Assemblée nationale, PLF 2027, 1re séance du 2 novembre 2026, amendement n° I-3717 (adopté)",
+        "quoi": "Contre l'avis de la commission et du gouvernement, l'Assemblée adopte (24 contre 15) la TVA à 5,5 % au lieu de 10 % sur les transports publics organisés par les collectivités, que le groupe écologiste chiffre à 300 M€. Eva Sas n'est pas porte-parole de la campagne de Marine Tondelier.",
+        "verbatim": "Ma proposition se limitant aux transports publics organisés par les collectivités, le coût de la mesure ne s’élèverait qu’à 300 millions d’euros.",
+        "mesure": null,
+        "montant": 0.3,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-lundi-02-novembre-2026",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Les Écologistes n'ont pas publié de programme présidentiel et aucune mesure du catalogue ne couvre ce point. L'adoption ne vaut que si la première partie du budget est votée."
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "ps",
+        "qui": "Raphaël Glucksmann",
+        "fonction": "Candidat PS – Place publique à l'élection présidentielle",
+        "media": "BFMTV-RMC, « Face-à-Face »",
+        "quoi": "Propose une baisse de la CSG sur les salaires, qui ferait gagner selon lui 100 € par mois au salaire médian et 83 € au Smic, financée par une taxation accrue des plus gros héritages. Il n'en donne pas le coût en Md€.",
+        "verbatim": "100 euros par mois pour un salarié au salaire médian",
+        "mesure": "csgbaisse",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/manifestation-du-5-novembre-raphael-glucksmann-affirme-qu-il-sera-dans-la-rue-ce-jeudi-malgre-les-campagnes-de-harcelement_AV-202611020336.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le PS n'a publié aucun chiffrage présidentiel et la baisse de CSG ne figure pas dans son scénario reconstitué. Sans coût annoncé, on ne peut pas vérifier que la taxation des gros héritages, qu'il chiffrait à 15 Md€ le 24 août, couvre la mesure."
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "qui": "Aleksandar Nikolic",
+        "fonction": "Député européen, porte-parole de campagne de Marine Le Pen (RN)",
+        "media": "BFMTV, « BFM Grand Soir »",
+        "quoi": "Le RN propose de permettre aux entreprises d'augmenter de 10 % les salaires jusqu'à trois fois le Smic. Le titre de BFMTV dit « sans exonération patronale et salariale », ce qui contredit la version habituelle de la mesure (hausse exonérée de cotisations) : le sens exact reste à établir à l'écoute. Aucun coût n'est donné.",
+        "verbatim": "on propose de permettre aux entreprises d'augmenter de 10% les salaires jusqu'à 3 fois le SMIC sans exonération patronale et salariale",
+        "mesure": null,
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.bfmtv.com/politique/front-national/video-salaires-on-propose-de-permettre-aux-entreprises-d-augmenter-de-10-les-salaires-jusqu-a-3-fois-le-smic-sans-exoneration-patronale-et-salariale-explique-aleksandar-nikolic-eurodepute-rn_VN-202611021018.html",
+        "verifie": false,
+        "contredit": "inconnu",
+        "ecart": "Seuls le titre et le chapeau de la vidéo ont été lus. La mesure n'apparaît pas dans le chiffrage partiel du RN ; si la hausse est exonérée de cotisations, elle a un coût que le RN ne chiffre pas."
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "lfi",
+        "qui": "Éric Coquerel",
+        "fonction": "Député LFI de Seine-Saint-Denis, président de la commission des finances de l'Assemblée",
+        "media": "BFMTV",
+        "quoi": "Estime qu'il faut créer 250 000 places supplémentaires à l'université, en réponse au mouvement lycéen et étudiant, sans en donner le coût.",
+        "verbatim": "250.000 places supplémentaires à l'université",
+        "mesure": "services",
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.bfmtv.com/politique/la-france-insoumise/video-colere-des-lyceens-et-des-etudiants-eric-coquerel-depute-lfi-de-seine-saint-denis-estime-qu-il-faut-creer-250-000-places-supplementaires-a-l-universite_VN-202611020930.html",
+        "verifie": false,
+        "contredit": "inconnu",
+        "ecart": "Seuls le titre et le chapeau de la vidéo ont été lus. On n'a pas vérifié si le budget rectificatif LFI du 14 octobre, qui porte les services publics au haut de la fourchette, comprend ces places ; aucun coût n'est énoncé."
+      }
+    ],
+    "contexte": {
+      "oat10": {
+        "valeur": 4.91,
+        "date": "2026-11-02",
+        "source": {
+          "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur (clôture du 2 novembre 2026)",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      },
+      "spread": {
+        "valeur": 160,
+        "date": "2026-11-02",
+        "source": {
+          "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur (clôture du 2 novembre 2026)",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-11-03",
+    "applique": "2026-11-03",
+    "ajouts": [
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "quoi": "Défend la TVA à 5,5 % sur toutes les énergies (gaz, électricité, fioul, carburants), « mesure centrale du programme de Marine Le Pen », en concédant un coût qui pourrait atteindre 17 Md€. L'amendement I-635 est rejeté (40 contre 28) ; le repli sur l'électricité seule (I-749) tombe à égalité (26-26) ; les replis carburants-fioul et gaz sont rejetés.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-lundi-02-novembre-2026"
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "quoi": "Le RN propose de supprimer la CVAE dès le 1er janvier 2027, « promesse » faite aux entrepreneurs. Rejeté par 35 voix contre 15. Ni l'amendement ni Tanguy n'en donnent le coût ; le rapporteur général l'estime à près de 4 Md€.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/672"
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "ren",
+        "quoi": "Renaissance propose de supprimer entièrement la CVAE dès 2027, pour « aller jusqu'au bout » de sa baisse. Midy ne chiffre pas l'amendement ; le rapporteur général l'estime à près de 4 Md€. Rejeté par 27 voix contre 20.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/1433"
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "eco",
+        "quoi": "Contre l'avis de la commission et du gouvernement, l'Assemblée adopte (24 contre 15) la TVA à 5,5 % au lieu de 10 % sur les transports publics organisés par les collectivités, que le groupe écologiste chiffre à 300 M€. Eva Sas n'est pas porte-parole de la campagne de Marine Tondelier.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-lundi-02-novembre-2026"
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "ps",
+        "quoi": "Propose une baisse de la CSG sur les salaires, qui ferait gagner selon lui 100 € par mois au salaire médian et 83 € au Smic, financée par une taxation accrue des plus gros héritages. Il n'en donne pas le coût en Md€.",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/manifestation-du-5-novembre-raphael-glucksmann-affirme-qu-il-sera-dans-la-rue-ce-jeudi-malgre-les-campagnes-de-harcelement_AV-202611020336.html"
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "quoi": "Le RN propose de permettre aux entreprises d'augmenter de 10 % les salaires jusqu'à trois fois le Smic. Le titre de BFMTV dit « sans exonération patronale et salariale », ce qui contredit la version habituelle de la mesure (hausse exonérée de cotisations) : le sens exact reste à établir à l'écoute. Aucun coût n'est donné.",
+        "source": "https://www.bfmtv.com/politique/front-national/video-salaires-on-propose-de-permettre-aux-entreprises-d-augmenter-de-10-les-salaires-jusqu-a-3-fois-le-smic-sans-exoneration-patronale-et-salariale-explique-aleksandar-nikolic-eurodepute-rn_VN-202611021018.html"
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "lfi",
+        "quoi": "Estime qu'il faut créer 250 000 places supplémentaires à l'université, en réponse au mouvement lycéen et étudiant, sans en donner le coût.",
+        "source": "https://www.bfmtv.com/politique/la-france-insoumise/video-colere-des-lyceens-et-des-etudiants-eric-coquerel-depute-lfi-de-seine-saint-denis-estime-qu-il-faut-creer-250-000-places-supplementaires-a-l-universite_VN-202611020930.html"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "contexte.oat10",
+        "avant": 4.93,
+        "apres": 4.91,
+        "source": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      },
+      {
+        "quoi": "contexte.spread",
+        "avant": 159,
+        "apres": 160,
+        "source": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      }
+    ]
+  }
+}
