@@ -17,7 +17,7 @@ import sys
 
 ROOT = pathlib.Path(__file__).parent
 DATA = ROOT / "dataset" / "simulateur"
-FILES = ["baseline", "measures", "parties", "announcements", "assises", "contexte"]
+FILES = ["baseline", "measures", "parties", "announcements", "assises", "contexte", "incidence"]
 CONTRADICTION = {"non", "programme", "annonce", "inconnu"}
 
 DERIVE = ROOT / "dataset" / "derive"
@@ -231,6 +231,8 @@ def load():
                          f"l'icône inconnue {e['icone']!r}; template.html en déclare "
                          f"{sorted(icones)}")
 
+    verifier_incidence(payload["incidence"], ids)
+
     dep = sum(x["v"] for x in payload["baseline"]["depenses"])
     rec = sum(x["v"] for x in payload["baseline"]["recettes"])
     apu = payload["baseline"]["apu"]
@@ -239,6 +241,43 @@ def load():
             sys.exit(f"dataset/simulateur/baseline.json: la ventilation des {label} ({got}) ne somme pas à {want}")
     return payload
 
+
+
+def verifier_incidence(inc, ids):
+    """Qui paie, qui reçoit : chaque mesure du catalogue a une clé complète et lisible."""
+    ou = "dataset/simulateur/incidence.json"
+    groupes = {g["id"] for g in inc["groupes"]}
+    for g in inc["groupes"]:
+        if not g.get("effectif") or g["effectif"] <= 0 or not g.get("lab") or not g.get("par"):
+            sys.exit(f"{ou}: groupe {g.get('id')!r} sans libellé, unité ou effectif")
+    vus = set()
+    for m in inc["mesures"]:
+        mid = m["id"]
+        if mid not in ids:
+            sys.exit(f"{ou}: mesure inconnue {mid!r}")
+        if mid in vus:
+            sys.exit(f"{ou}: mesure {mid!r} en double")
+        vus.add(mid)
+        parts = m["parts"]
+        inconnus = set(parts) - groupes - {"nonreparti"}
+        if inconnus:
+            sys.exit(f"{ou}: {mid} répartit sur des groupes inconnus {sorted(inconnus)}")
+        if abs(sum(parts.values()) - 1) > 1e-6 or any(v <= 0 for v in parts.values()):
+            sys.exit(f"{ou}: les parts de {mid} doivent être positives et sommer à 1")
+        if "etrangers" in parts and mid not in ("immigration", "ame"):
+            sys.exit(f"{ou}: {mid} — le groupe 'etrangers' est réservé aux mesures immigration et ame")
+        if m.get("fiabilite") not in ("sourcee", "convention"):
+            sys.exit(f"{ou}: {mid} — fiabilite attendue 'sourcee' ou 'convention'")
+        if m["fiabilite"] == "sourcee" and not m.get("sources"):
+            sys.exit(f"{ou}: {mid} se dit sourcée sans source")
+        if not m.get("explication"):
+            sys.exit(f"{ou}: {mid} sans explication")
+        for s in m.get("sources", []):
+            if not s.get("t") or not str(s.get("u", "")).startswith("http"):
+                sys.exit(f"{ou}: {mid} — source sans titre ou sans URL")
+    manquent = ids - vus
+    if manquent:
+        sys.exit(f"{ou}: aucune clé pour {sorted(manquent)}")
 
 
 def resoudre(ref, src):

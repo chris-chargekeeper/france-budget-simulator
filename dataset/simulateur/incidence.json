@@ -1,0 +1,753 @@
+{
+ "updated": "2026-11-03",
+ "methode": "Chaque mesure est répartie entre groupes selon une clé : la part de son montant que chaque groupe supporte ou reçoit in fine. Une clé « sourcée » vient d'une évaluation publique ; une clé « convention » est un choix raisonné de ce site, faute d'étude, et elle est écrite. Montants de l'année 2032, divisés par l'effectif du groupe. Les groupes se recoupent (un retraité aisé) : chaque part est rattachée au groupe par lequel la mesure passe. Les effets indirects (emploi, croissance, prix) ne sont pas comptés.",
+ "groupes": [
+  {
+   "id": "thp",
+   "lab": "Très hauts patrimoines",
+   "par": "par foyer",
+   "sous": "les 0,1 % de foyers les plus fortunés",
+   "effectif": 41500,
+   "detail": "0,1 % des 41,5 millions de foyers fiscaux ayant déclaré leurs revenus 2024 (DGFiP, données provisoires) = 41 500 foyers. La source ne donne pas de taille moyenne par foyer ; à titre indicatif, 68 M d'habitants / 41,5 M foyers ≈ 1,6 personne par foyer (calcul, non sourcé). Repère : 186 000 foyers redevables de l'IFI en 2024 (patrimoine immobilier net moyen 2,5 M€), soit un périmètre plus large que le 0,1 %.",
+   "source": {
+    "t": "DGFiP Statistiques n° 41 — L'impôt sur le revenu 2024 a été plus dynamique que les revenus (18/11/2025)",
+    "u": "https://www.impots.gouv.fr/dgfip-statistiques-limpot-sur-le-revenu-2024-ete-plus-dynamique-que-les-revenus"
+   }
+  },
+  {
+   "id": "aises",
+   "lab": "Ménages aisés",
+   "par": "par personne",
+   "sous": "les 10 % les plus aisés, hors 0,1 %",
+   "effectif": 6300000,
+   "detail": "Le champ des statistiques de niveau de vie (France métropolitaine, personnes en logement ordinaire, revenu déclaré positif ou nul, personne de référence non étudiante) compte 63,7 millions de personnes fin 2023 ; le 10e décile en regroupe donc 6,37 millions. Moins les personnes des ~41 500 foyers thp (≈ 0,07 M) : ≈ 6,3 millions. Seuil D9 non donné en euros dans la publication.",
+   "source": {
+    "t": "INSEE Première n° 2063 — Niveau de vie et pauvreté en 2023 (juillet 2025)",
+    "u": "https://insee.fr/fr/statistiques/8600989"
+   }
+  },
+  {
+   "id": "moyens",
+   "lab": "Classes moyennes",
+   "par": "par actif",
+   "sous": "actifs entre les bas salaires et les 10 % les plus aisés",
+   "effectif": 12700000,
+   "detail": "Calcul résiduel : 30,4 millions de personnes en emploi fin 2024 (27,0 M salariés, 3,4 M non-salariés, INSEE) moins ≈ 11,9 M salariés du privé sous 1,6 Smic (groupe smic) = ≈ 18,5 M. Ce résidu inclut encore les 5,8 M d'agents publics et les actifs du 10e décile ; les en retirer (−5,8 M agents) donne ≈ 12,7 M. Aucune source ne donne directement ce groupe.",
+   "source": {
+    "t": "INSEE — Le marché du travail en 2024 : l'emploi salarié ralentit encore, le pouvoir d'achat des salaires se redresse (26/06/2025)",
+    "u": "https://www.insee.fr/fr/statistiques/8376894"
+   }
+  },
+  {
+   "id": "smic",
+   "lab": "Smicards et bas salaires",
+   "par": "par salarié",
+   "sous": "salariés du privé jusqu'à 1,6 Smic",
+   "effectif": 11900000,
+   "detail": "Le rapport Bozio-Wasmer indique que le seuil de 1,6 Smic des allègements généraux couvre « autour des deux tiers » des salariés (privé) ; 89 % sont sous 2,5 Smic. Base : le champ Acemo (privé non agricole) compte ≈ 17,9 M salariés (3,1 M = 17,3 % au 1er janvier 2023, même rapport), d'où ≈ 11,9 M sous 1,6 Smic (calcul). Salariés au Smic : 3,1 M (17,3 %) au 1er janvier 2023 ; 2,1 M (11,8 %) bénéficiaires de la revalorisation du 1er janvier 2026 selon la DARES (chiffre lu via un article de presse, la page DARES étant protégée par un contrôle anti-robot).",
+   "source": {
+    "t": "A. Bozio, É. Wasmer — Les politiques d'exonérations de cotisations sociales : une inflexion nécessaire, rapport final (octobre 2024)",
+    "u": "https://vie-publique.fr/files/rapport/pdf/295596.pdf"
+   }
+  },
+  {
+   "id": "retraites",
+   "lab": "Retraités",
+   "par": "par retraité",
+   "sous": "retraités de droit direct",
+   "effectif": 17200000,
+   "detail": "Fin 2023, 17,2 millions de personnes sont retraitées de droit direct des régimes français (dont environ 16,3 M résidant en France, chiffre vu en résumé de recherche, non relu dans la source). 4,4 millions perçoivent une pension de réversion (recoupement partiel, non additionnable).",
+   "source": {
+    "t": "DREES — Les retraités et les retraites, édition 2025 (31/07/2025)",
+    "u": "https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse-documents-de-reference/250731_PANORAMAS-retraites"
+   }
+  },
+  {
+   "id": "sansemploi",
+   "lab": "Sans emploi",
+   "par": "par personne",
+   "sous": "chômeurs indemnisés, RSA, ASS",
+   "effectif": 4700000,
+   "detail": "Proposition : 2,6 M allocataires indemnisés par l'Assurance chômage (1er trim. 2025, sur 3,7 M pris en charge ; Unédic) + 1,85 M allocataires du RSA + 0,25 M de l'ASS (fin 2023, DREES) ≈ 4,7 M. L'AAH (1,35 M) et le minimum vieillesse (0,72 M) sont exclus car ils relèvent du handicap et de la vieillesse. Le recoupement indemnisés chômage / RSA n'est quantifié par aucune source lue. Version large : 2,6 M + 4,20 M allocataires de minima sociaux (personnes, doubles comptes entre minima corrigés) ≈ 6,8 M.",
+   "source": {
+    "t": "Unédic — Chiffres clés : les indicateurs de l'Assurance chômage, septembre 2025",
+    "u": "https://s3.eusc-de-east-1.amazonaws.eu/unedic-eks-prod-cms/2025/09/24/Chiffres-cles-Les-indicateurs-de-l-Assurance-chomage-septembre-2025_uid_68d3b7c7ab257.pdf"
+   }
+  },
+  {
+   "id": "agents",
+   "lab": "Agents publics",
+   "par": "par agent",
+   "sous": "les trois fonctions publiques",
+   "effectif": 5832600,
+   "detail": "Au 31 décembre 2023 : 5 832 600 agents y compris contrats aidés (5 803 900 hors contrats aidés) ; État 2 573 900, territoriale 2 017 800, hospitalière 1 240 900.",
+   "source": {
+    "t": "INSEE Première n° 2052 — L'emploi dans la fonction publique en 2023 (mai 2025, Insee/DGAFP)",
+    "u": "https://www.insee.fr/fr/statistiques/8572076"
+   }
+  },
+  {
+   "id": "etrangers",
+   "lab": "Personnes étrangères",
+   "par": "par personne",
+   "sous": "mesures sur l'immigration et l'AME seulement",
+   "effectif": 6028000,
+   "detail": "6 028 000 étrangers au 1er janvier 2024 (8,8 % de la population, provisoire), dont 0,9 M nés en France. Bénéficiaires de l'AME : 465 744 au 30 septembre 2024 (rapport du Sénat) ; 465 208 au 31 décembre 2024 selon le PAP du PLF 2026 (vu en résumé de recherche, non relu).",
+   "source": {
+    "t": "INSEE Première n° 2076 — En 2024, 6,0 millions d'étrangers vivent en France, 0,9 million y sont nés (octobre 2025)",
+    "u": "https://www.insee.fr/fr/statistiques/8651304"
+   }
+  },
+  {
+   "id": "pme",
+   "lab": "TPE, PME et ETI",
+   "par": "par entreprise",
+   "sous": "hors micro-entrepreneurs",
+   "effectif": 2614000,
+   "detail": "Champ marchand hors agriculture et finance : 4 995 894 microentreprises + 174 614 PME hors micro + 7 442 ETI = 5 177 950. Sur le champ principalement marchand non agricole non financier (4 042 715 micro + 163 992 PME + 7 031 ETI = 4 213 738), 1,6 million relèvent du régime du micro-entrepreneur ; hors micro-entrepreneurs ≈ 2,61 M (calcul). Hors toutes microentreprises : 182 056 PME et ETI (champ large), employant 8,7 M ETP contre 2,7 M ETP pour les microentreprises.",
+   "source": {
+    "t": "INSEE Focus n° 372 — Le tissu productif français par catégorie d'entreprises en 2023 (10/12/2025)",
+    "u": "https://www.insee.fr/fr/statistiques/8675639"
+   }
+  },
+  {
+   "id": "grandes",
+   "lab": "Grandes entreprises",
+   "par": "par entreprise",
+   "sous": "333 entreprises de plus de 5 000 salariés",
+   "effectif": 333,
+   "detail": "333 grandes entreprises (champ marchand hors agriculture et finance ; 312 sur le champ principalement marchand), employant 4,4 M salariés en ETP.",
+   "source": {
+    "t": "INSEE Focus n° 372 — Le tissu productif français par catégorie d'entreprises en 2023 (10/12/2025)",
+    "u": "https://www.insee.fr/fr/statistiques/8675639"
+   }
+  }
+ ],
+ "mesures": [
+  {
+   "id": "zucman",
+   "parts": {
+    "thp": 1.0
+   },
+   "fiabilite": "sourcee",
+   "explication": "L'impôt plancher ne vise que les patrimoines de plus de 100 M€, soit 1 600 à 1 800 foyers selon Gabriel Zucman et le rapport du Sénat : tous appartiennent au millième le plus fortuné.",
+   "sources": [
+    {
+     "t": "Sénat, rapport n° 689 (2024-2025) de la commission des finances sur la proposition de loi instaurant un impôt plancher de 2 % sur le patrimoine des ultrariches",
+     "u": "https://www.senat.fr/rap/l24-689/l24-6891.pdf"
+    }
+   ]
+  },
+  {
+   "id": "isf",
+   "parts": {
+    "thp": 0.4,
+    "aises": 0.6
+   },
+   "fiabilite": "convention",
+   "explication": "L'ISF était payé par environ 352 000 foyers en 2016 (patrimoine net taxable au-delà de 1,3 M€), soit à peu près le centile le plus fortuné. Convention : 40 % du produit attribués au millième le plus fortuné (barème progressif, mais biens professionnels exonérés et plafonnement), 60 % aux autres ménages aisés.",
+   "sources": [
+    {
+     "t": "Fipeco, commentaire du 26 octobre 2017 sur la suppression de l'ISF",
+     "u": "https://fipeco.fr/pdf/0.46518700%201509000642.pdf"
+    }
+   ]
+  },
+  {
+   "id": "isfclim",
+   "parts": {
+    "thp": 0.6,
+    "aises": 0.4
+   },
+   "fiabilite": "convention",
+   "explication": "Même population que l'ISF, mais l'assiette est élargie, notamment aux actifs professionnels et financiers, qui sont très concentrés au sommet. Convention : part du millième le plus fortuné relevée à 60 %, le reste sur les autres ménages aisés.",
+   "sources": [
+    {
+     "t": "Fipeco, commentaire du 26 octobre 2017 sur la suppression de l'ISF",
+     "u": "https://fipeco.fr/pdf/0.46518700%201509000642.pdf"
+    },
+    {
+     "t": "CAE, Focus n° 077 (2021), Repenser l'héritage : analyses supplémentaires (concentration du patrimoine professionnel)",
+     "u": "https://cae-eco.fr/static/pdf/cae-focus077-2021.pdf"
+    }
+   ]
+  },
+  {
+   "id": "csgcap",
+   "parts": {
+    "thp": 0.25,
+    "aises": 0.35,
+    "retraites": 0.25,
+    "moyens": 0.15
+   },
+   "fiabilite": "convention",
+   "explication": "La CSG sur les revenus du patrimoine et de placement touche les dividendes et plus-values, très concentrés au sommet, mais aussi l'assurance-vie, les revenus fonciers et l'épargne réglementée fiscalisée, détenus aussi par les retraités et les classes moyennes. D'après l'Insee, ces revenus pèsent 22,7 % du niveau de vie du dixième le plus aisé contre 2,3 à 5,4 % jusqu'au 8e décile. Convention : 60 % au dixième le plus aisé (dont 25 points au millième le plus fortuné), 40 % aux retraités et aux classes moyennes.",
+   "sources": [
+    {
+     "t": "Insee Références, Revenus et patrimoine des ménages, édition 2024, fiche 4 (composition du niveau de vie par décile)",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/7941377/RPM2024-F4.pdf"
+    }
+   ]
+  },
+  {
+   "id": "pfu",
+   "parts": {
+    "thp": 0.65,
+    "aises": 0.35
+   },
+   "fiabilite": "sourcee",
+   "explication": "Les dividendes perçus par les particuliers sont très concentrés : selon le comité d'évaluation de France Stratégie, 62 % d'entre eux allaient en 2019 à 0,1 % des foyers, et selon le Sénat, 64 % allaient en 2020 aux foyers déclarant plus de 100 000 € de dividendes. Les foyers modestes peuvent déjà opter pour le barème : la hausse porte sur le haut de la distribution.",
+   "sources": [
+    {
+     "t": "Légifiscal, synthèse du troisième rapport du comité d'évaluation des réformes de la fiscalité du capital (France Stratégie, 2021)",
+     "u": "https://www.legifiscal.fr/actualites-fiscales/2958-rapport-evaluation-reformes-fiscalite-capital.html"
+    },
+    {
+     "t": "Sénat, rapport n° 689 (2024-2025), commission des finances",
+     "u": "https://www.senat.fr/rap/l24-689/l24-6891.pdf"
+    }
+   ]
+  },
+  {
+   "id": "isgrandes",
+   "parts": {
+    "grandes": 0.7,
+    "moyens": 0.2,
+    "smic": 0.1
+   },
+   "fiabilite": "convention",
+   "explication": "La surtaxe de 2025 visait environ 400 entreprises dont le chiffre d'affaires dépasse 1 Md€. La littérature estime qu'environ 40 % de l'impôt sur les bénéfices est reporté sur les salaires (Allemagne), moins dans les grands groupes multinationaux. Convention : 70 % sur les grandes entreprises (actionnaires), 30 % sur les salaires, répartis entre les classes moyennes et les bas salaires.",
+   "sources": [
+    {
+     "t": "Fuest, Peichl et Siegloch, Do Higher Corporate Taxes Reduce Wages?, IZA DP n° 9606 (2015)",
+     "u": "https://docs.iza.org/dp9606.pdf"
+    },
+    {
+     "t": "Légifiscal, PLF 2025 : instauration d'une contribution exceptionnelle sur les bénéfices des grandes entreprises",
+     "u": "https://www.legifiscal.fr/actualites-fiscales/3896-plf-2025-instauration-contribution-exceptionnelle-benefices-grandes-entreprises.html"
+    }
+   ]
+  },
+  {
+   "id": "superp",
+   "parts": {
+    "grandes": 0.9,
+    "moyens": 0.1
+   },
+   "fiabilite": "convention",
+   "explication": "Une contribution sur les bénéfices exceptionnels des grands groupes de l'énergie, du transport et de la finance porte surtout sur une rente, et donc sur leurs actionnaires. La littérature trouve un report sur les salaires plus faible dans les grands groupes multinationaux. Convention : 90 % sur les grandes entreprises, 10 % sur les salaires des classes moyennes.",
+   "sources": [
+    {
+     "t": "Fuest, Peichl et Siegloch, Do Higher Corporate Taxes Reduce Wages?, IZA DP n° 9606 (2015)",
+     "u": "https://docs.iza.org/dp9606.pdf"
+    }
+   ]
+  },
+  {
+   "id": "rachats",
+   "parts": {
+    "grandes": 1.0
+   },
+   "fiabilite": "convention",
+   "explication": "La taxe frappe les rachats de leurs propres actions par les grandes sociétés cotées et réduit le rendement versé à leurs actionnaires. Elle porte sur la distribution plutôt que sur le résultat, donc aucun report sur les salaires n'est retenu. Convention : la charge reste sur les grandes entreprises, c'est-à-dire leurs actionnaires, dont une part importante ne réside pas en France.",
+   "sources": []
+  },
+  {
+   "id": "minimum15",
+   "parts": {
+    "grandes": 1.0
+   },
+   "fiabilite": "sourcee",
+   "explication": "L'impôt minimum de 15 % (pilier 2) ne s'applique qu'aux groupes dont le chiffre d'affaires consolidé atteint au moins 750 M€ et vise surtout les bénéfices faiblement taxés des multinationales : il est rattaché aux grandes entreprises.",
+   "sources": [
+    {
+     "t": "impots.gouv.fr, Entrée en application en 2024 d'un impôt minimum pour les groupes d'entreprises",
+     "u": "https://www.impots.gouv.fr/actualite/entree-en-application-en-2024-dun-impot-minimum-pour-les-groupes-dentreprises"
+    }
+   ]
+  },
+  {
+   "id": "ttf",
+   "parts": {
+    "grandes": 0.45,
+    "thp": 0.25,
+    "aises": 0.3
+   },
+   "fiabilite": "convention",
+   "explication": "La taxe est due sur les achats d'actions et, si elle est élargie, sur les dérivés et les opérations intrajournalières : elle pèse sur les intermédiaires financiers et les investisseurs institutionnels, et sur les ménages détenteurs d'actions, très concentrés au sommet. Convention : 45 % sur les grandes entreprises financières, 55 % sur les ménages aisés et très fortunés.",
+   "sources": []
+  },
+  {
+   "id": "exit",
+   "parts": {
+    "thp": 0.6,
+    "aises": 0.4
+   },
+   "fiabilite": "convention",
+   "explication": "L'exit tax vise les plus-values latentes des contribuables qui quittent la France en détenant d'importantes participations dans des sociétés, ce qui concerne surtout les dirigeants et actionnaires fortunés. Convention : 60 % au millième le plus fortuné, 40 % aux autres ménages aisés.",
+   "sources": []
+  },
+  {
+   "id": "succ",
+   "parts": {
+    "thp": 0.5,
+    "aises": 0.5
+   },
+   "fiabilite": "convention",
+   "explication": "La réforme porte sur les grandes transmissions. Selon le CAE, le centile supérieur des héritiers reçoit en moyenne plus de 4,2 M€ et le millième supérieur environ 13 M€ ; les exonérations (assurance-vie, démembrement, pacte Dutreil) profitent surtout à ce sommet. Convention : partage à parts égales entre le millième le plus fortuné et les autres ménages aisés.",
+   "sources": [
+    {
+     "t": "CAE, Note n° 69, Repenser l'héritage (décembre 2021)",
+     "u": "https://cae-eco.fr/static/pdf/cae-note069.pdf"
+    },
+    {
+     "t": "CAE, Focus n° 077 (2021), Repenser l'héritage : analyses supplémentaires",
+     "u": "https://cae-eco.fr/static/pdf/cae-focus077-2021.pdf"
+    }
+   ]
+  },
+  {
+   "id": "tva1",
+   "parts": {
+    "moyens": 0.22,
+    "agents": 0.1,
+    "retraites": 0.28,
+    "aises": 0.18,
+    "smic": 0.14,
+    "sansemploi": 0.08
+   },
+   "fiabilite": "convention",
+   "explication": "La TVA est supportée par les ménages au prorata de leur consommation ; l'Insee estime qu'elle représente 12 % du revenu disponible des 10 % les plus modestes contre 5 % pour les 10 % les plus aisés. Partage par convention selon le poids approximatif de chaque groupe dans la consommation des ménages. Les agents publics, comptés à part des classes moyennes, en reçoivent une part à proportion de leur nombre.",
+   "sources": [
+    {
+     "t": "Insee Analyses, « À moyen terme, une hausse de la TVA augmente légèrement les inégalités de niveau de vie et la pauvreté » (2019)",
+     "u": "https://www.insee.fr/fr/statistiques/3713290"
+    }
+   ]
+  },
+  {
+   "id": "cir",
+   "parts": {
+    "pme": 0.58,
+    "grandes": 0.42
+   },
+   "fiabilite": "sourcee",
+   "explication": "Un rabot uniforme touche les bénéficiaires au prorata de leur créance : en 2021, les grandes entreprises ont reçu 42 % du CIR recherche, les ETI 27 % et les PME 31 % (MESR).",
+   "sources": [
+    {
+     "t": "Ministère de l'Enseignement supérieur et de la Recherche, « Le crédit d'impôt recherche en 2021 » (données provisoires, 2023)",
+     "u": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2023-11/le-cr-dit-d-imp-t-recherche-en-2021---provisoire-30075.pdf"
+    }
+   ]
+  },
+  {
+   "id": "alleg",
+   "parts": {
+    "pme": 0.56,
+    "smic": 0.33,
+    "grandes": 0.11
+   },
+   "fiabilite": "sourcee",
+   "explication": "Le surcoût du travail est d'abord supporté par les employeurs ; le rapport Bozio-Wasmer estime qu'à long terme environ un tiers se reporte sur les salaires bruts entre 1 et 1,2 Smic, avec en plus des pertes d'emploi à ce niveau. Les deux tiers restants sont répartis selon les exonérations perçues par taille d'entreprise (Urssaf 2022 : 33 % pour les 250 salariés et plus, comptés pour moitié comme grandes entreprises par convention).",
+   "sources": [
+    {
+     "t": "A. Bozio et É. Wasmer, « Les politiques d'exonérations de cotisations sociales : une inflexion nécessaire », rapport au Premier ministre (octobre 2024), tableaux 1.2 et 4.2",
+     "u": "https://www.vie-publique.fr/files/rapport/pdf/295596.pdf"
+    }
+   ]
+  },
+  {
+   "id": "fraude",
+   "parts": {
+    "pme": 0.55,
+    "aises": 0.15,
+    "grandes": 0.15,
+    "sansemploi": 0.1,
+    "thp": 0.05
+   },
+   "fiabilite": "convention",
+   "explication": "Convention : les sommes recouvrées pèsent sur les fraudeurs. Pour la fraude sociale, le HCFiPS (2024) attribue 56 % aux entreprises et indépendants (surtout le travail dissimulé), 34 % aux assurés et 10 % aux professionnels de santé ; la fraude fiscale contrôlée porte surtout sur la TVA et l'impôt sur les sociétés, et pour les particuliers sur les patrimoines.",
+   "sources": [
+    {
+     "t": "Public Sénat, « Un rapport évalue la fraude sociale à 13 milliards d'euros par an » (rapport du HCFiPS, 27 septembre 2024)",
+     "u": "https://www.publicsenat.fr/actualites/economie/une-corruption-lente-et-insidieuse-un-rapport-evalue-la-fraude-sociale-a-13-milliards-deuros-par-an"
+    },
+    {
+     "t": "DGFiP, dossier de presse « Bilan du contrôle fiscal 2025 »",
+     "u": "https://www.ifrap.org/sites/default/files/documents/2026-04/540_-_dp_-_bilan_du_controle_fiscal_2025.pdf"
+    }
+   ]
+  },
+  {
+   "id": "irbaisse",
+   "parts": {
+    "aises": 0.66,
+    "thp": 0.1,
+    "moyens": 0.1,
+    "agents": 0.04,
+    "retraites": 0.09,
+    "smic": 0.01
+   },
+   "fiabilite": "convention",
+   "explication": "Convention : la baisse est supposée proportionnelle à l'impôt payé. Les données DGFiP sur les revenus 2022 (82,1 Md€ d'IR net, 15 317 € en moyenne pour le dixième le plus aisé) conduisent à environ trois quarts de l'impôt acquittés par ce dixième ; le reste se partage entre actifs des déciles intermédiaires et retraités. Une baisse ciblée sur les premières tranches déplacerait le gain vers les classes moyennes. Les agents publics, comptés à part des classes moyennes, en reçoivent une part à proportion de leur nombre.",
+   "sources": [
+    {
+     "t": "DGFiP Statistiques, « L'impôt sur les revenus perçus en 2022 »",
+     "u": "https://www.impots.gouv.fr/dgfip-statistiques-limpot-sur-les-revenus-percus-en-2022"
+    }
+   ]
+  },
+  {
+   "id": "tvaener",
+   "parts": {
+    "retraites": 0.3,
+    "moyens": 0.21,
+    "agents": 0.09,
+    "smic": 0.16,
+    "aises": 0.14,
+    "sansemploi": 0.1
+   },
+   "fiabilite": "convention",
+   "explication": "Les entreprises récupèrent la TVA : la baisse profite aux ménages selon leurs dépenses d'énergie, qui pèsent davantage dans le budget des modestes, des plus de 70 ans (chauffage) et des ménages ruraux. Partage par convention selon ces dépenses, plus homogènes entre groupes que la consommation totale. Les agents publics, comptés à part des classes moyennes, en reçoivent une part à proportion de leur nombre.",
+   "sources": [
+    {
+     "t": "Insee Première n° 1315, « Les dépenses d'énergie des ménages depuis 20 ans » (2010)",
+     "u": "https://www.insee.fr/fr/statistiques/1281149"
+    }
+   ]
+  },
+  {
+   "id": "prod",
+   "parts": {
+    "pme": 0.6,
+    "grandes": 0.4
+   },
+   "fiabilite": "convention",
+   "explication": "Convention : la baisse profite aux entreprises redevables de la CFE, de la taxe foncière et de la C3S, réparties approximativement selon leur poids dans l'activité, la C3S étant concentrée sur les entreprises au chiffre d'affaires élevé. Aucune ventilation officielle récente par taille n'a été trouvée ; une partie de l'effet peut à terme se diffuser aux salariés et aux clients.",
+   "sources": [
+    {
+     "t": "Conseil d'analyse économique, Focus n° 035-2019, « Impôts sur la production : quel impact sur la compétitivité ? »",
+     "u": "https://cae-eco.fr/static/pdf/cae-focus035v2.pdf"
+    }
+   ]
+  },
+  {
+   "id": "csgbaisse",
+   "parts": {
+    "moyens": 0.42,
+    "aises": 0.26,
+    "agents": 0.18,
+    "smic": 0.14
+   },
+   "fiabilite": "convention",
+   "explication": "La CSG sur les revenus d'activité est proportionnelle au salaire : sa baisse profite aux actifs en emploi au prorata de leur rémunération, retraités et chômeurs exclus. Partage par convention selon le poids approximatif de chaque groupe dans la masse des revenus d'activité, faute d'étude publiée sur ce découpage.",
+   "sources": []
+  },
+  {
+   "id": "retr62",
+   "parts": {
+    "moyens": 0.3,
+    "agents": 0.1,
+    "smic": 0.2,
+    "aises": 0.1,
+    "sansemploi": 0.3
+   },
+   "fiabilite": "convention",
+   "explication": "La mesure concerne les personnes de 62 à 64 ans pas encore retraitées. Selon l'Insee (2023), à 62 ans, environ 70 % de ces personnes sont en emploi et 30 % ne sont ni en emploi ni à la retraite. La part en emploi est répartie par convention selon le salaire, et la part hors emploi est rattachée aux sans-emploi. La mesure passe par l'âge de départ : elle est rattachée au statut des personnes avant leur départ, et non aux retraités déjà partis. Les agents publics, comptés à part des classes moyennes, en reçoivent une part à proportion de leur nombre.",
+   "sources": [
+    {
+     "t": "Insee, La situation des seniors sur le marché du travail en 2023",
+     "u": "https://www.insee.fr/fr/statistiques/7767123"
+    }
+   ]
+  },
+  {
+   "id": "retr60",
+   "parts": {
+    "moyens": 0.3,
+    "agents": 0.1,
+    "smic": 0.2,
+    "aises": 0.1,
+    "sansemploi": 0.3
+   },
+   "fiabilite": "convention",
+   "explication": "La mesure profite aux personnes de 60 à 64 ans non retraitées. Selon l'Insee (2023), à 60 et 61 ans, environ 70 % de ces personnes sont en emploi et 30 % ne sont ni en emploi ni à la retraite. La part en emploi est répartie par convention selon le salaire. La clé est la même que pour le retour à 62 ans. Les agents publics, comptés à part des classes moyennes, en reçoivent une part à proportion de leur nombre.",
+   "sources": [
+    {
+     "t": "Insee, La situation des seniors sur le marché du travail en 2023",
+     "u": "https://www.insee.fr/fr/statistiques/7767123"
+    }
+   ]
+  },
+  {
+   "id": "indexation",
+   "parts": {
+    "retraites": 0.75,
+    "sansemploi": 0.17,
+    "smic": 0.08
+   },
+   "fiabilite": "sourcee",
+   "explication": "Selon l'OFCE, une année de non-revalorisation représente 3,7 Md€ sur les pensions et 1,2 Md€ sur les autres prestations (0,4 Md€ d'allocations chômage, 0,8 Md€ de prestations familiales, d'allocations logement et de minima sociaux). La part des pensions va aux retraités. Les autres prestations sont réparties par convention entre sans-emploi et bas salaires.",
+   "sources": [
+    {
+     "t": "OFCE (P. Madec), Impôts et prestations : quels effets attendre d'une « année blanche » ?, 30 juin 2025",
+     "u": "https://www.ofce.fr/blog2024/fr/2025/20250630_PIM/Post_AnneeBlanche.fr.pdf"
+    }
+   ]
+  },
+  {
+   "id": "defense",
+   "parts": {
+    "nonreparti": 1.0
+   },
+   "fiabilite": "convention",
+   "explication": "La défense est un bien public sans bénéficiaire identifiable. Les commandes aux industriels ne sont pas comptées comme un gain pour eux.",
+   "sources": []
+  },
+  {
+   "id": "services",
+   "parts": {
+    "nonreparti": 0.8,
+    "agents": 0.2
+   },
+   "fiabilite": "convention",
+   "explication": "Les recrutements dans la santé, l'école et la justice profitent aux usagers de ces services, de façon diffuse. Une part est rattachée aux agents publics, dont les conditions d'emploi changent. Les parts sont une convention.",
+   "sources": []
+  },
+  {
+   "id": "ecolo",
+   "parts": {
+    "nonreparti": 0.55,
+    "pme": 0.25,
+    "moyens": 0.1,
+    "smic": 0.1
+   },
+   "fiabilite": "convention",
+   "explication": "Les investissements dans les réseaux et le ferroviaire relèvent de biens publics et ne sont pas attribués. Les aides à la rénovation profitent aux ménages qui rénovent et aux entreprises du bâtiment, surtout des TPE et PME. Les parts sont une convention.",
+   "sources": []
+  },
+  {
+   "id": "innov",
+   "parts": {
+    "pme": 0.4,
+    "grandes": 0.3,
+    "nonreparti": 0.3
+   },
+   "fiabilite": "convention",
+   "explication": "Selon le rapport d'activité 2023 de France 2030, cité par ActuIA, les bénéficiaires se répartissent ainsi : PME et ETI 56 %, grands groupes 16 %, acteurs publics et de recherche 19 %, autres 9 %. Ces chiffres comptent des bénéficiaires et non des montants. Comme les grands projets industriels pèsent davantage en montant, la part des grandes entreprises est relevée par convention. La recherche publique n'est pas attribuée.",
+   "sources": [
+    {
+     "t": "ActuIA, Rapport d'activité 2023 de France 2030 (reprise des chiffres du SGPI)",
+     "u": "https://www.actuia.com/actualite/rapport-dactivite-2023-de-france-2030-deja-de-nombreux-resultats-et-impacts-concrets/"
+    }
+   ]
+  },
+  {
+   "id": "age",
+   "parts": {
+    "retraites": 0.8,
+    "moyens": 0.1,
+    "smic": 0.1
+   },
+   "fiabilite": "convention",
+   "explication": "La dépense nouvelle de la branche autonomie pour le grand âge (APA, établissements, aide à domicile) va d'abord aux personnes âgées dépendantes. Une part va aussi aux aidants familiaux et aux salariés du secteur, souvent faiblement payés. Les parts sont une convention.",
+   "sources": []
+  },
+  {
+   "id": "pointindice",
+   "parts": {
+    "agents": 1.0
+   },
+   "fiabilite": "sourcee",
+   "explication": "La valeur du point d'indice sert au calcul du traitement de l'ensemble des agents des trois fonctions publiques ; la hausse leur revient intégralement (les pensions de fonctionnaires sont indexées sur les prix, pas sur le point).",
+   "sources": [
+    {
+     "t": "Ministère de la Transformation et de la Fonction publiques, communiqué du 7 juillet 2022 sur la hausse de 3,5 % du point d'indice",
+     "u": "https://www.transformation.gouv.fr/files/presse/CP_point_indice_20220707.pdf"
+    }
+   ]
+  },
+  {
+   "id": "smic",
+   "parts": {
+    "agents": 0.65,
+    "pme": 0.29,
+    "grandes": 0.06
+   },
+   "fiabilite": "convention",
+   "explication": "Le montant est le coût budgétaire. Selon le groupe d'experts sur le Smic (2017), il tient surtout à la hausse de rémunération des agents publics, alors que le surcroît d'allègements bénéficie aux employeurs, surtout aux petites entreprises. La hausse de salaire des smicards du privé, payée par les employeurs, n'entre pas dans ce montant.",
+   "sources": [
+    {
+     "t": "Fondation Jean-Jaurès, « Pour une hausse progressive du Smic jusqu'à 1600 euros accompagnée d'une réduction des exonérations sociales » (citant le groupe d'experts Smic 2017)",
+     "u": "https://www.jean-jaures.org/publication/pour-une-hausse-progressive-du-smic-jusqua-1600-euros-accompagnee-dune-reduction-des-exonerations-sociales/"
+    },
+    {
+     "t": "A. Bozio et É. Wasmer, rapport sur les exonérations de cotisations (octobre 2024), tableau 1.2",
+     "u": "https://www.vie-publique.fr/files/rapport/pdf/295596.pdf"
+    }
+   ]
+  },
+  {
+   "id": "effectifs",
+   "parts": {
+    "agents": 1.0
+   },
+   "fiabilite": "convention",
+   "explication": "L'économie vient de la masse salariale : environ 125 000 départs non remplacés à l'État et chez ses opérateurs. Elle est rattachée aux agents publics. L'effet sur les usagers n'est pas chiffré.",
+   "sources": []
+  },
+  {
+   "id": "collectivites",
+   "parts": {
+    "nonreparti": 0.7,
+    "pme": 0.3
+   },
+   "fiabilite": "convention",
+   "explication": "Les collectivités absorbent une baisse de leurs dotations en réduisant leurs services, en réduisant leur investissement ou en relevant leurs impôts locaux, et l'arbitrage varie d'une collectivité à l'autre. La part liée à la commande publique d'investissement est rattachée aux PME du bâtiment et des travaux publics. Le reste n'est pas attribué. Les parts sont une convention.",
+   "sources": []
+  },
+  {
+   "id": "chomage",
+   "parts": {
+    "sansemploi": 0.8,
+    "smic": 0.15,
+    "aises": 0.05
+   },
+   "fiabilite": "convention",
+   "explication": "Une réforme de l'assurance chômage touche d'abord les demandeurs d'emploi indemnisés. Les réformes récentes ont aussi touché les personnes qui alternent contrats courts et chômage, souvent faiblement payées, et, par la dégressivité, les hauts salaires (environ 4 % des allocataires selon l'Unédic pour 2019). Les parts sont une convention qui s'appuie sur l'étude d'impact de l'Unédic de 2019.",
+   "sources": [
+    {
+     "t": "Unédic, Étude d'impact de la réforme de l'assurance chômage 2019",
+     "u": "https://www.unedic.org/publications/etude-dimpact-de-la-reforme-de-lassurance-chomage-2019"
+    }
+   ]
+  },
+  {
+   "id": "niches",
+   "parts": {
+    "pme": 0.3,
+    "aises": 0.3,
+    "grandes": 0.25,
+    "moyens": 0.15
+   },
+   "fiabilite": "convention",
+   "explication": "Convention : le périmètre mêle niches des ménages et aides aux entreprises. Dans le PLF 2026, les dépenses fiscales rattachées à l'impôt sur le revenu représentent 41 des 88 Md€ (47 %), principalement au bénéfice des ménages aisés ; le reste concerne surtout les entreprises, réparties ici entre PME-ETI et grandes entreprises.",
+   "sources": [
+    {
+     "t": "Annexe au PLF 2026, « Évaluation des voies et moyens », tome II : dépenses fiscales",
+     "u": "https://www.assemblee-nationale.fr/dyn/dyn/contenu/visualisation/1087933/file/Voies_et_moyens_Tome_2_2026.pdf"
+    }
+   ]
+  },
+  {
+   "id": "blanche",
+   "parts": {
+    "retraites": 0.62,
+    "sansemploi": 0.15,
+    "smic": 0.05,
+    "moyens": 0.05,
+    "agents": 0.03,
+    "aises": 0.1
+   },
+   "fiabilite": "sourcee",
+   "explication": "L'OFCE chiffre l'année blanche à environ 6 Md€ : 3,7 Md€ sur les pensions, 1,2 Md€ sur les autres prestations et 1,2 Md€ par le gel du barème de l'impôt sur le revenu, dont 6 % à la charge des ménages retraités. Les prestations sont rattachées surtout aux sans-emploi. La hausse d'impôt des actifs est répartie par convention vers le haut de la distribution, où l'OFCE situe la plus forte perte en euros. Les agents publics, comptés à part des classes moyennes, en reçoivent une part à proportion de leur nombre.",
+   "sources": [
+    {
+     "t": "OFCE (P. Madec), Impôts et prestations : quels effets attendre d'une « année blanche » ?, 30 juin 2025",
+     "u": "https://www.ofce.fr/blog2024/fr/2025/20250630_PIM/Post_AnneeBlanche.fr.pdf"
+    }
+   ]
+  },
+  {
+   "id": "age65",
+   "parts": {
+    "moyens": 0.3,
+    "agents": 0.1,
+    "smic": 0.2,
+    "aises": 0.1,
+    "sansemploi": 0.3
+   },
+   "fiabilite": "convention",
+   "explication": "La mesure touche les personnes qui auraient pu partir à 64 ans et doivent attendre 65 ans. Selon l'Insee (2023), à 64 ans, environ 73 % des personnes non retraitées sont en emploi et 27 % ne sont ni en emploi ni à la retraite, ces dernières restant plus longtemps au chômage ou au RSA. La part en emploi est répartie par convention selon le salaire. Les agents publics, comptés à part des classes moyennes, en reçoivent une part à proportion de leur nombre.",
+   "sources": [
+    {
+     "t": "Insee, La situation des seniors sur le marché du travail en 2023",
+     "u": "https://www.insee.fr/fr/statistiques/7767123"
+    }
+   ]
+  },
+  {
+   "id": "ondam",
+   "parts": {
+    "retraites": 0.4,
+    "nonreparti": 0.3,
+    "agents": 0.15,
+    "grandes": 0.15
+   },
+   "fiabilite": "convention",
+   "explication": "Le freinage de l'ONDAM pèse sur les patients (remboursements, franchises, délais) et sur les offreurs de soins : hôpitaux publics et industrie du médicament par les baisses de prix. La DREES montre que la dépense de soins croît fortement avec l'âge, d'où une part importante pour les retraités. La part des autres patients est diffuse et n'est pas attribuée. Toutes ces parts sont une convention.",
+   "sources": [
+    {
+     "t": "DREES, Plus les dépenses de santé sont importantes, plus la part prise en charge par l'assurance maladie obligatoire est élevée",
+     "u": "https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse/etudes-et-resultats/plus-les-depenses-de-sante-sont-importantes"
+    },
+    {
+     "t": "DREES, Les déterminants individuels des dépenses de santé",
+     "u": "https://drees.solidarites-sante.gouv.fr/publications/etudes-et-resultats/les-determinants-individuels-des-depenses-de-sante"
+    }
+   ]
+  },
+  {
+   "id": "agences",
+   "parts": {
+    "agents": 0.5,
+    "nonreparti": 0.5
+   },
+   "fiabilite": "convention",
+   "explication": "Supprimer ou fusionner des opérateurs fait baisser à la fois leurs effectifs, d'où une part pour les agents publics, et les missions ou aides qu'ils portent, dont les bénéficiaires sont diffus. Le partage à parts égales est une convention.",
+   "sources": []
+  },
+  {
+   "id": "immigration",
+   "parts": {
+    "etrangers": 0.9,
+    "nonreparti": 0.1
+   },
+   "fiabilite": "convention",
+   "explication": "Les postes identifiables (aide médicale d'État, demande d'asile, hébergement d'urgence) visent des personnes étrangères. Une petite part, celle des opérateurs et associations qui gèrent ces dispositifs, n'est pas attribuée. Les parts sont une convention.",
+   "sources": []
+  },
+  {
+   "id": "ue",
+   "parts": {
+    "nonreparti": 1.0
+   },
+   "fiabilite": "convention",
+   "explication": "La contribution au budget de l'Union européenne finance des politiques communes dont les retours ne se rattachent pas à un groupe. Elle n'est pas attribuée.",
+   "sources": []
+  },
+  {
+   "id": "ame",
+   "parts": {
+    "etrangers": 1.0
+   },
+   "fiabilite": "sourcee",
+   "explication": "L'aide médicale d'État prend en charge les soins des personnes étrangères en situation irrégulière. Le rapport Évin-Stefanini note qu'environ la moitié des bénéficiaires potentiels n'y recourent pas. Un report d'une partie des soins vers les urgences hospitalières est évoqué, mais il n'est pas chiffré.",
+   "sources": [
+    {
+     "t": "Banque des territoires, L'aide médicale d'État « adaptable mais pas condamnable » selon le rapport Évin-Stefanini",
+     "u": "https://www.banquedesterritoires.fr/aide-medicale-detat-adaptable-mais-pas-condamnable-selon-le-rapport-evin-stefanini"
+    }
+   ]
+  },
+  {
+   "id": "institutions",
+   "parts": {
+    "nonreparti": 1.0
+   },
+   "fiabilite": "convention",
+   "explication": "Le fonctionnement des institutions (Élysée, Parlement, Conseil constitutionnel) n'a pas de bénéficiaire identifiable parmi les groupes.",
+   "sources": []
+  }
+ ]
+}
