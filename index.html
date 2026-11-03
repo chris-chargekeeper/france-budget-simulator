@@ -440,8 +440,8 @@ footer .fbrand{font-family:"IBM Plex Mono",ui-monospace,monospace;color:var(--in
    dessous ; la petite courbe disparaît (toucher la ligne déplie la trajectoire complète). */
 .cmp-m{display:none}
 @media (max-width:640px){
-  .cmp{min-width:0;--cmp-k:.62}
-  .cmp-row{grid-template-columns:minmax(0,1fr) 118px;grid-template-areas:"who bar" "who meta";gap:3px 12px;padding:10px 8px}
+  .cmp,#cmp{min-width:0}
+  .cmp-row{--cmp-k:.62;grid-template-columns:minmax(0,1fr) 118px;grid-template-areas:"who bar" "who meta";gap:3px 12px;padding:10px 8px}
   .cmp-who{grid-area:who}
   .cmp-spark,.cmp-row > .cmp-num{display:none}
   .cmp-bar{grid-area:bar}
@@ -1168,7 +1168,9 @@ footer{padding-bottom:120px}
 .hist-chiffres b{display:block;font-family:"IBM Plex Mono",monospace;font-size:20px;font-weight:600;color:var(--ink);line-height:1.2}
 .hist-chiffres span{display:block;font-size:12px;color:var(--ink-2);line-height:1.35;margin-top:2px}
 .hist-crise{fill:var(--critical);opacity:.09}
-.hist-glisse,.hist-axe{display:none}
+.hist-glisse,.hist-axe,.hist-fleche{display:none}
+@keyframes hist-pousse{0%,100%{transform:translate(0,-50%)}50%{transform:translate(5px,-50%)}}
+@keyframes hist-pousse-t{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}
 .hist-cadre{position:relative}
 @media (max-width:640px){
   /* Deux fois la largeur de l'écran : on fait glisser pour remonter le temps. Bords estompés tant
@@ -1183,7 +1185,13 @@ footer{padding-bottom:120px}
     background:linear-gradient(90deg,var(--surface) 75%,transparent)}
   .hist-axe span{position:absolute;right:8px;font-size:10.5px;color:var(--ink-3);font-variant-numeric:tabular-nums;transform:translateY(-50%)}
   .hist-glisse{display:block;margin:6px 0 0;font-size:12px;color:var(--ink-2);text-align:center;transition:opacity .3s}
+  .hist-glisse-f{display:inline-block;animation:hist-pousse-t 1.2s ease-in-out infinite}
   .hist-glisse.vu{opacity:0}
+  /* Flèche sur le bord droit : elle pousse doucement vers la droite, et fait avancer d'un écran. */
+  .hist-fleche{display:flex;position:absolute;right:-4px;top:55%;z-index:2;width:34px;height:34px;border-radius:50%;
+    align-items:center;justify-content:center;padding:0;border:1px solid var(--rule);background:var(--surface);color:var(--s-base);
+    box-shadow:0 2px 8px rgba(0,0,0,.12);cursor:pointer;transform:translateY(-50%);animation:hist-pousse 1.2s ease-in-out infinite;transition:opacity .25s}
+  .hist-fleche.fin{opacity:0;pointer-events:none}
 }
 .hist-crise-lab{fill:var(--critical);font-size:10px;opacity:.85}
 .hist-note{margin:8px 0 0;font-size:11.5px;line-height:1.45;color:var(--ink-3)}
@@ -1482,11 +1490,12 @@ footer{padding-bottom:120px}
       </div>
       <div class="hist-cadre">
       <div class="hist-axe" id="histAxe" aria-hidden="true"></div>
+      <button type="button" class="hist-fleche" id="histFleche" aria-label="Avancer dans le temps"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div class="hist-defil" id="histDefil">
         <svg class="chart" id="chHist" viewBox="0 0 620 300" role="img" aria-label="Dette publique française en pourcentage du PIB depuis 1960, avec les crises"></svg>
       </div>
       </div>
-      <p class="hist-glisse" aria-hidden="true">← Faites glisser le graphique pour remonter jusqu'en 1960</p>
+      <p class="hist-glisse" aria-hidden="true">Faites glisser pour avancer jusqu'à aujourd'hui <span class="hist-glisse-f">→</span></p>
       <p class="hist-note" id="histNote"></p>
     </div>
     <div class="panel adv-only">
@@ -3146,12 +3155,15 @@ function histChart(svg, o){
       t.textContent = c.lab; svg.appendChild(t);
     }
   });
+  /* Échelle fixe visible (téléphone) : elle remplace les % dessinés dans le graphique. */
+  const axeFixe = o.axe && getComputedStyle($(o.axe)).display !== 'none';
   if (o.axe){
     const ax = $(o.axe); ax.textContent = '';
     for (let t = 0; t <= o.yMax; t += o.step){ const sp = el('span', null, t + ' %'); sp.style.top = (y(t) * svg.getBoundingClientRect().height / H) + 'px'; ax.appendChild(sp); }
   }
   for (let t = 0; t <= o.yMax; t += o.step){
     svg.appendChild(sv('line',{x1:L, x2:W-R, y1:y(t), y2:y(t), class:'gridline'}));
+    if (axeFixe) continue;
     const lab = sv('text',{x:L-8, y:y(t)+3.5, class:'tick', 'text-anchor':'end'});
     lab.textContent = t + ' %'; svg.appendChild(lab);
   }
@@ -3252,12 +3264,27 @@ function histDefilement(){
     box.style.setProperty('--fg', box.scrollLeft > 4 ? '28px' : '0px');
     box.style.setProperty('--fd', box.scrollLeft < reste - 4 ? '28px' : '0px');
   };
-  const aLaFin = () => { box.scrollLeft = box.scrollWidth; maj(); };
+  /* On part de 1960 : l'histoire se lit de gauche à droite. */
+  const fleche = $('#histFleche');
+  let demo = false;
+  const majFleche = () => fleche.classList.toggle('fin', box.scrollLeft >= box.scrollWidth - box.clientWidth - 4);
   box.addEventListener('scroll', () => {
-    maj();
-    if (box.scrollLeft < box.scrollWidth - box.clientWidth - 40) $('.hist-glisse').classList.add('vu');
+    maj(); majFleche();
+    if (!demo && box.scrollLeft > 40) $('.hist-glisse').classList.add('vu');
   }, {passive:true});
-  requestAnimationFrame(aLaFin);
+  fleche.addEventListener('click', () => box.scrollBy({left: box.clientWidth * .8, behavior: 'smooth'}));
+  requestAnimationFrame(() => { box.scrollLeft = 0; maj(); majFleche(); });
+  /* À la première apparition, un léger aller-retour montre que le graphique glisse. */
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    const io = new IntersectionObserver(es => {
+      if (!es[0].isIntersecting || box.scrollWidth <= box.clientWidth) return;
+      io.disconnect(); demo = true;
+      setTimeout(() => box.scrollTo({left: 70, behavior: 'smooth'}), 350);
+      setTimeout(() => box.scrollTo({left: 0, behavior: 'smooth'}), 1050);
+      setTimeout(() => { demo = false; }, 1700);
+    }, {threshold: .6});
+    io.observe(box);
+  }
   addEventListener('resize', () => requestAnimationFrame(maj));
 }
 
