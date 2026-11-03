@@ -581,7 +581,8 @@ body.adv .simple-only{display:none!important}
 .compo-row.four.hdr{padding:0 0 6px;white-space:nowrap}
 .compo-row.four > :nth-child(3),.compo-row.four > :nth-child(4){text-align:right}
 .compo-row .compo-track,.compo-row .compo-bar{height:10px;border-radius:99px}
-.compo-row .thousand{font-weight:600;color:var(--ink-2)}
+.compo-row .thousand{font-weight:600;color:var(--ink-2);white-space:nowrap}
+.compo-pct{font-weight:400;font-size:11.5px;color:var(--ink-3);margin-right:8px}
 @media (max-width:620px){
   /* sur téléphone, chaque poste devient une petite fiche : le montant sur 1 000 € en grand,
      une barre pleine largeur, le détail au toucher */
@@ -598,6 +599,7 @@ body.adv .simple-only{display:none!important}
   .compo-row .thousand{grid-area:th;font-family:"IBM Plex Sans",sans-serif;font-size:19px;font-weight:700;
     letter-spacing:-.02em;color:var(--ink);align-self:center}
   #compoDep .thousand{color:var(--dep)} #compoPay .thousand{color:var(--rec)}
+  .compo-row .compo-pct{font-size:12px;letter-spacing:0;margin-right:6px}
   .compo-row .sub-list{display:none;font-weight:400;font-size:12.5px;margin-top:4px}
   .compo-row.open .sub-list{display:block}
   .compo-row.open .n{align-items:flex-start}
@@ -2926,6 +2928,8 @@ function renderRepartition(){
 }
 
 /* ---------- compositions & repères ---------- */
+/** Part en %, discrète à côté du montant sur 1 000 € : « 23 % », « 7,7 % », « 0,01 % ». */
+const partTxt = x => nf(x, x >= 10 ? 0 : x >= 1 ? 1 : x >= .1 ? 2 : 3) + ' %';
 function barRows(host, rows, max, strong, header){
   host.textContent = '';
   if (header){
@@ -2947,7 +2951,11 @@ function barRows(host, rows, max, strong, header){
     if (strong && strong(r)) bar.classList.add('fort');
     track.appendChild(bar); n.appendChild(track);
     n.appendChild(el('div','v', r.txt != null ? r.txt : nf(r.v)));
-    if (header) n.appendChild(el('div','thousand', r.per));
+    if (header){
+      const th = el('div','thousand');
+      if (r.pct != null) th.appendChild(el('span','compo-pct', partTxt(r.pct)));
+      th.appendChild(document.createTextNode(r.per)); n.appendChild(th);
+    }
     if (r.sub){ n.classList.add('has-sub');
       n.addEventListener('click', () => n.classList.toggle('open')); }
     host.appendChild(n);
@@ -2957,7 +2965,7 @@ function buildCompo(){
   const totDep = BL.apu.depenses;
   const dep = [...BL.depenses].sort((a,b) => b.v - a.v);
   barRows($('#compoDep'), dep.map(d => ({
-    nom:d.nom, v:d.v, sub:d.note, icone:d.icone, per:nf(d.v / totDep * 1000) + ' €'
+    nom:d.nom, v:d.v, sub:d.note, icone:d.icone, per:nf(d.v / totDep * 1000) + ' €', pct:d.v / totDep * 100
   })), dep[0].v, r => r.nom === "Charge de la dette", ['Md€', 'sur 1 000 €']);
 
   const agg = {};
@@ -2969,7 +2977,7 @@ function buildCompo(){
     icone: BL.payeurs[k].icone, key: k
   })).sort((a,b) => b.v - a.v);
   const tot = pay.reduce((s,x) => s + x.v, 0);
-  barRows($('#compoPay'), pay.map(p => ({...p, per:nf(p.v / tot * 1000) + ' €'})),
+  barRows($('#compoPay'), pay.map(p => ({...p, per:nf(p.v / tot * 1000) + ' €', pct:p.v / tot * 100})),
           pay[0].v, r => r.key === 'patrimoine', ['Md€', 'sur 1 000 €']);
   // même échelle des deux côtés : pour 1 000 € dépensés, combien rentrent
   $('#payTotal').innerHTML = `Total : ${nf(BL.apu.recettes)} milliards par an. Pour 1 000 € dépensés, `
@@ -2979,7 +2987,7 @@ function buildCompo(){
   barRows($('#reperes'), rp.map(r => ({
     nom: r.nom, v: r.v, sub: r.note, icone: r.icone,
     txt: nf(r.v, r.v < 10 ? 2 : 0),
-    per: nf(r.v / totDep * 1000, r.v < 10 ? 2 : 0) + ' €'
+    per: nf(r.v / totDep * 1000, r.v < 10 ? 2 : 0) + ' €', pct: r.v / totDep * 100
   })), rp[0].v, r => r.v < 5, ['Md€', 'sur 1 000 €']);
 
   renderMasses();
