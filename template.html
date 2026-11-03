@@ -3348,7 +3348,7 @@ function renderVerso(host, p){
   top.appendChild(el('div','qp-kick', p ? (p.horsCourse ? "Le candidat IA" : "Avec le programme de " + p.candidat)
     : state.party === 'tend' ? "Si rien ne change" : "Votre scénario"));
   top.appendChild(el('h3', null, "Qui paie, qui reçoit en 2032"));
-  top.appendChild(el('p', null, "Par an, une fois les mesures en place, par personne (ou par foyer, par entreprise). Touchez une ligne pour le détail."));
+  top.appendChild(el('p', null, "Montants par an, en 2032, une fois toutes les mesures en place : ni par mois, ni cumulés sur le mandat. Par personne, ou par foyer et par entreprise quand c'est indiqué. Touchez une ligne pour le détail."));
   const leg = el('div','qp-leg');
   const l1 = el('span'); l1.append(el('i'), document.createTextNode("perd : impôts en plus, aides en moins"));
   const l2 = el('span','g'); l2.append(el('i'), document.createTextNode("reçoit : impôts en moins, aides en plus"));
@@ -3389,7 +3389,7 @@ function renderVerso(host, p){
       bar.setAttribute('role','img');
       bar.setAttribute('aria-label', vide ? "pas concerné" : `perd ${eurU(r.perte)}, reçoit ${eurU(r.gain)} ${r.g.par}`);
       const nv = el('div','qp-net ' + (vide || Math.abs(net) < .5 ? 'zero' : net < 0 ? 'perte' : 'gain'),
-        vide ? "pas concerné" : Math.abs(net) < .5 ? "≈ 0 €" : eurS(net));
+        vide ? "pas concerné" : Math.abs(net) < .5 ? "≈ 0 €/an" : eurS(net) + "/an");
       if (!vide) nv.appendChild(el('small', null, r.g.par));
       if (vide){
         const d = el('div','qp-row nul'), line = el('div','qp-line');
@@ -3398,12 +3398,13 @@ function renderVerso(host, p){
       const d = el('details','qp-row'), su = el('summary');
       su.append(lab, bar, nv); d.appendChild(su);
       const det = el('div','qp-det');
-      det.appendChild(el('div','qp-pg', `perd ${eurU(r.perte)} · reçoit ${eurU(r.gain)} · ${r.g.par}`));
+      det.appendChild(el('div','qp-pg', `par an : perd ${eurU(r.perte)} · reçoit ${eurU(r.gain)} · ${r.g.par}`
+        + (INC_PAR_PERSONNE.includes(r.g.id) && Math.abs(net) >= 12 ? ` — soit ${eurS(net / 12)} par mois` : '')));
       r.items.sort((a, b) => b.v - a.v).forEach(it => {
         const x = el('div','qp-it');
         x.appendChild(el('span','sg' + (it.perte ? '' : ' gain'), it.perte ? '−' : '+'));
         x.appendChild(el('span', null, it.m.lab));
-        x.appendChild(el('span','v', eurS(it.perte ? -it.v : it.v)));
+        x.appendChild(el('span','v', eurS(it.perte ? -it.v : it.v) + '/an'));
         const why = el('p','why qp-why');
         why.appendChild(el('span','qp-fi ' + it.k.fiabilite, it.k.fiabilite === 'sourcee' ? "clé sourcée" : "convention"));
         why.appendChild(document.createTextNode(`${nf(it.k.parts[r.g.id] * 100)} % de ${md(it.mds / it.k.parts[r.g.id], 1)}. ${it.k.explication} `));
