@@ -436,6 +436,19 @@ footer .fbrand{font-family:"IBM Plex Mono",ui-monospace,monospace;color:var(--in
 .fmontant{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;color:var(--ink)}
 .unver{font-size:11px;color:var(--ink-3);font-style:italic}
 @media (max-width:700px){.cmp-head{display:none}}
+/* Téléphone : pas de défilement horizontal. Candidat à gauche, déficit 2032 à droite, dette et effort
+   dessous ; la petite courbe disparaît (toucher la ligne déplie la trajectoire complète). */
+.cmp-m{display:none}
+@media (max-width:640px){
+  .cmp{min-width:0;--cmp-k:.62}
+  .cmp-row{grid-template-columns:minmax(0,1fr) 118px;grid-template-areas:"who bar" "who meta";gap:3px 12px;padding:10px 8px}
+  .cmp-who{grid-area:who}
+  .cmp-spark,.cmp-row > .cmp-num{display:none}
+  .cmp-bar{grid-area:bar}
+  .cmp-bar .lab{left:auto !important;right:0}
+  .cmp-m{display:block;grid-area:meta;font-size:10.5px;color:var(--ink-3);text-align:right;line-height:1.3;white-space:nowrap}
+  .cmp-name{white-space:normal;font-size:13px}
+}
 .cmp-exp{position:sticky;left:0;width:var(--cmp-vue,100%);box-sizing:border-box;padding:4px 0 14px;box-shadow:inset 3px 0 0 var(--pc);margin:0 0 6px;background:var(--surface-2);border-radius:0 0 8px 8px}
 .cmp-exp .panel{border:0;box-shadow:none;background:transparent;margin:0}
 @media (max-width:560px){.cmp-exp .panel{padding:12px 8px 8px}}
@@ -1155,6 +1168,23 @@ footer{padding-bottom:120px}
 .hist-chiffres b{display:block;font-family:"IBM Plex Mono",monospace;font-size:20px;font-weight:600;color:var(--ink);line-height:1.2}
 .hist-chiffres span{display:block;font-size:12px;color:var(--ink-2);line-height:1.35;margin-top:2px}
 .hist-crise{fill:var(--critical);opacity:.09}
+.hist-glisse,.hist-axe{display:none}
+.hist-cadre{position:relative}
+@media (max-width:640px){
+  /* Deux fois la largeur de l'écran : on fait glisser pour remonter le temps. Bords estompés tant
+     qu'il reste à voir de ce côté. */
+  .hist-defil{overflow-x:auto;margin:0 -6px;padding:0 6px;scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 var(--fg,0px),#000 calc(100% - var(--fd,0px)),transparent 100%);
+            mask-image:linear-gradient(90deg,transparent 0,#000 var(--fg,0px),#000 calc(100% - var(--fd,0px)),transparent 100%)}
+  .hist-defil::-webkit-scrollbar{display:none}
+  .hist-defil #chHist{width:720px;max-width:none}
+  /* L'échelle des % reste visible pendant qu'on fait glisser. */
+  .hist-axe{display:block;position:absolute;left:-6px;top:0;bottom:0;width:40px;z-index:1;pointer-events:none;
+    background:linear-gradient(90deg,var(--surface) 75%,transparent)}
+  .hist-axe span{position:absolute;right:8px;font-size:10.5px;color:var(--ink-3);font-variant-numeric:tabular-nums;transform:translateY(-50%)}
+  .hist-glisse{display:block;margin:6px 0 0;font-size:12px;color:var(--ink-2);text-align:center;transition:opacity .3s}
+  .hist-glisse.vu{opacity:0}
+}
 .hist-crise-lab{fill:var(--critical);font-size:10px;opacity:.85}
 .hist-note{margin:8px 0 0;font-size:11.5px;line-height:1.45;color:var(--ink-3)}
 .hist-note a{color:var(--ink-3)}
@@ -1450,7 +1480,13 @@ footer{padding-bottom:120px}
         <span><i class="camp-carre" style="background:#d4537e;opacity:.55"></i> gauche</span>
         <span><i class="camp-carre" style="background:#e0a020;opacity:.55"></i> centre</span>
       </div>
-      <svg class="chart" id="chHist" viewBox="0 0 620 300" role="img" aria-label="Dette publique française en pourcentage du PIB depuis 1960, avec les crises"></svg>
+      <div class="hist-cadre">
+      <div class="hist-axe" id="histAxe" aria-hidden="true"></div>
+      <div class="hist-defil" id="histDefil">
+        <svg class="chart" id="chHist" viewBox="0 0 620 300" role="img" aria-label="Dette publique française en pourcentage du PIB depuis 1960, avec les crises"></svg>
+      </div>
+      </div>
+      <p class="hist-glisse" aria-hidden="true">← Faites glisser le graphique pour remonter jusqu'en 1960</p>
       <p class="hist-note" id="histNote"></p>
     </div>
     <div class="panel adv-only">
@@ -2177,9 +2213,9 @@ function renderCompare(base){
 
     const bar = el('div','cmp-bar');
     const fill = el('div','fill');
-    fill.style.width = (Math.abs(r.solde) / worst * 74) + '%';
+    fill.style.width = `calc(${Math.abs(r.solde) / worst * 74}% * var(--cmp-k, 1))`;
     fill.style.background = tone;
-    const lim = el('div','lim'); lim.style.left = (3 / worst * 74) + '%';
+    const lim = el('div','lim'); lim.style.left = `calc(${3 / worst * 74}% * var(--cmp-k, 1))`;
     const lab = el('div','lab', pc(-r.solde));
     lab.style.left = 'calc(' + (Math.abs(r.solde) / worst * 74) + '% + 8px)';
     lab.style.color = (tone === 'var(--good)' || tone === 'var(--ia)') ? tone : 'var(--ink)';
@@ -2189,6 +2225,10 @@ function renderCompare(base){
     const net = el('div','cmp-num', r.ref ? '—' : signed(r.net, 0));
     if (!r.ref) net.style.color = r.net >= 0 ? 'var(--pos)' : 'var(--neg)';
     b.appendChild(net);
+    const m = el('div','cmp-m', 'dette ' + pc(r.dette, 0) + (r.ref ? '' : ' · '));
+    m.title = 'Dette en 2032 et effort net des mesures';
+    if (!r.ref){ const e = el('span', null, signed(r.net, 0)); e.style.color = net.style.color; m.appendChild(e); }
+    b.appendChild(m);
     host.appendChild(b);
     if (ouvert){
       const exp = el('div','cmp-exp'); exp.id = 'cmpExp';
@@ -3106,6 +3146,10 @@ function histChart(svg, o){
       t.textContent = c.lab; svg.appendChild(t);
     }
   });
+  if (o.axe){
+    const ax = $(o.axe); ax.textContent = '';
+    for (let t = 0; t <= o.yMax; t += o.step){ const sp = el('span', null, t + ' %'); sp.style.top = (y(t) * svg.getBoundingClientRect().height / H) + 'px'; ax.appendChild(sp); }
+  }
   for (let t = 0; t <= o.yMax; t += o.step){
     svg.appendChild(sv('line',{x1:L, x2:W-R, y1:y(t), y2:y(t), class:'gridline'}));
     const lab = sv('text',{x:L-8, y:y(t)+3.5, class:'tick', 'text-anchor':'end'});
@@ -3199,6 +3243,24 @@ function histFrise(svg, x, T, bas, h){
   });
 }
 
+/** Sur téléphone, le graphique déborde exprès : il s'ouvre sur les années récentes, et les bords
+ *  s'estompent tant qu'il reste à voir de ce côté. L'invitation disparaît au premier glissement. */
+function histDefilement(){
+  const box = $('#histDefil'); if (!box || box._pret) return; box._pret = true;
+  const maj = () => {
+    const reste = box.scrollWidth - box.clientWidth;
+    box.style.setProperty('--fg', box.scrollLeft > 4 ? '28px' : '0px');
+    box.style.setProperty('--fd', box.scrollLeft < reste - 4 ? '28px' : '0px');
+  };
+  const aLaFin = () => { box.scrollLeft = box.scrollWidth; maj(); };
+  box.addEventListener('scroll', () => {
+    maj();
+    if (box.scrollLeft < box.scrollWidth - box.clientWidth - 40) $('.hist-glisse').classList.add('vu');
+  }, {passive:true});
+  requestAnimationFrame(aLaFin);
+  addEventListener('resize', () => requestAnimationFrame(maj));
+}
+
 /** Président, gouvernement en fin d'année, crise : ce que l'infobulle ajoute à une année. */
 function histContexte(an){
   const pres = HIST.presidents.filter(p => p.de <= an && an < p.a).pop() || HIST.presidents[HIST.presidents.length - 1];
@@ -3232,7 +3294,8 @@ function renderHistoire(){
    [nf(hausseCrises) + ' pts', `de hausse pendant trois crises : 1993, 2008-2009, 2020`],
    [(horsCrise > 0 ? '+' : '') + nf(horsCrise, 1) + ' pt', `par an en moyenne hors de ces crises`]
   ].forEach(([b, t]) => { const d = el('div'); d.append(el('b', null, b), el('span', null, t)); ch.appendChild(d); });
-  histChart($('#chHist'), {draw:histChart, yMax:140, step:20, labels:true, presidents:true,
+  histDefilement();
+  histChart($('#chHist'), {draw:histChart, yMax:140, step:20, labels:true, presidents:true, axe:'#histAxe',
     series:[{nom:'France', color:HIST_COULEURS.fr, vals:fr, fort:true}]});
   const src = HIST.sources.map(s => `<a href="${s.u}" target="_blank" rel="noopener">${s.t}</a>`).join(' ; ');
   $('#histNote').innerHTML = `Sous chaque président : la variation de la dette pendant sa présidence, en points de PIB `
