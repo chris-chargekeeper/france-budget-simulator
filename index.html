@@ -436,6 +436,11 @@ footer .fbrand{font-family:"IBM Plex Mono",ui-monospace,monospace;color:var(--in
 .fmontant{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;color:var(--ink)}
 .unver{font-size:11px;color:var(--ink-3);font-style:italic}
 @media (max-width:700px){.cmp-head{display:none}}
+.cmp-exp{position:sticky;left:0;width:min(100%,calc(100vw - 48px));padding:4px 0 14px;border-left:3px solid var(--pc);margin:0 0 6px;background:var(--surface-2);border-radius:0 0 8px 8px}
+.cmp-exp .panel{border:0;box-shadow:none;background:transparent;margin:0}
+@media (max-width:560px){.cmp-exp .panel{padding:12px 8px 8px}}
+.cmp-row[aria-expanded="true"]{border-radius:6px 6px 0 0}
+body:not(.adv) #resultat .charts{display:none}
 </style>
 
 <style>
@@ -1400,12 +1405,13 @@ footer{padding-bottom:120px}
   <section aria-labelledby="h-cmp">
     <div class="sec-head">
       <div><div class="eyebrow">Vue d'ensemble</div><h2 id="h-cmp">Tous les programmes côte à côte</h2></div>
-      <p>Même calcul, même échelle, pour tous. Cliquez sur une ligne pour la charger et en voir le détail.</p>
+      <p>Même calcul, même échelle, pour tous. Cliquez sur une ligne pour voir la trajectoire du déficit, année par année.</p>
     </div>
     <div class="panel">
       <div class="scroller"><div id="cmp"></div></div>
       <p class="sub" id="cmpNote" style="margin-top:12px"></p>
     </div>
+    <div id="rangementDeficit" hidden></div>
   </section>
 
   <section id="contexte" class="adv-only" aria-labelledby="h-ctx">
@@ -1787,7 +1793,7 @@ function run(P, active){
 }
 
 /* ---------- état & format ---------- */
-const state = {P:{...DEFAULTS}, active:{}, party:'tend', annonce:false, adv:false, feed:'all'};
+const state = {P:{...DEFAULTS}, active:{}, party:'tend', annonce:false, adv:false, feed:'all', cmpOpen:null};
 const nf = (v, d=0) => new Intl.NumberFormat('fr-FR',{minimumFractionDigits:d, maximumFractionDigits:d}).format(v);
 const sign = s => String(s).replace(/-/g,'−');
 const md = (v, d=0) => sign(nf(v,d)) + ' Md€';
@@ -1815,7 +1821,10 @@ const hideTip = () => { tip.style.opacity = 0; };
 
 function lineChart(svg, o){
   svg.textContent = '';
-  const W = 620, H = 290, L = 48, R = 58, T = 16, B = 34;
+  /* Sur téléphone, un repère plus étroit garde le texte lisible au lieu de tout réduire. */
+  const etroit = matchMedia('(max-width:560px)').matches;
+  const W = etroit ? 300 : 620, H = etroit ? 230 : 290, L = 48, R = 58, T = 16, B = 34;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
   const n = o.years.length;
   const x = i => L + i * (W - L - R) / (n - 1);
   const y = v => T + (o.yMax - v) / (o.yMax - o.yMin) * (H - T - B);
@@ -2002,6 +2011,7 @@ function render(){
   renderVerdict(base, scen, split);
   renderScore(base, scen, split);
   renderCompare(base);
+  placerDeficit();
   renderFeed();
   renderGap(split);
   renderTrou();
@@ -2036,6 +2046,16 @@ const initials = n => {
   return (w[0][0] + (w.length > 1 ? w[w.length - 1][0] : '')).toUpperCase();
 };
 
+/** Le graphique du déficit : à côté de la dette en mode détaillé ; dans la vue simple, déplié sous
+ *  la ligne cliquée du tableau « Tous les programmes côte à côte », et rangé sinon. */
+const PANNEAU_DEFICIT = document.getElementById('chSolde').closest('.panel');
+const RANGEMENT_DEFICIT = document.getElementById('rangementDeficit');
+function placerDeficit(){
+  const exp = $('#cmpExp');
+  if (state.adv) $('#resultat .charts').prepend(PANNEAU_DEFICIT);
+  else if (exp) exp.appendChild(PANNEAU_DEFICIT);
+  else RANGEMENT_DEFICIT.appendChild(PANNEAU_DEFICIT);
+}
 function renderCompare(base){
   const host = $('#cmp'); host.textContent = '';
   const refVals = base.map(r => r.soldePct);
@@ -2066,7 +2086,14 @@ function renderCompare(base){
     const b = el('button','cmp-row' + (r.ref ? ' ref' : ''));
     b.type = 'button'; b.style.setProperty('--pc', r.couleur);
     b.setAttribute('aria-pressed', String(r.id === state.party));
-    b.addEventListener('click', () => document.querySelector(`.card[data-id="${r.id}"]`).click());
+    const ouvert = state.cmpOpen === r.id && state.party === r.id;
+    b.setAttribute('aria-expanded', String(ouvert));
+    /* Un clic charge le candidat et déplie sa trajectoire sous la ligne ; un second clic la replie. */
+    b.addEventListener('click', () => {
+      if (ouvert){ state.cmpOpen = null; render(); return; }
+      state.cmpOpen = r.id;
+      document.querySelector(`.card[data-id="${r.id}"]`).click();
+    });
 
     const who = el('div','cmp-who');
     const av = el('div','cmp-av');
@@ -2101,6 +2128,11 @@ function renderCompare(base){
     if (!r.ref) net.style.color = r.net >= 0 ? 'var(--pos)' : 'var(--neg)';
     b.appendChild(net);
     host.appendChild(b);
+    if (ouvert){
+      const exp = el('div','cmp-exp'); exp.id = 'cmpExp';
+      exp.style.setProperty('--pc', r.couleur);
+      host.appendChild(exp);
+    }
   });
 
   const best = rows.find(r => !r.ref);
@@ -3716,6 +3748,8 @@ function setMode(adv, save){
   if (save) { try { localStorage.setItem('fbs-mode', adv ? 'adv' : 'simple'); } catch (e) {} }
   render();
 }
+
+matchMedia('(max-width:560px)').addEventListener('change', () => render());
 
 /* ---------- amorçage ---------- */
 buildCards(); buildLedger(); buildParams(); buildCompo(); buildFeedChips(); renderContexte();
