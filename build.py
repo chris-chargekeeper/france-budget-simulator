@@ -17,7 +17,7 @@ import sys
 
 ROOT = pathlib.Path(__file__).parent
 DATA = ROOT / "dataset" / "simulateur"
-FILES = ["baseline", "measures", "parties", "announcements", "assises", "contexte", "incidence"]
+FILES = ["baseline", "measures", "parties", "announcements", "assises", "contexte", "incidence", "histoire"]
 CONTRADICTION = {"non", "programme", "annonce", "inconnu"}
 
 DERIVE = ROOT / "dataset" / "derive"
@@ -238,6 +238,8 @@ def load():
             sys.exit(f"dataset/simulateur/incidence.json: le groupe {g['id']!r} pointe sur l'icône "
                      f"inconnue {g.get('icone')!r}; template.html en déclare {sorted(icones_)}")
 
+    verifier_histoire(payload["histoire"])
+
     dep = sum(x["v"] for x in payload["baseline"]["depenses"])
     rec = sum(x["v"] for x in payload["baseline"]["recettes"])
     apu = payload["baseline"]["apu"]
@@ -246,6 +248,46 @@ def load():
             sys.exit(f"dataset/simulateur/baseline.json: la ventilation des {label} ({got}) ne somme pas à {want}")
     return payload
 
+
+
+def verifier_histoire(h):
+    """L'histoire de la dette : des séries complètes, des périodes cohérentes, une source par bloc.
+
+    Pas de champ `updated` : ce fichier se revoit une fois par an et ne doit pas faire avancer
+    la date « données au … » du bandeau, qui dit la fraîcheur de la veille.
+    """
+    ou = "dataset/simulateur/histoire.json"
+    if "updated" in h:
+        sys.exit(f"{ou}: pas de champ 'updated' (il ferait avancer la date du bandeau) ; utiliser 'revu'")
+    n = h["fin"] - h["debut"] + 1
+    for p in h["pays"]:
+        if len(p["vals"]) != n:
+            sys.exit(f"{ou}: {p['nom']} a {len(p['vals'])} valeurs pour {n} années")
+        if p["vals"][0] is None or p["vals"][-1] is None:
+            sys.exit(f"{ou}: {p['nom']} doit avoir une valeur la première et la dernière année")
+        if any(v is not None and not 0 < v < 300 for v in p["vals"]):
+            sys.exit(f"{ou}: {p['nom']} a une valeur hors de 0-300 % du PIB")
+    if h["pays"][0]["id"] != "fr":
+        sys.exit(f"{ou}: la France doit être le premier pays")
+    fr = h["pays"][0]["vals"]
+    for bloc in ("crises", "presidents", "gouvernements"):
+        for e in h[bloc]:
+            if not (h["debut"] - 1 <= e["de"] <= e["a"] <= h["fin"] + 1):
+                sys.exit(f"{ou}: {bloc} — période {e['de']}-{e['a']} hors de la série")
+    for c in h["crises"]:
+        if "palier" in c:
+            a, b = c["palier"]
+            if fr[a - h["debut"]] is None or fr[b - h["debut"]] is None:
+                sys.exit(f"{ou}: palier {a}-{b} de {c['lab']!r} sans valeur pour la France")
+    for p in h["presidents"]:
+        if fr[max(p["de"], h["debut"]) - h["debut"]] is None or fr[p["a"] - h["debut"]] is None:
+            sys.exit(f"{ou}: mandat {p['court']!r} sans valeur de dette à ses bornes")
+    for q in h["questions"]:
+        if not q.get("r") or not q.get("sources") or not all(s["u"].startswith("http") for s in q["sources"]):
+            sys.exit(f"{ou}: la question {q.get('q')!r} doit avoir une réponse et une source en http")
+    for s in h["sources"] + [h["dernierExcedent"]["source"]]:
+        if not s["u"].startswith("http"):
+            sys.exit(f"{ou}: source inutilisable {s!r}")
 
 
 def verifier_incidence(inc, ids):

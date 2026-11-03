@@ -1,0 +1,595 @@
+{
+ "_comment": "Histoire de la dette publique, pour la section « D'où vient la dette ? ». Séries téléchargées telles quelles (FMI, Commission européenne) ; mise à jour à la main, une fois par an. La veille n'y touche pas.",
+ "revu": "2026-11-03",
+ "debut": 1960,
+ "fin": 2026,
+ "estimationDepuis": 2025,
+ "pays": [
+  {
+   "id": "fr",
+   "nom": "France",
+   "vals": [
+    28.5,
+    26.3,
+    23.6,
+    22.2,
+    19.6,
+    17.6,
+    15.3,
+    16.1,
+    15.8,
+    14.4,
+    21.0,
+    20.1,
+    17.7,
+    15.8,
+    15.4,
+    16.1,
+    15.1,
+    15.0,
+    null,
+    null,
+    20.8,
+    22.0,
+    25.3,
+    26.6,
+    29.0,
+    30.6,
+    31.2,
+    33.5,
+    33.5,
+    34.3,
+    35.4,
+    36.3,
+    40.0,
+    46.3,
+    49.6,
+    55.8,
+    59.7,
+    61.1,
+    61.0,
+    60.2,
+    58.7,
+    58.2,
+    60.1,
+    64.2,
+    65.7,
+    67.2,
+    64.4,
+    64.4,
+    68.1,
+    79.0,
+    81.7,
+    85.2,
+    89.6,
+    92.4,
+    95.3,
+    96.1,
+    98.1,
+    98.7,
+    98.5,
+    98.1,
+    114.8,
+    112.7,
+    111.3,
+    109.7,
+    113.1,
+    116.3,
+    119.1
+   ]
+  },
+  {
+   "id": "de",
+   "nom": "Allemagne",
+   "vals": [
+    18.4,
+    18.7,
+    17.6,
+    18.1,
+    18.2,
+    18.7,
+    19.8,
+    22.5,
+    22.5,
+    20.3,
+    18.3,
+    18.4,
+    18.5,
+    18.1,
+    19.0,
+    24.3,
+    null,
+    27.0,
+    28.4,
+    29.3,
+    31.3,
+    34.9,
+    37.8,
+    39.4,
+    40.1,
+    40.7,
+    40.5,
+    41.6,
+    42.0,
+    40.6,
+    42.2,
+    38.9,
+    41.5,
+    45.1,
+    47.4,
+    54.8,
+    57.6,
+    58.8,
+    59.4,
+    60.0,
+    58.8,
+    57.6,
+    59.2,
+    62.9,
+    64.7,
+    66.9,
+    66.3,
+    63.5,
+    64.9,
+    72.4,
+    81.0,
+    78.3,
+    79.5,
+    77.1,
+    74.5,
+    71.0,
+    68.3,
+    64.0,
+    60.8,
+    58.7,
+    68.0,
+    68.1,
+    65.0,
+    62.9,
+    63.9,
+    65.4,
+    67.0
+   ]
+  },
+  {
+   "id": "gb",
+   "nom": "Royaume-Uni",
+   "vals": [
+    117.9,
+    113.8,
+    110.5,
+    108.6,
+    101.1,
+    94.6,
+    91.9,
+    89.1,
+    88.5,
+    82.8,
+    73.2,
+    65.6,
+    62.0,
+    54.6,
+    51.6,
+    46.7,
+    48.9,
+    50.5,
+    51.6,
+    45.3,
+    42.8,
+    45.1,
+    43.4,
+    42.2,
+    42.6,
+    41.5,
+    41.5,
+    39.6,
+    37.3,
+    32.8,
+    28.8,
+    28.8,
+    33.7,
+    38.5,
+    41.4,
+    44.4,
+    44.6,
+    43.9,
+    41.6,
+    39.6,
+    37.0,
+    34.3,
+    34.2,
+    35.8,
+    38.7,
+    40.0,
+    41.0,
+    42.2,
+    50.3,
+    64.2,
+    75.7,
+    81.3,
+    84.8,
+    86.0,
+    87.9,
+    89.0,
+    87.8,
+    86.7,
+    86.3,
+    85.7,
+    105.8,
+    105.1,
+    99.6,
+    100.4,
+    101.2,
+    103.9,
+    105.4
+   ]
+  },
+  {
+   "id": "it",
+   "nom": "Italie",
+   "vals": [
+    31.4,
+    30.0,
+    29.0,
+    27.2,
+    27.2,
+    28.4,
+    33.4,
+    33.3,
+    35.8,
+    36.5,
+    37.1,
+    42.0,
+    47.7,
+    50.6,
+    50.2,
+    56.6,
+    56.2,
+    55.2,
+    59.4,
+    58.2,
+    56.1,
+    58.5,
+    63.1,
+    69.4,
+    74.9,
+    80.9,
+    85.1,
+    89.1,
+    90.8,
+    93.3,
+    95.2,
+    98.6,
+    105.5,
+    115.7,
+    117.9,
+    108.7,
+    117.7,
+    113.4,
+    110.8,
+    109.7,
+    105.1,
+    104.7,
+    101.9,
+    100.5,
+    100.1,
+    101.9,
+    102.6,
+    99.8,
+    102.4,
+    112.5,
+    115.4,
+    116.5,
+    123.3,
+    129.0,
+    132.5,
+    132.7,
+    134.2,
+    133.7,
+    134.1,
+    133.8,
+    154.3,
+    145.7,
+    138.3,
+    134.6,
+    135.3,
+    137.3,
+    138.5
+   ]
+  },
+  {
+   "id": "es",
+   "nom": "Espagne",
+   "vals": [
+    20.5,
+    17.7,
+    15.5,
+    null,
+    null,
+    11.0,
+    10.9,
+    11.0,
+    11.0,
+    11.3,
+    11.5,
+    10.5,
+    10.7,
+    9.9,
+    8.4,
+    7.3,
+    13.0,
+    15.3,
+    14.3,
+    15.4,
+    17.2,
+    22.2,
+    24.5,
+    29.6,
+    36.2,
+    41.0,
+    42.2,
+    42.1,
+    38.6,
+    40.0,
+    41.5,
+    42.0,
+    44.3,
+    54.8,
+    57.2,
+    61.8,
+    65.9,
+    64.6,
+    62.6,
+    60.9,
+    58.0,
+    54.2,
+    51.3,
+    47.6,
+    45.3,
+    42.3,
+    38.9,
+    35.5,
+    39.4,
+    52.7,
+    60.1,
+    69.5,
+    85.4,
+    93.7,
+    99.3,
+    99.3,
+    102.0,
+    101.1,
+    99.7,
+    97.6,
+    119.2,
+    115.6,
+    109.4,
+    105.0,
+    101.8,
+    100.6,
+    99.0
+   ]
+  }
+ ],
+ "dernierExcedent": {
+  "annee": 1974,
+  "solde": 0.1,
+  "source": {
+   "t": "Commission européenne, AMECO, solde des administrations publiques (UBLG)",
+   "u": "https://db.nomics.world/AMECO/UBLG/FRA.1.0.319.0.UBLG"
+  }
+ },
+ "rupture": {
+  "annee": 1970,
+  "note": "Le saut de 1970 ne correspond à aucun événement connu : c'est vraisemblablement un raccord entre deux sources dans la série historique du FMI."
+ },
+ "crises": [
+  {
+   "de": 1974,
+   "a": 1975,
+   "lab": "Premier choc pétrolier"
+  },
+  {
+   "de": 1979,
+   "a": 1980,
+   "lab": "Second choc pétrolier"
+  },
+  {
+   "de": 1992,
+   "a": 1994,
+   "lab": "Récession de 1993",
+   "palier": [
+    1991,
+    1995
+   ]
+  },
+  {
+   "de": 2008,
+   "a": 2009,
+   "lab": "Crise financière mondiale",
+   "palier": [
+    2007,
+    2010
+   ]
+  },
+  {
+   "de": 2011,
+   "a": 2012,
+   "lab": "Crise de la zone euro"
+  },
+  {
+   "de": 2020,
+   "a": 2020,
+   "lab": "Covid-19",
+   "palier": [
+    2019,
+    2020
+   ]
+  },
+  {
+   "de": 2022,
+   "a": 2023,
+   "lab": "Guerre en Ukraine, crise de l'énergie"
+  }
+ ],
+ "presidents": [
+  {
+   "nom": "Charles de Gaulle",
+   "court": "De Gaulle",
+   "de": 1959,
+   "a": 1969
+  },
+  {
+   "nom": "Georges Pompidou",
+   "court": "Pompidou",
+   "de": 1969,
+   "a": 1974
+  },
+  {
+   "nom": "Valéry Giscard d'Estaing",
+   "court": "Giscard d'Estaing",
+   "de": 1974,
+   "a": 1981
+  },
+  {
+   "nom": "François Mitterrand",
+   "court": "Mitterrand (1er septennat)",
+   "de": 1981,
+   "a": 1988
+  },
+  {
+   "nom": "François Mitterrand",
+   "court": "Mitterrand (2e septennat)",
+   "de": 1988,
+   "a": 1995
+  },
+  {
+   "nom": "Jacques Chirac",
+   "court": "Chirac (septennat)",
+   "de": 1995,
+   "a": 2002
+  },
+  {
+   "nom": "Jacques Chirac",
+   "court": "Chirac (quinquennat)",
+   "de": 2002,
+   "a": 2007
+  },
+  {
+   "nom": "Nicolas Sarkozy",
+   "court": "Sarkozy",
+   "de": 2007,
+   "a": 2012
+  },
+  {
+   "nom": "François Hollande",
+   "court": "Hollande",
+   "de": 2012,
+   "a": 2017
+  },
+  {
+   "nom": "Emmanuel Macron",
+   "court": "Macron (1er mandat)",
+   "de": 2017,
+   "a": 2022
+  },
+  {
+   "nom": "Emmanuel Macron",
+   "court": "Macron (2e mandat)",
+   "de": 2022,
+   "a": 2025
+  }
+ ],
+ "gouvernements": [
+  {
+   "de": 1959,
+   "a": 1981,
+   "camp": "droite"
+  },
+  {
+   "de": 1981,
+   "a": 1986,
+   "camp": "gauche"
+  },
+  {
+   "de": 1986,
+   "a": 1988,
+   "camp": "droite"
+  },
+  {
+   "de": 1988,
+   "a": 1993,
+   "camp": "gauche"
+  },
+  {
+   "de": 1993,
+   "a": 1997,
+   "camp": "droite"
+  },
+  {
+   "de": 1997,
+   "a": 2002,
+   "camp": "gauche"
+  },
+  {
+   "de": 2002,
+   "a": 2012,
+   "camp": "droite"
+  },
+  {
+   "de": 2012,
+   "a": 2017,
+   "camp": "gauche"
+  },
+  {
+   "de": 2017,
+   "a": 2027,
+   "camp": "centre"
+  }
+ ],
+ "questions": [
+  {
+   "id": "35h",
+   "q": "Les 35 heures ?",
+   "r": [
+    "Coût brut : 12,8 milliards d'euros par an d'allègements de cotisations liés aux 35 heures (direction du Budget, chiffrage pour 2013).",
+    "Coût net, une fois comptés les emplois créés et les recettes qu'ils rapportent : 2,5 milliards par an (OFCE). Le président de la commission d'enquête n'a pas partagé les conclusions de sa rapporteure.",
+    "Sur 25 ans, cela fait entre 60 et 320 milliards, soit 2 à 9 % de la dette actuelle, hors intérêts. Le coût dans la fonction publique, à l'hôpital notamment, n'est pas compris."
+   ],
+   "sources": [
+    {
+     "t": "Assemblée nationale, rapport n° 2436 (2014), p. 106-107 et 111",
+     "u": "https://www.assemblee-nationale.fr/14/pdf/rap-enq/r2436.pdf"
+    }
+   ]
+  },
+  {
+   "id": "retraite60",
+   "q": "La retraite à 60 ans ?",
+   "r": [
+    "Aucun chiffrage officiel n'isole l'effet de la réforme de 1982 sur la dette. L'âge a d'ailleurs été relevé depuis : 62 ans en 2010, 64 ans en 2023.",
+    "Ce qui est mesuré : la France consacre à la vieillesse 2,9 points de PIB de plus que la moyenne de la zone euro, environ 85 milliards par an. C'est financé surtout par des cotisations : cela pèse sur les prélèvements plus que sur la dette (voir « Qui paie les retraites ? » plus bas)."
+   ],
+   "sources": [
+    {
+     "t": "Rexecode, audition au Sénat du 21 octobre 2026 (Eurostat, 2024)",
+     "u": "https://www.senat.fr/fileadmin/cru-1792598966/Commissions/Finances/2026-2027/Divers/Presentation_TableRonde_20261021_Rexecode.pdf"
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "t": "FMI, base historique de la dette publique (1960-2015)",
+   "u": "https://db.nomics.world/IMF/HPDD"
+  },
+  {
+   "t": "FMI, Perspectives de l'économie mondiale (2016-2026 ; 2025 et 2026 estimés)",
+   "u": "https://db.nomics.world/IMF/WEO:latest"
+  },
+  {
+   "t": "Commission européenne, AMECO (solde public)",
+   "u": "https://db.nomics.world/AMECO/UBLG/FRA.1.0.319.0.UBLG"
+  }
+ ]
+}
