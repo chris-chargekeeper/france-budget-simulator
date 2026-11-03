@@ -437,67 +437,78 @@
    "nom": "Charles de Gaulle",
    "court": "De Gaulle",
    "de": 1959,
-   "a": 1969
+   "a": 1969,
+   "camp": "droite"
   },
   {
    "nom": "Georges Pompidou",
    "court": "Pompidou",
    "de": 1969,
-   "a": 1974
+   "a": 1974,
+   "camp": "droite"
   },
   {
    "nom": "Valéry Giscard d'Estaing",
    "court": "Giscard d'Estaing",
    "de": 1974,
-   "a": 1981
+   "a": 1981,
+   "camp": "droite"
   },
   {
    "nom": "François Mitterrand",
    "court": "Mitterrand (1er septennat)",
    "de": 1981,
-   "a": 1988
+   "a": 1988,
+   "camp": "gauche"
   },
   {
    "nom": "François Mitterrand",
    "court": "Mitterrand (2e septennat)",
    "de": 1988,
-   "a": 1995
+   "a": 1995,
+   "camp": "gauche"
   },
   {
    "nom": "Jacques Chirac",
    "court": "Chirac (septennat)",
    "de": 1995,
-   "a": 2002
+   "a": 2002,
+   "camp": "droite"
   },
   {
    "nom": "Jacques Chirac",
    "court": "Chirac (quinquennat)",
    "de": 2002,
-   "a": 2007
+   "a": 2007,
+   "camp": "droite"
   },
   {
    "nom": "Nicolas Sarkozy",
    "court": "Sarkozy",
    "de": 2007,
-   "a": 2012
+   "a": 2012,
+   "camp": "droite"
   },
   {
    "nom": "François Hollande",
    "court": "Hollande",
    "de": 2012,
-   "a": 2017
+   "a": 2017,
+   "camp": "gauche"
   },
   {
    "nom": "Emmanuel Macron",
    "court": "Macron (1er mandat)",
    "de": 2017,
-   "a": 2022
+   "a": 2022,
+   "camp": "centre"
   },
   {
    "nom": "Emmanuel Macron",
    "court": "Macron (2e mandat)",
    "de": 2022,
-   "a": 2025
+   "a": 2025,
+   "camp": "centre"
   }
  ],
  "gouvernements": [
@@ -591,5 +602,6 @@
    "t": "Commission européenne, AMECO (solde public)",
    "u": "https://db.nomics.world/AMECO/UBLG/FRA.1.0.319.0.UBLG"
   }
- ]
+ ],
+ "_campsPresidents": "Sensibilité du président : droite pour les présidents gaullistes et libéraux (Giscard d'Estaing compris, centre droit), gauche pour les présidents socialistes, centre pour Emmanuel Macron. Le camp du gouvernement, qui vote le budget avec le Parlement, est dans « gouvernements » (cohabitations)."
 }

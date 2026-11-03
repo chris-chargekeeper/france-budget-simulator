@@ -282,6 +282,9 @@ def verifier_histoire(h):
     for p in h["presidents"]:
         if fr[max(p["de"], h["debut"]) - h["debut"]] is None or fr[p["a"] - h["debut"]] is None:
             sys.exit(f"{ou}: mandat {p['court']!r} sans valeur de dette à ses bornes")
+    for e in h["presidents"] + h["gouvernements"]:
+        if e.get("camp") not in ("gauche", "droite", "centre"):
+            sys.exit(f"{ou}: camp attendu parmi gauche, droite, centre — {e!r}")
     for q in h["questions"]:
         if not q.get("r") or not q.get("sources") or not all(s["u"].startswith("http") for s in q["sources"]):
             sys.exit(f"{ou}: la question {q.get('q')!r} doit avoir une réponse et une source en http")
