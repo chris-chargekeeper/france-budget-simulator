@@ -1081,6 +1081,71 @@ footer{padding-bottom:120px}
   .score-tiles{padding:14px 18px 18px}
   .ia-why{margin:0 12px 16px;padding:14px}
 }
+/* --- verso de la carte : qui paie, qui reçoit --- */
+.score{--perte:var(--critical);--gain:var(--good)}
+.flip-btn{margin-left:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:7px;border:1px solid var(--rule);
+  background:var(--surface-2);color:var(--ink);font:inherit;font-size:13px;font-weight:600;border-radius:999px;
+  padding:8px 14px;cursor:pointer;white-space:nowrap;transition:border-color .15s,transform .15s}
+.flip-btn:hover{border-color:var(--pc)}
+.flip-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.flip-btn .ico{font-size:15px;line-height:1;display:inline-block;transition:transform .35s}
+.flip-btn:hover .ico{transform:rotate(180deg)}
+.flip-btn .pt{display:inline-flex;gap:3px}
+.flip-btn .pt i{width:8px;height:8px;border-radius:2px;background:var(--perte)}
+.flip-btn .pt i+i{background:var(--gain)}
+.score.flip-out{transform:perspective(1400px) rotateY(88deg);transition:transform .17s ease-in}
+.score.flip-in{animation:flipin .3s cubic-bezier(.2,.8,.2,1)}
+@keyframes flipin{from{transform:perspective(1400px) rotateY(-88deg)}to{transform:none}}
+.qp{padding:16px 24px 24px;display:grid;gap:18px}
+.qp-top h3{margin:0;font-family:Newsreader,Georgia,serif;font-size:clamp(22px,2.6vw,28px);font-weight:600;letter-spacing:-.01em}
+.qp-top p{margin:6px 0 0;font-size:14px;line-height:1.5;color:var(--ink-2);max-width:70ch}
+.qp-leg{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink-2);margin-top:10px}
+.qp-leg span{display:inline-flex;align-items:center;gap:6px}
+.qp-leg i{width:12px;height:12px;border-radius:3px;background:var(--perte)}
+.qp-leg .g i{background:var(--gain)}
+.qp-sec h4{margin:0 0 6px;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:600}
+.qp-row{border-top:1px solid var(--rule-soft)}
+.qp-row > summary,.qp-row.nul > .qp-line{display:grid;grid-template-columns:minmax(150px,210px) 1fr 112px;gap:14px;
+  align-items:center;padding:10px 4px;font-weight:400}
+.qp-row > summary::before{display:none}
+.qp-row > summary:hover{background:color-mix(in srgb,var(--pc) 5%,transparent);border-radius:10px}
+.qp-lab b{display:block;font-size:14.5px;font-weight:600;line-height:1.25}
+.qp-lab span{display:block;font-size:12px;color:var(--ink-3);line-height:1.35}
+.qp-bar{position:relative;display:grid;grid-template-columns:1fr 1fr;height:22px}
+.qp-bar::after{content:"";position:absolute;left:50%;top:-4px;bottom:-4px;width:1px;background:var(--axis)}
+.qp-bar .l{display:flex;justify-content:flex-end}
+.qp-bar i{display:block;height:100%;min-width:0;transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.qp-bar .l i{background:var(--perte);border-radius:6px 0 0 6px}
+.qp-bar .r i{background:var(--gain);border-radius:0 6px 6px 0}
+.qp-bar.propre i{background-image:repeating-linear-gradient(135deg,transparent 0 5px,color-mix(in srgb,var(--surface) 35%,transparent) 5px 8px)}
+.qp-net{font-family:"IBM Plex Mono",monospace;font-size:14.5px;font-weight:600;text-align:right;white-space:nowrap}
+.qp-net small{display:block;font-size:10.5px;font-weight:400;color:var(--ink-3);font-family:inherit}
+.qp-net.perte{color:var(--perte)} .qp-net.gain{color:var(--gain)} .qp-net.zero{color:var(--ink-3)}
+.qp-row.nul .qp-lab b{color:var(--ink-3);font-weight:500}
+.qp-det{padding:4px 4px 14px;display:grid;gap:10px}
+.qp-pg{font-size:12.5px;color:var(--ink-2);font-family:"IBM Plex Mono",monospace}
+.qp-it{display:grid;grid-template-columns:auto 1fr auto;gap:4px 10px;align-items:baseline;font-size:13.5px}
+.qp-it .sg{width:18px;height:18px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;background:var(--perte)}
+.qp-it .sg.gain{background:var(--gain)}
+.qp-it .v{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;white-space:nowrap}
+.qp-it .why{grid-column:2 / -1;margin:0;font-size:12.5px;line-height:1.5;color:var(--ink-2)}
+.qp-fi{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;
+  padding:1px 7px;margin-right:6px;border:1px solid var(--rule);color:var(--ink-3)}
+.qp-fi.sourcee{color:var(--good);border-color:color-mix(in srgb,var(--good) 45%,transparent)}
+.qp-why a{color:var(--ink-3)}
+.qp-libre{border-radius:14px;background:var(--surface-2);padding:12px 14px;font-size:13.5px;line-height:1.5;color:var(--ink-2)}
+.qp-libre b{color:var(--ink);font-family:"IBM Plex Mono",monospace}
+.qp-meth summary{font-size:13px;color:var(--ink-2)}
+.qp-meth p,.qp-meth li{font-size:12.5px;line-height:1.55;color:var(--ink-2);max-width:80ch}
+.qp-meth ul{padding-left:18px;margin:6px 0}
+@media (max-width:640px){
+  .score-head{flex-wrap:wrap}
+  .flip-btn{margin-left:0;flex-basis:100%;justify-content:center;padding:10px 14px}
+  .qp{padding:12px 18px 18px}
+  .qp-row > summary,.qp-row.nul > .qp-line{grid-template-columns:1fr auto;grid-template-areas:"lab net" "bar bar";gap:6px 10px}
+  .qp-lab{grid-area:lab} .qp-net{grid-area:net} .qp-bar{grid-area:bar;height:16px}
+}
+@media (prefers-reduced-motion:reduce){.score.flip-out,.score.flip-in{transform:none;animation:none;transition:none}}
 .tile .val{font-size:28px}
 .cockpit{border-radius:var(--radius)}
 </style>
@@ -1704,7 +1769,7 @@ function run(P, active){
 }
 
 /* ---------- état & format ---------- */
-const state = {P:{...DEFAULTS}, active:{}, party:'tend', annonce:false, adv:false, feed:'all'};
+const state = {P:{...DEFAULTS}, active:{}, party:'tend', annonce:false, adv:false, feed:'all', verso:false};
 const nf = (v, d=0) => new Intl.NumberFormat('fr-FR',{minimumFractionDigits:d, maximumFractionDigits:d}).format(v);
 const sign = s => String(s).replace(/-/g,'−');
 const md = (v, d=0) => sign(nf(v,d)) + ' Md€';
@@ -3154,7 +3219,19 @@ function renderScore(base, scen, split){
     : (state.party === 'tend' ? "Si rien ne change" : "Votre scénario")));
   ht.appendChild(el('div','score-sub', p ? (p.horsCourse ? p.statutCandidature : p.nom)
     : "aucune mesure nouvelle après 2026"));
-  head.append(av, ht); host.appendChild(head);
+  head.append(av, ht);
+  renderScore.last = [base, scen, split];
+  const fb = el('button','flip-btn'); fb.type = 'button';
+  fb.setAttribute('aria-pressed', state.verso ? 'true' : 'false');
+  if (state.verso){ fb.appendChild(el('span','ico','↺')); fb.appendChild(document.createTextNode("Retour au déficit")); }
+  else {
+    const pt = el('span','pt'); pt.append(el('i'), el('i'));
+    fb.append(pt, document.createTextNode("Qui paie, qui reçoit ?"), el('span','ico','↻'));
+  }
+  fb.addEventListener('click', flipScore);
+  head.appendChild(fb);
+  host.appendChild(head);
+  if (state.verso){ renderVerso(host); return; }
   if (p && !p.horsCourse) host.appendChild(presentation(p));
 
   /* le chiffre et la jauge */
@@ -3223,6 +3300,164 @@ function renderScore(base, scen, split){
 
   if (p && p.horsCourse) host.appendChild(iaWhy(p));
   else if (p) host.appendChild(progList(p));
+}
+
+/* ---------- verso de la carte : qui paie, qui reçoit ---------- */
+const INC = DATA.incidence || {groupes:[], mesures:[], methode:''};
+const INC_BY_ID = Object.fromEntries(INC.mesures.map(x => [x.id, x]));
+const INC_PAR_PERSONNE = ['aises','moyens','smic','retraites','sansemploi','agents','etrangers'];
+const INC_SECTIONS = [
+  {titre:"Ménages", ids:['thp','aises','moyens','smic','retraites','sansemploi','agents','etrangers']},
+  {titre:"Entreprises", ids:['pme','grandes']}
+];
+/** Répartit les mesures actives entre groupes, en € par unité (personne, foyer, entreprise) en 2032. */
+function incidence(active, P, y=2032){
+  const G = Object.fromEntries(INC.groupes.map(g => [g.id, {g, perte:0, gain:0, items:[]}]));
+  const libre = {perte:0, gain:0, items:[]};
+  let total = 0, sourcee = 0;
+  for (const id in active){
+    const m = M_BY_ID[id], k = INC_BY_ID[id]; if (!m || !k) continue;
+    const a = amountAt(m, active[id], y, P); if (!(a > 0)) continue;
+    const perte = improves(m), cote = perte ? 'perte' : 'gain';
+    total += a; if (k.fiabilite === 'sourcee') sourcee += a;
+    for (const gid in k.parts){
+      const mds = a * k.parts[gid];
+      if (gid === 'nonreparti'){ libre[cote] += mds; libre.items.push({m, v:mds, perte}); continue; }
+      const row = G[gid]; if (!row) continue;
+      const v = mds * 1e9 / row.g.effectif;
+      row[cote] += v; row.items.push({m, k, v, perte, mds});
+    }
+  }
+  return {G, libre, total, sourcee};
+}
+/** Un montant par personne ou par entreprise, lisible d'un coup d'œil. */
+function eurU(v){
+  const a = Math.abs(v);
+  if (a >= 1e6) return sign(nf(a / 1e6, a >= 1e7 ? 0 : 1)) + ' M€';
+  if (a >= 1000) return nf(Math.round(a / 10) * 10) + ' €';
+  if (a >= 0.5) return nf(Math.round(a)) + ' €';
+  return "moins de 1 €";
+}
+const eurS = v => (v > 0 ? '+' : '−') + ' ' + eurU(v);
+const effTxt = n => n >= 1e6 ? nf(n / 1e6, 1) + ' M' : nf(n);
+
+function renderVerso(host){
+  const box = el('div','qp');
+  const top = el('div','qp-top');
+  top.appendChild(el('h3', null, "Qui paie, qui reçoit en 2032"));
+  top.appendChild(el('p', null, "Ce que les mesures retirent ou apportent chaque année à chaque groupe, une fois en place, "
+    + "en euros par personne (par foyer ou par entreprise quand c'est indiqué). Touchez une ligne pour voir d'où ça vient."));
+  const leg = el('div','qp-leg');
+  const l1 = el('span'); l1.append(el('i'), document.createTextNode("ce que le groupe perd : impôts en plus, aides en moins"));
+  const l2 = el('span','g'); l2.append(el('i'), document.createTextNode("ce qu'il reçoit : impôts en moins, aides en plus"));
+  leg.append(l1, l2); top.appendChild(leg);
+  box.appendChild(top);
+
+  if (!Object.keys(state.active).length){
+    box.appendChild(el('p','empty', "Aucune mesure nouvelle : personne ne paie ni ne reçoit davantage qu'aujourd'hui."));
+    host.appendChild(box); return;
+  }
+  const R = incidence(state.active, state.P);
+
+  for (const sec of INC_SECTIONS){
+    const rows = sec.ids.map(id => R.G[id]).filter(r => r && !(r.g.id === 'etrangers' && !r.items.length));
+    if (!rows.length) continue;
+    /* Une échelle commune aux groupes comptés par personne ; les foyers très fortunés et les
+       entreprises, comptés dans une autre unité, ont chacun la leur. */
+    const commun = r => INC_PAR_PERSONNE.includes(r.g.id);
+    const maxC = Math.max(1, ...rows.filter(commun).map(r => Math.max(r.perte, r.gain)));
+    const Lr = r => { const max = commun(r) ? maxC : Math.max(1, r.perte, r.gain);
+      return v => v > 0 ? Math.max(1.5, 100 * v / max) + '%' : '0'; };
+    const s = el('div','qp-sec');
+    s.appendChild(el('h4', null, sec.titre));
+    for (const r of rows){
+      const net = r.gain - r.perte, vide = !r.items.length;
+      const lab = el('div','qp-lab');
+      lab.appendChild(el('b', null, r.g.lab));
+      lab.appendChild(el('span', null, `${r.g.sous} · ${effTxt(r.g.effectif)}`));
+      const bar = el('div','qp-bar');
+      const bl = el('div','l'), br = el('div','r'), il = el('i'), ir = el('i');
+      const L = Lr(r); il.style.width = L(r.perte); ir.style.width = L(r.gain);
+      if (!commun(r)) bar.classList.add('propre');
+      bl.appendChild(il); br.appendChild(ir); bar.append(bl, br);
+      bar.setAttribute('role','img');
+      bar.setAttribute('aria-label', vide ? "pas concerné" : `perd ${eurU(r.perte)}, reçoit ${eurU(r.gain)} ${r.g.par}`);
+      const nv = el('div','qp-net ' + (vide || Math.abs(net) < .5 ? 'zero' : net < 0 ? 'perte' : 'gain'),
+        vide ? "pas concerné" : Math.abs(net) < .5 ? "≈ 0 €" : eurS(net));
+      if (!vide) nv.appendChild(el('small', null, r.g.par + " et par an"));
+      if (vide){
+        const d = el('div','qp-row nul'), line = el('div','qp-line');
+        line.append(lab, bar, nv); d.appendChild(line); s.appendChild(d); continue;
+      }
+      const d = el('details','qp-row'), su = el('summary');
+      su.append(lab, bar, nv); d.appendChild(su);
+      const det = el('div','qp-det');
+      det.appendChild(el('div','qp-pg', `perd ${eurU(r.perte)} · reçoit ${eurU(r.gain)} · ${r.g.par}`));
+      r.items.sort((a, b) => b.v - a.v).forEach(it => {
+        const x = el('div','qp-it');
+        x.appendChild(el('span','sg' + (it.perte ? '' : ' gain'), it.perte ? '−' : '+'));
+        x.appendChild(el('span', null, it.m.lab));
+        x.appendChild(el('span','v', eurS(it.perte ? -it.v : it.v)));
+        const why = el('p','why qp-why');
+        why.appendChild(el('span','qp-fi ' + it.k.fiabilite, it.k.fiabilite === 'sourcee' ? "clé sourcée" : "convention"));
+        why.appendChild(document.createTextNode(`${nf(it.k.parts[r.g.id] * 100)} % de ${md(it.mds / it.k.parts[r.g.id], 1)}. ${it.k.explication} `));
+        (it.k.sources || []).forEach((src, i) => {
+          const a = el('a', null, i ? ` · ${src.t}` : src.t); a.href = src.u; a.target = '_blank'; a.rel = 'noopener';
+          why.appendChild(a);
+        });
+        x.appendChild(why); det.appendChild(x);
+      });
+      d.appendChild(det); s.appendChild(d);
+    }
+    box.appendChild(s);
+  }
+
+  if (R.libre.items.length){
+    const lb = el('div','qp-libre');
+    const noms = [...new Set(R.libre.items.sort((a, b) => b.v - a.v).map(x => x.m.lab))];
+    const bouts = [];
+    if (R.libre.gain > .05) bouts.push(`<b>${md(R.libre.gain, 1)}</b> de dépenses nouvelles`);
+    if (R.libre.perte > .05) bouts.push(`<b>${md(R.libre.perte, 1)}</b> d'économies`);
+    lb.innerHTML = `Non attribué à un groupe : ${bouts.join(' et ') || 'moins de 0,1 Md€'} qui profitent ou pèsent à tout le monde à la fois `
+      + `(défense, investissement public, services, contribution à l'Union européenne…). `;
+    lb.appendChild(el('span', null, "Mesures concernées : " + noms.join(' ; ') + '.'));
+    box.appendChild(lb);
+  }
+
+  const meth = el('details','qp-meth');
+  meth.appendChild(el('summary', null, "Comment c'est calculé"));
+  meth.appendChild(el('p', null, INC.methode));
+  meth.appendChild(el('p', null, R.total > 0
+    ? `Pour ce programme, ${nf(R.sourcee / R.total * 100)} % des montants reposent sur une clé sourcée, le reste sur une convention écrite et affichée ligne par ligne.`
+    : ''));
+  meth.appendChild(el('p', null, "Les barres des groupes comptés par personne partagent la même échelle : leurs longueurs se comparent. Les très hauts patrimoines (par foyer) et les entreprises sont comptés dans une autre unité ; leur barre, hachurée, a sa propre échelle et ne montre que le sens : comparez leurs montants écrits."));
+  const ul = el('ul');
+  INC.groupes.forEach(g => {
+    const li = el('li'); li.appendChild(document.createTextNode(`${g.lab} : ${effTxt(g.effectif)} (${g.par.replace('par ','')}). `));
+    const a = el('a', null, g.source.t); a.href = g.source.u; a.target = '_blank'; a.rel = 'noopener'; li.appendChild(a);
+    ul.appendChild(li);
+  });
+  meth.appendChild(ul);
+  box.appendChild(meth);
+  host.appendChild(box);
+}
+
+/** Retourne la carte résultat, avec un quart de tour de chaque côté. */
+function flipScore(){
+  const host = $('#score');
+  const swap = () => {
+    state.verso = !state.verso;
+    renderScore(...renderScore.last);
+    const b = host.querySelector('.flip-btn'); if (b) b.focus({preventScroll:true});
+    if (host.getBoundingClientRect().top < 0) host.scrollIntoView({block:'start'});
+  };
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches){ swap(); return; }
+  host.classList.add('flip-out');
+  setTimeout(() => {
+    host.classList.remove('flip-out'); swap();
+    host.classList.add('flip-in');
+    setTimeout(() => host.classList.remove('flip-in'), 320);
+  }, 170);
 }
 
 /** Montant d'une mesure vu du budget : + si elle rapporte ou économise, − si elle coûte. */
