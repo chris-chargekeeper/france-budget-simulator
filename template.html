@@ -1081,22 +1081,11 @@ footer{padding-bottom:120px}
   .score-tiles{padding:14px 18px 18px}
   .ia-why{margin:0 12px 16px;padding:14px}
 }
-/* --- verso de la carte : qui paie, qui reçoit --- */
+/* --- la carte « qui paie, qui reçoit » --- */
 .score{--perte:var(--critical);--gain:var(--good)}
-.flip-btn{margin-left:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:7px;border:1px solid var(--rule);
-  background:var(--surface-2);color:var(--ink);font:inherit;font-size:13px;font-weight:600;border-radius:999px;
-  padding:8px 14px;cursor:pointer;white-space:nowrap;transition:border-color .15s,transform .15s}
-.flip-btn:hover{border-color:var(--pc)}
-.flip-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.flip-btn .ico{font-size:15px;line-height:1;display:inline-block;transition:transform .35s}
-.flip-btn:hover .ico{transform:rotate(180deg)}
-.flip-btn .pt{display:inline-flex;gap:3px}
-.flip-btn .pt i{width:8px;height:8px;border-radius:2px;background:var(--perte)}
-.flip-btn .pt i+i{background:var(--gain)}
-.score.flip-out{transform:perspective(1400px) rotateY(88deg);transition:transform .17s ease-in}
-.score.flip-in{animation:flipin .3s cubic-bezier(.2,.8,.2,1)}
-@keyframes flipin{from{transform:perspective(1400px) rotateY(-88deg)}to{transform:none}}
-.qp{padding:10px 24px 20px;display:grid;gap:12px}
+#quipaie{margin-top:16px}
+.qp{padding:22px 24px 20px;display:grid;gap:12px}
+.qp-kick{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3)}
 .qp-top h3{margin:0;font-family:Newsreader,Georgia,serif;font-size:clamp(22px,2.6vw,28px);font-weight:600;letter-spacing:-.01em}
 .qp-top p{margin:4px 0 0;font-size:13.5px;line-height:1.45;color:var(--ink-2);max-width:80ch}
 .qp-leg{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:12.5px;color:var(--ink-2);margin-top:6px}
@@ -1149,15 +1138,12 @@ footer{padding-bottom:120px}
 .qp-meth p,.qp-meth li{font-size:12.5px;line-height:1.55;color:var(--ink-2);max-width:80ch}
 .qp-meth ul{padding-left:18px;margin:6px 0}
 @media (max-width:640px){
-  .score-head{flex-wrap:wrap}
-  .flip-btn{margin-left:0;flex-basis:100%;justify-content:center;padding:10px 14px}
-  .qp{padding:12px 18px 18px}
+  .qp{padding:18px 18px 18px}
   .qp-row > summary,.qp-row.nul > .qp-line{grid-template-columns:1fr auto;grid-template-areas:"lab net" "bar bar";gap:4px 10px;padding:7px 2px}
   .qp-lab{grid-area:lab} .qp-net{grid-area:net} .qp-bar{grid-area:bar;height:10px;margin-left:40px}
   .qp-net small{line-height:1.2}
   .qp-ico{flex-basis:30px;width:30px;height:30px}
 }
-@media (prefers-reduced-motion:reduce){.score.flip-out,.score.flip-in{transform:none;animation:none;transition:none}}
 .tile .val{font-size:28px}
 .cockpit{border-radius:var(--radius)}
 </style>
@@ -1379,6 +1365,7 @@ footer{padding-bottom:120px}
       <p>Les mesures s'appliquent à partir de 2027, comme un programme voté en début de mandat.</p>
     </div>
     <div class="score simple-only" id="score"></div>
+    <div class="score qp-card simple-only" id="quipaie"></div>
     <div class="verdict adv-only" id="verdict"></div>
     <div class="cockpit adv-only" id="cockpit"></div>
     <div class="grid2 charts" style="margin-top:16px">
@@ -1793,7 +1780,7 @@ function run(P, active){
 }
 
 /* ---------- état & format ---------- */
-const state = {P:{...DEFAULTS}, active:{}, party:'tend', annonce:false, adv:false, feed:'all', verso:false};
+const state = {P:{...DEFAULTS}, active:{}, party:'tend', annonce:false, adv:false, feed:'all'};
 const nf = (v, d=0) => new Intl.NumberFormat('fr-FR',{minimumFractionDigits:d, maximumFractionDigits:d}).format(v);
 const sign = s => String(s).replace(/-/g,'−');
 const md = (v, d=0) => sign(nf(v,d)) + ' Md€';
@@ -3244,18 +3231,7 @@ function renderScore(base, scen, split){
   ht.appendChild(el('div','score-sub', p ? (p.horsCourse ? p.statutCandidature : p.nom)
     : "aucune mesure nouvelle après 2026"));
   head.append(av, ht);
-  renderScore.last = [base, scen, split];
-  const fb = el('button','flip-btn'); fb.type = 'button';
-  fb.setAttribute('aria-pressed', state.verso ? 'true' : 'false');
-  if (state.verso){ fb.appendChild(el('span','ico','↺')); fb.appendChild(document.createTextNode("Retour au déficit")); }
-  else {
-    const pt = el('span','pt'); pt.append(el('i'), el('i'));
-    fb.append(pt, document.createTextNode("Qui paie, qui reçoit ?"), el('span','ico','↻'));
-  }
-  fb.addEventListener('click', flipScore);
-  head.appendChild(fb);
   host.appendChild(head);
-  if (state.verso){ renderVerso(host); return; }
   if (p && !p.horsCourse) host.appendChild(presentation(p));
 
   /* le chiffre et la jauge */
@@ -3322,11 +3298,12 @@ function renderScore(base, scen, split){
   }
   host.appendChild(tiles);
 
+  renderQuiPaie(p);
   if (p && p.horsCourse) host.appendChild(iaWhy(p));
   else if (p) host.appendChild(progList(p));
 }
 
-/* ---------- verso de la carte : qui paie, qui reçoit ---------- */
+/* ---------- la carte « qui paie, qui reçoit » ---------- */
 const INC = DATA.incidence || {groupes:[], mesures:[], methode:''};
 const INC_BY_ID = Object.fromEntries(INC.mesures.map(x => [x.id, x]));
 const INC_PAR_PERSONNE = ['aises','moyens','smic','retraites','sansemploi','agents','etrangers'];
@@ -3365,9 +3342,11 @@ function eurU(v){
 const eurS = v => (v > 0 ? '+' : '−') + ' ' + eurU(v);
 const effTxt = n => n >= 1e6 ? nf(n / 1e6, 1) + ' M' : nf(n);
 
-function renderVerso(host){
+function renderVerso(host, p){
   const box = el('div','qp');
   const top = el('div','qp-top');
+  top.appendChild(el('div','qp-kick', p ? (p.horsCourse ? "Le candidat IA" : "Avec le programme de " + p.candidat)
+    : state.party === 'tend' ? "Si rien ne change" : "Votre scénario"));
   top.appendChild(el('h3', null, "Qui paie, qui reçoit en 2032"));
   top.appendChild(el('p', null, "Par an, une fois les mesures en place, par personne (ou par foyer, par entreprise). Touchez une ligne pour le détail."));
   const leg = el('div','qp-leg');
@@ -3472,22 +3451,13 @@ function renderVerso(host){
   host.appendChild(box);
 }
 
-/** Retourne la carte résultat, avec un quart de tour de chaque côté. */
-function flipScore(){
-  const host = $('#score');
-  const swap = () => {
-    state.verso = !state.verso;
-    renderScore(...renderScore.last);
-    const b = host.querySelector('.flip-btn'); if (b) b.focus({preventScroll:true});
-    if (host.getBoundingClientRect().top < 0) host.scrollIntoView({block:'start'});
-  };
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches){ swap(); return; }
-  host.classList.add('flip-out');
-  setTimeout(() => {
-    host.classList.remove('flip-out'); swap();
-    host.classList.add('flip-in');
-    setTimeout(() => host.classList.remove('flip-in'), 320);
-  }, 170);
+/** La carte « qui paie, qui reçoit », sous celle du déficit. */
+function renderQuiPaie(p){
+  const host = $('#quipaie'); if (!host) return;
+  host.textContent = '';
+  host.style.setProperty('--pc', p ? p.couleur : 'var(--ink-3)');
+  host.classList.toggle('is-ia', !!(p && p.horsCourse));
+  renderVerso(host, p);
 }
 
 /** Montant d'une mesure vu du budget : + si elle rapporte ou économise, − si elle coûte. */
