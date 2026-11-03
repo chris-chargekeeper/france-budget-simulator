@@ -565,31 +565,6 @@ body.adv .simple-only{display:none!important}
 .bal-courant{display:block;margin-top:6px;font-size:12px;color:var(--ink-3)}
 .bal-note.pire b{color:var(--dep-vif)} .bal-note.mieux b{color:var(--rec-vif)} .bal-note.bon b{color:var(--good)}
 
-/* la bande « sur 1 000 € », pastilles rondes comme les cartons de la vidéo */
-/* Le diamètre est porté par --r, que le script pose par cellule : c'est le rapport
-   des racines carrées, pour que l'AIRE du disque suive la valeur. À diamètre
-   proportionnel, l'écart 231/74 se lirait 9,7 fois au lieu de 3,1. Le plancher de
-   44px n'est là que pour garantir que le montant tienne dans le disque si un poste
-   devenait minuscule ; sur les données actuelles il ne joue jamais. */
-/* --d-max ne varie pas avec la largeur : la bande passe à la ligne sur écran étroit
-   plutôt que de rapetisser. Un --d-max mobile aurait tassé les quatre plus petits
-   postes sur le plancher de 44px, où ils deviennent indiscernables — c'est-à-dire
-   qu'il aurait supprimé l'encodage précisément là où l'écran est le plus petit. */
-.strip{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;
-       gap:16px 10px;margin-top:14px;--d-max:92px}
-.strip .cell{flex:0 1 auto;max-width:152px;display:grid;justify-items:center;gap:6px;text-align:center}
-.strip .pbox{height:var(--d-max);display:grid;place-content:center}
-.pastille{width:max(44px,calc(var(--d-max) * var(--r,1)));aspect-ratio:1;
-          border-radius:50%;background:var(--pastille);
-          color:var(--pastille-ink);display:grid;place-content:center;
-          font-weight:700;font-size:15px;
-          letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.pastille.clair{color:var(--pastille-ink-clair)}
-.pastille{box-shadow:0 6px 16px -8px rgba(18,34,78,.55)}
-.strip .cell .ic{width:22px;height:22px;flex:none;color:var(--ink-3)}
-.strip .cell .who{font-size:11.5px;line-height:1.25;color:var(--ink-2)}
-.strip .rest{flex:0 0 100%;font-size:12px;color:var(--ink-3);line-height:1.4;
-             border-top:1px solid var(--rule);padding-top:9px;margin-top:2px}
 
 .compo-row .n{display:flex;gap:8px;align-items:flex-start}
 .compo-row .n .ic{margin-top:1px;color:var(--ink-3)}
@@ -631,11 +606,6 @@ body.adv .simple-only{display:none!important}
     border-right:1.6px solid var(--ink-3);border-bottom:1.6px solid var(--ink-3);transform:rotate(45deg);
     transition:transform .2s}
   .compo-row.has-sub.open .nm::after{transform:rotate(-135deg);margin-bottom:-1px}
-  /* les pastilles « sur 1 000 € » : trois par ligne au lieu de deux */
-  .strip{--d-max:76px;gap:14px 6px;justify-content:space-around}
-  .strip .cell{flex:0 0 calc(33.3% - 6px);max-width:none}
-  .pastille{font-size:13.5px}
-  .strip .cell .who{font-size:11px}
   .masses{gap:8px}
   .mass{padding:12px 14px 11px}
 }
@@ -1526,13 +1496,6 @@ footer{padding-bottom:120px}
 
     <div class="masses" id="masses"></div>
     <div class="balances" id="balances"></div>
-
-    <div class="panel" style="margin-top:16px">
-      <h3>Sur 1 000 € de dépense publique</h3>
-      <p class="sub">La ventilation du dessous, ramenée à mille euros — l'échelle à laquelle un ordre de
-        grandeur redevient tangible.</p>
-      <div class="strip" id="strip1000"></div>
-    </div>
 
     <div class="grid2" style="margin-top:16px">
       <div class="panel">
@@ -2962,40 +2925,6 @@ function renderRepartition(){
   });
 }
 
-/** La bande des pastilles : les gros postes ramenés à 1 000 €, le reste agrégé. */
-function renderStrip(){
-  const host = $('#strip1000'); if (!host) return;
-  host.textContent = '';
-  const tot = BL.apu.depenses;
-  const dep = [...BL.depenses].sort((a, b) => b.v - a.v);
-  const tete = dep.slice(0, 6), reste = dep.slice(6);
-  // Aire du disque proportionnelle au montant : le diamètre suit la racine carrée du
-  // rapport au plus gros poste. --d-max, côté CSS, fixe le disque du plus gros et
-  // s'adapte à la largeur ; ici on ne pose que le rapport, sans unité.
-  const vmax = tete[0].v;
-  const vmin = tete[tete.length - 1].v;
-  tete.forEach(d => {
-    const cell = el('div', 'cell');
-    const box = el('div', 'pbox');
-    const past = el('div', 'pastille', nf(d.v / tot * 1000) + ' €');
-    past.style.setProperty('--r', (Math.sqrt(d.v / vmax)).toFixed(4));
-    // teinte : bleu nuit pour le poste le plus lourd, bleu clair pour le plus léger (une seule
-    // couleur, pour ne pas dire « bonne » ou « mauvaise » dépense)
-    const k = (d.v - vmin) / (vmax - vmin || 1);
-    past.style.background = `color-mix(in srgb, var(--pastille) ${Math.round(k * 100)}%, var(--pastille-clair))`;
-    if (k < .35) past.classList.add('clair');
-    box.appendChild(past);
-    cell.appendChild(box);
-    cell.appendChild(icon(d.icone));
-    cell.appendChild(el('div', 'who', d.nom));
-    host.appendChild(cell);
-  });
-  const somme = reste.reduce((s, d) => s + d.v, 0);
-  host.appendChild(el('div', 'rest',
-    `… et ${nf(somme / tot * 1000)} € pour le reste : `
-    + reste.map(d => d.nom).join(' · ') + '.'));
-}
-
 /* ---------- compositions & repères ---------- */
 function barRows(host, rows, max, strong, header){
   host.textContent = '';
@@ -3054,7 +2983,6 @@ function buildCompo(){
   })), rp[0].v, r => r.v < 5, ['Md€', 'sur 1 000 €']);
 
   renderMasses();
-  renderStrip();
   renderRepartition();
 }
 
