@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-03",
- "methode": "Chaque mesure est répartie entre groupes selon une clé : la part de son montant que chaque groupe supporte ou reçoit in fine. Une clé « sourcée » vient d'une évaluation publique ; une clé « convention » est un choix raisonné de ce site, faute d'étude, et elle est écrite. Montants de l'année 2032, divisés par l'effectif du groupe. Les groupes se recoupent (un retraité aisé) : chaque part est rattachée au groupe par lequel la mesure passe. Les effets indirects (emploi, croissance, prix) ne sont pas comptés.",
+ "methode": "Chaque mesure est répartie entre groupes selon une clé : la part de son montant que chaque groupe supporte ou reçoit in fine. Une clé « sourcée » vient d'une évaluation publique ; une clé « convention » est un choix raisonné de ce site, faute d'étude, et elle est écrite. Montants de l'année 2032, divisés par l'effectif du groupe. Les groupes se recoupent (un retraité aisé) : chaque part est rattachée au groupe par lequel la mesure passe. Les effets indirects (emploi, croissance, prix) ne sont pas comptés. Le pourcentage rapporte le solde à un revenu de référence du groupe (pension moyenne, salaire moyen, allocation moyenne…) ; pour les entreprises, à leur excédent brut d'exploitation moyen. Les années de référence diffèrent d'un groupe à l'autre : ce sont des ordres de grandeur.",
  "groupes": [
   {
    "id": "thp",
@@ -13,7 +13,17 @@
     "t": "DGFiP Statistiques n° 41 — L'impôt sur le revenu 2024 a été plus dynamique que les revenus (18/11/2025)",
     "u": "https://www.impots.gouv.fr/dgfip-statistiques-limpot-sur-le-revenu-2024-ete-plus-dynamique-que-les-revenus"
    },
-   "icone": "diamant"
+   "icone": "diamant",
+   "revenu": {
+    "v": 1027700,
+    "quoi": "leur revenu moyen déclaré, avant impôt (2022)",
+    "annee": 2022,
+    "detail": "revenu annuel moyen déclaré au fisc par les 0,1 % de foyers fiscaux les plus aisés (40 700 foyers), avant impôt, 2022",
+    "source": {
+     "t": "Insee, France, portrait social 2025, éclairage « Entre 2003 et 2022, le revenu des plus aisés augmente plus vite… », figure 1 (source DGFiP)",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/8612588/FPORSOC25-E2.pdf"
+    }
+   }
   },
   {
    "id": "aises",
@@ -26,7 +36,17 @@
     "t": "INSEE Première n° 2063 — Niveau de vie et pauvreté en 2023 (juillet 2025)",
     "u": "https://insee.fr/fr/statistiques/8600989"
    },
-   "icone": "piece"
+   "icone": "piece",
+   "revenu": {
+    "v": 76941,
+    "quoi": "leur niveau de vie moyen (10e décile, 2024)",
+    "annee": 2024,
+    "detail": "part de la masse des niveaux de vie détenue par les 10 % les plus aisés = 100 − S90 = 100 − 75,1 = 24,9 % ; moyenne du décile = 24,9 % × niveau de vie moyen 30 900 € × 10 = 76 941 € ≈ 76 940 €",
+    "source": {
+     "t": "Insee, Niveau de vie et indicateurs d'inégalités, données annuelles de 1975 à 2024 (juillet 2026)",
+     "u": "https://www.insee.fr/fr/statistiques/2491918"
+    }
+   }
   },
   {
    "id": "moyens",
@@ -39,7 +59,17 @@
     "t": "INSEE — Le marché du travail en 2024 : l'emploi salarié ralentit encore, le pouvoir d'achat des salaires se redresse (26/06/2025)",
     "u": "https://www.insee.fr/fr/statistiques/8376894"
    },
-   "icone": "famille"
+   "icone": "famille",
+   "revenu": {
+    "v": 32796,
+    "quoi": "leur salaire net moyen du privé (2024)",
+    "annee": 2024,
+    "detail": "2 733 €/mois × 12 = 32 796 €/an",
+    "source": {
+     "t": "Insee Première n° 2079, « Les salaires dans le secteur privé en 2024 » (oct. 2025)",
+     "u": "https://www.insee.fr/fr/statistiques/8657156"
+    }
+   }
   },
   {
    "id": "smic",
@@ -52,7 +82,17 @@
     "t": "A. Bozio, É. Wasmer — Les politiques d'exonérations de cotisations sociales : une inflexion nécessaire, rapport final (octobre 2024)",
     "u": "https://vie-publique.fr/files/rapport/pdf/295596.pdf"
    },
-   "icone": "salaire"
+   "icone": "salaire",
+   "revenu": {
+    "v": 22169,
+    "quoi": "leur salaire net, repère de 1,25 Smic (2026)",
+    "annee": 2026,
+    "detail": "Smic net annuel 17 735,19 € × 1,25 = 22 169 € (Smic net mensuel 1 477,93 €)",
+    "source": {
+     "t": "Service-public.fr, fiche F2300 « Smic », vérifiée le 1er juin 2026 (recoupement : Insee Première n° 2079, figure 3)",
+     "u": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2300"
+    }
+   }
   },
   {
    "id": "retraites",
@@ -65,7 +105,17 @@
     "t": "DREES — Les retraités et les retraites, édition 2025 (31/07/2025)",
     "u": "https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse-documents-de-reference/250731_PANORAMAS-retraites"
    },
-   "icone": "retraite"
+   "icone": "retraite",
+   "revenu": {
+    "v": 18492,
+    "quoi": "leur pension nette moyenne (2023)",
+    "annee": 2023,
+    "detail": "1 541 €/mois × 12 = 18 492 €/an",
+    "source": {
+     "t": "DREES, Les retraités et les retraites – édition 2025, fiche 05 « Le niveau des pensions »",
+     "u": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2025-07/Fiche%2005%20-%20Le%20niveau%20des%20pensions.pdf"
+    }
+   }
   },
   {
    "id": "sansemploi",
@@ -78,7 +128,17 @@
     "t": "Unédic — Chiffres clés : les indicateurs de l'Assurance chômage, septembre 2025",
     "u": "https://s3.eusc-de-east-1.amazonaws.eu/unedic-eks-prod-cms/2025/09/24/Chiffres-cles-Les-indicateurs-de-l-Assurance-chomage-septembre-2025_uid_68d3b7c7ab257.pdf"
    },
-   "icone": "sansemploi"
+   "icone": "sansemploi",
+   "revenu": {
+    "v": 9902,
+    "quoi": "leur allocation moyenne : chômage, RSA, ASS (2023-2025)",
+    "annee": 2025,
+    "detail": "(1 048 € × 2,6 M + 549 € × 1,85 M + 552 € × 0,25 M) / 4,7 M = 3 878,45 / 4,7 = 825,20 €/mois ; × 12 = 9 902 €/an",
+    "source": {
+     "t": "Unédic, Les indicateurs de l'Assurance chômage – mars 2026 (1 048 €) ; DREES, Minima sociaux et prestations de solidarité 2025, fiche 07, tableau 1 (RSA 549 €, ASS 552 €) — fiche 07 : https://www.drees.solidarites-sante.gouv.fr/sites/default/files/2025-12/MS2025%20-%20Fiche%2007%20-%20Les%20d%C3%A9penses%20d%27allocations.pdf",
+     "u": "https://www.unedic.org/publications/les-indicateurs-de-l-assurance-chomage-mars-2026"
+    }
+   }
   },
   {
    "id": "agents",
@@ -91,7 +151,17 @@
     "t": "INSEE Première n° 2052 — L'emploi dans la fonction publique en 2023 (mai 2025, Insee/DGAFP)",
     "u": "https://www.insee.fr/fr/statistiques/8572076"
    },
-   "icone": "agent"
+   "icone": "agent",
+   "revenu": {
+    "v": 32904,
+    "quoi": "leur salaire net moyen (2024)",
+    "annee": 2024,
+    "detail": "2 742 €/mois × 12 = 32 904 €/an",
+    "source": {
+     "t": "Insee Première n° 2100, « Les salaires dans la fonction publique de l'État en 2024 », figure 1, ligne « Ensemble de la fonction publique » (mai 2026)",
+     "u": "https://www.insee.fr/fr/statistiques/8986474"
+    }
+   }
   },
   {
    "id": "etrangers",
@@ -104,7 +174,17 @@
     "t": "INSEE Première n° 2076 — En 2024, 6,0 millions d'étrangers vivent en France, 0,9 million y sont nés (octobre 2025)",
     "u": "https://www.insee.fr/fr/statistiques/8651304"
    },
-   "icone": "monde"
+   "icone": "monde",
+   "revenu": {
+    "v": 21570,
+    "quoi": "le niveau de vie moyen des immigrés (2021)",
+    "annee": 2021,
+    "detail": "niveau de vie annuel moyen des personnes immigrées (et non des seuls étrangers : un tiers des immigrés sont Français), 2021",
+    "source": {
+     "t": "Insee Références, Les revenus et le patrimoine des ménages, édition 2024, fiche « Niveau de vie et pauvreté des immigrés »",
+     "u": "https://www.insee.fr/fr/statistiques/7941405"
+    }
+   }
   },
   {
    "id": "pme",
@@ -117,7 +197,17 @@
     "t": "INSEE Focus n° 372 — Le tissu productif français par catégorie d'entreprises en 2023 (10/12/2025)",
     "u": "https://www.insee.fr/fr/statistiques/8675639"
    },
-   "icone": "entreprise"
+   "icone": "entreprise",
+   "revenu": {
+    "v": 79040,
+    "quoi": "leur excédent brut d'exploitation moyen (2023)",
+    "annee": 2023,
+    "detail": "EBE total 433,4 Md€ × (19,4 % MIC autres régimes + 16,6 % PME + 23,1 % ETI = 59,1 %) = 256,1 Md€ ; entreprises : (4 995 894 MIC − 1 937 300 micro-entrepreneurs) + 174 614 PME + 7 442 ETI = 3 240 650 ; 256,1 Md€ / 3 240 650 ≈ 79 040 €",
+    "source": {
+     "t": "Insee Analyses n° 115, « Panorama de l'appareil productif en 2023 », figure 1 (déc. 2025) ; effectifs : Insee Focus n° 372, figure 1",
+     "u": "https://www.insee.fr/fr/statistiques/8679855"
+    }
+   }
   },
   {
    "id": "grandes",
@@ -130,7 +220,17 @@
     "t": "INSEE Focus n° 372 — Le tissu productif français par catégorie d'entreprises en 2023 (10/12/2025)",
     "u": "https://www.insee.fr/fr/statistiques/8675639"
    },
-   "icone": "tours"
+   "icone": "tours",
+   "revenu": {
+    "v": 471143544,
+    "quoi": "leur excédent brut d'exploitation moyen (2023)",
+    "annee": 2023,
+    "detail": "EBE total 433,4 Md€ × 36,2 % = 156,9 Md€ ; / 333 grandes entreprises ≈ 471 M€",
+    "source": {
+     "t": "Insee Analyses n° 115, « Panorama de l'appareil productif en 2023 », figure 1 (déc. 2025)",
+     "u": "https://www.insee.fr/fr/statistiques/8679855"
+    }
+   }
   }
  ],
  "mesures": [

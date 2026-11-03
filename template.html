@@ -1094,7 +1094,7 @@ footer{padding-bottom:120px}
 .qp-leg .g i{background:var(--gain)}
 .qp-sec h4{margin:0 0 2px;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:600}
 .qp-row{border-top:1px solid var(--rule-soft);padding:0;margin:0}
-.qp-row > summary,.qp-row.nul > .qp-line{display:grid;grid-template-columns:minmax(196px,256px) 1fr 112px;gap:14px;
+.qp-row > summary,.qp-row.nul > .qp-line{display:grid;grid-template-columns:minmax(196px,256px) 1fr minmax(150px,auto);gap:14px;
   align-items:center;padding:5px 4px;font-weight:400}
 .qp-row > summary::before{display:none}
 .qp-row > summary:hover{background:color-mix(in srgb,var(--pc) 5%,transparent);border-radius:10px}
@@ -1116,6 +1116,9 @@ footer{padding-bottom:120px}
 .qp-bar .r i{background:var(--gain);border-radius:0 6px 6px 0}
 .qp-bar.propre i{background-image:repeating-linear-gradient(135deg,transparent 0 5px,color-mix(in srgb,var(--surface) 35%,transparent) 5px 8px)}
 .qp-net{font-family:"IBM Plex Mono",monospace;font-size:14px;line-height:1.15;font-weight:600;text-align:right;white-space:nowrap}
+.qp-pct{font-size:12px;font-weight:500;color:var(--ink-3);margin-right:8px;cursor:help}
+.qp-ref{font-size:12.5px;color:var(--ink-2);line-height:1.45}
+.qp-ref a{color:var(--ink-3)}
 .qp-net small{display:block;font-size:10.5px;font-weight:400;color:var(--ink-3);font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:0}
 .qp-net.perte{color:var(--perte)} .qp-net.gain{color:var(--gain)} .qp-net.zero{color:var(--ink-3)}
 .qp-row.nul .qp-lab b{color:var(--ink-3);font-weight:500}
@@ -1142,6 +1145,7 @@ footer{padding-bottom:120px}
   .qp-row > summary,.qp-row.nul > .qp-line{grid-template-columns:1fr auto;grid-template-areas:"lab net" "bar bar";gap:4px 10px;padding:7px 2px}
   .qp-lab{grid-area:lab} .qp-net{grid-area:net} .qp-bar{grid-area:bar;height:10px;margin-left:40px}
   .qp-net small{line-height:1.2}
+  .qp-pct{display:block;margin:0 0 1px;font-size:11px;line-height:1.1}
   .qp-ico{flex-basis:30px;width:30px;height:30px}
 }
 .tile .val{font-size:28px}
@@ -3340,6 +3344,10 @@ function eurU(v){
   return "moins de 1 €";
 }
 const eurS = v => (v > 0 ? '+' : '−') + ' ' + eurU(v);
+/** Part du revenu de référence, discrète : « −13 % », « −0,4 % », « < 0,1 % ». */
+const pctTxt = x => { const a = Math.abs(x);
+  if (a < .05) return '≈\u202f0 %';
+  return (x < 0 ? '−' : '+') + '\u202f' + nf(a, a < 10 ? 1 : 0) + ' %'; };
 const effTxt = n => n >= 1e6 ? nf(n / 1e6, 1) + ' M' : nf(n);
 
 function renderVerso(host, p){
@@ -3390,6 +3398,12 @@ function renderVerso(host, p){
       bar.setAttribute('aria-label', vide ? "pas concerné" : `perd ${eurU(r.perte)}, reçoit ${eurU(r.gain)} ${r.g.par}`);
       const nv = el('div','qp-net ' + (vide || Math.abs(net) < .5 ? 'zero' : net < 0 ? 'perte' : 'gain'),
         vide ? "pas concerné" : Math.abs(net) < .5 ? "≈ 0 €/an" : eurS(net) + "/an");
+      const ref = r.g.revenu, pct = !vide && ref && ref.v > 0 ? net / ref.v * 100 : null;
+      if (pct != null && Math.abs(net) >= .5){
+        const pc_ = el('span','qp-pct', pctTxt(pct));
+        pc_.title = `${pctTxt(pct)} de ${ref.quoi} (${eurU(ref.v)} par an)`;
+        nv.prepend(pc_);
+      }
       if (!vide) nv.appendChild(el('small', null, r.g.par));
       if (vide){
         const d = el('div','qp-row nul'), line = el('div','qp-line');
@@ -3400,6 +3414,12 @@ function renderVerso(host, p){
       const det = el('div','qp-det');
       det.appendChild(el('div','qp-pg', `par an : perd ${eurU(r.perte)} · reçoit ${eurU(r.gain)} · ${r.g.par}`
         + (INC_PAR_PERSONNE.includes(r.g.id) && Math.abs(net) >= 12 ? ` — soit ${eurS(net / 12)} par mois` : '')));
+      if (r.g.revenu && r.g.revenu.v > 0 && Math.abs(net) >= .5){
+        const rf = el('div','qp-ref');
+        rf.appendChild(document.createTextNode(`Solde : ${pctTxt(net / r.g.revenu.v * 100)} de ${r.g.revenu.quoi}, soit ${eurU(r.g.revenu.v)} par an. `));
+        const a = el('a', null, 'source'); a.title = r.g.revenu.source.t; a.href = r.g.revenu.source.u; a.target = '_blank'; a.rel = 'noopener';
+        rf.appendChild(a); det.appendChild(rf);
+      }
       r.items.sort((a, b) => b.v - a.v).forEach(it => {
         const x = el('div','qp-it');
         x.appendChild(el('span','sg' + (it.perte ? '' : ' gain'), it.perte ? '−' : '+'));

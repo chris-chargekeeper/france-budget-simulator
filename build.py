@@ -255,6 +255,10 @@ def verifier_incidence(inc, ids):
     for g in inc["groupes"]:
         if not g.get("effectif") or g["effectif"] <= 0 or not g.get("lab") or not g.get("par"):
             sys.exit(f"{ou}: groupe {g.get('id')!r} sans libellé, unité ou effectif")
+        rv = g.get("revenu")
+        if rv is not None and (not isinstance(rv.get("v"), (int, float)) or rv["v"] <= 0 or not rv.get("quoi")
+                               or not str((rv.get("source") or {}).get("u", "")).startswith("http")):
+            sys.exit(f"{ou}: groupe {g['id']!r} — revenu de référence sans montant, sans libellé ou sans source")
     vus = set()
     for m in inc["mesures"]:
         mid = m["id"]
