@@ -56,6 +56,7 @@ jobs:
         run: python3 .claude/skills/france-budget-watch/scripts/watch.py controler
 
       - name: Envoyer sur l'hébergement
+        timeout-minutes: 40
         env:
           FTP_HOST: ${{ secrets.FTP_HOST }}
           FTP_USER: ${{ secrets.FTP_USER }}
@@ -74,23 +75,36 @@ jobs:
             resolve=(--resolve "$FTP_TLS_NAME:21:$FTP_HOST"); cible="$FTP_TLS_NAME"
           fi
           # --ssl-reqd : on refuse d'envoyer le mot de passe si le serveur ne propose pas TLS.
-          ftp() { curl --fail --silent --show-error --ssl-reqd "${resolve[@]}" \
-                       --user "$FTP_USER:$FTP_PASS" "$@"; }
+          # Délais bornés : un serveur qui ne répond pas fait échouer l'appel en 20 s
+          # (connexion) ou 90 s (échange), au lieu de bloquer plusieurs minutes.
+          ftp() { curl --fail --silent --show-error --ssl-reqd --connect-timeout 20 --max-time 90 \
+                       "${resolve[@]}" --user "$FTP_USER:$FTP_PASS" "$@"; }
           # Selon le compte FTP, Hostinger ouvre la session à la racine du plan, du site
           # ou directement dans public_html. On prend le premier dossier qui existe ;
           # l'étape suivante vérifie que c'est bien celui que sert le site.
-          dossier=""
-          for d in "${FTP_DIR:-public_html}" public_html domains/quipaie2027.fr/public_html .; do
-            if ftp --list-only "ftp://$cible/$d/" -o liste.txt 2>/dev/null; then
-              if [ "$d" != "." ] || grep -qx 'index.html' liste.txt; then dossier="$d"; break; fi
+          envoyer() {
+            dossier=""
+            for d in "${FTP_DIR:-public_html}" public_html domains/quipaie2027.fr/public_html .; do
+              if ftp --list-only "ftp://$cible/$d/" -o liste.txt 2>/dev/null; then
+                if [ "$d" != "." ] || grep -qx 'index.html' liste.txt; then dossier="$d"; break; fi
+              fi
+            done
+            [ -n "$dossier" ] || { echo "aucun dossier web trouvé sur le FTP"; return 1; }
+            echo "Dossier web : $dossier"
+            ftp --upload-file index.html "ftp://$cible/$dossier/index.html" || return 1
+            # l'image d'aperçu des liens partagés (balises og:image de la page)
+            ftp --upload-file dataset/simulateur/marque/partage.jpg "ftp://$cible/$dossier/partage.jpg" || return 1
+          }
+          # Le FTP d'Hostinger cesse parfois de répondre quelques minutes (deux fois le
+          # 3 novembre 2026) : on retente l'envoi complet avant d'abandonner.
+          for essai in 1 2 3; do
+            if envoyer; then echo "En ligne : https://quipaie2027.fr"; exit 0; fi
+            if [ "$essai" -lt 3 ]; then
+              echo "::warning::envoi FTP, essai $essai échoué ; nouvel essai dans $((essai * 90)) s"
+              sleep $((essai * 90))
             fi
           done
-          [ -n "$dossier" ] || { echo "::error::aucun dossier web trouvé sur le FTP"; cat liste.txt 2>/dev/null; exit 1; }
-          echo "Dossier web : $dossier"
-          ftp --upload-file index.html "ftp://$cible/$dossier/index.html"
-          # l'image d'aperçu des liens partagés (balises og:image de la page)
-          ftp --upload-file dataset/simulateur/marque/partage.jpg "ftp://$cible/$dossier/partage.jpg"
-          echo "En ligne : https://quipaie2027.fr"
+          echo "::error::envoi FTP impossible après 3 essais"; cat liste.txt 2>/dev/null; exit 1
 
       # Une page vide ou tronquée répondrait quand même 200 : on vérifie que la page
       # servie se termine comme la page envoyée.
