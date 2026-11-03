@@ -12,7 +12,8 @@
    "source": {
     "t": "DGFiP Statistiques n° 41 — L'impôt sur le revenu 2024 a été plus dynamique que les revenus (18/11/2025)",
     "u": "https://www.impots.gouv.fr/dgfip-statistiques-limpot-sur-le-revenu-2024-ete-plus-dynamique-que-les-revenus"
-   }
+   },
+   "icone": "diamant"
   },
   {
    "id": "aises",
@@ -24,7 +25,8 @@
    "source": {
     "t": "INSEE Première n° 2063 — Niveau de vie et pauvreté en 2023 (juillet 2025)",
     "u": "https://insee.fr/fr/statistiques/8600989"
-   }
+   },
+   "icone": "piece"
   },
   {
    "id": "moyens",
@@ -36,7 +38,8 @@
    "source": {
     "t": "INSEE — Le marché du travail en 2024 : l'emploi salarié ralentit encore, le pouvoir d'achat des salaires se redresse (26/06/2025)",
     "u": "https://www.insee.fr/fr/statistiques/8376894"
-   }
+   },
+   "icone": "famille"
   },
   {
    "id": "smic",
@@ -48,7 +51,8 @@
    "source": {
     "t": "A. Bozio, É. Wasmer — Les politiques d'exonérations de cotisations sociales : une inflexion nécessaire, rapport final (octobre 2024)",
     "u": "https://vie-publique.fr/files/rapport/pdf/295596.pdf"
-   }
+   },
+   "icone": "salaire"
   },
   {
    "id": "retraites",
@@ -60,7 +64,8 @@
    "source": {
     "t": "DREES — Les retraités et les retraites, édition 2025 (31/07/2025)",
     "u": "https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse-documents-de-reference/250731_PANORAMAS-retraites"
-   }
+   },
+   "icone": "retraite"
   },
   {
    "id": "sansemploi",
@@ -72,7 +77,8 @@
    "source": {
     "t": "Unédic — Chiffres clés : les indicateurs de l'Assurance chômage, septembre 2025",
     "u": "https://s3.eusc-de-east-1.amazonaws.eu/unedic-eks-prod-cms/2025/09/24/Chiffres-cles-Les-indicateurs-de-l-Assurance-chomage-septembre-2025_uid_68d3b7c7ab257.pdf"
-   }
+   },
+   "icone": "sansemploi"
   },
   {
    "id": "agents",
@@ -84,7 +90,8 @@
    "source": {
     "t": "INSEE Première n° 2052 — L'emploi dans la fonction publique en 2023 (mai 2025, Insee/DGAFP)",
     "u": "https://www.insee.fr/fr/statistiques/8572076"
-   }
+   },
+   "icone": "agent"
   },
   {
    "id": "etrangers",
@@ -96,7 +103,8 @@
    "source": {
     "t": "INSEE Première n° 2076 — En 2024, 6,0 millions d'étrangers vivent en France, 0,9 million y sont nés (octobre 2025)",
     "u": "https://www.insee.fr/fr/statistiques/8651304"
-   }
+   },
+   "icone": "monde"
   },
   {
    "id": "pme",
@@ -108,7 +116,8 @@
    "source": {
     "t": "INSEE Focus n° 372 — Le tissu productif français par catégorie d'entreprises en 2023 (10/12/2025)",
     "u": "https://www.insee.fr/fr/statistiques/8675639"
-   }
+   },
+   "icone": "entreprise"
   },
   {
    "id": "grandes",
@@ -120,7 +129,8 @@
    "source": {
     "t": "INSEE Focus n° 372 — Le tissu productif français par catégorie d'entreprises en 2023 (10/12/2025)",
     "u": "https://www.insee.fr/fr/statistiques/8675639"
-   }
+   },
+   "icone": "tours"
   }
  ],
  "mesures": [

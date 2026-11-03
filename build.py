@@ -232,6 +232,11 @@ def load():
                          f"{sorted(icones)}")
 
     verifier_incidence(payload["incidence"], ids)
+    icones_ = set(re.findall(r'id="ic-([a-z-]+)"', (ROOT / "template.html").read_text(encoding="utf-8")))
+    for g in payload["incidence"]["groupes"]:
+        if g.get("icone") not in icones_:
+            sys.exit(f"dataset/simulateur/incidence.json: le groupe {g['id']!r} pointe sur l'icône "
+                     f"inconnue {g.get('icone')!r}; template.html en déclare {sorted(icones_)}")
 
     dep = sum(x["v"] for x in payload["baseline"]["depenses"])
     rec = sum(x["v"] for x in payload["baseline"]["recettes"])

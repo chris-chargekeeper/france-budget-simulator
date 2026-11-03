@@ -1105,10 +1105,17 @@ footer{padding-bottom:120px}
 .qp-leg .g i{background:var(--gain)}
 .qp-sec h4{margin:0 0 6px;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:600}
 .qp-row{border-top:1px solid var(--rule-soft)}
-.qp-row > summary,.qp-row.nul > .qp-line{display:grid;grid-template-columns:minmax(150px,210px) 1fr 112px;gap:14px;
+.qp-row > summary,.qp-row.nul > .qp-line{display:grid;grid-template-columns:minmax(196px,256px) 1fr 112px;gap:14px;
   align-items:center;padding:10px 4px;font-weight:400}
 .qp-row > summary::before{display:none}
 .qp-row > summary:hover{background:color-mix(in srgb,var(--pc) 5%,transparent);border-radius:10px}
+.qp-lab{display:flex;align-items:center;gap:10px;min-width:0}
+.qp-ico{flex:0 0 36px;width:36px;height:36px;border-radius:11px;display:grid;place-items:center;
+  color:var(--ink-2);background:var(--surface-2);border:1px solid var(--rule)}
+.qp-ico .ic{width:21px;height:21px;flex-basis:21px}
+.qp-ico.perte{color:var(--perte);background:color-mix(in srgb,var(--perte) 10%,var(--surface));border-color:color-mix(in srgb,var(--perte) 28%,transparent)}
+.qp-ico.gain{color:var(--gain);background:color-mix(in srgb,var(--gain) 10%,var(--surface));border-color:color-mix(in srgb,var(--gain) 28%,transparent)}
+.qp-row.nul .qp-ico{opacity:.55}
 .qp-lab b{display:block;font-size:14.5px;font-weight:600;line-height:1.25}
 .qp-lab span{display:block;font-size:12px;color:var(--ink-3);line-height:1.35}
 .qp-bar{position:relative;display:grid;grid-template-columns:1fr 1fr;height:22px}
@@ -1119,7 +1126,7 @@ footer{padding-bottom:120px}
 .qp-bar .r i{background:var(--gain);border-radius:0 6px 6px 0}
 .qp-bar.propre i{background-image:repeating-linear-gradient(135deg,transparent 0 5px,color-mix(in srgb,var(--surface) 35%,transparent) 5px 8px)}
 .qp-net{font-family:"IBM Plex Mono",monospace;font-size:14.5px;font-weight:600;text-align:right;white-space:nowrap}
-.qp-net small{display:block;font-size:10.5px;font-weight:400;color:var(--ink-3);font-family:inherit}
+.qp-net small{display:block;font-size:11px;font-weight:400;color:var(--ink-3);font-family:"IBM Plex Sans",system-ui,sans-serif;letter-spacing:0}
 .qp-net.perte{color:var(--perte)} .qp-net.gain{color:var(--gain)} .qp-net.zero{color:var(--ink-3)}
 .qp-row.nul .qp-lab b{color:var(--ink-3);font-weight:500}
 .qp-det{padding:4px 4px 14px;display:grid;gap:10px}
@@ -1144,6 +1151,8 @@ footer{padding-bottom:120px}
   .qp{padding:12px 18px 18px}
   .qp-row > summary,.qp-row.nul > .qp-line{grid-template-columns:1fr auto;grid-template-areas:"lab net" "bar bar";gap:6px 10px}
   .qp-lab{grid-area:lab} .qp-net{grid-area:net} .qp-bar{grid-area:bar;height:16px}
+  .qp-net small{white-space:normal;max-width:78px;margin-left:auto;line-height:1.25}
+  .qp-ico{flex-basis:32px;width:32px;height:32px}
 }
 @media (prefers-reduced-motion:reduce){.score.flip-out,.score.flip-in{transform:none;animation:none;transition:none}}
 .tile .val{font-size:28px}
@@ -1248,6 +1257,18 @@ footer{padding-bottom:120px}
   <circle cx="12" cy="6.6" r="3"/>
   <path d="M4.6 20.4c0-4.1 3.3-6.4 7.4-6.4s7.4 2.3 7.4 6.4"/>
   <path d="m9.9 14.2 2.1 2.9 2.1-2.9"/>
+ </symbol>
+ <symbol id="ic-diamant" viewBox="0 0 24 24">
+  <path d="M7 4.8h10l3.6 4.6L12 19.8 3.4 9.4z"/><path d="M3.4 9.4h17.2"/>
+  <path d="M9.8 4.8 8.4 9.4 12 19.8l3.6-10.4-1.4-4.6"/>
+ </symbol>
+ <symbol id="ic-sansemploi" viewBox="0 0 24 24">
+  <path d="M3.6 8.2h16.8v11H3.6z"/><path d="M9 8.2V6a1.6 1.6 0 0 1 1.6-1.6h2.8A1.6 1.6 0 0 1 15 6v2.2"/>
+  <path d="M3.6 13h5.4M15 13h5.4"/><path d="M2.8 3.2 21.2 20.8"/>
+ </symbol>
+ <symbol id="ic-tours" viewBox="0 0 24 24">
+  <path d="M4 20.4V5.2l6.4-1.8v17"/><path d="M10.4 20.4V9.4h9.6v11"/><path d="M2.8 20.4h18.4"/>
+  <path d="M6.6 7.6h1.4M6.6 10.6h1.4M6.6 13.6h1.4M13.2 12.4h1.2M16.4 12.4h1.2M13.2 15.4h1.2M16.4 15.4h1.2"/>
  </symbol>
 </svg>
 
@@ -3373,8 +3394,12 @@ function renderVerso(host){
     for (const r of rows){
       const net = r.gain - r.perte, vide = !r.items.length;
       const lab = el('div','qp-lab');
-      lab.appendChild(el('b', null, r.g.lab));
-      lab.appendChild(el('span', null, `${r.g.sous} · ${effTxt(r.g.effectif)}`));
+      const chip = el('span','qp-ico' + (vide ? '' : Math.abs(net) < .5 ? '' : net < 0 ? ' perte' : ' gain'));
+      chip.appendChild(icon(r.g.icone || 'agent'));
+      const txt = el('div');
+      txt.appendChild(el('b', null, r.g.lab));
+      txt.appendChild(el('span', null, `${r.g.sous} · ${effTxt(r.g.effectif)}`));
+      lab.append(chip, txt);
       const bar = el('div','qp-bar');
       const bl = el('div','l'), br = el('div','r'), il = el('i'), ir = el('i');
       const L = Lr(r); il.style.width = L(r.perte); ir.style.width = L(r.gain);
