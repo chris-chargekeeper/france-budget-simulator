@@ -885,6 +885,9 @@ section{margin-top:56px;scroll-margin-top:76px}
   font-size:11.5px;font-family:"IBM Plex Mono",monospace;color:var(--ink-2)}
 .g-mark.ghost{background:transparent;border-left:2px dashed var(--ink-3)}
 .g-mark.ghost span{top:auto;bottom:calc(100% + 4px)}
+/* Repère près d'un bord : l'étiquette s'aligne sur lui au lieu de se centrer et de déborder. */
+.g-mark.droite span{left:auto;right:-2px;transform:none}
+.g-mark.gauche span{left:-2px;transform:none}
 .score .plain{font-size:16.5px;line-height:1.55;margin:0;max-width:62ch}
 .score .plain b{font-family:"IBM Plex Mono",monospace}
 .score-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:18px 24px 24px}
@@ -3552,7 +3555,8 @@ function renderScore(base, scen, split){
   const fill = el('div','g-fill ' + (ok ? 'good' : 'bad')); fill.style.width = pos(-S.soldePct); g.appendChild(fill);
   const lim = el('div','g-mark lim'); lim.style.left = pos(3); lim.appendChild(el('span', null, "limite 3 %")); g.appendChild(lim);
   if (state.party !== 'tend'){
-    const gh = el('div','g-mark ghost'); gh.style.left = pos(-B.soldePct);
+    const gx = parseFloat(pos(-B.soldePct));
+    const gh = el('div','g-mark ghost' + (gx > 70 ? ' droite' : gx < 30 ? ' gauche' : '')); gh.style.left = gx + '%';
     gh.appendChild(el('span', null, "sans rien faire " + pc(-B.soldePct))); g.appendChild(gh);
   }
   main.appendChild(g);
