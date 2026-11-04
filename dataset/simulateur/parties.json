@@ -63,20 +63,16 @@
       },
       "sources": [
         {
-          "t": "Le RN et son équation budgétaire impossible — Le Temps",
-          "u": "https://www.letemps.ch/monde/france/le-rn-et-son-equation-budgetaire-impossible-quand-le-chiffrage-economique-releve-davantage-de-l-ideologie"
+          "t": "Présidentielle : Marine Le Pen promet « 140 milliards d'euros nets d'économies » d'ici 2032 — dépêche, 6 octobre 2026",
+          "u": "https://www.boursorama.com/actualite-economique/actualites/presidentielle-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032-70784e1d524f6a627b04d825118d0b51"
         },
         {
-          "t": "Contre-budget du RN — Public Sénat",
-          "u": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale"
+          "t": "Budget 2027 : Marine Le Pen promet 140 milliards d'euros nets d'économies d'ici 2032 — Europe 1 avec l'AFP, 6 octobre 2026",
+          "u": "https://www.europe1.fr/politique/budget-2027-marine-le-pen-promet-140-milliards-deuros-nets-deconomies-dici-2032-pour-eviter-a-la-france-le-defaut-de-paiement-1126400"
         },
         {
           "t": "Programme économique du RN — OFCE législatives 2024",
           "u": "https://www.ofce-legislatives2024.fr/programmes/rn.html"
-        },
-        {
-          "t": "Présidentielle : Marine Le Pen promet « 140 milliards d'euros nets d'économies » d'ici 2032 — dépêche, 6 octobre 2026",
-          "u": "https://www.boursorama.com/actualite-economique/actualites/presidentielle-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032-70784e1d524f6a627b04d825118d0b51"
         },
         {
           "t": "Condamnée en appel, Marine Le Pen pourra se présenter en 2027 — RTS avec AFP, 7 juillet 2026",
@@ -661,7 +657,7 @@
       "candidat": "David Lisnard",
       "avatar": "h",
       "couleur": "#0E7C86",
-      "statutCandidature": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite ; 6,5 % chez Ipsos (21-22 octobre 2026)",
+      "statutCandidature": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite ; 7 % chez Ifop-Fiducial pour LCI (27-29 octobre 2026)",
       "statut": "partiel",
       "annonce": {
         "titre": "200 Md€ d'économies d'ici 2032",
@@ -763,10 +759,10 @@
     }
   ],
   "sourceOfficielle": {
-    "nom": "Ministère de l'Intérieur — programmes officiels des candidats",
-    "url": "https://www.interieur.gouv.fr/archives/actualites/actualites-du-ministere/election-presidentielle-programme-des-candidats-est-disponible",
+    "nom": "Ministère de l'Intérieur — l'élection présidentielle",
+    "url": "https://www.elections.interieur.gouv.fr/scrutins/lelection-presidentielle",
     "statut": "attendue",
-    "note": "Le ministère de l'Intérieur publie, une fois les candidatures validées par le Conseil constitutionnel, la profession de foi et le programme officiel de chaque candidat. C'est la seule source de rang officiel pour un programme : dès sa mise en ligne, elle remplace ici toute reprise de presse, et les scénarios « reconstitution » sont rebâtis à partir d'elle. Non disponible à ce jour pour 2027."
+    "note": "Le ministère de l'Intérieur publie, une fois les candidatures validées par le Conseil constitutionnel, la profession de foi et le programme officiel de chaque candidat. C'est la seule source de rang officiel pour un programme : dès sa mise en ligne, elle remplace ici toute reprise de presse, et les scénarios « reconstitution » sont rebâtis à partir d'elle. Non disponible à ce jour pour 2027 : publication attendue après la liste officielle des candidats, au plus tard le 26 mars 2027 (premier tour le 18 avril 2027)."
   },
   "sondages": [
     {
