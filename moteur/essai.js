@@ -13,6 +13,12 @@ const PARTIS = lire('parties').parties, CTX = lire('contexte').indicateurs;
 // mêmes hypothèses que la page : valeurs par défaut, remplacées par les indicateurs de contexte
 const P = {g: 1.0, infl: 1.6, drift: 0.7, rmkt: 3.4, mult: 0.9, spread: 2, erosion: 25};
 CTX.forEach(x => { if (x.hypothese && typeof x.valeur === 'number') P[x.hypothese] = x.valeur; });
+// croissance 2026-2028 : Banque de France, 2027 : consensus (même règle que la page)
+P.gAn = {};
+D.macro.calage.filter(c => /^Banque de France/.test(c.org) && c.pib != null && c.annee >= 2026 && c.annee <= 2028)
+  .sort((a, b) => a.date < b.date ? -1 : 1).forEach(c => { P.gAn[c.annee] = c.pib; });
+if (P.g27 != null) { P.gAn[2027] = P.g27; delete P.g27; }
+P.spread = D.macro.moteur.primeDette.v;
 
 const M = Object.fromEntries(D.measures.measures.map(m => [m.id, m]));
 const actif = p => Object.fromEntries(Object.entries(p.set).map(([id, e]) => [id, M[id][e.sim || 'mid']]));
@@ -22,12 +28,12 @@ function runPage(P, active) {
   const BL = D.baseline.apu, START = 2027;
   const amountAt = (m, val, y) => y < START ? 0 : val * Math.min(1, (y - START + 1) / m.ramp)
     * ((!m.behav) ? 1 : 1 - (P.erosion / 100) * Math.min(1, (y - START + 1) / 3));
-  const nom = (P.g + P.infl) / 100, RHO = 0.6;
+  const nomAn = y => (((P.gAn && P.gAn[y] != null) ? P.gAn[y] : P.g) + P.infl) / 100, RHO = 0.6;
   let pibBase = BL.pib, depPrim = BL.depenses - BL.charge, recBase = BL.recettes;
   let dette = BL.dette, taux = BL.tauxApparent, gap = 0, impPrev = 0, pib = BL.pib, out;
   const d0 = BL.dette / BL.pib * 100;
   for (let y = 2026; y <= 2032; y++) {
-    pibBase *= 1 + nom; depPrim *= 1 + (P.drift + P.infl) / 100; recBase *= 1 + nom;
+    pibBase *= 1 + nomAn(y); depPrim *= 1 + (P.drift + P.infl) / 100; recBase *= 1 + nomAn(y);
     const rMkt = P.rmkt + P.spread / 100 * Math.max(0, dette / pib * 100 - d0);
     taux += (rMkt - taux) * BL.partRefinancee;
     const charge = dette * taux / 100;

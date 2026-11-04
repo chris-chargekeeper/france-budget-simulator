@@ -88,7 +88,8 @@
     /** Simule une trajectoire. b : bornes {demande: v|faible|fort, okun: v|lo|hi, prime: v|lo|hi,
      *  offre: v|lo|hi}. ref : trajectoire « si rien ne change » avec les mêmes bornes. */
     function simuler(P, active, b, ref) {
-      const nom = (P.g + P.infl) / 100;
+      /* Croissance année par année : prévisions publiées jusqu'en 2028 (P.gAn), tendance P.g ensuite. */
+      const nomAn = y => (((P.gAn && P.gAn[y] != null) ? P.gAn[y] : P.g) + P.infl) / 100;
       const prime = choisir(MOT.primeDette, b.prime);
       const okun = choisir(MOT.okun, b.okun);
       let pibT = BASE.pib0, depPrim = BASE.dep0 - BASE.charge0, recBase = BASE.rec0;
@@ -99,10 +100,10 @@
                      dettePct: dette0Pct, rMkt: P.rmkt, solde: BASE.rec0 - BASE.dep0,
                      soldePct: (BASE.rec0 - BASE.dep0) / BASE.pib0 * 100, charge: BASE.charge0}];
       for (let y = DEBUT + 1; y <= FIN; y++) {
-        pibT *= (1 + nom);
+        pibT *= (1 + nomAn(y));
         prix *= (1 + P.infl / 100);
         depPrim *= (1 + (P.drift + P.infl) / 100);
-        recBase *= (1 + nom);
+        recBase *= (1 + nomAn(y));
         const prev = rows[rows.length - 1];
         const rMkt = P.rmkt + (prime / 100) * Math.max(0, prev.dette / prev.pib * 100 - dette0Pct);
         taux = taux + (rMkt - taux) * BASE.refi;
@@ -142,7 +143,10 @@
         for (const id in active) {
           for (const ca of MC.classement[id].canaux) {
             if (ca.moteur !== 'projection') continue;
-            const f = ca.facteur == null ? 1 : ca.facteur;
+            /* L'effet suit l'ampleur retenue : un retour partiel à 62 ans (borne basse) pèse
+               moins sur l'emploi qu'un retour complet. Rapport au chiffrage central de la mesure. */
+            const ampleur = M[id] && M[id].mid ? active[id] / M[id].mid : 1;
+            const f = (ca.facteur == null ? 1 : ca.facteur) * ampleur;
             if (ca.pib) {
               const e = canal(ca, 'pib', h, f, b.offre) / 100 * pibT;
               offrePib += e; contrib[id] = (contrib[id] || 0) + e;

@@ -147,7 +147,7 @@
         "t": "Avis du Haut Conseil des finances publiques n° 2026-5, tableau des prévisions (Consensus Forecasts du 17 septembre 2026)",
         "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
       },
-      "hypothese": "g",
+      "hypothese": "g27",
       "bornes": [
         -5,
         6
