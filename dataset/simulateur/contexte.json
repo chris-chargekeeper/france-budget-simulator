@@ -217,6 +217,8 @@
       "valeur": 119.0,
       "date": "2026-09-29",
       "detail": "3 596 Md€ à la fin du deuxième trimestre 2026.",
+      "montant": 3595.5,
+      "arrete": "2026-06-30",
       "source": {
         "t": "À la fin du deuxième trimestre 2026, le ratio de dette publique s'établit à 119,0 % du PIB — INSEE, Informations rapides n° 239",
         "u": "https://www.insee.fr/fr/statistiques/9053525"

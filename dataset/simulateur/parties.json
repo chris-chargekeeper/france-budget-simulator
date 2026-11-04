@@ -34,7 +34,7 @@
         },
         "agences": {
           "sim": "hi",
-          "annonce": 3
+          "annonce": 3.4
         },
         "effectifs": {
           "sim": "mid",
@@ -42,7 +42,7 @@
         },
         "collectivites": {
           "sim": "lo",
-          "annonce": 5
+          "annonce": 8.2
         },
         "ame": {
           "sim": "hi",
@@ -54,7 +54,7 @@
         },
         "tvaener": {
           "sim": "mid",
-          "annonce": 10
+          "annonce": 17
         },
         "retr62": {
           "sim": "mid",
@@ -81,6 +81,10 @@
         {
           "t": "Condamnée en appel, Marine Le Pen pourra se présenter en 2027 — RTS avec AFP, 7 juillet 2026",
           "u": "https://www.rts.ch/info/monde/2026/article/condamnee-en-appel-marine-le-pen-pourra-se-presenter-en-2027-29296439.html"
+        },
+        {
+          "t": "Contre-budget RN de 140 Md€ (6 octobre 2026) et débat du 2 novembre 2026 à l'Assemblée",
+          "u": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f"
         }
       ]
     },
@@ -103,7 +107,7 @@
       "set": {
         "isfclim": {
           "sim": "mid",
-          "annonce": 12
+          "annonce": 10
         },
         "superp": {
           "sim": "mid",
@@ -111,23 +115,23 @@
         },
         "ttf": {
           "sim": "mid",
-          "annonce": 20
+          "annonce": 5
         },
         "zucman": {
           "sim": "mid",
-          "annonce": 20
+          "annonce": 15
         },
         "pfu": {
           "sim": "mid",
-          "annonce": 6
+          "annonce": 9
         },
         "succ": {
           "sim": "mid",
-          "annonce": 5
+          "annonce": 20
         },
         "isgrandes": {
           "sim": "mid",
-          "annonce": 12
+          "annonce": 3
         },
         "minimum15": {
           "sim": "mid"
@@ -141,7 +145,7 @@
         },
         "niches": {
           "sim": "mid",
-          "annonce": 15
+          "annonce": 22
         },
         "retr60": {
           "sim": "mid",
@@ -161,7 +165,8 @@
           "sim": "mid"
         },
         "pointindice": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 17
         },
         "indexation": {
           "sim": "mid"
@@ -198,46 +203,60 @@
       "avatar": "h",
       "couleur": "#2E6FB7",
       "statutCandidature": "Investi par les militants LR (19 avril 2026) ; juge qu'il faudra « sans doute une primaire » de la droite et du centre en début d'année et propose trois débats d'ici Noël avec Attal, Philippe et Lisnard (BFMTV, 3 novembre 2026)",
-      "statut": "reconstitution",
+      "statut": "partiel",
       "annonce": {
         "titre": "197 Md€ d'économies par an en 2032, chiffrées poste par poste",
-        "texte": "Le 12 octobre 2026, Bruno Retailleau a publié des fiches presse qui chiffrent son plan poste par poste : 197 Md€ d'économies par an atteintes en 2032 (12 Md€ dès 2027), dont 146 Md€ affectés au déficit et 51 Md€ rendus en baisses de prélèvements (30 Md€ aux entreprises, 21 Md€ aux ménages). Le déficit passerait sous 3 % en 2031, à 2,2 % en 2032, sans impôt nouveau. La ventilation : 96 Md€ pour l'État (dont 25 Md€ de 400 000 départs non remplacés et 7,5 Md€ d'agences supprimées), 91 Md€ pour le social (dont 42 Md€ sur les retraites et 30 Md€ sur le chômage et les aides, restitués en baisses de cotisations) et 10 Md€ pour les collectivités. Le scénario ci-dessous reste une reconstitution du simulateur : il n'a pas encore été réaligné sur ces montants, souvent bien au-dessus des bornes du catalogue.",
+        "texte": "Le 12 octobre 2026, Bruno Retailleau a publié des fiches presse qui chiffrent son plan poste par poste : 197 Md€ d'économies par an atteintes en 2032 (12 Md€ dès 2027), dont 146 Md€ affectés au déficit et 51 Md€ rendus en baisses de prélèvements (30 Md€ aux entreprises, 21 Md€ aux ménages). Le déficit passerait sous 3 % en 2031, à 2,2 % en 2032, sans impôt nouveau. La ventilation : 96 Md€ pour l'État (dont 25 Md€ de 400 000 départs non remplacés et 7,5 Md€ d'agences supprimées), 91 Md€ pour le social (dont 42 Md€ sur les retraites et 30 Md€ sur le chômage et les aides, restitués en baisses de cotisations) et 10 Md€ pour les collectivités. Le scénario reprend ces montants poste par poste quand le catalogue du simulateur a la mesure correspondante ; plusieurs dépassent nettement les chiffrages indépendants. La baisse de cotisations salariales (21 Md€ rendus aux ménages) est retenue au niveau du catalogue.",
         "revendique": 197,
-        "detaille": 197,
-        "cote": "economie"
+        "detaille": 133.5,
+        "cote": "economie",
+        "horsCatalogue": {
+          "v": 42,
+          "quoi": "postes chiffrés par le parti sans équivalent dans le catalogue du simulateur : retraites hors mesures d'âge (30 Md€ : réserves, alignement Agirc-Arrco, cotisation dédiée, RAFP, régimes spéciaux, fraude), compte social unique (10 Md€), revenu d'incitation à l'activité (2 Md€)",
+          "source": {
+            "t": "Les Républicains — Fiches presse « Rétablir l'ordre dans les comptes publics », 12 octobre 2026",
+            "u": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+          }
+        }
       },
       "set": {
         "effectifs": {
-          "sim": "hi"
+          "sim": "hi",
+          "annonce": 25
+        },
+        "agences": {
+          "sim": "mid",
+          "annonce": 7.5
         },
         "chomage": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 14
         },
-        "age65": {
-          "sim": "mid"
-        },
-        "niches": {
-          "sim": "mid"
-        },
-        "collectivites": {
-          "sim": "mid"
-        },
-        "ondam": {
-          "sim": "mid"
-        },
-        "blanche": {
-          "sim": "mid"
+        "fraude": {
+          "sim": "mid",
+          "annonce": 9
         },
         "immigration": {
-          "sim": "lo"
+          "sim": "lo",
+          "annonce": 10
+        },
+        "collectivites": {
+          "sim": "mid",
+          "annonce": 10
+        },
+        "ondam": {
+          "sim": "mid",
+          "annonce": 4
+        },
+        "age65": {
+          "sim": "mid",
+          "annonce": 12
         },
         "prod": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 15
         },
-        "irbaisse": {
-          "sim": "lo"
-        },
-        "defense": {
+        "csgbaisse": {
           "sim": "mid"
         }
       },
@@ -271,10 +290,19 @@
       "statut": "reconstitution",
       "annonce": {
         "titre": "150 Md€ d'économies sur le quinquennat",
-        "texte": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis 150 Md€ d'économies sur le quinquennat, dont deux tiers sur les dépenses sociales ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. Seuls deux postes sont chiffrés : 7 Md€ par an de réorganisation de l'État et des collectivités, 5 Md€ sur l'assurance chômage.",
+        "texte": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Un seul poste est chiffré : plus de 7 Md€ par an de réorganisation de l'État et des collectivités. Le scénario est reconstitué par le simulateur à partir de ces orientations.",
         "revendique": 150,
-        "detaille": 12,
-        "cote": "economie"
+        "detaille": 7,
+        "cote": "economie",
+        "horsCatalogue": {
+          "v": 7,
+          "quoi": "réorganisation de l'État et des collectivités (suppression d'échelons, simplification), « plus de 7 milliards d'euros […] chaque année »",
+          "source": {
+            "t": "Lettre de Gabriel Attal aux Français sur les finances publiques — Renaissance, 15 octobre 2026",
+            "u": "https://doc.parti.re/2026/Lettre-finances-publiques.pdf"
+          }
+        },
+        "nonAnnuel": "La lettre annonce « 150 milliards d'euros d'économies sur le quinquennat » sans dire s'il s'agit d'un montant annuel atteint en fin de mandat ou d'un cumul sur cinq ans : il ne peut pas être comparé aux montants annuels du simulateur."
       },
       "set": {
         "blanche": {
@@ -294,9 +322,6 @@
         },
         "niches": {
           "sim": "lo"
-        },
-        "defense": {
-          "sim": "mid"
         },
         "prod": {
           "sim": "lo"
@@ -323,8 +348,8 @@
       "statutCandidature": "Candidat déclaré depuis septembre 2024",
       "statut": "reconstitution",
       "annonce": {
-        "titre": "Pas de chiffrage 2027 publié",
-        "texte": "Reconstitution du simulateur à partir de positions publiques : allongement de la durée du travail, effort d'économies large et rapide, effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.",
+        "titre": "Budget alternatif 2027 publié, pas de chiffrage présidentiel",
+        "texte": "Horizons a publié le 13 octobre 2026 un « budget alternatif » pour le PLF 2027 : 10 Md€ d'économies (moitié État, moitié dépenses sociales) pour annuler 10 Md€ de hausses d'impôts. Édouard Philippe a présenté le 29 septembre 2026 une réforme des retraites portant l'âge légal à 65 ans. Aucun chiffrage d'ensemble de son programme présidentiel n'est publié : le scénario est reconstitué par le simulateur à partir de ces positions, aux montants du catalogue.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -337,7 +362,8 @@
           "sim": "hi"
         },
         "niches": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 50
         },
         "effectifs": {
           "sim": "mid"
@@ -348,9 +374,6 @@
         "collectivites": {
           "sim": "mid"
         },
-        "defense": {
-          "sim": "mid"
-        },
         "agences": {
           "sim": "mid"
         }
@@ -359,6 +382,10 @@
         {
           "t": "Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? — franceinfo, liste au 22 octobre 2026",
           "u": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+        },
+        {
+          "t": "Premier débat des candidats : Édouard Philippe, 50 Md€ d'aides aux entreprises supprimées — Public Sénat",
+          "u": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle"
         }
       ]
     },
@@ -372,8 +399,8 @@
       "statutCandidature": "Investi : vainqueur de la primaire PS – Place publique – GRS dès le premier tour (66 %, 11 octobre 2026)",
       "statut": "reconstitution",
       "annonce": {
-        "titre": "Pas de chiffrage 2027 publié",
-        "texte": "Reconstitution du simulateur à partir de positions publiques : fiscalité du patrimoine renforcée sans rupture avec le cadre européen, retour partiel sur la réforme des retraites, investissement écologique et effort de défense. Les montants sont ceux du catalogue, pas ceux du parti.",
+        "titre": "Contre-budget 2027 publié (39,5 Md€ de recettes), pas de chiffrage présidentiel",
+        "texte": "Le groupe socialiste a publié le 16 septembre 2026 un contre-budget pour 2027 : 39,5 Md€ de recettes nouvelles (taxe Zucman 15 Md€, CSG sur les gros héritages 10 Md€, taxe sur les géants du numérique 10 Md€), 12,1 Md€ d'économies, 22 Md€ de dépenses nouvelles. Raphaël Glucksmann, désigné le 11 octobre, n'a pas publié de chiffrage d'ensemble de son programme présidentiel : le scénario est reconstitué par le simulateur, en reprenant les montants du contre-budget quand le catalogue a la mesure.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -383,10 +410,12 @@
           "sim": "mid"
         },
         "zucman": {
-          "sim": "lo"
+          "sim": "lo",
+          "annonce": 15
         },
         "succ": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 10
         },
         "isgrandes": {
           "sim": "lo"
@@ -401,10 +430,8 @@
           "sim": "mid"
         },
         "ecolo": {
-          "sim": "mid"
-        },
-        "defense": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 10
         },
         "retr62": {
           "sim": "lo"
@@ -414,6 +441,10 @@
         {
           "t": "Primaire de la gauche : Raphaël Glucksmann plie le match et remporte le scrutin dès le premier tour avec 66 % — Public Sénat, 11 octobre 2026",
           "u": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66"
+        },
+        {
+          "t": "Budget : les socialistes présentent leurs propositions — LCP",
+          "u": "https://lcp.fr/actualites/budget-a-l-assemblee-les-socialistes-presentent-leurs-propositions-et-previennent-qu-ils"
         }
       ]
     },
@@ -427,8 +458,8 @@
       "statutCandidature": "Candidate, mais prête à se retirer pour une union de la gauche ; les adhérents tranchent le 13 décembre 2026",
       "statut": "reconstitution",
       "annonce": {
-        "titre": "Pas de chiffrage 2027 publié",
-        "texte": "Reconstitution du simulateur à partir de positions publiques : investissement écologique de l'ordre du besoin identifié par le rapport Pisani-Ferry, financé par la fiscalité du patrimoine et le rabot des aides aux entreprises. Les montants sont ceux du catalogue, pas ceux du parti.",
+        "titre": "Amendements chiffrés au budget 2027, pas de chiffrage présidentiel",
+        "texte": "Le groupe écologiste a chiffré plusieurs amendements au budget 2027 : ISF climatique incluant un plancher de 2 % au-delà de 100 M€ (taxe Zucman, 15 à 25 Md€ selon le groupe), réforme de l'héritage (10 Md€), contribution sur les pétro-gaziers (2,8 Md€). Aucun chiffrage d'ensemble du programme présidentiel n'est publié : le scénario est reconstitué par le simulateur à partir de ces positions.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -441,7 +472,8 @@
           "sim": "mid"
         },
         "superp": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 2.8
         },
         "cir": {
           "sim": "mid"
@@ -450,7 +482,8 @@
           "sim": "mid"
         },
         "succ": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 10
         },
         "age": {
           "sim": "mid"
@@ -696,7 +729,8 @@
       },
       "set": {
         "immigration": {
-          "sim": "hi"
+          "sim": "hi",
+          "annonce": 20
         },
         "ame": {
           "sim": "hi"
@@ -708,7 +742,8 @@
           "sim": "mid"
         },
         "effectifs": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 40
         },
         "institutions": {
           "sim": "mid"
@@ -718,6 +753,10 @@
         {
           "t": "« Je serai candidat » : Éric Zemmour annonce sur BFMTV qu'il se présentera à l'élection présidentielle — BFMTV, 17 septembre 2026",
           "u": "https://www.bfmtv.com/politique/elections/presidentielle/je-serai-candidat-eric-zemmour-annonce-sur-bfmtv-qu-il-se-presentera-a-l-election-presidentielle_AV-202609170947.html"
+        },
+        {
+          "t": "Sarah Knafo : 20 Md€ sur l'immigration, 40 Md€ sur la fonction publique — franceinfo",
+          "u": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html"
         }
       ],
       "depuis": "2026-10-30"

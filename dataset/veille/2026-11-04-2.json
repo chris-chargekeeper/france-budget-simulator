@@ -1,0 +1,126 @@
+{
+  "patch": {
+    "releve": "2026-11-04",
+    "partis": {
+      "rn": {
+        "set": {
+          "tvaener": {
+            "annonce": 17
+          },
+          "agences": {
+            "annonce": 3.4
+          },
+          "collectivites": {
+            "annonce": 8.2
+          }
+        },
+        "source": {
+          "t": "Contre-budget RN de 140 Md€ (6 octobre 2026) et débat du 2 novembre 2026 à l'Assemblée",
+          "u": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f"
+        }
+      },
+      "lfi": {
+        "set": {
+          "pointindice": {
+            "annonce": 17
+          }
+        },
+        "source": {
+          "t": "Contre-budget LFI : 106,4 Md€ de recettes supplémentaires — LCP",
+          "u": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+        }
+      },
+      "hor": {
+        "set": {
+          "niches": {
+            "annonce": 50
+          }
+        },
+        "source": {
+          "t": "Premier débat des candidats : Édouard Philippe, 50 Md€ d'aides aux entreprises supprimées — Public Sénat",
+          "u": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle"
+        }
+      },
+      "ps": {
+        "set": {
+          "ecolo": {
+            "annonce": 10
+          }
+        },
+        "source": {
+          "t": "Budget : les socialistes présentent leurs propositions — LCP",
+          "u": "https://lcp.fr/actualites/budget-a-l-assemblee-les-socialistes-presentent-leurs-propositions-et-previennent-qu-ils"
+        }
+      },
+      "rec": {
+        "set": {
+          "immigration": {
+            "annonce": 20
+          },
+          "effectifs": {
+            "annonce": 40
+          }
+        },
+        "source": {
+          "t": "Sarah Knafo : 20 Md€ sur l'immigration, 40 Md€ sur la fonction publique — franceinfo",
+          "u": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-11-04",
+    "applique": "2026-11-04",
+    "ajouts": [],
+    "revisions": [
+      {
+        "quoi": "parties.rn.set.tvaener.annonce",
+        "avant": null,
+        "apres": 17,
+        "source": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f"
+      },
+      {
+        "quoi": "parties.rn.set.agences.annonce",
+        "avant": 3,
+        "apres": 3.4,
+        "source": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f"
+      },
+      {
+        "quoi": "parties.rn.set.collectivites.annonce",
+        "avant": 5,
+        "apres": 8.2,
+        "source": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f"
+      },
+      {
+        "quoi": "parties.lfi.set.pointindice.annonce",
+        "avant": null,
+        "apres": 17,
+        "source": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+      },
+      {
+        "quoi": "parties.hor.set.niches.annonce",
+        "avant": null,
+        "apres": 50,
+        "source": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle"
+      },
+      {
+        "quoi": "parties.ps.set.ecolo.annonce",
+        "avant": null,
+        "apres": 10,
+        "source": "https://lcp.fr/actualites/budget-a-l-assemblee-les-socialistes-presentent-leurs-propositions-et-previennent-qu-ils"
+      },
+      {
+        "quoi": "parties.rec.set.immigration.annonce",
+        "avant": null,
+        "apres": 20,
+        "source": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html"
+      },
+      {
+        "quoi": "parties.rec.set.effectifs.annonce",
+        "avant": null,
+        "apres": 40,
+        "source": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html"
+      }
+    ]
+  }
+}
