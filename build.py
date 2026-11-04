@@ -574,6 +574,75 @@ def fraicheur(payload):
                if isinstance(payload.get(bloc), dict) and payload[bloc].get("updated"))
 
 
+SITE = "https://quipaie2027.fr"
+WEB = ROOT / "web"
+# Robots d'indexation et d'IA explicitement invités : moteurs (Google, Bing — dont se
+# sert ChatGPT —, Qwant, DuckDuckGo, Ecosia s'appuient sur l'un des deux) et assistants.
+ROBOTS_IA = ["Googlebot", "Bingbot", "Google-Extended", "GPTBot", "OAI-SearchBot",
+             "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User",
+             "PerplexityBot", "Perplexity-User", "Applebot", "Applebot-Extended",
+             "MistralAI-User", "CCBot", "DuckAssistBot", "Qwantbot"]
+
+
+def fichiers_web(payload):
+    """robots.txt, sitemap.xml et llms.txt, servis à côté de la page.
+
+    Générés ici pour suivre les données : la date du sitemap est celle de la relève, et
+    la liste des candidats de llms.txt celle de parties.json (les retirés n'y sont plus).
+    """
+    jour = fraicheur(payload)
+    robots = ["# quipaie2027.fr — tout le site peut être lu et cité, par les moteurs comme par les IA.",
+              "User-agent: *", "Allow: /", ""]
+    for ua in ROBOTS_IA:
+        robots += [f"User-agent: {ua}", "Allow: /", ""]
+    robots += [f"Sitemap: {SITE}/sitemap.xml", ""]
+    sitemap = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+               '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+               f"  <url><loc>{SITE}/</loc><lastmod>{jour}</lastmod>"
+               "<changefreq>daily</changefreq><priority>1.0</priority></url>\n"
+               f"  <url><loc>{SITE}/llms.txt</loc><lastmod>{jour}</lastmod>"
+               "<changefreq>daily</changefreq><priority>0.5</priority></url>\n"
+               "</urlset>\n")
+    cands = [x for x in payload["parties"]["parties"] if not x.get("retire")]
+    course = [x for x in cands if not x.get("horsCourse")]
+    lignes = [f"- {x['candidat']} ({x['nom']}) : {x['statutCandidature']}" for x in course]
+    annonces = [f"- {x['candidat']} : {x['annonce']['titre']}" for x in course
+                if isinstance(x.get("annonce"), dict) and x["annonce"].get("titre")]
+    llms = f"""# quipaie2027.fr
+
+> Simulateur budgétaire neutre et gratuit pour l'élection présidentielle française de 2027. On choisit un candidat et on voit ce que son programme changerait au budget de la France d'ici 2032 : déficit public, dette publique, qui paie et qui reçoit, effets sur l'emploi, le chômage, la richesse par habitant et les taux d'intérêt, et l'écart entre ce que le candidat annonce et ce que donnent des chiffrages indépendants.
+
+Données au {jour}, mises à jour chaque matin (veille des déclarations chiffrées, des chiffrages indépendants, des sondages et du contexte économique).
+
+## Ce que fait le site
+
+- Point de départ : la trajectoire des finances publiques « si rien ne change » (Insee, PLF, Haut Conseil des finances publiques, Commission européenne).
+- Chaque programme est découpé en mesures ({len(payload['measures']['measures'])} au total), chacune chiffrée par une borne basse, une valeur centrale et une borne haute tirées de travaux publics : Cour des comptes, HCFP, OFCE, IPP, Conseil d'analyse économique, Fipeco, Banque de France, rapports parlementaires.
+- Deux lectures côte à côte : « Leurs promesses » (les chiffres annoncés par les partis) et « Bas les masques » (ce que disent les chiffrages indépendants).
+- Effets en chaîne en 2032 : emploi, chômage, PIB par habitant, taux d'emprunt de l'État, intérêts de la dette, à partir de multiplicateurs et de lois économiques publiés (Trésor, Banque de France, BCE, OFCE, Commission européenne), avec une fourchette.
+- Journal des annonces : chaque déclaration chiffrée relevée, datée, sourcée, et marquée quand elle contredit le programme écrit.
+- Le site ne soutient aucun candidat. Quand un parti n'a pas publié de chiffrage, son scénario est une reconstitution à partir de ses positions publiques, signalée comme telle.
+
+## Candidats suivis
+
+{chr(10).join(lignes)}
+
+## Dernières annonces chiffrées par candidat
+
+{chr(10).join(annonces)}
+
+## Limites
+
+- Ordres de grandeur arrondis, pas un modèle macroéconométrique complet : un chiffrage officiel se fait avec un modèle bouclé (type Mésange à la direction générale du Trésor).
+- Les montants de chaque mesure sont réglables entre leurs bornes, parce que le chiffrage lui-même est souvent l'objet du désaccord.
+
+## Liens
+
+- [Le simulateur]({SITE}/) : toutes les données, la méthode et les sources sont dans la page (section « Méthode, sources et limites »).
+"""
+    return {"robots.txt": "\n".join(robots), "sitemap.xml": sitemap, "llms.txt": llms}
+
+
 def moteur_js():
     """Le moteur de projection, inséré tel quel dans la page (moteur/projection.js fait foi)."""
     js = (ROOT / "moteur" / "projection.js").read_text(encoding="utf-8")
@@ -657,6 +726,9 @@ def main():
     html, *_ = rendu(payload, template)
     index.write_text(html, encoding="utf-8")
     STAMP.write_text(hashlib.sha256(html.encode("utf-8")).hexdigest() + "\n", encoding="utf-8")
+    WEB.mkdir(exist_ok=True)
+    for nom, contenu in fichiers_web(payload).items():
+        (WEB / nom).write_text(contenu, encoding="utf-8")
     print(f"index.html écrit — {len(html):,} octets, "
           f"{len(payload['measures']['measures'])} mesures, "
           f"{len(payload['parties']['parties'])} partis, "
