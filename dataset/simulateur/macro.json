@@ -929,11 +929,11 @@
      "citation": "« réduire la croissance de -0,1 point en 2026 »"
     }
    ],
-   "note": "",
+   "note": "Vérifié le 2026-11-04 (PDF p. 20) : « multiplicateur respectif à 0,5 et 1 » pour les recettes et les dépenses ; le même document retient 0,7 pour le rythme annuel de fermeture de l'écart de production.",
    "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
    "verifie": true,
    "theme": "multiplicateurs",
-   "controle": "non_revu"
+   "controle": "confirme"
   },
   {
    "id": "mult_agrege_crise_bl",
@@ -3944,5 +3944,443 @@
    "Élasticité directe Allemagne → France : non publiée (proxy : variante de demande mondiale de Mésange).",
    "Variante Mésange postérieure à 2017 : non trouvée."
   ]
+ },
+ "types": {
+  "invest_public": {
+   "lab": "Investissement public",
+   "sens": "depense+",
+   "confiance": "directe",
+   "demande": {
+    "a1": "mult_invest_public_a1",
+    "a2": "mult_invest_public_a2",
+    "a3": "mult_invest_public_a3",
+    "a5": "mult_invest_public_a5",
+    "lt": "mult_invest_public_lt"
+   }
+  },
+  "conso_publique": {
+   "lab": "Fonctionnement des administrations",
+   "sens": "depense+",
+   "confiance": "directe",
+   "demande": {
+    "a1": "mult_depense_generique_a1",
+    "a2": "mult_depense_generique_a2",
+    "a3": "mult_depense_generique_a3",
+    "lt": "mult_depense_generique_lt"
+   }
+  },
+  "emploi_public": {
+   "lab": "Emploi public",
+   "sens": "depense+",
+   "confiance": "directe",
+   "demande": {
+    "a1": "mult_emploi_public"
+   }
+  },
+  "defense": {
+   "lab": "Défense",
+   "sens": "depense+",
+   "confiance": "directe",
+   "demande": {
+    "a3": "mult_defense"
+   }
+  },
+  "prestations": {
+   "lab": "Prestations et pensions",
+   "sens": "depense+",
+   "confiance": "directe",
+   "demande": {
+    "a1": "mult_prestations"
+   }
+  },
+  "tva": {
+   "lab": "TVA",
+   "sens": "hausse",
+   "confiance": "directe",
+   "demande": {
+    "a1": "mult_tva",
+    "a2": "mult_tva_a2_lt"
+   }
+  },
+  "energie": {
+   "lab": "Fiscalité de l'énergie",
+   "sens": "hausse",
+   "confiance": "directe",
+   "demande": {
+    "a1": "mult_taxe_carbone_energie"
+   }
+  },
+  "ir": {
+   "lab": "Impôt sur le revenu",
+   "sens": "baisse",
+   "confiance": "directe",
+   "demande": {
+    "a1": "mult_ir",
+    "a2": "mult_ir_a2_lt"
+   }
+  },
+  "csg_activite": {
+   "lab": "CSG et cotisations sur les revenus d'activité",
+   "sens": "baisse",
+   "confiance": "directe",
+   "demande": {
+    "a1": "mult_csg"
+   }
+  },
+  "cotis_bas_salaires": {
+   "lab": "Cotisations employeurs sur les bas salaires",
+   "sens": "baisse",
+   "confiance": "directe",
+   "demande": {
+    "a1": "mult_allegements_bas_salaires"
+   }
+  },
+  "benefices": {
+   "lab": "Impôts sur les bénéfices des entreprises",
+   "sens": "hausse",
+   "confiance": "directe",
+   "demande": {
+    "a1": "mult_is_capital",
+    "lt": "mult_is_capital_lt"
+   }
+  },
+  "revenus_capital": {
+   "lab": "Impôts sur les revenus du capital des ménages",
+   "sens": "hausse",
+   "confiance": "substitut",
+   "demande": {
+    "a1": "mult_is_capital"
+   },
+   "note": "Le coefficient publié (BCE, modèle EAGLE) porte sur l'imposition des revenus du capital en général ; il sert de substitut, faute d'estimation propre aux dividendes des ménages."
+  },
+  "patrimoine": {
+   "lab": "Impôts sur le patrimoine",
+   "sens": "ampleur",
+   "borne": "lo",
+   "confiance": "generique",
+   "demande": {
+    "a1": "mult_agrege_ofce_consolidation"
+   },
+   "note": "Aucun multiplicateur publié pour l'ISF, une taxe sur les grands patrimoines ou les successions. Le comité de France Stratégie n'a pas démontré d'effet de la réforme ISF→IFI sur l'investissement. Multiplicateur d'ensemble, signalé comme tel."
+  },
+  "production": {
+   "lab": "Impôts de production",
+   "sens": "ampleur",
+   "borne": "lo",
+   "confiance": "generique",
+   "demande": {
+    "a1": "mult_agrege_ofce_consolidation"
+   },
+   "note": "Aucun multiplicateur publié propre aux impôts de production."
+  },
+  "finance": {
+   "lab": "Taxes sur les opérations financières",
+   "sens": "ampleur",
+   "borne": "lo",
+   "confiance": "generique",
+   "demande": {
+    "a1": "mult_agrege_ofce_consolidation"
+   },
+   "note": "Aucun multiplicateur publié pour la TTF ou une taxe sur les rachats d'actions."
+  },
+  "generique_recettes": {
+   "lab": "Autre recette",
+   "sens": "ampleur",
+   "borne": "lo",
+   "confiance": "generique",
+   "demande": {
+    "a1": "mult_agrege_ofce_consolidation"
+   },
+   "note": "Aucun multiplicateur publié pour cet instrument : 0,5, valeur de l'OFCE pour les recettes."
+  },
+  "generique_depense": {
+   "lab": "Autre dépense",
+   "sens": "ampleur",
+   "borne": "hi",
+   "confiance": "generique",
+   "demande": {
+    "a1": "mult_agrege_ofce_consolidation"
+   },
+   "note": "Aucun multiplicateur publié pour cet instrument : 1, valeur de l'OFCE pour les dépenses."
+  }
+ },
+ "classement": {
+  "zucman": {
+   "type": "patrimoine",
+   "canaux": [
+    {
+     "coef": "fiscalite_capital_pfu_ifi_investissement",
+     "quoi": "effet sur l'investissement non démontré par les évaluations"
+    }
+   ]
+  },
+  "isf": {
+   "type": "patrimoine",
+   "canaux": [
+    {
+     "coef": "fiscalite_capital_pfu_ifi_investissement",
+     "quoi": "effet sur l'investissement non démontré par les évaluations"
+    }
+   ]
+  },
+  "isfclim": {
+   "type": "patrimoine",
+   "canaux": [
+    {
+     "coef": "fiscalite_capital_pfu_ifi_investissement",
+     "quoi": "effet sur l'investissement non démontré par les évaluations"
+    }
+   ]
+  },
+  "succ": {
+   "type": "patrimoine",
+   "canaux": []
+  },
+  "exit": {
+   "type": "patrimoine",
+   "canaux": [],
+   "note": "Mesure défensive : son effet passe par l'assiette des autres impôts."
+  },
+  "csgcap": {
+   "type": "revenus_capital",
+   "canaux": []
+  },
+  "pfu": {
+   "type": "revenus_capital",
+   "canaux": [
+    {
+     "coef": "fiscalite_capital_pfu_ifi_investissement",
+     "quoi": "effet du PFU sur l'investissement non démontré"
+    }
+   ]
+  },
+  "isgrandes": {
+   "type": "benefices",
+   "canaux": [
+    {
+     "coef": "elasticite_investissement_cout_capital",
+     "quoi": "l'impôt renchérit le coût du capital, donc freine l'investissement"
+    }
+   ]
+  },
+  "superp": {
+   "type": "benefices",
+   "canaux": [
+    {
+     "coef": "elasticite_investissement_cout_capital",
+     "quoi": "l'impôt renchérit le coût du capital"
+    }
+   ],
+   "note": "Contribution temporaire par nature : le moteur ne doit pas lui appliquer l'effet de long terme d'une hausse permanente."
+  },
+  "minimum15": {
+   "type": "benefices",
+   "canaux": [],
+   "note": "Déjà transposé ; l'effet porte surtout sur les profits déplacés à l'étranger."
+  },
+  "rachats": {
+   "type": "finance",
+   "canaux": []
+  },
+  "ttf": {
+   "type": "finance",
+   "canaux": []
+  },
+  "tva1": {
+   "type": "tva",
+   "canaux": [],
+   "note": "Effet sur les prix : voir pouvoir.json (mesures de prix)."
+  },
+  "tvaener": {
+   "type": "energie",
+   "canaux": [],
+   "note": "Baisse de TVA sur l'énergie : le coefficient de la fiscalité énergétique sert, dans l'autre sens. Effet sur les prix : voir pouvoir.json."
+  },
+  "cir": {
+   "type": "benefices",
+   "canaux": [
+    {
+     "coef": "cir_reforme2008_pib_lt",
+     "quoi": "moins de R&D privée, donc moins de productivité",
+     "extrapolation": true
+    }
+   ],
+   "note": "Le rabot du CIR est un impôt de plus sur les entreprises. L'effet de long terme vient de l'évaluation de la réforme inverse (2008)."
+  },
+  "alleg": {
+   "type": "cotis_bas_salaires",
+   "canaux": [
+    {
+     "coef": "allegements_bas_salaires_emplois_par_Md",
+     "quoi": "emplois au niveau du Smic : effet moyen publié ; l'effet d'une réduction partielle (5 000 à 11 000 emplois par Md€) est dans la note du coefficient"
+    }
+   ]
+  },
+  "fraude": {
+   "type": "generique_recettes",
+   "canaux": [],
+   "note": "Le rendement mesure l'impôt récupéré ; aucun multiplicateur publié."
+  },
+  "irbaisse": {
+   "type": "ir",
+   "canaux": []
+  },
+  "prod": {
+   "type": "production",
+   "canaux": [
+    {
+     "coef": "impots_production_c3s",
+     "quoi": "perte de productivité due aux impôts sur le chiffre d'affaires",
+     "extrapolation": true
+    }
+   ],
+   "note": "Le seul chiffrage publié porte sur la C3S ; il reste la CFE et la taxe foncière, que le CAE juge peu distorsives."
+  },
+  "csgbaisse": {
+   "type": "csg_activite",
+   "canaux": []
+  },
+  "retr62": {
+   "type": "prestations",
+   "canaux": [
+    {
+     "coef": "age_aod_plus_1an",
+     "quoi": "moins de seniors en emploi ; le COR ne chiffre que +1 an, l'effet de -2 ans est extrapolé",
+     "facteur": -2,
+     "extrapolation": true
+    }
+   ]
+  },
+  "retr60": {
+   "type": "prestations",
+   "canaux": [
+    {
+     "coef": "age_aod_plus_1an",
+     "quoi": "moins de seniors en emploi ; aucun chiffrage publié d'un retour à 60 ans",
+     "facteur": -4,
+     "extrapolation": true
+    }
+   ]
+  },
+  "age65": {
+   "type": "prestations",
+   "canaux": [
+    {
+     "coef": "age_aod_plus_1an",
+     "quoi": "plus de seniors en emploi (COR, mars 2026)",
+     "facteur": 1
+    }
+   ]
+  },
+  "indexation": {
+   "type": "prestations",
+   "canaux": []
+  },
+  "blanche": {
+   "type": "prestations",
+   "canaux": [],
+   "note": "Mixte : gel des prestations (dominant) et des barèmes d'impôt."
+  },
+  "chomage": {
+   "type": "prestations",
+   "canaux": [
+    {
+     "coef": "assurance_chomage_reformes",
+     "quoi": "baisse du chômage structurel observée après les réformes 2021 et 2023",
+     "extrapolation": true
+    }
+   ],
+   "note": "L'ampleur dépend du contenu de la réforme ; le moteur ne retiendra que l'ordre de grandeur."
+  },
+  "defense": {
+   "type": "defense",
+   "canaux": []
+  },
+  "services": {
+   "type": "emploi_public",
+   "canaux": []
+  },
+  "effectifs": {
+   "type": "emploi_public",
+   "canaux": []
+  },
+  "pointindice": {
+   "type": "conso_publique",
+   "canaux": [],
+   "note": "Rémunérations publiques, comprises dans la dépense composite."
+  },
+  "smic": {
+   "type": "conso_publique",
+   "canaux": [
+    {
+     "coef": "elasticite_emploi_cout_smic",
+     "quoi": "hors budget : le coût du travail au Smic monte pour les employeurs privés"
+    }
+   ],
+   "note": "Le coût budgétaire porte sur la fonction publique ; l'effet sur l'emploi privé est un canal à part."
+  },
+  "ecolo": {
+   "type": "invest_public",
+   "canaux": [
+    {
+     "coef": "elasticite_pib_capital_public",
+     "quoi": "le capital public ajouté soutient la production à long terme"
+    }
+   ]
+  },
+  "innov": {
+   "type": "invest_public",
+   "canaux": [
+    {
+     "coef": "elasticite_pib_capital_public",
+     "quoi": "le capital public ajouté soutient la production à long terme",
+     "extrapolation": true
+    }
+   ],
+   "note": "Mixte : investissement, subventions et prêts aux entreprises (France 2030)."
+  },
+  "collectivites": {
+   "type": "conso_publique",
+   "canaux": [],
+   "note": "Les collectivités portent l'essentiel de l'investissement public civil : une partie de la baisse pourrait porter sur l'investissement."
+  },
+  "age": {
+   "type": "prestations",
+   "canaux": [],
+   "note": "Mixte : allocations (APA) et emplois d'aide aux personnes âgées."
+  },
+  "ondam": {
+   "type": "conso_publique",
+   "canaux": [],
+   "note": "Soins remboursés et hôpital public."
+  },
+  "agences": {
+   "type": "conso_publique",
+   "canaux": []
+  },
+  "institutions": {
+   "type": "conso_publique",
+   "canaux": []
+  },
+  "niches": {
+   "type": "generique_recettes",
+   "canaux": [],
+   "note": "Mixte : niches fiscales des ménages et aides aux entreprises, selon le périmètre."
+  },
+  "immigration": {
+   "type": "prestations",
+   "canaux": [],
+   "note": "Mixte : aide médicale, hébergement, allocations."
+  },
+  "ame": {
+   "type": "prestations",
+   "canaux": [],
+   "note": "Prestation en nature (soins)."
+  },
+  "ue": {
+   "type": "generique_depense",
+   "canaux": [],
+   "note": "Transfert vers l'Union européenne : aucun multiplicateur publié."
+  }
  }
 }

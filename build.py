@@ -240,7 +240,7 @@ def load():
 
     verifier_histoire(payload["histoire"])
     verifier_pouvoir(payload["pouvoir"], payload, ids, icones_)
-    verifier_macro()
+    verifier_macro(ids)
 
     dep = sum(x["v"] for x in payload["baseline"]["depenses"])
     rec = sum(x["v"] for x in payload["baseline"]["recettes"])
@@ -344,7 +344,7 @@ def verifier_pouvoir(pa, payload, ids, icones):
             sys.exit(f"{ou}: source inutilisable {s_!r}")
 
 
-def verifier_macro():
+def verifier_macro(ids):
     """Coefficients de la projection : chacun sourcé, borné dans le bon ordre, sans doublon.
 
     Le fichier n'est pas embarqué dans la page tant que le moteur ne s'en sert pas,
@@ -381,6 +381,32 @@ def verifier_macro():
     for x in mc["calage"] + mc["scenarios"]:
         if not url_ok(x.get("u")) or not x.get("org") or not x.get("date"):
             sys.exit(f"{ou}: calage ou scénario sans organisme, date ou URL valide : {x!r}"[:300])
+
+    # Types d'instrument : chaque coefficient cité existe ; un type générique dit quelle borne il prend.
+    for tid, t in mc["types"].items():
+        if t.get("sens") not in {"depense+", "hausse", "baisse", "ampleur"}:
+            sys.exit(f"{ou}: type {tid!r} — 'sens' attendu parmi depense+, hausse, baisse, ampleur")
+        if t.get("confiance") not in {"directe", "substitut", "generique"}:
+            sys.exit(f"{ou}: type {tid!r} — 'confiance' attendue parmi directe, substitut, generique")
+        if (t["sens"] == "ampleur") != (t.get("borne") in {"lo", "hi"}):
+            sys.exit(f"{ou}: type {tid!r} — un type 'ampleur' prend la borne lo (recettes) ou hi (dépenses)")
+        if t["confiance"] != "directe" and not t.get("note"):
+            sys.exit(f"{ou}: type {tid!r} — un substitut ou un générique s'explique dans 'note'")
+        if not t.get("demande"):
+            sys.exit(f"{ou}: type {tid!r} sans coefficient de demande")
+        for cid in t["demande"].values():
+            if cid not in vus:
+                sys.exit(f"{ou}: type {tid!r} — coefficient inconnu {cid!r}")
+    # Classement : toutes les mesures du catalogue, et rien d'autre.
+    cl = mc["classement"]
+    if set(cl) != ids:
+        sys.exit(f"{ou}: classement — manquantes {sorted(ids - set(cl))}, inconnues {sorted(set(cl) - ids)}")
+    for mid, c in cl.items():
+        if c.get("type") not in mc["types"]:
+            sys.exit(f"{ou}: {mid} — type inconnu {c.get('type')!r}")
+        for ca in c.get("canaux", []):
+            if ca.get("coef") not in vus or not ca.get("quoi"):
+                sys.exit(f"{ou}: {mid} — canal sans libellé ou coefficient inconnu {ca.get('coef')!r}")
 
 
 def verifier_incidence(inc, ids):
