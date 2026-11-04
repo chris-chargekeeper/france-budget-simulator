@@ -1,0 +1,422 @@
+{
+  "patch": {
+    "_comment": "Relève locale du 4 novembre 2026 : soirées télé du 3 novembre (Bardella TF1, Retailleau « Vous Président » BFMTV, Lisnard BFMTV, Thévenot France 2), séances de l'Assemblée des 2 (2e et 3e) et 3 novembre (1re), sondage Ifop-LCI, OAT et spread au 3 novembre.",
+    "releve": "2026-11-04",
+    "annonces": [
+      {
+        "date": "2026-11-03",
+        "parti": "rn",
+        "qui": "Jordan Bardella",
+        "fonction": "Président du Rassemblement national",
+        "media": "TF1, journal de 20H",
+        "quoi": "Fait de la TVA à 5,5 % sur toute l'énergie (carburant, électricité, gaz, fioul) l'une des premières mesures d'un gouvernement RN, soit selon lui 20 € rendus sur un plein de 40 litres ; aucun coût budgétaire annoncé.",
+        "verbatim": "Une de nos premières mesures que nous ferions adopter par la majorité serait de baisser la TVA de 20% à 5,5% sur l'ensemble de l'énergie, le carburant, l'électricité, le gaz, le fuel",
+        "mesure": "tvaener",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-jordan-bardella-invite-du-20h-de-tf1-suivez-l-interview-du-president-du-rassemblement-national-2473691.html",
+        "verifie": true,
+        "contredit": "non"
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "rn",
+        "qui": "Jordan Bardella",
+        "fonction": "Président du Rassemblement national",
+        "media": "TF1, journal de 20H",
+        "quoi": "S'oppose à une hausse du Smic et propose à la place une mesure fiscale permettant aux entreprises d'augmenter les salaires de 10 %, qui concernerait selon lui 15 millions de salariés ; ni coût ni mécanisme précisé.",
+        "verbatim": "une mesure qui permet à l'ensemble des entreprises françaises d'augmenter de 10 % les salaires de l'entreprise",
+        "mesure": null,
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-jordan-bardella-invite-du-20h-de-tf1-suivez-l-interview-du-president-du-rassemblement-national-2473691.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Mesure absente du chiffrage RN ; coût jamais annoncé (15 millions est un nombre de salariés, pas un montant)."
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Président de LR, candidat à la présidentielle",
+        "media": "BFMTV, « Vous Président » (avec Libération)",
+        "quoi": "Veut enterrer les 35 heures (une demi-heure de plus par jour) en supprimant les cotisations salariales et patronales sur les heures supplémentaires, ferme la porte à une hausse du Smic et propose, en contrepartie, de plafonner à 70 % du Smic le total des aides sociales perçues par une personne ; ni coût ni économie chiffrés.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.bfmtv.com/economie/emploi/30-minutes-de-travail-en-plus-par-jour-pour-gagner-un-13e-voire-un-14e-mois-la-promesse-de-bruno-retailleau-qui-veut-enterrer-la-semaine-de-35-heures-s-il-est-elu-president_AV-202611031003.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Pas de programme chiffré publié."
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Président de LR, candidat à la présidentielle",
+        "media": "BFMTV, « Vous Président »",
+        "quoi": "Veut fixer l'âge de départ à la retraite à 65 ans « pour tout le monde », en annulant la décote pour ceux qui n'ont pas toutes leurs annuités ; économie non chiffrée.",
+        "verbatim": null,
+        "mesure": "age65",
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-bruno-retailleau-va-detailler-son-programme-et-ses-ambitions-dans-vous-president-sur-bfmtv-a-21h_LN-202611030869.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Pas de programme chiffré publié."
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "ne",
+        "qui": "David Lisnard",
+        "fonction": "Maire de Cannes, président de Nouvelle Énergie, candidat",
+        "media": "BFMTV, « 100 % Mabrouk »",
+        "quoi": "Promet un « gouvernement commando » avec des feuilles de route sur 200 jours, une session extraordinaire du Parlement à l'été 2027 et 200 à 300 Md€ d'économies sur les dépenses publiques, dont 80 Md€ dès la première année (chiffres lus dans les reprises AFP, vidéo non visionnée).",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 80,
+        "type": "economie",
+        "source": "https://www.bfmtv.com/replay-emissions/100-mabrouk/video-invites-david-lisnard-et-alain-bauer_VN-202611031043.html",
+        "verifie": false,
+        "contredit": "annonce",
+        "ecart": "Le chiffrage retenu pour Nouvelle Énergie est de 200 Md€ d'ici 2032 ; la borne haute de 300 Md€ va au-delà."
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "ren",
+        "qui": "Prisca Thévenot",
+        "fonction": "Députée Renaissance des Hauts-de-Seine, chargée de la mobilisation de la campagne Attal",
+        "media": "France 2, « Les 4 Vérités »",
+        "quoi": "Demande de revenir sur les suppressions de postes d'enseignants prévues au PLF 2027 et de réduire l'écart entre brut et net en allégeant les cotisations, financé par des réformes du chômage et des retraites ; ni nombre de postes ni montant.",
+        "verbatim": "revenir sur les suppressions de postes",
+        "mesure": null,
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.franceinfo.fr/politique/mobilisation-lyceenne-et-etudiante-il-faut-revenir-sur-les-suppressions-de-postes-de-professeurs-assure-la-deputee-prisca-thevenot_8265386.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Pas de programme chiffré publié."
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "rn",
+        "qui": "Hélène Laporte",
+        "fonction": "Députée RN, question au gouvernement posée au nom du groupe (pas porte-parole de campagne)",
+        "media": "Assemblée nationale, questions au gouvernement, 1re séance du 3 novembre 2026",
+        "quoi": "Oppose au PLF le contre-budget du RN : 71,5 Md€ d'économie nette intégrant 140 Md€ de baisses de dépenses, dont, selon elle, 60 Md€ sur la politique migratoire, 10 Md€ sur la contribution à l'UE et 8 Md€ sur les agences, avec TVA à 5,5 % sur l'énergie et TVA supprimée sur 100 produits de première nécessité.",
+        "verbatim": "une économie nette de 71,5 milliards, qui intégrerait 140 milliards de baisses de mauvaises dépenses",
+        "mesure": null,
+        "montant": 71.5,
+        "type": "economie",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-03-novembre-2026",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "La trajectoire présentée par Le Pen et Bardella le 6 octobre retient 140 Md€ d'économies nettes en 2032 et 25 Md€ sur l'immigration ; ici 140 Md€ sont des baisses brutes pour 71,5 Md€ nets, et 60 Md€ sur la politique migratoire."
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "rn",
+        "qui": "Matthias Renault",
+        "fonction": "Député RN, amendements I-683, I-685 et I-686 (après l'article 26)",
+        "media": "Assemblée nationale, PLF 2027, 1re séance du 3 novembre 2026",
+        "quoi": "Engage le RN à un moratoire sur l'éolien terrestre en cas de victoire en 2027 et avertit les investisseurs de l'appel d'offres éolien en mer n° 10, qu'il chiffre à 62 Md€ de subventions et 20 Md€ de raccordement ; I-686 (fin d'une exonération de la taxe sur l'éolien en mer) adopté 72 contre 63, I-685 rejeté.",
+        "verbatim": "si nous remportons les élections de 2027, nous déciderons un moratoire sur les éoliennes terrestres",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-03-novembre-2026",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Engagement de programme sans chiffrage de son effet budgétaire."
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "qui": "Kévin Mauvieux",
+        "fonction": "Député RN, amendement I-645 (suppression de la CFE), 3e séance du 2 novembre",
+        "media": "Assemblée nationale, PLF 2027, 3e séance du 2 novembre 2026",
+        "quoi": "Propose de supprimer la cotisation foncière des entreprises, « conformément au programme de Marine Le Pen », pour 8,8 Md€ selon l'exposé sommaire, financés par une baisse de la dépense ; rejeté 43 contre 73.",
+        "verbatim": "cet amendement, je le répète, vise à la suppression de la CFE, conformément au programme de Marine Le Pen pour l'élection présidentielle",
+        "mesure": "prod",
+        "montant": 8.8,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/645",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "La suppression de la CFE ne figure pas dans le chiffrage RN retenu ; elle s'ajoute à celle de la CVAE (I-672)."
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "qui": "Kévin Mauvieux",
+        "fonction": "Député RN, amendement I-641",
+        "media": "Assemblée nationale, PLF 2027, 2e séance du 2 novembre 2026",
+        "quoi": "TVA à 0 % pendant un an sur une centaine de produits de première nécessité ; adopté 30 contre 28 (identique à l'amendement LFI I-1039). Coût d'environ 2 Md€ selon le rapporteur général, non avancé par le RN.",
+        "verbatim": "cette mesure n'exige pas d'augmenter d'autres taxes, mais de faire des économies",
+        "mesure": null,
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/641",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Mesure absente du chiffrage RN retenu ; le coût est celui du rapporteur général."
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "lfi",
+        "qui": "Damien Maudet",
+        "fonction": "Député LFI, amendement I-1039 (identique à I-641)",
+        "media": "Assemblée nationale, PLF 2027, 2e séance du 2 novembre 2026",
+        "quoi": "TVA à 0 % sur les produits de première nécessité, assortie d'un blocage des prix ; adopté 30 contre 28 avec le soutien d'Éric Coquerel. Coût d'environ 2 Md€ selon le rapporteur général.",
+        "verbatim": "Nous proposons en effet de bloquer les prix pour que la suppression de la TVA sur les produits de première nécessité ne soit pas accompagnée d'une augmentation des marges.",
+        "mesure": null,
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-02-novembre-2026",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Mesure absente du budget rectificatif LFI du 14 octobre ; le coût est celui du rapporteur général."
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "qui": "Jean-Philippe Tanguy",
+        "fonction": "Député RN, amendement I-677 de suppression de l'article 23 (identique à I-1190 LFI)",
+        "media": "Assemblée nationale, PLF 2027, 2e séance du 2 novembre 2026",
+        "quoi": "Le RN, avec LFI, fait supprimer (51 contre 37) le prélèvement exceptionnel de 1,4 Md€ sur les comptes en déshérence gérés par la Caisse des dépôts.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 1.4,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/677",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Moindre recette de 1,4 Md€ (chiffre de l'exposé sommaire) non prévue au chiffrage RN."
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "lfi",
+        "qui": "Aurélien Le Coq",
+        "fonction": "Député LFI, amendement I-2527",
+        "media": "Assemblée nationale, PLF 2027, 2e séance du 2 novembre 2026",
+        "quoi": "Renforcement de la taxe sur les transactions financières (opérations intrajournalières, trading haute fréquence, recouvrement par la DGFiP), « jusqu'à 11 milliards » par an selon l'exposé sommaire ; adopté 33 contre 26 contre l'avis du gouvernement.",
+        "verbatim": "Ensemble, ces mesures permettraient de dégager jusqu'à 11 milliards d'euros supplémentaires par an.",
+        "mesure": "ttf",
+        "montant": 11,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/2527",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le budget rectificatif LFI du 14 octobre chiffrait la taxe sur les transactions financières à 5 Md€."
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "qui": "Kévin Mauvieux",
+        "fonction": "Député RN, amendement I-680 (soutenu par Matthias Renault)",
+        "media": "Assemblée nationale, PLF 2027, 2e séance du 2 novembre 2026",
+        "quoi": "Contribution forfaitaire de 1 000 € par an due par l'employeur pour chaque salarié extra-européen ; rendement non chiffré ; rejetée 37 contre 58.",
+        "verbatim": "Nous proposons 1 000 euros par an par travailleur ; à Singapour, c'est entre 300 et 600 dollars par mois !",
+        "mesure": "immigration",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-02-novembre-2026",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucun rendement chiffré, ni par le RN ni par la commission."
+      }
+    ],
+    "partis": {
+      "lr": {
+        "statutCandidature": "Investi par les militants LR (19 avril 2026) ; juge qu'il faudra « sans doute une primaire » de la droite et du centre en début d'année et propose trois débats d'ici Noël avec Attal, Philippe et Lisnard (BFMTV, 3 novembre 2026)",
+        "source": {
+          "t": "Colère lycéenne, Jordan Bardella, primaire… Ce qu'il faut retenir de l'entretien de Bruno Retailleau sur BFMTV",
+          "u": "https://www.bfmtv.com/politique/elections/presidentielle/colere-lyceenne-jordan-bardella-primaire-ce-qu-il-faut-retenir-de-l-entretien-de-bruno-retailleau-sur-bfmtv_AV-202611031007.html"
+        }
+      }
+    },
+    "contexte": {
+      "oat10": {
+        "valeur": 4.93,
+        "date": "2026-11-03",
+        "detail": "Plus haut à 5,14 % le 22 octobre, du jamais vu depuis 2002. Il était à 3,66 % fin juin.",
+        "source": {
+          "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur (clôture du 3 novembre 2026)",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      },
+      "spread": {
+        "valeur": 162,
+        "date": "2026-11-03",
+        "detail": "Écart avec le Bund à 10 ans, en points de base (161,8 pb). Environ 70 pb fin juin ; 168 pb le 22 octobre, le plus large depuis 2011.",
+        "source": {
+          "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur (clôture du 3 novembre 2026)",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      }
+    },
+    "sondages": [
+      {
+        "institut": "Ifop-Fiducial",
+        "commanditaire": "LCI",
+        "terrain_debut": "2026-10-27",
+        "terrain_fin": "2026-10-29",
+        "date": "2026-11-03",
+        "echantillon": 1501,
+        "hypothese": "Attal, Philippe, Retailleau et Lisnard tous candidats",
+        "scores": {
+          "rn": 35,
+          "lfi": 18,
+          "lr": 4,
+          "ren": 5,
+          "hor": 9.5,
+          "ps": 10,
+          "eco": 3,
+          "ne": 7,
+          "rec": 4.5
+        },
+        "source": {
+          "t": "SONDAGE LCI - Présidentielle 2027 : à six mois du scrutin, un duel Le Pen-Mélenchon toujours plus vraisemblable",
+          "u": "https://www.tf1info.fr/politique/elections/presidentielle/sondage-lci-a-six-mois-de-la-presidentielle-2027-marine-le-pen-et-jean-luc-melenchon-sans-adversaires-au-premier-tour-philippe-attal-retailleau-lisnard-2473663.html"
+        }
+      }
+    ]
+  },
+  "trace": {
+    "releve": "2026-11-04",
+    "applique": "2026-11-04",
+    "ajouts": [
+      {
+        "date": "2026-11-03",
+        "parti": "rn",
+        "quoi": "Fait de la TVA à 5,5 % sur toute l'énergie (carburant, électricité, gaz, fioul) l'une des premières mesures d'un gouvernement RN, soit selon lui 20 € rendus sur un plein de 40 litres ; aucun coût budgétaire annoncé.",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-jordan-bardella-invite-du-20h-de-tf1-suivez-l-interview-du-president-du-rassemblement-national-2473691.html"
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "rn",
+        "quoi": "S'oppose à une hausse du Smic et propose à la place une mesure fiscale permettant aux entreprises d'augmenter les salaires de 10 %, qui concernerait selon lui 15 millions de salariés ; ni coût ni mécanisme précisé.",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-jordan-bardella-invite-du-20h-de-tf1-suivez-l-interview-du-president-du-rassemblement-national-2473691.html"
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "lr",
+        "quoi": "Veut enterrer les 35 heures (une demi-heure de plus par jour) en supprimant les cotisations salariales et patronales sur les heures supplémentaires, ferme la porte à une hausse du Smic et propose, en contrepartie, de plafonner à 70 % du Smic le total des aides sociales perçues par une personne ; ni coût ni économie chiffrés.",
+        "source": "https://www.bfmtv.com/economie/emploi/30-minutes-de-travail-en-plus-par-jour-pour-gagner-un-13e-voire-un-14e-mois-la-promesse-de-bruno-retailleau-qui-veut-enterrer-la-semaine-de-35-heures-s-il-est-elu-president_AV-202611031003.html"
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "lr",
+        "quoi": "Veut fixer l'âge de départ à la retraite à 65 ans « pour tout le monde », en annulant la décote pour ceux qui n'ont pas toutes leurs annuités ; économie non chiffrée.",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-bruno-retailleau-va-detailler-son-programme-et-ses-ambitions-dans-vous-president-sur-bfmtv-a-21h_LN-202611030869.html"
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "ne",
+        "quoi": "Promet un « gouvernement commando » avec des feuilles de route sur 200 jours, une session extraordinaire du Parlement à l'été 2027 et 200 à 300 Md€ d'économies sur les dépenses publiques, dont 80 Md€ dès la première année (chiffres lus dans les reprises AFP, vidéo non visionnée).",
+        "source": "https://www.bfmtv.com/replay-emissions/100-mabrouk/video-invites-david-lisnard-et-alain-bauer_VN-202611031043.html"
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "ren",
+        "quoi": "Demande de revenir sur les suppressions de postes d'enseignants prévues au PLF 2027 et de réduire l'écart entre brut et net en allégeant les cotisations, financé par des réformes du chômage et des retraites ; ni nombre de postes ni montant.",
+        "source": "https://www.franceinfo.fr/politique/mobilisation-lyceenne-et-etudiante-il-faut-revenir-sur-les-suppressions-de-postes-de-professeurs-assure-la-deputee-prisca-thevenot_8265386.html"
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "rn",
+        "quoi": "Oppose au PLF le contre-budget du RN : 71,5 Md€ d'économie nette intégrant 140 Md€ de baisses de dépenses, dont, selon elle, 60 Md€ sur la politique migratoire, 10 Md€ sur la contribution à l'UE et 8 Md€ sur les agences, avec TVA à 5,5 % sur l'énergie et TVA supprimée sur 100 produits de première nécessité.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-03-novembre-2026"
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "rn",
+        "quoi": "Engage le RN à un moratoire sur l'éolien terrestre en cas de victoire en 2027 et avertit les investisseurs de l'appel d'offres éolien en mer n° 10, qu'il chiffre à 62 Md€ de subventions et 20 Md€ de raccordement ; I-686 (fin d'une exonération de la taxe sur l'éolien en mer) adopté 72 contre 63, I-685 rejeté.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-03-novembre-2026"
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "quoi": "Propose de supprimer la cotisation foncière des entreprises, « conformément au programme de Marine Le Pen », pour 8,8 Md€ selon l'exposé sommaire, financés par une baisse de la dépense ; rejeté 43 contre 73.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/645"
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "quoi": "TVA à 0 % pendant un an sur une centaine de produits de première nécessité ; adopté 30 contre 28 (identique à l'amendement LFI I-1039). Coût d'environ 2 Md€ selon le rapporteur général, non avancé par le RN.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/641"
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "lfi",
+        "quoi": "TVA à 0 % sur les produits de première nécessité, assortie d'un blocage des prix ; adopté 30 contre 28 avec le soutien d'Éric Coquerel. Coût d'environ 2 Md€ selon le rapporteur général.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-02-novembre-2026"
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "quoi": "Le RN, avec LFI, fait supprimer (51 contre 37) le prélèvement exceptionnel de 1,4 Md€ sur les comptes en déshérence gérés par la Caisse des dépôts.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/677"
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "lfi",
+        "quoi": "Renforcement de la taxe sur les transactions financières (opérations intrajournalières, trading haute fréquence, recouvrement par la DGFiP), « jusqu'à 11 milliards » par an selon l'exposé sommaire ; adopté 33 contre 26 contre l'avis du gouvernement.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/2527"
+      },
+      {
+        "date": "2026-11-02",
+        "parti": "rn",
+        "quoi": "Contribution forfaitaire de 1 000 € par an due par l'employeur pour chaque salarié extra-européen ; rendement non chiffré ; rejetée 37 contre 58.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-02-novembre-2026"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "parties.lr.statutCandidature",
+        "avant": "Investi par les militants LR (19 avril 2026) ; ouvert à une primaire si Édouard Philippe y participe",
+        "apres": "Investi par les militants LR (19 avril 2026) ; juge qu'il faudra « sans doute une primaire » de la droite et du centre en début d'année et propose trois débats d'ici Noël avec Attal, Philippe et Lisnard (BFMTV, 3 novembre 2026)",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/colere-lyceenne-jordan-bardella-primaire-ce-qu-il-faut-retenir-de-l-entretien-de-bruno-retailleau-sur-bfmtv_AV-202611031007.html"
+      },
+      {
+        "quoi": "contexte.oat10",
+        "avant": 4.91,
+        "apres": 4.93,
+        "source": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      },
+      {
+        "quoi": "contexte.spread",
+        "avant": 160,
+        "apres": 162,
+        "source": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      },
+      {
+        "quoi": "parties.sondages.Ifop-Fiducial",
+        "avant": {
+          "rn": 34,
+          "lfi": 15,
+          "lr": 5.5,
+          "ren": 4,
+          "hor": 12,
+          "ps": 12,
+          "eco": 2.5,
+          "ne": 5.5,
+          "rec": 3
+        },
+        "apres": {
+          "rn": 35,
+          "lfi": 18,
+          "lr": 4,
+          "ren": 5,
+          "hor": 9.5,
+          "ps": 10,
+          "eco": 3,
+          "ne": 7,
+          "rec": 4.5
+        },
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/sondage-lci-a-six-mois-de-la-presidentielle-2027-marine-le-pen-et-jean-luc-melenchon-sans-adversaires-au-premier-tour-philippe-attal-retailleau-lisnard-2473663.html"
+      }
+    ]
+  }
+}
