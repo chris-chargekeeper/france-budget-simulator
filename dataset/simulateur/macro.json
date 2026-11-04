@@ -4451,7 +4451,7 @@
      "chomageLo": -0.3,
      "chomageHi": 0.31,
      "de": "COR, mars 2026 : à 5 ans, Trésor +142 000 emplois et +0,5 % de PIB, OFCE +140 000 et +0,36 %, I-MIP +172 000 et +0,44 % ; chômage à 5 ans : Trésor 0, OFCE +0,31 pt, I-MIP -0,30 pt. Le COR suppose une mise en place immédiate.",
-     "recoupement": "Aucun chiffrage publié d'un retour à 60 ans : extrapolation (-4 ans) sans recoupement."
+     "recoupement": "L'effet chiffré par le COR pour un an de plus est appliqué quatre fois, en sens inverse ; aucun autre chiffrage ne permet de le recouper."
     }
    ]
   },
@@ -4654,6 +4654,14 @@
   "emploi0": {
    "v": 30626.3,
    "de": "Insee, T2 2026, emploi total (série expérimentale), milliers."
+  },
+  "petrole": {
+   "coef": "petrole_10usd_pib_fr",
+   "de": "Effet d'une hausse durable de 10 $ du baril sur le PIB français (Mésange, repris par le Trésor en 2026) : hors de portée d'un gouvernement."
+  },
+  "demandeMondiale": {
+   "coef": "demande_mondiale_1pct_pib_fr",
+   "de": "Effet de +1 % de demande mondiale adressée à la France sur son PIB (Mésange) : hors de portée d'un gouvernement."
   }
  }
 }

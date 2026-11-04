@@ -241,6 +241,7 @@ def load():
     verifier_histoire(payload["histoire"])
     verifier_pouvoir(payload["pouvoir"], payload, ids, icones_)
     verifier_macro(ids)
+    payload["macro"] = macro_embarque()
 
     dep = sum(x["v"] for x in payload["baseline"]["depenses"])
     rec = sum(x["v"] for x in payload["baseline"]["recettes"])
@@ -409,6 +410,33 @@ def verifier_macro(ids):
                 sys.exit(f"{ou}: {mid} — canal sans libellé ou coefficient inconnu {ca.get('coef')!r}")
 
 
+def macro_embarque():
+    """Ce que la page embarque de macro.json : les coefficients que le moteur ou la carte citent (valeur,
+    bornes, sources), les types, le classement, les règles du moteur, la population, le calage et les
+    scénarios. Les citations et notes longues restent dans le fichier, qui fait foi."""
+    with (DATA / "macro.json").open(encoding="utf-8") as fh:
+        mc = json.load(fh)
+    cites = {mot["coef"] for mot in mc["moteur"].values() if isinstance(mot, dict) and mot.get("coef")}
+    for t in mc["types"].values():
+        cites |= set(t.get("profilDe") or []) | set(t["demande"].values())
+    for c in mc["classement"].values():
+        for ca in c["canaux"]:
+            cites.add(ca["coef"])
+            if ca.get("recoupementDe"):
+                cites.add(ca["recoupementDe"])
+    garder = ("id", "quoi", "valeur", "lo", "hi", "unite", "horizon", "controle")
+    return {
+        "revu": mc["revu"],
+        "coefficients": [{**{k: c[k] for k in garder if k in c},
+                          "sources": [{k: s[k] for k in ("t", "org", "date", "u") if k in s}
+                                      for s in c["sources"]]}
+                         for c in mc["coefficients"] if c["id"] in cites],
+        "types": mc["types"], "classement": mc["classement"], "moteur": mc["moteur"],
+        "donnees": [x for x in mc["donnees"] if x["id"] == mc["moteur"]["population"]["donnee"]],
+        "calage": mc["calage"], "scenarios": mc["scenarios"],
+    }
+
+
 def verifier_incidence(inc, ids):
     """Qui paie, qui reçoit : chaque mesure du catalogue a une clé complète et lisible."""
     ou = "dataset/simulateur/incidence.json"
@@ -546,10 +574,19 @@ def fraicheur(payload):
                if isinstance(payload.get(bloc), dict) and payload[bloc].get("updated"))
 
 
+def moteur_js():
+    """Le moteur de projection, inséré tel quel dans la page (moteur/projection.js fait foi)."""
+    js = (ROOT / "moteur" / "projection.js").read_text(encoding="utf-8")
+    if "</script" in js:
+        sys.exit("moteur/projection.js contient une balise fermante </script>")
+    return js
+
+
 def rendu(payload, template):
-    """La substitution des cinq marqueurs, au même endroit pour les deux sens."""
+    """La substitution des six marqueurs, au même endroit pour les deux sens."""
     avatars, payload["avatars"] = build_avatars()
     favicon, coq = build_marque()
+    moteur = moteur_js()
     blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     if "</script" in blob:
         sys.exit("le payload contient une balise fermante </script>")
@@ -557,13 +594,14 @@ def rendu(payload, template):
                     .replace("__UPDATED__", fraicheur(payload))
                     .replace("__AVATARS__", avatars)
                     .replace("__FAVICON__", favicon)
-                    .replace("__COQ__", coq), blob, avatars, favicon, coq)
+                    .replace("__COQ__", coq)
+                    .replace("__MOTEUR__", moteur), blob, avatars, favicon, coq, moteur)
 
 
 def depuis_index(payload):
     """Remonte dans template.html des retouches faites à la main dans index.html.
 
-    index.html n'est que le gabarit avec cinq substitutions : on refait le chemin en
+    index.html n'est que le gabarit avec six substitutions : on refait le chemin en
     sens inverse en recalculant les valeurs injectées, en les retrouvant dans le fichier
     édité, et en remettant les marqueurs. Le report est exact ou il échoue — jamais
     approximatif.
@@ -571,12 +609,13 @@ def depuis_index(payload):
     index = ROOT / "index.html"
     if not index.is_file():
         sys.exit("index.html absent : rien à remonter")
-    _, blob, avatars, favicon, coq = rendu(payload, "")
+    _, blob, avatars, favicon, coq, moteur = rendu(payload, "")
     html = index.read_text(encoding="utf-8")
     for quoi, valeur, marqueur in (("le payload", blob, "__DATA__"),
                                    ("les bustes", avatars, "__AVATARS__"),
                                    ("l'icône d'onglet", favicon, "__FAVICON__"),
                                    ("le coq du bandeau", coq, "__COQ__"),
+                                   ("le moteur de projection", moteur, "__MOTEUR__"),
                                    ("la date de fraîcheur", fraicheur(payload),
                                     "__UPDATED__")):
         n = html.count(valeur)

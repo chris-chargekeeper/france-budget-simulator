@@ -167,7 +167,7 @@
         rows.push({y, pib, pibT, demande, effetTaux, offrePib, rec, dep, charge, solde, dette, rMkt, taux,
                    soldePct: solde / pib * 100, dettePct: dette / pib * 100,
                    chomage, emploi, offreEmplois, contrib,
-                   pibReelHab: pib / prix / pop * 1000,          // milliers d'€ de 2025 par habitant
+                   pibReelHab: pib / prix / pop * 1000,          // € de 2025 par habitant (Md€ / millions × 1000)
                    creditEntreprises: MOT.creditEntreprises.base + MOT.creditEntreprises.v * (rMkt - P.rmkt),
                    chargeMenageMois: charge / BL.menages / 12 * 1000});
       }

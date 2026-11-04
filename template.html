@@ -1086,6 +1086,45 @@ footer{padding-bottom:120px}
   .score-tiles{padding:14px 18px 18px}
   .ia-why{margin:0 12px 16px;padding:14px}
 }
+/* --- la carte « effets en chaîne » (projection 2032) --- */
+.pj-bloc{display:grid;gap:8px}
+.pj-bloc h4{margin:4px 0 0;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:600}
+.pj-ind{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.pj-t{border:1px solid var(--rule);border-radius:12px;padding:10px 12px;display:grid;gap:2px;align-content:start;background:var(--surface)}
+.pj-t-k{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-2);font-weight:600}
+.pj-t-k .ic{width:15px;height:15px;color:var(--ink-3)}
+.pj-t-v{font-family:"IBM Plex Mono",monospace;font-size:21px;font-weight:600;color:var(--ink);line-height:1.2}
+.pj-t-s{font-size:11.5px;color:var(--ink-3);line-height:1.35}
+.pj-t-r{font-size:11px;color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
+.pj-t.good{border-color:color-mix(in srgb,var(--good) 40%,transparent)} .pj-t.good .pj-t-v{color:var(--good)}
+.pj-t.bad{border-color:color-mix(in srgb,var(--critical) 40%,transparent)} .pj-t.bad .pj-t-v{color:var(--critical)}
+.pj-bloc.hors .pj-t{background:var(--surface-2);border-color:transparent}
+.pj-bloc.hors .pj-t-v{font-size:17px}
+.pj-causes{display:grid;gap:6px}
+.pj-c{display:grid;grid-template-columns:minmax(0,1fr) minmax(60px,32%) 74px;gap:10px;align-items:center;font-size:13px}
+.pj-c-lab{min-width:0;color:var(--ink);line-height:1.3}
+.pj-c-lab small{display:inline-block;margin-left:6px;font-size:10.5px;color:var(--ink-3);border:1px solid var(--rule);border-radius:999px;padding:0 6px;white-space:nowrap}
+.pj-c-bar{position:relative;height:10px;background:var(--surface-2);border-radius:5px}
+.pj-c-bar i{position:absolute;top:0;bottom:0;border-radius:5px}
+.pj-c-bar i.up{background:var(--good)} .pj-c-bar i.down{background:var(--critical)}
+.pj-c-bar::after{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--rule)}
+.pj-c-v{font-family:"IBM Plex Mono",monospace;font-size:12.5px;text-align:right;white-space:nowrap}
+.pj-apart{display:flex;flex-wrap:wrap;gap:4px 6px}
+.pj-apart span{font-size:11.5px;color:var(--ink-2);border:1px dashed var(--rule);border-radius:999px;padding:1px 8px}
+.pj-note{font-size:12.5px;color:var(--ink-3);line-height:1.5;margin:0;max-width:80ch}
+.pj-src summary{font-size:13px;color:var(--ink-2);cursor:pointer}
+.pj-src > .pj-note{margin:6px 0}
+.pj-src li{font-size:12.5px;line-height:1.5;color:var(--ink-2)}
+.pj-src ul{padding-left:18px;margin:6px 0}
+@media (max-width:640px){
+  .pj-ind{grid-template-columns:1fr 1fr}
+  .pj-ind .pj-t:last-child:nth-child(odd){grid-column:1 / -1}
+  .pj-t{padding:9px 10px}
+  .pj-t-v{font-size:18px}
+  .pj-bloc.hors .pj-ind{grid-template-columns:1fr}
+  .pj-c{grid-template-columns:minmax(0,1fr) 64px;grid-template-areas:"lab v" "bar bar";gap:3px 8px}
+  .pj-c-lab{grid-area:lab} .pj-c-v{grid-area:v} .pj-c-bar{grid-area:bar}
+}
 /* --- la carte « qui paie, qui reçoit » --- */
 .score{--perte:var(--critical);--gain:var(--good)}
 #quipaie{margin-top:16px}
@@ -1444,6 +1483,7 @@ footer{padding-bottom:120px}
     </div>
     <div class="score simple-only" id="score"></div>
     <div class="score qp-card simple-only" id="quipaie"></div>
+    <div class="score qp-card" id="projection"></div>
     <div class="verdict adv-only" id="verdict"></div>
     <div class="cockpit adv-only" id="cockpit"></div>
     <div class="grid2 charts" style="margin-top:16px">
@@ -1841,6 +1881,9 @@ footer{padding-bottom:120px}
 })();
 </script>
 <script id="payload" type="application/json">__DATA__</script>
+<script>
+__MOTEUR__
+</script>
 <script>
 "use strict";
 const DATA = JSON.parse(document.getElementById('payload').textContent);
@@ -3771,6 +3814,7 @@ function renderScore(base, scen, split){
   host.appendChild(tiles);
 
   renderQuiPaie(p);
+  renderProjection(p, scen);
   if (p && p.horsCourse) host.appendChild(iaWhy(p));
   else if (p) host.appendChild(progList(p));
 }
@@ -3946,6 +3990,163 @@ function renderVerso(host, p){
 }
 
 /** La carte « qui paie, qui reçoit », sous celle du déficit. */
+/* ---------- Les effets en chaîne : projection 2032 (moteur/projection.js, coefficients de macro.json) ---------- */
+const MOTEUR = (typeof creerMoteur === 'function' && DATA.macro)
+  ? creerMoteur({baseline: DATA.baseline, measures: DATA.measures, macro: DATA.macro}) : null;
+const MCO = DATA.macro ? Object.fromEntries(DATA.macro.coefficients.map(c => [c.id, c])) : {};
+/** Nombre signé à la française : « +0,4 », « −1,2 », « ≈ 0 » sous le seuil. */
+function sg(v, d, unite, seuil){
+  if (Math.abs(v) < (seuil ?? .5 * Math.pow(10, -d))) return '≈ 0' + (unite ? ' ' + unite : '');
+  return (v > 0 ? '+' : '−') + ' ' + nf(Math.abs(v), d) + (unite ? ' ' + unite : '');
+}
+const entre = (q, d, u) => `entre ${sg(q[0], d, u, 0)} et ${sg(q[1], d, u, 0)}`;
+function renderProjection(p, scenPage){
+  const host = $('#projection'); if (!host || !MOTEUR) return;
+  host.textContent = '';
+  host.style.setProperty('--pc', p ? p.couleur : 'var(--ink-3)');
+  host.classList.toggle('is-ia', !!(p && p.horsCourse));
+  const MC = DATA.macro, MOT = MC.moteur;
+  const R = MOTEUR.projeter(state.P, state.active);
+  const vide = !Object.keys(state.active).length;
+  const C = R.centre[R.centre.length - 1], Q = R.fourchette[R.fourchette.length - 1];
+  const S = R.scen[R.scen.length - 1], B = R.base[R.base.length - 1];
+
+  const box = el('div','qp');
+  const top = el('div','qp-top');
+  top.appendChild(el('div','qp-kick', p ? (p.horsCourse ? "Le candidat IA" : "Avec le programme de " + p.candidat)
+    : vide ? "Si rien ne change" : "Votre scénario"));
+  top.appendChild(el('h3', null, "Les effets en chaîne en 2032"));
+  top.appendChild(el('p', null, vide
+    ? "Où mènent les tendances actuelles, sans nouvelle mesure. Chaque programme s'y compare."
+    : "Ce que le programme change pour l'économie, par rapport à « si rien ne change »."));
+  box.appendChild(top);
+
+  const bloc = (titre, cls) => {
+    const w = el('div','pj-bloc' + (cls ? ' ' + cls : ''));
+    if (titre) w.appendChild(el('h4', null, titre));
+    box.appendChild(w); return w;
+  };
+  const tuiles = (titre, cls) => {
+    const w = bloc(titre, cls), g = el('div','pj-ind'); w.appendChild(g);
+    return (ic, k, v, sub, rng, etat) => {
+      const t = el('div','pj-t' + (etat ? ' ' + etat : ''));
+      const h = el('div','pj-t-k'); h.append(icon(ic), document.createTextNode(k));
+      t.append(h, el('div','pj-t-v', v), el('div','pj-t-s', sub));
+      if (rng) t.appendChild(el('div','pj-t-r', rng));
+      g.appendChild(t);
+    };
+  };
+  const etat = (v, bon, seuil) => Math.abs(v) < seuil ? '' : (v > 0) === bon ? 'good' : 'bad';
+
+  /* 1. Les grands repères */
+  const t = tuiles(vide ? "En 2032, si rien ne change" : "Pour tout le monde, en 2032");
+  if (vide){
+    const B0 = R.base[0], hab0 = R.base.find(r => r.y === 2026);
+    t('piece', "Richesse par habitant", nf(Math.round(B.pibReelHab / 100) * 100) + ' €',
+      `par an, en euros de 2025 (PIB par habitant) · ${sg((B.pibReelHab / hab0.pibReelHab - 1) * 100, 1, '%')} depuis 2026`);
+    t('sansemploi', "Chômage", nf(B.chomage, 1) + ' %', "projection de la Banque de France jusqu'en 2028, maintenue ensuite");
+    t('dette', "Dette publique", nf(B.dettePct, 0) + ' % du PIB', `contre ${nf(B0.dettePct, 0)} % en 2025`, null, 'bad');
+    t('maison', "Taux d'emprunt de l'État", pc(B.rMkt, 1), `contre ${pc(state.P.rmkt, 1)} aujourd'hui · crédit aux entreprises ≈ ${pc(B.creditEntreprises, 1)}`);
+    t('panier', "Intérêts de la dette", nf(Math.round(B.chargeMenageMois)) + ' €', `par ménage et par mois, contre ${nf(Math.round(R.base[0].charge / BL.apu.menages / 12 * 1000))} € en 2025`, null, 'bad');
+  } else {
+    const hab = C.pibReelHab;
+    t('piece', "Richesse par habitant", sg(Math.round(hab / 10) * 10, 0, '€', 5),
+      `par an et par habitant (PIB, en euros de 2025) · ${sg(C.pib, 1, '%', .05)}`,
+      entre(Q.pibReelHab.map(x => Math.round(x / 10) * 10), 0, '€'), etat(hab, true, 5));
+    const retraite = S.offreEmplois;   // emplois venus de l'âge de départ et des réformes chiffrées
+    t('salaire', "Emplois", sg(Math.round(C.emploi) * 1000, 0, '', 500),
+      Math.abs(retraite) >= 1 ? `en 2032, dont ${sg(Math.round(retraite) * 1000, 0, '', 500)} par l'âge de départ à la retraite` : "en 2032", entre(Q.emploi.map(x => Math.round(x) * 1000), 0, ''), etat(C.emploi, true, .5));
+    t('sansemploi', "Chômage", sg(C.chomage, 1, 'pt', .05), `taux de ${nf(S.chomage, 1)} % en 2032`,
+      entre(Q.chomage, 1, 'pt'), etat(C.chomage, false, .05));
+    const dPage = scenPage && scenPage[scenPage.length - 1].dettePct;
+    const diff = dPage != null && Math.round(dPage) !== Math.round(S.dettePct);
+    t('dette', "Dette publique", sg(C.dettePct, 1, 'pt', .05),
+      `${nf(S.dettePct, 0)} % du PIB en 2032` + (diff ? ` (${nf(dPage, 0)} % dans le calcul simple, sans ces effets)` : ''),
+      entre(Q.dettePct, 1, 'pt'), etat(C.dettePct, false, .05));
+    t('maison', "Taux d'emprunt de l'État", pc(S.rMkt, 2), `${sg(C.rMkt * 100, 0, 'pb', .5)} · crédit aux entreprises ${sg(C.rMkt * MOT.creditEntreprises.v * 100, 0, 'pb', .5)}`,
+      entre(Q.rMkt.map(x => x * 100), 0, 'pb'), etat(C.rMkt, false, .005));
+    t('panier', "Intérêts de la dette", sg(C.chargeMenageMois, 0, '€', .5), `par ménage et par mois · ${nf(Math.round(S.chargeMenageMois))} € en 2032`,
+      entre(Q.chargeMenageMois, 0, '€'), etat(C.chargeMenageMois, false, .5));
+  }
+
+  /* 2. Pourquoi ça bouge : la contribution de chaque mesure à l'activité */
+  if (!vide){
+    const w = bloc("Pourquoi ça bouge : effet sur l'activité en 2032");
+    const lst = el('div','pj-causes');
+    const items = Object.entries(S.contrib).map(([id, v]) => ({id, v: v / B.pib * 100}));
+    if (Math.abs(S.effetTaux / B.pib * 100) >= .01) items.push({id: '_taux', v: S.effetTaux / B.pib * 100});
+    items.sort((a, b) => Math.abs(b.v) - Math.abs(a.v));
+    const vis = items.filter(x => Math.abs(x.v) >= .01).slice(0, 6);
+    const max = Math.max(.1, ...vis.map(x => Math.abs(x.v)));
+    for (const x of vis){
+      const r = el('div','pj-c'), lab = el('div','pj-c-lab');
+      if (x.id === '_taux') lab.append("Taux d'intérêt plus " + (x.v < 0 ? "hauts" : "bas") + " (dette)");
+      else {
+        const m = M_BY_ID[x.id], cl = MC.classement[x.id], ty = MC.types[cl.type];
+        lab.append(m.lab);
+        const extr = cl.canaux.some(c => c.moteur === 'projection' && c.extrapolation);
+        const badge = extr ? "extrapolé" : ty.confiance === 'generique' ? "effet générique" : ty.confiance === 'substitut' ? "par analogie" : null;
+        if (badge) lab.appendChild(el('small', null, badge));
+      }
+      const bar = el('div','pj-c-bar'), i = el('i', x.v >= 0 ? 'up' : 'down'), l = Math.abs(x.v) / max * 50;
+      i.style.left = (x.v >= 0 ? 50 : 50 - l) + '%'; i.style.width = l + '%'; bar.appendChild(i);
+      r.append(lab, bar, el('div','pj-c-v', sg(x.v, 2, 'pt', .005)));
+      lst.appendChild(r);
+    }
+    if (!vis.length) lst.appendChild(el('p','pj-note', "Aucune mesure ne déplace l'activité de plus de 0,01 point."));
+    w.appendChild(lst);
+    w.appendChild(el('p','pj-note', "En points de PIB. Le court terme vient des dépenses et des impôts ; les réformes des retraites et de l'assurance chômage ajoutent leur effet sur l'emploi."));
+    // ce qui n'est pas compté dans 2032
+    const REG = {apres2032: "effet de long terme, après 2032", horsBudget: "hors budget, non compté", nonDemontre: "effet non démontré"};
+    const parts = R.aPart.filter(a => REG[a.regle]);
+    if (parts.length){
+      const ap = el('div','pj-apart');
+      for (const a of parts){ const sp = el('span', null, `${M_BY_ID[a.mesure].lab.split(' (')[0].split(' : ')[0]} : ${REG[a.regle]}`); sp.title = a.quoi; ap.appendChild(sp); }
+      const w2 = bloc("Pas compté dans 2032"); w2.appendChild(ap);
+    }
+  }
+
+  /* 3. Ce que l'élu ne décide pas */
+  const hp = tuiles("Ce que l'élu ne décide pas", 'hors');
+  const pet = MCO[MOT.petrole.coef], mon = MCO[MOT.demandeMondiale.coef];
+  if (pet) hp('transport', "Pétrole +10 $ le baril", sg(pet.valeur, 1, '%', 0) + ' de PIB', "en un an, jusqu'à " + sg(pet.lo, 2, '%', 0) + " en deux ans");
+  if (mon) hp('monde', "Commerce mondial +1 %", sg(mon.valeur, 2, '%', 0) + ' de PIB', "la France exporte un tiers de ce qu'elle produit");
+  const bce = CTX.find(x => x.id === 'bce');
+  if (bce) hp('europe', "Taux de la BCE", pc(bce.valeur, 2), "fixé à Francfort pour toute la zone euro");
+
+  /* 4. Le détail, replié */
+  const det = el('details','pj-src');
+  det.appendChild(el('summary', null, "Comprendre ces chiffres"));
+  const para = (...m) => { const q = el('p','pj-note'); m.forEach(x => q.append(x)); det.appendChild(q); };
+  para("Les mêmes équations pour tous les programmes. Chaque mesure reçoit l'effet sur l'activité publié pour son type (TVA, impôt sur le revenu, investissement, prestations…), année par année, par le Trésor (modèle Mésange), la BCE ou l'OFCE. Le chômage suit l'activité (loi d'Okun). Chaque point de dette ajoute environ 3 pb au taux de l'État (Commission européenne), ce qui freine l'activité et renchérit le crédit aux entreprises.");
+  para("La fourchette refait le calcul avec les valeurs basses et hautes publiées par les économistes, qui ne sont pas d'accord entre eux. Ce n'est pas une probabilité : c'est l'étendue du désaccord.");
+  if (!vide){
+    const conf = R.confiance, lib = {directe: "un effet publié propre à leur type", substitut: "l'effet d'un impôt voisin", generique: "l'effet moyen retenu par l'OFCE (0,5 pour un impôt, 1 pour une dépense), faute de chiffrage propre"};
+    for (const k of ['directe','substitut','generique']) if (conf[k]) para(`${conf[k].length} mesure${conf[k].length > 1 ? 's' : ''} : ${lib[k]}.`);
+    for (const id in state.active) for (const ca of MC.classement[id].canaux)
+      if (ca.moteur === 'projection' && (ca.extrapolation || ca.recoupement))
+        para(`${M_BY_ID[id].lab} : ${ca.quoi}.${ca.recoupement ? ' ' + ca.recoupement : ''}`);
+  }
+  const ref = MC.calage.find(c => c.politiquesInchangees && c.annee === 2027 && c.deficit != null);
+  const b27 = R.base.find(r => r.y === 2027);
+  if (ref && b27) para(`« Si rien ne change » en 2027 : déficit de ${nf(-b27.soldePct, 1)} % du PIB, contre ${nf(ref.deficit, 1)} % prévu à politiques inchangées par la ${ref.org.split(' (')[0].replace(', ', ' (')}). Le site suppose que les dépenses progressent de ${nf(state.P.drift, 1)} % par an au-delà de l'inflation, ce qui le rend un peu plus pessimiste à mesure qu'on avance.`);
+  para("Les curseurs « multiplicateur » et « prime de risque » du mode détaillé ne s'appliquent pas ici : cette carte prend les valeurs publiées.");
+  // sources : coefficients effectivement utilisés
+  const ids = new Set([MOT.okun.coef, MOT.primeDette.coef, MOT.tauxActivite.coef, MOT.creditEntreprises.coef, MOT.petrole.coef, MOT.demandeMondiale.coef]);
+  for (const id in state.active){
+    const cl = MC.classement[id]; (MC.types[cl.type].profilDe || []).forEach(x => ids.add(x));
+    cl.canaux.forEach(c => { if (c.moteur === 'projection') ids.add(c.coef); if (c.recoupementDe) ids.add(c.recoupementDe); });
+  }
+  const srcs = new Map();
+  ids.forEach(id => (MCO[id] ? MCO[id].sources : []).forEach(s => srcs.set(s.u, s)));
+  const ul = el('ul');
+  srcs.forEach(s => { const li = el('li'), a = el('a', null, `${s.org} — ${s.t}`); a.href = s.u; a.target = '_blank'; a.rel = 'noopener'; li.appendChild(a); if (s.date) li.append(` (${s.date})`); ul.appendChild(li); });
+  det.appendChild(el('p','pj-note', "Sources des coefficients utilisés :"));
+  det.appendChild(ul);
+  box.appendChild(det);
+  host.appendChild(box);
+}
+
 function renderQuiPaie(p){
   const host = $('#quipaie'); if (!host) return;
   host.textContent = '';

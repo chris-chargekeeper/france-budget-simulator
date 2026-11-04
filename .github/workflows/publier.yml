@@ -12,6 +12,7 @@ on:
       - 'template.html'
       - 'build.py'
       - 'dataset/simulateur/**'
+      - 'moteur/**'
       - '.github/workflows/publier.yml'
   workflow_dispatch:
 
