@@ -763,9 +763,10 @@ def coherence(d):
                 f"{sig} : les mesures chiffrées ({detail + hc:.1f} Md€) dépassent le total "
                 f"revendiqué ({rev}) — total à revoir ou annonces à recouper")
         if ann.get("detaille") is not None and abs(ann["detaille"] - detail - hc) > 1:
-            a_signaler.append(
+            note(a_corriger, f"{pid}.detaille",
                 f"{sig} : 'detaille' vaut {ann['detaille']} Md€, les montants par mesure "
-                f"et hors catalogue font {detail + hc:.1f}")
+                f"et hors catalogue font {detail + hc:.1f} — recaler partis.{pid}.annonce.detaille "
+                f"(règle 5), et le texte de la fiche s'il cite le chiffre")
         titre = (ann.get("titre") or "").lower()
         if p.get("statut") == "reconstitution" and (detail >= 20 or rev):
             note(a_signaler, f"{pid}.statut",
@@ -812,8 +813,9 @@ def coherence(d):
         for e in a_corriger:
             print(f"  ! {e}")
     if a_arbitrer:
-        print("\nÀ arbitrer (deux chiffres sourcés se contredisent ; trancher, ou inscrire "
-              "l'écart et sa raison dans references/coherence-arbitrages.json) :")
+        print("\nÀ arbitrer — à trancher AUJOURD'HUI avec les règles 1 à 5 de SKILL.md (qui parle, "
+              "plan le plus récent, plan contre amendement, horizon 2032, total) ; recaler, ou inscrire "
+              "l'écart et la règle dans references/coherence-arbitrages.json :")
         for e in a_arbitrer:
             print(f"  ? {e}")
     if a_signaler:

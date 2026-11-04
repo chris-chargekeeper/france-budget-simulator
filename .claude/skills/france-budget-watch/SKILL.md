@@ -184,11 +184,25 @@ le faire, dans la même relève :
   page n'affiche pas ; un titre « non chiffré » démenti par les chiffres ; un compteur de dette sans
   point de départ. Corrigez par un second patch (`partis.<id>.set.<mesure>.annonce`, voir
   references/patch.md) qui cite la source donnée, puis `valider`, `appliquer`, `build`, `controler`.
-- **À arbitrer** (`?`) : deux chiffres sourcés se contredisent (horizon, périmètre, amendement
-  ponctuel contre programme). Lisez les deux sources. Si le nouveau chiffre porte sur le même
-  périmètre et le même horizon, recalez ; sinon inscrivez l'écart et sa raison, datée, dans
-  `references/coherence-arbitrages.json` : il ne reviendra plus. Dans le doute, ni l'un ni
-  l'autre : dites-le dans le compte rendu.
+- **À arbitrer** (`?`) : deux chiffres sourcés se contredisent. **Tranchez vous-même, le jour même**,
+  avec les règles ci-dessous, dans l'ordre. Lisez les deux sources ; recalez par patch, ou inscrivez
+  l'écart et la règle qui le justifie, datés, dans `references/coherence-arbitrages.json` (il ne
+  reviendra plus). Un écart que ces règles ne tranchent pas se met **en tête** du compte rendu :
+  c'est le seul cas où l'on attend une décision humaine.
+
+  **Règles pour choisir le chiffre affiché d'une mesure**
+  1. *Qui parle.* Le candidat, son directeur de campagne ou un porte-parole de la campagne
+     (references/porte-voix.md) l'emportent sur un président de groupe, qui l'emporte sur un député.
+  2. *Le plan le plus récent.* Le chiffre du dernier plan d'ensemble présenté par le camp
+     (programme, contre-budget, chiffrage officiel) remplace celui d'un plan antérieur, même s'il
+     est plus bas.
+  3. *Plan contre amendement.* Un amendement parlementaire, une question au gouvernement ou une
+     phrase en plateau ne remplacent pas le chiffre d'un plan d'ensemble : ils vont au journal.
+  4. *Horizon.* Le site compte en 2032, une fois les mesures en place. Si la source donne plusieurs
+     horizons (« 15 Md€ dès 2027, 29 Md€ en année pleine »), on retient l'année pleine ou l'année la
+     plus proche de 2032.
+  5. *Le total aussi.* Ces règles valent pour le total revendiqué (`partis.<id>.annonce.revendique`)
+     et pour `detaille`, qui doit rester la somme des montants affichés poste par poste.
 - **À signaler** (`~`) : ce qui demande une modification de fond (ajouter une mesure à un
   scénario, changer un statut, attribuer ou retirer une mesure sans source). Ça ne se fait pas par
   la veille : listez-le dans le compte rendu, les nouveautés d'abord.
