@@ -251,6 +251,18 @@ td{font-family:"IBM Plex Mono",monospace}
 .sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--ink-3);max-width:78ch}
 footer .fbrand{font-family:"IBM Plex Mono",ui-monospace,monospace;color:var(--ink);letter-spacing:.02em}
+/* Mesure d'audience : bandeau de choix, en bas, tant que le visiteur n'a pas répondu */
+.consent{position:fixed;left:20px;bottom:calc(20px + env(safe-area-inset-bottom));z-index:60;
+  width:min(440px,calc(100vw - 32px));padding:14px 16px;border:1px solid var(--rule);border-radius:14px;
+  background:var(--surface);color:var(--ink-2);box-shadow:var(--shadow);font-size:13.5px;line-height:1.45}
+.consent[hidden]{display:none}
+.consent b{color:var(--ink);font-weight:600}
+.consent-act{display:flex;gap:8px;margin-top:10px}
+.consent-act button{flex:1;font:inherit;font-weight:600;padding:8px 12px;border-radius:10px;cursor:pointer;
+  border:1px solid var(--rule);background:var(--surface-2);color:var(--ink)}
+.consent-act button.oui{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.foot-consent{font:inherit;color:var(--accent);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+@media (max-width:640px){.consent{left:16px;right:16px;width:auto;bottom:calc(16px + env(safe-area-inset-bottom))}}
 .btn{border:1px solid var(--rule);background:var(--surface);color:var(--ink-2);border-radius:7px;padding:6px 12px;font:inherit;font-size:12.5px;cursor:pointer}
 .btn:hover{border-color:var(--accent);color:var(--ink)}
 .empty{color:var(--ink-3);font-size:13px;padding:26px 0;text-align:center}
@@ -1762,10 +1774,72 @@ footer{padding-bottom:120px}
     (type Mésange à la direction générale du Trésor) et une revue contradictoire des hypothèses.
     Aucune photographie de candidat n'est reproduite : les portraits de presse sont protégés par le droit
     d'auteur, et les avatars affichés sont des pictogrammes génériques.
+    Mesure d'audience anonyme (Google Analytics), seulement si vous l'acceptez :
+    <button type="button" class="foot-consent" id="consentRevoir">changer mon choix</button>.
   </footer>
 </div>
 
 <div id="tip" role="status" aria-live="polite"></div>
+<div class="consent" id="consent" role="dialog" aria-label="Mesure d'audience" hidden>
+  <b>Mesure d'audience</b> — pour savoir combien de personnes utilisent le simulateur et ce qu'elles
+  consultent, nous aimerions utiliser Google Analytics. Rien n'est envoyé sans votre accord.
+  <div class="consent-act">
+    <button type="button" class="non" id="consentNon">Refuser</button>
+    <button type="button" class="oui" id="consentOui">Accepter</button>
+  </div>
+</div>
+<script>
+/* Mesure d'audience (Google Analytics 4), conforme aux recommandations de la CNIL :
+   rien n'est chargé ni envoyé à Google tant que le visiteur n'a pas cliqué « Accepter » ;
+   « Refuser » est aussi simple qu'« Accepter » ; le choix est gardé 6 mois puis redemandé
+   (la CNIL fixe 13 mois au plus) ; le lien du pied de page permet d'en changer.
+   La balise ne se charge que sur le site en ligne, jamais en local. */
+(function(){
+  var ID = 'G-M0BEQZH7CD', CLE = 'fbs-mesure', DUREE = 182 * 864e5;
+  var enLigne = /(^|\.)quipaie2027\.fr$/.test(location.hostname);
+  var bandeau = document.getElementById('consent'), charge = false;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('consent', 'default', {analytics_storage:'denied', ad_storage:'denied',
+                              ad_user_data:'denied', ad_personalization:'denied'});
+  function lire(){
+    try { var c = JSON.parse(localStorage.getItem(CLE));
+          if (c && Date.now() - c.t < DUREE) return c.v; } catch (e) {}
+    return null;
+  }
+  function charger(){
+    if (charge || !enLigne) return;
+    charge = true;
+    gtag('consent', 'update', {analytics_storage:'granted'});
+    gtag('js', new Date());
+    gtag('config', ID);
+    var s = document.createElement('script');
+    s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+    document.head.appendChild(s);
+  }
+  function choisir(v){
+    try { localStorage.setItem(CLE, JSON.stringify({v: v, t: Date.now()})); } catch (e) {}
+    bandeau.hidden = true;
+    if (v === 'oui') charger();
+    else if (charge) {
+      /* retrait du consentement : on coupe la mesure et on efface les cookies _ga */
+      gtag('consent', 'update', {analytics_storage:'denied'});
+      document.cookie.split(';').forEach(function(k){
+        var n = k.split('=')[0].trim();
+        if (/^_ga/.test(n)) ['', '.quipaie2027.fr'].forEach(function(d){
+          document.cookie = n + '=; Max-Age=0; path=/' + (d ? '; domain=' + d : '');
+        });
+      });
+    }
+  }
+  document.getElementById('consentOui').onclick = function(){ choisir('oui'); };
+  document.getElementById('consentNon').onclick = function(){ choisir('non'); };
+  document.getElementById('consentRevoir').onclick = function(){ bandeau.hidden = false; };
+  var c = lire();
+  if (c === 'oui') charger(); else if (c === null) bandeau.hidden = false;
+})();
+</script>
 <script id="payload" type="application/json">__DATA__</script>
 <script>
 "use strict";
