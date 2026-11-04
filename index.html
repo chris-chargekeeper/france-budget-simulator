@@ -1087,54 +1087,6 @@ footer{padding-bottom:120px}
   .score-tiles{padding:14px 18px 18px}
   .ia-why{margin:0 12px 16px;padding:14px}
 }
-/* --- la carte « votre pouvoir d'achat » --- */
-#pouvoir{margin-top:16px}
-.pa-foyers{display:grid}
-.pa-row{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"lab net" "chips chips";gap:2px 12px;align-items:center;border-top:1px solid var(--rule-soft);padding:10px 4px}
-.pa-row .qp-lab > div > span{white-space:normal}
-.pa-row .qp-lab{grid-area:lab} .pa-row .qp-net{grid-area:net}
-.pa-chips{grid-area:chips;display:flex;flex-wrap:wrap;gap:4px 6px;margin-left:40px}
-.pa-chips span{font-size:11.5px;color:var(--ink-2);border:1px solid var(--rule);border-radius:999px;padding:1px 8px;white-space:nowrap}
-.pa-chips b{font-family:"IBM Plex Mono",monospace;font-weight:600;margin-left:4px}
-.pa-chips .gain b{color:var(--gain)} .pa-chips .perte b{color:var(--perte)}
-.pa-note{font-size:12.5px;color:var(--ink-3);line-height:1.5;margin:0;max-width:80ch}
-.pa-note a{color:var(--ink-3)}
-.pa-hist{display:grid;gap:10px}
-.pa-hist h4{margin:0;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:600}
-.pa-tuiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
-.pa-tuiles div{background:var(--surface-2);border-radius:10px;padding:8px 10px}
-.pa-tuiles b{display:block;font-family:"IBM Plex Mono",monospace;font-size:17px;font-weight:600;color:var(--ink)}
-.pa-tuiles span{font-size:12px;color:var(--ink-2);line-height:1.35}
-#chPouvoir{width:100%;height:auto;display:block}
-#chPouvoir .up{fill:var(--good)} #chPouvoir .down{fill:var(--critical)} #chPouvoir .prov{opacity:.45}
-.pa-ind-bloc{display:grid;gap:8px}
-.pa-ind-bloc h4{margin:4px 0 0;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:600}
-.pa-ind{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px}
-.pa-t{border:1px solid var(--rule);border-radius:12px;padding:10px 12px;display:grid;gap:2px;align-content:start;background:var(--surface)}
-.pa-t-k{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-2);font-weight:600}
-.pa-t-k .ic{width:15px;height:15px;color:var(--ink-3)}
-.pa-t-v{font-family:"IBM Plex Mono",monospace;font-size:21px;font-weight:600;color:var(--ink);line-height:1.2}
-.pa-t-s{font-size:11.5px;color:var(--ink-3);line-height:1.35}
-.pa-t.good{border-color:color-mix(in srgb,var(--good) 40%,transparent)} .pa-t.good .pa-t-v{color:var(--good)}
-.pa-t.bad{border-color:color-mix(in srgb,var(--critical) 40%,transparent)} .pa-t.bad .pa-t-v{color:var(--critical)}
-.pa-t.nc{background:var(--surface-2);border-style:dashed} .pa-t.nc .pa-t-v{font-size:15px;color:var(--ink-3);font-family:inherit}
-.pa-ind-bloc.hors .pa-t{background:var(--surface-2);border-color:transparent}
-.pa-ind-bloc.hors .pa-t-v{font-size:17px}
-.pa-src > .pa-note{margin:6px 0}
-@media (max-width:640px){
-  .pa-ind{grid-template-columns:1fr 1fr}
-  .pa-ind .pa-t:last-child:nth-child(odd){grid-column:1 / -1}
-  .pa-t{padding:9px 10px}
-  .pa-t-v{font-size:18px}
-  .pa-ind-bloc.hors .pa-ind{grid-template-columns:1fr}
-}
-.pa-src summary{font-size:13px;color:var(--ink-2)}
-.pa-src li{font-size:12.5px;line-height:1.5;color:var(--ink-2)}
-.pa-src ul{padding-left:18px;margin:6px 0}
-@media (max-width:640px){
-  .pa-chips{margin-left:0}
-  .pa-row{padding:11px 2px}
-}
 /* --- la carte « qui paie, qui reçoit » --- */
 .score{--perte:var(--critical);--gain:var(--good)}
 #quipaie{margin-top:16px}
@@ -1495,7 +1447,6 @@ footer{padding-bottom:120px}
     </div>
     <div class="score simple-only" id="score"></div>
     <div class="score qp-card simple-only" id="quipaie"></div>
-    <div class="score qp-card" id="pouvoir"></div>
     <div class="verdict adv-only" id="verdict"></div>
     <div class="cockpit adv-only" id="cockpit"></div>
     <div class="grid2 charts" style="margin-top:16px">
@@ -3823,7 +3774,6 @@ function renderScore(base, scen, split){
   host.appendChild(tiles);
 
   renderQuiPaie(p);
-  renderPouvoir(p, scen, base);
   if (p && p.horsCourse) host.appendChild(iaWhy(p));
   else if (p) host.appendChild(progList(p));
 }
@@ -4005,182 +3955,6 @@ function renderQuiPaie(p){
   host.style.setProperty('--pc', p ? p.couleur : 'var(--ink-3)');
   host.classList.toggle('is-ia', !!(p && p.horsCourse));
   renderVerso(host, p);
-}
-
-/* --- Votre pouvoir d'achat : l'effet mensuel du programme, la dette, et ce qui ne dépend pas de l'élu --- */
-const PA = DATA.pouvoir;
-const PA_PRIX = new Set(PA ? PA.prix.mesures : []);
-const eurM = v => nf(Math.round(v)) + ' €';
-const eurMS = v => Math.abs(v) < .5 ? '≈ 0 €' : (v > 0 ? '+' : '−') + ' ' + nf(Math.round(Math.abs(v))) + ' €';
-/** Mensualité d'un prêt amortissable à taux fixe, hors assurance. */
-const mensualite = (capital, taux, ans) => { const r = taux / 1200, n = ans * 12; return capital * r / (1 - Math.pow(1 + r, -n)); };
-const ctxInd = id => CTX.find(i => i.id === id);
-const lienSrc = (s, txt) => { const a = el('a', null, txt || s.t); a.href = s.u; a.target = '_blank'; a.rel = 'noopener'; return a; };
-const dateFr = d => new Date(d + 'T12:00:00').toLocaleDateString('fr-FR', {day:'numeric', month:'long', year:'numeric'});
-
-/** Le pouvoir d'achat depuis 1960 (mode détaillé) : une barre par an, et la dette en regard, sans lien de cause affirmé. */
-function paHistoire(){
-  const se = PA.serie, n = se.fin - se.debut + 1, an = i => se.debut + i;
-  const idx = [100]; for (let i = 1; i < n; i++) idx.push(idx[i-1] * (1 + se.uc[i] / 100));
-  const moy = (a, b) => (Math.pow(idx[b - se.debut] / idx[a - se.debut], 1 / (b - a)) - 1) * 100;
-  const reculs = se.uc.map((v, i) => [an(i), v]).filter(([, v]) => v < 0);
-  const wrap = el('div','pa-hist adv-only');
-  wrap.appendChild(el('h4', null, "Le pouvoir d'achat depuis 1960"));
-  wrap.appendChild(el('p','pa-note', "Évolution chaque année du pouvoir d'achat par unité de consommation, c'est-à-dire en tenant compte de la taille des ménages : la mesure officielle de l'Insee, en moyenne pour tous les Français."));
-  const t = el('div','pa-tuiles');
-  const tuile = (v, txt) => { const d = el('div'); d.append(el('b', null, v), el('span', null, txt)); t.appendChild(d); };
-  tuile('×' + nf(idx[n-1] / 100, 1), `depuis ${se.debut}`);
-  tuile(pts(moy(1960, 1970), 1).replace(/^\+/, '+ ') + ' %', "par an dans les années 1960");
-  tuile(pts(moy(2010, se.fin), 1).replace(/^\+/, '+ ') + ' %', `par an de 2010 à ${se.fin}`);
-  const pire = reculs.reduce((m, r) => r[1] < m[1] ? r : m, [0, 0]);
-  tuile(String(reculs.length), `années de recul ; la plus forte : ${pctTxt(pire[1])} en ${pire[0]}`);
-  wrap.appendChild(t);
-
-  /* Dessiné à la taille de l'écran : sur téléphone, un viewBox étroit garde des étiquettes lisibles. */
-  const etroit = matchMedia('(max-width:640px)').matches;
-  const W = etroit ? 360 : 640, H = etroit ? 200 : 190, L = 34, R = 8, T = 10, B = 24;
-  const vmax = Math.ceil(Math.max(...se.uc.map(Math.abs)));
-  const svg = sv('svg', {id:'chPouvoir', viewBox:`0 0 ${W} ${H}`, role:'img',
-    'aria-label': `Évolution annuelle du pouvoir d'achat par unité de consommation de ${se.debut} à ${se.fin}`});
-  const bw = (W - L - R) / n, y = v => T + (vmax - v) / (2 * vmax) * (H - T - B);
-  for (let v = -vmax + (vmax % 2); v <= vmax; v += etroit ? 4 : 2){
-    svg.appendChild(sv('line', {x1:L, x2:W-R, y1:y(v), y2:y(v), class: v === 0 ? 'axisline' : 'gridline'}));
-    const tk = sv('text', {x:L-6, y:y(v)+3.5, class:'tick', 'text-anchor':'end'}); tk.textContent = sign(String(v)) + ' %'; svg.appendChild(tk);
-  }
-  se.uc.forEach((v, i) => {
-    const r = sv('rect', {x:L + i * bw + bw * .15, width:bw * .7, y:Math.min(y(v), y(0)), height:Math.max(.8, Math.abs(y(v) - y(0))),
-      class:(v < 0 ? 'down' : 'up') + (an(i) >= se.semiDefinitif ? ' prov' : '')});
-    const ti = sv('title', {}); ti.textContent = `${an(i)} : ${pctTxt(v)}` + (an(i) === se.provisoire ? ' (provisoire)' : an(i) === se.semiDefinitif ? ' (semi-définitif)' : '');
-    r.appendChild(ti); svg.appendChild(r);
-  });
-  for (let a = se.debut; a <= se.fin; a += etroit ? 20 : 10){
-    const tk = sv('text', {x:L + (a - se.debut + .5) * bw, y:H - 6, class:'tick', 'text-anchor':'middle'}); tk.textContent = a; svg.appendChild(tk);
-  }
-  wrap.appendChild(svg);
-
-  const p = el('p','pa-note');
-  const dette = y_ => HIST ? histVal('fr', y_) : null;
-  p.append(`Années de recul : ${reculs.map(([a]) => a).join(', ')}. Les barres pâles sont des données encore révisables. `);
-  if (HIST && dette(1970) != null && dette(2010) != null)
-    p.append(`En regard, la dette publique : ${nf(dette(1970), 0)} % du PIB en 1970, ${nf(dette(2010), 0)} % en 2010, ${nf(dette(se.fin), 0)} % en ${se.fin}. L'une et l'autre ont changé de rythme après les chocs pétroliers des années 1970 ; ce site ne tranche pas le lien de cause à effet entre elles, débattu par les économistes. `);
-  p.appendChild(lienSrc(se.source, "Source : Insee")); p.append('.');
-  wrap.appendChild(p);
-  return wrap;
-}
-
-function renderPouvoir(p, scen, base){
-  const host = $('#pouvoir'); if (!host || !PA) return;
-  const S = scen[scen.length - 1], B = base[base.length - 1], tend = state.party === 'tend';
-  host.textContent = '';
-  host.style.setProperty('--pc', p ? p.couleur : 'var(--ink-3)');
-  host.classList.toggle('is-ia', !!(p && p.horsCourse));
-  const box = el('div','qp pa');
-  const top = el('div','qp-top');
-  top.appendChild(el('div','qp-kick', p ? (p.horsCourse ? "Le candidat IA" : "Avec le programme de " + p.candidat)
-    : tend ? "Si rien ne change" : "Votre scénario"));
-  top.appendChild(el('h3', null, "Votre pouvoir d'achat en 2032"));
-  top.appendChild(el('p', null, "Ce que le programme change chaque mois, par rapport à aujourd'hui."));
-  box.appendChild(top);
-
-  /* 1. Les foyers types : la répartition de « qui paie, qui reçoit », ramenée au mois. */
-  const R = incidence(state.active, state.P);
-  const sal = p && PA.salaires[p.id];
-  const list = el('div','pa-foyers');
-  for (const f of PA.foyers){
-    const g = R.G[f.groupe]; if (!g) continue;
-    const rev = f.revenu || g.g.revenu.v / 12;
-    let fisc = 0, prix = 0;
-    g.items.forEach(it => { const v = (it.perte ? -it.v : it.v) / 12; if (PA_PRIX.has(it.m.id)) prix += v; else fisc += v; });
-    const chips = [];
-    if (Math.abs(fisc) >= .5) chips.push(["Impôts et aides", fisc]);
-    if (Math.abs(prix) >= .5) chips.push(["TVA", prix]);
-    let salaire = 0;
-    if (f.id === 'smic' && sal){ salaire = sal.smicNet - rev; chips.push([`Smic à ${nf(sal.smicNet)} € net`, salaire]); }
-    const net = fisc + prix + salaire;
-    const row = el('div','pa-row');
-    const lab = el('div','qp-lab');
-    const ico = el('div','qp-ico' + (Math.abs(net) < .5 ? '' : net < 0 ? ' perte' : ' gain'));
-    ico.appendChild(icon(f.icone));
-    const txt = el('div'); txt.appendChild(el('b', null, f.lab));
-    const sub = el('span', null, `${eurM(rev)} par mois`); sub.title = f.quoi || g.g.revenu.quoi; txt.appendChild(sub);
-    lab.append(ico, txt);
-    const nv = el('div','qp-net ' + (Math.abs(net) < .5 ? 'zero' : net < 0 ? 'perte' : 'gain'), eurMS(net));
-    if (Math.abs(net) >= .5) nv.prepend(el('span','qp-pct', pctTxt(net / rev * 100)));
-    nv.appendChild(el('small', null, "par mois"));
-    row.append(lab, nv);
-    if (chips.length || (f.id === 'smic' && 'smic' in state.active && !sal)){
-      const ch = el('div','pa-chips');
-      chips.forEach(([t, v]) => { const sp = el('span', v < 0 ? 'perte' : 'gain', t); sp.appendChild(el('b', null, eurMS(v))); ch.appendChild(sp); });
-      if (f.id === 'smic' && 'smic' in state.active && !sal) ch.appendChild(el('span', null, "Hausse du Smic : montant non fixé"));
-      row.appendChild(ch);
-    }
-    list.appendChild(row);
-  }
-  box.appendChild(list);
-
-  /* 2. Pourquoi ça bouge : de gros repères, le détail est replié plus bas. */
-  const parMenage = mds => mds * 1e9 / (BL.apu.menages * 1e6) / 12;
-  /* Le taux auquel l'État emprunte : celui du marché, plus la prime que le modèle ajoute quand la dette grimpe. */
-  const taux32 = rows => state.P.rmkt + state.P.spread / 100 * Math.max(0, rows[rows.length - 2].dettePct - rows[0].dettePct);
-  const tuiles = (titre, cls) => {
-    const w = el('div','pa-ind-bloc' + (cls ? ' ' + cls : ''));
-    w.appendChild(el('h4', null, titre));
-    const g = el('div','pa-ind'); w.appendChild(g); box.appendChild(w);
-    return (ic, k, v, sub, etat) => {
-      const t = el('div','pa-t' + (etat ? ' ' + etat : ''));
-      const h = el('div','pa-t-k'); h.append(icon(ic), document.createTextNode(k));
-      t.append(h, el('div','pa-t-v', v), el('div','pa-t-s', sub));
-      g.appendChild(t);
-    };
-  };
-  const ecart = (v, ref, bon) => Math.abs(v - ref) < 1e-9 ? '' : (v < ref) === bon ? 'good' : 'bad';
-
-  const pq = tuiles("Pourquoi ça bouge");
-  const iS = parMenage(S.charge), iB = parMenage(B.charge);
-  pq('dette', "Intérêts de la dette", eurM(iS),
-     tend ? `par ménage et par mois, contre ${eurM(parMenage(BASE.charge0))} en 2025` : `par ménage et par mois · ${eurMS(iS - iB)} vs « si rien ne change »`,
-     tend ? 'bad' : Math.abs(iS - iB) < .5 ? '' : ecart(iS, iB, true));
-  const tS = taux32(scen), tB = taux32(base);
-  pq('maison', "Taux d'emprunt de l'État", pc(tS, 1),
-     tend ? `en 2032, contre ${pc(ctxInd('oat10').valeur, 1)} aujourd'hui` : Math.abs(tS - tB) < .05 ? "en 2032 · comme « si rien ne change »" : `en 2032 · ${ptsTxt(tS - tB, 1)} vs « si rien ne change »`,
-     tend ? '' : Math.abs(tS - tB) < .05 ? '' : ecart(tS, tB, true));
-  const act = (S.pib / B.pib - 1) * 100;
-  pq('entreprise', "Activité (PIB)", tend ? "référence" : pctTxt(act),
-     tend ? "les autres scénarios s'y comparent" : "en 2032 vs « si rien ne change »",
-     tend || Math.abs(act) < .05 ? '' : act > 0 ? 'good' : 'bad');
-  pq('salaire', "Emploi", "non chiffré", "pas d'estimation neutre par programme", 'nc');
-  pq('tours', "Productivité", "non chiffré", "moteur durable du pouvoir d'achat, pas chiffré par programme", 'nc');
-
-  const hp = tuiles("Ce que l'élu ne décide pas", 'hors');
-  const ip = ctxInd(PA.inflation.indicateur), smic = PA.foyers.find(f => f.id === 'smic').revenu;
-  hp('panier', "Prix sur un an", pctTxt(ip.valeur), `au Smic, ${eurMS(smic * ip.valeur / 100)} par mois pour le même panier`);
-  const po = PA.petrole, [lo, hi] = po.total;
-  hp('transport', `Pétrole +${po.hausse} € le baril`, `+ ${nf(lo, 1)} à ${nf(hi, 1)} %`, `sur tous les prix · au Smic ≈ ${eurMS(smic * (lo + hi) / 2 / 100)} par mois`);
-  const oat = ctxInd('oat10'), c = PA.credit;
-  const surcout = mensualite(c.montant, c.taux + 1, c.duree) - mensualite(c.montant, c.taux, c.duree);
-  hp('maison', "Crédit immobilier", pc(c.taux, 2), `taux moyen (${c.mois}) · 1 point de plus = ${eurMS(surcout)} par mois sur ${nf(c.montant)} €`);
-
-  box.appendChild(paHistoire());
-
-  /* 3. Le détail, replié : chaque chiffre expliqué, puis les sources. */
-  const det = el('details','pa-src');
-  det.appendChild(el('summary', null, "Comprendre ces chiffres"));
-  const para = (...m) => { const q = el('p','pa-note'); m.forEach(x => q.append(x)); det.appendChild(q); };
-  para("Foyers : la répartition de « Qui paie, qui reçoit », divisée par 12, à prix et salaires d'aujourd'hui. ",
-    PA.foyers.filter(f => f.noteGroupe).map(f => f.noteGroupe).join(' '), ' ', PA.prix.explication);
-  if (sal) para(sal.quoi + " Elle serait payée par les employeurs ; ses effets sur l'emploi et sur les prix ne sont pas comptés. ", lienSrc(sal.source, "Source"), '.');
-  para(`Intérêts de la dette : ${md(S.charge)} en 2032, divisés entre ${nf(BL.apu.menages, 1)} millions de ménages. Cet argent ne finance ni services publics ni baisses d'impôts.`);
-  para(`Taux de l'État : ${pc(oat.valeur, 2)} le ${dateFr(oat.date)}. Le modèle ajoute une prime quand la dette dépasse son niveau de 2025. Quand ce taux monte, les prêts aux ménages et aux entreprises tendent à suivre, sans répercussion automatique ni complète : ce site n'a pas trouvé d'estimation officielle de la part qui passe.`);
-  para("Activité : effet de court terme des mesures selon le multiplicateur budgétaire du modèle, qui s'estompe avec le temps. Emploi et productivité : ce site n'a pas de chiffrage neutre par programme et n'en invente pas.");
-  para(`Prix : ${ip.lab}, indice européen. ${PA.inflation.smic.texte} ${PA.inflation.retraites.texte}`);
-  para(`Pétrole : ${po.texte} Les montants au Smic supposent que tout le revenu est dépensé, dans un panier moyen.`);
-  const ul = el('ul');
-  const tous = [PA.serie.source, ip.source, oat.source, c.source, po.source, PA.inflation.smic.source, PA.inflation.retraites.source,
-                ...PA.foyers.filter(f => f.source).map(f => f.source), ...(sal ? [sal.source] : [])];
-  [...new Map(tous.map(s => [s.u, s])).values()].forEach(s => { const li = el('li'); li.appendChild(lienSrc(s)); ul.appendChild(li); });
-  det.appendChild(ul);
-  box.appendChild(det);
-  host.appendChild(box);
 }
 
 /** Montant d'une mesure vu du budget : + si elle rapporte ou économise, − si elle coûte. */
