@@ -366,6 +366,7 @@ footer .fbrand{font-family:"IBM Plex Mono",ui-monospace,monospace;color:var(--in
 .trou-stack{display:flex;height:52px;border:1px solid var(--rule);border-radius:7px;overflow:hidden;background:var(--surface-2)}
 .trou-stack span{display:block;height:100%;min-width:2px}
 .trou-stack .tenu{background:var(--bar-strong)}
+.trou-stack .hc{background:var(--axis)}
 .trou-stack .hors{
   background:repeating-linear-gradient(135deg,
     color-mix(in srgb,var(--critical) 46%,transparent) 0 5px,
@@ -1416,7 +1417,7 @@ footer{padding-bottom:120px}
         <span class="v" id="hsRec"></span></div>
       <div class="hs live"><span class="k"><i class="pulse"></i>La dette publique, en ce moment</span>
         <span class="v" id="debtLive" aria-live="off"></span>
-        <span class="s">+ <b id="debtRate"></b> par seconde · estimation du simulateur</span></div>
+        <span class="s">+ <b id="debtRate"></b> par seconde · dernier chiffre Insee prolongé par le simulateur</span></div>
     </div>
     <div class="veille-strip" id="veilleStrip" aria-label="Ce que la veille quotidienne a passé au crible"></div>
     <p class="standfirst adv-only">Choisissez un candidat : vous verrez en un coup d'œil ce que son programme
@@ -2167,9 +2168,9 @@ function render(){
     dtxt:manqueDelta(S32.solde - B32.solde), good:dS > .05, bad:dS < -.05},
    {lab:"La dette en 2032", val:md(S32.dette),
     sub:pc(S32.dettePct,0) + " du PIB · " + perHab(S32.dette) + " par habitant",
-    dtxt:"contre " + md(BASE.dette0) + " aujourd'hui", good:dD < -.5, bad:dD > .5},
+    dtxt:"contre " + md(BASE.dette0) + " fin 2025", good:dD < -.5, bad:dD > .5},
    {lab:"Les intérêts de la dette", val:md(S32.charge),
-    sub:"contre " + md(BASE.charge0) + " aujourd'hui",
+    sub:"contre " + md(BASE.charge0) + " en 2025",
     dtxt:"soit " + nf(S32.charge / S32.rec * 100, 1) + " % de tout ce que l'État encaisse"},
    {lab:"Sous la limite des 3 % ?", val:under3 > 0 ? String(scen[under3].y) : "jamais",
     sub:under3 > 0 ? "première année sous la limite" : "pas d'ici 2032",
@@ -2422,7 +2423,7 @@ function renderVerdict(base, scen, split){
     `Il manquerait <b>${md(manque)}</b> dans les caisses sur l'année — l'équivalent de `
     + `<b>${perHab(manque)}</b> par habitant.`]);
   lines.push([S.dette > BASE.dette0 ? 'bad' : 'good',
-    `La dette atteindrait <b>${md(S.dette)}</b>, contre <b>${md(BASE.dette0)}</b> aujourd'hui.`]);
+    `La dette atteindrait <b>${md(S.dette)}</b>, contre <b>${md(BASE.dette0)}</b> fin 2025.`]);
   const dHab = (S.dette - BASE.dette0) * 1000 / BL.apu.population;
   lines.push([S.dette > BASE.dette0 ? 'bad' : 'good',
     `Par habitant, elle passerait de <b>${perHab(BASE.dette0)}</b> à <b>${perHab(S.dette)}</b>, `
@@ -2561,13 +2562,18 @@ function auditer(p){
                  delta: Math.max(0, chiffre - plafond)});
   }
   postes.sort((x, y) => y.delta - x.delta || y.annonce - x.annonce);
+  /* Postes que le parti a chiffrés mais que le catalogue n'a pas : ils sont détaillés,
+     donc pas « jamais détaillés », mais le simulateur ne peut pas les confronter. */
+  const hc = (p.annonce.horsCatalogue && p.annonce.horsCatalogue.v) || 0;
   const chiffre = postes.reduce((s, x) => s + x.annonce, 0);
   const horsPlafond = postes.reduce((s, x) => s + x.delta, 0);
-  return {rev, cote:p.annonce.cote, postes, chiffre, horsPlafond,
-          nonDetaille: rev == null ? 0 : Math.max(0, rev - chiffre),
-          excedent:    rev == null ? 0 : Math.max(0, chiffre - rev),
+  const nonDetaille = rev == null ? 0 : Math.max(0, rev - chiffre - hc);
+  return {rev, cote:p.annonce.cote, postes, chiffre, horsPlafond, horsCatalogue:hc,
+          nonAnnuel: p.annonce.nonAnnuel || null,
+          nonDetaille,
+          excedent:    rev == null ? 0 : Math.max(0, chiffre + hc - rev),
           tenu: chiffre - horsPlafond,
-          trou: horsPlafond + (rev == null ? 0 : Math.max(0, rev - chiffre))};
+          trou: horsPlafond + nonDetaille};
 }
 
 /** La phrase qui dit, poste par poste, ce que le budget contient face à l'annonce. */
@@ -2619,7 +2625,12 @@ function renderTrou(){
   const A = auditer(p), reconstitution = A.rev == null;
 
   /* le grand chiffre, puis la barre : la part d'un total qui ne se raccroche à rien */
-  if (reconstitution){
+  if (!reconstitution && A.nonAnnuel){
+    lab.textContent = "Total non comparable";
+    fig.textContent = '—'; fig.style.color = 'var(--ink-3)';
+    sub.innerHTML = A.nonAnnuel;
+    stack.hidden = true;
+  } else if (reconstitution){
     lab.textContent = "Rien à confronter";
     fig.textContent = '—'; fig.style.color = 'var(--ink-3)';
     sub.innerHTML = p.horsCourse
@@ -2637,12 +2648,14 @@ function renderTrou(){
 
     /* la barre couvre tout ce qui est sur la table : le total revendiqué, ou la somme des
        postes chiffrés quand elle le dépasse. Les trois parts en font toujours le compte. */
-    const base = Math.max(A.rev, A.chiffre);
+    const base = Math.max(A.rev, A.chiffre + A.horsCatalogue);
     const zones = [
       {c:'tenu', n:"Adossé à un poste chiffré, dans les bornes publiées", v:A.tenu,
        k:'background:var(--bar-strong)'},
       {c:'hors', n:"Au-delà de ce qui existe", v:A.horsPlafond,
        k:'background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--critical) 46%,transparent) 0 3px,color-mix(in srgb,var(--critical) 12%,transparent) 3px 7px)'},
+      {c:'hc', n:"Chiffré par le parti, hors du catalogue (non vérifié ici)", v:A.horsCatalogue,
+       k:'background:var(--axis)'},
       {c:'muet', n:"Jamais détaillé", v:A.nonDetaille,
        k:'background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--critical) 26%,transparent) 0 2px,color-mix(in srgb,var(--critical) 5%,transparent) 2px 6px)'}
     ].filter(z => z.v > 0.05);
@@ -2661,7 +2674,7 @@ function renderTrou(){
       leg.appendChild(n);
     });
     const ech = el('div','trou-echelle');
-    ech.textContent = A.chiffre > A.rev + 0.05
+    ech.textContent = A.chiffre + A.horsCatalogue > A.rev + 0.05
       ? `La barre couvre les ${md(A.chiffre,1)} que totalisent les postes chiffrés — plus que `
         + `les ${md(A.rev)} revendiqués.`
       : `La barre couvre les ${md(A.rev)} annoncés.`;
@@ -2672,7 +2685,12 @@ function renderTrou(){
 
   /* les constats qui ne tiennent pas dans la barre */
   const dits = [];
-  if (A.nonDetaille > 0.05){
+  if (A.horsCatalogue > 0.05){
+    const hc = p.annonce.horsCatalogue;
+    dits.push(`<b>${md(A.horsCatalogue,1)}</b> sont chiffrés par le parti sur des postes que le simulateur `
+      + `ne modélise pas (${hc.quoi}) : ils ne sont ni comptés comme « jamais détaillés » ni vérifiés ici.`);
+  }
+  if (A.nonDetaille > 0.05 && !A.nonAnnuel){
     dits.push(`<b>${md(A.nonDetaille,1)}</b> du total annoncé ne sont rattachés à aucun poste. `
       + `Ce n'est pas un chiffrage contestable : il n'y a rien à contester, `
       + `le détail n'a jamais été rendu public.`);
@@ -2843,7 +2861,7 @@ function buildCards(){
   };
   PARTIES.forEach(p => mk(p.id, p.sigle, p.candidat, p.nom,
     p.horsCourse ? p.annonce.titre
-      : p.annonce.revendique != null ? p.annonce.titre : "Programme non chiffré",
+      : p.annonce.revendique != null ? p.annonce.titre : "Pas de chiffrage présidentiel",
     p.horsCourse ? ['ia','hors course · pour jouer']
       : p.statut === 'reconstitution' ? ['rec','reconstitution'] : ['pub','chiffres publics'],
     p.couleur, p.photo, p.avatar, p.horsCourse));
@@ -3545,7 +3563,9 @@ const CONTRA = {
   inconnu:   ['warn', "non vérifiable en l'état"]
 };
 const annOf = id => ANN.filter(a => a.parti === id);
-const contraOf = id => annOf(id).filter(a => a.contredit && a.contredit !== 'non').length;
+/* « Contradiction » : contredit le programme ou une autre déclaration du même camp. Une
+   déclaration seulement invérifiable (« inconnu ») n'en est pas une. */
+const contraOf = id => annOf(id).filter(a => a.contredit && a.contredit !== 'non' && a.contredit !== 'inconnu').length;
 const fmtDate = d => d.length === 10
   ? new Date(d).toLocaleDateString('fr-FR', {day:'numeric', month:'short', year:'numeric'})
   : new Date(d + '-01').toLocaleDateString('fr-FR', {month:'long', year:'numeric'});
@@ -3819,10 +3839,17 @@ function renderScore(base, scen, split){
     tile("La dette se stabilise ?", stable < .3 ? "Oui" : "Non",
          stable < .3 ? "elle cesse de grimper en part du PIB avant 2032" : "elle grimpe encore en 2032",
          stable < .3 ? 'good' : 'bad');
+  } else if (p && p.annonce.revendique != null && p.annonce.nonAnnuel){
+    tile("Part de la promesse non justifiée", "—",
+         `${md(p.annonce.revendique)} « sur le quinquennat » : on ne sait pas si c'est par an ou au total`, 'warn');
   } else if (p && p.annonce.revendique != null){
     const A = auditer(p), part = A.trou / A.rev * 100;
-    tile("De la promesse ne repose sur rien", nf(part, 0) + ' %',
-         `${md(A.trou)} sur ${md(A.rev)} annoncés n'ont ni détail ni financement identifiable`,
+    const bouts = [];
+    if (A.nonDetaille > 0.05) bouts.push(`${md(A.nonDetaille)} jamais détaillés`);
+    if (A.horsPlafond > 0.05) bouts.push(`${md(A.horsPlafond)} au-delà des chiffrages indépendants`);
+    tile("Part de la promesse non justifiée", nf(part, 0) + ' %',
+         bouts.length ? `sur ${md(A.rev)} annoncés : ${bouts.join(', ')}`
+                      : `chacun des ${md(A.rev)} annoncés tient dans les chiffrages publiés`,
          part > 25 ? 'bad' : 'good');
   } else if (p){
     tile("Programme chiffré par le parti ?", "Non",
@@ -4080,8 +4107,9 @@ function renderProjection(p, scenPage){
     const dPage = scenPage && scenPage[scenPage.length - 1].dettePct;
     const diff = dPage != null && Math.round(dPage) !== Math.round(S.dettePct);
     t('dette', "Dette publique", sg(C.dettePct, 1, 'pt', .05),
-      `${nf(S.dettePct, 0)} % du PIB en 2032`,
-      (diff ? `${nf(dPage, 0)} % dans le calcul simple, sans ces effets · ` : '') + entre(Q.dettePct, 1, 'pt'), etat(C.dettePct, false, .05));
+      diff ? `${nf(S.dettePct, 0)} % du PIB en 2032 avec ces effets sur l'économie, contre ${nf(dPage, 0)} % plus haut, qui ne les compte pas`
+           : `${nf(S.dettePct, 0)} % du PIB en 2032`,
+      entre(Q.dettePct, 1, 'pt'), etat(C.dettePct, false, .05));
     t('maison', "Taux d'emprunt de l'État", pc(S.rMkt, 2), `en 2032 · ${sg(C.rMkt, 2, 'pt', .005)} par rapport à « si rien ne change »`,
       `crédit aux entreprises ${sg(C.rMkt * MOT.creditEntreprises.v * 100, 0, 'pb', .5)} · ` + entre(Q.rMkt.map(x => x * 100), 0, 'pb'), etat(C.rMkt, false, .005));
     t('panier', "Intérêts de la dette", sg(C.chargeMenageMois, 0, '€', .5), "par ménage et par mois",
@@ -4209,7 +4237,7 @@ function presentation(p){
     tags.appendChild(el('span','si-tag', `${sign(nf(r, r % 1 ? 1 : 0))} % dans les sondages`
       + (sd.n > 1 ? ` (moyenne de ${sd.n})` : '')));
   }
-  tags.appendChild(el('span','si-tag', p.statut === 'reconstitution' ? "Programme non chiffré : reconstitué"
+  tags.appendChild(el('span','si-tag', p.statut === 'reconstitution' ? "Scénario reconstitué par le site"
     : p.statut === 'partiel' ? "Programme en partie chiffré" : "Programme chiffré publié"));
   tags.appendChild(el('span','si-tag', Object.keys(state.active).length + " mesures chargées"));
   box.appendChild(tags);
@@ -4227,8 +4255,9 @@ function progList(p){
   const box = el('div','ia-why prog');
   box.appendChild(el('h4', null, "Ce que contient son programme, du plus gros au plus petit"));
   box.appendChild(el('p','ia-intro', p.statut === 'reconstitution'
-    ? "Pas de programme chiffré publié : cette liste est reconstituée par ce site à partir de ses positions "
-      + "publiques. Chaque montant est celui du simulateur en 2032, à la même échelle pour tous."
+    ? "Pas de chiffrage d'ensemble du programme présidentiel : cette liste est reconstituée par ce site à partir "
+      + "de ses positions publiques. Chaque montant est celui du simulateur en 2032, à la même échelle pour tous ; "
+      + "quand le parti a chiffré une mesure, son chiffre est indiqué à côté."
     : "Montants calculés par le simulateur en 2032, à la même échelle pour tous ; quand le parti avance "
       + "son propre chiffre, il est indiqué à côté. Cliquez sur une mesure pour l'explication."));
   const act = partySet(p);
@@ -4366,7 +4395,14 @@ function renderContexte(){
   const i = Math.max(1, Math.min(traj.length - 1, now.getFullYear() - 2025));
   const debut = new Date(traj[i].y, 0, 1), fin = new Date(traj[i].y + 1, 0, 1);
   const parSec = -traj[i].solde * 1e9 / ((fin - debut) / 1000);
-  const dette = t => traj[i-1].dette * 1e9 + parSec * (t - debut) / 1000;
+  /* Point de départ : le dernier chiffre constaté par l'Insee (contexte.json, tenu par la
+     veille), prolongé au rythme du déficit simulé pour l'année. Sans ce point, on part de
+     la fin 2025 du modèle. */
+  const ctxD = ((DATA.contexte && DATA.contexte.indicateurs) || []).find(x => x.id === 'dette');
+  const ancre = ctxD && ctxD.montant && ctxD.arrete
+    ? {t:new Date(ctxD.arrete + 'T23:59:59'), v:ctxD.montant * 1e9}
+    : {t:debut, v:traj[i-1].dette * 1e9};
+  const dette = t => ancre.v + parSec * (t - ancre.t) / 1000;
   const out = $('#debtLive'), fmt = new Intl.NumberFormat('fr-FR', {maximumFractionDigits:0});
   $('#debtRate').textContent = fmt.format(parSec) + ' €';
   const tic = () => { out.textContent = fmt.format(dette(new Date())) + ' €'; };
