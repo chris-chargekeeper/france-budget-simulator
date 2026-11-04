@@ -1086,6 +1086,33 @@ footer{padding-bottom:120px}
   .score-tiles{padding:14px 18px 18px}
   .ia-why{margin:0 12px 16px;padding:14px}
 }
+/* --- la carte « votre pouvoir d'achat » --- */
+#pouvoir{margin-top:16px}
+.pa-foyers{display:grid}
+.pa-row{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"lab net" "chips chips";gap:2px 12px;align-items:center;border-top:1px solid var(--rule-soft);padding:10px 4px}
+.pa-row .qp-lab > div > span{white-space:normal}
+.pa-row .qp-lab{grid-area:lab} .pa-row .qp-net{grid-area:net}
+.pa-chips{grid-area:chips;display:flex;flex-wrap:wrap;gap:4px 6px;margin-left:40px}
+.pa-chips span{font-size:11.5px;color:var(--ink-2);border:1px solid var(--rule);border-radius:999px;padding:1px 8px;white-space:nowrap}
+.pa-chips b{font-family:"IBM Plex Mono",monospace;font-weight:600;margin-left:4px}
+.pa-chips .gain b{color:var(--gain)} .pa-chips .perte b{color:var(--perte)}
+.pa-note{font-size:12.5px;color:var(--ink-3);line-height:1.5;margin:0;max-width:80ch}
+.pa-note a,.pa-f a{color:var(--ink-3)}
+.pa-bloc{border-radius:14px;background:var(--surface-2);padding:12px 14px;display:grid;gap:10px}
+.pa-bloc h4{margin:0;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:600}
+.pa-f{display:grid;grid-template-columns:20px minmax(0,1fr);gap:10px;font-size:13.5px;line-height:1.5;color:var(--ink-2)}
+.pa-f > .ic{width:18px;height:18px;color:var(--ink-3);margin-top:2px}
+.pa-f p{margin:0}
+.pa-f b{color:var(--ink);font-family:"IBM Plex Mono",monospace;font-weight:600;white-space:nowrap}
+.pa-src summary{font-size:13px;color:var(--ink-2)}
+.pa-src li{font-size:12.5px;line-height:1.5;color:var(--ink-2)}
+.pa-src ul{padding-left:18px;margin:6px 0}
+@media (max-width:640px){
+  .pa-chips{margin-left:0}
+  .pa-row{padding:11px 2px}
+  .pa-bloc{padding:12px}
+  .pa-f{font-size:13px}
+}
 /* --- la carte « qui paie, qui reçoit » --- */
 .score{--perte:var(--critical);--gain:var(--good)}
 #quipaie{margin-top:16px}
@@ -1444,6 +1471,7 @@ footer{padding-bottom:120px}
     </div>
     <div class="score simple-only" id="score"></div>
     <div class="score qp-card simple-only" id="quipaie"></div>
+    <div class="score qp-card" id="pouvoir"></div>
     <div class="verdict adv-only" id="verdict"></div>
     <div class="cockpit adv-only" id="cockpit"></div>
     <div class="grid2 charts" style="margin-top:16px">
@@ -3771,6 +3799,7 @@ function renderScore(base, scen, split){
   host.appendChild(tiles);
 
   renderQuiPaie(p);
+  renderPouvoir(p, S, B);
   if (p && p.horsCourse) host.appendChild(iaWhy(p));
   else if (p) host.appendChild(progList(p));
 }
@@ -3952,6 +3981,116 @@ function renderQuiPaie(p){
   host.style.setProperty('--pc', p ? p.couleur : 'var(--ink-3)');
   host.classList.toggle('is-ia', !!(p && p.horsCourse));
   renderVerso(host, p);
+}
+
+/* --- Votre pouvoir d'achat : l'effet mensuel du programme, la dette, et ce qui ne dépend pas de l'élu --- */
+const PA = DATA.pouvoir;
+const PA_PRIX = new Set(PA ? PA.prix.mesures : []);
+const eurM = v => nf(Math.round(v)) + ' €';
+const eurMS = v => Math.abs(v) < .5 ? '≈ 0 €' : (v > 0 ? '+' : '−') + ' ' + nf(Math.round(Math.abs(v))) + ' €';
+/** Mensualité d'un prêt amortissable à taux fixe, hors assurance. */
+const mensualite = (capital, taux, ans) => { const r = taux / 1200, n = ans * 12; return capital * r / (1 - Math.pow(1 + r, -n)); };
+const ctxInd = id => CTX.find(i => i.id === id);
+const lienSrc = (s, txt) => { const a = el('a', null, txt || s.t); a.href = s.u; a.target = '_blank'; a.rel = 'noopener'; return a; };
+const dateFr = d => new Date(d + 'T12:00:00').toLocaleDateString('fr-FR', {day:'numeric', month:'long', year:'numeric'});
+
+function renderPouvoir(p, S, B){
+  const host = $('#pouvoir'); if (!host || !PA) return;
+  host.textContent = '';
+  host.style.setProperty('--pc', p ? p.couleur : 'var(--ink-3)');
+  host.classList.toggle('is-ia', !!(p && p.horsCourse));
+  const box = el('div','qp pa');
+  const top = el('div','qp-top');
+  top.appendChild(el('div','qp-kick', p ? (p.horsCourse ? "Le candidat IA" : "Avec le programme de " + p.candidat)
+    : state.party === 'tend' ? "Si rien ne change" : "Votre scénario"));
+  top.appendChild(el('h3', null, "Votre pouvoir d'achat en 2032"));
+  top.appendChild(el('p', null, "Ce que le programme change chaque mois pour quatre foyers types, à prix et salaires d'aujourd'hui. Les effets sur l'emploi et la croissance ne sont pas comptés."));
+  box.appendChild(top);
+
+  /* 1. Les foyers types : la répartition de « qui paie, qui reçoit », ramenée au mois. */
+  const R = incidence(state.active, state.P);
+  const sal = p && PA.salaires[p.id];
+  const list = el('div','pa-foyers');
+  for (const f of PA.foyers){
+    const g = R.G[f.groupe]; if (!g) continue;
+    const rev = f.revenu || g.g.revenu.v / 12;
+    let fisc = 0, prix = 0;
+    g.items.forEach(it => { const v = (it.perte ? -it.v : it.v) / 12; if (PA_PRIX.has(it.m.id)) prix += v; else fisc += v; });
+    const chips = [];
+    if (Math.abs(fisc) >= .5) chips.push(["Impôts et aides", fisc]);
+    if (Math.abs(prix) >= .5) chips.push(["TVA", prix]);
+    let salaire = 0;
+    if (f.id === 'smic' && sal){ salaire = sal.smicNet - rev; chips.push([`Smic à ${nf(sal.smicNet)} € net`, salaire]); }
+    const net = fisc + prix + salaire;
+    const row = el('div','pa-row');
+    const lab = el('div','qp-lab');
+    const ico = el('div','qp-ico' + (Math.abs(net) < .5 ? '' : net < 0 ? ' perte' : ' gain'));
+    ico.appendChild(icon(f.icone));
+    const txt = el('div'); txt.appendChild(el('b', null, f.lab));
+    const sub = el('span', null, `${eurM(rev)} par mois`); sub.title = f.quoi || g.g.revenu.quoi; txt.appendChild(sub);
+    lab.append(ico, txt);
+    const nv = el('div','qp-net ' + (Math.abs(net) < .5 ? 'zero' : net < 0 ? 'perte' : 'gain'), eurMS(net));
+    if (Math.abs(net) >= .5) nv.prepend(el('span','qp-pct', pctTxt(net / rev * 100)));
+    nv.appendChild(el('small', null, "par mois"));
+    row.append(lab, nv);
+    if (chips.length || (f.id === 'smic' && 'smic' in state.active && !sal)){
+      const ch = el('div','pa-chips');
+      chips.forEach(([t, v]) => { const sp = el('span', v < 0 ? 'perte' : 'gain', t); sp.appendChild(el('b', null, eurMS(v))); ch.appendChild(sp); });
+      if (f.id === 'smic' && 'smic' in state.active && !sal) ch.appendChild(el('span', null, "Hausse du Smic : montant non fixé"));
+      row.appendChild(ch);
+    }
+    list.appendChild(row);
+  }
+  box.appendChild(list);
+  const note = el('p','pa-note', "Impôts, aides et TVA : la répartition de « Qui paie, qui reçoit », divisée par 12. "
+    + PA.foyers.filter(f => f.noteGroupe).map(f => f.noteGroupe).join(' ') + ' ');
+  if (sal){ note.appendChild(document.createTextNode(sal.quoi + " Elle serait payée par les employeurs ; ses effets sur l'emploi et sur les prix ne sont pas comptés. ")); note.appendChild(lienSrc(sal.source, "Source")); note.appendChild(document.createTextNode('.')); }
+  box.appendChild(note);
+
+  /* 2. La dette : ses intérêts sont payés par tous, et son taux guide celui des crédits. */
+  const fait = (ic, ...morceaux) => {
+    const d = el('div','pa-f'); d.appendChild(icon(ic));
+    const t = el('p'); morceaux.forEach(m => t.append(typeof m === 'string' ? document.createTextNode(m) : m)); d.appendChild(t);
+    return d;
+  };
+  const b = (x) => el('b', null, x);
+  const parMenage = mds => mds * 1e9 / (BL.apu.menages * 1e6) / 12;
+  const dette = el('div','pa-bloc');
+  dette.appendChild(el('h4', null, "La dette pèse aussi sur le pouvoir d'achat"));
+  dette.appendChild(fait('dette', "En 2032, les intérêts de la dette coûteraient ", b(md(S.charge)), " par an, soit ",
+    b(eurM(parMenage(S.charge))), " par ménage et par mois, contre ", b(eurM(parMenage(BASE.charge0))), " en 2025",
+    state.party !== 'tend' ? ` et ${eurM(parMenage(B.charge))} si rien ne change. ` : ". ",
+    "Cet argent ne finance ni services publics ni baisses d'impôts."));
+  const oat = ctxInd('oat10'), c = PA.credit;
+  const surcout = mensualite(c.montant, c.taux + 1, c.duree) - mensualite(c.montant, c.taux, c.duree);
+  dette.appendChild(fait('maison', "L'État emprunte à 10 ans à ", b(pc(oat.valeur, 2)), ` (${dateFr(oat.date)}). Quand ce taux monte, les prêts aux ménages et aux entreprises tendent à suivre, sans répercussion automatique ni complète. Un crédit immobilier coûte en moyenne `,
+    b(pc(c.taux, 2)), ` (${c.mois}) : s'il prenait 1 point, ${nf(c.montant)} € empruntés sur ${c.duree} ans coûteraient `,
+    b(eurM(surcout)), " de plus par mois."));
+  box.appendChild(dette);
+
+  /* 3. Ce qui ne dépend pas du programme. */
+  const ext = el('div','pa-bloc');
+  ext.appendChild(el('h4', null, "Ce qui pèse aussi, quel que soit l'élu"));
+  const ip = ctxInd(PA.inflation.indicateur), smic = PA.foyers.find(f => f.id === 'smic').revenu;
+  ext.appendChild(fait('panier', "Les prix ont monté de ", b(pc(ip.valeur)), ` en un an (${ip.lab.split(',').pop().trim()}, indice européen). Au Smic, le même panier coûte environ `,
+    b(eurM(smic * ip.valeur / 100)), " de plus par mois qu'il y a un an. ", PA.inflation.smic.texte, ' ', PA.inflation.retraites.texte));
+  const po = PA.petrole, [lo, hi] = po.total;
+  ext.appendChild(fait('transport', `Pétrole : un baril plus cher de ${po.hausse} € fait monter l'ensemble des prix de `, b(`${nf(lo, 1)} à ${nf(hi, 1)} %`),
+    ` : environ ${nf(po.direct, 2)} point par les carburants et le fioul, le reste par les coûts de transport et de production. Au Smic, c'est environ `,
+    b(eurM(smic * (lo + hi) / 2 / 100)), " de plus par mois."));
+  box.appendChild(ext);
+
+  /* 4. Sources. */
+  const src = el('details','pa-src');
+  src.appendChild(el('summary', null, "Sources et limites"));
+  src.appendChild(el('p','pa-note', "Les montants supposent que tout le revenu est dépensé, dans un panier moyen. Un ménage qui épargne ou qui dépense davantage en énergie (chauffage, voiture) est touché différemment. Ce site n'a pas trouvé d'estimation officielle de la part du taux de l'État qui passe dans celui des crédits : le calcul à 1 point est un exemple."));
+  const ul = el('ul');
+  const tous = [ip.source, oat.source, c.source, po.source, PA.inflation.smic.source, PA.inflation.retraites.source,
+                ...PA.foyers.filter(f => f.source).map(f => f.source), ...(sal ? [sal.source] : [])];
+  [...new Map(tous.map(s => [s.u, s])).values()].forEach(s => { const li = el('li'); li.appendChild(lienSrc(s)); ul.appendChild(li); });
+  src.appendChild(ul);
+  box.appendChild(src);
+  host.appendChild(box);
 }
 
 /** Montant d'une mesure vu du budget : + si elle rapporte ou économise, − si elle coûte. */
