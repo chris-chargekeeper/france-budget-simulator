@@ -950,6 +950,7 @@ body:not(.adv) .charts .chart{max-height:320px}
   background:linear-gradient(150deg,color-mix(in srgb,var(--ia) 9%,var(--surface)),color-mix(in srgb,var(--ia-2) 7%,var(--surface)));
   border:1px solid color-mix(in srgb,var(--ia) 25%,transparent)}
 .ia-intro{margin:0 0 14px;font-size:14px;color:var(--ink-2);max-width:80ch}
+.ia-calc{margin:-8px 0 14px;font-size:12.5px;color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
 .ia-cols{display:grid;grid-template-columns:1fr 1.4fr;gap:20px}
 .ia-why h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--ia)}
 :root[data-theme="dark"] .ia-why h4{color:#B79BFF}
@@ -2412,8 +2413,8 @@ function renderCompare(base){
   });
 
   const best = rows.find(r => !r.ref);
-  $('#cmpNote').textContent = "Trié du déficit le plus faible au plus élevé en 2032 ; le candidat IA, qui n'est "
-    + "pas candidat, vient à la fin. « Mesures » = ce que les mesures "
+  $('#cmpNote').textContent = "Trié du déficit le plus faible au plus élevé en 2032 ; le budget apolitique, calculé "
+    + "par une IA et qui n'est pas un candidat, vient à la fin. « Mesures » = ce que les mesures "
     + "rapportent au budget en 2032 (+) ou lui coûtent (−), avant leurs effets sur l'économie. Le trait vertical marque la limite européenne de 3 %. "
     + "Rouge : le déficit se creuse autant ou plus que si rien ne change. Bleu : il se creuse moins. "
     + "Vert : il baisse d'ici 2032. "
@@ -2539,9 +2540,9 @@ function renderGap(split){
       + `<b>${md(split.up)}</b> de redressement en 2032, contre <b>${md(split.down)}</b> de dépenses nouvelles ou de `
       + `baisses de prélèvements annoncées par ailleurs. Effet net sur le solde : <b>${signed(split.net,0)}</b>.`;
   } else if (p.horsCourse){
-    t = `<b>Ce n'est le programme de personne.</b> Le candidat IA n'annonce rien : chaque montant est celui du `
-      + `catalogue, aux mêmes bornes que pour les partis. Il produit <b>${md(split.up)}</b> de redressement et `
-      + `<b>${md(split.down)}</b> de dépenses nouvelles, soit <b>${signed(split.net,0)}</b> net en 2032.`;
+    t = `<b>Ce n'est le programme de personne.</b> Ce budget est calculé par une intelligence artificielle, `
+      + `qui applique des règles fixes aux mesures du catalogue, aux mêmes chiffrages que pour les partis. `
+      + `Il produit <b>${md(split.up)}</b> de redressement en 2032, sans aucune dépense nouvelle.`;
   } else {
     t = `<b>${p.nom}</b> n'a pas publié de chiffrage d'ensemble pour 2027. Le scénario chargé est une `
       + `<b>reconstitution de ce simulateur</b> à partir de positions publiques : les montants sont ceux du catalogue, `
@@ -2665,7 +2666,7 @@ function renderTrou(){
     lab.textContent = "Rien à confronter";
     fig.textContent = '—'; fig.style.color = 'var(--ink-3)';
     sub.innerHTML = p.horsCourse
-      ? "Le candidat IA n'annonce aucun total : il n'y a pas d'écart entre promesse et calcul à mesurer."
+      ? "Ce budget calculé par une IA n'annonce aucun total : il n'y a pas d'écart entre promesse et calcul à mesurer."
       : `<b>${p.nom}</b> n'a publié aucun total chiffré pour 2027.`;
     stack.hidden = true;   /* une barre vide ne dit rien : mieux vaut pas de barre */
   } else {
@@ -2893,7 +2894,7 @@ function buildCards(){
   PARTIES.forEach(p => mk(p.id, p.sigle, p.candidat, p.nom,
     p.horsCourse ? p.annonce.titre
       : p.annonce.revendique != null ? p.annonce.titre : "Pas de chiffrage présidentiel",
-    p.horsCourse ? ['ia','hors course · pour jouer']
+    p.horsCourse ? ['ia','calculé par une IA · pas un candidat']
       : p.statut === 'reconstitution' ? ['rec','reconstitution'] : ['pub','chiffres publics'],
     p.couleur, p.photo, p.avatar, p.horsCourse));
   /* le point de repère ferme la marche : en mode jeu, les candidats d'abord */
@@ -3959,7 +3960,7 @@ const effTxt = n => n >= 1e6 ? nf(n / 1e6, 1) + ' M' : nf(n);
 function renderVerso(host, p){
   const box = el('div','qp');
   const top = el('div','qp-top');
-  top.appendChild(el('div','qp-kick', p ? (p.horsCourse ? "Le candidat IA" : "Avec le programme de " + p.candidat)
+  top.appendChild(el('div','qp-kick', p ? (p.horsCourse ? "Avec " + p.candidat.replace(/^Le /, 'le ') : "Avec le programme de " + p.candidat)
     : state.party === 'tend' ? "Si rien ne change" : "Votre scénario"));
   top.appendChild(el('h3', null, "Qui paie, qui reçoit en 2032"));
   /* Sur téléphone, une version courte de l'introduction et de la légende : la carte respire. */
@@ -4110,7 +4111,7 @@ function renderProjection(p, scenPage){
 
   const box = el('div','qp');
   const top = el('div','qp-top');
-  top.appendChild(el('div','qp-kick', p ? (p.horsCourse ? "Le candidat IA" : "Avec le programme de " + p.candidat)
+  top.appendChild(el('div','qp-kick', p ? (p.horsCourse ? "Avec " + p.candidat.replace(/^Le /, 'le ') : "Avec le programme de " + p.candidat)
     : vide ? "Si rien ne change" : "Votre scénario"));
   top.appendChild(el('h3', null, "Les effets en chaîne en 2032"));
   top.appendChild(el('p', null, vide
@@ -4378,11 +4379,12 @@ function ecartPromesse(p){
 function iaWhy(p){
   const box = el('div','ia-why');
   box.appendChild(el('p','ia-intro', p.annonce.texte));
+  if (p.calcul) box.appendChild(el('p','ia-calc', `Résultat du calcul au ${fmtDate(p.calcul.date)} ; la machine le refait à chaque mise à jour quotidienne des données.`));
   const c = el('div','ia-cols');
-  const col1 = el('div'); col1.appendChild(el('h4', null, "Ses règles"));
+  const col1 = el('div'); col1.appendChild(el('h4', null, "Les règles du calcul"));
   const ul = el('ol'); (p.criteres || []).forEach(x => ul.appendChild(el('li', null, x))); col1.appendChild(ul);
   c.appendChild(col1);
-  const col2 = el('div'); col2.appendChild(el('h4', null, "Ce qu'il retient, du plus gros au plus petit"));
+  const col2 = el('div'); col2.appendChild(el('h4', null, "Ce que le calcul retient, du plus gros au plus petit"));
   const kept = Object.keys(p.set).map(id => ({id, m:M_BY_ID[id], v:amountAt(M_BY_ID[id], partySet(p)[id], 2032, state.P)}))
     .sort((a,b) => b.v - a.v);
   const dl = el('div','ia-list');
@@ -4398,7 +4400,7 @@ function iaWhy(p){
   });
   col2.appendChild(dl); col2.appendChild(listTotal(kept)); c.appendChild(col2);
   box.appendChild(c);
-  const ec = el('div','ia-out'); ec.appendChild(el('h4', null, "Ce qu'il écarte, et pourquoi"));
+  const ec = el('div','ia-out'); ec.appendChild(el('h4', null, "Ce que le calcul écarte, et pourquoi"));
   const ul2 = el('ul');
   Object.entries(p.ecartees || {}).forEach(([id, why]) => {
     const li = el('li'); li.appendChild(el('b', null, (M_BY_ID[id] || {}).lab || id));

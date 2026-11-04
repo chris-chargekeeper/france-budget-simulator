@@ -497,147 +497,131 @@
     },
     {
       "id": "ia",
-      "nom": "Exercice hors course — programme d'une IA",
+      "nom": "Calculé par une intelligence artificielle",
       "sigle": "IA",
-      "candidat": "Le candidat IA",
+      "candidat": "Le budget apolitique",
       "avatar": "ia",
       "couleur": "#7C3AED",
-      "statutCandidature": "Pas un candidat : un exercice proposé par ce site",
+      "statutCandidature": "Pas un candidat : un budget calculé par une machine, à partir des chiffrages publiés",
       "statut": "ia",
       "horsCourse": true,
       "annonce": {
-        "titre": "Un budget arbitré, pas promis",
-        "texte": "Ce scénario n'est le programme de personne. Il a été composé par l'IA qui tient ce site, avec une seule consigne : remettre les comptes d'aplomb en ménageant la croissance et sans faire porter l'effort sur un groupe désigné. Il puise uniquement dans les 42 mesures chiffrées du simulateur, aux mêmes bornes que pour les partis. Ce qu'il montre surtout : avec un taux d'emprunt proche de 5 %, supérieur à la croissance, les intérêts font boule de neige, et même un effort de cette ampleur peine à arrêter la dette. Ses arbitrages sont des choix de valeurs, pas des vérités : chacun est expliqué ci-dessous, et contestable.",
+        "titre": "Un budget calculé, pas promis",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle : une machine applique les règles ci-dessous aux 42 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Même en retenant toutes les mesures permises par ses règles (39,1 Md€ d'économies, 35,8 Md€ de recettes), le déficit reste à 5,3 % du PIB en 2032. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
       },
       "criteres": [
-        "Freiner la dette autant que possible d'ici 2032, puis viser la limite des 3 %.",
-        "Répartir l'effort à peu près pour moitié entre recettes et dépenses.",
-        "Faire contribuer davantage ceux qui ont le plus : patrimoines, successions, revenus du capital.",
-        "Couper d'abord ce qui est peu efficace selon les évaluations publiques : niches, aides sans contrepartie, dépenses redondantes, en épargnant ce qui fait l'emploi et l'innovation des TPE, PME et ETI.",
-        "Ne cibler aucune population désignée, et ne retenir aucune mesure dont le rendement relève du slogan.",
-        "Garder l'investissement qui rapporte à long terme : innovation et souveraineté technologique, transition écologique, grand âge, défense au minimum de l'engagement."
+        "Viser un déficit sous 3 % du PIB en 2032, la limite fixée par les traités européens.",
+        "Moitié en économies, moitié en recettes : une convention, pour ne pencher d'aucun côté.",
+        "Dans chaque moitié, prendre d'abord les mesures qui freinent le moins l'activité pour chaque euro rapporté, d'après les effets publiés par le Trésor, la BCE et l'OFCE.",
+        "Chaque mesure à son chiffrage central, ou à sa borne basse quand les chiffrages publiés vont du simple au triple ; jamais au plus favorable ; aucune dépense nouvelle, aucune promesse.",
+        "Écarter les mesures dont le rendement peut être nul, celles qui distinguent les personnes selon leur nationalité (principe d'égalité), et les doublons.",
+        "Recalculer chaque jour, avec les chiffrages et les prévisions du moment."
       ],
       "set": {
-        "niches": {
+        "age65": {
           "sim": "mid"
         },
-        "succ": {
-          "sim": "hi"
-        },
-        "csgcap": {
-          "sim": "hi"
-        },
-        "zucman": {
-          "sim": "mid"
-        },
-        "pfu": {
-          "sim": "hi"
-        },
-        "minimum15": {
-          "sim": "hi"
-        },
-        "fraude": {
-          "sim": "mid"
-        },
-        "cir": {
-          "sim": "lo"
-        },
-        "alleg": {
-          "sim": "lo"
-        },
-        "isgrandes": {
+        "isf": {
           "sim": "mid"
         },
         "rachats": {
-          "sim": "hi"
+          "sim": "lo"
         },
-        "superp": {
+        "succ": {
           "sim": "mid"
         },
         "ttf": {
-          "sim": "mid"
+          "sim": "lo"
         },
         "exit": {
+          "sim": "lo"
+        },
+        "fraude": {
+          "sim": "lo"
+        },
+        "pfu": {
           "sim": "mid"
         },
-        "ondam": {
-          "sim": "hi"
+        "niches": {
+          "sim": "lo"
         },
-        "agences": {
-          "sim": "hi"
+        "csgcap": {
+          "sim": "mid"
+        },
+        "superp": {
+          "sim": "lo"
         },
         "effectifs": {
-          "sim": "hi"
+          "sim": "mid"
         },
-        "collectivites": {
-          "sim": "hi"
-        },
-        "chomage": {
-          "sim": "hi"
-        },
-        "institutions": {
-          "sim": "hi"
-        },
-        "age65": {
+        "isgrandes": {
           "sim": "mid"
         },
         "blanche": {
           "sim": "mid"
         },
-        "defense": {
+        "cir": {
           "sim": "lo"
         },
-        "ecolo": {
-          "sim": "lo"
-        },
-        "innov": {
+        "minimum15": {
           "sim": "mid"
         },
-        "age": {
+        "tva1": {
+          "sim": "mid"
+        },
+        "chomage": {
+          "sim": "mid"
+        },
+        "ondam": {
+          "sim": "mid"
+        },
+        "alleg": {
           "sim": "lo"
+        },
+        "collectivites": {
+          "sim": "lo"
+        },
+        "institutions": {
+          "sim": "lo"
+        },
+        "agences": {
+          "sim": "mid"
         }
       },
       "pourquoi": {
-        "niches": "Retenu au chiffrage central, pas au maximum : le rabot vise les dispositifs dont la Cour des comptes et l'Inspection des finances jugent l'effet non démontré, et épargne les aides à l'innovation et aux petites entreprises. Un rabot uniforme toucherait autant ce qui crée de l'emploi que ce qui n'en crée pas.",
-        "succ": "Les successions concentrent les inégalités de patrimoine ; une réforme limitée aux hauts patrimoines fait consensus chez des économistes de sensibilités différentes.",
-        "csgcap": "Aligner la contribution des revenus du capital sur celle du travail : large assiette, faible taux, peu de distorsions.",
-        "zucman": "Retenue au chiffrage central, sans parier sur le haut de fourchette : le rendement dépend d'un très petit nombre de foyers.",
-        "pfu": "Les dividendes rejoignent le barème de l'impôt sur le revenu : l'effort porte sur les revenus du capital élevés.",
-        "minimum15": "Application complète d'un accord international déjà signé : rendement modeste mais sûr.",
-        "fraude": "Retenue au chiffrage central, pas au haut de fourchette : la fraude se recouvre lentement.",
-        "cir": "Recentré sur les grands groupes : ils reçoivent 2,9 Md€ sur les 6,9 Md€ du CIR recherche (2021). Les 2 Md€ retenus restent dans cette enveloppe : le crédit des PME et des ETI n'est pas touché.",
-        "alleg": "Retenu au bas de la fourchette : seuls les allègements au-dessus de 1,6 SMIC, dont l'effet sur l'emploi est peu démontré selon le rapport Bozio-Wasmer, sont réduits ; ceux proches du SMIC sont préservés. Le chômage remonte en France alors qu'il reste au plus bas dans la zone euro (Rexecode, Sénat, 21 octobre 2026), et renchérir le travail peu payé irait à contresens.",
-        "isgrandes": "Retenu au chiffrage central, pas au maximum : les entreprises françaises ont l'un des taux de marge les plus faibles d'Europe (12,8 % contre 17 % en Allemagne en 2025, selon Rexecode) et les défaillances sont au plus haut. Surtaxe limitée aux très grandes entreprises, maintenue tant que le déficit dépasse 3 %.",
-        "rachats": "Faible rendement, retenue pour sa cohérence avec l'effort demandé aux autres.",
-        "superp": "Retenue au chiffrage central : le rendement dépend de la conjoncture des secteurs visés.",
-        "ttf": "Retenue au chiffrage central : l'assiette se déplace facilement.",
-        "ondam": "Freiner la progression des dépenses de santé par la pertinence des soins, pas par le déremboursement.",
-        "agences": "Rationaliser les opérateurs redondants : économie modeste mais sans victime désignée.",
-        "effectifs": "Non-remplacement partiel, hors santé, école et justice, dont les besoins sont couverts par ailleurs.",
-        "collectivites": "Effort demandé aux collectivités à proportion de leur poids dans la dépense publique.",
-        "chomage": "Réforme de l'assurance chômage, sans toucher aux minima sociaux.",
-        "institutions": "Symbolique en montant, retenue parce que l'effort doit commencer au sommet.",
-        "age65": "Le choix le plus discutable du scénario. Allonger la durée d'activité reste, dans tous les chiffrages publics, le levier le plus puissant sur les comptes sociaux ; la montée en charge est lente.",
-        "blanche": "Un an de gel des barèmes et des prestations, partagé par tous. Il pèse plus lourd pour les ménages modestes : c'est le prix de l'effort, et la principale entorse au critère d'équité.",
-        "defense": "Le minimum de l'engagement pris envers les alliés : un budget qui l'ignorerait ne serait pas réaliste.",
-        "ecolo": "Investissement de borne basse, dont le rendement est de long terme (énergie importée, dégâts climatiques).",
-        "innov": "Retenu au chiffrage central : revenir au rythme de France 2030 de 2024 plutôt que le laisser s'éteindre. L'IA, les semi-conducteurs ou le nucléaire se jouent maintenant ; un pays qui coupe là économise aujourd'hui et le paie en croissance et en dépendance ensuite.",
-        "age": "Le vieillissement n'est pas un choix : la dépense de grand âge montera de toute façon.",
-        "exit": "Complément logique de l'impôt plancher : limite les départs motivés par l'impôt."
+        "age65": "Retenue à son chiffrage central (9,0 Md€ par an). D'après les effets publiés, elle soutient même l'activité (0,29 % de PIB en 2032) : la moins pénalisante des 9 mesures d'économies retenables.",
+        "isf": "Retenue à son chiffrage central (4,0 Md€ par an). D'après les effets publiés, elle freine l'activité de 0,12 point de PIB pour 10 Md€ rapportés : la moins pénalisante des 14 mesures de recettes retenables.",
+        "rachats": "Retenue à sa borne basse (0,5 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 2,0 Md€. D'après les effets publiés, elle freine l'activité de 0,12 point de PIB pour 10 Md€ rapportés : la 2e moins pénalisante des 14 mesures de recettes retenables.",
+        "succ": "Retenue à son chiffrage central (3,0 Md€ par an). D'après les effets publiés, elle freine l'activité de 0,12 point de PIB pour 10 Md€ rapportés : la 3e moins pénalisante des 14 mesures de recettes retenables.",
+        "ttf": "Retenue à sa borne basse (1,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 6,0 Md€. D'après les effets publiés, elle freine l'activité de 0,12 point de PIB pour 10 Md€ rapportés : la 4e moins pénalisante des 14 mesures de recettes retenables.",
+        "exit": "Retenue à sa borne basse (0,2 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 1,0 Md€. D'après les effets publiés, elle freine l'activité de 0,12 point de PIB pour 10 Md€ rapportés : la 5e moins pénalisante des 14 mesures de recettes retenables.",
+        "fraude": "Retenue à sa borne basse (1,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 15,0 Md€. D'après les effets publiés, elle freine l'activité de 0,13 point de PIB pour 10 Md€ rapportés : la 6e moins pénalisante des 14 mesures de recettes retenables.",
+        "pfu": "Retenue à son chiffrage central (4,0 Md€ par an). D'après les effets publiés, elle freine l'activité de 0,15 point de PIB pour 10 Md€ rapportés : la 7e moins pénalisante des 14 mesures de recettes retenables.",
+        "niches": "Retenue à sa borne basse (5,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 25,0 Md€. D'après les effets publiés, elle freine l'activité de 0,13 point de PIB pour 10 Md€ rapportés : la 2e moins pénalisante des 9 mesures d'économies retenables.",
+        "csgcap": "Retenue à son chiffrage central (3,0 Md€ par an). D'après les effets publiés, elle freine l'activité de 0,15 point de PIB pour 10 Md€ rapportés : la 8e moins pénalisante des 14 mesures de recettes retenables.",
+        "superp": "Retenue à sa borne basse (2,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 15,0 Md€. D'après les effets publiés, elle freine l'activité de 0,15 point de PIB pour 10 Md€ rapportés : la 9e moins pénalisante des 14 mesures de recettes retenables.",
+        "effectifs": "Retenue à son chiffrage central (4,0 Md€ par an). D'après les effets publiés, elle freine l'activité de 0,20 point de PIB pour 10 Md€ rapportés : la 3e moins pénalisante des 9 mesures d'économies retenables.",
+        "isgrandes": "Retenue à son chiffrage central (8,0 Md€ par an). D'après les effets publiés, elle freine l'activité de 0,16 point de PIB pour 10 Md€ rapportés : la 10e moins pénalisante des 14 mesures de recettes retenables.",
+        "blanche": "Retenue à son chiffrage central (7,0 Md€ par an). D'après les effets publiés, elle freine l'activité de 0,23 point de PIB pour 10 Md€ rapportés : la 4e moins pénalisante des 9 mesures d'économies retenables.",
+        "cir": "Retenue à sa borne basse (2,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 7,0 Md€. D'après les effets publiés, elle freine l'activité de 0,16 point de PIB pour 10 Md€ rapportés : la 11e moins pénalisante des 14 mesures de recettes retenables.",
+        "minimum15": "Retenue à son chiffrage central (1,5 Md€ par an). D'après les effets publiés, elle freine l'activité de 0,16 point de PIB pour 10 Md€ rapportés : la 12e moins pénalisante des 14 mesures de recettes retenables.",
+        "tva1": "Retenue à son chiffrage central (9,0 Md€ par an). D'après les effets publiés, elle freine l'activité de 0,21 point de PIB pour 10 Md€ rapportés : la 13e moins pénalisante des 14 mesures de recettes retenables.",
+        "chomage": "Retenue à son chiffrage central (4,0 Md€ par an). D'après les effets publiés, elle freine l'activité de 0,24 point de PIB pour 10 Md€ rapportés : la 5e moins pénalisante des 9 mesures d'économies retenables.",
+        "ondam": "Retenue à son chiffrage central (5,0 Md€ par an). D'après les effets publiés, elle freine l'activité de 0,29 point de PIB pour 10 Md€ rapportés : la 6e moins pénalisante des 9 mesures d'économies retenables.",
+        "alleg": "Retenue à sa borne basse (3,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 12,0 Md€. D'après les effets publiés, elle freine l'activité de 0,29 point de PIB pour 10 Md€ rapportés : la 14e moins pénalisante des 14 mesures de recettes retenables.",
+        "collectivites": "Retenue à sa borne basse (3,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 10,0 Md€. D'après les effets publiés, elle freine l'activité de 0,29 point de PIB pour 10 Md€ rapportés : la 7e moins pénalisante des 9 mesures d'économies retenables.",
+        "institutions": "Retenue à sa borne basse (0,1 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 0,3 Md€. D'après les effets publiés, elle freine l'activité de 0,29 point de PIB pour 10 Md€ rapportés : la 8e moins pénalisante des 9 mesures d'économies retenables.",
+        "agences": "Retenue à son chiffrage central (2,0 Md€ par an). D'après les effets publiés, elle freine l'activité de 0,29 point de PIB pour 10 Md€ rapportés : la 9e moins pénalisante des 9 mesures d'économies retenables."
       },
       "ecartees": {
-        "immigration": "Rendement très incertain, et vise une population désignée.",
-        "ame": "Économie de l'ordre du milliard, avec un risque sanitaire et un report de coûts sur l'hôpital.",
-        "ue": "Une baisse unilatérale de la contribution n'est pas à la main de la France.",
-        "tva1": "Rapporte vite, mais pèse proportionnellement plus sur les ménages modestes.",
-        "tvaener": "Coûteuse, et profite davantage aux plus gros consommateurs d'énergie.",
-        "retr60": "Coût hors de portée dans la situation des comptes.",
-        "retr62": "Coût élevé, pour un effet contraire à l'objectif de redressement.",
-        "irbaisse": "Pas de baisse d'impôt financée à crédit.",
-        "isf": "Redondant avec l'impôt plancher et la réforme des successions retenus."
+        "immigration": "Elle distingue les personnes selon leur nationalité ou leur séjour : écartée au nom du principe d'égalité, quel que soit son rendement.",
+        "ue": "Rendement possiblement nul : les chiffrages publiés vont de 0,0 à 8,0 Md€.",
+        "ame": "Elle distingue les personnes selon leur situation de séjour : écartée au nom du principe d'égalité, quel que soit son rendement.",
+        "isfclim": "Même assiette que « Rétablissement d'un impôt sur la fortune au-delà de l'IFI », retenue à sa place parce qu'elle pèse moins sur l'activité : les deux ensemble compteraient deux fois le même argent.",
+        "zucman": "Même assiette que « Rétablissement d'un impôt sur la fortune au-delà de l'IFI », retenue à sa place parce qu'elle pèse moins sur l'activité : les deux ensemble compteraient deux fois le même argent."
       },
       "sources": [
         {
@@ -648,7 +632,15 @@
           "t": "Taux de marge des entreprises et effet boule de neige — présentation de Rexecode au Sénat, 21 octobre 2026",
           "u": "https://www.senat.fr/fileadmin/cru-1792598966/Commissions/Finances/2026-2027/Divers/Presentation_TableRonde_20261021_Rexecode.pdf"
         }
-      ]
+      ],
+      "calcul": {
+        "date": "2026-11-04",
+        "deficit2032": 5.28,
+        "dette2032": 130.5,
+        "economies": 39,
+        "recettes": 35.8,
+        "cibleAtteinte": false
+      }
     },
     {
       "id": "ne",
