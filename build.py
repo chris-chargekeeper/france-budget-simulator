@@ -575,6 +575,10 @@ def fraicheur(payload):
 
 
 SITE = "https://quipaie2027.fr"
+# Clé IndexNow (Bing, Yandex, Seznam…, et par Bing ChatGPT, DuckDuckGo, Qwant, Ecosia) :
+# publique par construction — le fichier web/<clé>.txt prouve que le site en est le
+# propriétaire. La CI s'en sert pour signaler chaque publication.
+INDEXNOW_CLE = "bc390a87cc157f6e7e0faa701998cc8a"
 WEB = ROOT / "web"
 # Robots d'indexation et d'IA explicitement invités : moteurs (Google, Bing — dont se
 # sert ChatGPT —, Qwant, DuckDuckGo, Ecosia s'appuient sur l'un des deux) et assistants.
@@ -640,7 +644,8 @@ Données au {jour}, mises à jour chaque matin (veille des déclarations chiffr�
 
 - [Le simulateur]({SITE}/) : toutes les données, la méthode et les sources sont dans la page (section « Méthode, sources et limites »).
 """
-    return {"robots.txt": "\n".join(robots), "sitemap.xml": sitemap, "llms.txt": llms}
+    return {"robots.txt": "\n".join(robots), "sitemap.xml": sitemap, "llms.txt": llms,
+            f"{INDEXNOW_CLE}.txt": INDEXNOW_CLE}
 
 
 def moteur_js():
