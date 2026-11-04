@@ -32,8 +32,9 @@ candidat suivi que son statut est toujours exact, et cherchez les **nouvelles ca
 pèsent** — au moins environ 3 % dans un sondage récent nommé (institut, date), ou une couverture
 nationale soutenue. Un candidat nouveau entre par `nouveaux_partis`, avec un scénario reconstitué à
 partir de ses positions publiques et du catalogue existant (`statut: "reconstitution"`) ; un
-candidat qui renonce sort par `retrait` — il est masqué de la page, jamais effacé. Le candidat IA
-(`horsCourse`) n'est pas un candidat : la veille n'y touche pas.
+candidat qui renonce sort par `retrait` — il est masqué de la page, jamais effacé. Le budget
+apolitique (`horsCourse`, id `ia`) n'est pas un candidat : aucun patch n'y touche, il est recalculé par
+`node moteur/budget-apolitique.js --ecrire` (voir l'étape 5).
 
 **Chaque jour aussi, les sondages.** La page affiche la moyenne des derniers sondages, un par
 institut. Pour chaque institut reconnu (Ifop, Ipsos BVA, Elabe, Odoxa, OpinionWay, Harris
@@ -158,10 +159,15 @@ le patch, jamais le script.
 
 ```bash
 python3 .claude/skills/france-budget-watch/scripts/watch.py appliquer patch.json --write
+node moteur/budget-apolitique.js --ecrire
 python3 build.py
 python3 .claude/skills/france-budget-watch/scripts/watch.py controler
 python3 .claude/skills/france-budget-watch/scripts/watch.py coherence
 ```
+
+`budget-apolitique.js` recalcule, **à chaque relève, même sans patch**, le budget calculé par une IA :
+règles fixes, mesures et chiffrages du jour. Lancez-le avant **chaque** `build.py`. Relevez dans le
+compte rendu si son déficit 2032 a bougé, et pourquoi (nouveau chiffrage, nouvelle hypothèse).
 
 `appliquer` archive le patch et la trace de ce qu'il a changé dans `dataset/veille/AAAA-MM-JJ.json`.
 
