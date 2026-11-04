@@ -4262,7 +4262,7 @@ function renderProjection(p, scenPage){
       const t = el('div','pj-t' + (etat ? ' ' + etat : ''));
       const h = el('div','pj-t-k'); h.append(icon(ic), document.createTextNode(k));
       t.append(h, el('div','pj-t-v', v), el('div','pj-t-s', sub));
-      if (rng) t.appendChild(el('div','pj-t-r', rng));
+      if (rng) t.appendChild(el('div','pj-t-r adv-only', rng));
       g.appendChild(t);
     };
   };
@@ -4281,8 +4281,8 @@ function renderProjection(p, scenPage){
   } else {
     const hab = C.pibReelHab;
     t('piece', "Richesse par habitant", sg(Math.round(hab / 10) * 10, 0, '€', 5),
-      `par an et par habitant (PIB, en euros de 2025) · ${sg(C.pib, 1, '%', .05)}`,
-      entre(Q.pibReelHab.map(x => Math.round(x / 10) * 10), 0, '€'), etat(hab, true, 5));
+      "par habitant et par an",
+      `PIB ${sg(C.pib, 1, '%', .05)}, en euros de 2025 · ` + entre(Q.pibReelHab.map(x => Math.round(x / 10) * 10), 0, '€'), etat(hab, true, 5));
     const retraite = S.offreEmplois;   // emplois venus de l'âge de départ et des réformes chiffrées
     t('salaire', "Emplois", sg(Math.round(C.emploi) * 1000, 0, '', 500),
       Math.abs(retraite) >= 1 ? `en 2032, dont ${sg(Math.round(retraite) * 1000, 0, '', 500)} par l'âge de départ à la retraite` : "en 2032", entre(Q.emploi.map(x => Math.round(x) * 1000), 0, ''), etat(C.emploi, true, .5));
@@ -4291,25 +4291,25 @@ function renderProjection(p, scenPage){
     const dPage = scenPage && scenPage[scenPage.length - 1].dettePct;
     const diff = dPage != null && Math.round(dPage) !== Math.round(S.dettePct);
     t('dette', "Dette publique", sg(C.dettePct, 1, 'pt', .05),
-      `${nf(S.dettePct, 0)} % du PIB en 2032` + (diff ? ` (${nf(dPage, 0)} % dans le calcul simple, sans ces effets)` : ''),
-      entre(Q.dettePct, 1, 'pt'), etat(C.dettePct, false, .05));
-    t('maison', "Taux d'emprunt de l'État", pc(S.rMkt, 2), `${sg(C.rMkt * 100, 0, 'pb', .5)} · crédit aux entreprises ${sg(C.rMkt * MOT.creditEntreprises.v * 100, 0, 'pb', .5)}`,
-      entre(Q.rMkt.map(x => x * 100), 0, 'pb'), etat(C.rMkt, false, .005));
-    t('panier', "Intérêts de la dette", sg(C.chargeMenageMois, 0, '€', .5), `par ménage et par mois · ${nf(Math.round(S.chargeMenageMois))} € en 2032`,
-      entre(Q.chargeMenageMois, 0, '€'), etat(C.chargeMenageMois, false, .5));
+      `${nf(S.dettePct, 0)} % du PIB en 2032`,
+      (diff ? `${nf(dPage, 0)} % dans le calcul simple, sans ces effets · ` : '') + entre(Q.dettePct, 1, 'pt'), etat(C.dettePct, false, .05));
+    t('maison', "Taux d'emprunt de l'État", pc(S.rMkt, 2), `en 2032 · ${sg(C.rMkt, 2, 'pt', .005)} par rapport à « si rien ne change »`,
+      `crédit aux entreprises ${sg(C.rMkt * MOT.creditEntreprises.v * 100, 0, 'pb', .5)} · ` + entre(Q.rMkt.map(x => x * 100), 0, 'pb'), etat(C.rMkt, false, .005));
+    t('panier', "Intérêts de la dette", sg(C.chargeMenageMois, 0, '€', .5), "par ménage et par mois",
+      `${nf(Math.round(S.chargeMenageMois))} € en 2032 · ` + entre(Q.chargeMenageMois, 0, '€'), etat(C.chargeMenageMois, false, .5));
   }
 
   /* 2. Pourquoi ça bouge : la contribution de chaque mesure à l'activité */
   if (!vide){
-    const w = bloc("Pourquoi ça bouge : effet sur l'activité en 2032");
+    const w = bloc("Pourquoi ça bouge");
     const lst = el('div','pj-causes');
     const items = Object.entries(S.contrib).map(([id, v]) => ({id, v: v / B.pib * 100}));
     if (Math.abs(S.effetTaux / B.pib * 100) >= .01) items.push({id: '_taux', v: S.effetTaux / B.pib * 100});
     items.sort((a, b) => Math.abs(b.v) - Math.abs(a.v));
     const vis = items.filter(x => Math.abs(x.v) >= .01).slice(0, 6);
     const max = Math.max(.1, ...vis.map(x => Math.abs(x.v)));
-    for (const x of vis){
-      const r = el('div','pj-c'), lab = el('div','pj-c-lab');
+    vis.forEach((x, k) => {
+      const r = el('div','pj-c' + (k >= 3 ? ' adv-only' : '')), lab = el('div','pj-c-lab');
       if (x.id === '_taux') lab.append("Taux d'intérêt plus " + (x.v < 0 ? "hauts" : "bas") + " (dette)");
       else {
         const m = M_BY_ID[x.id], cl = MC.classement[x.id], ty = MC.types[cl.type];
@@ -4322,22 +4322,22 @@ function renderProjection(p, scenPage){
       i.style.left = (x.v >= 0 ? 50 : 50 - l) + '%'; i.style.width = l + '%'; bar.appendChild(i);
       r.append(lab, bar, el('div','pj-c-v', sg(x.v, 2, 'pt', .005)));
       lst.appendChild(r);
-    }
+    });
     if (!vis.length) lst.appendChild(el('p','pj-note', "Aucune mesure ne déplace l'activité de plus de 0,01 point."));
     w.appendChild(lst);
-    w.appendChild(el('p','pj-note', "En points de PIB. Le court terme vient des dépenses et des impôts ; les réformes des retraites et de l'assurance chômage ajoutent leur effet sur l'emploi."));
+    w.appendChild(el('p','pj-note adv-only', "En points de PIB. Le court terme vient des dépenses et des impôts ; les réformes des retraites et de l'assurance chômage ajoutent leur effet sur l'emploi."));
     // ce qui n'est pas compté dans 2032
     const REG = {apres2032: "effet de long terme, après 2032", horsBudget: "hors budget, non compté", nonDemontre: "effet non démontré"};
     const parts = R.aPart.filter(a => REG[a.regle]);
     if (parts.length){
       const ap = el('div','pj-apart');
       for (const a of parts){ const sp = el('span', null, `${M_BY_ID[a.mesure].lab.split(' (')[0].split(' : ')[0]} : ${REG[a.regle]}`); sp.title = a.quoi; ap.appendChild(sp); }
-      const w2 = bloc("Pas compté dans 2032"); w2.appendChild(ap);
+      const w2 = bloc("Pas compté dans 2032", 'adv-only'); w2.appendChild(ap);
     }
   }
 
   /* 3. Ce que l'élu ne décide pas */
-  const hp = tuiles("Ce que l'élu ne décide pas", 'hors');
+  const hp = tuiles("Ce que l'élu ne décide pas", 'hors adv-only');
   const pet = MCO[MOT.petrole.coef], mon = MCO[MOT.demandeMondiale.coef];
   if (pet) hp('transport', "Pétrole +10 $ le baril", sg(pet.valeur, 1, '%', 0) + ' de PIB', "en un an, jusqu'à " + sg(pet.lo, 2, '%', 0) + " en deux ans");
   if (mon) hp('monde', "Commerce mondial +1 %", sg(mon.valeur, 2, '%', 0) + ' de PIB', "la France exporte un tiers de ce qu'elle produit");
