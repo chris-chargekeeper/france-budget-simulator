@@ -130,9 +130,9 @@
    "note":"Chiffrée à 10 Md€ par le RN. La contribution brute est d'environ 27 Md€ pour environ 15 Md€ de retours. La réduire unilatéralement n'est pas possible : le cadre financier pluriannuel se décide à l'unanimité et la contribution est une ressource propre de l'Union."},
   {"id":"ame","g":"dep-","inst":"dep","lo":0.5,"mid":0.9,"hi":1.3,"ramp":1,
    "lab":"Suppression de l'aide médicale d'État",
-   "note":"1,3 Md€, soit 0,08 % de la dépense publique — l'équivalent de neuf jours de charge de la dette. Cette ligne figure ici précisément pour être comparée aux autres."},
+   "note":"1,3 Md€, soit 0,08 % de la dépense publique."},
   {"id":"institutions","g":"dep-","inst":"dep","lo":0.05,"mid":0.15,"hi":0.3,"ramp":2,
    "lab":"Réduction du train de vie des institutions et du nombre de parlementaires",
-   "note":"L'ensemble Élysée, Assemblée, Sénat et Conseil constitutionnel coûte 1,14 Md€, soit un euro pour mille euros de dépense publique. Même supprimé en totalité, ce poste ne changerait pas la trajectoire — c'est le principal enseignement de cette ligne."}
+   "note":"L'ensemble Élysée, Assemblée, Sénat et Conseil constitutionnel coûte 1,14 Md€, soit un euro pour mille euros de dépense publique. Supprimé en totalité, ce poste modifierait peu la trajectoire."}
   ]
 }
