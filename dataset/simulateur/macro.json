@@ -3711,7 +3711,8 @@
    "chomage": 8.3,
    "deficit": 5.1,
    "dette": 118.1,
-   "u": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages/france/economic-forecast-france_en"
+   "u": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages/france/economic-forecast-france_en",
+   "politiquesInchangees": true
   },
   {
    "org": "Commission européenne, printemps 2026 (politiques inchangées)",
@@ -3722,7 +3723,8 @@
    "chomage": 8.7,
    "deficit": 5.7,
    "dette": 120.2,
-   "u": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages/france/economic-forecast-france_en"
+   "u": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages/france/economic-forecast-france_en",
+   "politiquesInchangees": true
   },
   {
    "org": "Commission européenne, DSM 2025 (politique inchangée, à partir des prévisions d'automne 2025)",
@@ -3734,7 +3736,8 @@
    "deficit": null,
    "dette": 126.5,
    "u": "https://economy-finance.ec.europa.eu/document/download/39b3b61d-42c1-46d7-8088-0aad82e8731e_en?filename=ip332_en.pdf",
-   "ou": "fiche France p. 167, tableau ; charge d'intérêts 3,5 % du PIB en 2030 ; dette à 144 % en 2036"
+   "ou": "fiche France p. 167, tableau ; charge d'intérêts 3,5 % du PIB en 2030 ; dette à 144 % en 2036",
+   "politiquesInchangees": true
   },
   {
    "org": "OCDE, rapport intermédiaire",
@@ -3956,7 +3959,20 @@
     "a3": "mult_invest_public_a3",
     "a5": "mult_invest_public_a5",
     "lt": "mult_invest_public_lt"
-   }
+   },
+   "profil": {
+    "1": 1.31,
+    "2": 1.38,
+    "3": 1.22,
+    "5": 0.93
+   },
+   "profilDe": [
+    "mult_invest_public_a1",
+    "mult_invest_public_a2",
+    "mult_invest_public_a3",
+    "mult_invest_public_a5"
+   ],
+   "profilNote": "Mésange."
   },
   "conso_publique": {
    "lab": "Fonctionnement des administrations",
@@ -3967,7 +3983,18 @@
     "a2": "mult_depense_generique_a2",
     "a3": "mult_depense_generique_a3",
     "lt": "mult_depense_generique_lt"
-   }
+   },
+   "profil": {
+    "1": 0.78,
+    "2": 1.06,
+    "3": 1.03
+   },
+   "profilDe": [
+    "mult_depense_generique_a1",
+    "mult_depense_generique_a2",
+    "mult_depense_generique_a3"
+   ],
+   "profilNote": "Mésange, dépense publique composite."
   },
   "emploi_public": {
    "lab": "Emploi public",
@@ -3975,7 +4002,16 @@
    "confiance": "directe",
    "demande": {
     "a1": "mult_emploi_public"
-   }
+   },
+   "profil": {
+    "1": 1.2,
+    "5": 0.6,
+    "10": 0.2
+   },
+   "profilDe": [
+    "mult_emploi_public"
+   ],
+   "profilNote": "e-mod (OFCE), milieu de cycle."
   },
   "defense": {
    "lab": "Défense",
@@ -3983,7 +4019,14 @@
    "confiance": "directe",
    "demande": {
     "a3": "mult_defense"
-   }
+   },
+   "profil": {
+    "1": 1.0
+   },
+   "profilDe": [
+    "mult_defense"
+   ],
+   "profilNote": "Multiplicateur moyen cumulé sur 3 ans (FMI), appliqué comme effet constant."
   },
   "prestations": {
    "lab": "Prestations et pensions",
@@ -3991,7 +4034,16 @@
    "confiance": "directe",
    "demande": {
     "a1": "mult_prestations"
-   }
+   },
+   "profil": {
+    "1": 1.0,
+    "5": 0.9,
+    "10": 0.5
+   },
+   "profilDe": [
+    "mult_prestations"
+   ],
+   "profilNote": "e-mod (OFCE), milieu de cycle."
   },
   "tva": {
    "lab": "TVA",
@@ -4000,7 +4052,18 @@
    "demande": {
     "a1": "mult_tva",
     "a2": "mult_tva_a2_lt"
-   }
+   },
+   "profil": {
+    "1": -0.32,
+    "2": -0.66,
+    "3": -0.72,
+    "5": -0.81
+   },
+   "profilDe": [
+    "mult_tva",
+    "mult_tva_a2_lt"
+   ],
+   "profilNote": "Mésange."
   },
   "energie": {
    "lab": "Fiscalité de l'énergie",
@@ -4008,7 +4071,17 @@
    "confiance": "directe",
    "demande": {
     "a1": "mult_taxe_carbone_energie"
-   }
+   },
+   "profil": {
+    "1": -0.51,
+    "2": -0.8,
+    "3": -0.75,
+    "5": -0.87
+   },
+   "profilDe": [
+    "mult_taxe_carbone_energie"
+   ],
+   "profilNote": "Mésange."
   },
   "ir": {
    "lab": "Impôt sur le revenu",
@@ -4017,7 +4090,18 @@
    "demande": {
     "a1": "mult_ir",
     "a2": "mult_ir_a2_lt"
-   }
+   },
+   "profil": {
+    "1": 0.41,
+    "2": 0.83,
+    "3": 0.88,
+    "5": 0.81
+   },
+   "profilDe": [
+    "mult_ir",
+    "mult_ir_a2_lt"
+   ],
+   "profilNote": "Mésange."
   },
   "csg_activite": {
    "lab": "CSG et cotisations sur les revenus d'activité",
@@ -4025,7 +4109,17 @@
    "confiance": "directe",
    "demande": {
     "a1": "mult_csg"
-   }
+   },
+   "profil": {
+    "1": 0.41,
+    "2": 0.84,
+    "3": 0.9,
+    "5": 0.81
+   },
+   "profilDe": [
+    "mult_csg"
+   ],
+   "profilNote": "Mésange."
   },
   "cotis_bas_salaires": {
    "lab": "Cotisations employeurs sur les bas salaires",
@@ -4033,7 +4127,18 @@
    "confiance": "directe",
    "demande": {
     "a1": "mult_allegements_bas_salaires"
-   }
+   },
+   "profil": {
+    "1": 0.21,
+    "2": 0.58,
+    "3": 0.8,
+    "5": 1.05,
+    "10": 1.43
+   },
+   "profilDe": [
+    "mult_allegements_bas_salaires"
+   ],
+   "profilNote": "Mésange ; comprend l'effet du coût du travail sur l'emploi au niveau du Smic."
   },
   "benefices": {
    "lab": "Impôts sur les bénéfices des entreprises",
@@ -4042,7 +4147,15 @@
    "demande": {
     "a1": "mult_is_capital",
     "lt": "mult_is_capital_lt"
-   }
+   },
+   "profil": {
+    "1": -0.36,
+    "2": -0.61
+   },
+   "profilDe": [
+    "mult_is_capital"
+   ],
+   "profilNote": "EAGLE France, hausse permanente."
   },
   "revenus_capital": {
    "lab": "Impôts sur les revenus du capital des ménages",
@@ -4051,7 +4164,15 @@
    "demande": {
     "a1": "mult_is_capital"
    },
-   "note": "Le coefficient publié (BCE, modèle EAGLE) porte sur l'imposition des revenus du capital en général ; il sert de substitut, faute d'estimation propre aux dividendes des ménages."
+   "note": "Le coefficient publié (BCE, modèle EAGLE) porte sur l'imposition des revenus du capital en général ; il sert de substitut, faute d'estimation propre aux dividendes des ménages.",
+   "profil": {
+    "1": -0.36,
+    "2": -0.61
+   },
+   "profilDe": [
+    "mult_is_capital"
+   ],
+   "profilNote": "Substitut : EAGLE France."
   },
   "patrimoine": {
    "lab": "Impôts sur le patrimoine",
@@ -4061,7 +4182,12 @@
    "demande": {
     "a1": "mult_agrege_ofce_consolidation"
    },
-   "note": "Aucun multiplicateur publié pour l'ISF, une taxe sur les grands patrimoines ou les successions. Le comité de France Stratégie n'a pas démontré d'effet de la réforme ISF→IFI sur l'investissement. Multiplicateur d'ensemble, signalé comme tel."
+   "note": "Aucun multiplicateur publié pour l'ISF, une taxe sur les grands patrimoines ou les successions. Le comité de France Stratégie n'a pas démontré d'effet de la réforme ISF→IFI sur l'investissement. Multiplicateur d'ensemble, signalé comme tel.",
+   "profil": null,
+   "profilDe": [
+    "mult_agrege_ofce_consolidation"
+   ],
+   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant."
   },
   "production": {
    "lab": "Impôts de production",
@@ -4071,7 +4197,12 @@
    "demande": {
     "a1": "mult_agrege_ofce_consolidation"
    },
-   "note": "Aucun multiplicateur publié propre aux impôts de production."
+   "note": "Aucun multiplicateur publié propre aux impôts de production.",
+   "profil": null,
+   "profilDe": [
+    "mult_agrege_ofce_consolidation"
+   ],
+   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant."
   },
   "finance": {
    "lab": "Taxes sur les opérations financières",
@@ -4081,7 +4212,12 @@
    "demande": {
     "a1": "mult_agrege_ofce_consolidation"
    },
-   "note": "Aucun multiplicateur publié pour la TTF ou une taxe sur les rachats d'actions."
+   "note": "Aucun multiplicateur publié pour la TTF ou une taxe sur les rachats d'actions.",
+   "profil": null,
+   "profilDe": [
+    "mult_agrege_ofce_consolidation"
+   ],
+   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant."
   },
   "generique_recettes": {
    "lab": "Autre recette",
@@ -4091,7 +4227,12 @@
    "demande": {
     "a1": "mult_agrege_ofce_consolidation"
    },
-   "note": "Aucun multiplicateur publié pour cet instrument : 0,5, valeur de l'OFCE pour les recettes."
+   "note": "Aucun multiplicateur publié pour cet instrument : 0,5, valeur de l'OFCE pour les recettes.",
+   "profil": null,
+   "profilDe": [
+    "mult_agrege_ofce_consolidation"
+   ],
+   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant."
   },
   "generique_depense": {
    "lab": "Autre dépense",
@@ -4101,7 +4242,12 @@
    "demande": {
     "a1": "mult_agrege_ofce_consolidation"
    },
-   "note": "Aucun multiplicateur publié pour cet instrument : 1, valeur de l'OFCE pour les dépenses."
+   "note": "Aucun multiplicateur publié pour cet instrument : 1, valeur de l'OFCE pour les dépenses.",
+   "profil": null,
+   "profilDe": [
+    "mult_agrege_ofce_consolidation"
+   ],
+   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant."
   }
  },
  "classement": {
@@ -4110,7 +4256,8 @@
    "canaux": [
     {
      "coef": "fiscalite_capital_pfu_ifi_investissement",
-     "quoi": "effet sur l'investissement non démontré par les évaluations"
+     "quoi": "effet sur l'investissement non démontré par les évaluations",
+     "moteur": "nonDemontre"
     }
    ]
   },
@@ -4119,7 +4266,8 @@
    "canaux": [
     {
      "coef": "fiscalite_capital_pfu_ifi_investissement",
-     "quoi": "effet sur l'investissement non démontré par les évaluations"
+     "quoi": "effet sur l'investissement non démontré par les évaluations",
+     "moteur": "nonDemontre"
     }
    ]
   },
@@ -4128,7 +4276,8 @@
    "canaux": [
     {
      "coef": "fiscalite_capital_pfu_ifi_investissement",
-     "quoi": "effet sur l'investissement non démontré par les évaluations"
+     "quoi": "effet sur l'investissement non démontré par les évaluations",
+     "moteur": "nonDemontre"
     }
    ]
   },
@@ -4150,7 +4299,8 @@
    "canaux": [
     {
      "coef": "fiscalite_capital_pfu_ifi_investissement",
-     "quoi": "effet du PFU sur l'investissement non démontré"
+     "quoi": "effet du PFU sur l'investissement non démontré",
+     "moteur": "nonDemontre"
     }
    ]
   },
@@ -4159,7 +4309,8 @@
    "canaux": [
     {
      "coef": "elasticite_investissement_cout_capital",
-     "quoi": "l'impôt renchérit le coût du capital, donc freine l'investissement"
+     "quoi": "l'impôt renchérit le coût du capital, donc freine l'investissement",
+     "moteur": "apres2032"
     }
    ]
   },
@@ -4168,7 +4319,8 @@
    "canaux": [
     {
      "coef": "elasticite_investissement_cout_capital",
-     "quoi": "l'impôt renchérit le coût du capital"
+     "quoi": "l'impôt renchérit le coût du capital",
+     "moteur": "apres2032"
     }
    ],
    "note": "Contribution temporaire par nature : le moteur ne doit pas lui appliquer l'effet de long terme d'une hausse permanente."
@@ -4202,7 +4354,8 @@
     {
      "coef": "cir_reforme2008_pib_lt",
      "quoi": "moins de R&D privée, donc moins de productivité",
-     "extrapolation": true
+     "extrapolation": true,
+     "moteur": "apres2032"
     }
    ],
    "note": "Le rabot du CIR est un impôt de plus sur les entreprises. L'effet de long terme vient de l'évaluation de la réforme inverse (2008)."
@@ -4212,7 +4365,9 @@
    "canaux": [
     {
      "coef": "allegements_bas_salaires_emplois_par_Md",
-     "quoi": "emplois au niveau du Smic : effet moyen publié ; l'effet d'une réduction partielle (5 000 à 11 000 emplois par Md€) est dans la note du coefficient"
+     "quoi": "emplois au niveau du Smic : effet moyen publié ; l'effet d'une réduction partielle (5 000 à 11 000 emplois par Md€) est dans la note du coefficient",
+     "moteur": "dejaCompte",
+     "de": "Déjà compris dans le profil Mésange des cotisations sur les bas salaires : non ajouté une seconde fois."
     }
    ]
   },
@@ -4231,7 +4386,8 @@
     {
      "coef": "impots_production_c3s",
      "quoi": "perte de productivité due aux impôts sur le chiffre d'affaires",
-     "extrapolation": true
+     "extrapolation": true,
+     "moteur": "apres2032"
     }
    ],
    "note": "Le seul chiffrage publié porte sur la C3S ; il reste la CFE et la taxe foncière, que le CAE juge peu distorsives."
@@ -4247,7 +4403,26 @@
      "coef": "age_aod_plus_1an",
      "quoi": "moins de seniors en emploi ; le COR ne chiffre que +1 an, l'effet de -2 ans est extrapolé",
      "facteur": -2,
-     "extrapolation": true
+     "extrapolation": true,
+     "moteur": "projection",
+     "emplois": {
+      "5": 142
+     },
+     "emploisLo": 140,
+     "emploisHi": 172,
+     "pib": {
+      "5": 0.5
+     },
+     "pibLo": 0.36,
+     "pibHi": 0.5,
+     "chomage": {
+      "5": 0.0
+     },
+     "chomageLo": -0.3,
+     "chomageHi": 0.31,
+     "de": "COR, mars 2026 : à 5 ans, Trésor +142 000 emplois et +0,5 % de PIB, OFCE +140 000 et +0,36 %, I-MIP +172 000 et +0,44 % ; chômage à 5 ans : Trésor 0, OFCE +0,31 pt, I-MIP -0,30 pt. Le COR suppose une mise en place immédiate.",
+     "recoupement": "Étude d'impact de la réforme 2023 (Gouvernement, DG Trésor) : le passage de 62 à 64 ans devait apporter +300 000 emplois et +1,1 % de PIB en 2030. L'extrapolation inverse du COR (-2 ans) donne -284 000 emplois et -1,0 % de PIB à 5 ans : même ordre de grandeur.",
+     "recoupementDe": "reforme_2023_62_64"
     }
    ]
   },
@@ -4258,7 +4433,25 @@
      "coef": "age_aod_plus_1an",
      "quoi": "moins de seniors en emploi ; aucun chiffrage publié d'un retour à 60 ans",
      "facteur": -4,
-     "extrapolation": true
+     "extrapolation": true,
+     "moteur": "projection",
+     "emplois": {
+      "5": 142
+     },
+     "emploisLo": 140,
+     "emploisHi": 172,
+     "pib": {
+      "5": 0.5
+     },
+     "pibLo": 0.36,
+     "pibHi": 0.5,
+     "chomage": {
+      "5": 0.0
+     },
+     "chomageLo": -0.3,
+     "chomageHi": 0.31,
+     "de": "COR, mars 2026 : à 5 ans, Trésor +142 000 emplois et +0,5 % de PIB, OFCE +140 000 et +0,36 %, I-MIP +172 000 et +0,44 % ; chômage à 5 ans : Trésor 0, OFCE +0,31 pt, I-MIP -0,30 pt. Le COR suppose une mise en place immédiate.",
+     "recoupement": "Aucun chiffrage publié d'un retour à 60 ans : extrapolation (-4 ans) sans recoupement."
     }
    ]
   },
@@ -4268,7 +4461,24 @@
     {
      "coef": "age_aod_plus_1an",
      "quoi": "plus de seniors en emploi (COR, mars 2026)",
-     "facteur": 1
+     "facteur": 1,
+     "moteur": "projection",
+     "emplois": {
+      "5": 142
+     },
+     "emploisLo": 140,
+     "emploisHi": 172,
+     "pib": {
+      "5": 0.5
+     },
+     "pibLo": 0.36,
+     "pibHi": 0.5,
+     "chomage": {
+      "5": 0.0
+     },
+     "chomageLo": -0.3,
+     "chomageHi": 0.31,
+     "de": "COR, mars 2026 : à 5 ans, Trésor +142 000 emplois et +0,5 % de PIB, OFCE +140 000 et +0,36 %, I-MIP +172 000 et +0,44 % ; chômage à 5 ans : Trésor 0, OFCE +0,31 pt, I-MIP -0,30 pt. Le COR suppose une mise en place immédiate."
     }
    ]
   },
@@ -4287,7 +4497,14 @@
     {
      "coef": "assurance_chomage_reformes",
      "quoi": "baisse du chômage structurel observée après les réformes 2021 et 2023",
-     "extrapolation": true
+     "extrapolation": true,
+     "moteur": "projection",
+     "chomage": {
+      "2": -0.2
+     },
+     "chomageLo": -0.4,
+     "chomageHi": -0.2,
+     "de": "Banque de France : -0,2 pt de chômage structurel pour la réforme de 2021, -0,4 pt pour 2023. Valeur centrale : la plus faible des deux ; la plus forte sert de borne."
     }
    ],
    "note": "L'ampleur dépend du contenu de la réforme ; le moteur ne retiendra que l'ordre de grandeur."
@@ -4314,7 +4531,8 @@
    "canaux": [
     {
      "coef": "elasticite_emploi_cout_smic",
-     "quoi": "hors budget : le coût du travail au Smic monte pour les employeurs privés"
+     "quoi": "hors budget : le coût du travail au Smic monte pour les employeurs privés",
+     "moteur": "horsBudget"
     }
    ],
    "note": "Le coût budgétaire porte sur la fonction publique ; l'effet sur l'emploi privé est un canal à part."
@@ -4324,7 +4542,8 @@
    "canaux": [
     {
      "coef": "elasticite_pib_capital_public",
-     "quoi": "le capital public ajouté soutient la production à long terme"
+     "quoi": "le capital public ajouté soutient la production à long terme",
+     "moteur": "apres2032"
     }
    ]
   },
@@ -4334,7 +4553,8 @@
     {
      "coef": "elasticite_pib_capital_public",
      "quoi": "le capital public ajouté soutient la production à long terme",
-     "extrapolation": true
+     "extrapolation": true,
+     "moteur": "apres2032"
     }
    ],
    "note": "Mixte : investissement, subventions et prêts aux entreprises (France 2030)."
@@ -4381,6 +4601,59 @@
    "type": "generique_depense",
    "canaux": [],
    "note": "Transfert vers l'Union européenne : aucun multiplicateur publié."
+  }
+ },
+ "moteur": {
+  "okun": {
+   "coef": "okun_ecart",
+   "v": -0.367,
+   "lo": -0.29,
+   "hi": -0.69,
+   "de": "Ball, Leigh et Loungani (NBER 18668) : -0,37 pt de chômage par point d'écart de production, contemporain ; bornes : ratios lus dans les variantes Mésange à 1 an (-0,29) et 3 ans (-0,69)."
+  },
+  "primeDette": {
+   "coef": "prime_dette_lineaire_ze",
+   "v": 3,
+   "lo": 2,
+   "hi": 6,
+   "de": "Commission européenne (DP141) : ≈ 3 pb par point de dette ; 2 pb, bas de la littérature ; 6 pb, test de stress de la Commission au-dessus de 90 % du PIB."
+  },
+  "tauxActivite": {
+   "coef": "mesange_taux_100pb_pib",
+   "profil": {
+    "1": -0.17,
+    "2": -0.6,
+    "3": -0.78,
+    "5": -1.0,
+    "10": -1.52
+   },
+   "de": "Mésange : effet sur le PIB (%) d'une hausse durable de 100 pb des taux."
+  },
+  "creditEntreprises": {
+   "coef": "passthrough_oat_snf_insee",
+   "v": 0.85,
+   "base": 3.73,
+   "de": "Insee : 0,85 point de taux de crédit aux entreprises par point d'OAT, à long terme ; taux des crédits nouveaux aux entreprises 3,73 % en août 2026 (Banque de France)."
+  },
+  "population": {
+   "donnee": "population_projection_insee_2026",
+   "serie": "population_totale"
+  },
+  "chomageBase": {
+   "de": "Banque de France, septembre 2026 : 8,3 % (2026), 8,3 % (2027), 8,0 % (2028) ; maintenu ensuite, faute de projection publiée.",
+   "v": {
+    "2026": 8.3,
+    "2027": 8.3,
+    "2028": 8.0
+   }
+  },
+  "populationActive": {
+   "v": 32.25,
+   "de": "Insee, T2 2026 (calculée : chômeurs + emploi)."
+  },
+  "emploi0": {
+   "v": 30626.3,
+   "de": "Insee, T2 2026, emploi total (série expérimentale), milliers."
   }
  }
 }
