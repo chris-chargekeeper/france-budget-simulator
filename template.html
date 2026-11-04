@@ -965,6 +965,12 @@ body:not(.adv) .charts .chart{max-height:320px}
 .ia-why.prog{background:var(--surface-2);border-color:var(--rule)}
 .ia-why.prog h4{color:var(--ink-2)}
 .ia-ann{color:var(--ink-3);font-size:11.5px}
+/* Sur téléphone, le montant passe sous l'intitulé : sinon il ne reste qu'un mot par ligne. */
+@media (max-width:560px){
+  .ia-list summary{grid-template-columns:auto 1fr;row-gap:2px}
+  .ia-list summary .ia-amt{grid-column:2;white-space:normal}
+  .ia-ann{display:inline}
+}
 /* --- accueil : le choix du candidat d'abord, surtout sur téléphone --- */
 #candidats .modebar{margin-top:14px}
 .poll-note{margin:10px 0 0;font-size:12px;color:var(--ink-3)}
@@ -1148,6 +1154,7 @@ footer{padding-bottom:120px}
 /* --- la carte « qui paie, qui reçoit » --- */
 .score{--perte:var(--critical);--gain:var(--good)}
 #quipaie,#projection{margin-top:16px}
+.base-note{font-size:13px;line-height:1.45;color:var(--ink-3);margin:8px 0 0}
 .qp{padding:22px 24px 20px;display:grid;gap:12px}
 .qp-kick{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3)}
 .qp-top h3{margin:0;font-family:Newsreader,Georgia,serif;font-size:clamp(22px,2.6vw,28px);font-weight:600;letter-spacing:-.01em}
@@ -1420,8 +1427,10 @@ footer{padding-bottom:120px}
         <span class="s">+ <b id="debtRate"></b> par seconde · dernier chiffre Insee prolongé par le simulateur</span></div>
     </div>
     <div class="veille-strip" id="veilleStrip" aria-label="Ce que la veille quotidienne a passé au crible"></div>
-    <p class="standfirst adv-only">Choisissez un candidat : vous verrez en un coup d'œil ce que son programme
-      changerait vraiment d'ici 2032, et l'écart entre ce qu'il promet et ce que ça donne.</p>
+    <p class="standfirst">Choisissez un candidat : vous verrez ce que son programme changerait d'ici 2032,
+      la fin du prochain mandat, pour le déficit, la dette et votre porte-monnaie. Chaque mesure est chiffrée
+      par des économistes indépendants ; un bouton affiche à la place les chiffres annoncés par le parti.
+      Repère : l'Union européenne demande un déficit sous 3 % du PIB.</p>
     <div class="caveat adv-only">
       <div><b>Quand un parti annonce un chiffre, ce chiffre est affiché tel quel, à côté de ce que
         produit le modèle.</b> Les mesures sont chiffrées en ordres de grandeur issus de travaux publics (INSEE,
@@ -1446,14 +1455,14 @@ footer{padding-bottom:120px}
         <circle cx="20" cy="13" r="2.3" fill="currentColor"/>
         <circle cx="27" cy="13" r="2.3" fill="currentColor"/>
       </svg>
-      <span class="mq-t"><b>Leurs promesses</b><small>ce qu'ils annoncent</small></span>
+      <span class="mq-t"><b>Les promesses</b><small>chiffres des partis</small></span>
     </button>
     <button type="button" data-annonce="0" aria-pressed="true">
       <svg class="mq-ic" viewBox="0 0 48 26" aria-hidden="true">
         <path fill="currentColor" fill-rule="evenodd" d="M3 9C3 4 10 1.6 16 3.4 20 4.6 22 6.6 24 6.6S28 4.6 32 3.4C38 1.6 45 4 45 9c0 7-6 13-13 13-5 0-6.5-4-8-4s-3 4-8 4C9 22 3 16 3 9zm8 3c1.5-3 6.5-3.6 9-.5-2.5 3-7.5 3-9 .5zm26 0c-1.5-3-6.5-3.6-9-.5 2.5 3 7.5 3 9 .5z"/>
         <path d="M3.5 8 0.5 4.5M3.5 10 0.5 13M44.5 8l3-3.5M44.5 10l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
       </svg>
-      <span class="mq-t"><b>Bas les masques</b><small>ce que disent les chiffres</small></span>
+      <span class="mq-t"><b>Les chiffrages</b><small>des économistes indépendants</small></span>
     </button>
   </div>
 </div>
@@ -1491,7 +1500,7 @@ footer{padding-bottom:120px}
       </div>
       <span class="adv-only">Toutes les mesures, les explications et les réglages sont ouverts.</span>
     </div>
-    <p class="masque-hint adv-only">Par défaut, chaque mesure est chiffrée par des sources indépendantes. Le bouton
+    <p class="masque-hint">Par défaut, chaque mesure est chiffrée par des sources indépendantes. Le bouton
       <b>en bas de l’écran</b> bascule à tout moment vers les chiffres que les partis annoncent eux-mêmes.</p>
     <p class="preset-note" id="presetNote"></p>
   </section>
@@ -1518,7 +1527,7 @@ footer{padding-bottom:120px}
       </div>
       <div class="panel adv-only">
         <h3>La dette, année par année</h3>
-        <p class="sub">Aussi en % du PIB. La référence européenne est de 60 % ; la France en est à 116 %.</p>
+        <p class="sub">Aussi en % du PIB. La référence européenne est de 60 % ; la France en est à près du double.</p>
         <div class="legend">
           <span><i class="swatch" style="background:var(--s-base)"></i> Si rien ne change</span>
           <span><i class="swatch" style="background:var(--s-scen)"></i> Avec ce programme</span>
@@ -1646,7 +1655,7 @@ footer{padding-bottom:120px}
       </div>
       <div id="impactRows"></div>
       <div class="moreline" id="impactMore" hidden></div>
-      <p class="empty" id="impactEmpty">Aucune mesure activée — rien ne change par rapport à aujourd'hui.</p>
+      <p class="empty" id="impactEmpty">Aucune mesure activée : c'est le repère « si rien ne change ».</p>
     </div>
   </section>
 
@@ -1789,7 +1798,7 @@ footer{padding-bottom:120px}
 
   <section class="adv-only" aria-labelledby="h-led">
     <div class="sec-head">
-      <div><div class="eyebrow">Mode détaillé</div><h2 id="h-led">Les 42 mesures</h2></div>
+      <div><div class="eyebrow">Mode détaillé</div><h2 id="h-led">Les <span id="nbMesures"></span> mesures</h2></div>
       <p>Cochez, puis réglez le montant entre la borne basse et la borne haute des chiffrages publiés.
         <button class="btn" id="reset" type="button">Tout décocher</button></p>
     </div>
@@ -1939,13 +1948,30 @@ const BASE = {pib0:BL.apu.pib, dep0:BL.apu.depenses, rec0:BL.apu.recettes,
               dette0:BL.apu.dette, charge0:BL.apu.charge, taux0:BL.apu.tauxApparent, refi:BL.apu.partRefinancee};
 const M_BY_ID = Object.fromEntries(MEASURES.map(m => [m.id, m]));
 
+/** Croissance en volume de 2026 à 2028 : la dernière prévision de la Banque de France pour chaque
+ *  année, et pour 2027 le consensus de l'indicateur de contexte s'il existe. Au-delà : la tendance. */
+function croissanceAnnuelle(macro, g27){
+  const an = {};
+  ((macro && macro.calage) || [])
+    .filter(c => /^Banque de France/.test(c.org) && c.pib != null && c.annee >= 2026 && c.annee <= 2028)
+    .sort((a, b) => a.date < b.date ? -1 : 1)
+    .forEach(c => { an[c.annee] = c.pib; });
+  if (g27 != null) an[2027] = g27;
+  return an;
+}
 const DEFAULTS = {g:1.0, infl:1.6, drift:0.7, rmkt:3.4, mult:0.9, spread:2, erosion:25};
 /* Les hypothèses de marché suivent l'actualité : un indicateur de contexte.json qui porte
    `hypothese` remplace la valeur par défaut (taux à 10 ans, croissance, inflation). */
 CTX.forEach(x => { if (x.hypothese && typeof x.valeur === 'number') DEFAULTS[x.hypothese] = x.valeur; });
+/* La croissance n'est pas figée : 2026 et 2028 suivent la Banque de France, 2027 le consensus des
+   prévisionnistes (indicateur de contexte), puis la tendance réglable à partir de 2029. */
+DEFAULTS.gAn = croissanceAnnuelle(DATA.macro, DEFAULTS.g27);
+delete DEFAULTS.g27;
+/* La prime de risque est celle de la carte des effets en chaîne : une seule valeur sur la page. */
+if (DATA.macro && DATA.macro.moteur && DATA.macro.moteur.primeDette) DEFAULTS.spread = DATA.macro.moteur.primeDette.v;
 const PARAMS = [
-  {k:'g',      lab:"Croissance en volume",         min:0,   max:2.5, step:0.1,  unit:"%/an",
-   help:"Le consensus des prévisionnistes se situe autour de 1 % à moyen terme."},
+  {k:'g',      lab:"Croissance en volume, à partir de 2029", min:0, max:2.5, step:0.1,  unit:"%/an",
+   help:"Le consensus des prévisionnistes se situe autour de 1 % à moyen terme. De 2026 à 2028, le simulateur suit les prévisions publiées (Banque de France, consensus pour 2027)."},
   {k:'infl',   lab:"Inflation",                     min:0.5, max:4,   step:0.1,  unit:"%/an",
    help:"Cible BCE 2 %. Elle gonfle recettes et dépenses, et allège la dette en points de PIB."},
   {k:'drift',  lab:"Dérive des dépenses en volume", min:0,   max:2,   step:0.1,  unit:"%/an",
@@ -1954,8 +1980,8 @@ const PARAMS = [
    help:"Il ne s'applique qu'à la dette refinancée chaque année, environ 11 % du stock."},
   {k:'mult',   lab:"Multiplicateur budgétaire",     min:0,   max:1.5, step:0.05, unit:"",
    help:"Effet de court terme d'1 € de dépense en plus sur le PIB. Celui des prélèvements vaut 60 % de cette valeur."},
-  {k:'spread', lab:"Prime de risque souveraine",    min:0,   max:10,  step:0.5,  unit:"pb / pt de dette",
-   help:"Surcoût d'emprunt par point de dette/PIB au-dessus du niveau de 2025."}
+  {k:'spread', lab:"Prime de risque souveraine",    min:0,   max:10,  step:0.5,  unit:"centièmes de point par point de dette",
+   help:"Surcoût d'emprunt par point de dette/PIB au-dessus du niveau de 2025. Valeur de la Commission européenne : 3."}
 ];
 const GROUPS = [
   {k:'rec+', name:"Recettes — hausses",   cls:'improve'},
@@ -1988,7 +2014,8 @@ function measuresAt(active, y, P){
   return {dDep, dRec, impDep, impTax};
 }
 function run(P, active){
-  const rows = [], nom = (P.g + P.infl) / 100, RHO = 0.6;
+  const rows = [], RHO = 0.6;
+  const nomAn = y => (((P.gAn && P.gAn[y] != null) ? P.gAn[y] : P.g) + P.infl) / 100;
   let pibBase = BASE.pib0, depPrim = BASE.dep0 - BASE.charge0, recBase = BASE.rec0;
   let dette = BASE.dette0, taux = BASE.taux0, gap = 0, impPrev = 0;
   const dette0Pct = BASE.dette0 / BASE.pib0 * 100;
@@ -1996,9 +2023,9 @@ function run(P, active){
              solde:BASE.rec0 - BASE.dep0, dette:BASE.dette0,
              soldePct:(BASE.rec0 - BASE.dep0)/BASE.pib0*100, dettePct:dette0Pct, mes:0});
   for (let y = 2026; y <= 2032; y++){
-    pibBase *= (1 + nom);
+    pibBase *= (1 + nomAn(y));
     depPrim *= (1 + (P.drift + P.infl) / 100);
-    recBase *= (1 + nom);
+    recBase *= (1 + nomAn(y));
     const dettePrevPct = dette / rows[rows.length-1].pib * 100;
     const rMkt = P.rmkt + (P.spread / 100) * Math.max(0, dettePrevPct - dette0Pct);
     taux = taux + (rMkt - taux) * BASE.refi;
@@ -2189,18 +2216,20 @@ function render(){
   renderBalances(scen, base);
 
   /* trajectoires */
-  const [sLo, sHi] = niceBounds([...base.map(r=>r.soldePct), ...scen.map(r=>r.soldePct), -3], 1);
+  /* Le déficit est tracé en positif, comme il est écrit partout ailleurs : la courbe monte
+     quand le déficit se creuse. */
+  const [sLo, sHi] = niceBounds([...base.map(r=>-r.soldePct), ...scen.map(r=>-r.soldePct), 3], 1);
   lineChart($('#chSolde'), {
-    years:YEARS, yMin:sLo, yMax:Math.max(sHi,0), step:1, dec:1, ref:-3, refLabel:"limite européenne · 3 %",
-    series:[{name:"Tendanciel", color:'var(--s-base)', vals:base.map(r=>r.soldePct)},
-            {name:"Scénario",   color:'var(--s-scen)', vals:scen.map(r=>r.soldePct)}],
-    extra:i => `<div class="t-row"><span class="t-key">Solde, scénario</span><b>${md(scen[i].solde)}</b></div>`});
+    years:YEARS, yMin:Math.min(sLo,0), yMax:sHi, step:1, dec:1, ref:3, refLabel:"limite européenne · 3 %",
+    series:[{name:"Si rien ne change", color:'var(--s-base)', vals:base.map(r=>-r.soldePct)},
+            {name:"Avec ce programme", color:'var(--s-scen)', vals:scen.map(r=>-r.soldePct)}],
+    extra:i => `<div class="t-row"><span class="t-key">Déficit, avec ce programme</span><b>${md(-scen[i].solde)}</b></div>`});
   const [dLo, dHi] = niceBounds([...base.map(r=>r.dettePct), ...scen.map(r=>r.dettePct)], 5);
   lineChart($('#chDette'), {
     years:YEARS, yMin:dLo, yMax:dHi, step:5, dec:0, ref:base[0].dettePct, refLabel:"niveau 2025",
-    series:[{name:"Tendanciel", color:'var(--s-base)', vals:base.map(r=>r.dettePct)},
-            {name:"Scénario",   color:'var(--s-scen)', vals:scen.map(r=>r.dettePct)}],
-    extra:i => `<div class="t-row"><span class="t-key">Dette, scénario</span><b>${md(scen[i].dette)}</b></div>`});
+    series:[{name:"Si rien ne change", color:'var(--s-base)', vals:base.map(r=>r.dettePct)},
+            {name:"Avec ce programme", color:'var(--s-scen)', vals:scen.map(r=>r.dettePct)}],
+    extra:i => `<div class="t-row"><span class="t-key">Dette, avec ce programme</span><b>${md(scen[i].dette)}</b></div>`});
 
   /* impact par mesure */
   let items = Object.keys(state.active).map(id => {
@@ -2305,13 +2334,14 @@ function renderCompare(base){
     const scen = run(state.P, active);
     const S = scen[scen.length-1];
     return {id:p.id, nom:p.candidat, sub:p.nom, couleur:p.couleur, photo:p.photo, avatar:p.avatar,
-            statut:p.statut, vals:scen.map(r => r.soldePct),
+            statut:p.statut, ia:!!p.horsCourse, vals:scen.map(r => r.soldePct),
             solde:S.soldePct, dette:S.dettePct, net:activeSplit(active).net};
   });
   rows.push({id:'tend', nom:"Si rien ne change", sub:"aucune mesure nouvelle", couleur:'var(--ink-3)',
              photo:null, avatar:null, statut:null, vals:refVals, ref:true,
              solde:base[base.length-1].soldePct, dette:base[base.length-1].dettePct, net:0});
-  rows.sort((a,b) => b.solde - a.solde);
+  /* Le candidat IA n'est pas candidat : il vient après le classement, jamais en tête. */
+  rows.sort((a,b) => (a.ia - b.ia) || (b.solde - a.solde));
 
   const all = rows.flatMap(r => r.vals);
   const lo = Math.min(...all), hi = Math.max(...all), padY = Math.max(.15, (hi - lo) * .12);
@@ -2319,7 +2349,7 @@ function renderCompare(base){
   const worst = Math.max(...rows.map(r => Math.abs(r.solde)), 3);
 
   const head = el('div','cmp-head');
-  ['Candidat', 'Déficit 2025 → 2032 (gris : sans mesure)', 'Déficit en 2032, et la limite de 3 %', 'Dette', 'Effort']
+  ['Candidat', 'Déficit 2025 → 2032 (gris : sans mesure)', 'Déficit en 2032, et la limite de 3 %', 'Dette', 'Mesures']
     .forEach((t,i) => { const d = el('div', i > 2 ? 'r' : null, t); head.appendChild(d); });
   host.appendChild(head);
 
@@ -2382,12 +2412,13 @@ function renderCompare(base){
   });
 
   const best = rows.find(r => !r.ref);
-  $('#cmpNote').textContent = "Trié du déficit le plus faible au plus élevé en 2032. « Effort » = effet net direct "
-    + "des mesures sur le budget. Le trait vertical marque la limite européenne de 3 %. "
+  $('#cmpNote').textContent = "Trié du déficit le plus faible au plus élevé en 2032 ; le candidat IA, qui n'est "
+    + "pas candidat, vient à la fin. « Mesures » = ce que les mesures "
+    + "rapportent au budget en 2032 (+) ou lui coûtent (−), avant leurs effets sur l'économie. Le trait vertical marque la limite européenne de 3 %. "
     + "Rouge : le déficit se creuse autant ou plus que si rien ne change. Bleu : il se creuse moins. "
     + "Vert : il baisse d'ici 2032. "
     + (state.annonce ? "Les montants annoncés par les partis sont retenus quand ils existent."
-                     : "Les bornes centrales du catalogue sont retenues ; cochez la case plus haut pour prendre "
+                     : "Les bornes centrales du catalogue sont retenues ; le bouton « Les promesses », en bas de l'écran, prend "
                        + "les montants annoncés par les partis.")
     + (best && best.solde < -3 ? " Aucun programme ne repasse sous la limite d'ici 2032." : "");
 }
@@ -2484,7 +2515,7 @@ function renderGap(split){
   src.textContent = '';
   if (!p){
     bars(host, [{n:"Aucune mesure", v:0, c:'var(--axis)', txt:"—"}]);
-    prose.innerHTML = "Aucun programme n'est chargé. La trajectoire affichée est le tendanciel : "
+    prose.innerHTML = "Aucun programme n'est chargé. La trajectoire affichée est celle « si rien ne change » : "
       + "ce que produit l'inaction, et l'étalon auquel comparer chaque programme.";
     return;
   }
@@ -2855,7 +2886,7 @@ function buildCards(){
     chip.style.setProperty('--pc', color);
     chip.title = id === 'tend' ? "Aucune mesure nouvelle après 2026" : `${who} · ${party}`;
     chip.appendChild(el('i','d'));
-    chip.appendChild(el('span', null, id === 'tend' ? 'Tendanciel' : sig));
+    chip.appendChild(el('span', null, id === 'tend' ? 'Sans rien faire' : sig));
     chip.addEventListener('click', () => b.click());
     chips.appendChild(chip);
   };
@@ -2874,8 +2905,11 @@ function buildCards(){
       ? `Classés selon la moyenne de ${SONDAGES.length} sondages (${liste}), terrains achevés entre le `
         + `${fmtDate(dates[0])} et le ${fmtDate(dates[dates.length-1])}.`
       : `Classés selon le dernier sondage : ${liste}, ${fmtDate(dates[0])}.`;
+    $('#pollNote').textContent += " Les instituts ne testent pas tous les mêmes candidats : la moyenne "
+      + "rapproche des hypothèses différentes, c'est un ordre de grandeur, pas un classement officiel.";
   }
   $('#candWarn').textContent = DATA.parties.avertissement;
+  const nbM = document.getElementById('nbMesures'); if (nbM) nbM.textContent = MEASURES.length;
 }
 function syncCards(){
   document.querySelectorAll('.card').forEach(b =>
@@ -2898,7 +2932,7 @@ function syncSticky(p){
   fillAvatar(av, p ? {nom:p.candidat, photo:p.photo, avatar:p.avatar} : {nom:'', ref:true});
   const n = Object.keys(state.active).length;
   $('#sbName').textContent = p ? p.candidat
-    : (state.party === 'tend' ? "Tendanciel" : "Scénario personnalisé");
+    : (state.party === 'tend' ? "Si rien ne change" : "Scénario personnalisé");
   $('#sbSub').textContent = p
     ? p.nom + (state.annonce && p.annonce.revendique != null ? " · chiffres annoncés" : "")
     : (state.party === 'tend' ? "aucune mesure nouvelle après 2026"
@@ -3124,7 +3158,7 @@ function balance(host, o){
     const c = el('div', 'bal-k ' + k + ' ' + e);
     c.appendChild(el('span', 'k', lab));
     c.appendChild(el('b', null, nf(v, 1) + ' % du PIB'));
-    if (o.ref) c.appendChild(el('span', 'd', e === 'egal' ? '= aujourd’hui'
+    if (o.ref) c.appendChild(el('span', 'd', e === 'egal' ? '= 2025'
       : (d > 0 ? '▲ +' : '▼ −') + nf(Math.abs(d), 1) + ' pt'));
     leg.appendChild(c);
   });
@@ -3158,10 +3192,10 @@ function renderBalances(scen, base){
     titre: p ? p.candidat : 'Si rien ne change', sous: p ? p.nom : 'aucune mesure nouvelle',
     dep: end.dep, rec: end.rec, pib: end.pib, ref: auj, ton,
     note: `Déficit : <b>${nf(-end.soldePct, 1)} % du PIB</b> `
-      + (Math.abs(dPt) < .1 ? '(comme aujourd’hui)' : `(${dPt > 0 ? '+' : '−'}${nf(Math.abs(dPt), 1)} pt par rapport à aujourd’hui)`)
+      + (Math.abs(dPt) < .1 ? '(comme en 2025)' : `(${dPt > 0 ? '+' : '−'}${nf(Math.abs(dPt), 1)} ${Math.abs(dPt) >= 2 ? 'points' : 'point'} par rapport à 2025)`)
       + ` : ${md(-end.solde)} manqueraient, ${fin}.`
       + `<span class="bal-courant">Les montants sont en euros de 2032 : avec les prix et l’activité, tout grossit, `
-      + `dépenses comme recettes. Pour comparer à aujourd’hui, ce sont les parts du PIB qui comptent.</span>`});
+      + `dépenses comme recettes. Pour comparer à 2025, ce sont les parts du PIB qui comptent.</span>`});
 }
 
 /** Qui paie les retraites : actifs par retraité, poids dans le PIB, et qui finance 100 € de pension. */
@@ -3175,7 +3209,7 @@ function renderRepartition(){
    {an: 'Aujourd’hui', ratio: 1.77, pib: '14 %', bar: [['cot', 66], ['etat', 34]], detail: [['cot', 66], ['etat', 29], ['autre', 5]],
     dit: '34 € viennent déjà d’ailleurs'},
    {an: '2070', ratio: 1.62, pib: '15 %', bar: [['cot', 60], ['etat', 30], ['manque', 10]], detail: [['cot', 60], ['etat', 27], ['autre', 3], ['manque', 10]], proj: true,
-    k: 'Sur 100 € de pension, si l’État paie autant qu’aujourd’hui',
+    k: 'Sur 100 € de pension, si l’État paie autant qu’en 2025',
     dit: 'Il manque quand même 10 €',
     sous: 'À règles inchangées, l’État verse moins : il manque 16 €.'}
   ].forEach(c => {
@@ -3646,13 +3680,14 @@ function renderTable(base, scen){
 
 /* ---------- textes de méthode ---------- */
 $('#methodBody').innerHTML = `
-<p>Le point de départ est l'ensemble des administrations publiques en 2025 : <code>2 950</code> Md€ de PIB,
+<p>Le point de départ est l'ensemble des administrations publiques en 2025 : <code>2 950</code> milliards d'euros (Md€) de PIB,
 <code>1 690</code> Md€ de dépenses, <code>1 530</code> Md€ de recettes, <code>3 420</code> Md€ de dette,
 <code>59</code> Md€ d'intérêts. Ces montants sont des ordres de grandeur arrondis.</p>
 <p><b>Le tendanciel</b> prolonge cette situation sans décision nouvelle : le PIB nominal croît de la croissance
 en volume plus l'inflation, les recettes suivent le PIB à élasticité 1, les dépenses primaires progressent de
-l'inflation plus une dérive en volume. Il ne reproduit donc pas la cible de <code>4,7 %</code> du budget 2026,
-qui supposait déjà une trentaine de milliards d'économies : ces économies sont elles-mêmes des mesures.</p>
+l'inflation plus une dérive en volume. Il ne reproduit donc pas la cible de déficit du budget 2026 (<code>5,4 %</code> du PIB selon le gouvernement
+en septembre 2026), qui suppose des économies déjà votées : ces économies sont elles-mêmes des mesures. C'est
+pourquoi ce repère est plus sombre que les prévisions officielles à politiques inchangées.</p>
 <p><b>Les intérêts</b> sont calculés sur un taux apparent, pas sur le taux du jour : chaque année, environ
 <code>11 %</code> du stock est refinancé au taux de marché, ce qui fait converger lentement le taux apparent
 (1,85 % en 2025) vers le taux d'emprunt. C'est ce décalage qui explique pourquoi la charge de la dette continue
@@ -3814,13 +3849,26 @@ function renderScore(base, scen, split){
   const dPt = S.soldePct - B.soldePct, manque = -S.solde;
   const plain = el('p','plain');
   plain.innerHTML = (manque > 0
-      ? `En 2032, il manquerait <b>${md(manque)}</b> dans les caisses, soit <b>${perHab(manque)}</b> par habitant. `
+      ? `En 2032, il manquerait <b>${md(manque)}</b> dans les caisses (en euros de 2032), soit <b>${perHab(manque)}</b> par habitant. `
       : `En 2032, les comptes seraient <b>excédentaires</b> de ${md(-manque)}. `)
     + (state.party === 'tend' ? "C'est le point de départ : chaque programme se mesure à cette trajectoire."
        : Math.abs(dPt) < .1 ? "C'est à peu près la même chose que si rien ne changeait."
        : dPt > 0 ? `C'est <b>${nf(dPt,1)} point</b> de mieux que si rien ne changeait.`
                  : `C'est <b>${nf(-dPt,1)} point</b> de plus que si rien ne changeait.`);
   main.appendChild(plain);
+  /* Le repère « sans rien faire » est plus sombre que les prévisions officielles : on le dit
+     là où on le lit, pas seulement dans la méthode, puisqu'il pèse sur tous les candidats. */
+  const refC = DATA.macro && DATA.macro.calage.find(c => c.politiquesInchangees && c.annee === 2030 && c.dette != null);
+  const b30 = base.find(r => r.y === 2030);
+  if (refC && b30 && b30.dettePct - refC.dette > 1){
+    const n = el('p','base-note');
+    n.innerHTML = `À savoir : ce repère « sans rien faire » est plus sombre que celui de la `
+      + `${refC.org.split(' (')[0].split(',')[0]} (dette de ${pc(b30.dettePct, 0)} du PIB en 2030, contre `
+      + `${pc(refC.dette, 0)}). Il ne compte pas les économies déjà votées pour 2026 et suppose que les `
+      + `dépenses progressent de ${nf(state.P.drift, 1)} % par an au-delà de l'inflation. Tous les `
+      + `candidats sont mesurés à partir de ce même repère.`;
+    main.appendChild(n);
+  }
   host.appendChild(main);
 
   /* trois repères */
@@ -3855,7 +3903,7 @@ function renderScore(base, scen, split){
     tile("Programme chiffré par le parti ?", "Non",
          "le scénario est reconstitué par ce site à partir de ses positions publiques", 'warn');
   } else {
-    tile("Effort des mesures", signed(split.net, 0), "effet net direct sur le budget en 2032", '');
+    tile("Ce que rapportent les mesures", signed(split.net, 0), "au budget en 2032 (+ : rapportent, − : coûtent)", '');
   }
   host.appendChild(tiles);
 
@@ -3926,7 +3974,7 @@ function renderVerso(host, p){
   box.appendChild(top);
 
   if (!Object.keys(state.active).length){
-    box.appendChild(el('p','empty', "Aucune mesure nouvelle : personne ne paie ni ne reçoit davantage qu'aujourd'hui."));
+    box.appendChild(el('p','empty', "Aucune mesure nouvelle : personne ne paie ni ne reçoit davantage que si rien ne change."));
     host.appendChild(box); return;
   }
   const R = incidence(state.active, state.P);
@@ -4041,9 +4089,12 @@ const MOTEUR = (typeof creerMoteur === 'function' && DATA.macro)
   ? creerMoteur({baseline: DATA.baseline, measures: DATA.measures, macro: DATA.macro}) : null;
 const MCO = DATA.macro ? Object.fromEntries(DATA.macro.coefficients.map(c => [c.id, c])) : {};
 /** Nombre signé à la française : « +0,4 », « −1,2 », « ≈ 0 » sous le seuil. */
+/* « pt » et « pb » sont du jargon : on écrit « point » et « centième de point ». */
+const UNITE = {pt: n => n >= 2 ? 'points' : 'point', pb: n => n >= 2 ? 'centièmes de point' : 'centième de point'};
 function sg(v, d, unite, seuil){
-  if (Math.abs(v) < (seuil ?? .5 * Math.pow(10, -d))) return '≈ 0' + (unite ? ' ' + unite : '');
-  return (v > 0 ? '+' : '−') + ' ' + nf(Math.abs(v), d) + (unite ? ' ' + unite : '');
+  const u = n => unite ? ' ' + (UNITE[unite] ? UNITE[unite](n) : unite) : '';
+  if (Math.abs(v) < (seuil ?? .5 * Math.pow(10, -d))) return '≈ 0' + u(0);
+  return (v > 0 ? '+' : '−') + ' ' + nf(Math.abs(v), d) + u(Math.abs(v));
 }
 const entre = (q, d, u) => `entre ${sg(q[0], d, u, 0)} et ${sg(q[1], d, u, 0)}`;
 function renderProjection(p, scenPage){
@@ -4088,16 +4139,16 @@ function renderProjection(p, scenPage){
   const t = tuiles(vide ? "En 2032, si rien ne change" : "Pour tout le monde, en 2032");
   if (vide){
     const B0 = R.base[0], hab0 = R.base.find(r => r.y === 2026);
-    t('piece', "Richesse par habitant", nf(Math.round(B.pibReelHab / 100) * 100) + ' €',
+    t('piece', "Production par habitant", nf(Math.round(B.pibReelHab / 100) * 100) + ' €',
       `par an, en euros de 2025 (PIB par habitant) · ${sg((B.pibReelHab / hab0.pibReelHab - 1) * 100, 1, '%')} depuis 2026`);
     t('sansemploi', "Chômage", nf(B.chomage, 1) + ' %', "projection de la Banque de France jusqu'en 2028, maintenue ensuite");
     t('dette', "Dette publique", nf(B.dettePct, 0) + ' % du PIB', `contre ${nf(B0.dettePct, 0)} % en 2025`, null, 'bad');
     t('maison', "Taux d'emprunt de l'État", pc(B.rMkt, 1), `contre ${pc(state.P.rmkt, 1)} aujourd'hui · crédit aux entreprises ≈ ${pc(B.creditEntreprises, 1)}`);
-    t('panier', "Intérêts de la dette", nf(Math.round(B.chargeMenageMois)) + ' €', `par ménage et par mois, contre ${nf(Math.round(R.base[0].charge / BL.apu.menages / 12 * 1000))} € en 2025`, null, 'bad');
+    t('panier', "Intérêts payés par l'État", nf(Math.round(B.chargeMenageMois)) + ' €', `ramenés par ménage et par mois, contre ${nf(Math.round(R.base[0].charge / BL.apu.menages / 12 * 1000))} € en 2025`, null, 'bad');
   } else {
     const hab = C.pibReelHab;
-    t('piece', "Richesse par habitant", sg(Math.round(hab / 10) * 10, 0, '€', 5),
-      "par habitant et par an",
+    t('piece', "Production par habitant", sg(Math.round(hab / 10) * 10, 0, '€', 5),
+      "PIB par habitant et par an, en euros de 2025",
       `PIB ${sg(C.pib, 1, '%', .05)}, en euros de 2025 · ` + entre(Q.pibReelHab.map(x => Math.round(x / 10) * 10), 0, '€'), etat(hab, true, 5));
     const retraite = S.offreEmplois;   // emplois venus de l'âge de départ et des réformes chiffrées
     t('salaire', "Emplois", sg(Math.round(C.emploi) * 1000, 0, '', 500),
@@ -4112,7 +4163,10 @@ function renderProjection(p, scenPage){
       entre(Q.dettePct, 1, 'pt'), etat(C.dettePct, false, .05));
     t('maison', "Taux d'emprunt de l'État", pc(S.rMkt, 2), `en 2032 · ${sg(C.rMkt, 2, 'pt', .005)} par rapport à « si rien ne change »`,
       `crédit aux entreprises ${sg(C.rMkt * MOT.creditEntreprises.v * 100, 0, 'pb', .5)} · ` + entre(Q.rMkt.map(x => x * 100), 0, 'pb'), etat(C.rMkt, false, .005));
-    t('panier', "Intérêts de la dette", sg(C.chargeMenageMois, 0, '€', .5), "par ménage et par mois",
+    t('panier', "Intérêts payés par l'État", sg(C.chargeMenageMois, 0, '€', .5),
+      C.chargeMenageMois < -.5 ? "de moins que « si rien ne change », ramenés par ménage et par mois"
+      : C.chargeMenageMois > .5 ? "de plus que « si rien ne change », ramenés par ménage et par mois"
+      : "ramenés par ménage et par mois",
       `${nf(Math.round(S.chargeMenageMois))} € en 2032 · ` + entre(Q.chargeMenageMois, 0, '€'), etat(C.chargeMenageMois, false, .5));
   }
 
@@ -4132,7 +4186,7 @@ function renderProjection(p, scenPage){
         const m = M_BY_ID[x.id], cl = MC.classement[x.id], ty = MC.types[cl.type];
         lab.append(m.lab);
         const extr = cl.canaux.some(c => c.moteur === 'projection' && c.extrapolation);
-        const badge = extr ? "extrapolé" : ty.confiance === 'generique' ? "effet générique" : ty.confiance === 'substitut' ? "par analogie" : null;
+        const badge = extr ? "extrapolé" : ty.confiance === 'generique' ? "effet moyen, faute d'étude propre" : ty.confiance === 'substitut' ? "effet d'une mesure voisine" : null;
         if (badge) lab.appendChild(el('small', null, badge));
       }
       const bar = el('div','pj-c-bar'), i = el('i', x.v >= 0 ? 'up' : 'down'), l = Math.abs(x.v) / max * 50;
@@ -4149,7 +4203,7 @@ function renderProjection(p, scenPage){
     if (parts.length){
       const ap = el('div','pj-apart');
       for (const a of parts){ const sp = el('span', null, `${M_BY_ID[a.mesure].lab.split(' (')[0].split(' : ')[0]} : ${REG[a.regle]}`); sp.title = a.quoi; ap.appendChild(sp); }
-      const w2 = bloc("Pas compté dans 2032", 'adv-only'); w2.appendChild(ap);
+      const w2 = bloc("Effets non comptés d'ici 2032", 'adv-only'); w2.appendChild(ap);
     }
   }
 
@@ -4165,7 +4219,7 @@ function renderProjection(p, scenPage){
   const det = el('details','pj-src');
   det.appendChild(el('summary', null, "Comprendre ces chiffres"));
   const para = (...m) => { const q = el('p','pj-note'); m.forEach(x => q.append(x)); det.appendChild(q); };
-  para("Les mêmes équations pour tous les programmes. Chaque mesure reçoit l'effet sur l'activité publié pour son type (TVA, impôt sur le revenu, investissement, prestations…), année par année, par le Trésor (modèle Mésange), la BCE ou l'OFCE. Le chômage suit l'activité (loi d'Okun). Chaque point de dette ajoute environ 3 pb au taux de l'État (Commission européenne), ce qui freine l'activité et renchérit le crédit aux entreprises.");
+  para("Les mêmes équations pour tous les programmes. Chaque mesure reçoit l'effet sur l'activité publié pour son type (TVA, impôt sur le revenu, investissement, prestations…), année par année, par le Trésor (modèle Mésange), la BCE ou l'OFCE. Le chômage suit l'activité : quand la production ralentit, il monte (loi d'Okun). Chaque point de dette ajoute environ 0,03 point au taux d'emprunt de l'État (Commission européenne), ce qui freine l'activité et renchérit le crédit aux entreprises.");
   para("La fourchette refait le calcul avec les valeurs basses et hautes publiées par les économistes, qui ne sont pas d'accord entre eux. Ce n'est pas une probabilité : c'est l'étendue du désaccord.");
   if (!vide){
     const conf = R.confiance, lib = {directe: "un effet publié propre à leur type", substitut: "l'effet d'un impôt voisin", generique: "l'effet moyen retenu par l'OFCE (0,5 pour un impôt, 1 pour une dépense), faute de chiffrage propre"};
@@ -4300,12 +4354,12 @@ function ecartPromesse(p){
   if (ecart < 5){ box.hidden = true; return box; }   // sous 5 Md€, ce n'est pas un masque
   if (state.annonce){
     box.classList.add('fort');
-    box.appendChild(el('div','ec-k', "Attention, facture flatteuse"));
+    box.appendChild(el('div','ec-k', "Écart avec les chiffrages indépendants"));
     const t = el('p');
     t.innerHTML = `Ce total, c'est ce que le parti <b>annonce</b>. Les chiffrages indépendants (Cour des comptes, `
       + `OFCE, IPP…) donnent <b>${signed(reel, 1)}</b> : il manque <b>${md(ecart, 1)}</b> à sa promesse.`;
     box.appendChild(t);
-    const b = el('button','cta', "Voir ce que disent les chiffres →"); b.type = 'button';
+    const b = el('button','cta', "Voir les chiffrages indépendants →"); b.type = 'button';
     b.addEventListener('click', () => setAnnonce(false, true));
     box.appendChild(b);
   } else {
@@ -4424,6 +4478,9 @@ function renderContexte(){
   [[items.length, 'déclarations relevées'], [urls.size, 'sources citées'], [contra, 'contradictions repérées'],
    [MEASURES.length, 'mesures chiffrées'], [candidats, 'candidats suivis']].forEach(([n, lab]) => {
     const c = el('span','vs-c'); c.appendChild(el('b', null, String(n))); c.appendChild(document.createTextNode(' ' + lab));
+    if (lab === 'contradictions repérées')
+      c.title = "Déclarations qui contredisent le programme écrit du parti, ou une autre déclaration de son camp. "
+        + "Les propos simplement invérifiables ne sont pas comptés.";
     host.appendChild(c);
   });
 })();
@@ -4468,8 +4525,8 @@ function setAnnonce(v, dire){
   if (dire){
     const t = $('#masqueToast');
     t.textContent = v
-      ? "Mode promesses : chaque mesure vaut ce que le parti en dit. La lecture la plus flatteuse."
-      : "Masques tombés : chaque mesure revient à son chiffrage indépendant (Cour des comptes, OFCE, IPP…).";
+      ? "Promesses : chaque mesure vaut ce que le parti en dit."
+      : "Chiffrages indépendants : chaque mesure vaut ce qu'en disent la Cour des comptes, l'OFCE, l'IPP…";
     t.classList.remove('on'); void t.offsetWidth; t.classList.add('on');
     clearTimeout(setAnnonce.t); setAnnonce.t = setTimeout(() => t.classList.remove('on'), 4200);
   }
@@ -4491,7 +4548,8 @@ document.querySelectorAll('#masque [data-annonce]').forEach(b => b.addEventListe
 $('#reset').addEventListener('click', () => {
   state.active = {}; state.party = 'tend'; setAnnonce(false, false);
 });
-(document.querySelector('.card[data-id="rn"]') || document.querySelectorAll('.card')[1]).click();
+/* On ouvre sur le repère commun, pas sur un candidat : aucun n'est mis en avant par défaut. */
+(document.querySelector('.card[data-id="tend"]') || document.querySelectorAll('.card')[0]).click();
 
 /* La barre n'apparaît que lorsque les cartes de l'étape 1 sont passées au-dessus de
    l'écran — jamais quand on est encore devant elles, où elle ferait double emploi.
