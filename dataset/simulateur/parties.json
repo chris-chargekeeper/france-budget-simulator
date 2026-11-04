@@ -502,12 +502,12 @@
       "candidat": "Le budget apolitique",
       "avatar": "ia",
       "couleur": "#7C3AED",
-      "statutCandidature": "Pas un candidat : un budget calculé par une machine, à partir des chiffrages publiés",
+      "statutCandidature": "Pas un candidat : un budget calculé par l'intelligence artificielle, à partir des chiffrages publiés",
       "statut": "ia",
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle : une machine applique les règles ci-dessous aux 42 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Même en retenant toutes les mesures permises par ses règles (39,1 Md€ d'économies, 35,8 Md€ de recettes), le déficit reste à 5,3 % du PIB en 2032. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle : elle applique les règles ci-dessous aux 42 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Même en retenant toutes les mesures permises par ses règles (39,1 Md€ d'économies, 35,8 Md€ de recettes), le déficit reste à 5,3 % du PIB en 2032. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null

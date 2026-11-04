@@ -1,4 +1,4 @@
-/* Le budget apolitique : un scénario calculé par une machine, à partir des chiffrages publiés,
+/* Le budget apolitique : un scénario calculé par une intelligence artificielle, à partir des chiffrages publiés,
  * avec des règles fixes appliquées mécaniquement — aucun choix au cas par cas.
  *
  *   node moteur/budget-apolitique.js            montre le calcul, n'écrit rien
@@ -107,7 +107,7 @@ const CRITERES = [
   "Recalculer chaque jour, avec les chiffrages et les prévisions du moment."
 ];
 const texte = `Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle : `
-  + `une machine applique les règles ci-dessous aux ${D.measures.measures.length} mesures chiffrées du simulateur, `
+  + `elle applique les règles ci-dessous aux ${D.measures.measures.length} mesures chiffrées du simulateur, `
   + `aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. `
   + (R.atteint
     ? `Résultat : ${nf(R.somme.dep)} Md€ d'économies et ${nf(R.somme.rec)} Md€ de recettes en 2032, pour un déficit de ${nf(-R.fin.soldePct)} % du PIB. `
@@ -126,7 +126,7 @@ if (process.argv.includes('--ecrire')) {
   Object.assign(ia, {
     candidat: "Le budget apolitique",
     nom: "Calculé par une intelligence artificielle",
-    statutCandidature: "Pas un candidat : un budget calculé par une machine, à partir des chiffrages publiés",
+    statutCandidature: "Pas un candidat : un budget calculé par l'intelligence artificielle, à partir des chiffrages publiés",
     criteres: CRITERES, set: R.set, pourquoi: R.notes, ecartees: R.ecartees,
     calcul: {date: aujourdhui, deficit2032: +(-R.fin.soldePct).toFixed(2), dette2032: +R.fin.dettePct.toFixed(1),
              economies: +R.somme.dep.toFixed(1), recettes: +R.somme.rec.toFixed(1), cibleAtteinte: R.atteint}
