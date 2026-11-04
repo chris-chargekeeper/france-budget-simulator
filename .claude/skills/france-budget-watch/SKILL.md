@@ -187,7 +187,7 @@ git fetch origin
 git checkout veille 2>/dev/null || git checkout -b veille origin/master
 git merge --ff-only origin/master        # repartir de ce qui est en ligne
 # … relève, build, contrôle …
-git add dataset/simulateur dataset/veille index.html
+git add dataset/simulateur dataset/veille index.html web
 git commit -m "[MOD] Veille du AAAA-MM-JJ : …"
 git push origin veille
 ```

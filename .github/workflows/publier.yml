@@ -13,6 +13,7 @@ on:
       - 'build.py'
       - 'dataset/simulateur/**'
       - 'moteur/**'
+      - 'web/**'
       - '.github/workflows/publier.yml'
   workflow_dispatch:
 
@@ -45,10 +46,10 @@ jobs:
 
       - name: Refuser une page périmée
         run: |
-          if ! git diff --quiet -- index.html; then
+          if ! git diff --quiet -- index.html web; then
             echo "::error::index.html versionné ne correspond pas à ses données."
             echo "Reconstruire en local (python3 build.py) et committer le résultat."
-            git diff --stat -- index.html
+            git diff --stat -- index.html web
             exit 1
           fi
           echo "index.html est en phase avec ses données."
@@ -95,6 +96,10 @@ jobs:
             ftp --upload-file index.html "ftp://$cible/$dossier/index.html" || return 1
             # l'image d'aperçu des liens partagés (balises og:image de la page)
             ftp --upload-file dataset/simulateur/marque/partage.jpg "ftp://$cible/$dossier/partage.jpg" || return 1
+            # robots.txt, sitemap.xml et llms.txt, générés par build.py (référencement)
+            for f in web/*; do
+              ftp --upload-file "$f" "ftp://$cible/$dossier/$(basename "$f")" || return 1
+            done
           }
           # Le FTP d'Hostinger cesse parfois de répondre quelques minutes (deux fois le
           # 3 novembre 2026) : on retente l'envoi complet avant d'abandonner.
