@@ -1104,6 +1104,14 @@ footer{padding-bottom:120px}
 .pa-f > .ic{width:18px;height:18px;color:var(--ink-3);margin-top:2px}
 .pa-f p{margin:0}
 .pa-f b{color:var(--ink);font-family:"IBM Plex Mono",monospace;font-weight:600;white-space:nowrap}
+.pa-hist{display:grid;gap:10px}
+.pa-hist h4{margin:0;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:600}
+.pa-tuiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+.pa-tuiles div{background:var(--surface-2);border-radius:10px;padding:8px 10px}
+.pa-tuiles b{display:block;font-family:"IBM Plex Mono",monospace;font-size:17px;font-weight:600;color:var(--ink)}
+.pa-tuiles span{font-size:12px;color:var(--ink-2);line-height:1.35}
+#chPouvoir{width:100%;height:auto;display:block}
+#chPouvoir .up{fill:var(--good)} #chPouvoir .down{fill:var(--critical)} #chPouvoir .prov{opacity:.45}
 .pa-src summary{font-size:13px;color:var(--ink-2)}
 .pa-src li{font-size:12.5px;line-height:1.5;color:var(--ink-2)}
 .pa-src ul{padding-left:18px;margin:6px 0}
@@ -3994,6 +4002,56 @@ const ctxInd = id => CTX.find(i => i.id === id);
 const lienSrc = (s, txt) => { const a = el('a', null, txt || s.t); a.href = s.u; a.target = '_blank'; a.rel = 'noopener'; return a; };
 const dateFr = d => new Date(d + 'T12:00:00').toLocaleDateString('fr-FR', {day:'numeric', month:'long', year:'numeric'});
 
+/** Le pouvoir d'achat depuis 1960 (mode détaillé) : une barre par an, et la dette en regard, sans lien de cause affirmé. */
+function paHistoire(){
+  const se = PA.serie, n = se.fin - se.debut + 1, an = i => se.debut + i;
+  const idx = [100]; for (let i = 1; i < n; i++) idx.push(idx[i-1] * (1 + se.uc[i] / 100));
+  const moy = (a, b) => (Math.pow(idx[b - se.debut] / idx[a - se.debut], 1 / (b - a)) - 1) * 100;
+  const reculs = se.uc.map((v, i) => [an(i), v]).filter(([, v]) => v < 0);
+  const wrap = el('div','pa-hist adv-only');
+  wrap.appendChild(el('h4', null, "Le pouvoir d'achat depuis 1960"));
+  wrap.appendChild(el('p','pa-note', "Évolution chaque année du pouvoir d'achat par unité de consommation, c'est-à-dire en tenant compte de la taille des ménages : la mesure officielle de l'Insee, en moyenne pour tous les Français."));
+  const t = el('div','pa-tuiles');
+  const tuile = (v, txt) => { const d = el('div'); d.append(el('b', null, v), el('span', null, txt)); t.appendChild(d); };
+  tuile('×' + nf(idx[n-1] / 100, 1), `depuis ${se.debut}`);
+  tuile(pts(moy(1960, 1970), 1).replace(/^\+/, '+ ') + ' %', "par an dans les années 1960");
+  tuile(pts(moy(2010, se.fin), 1).replace(/^\+/, '+ ') + ' %', `par an de 2010 à ${se.fin}`);
+  const pire = reculs.reduce((m, r) => r[1] < m[1] ? r : m, [0, 0]);
+  tuile(String(reculs.length), `années de recul ; la plus forte : ${pctTxt(pire[1])} en ${pire[0]}`);
+  wrap.appendChild(t);
+
+  /* Dessiné à la taille de l'écran : sur téléphone, un viewBox étroit garde des étiquettes lisibles. */
+  const etroit = matchMedia('(max-width:640px)').matches;
+  const W = etroit ? 360 : 640, H = etroit ? 200 : 190, L = 34, R = 8, T = 10, B = 24;
+  const vmax = Math.ceil(Math.max(...se.uc.map(Math.abs)));
+  const svg = sv('svg', {id:'chPouvoir', viewBox:`0 0 ${W} ${H}`, role:'img',
+    'aria-label': `Évolution annuelle du pouvoir d'achat par unité de consommation de ${se.debut} à ${se.fin}`});
+  const bw = (W - L - R) / n, y = v => T + (vmax - v) / (2 * vmax) * (H - T - B);
+  for (let v = -vmax + (vmax % 2); v <= vmax; v += etroit ? 4 : 2){
+    svg.appendChild(sv('line', {x1:L, x2:W-R, y1:y(v), y2:y(v), class: v === 0 ? 'axisline' : 'gridline'}));
+    const tk = sv('text', {x:L-6, y:y(v)+3.5, class:'tick', 'text-anchor':'end'}); tk.textContent = sign(String(v)) + ' %'; svg.appendChild(tk);
+  }
+  se.uc.forEach((v, i) => {
+    const r = sv('rect', {x:L + i * bw + bw * .15, width:bw * .7, y:Math.min(y(v), y(0)), height:Math.max(.8, Math.abs(y(v) - y(0))),
+      class:(v < 0 ? 'down' : 'up') + (an(i) >= se.semiDefinitif ? ' prov' : '')});
+    const ti = sv('title', {}); ti.textContent = `${an(i)} : ${pctTxt(v)}` + (an(i) === se.provisoire ? ' (provisoire)' : an(i) === se.semiDefinitif ? ' (semi-définitif)' : '');
+    r.appendChild(ti); svg.appendChild(r);
+  });
+  for (let a = se.debut; a <= se.fin; a += etroit ? 20 : 10){
+    const tk = sv('text', {x:L + (a - se.debut + .5) * bw, y:H - 6, class:'tick', 'text-anchor':'middle'}); tk.textContent = a; svg.appendChild(tk);
+  }
+  wrap.appendChild(svg);
+
+  const p = el('p','pa-note');
+  const dette = y_ => HIST ? histVal('fr', y_) : null;
+  p.append(`Années de recul : ${reculs.map(([a]) => a).join(', ')}. Les barres pâles sont des données encore révisables. `);
+  if (HIST && dette(1970) != null && dette(2010) != null)
+    p.append(`En regard, la dette publique : ${nf(dette(1970), 0)} % du PIB en 1970, ${nf(dette(2010), 0)} % en 2010, ${nf(dette(se.fin), 0)} % en ${se.fin}. L'une et l'autre ont changé de rythme après les chocs pétroliers des années 1970 ; ce site ne tranche pas le lien de cause à effet entre elles, débattu par les économistes. `);
+  p.appendChild(lienSrc(se.source, "Source : Insee")); p.append('.');
+  wrap.appendChild(p);
+  return wrap;
+}
+
 function renderPouvoir(p, S, B){
   const host = $('#pouvoir'); if (!host || !PA) return;
   host.textContent = '';
@@ -4080,12 +4138,14 @@ function renderPouvoir(p, S, B){
     b(eurM(smic * (lo + hi) / 2 / 100)), " de plus par mois."));
   box.appendChild(ext);
 
+  box.appendChild(paHistoire());
+
   /* 4. Sources. */
   const src = el('details','pa-src');
   src.appendChild(el('summary', null, "Sources et limites"));
   src.appendChild(el('p','pa-note', "Les montants supposent que tout le revenu est dépensé, dans un panier moyen. Un ménage qui épargne ou qui dépense davantage en énergie (chauffage, voiture) est touché différemment. Ce site n'a pas trouvé d'estimation officielle de la part du taux de l'État qui passe dans celui des crédits : le calcul à 1 point est un exemple."));
   const ul = el('ul');
-  const tous = [ip.source, oat.source, c.source, po.source, PA.inflation.smic.source, PA.inflation.retraites.source,
+  const tous = [PA.serie.source, ip.source, oat.source, c.source, po.source, PA.inflation.smic.source, PA.inflation.retraites.source,
                 ...PA.foyers.filter(f => f.source).map(f => f.source), ...(sal ? [sal.source] : [])];
   [...new Map(tous.map(s => [s.u, s])).values()].forEach(s => { const li = el('li'); li.appendChild(lienSrc(s)); ul.appendChild(li); });
   src.appendChild(ul);
