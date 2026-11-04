@@ -1,0 +1,3948 @@
+{
+ "_comment": "Coefficients macroéconomiques publiés, pour la projection 2026-2032. Chaque valeur vient d'une source ouverte et lue (page et citation) ; quand les sources divergent, valeur = source prioritaire, lo/hi = extrêmes publiés, jamais une moyenne calculée ici. 'controle' : résultat de la contre-vérification indépendante (confirme, corrige, non_revu). Non embarqué dans la page tant que le moteur ne s'en sert pas.",
+ "revu": "2026-11-04",
+ "coefficients": [
+  {
+   "id": "mult_invest_public_a1",
+   "quoi": "Hausse permanente de l'investissement public (non financée), effet sur le PIB en volume",
+   "valeur": 1.31,
+   "lo": 0.8,
+   "hi": 1.9,
+   "horizon": "année 1",
+   "conditions": "Mésange : taux d'intérêt réels et change nominal constants (pas de réaction BCE), choc isolé France, pas d'effet du capital public sur l'offre. Fourchette Insee 2024 (bootstrap, IC 95 %) : 1,26–1,67. e-mod (OFCE) : 1,2 milieu de cycle, 1,3 bas, 1,2 haut. QUEST (Espagne, consolidation permanente, BCE contrainte 2 ans) : 0,8. Méta-analyse OCDE : 0,6–1,9, moyenne 1,1.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "§4.1.1, tableau p. 102 (PDF p. 103)",
+     "citation": "« PIB en volume 1,31 1,38 1,22 0,93 0,57 0,22 »"
+    },
+    {
+     "t": "Construction d'intervalles de confiance et relecture du passé avec le modèle Mésange (Bourgeois, Favetto), DT Insee 2024-07",
+     "org": "Insee / DG Trésor",
+     "date": "2024-04",
+     "u": "https://insee.fr/fr/statistiques/fichier/version-html/8181884/DT2024-07.pdf",
+     "ou": "Tableau 2, p. 22 (PDF p. 23)",
+     "citation": "« PIB (en volume) 1,28 [1,26 ; 1,67] »"
+    },
+    {
+     "t": "Petit précis de politique budgétaire par tous les temps. Les multiplicateurs budgétaires au cours du cycle (Creel, Heyer, Plane), Revue de l'OFCE n°116",
+     "org": "OFCE (modèle e-mod.fr)",
+     "date": "2011-01",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "Tableau 5, p. 83",
+     "citation": "Investissement public : « Milieu de cycle 1,2 0,7 0,3 »",
+     "archive": true
+    },
+    {
+     "t": "Fiscal consolidations and spillovers in the Euro area periphery and core (in 't Veld), European Economy Economic Papers 506",
+     "org": "Commission européenne (QUEST)",
+     "date": "2013-10",
+     "u": "https://ec.europa.eu/economy_finance/publications/economic_paper/2013/pdf/ecp506_en.pdf",
+     "ou": "Annexe, p. 20 (PDF p. 23)",
+     "citation": "« Government investment has a slightly larger impact multiplier of 0.8 »"
+    },
+    {
+     "t": "Méta-analyse OCDE (Perspectives économiques intermédiaires, mars 2009, ch. 3) reproduite au tableau 2 de Creel, Heyer, Plane (Revue de l'OFCE 116)",
+     "org": "OCDE (via OFCE)",
+     "date": "2009-03",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "Tableau 2, p. 68",
+     "citation": "« Investissement public 0,6 1,9 1,1 »",
+     "archive": true
+    }
+   ],
+   "note": "valeur = Mésange 2017 (référence DG Trésor/Insee). Insee 2024 donne 1,28 (réestimation bootstrap du même modèle). lo/hi = extrêmes des sources, pas une moyenne.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_invest_public_a2",
+   "quoi": "Investissement public, effet sur le PIB",
+   "valeur": 1.38,
+   "lo": 1.11,
+   "hi": 1.49,
+   "horizon": "année 2",
+   "conditions": "Mésange, taux réels constants. IC 95 % Insee 2024 : 1,11–1,49 (point 1,29).",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "tableau p. 102",
+     "citation": "« PIB en volume 1,31 1,38 1,22 »"
+    },
+    {
+     "t": "Construction d'intervalles de confiance et relecture du passé avec le modèle Mésange (Bourgeois, Favetto), DT Insee 2024-07",
+     "org": "Insee / DG Trésor",
+     "date": "2024-04",
+     "u": "https://insee.fr/fr/statistiques/fichier/version-html/8181884/DT2024-07.pdf",
+     "ou": "Tableau 2, p. 22",
+     "citation": "« 1,29 [1,11 ; 1,49] »"
+    }
+   ],
+   "note": "",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "non_revu"
+  },
+  {
+   "id": "mult_invest_public_a3",
+   "quoi": "Investissement public, effet sur le PIB",
+   "valeur": 1.22,
+   "lo": 0.85,
+   "hi": 1.22,
+   "horizon": "année 3",
+   "conditions": "Mésange, taux réels constants. IC 95 % Insee 2024 : 0,85–1,17 (point 1,1).",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "tableau p. 102",
+     "citation": "« 1,31 1,38 1,22 0,93 »"
+    },
+    {
+     "t": "Construction d'intervalles de confiance et relecture du passé avec le modèle Mésange (Bourgeois, Favetto), DT Insee 2024-07",
+     "org": "Insee / DG Trésor",
+     "date": "2024-04",
+     "u": "https://insee.fr/fr/statistiques/fichier/version-html/8181884/DT2024-07.pdf",
+     "ou": "Tableau 2, p. 22",
+     "citation": "« 1,1 [0,85 ; 1,17] »"
+    }
+   ],
+   "note": "",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "non_revu"
+  },
+  {
+   "id": "mult_invest_public_a5",
+   "quoi": "Investissement public, effet sur le PIB",
+   "valeur": 0.93,
+   "lo": 0.5,
+   "hi": 1.1,
+   "horizon": "année 5",
+   "conditions": "Mésange 0,93 ; Insee 2024 0,8 [0,56 ; 0,85] ; e-mod 5 ans : 0,7 milieu, 1,1 bas, 0,5 haut de cycle.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "tableau p. 102",
+     "citation": "« À 5 ans, l'effet sur l'activité est de 0,93 point de PIB »"
+    },
+    {
+     "t": "Construction d'intervalles de confiance et relecture du passé avec le modèle Mésange (Bourgeois, Favetto), DT Insee 2024-07",
+     "org": "Insee / DG Trésor",
+     "date": "2024-04",
+     "u": "https://insee.fr/fr/statistiques/fichier/version-html/8181884/DT2024-07.pdf",
+     "ou": "Tableau 2, p. 22",
+     "citation": "« 0,8 [0,56 ; 0,85] »"
+    },
+    {
+     "t": "Petit précis de politique budgétaire par tous les temps. Les multiplicateurs budgétaires au cours du cycle (Creel, Heyer, Plane), Revue de l'OFCE n°116",
+     "org": "OFCE (modèle e-mod.fr)",
+     "date": "2011-01",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "Tableau 5, p. 83",
+     "citation": "Investissement public bas de cycle « 1,3 1,1 1,3 »",
+     "archive": true
+    }
+   ],
+   "note": "",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "non_revu"
+  },
+  {
+   "id": "mult_invest_public_lt",
+   "quoi": "Investissement public, effet de long terme sur le PIB (sans effet de productivité du capital public)",
+   "valeur": 0.22,
+   "lo": -0.3,
+   "hi": 1.3,
+   "horizon": "long terme (Mésange LT ; e-mod 10 ans)",
+   "conditions": "Mésange : éviction par les prix, effet résiduel 0,22 ; e-mod à 10 ans : 0,3 milieu, 1,3 bas, -0,3 haut de cycle. Aucun des deux modèles ne compte l'effet du capital public sur la productivité (sous-estimation reconnue par l'OFCE). QUEST, qui le modélise (élasticité 0,10), trouve qu'une baisse d'investissement public a un effet LT négatif.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "tableau p. 102 et p. 103",
+     "citation": "« pour un effet de long terme de 0,22 point de PIB »"
+    },
+    {
+     "t": "Petit précis de politique budgétaire par tous les temps. Les multiplicateurs budgétaires au cours du cycle (Creel, Heyer, Plane), Revue de l'OFCE n°116",
+     "org": "OFCE (modèle e-mod.fr)",
+     "date": "2011-01",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "Tableau 5, p. 83",
+     "citation": "« Haut de cycle 1,2 0,5 -0,3 »",
+     "archive": true
+    },
+    {
+     "t": "Fiscal consolidations and spillovers in the Euro area periphery and core (in 't Veld), European Economy Economic Papers 506",
+     "org": "Commission européenne (QUEST)",
+     "date": "2013-10",
+     "u": "https://ec.europa.eu/economy_finance/publications/economic_paper/2013/pdf/ecp506_en.pdf",
+     "ou": "p. 20",
+     "citation": "« Cuts in such productive spending have a long term negative GDP impact »"
+    }
+   ],
+   "note": "Valeur LT très dépendante de l'hypothèse sur le rendement du capital public, non tranchée par les sources.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_depense_generique_a1",
+   "quoi": "Hausse permanente de la dépense publique « composite » (8 % investissement, 25 % rémunérations publiques, 9 % prestations en nature, 12 % consommations intermédiaires, 46 % prestations en espèces)",
+   "valeur": 0.78,
+   "lo": 0.6,
+   "hi": 1.1,
+   "horizon": "année 1",
+   "conditions": "Mésange, taux réels constants. Autres sources (consommation publique) : Kilponen/EAGLE France 0,92 (choc temporaire 2 ans, règle de Taylor) et 1,05 si taux bloqués 2 ans (ZLB) ; choc permanent 0,97. EA-BDF (Banque de France) : ~1,1 (anticipations VAR) et ~1,0 (anticipations rationnelles) en moyenne sur 2 ans, choc symétrique zone euro ; 1,0/0,9 choc France seule. OFCE 2026 (économies sur État, collectivités, Sécu) : 0,7–0,8 à court terme. QUEST (Espagne, consommation publique, consolidation permanente) : 0,6.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "§4.1.2, tableau et texte p. 105-106",
+     "citation": "« Ils sont de 0,78 point de PIB en première année »"
+    },
+    {
+     "t": "Comparing fiscal multipliers across models and countries in Europe (Kilponen et al.), ECB Working Paper 1760",
+     "org": "BCE / SEBC (modèle France : EAGLE, Banque de France)",
+     "date": "2015-03",
+     "u": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1760.en.pdf",
+     "ou": "Table 1 (PDF p. 34) ; Table 5 (PDF p. 38)",
+     "citation": "France « -0.92 -0.71 -1.05 -0.87 »"
+    },
+    {
+     "t": "The EA-BDF Model and Government Spending Multipliers in a Monetary Union (Aldama et al.), Banque de France WP 883",
+     "org": "Banque de France",
+     "date": "2022-09",
+     "u": "https://publications.banque-france.fr/sites/default/files/medias/documents/wp-883.pdf",
+     "ou": "§5.1-5.2, p. 54-55",
+     "citation": "« on average during the first two years the multiplier is around 1.1 »"
+    },
+    {
+     "t": "Budget 2026 : un déficit de compromis (Madec, Plane, Sampognaro), OFCE Policy brief 154",
+     "org": "OFCE",
+     "date": "2026-02",
+     "u": "https://ofce.github.io/budget2026/OFCEpbrief154.pdf",
+     "ou": "p. 5",
+     "citation": "« multiplicateurs à court terme relativement élevés (compris entre 0,7 et 0,8) »"
+    },
+    {
+     "t": "Fiscal consolidations and spillovers in the Euro area periphery and core (in 't Veld), European Economy Economic Papers 506",
+     "org": "Commission européenne (QUEST)",
+     "date": "2013-10",
+     "u": "https://ec.europa.eu/economy_finance/publications/economic_paper/2013/pdf/ecp506_en.pdf",
+     "ou": "p. 20",
+     "citation": "« A reduction in government consumption has an impact multiplier of 0.6 »"
+    }
+   ],
+   "note": "Mésange rappelle que la règle usuelle tirée de Mésange 2010 était ¾ / 1 / 1 sur trois ans.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_depense_generique_a2",
+   "quoi": "Dépense publique composite, effet sur le PIB",
+   "valeur": 1.06,
+   "lo": 0.71,
+   "hi": 1.06,
+   "horizon": "année 2",
+   "conditions": "Mésange 1,06 ; Kilponen/EAGLE France consommation publique 0,71 (Taylor) / 0,87 (ZLB), 0,76 si permanent.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "p. 106",
+     "citation": "« 1,06 point de PIB en 2ème année »"
+    },
+    {
+     "t": "Comparing fiscal multipliers across models and countries in Europe (Kilponen et al.), ECB Working Paper 1760",
+     "org": "BCE / SEBC (modèle France : EAGLE, Banque de France)",
+     "date": "2015-03",
+     "u": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1760.en.pdf",
+     "ou": "Table 1 (PDF p. 34)",
+     "citation": "France « -0.92 -0.71 »"
+    }
+   ],
+   "note": "",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_depense_generique_a3",
+   "quoi": "Dépense publique composite, effet sur le PIB",
+   "valeur": 1.03,
+   "lo": null,
+   "hi": null,
+   "horizon": "année 3",
+   "conditions": "Mésange, taux réels constants.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "p. 106",
+     "citation": "« 1,03 point de PIB en 3ème année »"
+    }
+   ],
+   "note": "Source unique.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "non_revu"
+  },
+  {
+   "id": "mult_depense_generique_lt",
+   "quoi": "Dépense publique composite / consommation publique, effet LT",
+   "valeur": 0.16,
+   "lo": null,
+   "hi": 0.82,
+   "horizon": "long terme",
+   "conditions": "Mésange LT 0,16 ; EA-BDF à 10 ans 0,13 (VBE) et 0,16 (MCE), choc temporaire ; Kilponen/EAGLE France baisse permanente de consommation publique compensée par impôt forfaitaire : 0,82 en LT (0,97/0,76 en années 1/2) ; si compensée par baisse de l'impôt sur le travail, le signe s'inverse (+1,28 en LT pour une BAISSE de dépense).",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "tableau p. 106",
+     "citation": "« PIB en volume 0,78 1,06 1,03 0,86 0,53 0,16 »"
+    },
+    {
+     "t": "The EA-BDF Model and Government Spending Multipliers in a Monetary Union (Aldama et al.), Banque de France WP 883",
+     "org": "Banque de France",
+     "date": "2022-09",
+     "u": "https://publications.banque-france.fr/sites/default/files/medias/documents/wp-883.pdf",
+     "ou": "note 36, p. 55",
+     "citation": "« multiplier in the MCE case is higher than in the VBE, 0.16 and 0.13 »"
+    },
+    {
+     "t": "Comparing fiscal multipliers across models and countries in Europe (Kilponen et al.), ECB Working Paper 1760",
+     "org": "BCE / SEBC (modèle France : EAGLE, Banque de France)",
+     "date": "2015-03",
+     "u": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1760.en.pdf",
+     "ou": "Table 5 (PDF p. 38)",
+     "citation": "France « -0.97 -0.76 -0.82 -0.82 -0.48 1.28 »"
+    }
+   ],
+   "note": "Le long terme dépend du mode de financement (impôt forfaitaire vs impôt distorsif) : désaccord majeur entre modèles. Vérification : la valeur 0,13 (Banque de France, document de travail 883) est à 10 ans, pas à long terme ; retirée de la fourchette.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "corrige"
+  },
+  {
+   "id": "mult_emploi_public",
+   "quoi": "Hausse permanente de l'emploi public de 1 pt de PIB",
+   "valeur": 1.2,
+   "lo": 1.0,
+   "hi": 1.3,
+   "horizon": "année 1 (5 ans : 0,6 ; 10 ans : 0,2 en milieu de cycle)",
+   "conditions": "e-mod (OFCE), politique monétaire exogène, change fixe. Bas de cycle 1,3/1,2/1,5 ; haut de cycle 1,0/0,0/-1,1 (1 an/5 ans/10 ans). Mésange n'isole pas cet instrument (inclus à 25 % dans la dépense composite, moitié emploi, moitié salaire par tête).",
+   "sources": [
+    {
+     "t": "Petit précis de politique budgétaire par tous les temps. Les multiplicateurs budgétaires au cours du cycle (Creel, Heyer, Plane), Revue de l'OFCE n°116",
+     "org": "OFCE (modèle e-mod.fr)",
+     "date": "2011-01",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "Tableau 5, p. 83",
+     "citation": "Emploi public « Milieu de cycle 1,2 0,6 0,2 »",
+     "archive": true
+    }
+   ],
+   "note": "Source française unique pour cet instrument ; ancienne (2011).",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_prestations",
+   "quoi": "Hausse permanente des prestations sociales en espèces (retraites, indexation, chômage)",
+   "valeur": 1.0,
+   "lo": 0.3,
+   "hi": 1.0,
+   "horizon": "année 1 (e-mod : 5 ans 0,9 ; 10 ans 0,5 en milieu de cycle)",
+   "conditions": "e-mod : 1,0 quelle que soit la position dans le cycle à 1 an ; à 10 ans 1,3 (bas), 0,5 (milieu), 0,0 (haut). QUEST (Espagne) : transferts aux ménages 0,3 à l'impact, 0,5 si ciblés sur ménages contraints. OFCE 2026 : hausse de la prime d'activité « proche de 1 ».",
+   "sources": [
+    {
+     "t": "Petit précis de politique budgétaire par tous les temps. Les multiplicateurs budgétaires au cours du cycle (Creel, Heyer, Plane), Revue de l'OFCE n°116",
+     "org": "OFCE (modèle e-mod.fr)",
+     "date": "2011-01",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "Tableau 5, p. 83",
+     "citation": "Prestations sociales « Milieu de cycle 1,0 0,9 0,5 »",
+     "archive": true
+    },
+    {
+     "t": "Fiscal consolidations and spillovers in the Euro area periphery and core (in 't Veld), European Economy Economic Papers 506",
+     "org": "Commission européenne (QUEST)",
+     "date": "2013-10",
+     "u": "https://ec.europa.eu/economy_finance/publications/economic_paper/2013/pdf/ecp506_en.pdf",
+     "ou": "p. 20",
+     "citation": "« Transfers to households have an impact multiplier of 0.3 »"
+    },
+    {
+     "t": "Budget 2026 : un déficit de compromis (Madec, Plane, Sampognaro), OFCE Policy brief 154",
+     "org": "OFCE",
+     "date": "2026-02",
+     "u": "https://ofce.github.io/budget2026/OFCEpbrief154.pdf",
+     "ou": "p. 5",
+     "citation": "« ont des multi-plicateurs élevés (proche de 1) »"
+    }
+   ],
+   "note": "Écart fort e-mod (1,0) / QUEST (0,3) : effets de richesse anticipés et part de ménages contraints. Mésange : pas de variante isolée ; les prestations en espèces (46 %) expliquent le profil lent de la dépense composite.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_tva",
+   "quoi": "Hausse de la TVA de 1 % du PIB ex ante (effet négatif sur le PIB ; signe inversé pour une baisse)",
+   "valeur": -0.32,
+   "lo": -1.4,
+   "hi": -0.0,
+   "horizon": "année 1",
+   "conditions": "Mésange (taux réels constants) : -0,32. Kilponen/EAGLE France (taxe à la consommation) : -0,14 temporaire, -0,18 ZLB, -0,18 permanente. e-mod, baisse de TVA : +0,8 milieu, +1,2 bas, +1,1 haut de cycle. QUEST (Espagne) : 0,2–0,4. OCDE : 0,0–1,4 (moyenne 0,5).",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "§4.1.5, tableau p. 113",
+     "citation": "« PIB en volume -0,32 -0,66 -0,72 -0,81 -0,78 -0,70 »"
+    },
+    {
+     "t": "Comparing fiscal multipliers across models and countries in Europe (Kilponen et al.), ECB Working Paper 1760",
+     "org": "BCE / SEBC (modèle France : EAGLE, Banque de France)",
+     "date": "2015-03",
+     "u": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1760.en.pdf",
+     "ou": "Tables 4 et 6 (PDF p. 37 et 39)",
+     "citation": "France « -0.14 -0.23 -0.18 -0.29 »"
+    },
+    {
+     "t": "Petit précis de politique budgétaire par tous les temps. Les multiplicateurs budgétaires au cours du cycle (Creel, Heyer, Plane), Revue de l'OFCE n°116",
+     "org": "OFCE (modèle e-mod.fr)",
+     "date": "2011-01",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "Tableau 5, p. 83",
+     "citation": "TVA « Milieu de cycle 0,8 1,0 0,5 »",
+     "archive": true
+    },
+    {
+     "t": "Fiscal consolidations and spillovers in the Euro area periphery and core (in 't Veld), European Economy Economic Papers 506",
+     "org": "Commission européenne (QUEST)",
+     "date": "2013-10",
+     "u": "https://ec.europa.eu/economy_finance/publications/economic_paper/2013/pdf/ecp506_en.pdf",
+     "ou": "p. 20",
+     "citation": "« consumption, labour and corporate profit taxes have smaller impact multipliers, between 0.2-0.4 »"
+    },
+    {
+     "t": "Méta-analyse OCDE (Perspectives économiques intermédiaires, mars 2009, ch. 3) reproduite au tableau 2 de Creel, Heyer, Plane (Revue de l'OFCE 116)",
+     "org": "OCDE (via OFCE)",
+     "date": "2009-03",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "Tableau 2, p. 68",
+     "citation": "« TVA 0,0 1,4 0,5 »",
+     "archive": true
+    }
+   ],
+   "note": "Désaccord net : e-mod (0,8 à un an) bien au-dessus de Mésange (0,32) et d'EAGLE (0,14).",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_tva_a2_lt",
+   "quoi": "Hausse de la TVA de 1 % du PIB, années 2, 3, 5 et long terme",
+   "valeur": -0.66,
+   "lo": -0.81,
+   "hi": -0.23,
+   "horizon": "année 2 (année 3 : -0,72 ; 5 ans : -0,81 ; LT : -0,70)",
+   "conditions": "Mésange. EAGLE France permanente (impôt forfaitaire ajusté) : -0,36 an 2, -0,61 LT ; si l'impôt sur le travail baisse en contrepartie : +1,31 en LT.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "tableau p. 113",
+     "citation": "« -0,32 -0,66 -0,72 -0,81 -0,78 -0,70 »"
+    },
+    {
+     "t": "Comparing fiscal multipliers across models and countries in Europe (Kilponen et al.), ECB Working Paper 1760",
+     "org": "BCE / SEBC (modèle France : EAGLE, Banque de France)",
+     "date": "2015-03",
+     "u": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1760.en.pdf",
+     "ou": "Tables 6-7 (PDF p. 39-40)",
+     "citation": "France « -0.18 -0.36 -0.61 »"
+    }
+   ],
+   "note": "",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_tva_sociale",
+   "quoi": "Substitution ex ante de 1 pt de PIB de TVA à 1 pt de PIB de cotisations employeurs (« TVA sociale »)",
+   "valeur": -0.11,
+   "lo": null,
+   "hi": null,
+   "horizon": "année 1 (an 2 -0,11 ; an 3 +0,04 ; 5 ans +0,16 ; LT +1,03)",
+   "conditions": "Mésange, taux réels constants.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "Encadré 15, p. 114 (PDF p. 115)",
+     "citation": "« PIB en volume -0,11 -0,11 0,04 0,16 0,52 1,03 »"
+    }
+   ],
+   "note": "Utile pour les programmes qui financent une baisse de cotisations par la TVA.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "non_revu"
+  },
+  {
+   "id": "mult_taxe_carbone_energie",
+   "quoi": "Hausse de la taxe carbone (fiscalité énergétique) de 1 pt de PIB",
+   "valeur": -0.51,
+   "lo": null,
+   "hi": null,
+   "horizon": "année 1 (an 2 -0,80 ; an 3 -0,75 ; 5 ans -0,87 ; LT -0,68)",
+   "conditions": "Mésange, taux réels constants, sans redistribution des recettes.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "§4.1.8, tableau p. 120 (PDF p. 121)",
+     "citation": "« PIB en volume -0,51 -0,80 -0,75 -0,87 -0,86 -0,68 »"
+    }
+   ],
+   "note": "Seule source chiffrée pour un impôt sur l'énergie ; proxy possible pour la TVA sur l'énergie (aucune variante TVA énergie trouvée).",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "non_revu"
+  },
+  {
+   "id": "mult_ir",
+   "quoi": "Baisse de l'impôt sur le revenu de 1 % du PIB ex ante (hausse : signe inverse)",
+   "valeur": 0.41,
+   "lo": 0.13,
+   "hi": 1.1,
+   "horizon": "année 1",
+   "conditions": "Mésange (taux réels constants) : 0,41. Kilponen/EAGLE France (impôt sur le revenu du travail, hausse) : 0,13 temporaire (0,09 ZLB), 0,28 permanent. OCDE : 0,1–1,1 (moyenne 0,5).",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "§4.1.7, tableau p. 117 (PDF p. 118) ; Tableau 12 p. 119",
+     "citation": "« PIB en volume 0,41 0,83 0,88 0,81 0,87 1,05 »"
+    },
+    {
+     "t": "Comparing fiscal multipliers across models and countries in Europe (Kilponen et al.), ECB Working Paper 1760",
+     "org": "BCE / SEBC (modèle France : EAGLE, Banque de France)",
+     "date": "2015-03",
+     "u": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1760.en.pdf",
+     "ou": "Tables 2 et 6 (PDF p. 35 et 39)",
+     "citation": "France « -0.13 -0.30 -0.09 -0.25 »"
+    },
+    {
+     "t": "Méta-analyse OCDE (Perspectives économiques intermédiaires, mars 2009, ch. 3) reproduite au tableau 2 de Creel, Heyer, Plane (Revue de l'OFCE 116)",
+     "org": "OCDE (via OFCE)",
+     "date": "2009-03",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "Tableau 2, p. 68",
+     "citation": "« Impôts sur le revenu 0,1 1,1 0,5 »",
+     "archive": true
+    }
+   ],
+   "note": "",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_ir_a2_lt",
+   "quoi": "Baisse de l'IR, années 2 à long terme",
+   "valeur": 0.83,
+   "lo": 0.3,
+   "hi": 1.24,
+   "horizon": "année 2 (an 3 0,88 ; 5 ans 0,81 ; LT 1,05)",
+   "conditions": "Mésange ; EAGLE France hausse permanente : -0,63 an 2, -1,24 LT (impôt forfaitaire ajusté).",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "tableau p. 117",
+     "citation": "« 0,41 0,83 0,88 0,81 0,87 1,05 »"
+    },
+    {
+     "t": "Comparing fiscal multipliers across models and countries in Europe (Kilponen et al.), ECB Working Paper 1760",
+     "org": "BCE / SEBC (modèle France : EAGLE, Banque de France)",
+     "date": "2015-03",
+     "u": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1760.en.pdf",
+     "ou": "Table 6 (PDF p. 39)",
+     "citation": "France « -0.28 -0.63 -1.24 »"
+    }
+   ],
+   "note": "",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_csg",
+   "quoi": "Baisse de la CSG de 1 % du PIB ex ante",
+   "valeur": 0.41,
+   "lo": 0.41,
+   "hi": 1.1,
+   "horizon": "année 1 (an 2 0,84 ; an 3 0,90 ; 5 ans 0,81 ; LT 0,88)",
+   "conditions": "Mésange : 0,41. e-mod : 1,1 milieu et bas de cycle, 1,0 haut ; à 10 ans 0,4 (milieu), 1,2 (bas), -0,1 (haut).",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "§4.1.6, tableau p. 115 (PDF p. 116)",
+     "citation": "« PIB en volume 0,41 0,84 0,90 0,81 0,80 0,88 »"
+    },
+    {
+     "t": "Petit précis de politique budgétaire par tous les temps. Les multiplicateurs budgétaires au cours du cycle (Creel, Heyer, Plane), Revue de l'OFCE n°116",
+     "org": "OFCE (modèle e-mod.fr)",
+     "date": "2011-01",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "Tableau 5, p. 83",
+     "citation": "CSG « Milieu de cycle 1,1 0,8 0,4 »",
+     "archive": true
+    }
+   ],
+   "note": "Mésange traite la CSG comme portant aussi sur les revenus du capital ; pas de variante séparée CSG capital.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_cotis_salaries",
+   "quoi": "Baisse des cotisations sociales salariés de 1 % du PIB ex ante",
+   "valeur": 0.38,
+   "lo": 0.38,
+   "hi": 1.0,
+   "horizon": "année 1 (an 2 0,72 ; an 3 0,75 ; 5 ans 0,77 ; LT 1,74)",
+   "conditions": "Mésange : 0,38. e-mod : 0,9 milieu (1,0 bas, 0,9 haut) ; à 10 ans 0,5 milieu.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "§4.1.4, tableau p. 110 (PDF p. 111)",
+     "citation": "« PIB en volume 0,38 0,72 0,75 0,77 1,14 1,74 »"
+    },
+    {
+     "t": "Petit précis de politique budgétaire par tous les temps. Les multiplicateurs budgétaires au cours du cycle (Creel, Heyer, Plane), Revue de l'OFCE n°116",
+     "org": "OFCE (modèle e-mod.fr)",
+     "date": "2011-01",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "Tableau 5, p. 83",
+     "citation": "Cotisations salariées « Milieu de cycle 0,9 0,8 0,5 »",
+     "archive": true
+    }
+   ],
+   "note": "",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "non_revu"
+  },
+  {
+   "id": "mult_cotis_employeurs",
+   "quoi": "Baisse uniforme des cotisations sociales employeurs de 1 % du PIB ex ante",
+   "valeur": 0.2,
+   "lo": 0.2,
+   "hi": 1.0,
+   "horizon": "année 1 (an 2 0,55 ; an 3 0,76 ; 5 ans 0,97 ; LT 1,73)",
+   "conditions": "Mésange (choc d'offre pur, coût du travail) : 0,20 la 1re année, montée progressive. e-mod : 0,9 milieu (1,0 bas, 0,8 haut) ; 5 ans 1,3 ; 10 ans 0,7 (milieu), 1,5 (bas), 0,1 (haut).",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "§4.1.3, tableau p. 107 (PDF p. 108)",
+     "citation": "« PIB en volume 0,20 0,55 0,76 0,97 1,29 1,73 »"
+    },
+    {
+     "t": "Petit précis de politique budgétaire par tous les temps. Les multiplicateurs budgétaires au cours du cycle (Creel, Heyer, Plane), Revue de l'OFCE n°116",
+     "org": "OFCE (modèle e-mod.fr)",
+     "date": "2011-01",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "Tableau 5, p. 83",
+     "citation": "Cotisations employeurs « Milieu de cycle 0,9 1,3 0,7 »",
+     "archive": true
+    }
+   ],
+   "note": "Profils opposés : faible à court terme et fort à long terme dans Mésange ; l'inverse partiel dans e-mod à 10 ans.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_allegements_bas_salaires",
+   "quoi": "Baisse des cotisations employeurs de 1 % du PIB ciblée sur les salaires entre 1 et 1,6 Smic",
+   "valeur": 0.21,
+   "lo": null,
+   "hi": null,
+   "horizon": "année 1 (an 2 0,58 ; an 3 0,80 ; 5 ans 1,05 ; 10 ans 1,43 ; LT 1,84)",
+   "conditions": "Mésange, taux réels constants ; +101 000 emplois la 1re année, ~470 000 à LT. Variante présentée « à visée illustrative uniquement ».",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "Encadré 14, p. 109 (PDF p. 110)",
+     "citation": "« PIB (en volume et en %) 0,21 0,58 0,80 1,05 1,43 1,84 »"
+    }
+   ],
+   "note": "Source unique.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "non_revu"
+  },
+  {
+   "id": "mult_is_capital",
+   "quoi": "Hausse de l'impôt sur les revenus du capital / bénéfices (proxy IS, PFU, CSG capital)",
+   "valeur": -0.36,
+   "lo": null,
+   "hi": null,
+   "horizon": "année 1, hausse permanente (année 2 : -0,61 ; long terme : -2,43 à -3,27)",
+   "conditions": "Kilponen/EAGLE France, hausse TEMPORAIRE (2 ans) du taux d'impôt sur le capital : -0,07 (an 2 -0,08 ; ZLB -0,09/-0,10). Hausse PERMANENTE : -0,36 an 1, -0,61 an 2. QUEST (Espagne, impôt sur les bénéfices) : 0,2–0,4. OCDE (IS) : 0,1–0,5 (moyenne 0,3). Mésange 2017 : aucune variante IS ; le taux de marge n'y influe pas sur l'investissement.",
+   "sources": [
+    {
+     "t": "Comparing fiscal multipliers across models and countries in Europe (Kilponen et al.), ECB Working Paper 1760",
+     "org": "BCE / SEBC (modèle France : EAGLE, Banque de France)",
+     "date": "2015-03",
+     "u": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1760.en.pdf",
+     "ou": "Tables 3 et 6 (PDF p. 36 et 39)",
+     "citation": "France « -0.07 -0.08 -0.09 -0.10 »"
+    },
+    {
+     "t": "Fiscal consolidations and spillovers in the Euro area periphery and core (in 't Veld), European Economy Economic Papers 506",
+     "org": "Commission européenne (QUEST)",
+     "date": "2013-10",
+     "u": "https://ec.europa.eu/economy_finance/publications/economic_paper/2013/pdf/ecp506_en.pdf",
+     "ou": "p. 20",
+     "citation": "« between 0.2-0.4 »"
+    },
+    {
+     "t": "Méta-analyse OCDE (Perspectives économiques intermédiaires, mars 2009, ch. 3) reproduite au tableau 2 de Creel, Heyer, Plane (Revue de l'OFCE 116)",
+     "org": "OCDE (via OFCE)",
+     "date": "2009-03",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "Tableau 2, p. 68",
+     "citation": "« Impôts sur les sociétés 0,1 0,5 0,3 »",
+     "archive": true
+    },
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "note 77, p. 105",
+     "citation": "« le taux de marge ne joue pas sur les décisions d'investissement »"
+    }
+   ],
+   "note": "Le choix entre temporaire et permanent change l'ordre de grandeur. Aucune source française ne distingue IS, surtaxe, superprofits, PFU ou CSG capital. Vérification : -0,07 était le choc temporaire (tableau 3) ; le choc permanent est au tableau 6. Modèle EAGLE calibré sur la France, pas FR-BDF.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "corrige"
+  },
+  {
+   "id": "mult_is_capital_lt",
+   "quoi": "Hausse permanente de l'impôt sur les revenus du capital, effet de long terme",
+   "valeur": -3.27,
+   "lo": -3.27,
+   "hi": -2.43,
+   "horizon": "long terme",
+   "conditions": "Kilponen/EAGLE France : -3,27 si l'impôt forfaitaire s'ajuste, -2,43 si l'impôt sur le travail baisse en contrepartie. QUEST : effet LT négatif (« l'impôt le plus distorsif »), non chiffré dans le texte.",
+   "sources": [
+    {
+     "t": "Comparing fiscal multipliers across models and countries in Europe (Kilponen et al.), ECB Working Paper 1760",
+     "org": "BCE / SEBC (modèle France : EAGLE, Banque de France)",
+     "date": "2015-03",
+     "u": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1760.en.pdf",
+     "ou": "Tables 6 et 7 (PDF p. 39-40)",
+     "citation": "France « -0.36 -0.61 -3.27 »"
+    },
+    {
+     "t": "Fiscal consolidations and spillovers in the Euro area periphery and core (in 't Veld), European Economy Economic Papers 506",
+     "org": "Commission européenne (QUEST)",
+     "date": "2013-10",
+     "u": "https://ec.europa.eu/economy_finance/publications/economic_paper/2013/pdf/ecp506_en.pdf",
+     "ou": "p. 20",
+     "citation": "« negative for corporate profit taxes (the most distortionary tax) »"
+    }
+   ],
+   "note": "Modèle DSGE à agents optimisateurs ; fort effet d'accumulation du capital. Aucun modèle macroéconométrique français (Mésange, e-mod) ne fournit de contrepoint chiffré.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_defense",
+   "quoi": "Hausse des dépenses de défense",
+   "valeur": 1.0,
+   "lo": 0.6,
+   "hi": 1.2,
+   "horizon": "cumulé à 3 ans (empirique)",
+   "conditions": "FMI : multiplicateur moyen « proche de 1 », plus faible si armement importé ou hausse temporaire, plus élevé si financement par déficit et dépenses courantes. Littérature citée : 0,6–1,2. Simulation FSGM (pays UE, 80 % consommation / 20 % investissement, 20 % de contenu importé, politique monétaire réactive) : ~0,8 à moyen terme, ~0,7 si compensation budgétaire immédiate. OFCE 2026 (France) : « proche de 1 ».",
+   "sources": [
+    {
+     "t": "World Economic Outlook avril 2026, ch. 2 « Defense Spending: Macroeconomic Consequences and Trade-Offs »",
+     "org": "FMI",
+     "date": "2026-04",
+     "u": "https://www.imf.org/-/media/files/publications/weo/2026/april/english/ch2.pdf",
+     "ou": "p. 49 et Figure 2.10, p. 59-60",
+     "citation": "« The multiplier of defense spending is close to 1 »"
+    },
+    {
+     "t": "World Economic Outlook avril 2026, ch. 2 « Defense Spending: Macroeconomic Consequences and Trade-Offs »",
+     "org": "FMI",
+     "date": "2026-04",
+     "u": "https://www.imf.org/-/media/files/publications/weo/2026/april/english/ch2.pdf",
+     "ou": "p. 61",
+     "citation": "« medium-term fiscal multiplier slightly below unity (at about 0.8) »"
+    },
+    {
+     "t": "Budget 2026 : un déficit de compromis (Madec, Plane, Sampognaro), OFCE Policy brief 154",
+     "org": "OFCE",
+     "date": "2026-02",
+     "u": "https://ofce.github.io/budget2026/OFCEpbrief154.pdf",
+     "ou": "p. 5",
+     "citation": "défense et prime d'activité « proche de 1 »"
+    }
+   ],
+   "note": "Pas d'estimation propre à la France hors OFCE (qualitative). Un WP FMI 2026/053 (UE, 1,3 à l'impact, ~1,9 à 2-3 ans) n'a pu être lu qu'en résumé automatique : non retenu.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "confirme"
+  },
+  {
+   "id": "mult_agrege_dsa_ce",
+   "quoi": "Multiplicateur unique utilisé par la Commission dans ses projections de dette",
+   "valeur": 0.75,
+   "lo": null,
+   "hi": null,
+   "horizon": "année de la mesure (effet sur la croissance la même année)",
+   "conditions": "Hypothèse de calibrage DSA, symétrique (consolidation et relance), non différenciée par instrument (réf. Carnot et de Castro 2015).",
+   "sources": [
+    {
+     "t": "Debt Sustainability Monitor 2022, Institutional Paper 199",
+     "org": "Commission européenne",
+     "date": "2023-04",
+     "u": "https://economy-finance.ec.europa.eu/system/files/2023-06/ip199_en_UPD.pdf",
+     "ou": "Encadré méthodologique, p. 24 (PDF p. 26)",
+     "citation": "« via a fiscal multiplier of 0.75 »"
+    }
+   ],
+   "note": "Utile comme valeur par défaut neutre pour une mesure non classée.",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "non_revu"
+  },
+  {
+   "id": "mult_agrege_ofce_consolidation",
+   "quoi": "Multiplicateurs retenus par l'OFCE dans ses trajectoires de finances publiques",
+   "valeur": 0.75,
+   "lo": 0.5,
+   "hi": 1.0,
+   "horizon": "court terme",
+   "conditions": "0,5 pour les hausses de recettes, 1 pour les baisses de dépenses (moyenne 0,75 pour un ajustement équilibré) ; 0,5 « raisonnable » pour une consolidation pluriannuelle annoncée. Budget 2026 : +0,3 pt de PIB de prélèvements obligatoires → -0,1 pt de croissance.",
+   "sources": [
+    {
+     "t": "Quelles trajectoires pour les finances publiques de la France ? (Heyer, Plane, Ragot, Sampognaro, Timbeau), OFCE Document de travail 13",
+     "org": "OFCE",
+     "date": "2025-07",
+     "u": "https://ofce.github.io/psmt/PB.pdf",
+     "ou": "p. 19-21 (PDF p. 20 et 22)",
+     "citation": "« avec un multiplicateur respectif à 0,5 et 1 »"
+    },
+    {
+     "t": "Budget 2026 : un déficit de compromis (Madec, Plane, Sampognaro), OFCE Policy brief 154",
+     "org": "OFCE",
+     "date": "2026-02",
+     "u": "https://ofce.github.io/budget2026/OFCEpbrief154.pdf",
+     "ou": "p. 5",
+     "citation": "« réduire la croissance de -0,1 point en 2026 »"
+    }
+   ],
+   "note": "",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "non_revu"
+  },
+  {
+   "id": "mult_agrege_crise_bl",
+   "quoi": "Écart entre multiplicateurs effectifs et supposés pendant la crise (Blanchard-Leigh)",
+   "valeur": 1.095,
+   "lo": 0.4,
+   "hi": 1.1,
+   "horizon": "2010-2011 (2 ans)",
+   "unite": "pt de PIB d'erreur de prévision par pt de PIB de consolidation (β)",
+   "conditions": "Économies avancées européennes, borne zéro des taux ; multiplicateurs supposés ~0,5, donc effectifs « substantiellement au-dessus de 1 » ; β plus faible (~0,4) pour les prévisions 2011-2012, proche de 0 avant la crise. Côté dépenses 1,244, côté recettes 0,865 (Tableau 5).",
+   "sources": [
+    {
+     "t": "Growth Forecast Errors and Fiscal Multipliers (Blanchard, Leigh), IMF WP/13/1",
+     "org": "FMI",
+     "date": "2013-01",
+     "u": "https://www.imf.org/external/pubs/ft/wp/2013/wp1301.pdf",
+     "ou": "Tableau 1 (PDF p. 28) ; p. 8 et p. 18-19",
+     "citation": "« the estimate of β ... is –1.095 »"
+    }
+   ],
+   "note": "Ce n'est pas un multiplicateur mais un écart ; à utiliser seulement pour un scénario de stress où la BCE est contrainte.",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "non_revu"
+  },
+  {
+   "id": "cond_politique_monetaire",
+   "quoi": "Effet de la politique monétaire contrainte (taux bloqués / ZLB) sur le multiplicateur de consommation publique, France",
+   "valeur": 1.05,
+   "lo": 0.92,
+   "hi": 1.05,
+   "horizon": "année 1",
+   "conditions": "EAGLE France : 0,92 avec règle de Taylor contre 1,05 avec taux fixes 2 ans. EA-BDF : multiplicateurs « toujours plus élevés » si la politique monétaire est contrainte ; plus faibles sous ciblage du niveau des prix. Mésange : variantes à taux réels constants, donc proches d'une BCE passive pour un choc France seule ; avec des taux endogènes, la dépense serait « davantage évincée ».",
+   "sources": [
+    {
+     "t": "Comparing fiscal multipliers across models and countries in Europe (Kilponen et al.), ECB Working Paper 1760",
+     "org": "BCE / SEBC (modèle France : EAGLE, Banque de France)",
+     "date": "2015-03",
+     "u": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1760.en.pdf",
+     "ou": "Table 1 (PDF p. 34)",
+     "citation": "France « -0.92 -0.71 -1.05 -0.87 »"
+    },
+    {
+     "t": "The EA-BDF Model and Government Spending Multipliers in a Monetary Union (Aldama et al.), Banque de France WP 883",
+     "org": "Banque de France",
+     "date": "2022-09",
+     "u": "https://publications.banque-france.fr/sites/default/files/medias/documents/wp-883.pdf",
+     "ou": "résumé non technique, p. ii",
+     "citation": "« fiscal multipliers are always higher when monetary policy is transitorily constrained »"
+    },
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Bardaji et al.), Document de travail Insee G2017/04 – DG Trésor 2017/04",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/g2017-04.pdf",
+     "ou": "p. 103",
+     "citation": "« le choc de demande serait encore davantage évincé »"
+    }
+   ],
+   "note": "",
+   "unite": "pts de PIB pour 1 pt de PIB d'impulsion",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "non_revu"
+  },
+  {
+   "id": "cond_cycle_ofce",
+   "quoi": "Effet de la position dans le cycle (e-mod) : écart de PIB à 10 ans entre bas et haut de cycle",
+   "valeur": 1.5,
+   "lo": 1.2,
+   "hi": 2.6,
+   "horizon": "10 ans",
+   "conditions": "Écart de production -2 (bas) contre +2 (haut). À 1 an, écarts entre instruments de 0 à 0,3 pt ; à 10 ans, écart bas/haut de cycle de 1,2 pt (cotisations salariées) à 2,6 pts (emploi public), 1,3–1,7 pour les autres. Politique monétaire exogène.",
+   "unite": "pts de PIB d'écart d'effet (bas moins haut de cycle)",
+   "sources": [
+    {
+     "t": "Petit précis de politique budgétaire par tous les temps. Les multiplicateurs budgétaires au cours du cycle (Creel, Heyer, Plane), Revue de l'OFCE n°116",
+     "org": "OFCE (modèle e-mod.fr)",
+     "date": "2011-01",
+     "u": "https://web.archive.org/web/2020id_/https://www.ofce.sciences-po.fr/pdf/revue/2-116.pdf",
+     "ou": "p. 82 et Tableau 5 p. 83",
+     "citation": "« vont de 1,2 point de PIB (cotisations sociales salariées) à 2,6 »",
+     "archive": true
+    }
+   ],
+   "note": "valeur 1,5 = CSG (1,2 - (-0,1)) lue au Tableau 5 ; la fourchette est celle du texte.",
+   "verifie": true,
+   "theme": "multiplicateurs",
+   "controle": "non_revu"
+  },
+  {
+   "id": "okun_ecart",
+   "quoi": "Loi d'Okun en écarts : écart de chômage (pt) pour 1 % d'écart de production, France",
+   "valeur": -0.367,
+   "lo": -0.4,
+   "hi": -0.335,
+   "unite": "pt de chômage par % d'écart de production",
+   "horizon": "contemporain, données annuelles",
+   "conditions": "1980-2011, OCDE, tendances par filtre HP (lambda=100). lo = sous-période 1980-1994, hi = 1995-2011 (différence non significative, p=0,47). Erreur-type 0,044.",
+   "sources": [
+    {
+     "t": "Okun's Law: Fit at Fifty? (NBER WP 18668 / FMI WP 13/10)",
+     "org": "NBER (Ball, Leigh, Loungani)",
+     "date": "2013-01",
+     "u": "https://www.nber.org/papers/w18668.pdf",
+     "ou": "Tableau 5 et Tableau 6 (p. 28-29 du PDF)",
+     "citation": "France -0.367*** (0.0441) 32 0.681 0.394"
+    }
+   ],
+   "verifie": true,
+   "note": "Seule estimation institutionnelle (FMI) trouvée et lue avec un chiffre pour la France. Ancienne (s'arrête en 2011). Aucune estimation Okun récente publiée par Insee, BdF, Trésor, OCDE ou CE trouvée. Vérification : document de travail NBER 18668, tableau 5 p. 28.",
+   "theme": "travail",
+   "controle": "corrige"
+  },
+  {
+   "id": "okun_implicite_mesange",
+   "quoi": "Rapport chômage / PIB implicite dans les variantes de demande du modèle Mésange (Insee-DG Trésor)",
+   "valeur": -0.6,
+   "lo": -0.69,
+   "hi": -0.29,
+   "unite": "pt de chômage par % de PIB en écart au compte central (ratio calculé par nous)",
+   "horizon": "1 an : -0,29 (invest. public) / -0,46 (dépense générique) ; 2 ans : -0,60 / -0,58 ; 3 ans : -0,69 / -0,65",
+   "conditions": "Variante +1 pt de PIB d'investissement public : PIB +1,31/+1,38/+1,22 %, chômage -0,38/-0,83/-0,84 pt à 1/2/3 ans. Variante +1 pt de PIB de dépense publique générique : PIB +0,78/+1,06/+1,03 %, chômage -0,36/-0,61/-0,67 pt. Taux d'intérêt réels inchangés.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Cahiers DG Trésor 2017-04)",
+     "org": "DG Trésor / Insee",
+     "date": "2017-05",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/88381f48-797c-4e76-8f03-ef78d0bff99e/files/1c29ff21-585d-488b-8f4b-497540e9fc62",
+     "ou": "§4.1.1 et §4.1.2, tableaux p. 102 et p. 104 (Cahiers)",
+     "citation": "Taux de chômage -0,38 -0,83 -0,84 -0,38 -0,19 -0,06"
+    }
+   ],
+   "verifie": true,
+   "note": "Les valeurs du tableau sont lues ; le ratio est notre division, pas un chiffre publié. Montre le délai : le chômage réagit à moitié la 1re année, pleinement en 2-3 ans, puis l'effet s'éteint (éviction par les prix). Vérification : bornes remises dans l'ordre.",
+   "theme": "travail",
+   "controle": "confirme"
+  },
+  {
+   "id": "emploi_va_insee",
+   "quoi": "Équation d'emploi Insee (branches marchandes non agricoles) : élasticité de court terme de l'emploi à la valeur ajoutée et vitesse de rappel",
+   "valeur": 0.2,
+   "lo": null,
+   "hi": null,
+   "unite": "élasticité trimestrielle de court terme ; force de rappel 0,11 par trimestre ; terme autorégressif 0,31 ; élasticité de long terme = 1 (imposée)",
+   "horizon": "trimestriel ; rappel de 11 % de l'écart à la cible chaque trimestre",
+   "conditions": "Modèle à correction d'erreur, 1990T1-2015T4, R2a = 0,78. Emploi en écart aux politiques de l'emploi (pe).",
+   "sources": [
+    {
+     "t": "Ralentissement de la productivité du travail et prévision de l'emploi en France (Note de conjoncture, dossier)",
+     "org": "Insee",
+     "date": "2018-06",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/3567821/062018_ndc_dossier1.pdf",
+     "ou": "encadré, p. 38",
+     "citation": "–0,22+ 0,11 (log(vat – 1 ) – log(emploit – 1 – pet – 1 ))"
+    }
+   ],
+   "verifie": true,
+   "note": "Donne le 'cycle de productivité' : l'emploi ne suit le PIB qu'avec retard. Version publiée la plus récente trouvée (2018) ; l'Insee a pu réestimer depuis sans publier.",
+   "theme": "travail",
+   "controle": "non_revu"
+  },
+  {
+   "id": "nawru_ce",
+   "quoi": "Chômage structurel (NAWRU) France, Commission européenne",
+   "valeur": 7.28,
+   "lo": 7.16,
+   "hi": 7.4,
+   "unite": "% de la population active",
+   "horizon": "2026 (2025 : 7,40 ; 2027 : 7,16)",
+   "conditions": "Millésime prévisions de printemps 2026 (AMECO 21 mai 2026, mise à jour 3 juin). Prochain millésime : prévisions d'automne, 17 novembre 2026.",
+   "sources": [
+    {
+     "t": "AMECO, série ZNAWRU France",
+     "org": "Commission européenne",
+     "date": "2026-05",
+     "u": "https://ec.europa.eu/economy_finance/ameco/wq/series?fullVariable=1.0.0.0.ZNAWRU&countries=FRA&years=2025,2026,2027&defaultCountries=0&Lastyear=0&Yearorder=ASC",
+     "ou": "série ZNAWRU",
+     "citation": "NAWRU (Non-Accelerating Wage Rate of Unemployment) Rate 7.402 7.28 7.161"
+    }
+   ],
+   "verifie": true,
+   "note": "lo/hi = 2027 et 2025, pas une fourchette d'incertitude. Le chômage observé (8,3 % au T2 2026) dépasse le NAWRU d'environ 1 pt.",
+   "theme": "travail",
+   "controle": "confirme"
+  },
+  {
+   "id": "chomage_structurel_bdf",
+   "quoi": "Chômage structurel Banque de France : niveau 2025 et baisse 2015-2025",
+   "valeur": 7.8,
+   "lo": null,
+   "hi": null,
+   "unite": "% (niveau 2025, lu sur graphique) ; baisse de 1,3 pt entre 2015 et 2025",
+   "horizon": "2025",
+   "conditions": "Méthode : filtres statistiques, équations économétriques et évaluations de réformes (annexe 2).",
+   "sources": [
+    {
+     "t": "Les réformes du marché du travail et la baisse du chômage structurel en France : rétrospective 2015-2025 (Bulletin 264/1)",
+     "org": "Banque de France",
+     "date": "2026-05",
+     "u": "https://www.banque-france.fr/system/files/2026-05/BDF264-1_Ch%C3%B4mage-structurel_web.pdf",
+     "ou": "p. 2 (texte) et graphique p. 3",
+     "citation": "le taux de chômage structurel aurait reculé d'environ 1,3 point entre 2015 et 2025"
+    }
+   ],
+   "verifie": false,
+   "note": "La baisse de 1,3 pt est vérifiée. Le niveau 7,8 % est lu sur le graphique (étiquettes de fin 7,8 et 7,7, chômage observé 2025 = 7,7 %) : l'attribution de 7,8 au structurel est une déduction, pas un chiffre écrit dans le texte.",
+   "theme": "travail",
+   "controle": "non_revu"
+  },
+  {
+   "id": "phillips_salaires_insee",
+   "quoi": "Courbe de Phillips des salaires : effet d'un point de chômage sur la croissance des salaires nominaux",
+   "valeur": -0.246,
+   "lo": -0.274,
+   "hi": -0.21,
+   "unite": "pt de croissance TRIMESTRIELLE du salaire par pt de chômage",
+   "horizon": "court terme (équation trimestrielle)",
+   "conditions": "1975T2-2018T2, ensemble. Sous-périodes : 1975-1991 -0,261 ; 1994-2007 -0,210 ; 2010-2018 -0,214. Par secteur : industrie -0,254, services -0,274. Indexation sur l'inflation passée 0,562 sur 1975-2018 mais non significative après 1994 (0,090 sur 2010-2018).",
+   "sources": [
+    {
+     "t": "Les déterminants de la dynamique des salaires en France : approches macro et sectorielles par la courbe de Phillips (Document de travail 2024-20)",
+     "org": "Insee (A. Moutaabbid)",
+     "date": "2024-09",
+     "u": "https://insee.fr/fr/statistiques/fichier/version-html/8257485/DT2024-20.pdf",
+     "ou": "p. 22-23 et Tableau 4 (§3.2)",
+     "citation": "Une hausse de 1 point du taux de chômage diminue la croissance des salaires de 0,246 point"
+    }
+   ],
+   "verifie": true,
+   "note": "Courbe aplatie depuis 1994, mais toujours présente. Le DT cite aussi le FMI (2017) pour les pays avancés : -0,3 à -0,4. Vérification : la variable expliquée est trimestrielle ; l'équivalent annuel est ambigu (variable de chômage notée « *0,01 ») et ne doit pas être déduit par simple multiplication.",
+   "theme": "travail",
+   "controle": "corrige"
+  },
+  {
+   "id": "ws_mesange",
+   "quoi": "Équation de salaire WS du modèle Mésange : semi-élasticité de long terme du salaire au taux de chômage",
+   "valeur": -0.018,
+   "lo": -0.02,
+   "hi": -0.015,
+   "unite": "variation relative du salaire (en log) par pt de chômage (-0,018 = -1,8 % par point)",
+   "horizon": "long terme",
+   "conditions": "Qualifiés -0,020, non qualifiés -0,015, agrégé -0,018 (version 2010 : -0,023). 1989T1-2014T4. Le salaire des non-qualifiés dépend aussi du Smic réel (coefficient de long terme 0,48 contre 0,12 pour les qualifiés).",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Cahiers DG Trésor 2017-04)",
+     "org": "DG Trésor / Insee",
+     "date": "2017-05",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/88381f48-797c-4e76-8f03-ef78d0bff99e/files/1c29ff21-585d-488b-8f4b-497540e9fc62",
+     "ou": "§3, équations de salaire, p. 61-62 (Cahiers)",
+     "citation": "agrégé −0,018 (pondérée par la part dans l'emploi) contre une valeur de −0,023"
+    }
+   ],
+   "verifie": true,
+   "note": "Niveau de salaire, pas taux de croissance : à ne pas confondre avec la pente de Phillips de l'Insee. Le modèle FR-BDF réestimé (2026) aurait une courbe de Phillips des salaires 'plus plate', mais son PDF ne s'ouvre pas (403).",
+   "theme": "travail",
+   "controle": "confirme"
+  },
+  {
+   "id": "elasticite_emploi_cout_mesange",
+   "quoi": "Élasticité de long terme de l'emploi marchand à son coût réel (Mésange)",
+   "valeur": -0.44,
+   "lo": null,
+   "hi": -0.48,
+   "unite": "élasticité",
+   "horizon": "long terme",
+   "conditions": "Version 2017 (version 2010 : 0,48). Emploi exprimé en unités de travail efficace.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés",
+     "org": "DG Trésor / Insee",
+     "date": "2017-05",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/88381f48-797c-4e76-8f03-ef78d0bff99e/files/1c29ff21-585d-488b-8f4b-497540e9fc62",
+     "ou": "§3, équation d'emploi (p. 42 du PDF)",
+     "citation": "L'élasticité de l'emploi à son coût estimée est de 0,44"
+    }
+   ],
+   "verifie": true,
+   "note": "Moyenne sur toute l'échelle des salaires ; au niveau du Smic, les rapports d'experts retiennent plus (voir elasticite_emploi_cout_smic).",
+   "theme": "travail",
+   "controle": "non_revu"
+  },
+  {
+   "id": "elasticite_emploi_cout_smic",
+   "quoi": "Élasticité de l'emploi à son coût au niveau du Smic (sert pour les allègements et pour une hausse du Smic)",
+   "valeur": -0.6,
+   "lo": -0.9,
+   "hi": -0.3,
+   "unite": "élasticité ; décroît jusqu'à 2 Smic puis reste constante",
+   "horizon": "long terme",
+   "conditions": "Bozio-Wasmer : -0,6 retenu (entre -0,3, compatible avec les évaluations ex post du CICE, et -0,9, valeur des années 2000) ; -0,4 à -0,5 pour les plus de 25 ans ; -0,8 à -1,5 pour les moins de 25 ans. Groupe d'experts Smic 2025 : -0,6 à -0,9 (central -0,8).",
+   "sources": [
+    {
+     "t": "Les politiques d'exonérations de cotisations sociales : une inflexion nécessaire (rapport Bozio-Wasmer)",
+     "org": "Mission Bozio-Wasmer (France Stratégie)",
+     "date": "2024-10",
+     "u": "https://vie-publique.fr/files/rapport/pdf/295596.pdf",
+     "ou": "chap. 4, p. 175-176",
+     "citation": "une élasticité maximale de -0,6 au niveau du Smic"
+    },
+    {
+     "t": "Salaire minimum interprofessionnel de croissance – Rapport du Groupe d'experts",
+     "org": "Groupe d'experts sur le Smic",
+     "date": "2025-11",
+     "u": "https://www.vie-publique.fr/files/rapport/pdf/301429_0.pdf",
+     "ou": "chap. 4, p. 146 et 149",
+     "citation": "nous retenons des élasticités comprises entre -0,6 et -0,9"
+    }
+   ],
+   "verifie": true,
+   "note": "Hausse du Smic : aucune institution ne publie un nombre d'emplois perdus pour +1 % de Smic. Il faut appliquer cette élasticité au coût du travail au Smic (2,2 millions de salariés concernés, 12,4 % du privé hors agriculture, au 1er nov. 2024). Les allègements étant exprimés en part du Smic, une hausse du Smic renchérit le coût de ces emplois à peu près dans la même proportion : c'est notre lecture, pas un chiffre publié.",
+   "theme": "travail",
+   "controle": "confirme"
+  },
+  {
+   "id": "cotisations_employeurs_emplois_par_Md",
+   "quoi": "Emplois pour 1 Md€ de hausse des cotisations employeurs (de baisse, signe inverse), non ciblée",
+   "valeur": -12.0,
+   "lo": -13.8,
+   "hi": 0,
+   "unite": "milliers d'emplois par Md€ (calculé : effet publié pour 6 Md€ / 6)",
+   "horizon": "5 ans pour la valeur centrale ; long terme pour les bornes",
+   "conditions": "Choc permanent +6 Md€ (0,2 pt de PIB). Emploi à 1/2/5/10/20 ans/LT : Trésor-Mésange -19/-47/-72/-73/-77/-83 milliers ; OFCE -12/-36/-55/-45/-22/0 ; I-MIP -38/-24/-18/-17/-16/-17. Chômage à 5 ans : +0,26 / +0,16 / +0,03 pt. Soit à 5 ans : Trésor -12,0, OFCE -9,2, I-MIP -3,0 milliers par Md€ ; à long terme : Trésor -13,8, OFCE 0, I-MIP -2,8.",
+   "sources": [
+    {
+     "t": "Simulations macroéconomiques des leviers d'équilibre (COR, séance du 26 mars 2026, doc. 2)",
+     "org": "COR (DG Trésor, OFCE, I-MIP)",
+     "date": "2026-03",
+     "u": "https://www.cor-retraites.fr/sites/default/files/2026-03/Doc_02_Simul%20macro%C3%A9co%20leviers%20d%27%C3%A9quilibre.pdf",
+     "ou": "Tableau 1, p. 3",
+     "citation": "DG Trésor -19 -47 -72 -73 -77 -83"
+    },
+    {
+     "t": "DG Trésor : présentation du modèle et des résultats (COR, doc. 3)",
+     "org": "DG Trésor",
+     "date": "2026-03",
+     "u": "https://www.cor-retraites.fr/sites/default/files/2026-03/Doc_03_DG%20Tr%C3%A9sor_mod%C3%A8le_r%C3%A9sultats.pdf",
+     "ou": "Tableau 2, p. 4",
+     "citation": "Impact d'une hausse des cotisations sociales employeurs de 6 Md€"
+    }
+   ],
+   "verifie": true,
+   "note": "Désaccord net entre les modèles, surtout à long terme : l'OFCE suppose que la hausse finit répercutée entièrement sur les salaires (effet nul). Les cotisations salariales (+6 Md€) donnent chez le Trésor -60 milliers à 5 ans et -83 à long terme.",
+   "theme": "travail",
+   "controle": "confirme"
+  },
+  {
+   "id": "allegements_bas_salaires_emplois_par_Md",
+   "quoi": "Emplois soutenus par les allègements généraux de cotisations (effet moyen, scénario de suppression totale)",
+   "valeur": 14.3,
+   "lo": 14.3,
+   "hi": 24.9,
+   "unite": "milliers d'emplois par Md€ (calculé)",
+   "horizon": "long terme",
+   "conditions": "Bozio-Wasmer : supprimer tout détruirait 980 000 ETP pour 68,3 Md€ d'exonérations générales en 2022 (14,3 milliers/Md€). Groupe d'experts Smic 2025 : 1,3 à 1,9 million d'emplois pour 76,8 Md€ en 2025 (16,9 à 24,9 milliers/Md€), dont 70 % sous 1,2 Smic.",
+   "sources": [
+    {
+     "t": "Les politiques d'exonérations de cotisations sociales : une inflexion nécessaire",
+     "org": "Mission Bozio-Wasmer",
+     "date": "2024-10",
+     "u": "https://vie-publique.fr/files/rapport/pdf/295596.pdf",
+     "ou": "p. 68 ; montant 2022 p. 66 (tableau 1.1)",
+     "citation": "à la destruction de 980 000 ETP"
+    },
+    {
+     "t": "Rapport du Groupe d'experts sur le Smic 2025",
+     "org": "Groupe d'experts sur le Smic",
+     "date": "2025-11",
+     "u": "https://www.vie-publique.fr/files/rapport/pdf/301429_0.pdf",
+     "ou": "chap. 4, p. 150 et tableau IV.1 p. 152",
+     "citation": "une perte comprise entre 1,3 et 1,9 million d'emploi"
+    }
+   ],
+   "verifie": true,
+   "note": "Effet MOYEN d'une suppression totale, pas l'effet marginal d'un Md€ ajouté ou retiré. Variantes marginales publiées : (a) Bozio-Wasmer, supprimer les bandeaux sans recyclage : 12,1 Md€ d'économie statique pour -61 000 ETP, soit environ -5 milliers/Md€ (p. 30) ; (b) Mésange (Trésor), lissage des allègements jusqu'à 3,5 Smic financé par TVA/CSG : 24 Md€ pour +260 000 ETP et +0,9 pt de PIB à long terme (~10,8 milliers/Md€), variante 'pro-pente' : 13,3 Md€ pour +100 000 ETP (~7,5 milliers/Md€) (p. 31) ; (c) CICE ex post : environ 100 000 emplois en 2014-2016 pour près d'un point de PIB par an (rapport Smic 2025, p. 145), soit environ 5 milliers/Md€ (notre calcul).",
+   "theme": "travail",
+   "controle": "non_revu"
+  },
+  {
+   "id": "age_aod_plus_1an",
+   "quoi": "Relèvement d'un an de l'âge d'ouverture des droits à la retraite (64 → 65 ans), mise en place immédiate",
+   "valeur": 210,
+   "lo": 210,
+   "hi": 240,
+   "unite": "milliers d'emplois en plus à long terme ; PIB +0,7 à +0,9 %",
+   "horizon": "long terme (~20 ans) ; à 5 ans : Trésor +142 milliers / PIB +0,5 % ; OFCE +140 / +0,36 % ; I-MIP +172 / +0,44 %",
+   "conditions": "Chômage (écart en pt) : Trésor 0 à tout horizon (statuts gelés, pas de substitution jeunes-seniors) ; OFCE +0,55 (1 an), +0,56 (2 ans), +0,31 (5 ans), 0 (long terme) ; I-MIP -0,15 (1 an), -0,30 (5 ans), -0,40 (long terme). Trésor : élasticité du PIB à l'emploi supposée égale à 1. Emploi sénior issu du modèle Prisme de la Cnav.",
+   "sources": [
+    {
+     "t": "Simulations macroéconomiques des leviers d'équilibre (COR, doc. 2)",
+     "org": "COR (DG Trésor, OFCE, I-MIP)",
+     "date": "2026-03",
+     "u": "https://www.cor-retraites.fr/sites/default/files/2026-03/Doc_02_Simul%20macro%C3%A9co%20leviers%20d%27%C3%A9quilibre.pdf",
+     "ou": "§2.4, Tableau 4, p. 7-8",
+     "citation": "générerait entre 210 000 et 240 000 emplois supplémentaires"
+    },
+    {
+     "t": "DG Trésor : présentation du modèle et des résultats (COR, doc. 3)",
+     "org": "DG Trésor",
+     "date": "2026-03",
+     "u": "https://www.cor-retraites.fr/sites/default/files/2026-03/Doc_03_DG%20Tr%C3%A9sor_mod%C3%A8le_r%C3%A9sultats.pdf",
+     "ou": "Encadré 2 et Tableau 4, p. 5-7 ; annexe p. 8-10",
+     "citation": "+142 000 cotisants à horizon 5 ans et +210 000 cotisants à horizon 20 ans"
+    }
+   ],
+   "verifie": true,
+   "note": "Effet sur le chômage à court terme : désaccord de signe entre modèles. Retour à 62 ou 60 ans : aucun chiffrage institutionnel de l'effet sur l'emploi ou le PIB n'a été trouvé. Inverser ces résultats serait une extrapolation non publiée.",
+   "theme": "travail",
+   "controle": "confirme"
+  },
+  {
+   "id": "reforme_2023_62_64",
+   "quoi": "Réforme des retraites 2023 (62 → 64 ans et accélération de la durée d'assurance) : effet ex ante sur l'emploi et le PIB",
+   "valeur": 300,
+   "lo": null,
+   "hi": null,
+   "unite": "milliers d'emplois de 55-64 ans en plus en 2030 ; taux d'emploi 15-74 ans +0,3 pt (2027) et +0,5 pt (2030) ; PIB +0,7 % (2027) et +1,1 % (2030)",
+   "horizon": "2025 : +100 000 ; 2030 : +300 000",
+   "conditions": "Hypothèse d'élasticité unitaire du PIB à l'emploi à moyen terme ; taux d'emploi des 60-64 ans +6 pts à partir de 2030.",
+   "sources": [
+    {
+     "t": "Étude d'impact du PLFRSS pour 2023 (projet de loi n° 760)",
+     "org": "Gouvernement (DG Trésor, modèle comptable)",
+     "date": "2023-01",
+     "u": "https://www.assemblee-nationale.fr/dyn/16/textes/l16b0760_etude-impact.pdf",
+     "ou": "article 7, 'impacts économiques' (≈ p. 40 du texte extrait)",
+     "citation": "le surcroît de PIB associé serait de 0,7 % en 2027, et de 1,1 % en 2030"
+    }
+   ],
+   "verifie": true,
+   "note": "Chiffrage du gouvernement porteur de la réforme : c'est une évaluation ex ante, pas un bilan.",
+   "theme": "travail",
+   "controle": "non_revu"
+  },
+  {
+   "id": "age_expost_reforme_2010",
+   "quoi": "Effet ex post du recul de l'âge de 60 à 62 ans (réforme 2010) sur la situation à 60 ans",
+   "valeur": 17,
+   "lo": 16,
+   "hi": 17,
+   "unite": "pts de probabilité d'être en emploi à 60 ans (hommes 17, femmes 16) ; chômage +7 (hommes) et +6 (femmes) pts",
+   "horizon": "générations 1951-1953",
+   "conditions": "Activité à 60 ans +24 pts (hommes) et +22 pts (femmes). Inactivité hors retraite +3 pts pour les hommes seulement. 'Effet horizon' : les situations proches de 60 ans se prolongent.",
+   "sources": [
+    {
+     "t": "Report de l'âge de la retraite et taux d'emploi des seniors : le cas de la réforme de 2010 (Insee Analyses n° 30)",
+     "org": "Insee (Dubois, Koubi)",
+     "date": "2017-01",
+     "u": "https://www.insee.fr/fr/statistiques/2546882",
+     "ou": "page de synthèse",
+     "citation": "la probabilité d'occuper un emploi a progressé de 17 points pour les hommes"
+    }
+   ],
+   "verifie": true,
+   "note": "Effet micro sur les personnes concernées, pas sur l'emploi total. La BdF note aussi que les recul d'âge 'figent' les situations et font monter le nombre de chômeurs seniors.",
+   "theme": "travail",
+   "controle": "non_revu"
+  },
+  {
+   "id": "assurance_chomage_reformes",
+   "quoi": "Effet des réformes de l'assurance chômage sur le chômage structurel (BdF) et élasticités comportementales (CAE)",
+   "valeur": -0.6,
+   "lo": null,
+   "hi": null,
+   "unite": "pt de chômage structurel (cumul 2021 + 2023)",
+   "horizon": "durable",
+   "conditions": "BdF : réforme 2021 -0,2 pt (taux d'emploi +0,1 pt) ; réforme 2023 (contracyclicité, durée maximale -25 %) -0,4 pt (taux d'emploi +0,3 pt). CAE : -10 % de durée d'indemnisation donne -2,7 % de durée de chômage et -1,2 % d'entrées au chômage ; -1 % de montant donne +0,3 % de sorties vers l'emploi et -0,1 % d'entrées.",
+   "sources": [
+    {
+     "t": "Les réformes du marché du travail et la baisse du chômage structurel en France : rétrospective 2015-2025",
+     "org": "Banque de France",
+     "date": "2026-05",
+     "u": "https://www.banque-france.fr/system/files/2026-05/BDF264-1_Ch%C3%B4mage-structurel_web.pdf",
+     "ou": "tableau p. 4 ; p. 5-6",
+     "citation": "Assurance chômage (2021, 2023) … ‑ 0,6"
+    },
+    {
+     "t": "Mesurer l'efficacité de l'assurance chômage (Note du CAE n° 90)",
+     "org": "CAE",
+     "date": "2026-04",
+     "u": "https://cae-eco.fr/static/pdf/CAE090_Assurance-chomage_260414.pdf",
+     "ou": "p. 9-10",
+     "citation": "lorsque la durée d'indemnisation diminue de 10 %, la durée de chômage diminue de 2,7 %"
+    }
+   ],
+   "verifie": true,
+   "note": "La BdF précise que les évaluations ex post (Dares, Unédic 2025) ne chiffrent pas l'effet macro sur l'emploi. Ce sont des estimations ex ante, à additionner avec prudence. Le chiffre gouvernemental de '100 000 à 150 000 emplois' (réforme 2023) n'a pas été retrouvé dans une source primaire. Vérification : -0,6 est le cumul ; -0,2 (réforme 2021) et -0,4 (réforme 2023) sont les deux composantes, pas une fourchette.",
+   "theme": "travail",
+   "controle": "corrige"
+  },
+  {
+   "id": "autres_reformes_bdf",
+   "quoi": "Autres réformes 2015-2025 : contribution au chômage structurel (BdF)",
+   "valeur": -0.4,
+   "lo": -0.4,
+   "hi": -0.1,
+   "unite": "pt de chômage structurel",
+   "horizon": "durable",
+   "conditions": "Paquet 'pro-emploi' 2017-2018 (ordonnances, contrôle des chômeurs, formation) : -0,4 pt (taux d'emploi +0,3 pt). Aides à l'apprentissage : -0,1 pt (taux d'emploi +0,5 pt). Vieillissement : -0,1 ; résidu : -0,1. Total -1,3, dont -1,1 attribué aux réformes.",
+   "sources": [
+    {
+     "t": "Bulletin de la Banque de France 264/1",
+     "org": "Banque de France",
+     "date": "2026-05",
+     "u": "https://www.banque-france.fr/system/files/2026-05/BDF264-1_Ch%C3%B4mage-structurel_web.pdf",
+     "ou": "tableau p. 4",
+     "citation": "Sous‑total des réformes ‑ 1,1"
+    }
+   ],
+   "verifie": true,
+   "note": "",
+   "theme": "travail",
+   "controle": "non_revu"
+  },
+  {
+   "id": "choc_population_active_mesange",
+   "quoi": "Hausse permanente de 1 % de la population active (choc d'offre de travail) dans Mésange",
+   "valeur": 0.81,
+   "lo": 0.03,
+   "hi": 0.81,
+   "unite": "pt de chômage en écart (1 an : 0,81 ; 2 ans : 0,66 ; 5 ans : 0,32 ; 10 ans : 0,12 ; LT : 0,03) ; PIB +0,23 % à 5 ans, +0,88 % à long terme",
+   "horizon": "1 an à long terme",
+   "conditions": "Emploi salarié marchand +98 milliers à 5 ans, +144 milliers à long terme. Le Trésor juge lui-même ce cadre inadapté à un recul de l'âge de départ (les seniors gardent leur emploi).",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés",
+     "org": "DG Trésor / Insee",
+     "date": "2017-05",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/88381f48-797c-4e76-8f03-ef78d0bff99e/files/1c29ff21-585d-488b-8f4b-497540e9fc62",
+     "ou": "§4.3.2, p. 130-131 (Cahiers)",
+     "citation": "Taux de chômage 0,81 0,66 0,52 0,32 0,12 0,03"
+    }
+   ],
+   "verifie": true,
+   "note": "Utile pour un afflux d'actifs (jeunes, immigration), pas pour l'âge de départ.",
+   "theme": "travail",
+   "controle": "non_revu"
+  },
+  {
+   "id": "croissance_potentielle_2026_2028",
+   "quoi": "Croissance du PIB potentiel de la France, hypothèse du Gouvernement (PSMT 2025-2029, inchangée au PLF 2027)",
+   "valeur": 1.2,
+   "lo": 0.9,
+   "hi": 1.3,
+   "unite": "% par an",
+   "horizon": "2026-2028",
+   "conditions": "lo/hi = min/max des autres institutions dans le tableau 17 du HCFP sur 2026-2028 (FMI 0,9 en 2026 ; Commission et BdF 0,9 en 2028 ; OFCE 1,3 en 2026). Pas de moyenne calculée.",
+   "sources": [
+    {
+     "t": "Avis n°2026-5 relatif aux projets de lois de finances et de financement de la sécurité sociale pour 2027",
+     "org": "Haut Conseil des finances publiques",
+     "date": "2026-10",
+     "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+     "ou": "§120 et tableau 17, p. 40-41",
+     "citation": "inchangée depuis le PSMT, à 1,2 % par an jusqu’en 2028"
+    },
+    {
+     "t": "Rapport économique, social et financier – PLF 2027",
+     "org": "DG Trésor",
+     "date": "2026-10",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/03454e04-445d-4ce6-832b-cff601a11485/files/56839f98-37fc-48d8-b502-81cac5a48cad",
+     "ou": "p. 89 (« Croissance potentielle et scénario de moyen terme »)",
+     "citation": "hypothèse de croissance potentielle de +1,2 % par an jusqu’en 2028"
+    },
+    {
+     "t": "Quelle croissance potentielle en France après la période Covid ? (Bloc-notes Éco n°455, A. Devulder)",
+     "org": "Banque de France",
+     "date": "2026-07",
+     "u": "https://www.banque-france.fr/system/files/2026-07/Billet_455_VF.pdf",
+     "ou": "p. 3",
+     "citation": "l’évaluent entre 0,9 et 1,2 % par an sur les années 2026-2028"
+    }
+   ],
+   "verifie": true,
+   "note": "Le HCFP juge l’estimation gouvernementale « plutôt dans le haut de la fourchette ». Valeurs par institution dans donnees.tableau17_hcfp.",
+   "theme": "croissance",
+   "controle": "confirme"
+  },
+  {
+   "id": "croissance_potentielle_2029_2030",
+   "quoi": "Croissance du PIB potentiel 2029-2030",
+   "valeur": 1.0,
+   "lo": 0.8,
+   "hi": 1.2,
+   "unite": "% par an",
+   "horizon": "2029-2030",
+   "conditions": "Gouvernement 1,0 ; Commission européenne 0,8 ; FMI 1,2 (2029) et 1,1 (2030). Les autres institutions ne publient pas cet horizon.",
+   "sources": [
+    {
+     "t": "Avis n°2026-5 relatif aux projets de lois de finances et de financement de la sécurité sociale pour 2027",
+     "org": "Haut Conseil des finances publiques",
+     "date": "2026-10",
+     "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+     "ou": "§120 et tableau 17, p. 40-41",
+     "citation": "et 1,0 % en 2029 et 2030"
+    }
+   ],
+   "verifie": true,
+   "note": "Au-delà de 2030 (2031-2032) : aucune estimation institutionnelle publiée trouvée ; prolonger 1,0 % est une convention, pas une source.",
+   "theme": "croissance",
+   "controle": "confirme"
+  },
+  {
+   "id": "contrib_capital_potentiel",
+   "quoi": "Contribution du capital à la croissance potentielle (Gouvernement)",
+   "valeur": 0.5,
+   "lo": 0.25,
+   "hi": 0.5,
+   "unite": "point de % par an",
+   "horizon": "2025-2028",
+   "conditions": "RESF 2026 : 0,4/0,5 pt ; RESF 2027 : 0,5 pt. BdF : environ un quart de la croissance potentielle (soit ~0,25-0,3 pt pour 1,0-1,2 %).",
+   "sources": [
+    {
+     "t": "Rapport économique, social et financier – PLF 2027",
+     "org": "DG Trésor",
+     "date": "2026-10",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/03454e04-445d-4ce6-832b-cff601a11485/files/56839f98-37fc-48d8-b502-81cac5a48cad",
+     "ou": "p. 89 et tableau 12 (PDF p. 192)",
+     "citation": "La contribution du capital (0,5 pt par an)"
+    },
+    {
+     "t": "Quelle croissance potentielle en France après la période Covid ? (Bloc-notes Éco n°455, A. Devulder)",
+     "org": "Banque de France",
+     "date": "2026-07",
+     "u": "https://www.banque-france.fr/system/files/2026-07/Billet_455_VF.pdf",
+     "ou": "p. 3",
+     "citation": "par le capital et le travail pour environ un quart chacun"
+    }
+   ],
+   "verifie": true,
+   "note": "Désaccord implicite : le Gouvernement attribue ~0,5 pt au capital, la BdF environ un quart du potentiel (≈0,3 pt). La BdF ne publie pas de chiffre exact. Vérification : la borne 0,4 n'était pas sourcée ; la Banque de France (juillet 2026) suggère environ ¼ de la croissance potentielle, soit ≈ 0,25 pt.",
+   "theme": "croissance",
+   "controle": "confirme"
+  },
+  {
+   "id": "contrib_travail_potentiel",
+   "quoi": "Contribution du facteur travail à la croissance potentielle (Gouvernement)",
+   "valeur": 0.25,
+   "lo": 0.2,
+   "hi": 0.3,
+   "unite": "point de % par an",
+   "horizon": "2025-2028",
+   "conditions": "Le Gouvernement publie une fourchette « 0,2/0,3 » ; la valeur 0,25 n’est que le milieu de cette fourchette publiée. BdF : environ un quart, en baisse avec la démographie.",
+   "sources": [
+    {
+     "t": "Rapport économique, social et financier – PLF 2027",
+     "org": "DG Trésor",
+     "date": "2026-10",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/03454e04-445d-4ce6-832b-cff601a11485/files/56839f98-37fc-48d8-b502-81cac5a48cad",
+     "ou": "p. 89 et tableau 12 (PDF p. 192)",
+     "citation": "Celle du travail (0,2/0,3 pt par an)"
+    },
+    {
+     "t": "Quelle croissance potentielle en France après la période Covid ? (Bloc-notes Éco n°455, A. Devulder)",
+     "org": "Banque de France",
+     "date": "2026-07",
+     "u": "https://www.banque-france.fr/system/files/2026-07/Billet_455_VF.pdf",
+     "ou": "p. 3",
+     "citation": "La contribution du travail tendrait à diminuer du fait du facteur démographique"
+    }
+   ],
+   "verifie": true,
+   "note": "Le HCFP (note 31) signale que la suspension de la réforme des retraites réduirait légèrement le potentiel en 2026-2027, effet non chiffré par le Gouvernement.",
+   "theme": "croissance",
+   "controle": "confirme"
+  },
+  {
+   "id": "contrib_pgf_potentiel",
+   "quoi": "Contribution de la productivité globale des facteurs (PGF) à la croissance potentielle",
+   "valeur": 0.45,
+   "lo": 0.4,
+   "hi": 0.5,
+   "unite": "point de % par an",
+   "horizon": "2025-2028",
+   "conditions": "Fourchette publiée « 0,4/0,5 » (Gouvernement). BdF : environ la moitié de la croissance potentielle.",
+   "sources": [
+    {
+     "t": "Rapport économique, social et financier – PLF 2027",
+     "org": "DG Trésor",
+     "date": "2026-10",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/03454e04-445d-4ce6-832b-cff601a11485/files/56839f98-37fc-48d8-b502-81cac5a48cad",
+     "ou": "p. 89 et tableau 12 (PDF p. 192)",
+     "citation": "productivité globale des facteurs (contribution de 0,4/0,5 pt par an)"
+    },
+    {
+     "t": "Quelle croissance potentielle en France après la période Covid ? (Bloc-notes Éco n°455, A. Devulder)",
+     "org": "Banque de France",
+     "date": "2026-07",
+     "u": "https://www.banque-france.fr/system/files/2026-07/Billet_455_VF.pdf",
+     "ou": "p. 3",
+     "citation": "tirée par la productivité globale des facteurs pour moitié"
+    }
+   ],
+   "verifie": true,
+   "note": "0,45 = milieu de la fourchette publiée, pas une valeur publiée.",
+   "theme": "croissance",
+   "controle": "confirme"
+  },
+  {
+   "id": "ecart_production_2026",
+   "quoi": "Écart de production (output gap) 2026",
+   "valeur": -0.5,
+   "lo": -1.4,
+   "hi": -0.5,
+   "unite": "point de PIB potentiel",
+   "horizon": "2026",
+   "conditions": "Gouvernement −0,5 ; FMI −0,5 ; OCDE −0,8 ; Rexecode −0,8 ; Commission −0,9 ; OFCE −1,4.",
+   "sources": [
+    {
+     "t": "Avis n°2026-5 relatif aux projets de lois de finances et de financement de la sécurité sociale pour 2027",
+     "org": "Haut Conseil des finances publiques",
+     "date": "2026-10",
+     "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+     "ou": "§121 et tableau 17, p. 40-41",
+     "citation": "L’écart de production est estimé à −0,5 point de PIB potentiel en 2026"
+    }
+   ],
+   "verifie": true,
+   "note": "2025 : Gouvernement +0,2 (révisé après la révision des comptes 2023-2024) contre −0,6 Commission, −0,4 OFCE/OCDE.",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "ecart_production_2027",
+   "quoi": "Écart de production 2027",
+   "valeur": -0.7,
+   "lo": -1.9,
+   "hi": -0.6,
+   "unite": "point de PIB potentiel",
+   "horizon": "2027",
+   "conditions": "Gouvernement −0,7 ; FMI −0,6 ; Commission −0,8 ; OCDE −1,0 ; Rexecode −1,1 ; OFCE −1,9. Gouvernement : −0,8 en 2028, −0,7 en 2029, −0,5 en 2030.",
+   "sources": [
+    {
+     "t": "Avis n°2026-5 relatif aux projets de lois de finances et de financement de la sécurité sociale pour 2027",
+     "org": "Haut Conseil des finances publiques",
+     "date": "2026-10",
+     "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+     "ou": "tableau 17, p. 41",
+     "citation": "Écart de production (en pt de PIB potentiel)"
+    },
+    {
+     "t": "Rapport économique, social et financier – PLF 2027",
+     "org": "DG Trésor",
+     "date": "2026-10",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/03454e04-445d-4ce6-832b-cff601a11485/files/56839f98-37fc-48d8-b502-81cac5a48cad",
+     "ou": "p. 89",
+     "citation": "qui atteindrait −0,7 pt en 2027"
+    }
+   ],
+   "verifie": true,
+   "note": "Commission : retour à 0,0 en 2030 ; FMI −0,4 en 2030.",
+   "theme": "croissance",
+   "controle": "confirme"
+  },
+  {
+   "id": "part_travail_fonction_production",
+   "quoi": "Élasticité de la production au travail (part du travail) dans la fonction de production Cobb-Douglas de la méthode commune UE",
+   "valeur": 0.65,
+   "lo": null,
+   "hi": null,
+   "unite": "sans dimension (capital = 0,35)",
+   "horizon": "structurel",
+   "conditions": "Valeur imposée à tous les États membres dans la méthode approuvée par le Conseil Ecofin.",
+   "sources": [
+    {
+     "t": "The production function methodology for calculating potential growth rates & output gaps (Economic Papers 535, Havik et al.)",
+     "org": "Commission européenne (DG ECFIN)",
+     "date": "2014-11",
+     "u": "https://ec.europa.eu/economy_finance/publications/economic_paper/2014/pdf/ecp535_en.pdf",
+     "ou": "note 5, PDF p. 13",
+     "citation": "conventional mean values of 0.65 & 0.35, the latter are imposed"
+    }
+   ],
+   "verifie": true,
+   "note": "Le Trésor et la BdF ne publient pas leur paramètre dans les documents lus. Mésange utilise une CES (élasticité de substitution non retrouvée dans le texte extrait).",
+   "theme": "croissance",
+   "controle": "confirme"
+  },
+  {
+   "id": "elasticite_investissement_cout_capital",
+   "quoi": "Élasticité de l'investissement des entreprises au coût d'usage du capital (Mésange) ; le coût du capital inclut IS et impôts de production (variable fisca)",
+   "valeur": -0.44,
+   "lo": null,
+   "hi": null,
+   "unite": "élasticité long terme",
+   "horizon": "long terme",
+   "conditions": "Calibrée égale à l'élasticité de la demande de travail à son coût (0,44 en valeur absolue). Canal par lequel une baisse d'IS ou d'impôts de production joue dans Mésange.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Document de travail G2017/04)",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/G2017-04.pdf",
+     "ou": "§2.3, p. 38-39 et p. 41",
+     "citation": "l’élasticité de la demande de travail à son coût (0,44 en valeur absolue)"
+    }
+   ],
+   "verifie": true,
+   "note": "La valeur 0,44 de l'investissement est déduite de la phrase « calibrée à la valeur de » + 0,44 (coupure de page). Emploi qualifié 0,33, non qualifié 0,68. Modèle de 2017, pas de version publique plus récente trouvée.",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "ecart_productivite_tendance_precovid",
+   "quoi": "Écart de la productivité du travail par tête à sa tendance pré-Covid (2010-2019)",
+   "valeur": -4.3,
+   "lo": -5.9,
+   "hi": -2.4,
+   "unite": "% (niveau)",
+   "horizon": "2025 (CNP : T1 2024)",
+   "conditions": "Insee 2026 (cité par le Trésor) : −4,3 pts ensemble de l'économie en 2025 ; −4,0 branches marchandes ; −2,4 salariés marchands corrigés des alternants. CNP 2025 : −5,9 % au T1 2024, −5,6 % au T4 2024. BdF : perte durable de productivité potentielle marchande de 2,7 %.",
+   "sources": [
+    {
+     "t": "Trésor-Éco n°404 – Marché du travail : quelles marges pour retrouver le chemin du plein emploi ?",
+     "org": "DG Trésor",
+     "date": "2026-09",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/58cdabc0-da6b-44df-9e9d-df575577c925/files/c3af2a2a-ba99-4330-9384-6a2122bf4852",
+     "ou": "p. 1-2 et note 1",
+     "citation": "4,3 points sous sa tendance pré-crise sanitaire"
+    },
+    {
+     "t": "Cinquième rapport du Conseil national de productivité – synthèse",
+     "org": "Conseil national de productivité (France Stratégie)",
+     "date": "2025-04",
+     "u": "https://www.strategie-plan.gouv.fr/files/files/Publications/2025/2025-04-14%20-%20CNP%20-%20Rapport/CNP-2025-Cinqui%C3%A8me-Rapport-Synth%C3%A8se-15avril.pdf",
+     "ou": "PDF p. 5",
+     "citation": "Il s’élève désormais à 5,9 %"
+    },
+    {
+     "t": "Quelle croissance potentielle en France après la période Covid ? (Bloc-notes Éco n°455, A. Devulder)",
+     "org": "Banque de France",
+     "date": "2026-07",
+     "u": "https://www.banque-france.fr/system/files/2026-07/Billet_455_VF.pdf",
+     "ou": "p. 2-3, tableau 1",
+     "citation": "une baisse de la productivité potentielle marchande de 2,7 %"
+    }
+   ],
+   "verifie": true,
+   "note": "Concepts différents, ne pas additionner. La publication Insee 2026 n'a pas été ouverte directement (citée par le Trésor). Le CNP explique les deux tiers par l'apprentissage, la composition de la main-d'œuvre et la rétention.",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "productivite_niveau_vs_2019_ofce",
+   "quoi": "Productivité des salariés marchands non agricoles par rapport à son niveau de 2019 (après révision des comptes de mai 2026)",
+   "valeur": 2.6,
+   "lo": null,
+   "hi": null,
+   "unite": "% au-dessus du niveau 2019",
+   "horizon": "T1 2026",
+   "conditions": "Comparaison au niveau de 2019, pas à la tendance : ce n'est pas contradictoire avec les écarts à la tendance.",
+   "sources": [
+    {
+     "t": "Productivité française : la fin du décrochage ? (E. Heyer, blog OFCE)",
+     "org": "OFCE",
+     "date": "2026-06",
+     "u": "https://www.ofce.fr/blog2024/fr/2026/20260603_EH/20260603_EH.fr.pdf",
+     "ou": "PDF p. 6",
+     "citation": "elle dépasse désormais de 2,6 % son niveau de 2019"
+    }
+   ],
+   "verifie": true,
+   "note": "L'OFCE estime que le décrochage relatif à l'Europe est résorbé depuis la mi-2024 ; la BdF et le Trésor gardent un décrochage durable. Désaccord à signaler.",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "tendance_productivite_lt",
+   "quoi": "Croissance tendancielle de long terme de la productivité des salariés marchands non agricoles",
+   "valeur": 0.9,
+   "lo": null,
+   "hi": 1.8,
+   "unite": "% par an",
+   "horizon": "long terme",
+   "conditions": "0,9 = tendance OFCE ; 1,8 = rythme observé depuis 2023 après révisions (pas une tendance).",
+   "sources": [
+    {
+     "t": "Productivité française : la fin du décrochage ? (E. Heyer, blog OFCE)",
+     "org": "OFCE",
+     "date": "2026-06",
+     "u": "https://www.ofce.fr/blog2024/fr/2026/20260603_EH/20260603_EH.fr.pdf",
+     "ou": "PDF p. 6",
+     "citation": "supérieur à sa tendance de long terme estimée à +0,9 %"
+    }
+   ],
+   "verifie": true,
+   "note": "Prévisions gouvernementales de productivité (ensemble de l'économie, par tête) : 0,7 % en 2025, 0,4 % en 2026, 0,9 % en 2027 (RESF 2027, tableau 11).",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "invest_public_effet_empirique",
+   "quoi": "Effet sur le PIB d'une hausse imprévue de l'investissement public de 1 point de PIB (économies avancées, estimation empirique)",
+   "valeur": 1.5,
+   "lo": 0.7,
+   "hi": 2.6,
+   "unite": "% du niveau de PIB après 4 ans",
+   "horizon": "année 0 : +0,4 % ; 4 ans : +1,5 %",
+   "conditions": "Pays à forte efficience de l'investissement public : 0,8 % / 2,6 % ; faible efficience : 0,2 % / 0,7 %. Échantillon 17 pays OCDE depuis 1985.",
+   "sources": [
+    {
+     "t": "The Macroeconomic Effects of Public Investment: Evidence from Advanced Economies (WP/15/95, Abiad, Furceri, Topalova) – version de travail du chapitre 3 du WEO d'octobre 2014",
+     "org": "FMI",
+     "date": "2015-05",
+     "u": "https://infrastructuregovern.imf.org/content/dam/PIMA/Knowledge-Hub/Publications/pubdocuments/The%20Macroeconomic%20Effects%20of%20Public%20Investment%20Evidence%20from%20Advanced%20Economies.pdf",
+     "ou": "p. 10 et p. 13",
+     "citation": "the level of real output is 1.5 percent higher"
+    },
+    {
+     "t": "The Macroeconomic Effects of Public Investment: Evidence from Advanced Economies (WP/15/95, Abiad, Furceri, Topalova) – version de travail du chapitre 3 du WEO d'octobre 2014",
+     "org": "FMI",
+     "date": "2015-05",
+     "u": "https://infrastructuregovern.imf.org/content/dam/PIMA/Knowledge-Hub/Publications/pubdocuments/The%20Macroeconomic%20Effects%20of%20Public%20Investment%20Evidence%20from%20Advanced%20Economies.pdf",
+     "ou": "p. 10",
+     "citation": "increases the level of output by about 0.4 percent"
+    }
+   ],
+   "verifie": true,
+   "note": "Le PDF du chapitre 3 du WEO d'octobre 2014 n'a pas pu être ouvert (accès refusé / HTTP 429) ; chiffres lus dans le document de travail FMI 15/95 des mêmes auteurs. Vérification : 0,7 et 2,6 correspondent aux pays à faible et forte efficience de l'investissement public, pas à un intervalle de confiance.",
+   "theme": "croissance",
+   "controle": "confirme"
+  },
+  {
+   "id": "elasticite_pib_capital_public",
+   "quoi": "Élasticité de long terme de la production au capital public (infrastructures de base installées par l'État central)",
+   "valeur": 0.17,
+   "lo": null,
+   "hi": null,
+   "unite": "élasticité",
+   "horizon": "long terme",
+   "conditions": "Hypothèse de base des simulations FMI, tirée de la méta-analyse Bom et Ligthart (2014). Dans ce modèle, +1 pt de PIB d'investissement public permanent donne +2,5 % de PIB à long terme (taux bas, pleine efficience).",
+   "sources": [
+    {
+     "t": "The Macroeconomic Effects of Public Investment: Evidence from Advanced Economies (WP/15/95, Abiad, Furceri, Topalova) – version de travail du chapitre 3 du WEO d'octobre 2014",
+     "org": "Bom et Ligthart (2014), méta-analyse reprise par le FMI (WP/15/95)",
+     "date": "2015-05",
+     "u": "https://infrastructuregovern.imf.org/content/dam/PIMA/Knowledge-Hub/Publications/pubdocuments/The%20Macroeconomic%20Effects%20of%20Public%20Investment%20Evidence%20from%20Advanced%20Economies.pdf",
+     "ou": "p. 19-20",
+     "citation": "with respect to core infrastructure installed by a national government is 0.17"
+    }
+   ],
+   "verifie": true,
+   "note": "La méta-analyse Bom et Ligthart n'a pas été ouverte. Aucune élasticité propre à la France publiée par le Trésor ou la Commission n'a été trouvée. Vérification : chiffre de Bom et Ligthart, que le FMI reprend comme hypothèse.",
+   "theme": "croissance",
+   "controle": "corrige"
+  },
+  {
+   "id": "invest_public_mesange",
+   "quoi": "Effet sur le PIB d'une hausse permanente non financée de l'investissement public de 1 point de PIB (Mésange, effet de demande seulement)",
+   "valeur": 0.22,
+   "lo": 0.22,
+   "hi": 1.38,
+   "unite": "% du PIB (écart au compte central)",
+   "horizon": "1 an 1,31 ; 2 ans 1,38 ; 5 ans 0,93 ; 10 ans 0,57 ; long terme 0,22",
+   "conditions": "Mésange ne modélise PAS la productivité du capital public : c'est un pur choc de demande. Solde primaire −1 pt de PIB à long terme.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Document de travail G2017/04)",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/G2017-04.pdf",
+     "ou": "§4.1.1, p. 102-103",
+     "citation": "la productivité du stock de capital public n’est pas prise en compte"
+    },
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (Document de travail G2017/04)",
+     "org": "Insee / DG Trésor",
+     "date": "2017-05",
+     "u": "https://www.insee.fr/fr/statistiques/fichier/2848300/G2017-04.pdf",
+     "ou": "§4.1.1, p. 103",
+     "citation": "pour un effet de long terme de 0,22 point de PIB"
+    }
+   ],
+   "verifie": true,
+   "note": "Les chiffres de Mésange (demande) et du FMI (offre via le capital public) sont deux canaux différents. Les additionner exigerait un choix de modélisation, pas une source.",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "cir_additionnalite",
+   "quoi": "Dépense de R&D privée induite par 1 € de crédit d'impôt recherche",
+   "valeur": 1.0,
+   "lo": null,
+   "hi": null,
+   "unite": "€ de R&D par € de CIR",
+   "horizon": "court-moyen terme",
+   "conditions": "Effet significatif pour les entreprises de moins de 250 salariés, mais pas pour les plus grandes (CNEPI 2021).",
+   "sources": [
+    {
+     "t": "Trésor-Éco n°290 – Évaluation de la réforme du Crédit Impôt Recherche de 2008",
+     "org": "DG Trésor",
+     "date": "2021-09",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/7e114a21-4f00-4d51-8e58-523b99ae76aa/files/0ab81d2a-0f49-42d5-8101-85c5a37c019d",
+     "ou": "p. 1",
+     "citation": "un euro de CIR conduisant à un euro de dépense supplémentaire"
+    },
+    {
+     "t": "Trésor-Éco n°290 – Évaluation de la réforme du Crédit Impôt Recherche de 2008",
+     "org": "DG Trésor",
+     "date": "2021-09",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/7e114a21-4f00-4d51-8e58-523b99ae76aa/files/0ab81d2a-0f49-42d5-8101-85c5a37c019d",
+     "ou": "p. 1",
+     "citation": "significatifs pour les entreprises de moins de 250 salariés, mais non"
+    }
+   ],
+   "verifie": true,
+   "note": "Le rapport CNEPI 2021 et le rapport IPP n°33 n'ont pas pu être ouverts (PDF France Stratégie introuvables, PDF IPP en 404) : chiffres repris du Trésor-Éco 290. La fourchette 0,9-1,5 € pour les PME circule (Sénat) mais n'a pas été vérifiée à la source.",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "cir_reforme2008_pib_lt",
+   "quoi": "Effet sur le PIB de la réforme 2008 du CIR (+0,19 pt de PIB de créances), financée par une baisse de dépense publique",
+   "valeur": 0.8,
+   "lo": 0.5,
+   "hi": 1.6,
+   "unite": "point de PIB",
+   "horizon": "long terme (à 15 ans : Mésange 0,5 ; QUEST 0,2 ; NEMESIS 1,1)",
+   "conditions": "Mésange 0,8 ; QUEST 0,5 ; NEMESIS (SEURECO) 1,6 à long terme. Productivité du travail +0,35 % à long terme (0,25 direct + 0,10 diffusion), à partir de la 5e année.",
+   "sources": [
+    {
+     "t": "Trésor-Éco n°290 – Évaluation de la réforme du Crédit Impôt Recherche de 2008",
+     "org": "DG Trésor",
+     "date": "2021-09",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/7e114a21-4f00-4d51-8e58-523b99ae76aa/files/0ab81d2a-0f49-42d5-8101-85c5a37c019d",
+     "ou": "p. 1 et encadré p. 4",
+     "citation": "rehausser l’activité de 0,8 pt de PIB et de créer 60 000 emplois"
+    },
+    {
+     "t": "Trésor-Éco n°290 – Évaluation de la réforme du Crédit Impôt Recherche de 2008",
+     "org": "DG Trésor",
+     "date": "2021-09",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/7e114a21-4f00-4d51-8e58-523b99ae76aa/files/0ab81d2a-0f49-42d5-8101-85c5a37c019d",
+     "ou": "p. 5",
+     "citation": "augmentation de 0,35 % de la productivité du travail"
+    }
+   ],
+   "verifie": true,
+   "note": "Le Trésor souligne une « forte incertitude ». Par € de CIR : ~0,8/0,19 ≈ 4 € de PIB à long terme. C'est un calcul dérivé, à ne pas présenter comme un chiffre publié.",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "rd_ocde_elasticite",
+   "quoi": "Effet sur le PIB d'une hausse de 0,5 pt de PIB de la R&D (OCDE, Global Long-term Model)",
+   "valeur": 0.8,
+   "lo": 0.1,
+   "hi": 0.8,
+   "unite": "% du niveau de PIB",
+   "horizon": "10 ans : 0,1 % ; 25 ans : 0,8 %",
+   "conditions": "Élasticité de l'efficience du travail au stock de connaissances de 0,135 ; dépréciation de 17,5 % (Donselaar et Koopmans 2016).",
+   "sources": [
+    {
+     "t": "OECD Economic Surveys: France 2026",
+     "org": "OCDE",
+     "date": "2026-06",
+     "u": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/oecd-economic-surveys-france-2026_9d9a60a5/e88a1716-en.pdf",
+     "ou": "Box 1.1, tableau 1.7, p. 45",
+     "citation": "Increase R&D expenditure by 0.5 percentage points over 10 years"
+    }
+   ],
+   "verifie": true,
+   "note": "Scénario illustratif qui suppose une mise en œuvre complète et rapide.",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "impots_production_c3s",
+   "quoi": "Coût en PIB de la C3S (taxe sur le chiffre d'affaires) par perte de productivité",
+   "valeur": 0.024,
+   "lo": 0.016,
+   "hi": 0.032,
+   "unite": "% du PIB (perte permanente)",
+   "horizon": "long terme",
+   "conditions": "Pour une taxe rapportant 3,8 Md€ : perte sèche de 10 à 20 % des recettes, pour le seul canal productivité. Perte de productivité 0,01-0,02 %. Exportations +~1 % sans C3S (borne haute). La CFE ne semble pas causer de distorsions majeures.",
+   "sources": [
+    {
+     "t": "Les impôts sur (ou contre) la production – Note du CAE n°53 (P. Martin, A. Trannoy)",
+     "org": "Conseil d'analyse économique",
+     "date": "2019-06",
+     "u": "https://www.cae-eco.fr/staticfiles/pdf/cae-note053.pdf",
+     "ou": "PDF p. 9",
+     "citation": "la perte de PIB est d’environ 0,016 à 0,032 %"
+    },
+    {
+     "t": "Les impôts sur (ou contre) la production – Note du CAE n°53 (P. Martin, A. Trannoy)",
+     "org": "Conseil d'analyse économique",
+     "date": "2019-06",
+     "u": "https://www.cae-eco.fr/staticfiles/pdf/cae-note053.pdf",
+     "ou": "p. 1",
+     "citation": "la CFE ne semble pas causer de distorsions majeures"
+    }
+   ],
+   "verifie": true,
+   "note": "0,024 = milieu de la fourchette publiée, pas une valeur publiée. Pas d'évaluation macro chiffrée trouvée pour la CVAE ni pour la baisse de 10 Md€ de 2021 : le rapport France Stratégie (France Relance, vol. II) ne s'ouvre pas.",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "fiscalite_capital_pfu_ifi_investissement",
+   "quoi": "Effet du PFU et du remplacement de l'ISF par l'IFI (2018) sur l'investissement et les salaires des entreprises",
+   "valeur": 0,
+   "lo": null,
+   "hi": null,
+   "unite": "effet non démontré",
+   "horizon": "2018-2021",
+   "conditions": "Aucun effet détecté sur l'investissement ni les salaires (marge intensive). Aucun effet de l'ISF sur l'activité des ETI. Effet positif mais faible sur les créations d'entreprises dans les secteurs exposés, attribué davantage au PFU et à l'IS. Dividendes nettement en hausse.",
+   "sources": [
+    {
+     "t": "Comité d'évaluation des réformes de la fiscalité du capital – Rapport final, avis du comité",
+     "org": "France Stratégie",
+     "date": "2023-10",
+     "u": "https://www.strategie-plan.gouv.fr/files/files/Publications/Rapport/fs-2023-rapport-isf-quatrieme_rapport_complet_17octobre_avis_0.pdf",
+     "ou": "avis, p. 19 (PDF p. 11)",
+     "citation": "Aucun effet n’a été détecté sur l’investissement et les salaires"
+    },
+    {
+     "t": "Comité d'évaluation des réformes de la fiscalité du capital – Rapport final, avis du comité",
+     "org": "France Stratégie",
+     "date": "2023-10",
+     "u": "https://www.strategie-plan.gouv.fr/files/files/Publications/Rapport/fs-2023-rapport-isf-quatrieme_rapport_complet_17octobre_avis_0.pdf",
+     "ou": "avis, PDF p. 3",
+     "citation": "aucun effet de l’ISF sur l’activité des ETI n’a pu être identifié"
+    }
+   ],
+   "verifie": true,
+   "note": "Valeur 0 = effet non démontré, pas un effet nul prouvé. Le comité note des limites : identification imprécise, effets possiblement différés.",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "impot_societes",
+   "quoi": "Effet de l'impôt sur les sociétés sur l'investissement et le PIB",
+   "valeur": null,
+   "lo": null,
+   "hi": null,
+   "unite": "non chiffré",
+   "horizon": "non chiffré",
+   "conditions": "Le comité d'évaluation de France Stratégie affirme que la littérature identifie un effet de l'IS sur l'investissement et la demande de travail, sans le chiffrer. Dans Mésange, l'IS entre dans le coût du capital (voir elasticite_investissement_cout_capital).",
+   "sources": [
+    {
+     "t": "Comité d'évaluation des réformes de la fiscalité du capital – Rapport final, avis du comité",
+     "org": "France Stratégie",
+     "date": "2023-10",
+     "u": "https://www.strategie-plan.gouv.fr/files/files/Publications/Rapport/fs-2023-rapport-isf-quatrieme_rapport_complet_17octobre_avis_0.pdf",
+     "ou": "avis, p. 19",
+     "citation": "la littérature identifie un effet de la modification de l’impôt sur les sociétés"
+    }
+   ],
+   "verifie": true,
+   "note": "Aucune évaluation ex post publiée par le Trésor ou France Stratégie de la baisse de 33,3 % à 25 % n'a été trouvée.",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "reformes_structurelles_ocde",
+   "quoi": "Effet sur le niveau de PIB de l'ensemble des réformes recommandées par l'OCDE (Étude économique France 2026)",
+   "valeur": 10.5,
+   "lo": 4.6,
+   "hi": 10.5,
+   "unite": "% du niveau de PIB",
+   "horizon": "10 ans : 4,6 % ; 25 ans : 10,5 %",
+   "conditions": "Détail sur 10 ans / 25 ans : emploi des seniors 2,1 / 4,8 ; emploi des jeunes 0,8 / 1,7 ; numérique et IA 0,8 / 0,8 ; réglementation des services 0,5 / 0,7 ; éducation 0,3 / 1,5 ; R&D 0,1 / 0,8. Mise en œuvre complète et rapide supposée.",
+   "sources": [
+    {
+     "t": "OECD Economic Surveys: France 2026",
+     "org": "OCDE",
+     "date": "2026-06",
+     "u": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/oecd-economic-surveys-france-2026_9d9a60a5/e88a1716-en.pdf",
+     "ou": "Box 1.1, tableau 1.7, p. 45",
+     "citation": "Total impact on the level of GDP"
+    }
+   ],
+   "verifie": true,
+   "note": "Simulations illustratives fondées sur des relations historiques entre pays de l'OCDE, et non sur une évaluation française.",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "reformes_retraites_chomage_fmi",
+   "quoi": "Effet des réformes des retraites et de l'assurance chômage depuis 2023 sur le PIB potentiel (FMI, cité par le Trésor)",
+   "valeur": 0.5,
+   "lo": null,
+   "hi": null,
+   "unite": "% du PIB potentiel",
+   "horizon": "moyen terme",
+   "conditions": "Avec chômage structurel ramené sous 7 %. Évaluation antérieure à la suspension de la réforme des retraites ; le HCFP juge cette suspension d'effet temporaire et réversible sur le potentiel.",
+   "sources": [
+    {
+     "t": "Trésor-Éco n°404 – Marché du travail : quelles marges pour retrouver le chemin du plein emploi ?",
+     "org": "DG Trésor",
+     "date": "2026-09",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/58cdabc0-da6b-44df-9e9d-df575577c925/files/c3af2a2a-ba99-4330-9384-6a2122bf4852",
+     "ou": "p. 2",
+     "citation": "relever le PIB potentiel de 0,5 % à moyen terme"
+    },
+    {
+     "t": "Avis n°2026-5 relatif aux projets de lois de finances et de financement de la sécurité sociale pour 2027",
+     "org": "Haut Conseil des finances publiques",
+     "date": "2026-10",
+     "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+     "ou": "note 31, p. 41",
+     "citation": "n’aurait ainsi qu’un effet temporaire et réversible sur le PIB potentiel"
+    }
+   ],
+   "verifie": false,
+   "note": "L'Article IV 2024 du FMI n'a pas été ouvert : chiffre de seconde main, via le Trésor.",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "sequelles_covid_pib_potentiel",
+   "quoi": "Perte durable de niveau du PIB potentiel par rapport à sa tendance pré-Covid",
+   "valeur": -0.7,
+   "lo": null,
+   "hi": null,
+   "unite": "% du niveau",
+   "horizon": "2025-2026",
+   "conditions": "Dont 0,5 pt sur la part non marchande et 0,2 pt sur la part marchande. Le rythme de croissance potentielle pré-crise aurait été retrouvé fin 2025.",
+   "sources": [
+    {
+     "t": "Quelle croissance potentielle en France après la période Covid ? (Bloc-notes Éco n°455, A. Devulder)",
+     "org": "Banque de France",
+     "date": "2026-07",
+     "u": "https://www.banque-france.fr/system/files/2026-07/Billet_455_VF.pdf",
+     "ou": "p. 2",
+     "citation": "reste dans l’ensemble inférieure, d’environ 0,7 %"
+    }
+   ],
+   "verifie": true,
+   "note": "",
+   "theme": "croissance",
+   "controle": "non_revu"
+  },
+  {
+   "id": "prime_dette_lineaire_ze",
+   "quoi": "Hausse de l'écart de taux souverain 10 ans contre le Bund pour +1 point de dette/PIB (zone euro, régression linéaire de référence)",
+   "valeur": 3,
+   "lo": 2,
+   "hi": 7,
+   "unite": "pb par point de dette/PIB",
+   "horizon": "long terme (données annuelles)",
+   "conditions": "Panel zone euro 2000-2019, MCG en deux étapes. Note 26 : fourchette de la littérature 2 à 7 pb. Sensibilité nulle si la croissance potentielle dépasse 2,5 %, plus forte sous 0,75 % ; environ 4 pb si les institutions sont faibles.",
+   "sources": [
+    {
+     "t": "Do Fundamentals Explain Differences between Euro Area Sovereign Interest Rates? (Discussion Paper 141, Pamies, Carnot, Pătărău)",
+     "org": "Commission européenne (DG ECFIN)",
+     "date": "2021-06",
+     "u": "https://economy-finance.ec.europa.eu/document/download/4f8a3fef-4c59-48ce-bbd4-027eaaa3a3d5_en?filename=dp141_en.pdf",
+     "ou": "p. 15, §4.1 et note 26 ; Table 1 rég. (1) : coefficient 0,0291",
+     "citation": "leads to an increase of close to 3 bps. in sovereign spreads"
+    }
+   ],
+   "verifie": true,
+   "note": "Le coefficient actuel du moteur (2 pb) correspond au bas de la fourchette 2-7 citée par la Commission, pas à son estimation centrale (≈3). Valeurs lo et hi : fourchette de la littérature citée en note 26.",
+   "theme": "taux",
+   "controle": "confirme"
+  },
+  {
+   "id": "prime_dette_non_lineaire_ce",
+   "quoi": "Prime de risque appliquée par la Commission dans son scénario de stress financier : pour chaque point de dette au-dessus de 90 % du PIB",
+   "valeur": 6,
+   "lo": null,
+   "hi": null,
+   "unite": "pb par point de dette au-dessus de 90 % du PIB",
+   "horizon": "choc d'un an (2026 dans le DSM 2025), qui s'ajoute à +100 pb pour tous les pays",
+   "conditions": "Paramètre de stress, pas un scénario central. Pour la France : 1 + 0,06 × (116,3 - 90) ≈ +2,6 points de taux de marché en 2026 ; effet sur la dette en 2036 : +3 points.",
+   "sources": [
+    {
+     "t": "Debt Sustainability Monitor 2025 (Institutional Paper 332)",
+     "org": "Commission européenne",
+     "date": "2026-02",
+     "u": "https://economy-finance.ec.europa.eu/document/download/39b3b61d-42c1-46d7-8088-0aad82e8731e_en?filename=ip332_en.pdf",
+     "ou": "§2.1.5 et note 20 ; fiche France p. 165",
+     "citation": "risk premium is equal to 0.06 times the excess of debt over 90%"
+    },
+    {
+     "t": "Debt Sustainability Monitor 2024 (Institutional Paper 306)",
+     "org": "Commission européenne",
+     "date": "2025-03",
+     "u": "https://economy-finance.ec.europa.eu/document/download/581dbeab-4e86-44b9-afbe-6da8a1572491_en?filename=ip306_en.pdf",
+     "ou": "p. 38, note 26 ; fiche France p. 144 (choc de 2,4 pts)",
+     "citation": "risk premium is equal to 0.06 times the excess of debt over 90%"
+    }
+   ],
+   "verifie": true,
+   "note": "Repose sur la non-linéarité de Pamies et al. (2021) : au-delà d'environ 95-100 % de dette, la sensibilité dépasse l'estimation linéaire.",
+   "theme": "taux",
+   "controle": "confirme"
+  },
+  {
+   "id": "prime_dette_laubach",
+   "quoi": "Taux à terme 10 ans dans 5 ans : effet d'un point de dette/PIB projeté (États-Unis)",
+   "valeur": 3.5,
+   "lo": 3,
+   "hi": 4,
+   "unite": "pb par point de dette/PIB",
+   "horizon": "5 ans",
+   "conditions": "Taux Treasury américains, projections du CBO 1976-2006. Ne porte pas sur l'écart de taux dans la zone euro.",
+   "sources": [
+    {
+     "t": "New Evidence on the Interest Rate Effects of Budget Deficits and Debt (FEDS 2003-12, version de mai 2007 ; publié dans JEEA 2009)",
+     "org": "Federal Reserve Board (T. Laubach)",
+     "date": "2007-05",
+     "u": "https://www.federalreserve.gov/pubs/feds/2003/200312/revision/200312pap.pdf",
+     "ou": "résumé p. 1 ; p. 3",
+     "citation": "3 to 4 basis points for the debt/GDP ratio"
+    }
+   ],
+   "verifie": true,
+   "note": "La valeur 3,5 est le milieu de la fourchette publiée (3 à 4). Effet sur le niveau général des taux, pas sur une prime spécifique à un pays.",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "prime_deficit_laubach",
+   "quoi": "Taux à terme 10 ans dans 5 ans : effet d'un point de déficit/PIB projeté (États-Unis)",
+   "valeur": 25,
+   "lo": 20,
+   "hi": 29,
+   "unite": "pb par point de déficit/PIB projeté",
+   "horizon": "5 ans",
+   "conditions": "Même étude. Une estimation typique est d'environ 22 pb.",
+   "sources": [
+    {
+     "t": "New Evidence on the Interest Rate Effects of Budget Deficits and Debt",
+     "org": "Federal Reserve Board (T. Laubach)",
+     "date": "2007-05",
+     "u": "https://www.federalreserve.gov/pubs/feds/2003/200312/revision/200312pap.pdf",
+     "ou": "résumé ; p. 3",
+     "citation": "about 25 basis points per percentage point increase in the projected deficit"
+    }
+   ],
+   "verifie": true,
+   "note": "Ne pas cumuler avec le canal dette sans précaution : un déficit persistant augmente aussi la dette. Laubach estime les deux dans des régressions séparées.",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "prime_bce_dsa",
+   "quoi": "Calibrage de la BCE pour sa DSA des pays de la zone euro : hausse de l'écart de taux par point de déficit et par point de dette",
+   "valeur": 4,
+   "lo": null,
+   "hi": null,
+   "unite": "pb par point de dette/PIB (et 25 pb par point de déficit/PIB)",
+   "horizon": "dans les scénarios de choc de la DSA",
+   "conditions": "Paramètre de calibrage appliqué à tous les scénarios de choc de la DSA ; ce n'est pas une estimation propre.",
+   "sources": [
+    {
+     "t": "Debt sustainability analysis for euro area sovereigns: a methodological framework (Occasional Paper 185)",
+     "org": "BCE",
+     "date": "2017-04",
+     "u": "https://www.ecb.europa.eu/pub/pdf/scpops/ecbop185.en.pdf",
+     "ou": "p. 21 (section scénarios narratifs)",
+     "citation": "4 basis point increase in spreads for every 1 percentage point"
+    }
+   ],
+   "verifie": true,
+   "note": "Le même passage donne 25 pb par point de déficit, proche de Laubach.",
+   "theme": "taux",
+   "controle": "confirme"
+  },
+  {
+   "id": "sens_charge_taux_1an",
+   "quoi": "Hausse de la charge d'intérêts pour un choc permanent de +100 pb sur toute la courbe des taux, à partir du 1er janvier 2027",
+   "valeur": 3.4,
+   "lo": 3.4,
+   "hi": 3.4,
+   "unite": "Md€",
+   "horizon": "1 an (2027)",
+   "conditions": "Choc par rapport au scénario de taux du PLF 2027 (OAT 10 ans à 4,2 % fin 2026, 4,3 % fin 2027), en comptabilité maastrichtienne (données AFT). Série complète 2027-2036 : 3,4 / 8,1 / 12,0 / 15,7 / 19,2 / 22,5 / 25,5 / 28,1 / 30,7 / 33,0.",
+   "sources": [
+    {
+     "t": "Rapport sur la dette des administrations publiques, annexe au PLF 2027",
+     "org": "DG Trésor / AFT",
+     "date": "2026-10",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/a03a2517-7707-459d-adbc-c721d82d51c7/files/c386b8c2-b030-4a25-8912-79a7d259aa0e",
+     "ou": "p. 46, graphique 13",
+     "citation": "3,4 Md€ supplémentaires la première année"
+    },
+    {
+     "t": "Avis HCFP-2026-5 sur les PLF et PLFSS 2027",
+     "org": "HCFP",
+     "date": "2026-09",
+     "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+     "ou": "p. 39, §116",
+     "citation": "+3,4 Md€ la première année et +8,1 Md€ la deuxième année"
+    }
+   ],
+   "verifie": true,
+   "note": "Effet linéaire et symétrique. Repris dans un rapport de sous-agent ; les PDF Trésor et HCFP ont été téléchargés et lus.",
+   "theme": "taux",
+   "controle": "confirme"
+  },
+  {
+   "id": "sens_charge_taux_2an",
+   "quoi": "Hausse de la charge d'intérêts pour un choc permanent de +100 pb sur toute la courbe des taux, à partir du 1er janvier 2027",
+   "valeur": 8.1,
+   "lo": 8.1,
+   "hi": 8.1,
+   "unite": "Md€",
+   "horizon": "2 ans (2028)",
+   "conditions": "Choc par rapport au scénario de taux du PLF 2027 (OAT 10 ans à 4,2 % fin 2026, 4,3 % fin 2027), en comptabilité maastrichtienne (données AFT). Série complète 2027-2036 : 3,4 / 8,1 / 12,0 / 15,7 / 19,2 / 22,5 / 25,5 / 28,1 / 30,7 / 33,0.",
+   "sources": [
+    {
+     "t": "Rapport sur la dette des APU, annexe au PLF 2027",
+     "org": "DG Trésor / AFT",
+     "date": "2026-10",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/a03a2517-7707-459d-adbc-c721d82d51c7/files/c386b8c2-b030-4a25-8912-79a7d259aa0e",
+     "ou": "p. 46",
+     "citation": "8,1 Md€ supplémentaires la deuxième année"
+    }
+   ],
+   "verifie": true,
+   "note": "Effet linéaire et symétrique. Repris dans un rapport de sous-agent ; les PDF Trésor et HCFP ont été téléchargés et lus.",
+   "theme": "taux",
+   "controle": "confirme"
+  },
+  {
+   "id": "sens_charge_taux_3an",
+   "quoi": "Hausse de la charge d'intérêts pour un choc permanent de +100 pb sur toute la courbe des taux, à partir du 1er janvier 2027",
+   "valeur": 12.0,
+   "lo": 12.0,
+   "hi": 12.0,
+   "unite": "Md€",
+   "horizon": "3 ans (2029)",
+   "conditions": "Choc par rapport au scénario de taux du PLF 2027 (OAT 10 ans à 4,2 % fin 2026, 4,3 % fin 2027), en comptabilité maastrichtienne (données AFT). Série complète 2027-2036 : 3,4 / 8,1 / 12,0 / 15,7 / 19,2 / 22,5 / 25,5 / 28,1 / 30,7 / 33,0.",
+   "sources": [
+    {
+     "t": "Présentation de l'avis du HCFP aux parlementaires (PLF-PLFSS 2027)",
+     "org": "HCFP",
+     "date": "2026-10",
+     "u": "https://www.hcfp.fr/sites/default/files/2026-10/2026-10%20-%20Auditions%20Parlementaires_Pr%C3%A9sentation%20HCFP%20PLF-PLFSS.pdf",
+     "ou": "diapo 10, étiquette du graphique",
+     "citation": "Effet sur la charge d'intérêts d'une hausse de 100 points de base"
+    }
+   ],
+   "verifie": true,
+   "note": "Effet linéaire et symétrique. Repris dans un rapport de sous-agent ; les PDF Trésor et HCFP ont été téléchargés et lus.",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "sens_charge_taux_5an",
+   "quoi": "Hausse de la charge d'intérêts pour un choc permanent de +100 pb sur toute la courbe des taux, à partir du 1er janvier 2027",
+   "valeur": 19.2,
+   "lo": 19.2,
+   "hi": 19.2,
+   "unite": "Md€",
+   "horizon": "5 ans (2031)",
+   "conditions": "Choc par rapport au scénario de taux du PLF 2027 (OAT 10 ans à 4,2 % fin 2026, 4,3 % fin 2027), en comptabilité maastrichtienne (données AFT). Série complète 2027-2036 : 3,4 / 8,1 / 12,0 / 15,7 / 19,2 / 22,5 / 25,5 / 28,1 / 30,7 / 33,0.",
+   "sources": [
+    {
+     "t": "Rapport sur la dette des APU, annexe au PLF 2027",
+     "org": "DG Trésor / AFT",
+     "date": "2026-10",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/a03a2517-7707-459d-adbc-c721d82d51c7/files/c386b8c2-b030-4a25-8912-79a7d259aa0e",
+     "ou": "p. 46",
+     "citation": "d'environ 19,2 Md€ la cinquième année"
+    }
+   ],
+   "verifie": true,
+   "note": "Effet linéaire et symétrique. Repris dans un rapport de sous-agent ; les PDF Trésor et HCFP ont été téléchargés et lus.",
+   "theme": "taux",
+   "controle": "confirme"
+  },
+  {
+   "id": "sens_charge_taux_10an",
+   "quoi": "Hausse de la charge d'intérêts pour un choc permanent de +100 pb sur toute la courbe des taux, à partir du 1er janvier 2027",
+   "valeur": 33.0,
+   "lo": 33.0,
+   "hi": 33.0,
+   "unite": "Md€",
+   "horizon": "10 ans (2036)",
+   "conditions": "Choc par rapport au scénario de taux du PLF 2027 (OAT 10 ans à 4,2 % fin 2026, 4,3 % fin 2027), en comptabilité maastrichtienne (données AFT). Série complète 2027-2036 : 3,4 / 8,1 / 12,0 / 15,7 / 19,2 / 22,5 / 25,5 / 28,1 / 30,7 / 33,0.",
+   "sources": [
+    {
+     "t": "Présentation de l'avis du HCFP aux parlementaires",
+     "org": "HCFP",
+     "date": "2026-10",
+     "u": "https://www.hcfp.fr/sites/default/files/2026-10/2026-10%20-%20Auditions%20Parlementaires_Pr%C3%A9sentation%20HCFP%20PLF-PLFSS.pdf",
+     "ou": "diapo 10",
+     "citation": "au 1er janvier 2027 (en Md€)"
+    }
+   ],
+   "verifie": true,
+   "note": "Effet linéaire et symétrique. Repris dans un rapport de sous-agent ; les PDF Trésor et HCFP ont été téléchargés et lus.",
+   "theme": "taux",
+   "controle": "confirme"
+  },
+  {
+   "id": "sens_charge_inflation",
+   "quoi": "Variation de la charge d'indexation (OATi et OAT€i) pour +1 point d'inflation",
+   "valeur": 3.0,
+   "lo": 3.0,
+   "hi": 3.0,
+   "unite": "Md€",
+   "horizon": "même année",
+   "conditions": "Calculée sur l'inflation d'octobre. Le Trésor donne ±0,3 Md€ par ±0,1 point.",
+   "sources": [
+    {
+     "t": "Avis HCFP-2026-5",
+     "org": "HCFP",
+     "date": "2026-09",
+     "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+     "ou": "p. 38, §115",
+     "citation": "+1 point entraîne une variation de la charge d'environ +3 Md€"
+    },
+    {
+     "t": "Rapport sur la dette des APU, annexe au PLF 2027",
+     "org": "DG Trésor",
+     "date": "2026-10",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/a03a2517-7707-459d-adbc-c721d82d51c7/files/c386b8c2-b030-4a25-8912-79a7d259aa0e",
+     "ou": "p. 46",
+     "citation": "de ±0,1 % induit une variation … d'environ ±0,3 Md€"
+    }
+   ],
+   "verifie": true,
+   "note": "",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "duree_vie_moyenne_dette_etat",
+   "quoi": "Durée de vie moyenne de la dette négociable de l'État",
+   "valeur": 8.38,
+   "lo": 8.38,
+   "hi": 8.39,
+   "unite": "années",
+   "horizon": "31 oct. 2026",
+   "conditions": "8 ans et 139 jours. Dette à moyen et long terme seule : 9 ans et 17 jours fin août 2026. Le Trésor arrondit à 8,5 ans (p. 27).",
+   "sources": [
+    {
+     "t": "Page d'accueil de l'AFT, Chiffres clefs",
+     "org": "AFT",
+     "date": "2026-10",
+     "u": "https://www.aft.gouv.fr/fr",
+     "ou": "encadré Chiffres clefs",
+     "citation": "8 ans et 139 jours … 31 octobre 2026"
+    },
+    {
+     "t": "Bulletin mensuel n° 436",
+     "org": "AFT",
+     "date": "2026-09",
+     "u": "https://www.aft.gouv.fr/files/medias-aft/7_Publications/7.2_BM/436_Bulletin%20mensuel%20septembre%202026.pdf",
+     "ou": "p. 3",
+     "citation": "8 ans et 142 jours (fin août 2026)"
+    }
+   ],
+   "verifie": true,
+   "note": "Lu par un sous-agent dans le navigateur, le site de l'AFT bloquant curl.",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "part_refinancee_annuelle",
+   "quoi": "Remboursements de dette à moyen et long terme en 2027 (à refinancer)",
+   "valeur": 189.2,
+   "lo": 179.5,
+   "hi": 189.2,
+   "unite": "Md€",
+   "horizon": "2027",
+   "conditions": "179,5 Md€ de nominal et 9,7 Md€ d'indexation. Besoin de financement total : 339,7 Md€. Émissions à moyen et long terme nettes des rachats : 340 Md€. Encours des BTF : environ 219 Md€, renouvelés en continu.",
+   "sources": [
+    {
+     "t": "Projet de loi de finances pour 2027 (n° 3210), tableau de financement",
+     "org": "Gouvernement",
+     "date": "2026-10",
+     "u": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf",
+     "ou": "p. 166-167",
+     "citation": "le besoin de financement s'établit à 339,7 milliards d'euros"
+    },
+    {
+     "t": "Communiqué du 29 sept. 2026",
+     "org": "AFT",
+     "date": "2026-09",
+     "u": "https://www.aft.gouv.fr/en/publications/communiques-presse/29-september-2026-french-state-funding-2027-and-update-2026",
+     "ou": "communiqué",
+     "citation": "total financing requirement will stand at €339.7bn"
+    }
+   ],
+   "verifie": true,
+   "note": "Calcul du sous-agent, non publié : environ 6,7 % du stock à moyen et long terme est remboursé chaque année, auxquels s'ajoutent les BTF (environ 7,5 % de l'encours négociable). Le taux moyen se renouvelle donc d'environ 1/8 par an, ce qui est cohérent avec la durée de vie moyenne de 8,4 ans.",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "part_dette_indexee",
+   "quoi": "Part des titres indexés sur l'inflation dans la dette négociable",
+   "valeur": 10.8,
+   "lo": 10.8,
+   "hi": 13,
+   "unite": "%",
+   "horizon": "fin août 2026",
+   "conditions": "314 Md€ sur 2 904 Md€. Selon le Trésor, la part varie entre 11 et 13 % depuis dix ans.",
+   "sources": [
+    {
+     "t": "Bulletin mensuel AFT n° 436",
+     "org": "AFT",
+     "date": "2026-09",
+     "u": "https://www.aft.gouv.fr/files/medias-aft/7_Publications/7.2_BM/436_Bulletin%20mensuel%20septembre%202026.pdf",
+     "ou": "p. 3",
+     "citation": "dont titres indexés … 314"
+    },
+    {
+     "t": "Rapport sur la dette des APU, annexe au PLF 2027",
+     "org": "DG Trésor",
+     "date": "2026-10",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/a03a2517-7707-459d-adbc-c721d82d51c7/files/c386b8c2-b030-4a25-8912-79a7d259aa0e",
+     "ou": "p. 28",
+     "citation": "évolue entre 11 % et 13 % depuis dix ans"
+    }
+   ],
+   "verifie": true,
+   "note": "Le ratio de 10,8 % est un calcul (314 / 2 904).",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "charge_interets_apu_2027",
+   "quoi": "Charge d'intérêts des administrations publiques (comptabilité nationale), scénario du PLF 2027",
+   "valeur": 91,
+   "lo": 79.2,
+   "hi": 91,
+   "unite": "Md€",
+   "horizon": "2027 (2,9 % du PIB). 2026 : 79,2 Md€ au PLF, environ 81 Md€ au PLFG. En % du PIB : 3,2 (2028), 3,5 (2029), 3,7 (2030).",
+   "conditions": "Hypothèses de taux du PLF (déjà dépassées : le TEC 10 était à 4,88 % le 4 nov. 2026).",
+   "sources": [
+    {
+     "t": "Avis HCFP-2026-5",
+     "org": "HCFP",
+     "date": "2026-09",
+     "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+     "ou": "p. 38, §115",
+     "citation": "2,9 points de PIB (soit 91 Md€ courants) en 2027"
+    },
+    {
+     "t": "Rapport sur la dette des APU, annexe au PLF 2027",
+     "org": "DG Trésor",
+     "date": "2026-10",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/a03a2517-7707-459d-adbc-c721d82d51c7/files/c386b8c2-b030-4a25-8912-79a7d259aa0e",
+     "ou": "p. 5, tableau 2",
+     "citation": "2,6 2,9 3,2 3,5 3,7"
+    },
+    {
+     "t": "Situation et perspectives des finances publiques 2026",
+     "org": "Cour des comptes",
+     "date": "2026-06",
+     "u": "https://www.ccomptes.fr/sites/default/files/2026-07/20260625_RSPFP-2026.pdf",
+     "ou": "p. 69",
+     "citation": "devrait dépasser les 100 Md€ par an à l'horizon 2029"
+    }
+   ],
+   "verifie": true,
+   "note": "Trois périmètres coexistent ; ne pas les mélanger. État en comptabilité budgétaire : 72,9 Md€ en 2027. État en comptabilité générale : 74,9 Md€. Ensemble des APU : 91 Md€.",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "cour_choc_taux_dette",
+   "quoi": "Scénario de la Cour des comptes : +100 pb permanents sur les obligations d'État dès 2026, effet sur le ratio de dette en 2031",
+   "valeur": 2.6,
+   "lo": null,
+   "hi": null,
+   "unite": "points de PIB de dette",
+   "horizon": "2031",
+   "conditions": "Trajectoire de référence : 116,6 % en 2031 ; avec le choc : 119,2 %. Déficit 2031 : 2,5 % contre 1,7 %.",
+   "sources": [
+    {
+     "t": "La situation et les perspectives des finances publiques",
+     "org": "Cour des comptes",
+     "date": "2026-06",
+     "u": "https://www.ccomptes.fr/sites/default/files/2026-07/20260625_RSPFP-2026.pdf",
+     "ou": "p. 87 et 89",
+     "citation": "reculerait à 119,2 points en 2031"
+    }
+   ],
+   "verifie": true,
+   "note": "L'écart est un calcul fait à partir des deux niveaux publiés.",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "taux_habitat_aout2026",
+   "quoi": "Taux moyen des crédits nouveaux à l'habitat, hors renégociations",
+   "valeur": 3.32,
+   "lo": null,
+   "hi": null,
+   "unite": "%",
+   "horizon": "août 2026 (le Stat Info de septembre paraît le 5 nov. 2026)",
+   "conditions": "3,30 % en juillet 2026 ; 3,10 % en août 2025",
+   "sources": [
+    {
+     "t": "Stat Info Crédits aux particuliers, août 2026",
+     "org": "Banque de France",
+     "date": "2026-10",
+     "u": "https://www.banque-france.fr/system/files/webstats/Credit_particuliers_202608_v2_20261006/FR_Stat_info_Credits_aux_particuliers_202608.pdf",
+     "ou": "p. 1",
+     "citation": "augmente très légèrement pour atteindre 3,32 %"
+    }
+   ],
+   "verifie": true,
+   "note": "",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "taux_conso_aout2026",
+   "quoi": "Taux moyen des prêts amortissables à la consommation",
+   "valeur": 6.04,
+   "lo": null,
+   "hi": null,
+   "unite": "%",
+   "horizon": "août 2026",
+   "conditions": "6,10 % en juillet 2026",
+   "sources": [
+    {
+     "t": "Stat Info Crédits aux particuliers, août 2026",
+     "org": "Banque de France",
+     "date": "2026-10",
+     "u": "https://www.banque-france.fr/system/files/webstats/Credit_particuliers_202608_v2_20261006/FR_Stat_info_Credits_aux_particuliers_202608.pdf",
+     "ou": "p. 1",
+     "citation": "Le taux moyen diminue à 6,04 % après 6,10 % en juillet"
+    }
+   ],
+   "verifie": true,
+   "note": "",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "taux_snf_aout2026",
+   "quoi": "Taux des nouveaux crédits aux sociétés non financières (ensemble)",
+   "valeur": 3.73,
+   "lo": 3.4,
+   "hi": 3.74,
+   "unite": "%",
+   "horizon": "août 2026 (prochaine publication le 9 nov. 2026)",
+   "conditions": "PME : 3,71 % ; ETI : 3,74 % ; grandes entreprises : 3,40 % ; août 2025 : 3,35 %",
+   "sources": [
+    {
+     "t": "Financement des entreprises, 2026-08",
+     "org": "Banque de France",
+     "date": "2026-10",
+     "u": "https://www.banque-france.fr/fr/statistiques/credit/financement-des-entreprises-2026-08",
+     "ou": "texte et tableau",
+     "citation": "globalement stable en août à 3,73 % (après 3,75 % en juillet)"
+    }
+   ],
+   "verifie": true,
+   "note": "",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "passthrough_oat_snf_insee",
+   "quoi": "Élasticité de long terme du taux des nouveaux crédits aux sociétés non financières au taux de l'OAT à 3 ans",
+   "valeur": 0.85,
+   "lo": 0.35,
+   "hi": 0.85,
+   "unite": "point par point",
+   "horizon": "0,35 dans le trimestre ; rappel de -0,34 par trimestre ; 0,85 à long terme",
+   "conditions": "Modèle à correction d'erreur estimé de 2003 à 2020. Pour un choc sur l'Euribor : 40 pb transmis la 1re année, 50 pb à 2 ans. La hausse du spread de 2024 a ajouté environ 0,2 point au taux des crédits aux sociétés non financières.",
+   "sources": [
+    {
+     "t": "Note de conjoncture, éclairage sur les taux de crédit aux entreprises",
+     "org": "Insee",
+     "date": "2025-03",
+     "u": "https://insee.fr/fr/statistiques/fichier/8388036/ndc-mars-2025-ecl6-tauxcredit.pdf",
+     "ou": "p. 71, 75, 76 (équation de l'étape 2)",
+     "citation": "rehaussé le taux des crédits aux SNF françaises de +0,2 point"
+    }
+   ],
+   "verifie": true,
+   "note": "Le coefficient 0,85 a été lu dans une équation mal extraite par pdftotext ; à revérifier visuellement. Vérification (équation p. 76) : 0,85 à long terme sur l'OAT à 3 ans, impact 0,35, rappel 0,34 par trimestre, plus un terme de 0,44 sur la variation passée du taux.",
+   "theme": "taux",
+   "controle": "confirme"
+  },
+  {
+   "id": "passthrough_oat10_habitat_frbdf",
+   "quoi": "Part d'une hausse permanente du taux souverain à 10 ans transmise au taux des crédits aux ménages",
+   "valeur": 0.54,
+   "lo": 0.42,
+   "hi": 0.89,
+   "unite": "fraction transmise",
+   "horizon": "1 trimestre : 0,08 ; 2 trimestres : 0,42 ; 1 an : 0,54 ; 2 ans : 0,75 ; 3 ans : 0,89 ; 5 ans : 0,99",
+   "conditions": "Simulation de l'équation (38) de FR-BDF seule. La transmission de long terme vaut 1 par construction.",
+   "sources": [
+    {
+     "t": "Re-estimated FR-BDF (Working Paper n° 1044)",
+     "org": "Banque de France",
+     "date": "2026-05",
+     "u": "https://www.banque-france.fr/system/files/2026-05/WP1044_V2.pdf",
+     "ou": "p. 48, éq. (38) ; p. 49, tableau 3.5.9",
+     "citation": "difference between the rate and the 10-year government rate via an error correction"
+    }
+   ],
+   "verifie": false,
+   "note": "La trajectoire est un calcul du sous-agent à partir de coefficients vérifiés ; la Banque de France ne la publie pas. À ne pas présenter comme un chiffre de la BdF.",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "passthrough_delai_ze",
+   "quoi": "Part de la transmission du resserrement monétaire aux conditions de financement déjà accomplie",
+   "valeur": 95,
+   "lo": 50,
+   "hi": 95,
+   "unite": "% de la transmission totale",
+   "horizon": "50 % à 3 mois, 80 % à 6 mois, environ 95 % à 12 mois",
+   "conditions": "Zone euro, indicateur composite de taux débiteurs. Pas de ventilation entre habitat et entreprises.",
+   "sources": [
+    {
+     "t": "Les effets du resserrement monétaire sur les conditions de financement (Bloc-notes Éco n° 354)",
+     "org": "Banque de France",
+     "date": "2024-05",
+     "u": "https://www.banque-france.fr/fr/publications-et-statistiques/publications/les-effets-du-resserrement-monetaire-sur-les-conditions-de-financement",
+     "ou": "texte, graphique 1",
+     "citation": "près de 95 % de la transmission serait accomplie dans les 12 mois"
+    }
+   ],
+   "verifie": true,
+   "note": "lo et hi donnent des points de la trajectoire, pas un intervalle d'incertitude.",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "passthrough_spread_2012",
+   "quoi": "Effet d'une hausse de 100 pb de l'écart souverain France-Allemagne sur les taux débiteurs français (crise de 2011)",
+   "valeur": 17,
+   "lo": 17,
+   "hi": 191,
+   "unite": "pb",
+   "horizon": "1 mois : habitat 17, sociétés non financières 19 ; long terme : sociétés non financières 144, habitat 191",
+   "conditions": "MCO mensuels 2003-2011 ; selon les auteurs, relation non causale",
+   "sources": [
+    {
+     "t": "L'impact de l'évolution des taux souverains sur les conditions de financement… (Bulletin n° 188)",
+     "org": "Banque de France",
+     "date": "2012-06",
+     "u": "https://publications.banque-france.fr/sites/default/files/medias/documents/bulletin-de-la-banque-de-france_188_2012-t2.pdf",
+     "ou": "p. 3-4, tableaux 1, 2 et 4",
+     "citation": "une transmission presque intégrale des écarts de taux souverains"
+    }
+   ],
+   "verifie": true,
+   "note": "Les valeurs de long terme supérieures à 100 pb paraissent surestimées. À citer comme borne, pas comme valeur centrale.",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "mesange_taux_100pb_pib",
+   "quoi": "Effet sur le PIB d'une hausse permanente de 100 pb des taux courts et longs (Mésange)",
+   "valeur": -0.17,
+   "lo": -0.78,
+   "hi": -0.17,
+   "unite": "% d'écart de niveau du PIB",
+   "horizon": "1 an : -0,17 ; 2 ans : -0,60 ; 3 ans : -0,78 ; 5 ans : -1,00 ; 10 ans : -1,52",
+   "conditions": "Pas de réaction de la politique monétaire. Investissement total : -0,42 / -1,84 / -2,65 % à 1, 2 et 3 ans. Chômage : +0,37 point à 3 ans. Solde primaire : -0,36 point de PIB à 3 ans.",
+   "sources": [
+    {
+     "t": "Le modèle macroéconométrique Mésange : réestimation et nouveautés (DT 2017/04)",
+     "org": "DG Trésor / Insee",
+     "date": "2017-05",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/88381f48-797c-4e76-8f03-ef78d0bff99e/files/1c29ff21-585d-488b-8f4b-497540e9fc62",
+     "ou": "§4.3.3, tableau p. 133",
+     "citation": "une baisse de l'activité de 0,17 point de PIB"
+    }
+   ],
+   "verifie": true,
+   "note": "Calibration de 2017. C'est le choc le plus proche d'une hausse durable de la prime de risque. Vérification : à long terme, -3,06 % (même tableau).",
+   "theme": "taux",
+   "controle": "confirme"
+  },
+  {
+   "id": "frbdf_prime_terme_100pb",
+   "quoi": "FR-BDF : effet au pic d'une hausse de 100 pb du taux long (choc temporaire, persistance de 0,91 par trimestre)",
+   "valeur": -0.19,
+   "lo": -2.05,
+   "hi": -0.19,
+   "unite": "% d'écart (PIB réel au pic)",
+   "horizon": "PIB : -0,19 % ; investissement des entreprises : -0,86 % à 6 trimestres ; investissement logement des ménages : -2,05 % à 10 trimestres",
+   "conditions": "Choc temporaire, non comparable à celui de Mésange",
+   "sources": [
+    {
+     "t": "Re-estimated FR-BDF (Working Paper n° 1044), §4.2",
+     "org": "Banque de France",
+     "date": "2026-05",
+     "u": "https://www.banque-france.fr/system/files/2026-05/WP1044_V2.pdf",
+     "ou": "p. 95-96, figure 4.2.1",
+     "citation": "peak impacts of –0.19% on real GDP"
+    }
+   ],
+   "verifie": true,
+   "note": "",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "hcfp_taux_croissance",
+   "quoi": "Perte de croissance après une hausse permanente de 100 pb des taux courts et longs, selon les modèles institutionnels cités par le HCFP",
+   "valeur": -0.15,
+   "lo": -0.4,
+   "hi": -0.15,
+   "unite": "point de croissance du PIB",
+   "horizon": "-0,15 l'année du choc, puis -0,2 à -0,4 l'année suivante",
+   "conditions": "",
+   "sources": [
+    {
+     "t": "Avis HCFP-2026-5",
+     "org": "HCFP",
+     "date": "2026-09",
+     "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+     "ou": "p. 14, §43",
+     "citation": "perte de croissance autour de 0,15 point l'année de cette hausse"
+    }
+   ],
+   "verifie": true,
+   "note": "Cohérent avec Mésange.",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "petrole_10usd_pib_fr",
+   "quoi": "Effet d'une hausse permanente de 10 $ du baril sur le PIB français (variante réaliste de Mésange, demande mondiale endogène)",
+   "valeur": -0.12,
+   "lo": -0.27,
+   "hi": -0.1,
+   "unite": "% d'écart de niveau du PIB",
+   "horizon": "1 an : -0,12 ; 2 ans : -0,27 ; 3 ans : -0,21 (variante analytique : -0,10 / -0,24 / -0,18)",
+   "conditions": "Prix à la consommation : +0,33 % à 1 an, +0,41 % à 2 ans. Solde primaire : environ -0,2 point de PIB à 2-3 ans.",
+   "sources": [
+    {
+     "t": "Mésange 2017, encadré 17 et §4.2.1",
+     "org": "DG Trésor / Insee",
+     "date": "2017-05",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/88381f48-797c-4e76-8f03-ef78d0bff99e/files/1c29ff21-585d-488b-8f4b-497540e9fc62",
+     "ou": "p. 122-124",
+     "citation": "L'activité baisserait de 0,10 point de PIB à horizon un an."
+    },
+    {
+     "t": "Trésor-Éco n° 396",
+     "org": "DG Trésor",
+     "date": "2026-07",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/e1552260-06fa-4751-9fd4-c83b6409e778/files/a71dd894-e5b4-4a6c-bd54-2a93d2d5c7a6",
+     "ou": "p. 9",
+     "citation": "un PIB inférieur de −0,1 % en France et une inflation supérieure de +0,3 pt"
+    },
+    {
+     "t": "Avis HCFP-2026-5",
+     "org": "HCFP",
+     "date": "2026-09",
+     "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+     "ou": "p. 14, §43",
+     "citation": "jusqu'à 0,1 point de croissance la 1re année"
+    }
+   ],
+   "verifie": true,
+   "note": "",
+   "theme": "taux",
+   "controle": "confirme"
+  },
+  {
+   "id": "petrole_10pct_croissance_ze",
+   "quoi": "Effet d'une hausse de 10 % du prix réel du pétrole (choc géopolitique d'offre) sur la croissance de la zone euro",
+   "valeur": -0.25,
+   "lo": -0.3,
+   "hi": -0.2,
+   "unite": "point de croissance par an",
+   "horizon": "chacune des 3 premières années",
+   "conditions": "BVAR 1985-2023 ; la BCE présente ce résultat comme une borne haute (effets plus faibles depuis 2003)",
+   "sources": [
+    {
+     "t": "Higher oil prices from the war in the Middle East: assessing the headwinds for euro area growth (Economic Bulletin 4/2026, encadré)",
+     "org": "BCE",
+     "date": "2026-06",
+     "u": "https://www.ecb.europa.eu/press/economic-bulletin/focus/2026/html/ecb.ebbox202604_04~9b6a4036fc.en.html",
+     "ou": "graphique C",
+     "citation": "around 0.2 to 0.3 percentage points lower in each of the first three years"
+    }
+   ],
+   "verifie": true,
+   "note": "La valeur -0,25 est le milieu de la fourchette publiée. Effet nettement plus fort que Mésange, à présenter comme un désaccord entre sources.",
+   "theme": "taux",
+   "controle": "non_revu"
+  },
+  {
+   "id": "demande_mondiale_1pct_pib_fr",
+   "quoi": "Effet d'une hausse permanente de 1 % de la demande mondiale adressée à la France sur le PIB français (signe inversé pour un ralentissement de la zone euro ou de l'Allemagne)",
+   "valeur": 0.27,
+   "lo": 0.27,
+   "hi": 0.32,
+   "unite": "% d'écart de niveau du PIB",
+   "horizon": "1 an : 0,27 ; 2 ans : 0,32 ; 3 ans : 0,31 ; 5 ans : 0,26",
+   "conditions": "Choc de demande pur, modèle linéaire",
+   "sources": [
+    {
+     "t": "Mésange 2017, §4.2.2",
+     "org": "DG Trésor / Insee",
+     "date": "2017-05",
+     "u": "https://www.tresor.economie.gouv.fr/Articles/88381f48-797c-4e76-8f03-ef78d0bff99e/files/1c29ff21-585d-488b-8f4b-497540e9fc62",
+     "ou": "p. 125-126",
+     "citation": "engendrant un gain d'activité d'environ 0,27 %"
+    }
+   ],
+   "verifie": true,
+   "note": "Aucune élasticité directe Allemagne → France n'est publiée par le Trésor, la BdF ou l'Insee.",
+   "theme": "taux",
+   "controle": "confirme"
+  },
+  {
+   "id": "energie_sensibilite_bce",
+   "quoi": "Effet sur la zone euro de la trajectoire d'énergie au 75e percentile (BCE, septembre 2026) : énergie +21 % en 2027",
+   "valeur": -0.2,
+   "lo": -0.3,
+   "hi": 0.0,
+   "unite": "point de croissance du PIB (IPCH : +0,7 point en 2027)",
+   "horizon": "2026 : PIB 0,0 / IPCH +0,2 ; 2027 : -0,2 / +0,7 ; 2028 : -0,3 / +0,4",
+   "conditions": "Moyenne de modèles, politique monétaire fixe",
+   "sources": [
+    {
+     "t": "ECB staff macroeconomic projections, September 2026",
+     "org": "BCE",
+     "date": "2026-09",
+     "u": "https://www.ecb.europa.eu/press/projections/html/ecb.projections202609_ecbstaff~8e340fc69d.en.html",
+     "ou": "section 3.1, Table 4",
+     "citation": "Alternative energy price paths and their impact on real GDP growth and HICP inflation"
+    }
+   ],
+   "verifie": true,
+   "note": "",
+   "theme": "taux",
+   "controle": "non_revu"
+  }
+ ],
+ "donnees": [
+  {
+   "id": "chomage_bit",
+   "valeur": 8.3,
+   "unite": "%",
+   "date": "T2 2026",
+   "source": {
+    "t": "Informations rapides n° 192 – Au deuxième trimestre 2026, le taux de chômage augmente de 0,2 point et atteint 8,3 %",
+    "org": "Insee",
+    "date": "2026-08",
+    "u": "https://www.insee.fr/fr/statistiques/9032359",
+    "ou": "titre et tableau",
+    "citation": "le taux de chômage augmente de 0,2 point et atteint 8,3 %"
+   },
+   "note": "Champ France y compris Mayotte depuis cette publication (+0,06 pt). Marge ±0,3 pt. Le T3 2026 sera publié le 10 novembre 2026 à 7 h 30."
+  },
+  {
+   "id": "chomeurs_bit",
+   "valeur": 2677,
+   "unite": "milliers",
+   "date": "T2 2026",
+   "source": {
+    "t": "Informations rapides n° 192",
+    "org": "Insee",
+    "date": "2026-08",
+    "u": "https://www.insee.fr/fr/statistiques/9032359",
+    "ou": "tableau",
+    "citation": "augmente de 62 000 … à 2,7 millions de personnes"
+   }
+  },
+  {
+   "id": "taux_emploi_15_64",
+   "valeur": 69.0,
+   "unite": "%",
+   "date": "T2 2026",
+   "source": {
+    "t": "Informations rapides n° 192",
+    "org": "Insee",
+    "date": "2026-08",
+    "u": "https://www.insee.fr/fr/statistiques/9032359",
+    "ou": "tableau",
+    "citation": "taux d'emploi des 15-64 ans … 69,0 %"
+   }
+  },
+  {
+   "id": "taux_activite_15_64",
+   "valeur": 75.4,
+   "unite": "%",
+   "date": "T2 2026",
+   "source": {
+    "t": "Informations rapides n° 192",
+    "org": "Insee",
+    "date": "2026-08",
+    "u": "https://www.insee.fr/fr/statistiques/9032359",
+    "ou": "tableau",
+    "citation": "taux d'activité des 15-64 ans 75,4 %"
+   }
+  },
+  {
+   "id": "halo_chomage",
+   "valeur": 1865,
+   "unite": "milliers",
+   "date": "T2 2026",
+   "source": {
+    "t": "Informations rapides n° 192",
+    "org": "Insee",
+    "date": "2026-08",
+    "u": "https://www.insee.fr/fr/statistiques/9032359",
+    "ou": "tableau",
+    "citation": "halo autour du chômage 1 865 000 (4,4 % des 15-64 ans)"
+   }
+  },
+  {
+   "id": "population_active_calculee",
+   "valeur": 32.25,
+   "unite": "millions",
+   "date": "T2 2026",
+   "source": {
+    "t": "Calcul : chômeurs / taux de chômage (Insee IR n° 192)",
+    "org": "Insee (calcul)",
+    "date": "2026-08",
+    "u": "https://www.insee.fr/fr/statistiques/9032359",
+    "ou": "2 677 / 0,083",
+    "citation": "calcul, pas un chiffre publié"
+   },
+   "note": "Une moyenne 2025 de 31,8 millions (15-69 ans) est citée par un moteur de recherche d'après l'Insee, mais introuvable dans l'Insee Première n° 2096 lu : non vérifiée."
+  },
+  {
+   "id": "emploi_salarie_total",
+   "valeur": 27021.1,
+   "unite": "milliers",
+   "date": "T2 2026",
+   "source": {
+    "t": "Informations rapides n° 214 – Au deuxième trimestre 2026, l'emploi salarié est quasi stable (-0,1 %)",
+    "org": "Insee",
+    "date": "2026-08",
+    "u": "https://www.insee.fr/fr/statistiques/9039152",
+    "ou": "tableau 'Évolution de l'emploi salarié'",
+    "citation": "l'emploi salarié est quasi stable (-0,1 %, soit -23 500 emplois)"
+   }
+  },
+  {
+   "id": "emploi_total",
+   "valeur": 30626.3,
+   "unite": "milliers",
+   "date": "T2 2026",
+   "source": {
+    "t": "Informations rapides n° 214",
+    "org": "Insee",
+    "date": "2026-08",
+    "u": "https://www.insee.fr/fr/statistiques/9039152",
+    "ou": "tableau 'Évolution de l'emploi total'",
+    "citation": "emploi total 30 626,3 milliers"
+   },
+   "note": "Valeur expérimentale selon l'Insee : la méthode pour l'emploi non salarié du dernier trimestre diffère."
+  },
+  {
+   "id": "chomage_moyen_2025",
+   "valeur": 7.7,
+   "unite": "%",
+   "date": "2025",
+   "source": {
+    "t": "Une photographie du marché du travail en 2025 (Insee Première n° 2096)",
+    "org": "Insee",
+    "date": "2026-03",
+    "u": "https://www.insee.fr/fr/statistiques/8901327",
+    "ou": "p. 1",
+    "citation": "s'établit en moyenne à 7,7 %"
+   },
+   "note": "Taux d'emploi 15-64 ans 69,3 %, taux d'activité 75,1 % en 2025."
+  },
+  {
+   "id": "nawru_2026",
+   "valeur": 7.28,
+   "unite": "%",
+   "date": "2026 (millésime printemps 2026)",
+   "source": {
+    "t": "AMECO ZNAWRU",
+    "org": "Commission européenne",
+    "date": "2026-05",
+    "u": "https://ec.europa.eu/economy_finance/ameco/wq/series?fullVariable=1.0.0.0.ZNAWRU&countries=FRA&years=2025,2026,2027&defaultCountries=0&Lastyear=0&Yearorder=ASC",
+    "ou": "série",
+    "citation": "7.402 7.28 7.161"
+   }
+  },
+  {
+   "id": "prev_chomage_ce",
+   "valeur": [
+    8.3,
+    8.7
+   ],
+   "unite": "% (2026, 2027)",
+   "date": "printemps 2026",
+   "source": {
+    "t": "AMECO ZUTN (prévisions de printemps 2026)",
+    "org": "Commission européenne",
+    "date": "2026-05",
+    "u": "https://ec.europa.eu/economy_finance/ameco/wq/series?fullVariable=1.0.0.0.ZUTN&countries=FRA&years=2024,2025,2026,2027&defaultCountries=0&Lastyear=0&Yearorder=ASC",
+    "ou": "série",
+    "citation": "7.4 7.7 8.3 8.7"
+   }
+  },
+  {
+   "id": "prev_chomage_bdf",
+   "valeur": [
+    8.3,
+    8.3,
+    8.0
+   ],
+   "unite": "% en moyenne annuelle (2026, 2027, 2028)",
+   "date": "septembre 2026",
+   "source": {
+    "t": "Projections macroéconomiques intermédiaires – septembre 2026",
+    "org": "Banque de France",
+    "date": "2026-09",
+    "u": "https://www.banque-france.fr/fr/publications-et-statistiques/publications/projections-macroeconomiques-intermediaires-septembre-2026",
+    "ou": "page de synthèse",
+    "citation": "8,4 % en fin d'année [2026], puis 8,0 % en 2028"
+   },
+   "note": "Salaire moyen par tête du privé : +2,0 % (2026), +2,6 % (2027), +2,4 % (2028). La citation vient de l'extrait de recherche ; les valeurs annuelles viennent de la page lue."
+  },
+  {
+   "id": "salaries_concernes_smic",
+   "valeur": 12.4,
+   "unite": "% des salariés du privé hors agriculture (2,2 millions)",
+   "date": "1er novembre 2024",
+   "source": {
+    "t": "Rapport du Groupe d'experts sur le Smic 2025",
+    "org": "Groupe d'experts sur le Smic / Dares",
+    "date": "2025-11",
+    "u": "https://www.vie-publique.fr/files/rapport/pdf/301429_0.pdf",
+    "ou": "encadré p. 50",
+    "citation": "2,2 millions de salariés … soit 12,4 % des salariés sur ce champ"
+   }
+  },
+  {
+   "id": "cout_allegements_2025",
+   "valeur": 76.8,
+   "unite": "Md€",
+   "date": "2025",
+   "source": {
+    "t": "Rapport du Groupe d'experts sur le Smic 2025",
+    "org": "Groupe d'experts sur le Smic",
+    "date": "2025-11",
+    "u": "https://www.vie-publique.fr/files/rapport/pdf/301429_0.pdf",
+    "ou": "p. 150",
+    "citation": "une enveloppe de 76,8 milliards d'euros d'allègements"
+   }
+  },
+  {
+   "id": "tableau17_hcfp_croissance_potentielle",
+   "quoi": "Croissance du PIB potentiel par institution (%)",
+   "unite": "%",
+   "annees": [
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "series": {
+    "Gouvernement (18 sept 2026)": [
+     1.2,
+     1.2,
+     1.2,
+     1.2,
+     1.0,
+     1.0
+    ],
+    "OFCE (17 sept)": [
+     1.4,
+     1.3,
+     1.2,
+     null,
+     null,
+     null
+    ],
+    "Rexecode (17 sept)": [
+     1.0,
+     1.0,
+     1.0,
+     null,
+     null,
+     null
+    ],
+    "Banque de France (8 juil)": [
+     1.2,
+     1.1,
+     1.0,
+     0.9,
+     null,
+     null
+    ],
+    "OCDE (3 juin)": [
+     1.1,
+     1.1,
+     1.0,
+     null,
+     null,
+     null
+    ],
+    "Commission européenne (3 juin)": [
+     1.2,
+     1.1,
+     1.0,
+     0.9,
+     0.8,
+     0.8
+    ],
+    "FMI (14 avr)": [
+     0.9,
+     0.9,
+     1.0,
+     1.1,
+     1.2,
+     1.1
+    ]
+   },
+   "source": {
+    "t": "Avis n°2026-5 relatif aux projets de lois de finances et de financement de la sécurité sociale pour 2027",
+    "org": "Haut Conseil des finances publiques",
+    "date": "2026-10",
+    "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+    "ou": "tableau 17, p. 41",
+    "citation": "Comparaison des prévisions de croissance potentielle"
+   },
+   "verifie": true
+  },
+  {
+   "id": "tableau17_hcfp_ecart_production",
+   "quoi": "Écart de production par institution (pt de PIB potentiel)",
+   "unite": "pt de PIB potentiel",
+   "annees": [
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "series": {
+    "Gouvernement": [
+     0.2,
+     -0.5,
+     -0.7,
+     -0.8,
+     -0.7,
+     -0.5
+    ],
+    "OFCE": [
+     -0.4,
+     -1.4,
+     -1.9,
+     null,
+     null,
+     null
+    ],
+    "Rexecode": [
+     -0.2,
+     -0.8,
+     -1.1,
+     null,
+     null,
+     null
+    ],
+    "OCDE": [
+     -0.4,
+     -0.8,
+     -1.0,
+     null,
+     null,
+     null
+    ],
+    "Commission européenne": [
+     -0.6,
+     -0.9,
+     -0.8,
+     -0.5,
+     -0.3,
+     0.0
+    ],
+    "FMI (WEO avril, −0,3 pt à partir de 2026)": [
+     -0.1,
+     -0.5,
+     -0.6,
+     -0.5,
+     -0.5,
+     -0.4
+    ]
+   },
+   "source": {
+    "t": "Avis n°2026-5 relatif aux projets de lois de finances et de financement de la sécurité sociale pour 2027",
+    "org": "Haut Conseil des finances publiques",
+    "date": "2026-10",
+    "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+    "ou": "tableau 17, p. 41",
+    "citation": "Écart de production (en pt de PIB potentiel)"
+   },
+   "verifie": true
+  },
+  {
+   "id": "scenario_gouvernement_plf2027",
+   "quoi": "Scénario de moyen terme du Gouvernement (PLF 2027)",
+   "unite": "%",
+   "annees": [
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "series": {
+    "croissance_pib_volume": [
+     0.9,
+     0.5,
+     1.0,
+     1.1,
+     1.1,
+     1.2
+    ],
+    "croissance_potentielle": [
+     1.2,
+     1.2,
+     1.2,
+     1.2,
+     1.0,
+     1.0
+    ],
+    "ecart_production": [
+     0.2,
+     -0.5,
+     -0.7,
+     -0.8,
+     -0.7,
+     -0.5
+    ],
+    "dette_publique_pct_pib": [
+     115.7,
+     119.3,
+     121.7,
+     122.4,
+     121.9,
+     120.9
+    ]
+   },
+   "source": {
+    "t": "Rapport économique, social et financier – PLF 2027",
+    "org": "DG Trésor",
+    "date": "2026-10",
+    "u": "https://www.tresor.economie.gouv.fr/Articles/03454e04-445d-4ce6-832b-cff601a11485/files/56839f98-37fc-48d8-b502-81cac5a48cad",
+    "ou": "tableau de synthèse, PDF p. 135",
+    "citation": "Croissance potentielle volume (%)"
+   },
+   "verifie": true,
+   "note": "Le HCFP juge la croissance 2027 « optimiste » et estime « plus réaliste » une croissance plus modérée en 2028-2029."
+  },
+  {
+   "id": "productivite_emploi_previsions",
+   "quoi": "Productivité et emploi prévus par le Gouvernement",
+   "unite": "% annuel",
+   "annees": [
+    2025,
+    2026,
+    2027
+   ],
+   "series": {
+    "productivite_par_tete_ensemble_economie": [
+     0.7,
+     0.4,
+     0.9
+    ],
+    "productivite_BMNA_EQTP": [
+     1.2,
+     1.1,
+     1.3
+    ],
+    "emploi_total": [
+     0.2,
+     0.2,
+     0.1
+    ],
+    "SMPT_BMNA": [
+     2.0,
+     2.0,
+     2.7
+    ]
+   },
+   "source": {
+    "t": "Avis n°2026-5 relatif aux projets de lois de finances et de financement de la sécurité sociale pour 2027",
+    "org": "Haut Conseil des finances publiques",
+    "date": "2026-10",
+    "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+    "ou": "annexe, tableau du scénario, p. 45",
+    "citation": "Productivité du travail (en EQTP)"
+   },
+   "verifie": true,
+   "note": "Ligne « ensemble de l'économie » tirée de RESF 2027, tableau 11 (PDF p. 192)."
+  },
+  {
+   "id": "population_projection_insee_2026",
+   "quoi": "Population de la France au 1er janvier, scénario central des projections Insee 2026 (ICF 1,45 à partir de 2028, solde migratoire +150 000/an)",
+   "unite": "millions",
+   "annees": [
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032
+   ],
+   "series": {
+    "population_totale": [
+     68.85,
+     69.08,
+     69.27,
+     69.38,
+     69.46,
+     69.53,
+     69.59,
+     69.64
+    ],
+    "population_15_64": [
+     42.37,
+     42.51,
+     42.58,
+     42.63,
+     42.62,
+     42.61,
+     42.59,
+     42.56
+    ],
+    "population_20_64": [
+     38.12,
+     38.22,
+     38.27,
+     38.29,
+     38.29,
+     38.29,
+     38.31,
+     38.32
+    ]
+   },
+   "source": {
+    "t": "Projections de population 2026 pour la France – scénario central (00_central.xlsx)",
+    "org": "Insee",
+    "date": "2026-06",
+    "u": "https://www.insee.fr/fr/statistiques/fichier/8990852/00_central.xlsx",
+    "ou": "onglet « population », ligne Total ; sommes 15-64 et 20-64 calculées par nous depuis les effectifs par âge",
+    "citation": "PROJECTION DE POPULATION 2026, France"
+   },
+   "verifie": true,
+   "note": "Les tranches 15-64 et 20-64 sont des sommes calculées à partir du fichier. Variantes : population basse/haute dans les autres fichiers Insee (non téléchargés)."
+  },
+  {
+   "id": "population_projection_insee_2021_pour_memoire",
+   "quoi": "Ancienne projection Insee 2021, scénario central (pour mémoire, périmée)",
+   "unite": "millions",
+   "annees": [
+    2027,
+    2030,
+    2032
+   ],
+   "series": {
+    "population_totale": [
+     68.2,
+     68.6,
+     68.7
+    ]
+   },
+   "source": {
+    "t": "68,1 millions d'habitants en 2070 (Insee Première n°1881, projections 2021)",
+    "org": "Insee",
+    "date": "2021-11",
+    "u": "https://www.insee.fr/fr/statistiques/5893969",
+    "ou": "figure 3",
+    "citation": "au 1er janvier 2070, il y aurait 68,1 millions d'habitants"
+   },
+   "verifie": true,
+   "note": "Remplacée par les projections 2026 : niveau plus haut (estimations de population révisées) mais croissance plus lente (fécondité plus basse)."
+  },
+  {
+   "id": "pib_2025",
+   "quoi": "PIB 2025 en valeur",
+   "valeur": 2991.1,
+   "unite": "Md€ courants",
+   "source": {
+    "t": "Comptes nationaux annuels en 2025",
+    "org": "Insee",
+    "date": "2026-05",
+    "u": "https://www.insee.fr/fr/statistiques/8988793",
+    "ou": "tableau principal",
+    "citation": "atteint 2 991,1 milliards d'euros"
+   },
+   "verifie": true,
+   "note": "Volume +0,8 % (2025), +1,5 % (2024), +1,6 % (2023, révisé). Population au 1er janvier 2026 : 69,1 M (Insee Première n°2087). PIB par habitant 2025 ≈ 2 991,1 / 68,97 ≈ 43 400 € : calcul de notre part (population moyenne de 2025), pas un chiffre Insee publié."
+  },
+  {
+   "id": "demographie_2025",
+   "quoi": "Solde naturel 2025",
+   "valeur": -6000,
+   "unite": "personnes",
+   "source": {
+    "t": "Bilan démographique 2025 (Insee Première n°2087)",
+    "org": "Insee",
+    "date": "2026-01",
+    "u": "https://www.insee.fr/fr/statistiques/8719824",
+    "ou": "Insee Première n°2087",
+    "citation": "solde naturel"
+   },
+   "verifie": false,
+   "note": "Lu dans le résumé de recherche (645 000 naissances, 651 000 décès, ICF 1,56, solde migratoire +176 000) ; la page Insee n'a pas été ouverte directement."
+  }
+ ],
+ "calage": [
+  {
+   "org": "Banque de France (projections intermédiaires)",
+   "date": "2026-09",
+   "annee": 2026,
+   "pib": 0.4,
+   "infl": 2.3,
+   "chomage": 8.3,
+   "deficit": null,
+   "dette": null,
+   "oat10": 3.8,
+   "brent_usd": 89.5,
+   "u": "https://www.banque-france.fr/system/files/2026-09/Macroeconomic_interim_projections_September-2026.pdf",
+   "ou": "p. 6, tableaux 1-2"
+  },
+  {
+   "org": "Banque de France (projections intermédiaires)",
+   "date": "2026-09",
+   "annee": 2027,
+   "pib": 0.9,
+   "infl": 1.9,
+   "chomage": 8.3,
+   "deficit": null,
+   "dette": null,
+   "oat10": 4.2,
+   "brent_usd": 78.0,
+   "u": "https://www.banque-france.fr/system/files/2026-09/Macroeconomic_interim_projections_September-2026.pdf",
+   "ou": "p. 6"
+  },
+  {
+   "org": "Banque de France (projections intermédiaires)",
+   "date": "2026-09",
+   "annee": 2028,
+   "pib": 1.2,
+   "infl": 1.6,
+   "chomage": 8.0,
+   "deficit": null,
+   "dette": null,
+   "oat10": 4.5,
+   "brent_usd": 73.6,
+   "u": "https://www.banque-france.fr/system/files/2026-09/Macroeconomic_interim_projections_September-2026.pdf",
+   "ou": "p. 6"
+  },
+  {
+   "org": "Gouvernement, PLF 2027 (saisine du HCFP)",
+   "date": "2026-09",
+   "annee": 2026,
+   "pib": 0.5,
+   "infl": 2.1,
+   "chomage": null,
+   "deficit": 5.4,
+   "dette": 119.3,
+   "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+  },
+  {
+   "org": "Gouvernement, PLF 2027",
+   "date": "2026-09",
+   "annee": 2027,
+   "pib": 1.0,
+   "infl": 1.8,
+   "chomage": null,
+   "deficit": 5.0,
+   "dette": 121.7,
+   "oat10": 4.3,
+   "u": "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+   "note": "Le HCFP juge la croissance de 1,0 % optimiste et la trajectoire de taux « trop optimiste »."
+  },
+  {
+   "org": "Gouvernement, trajectoire sous-jacente au PLF 2027",
+   "date": "2026-10",
+   "annee": 2028,
+   "pib": 1.1,
+   "infl": 1.75,
+   "chomage": null,
+   "deficit": 3.9,
+   "dette": 122.4,
+   "u": "https://www.tresor.economie.gouv.fr/Articles/a03a2517-7707-459d-adbc-c721d82d51c7/files/c386b8c2-b030-4a25-8912-79a7d259aa0e"
+  },
+  {
+   "org": "Gouvernement, trajectoire sous-jacente au PLF 2027",
+   "date": "2026-10",
+   "annee": 2029,
+   "pib": 1.1,
+   "infl": 1.75,
+   "chomage": null,
+   "deficit": 2.8,
+   "dette": 121.9,
+   "u": "https://www.tresor.economie.gouv.fr/Articles/a03a2517-7707-459d-adbc-c721d82d51c7/files/c386b8c2-b030-4a25-8912-79a7d259aa0e",
+   "note": "Le HCFP juge le retour sous 3 % en 2029 peu probable."
+  },
+  {
+   "org": "Gouvernement, trajectoire sous-jacente au PLF 2027",
+   "date": "2026-10",
+   "annee": 2030,
+   "pib": 1.2,
+   "infl": 1.75,
+   "chomage": null,
+   "deficit": 2.4,
+   "dette": 120.9,
+   "u": "https://www.tresor.economie.gouv.fr/Articles/a03a2517-7707-459d-adbc-c721d82d51c7/files/c386b8c2-b030-4a25-8912-79a7d259aa0e"
+  },
+  {
+   "org": "FMI WEO",
+   "date": "2026-10",
+   "annee": 2026,
+   "pib": 0.4,
+   "infl": 2.4,
+   "chomage": 8.4,
+   "deficit": 5.4,
+   "dette": 118.5,
+   "u": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf"
+  },
+  {
+   "org": "FMI WEO",
+   "date": "2026-10",
+   "annee": 2027,
+   "pib": 0.7,
+   "infl": 2.2,
+   "chomage": 8.3,
+   "deficit": 5.2,
+   "dette": 120.4,
+   "u": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf"
+  },
+  {
+   "org": "FMI WEO",
+   "date": "2026-10",
+   "annee": 2031,
+   "pib": 1.1,
+   "infl": 1.8,
+   "chomage": null,
+   "deficit": 3.9,
+   "dette": 123.6,
+   "u": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf"
+  },
+  {
+   "org": "FMI, Article IV",
+   "date": "2026-07",
+   "annee": 2027,
+   "pib": 0.9,
+   "infl": 1.7,
+   "chomage": 8.0,
+   "deficit": 4.9,
+   "dette": 120.3,
+   "u": "https://www.imf.org/-/media/files/publications/cr/2026/english/1fraea2026001.pdf"
+  },
+  {
+   "org": "FMI, Article IV",
+   "date": "2026-07",
+   "annee": 2028,
+   "pib": 1.2,
+   "infl": 1.9,
+   "chomage": 7.8,
+   "deficit": 4.5,
+   "dette": 121.1,
+   "u": "https://www.imf.org/-/media/files/publications/cr/2026/english/1fraea2026001.pdf"
+  },
+  {
+   "org": "Commission européenne, printemps 2026 (politiques inchangées)",
+   "date": "2026-05",
+   "annee": 2026,
+   "pib": 0.8,
+   "infl": 2.4,
+   "chomage": 8.3,
+   "deficit": 5.1,
+   "dette": 118.1,
+   "u": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages/france/economic-forecast-france_en"
+  },
+  {
+   "org": "Commission européenne, printemps 2026 (politiques inchangées)",
+   "date": "2026-05",
+   "annee": 2027,
+   "pib": 1.1,
+   "infl": 1.8,
+   "chomage": 8.7,
+   "deficit": 5.7,
+   "dette": 120.2,
+   "u": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages/france/economic-forecast-france_en"
+  },
+  {
+   "org": "Commission européenne, DSM 2025 (politique inchangée, à partir des prévisions d'automne 2025)",
+   "date": "2026-02",
+   "annee": 2030,
+   "pib": null,
+   "infl": null,
+   "chomage": null,
+   "deficit": null,
+   "dette": 126.5,
+   "u": "https://economy-finance.ec.europa.eu/document/download/39b3b61d-42c1-46d7-8088-0aad82e8731e_en?filename=ip332_en.pdf",
+   "ou": "fiche France p. 167, tableau ; charge d'intérêts 3,5 % du PIB en 2030 ; dette à 144 % en 2036"
+  },
+  {
+   "org": "OCDE, rapport intermédiaire",
+   "date": "2026-09",
+   "annee": 2027,
+   "pib": 0.7,
+   "infl": 2.1,
+   "chomage": null,
+   "deficit": null,
+   "dette": null,
+   "u": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/09/oecd-economic-outlook-interim-report-september-2026_8312492f/f751d02b-en.pdf"
+  },
+  {
+   "org": "BCE, zone euro",
+   "date": "2026-09",
+   "annee": 2027,
+   "pib": 1.4,
+   "infl": 2.5,
+   "chomage": 6.1,
+   "deficit": 3.7,
+   "dette": 88.8,
+   "u": "https://www.ecb.europa.eu/press/projections/html/ecb.projections202609_ecbstaff~8e340fc69d.en.html",
+   "zone": "ZE"
+  },
+  {
+   "org": "FMI WEO, zone euro",
+   "date": "2026-10",
+   "annee": 2027,
+   "pib": 1.2,
+   "infl": 2.8,
+   "chomage": 6.3,
+   "deficit": 3.6,
+   "dette": 88.5,
+   "u": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf",
+   "zone": "ZE"
+  }
+ ],
+ "scenarios": [
+  {
+   "org": "Banque de France",
+   "date": "2026-09",
+   "nom": "Scénario adverse (énergie)",
+   "hypotheses": "Trajectoires d'énergie de l'Eurosystème ; chocs à partir du T4 2026",
+   "effet_pib": "FR : croissance de 0,4 % en 2026 et en 2027, puis 1,6 % en 2028 (base : 0,4 / 0,9 / 1,2)",
+   "effet_infl": "+0,1 point en 2026, +0,3 point en 2027",
+   "zone": "FR",
+   "u": "https://www.banque-france.fr/system/files/2026-09/Macroeconomic_interim_projections_September-2026.pdf",
+   "ou": "p. 5, encadré",
+   "citation": "growth would be 0.4% in 2026 and 2027"
+  },
+  {
+   "org": "Banque de France",
+   "date": "2026-09",
+   "nom": "Scénario sévère (énergie)",
+   "hypotheses": "Pic du pétrole à 132 $ au T4 2026 ; gaz à 130 €/MWh",
+   "effet_pib": "FR : -0,2 % en 2027, puis 1,6 % en 2028",
+   "effet_infl": "2,9 % (2026), 4,2 % (2027), 2,2 % (2028)",
+   "zone": "FR",
+   "u": "https://www.banque-france.fr/system/files/2026-09/Macroeconomic_interim_projections_September-2026.pdf",
+   "ou": "p. 5",
+   "citation": "growth would be slightly negative in 2027 (-0.2%)"
+  },
+  {
+   "org": "BCE",
+   "date": "2026-09",
+   "nom": "Scénario sévère",
+   "hypotheses": "Pétrole à environ 130 $ et gaz à 130 €/MWh au T4 2026 ; VIX +14",
+   "effet_pib": "ZE : 0,8 / 0,4 / 1,4 (base : 0,9 / 1,4 / 1,5)",
+   "effet_infl": "3,3 / 5,4 / 3,2 (base : 3,0 / 2,5 / 2,1)",
+   "zone": "ZE",
+   "u": "https://www.ecb.europa.eu/press/projections/html/ecb.projections202609_ecbstaff~8e340fc69d.en.html",
+   "ou": "Table 1, encadré 4",
+   "citation": "oil prices rise by 50% and gas prices more than double"
+  },
+  {
+   "org": "BCE",
+   "date": "2026-09",
+   "nom": "Scénario adverse",
+   "hypotheses": "Pétrole à environ 100 $ et gaz à 75 €/MWh au T4 2026",
+   "effet_pib": "ZE : 0,9 / 1,1 / 1,4",
+   "effet_infl": "3,1 / 3,2 / 2,3",
+   "zone": "ZE",
+   "u": "https://www.ecb.europa.eu/press/projections/html/ecb.projections202609_ecbstaff~8e340fc69d.en.html",
+   "ou": "Table 1",
+   "citation": "oil prices increase to around USD 100 per barrel"
+  },
+  {
+   "org": "FMI WEO",
+   "date": "2026-10",
+   "nom": "Scénario matières premières et marché obligataire (encadré 1.2)",
+   "hypotheses": "Conflit jusqu'en juin 2027 ; pétrole à 130 $ ; primes de terme +60 pb",
+   "effet_pib": "Monde : -0,2 point (2026), -0,5 point (2027) ; dette des économies avancées +3 points de PIB en 2031",
+   "effet_infl": "Monde : +0,4 / +1,1 point",
+   "zone": "monde",
+   "u": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/ch1.pdf",
+   "ou": "encadré 1.2, p. 25-27",
+   "citation": "Global growth is lower by 0.2 and 0.5 percentage point in 2026 and 2027"
+  },
+  {
+   "org": "Commission européenne",
+   "date": "2026-05",
+   "nom": "Scénario baissier (prévisions de printemps)",
+   "hypotheses": "Pétrole à environ 180 $ fin 2026 ; primes de risque UE +25 pb",
+   "effet_pib": "UE : -0,4 point (2026), -0,7 point (2027)",
+   "effet_infl": "+0,3 point (2026), environ +1,1 point (2027)",
+   "zone": "UE",
+   "u": "https://economy-finance.ec.europa.eu/document/download/3360898c-cd40-46c0-b170-7adfcb993add_en?filename=ip341_en.pdf",
+   "ou": "p. 53-55",
+   "citation": "EU GDP growth is almost halved relative to the baseline"
+  },
+  {
+   "org": "OCDE",
+   "date": "2026-09",
+   "nom": "Risques baissiers combinés",
+   "hypotheses": "Pétrole +24 % ; gaz +31 % ; primes de risque +35 pb ; prime de terme +25 pb",
+   "effet_pib": "Monde : -0,7 point en 2027",
+   "effet_infl": "+1,1 point",
+   "zone": "monde",
+   "u": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/09/oecd-economic-outlook-interim-report-september-2026_8312492f/f751d02b-en.pdf",
+   "ou": "§24-25, p. 17-18",
+   "citation": "could reduce global growth by 0.7 percentage points in 2027"
+  },
+  {
+   "org": "Commission européenne (DSM 2025)",
+   "date": "2026-02",
+   "nom": "Stress financier, France",
+   "hypotheses": "+1 point pour tous les pays, plus 0,06 × (dette - 90) : +2,6 points de taux de marché en 2026 pour la France",
+   "effet_pib": "non modélisé",
+   "effet_infl": "non modélisé",
+   "effet_dette": "+3 points de dette en 2036 (r-g adverse de +1 point : +12 points)",
+   "zone": "FR",
+   "u": "https://economy-finance.ec.europa.eu/document/download/39b3b61d-42c1-46d7-8088-0aad82e8731e_en?filename=ip332_en.pdf",
+   "ou": "fiche France p. 165",
+   "citation": "market interest rates temporarily increase by 2.6 pps"
+  },
+  {
+   "org": "Hypothèses pétrole de base (divergentes)",
+   "date": "2026-09/10",
+   "nom": "Brent",
+   "hypotheses": "BCE/BdF : 89,5 $ (2026), 78,0 $ (2027), 73,6 $ (2028) ; FMI : 95,7 $ et 87,4 $ (moyenne de 3 bruts) ; OCDE : 85 $ en 2027",
+   "effet_pib": "",
+   "effet_infl": "",
+   "zone": "monde",
+   "u": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/ch1.pdf",
+   "ou": "Table 1.1, note 6",
+   "citation": "the assumed price, based on futures markets, is $95.74 in 2026"
+  }
+ ],
+ "non_trouve": {
+  "multiplicateurs": [
+   "Impôts sur le patrimoine (ISF, taxe Zucman, droits de succession) : aucun multiplicateur publié par une institution non partisane trouvé ; seul proxy : impôt sur les revenus du capital (EAGLE France, Kilponen et al. 2015), conceptuellement différent d'un impôt sur le stock.",
+   "Impôt sur les sociétés, surtaxes, superprofits : pas de variante IS dans Mésange 2017 ni dans e-mod (Creel et al. 2011) ; Mésange 2010 (Klein et Simon, DT Insee G2010/03) non lu : le PDF sur bnsp.insee.fr est derrière une vérification anti-robot.",
+   "Impôts de production (CVAE, C3S, CFE) : aucun multiplicateur trouvé.",
+   "TVA sur l'énergie, séparément de la TVA générale : non trouvé (proxy taxe carbone Mésange).",
+   "Retraites et indexation des pensions, séparément des autres prestations : non trouvé (seulement « prestations sociales en espèces » e-mod, et transferts QUEST pour l'Espagne).",
+   "Salaires publics (point d'indice), séparément de l'emploi public : non trouvé.",
+   "Asymétrie hausse/baisse du déficit pour la France : aucune source ouverte ne la chiffre ; les modèles cités sont présentés dans un seul sens.",
+   "Mésange postérieur à 2017 (variantes par instrument) : non trouvé ; DT Insee 2024-07 ne recalcule que l'investissement public.",
+   "FR-BDF (Banque de France) par instrument fiscal (TVA, IR, IS) : non trouvé ; WP 736 (2019) et WP 1044 (2026) non lus (PDF refusé en 403 par le serveur), et leurs résumés ne portent que sur la politique monétaire.",
+   "Méta-analyse OCDE 2009 : PDF d'origine non ouvert (403) ; chiffres repris du tableau 2 de la Revue de l'OFCE 116.",
+   "Coenen et al. (FMI WP 10/73, 2010), multiplicateurs par instrument pour la zone euro : ouvert, mais les valeurs ne figurent que dans des graphiques (fig. 43-84), non lisibles en texte.",
+   "Avis du HCFP et rapports de la Cour des comptes : aucun multiplicateur chiffré par instrument trouvé.",
+   "Multiplicateurs de défense propres à la France : pas d'estimation chiffrée (OFCE 2025 qualitatif) ; WP FMI 2026/053 non lu en texte intégral.",
+   "Pages OFCE anciennes (blogs sur les multiplicateurs) : liens morts après le changement de domaine (ofce.fr renvoie 404)."
+  ],
+  "travail": [
+   "Loi d'Okun récente (après 2015) estimée et publiée par l'Insee, la Banque de France, la DG Trésor, l'OCDE ou la Commission pour la France : rien trouvé. Seule source : FMI (Ball-Leigh-Loungani, données 1980-2011).",
+   "NAIRU de l'OCDE pour la France (base Perspectives économiques) : non trouvé. Chômage structurel retenu par la DG Trésor (PLF 2027 / rapport d'avancement) et avis du HCFP sur le PLF 2027 : non trouvés.",
+   "Coefficients du modèle FR-BDF réestimé (BdF WP 1044, mai 2026 : courbes de Phillips des prix et des salaires, équation d'emploi) : le PDF renvoie une erreur 403, non lu.",
+   "Courbe de Phillips des PRIX (inflation / chômage) chiffrée pour la France par une institution : non trouvée (seule l'indication qualitative de la BdF 'plus pentue' dans FR-BDF 2026, non lue).",
+   "Effet sur l'emploi d'un retour à 62 ou à 60 ans : aucun chiffrage institutionnel trouvé (le COR et la Cour des comptes chiffrent le coût, pas l'emploi). Le tableau âge/PIB du rapport de la Cour des comptes de février 2025 n'a pas été ouvert.",
+   "Nombre d'emplois détruits pour +1 % de Smic (ou un Smic à 1 600 € net) : pas de chiffre publié par le groupe d'experts, le Trésor ou le CAE. Seules les élasticités au coût du travail existent.",
+   "Emploi public : aucune variante institutionnelle en 'emplois par Md€ de recrutements'. Dans Mésange, l'emploi non marchand est exogène (1 emploi recruté = 1 emploi), et seule la variante 'dépense publique générique' (25 % en rémunérations publiques) existe.",
+   "Réforme de l'assurance chômage 2023 et règles 2025 : pas d'évaluation ex post en emplois (Dares, Unédic). Le chiffre gouvernemental de '100 000 à 150 000 emplois' n'a pas été retrouvé à la source. Le rapport final du comité Dares 2019-2021 (avril 2025 : durée de chômage -12 %) est connu par la presse, pas lu.",
+   "Population active BIT moyenne 2025 en niveau (31,8 millions selon une reprise) : non retrouvée dans la publication Insee lue.",
+   "Données du chômage au T3 2026 : publication Insee prévue le 10 novembre 2026."
+  ],
+  "croissance": [
+   "Décomposition de la croissance potentielle selon la Commission européenne (AMECO) pour la France : non consultée. Seuls les totaux sont connus, via le HCFP.",
+   "Croissance potentielle 2031-2032 : aucune institution ne la publie (la Commission et le FMI s'arrêtent en 2030 dans les sources lues).",
+   "Paramètres de la fonction de production du Trésor et de la BdF (part du travail, filtres) : non publiés dans les documents lus. Élasticité de substitution de la CES de Mésange : non retrouvée.",
+   "Chapitre 3 du WEO FMI d'octobre 2014 : PDF inaccessible (accès refusé puis HTTP 429). Remplacé par le document de travail FMI 15/95.",
+   "Méta-analyse Bom et Ligthart (2014) : non ouverte (0,17 lu dans le FMI).",
+   "Élasticité du PIB au capital public estimée spécifiquement pour la France (Trésor, Commission QUEST) : non trouvée.",
+   "Rapport CNEPI 2021 sur le CIR et rapport IPP n°33 : PDF non ouverts (France Stratégie : fichiers absents ; IPP : 404). Fourchette PME 0,9-1,5 € non vérifiée.",
+   "Effet propre du CIR sur l'innovation et la productivité des grandes entreprises : non démontré (CNEPI 2021, via le Trésor).",
+   "Évaluation macro chiffrée de la baisse de 10 Md€ d'impôts de production de 2021 (France Stratégie, France Relance vol. II) : PDF non ouvert ; aucun chiffrage Trésor trouvé.",
+   "Effet chiffré d'une baisse de l'IS (33,3 % → 25 %) sur le PIB ou l'investissement par une institution non partisane : non trouvé ; seul un document gouvernemental (plan d'action, 1,5 pt de PIB) apparaît, non vérifié et non retenu.",
+   "Effet du PFU et de l'IFI sur l'investissement : effet non démontré (comité France Stratégie 2023).",
+   "Variante IS dans Mésange 2017 : absente (variantes publiées : investissement public, dépense, cotisations, TVA, CSG, IR, taxe carbone, efficience, population active, taux).",
+   "Publication Insee 2026 « Les gains de productivité français en partie retrouvés... » : non ouverte (citée par le Trésor-Éco 404).",
+   "Projection de population active Insee : non consultée.",
+   "PIB par habitant publié par l'Insee : non trouvé ; seul un calcul dérivé est fourni.",
+   "Nouvelle loi de programmation des finances publiques : aucune en vigueur couvrant 2026-2032. Le HCFP demande une évaluation réaliste du PIB potentiel pour la prochaine LPFP."
+  ],
+  "taux": [
+   "Aucune estimation publiée par la BdF, la Commission, la BCE ou le FMI ne relie précisément l'élargissement OAT-Bund de 2024-2026 à la dette (d'environ 70 pb fin 2025 selon le DSM 2025, à 162 pb début nov. 2026). Le RSF BdF de juin 2026 n'a pas été ouvert ; seule une recherche web indique un écart d'environ +8 pb pendant le choc pétrolier. Aucune décomposition entre prime budgétaire et prime politique n'a été trouvée.",
+   "Coefficient pb par point de déficit estimé pour la France ou la zone euro par une institution sur données récentes : seuls existent Laubach (États-Unis) et le calibrage de la BCE de 2017.",
+   "FMI : aucun coefficient pb par point de dette lu dans une source primaire (le Fiscal Monitor d'octobre 2026 est introuvable, erreur 404).",
+   "Sensibilité de la charge en comptabilité budgétaire de l'État (PAP programme 117) : non trouvée. Une recherche cite un rapport du Sénat (3,2 / 23,5 / 33,5 Md€ à 1, 5 et 9 ans), non ouvert, donc non vérifié.",
+   "r-g projeté par le HCFP, la Commission ou le FMI : aucun chiffre publié. La Cour donne r = 2,0 % et g = 1,9 % en 2025. Les r-g de 2027-2030 du sous-agent sont des calculs, non retenus.",
+   "Trajectoire de transmission du taux à 10 ans au taux habitat avec un délai publié : seule une équation FR-BDF existe (calcul marqué non vérifié).",
+   "Stat Info de septembre 2026 (taux des crédits) : parution les 5 et 9 nov. 2026.",
+   "Prévisions d'automne 2026 de la Commission : pas encore parues (attendues mi-nov. 2026).",
+   "Déficit et dette des projections BdF de septembre 2026 : non publiés dans ces projections intermédiaires. Juin 2026 : non lu directement (la recherche indique un déficit de 5,2 % en 2026 et une dette d'environ 122 % en 2028).",
+   "Taux de chômage du PLF 2027 : absent.",
+   "Élasticité directe Allemagne → France : non publiée (proxy : variante de demande mondiale de Mésange).",
+   "Variante Mésange postérieure à 2017 : non trouvée."
+  ]
+ }
+}

@@ -240,6 +240,7 @@ def load():
 
     verifier_histoire(payload["histoire"])
     verifier_pouvoir(payload["pouvoir"], payload, ids, icones_)
+    verifier_macro()
 
     dep = sum(x["v"] for x in payload["baseline"]["depenses"])
     rec = sum(x["v"] for x in payload["baseline"]["recettes"])
@@ -341,6 +342,45 @@ def verifier_pouvoir(pa, payload, ids, icones):
     for s_ in sources:
         if not s_.get("t") or not str(s_.get("u", "")).startswith("http"):
             sys.exit(f"{ou}: source inutilisable {s_!r}")
+
+
+def verifier_macro():
+    """Coefficients de la projection : chacun sourcé, borné dans le bon ordre, sans doublon.
+
+    Le fichier n'est pas embarqué dans la page tant que le moteur ne s'en sert pas,
+    mais il est contrôlé à chaque construction.
+    """
+    ou = "dataset/simulateur/macro.json"
+    with (DATA / "macro.json").open(encoding="utf-8") as fh:
+        mc = json.load(fh)
+    if "updated" in mc:
+        sys.exit(f"{ou}: pas de champ 'updated' (il ferait avancer la date du bandeau) ; utiliser 'revu'")
+    def url_ok(u):
+        return isinstance(u, str) and re.match(r"^https?://\S+$", u) is not None
+    vus = set()
+    for c in mc["coefficients"]:
+        cid = c.get("id")
+        if not cid or cid in vus:
+            sys.exit(f"{ou}: identifiant absent ou en double {cid!r}")
+        vus.add(cid)
+        if not c.get("quoi") or not c.get("unite") or not c.get("horizon"):
+            sys.exit(f"{ou}: {cid} — 'quoi', 'unite' et 'horizon' sont obligatoires")
+        if c.get("controle") not in {"confirme", "corrige", "non_revu"}:
+            sys.exit(f"{ou}: {cid} — 'controle' attendu parmi confirme, corrige, non_revu")
+        v, lo, hi = c.get("valeur"), c.get("lo"), c.get("hi")
+        nums = [x for x in (lo, hi) if isinstance(x, (int, float))]
+        if len(nums) == 2 and lo > hi:
+            sys.exit(f"{ou}: {cid} — lo ({lo}) supérieur à hi ({hi})")
+        if isinstance(v, (int, float)) and len(nums) == 2 and not lo <= v <= hi:
+            sys.exit(f"{ou}: {cid} — valeur {v} hors de la fourchette [{lo} ; {hi}]")
+        if not c.get("sources"):
+            sys.exit(f"{ou}: {cid} — aucune source")
+        for s_ in c["sources"]:
+            if not s_.get("t") or not s_.get("org") or not url_ok(s_.get("u")):
+                sys.exit(f"{ou}: {cid} — source sans titre, organisme ou URL valide : {s_.get('u')!r}")
+    for x in mc["calage"] + mc["scenarios"]:
+        if not url_ok(x.get("u")) or not x.get("org") or not x.get("date"):
+            sys.exit(f"{ou}: calage ou scénario sans organisme, date ou URL valide : {x!r}"[:300])
 
 
 def verifier_incidence(inc, ids):
