@@ -125,6 +125,19 @@ jobs:
             exit 1
           fi
 
+      # IndexNow : on signale la nouvelle version à Bing (et, par lui, à ChatGPT, DuckDuckGo,
+      # Qwant, Ecosia) et aux autres moteurs du protocole. Sans compte : la clé est le
+      # fichier web/<clé>.txt déjà envoyé. Un refus ne doit pas faire échouer la publication.
+      - name: Signaler la mise à jour aux moteurs (IndexNow)
+        continue-on-error: true
+        run: |
+          cle=$(python3 -c "import build; print(build.INDEXNOW_CLE)")
+          curl -s -o reponse.txt -w "IndexNow : HTTP %{http_code}\n" --max-time 30 \
+               -H 'Content-Type: application/json; charset=utf-8' \
+               -d "{\"host\":\"quipaie2027.fr\",\"key\":\"$cle\",\"keyLocation\":\"https://quipaie2027.fr/$cle.txt\",\"urlList\":[\"https://quipaie2027.fr/\",\"https://quipaie2027.fr/llms.txt\"]}" \
+               https://api.indexnow.org/indexnow
+          cat reponse.txt
+
       # `master` suit ce qui est en ligne. Fast-forward strict : si les branches ont
       # divergé, on le signale sans rien forcer (le site, lui, est déjà à jour).
       - name: Avancer master sur la relève publiée
