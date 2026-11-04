@@ -1,0 +1,246 @@
+{
+  "_comment": "Carte « Votre pouvoir d'achat » : effet mensuel d'un programme pour quatre foyers types, facteurs extérieurs au programme (prix, pétrole, taux), et la série longue de l'Insee. Les montants par foyer viennent de la répartition de incidence.json ; ce fichier n'ajoute que ce qu'elle ne couvre pas, chaque valeur avec sa source. Pas de champ « updated » : il ne doit pas faire avancer la date du bandeau.",
+  "revu": "2026-11-04",
+  "foyers": [
+    {
+      "id": "smic",
+      "groupe": "smic",
+      "lab": "Au Smic",
+      "icone": "salaire",
+      "revenu": 1477.93,
+      "quoi": "Smic net mensuel, temps plein",
+      "noteGroupe": "La part « impôts et aides » est la moyenne des salariés payés jusqu'à 1,6 Smic.",
+      "source": {
+        "t": "Service-public.fr, fiche F2300 « Smic », vérifiée le 1er juin 2026",
+        "u": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2300"
+      }
+    },
+    {
+      "id": "moyen",
+      "groupe": "moyens",
+      "lab": "Salaire moyen",
+      "icone": "famille"
+    },
+    {
+      "id": "retraite",
+      "groupe": "retraites",
+      "lab": "Retraité",
+      "icone": "retraite"
+    },
+    {
+      "id": "sansemploi",
+      "groupe": "sansemploi",
+      "lab": "Sans emploi",
+      "icone": "sansemploi"
+    }
+  ],
+  "prix": {
+    "mesures": [
+      "tva1",
+      "tvaener"
+    ],
+    "explication": "Les mesures de TVA agissent sur les prix payés en caisse : elles sont comptées à part, réparties selon la consommation de chaque groupe."
+  },
+  "salaires": {
+    "lfi": {
+      "smicNet": 1700,
+      "date": "2026-06-22",
+      "quoi": "Le groupe LFI à l'Assemblée défend « l'augmentation immédiate du SMIC à 1 700 euros net mensuels » (amendement d'appel n° 4 rect.).",
+      "source": {
+        "t": "Assemblée nationale, amendement n° 4 (rect.) du groupe LFI sur la proposition de loi n° 2790, 22 juin 2026",
+        "u": "https://www.assemblee-nationale.fr/dyn/17/amendements/2790/AN/4"
+      }
+    }
+  },
+  "inflation": {
+    "indicateur": "ipch",
+    "smic": {
+      "texte": "Le Smic est relevé automatiquement dès que les prix ont monté d'au moins 2 % depuis sa dernière fixation.",
+      "source": {
+        "t": "Service-public.fr, fiche F2300 « Smic », vérifiée le 1er juin 2026",
+        "u": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2300"
+      }
+    },
+    "retraites": {
+      "v": 0.9,
+      "date": "2026-01-01",
+      "texte": "Les retraites de base ont été revalorisées de 0,9 % au 1er janvier 2026, selon l'inflation de l'année précédente.",
+      "source": {
+        "t": "L'Assurance retraite, « Revalorisation de votre retraite en 2026 » (29 décembre 2025)",
+        "u": "https://www.lassuranceretraite.fr/portail-info/hors-menu/actualites-nationales/retraite/2025/revalorisation-2026.html"
+      }
+    }
+  },
+  "petrole": {
+    "hausse": 10,
+    "unite": "€ le baril",
+    "direct": 0.25,
+    "total": [
+      0.31,
+      0.36
+    ],
+    "texte": "Effet sur l'ensemble des prix à la consommation : environ 0,25 point directement (carburants, fioul), le reste par les coûts de production et de transport des autres biens.",
+    "source": {
+      "t": "Banque de France, Bloc-notes Éco n° 465, « Pourquoi une hausse du prix du pétrole alimente-t-elle moins l'inflation qu'en 2016 ? », tableau 1 (15 octobre 2026)",
+      "u": "https://www.banque-france.fr/fr/publications-et-statistiques/publications/pourquoi-une-hausse-du-prix-du-petrole-alimente-t-elle-moins-linflation-quen-2016"
+    }
+  },
+  "credit": {
+    "montant": 200000,
+    "duree": 20,
+    "taux": 3.32,
+    "mois": "août 2026",
+    "texte": "Taux moyen des nouveaux crédits à l'habitat, hors renégociations, hors frais et assurance.",
+    "source": {
+      "t": "Banque de France, Stat Info « Crédits aux particuliers – août 2026 »",
+      "u": "https://www.banque-france.fr/system/files/2026-10/Stat_info_Credits_aux_particuliers_202608.pdf"
+    }
+  },
+  "serie": {
+    "debut": 1960,
+    "fin": 2025,
+    "semiDefinitif": 2024,
+    "provisoire": 2025,
+    "quoi": "Évolution annuelle du pouvoir d'achat du revenu disponible brut par unité de consommation, en %, déflatée par le prix de la dépense de consommation des ménages.",
+    "uc": [
+      6.55,
+      3.59,
+      8.28,
+      4.62,
+      4.09,
+      3.65,
+      3.96,
+      4.5,
+      3.73,
+      3.74,
+      6.02,
+      4.14,
+      4.49,
+      4.79,
+      2.5,
+      2.56,
+      1.81,
+      1.89,
+      4.99,
+      -0.03,
+      -0.23,
+      0.86,
+      1.2,
+      -0.73,
+      -1.7,
+      0.18,
+      2.22,
+      1.04,
+      2.65,
+      2.63,
+      3.26,
+      0.63,
+      1.57,
+      0.01,
+      -0.1,
+      1.79,
+      0.51,
+      1.42,
+      2.51,
+      2.42,
+      3.03,
+      2.44,
+      2.34,
+      0.42,
+      1.42,
+      0.91,
+      2.42,
+      2.32,
+      -0.41,
+      1.09,
+      0.7,
+      -0.35,
+      -0.93,
+      -1.67,
+      0.68,
+      0.37,
+      0.97,
+      1.16,
+      0.33,
+      1.98,
+      -0.33,
+      2.81,
+      -0.28,
+      0.36,
+      2.2,
+      -0.69
+    ],
+    "prix": [
+      3.23,
+      3.0,
+      4.02,
+      4.82,
+      3.27,
+      2.65,
+      2.97,
+      3.17,
+      4.79,
+      6.97,
+      5.04,
+      5.63,
+      5.69,
+      7.29,
+      14.04,
+      11.5,
+      9.42,
+      9.38,
+      8.69,
+      10.81,
+      12.88,
+      13.39,
+      11.68,
+      9.49,
+      7.88,
+      6.2,
+      2.8,
+      2.94,
+      2.68,
+      3.73,
+      2.8,
+      2.65,
+      2.61,
+      1.47,
+      0.96,
+      0.94,
+      1.48,
+      0.76,
+      0.13,
+      -0.47,
+      2.08,
+      1.76,
+      0.98,
+      1.53,
+      2.09,
+      1.79,
+      2.08,
+      1.89,
+      2.84,
+      -1.65,
+      1.22,
+      1.8,
+      1.31,
+      0.59,
+      0.12,
+      0.23,
+      0.2,
+      0.77,
+      1.93,
+      0.79,
+      0.76,
+      1.36,
+      4.92,
+      7.06,
+      2.18,
+      0.84
+    ],
+    "source": {
+      "t": "Insee, « Revenu disponible brut et pouvoir d'achat, données annuelles de 1960 à 2025 », comptes nationaux annuels, base 2020",
+      "u": "https://www.insee.fr/fr/statistiques/2830244"
+    }
+  }
+}

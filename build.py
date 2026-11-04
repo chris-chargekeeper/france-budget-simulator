@@ -17,7 +17,7 @@ import sys
 
 ROOT = pathlib.Path(__file__).parent
 DATA = ROOT / "dataset" / "simulateur"
-FILES = ["baseline", "measures", "parties", "announcements", "assises", "contexte", "incidence", "histoire"]
+FILES = ["baseline", "measures", "parties", "announcements", "assises", "contexte", "incidence", "histoire", "pouvoir"]
 CONTRADICTION = {"non", "programme", "annonce", "inconnu"}
 
 DERIVE = ROOT / "dataset" / "derive"
@@ -239,6 +239,7 @@ def load():
                      f"inconnue {g.get('icone')!r}; template.html en déclare {sorted(icones_)}")
 
     verifier_histoire(payload["histoire"])
+    verifier_pouvoir(payload["pouvoir"], payload, ids, icones_)
 
     dep = sum(x["v"] for x in payload["baseline"]["depenses"])
     rec = sum(x["v"] for x in payload["baseline"]["recettes"])
@@ -291,6 +292,55 @@ def verifier_histoire(h):
     for s in h["sources"] + [h["dernierExcedent"]["source"]]:
         if not s["u"].startswith("http"):
             sys.exit(f"{ou}: source inutilisable {s!r}")
+
+
+def verifier_pouvoir(pa, payload, ids, icones):
+    """Votre pouvoir d'achat : chaque chiffre qui n'est pas calculé par le site porte sa source.
+
+    Pas de champ `updated`, comme pour l'histoire : la date du bandeau dit la fraîcheur de la veille.
+    """
+    ou = "dataset/simulateur/pouvoir.json"
+    if "updated" in pa:
+        sys.exit(f"{ou}: pas de champ 'updated' (il ferait avancer la date du bandeau) ; utiliser 'revu'")
+    groupes = {g["id"]: g for g in payload["incidence"]["groupes"]}
+    sources = []
+    for f in pa["foyers"]:
+        g = groupes.get(f.get("groupe"))
+        if not g:
+            sys.exit(f"{ou}: foyer {f.get('id')!r} rattaché au groupe inconnu {f.get('groupe')!r}")
+        if f.get("icone") not in icones:
+            sys.exit(f"{ou}: foyer {f['id']!r} — icône inconnue {f.get('icone')!r}")
+        if "revenu" in f:
+            if not f["revenu"] > 0 or not f.get("quoi") or "source" not in f:
+                sys.exit(f"{ou}: foyer {f['id']!r} — revenu propre sans libellé ou sans source")
+            sources.append(f["source"])
+        elif not (g.get("revenu") or {}).get("v"):
+            sys.exit(f"{ou}: foyer {f['id']!r} sans revenu de référence, ni ici ni dans incidence.json")
+    for m in pa["prix"]["mesures"]:
+        if m not in ids:
+            sys.exit(f"{ou}: mesure de prix inconnue {m!r}")
+    partis = {p["id"] for p in payload["parties"]["parties"]}
+    for pid, sal in pa["salaires"].items():
+        if pid not in partis:
+            sys.exit(f"{ou}: salaires — parti inconnu {pid!r}")
+        if not sal.get("smicNet", 0) > 0 or not re.match(r"^\d{4}-\d{2}-\d{2}$", sal.get("date", "")):
+            sys.exit(f"{ou}: salaires — {pid} sans montant ou sans date")
+        sources.append(sal["source"])
+    if pa["inflation"]["indicateur"] not in {i["id"] for i in payload["contexte"]["indicateurs"]}:
+        sys.exit(f"{ou}: l'indicateur d'inflation {pa['inflation']['indicateur']!r} n'existe pas dans contexte.json")
+    sources += [pa["inflation"]["smic"]["source"], pa["inflation"]["retraites"]["source"],
+                pa["petrole"]["source"], pa["credit"]["source"], pa["serie"]["source"]]
+    lo, hi = pa["petrole"]["total"]
+    if not 0 < pa["petrole"]["direct"] <= lo <= hi:
+        sys.exit(f"{ou}: pétrole — effet direct ≤ effet total bas ≤ effet total haut attendu")
+    se = pa["serie"]
+    n = se["fin"] - se["debut"] + 1
+    for k in ("uc", "prix"):
+        if len(se[k]) != n or any(not isinstance(v, (int, float)) or abs(v) > 30 for v in se[k]):
+            sys.exit(f"{ou}: série {k!r} : {n} valeurs numériques attendues, entre -30 et 30 %")
+    for s_ in sources:
+        if not s_.get("t") or not str(s_.get("u", "")).startswith("http"):
+            sys.exit(f"{ou}: source inutilisable {s_!r}")
 
 
 def verifier_incidence(inc, ids):
