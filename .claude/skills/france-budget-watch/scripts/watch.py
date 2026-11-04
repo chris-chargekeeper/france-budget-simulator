@@ -46,7 +46,8 @@ STRUCTURELS = {"id", "g", "inst", "lab", "ramp", "behav", "disp"}
 # avec une source ; il ne peut pas toucher au scénario chiffré d'un parti existant.
 CHAMPS_SONDAGE = {"institut", "commanditaire", "terrain_debut", "terrain_fin", "date", "echantillon",
                   "hypothese", "note", "source", "scores"}
-CHAMPS_PARTI_HAUT = {"annonce", "source", "candidat", "statutCandidature", "avatar", "retrait"}
+CHAMPS_PARTI_HAUT = {"annonce", "source", "candidat", "statutCandidature", "avatar", "retrait",
+                     "set"}
 CHAMPS_NOUVEAU = {"id", "nom", "sigle", "candidat", "avatar", "couleur", "statutCandidature",
                   "statut", "annonce", "set", "source"}
 STATUTS = {"publie", "partiel", "reconstitution"}
@@ -56,7 +57,8 @@ COULEUR = re.compile(r"^#[0-9A-Fa-f]{6}$")
 
 # Le contexte macroéconomique : des valeurs datées et sourcées. Le lien entre un indicateur et
 # une hypothèse du simulateur (`hypothese`) et ses bornes de vraisemblance se règlent à la main.
-CHAMPS_INDICATEUR = {"valeur", "date", "note", "source", "lab", "unite", "groupe", "detail"}
+CHAMPS_INDICATEUR = {"valeur", "date", "note", "source", "lab", "unite", "groupe", "detail",
+                     "montant", "arrete"}
 GROUPES = {"marches", "notation", "previsions", "finances"}
 
 
@@ -247,12 +249,33 @@ def valider(d, patch):
         if trop:
             erreurs.append(f"{ou} : champs non autorisés {sorted(trop)} — le scénario chiffré "
                            f"d'un parti ne se modifie pas par la veille")
+        if not isinstance(maj.get("set", {}), dict):
+            erreurs.append(f"{ou}.set : objet {{mesure: {{annonce: Md€}}}} attendu")
+            maj = {k: v for k, v in maj.items() if k != "set"}
         trop = set(maj.get("annonce", {})) - CHAMPS_PARTI
         if trop:
             erreurs.append(f"{ou} : champs non autorisés dans 'annonce' {sorted(trop)}")
         if not source_ok(maj.get("source")):
             erreurs.append(f"{ou} : toute révision d'un parti ou d'une candidature exige une "
                            f"source (titre + URL)")
+        # Le seul geste permis sur le scénario d'un parti : recaler le montant qu'il a lui-même
+        # annoncé pour une mesure déjà dans son scénario. Ajouter ou retirer une mesure reste
+        # une modification de fond, faite à la main.
+        for mes, champs in (maj.get("set") or {}).items():
+            if mes not in parti.get("set", {}):
+                erreurs.append(f"{ou}.set.{mes} : mesure absente du scénario de ce parti — "
+                               f"l'ajouter est une modification de fond, à faire à la main")
+                continue
+            if set(champs) != {"annonce"}:
+                erreurs.append(f"{ou}.set.{mes} : seul 'annonce' peut changer par la veille")
+                continue
+            v = champs["annonce"]
+            if v is not None and not (isinstance(v, (int, float)) and 0 < v < 500):
+                erreurs.append(f"{ou}.set.{mes}.annonce : montant en Md€ positif attendu, ou null")
+                continue
+            ancien = parti["set"][mes].get("annonce")
+            if ancien != v:
+                plan.append(f"  ± {pid}.set.{mes}.annonce : {ancien!r} → {v!r}")
         if "avatar" in maj and maj["avatar"] not in ("h", "f", None):
             erreurs.append(f"{ou} : 'avatar' attendu parmi 'h', 'f' ou null")
         if "retrait" in maj:
@@ -478,6 +501,17 @@ def appliquer(d, patch, ecrire_vraiment):
                                            "avant": parti["annonce"].get(champ), "apres": val,
                                            "source": maj["source"]["u"]})
                 parti["annonce"][champ] = val
+        for mes, champs in (maj.get("set") or {}).items():
+            ligne = parti["set"][mes]
+            if ligne.get("annonce") != champs["annonce"]:
+                trace["revisions"].append({"quoi": f"parties.{pid}.set.{mes}.annonce",
+                                           "avant": ligne.get("annonce"),
+                                           "apres": champs["annonce"],
+                                           "source": maj["source"]["u"]})
+                if champs["annonce"] is None:
+                    ligne.pop("annonce", None)
+                else:
+                    ligne["annonce"] = champs["annonce"]
         src = maj["source"]
         parti.setdefault("sources", [])
         if not any(s["u"] == src["u"] for s in parti["sources"]):
@@ -501,7 +535,7 @@ def appliquer(d, patch, ecrire_vraiment):
                         "u": (ind.get("source") or {}).get("u")})
                 trace["revisions"].append({"quoi": f"contexte.{iid}", "avant": ind.get("valeur"),
                                            "apres": maj["valeur"], "source": src["u"]})
-            for champ in ("valeur", "date", "note", "lab", "unite", "detail"):
+            for champ in ("valeur", "date", "note", "lab", "unite", "detail", "montant", "arrete"):
                 if champ in maj:
                     ind[champ] = maj[champ]
             ind["source"] = src
@@ -635,6 +669,164 @@ def controler(d):
               f"(champ 'verifie' à false)")
 
 
+# ---------------------------------------------------------------- cohérence
+
+def coherence(d):
+    """Ce que la page affirme tient-il encore face à ce que la base sait ?
+
+    `controler` vérifie que la page recopie fidèlement les données ; ici on vérifie que les
+    données ne se contredisent pas entre elles. Chaque relève le lance : ce qui peut se
+    corriger avec une source passe par un patch, le reste se signale dans le compte rendu.
+    Rien n'est écrit.
+    """
+    items = d["announcements"]["items"]
+    mesures = {m["id"]: m for m in d["measures"]["measures"]}
+    partis = [p for p in d["parties"]["parties"] if not p.get("retire") and not p.get("horsCourse")]
+    a_corriger, a_arbitrer, a_signaler = [], [], []
+    # Écarts déjà examinés et assumés, avec leur raison : ils ne reviennent pas chaque jour.
+    fichier = pathlib.Path(__file__).resolve().parents[1] / "references" / "coherence-arbitrages.json"
+    arbitrages = (json.loads(fichier.read_text(encoding="utf-8")) if fichier.is_file() else {})
+    tus = []
+
+    def note(liste, cle, texte):
+        if cle in arbitrages:
+            tus.append(cle)
+        else:
+            liste.append(texte)
+
+    # Une annonce ne se compare à une mesure que si elle va dans le même sens : 125 M€
+    # rendus à une agence ne sont pas le chiffrage d'une économie sur les agences.
+    SENS = {"dep-": {"economie"}, "rec+": {"recette"}, "dep+": {"depense"},
+            "rec-": {"recette", "depense"}}
+
+    def derniere(pid, mes):
+        g = (mesures.get(mes) or {}).get("g")
+        chiffrees = [a for a in items if a.get("parti") == pid and a.get("mesure") == mes
+                     and isinstance(a.get("montant"), (int, float))
+                     and a.get("type") in SENS.get(g, {a.get("type")})]
+        return max(chiffrees, key=lambda a: a["date"]) if chiffrees else None
+
+    for p in partis:
+        pid, sig, st = p["id"], p["sigle"], p.get("set") or {}
+        ann = p.get("annonce") or {}
+
+        sans_trace = []
+        for mes, ligne in st.items():
+            if mes not in mesures:
+                a_corriger.append(f"{sig} : la mesure « {mes} » du scénario n'existe plus "
+                                  f"dans le catalogue")
+                continue
+            a = derniere(pid, mes)
+            if a and "annonce" in ligne and abs(a["montant"] - ligne["annonce"]) > 0.05:
+                note(a_arbitrer, f"{pid}.{mes}={ligne['annonce']}/{a['montant']}",
+                    f"{sig}.{mes} : la page dit {ligne['annonce']} Md€ annoncés, la dernière "
+                    f"annonce relevée ({a['date']}, {a.get('qui') or '?'}) dit {a['montant']} — "
+                    f"même horizon (2032, année pleine) et même périmètre ? Si oui, "
+                    f"partis.{pid}.set.{mes}.annonce ; sinon, l'inscrire dans les arbitrages "
+                    f"({a.get('source')})")
+            elif a and "annonce" not in ligne:
+                note(a_corriger, f"{pid}.{mes}",
+                    f"{sig}.{mes} : chiffré {a['montant']} Md€ par le camp ({a['date']}), "
+                    f"mais la page ne l'affiche pas — partis.{pid}.set.{mes}.annonce "
+                    f"({a.get('source')})")
+            elif not a and "annonce" not in ligne and not any(
+                    x.get("parti") == pid and x.get("mesure") == mes for x in items):
+                sans_trace.append(mes)
+        if sans_trace:
+            note(a_signaler, f"{pid}.attributions={','.join(sorted(sans_trace))}",
+                f"{sig} : {len(sans_trace)} mesure(s) attribuée(s) sans annonce relevée de ce "
+                f"camp ({', '.join(sans_trace)}) — vérifier qu'une source les justifie "
+                f"(programme, site du parti), sinon les retirer à la main")
+
+        cites = {a["mesure"] for a in items if a.get("parti") == pid and a.get("mesure")
+                 and isinstance(a.get("montant"), (int, float)) and a.get("type") != "contexte"}
+        for mes in sorted(cites - set(st)):
+            a = derniere(pid, mes)
+            if not a:
+                continue
+            note(a_signaler, f"{pid}.{mes}",
+                f"{sig}.{mes} : {a['montant']} Md€ annoncés le {a['date']}, mesure absente "
+                f"du scénario — à intégrer à la main, ou à compter dans horsCatalogue")
+
+        # Même périmètre que la page (auditer) : le total revendiqué ne porte que sur le
+        # redressement — économies et recettes nouvelles, pas les dépenses promises.
+        detail = sum(l.get("annonce") or 0 for mes, l in st.items()
+                     if mes in mesures and mesures[mes].get("g") in ("dep-", "rec+"))
+        hc = (ann.get("horsCatalogue") or {}).get("v") or 0
+        rev = ann.get("revendique")
+        if rev and not detail and not hc and not ann.get("nonAnnuel"):
+            a_signaler.append(
+                f"{sig} : total de {rev} Md€ revendiqué sans aucun montant par mesure — la "
+                f"page affichera 100 % non justifié ; chercher la ventilation")
+        if rev and detail + hc > rev * 1.05 and not ann.get("nonAnnuel"):
+            a_signaler.append(
+                f"{sig} : les mesures chiffrées ({detail + hc:.1f} Md€) dépassent le total "
+                f"revendiqué ({rev}) — total à revoir ou annonces à recouper")
+        if ann.get("detaille") is not None and abs(ann["detaille"] - detail - hc) > 1:
+            a_signaler.append(
+                f"{sig} : 'detaille' vaut {ann['detaille']} Md€, les montants par mesure "
+                f"et hors catalogue font {detail + hc:.1f}")
+        titre = (ann.get("titre") or "").lower()
+        if p.get("statut") == "reconstitution" and (detail >= 20 or rev):
+            note(a_signaler, f"{pid}.statut",
+                f"{sig} : statut « reconstitution » alors que le camp a chiffré "
+                f"{detail:.1f} Md€ de mesures{f' et un total de {rev}' if rev else ''} — "
+                f"passer à « partiel » ?")
+        if "non chiffr" in titre and (detail or rev):
+            a_corriger.append(f"{sig} : le titre dit « non chiffré » alors que des montants "
+                              f"sourcés existent")
+
+    for x in (d.get("contexte") or {}).get("indicateurs", []):
+        if x["id"] == "dette":
+            if not x.get("montant") or not x.get("arrete"):
+                a_corriger.append("contexte.dette : 'montant' (Md€) et 'arrete' manquants — "
+                                  "le compteur de dette ne peut pas partir du chiffre Insee")
+            else:
+                m = re.search(r"(\d[\d\s ]*(?:,\d+)?)\s*Md€", x.get("detail") or "")
+                if m:
+                    lu = float(re.sub(r"[\s ]", "", m.group(1)).replace(",", "."))
+                    if abs(lu - x["montant"]) > 2:
+                        a_corriger.append(f"contexte.dette : le détail dit {lu:g} Md€, "
+                                          f"'montant' vaut {x['montant']}")
+                if x.get("date") and x["arrete"] > x["date"]:
+                    a_corriger.append("contexte.dette : arrêté postérieur à la publication")
+        if x.get("date") and date_valide(x["date"])[0]:
+            d0 = datetime.date.fromisoformat(x["date"] if len(x["date"]) == 10
+                                             else x["date"] + "-01")
+            if (aujourdhui() - d0).days > 200:
+                a_signaler.append(f"contexte.{x['id']} : valeur du {x['date']}, plus de "
+                                  f"6 mois — chercher plus récent")
+
+    for a in items:
+        if a.get("contredit") not in (None, "non") and not a.get("ecart"):
+            a_corriger.append(f"annonce du {a['date']} ({a.get('parti')}) : contredit="
+                              f"{a['contredit']} sans 'ecart' — inexplicable pour le lecteur")
+        if a.get("mesure") and a["mesure"] not in mesures:
+            a_signaler.append(f"annonce du {a['date']} ({a.get('parti')}) : mesure "
+                              f"« {a['mesure']} » inconnue du catalogue")
+
+    print(f"Cohérence des données — {len(a_corriger)} à corriger, {len(a_arbitrer)} à "
+          f"arbitrer, {len(a_signaler)} à signaler, {len(tus)} écart(s) déjà arbitré(s)")
+    if a_corriger:
+        print("\nÀ corriger (par patch si une source le permet, sinon à la main) :")
+        for e in a_corriger:
+            print(f"  ! {e}")
+    if a_arbitrer:
+        print("\nÀ arbitrer (deux chiffres sourcés se contredisent ; trancher, ou inscrire "
+              "l'écart et sa raison dans references/coherence-arbitrages.json) :")
+        for e in a_arbitrer:
+            print(f"  ? {e}")
+    if a_signaler:
+        print("\nÀ signaler dans le compte rendu :")
+        for e in a_signaler:
+            print(f"  ~ {e}")
+    if not a_corriger and not a_arbitrer and not a_signaler:
+        print("  Rien à redire.")
+    perimes = sorted(set(arbitrages) - set(tus))
+    if perimes:
+        print(f"\nArbitrages devenus sans objet, à retirer du fichier : {', '.join(perimes)}")
+    return a_corriger, a_arbitrer, a_signaler
+
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
@@ -647,6 +839,7 @@ def main():
     a.add_argument("patch")
     a.add_argument("--write", action="store_true", help="écrire pour de bon")
     sub.add_parser("controler", help="vérifier que index.html est en phase avec les données")
+    sub.add_parser("coherence", help="chercher ce que les données affirment à tort")
     args = ap.parse_args()
 
     d = charger()
@@ -655,6 +848,9 @@ def main():
         return
     if args.cmd == "controler":
         controler(d)
+        return
+    if args.cmd == "coherence":
+        coherence(d)
         return
 
     patch = json.loads(pathlib.Path(args.patch).read_text(encoding="utf-8"))

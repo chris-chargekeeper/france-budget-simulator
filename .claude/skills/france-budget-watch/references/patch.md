@@ -90,6 +90,25 @@ obligatoire et vient s'ajouter à la liste des sources du parti si elle n'y est 
 poste**. Ne jamais gonfler `detaille` pour combler l'écart : c'est précisément cet écart que la page
 donne à voir.
 
+### Le montant annoncé d'une mesure du scénario
+
+Le seul geste permis sur le scénario (`set`) d'un parti : recaler le montant que le camp a
+lui-même annoncé pour une mesure **déjà** dans son scénario — c'est ce que `coherence` demande.
+
+```json
+"partis": {
+  "rn": {
+    "set": {"collectivites": {"annonce": 8.2}, "tvaener": {"annonce": 17}},
+    "source": {"t": "Contre-budget RN — La Gazette des communes", "u": "https://…"}
+  }
+}
+```
+
+Seul `annonce` (Md€, positif, ou `null` pour l'effacer) passe. L'hypothèse de calcul (`sim`) ne
+bouge pas : le déficit simulé reste celui des chiffrages indépendants, seul l'écart affiché entre
+la promesse et ces chiffrages change. Ajouter ou retirer une mesure reste une modification de fond,
+à la main.
+
 ---
 
 ## `mesures` — réviser les bornes de chiffrage
@@ -185,6 +204,8 @@ ses positions publiques constantes, et un `texte` qui le dit.
 ```
 
 Modifiables : `valeur`, `date`, `note`, `detail`, `source`. L'ancienne valeur part dans `historique`.
+Pour `dette`, ajoutez aussi `montant` (en Md€) et `arrete` (date de fin du trimestre mesuré, AAAA-MM-JJ) :
+le compteur de dette de la page part de ce chiffre.
 Une valeur plus ancienne que celle en base est refusée ; une valeur hors des `bornes` aussi.
 Un indicateur nouveau exige en plus `lab`, `unite` et `groupe` (`marches`, `notation`,
 `previsions`, `finances`).

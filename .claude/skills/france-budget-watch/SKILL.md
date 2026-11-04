@@ -160,6 +160,7 @@ le patch, jamais le script.
 python3 .claude/skills/france-budget-watch/scripts/watch.py appliquer patch.json --write
 python3 build.py
 python3 .claude/skills/france-budget-watch/scripts/watch.py controler
+python3 .claude/skills/france-budget-watch/scripts/watch.py coherence
 ```
 
 `appliquer` archive le patch et la trace de ce qu'il a changé dans `dataset/veille/AAAA-MM-JJ.json`.
@@ -168,6 +169,26 @@ python3 .claude/skills/france-budget-watch/scripts/watch.py controler
 marqueurs tous substitués, payload lisible, données embarquées identiques à celles du disque, aucune
 annonce sans URL ni mal datée. Il sort en échec si quoi que ce soit a divergé. **S'il échoue, on
 s'arrête là** : on ne committe pas une page qui ne correspond plus à ses sources.
+
+`coherence` cherche, **à chaque relève**, ce que les données affirment à tort — la page peut
+recopier fidèlement une base qui se contredit. Il ne corrige rien lui-même ; c'est à vous de
+le faire, dans la même relève :
+
+- **À corriger** (`!`) : un montant que le camp a chiffré, déjà sourcé dans le journal, mais que la
+  page n'affiche pas ; un titre « non chiffré » démenti par les chiffres ; un compteur de dette sans
+  point de départ. Corrigez par un second patch (`partis.<id>.set.<mesure>.annonce`, voir
+  references/patch.md) qui cite la source donnée, puis `valider`, `appliquer`, `build`, `controler`.
+- **À arbitrer** (`?`) : deux chiffres sourcés se contredisent (horizon, périmètre, amendement
+  ponctuel contre programme). Lisez les deux sources. Si le nouveau chiffre porte sur le même
+  périmètre et le même horizon, recalez ; sinon inscrivez l'écart et sa raison, datée, dans
+  `references/coherence-arbitrages.json` : il ne reviendra plus. Dans le doute, ni l'un ni
+  l'autre : dites-le dans le compte rendu.
+- **À signaler** (`~`) : ce qui demande une modification de fond (ajouter une mesure à un
+  scénario, changer un statut, attribuer ou retirer une mesure sans source). Ça ne se fait pas par
+  la veille : listez-le dans le compte rendu, les nouveautés d'abord.
+
+Le but : que la page ne reste jamais fausse plus d'un jour sur un point qu'une source permet de
+corriger.
 
 ### 6. Regarder la page
 
@@ -204,6 +225,8 @@ Ne lancez pas `deploy.sh`, ne poussez pas sur `master`, n'ouvrez pas de pull req
 vous l'ait demandé.
 
 ### 8. Rendre compte
+
+Incluez ce que `coherence` a corrigé, ce qui reste à arbitrer et ce qui est à signaler.
 
 Dites ce qui a été ajouté, ce qui a été révisé et **avec quelle source**, ce que ça déplace dans les
 chiffres, et surtout **ce que vous n'avez pas trouvé**. Un jour sans annonce est un résultat, pas un
