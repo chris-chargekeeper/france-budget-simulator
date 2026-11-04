@@ -2186,6 +2186,7 @@ function render(){
   const scen = run(state.P, state.active);
   const last = scen.length - 1, B32 = base[last], S32 = scen[last];
   const split = activeSplit();
+  renderRepartition();   // la projection 2070 des retraites suit le programme
 
   /* cockpit */
   const under3 = scen.findIndex((r,i) => i > 0 && r.soldePct >= -3);
@@ -3206,13 +3207,31 @@ function renderRepartition(){
   const pers = cls => { const g = sv('svg', {viewBox: '0 0 20 32', class: 'pers ' + cls, 'aria-hidden': 'true'});
     g.appendChild(sv('circle', {cx: 10, cy: 7, r: 5.5}));
     g.appendChild(sv('path', {d: 'M2 32 V20 a8 8 0 0 1 16 0 V32 Z'})); return g; };
+  /* 2070 suit le programme choisi : ses mesures sur l'âge de départ, à leur chiffrage du simulateur
+     une fois en place, rapportées aux 422 Md€ de pensions de 2025 — un ordre de grandeur. */
+  const PENSIONS = 422, AGE = ['age65', 'retr62', 'retr60'];
+  const p = PARTIES.find(x => x.id === state.party);
+  let delta = 0; const labs = [];
+  AGE.forEach(id => { if (state.active[id] == null) return;
+    const m = M_BY_ID[id]; delta += (m.g === 'dep+' ? 1 : -1) * state.active[id] / PENSIONS * 100;
+    labs.push(m.lab.charAt(0).toLowerCase() + m.lab.slice(1)); });
+  const manque = Math.round(10 + delta);
+  const quoi = p ? 'Avec ' + p.candidat.replace(/^Le /, 'le ') : 'Avec ce scénario';
+  const sous70 = !labs.length
+    ? (p ? `${p.candidat} ne prévoit pas de mesure chiffrée sur l’âge de départ : c’est la projection du COR. ` : '')
+      + 'À règles inchangées, l’État verse moins : il manque 16 €.'
+    : `${quoi} (${labs.join(', ')}) : ${delta > 0 ? '+' : '−'} ${nf(Math.abs(delta), 0)} € de besoin sur 100 €, `
+      + `d’après le chiffrage de la mesure une fois en place. Sans ce programme, il manque 10 €.`;
   [{an: '1960', ratio: 4.1, pib: '5 %', bar: [['cot', 100]], dit: 'Les cotisations suffisent'},
    {an: 'Aujourd’hui', ratio: 1.77, pib: '14 %', bar: [['cot', 66], ['etat', 34]], detail: [['cot', 66], ['etat', 29], ['autre', 5]],
     dit: '34 € viennent déjà d’ailleurs'},
-   {an: '2070', ratio: 1.62, pib: '15 %', bar: [['cot', 60], ['etat', 30], ['manque', 10]], detail: [['cot', 60], ['etat', 27], ['autre', 3], ['manque', 10]], proj: true,
+   {an: '2070', ratio: 1.62, pib: '15 %', proj: true,
+    bar: [['cot', 60], ['etat', 30], ['manque', Math.max(0, manque)]],
+    detail: [['cot', 60], ['etat', 27], ['autre', 3], ['manque', Math.max(0, manque)]],
     k: 'Sur 100 € de pension, si l’État paie autant qu’en 2025',
-    dit: 'Il manque quand même 10 €',
-    sous: 'À règles inchangées, l’État verse moins : il manque 16 €.'}
+    dit: manque > 0 ? (labs.length ? `Il manque ${manque} €` : 'Il manque quand même 10 €')
+                    : manque === 0 ? 'Les comptes tiennent tout juste' : `Les comptes tiennent, avec ${-manque} € d’avance`,
+    sous: sous70}
   ].forEach(c => {
     const col = el('div', 'rc' + (c.proj ? ' proj' : ''));
     col.appendChild(el('div', 'rc-an', c.an + (c.proj ? ' · projection' : '')));
@@ -4379,7 +4398,7 @@ function ecartPromesse(p){
 function iaWhy(p){
   const box = el('div','ia-why');
   box.appendChild(el('p','ia-intro', p.annonce.texte));
-  if (p.calcul) box.appendChild(el('p','ia-calc', `Résultat du calcul au ${fmtDate(p.calcul.date)} ; la machine le refait à chaque mise à jour quotidienne des données.`));
+  if (p.calcul) box.appendChild(el('p','ia-calc', `Résultat du calcul au ${fmtDate(p.calcul.date)} ; l'intelligence artificielle le refait à chaque mise à jour quotidienne des données.`));
   const c = el('div','ia-cols');
   const col1 = el('div'); col1.appendChild(el('h4', null, "Les règles du calcul"));
   const ul = el('ol'); (p.criteres || []).forEach(x => ul.appendChild(el('li', null, x))); col1.appendChild(ul);
