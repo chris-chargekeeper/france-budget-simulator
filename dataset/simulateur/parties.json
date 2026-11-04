@@ -14,15 +14,15 @@
       "statut": "partiel",
       "annonce": {
         "titre": "140 Md€ d'économies",
-        "texte": "Marine Le Pen et Jordan Bardella ont présenté le 6 octobre 2026 une trajectoire reposant sur 140 Md€ d'économies nettes, relevée des 125 Md€ annoncés le 27 août. Il s'agit d'un niveau atteint en 2032, non d'une coupe dans le budget 2027. Environ 65 Md€ restent rattachés publiquement à des postes identifiés : immigration, fraude fiscale et sociale, contribution au budget de l'Union européenne, organisation de l'État. La ventilation du total annoncé n'a pas été publiée, et la cible d'un déficit sous 3 % est datée de 2030, deux ans avant que ces économies soient atteintes.",
+        "texte": "Marine Le Pen et Jordan Bardella ont présenté le 6 octobre 2026 une trajectoire reposant sur 140 Md€ d'économies nettes, relevée des 125 Md€ annoncés le 27 août. Il s'agit d'un niveau atteint en 2032, non d'une coupe dans le budget 2027. Environ 82 Md€ sont rattachés publiquement à des postes identifiés, une fois les mesures en place : immigration (29 Md€ en année pleine), collectivités (18,4 Md€ en 2031), fraude fiscale et sociale, contribution au budget de l'Union européenne (9 Md€), organisation de l'État. Le 3 novembre, une députée RN a présenté en séance un autre découpage (71,5 Md€ nets, dont 60 Md€ sur la politique migratoire), que la candidate n'a pas repris. La ventilation du total annoncé n'a pas été publiée, et la cible d'un déficit sous 3 % est datée de 2030, deux ans avant que ces économies soient atteintes.",
         "revendique": 140,
-        "detaille": 65,
+        "detaille": 82.4,
         "cote": "economie"
       },
       "set": {
         "immigration": {
           "sim": "hi",
-          "annonce": 25
+          "annonce": 29
         },
         "fraude": {
           "sim": "mid",
@@ -30,7 +30,7 @@
         },
         "ue": {
           "sim": "mid",
-          "annonce": 10
+          "annonce": 9
         },
         "agences": {
           "sim": "hi",
@@ -42,7 +42,7 @@
         },
         "collectivites": {
           "sim": "lo",
-          "annonce": 8.2
+          "annonce": 18.4
         },
         "ame": {
           "sim": "hi",
@@ -106,8 +106,7 @@
           "annonce": 10
         },
         "superp": {
-          "sim": "mid",
-          "annonce": 15
+          "sim": "mid"
         },
         "ttf": {
           "sim": "mid",
@@ -136,8 +135,7 @@
           "sim": "mid"
         },
         "alleg": {
-          "sim": "mid",
-          "annonce": 12
+          "sim": "mid"
         },
         "niches": {
           "sim": "mid",
