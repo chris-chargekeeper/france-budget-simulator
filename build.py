@@ -12,6 +12,7 @@ import json
 import pathlib
 import re
 import shutil
+import struct
 import subprocess
 import sys
 
@@ -114,10 +115,8 @@ def build_marque():
     seul — à 16 px les pattes ne pèsent rien et volent la place au reste — posé sur une
     tuile arrondie qui tient sur un onglet blanc comme sur un onglet sombre.
 
-    Tout est embarqué dans la page : deploy.sh ne met en ligne qu'un fichier,
-    index.html. D'où les data URI, et le PNG de repli pour les navigateurs qui ignorent
-    les icônes SVG (Safari) — régénéré ici quand rsvg-convert est installé, repris du
-    dépôt sinon.
+    Le coq du bandeau est embarqué dans la page ; les icônes, elles, sont des fichiers
+    de web/, que la CI envoie à la racine du site.
     """
     brut = (MARQUE / "coq.svg").read_text(encoding="utf-8")
     corps = re.sub(r"^.*?<svg[^>]*>|</svg>\s*$", "", brut, flags=re.S)
@@ -154,24 +153,33 @@ def build_marque():
            '<g transform="translate(64,64) scale(1.041) translate(-66.875,-53.625)">'
            f'{buste}</g></svg>')
 
-    png = MARQUE / "favicon-32.png"
+    # Les icônes sont servies en fichiers, à la racine du site (web/, envoyé par la CI) :
+    # Google n'affiche dans ses résultats qu'une icône qu'il peut télécharger à une
+    # adresse — jamais un data URI —, carrée et d'un côté multiple de 48 px. Les PNG sont
+    # régénérés quand rsvg-convert est installé, repris du dépôt sinon (cas de la CI).
+    WEB.mkdir(exist_ok=True)
+    (WEB / "favicon.svg").write_text(svg + "\n", encoding="utf-8")
     outil = shutil.which("rsvg-convert")
-    if outil:
-        subprocess.run([outil, "-w", "32", "-h", "32", "-o", str(png)],
-                       input=svg.encode("utf-8"), check=True)
-    elif not png.is_file():
-        sys.exit(f"{png.name} absent et rsvg-convert introuvable : installer librsvg "
-                 f"(brew install librsvg) ou récupérer le fichier depuis le dépôt")
-    else:
-        print("  ~ rsvg-convert introuvable : favicon-32.png repris tel quel du dépôt")
-
-    b64 = base64.b64encode(svg.encode("utf-8")).decode("ascii")
-    repli = base64.b64encode(png.read_bytes()).decode("ascii")
-    print(f"  + coq du bandeau et icône d'onglet ({len(svg):,} octets de SVG, "
-          f"{png.stat().st_size:,} octets de PNG de repli)")
-    liens = (f'<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,{b64}">\n'
-             f'<link rel="alternate icon" type="image/png" sizes="32x32" '
-             f'href="data:image/png;base64,{repli}">')
+    for nom, cote in (("favicon-48.png", 48), ("favicon-192.png", 192),
+                      ("apple-touch-icon.png", 180)):
+        png = WEB / nom
+        if outil:
+            subprocess.run([outil, "-w", str(cote), "-h", str(cote), "-o", str(png)],
+                           input=svg.encode("utf-8"), check=True)
+        elif not png.is_file():
+            sys.exit(f"web/{nom} absent et rsvg-convert introuvable : installer librsvg "
+                     f"(brew install librsvg) ou récupérer le fichier depuis le dépôt")
+    # favicon.ico, que certains robots demandent d'office : un ICO qui embarque le PNG 48 px
+    png48 = (WEB / "favicon-48.png").read_bytes()
+    ico = (struct.pack("<HHH", 0, 1, 1)
+           + struct.pack("<BBBBHHII", 48, 48, 0, 0, 1, 32, len(png48), 22) + png48)
+    (WEB / "favicon.ico").write_bytes(ico)
+    print(f"  + coq du bandeau et icônes du site ({len(svg):,} octets de SVG, "
+          f"PNG 48, 180 et 192 px, favicon.ico)")
+    liens = ('<link rel="icon" href="/favicon.ico" sizes="48x48">\n'
+             '<link rel="icon" type="image/svg+xml" href="/favicon.svg">\n'
+             '<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">\n'
+             '<link rel="apple-touch-icon" href="/apple-touch-icon.png">')
     return liens, bandeau
 
 
