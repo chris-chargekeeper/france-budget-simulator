@@ -269,7 +269,7 @@
       const f = k => [Math.min(lo[k], hi[k], v[k]), Math.max(lo[k], hi[k], v[k])];
       return {pib: v.pib, emplois: v.emplois, chomage: v.chomage, soldePct: v.soldePct,
               pibReelHab: pibHab(v.pib), contrib: v.contrib,
-              fourchette: {pib: f('pib'), emplois: f('emplois'), chomage: f('chomage'), soldePct: f('soldePct')}};
+              fourchette: {pib: f('pib'), pibReelHab: f('pib').map(pibHab), emplois: f('emplois'), chomage: f('chomage'), soldePct: f('soldePct')}};
     }
 
     return {projeter, simuler, lireProfil, multiplicateur, longTerme};

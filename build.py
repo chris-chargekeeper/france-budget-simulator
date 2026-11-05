@@ -427,6 +427,7 @@ def macro_embarque():
     cites = {mot["coef"] for mot in mc["moteur"].values() if isinstance(mot, dict) and mot.get("coef")}
     for t in mc["types"].values():
         cites |= set(t.get("profilDe") or []) | set(t["demande"].values())
+        cites |= set((t.get("longTerme") or {}).get("coef") or [])
     for c in mc["classement"].values():
         for ca in c["canaux"]:
             cites.add(ca["coef"])

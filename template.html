@@ -4193,6 +4193,26 @@ function renderProjection(p, scenPage){
       `${nf(Math.round(S.chargeMenageMois))} € en 2032 · ` + entre(Q.chargeMenageMois, 0, '€'), etat(C.chargeMenageMois, false, .5));
   }
 
+  /* 1 bis. À plus long terme : régime permanent, une fois les effets d'offre installés (MOTEUR.longTerme) */
+  const L = vide ? null : MOTEUR.longTerme(state.P, state.active);
+  if (L){
+    const lt = tuiles("À plus long terme, dans 10 à 20 ans");
+    const habLT = L.pibReelHab, q = L.fourchette;
+    lt('piece', "Production par habitant", sg(Math.round(habLT / 10) * 10, 0, '€', 5),
+      "par an, en euros de 2025, une fois les effets installés (PIB " + sg(L.pib, 1, '%', .05) + ")",
+      entre(q.pibReelHab.map(x => Math.round(x / 10) * 10), 0, '€'), etat(habLT, true, 5));
+    lt('dette', "Finances publiques", sg(L.soldePct, 1, 'pt', .05),
+      L.soldePct > .05 ? "de déficit en moins chaque année, en points de PIB, effets sur l'activité compris"
+      : L.soldePct < -.05 ? "de déficit en plus chaque année, en points de PIB, effets sur l'activité compris"
+      : "le déficit ne change presque pas, effets sur l'activité compris",
+      entre(q.soldePct, 1, 'pt'), etat(L.soldePct, true, .05));
+    if (Math.abs(L.emplois) >= 1)
+      lt('salaire', "Emplois", sg(Math.round(L.emplois) * 1000, 0, '', 500), "venus de l'âge de départ à la retraite",
+        entre(q.emplois.map(x => Math.round(x) * 1000), 0, ''), etat(L.emplois, true, .5));
+    const w = box.lastChild;
+    w.appendChild(el('p','pj-note', "Un ordre de grandeur, plus incertain que 2032 : les effets de demande se sont dissipés, ceux qui restent viennent des évaluations publiées (Trésor, BCE, OFCE, France Stratégie, CAE, COR). Ce qui ne dure pas compte peu ; ce qui change l'offre — travail, investissement, innovation — compte beaucoup."));
+  }
+
   /* 2. Pourquoi ça bouge : la contribution de chaque mesure à l'activité */
   if (!vide){
     const w = bloc("Pourquoi ça bouge");
@@ -4221,7 +4241,7 @@ function renderProjection(p, scenPage){
     w.appendChild(lst);
     w.appendChild(el('p','pj-note adv-only', "En points de PIB. Le court terme vient des dépenses et des impôts ; les réformes des retraites et de l'assurance chômage ajoutent leur effet sur l'emploi."));
     // ce qui n'est pas compté dans 2032
-    const REG = {apres2032: "effet de long terme, après 2032", horsBudget: "hors budget, non compté", nonDemontre: "effet non démontré"};
+    const REG = {apres2032: "effet de long terme, compté dans « à plus long terme »", horsBudget: "hors budget, non compté", nonDemontre: "effet non démontré"};
     const parts = R.aPart.filter(a => REG[a.regle]);
     if (parts.length){
       const ap = el('div','pj-apart');
@@ -4243,6 +4263,7 @@ function renderProjection(p, scenPage){
   det.appendChild(el('summary', null, "Comprendre ces chiffres"));
   const para = (...m) => { const q = el('p','pj-note'); m.forEach(x => q.append(x)); det.appendChild(q); };
   para("Les mêmes équations pour tous les programmes. Chaque mesure reçoit l'effet sur l'activité publié pour son type (TVA, impôt sur le revenu, investissement, prestations…), année par année, par le Trésor (modèle Mésange), la BCE ou l'OFCE. Le chômage suit l'activité : quand la production ralentit, il monte (loi d'Okun). Chaque point de dette ajoute environ 0,03 point au taux d'emprunt de l'État (Commission européenne), ce qui freine l'activité et renchérit le crédit aux entreprises.");
+  para("« À plus long terme » prend, pour chaque mesure, son effet durable publié : le multiplicateur de long terme de son instrument (Mésange, EAGLE, e-mod), ou l'évaluation de la réforme elle-même (COR pour l'âge de départ, Trésor pour le crédit d'impôt recherche, France Stratégie pour l'ISF et la flat tax, qui n'y trouve pas d'effet sur l'investissement). Le solde public compte les mesures à plein régime et les recettes que l'activité apporte ou retire.");
   para("La fourchette refait le calcul avec les valeurs basses et hautes publiées par les économistes, qui ne sont pas d'accord entre eux. Ce n'est pas une probabilité : c'est l'étendue du désaccord.");
   if (!vide){
     const conf = R.confiance, lib = {directe: "un effet publié propre à leur type", substitut: "l'effet d'un impôt voisin", generique: "l'effet moyen retenu par l'OFCE (0,5 pour un impôt, 1 pour une dépense), faute de chiffrage propre"};
@@ -4259,7 +4280,8 @@ function renderProjection(p, scenPage){
   const ids = new Set([MOT.okun.coef, MOT.primeDette.coef, MOT.tauxActivite.coef, MOT.creditEntreprises.coef, MOT.petrole.coef, MOT.demandeMondiale.coef]);
   for (const id in state.active){
     const cl = MC.classement[id]; (MC.types[cl.type].profilDe || []).forEach(x => ids.add(x));
-    cl.canaux.forEach(c => { if (c.moteur === 'projection') ids.add(c.coef); if (c.recoupementDe) ids.add(c.recoupementDe); });
+    cl.canaux.forEach(c => { if (c.moteur === 'projection' || c.longTerme) ids.add(c.coef); if (c.recoupementDe) ids.add(c.recoupementDe); });
+    const tlt = MC.types[cl.type].longTerme; if (tlt) (tlt.coef || []).forEach(x => ids.add(x));
   }
   const srcs = new Map();
   ids.forEach(id => (MCO[id] ? MCO[id].sources : []).forEach(s => srcs.set(s.u, s)));
