@@ -1,6 +1,6 @@
 {
   "_comment": "Contexte macroéconomique et financier, tenu à jour par la veille quotidienne. Chaque indicateur porte une valeur, une date et une source. `hypothese` (réglé à la main) relie un indicateur à une hypothèse du simulateur, qui remplace alors la valeur par défaut : rmkt (taux d'emprunt à 10 ans), g (croissance en volume), infl (inflation). `bornes` (réglé à la main) refuse une valeur invraisemblable. L'ancienne valeur part dans `historique` : rien ne s'efface.",
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "avertissement": "Trois valeurs nourrissent le calcul : le taux à 10 ans remplace l'hypothèse de taux de marché, la croissance et l'inflation prévues pour 2027 sont prolongées jusqu'en 2032. Elles restent réglables en mode avancé.",
   "indicateurs": [
     {
@@ -9,6 +9,11 @@
       "unite": "%",
       "groupe": "marches",
       "historique": [
+        {
+          "valeur": 4.93,
+          "date": "2026-11-03",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        },
         {
           "valeur": 4.91,
           "date": "2026-11-02",
@@ -20,11 +25,11 @@
           "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
         }
       ],
-      "valeur": 4.93,
-      "date": "2026-11-03",
-      "detail": "Plus haut à 5,14 % le 22 octobre, du jamais vu depuis 2002. Il était à 3,66 % fin juin.",
+      "valeur": 4.88,
+      "date": "2026-11-04",
+      "detail": "OAT 10 ans à 4,88 % à la clôture du 4 novembre, contre 4,93 % la veille.",
       "source": {
-        "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur (clôture du 3 novembre 2026)",
+        "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur (clôture du 4 novembre 2026)",
         "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
       },
       "hypothese": "rmkt",
@@ -40,6 +45,11 @@
       "groupe": "marches",
       "historique": [
         {
+          "valeur": 162,
+          "date": "2026-11-03",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        },
+        {
           "valeur": 160,
           "date": "2026-11-02",
           "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
@@ -50,11 +60,11 @@
           "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
         }
       ],
-      "valeur": 162,
-      "date": "2026-11-03",
-      "detail": "Écart avec le Bund à 10 ans, en points de base (161,8 pb). Environ 70 pb fin juin ; 168 pb le 22 octobre, le plus large depuis 2011.",
+      "valeur": 156,
+      "date": "2026-11-04",
+      "detail": "Écart OAT-Bund à 10 ans de 156,0 pb (OAT 4,88 %, Bund 3,32 %), en baisse de 5,8 pb sur la séance.",
       "source": {
-        "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur (clôture du 3 novembre 2026)",
+        "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur (clôture du 4 novembre 2026)",
         "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
       },
       "bornes": [

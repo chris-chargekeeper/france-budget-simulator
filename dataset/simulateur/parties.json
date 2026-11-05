@@ -505,7 +505,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle : elle applique les règles ci-dessous aux 42 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Même en retenant toutes les mesures permises par ses règles (39,1 Md€ d'économies, 35,8 Md€ de recettes), le déficit reste à 5,3 % du PIB en 2032. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle : elle applique les règles ci-dessous aux 42 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Même en retenant toutes les mesures permises par ses règles (39,1 Md€ d'économies, 35,8 Md€ de recettes), le déficit reste à 5,2 % du PIB en 2032. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -632,9 +632,9 @@
         }
       ],
       "calcul": {
-        "date": "2026-11-04",
-        "deficit2032": 5.28,
-        "dette2032": 130.5,
+        "date": "2026-11-05",
+        "deficit2032": 5.24,
+        "dette2032": 130.3,
         "economies": 39,
         "recettes": 35.8,
         "cibleAtteinte": false

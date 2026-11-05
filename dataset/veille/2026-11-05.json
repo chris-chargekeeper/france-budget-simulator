@@ -1,0 +1,245 @@
+{
+  "patch": {
+    "_comment": "Relève locale du 5 novembre 2026 : Assemblée (2e séance du 3 nov., 1re séance du 4 nov.), interviews du 4 nov., OAT/Bund au 4 nov. Aucun nouveau sondage.",
+    "releve": "2026-11-05",
+    "annonces": [
+      {
+        "date": "2026-11-04",
+        "parti": "rn",
+        "qui": "Matthias Renault",
+        "fonction": "Député RN, auteur des amendements I-704 à I-715 (article 42) ; scrutins publics demandés par le groupe RN. Ni porte-parole ni président de groupe",
+        "media": "Assemblée nationale, PLF 2027, 1re séance du 4 novembre 2026, amendements I-704 à I-715",
+        "quoi": "Série d'amendements pour supprimer ou fusionner des opérateurs en abaissant le plafond de leurs taxes affectées, le surplus allant au budget de l'État : ANCOLS (−1,29 M€), Agence nationale du sport (−36,1 M€ et −11,9 M€), ANSéS (quatre taxes, de −0,8 à −3,5 M€), ANTS (passeports −43,4 M€, CNI −2,4 M€, immatriculation −7,2 M€, titres de séjour −2,9 M€, permis de conduire −1,4 M€). Seul le I-715 (ANTS, permis de conduire, −1,4 M€) est adopté, par 60 voix contre 59 ; les autres tombent à 1 à 4 voix près, dont le I-712 à égalité (58-58). Le RN ne donne pas de total.",
+        "verbatim": "Par cette série d'amendements, je propose la suppression ou la fusion de certains opérateurs.",
+        "mesure": "agences",
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026#4220213",
+        "verifie": true,
+        "contredit": "non"
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "rn",
+        "qui": "Jordan Guitton",
+        "fonction": "Député RN, défend l'amendement I-659 de Jean-Philippe Tanguy. Ni porte-parole ni président de groupe",
+        "media": "Assemblée nationale, PLF 2027, 1re séance du 4 novembre 2026, amendement I-659 (article 42, CCI)",
+        "quoi": "Le groupe RN fait relever de 125 M€ le plafond de la taxe affectée aux CCI, que le PLF abaissait de 505 à 380 M€. L'amendement est adopté par 140 voix contre 5, en même temps que des amendements identiques d'EPR, de SOC et d'autres groupes. Pour financer la mesure, l'orateur renvoie au « plan de 140 milliards d'économies » de Marine Le Pen, sans dire sur quel poste.",
+        "verbatim": "Avec Marine Le Pen, nous proposons un grand plan de 140 milliards d'économies dont vous pourriez vous saisir, au lieu de ponctionner les CCI",
+        "mesure": null,
+        "montant": 0.125,
+        "type": "depense",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026#4220305",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le chiffrage RN (140 Md€ d'économies nettes en 2032, présenté le 6 octobre) ne dit rien des CCI. Le groupe ajoute ici 125 M€ de dépense affectée sans dire quel poste des 140 Md€ la financerait. Le chiffre de 140 Md€ cité est conforme à celui de la candidate."
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "rn",
+        "qui": "Jean-Philippe Tanguy",
+        "fonction": "Député RN, auteur de l'amendement I-737 (déposé à son nom, défendu sans prise de parole)",
+        "media": "Assemblée nationale, PLF 2027, 1re séance du 4 novembre 2026, amendement I-737 (après l'article 42)",
+        "quoi": "Supprime la contribution de vie étudiante et de campus (CVEC, 105 € par étudiant) à partir de la rentrée 2027. Selon l'exposé, l'État compenserait intégralement les universités et les Crous par des crédits que le RN proposera en seconde partie. Adopté par 55 voix contre 53. L'exposé cite un rendement de 170 M€ en 2023-2024 (Cour des comptes), mais ne donne pas le coût de la mesure.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/737",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "La CVEC ne figure pas dans le chiffrage RN connu. Compensée par l'État, sa suppression ajoute une dépense que l'amendement ne chiffre pas (le seul montant cité est le produit de la taxe en 2023-2024, soit 170 M€)."
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "rn",
+        "qui": "Matthias Renault",
+        "fonction": "Député RN, auteur de l'amendement I-717 ; Philippe Ballard (député RN, rapporteur pour avis) défend l'I-2752 identique à l'I-718",
+        "media": "Assemblée nationale, PLF 2027, 1re séance du 4 novembre 2026, amendements I-717, I-718/2752 et I-719 à I-726 (CNC)",
+        "quoi": "Le RN veut « un coup de rabot sur le CNC » et, à terme, réintégrer ses missions au ministère de la culture. L'I-717 plafonne à 43,0 M€ (la moitié de son rendement) l'affectation au CNC de la taxe sur la publicité en vidéo à la demande. Il est rejeté par 66 voix contre 92, comme la suite de la série. Ballard dit que l'exception culturelle « correspond pile poil à notre programme », mais qu'on peut faire « avec un peu moins de moyens ».",
+        "verbatim": "nous proposons un coup de rabot sur le CNC en visant, à terme, la réintégration de son activité au ministère de la culture",
+        "mesure": "agences",
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026#4220916",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le chiffrage RN range les opérateurs dans « agences » (8 Md€) sans détailler le CNC. Le montant de 43 M€ n'est pas une économie nette : c'est une réaffectation au budget général du produit de la taxe plafonné."
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "rn",
+        "qui": "Nicolas Dragon",
+        "fonction": "Député RN, auteur de l'amendement I-692 ; scrutin public demandé par le groupe RN. Ni porte-parole ni président de groupe",
+        "media": "Assemblée nationale, PLF 2027, 2e séance du 3 novembre 2026, amendement I-692",
+        "quoi": "Propose un timbre touristique forfaitaire de 50 € sur chaque visa de court séjour pour tourisme, qui rapporterait selon lui 102 M€ (un peu plus de 2 millions de visas délivrés en 2025). Rejeté par 36 voix contre 67 ; le ministre rappelle que le prix des visas Schengen est fixé au niveau européen.",
+        "verbatim": "Il rapporte 102 millions d'euros sans faire les poches des Français",
+        "mesure": null,
+        "montant": 0.102,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-03-novembre-2026#4218968",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Cette recette n'apparaît pas dans le chiffrage RN connu, qui fait reposer le volet immigration sur des économies et non sur des recettes."
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "ren",
+        "qui": "Gabriel Attal",
+        "fonction": "Président du groupe EPR, candidat ; premier signataire de l'amendement de groupe I-3663",
+        "media": "Assemblée nationale, PLF 2027, 1re séance du 4 novembre 2026, amendement I-3663 (article 42, CCI)",
+        "quoi": "Amendement du groupe EPR, identique au I-659 du RN : il relève de 125 M€ le plafond de la taxe affectée aux CCI, pour revenir sur la baisse de 505 à 380 M€ prévue par le PLF. Adopté par 140 voix contre 5, contre l'avis du gouvernement et du rapporteur général.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 0.125,
+        "type": "depense",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/3663",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Renaissance n'a pas publié de programme chiffré pour 2027."
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "ren",
+        "qui": "Gabriel Attal",
+        "fonction": "Président du groupe EPR, candidat ; premier signataire de l'amendement de groupe I-3672, défendu par Nathalie Coggia (EPR)",
+        "media": "Assemblée nationale, PLF 2027, 2e séance du 3 novembre 2026 (vote après minuit), amendement I-3672",
+        "quoi": "Relève de 40 M€ le plafond des redevances affectées aux agences de l'eau (de 2 482,62 à 2 522,62 M€), le niveau prévu par le plan Eau. Adopté par 65 voix contre 58, en même temps que l'identique I-3550, contre l'avis du gouvernement.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": 0.04,
+        "type": "depense",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/3672",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Renaissance n'a pas publié de programme chiffré pour 2027."
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "eco",
+        "qui": "Eva Sas",
+        "fonction": "Députée Écologiste et social, question au gouvernement posée au nom du groupe ; fonction de porte-parole des Écologistes non vérifiée",
+        "media": "Assemblée nationale, questions au gouvernement, 1re séance du 4 novembre 2026",
+        "quoi": "Réclame une taxe sur les surprofits pétroliers qui rapporterait 2,8 Md€, de quoi verser 450 € d'aide directe à 6 millions de ménages et maintenir les cinq programmes de lutte contre la précarité énergétique financés par les C2E. Maud Bregeon répond que le gouvernement préfère le plafonnement des prix et ne veut d'une taxe qu'à l'échelle européenne.",
+        "verbatim": "Une taxe sur les surprofits pétroliers pourrait rapporter 2,8 milliards d'euros",
+        "mesure": null,
+        "montant": 2.8,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026#4220535",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Les Écologistes n'ont pas publié de programme chiffré pour 2027, et l'oratrice n'engage le parti que si elle en est porte-parole, ce qui n'est pas vérifié."
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "rn",
+        "qui": "Louis Aliot",
+        "fonction": "vice-président du Rassemblement national, maire de Perpignan",
+        "media": "France 2, « Les 4 Vérités »",
+        "quoi": "Comme mesure salariale du RN, il propose une hausse de 100 € des salaires versée par les employeurs et exonérée de charges, qui toucherait selon lui plus de quatre millions de personnes. Il refuse un coup de pouce au Smic, qui « va pénaliser les entreprises ». Il ne donne pas le coût de l'exonération.",
+        "verbatim": "Il s'agit de l'augmentation par les patrons de 100 euros sur les salaires avec une exonération de charges qui concerne plus de quatre millions de personnes je crois",
+        "mesure": null,
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.franceinfo.fr/politique/son-interventionnisme-exterieur-lui-a-coute-cher-estime-louis-aliot-a-propos-de-la-defaite-du-camp-de-donald-trump-aux-midterms_8267309.html",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le 2 novembre sur BFMTV, Aleksandar Nikolic présentait la mesure comme une hausse de 10 % jusqu'à 3 Smic « sans exonération » ; Aliot parle de 100 € exonérés de charges. Ni l'une ni l'autre version ne figure dans le chiffrage partiel du RN."
+      }
+    ],
+    "contexte": {
+      "oat10": {
+        "valeur": 4.88,
+        "date": "2026-11-04",
+        "detail": "OAT 10 ans à 4,88 % à la clôture du 4 novembre, contre 4,93 % la veille.",
+        "source": {
+          "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur (clôture du 4 novembre 2026)",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      },
+      "spread": {
+        "valeur": 156,
+        "date": "2026-11-04",
+        "detail": "Écart OAT-Bund à 10 ans de 156,0 pb (OAT 4,88 %, Bund 3,32 %), en baisse de 5,8 pb sur la séance.",
+        "source": {
+          "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Ideal Investisseur (clôture du 4 novembre 2026)",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-11-05",
+    "applique": "2026-11-05",
+    "ajouts": [
+      {
+        "date": "2026-11-04",
+        "parti": "rn",
+        "quoi": "Série d'amendements pour supprimer ou fusionner des opérateurs en abaissant le plafond de leurs taxes affectées, le surplus allant au budget de l'État : ANCOLS (−1,29 M€), Agence nationale du sport (−36,1 M€ et −11,9 M€), ANSéS (quatre taxes, de −0,8 à −3,5 M€), ANTS (passeports −43,4 M€, CNI −2,4 M€, immatriculation −7,2 M€, titres de séjour −2,9 M€, permis de conduire −1,4 M€). Seul le I-715 (ANTS, permis de conduire, −1,4 M€) est adopté, par 60 voix contre 59 ; les autres tombent à 1 à 4 voix près, dont le I-712 à égalité (58-58). Le RN ne donne pas de total.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026#4220213"
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "rn",
+        "quoi": "Le groupe RN fait relever de 125 M€ le plafond de la taxe affectée aux CCI, que le PLF abaissait de 505 à 380 M€. L'amendement est adopté par 140 voix contre 5, en même temps que des amendements identiques d'EPR, de SOC et d'autres groupes. Pour financer la mesure, l'orateur renvoie au « plan de 140 milliards d'économies » de Marine Le Pen, sans dire sur quel poste.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026#4220305"
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "rn",
+        "quoi": "Supprime la contribution de vie étudiante et de campus (CVEC, 105 € par étudiant) à partir de la rentrée 2027. Selon l'exposé, l'État compenserait intégralement les universités et les Crous par des crédits que le RN proposera en seconde partie. Adopté par 55 voix contre 53. L'exposé cite un rendement de 170 M€ en 2023-2024 (Cour des comptes), mais ne donne pas le coût de la mesure.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/737"
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "rn",
+        "quoi": "Le RN veut « un coup de rabot sur le CNC » et, à terme, réintégrer ses missions au ministère de la culture. L'I-717 plafonne à 43,0 M€ (la moitié de son rendement) l'affectation au CNC de la taxe sur la publicité en vidéo à la demande. Il est rejeté par 66 voix contre 92, comme la suite de la série. Ballard dit que l'exception culturelle « correspond pile poil à notre programme », mais qu'on peut faire « avec un peu moins de moyens ».",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026#4220916"
+      },
+      {
+        "date": "2026-11-03",
+        "parti": "rn",
+        "quoi": "Propose un timbre touristique forfaitaire de 50 € sur chaque visa de court séjour pour tourisme, qui rapporterait selon lui 102 M€ (un peu plus de 2 millions de visas délivrés en 2025). Rejeté par 36 voix contre 67 ; le ministre rappelle que le prix des visas Schengen est fixé au niveau européen.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-03-novembre-2026#4218968"
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "ren",
+        "quoi": "Amendement du groupe EPR, identique au I-659 du RN : il relève de 125 M€ le plafond de la taxe affectée aux CCI, pour revenir sur la baisse de 505 à 380 M€ prévue par le PLF. Adopté par 140 voix contre 5, contre l'avis du gouvernement et du rapporteur général.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/3663"
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "ren",
+        "quoi": "Relève de 40 M€ le plafond des redevances affectées aux agences de l'eau (de 2 482,62 à 2 522,62 M€), le niveau prévu par le plan Eau. Adopté par 65 voix contre 58, en même temps que l'identique I-3550, contre l'avis du gouvernement.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/3672"
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "eco",
+        "quoi": "Réclame une taxe sur les surprofits pétroliers qui rapporterait 2,8 Md€, de quoi verser 450 € d'aide directe à 6 millions de ménages et maintenir les cinq programmes de lutte contre la précarité énergétique financés par les C2E. Maud Bregeon répond que le gouvernement préfère le plafonnement des prix et ne veut d'une taxe qu'à l'échelle européenne.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026#4220535"
+      },
+      {
+        "date": "2026-11-04",
+        "parti": "rn",
+        "quoi": "Comme mesure salariale du RN, il propose une hausse de 100 € des salaires versée par les employeurs et exonérée de charges, qui toucherait selon lui plus de quatre millions de personnes. Il refuse un coup de pouce au Smic, qui « va pénaliser les entreprises ». Il ne donne pas le coût de l'exonération.",
+        "source": "https://www.franceinfo.fr/politique/son-interventionnisme-exterieur-lui-a-coute-cher-estime-louis-aliot-a-propos-de-la-defaite-du-camp-de-donald-trump-aux-midterms_8267309.html"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "contexte.oat10",
+        "avant": 4.93,
+        "apres": 4.88,
+        "source": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      },
+      {
+        "quoi": "contexte.spread",
+        "avant": 162,
+        "apres": 156,
+        "source": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      }
+    ]
+  }
+}
