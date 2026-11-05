@@ -2,8 +2,8 @@
 <html lang="fr">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>quipaie2027.fr — Le budget de la France</title>
-<meta name="description" content="Choisissez un candidat à la présidentielle 2027 et voyez ce que son programme changerait vraiment au budget de la France d'ici 2032 : déficit, dette, et l'écart entre ce qu'il promet et ce que disent les chiffres.">
+<title>quipaie2027.fr — Simulateur neutre du budget et des programmes 2027</title>
+<meta name="description" content="Simulateur pédagogique et gratuit, indépendant de tout parti : choisissez un candidat à la présidentielle 2027 et voyez ce que son programme changerait d'ici 2032 pour le budget de la France, la dette et votre pouvoir d'achat, d'après des chiffrages d'économistes indépendants.">
 <!-- aperçu des liens partagés (WhatsApp, iMessage, X, LinkedIn…) ; l'image vient de
      dataset/simulateur/marque/partage.html, la CI l'envoie à côté de la page -->
 <link rel="canonical" href="https://quipaie2027.fr/">
@@ -14,13 +14,15 @@
 <!-- carte d'identité du site pour les moteurs et les IA (schema.org) -->
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"WebSite","@id":"https://quipaie2027.fr/#site","url":"https://quipaie2027.fr/","name":"quipaie2027.fr","inLanguage":"fr-FR",
-  "description":"Simulateur neutre du budget de la France et des programmes de la présidentielle 2027."},
+ {"@type":"WebSite","@id":"https://quipaie2027.fr/#site","url":"https://quipaie2027.fr/","name":"quipaie2027.fr","alternateName":"Qui paie en 2027 ?","inLanguage":"fr-FR",
+  "description":"Simulateur pédagogique, gratuit et non partisan du budget de la France et des programmes de la présidentielle 2027. Site indépendant : il n'est lié à aucun parti et ne soutient aucun candidat."},
  {"@type":"WebApplication","@id":"https://quipaie2027.fr/#simulateur","url":"https://quipaie2027.fr/","name":"Le budget de la France, et ce que les programmes en feraient",
   "applicationCategory":"EducationalApplication","operatingSystem":"Tous (navigateur web)","inLanguage":"fr-FR","isAccessibleForFree":true,
   "offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"isPartOf":{"@id":"https://quipaie2027.fr/#site"},
-  "about":["Élection présidentielle française de 2027","Budget de l'État","Déficit public","Dette publique de la France","Programmes des candidats"],
-  "description":"Choisissez un candidat à la présidentielle 2027 et voyez ce que son programme changerait au budget de la France d'ici 2032 : déficit, dette, qui paie et qui reçoit, emploi, chômage, taux d'intérêt, et l'écart entre promesses et chiffrages indépendants (Cour des comptes, HCFP, OFCE, IPP, Banque de France)."}
+  "about":["Élection présidentielle française de 2027","Budget de l'État","Déficit public","Dette publique de la France","Programmes des candidats","Pouvoir d'achat"],
+  "audience":{"@type":"Audience","audienceType":"Grand public, électeurs"},"educationalUse":"Comprendre les finances publiques et comparer les programmes",
+  "keywords":"simulateur budget, présidentielle 2027, programmes des candidats, déficit, dette publique, pouvoir d'achat, outil pédagogique, non partisan",
+  "description":"Choisissez un candidat à la présidentielle 2027 et voyez ce que son programme changerait au budget de la France d'ici 2032 : déficit, dette, qui paie et qui reçoit, emploi, chômage, taux d'intérêt, et l'écart entre promesses et chiffrages indépendants (Cour des comptes, HCFP, OFCE, IPP, Banque de France). Outil pédagogique et interactif, indépendant de tout parti : tous les candidats sont traités avec les mêmes règles et les mêmes sources."}
 ]}
 </script>
 <meta property="og:type" content="website">
@@ -28,7 +30,7 @@
 <meta property="og:site_name" content="quipaie2027.fr">
 <meta property="og:url" content="https://quipaie2027.fr/">
 <meta property="og:title" content="Le budget de la France, et ce que les programmes en feraient">
-<meta property="og:description" content="Choisissez un candidat, voyez ce que son programme donnerait en 2032 : déficit, dette, et l'écart entre promesses et chiffrages indépendants.">
+<meta property="og:description" content="Simulateur pédagogique et non partisan : choisissez un candidat, voyez ce que son programme donnerait en 2032 pour le déficit, la dette et votre pouvoir d'achat.">
 <meta property="og:image" content="https://quipaie2027.fr/partage.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
@@ -1431,7 +1433,8 @@ footer{padding-bottom:120px}
     <p class="standfirst">Choisissez un candidat : vous verrez ce que son programme changerait d'ici 2032,
       la fin du prochain mandat, pour le déficit, la dette et votre porte-monnaie. Chaque mesure est chiffrée
       par des économistes indépendants ; un bouton affiche à la place les chiffres annoncés par le parti.
-      Repère : l'Union européenne demande un déficit sous 3 % du PIB.</p>
+      Repère : l'Union européenne demande un déficit sous 3 % du PIB.
+      Un outil pédagogique et gratuit, indépendant de tout parti : tous les candidats passent par les mêmes règles.</p>
     <div class="caveat adv-only">
       <div><b>Quand un parti annonce un chiffre, ce chiffre est affiché tel quel, à côté de ce que
         produit le modèle.</b> Les mesures sont chiffrées en ordres de grandeur issus de travaux publics (INSEE,
@@ -1839,7 +1842,7 @@ footer{padding-bottom:120px}
         <span class="moon">Thème sombre</span>
         <span class="sun">Thème clair</span>
       </button></div>
-    <b class="fbrand">quipaie2027.fr</b> — prototype pédagogique, sans valeur officielle. Les montants sont des ordres de grandeur arrondis, cohérents
+    <b class="fbrand">quipaie2027.fr</b> — outil pédagogique, indépendant de tout parti et de tout candidat, sans valeur officielle. Les montants sont des ordres de grandeur arrondis, cohérents
     entre eux mais non issus d'un modèle macroéconométrique. Un chiffrage sérieux se fait avec un modèle bouclé
     (type Mésange à la direction générale du Trésor) et une revue contradictoire des hypothèses.
     Aucune photographie de candidat n'est reproduite : les portraits de presse sont protégés par le droit
