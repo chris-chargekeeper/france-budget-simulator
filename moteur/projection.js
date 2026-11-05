@@ -9,8 +9,8 @@
  *   - les réformes qui ont un chiffrage publié à 5 ans ou moins (âge de la retraite, assurance chômage)
  *     ajoutent leur effet sur l'emploi et la production ;
  *   - la dette fait monter le taux de l'État, qui freine l'activité et renchérit le crédit aux entreprises.
- * Les effets de long terme sans horizon publié avant 2032 ne sont pas mélangés aux chiffres : ils sont
- * listés à part (apres2032, horsBudget, nonDemontre).
+ * Les effets de long terme sans horizon publié avant 2032 ne sont pas mélangés aux chiffres 2032 : ils sont
+ * listés à part (apres2032, horsBudget, nonDemontre), et chiffrés en régime permanent par longTerme().
  *
  * Fonctionne dans le navigateur (global creerMoteur) et sous Node (module.exports).
  */
@@ -223,7 +223,56 @@
       return {base: base.rows, scen: scen.rows, centre, fourchette, aPart, confiance};
     }
 
-    return {projeter, simuler, lireProfil, multiplicateur};
+    /** Effet de long terme d'une relance durable de 1 point de PIB par l'instrument (signe : relance > 0).
+     *  borne : 'v' (valeur publiée de référence), 'lo' ou 'hi' (extrêmes publiés). */
+    function multiplicateurLT(type, borne) {
+      const lt = MC.types[type].longTerme;
+      return lt[borne === 'v' ? 'v' : borne];
+    }
+
+    /** Régime permanent, une dizaine à une vingtaine d'années après l'entrée en vigueur : les effets de
+     *  demande se sont dissipés ou ont laissé leur trace de long terme, les effets d'offre publiés sont
+     *  installés. Rapporté au PIB d'aujourd'hui (BL.pib) : un ordre de grandeur, sans date.
+     *  Renvoie, pour la valeur de référence et les bornes : écart de PIB (%), emplois (milliers),
+     *  chômage (points), et solde public (points de PIB) — mesures à plein régime, plus les recettes
+     *  que l'écart de PIB apporte ou retire. */
+    function longTerme(P, active) {
+      const part = BASE.rec0 / BASE.pib0;
+      const calc = borne => {
+        let pib = 0, emplois = 0, chomage = 0, budget = 0;
+        const contrib = {};
+        for (const id in active) {
+          const m = M[id]; if (!m) continue;
+          const a = amountAt(m, active[id], 2100, P);          // plein régime, érosion comprise
+          const pts = a / BASE.pib0 * 100;
+          budget += (m.g === 'dep-' || m.g === 'rec+') ? pts : -pts;
+          let e = 0, remplace = false;
+          const ampleur = m.mid ? active[id] / m.mid : 1;
+          for (const ca of MC.classement[id].canaux) {
+            const lt = ca.longTerme; if (!lt) continue;
+            const f = (ca.facteur == null ? 1 : ca.facteur) * ampleur;
+            const lire = k => borne === 'v' ? lt[k] : (lt[k + (borne === 'lo' ? 'Lo' : 'Hi')] ?? lt[k]);
+            if (lt.pibParPoint != null) {          // effet publié par point de PIB de la mesure elle-même
+              e += impulsion(m, 1) * pts * lire('pibParPoint'); remplace = remplace || !!lt.remplaceType;
+            }
+            if (lt.pib != null) e += f * lire('pib');
+            if (lt.emplois != null) emplois += f * lire('emplois');
+            if (lt.chomage != null) chomage += f * lire('chomage');
+          }
+          if (!remplace) e += impulsion(m, pts) * multiplicateurLT(MC.classement[id].type, borne);
+          pib += e; contrib[id] = e;
+        }
+        return {pib, emplois, chomage, soldePct: budget + part * pib, contrib};
+      };
+      const v = calc('v'), lo = calc('lo'), hi = calc('hi');
+      const pibHab = x => x / 100 * BASE.pib0 / popSerie[FIN] * 1000 / Math.pow(1 + P.infl / 100, FIN - DEBUT);
+      const f = k => [Math.min(lo[k], hi[k], v[k]), Math.max(lo[k], hi[k], v[k])];
+      return {pib: v.pib, emplois: v.emplois, chomage: v.chomage, soldePct: v.soldePct,
+              pibReelHab: pibHab(v.pib), contrib: v.contrib,
+              fourchette: {pib: f('pib'), emplois: f('emplois'), chomage: f('chomage'), soldePct: f('soldePct')}};
+    }
+
+    return {projeter, simuler, lireProfil, multiplicateur, longTerme};
   }
 
   if (typeof module !== 'undefined' && module.exports) module.exports = {creerMoteur};

@@ -3972,7 +3972,17 @@
     "mult_invest_public_a3",
     "mult_invest_public_a5"
    ],
-   "profilNote": "Mésange."
+   "profilNote": "Mésange.",
+   "longTerme": {
+    "v": 0.22,
+    "lo": -0.3,
+    "hi": 2.5,
+    "coef": [
+     "mult_invest_public_lt",
+     "elasticite_pib_capital_public"
+    ],
+    "de": "Mésange, long terme : 0,22 (pur choc de demande, sans l'effet du capital public sur la productivité). Bornes : e-mod à 10 ans en haut de cycle (-0,3) ; FMI, élasticité 0,17 du PIB au capital public, pleine efficience (+2,5)."
+   }
   },
   "conso_publique": {
    "lab": "Fonctionnement des administrations",
@@ -3994,7 +4004,16 @@
     "mult_depense_generique_a2",
     "mult_depense_generique_a3"
    ],
-   "profilNote": "Mésange, dépense publique composite."
+   "profilNote": "Mésange, dépense publique composite.",
+   "longTerme": {
+    "v": 0.16,
+    "lo": 0.13,
+    "hi": 0.82,
+    "coef": [
+     "mult_depense_generique_lt"
+    ],
+    "de": "Mésange, long terme : 0,16 ; EA-BDF à 10 ans 0,13 ; EAGLE France, baisse permanente compensée par un impôt forfaitaire : 0,82."
+   }
   },
   "emploi_public": {
    "lab": "Emploi public",
@@ -4011,7 +4030,16 @@
    "profilDe": [
     "mult_emploi_public"
    ],
-   "profilNote": "e-mod (OFCE), milieu de cycle."
+   "profilNote": "e-mod (OFCE), milieu de cycle.",
+   "longTerme": {
+    "v": 0.2,
+    "lo": -1.1,
+    "hi": 1.5,
+    "coef": [
+     "mult_emploi_public"
+    ],
+    "de": "e-mod (OFCE) à 10 ans : 0,2 en milieu de cycle, -1,1 en haut, 1,5 en bas."
+   }
   },
   "defense": {
    "lab": "Défense",
@@ -4026,7 +4054,16 @@
    "profilDe": [
     "mult_defense"
    ],
-   "profilNote": "Multiplicateur moyen cumulé sur 3 ans (FMI), appliqué comme effet constant."
+   "profilNote": "Multiplicateur moyen cumulé sur 3 ans (FMI), appliqué comme effet constant.",
+   "longTerme": {
+    "v": 0.16,
+    "lo": 0.13,
+    "hi": 0.82,
+    "coef": [
+     "mult_depense_generique_lt"
+    ],
+    "de": "Aucun effet de long terme publié pour la défense : on prend celui de la dépense publique générique (Mésange, long terme)."
+   }
   },
   "prestations": {
    "lab": "Prestations et pensions",
@@ -4043,7 +4080,16 @@
    "profilDe": [
     "mult_prestations"
    ],
-   "profilNote": "e-mod (OFCE), milieu de cycle."
+   "profilNote": "e-mod (OFCE), milieu de cycle.",
+   "longTerme": {
+    "v": 0.5,
+    "lo": 0.0,
+    "hi": 1.3,
+    "coef": [
+     "mult_prestations"
+    ],
+    "de": "e-mod (OFCE) à 10 ans : 0,5 en milieu de cycle, 0 en haut, 1,3 en bas."
+   }
   },
   "tva": {
    "lab": "TVA",
@@ -4063,7 +4109,16 @@
     "mult_tva",
     "mult_tva_a2_lt"
    ],
-   "profilNote": "Mésange."
+   "profilNote": "Mésange.",
+   "longTerme": {
+    "v": 0.7,
+    "lo": 0.61,
+    "hi": 0.7,
+    "coef": [
+     "mult_tva_a2_lt"
+    ],
+    "de": "Mésange, long terme : -0,70 pour une hausse ; EAGLE France : -0,61."
+   }
   },
   "energie": {
    "lab": "Fiscalité de l'énergie",
@@ -4081,7 +4136,16 @@
    "profilDe": [
     "mult_taxe_carbone_energie"
    ],
-   "profilNote": "Mésange."
+   "profilNote": "Mésange.",
+   "longTerme": {
+    "v": 0.68,
+    "lo": 0.68,
+    "hi": 0.68,
+    "coef": [
+     "mult_taxe_carbone_energie"
+    ],
+    "de": "Mésange (taxe carbone), long terme : -0,68 pour une hausse."
+   }
   },
   "ir": {
    "lab": "Impôt sur le revenu",
@@ -4101,7 +4165,16 @@
     "mult_ir",
     "mult_ir_a2_lt"
    ],
-   "profilNote": "Mésange."
+   "profilNote": "Mésange.",
+   "longTerme": {
+    "v": 1.05,
+    "lo": 1.05,
+    "hi": 1.24,
+    "coef": [
+     "mult_ir_a2_lt"
+    ],
+    "de": "Mésange, long terme : 1,05 pour une baisse ; EAGLE France : 1,24."
+   }
   },
   "csg_activite": {
    "lab": "CSG et cotisations sur les revenus d'activité",
@@ -4119,7 +4192,16 @@
    "profilDe": [
     "mult_csg"
    ],
-   "profilNote": "Mésange."
+   "profilNote": "Mésange.",
+   "longTerme": {
+    "v": 0.88,
+    "lo": 0.4,
+    "hi": 1.2,
+    "coef": [
+     "mult_csg"
+    ],
+    "de": "Mésange, long terme : 0,88 ; e-mod à 10 ans : 0,4 (milieu de cycle) à 1,2 (bas)."
+   }
   },
   "cotis_bas_salaires": {
    "lab": "Cotisations employeurs sur les bas salaires",
@@ -4138,7 +4220,16 @@
    "profilDe": [
     "mult_allegements_bas_salaires"
    ],
-   "profilNote": "Mésange ; comprend l'effet du coût du travail sur l'emploi au niveau du Smic."
+   "profilNote": "Mésange ; comprend l'effet du coût du travail sur l'emploi au niveau du Smic.",
+   "longTerme": {
+    "v": 1.84,
+    "lo": 1.84,
+    "hi": 1.84,
+    "coef": [
+     "mult_allegements_bas_salaires"
+    ],
+    "de": "Mésange, long terme : 1,84 (environ 470 000 emplois), variante « à visée illustrative »."
+   }
   },
   "benefices": {
    "lab": "Impôts sur les bénéfices des entreprises",
@@ -4155,7 +4246,16 @@
    "profilDe": [
     "mult_is_capital"
    ],
-   "profilNote": "EAGLE France, hausse permanente."
+   "profilNote": "EAGLE France, hausse permanente.",
+   "longTerme": {
+    "v": 3.27,
+    "lo": 2.43,
+    "hi": 3.27,
+    "coef": [
+     "mult_is_capital_lt"
+    ],
+    "de": "EAGLE France (BCE / Banque de France), hausse permanente de l'impôt sur le capital : -3,27 à long terme si un impôt forfaitaire s'ajuste, -2,43 si l'impôt sur le travail baisse en contrepartie. QUEST : « l'impôt le plus distorsif »."
+   }
   },
   "revenus_capital": {
    "lab": "Impôts sur les revenus du capital des ménages",
@@ -4172,7 +4272,17 @@
    "profilDe": [
     "mult_is_capital"
    ],
-   "profilNote": "Substitut : EAGLE France."
+   "profilNote": "Substitut : EAGLE France.",
+   "longTerme": {
+    "v": 0.0,
+    "lo": 0.0,
+    "hi": 3.27,
+    "coef": [
+     "fiscalite_capital_pfu_ifi_investissement",
+     "mult_is_capital_lt"
+    ],
+    "de": "France Stratégie (2023), évaluation du prélèvement forfaitaire unique : aucun effet détecté sur l'investissement ni sur les salaires. Borne haute : EAGLE France, impôt permanent sur le capital (-3,27)."
+   }
   },
   "patrimoine": {
    "lab": "Impôts sur le patrimoine",
@@ -4187,7 +4297,16 @@
    "profilDe": [
     "mult_agrege_ofce_consolidation"
    ],
-   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant."
+   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant.",
+   "longTerme": {
+    "v": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "coef": [
+     "fiscalite_capital_pfu_ifi_investissement"
+    ],
+    "de": "France Stratégie (2023), évaluation du remplacement de l'ISF par l'IFI : aucun effet détecté sur l'investissement, les salaires, ni l'activité des ETI."
+   }
   },
   "production": {
    "lab": "Impôts de production",
@@ -4202,7 +4321,16 @@
    "profilDe": [
     "mult_agrege_ofce_consolidation"
    ],
-   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant."
+   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant.",
+   "longTerme": {
+    "v": 0.18,
+    "lo": 0.12,
+    "hi": 0.24,
+    "coef": [
+     "impots_production_c3s"
+    ],
+    "de": "CAE (2019) : la C3S (3,8 Md€) coûte 0,016 à 0,032 % de PIB par la seule productivité ; rapporté à 1 point de PIB d'impôt (calcul)."
+   }
   },
   "finance": {
    "lab": "Taxes sur les opérations financières",
@@ -4217,7 +4345,16 @@
    "profilDe": [
     "mult_agrege_ofce_consolidation"
    ],
-   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant."
+   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant.",
+   "longTerme": {
+    "v": 0.16,
+    "lo": 0.13,
+    "hi": 0.82,
+    "coef": [
+     "mult_depense_generique_lt"
+    ],
+    "de": "Aucun effet de long terme publié : on prend celui de la dépense publique générique (Mésange, long terme), faute de mieux."
+   }
   },
   "generique_recettes": {
    "lab": "Autre recette",
@@ -4232,7 +4369,16 @@
    "profilDe": [
     "mult_agrege_ofce_consolidation"
    ],
-   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant."
+   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant.",
+   "longTerme": {
+    "v": 0.16,
+    "lo": 0.13,
+    "hi": 0.82,
+    "coef": [
+     "mult_depense_generique_lt"
+    ],
+    "de": "Aucun effet de long terme publié : on prend celui de la dépense publique générique (Mésange, long terme), faute de mieux."
+   }
   },
   "generique_depense": {
    "lab": "Autre dépense",
@@ -4247,7 +4393,16 @@
    "profilDe": [
     "mult_agrege_ofce_consolidation"
    ],
-   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant."
+   "profilNote": "Multiplicateur d'ensemble de l'OFCE, constant.",
+   "longTerme": {
+    "v": 0.16,
+    "lo": 0.13,
+    "hi": 0.82,
+    "coef": [
+     "mult_depense_generique_lt"
+    ],
+    "de": "Mésange, long terme : 0,16 (dépense générique)."
+   }
   }
  },
  "classement": {
@@ -4355,7 +4510,14 @@
      "coef": "cir_reforme2008_pib_lt",
      "quoi": "moins de R&D privée, donc moins de productivité",
      "extrapolation": true,
-     "moteur": "apres2032"
+     "moteur": "apres2032",
+     "longTerme": {
+      "pibParPoint": 4.2,
+      "pibParPointLo": 2.6,
+      "pibParPointHi": 8.4,
+      "remplaceType": true,
+      "de": "DG Trésor (2021) : la hausse du CIR de 2008 (+0,19 pt de PIB) rehausse le PIB de 0,8 % à long terme (QUEST 0,5 ; NEMESIS 1,6). Rapporté à 1 point de PIB de CIR (calcul) : 4,2 (2,6 à 8,4). Remplace, pour cette mesure, l'effet générique de l'impôt sur les bénéfices."
+     }
     }
    ],
    "note": "Le rabot du CIR est un impôt de plus sur les entreprises. L'effet de long terme vient de l'évaluation de la réforme inverse (2008)."
@@ -4422,7 +4584,19 @@
      "chomageHi": 0.31,
      "de": "COR, mars 2026 : à 5 ans, Trésor +142 000 emplois et +0,5 % de PIB, OFCE +140 000 et +0,36 %, I-MIP +172 000 et +0,44 % ; chômage à 5 ans : Trésor 0, OFCE +0,31 pt, I-MIP -0,30 pt. Le COR suppose une mise en place immédiate.",
      "recoupement": "Étude d'impact de la réforme 2023 (Gouvernement, DG Trésor) : le passage de 62 à 64 ans devait apporter +300 000 emplois et +1,1 % de PIB en 2030. L'extrapolation inverse du COR (-2 ans) donne -284 000 emplois et -1,0 % de PIB à 5 ans : même ordre de grandeur.",
-     "recoupementDe": "reforme_2023_62_64"
+     "recoupementDe": "reforme_2023_62_64",
+     "longTerme": {
+      "pib": 0.7,
+      "pibLo": 0.7,
+      "pibHi": 0.9,
+      "emplois": 210,
+      "emploisLo": 210,
+      "emploisHi": 240,
+      "chomage": 0,
+      "chomageLo": -0.4,
+      "chomageHi": 0,
+      "de": "COR, mars 2026 : à long terme (~20 ans), +210 000 à +240 000 emplois et +0,7 à +0,9 % de PIB ; chômage : 0 (Trésor, OFCE), -0,4 pt (I-MIP)."
+     }
     }
    ]
   },
@@ -4451,7 +4625,19 @@
      "chomageLo": -0.3,
      "chomageHi": 0.31,
      "de": "COR, mars 2026 : à 5 ans, Trésor +142 000 emplois et +0,5 % de PIB, OFCE +140 000 et +0,36 %, I-MIP +172 000 et +0,44 % ; chômage à 5 ans : Trésor 0, OFCE +0,31 pt, I-MIP -0,30 pt. Le COR suppose une mise en place immédiate.",
-     "recoupement": "L'effet chiffré par le COR pour un an de plus est appliqué quatre fois, en sens inverse ; aucun autre chiffrage ne permet de le recouper."
+     "recoupement": "L'effet chiffré par le COR pour un an de plus est appliqué quatre fois, en sens inverse ; aucun autre chiffrage ne permet de le recouper.",
+     "longTerme": {
+      "pib": 0.7,
+      "pibLo": 0.7,
+      "pibHi": 0.9,
+      "emplois": 210,
+      "emploisLo": 210,
+      "emploisHi": 240,
+      "chomage": 0,
+      "chomageLo": -0.4,
+      "chomageHi": 0,
+      "de": "COR, mars 2026 : à long terme (~20 ans), +210 000 à +240 000 emplois et +0,7 à +0,9 % de PIB ; chômage : 0 (Trésor, OFCE), -0,4 pt (I-MIP)."
+     }
     }
    ]
   },
@@ -4478,7 +4664,19 @@
      },
      "chomageLo": -0.3,
      "chomageHi": 0.31,
-     "de": "COR, mars 2026 : à 5 ans, Trésor +142 000 emplois et +0,5 % de PIB, OFCE +140 000 et +0,36 %, I-MIP +172 000 et +0,44 % ; chômage à 5 ans : Trésor 0, OFCE +0,31 pt, I-MIP -0,30 pt. Le COR suppose une mise en place immédiate."
+     "de": "COR, mars 2026 : à 5 ans, Trésor +142 000 emplois et +0,5 % de PIB, OFCE +140 000 et +0,36 %, I-MIP +172 000 et +0,44 % ; chômage à 5 ans : Trésor 0, OFCE +0,31 pt, I-MIP -0,30 pt. Le COR suppose une mise en place immédiate.",
+     "longTerme": {
+      "pib": 0.7,
+      "pibLo": 0.7,
+      "pibHi": 0.9,
+      "emplois": 210,
+      "emploisLo": 210,
+      "emploisHi": 240,
+      "chomage": 0,
+      "chomageLo": -0.4,
+      "chomageHi": 0,
+      "de": "COR, mars 2026 : à long terme (~20 ans), +210 000 à +240 000 emplois et +0,7 à +0,9 % de PIB ; chômage : 0 (Trésor, OFCE), -0,4 pt (I-MIP)."
+     }
     }
    ]
   },
@@ -4504,7 +4702,13 @@
      },
      "chomageLo": -0.4,
      "chomageHi": -0.2,
-     "de": "Banque de France : -0,2 pt de chômage structurel pour la réforme de 2021, -0,4 pt pour 2023. Valeur centrale : la plus faible des deux ; la plus forte sert de borne."
+     "de": "Banque de France : -0,2 pt de chômage structurel pour la réforme de 2021, -0,4 pt pour 2023. Valeur centrale : la plus faible des deux ; la plus forte sert de borne.",
+     "longTerme": {
+      "chomage": -0.2,
+      "chomageLo": -0.4,
+      "chomageHi": -0.2,
+      "de": "Banque de France : baisse durable du chômage structurel, -0,2 pt (réforme 2021) à -0,4 pt (2023)."
+     }
     }
    ],
    "note": "L'ampleur dépend du contenu de la réforme ; le moteur ne retiendra que l'ordre de grandeur."
@@ -4662,6 +4866,9 @@
   "demandeMondiale": {
    "coef": "demande_mondiale_1pct_pib_fr",
    "de": "Effet de +1 % de demande mondiale adressée à la France sur son PIB (Mésange) : hors de portée d'un gouvernement."
+  },
+  "longTerme": {
+   "de": "Régime permanent, environ 10 à 20 ans après l'entrée en vigueur : effet sur le PIB de chaque mesure (multiplicateur de long terme de son instrument, ou effet d'offre publié de la réforme), et solde public qui en découle (recettes proportionnelles au PIB)."
   }
  }
 }

@@ -67,6 +67,13 @@ for (const p of PARTIS) {
   console.log(`       confiance : ${conf}${ap ? ' ; à part : ' + ap : ''}`);
 }
 
+/* 2 bis. long terme (régime permanent, 10 à 20 ans) */
+console.log('\n== Long terme, écart au « si rien ne change » : PIB % [fourchette] ; PIB/hab € ; solde pts ; emplois (milliers, effets d\'offre) ==');
+for (const p of PARTIS) {
+  const L = moteur.longTerme(P, actif(p));
+  console.log(`${p.id.padEnd(4)} | ${f(L.pib, 2)} ${fr(L.fourchette.pib, 2)} | ${f(L.pibReelHab, 0)} | ${f(L.soldePct, 2)} | ${f(L.emplois, 0)}`);
+}
+
 /* 3. sensibilité de la charge d'intérêts : +1 point de taux de marché, comparé à l'AFT et au Trésor */
 const chargeDe = rmkt => moteur.simuler({...P, rmkt}, {}, {demande: 'v', okun: 'v', prime: 'v', offre: 'v'}, null).rows;
 const c0 = chargeDe(P.rmkt), c1 = chargeDe(P.rmkt + 1);
@@ -103,6 +110,12 @@ if (process.argv.includes('--verifier')) {
   // d. charge d'intérêts : même ordre de grandeur que l'AFT (±35 %)
   for (const [h, v] of Object.entries(AFT))
     if (Math.abs(sens(+h) / v - 1) > 0.35) erreurs.push(`charge +1 pt à ${h} an(s) : ${sens(+h).toFixed(1)} contre ${v} (AFT)`);
+  // e. long terme : signes attendus des effets publiés
+  const lt = id => moteur.longTerme(P, {[id]: M[id].mid}).pib;
+  if (!(lt('age65') > 0)) erreurs.push('long terme : le départ à 65 ans devrait relever le PIB');
+  if (!(lt('isgrandes') < 0)) erreurs.push("long terme : la surtaxe d'IS devrait réduire le PIB");
+  if (Math.abs(lt('isf')) > 1e-9) erreurs.push("long terme : l'ISF n'a pas d'effet démontré (France Stratégie)");
+  if (Object.keys(moteur.longTerme(P, {}).contrib).length) erreurs.push('long terme : sans mesure, aucun effet');
   if (erreurs.length) { console.error('\nÉCHEC :\n  ' + erreurs.join('\n  ')); process.exit(1); }
   console.log('\nVérifications passées.');
 }
