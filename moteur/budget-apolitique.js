@@ -19,6 +19,7 @@
  *   - aucun des groupes modestes ou moyens (classes moyennes, bas salaires, retraités, sans emploi) ne perd
  *     plus de 1 % de son revenu, et les TPE, PME et ETI ne perdent rien (carte « qui paie, qui reçoit ») ;
  *     la lutte contre la fraude n'y est pas comptée ;
+ *   - pas de recul de l'activité, donc de l'emploi, en 2032 par rapport à « si rien ne change » ;
  *   - pas de coupe dans l'assurance maladie, pas de hausse générale des prix (TVA) ;
  *   - rien qui distingue les personnes selon leur nationalité ; pas de mesure au rendement possiblement nul ;
  *     pas deux impôts sur la même assiette.
@@ -63,6 +64,8 @@ const seuil = g => g in SEUILS ? SEUILS[g] : SEUIL_MENAGES;
 // la lutte contre la fraude reprend un argent dû : elle n'est pas comptée comme une perte de revenu
 const HORS_POUVOIR_ACHAT = new Set(['fraude']);
 /* Départage : à effet comparable, la mesure qui profite au plus grand nombre. */
+/* Garde-fou d'activité : pas de recul de la production, donc de l'emploi, en 2032 (écart au « si rien ne change », en %). */
+const ACTIVITE_MIN = 0;
 const GRAND_NOMBRE = ['moyens', 'smic', 'retraites', 'sansemploi', 'agents'];
 
 const GR = Object.fromEntries(INC.groupes.map(g => [g.id, g]));
@@ -107,9 +110,10 @@ function bilan(ids, penalite = 0) {
   const a = actif(ids);
   const page = PAGE.run(P, a).at(-1), c = MOTEUR.projeter(P, a).centre.at(-1), L = MOTEUR.longTerme(P, a);
   const pa = pouvoirAchat(ids);
-  const depasse = PROTEGES.reduce((t, g) => t + Math.max(0, seuil(g) - (pa[g] || 0)), 0);
+  const recul = Math.max(0, ACTIVITE_MIN - c.pib);
+  const depasse = PROTEGES.reduce((t, g) => t + Math.max(0, seuil(g) - (pa[g] || 0)), 0) + 10 * recul;
   const court = (page.soldePct - S0.soldePct) + c.pib, long = L.soldePct + L.pib;
-  return {page, c, L, pa, depasse, court, long, note: (court + long) / 2, score: (court + long) / 2 - penalite * depasse};
+  return {page, c, L, pa, recul, depasse, court, long, note: (court + long) / 2, score: (court + long) / 2 - penalite * depasse};
 }
 
 function calculer() {
@@ -159,7 +163,7 @@ function calculer() {
       if (change) break;
     }
   }
-  if (cur.depasse > 1e-6) throw new Error('garde-fous de pouvoir d\'achat non tenus');
+  if (cur.depasse > 1e-6) throw new Error('garde-fous de pouvoir d\'achat ou d\'activité non tenus');
 
   // pourquoi chaque mesure retenue : ce que le budget perdrait sans elle
   const notes = {}, set = {};
@@ -194,6 +198,10 @@ function calculer() {
     const avec = new Set(ids); avec.add(id);
     const b = bilan(avec);
     const lese = PROTEGES.filter(x => (b.pa[x] || 0) < seuil(x) - 1e-9 && !((cur.pa[x] || 0) < seuil(x) - 1e-9));
+    if (b.recul > 1e-6 && !(cur.recul > 1e-6)) {
+      ecartees[id] = `Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production ${sg(b.c.pib - cur.c.pib, 2)} %).`;
+      continue;
+    }
     if (lese.length) {
       const pme = lese.includes('pme'), men = lese.filter(x => x !== 'pme');
       ecartees[id] = 'Garde-fou : ' + [men.length ? `${men.map(x => noms[x]).join(' et ')} y perdraient plus de 1 % de leur revenu` : '',
@@ -216,7 +224,7 @@ const aujourdhui = new Date().toISOString().slice(0, 10);
 const CRITERES = [
   "Chercher la meilleure trajectoire d'ensemble pour le pays : l'état des finances publiques et la richesse produite (qui porte l'emploi et le revenu par habitant) comptent à parts égales, en 2032 comme à long terme (10 à 20 ans).",
   "Toutes les mesures chiffrées du simulateur sont permises : économies, recettes, dépenses ou baisses d'impôts. Les effets sur l'activité sont ceux publiés par le Trésor, la Banque de France, la BCE, l'OFCE, France Stratégie, le CAE et le COR.",
-  "Garde-fous : ni les classes moyennes, ni les bas salaires, ni les retraités, ni les personnes sans emploi ne perdent plus de 1 % de leur revenu ; les TPE, PME et ETI, qui portent l'emploi et la création d'entreprises, ne perdent rien ; pas de coupe dans l'assurance maladie ; pas de hausse générale des prix. La lutte contre la fraude n'est pas comptée comme une perte : elle reprend un argent dû.",
+  "Garde-fous : ni les classes moyennes, ni les bas salaires, ni les retraités, ni les personnes sans emploi ne perdent plus de 1 % de leur revenu ; les TPE, PME et ETI, qui portent l'emploi et la création d'entreprises, ne perdent rien ; pas de recul de l'activité ni de l'emploi en 2032 : le déficit baisse, mais sans sacrifier d'emplois ; pas de coupe dans l'assurance maladie ; pas de hausse générale des prix. La lutte contre la fraude n'est pas comptée comme une perte : elle reprend un argent dû.",
   "Départage : quand deux mesures du même type ont un effet comparable sur l'activité (les fourchettes publiées se recouvrent), garder celle qui améliore le plus le pouvoir d'achat du plus grand nombre.",
   "Chaque mesure à son chiffrage central, ou à sa borne basse quand les chiffrages publiés vont du simple au triple ; jamais au plus favorable.",
   "Écarter les mesures dont le rendement peut être nul, celles qui distinguent les personnes selon leur nationalité (principe d'égalité), et les doublons.",
@@ -229,7 +237,7 @@ const texte = `Ce budget n'est le programme de personne. Il est calculé par une
   + `Il est recalculé chaque jour. Résultat : ${nf(R.somme.dep)} Md€ d'économies et ${nf(R.somme.rec)} Md€ de recettes en 2032`
   + (R.somme.depPlus || R.somme.recMoins ? `, dont une partie rendue en ${[R.somme.depPlus ? `dépenses (${nf(R.somme.depPlus)} Md€)` : '', R.somme.recMoins ? `baisses d'impôts (${nf(R.somme.recMoins)} Md€)` : ''].filter(Boolean).join(' et ')}` : '')
   + `, pour un déficit de ${nf(-R.fin.soldePct)} % du PIB en 2032 et une production ${R.L.pib >= 0 ? 'plus élevée' : 'plus faible'} à long terme (${sg(R.L.pib, 1)} %). `
-  + `Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget cherche l'équilibre entre les deux. `
+  + `Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. `
   + `Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.`;
 
 console.log(`Budget apolitique au ${aujourdhui} : déficit 2032 ${nf(-R.fin.soldePct)} %, dette ${nf(R.fin.dettePct, 0)} %, `
