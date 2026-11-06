@@ -509,7 +509,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 42 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 11,1 Md€ d'économies et 17,3 Md€ de recettes en 2032, dont une partie rendue en baisses d'impôts (5,0 Md€), pour un déficit de 6,7 % du PIB en 2032 et une production plus élevée à long terme (+0,1 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget cherche l'équilibre entre les deux. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 42 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 6,1 Md€ d'économies et 17,3 Md€ de recettes en 2032, pour un déficit de 6,7 % du PIB en 2032 et une production plus faible à long terme (−0,0 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget cherche l'équilibre entre les deux. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -517,7 +517,8 @@
       "criteres": [
         "Chercher la meilleure trajectoire d'ensemble pour le pays : l'état des finances publiques et la richesse produite (qui porte l'emploi et le revenu par habitant) comptent à parts égales, en 2032 comme à long terme (10 à 20 ans).",
         "Toutes les mesures chiffrées du simulateur sont permises : économies, recettes, dépenses ou baisses d'impôts. Les effets sur l'activité sont ceux publiés par le Trésor, la Banque de France, la BCE, l'OFCE, France Stratégie, le CAE et le COR.",
-        "Garde-fous : ni les classes moyennes, ni les bas salaires, ni les retraités, ni les personnes sans emploi, ni les petites entreprises ne perdent plus de 1 % de leur revenu ; pas de coupe dans l'assurance maladie ; pas de hausse générale des prix.",
+        "Garde-fous : ni les classes moyennes, ni les bas salaires, ni les retraités, ni les personnes sans emploi ne perdent plus de 1 % de leur revenu ; les TPE, PME et ETI, qui portent l'emploi et la création d'entreprises, ne perdent rien ; pas de coupe dans l'assurance maladie ; pas de hausse générale des prix. La lutte contre la fraude n'est pas comptée comme une perte : elle reprend un argent dû.",
+        "Départage : quand deux mesures du même type ont un effet comparable sur l'activité (les fourchettes publiées se recouvrent), garder celle qui améliore le plus le pouvoir d'achat du plus grand nombre.",
         "Chaque mesure à son chiffrage central, ou à sa borne basse quand les chiffrages publiés vont du simple au triple ; jamais au plus favorable.",
         "Écarter les mesures dont le rendement peut être nul, celles qui distinguent les personnes selon leur nationalité (principe d'égalité), et les doublons.",
         "Le calcul ne juge que les effets sur les finances publiques et sur l'activité : la sécurité, l'environnement ou la justice sociale relèvent d'autres choix, qu'il ne tranche pas.",
@@ -526,9 +527,6 @@
       "set": {
         "isfclim": {
           "sim": "mid"
-        },
-        "niches": {
-          "sim": "lo"
         },
         "pfu": {
           "sim": "mid"
@@ -548,9 +546,6 @@
         "fraude": {
           "sim": "lo"
         },
-        "irbaisse": {
-          "sim": "mid"
-        },
         "ttf": {
           "sim": "lo"
         },
@@ -566,14 +561,12 @@
       },
       "pourquoi": {
         "isfclim": "Retenue à son chiffrage central (10,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,25 point de PIB ; effet sur la production : −0,09 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
-        "niches": "Retenue à sa borne basse (5,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 25,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,15 point de PIB ; effet sur la production : −0,06 % en 2032, −0,03 % à long terme, d'après les effets publiés.",
         "pfu": "Retenue à son chiffrage central (4,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,10 point de PIB ; effet sur la production : −0,05 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
         "effectifs": "Retenue à son chiffrage central (4,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,11 point de PIB ; effet sur la production : −0,08 % en 2032, −0,03 % à long terme, d'après les effets publiés.",
         "succ": "Retenue à son chiffrage central (3,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,07 point de PIB ; effet sur la production : −0,03 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
         "csgcap": "Retenue à son chiffrage central (3,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,08 point de PIB ; effet sur la production : −0,03 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
         "agences": "Retenue à son chiffrage central (2,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,06 point de PIB ; effet sur la production : −0,06 % en 2032, −0,01 % à long terme, d'après les effets publiés.",
         "fraude": "Retenue à sa borne basse (1,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 15,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,03 point de PIB ; effet sur la production : −0,01 % en 2032, −0,01 % à long terme, d'après les effets publiés.",
-        "irbaisse": "Retenue à son chiffrage central (5,0 Md€ par an). Dans ce budget, elle dégrade le solde public 2032 de 0,17 point de PIB ; effet sur la production : +0,11 % en 2032, +0,18 % à long terme, d'après les effets publiés.",
         "ttf": "Retenue à sa borne basse (1,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 6,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,02 point de PIB ; effet sur la production : −0,01 % en 2032, −0,00 % à long terme, d'après les effets publiés.",
         "rachats": "Retenue à sa borne basse (0,50 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 2,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,01 point de PIB ; effet sur la production : −0,00 % en 2032, −0,00 % à long terme, d'après les effets publiés.",
         "exit": "Retenue à sa borne basse (0,20 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 1,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,00 point de PIB ; effet sur la production : −0,00 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
@@ -590,11 +583,12 @@
         "isgrandes": "Rapporte moins qu'elle ne coûte en activité, surtout à long terme : solde public 2032 +0,20 point de PIB, production −0,09 % en 2032 et −0,67 % à long terme.",
         "superp": "Rapporte moins qu'elle ne coûte en activité, surtout à long terme : solde public 2032 +0,05 point de PIB, production −0,02 % en 2032 et −0,17 % à long terme.",
         "minimum15": "Rapporte moins qu'elle ne coûte en activité, surtout à long terme : solde public 2032 +0,05 point de PIB, production −0,02 % en 2032 et −0,17 % à long terme.",
-        "cir": "Garde-fou : les petites entreprises y perdraient plus de 1 % de leur revenu.",
-        "alleg": "Garde-fou : les petites entreprises y perdraient plus de 1 % de leur revenu.",
+        "cir": "Garde-fou : les petites entreprises y perdraient.",
+        "alleg": "Garde-fou : les petites entreprises y perdraient.",
+        "irbaisse": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,17 point de PIB, production +0,11 % en 2032 et +0,18 % à long terme.",
         "tvaener": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,34 point de PIB, production +0,23 % en 2032 et +0,23 % à long terme.",
         "prod": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,16 point de PIB, production +0,06 % en 2032 et +0,03 % à long terme.",
-        "csgbaisse": "Fait double emploi avec « Baisse de l'impôt sur le revenu », retenue à sa place : elle donne un meilleur bilan d'ensemble.",
+        "csgbaisse": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,27 point de PIB, production +0,17 % en 2032 et +0,24 % à long terme.",
         "retr62": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,35 point de PIB, production −0,72 % en 2032 et −1,18 % à long terme.",
         "retr60": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,73 point de PIB, production −1,33 % en 2032 et −2,29 % à long terme.",
         "indexation": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,10 % en 2032 et +0,07 % à long terme.",
@@ -605,8 +599,9 @@
         "age": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,14 point de PIB, production +0,13 % en 2032 et +0,08 % à long terme.",
         "pointindice": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,19 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",
         "smic": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,11 % en 2032 et +0,02 % à long terme.",
-        "collectivites": "Garde-fou : les petites entreprises y perdraient plus de 1 % de leur revenu.",
+        "collectivites": "Garde-fou : les petites entreprises y perdraient.",
         "chomage": "Garde-fou : les personnes sans emploi y perdraient plus de 1 % de leur revenu.",
+        "niches": "Garde-fou : les petites entreprises y perdraient.",
         "blanche": "Garde-fou : les retraités et les personnes sans emploi y perdraient plus de 1 % de leur revenu.",
         "age65": "Garde-fou : les personnes sans emploi y perdraient plus de 1 % de leur revenu."
       },
@@ -622,13 +617,13 @@
       ],
       "calcul": {
         "date": "2026-11-06",
-        "deficit2032": 6.74,
-        "dette2032": 136.9,
-        "economies": 11.1,
+        "deficit2032": 6.73,
+        "dette2032": 136.6,
+        "economies": 6,
         "recettes": 17.3,
         "depenses": 0,
-        "baissesImpots": 5,
-        "pibLongTerme": 0.1
+        "baissesImpots": 0,
+        "pibLongTerme": -0.05
       }
     },
     {
