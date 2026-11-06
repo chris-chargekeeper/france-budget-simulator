@@ -1,6 +1,6 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-11-04",
+  "updated": "2026-11-06",
   "avertissement": "Les candidatures ne seront officielles qu'après validation des parrainages par le Conseil constitutionnel, au printemps 2027. Le site suit les candidats déclarés ou investis qui pèsent dans les sondages ; la liste est revérifiée chaque matin. Les programmes 2027 sont pour la plupart non publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
@@ -196,7 +196,7 @@
       "candidat": "Bruno Retailleau",
       "avatar": "h",
       "couleur": "#2E6FB7",
-      "statutCandidature": "Investi par les militants LR (19 avril 2026) ; juge qu'il faudra « sans doute une primaire » de la droite et du centre en début d'année et propose trois débats d'ici Noël avec Attal, Philippe et Lisnard (BFMTV, 3 novembre 2026)",
+      "statutCandidature": "Investi par les militants LR (19 avril 2026) ; veut une primaire de la droite et du centre « fin janvier » et, d'ici là, des débats avec Attal, Philippe et Lisnard (franceinfo, 5 novembre 2026)",
       "statut": "partiel",
       "annonce": {
         "titre": "197 Md€ d'économies par an en 2032, chiffrées poste par poste",
@@ -270,6 +270,10 @@
         {
           "t": "Colère lycéenne, Jordan Bardella, primaire… Ce qu'il faut retenir de l'entretien de Bruno Retailleau sur BFMTV",
           "u": "https://www.bfmtv.com/politique/elections/presidentielle/colere-lyceenne-jordan-bardella-primaire-ce-qu-il-faut-retenir-de-l-entretien-de-bruno-retailleau-sur-bfmtv_AV-202611031007.html"
+        },
+        {
+          "t": "Bruno Retailleau appelle la droite à « se réveiller » et défend son idée de débats avant une éventuelle primaire — franceinfo, 5 novembre 2026",
+          "u": "https://www.franceinfo.fr/politique/bruno-retailleau/bruno-retailleau-appelle-la-droite-a-se-reveiller-pour-la-presidentielle-et-defend-son-idee-de-debats-avant-une-eventuelle-primaire_8269013.html"
         }
       ]
     },
@@ -505,7 +509,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 42 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 11,1 Md€ d'économies et 17,3 Md€ de recettes en 2032, dont une partie rendue en baisses d'impôts (5,0 Md€), pour un déficit de 6,9 % du PIB en 2032 et une production plus élevée à long terme (+0,1 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget cherche l'équilibre entre les deux. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 42 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 11,1 Md€ d'économies et 17,3 Md€ de recettes en 2032, dont une partie rendue en baisses d'impôts (5,0 Md€), pour un déficit de 6,7 % du PIB en 2032 et une production plus élevée à long terme (+0,1 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget cherche l'équilibre entre les deux. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -617,9 +621,9 @@
         }
       ],
       "calcul": {
-        "date": "2026-11-05",
-        "deficit2032": 6.85,
-        "dette2032": 137.3,
+        "date": "2026-11-06",
+        "deficit2032": 6.74,
+        "dette2032": 136.9,
         "economies": 11.1,
         "recettes": 17.3,
         "depenses": 0,
