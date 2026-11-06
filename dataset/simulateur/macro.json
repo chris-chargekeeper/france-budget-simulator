@@ -4517,7 +4517,7 @@
       "pibParPointLo": 2.6,
       "pibParPointHi": 8.4,
       "remplaceType": true,
-      "de": "DG Trésor (2021) : la hausse du CIR de 2008 (+0,19 pt de PIB) rehausse le PIB de 0,8 % à long terme (QUEST 0,5 ; NEMESIS 1,6). Rapporté à 1 point de PIB de CIR (calcul) : 4,2 (2,6 à 8,4). Remplace, pour cette mesure, l'effet générique de l'impôt sur les bénéfices."
+      "de": "DG Trésor (Trésor-Éco n° 290, 2021) : la hausse du CIR de 2008 (+0,19 pt de PIB) rehausse le PIB de 0,8 % à long terme selon le modèle Mésange (QUEST 0,5 et NEMESIS 1,6, cités en comparaison). Rapporté à 1 point de PIB de CIR (calcul) : 4,2 (2,6 à 8,4). Remplace, pour cette mesure, l'effet générique de l'impôt sur les bénéfices."
      }
     }
    ],
@@ -4532,15 +4532,15 @@
      "extrapolation": true,
      "moteur": "apres2032",
      "longTerme": {
-      "pibParPoint": 4.2,
-      "pibParPointLo": 2.6,
+      "pibParPoint": 2.1,
+      "pibParPointLo": 0.65,
       "pibParPointHi": 8.4,
       "remplaceType": true,
-      "de": "DG Trésor (2021) : la hausse du CIR de 2008 (+0,19 pt de PIB) rehausse le PIB de 0,8 % à long terme (QUEST 0,5 ; NEMESIS 1,6). Rapporté à 1 point de PIB de CIR (calcul) : 4,2 (2,6 à 8,4). Remplace, pour cette mesure, l'effet générique de l'impôt sur les bénéfices."
+      "de": "Effet du CIR réduit de moitié pour les grandes entreprises (d'un quart à la totalité de l'effet moyen, calcul du simulateur) : aucune évaluation n'a détecté d'effet significatif au-delà de 250 salariés (IPP, rapport n° 33, juin 2021, synthèse p. 7 : « aucun effet positif n'est détecté pour les plus grandes entreprises » ; CNEPI 2021, repris par la DG Trésor, Trésor-Éco n° 290). Les estimations restent imprécises : l'égalité avec l'effet moyen n'est pas exclue, d'où la borne haute. Effet moyen : 4,2 (2,6 à 8,4), DG Trésor 2021 (Mésange)."
      }
     }
    ],
-   "note": "Même effet publié que le rabot uniforme, rapporté au montant : faute, ici, d'un coefficient publié propre aux grandes entreprises, le simulateur leur applique par prudence l'effet moyen de la réforme de 2008."
+   "note": "Les plus grandes entreprises ne sont aidées qu'à 5 % au-delà de 100 M€ de dépenses : raboter leur part réduit surtout un effet d'aubaine. Aucune source publiée ne donne directement le rapport d'efficacité entre grandes entreprises et moyenne : la moitié est une convention du simulateur, discutable."
   },
   "alleg": {
    "type": "cotis_bas_salaires",
@@ -4769,7 +4769,8 @@
      "quoi": "le capital public ajouté soutient la production à long terme",
      "moteur": "apres2032"
     }
-   ]
+   ],
+   "note": "Le rapport Pisani-Ferry et Mahfouz (France Stratégie, 2023) souligne que l'investissement de la transition ne relève pas, pour l'essentiel, la capacité de production : son rendement est surtout climatique. Le moteur ne lui compte donc que l'effet de demande (Mésange) ; le bénéfice pour le climat n'est pas chiffré ici."
   },
   "innov": {
    "type": "invest_public",
@@ -4778,10 +4779,17 @@
      "coef": "elasticite_pib_capital_public",
      "quoi": "le capital public ajouté soutient la production à long terme",
      "extrapolation": true,
-     "moteur": "apres2032"
+     "moteur": "apres2032",
+     "longTerme": {
+      "pibParPoint": 1.5,
+      "pibParPointLo": 0.3,
+      "pibParPointHi": 3,
+      "remplaceType": true,
+      "de": "R&D et innovation publiques, 10 à 20 ans : environ 1,5 % de PIB par point de PIB dépensé (0,3 à 3). Antolin-Diaz et Surico (American Economic Review, 2025) : la R&D publique est la seule dépense dont l'effet reste significatif après dix ans, au-delà de 1 à long terme ; évaluation intermédiaire d'Horizon Europe (Commission européenne, 2025) : environ 1 € de PIB par euro déjà constaté ; FMI (WEO, octobre 2014) : investissement public efficace, 1,5 % à quatre ans et 2,5 % à long terme. Borne basse : investissement peu efficace (FMI, 0,7 à quatre ans, ramené à long terme). Synthèse du simulateur (calcul) : aucune source ne donne ce chiffre pour la France. Remplace, pour cette mesure, l'effet de demande seul de l'investissement public."
+     }
     }
    ],
-   "note": "Mixte : investissement, subventions et prêts aux entreprises (France 2030)."
+   "note": "Dépense d'innovation : l'effet de long terme vient de la productivité, pas seulement de la demande ; il ne se manifeste vraiment qu'après 8 à 15 ans (Fieldhouse et Mertens, Réserve fédérale de Dallas)."
   },
   "collectivites": {
    "type": "conso_publique",
