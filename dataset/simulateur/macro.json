@@ -4478,7 +4478,8 @@
      "moteur": "apres2032"
     }
    ],
-   "note": "Contribution temporaire par nature : le moteur ne doit pas lui appliquer l'effet de long terme d'une hausse permanente."
+   "temporaire": true,
+   "note": "Contribution temporaire par nature : le moteur ne lui applique pas l'effet de long terme d'une hausse permanente. À long terme, elle n'est plus perçue : ni recette, ni effet sur l'activité."
   },
   "minimum15": {
    "type": "benefices",
@@ -4521,6 +4522,25 @@
     }
    ],
    "note": "Le rabot du CIR est un impôt de plus sur les entreprises. L'effet de long terme vient de l'évaluation de la réforme inverse (2008)."
+  },
+  "cirgrandes": {
+   "type": "benefices",
+   "canaux": [
+    {
+     "coef": "cir_reforme2008_pib_lt",
+     "quoi": "moins de R&D privée, donc moins de productivité",
+     "extrapolation": true,
+     "moteur": "apres2032",
+     "longTerme": {
+      "pibParPoint": 4.2,
+      "pibParPointLo": 2.6,
+      "pibParPointHi": 8.4,
+      "remplaceType": true,
+      "de": "DG Trésor (2021) : la hausse du CIR de 2008 (+0,19 pt de PIB) rehausse le PIB de 0,8 % à long terme (QUEST 0,5 ; NEMESIS 1,6). Rapporté à 1 point de PIB de CIR (calcul) : 4,2 (2,6 à 8,4). Remplace, pour cette mesure, l'effet générique de l'impôt sur les bénéfices."
+     }
+    }
+   ],
+   "note": "Même effet publié que le rabot uniforme, rapporté au montant : faute, ici, d'un coefficient publié propre aux grandes entreprises, le simulateur leur applique par prudence l'effet moyen de la réforme de 2008."
   },
   "alleg": {
    "type": "cotis_bas_salaires",

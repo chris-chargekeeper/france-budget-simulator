@@ -243,6 +243,8 @@
         const contrib = {};
         for (const id in active) {
           const m = M[id]; if (!m) continue;
+          // contribution temporaire : plus perçue à long terme, donc ni recette ni effet d'offre
+          if (MC.classement[id].temporaire) { contrib[id] = 0; continue; }
           const a = amountAt(m, active[id], 2100, P);          // plein régime, érosion comprise
           const pts = a / BASE.pib0 * 100;
           budget += (m.g === 'dep-' || m.g === 'rec+') ? pts : -pts;

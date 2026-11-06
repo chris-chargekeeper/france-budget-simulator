@@ -509,7 +509,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 42 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 6,1 Md€ d'économies et 17,3 Md€ de recettes en 2032, pour un déficit de 6,7 % du PIB en 2032 et une production plus faible à long terme (−0,0 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget cherche l'équilibre entre les deux. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 43 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 6,1 Md€ d'économies et 18,8 Md€ de recettes en 2032, pour un déficit de 6,7 % du PIB en 2032 et une production plus faible à long terme (−0,0 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget cherche l'équilibre entre les deux. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -549,6 +549,9 @@
         "ttf": {
           "sim": "lo"
         },
+        "superp": {
+          "sim": "lo"
+        },
         "rachats": {
           "sim": "lo"
         },
@@ -568,6 +571,7 @@
         "agences": "Retenue à son chiffrage central (2,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,06 point de PIB ; effet sur la production : −0,06 % en 2032, −0,01 % à long terme, d'après les effets publiés.",
         "fraude": "Retenue à sa borne basse (1,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 15,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,03 point de PIB ; effet sur la production : −0,01 % en 2032, −0,01 % à long terme, d'après les effets publiés.",
         "ttf": "Retenue à sa borne basse (1,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 6,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,02 point de PIB ; effet sur la production : −0,01 % en 2032, −0,00 % à long terme, d'après les effets publiés.",
+        "superp": "Retenue à sa borne basse (2,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 15,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,05 point de PIB ; effet sur la production : −0,02 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
         "rachats": "Retenue à sa borne basse (0,50 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 2,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,01 point de PIB ; effet sur la production : −0,00 % en 2032, −0,00 % à long terme, d'après les effets publiés.",
         "exit": "Retenue à sa borne basse (0,20 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 1,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,00 point de PIB ; effet sur la production : −0,00 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
         "institutions": "Retenue à sa borne basse (0,05 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 0,30 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,00 point de PIB ; effet sur la production : −0,00 % en 2032, −0,00 % à long terme, d'après les effets publiés."
@@ -581,9 +585,9 @@
         "zucman": "Fait double emploi avec « ISF climatique (assiette élargie, barème progressif) », retenue à sa place : elle donne un meilleur bilan d'ensemble.",
         "isf": "Fait double emploi avec « ISF climatique (assiette élargie, barème progressif) », retenue à sa place : elle donne un meilleur bilan d'ensemble.",
         "isgrandes": "Rapporte moins qu'elle ne coûte en activité, surtout à long terme : solde public 2032 +0,20 point de PIB, production −0,09 % en 2032 et −0,67 % à long terme.",
-        "superp": "Rapporte moins qu'elle ne coûte en activité, surtout à long terme : solde public 2032 +0,05 point de PIB, production −0,02 % en 2032 et −0,17 % à long terme.",
         "minimum15": "Rapporte moins qu'elle ne coûte en activité, surtout à long terme : solde public 2032 +0,05 point de PIB, production −0,02 % en 2032 et −0,17 % à long terme.",
         "cir": "Garde-fou : les petites entreprises y perdraient.",
+        "cirgrandes": "Rapporte moins qu'elle ne coûte en activité, surtout à long terme : solde public 2032 +0,05 point de PIB, production −0,02 % en 2032 et −0,21 % à long terme.",
         "alleg": "Garde-fou : les petites entreprises y perdraient.",
         "irbaisse": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,17 point de PIB, production +0,11 % en 2032 et +0,18 % à long terme.",
         "tvaener": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,34 point de PIB, production +0,23 % en 2032 et +0,23 % à long terme.",
@@ -617,10 +621,10 @@
       ],
       "calcul": {
         "date": "2026-11-06",
-        "deficit2032": 6.73,
-        "dette2032": 136.6,
+        "deficit2032": 6.67,
+        "dette2032": 136.4,
         "economies": 6,
-        "recettes": 17.3,
+        "recettes": 18.8,
         "depenses": 0,
         "baissesImpots": 0,
         "pibLongTerme": -0.05

@@ -451,6 +451,20 @@
    ]
   },
   {
+   "id": "cirgrandes",
+   "parts": {
+    "grandes": 1.0
+   },
+   "fiabilite": "sourcee",
+   "explication": "Le rabot ne porte que sur la créance des grandes entreprises (42 % du CIR recherche en 2021, MESR) : les PME et ETI gardent la leur.",
+   "sources": [
+    {
+     "t": "Ministère de l'Enseignement supérieur et de la Recherche, « Le crédit d'impôt recherche en 2021 » (données provisoires, 2023)",
+     "u": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2023-11/le-cr-dit-d-imp-t-recherche-en-2021---provisoire-30075.pdf"
+    }
+   ]
+  },
+  {
    "id": "alleg",
    "parts": {
     "pme": 0.56,
@@ -700,10 +714,10 @@
   {
    "id": "effectifs",
    "parts": {
-    "agents": 1.0
+    "nonreparti": 1.0
    },
    "fiabilite": "convention",
-   "explication": "L'économie vient de la masse salariale : environ 125 000 départs non remplacés à l'État et chez ses opérateurs. Elle est rattachée aux agents publics. L'effet sur les usagers n'est pas chiffré.",
+   "explication": "L'économie vient de la masse salariale : environ 125 000 départs non remplacés à l'État et chez ses opérateurs. Aucun agent en poste ne perd de revenu : ce sont des postes qui ne sont pas pourvus. Ceux qui en supportent l'effet sont les usagers des services publics, c'est-à-dire tout le monde à la fois ; cet effet n'est pas chiffré, donc l'économie n'est attribuée à aucun groupe.",
    "sources": []
   },
   {
