@@ -1,7 +1,23 @@
 {
   "_comment": "Base des annonces, une entrée par déclaration publique. Alimentée par le skill france-budget-watch. Champs : date (AAAA-MM-JJ ou AAAA-MM si le jour n'est pas établi), parti (id ou null), qui (la personne, ou null si l'auteur n'est pas identifié), fonction, media (où la déclaration a été faite), quoi, verbatim, mesure (id du catalogue ou null), montant (Md€ ou null), type (economie|recette|depense|contexte), source (URL obligatoire), verifie (la source a-t-elle été ouverte et lue intégralement), contredit (non|programme|annonce|inconnu), ecart (explication si contredit != non).",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "items": [
+    {
+      "date": "2026-11-06",
+      "parti": "lfi",
+      "qui": "Jean-Luc Mélenchon",
+      "fonction": "Candidat de La France insoumise (programme écrit)",
+      "media": "L'Avenir en commun 2027 (éditions La Dispute), présenté par LCP",
+      "quoi": "Publication du programme L'Avenir en commun 2027 (212 pages, 1 069 mesures dont 238 nouvelles selon LFI) : Smic à 1 700 € net, point d'indice et APL +10 %, garantie d'autonomie à 1 337 €, retraite à 60 ans à terme, ISF à volet climatique, impôt sur le revenu à 14 tranches, suppression de la flat tax, héritage maximal de 12 M€, taxe Zucman conservée, cotisation sociale élargie aux revenus du capital, gel de la dette détenue par la BCE ; aucun montant d'ensemble dans la présentation lue.",
+      "verbatim": null,
+      "mesure": null,
+      "montant": null,
+      "type": "contexte",
+      "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+      "verifie": true,
+      "contredit": "non",
+      "ecart": ""
+    },
     {
       "date": "2026-11-05",
       "parti": "rn",

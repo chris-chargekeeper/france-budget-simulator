@@ -1,6 +1,6 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "avertissement": "Les candidatures ne seront officielles qu'après validation des parrainages par le Conseil constitutionnel, au printemps 2027. Le site suit les candidats déclarés ou investis qui pèsent dans les sondages ; la liste est revérifiée chaque matin. Les programmes 2027 sont pour la plupart non publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
@@ -91,7 +91,7 @@
       "candidat": "Jean-Luc Mélenchon",
       "avatar": "h",
       "couleur": "#C1272D",
-      "statutCandidature": "Candidat déclaré (3 mai 2026)",
+      "statutCandidature": "Candidat déclaré (3 mai 2026) ; programme L'Avenir en commun 2027 publié le 6 novembre 2026 (1 069 mesures), meeting de présentation prévu au Bourget le 7 novembre",
       "statut": "partiel",
       "annonce": {
         "titre": "106,4 Md€ de recettes nouvelles en 2027",
@@ -186,6 +186,10 @@
         {
           "t": "Contre-budget : LFI propose 106,4 milliards d'euros de recettes supplémentaires et 81,7 milliards de dépenses nouvelles — LCP, 14 octobre 2026",
           "u": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+        },
+        {
+          "t": "LCP — Présidentielle 2027 : ce qui change dans le nouveau programme de Jean-Luc Mélenchon (6 novembre 2026)",
+          "u": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
         }
       ]
     },
@@ -623,9 +627,9 @@
         }
       ],
       "calcul": {
-        "date": "2026-11-06",
-        "deficit2032": 7.13,
-        "dette2032": 138.5,
+        "date": "2026-11-07",
+        "deficit2032": 7.14,
+        "dette2032": 138.6,
         "economies": 9.1,
         "recettes": 16.9,
         "depenses": 7,

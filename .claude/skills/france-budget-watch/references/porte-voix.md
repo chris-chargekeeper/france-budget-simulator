@@ -1,6 +1,6 @@
 # Qui parle pour qui
 
-Relevé du **30 octobre 2026**. Ce sont les personnes à repérer dans les matinales et les
+Relevé du **30 octobre 2026**, PS mis à jour le 7 novembre 2026. Ce sont les personnes à repérer dans les matinales et les
 interviews : quand l'une d'elles avance un chiffre, il engage le camp du candidat. Les équipes
 bougent vite ; quand une source plus récente contredit une ligne, corrigez cette page dans le
 même commit que la relève, avec la source.
@@ -49,17 +49,22 @@ même commit que la relève, avec la source.
   (à confirmer). **Vincent Chriqui** dans l'équipe.
 
 ## PS / Place publique — Raphaël Glucksmann
-- **Alexandre Ouizille**, sénateur, directeur de campagne annoncé (publicsenat.fr, 26 octobre
-  2026 ; pas encore officiel).
-- **Sacha Houlié**, porte-parole (ex-Renaissance).
-- **Olivier Faure** et **Lamia El Aaraje** passent en matinale, sans rôle de campagne confirmé.
+- Organigramme officialisé le 6 novembre 2026 (publicsenat.fr, 6 novembre 2026) :
+- **Alexandre Ouizille**, sénateur, directeur de campagne.
+- **Pierre Jouvet**, secrétaire général du PS, responsable du pôle médias et des porte-parole.
+- Porte-parole : **Jérôme Guedj**, **Emmanuel Maurel** (aussi les discours),
+  **Lamia El Aaraje**, **Aurore Lalucq**.
+- **Boris Vallaud** et **Aurélien Rousseau**, conseillers spéciaux. **François Kalfon**,
+  argumentaires. **Sacha Houlié**, mobilisation de la société civile.
+- **Laurence Rossignol**, présidente de l'association de financement. **Olivier Faure** et
+  **Yannick Jadot** siègent au comité politique.
 - Pas de responsable économie ou budget nommé : le chiffrage est annoncé pour plus tard.
 
 ## Les Écologistes — Marine Tondelier
 - **Rania Kissi**, sa porte-parole. **Amine Kessaci**, co-porte-parole du parti (26 octobre 2026).
 - Budget : **Cyrielle Chatelain**, présidente du groupe écologiste à l'Assemblée.
-- **Yannick Jadot** passe en matinale ; on ne sait pas lequel des deux candidats de gauche il
-  soutient.
+- **Yannick Jadot** siège au comité politique de Glucksmann (publicsenat.fr, 6 novembre 2026) :
+  ses chiffres engagent le camp PS, pas celui de Tondelier.
 
 ## Nouvelle Énergie — David Lisnard
 - **Alexandra Ardisson** (élus), **Philippe Castanet** (organisation de campagne).

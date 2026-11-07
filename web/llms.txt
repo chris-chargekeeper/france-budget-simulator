@@ -2,7 +2,7 @@
 
 > Simulateur budgétaire neutre et gratuit pour l'élection présidentielle française de 2027. On choisit un candidat et on voit ce que son programme changerait au budget de la France d'ici 2032 : déficit public, dette publique, qui paie et qui reçoit, effets sur l'emploi, le chômage, la richesse par habitant et les taux d'intérêt, et l'écart entre ce que le candidat annonce et ce que donnent des chiffrages indépendants.
 
-Données au 2026-11-06, mises à jour chaque matin (veille des déclarations chiffrées, des chiffrages indépendants, des sondages et du contexte économique).
+Données au 2026-11-07, mises à jour chaque matin (veille des déclarations chiffrées, des chiffrages indépendants, des sondages et du contexte économique).
 
 ## Ce que fait le site
 
@@ -16,7 +16,7 @@ Données au 2026-11-06, mises à jour chaque matin (veille des déclarations chi
 ## Candidats suivis
 
 - Marine Le Pen (Rassemblement national) : Candidate ; éligible après l'arrêt d'appel du 7 juillet 2026 ; Jordan Bardella la soutient
-- Jean-Luc Mélenchon (La France insoumise) : Candidat déclaré (3 mai 2026)
+- Jean-Luc Mélenchon (La France insoumise) : Candidat déclaré (3 mai 2026) ; programme L'Avenir en commun 2027 publié le 6 novembre 2026 (1 069 mesures), meeting de présentation prévu au Bourget le 7 novembre
 - Bruno Retailleau (Les Républicains) : Investi par les militants LR (19 avril 2026) ; veut une primaire de la droite et du centre « fin janvier » et, d'ici là, des débats avec Attal, Philippe et Lisnard (franceinfo, 5 novembre 2026)
 - Gabriel Attal (Renaissance) : Candidat déclaré (22 mai 2026) ; appelle à « une grande primaire des démocrates »
 - Édouard Philippe (Horizons) : Candidat déclaré depuis septembre 2024
