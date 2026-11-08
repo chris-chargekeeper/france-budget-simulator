@@ -1,6 +1,6 @@
 # Qui parle pour qui
 
-Relevé du **30 octobre 2026**, PS mis à jour le 7 novembre 2026. Ce sont les personnes à repérer dans les matinales et les
+Relevé du **30 octobre 2026**, PS mis à jour le 7 novembre 2026, Horizons le 8 novembre 2026. Ce sont les personnes à repérer dans les matinales et les
 interviews : quand l'une d'elles avance un chiffre, il engage le camp du candidat. Les équipes
 bougent vite ; quand une source plus récente contredit une ligne, corrigez cette page dans le
 même commit que la relève, avec la source.
@@ -45,6 +45,8 @@ même commit que la relève, avec la source.
 ## Horizons — Édouard Philippe
 - Codirecteurs de campagne : **Christophe Béchu** (matinale), **Gilles Boyer**,
   **Marie Guévenoux** (finances de campagne).
+- **Jérémie Patrier-Leitus**, député du Calvados, porte-parole d'Édouard Philippe pour 2027 (matinale ;
+  franceinfo, 7 novembre 2026).
 - **Maël de Calan**, porte-parole coordinateur. **Arnaud Péricard**, porte-parole du parti
   (à confirmer). **Vincent Chriqui** dans l'équipe.
 

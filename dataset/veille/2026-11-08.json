@@ -1,0 +1,103 @@
+{
+  "patch": {
+    "_comment": "Relève locale du 8 novembre 2026 (week-end) : meeting de Mélenchon au Bourget (7 nov.), Knafo aux Rencontres de l'Avenir, porte-parole de Philippe sur franceinfo, calendrier du chiffrage LFI. Aucun nouveau sondage, pas de séance au Parlement les 6-7 nov., aucune valeur macro nouvelle (marchés fermés), aucun chiffrage indépendant.",
+    "releve": "2026-11-08",
+    "annonces": [
+      {
+        "date": "2026-11-07",
+        "parti": "lfi",
+        "qui": "Jean-Luc Mélenchon",
+        "fonction": "Candidat de La France insoumise",
+        "media": "Meeting du Bourget (compte rendu BFMTV)",
+        "quoi": "Au meeting du Bourget, dit soutenir les revendications du mouvement de la jeunesse, dont « 10 milliards pour la rénovation » (dans le contexte de la mobilisation lycéenne et étudiante) ; ni durée, ni financement, ni rattachement à une ligne du programme précisés.",
+        "verbatim": "10 milliards pour la rénovation et le droit de vote à 16 ans",
+        "mesure": null,
+        "montant": 10,
+        "type": "depense",
+        "source": "https://www.bfmtv.com/politique/la-france-insoumise/il-faut-tout-changer-sixieme-republique-desarmement-nucleaire-ce-qu-il-faut-retenir-du-meeting-de-jean-luc-melenchon-au-bourget_AV-202611070479.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le programme écrit du 6 novembre ne donne aucun montant dans les présentations lues (LCP, Public Sénat) et son chiffrage n'est attendu qu'au début de 2027 : impossible de dire si ces 10 Md€ y figurent, ni s'ils sont annuels ou cumulés. Mélenchon reprend ici une revendication de la jeunesse plutôt qu'un chiffrage de son camp."
+      },
+      {
+        "date": "2026-11-07",
+        "parti": "rec",
+        "qui": "Sarah Knafo",
+        "fonction": "Secrétaire générale de Reconquête, députée européenne",
+        "media": "Rencontres de l'Avenir, Saint-Raphaël (vidéo BFMTV)",
+        "quoi": "Propose de « supprimer 800 000 postes dans la fonction publique » pour faire des économies ; aucun montant énoncé dans la séquence lue.",
+        "verbatim": "de supprimer 800 000 postes dans la fonction publique",
+        "mesure": "effectifs",
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.bfmtv.com/politique/video-sarah-knafo-propose-de-supprimer-800-000-postes-dans-la-fonction-publique-afin-de-faire-des-economies_VN-202611070487.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Reconquête n'a pas publié de programme. Redite de l'annonce du 18 septembre (800 000 postes non remplacés, 40 Md€ par an), avec un mot plus dur : « supprimer » au lieu de « ne pas remplacer »."
+      },
+      {
+        "date": "2026-11-07",
+        "parti": "hor",
+        "qui": "Jérémie Patrier-Leitus",
+        "fonction": "Député Horizons du Calvados, porte-parole d'Édouard Philippe pour 2027",
+        "media": "8h30 franceinfo",
+        "quoi": "Dit qu'Édouard Philippe est opposé à une hausse du Smic, « un cadeau empoisonné », et lui préfère une meilleure organisation du travail et du temps de travail supplémentaire ; aucun chiffre.",
+        "verbatim": "On n'augmente pas le pouvoir d'achat des Français en asphyxiant les entreprises",
+        "mesure": "smic",
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/augmentation-du-smic-primaire-de-la-droite-et-du-centre-propos-d-edouard-philippe-sur-les-pillards-du-17-octobre-le-8h30-franceinfo-de-jeremie-patrier-leitus_8251732.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Horizons n'a pas publié de programme : position cohérente avec les déclarations antérieures du camp, mais non vérifiable sur un texte."
+      },
+      {
+        "date": "2026-11-06",
+        "parti": "lfi",
+        "qui": null,
+        "fonction": "Programme L'Avenir en commun 2027 de La France insoumise",
+        "media": "Public Sénat",
+        "quoi": "Le chiffrage complet du programme L'Avenir en commun 2027 ne sera dévoilé qu'au début de 2027 ; le texte prévoit notamment un plan d'un milliard d'euros contre l'islamophobie, l'antisémitisme et le racisme.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": ""
+      }
+    ]
+  },
+  "trace": {
+    "releve": "2026-11-08",
+    "applique": "2026-11-08",
+    "ajouts": [
+      {
+        "date": "2026-11-07",
+        "parti": "lfi",
+        "quoi": "Au meeting du Bourget, dit soutenir les revendications du mouvement de la jeunesse, dont « 10 milliards pour la rénovation » (dans le contexte de la mobilisation lycéenne et étudiante) ; ni durée, ni financement, ni rattachement à une ligne du programme précisés.",
+        "source": "https://www.bfmtv.com/politique/la-france-insoumise/il-faut-tout-changer-sixieme-republique-desarmement-nucleaire-ce-qu-il-faut-retenir-du-meeting-de-jean-luc-melenchon-au-bourget_AV-202611070479.html"
+      },
+      {
+        "date": "2026-11-07",
+        "parti": "rec",
+        "quoi": "Propose de « supprimer 800 000 postes dans la fonction publique » pour faire des économies ; aucun montant énoncé dans la séquence lue.",
+        "source": "https://www.bfmtv.com/politique/video-sarah-knafo-propose-de-supprimer-800-000-postes-dans-la-fonction-publique-afin-de-faire-des-economies_VN-202611070487.html"
+      },
+      {
+        "date": "2026-11-07",
+        "parti": "hor",
+        "quoi": "Dit qu'Édouard Philippe est opposé à une hausse du Smic, « un cadeau empoisonné », et lui préfère une meilleure organisation du travail et du temps de travail supplémentaire ; aucun chiffre.",
+        "source": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/augmentation-du-smic-primaire-de-la-droite-et-du-centre-propos-d-edouard-philippe-sur-les-pillards-du-17-octobre-le-8h30-franceinfo-de-jeremie-patrier-leitus_8251732.html"
+      },
+      {
+        "date": "2026-11-06",
+        "parti": "lfi",
+        "quoi": "Le chiffrage complet du programme L'Avenir en commun 2027 ne sera dévoilé qu'au début de 2027 ; le texte prévoit notamment un plan d'un milliard d'euros contre l'islamophobie, l'antisémitisme et le racisme.",
+        "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme"
+      }
+    ],
+    "revisions": []
+  }
+}
