@@ -4440,6 +4440,10 @@
    "type": "patrimoine",
    "canaux": []
   },
+  "heritmax": {
+   "type": "patrimoine",
+   "canaux": []
+  },
   "exit": {
    "type": "patrimoine",
    "canaux": [],

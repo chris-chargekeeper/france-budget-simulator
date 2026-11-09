@@ -417,6 +417,20 @@
    ]
   },
   {
+   "id": "heritmax",
+   "parts": {
+    "thp": 1.0
+   },
+   "fiabilite": "convention",
+   "explication": "Par construction, la tranche à 100 % ne touche que les héritiers qui reçoivent plus de 12 M€ : le sommet des très hauts patrimoines.",
+   "sources": [
+    {
+     "t": "Institut Montaigne, présidentielle 2022, héritage maximal de 12 M€",
+     "u": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon/augmenter-les-droits-de-succession-sur-les-plus-hauts-patrimoines-et-creer-un-heritage-maximal-de-12-me"
+    }
+   ]
+  },
+  {
    "id": "tva1",
    "parts": {
     "moyens": 0.22,

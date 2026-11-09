@@ -7,7 +7,7 @@ Données au 2026-11-09, mises à jour chaque matin (veille des déclarations chi
 ## Ce que fait le site
 
 - Point de départ : la trajectoire des finances publiques « si rien ne change » (Insee, PLF, Haut Conseil des finances publiques, Commission européenne).
-- Chaque programme est découpé en mesures (51 au total), chacune chiffrée par une borne basse, une valeur centrale et une borne haute tirées de travaux publics : Cour des comptes, HCFP, OFCE, IPP, Conseil d'analyse économique, Fipeco, Banque de France, rapports parlementaires.
+- Chaque programme est découpé en mesures (52 au total), chacune chiffrée par une borne basse, une valeur centrale et une borne haute tirées de travaux publics : Cour des comptes, HCFP, OFCE, IPP, Conseil d'analyse économique, Fipeco, Banque de France, rapports parlementaires.
 - Deux lectures côte à côte : « Leurs promesses » (les chiffres annoncés par les partis) et « Bas les masques » (ce que disent les chiffrages indépendants).
 - Effets en chaîne en 2032 : emploi, chômage, PIB par habitant, taux d'emprunt de l'État, intérêts de la dette, à partir de multiplicateurs et de lois économiques publiés (Trésor, Banque de France, BCE, OFCE, Commission européenne), avec une fourchette.
 - Journal des annonces : chaque déclaration chiffrée relevée, datée, sourcée, et marquée quand elle contredit le programme écrit.
