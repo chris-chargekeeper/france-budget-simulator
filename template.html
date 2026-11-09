@@ -907,6 +907,10 @@ section{margin-top:56px;scroll-margin-top:76px}
 .si-tags{display:flex;flex-wrap:wrap;gap:6px}
 .si-tag{font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;color:var(--ink-2);
   background:color-mix(in srgb,var(--pc) 10%,var(--surface-2));border:1px solid color-mix(in srgb,var(--pc) 25%,transparent)}
+.si-tag-alerte{color:var(--ink);background:color-mix(in srgb,var(--warn) 18%,var(--surface-2));border-color:color-mix(in srgb,var(--warn) 55%,transparent)}
+.si-alerte{margin:0;font-size:13.5px;line-height:1.5;color:var(--ink-2);max-width:75ch;padding:8px 12px;border-radius:8px;
+  border-left:3px solid var(--warn);background:color-mix(in srgb,var(--warn) 9%,transparent)}
+.si-alerte b{color:var(--ink)}
 .si-prog summary{cursor:pointer;font-size:13.5px;color:var(--ink);list-style:revert}
 .si-prog p{margin:6px 0 0;font-size:13.5px;line-height:1.5;color:var(--ink-2);max-width:75ch}
 #presetNote:empty{display:none}
@@ -4325,6 +4329,22 @@ function listTotal(items){
   return t;
 }
 
+/** Ampleur d'un programme : tout ce qu'il déplace en 2032 (recettes, économies, dépenses, baisses
+ *  d'impôts), en % du PIB. Au-delà du seuil, les effets publiés, mesurés sur de petits chocs, ne
+ *  donnent plus qu'un ordre de grandeur : la page le dit, pour tous les candidats de la même façon. */
+const SEUIL_AMPLEUR = 3;
+function ampleurBrute(p){
+  const a = partySet(p), pib = run(state.P, {}).at(-1).pib;
+  let t = 0;
+  for (const id in a) t += amountAt(M_BY_ID[id], a[id], 2032, state.P);
+  return t / pib * 100;
+}
+function ampleur(p){
+  const v = PARTIES.filter(x => !x.horsCourse).map(ampleurBrute).sort((x, y) => x - y);
+  const k = v.length >> 1;
+  return {brut: ampleurBrute(p), mediane: v.length % 2 ? v[k] : (v[k - 1] + v[k]) / 2};
+}
+
 /** Qui est le candidat, où en est sa candidature, ce que dit son programme : avant les chiffres. */
 function presentation(p){
   const box = el('div','score-intro');
@@ -4339,7 +4359,20 @@ function presentation(p){
   tags.appendChild(el('span','si-tag', p.statut === 'reconstitution' ? "Scénario reconstitué par le site"
     : p.statut === 'partiel' ? "Programme en partie chiffré" : "Programme chiffré publié"));
   tags.appendChild(el('span','si-tag', Object.keys(state.active).length + " mesures chargées"));
+  const amp = ampleur(p);
+  tags.appendChild(el('span','si-tag' + (amp.brut >= SEUIL_AMPLEUR ? ' si-tag-alerte' : ''),
+    `Ampleur : ${nf(amp.brut, 1)} % du PIB déplacés en 2032`));
   box.appendChild(tags);
+  if (amp.brut >= SEUIL_AMPLEUR){
+    const al = el('p','si-alerte');
+    al.appendChild(el('b', null, "Programme de très grande ampleur. "));
+    al.appendChild(document.createTextNode(`Il déplace ${nf(amp.brut, 1)} % du PIB en 2032 — recettes, économies, `
+      + `dépenses et baisses d'impôts additionnées —, contre ${nf(amp.mediane, 1)} % pour le candidat médian. `
+      + `Les effets sur l'activité qu'utilise ce site ont été mesurés sur des changements bien plus petits ; `
+      + `à cette échelle, l'effet d'une mesure dépend de la taille du choc, et les résultats deviennent des ordres `
+      + `de grandeur plus incertains. Lisez-les comme une tendance, pas comme une prévision.`));
+    box.appendChild(al);
+  }
   /* programme officiel publié : dire combien de mesures il compte, et comment elles deviennent des postes */
   const pg = p.programme;
   if (pg){
