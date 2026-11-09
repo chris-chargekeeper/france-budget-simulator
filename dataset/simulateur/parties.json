@@ -234,7 +234,19 @@
           "t": "« Comment nous allons remettre de l'ordre dans les comptes publics » — document budgétaire de la campagne Mélenchon 2027 (14 octobre 2026)",
           "u": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf"
         }
-      ]
+      ],
+      "programme": {
+        "titre": "L'Avenir en commun 2027",
+        "date": "2026-11-06",
+        "mesures": 1069,
+        "budgetaires": 240,
+        "regroupement": "Environ 830 mesures n'ont pas d'effet direct sur le budget (institutions, droits, normes, diplomatie). Les quelque 240 autres sont regroupées par poste : les « niches fiscales » couvrent une vingtaine de lignes du programme (kérosène, LBO, assurance-vie, mécénat, meublés touristiques…), le « plan d'investissement écologique » la rénovation, l'eau, le rail ou l'éolien en mer, les « recrutements » l'école, l'hôpital, l'université et la justice.",
+        "nonChiffre": "Restent hors du simulateur, faute de chiffrage publié par la campagne ou par une source indépendante : le « 100 % Sécu », l'AAH et les pensions au niveau du Smic, les 500 000 places de crèche, la garantie d'emploi, la culture à 1 % du PIB, l'aide au développement à 0,7 % ; ainsi que les nationalisations et les 100 Md€ par an du pôle public bancaire, opérations en capital hors budget de l'État. Le chiffrage d'ensemble de la campagne est annoncé pour le début de 2027.",
+        "source": {
+          "t": "L'Avenir en commun 2027 — texte intégral (melenchon2027.fr)",
+          "u": "https://melenchon2027.fr/programme/livre/"
+        }
+      }
     },
     {
       "id": "lr",

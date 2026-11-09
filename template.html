@@ -4340,6 +4340,25 @@ function presentation(p){
     : p.statut === 'partiel' ? "Programme en partie chiffré" : "Programme chiffré publié"));
   tags.appendChild(el('span','si-tag', Object.keys(state.active).length + " mesures chargées"));
   box.appendChild(tags);
+  /* programme officiel publié : dire combien de mesures il compte, et comment elles deviennent des postes */
+  const pg = p.programme;
+  if (pg){
+    const n = Object.keys(p.set).length, hc = p.annonce && p.annonce.horsCatalogue;
+    const le = new Date(pg.date + 'T12:00:00').toLocaleDateString('fr-FR', {day:'numeric', month:'long', year:'numeric'});
+    const ph = el('p','si-statut');
+    ph.appendChild(document.createTextNode(`Programme officiel « ${pg.titre} », publié le ${le} : `));
+    ph.appendChild(el('b', null, `${nf(pg.mesures, 0)} mesures`));
+    ph.appendChild(document.createTextNode(`, dont environ ${nf(pg.budgetaires, 0)} ont un effet sur le budget, `
+      + `regroupées ici en ${n} postes` + (hc ? `, plus ${md(hc.v, 1)} de recettes chiffrées par le parti hors catalogue` : '') + '. '));
+    const a = el('a', null, 'Texte intégral'); a.href = pg.source.u; a.target = '_blank'; a.rel = 'noopener';
+    ph.appendChild(a); ph.appendChild(document.createTextNode('.'));
+    box.appendChild(ph);
+    const d = el('details','si-prog');
+    const su = el('summary'); su.appendChild(el('b', null, `Comment ${nf(pg.mesures, 0)} mesures deviennent ${n} postes`)); d.appendChild(su);
+    d.appendChild(el('p', null, pg.regroupement));
+    d.appendChild(el('p', null, pg.nonChiffre));
+    box.appendChild(d);
+  }
   if (p.annonce && p.annonce.texte){
     const d = el('details','si-prog');
     const su = el('summary'); su.appendChild(el('b', null, p.annonce.titre)); d.appendChild(su);
