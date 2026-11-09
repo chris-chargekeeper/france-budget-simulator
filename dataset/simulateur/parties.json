@@ -1,6 +1,6 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-11-07",
+  "updated": "2026-11-09",
   "avertissement": "Les candidatures ne seront officielles qu'après validation des parrainages par le Conseil constitutionnel, au printemps 2027. Le site suit les candidats déclarés ou investis qui pèsent dans les sondages ; la liste est revérifiée chaque matin. Les programmes 2027 sont pour la plupart non publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
@@ -753,6 +753,29 @@
   },
   "sondages": [
     {
+      "terrain_fin": "2026-11-05",
+      "commanditaire": "M6 et RTL",
+      "institut": "Toluna Harris Interactive",
+      "terrain_debut": "2026-11-03",
+      "date": "2026-11-09",
+      "hypothese": "Hypothèse Gabriel Attal et Édouard Philippe",
+      "echantillon": 2101,
+      "source": {
+        "t": "Rapport Toluna Harris Interactive – Baromètre présidentielle 2027 vague 9 pour M6 et RTL, 9 novembre 2026",
+        "u": "https://tolunacorporate.com/wp-content/uploads/2026/11/Rapport-Toluna-Barometre-Presidentielle-2027-Vague-9-M6-RTL-9-novembre-2026-1.pdf"
+      },
+      "scores": {
+        "rn": 36,
+        "lfi": 18,
+        "lr": 7,
+        "ren": 6,
+        "hor": 11,
+        "ps": 11,
+        "eco": 2,
+        "rec": 4
+      }
+    },
+    {
       "hypothese": "Attal, Philippe, Retailleau et Lisnard tous candidats",
       "echantillon": 1501,
       "terrain_debut": "2026-10-27",
@@ -846,29 +869,6 @@
       "hypothese": "Hypothèse 1 – Édouard Philippe"
     },
     {
-      "terrain_fin": "2026-10-21",
-      "terrain_debut": "2026-10-19",
-      "scores": {
-        "rn": 35,
-        "lfi": 17,
-        "lr": 6,
-        "ren": 5,
-        "hor": 13,
-        "ps": 12,
-        "eco": 2,
-        "rec": 6
-      },
-      "date": "2026-10-23",
-      "institut": "Toluna Harris Interactive",
-      "echantillon": 2094,
-      "source": {
-        "t": "Rapport Toluna Harris Interactive – Baromètre présidentielle 2027 vague 8 pour M6 et RTL, 23 octobre 2026",
-        "u": "https://tolunacorporate.com/wp-content/uploads/2026/10/Rapport-Toluna-Barometre-Presidentielle-2027-Vague-8-M6-RTL-23-octobre-2026-1.pdf"
-      },
-      "commanditaire": "M6 et RTL",
-      "hypothese": "Hypothèse Gabriel Attal et Édouard Philippe"
-    },
-    {
       "terrain_fin": "2026-10-16",
       "terrain_debut": "2026-10-14",
       "scores": {
@@ -939,6 +939,22 @@
     }
   ],
   "sondages_historique": [
+    {
+      "institut": "Toluna Harris Interactive",
+      "commanditaire": "M6 et RTL",
+      "terrain_fin": "2026-10-21",
+      "scores": {
+        "rn": 35,
+        "lfi": 17,
+        "lr": 6,
+        "ren": 5,
+        "hor": 13,
+        "ps": 12,
+        "eco": 2,
+        "rec": 6
+      },
+      "u": "https://tolunacorporate.com/wp-content/uploads/2026/10/Rapport-Toluna-Barometre-Presidentielle-2027-Vague-8-M6-RTL-23-octobre-2026-1.pdf"
+    },
     {
       "institut": "Ifop-Fiducial",
       "commanditaire": "LCI, Le Figaro et Sud Radio",

@@ -1,0 +1,284 @@
+{
+  "patch": {
+    "_comment": "Relève locale du 9 novembre 2026 : émissions du dimanche 8 novembre (BFM Politique avec Bompard, LCI avec Guetté, Grand Oral BFMTV-Le Figaro avec Glucksmann, Didier sur BFMTV), Attal aux Rencontres de l'Avenir ; sondage Toluna Harris Interactive vague 9. Aucune séance au Parlement du 6 au 8 novembre, aucune valeur macro nouvelle (marchés fermés), aucun chiffrage indépendant.",
+    "releve": "2026-11-09",
+    "annonces": [
+      {
+        "date": "2026-11-08",
+        "parti": "lfi",
+        "qui": "Manuel Bompard",
+        "fonction": "Coordinateur national de La France insoumise, député",
+        "media": "BFM Politique (BFMTV)",
+        "quoi": "Redit la hausse du Smic à 1 700 € net par mois, qu'il présente comme une augmentation de 15 %, sans en donner le coût.",
+        "verbatim": "On propose le Smic à 1.700 euros net par mois, c'est une augmentation de 15%",
+        "mesure": "smic",
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.bfmtv.com/politique/video-on-propose-le-smic-a-1-700-euros-net-par-mois-c-est-une-augmentation-de-15-lance-manuel-bompard-coordinateur-de-la-france-insoumise_VN-202611080234.html",
+        "verifie": true,
+        "contredit": "non"
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "lfi",
+        "qui": "Manuel Bompard",
+        "fonction": "Coordinateur national de La France insoumise, député",
+        "media": "BFM Politique (BFMTV)",
+        "quoi": "Défend la proposition de limiter l'héritage à cinq biens immobiliers, qu'il juge non confiscatoire ; aucun montant.",
+        "verbatim": "Je ne vois pas ce qu'il y a de confiscatoire",
+        "mesure": "succ",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/video-je-ne-vois-pas-ce-qu-il-y-a-de-confiscatoire-assure-manuel-bompard-coordinateur-de-la-france-insoumise-a-propos-de-la-proposition-de-limiter-l-heritage-a-cinq-biens-immobiliers_VN-202611080213.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Les présentations du programme déjà en base mentionnent un héritage maximal de 12 M€, pas un plafond de cinq biens immobiliers. Le texte intégral (melenchon2027.fr, rendu en JavaScript) n'a pas pu être lu pour vérifier si cette limite y figure."
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "lfi",
+        "qui": "Clémence Guetté",
+        "fonction": "Députée LFI du Val-de-Marne, coresponsable du programme",
+        "media": "LCI, « Objectif 2027 Dimanche »",
+        "quoi": "Détaille le financement du Smic à 1 700 € net : effort des grands groupes, « caisse de péréquation » où les entreprises de plus de 750 M€ de chiffre d'affaires contribuent pour les plus petites, blocage des prix de l'énergie et baisse de l'impôt sur les sociétés des TPE-PME (14 tranches d'IS selon LCI) ; aucun montant en Md€.",
+        "verbatim": "La principale proposition est un état d'urgence social en augmentant le Smic à 1.700 euros net",
+        "mesure": "smic",
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/video-aider-les-tpe-et-pme-une-caisse-de-solidarite-interentreprises-clemence-guette-detaille-sur-lci-le-plan-de-lfi-pour-augmenter-le-smic-a-1-700-euros-nets-2474584.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le Smic à 1 700 € net est bien dans le programme du 6 novembre. En revanche, la caisse de péréquation n'apparaît dans aucune présentation du programme lue, et le texte intégral n'a pas pu être consulté. Les « 14 tranches » sont une paraphrase de LCI : le programme connu prévoit 14 tranches pour l'impôt sur le revenu et un barème progressif pour l'IS. Possible confusion de LCI."
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "lfi",
+        "qui": "Clémence Guetté",
+        "fonction": "Députée LFI du Val-de-Marne, coresponsable du programme",
+        "media": "LCI, « Objectif 2027 Dimanche »",
+        "quoi": "Affirme que le programme de LFI est « entièrement chiffré, ligne à ligne », et que des décrets d'urgence seraient pris dès le 2 mai 2027.",
+        "verbatim": "Notre programme est entièrement chiffré, ligne à ligne",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-objectif-2027-presidentielle-la-deputee-lfi-clemence-guette-est-l-invitee-de-lci-ce-dimanche-8-novembre-2026-11h30-jean-luc-melenchon-programme-la-france-insoumise-2474573.html",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le site de campagne (melenchon2027.fr/programme/decouvrir/) écrit que le document budgétaire 2027 « ne constitue pas un chiffrage complet du programme », et le camp annonce son chiffrage complet pour le début de 2027 (Public Sénat, 6 novembre, déjà en base) : aucun chiffrage ligne à ligne n'est publié à ce jour."
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "ps",
+        "qui": "Raphaël Glucksmann",
+        "fonction": "Candidat PS-Place publique",
+        "media": "BFMTV, « Grand Oral 2027 » (avec Le Figaro)",
+        "quoi": "Réclame « 100 euros de plus immédiatement » pour le Smic et une hausse générale des salaires ; ni coût ni mécanisme précisés dans la séquence publiée.",
+        "verbatim": "Il faut 100 euros de plus immédiatement",
+        "mesure": "smic",
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/video-il-faut-100-euros-de-plus-immediatement-pour-le-smic-et-il-faut-augmenter-les-salaires-de-maniere-generale-declare-raphael-glucksmann-candidat-ps-place-publique-a-la-presidentielle_VN-202611080353.html",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le 3 novembre (BFMTV-RMC, déjà en base), sa mesure phare était une baisse de CSG rapportant 83 € par mois au Smic et 100 € au salaire médian. Il annonce maintenant 100 € immédiatement au Smic : le montant au Smic passe de 83 à 100 €, et rien n'indique s'il s'agit de la même baisse de CSG ou d'une hausse du Smic lui-même. Seul le titre de la vidéo a pu être lu."
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "ps",
+        "qui": "Raphaël Glucksmann",
+        "fonction": "Candidat PS-Place publique",
+        "media": "BFMTV, « Grand Oral 2027 » (avec Le Figaro)",
+        "quoi": "Redit vouloir taxer les « méga-héritages » au-delà de deux millions d'euros, sans montant.",
+        "verbatim": "Il faut taxer les méga héritages au-dessus de deux millions d'euros",
+        "mesure": "succ",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/video-il-faut-taxer-les-mega-heritages-au-dessus-de-deux-millions-d-euros-declare-raphael-glucksmann-candidat-ps-place-publique-a-la-presidentielle_VN-202611080354.html",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Même seuil de 2 M€ que lors du débat du 4 octobre, où il chiffrait la mesure à 15 Md€ (montant non redit ici). Le contre-budget du groupe PS retient de son côté une CSG sur les héritages au-delà de 500 000 € par héritier (10 Md€)."
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "ps",
+        "qui": "Raphaël Glucksmann",
+        "fonction": "Candidat PS-Place publique",
+        "media": "BFMTV, « Grand Oral 2027 » (avec Le Figaro)",
+        "quoi": "Face aux prix des carburants, propose de porter le chèque énergie jusqu'à 500 € ; ni coût total ni nombre de bénéficiaires énoncés.",
+        "verbatim": "Il faut augmenter le chèque énergie jusqu'à 500 euros",
+        "mesure": null,
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/video-prix-des-carburants-il-faut-augmenter-le-cheque-energie-jusqu-a-500-euros-declare-raphael-glucksmann-candidat-ps-place-publique-a-la-presidentielle_VN-202611080356.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Pas de programme publié par le candidat. Mesure nouvelle dans la base, sans équivalent dans le catalogue (tvaener porte sur la TVA)."
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "ps",
+        "qui": "Raphaël Glucksmann",
+        "fonction": "Candidat PS-Place publique",
+        "media": "BFMTV, « Grand Oral 2027 » (avec Le Figaro)",
+        "quoi": "Écarte la retraite à 60 ans mais promet une « réforme plus juste », sans précision chiffrée.",
+        "verbatim": "On ne peut pas faire la retraite à 60 ans",
+        "mesure": "retr60",
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/video-on-ne-peut-pas-faire-la-retraite-a-60-ans-mais-on-peut-faire-une-reforme-plus-juste-estime-raphael-glucksmann-candidat-ps-place-publique-a-la-presidentielle_VN-202611080366.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Pas de programme publié ; l'âge visé par sa « réforme plus juste » n'est pas précisé."
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "lr",
+        "qui": "Geoffroy Didier",
+        "fonction": "Président délégué LR de la région Île-de-France, porte-voix de Bruno Retailleau",
+        "media": "BFMTV (soirée du 8 novembre)",
+        "quoi": "Se dit opposé à la revalorisation anticipée du Smic au 1er décembre que le gouvernement va accepter, selon BFMTV ; aucun chiffre.",
+        "verbatim": "Je ne suis pas favorable à cela",
+        "mesure": "smic",
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.bfmtv.com/politique/video-revalorisation-du-smic-je-ne-suis-pas-favorable-a-cela-detaille-geoffroy-didier-president-delegue-lr-de-la-region-ile-de-france_VN-202611080450.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le programme LR n'est que partiel. Position cohérente avec celle de Retailleau (« une mauvaise piste », relevé par TF1info le 6 novembre)."
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "ren",
+        "qui": "Gabriel Attal",
+        "fonction": "Candidat Renaissance",
+        "media": "Rencontres de l'Avenir, Saint-Raphaël (compte rendu du Figaro)",
+        "quoi": "Rappelle ses propositions d'un « crédit d'impôt productivité » pour financer l'adoption de l'IA dans les entreprises et de « former 20 millions de Français en trois ans » ; aucun coût énoncé.",
+        "verbatim": "C'est essentiel pour faire monter les salaires",
+        "mesure": "innov",
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.lefigaro.fr/conjoncture/c-est-essentiel-pour-faire-monter-les-salaires-gabriel-attal-juge-siderant-le-peu-de-place-fait-a-l-ia-dans-la-campagne-presidentielle-20261108",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Renaissance n'a pas publié de programme ; ni le coût du crédit d'impôt ni celui de la formation ne sont donnés."
+      }
+    ],
+    "sondages": [
+      {
+        "institut": "Toluna Harris Interactive",
+        "commanditaire": "M6 et RTL",
+        "terrain_debut": "2026-11-03",
+        "terrain_fin": "2026-11-05",
+        "date": "2026-11-09",
+        "echantillon": 2101,
+        "hypothese": "Hypothèse Gabriel Attal et Édouard Philippe",
+        "scores": {
+          "rn": 36,
+          "lfi": 18,
+          "lr": 7,
+          "ren": 6,
+          "hor": 11,
+          "ps": 11,
+          "eco": 2,
+          "rec": 4
+        },
+        "source": {
+          "t": "Rapport Toluna Harris Interactive – Baromètre présidentielle 2027 vague 9 pour M6 et RTL, 9 novembre 2026",
+          "u": "https://tolunacorporate.com/wp-content/uploads/2026/11/Rapport-Toluna-Barometre-Presidentielle-2027-Vague-9-M6-RTL-9-novembre-2026-1.pdf"
+        }
+      }
+    ]
+  },
+  "trace": {
+    "releve": "2026-11-09",
+    "applique": "2026-11-09",
+    "ajouts": [
+      {
+        "date": "2026-11-08",
+        "parti": "lfi",
+        "quoi": "Redit la hausse du Smic à 1 700 € net par mois, qu'il présente comme une augmentation de 15 %, sans en donner le coût.",
+        "source": "https://www.bfmtv.com/politique/video-on-propose-le-smic-a-1-700-euros-net-par-mois-c-est-une-augmentation-de-15-lance-manuel-bompard-coordinateur-de-la-france-insoumise_VN-202611080234.html"
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "lfi",
+        "quoi": "Défend la proposition de limiter l'héritage à cinq biens immobiliers, qu'il juge non confiscatoire ; aucun montant.",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/video-je-ne-vois-pas-ce-qu-il-y-a-de-confiscatoire-assure-manuel-bompard-coordinateur-de-la-france-insoumise-a-propos-de-la-proposition-de-limiter-l-heritage-a-cinq-biens-immobiliers_VN-202611080213.html"
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "lfi",
+        "quoi": "Détaille le financement du Smic à 1 700 € net : effort des grands groupes, « caisse de péréquation » où les entreprises de plus de 750 M€ de chiffre d'affaires contribuent pour les plus petites, blocage des prix de l'énergie et baisse de l'impôt sur les sociétés des TPE-PME (14 tranches d'IS selon LCI) ; aucun montant en Md€.",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/video-aider-les-tpe-et-pme-une-caisse-de-solidarite-interentreprises-clemence-guette-detaille-sur-lci-le-plan-de-lfi-pour-augmenter-le-smic-a-1-700-euros-nets-2474584.html"
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "lfi",
+        "quoi": "Affirme que le programme de LFI est « entièrement chiffré, ligne à ligne », et que des décrets d'urgence seraient pris dès le 2 mai 2027.",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-objectif-2027-presidentielle-la-deputee-lfi-clemence-guette-est-l-invitee-de-lci-ce-dimanche-8-novembre-2026-11h30-jean-luc-melenchon-programme-la-france-insoumise-2474573.html"
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "ps",
+        "quoi": "Réclame « 100 euros de plus immédiatement » pour le Smic et une hausse générale des salaires ; ni coût ni mécanisme précisés dans la séquence publiée.",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/video-il-faut-100-euros-de-plus-immediatement-pour-le-smic-et-il-faut-augmenter-les-salaires-de-maniere-generale-declare-raphael-glucksmann-candidat-ps-place-publique-a-la-presidentielle_VN-202611080353.html"
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "ps",
+        "quoi": "Redit vouloir taxer les « méga-héritages » au-delà de deux millions d'euros, sans montant.",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/video-il-faut-taxer-les-mega-heritages-au-dessus-de-deux-millions-d-euros-declare-raphael-glucksmann-candidat-ps-place-publique-a-la-presidentielle_VN-202611080354.html"
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "ps",
+        "quoi": "Face aux prix des carburants, propose de porter le chèque énergie jusqu'à 500 € ; ni coût total ni nombre de bénéficiaires énoncés.",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/video-prix-des-carburants-il-faut-augmenter-le-cheque-energie-jusqu-a-500-euros-declare-raphael-glucksmann-candidat-ps-place-publique-a-la-presidentielle_VN-202611080356.html"
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "ps",
+        "quoi": "Écarte la retraite à 60 ans mais promet une « réforme plus juste », sans précision chiffrée.",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/video-on-ne-peut-pas-faire-la-retraite-a-60-ans-mais-on-peut-faire-une-reforme-plus-juste-estime-raphael-glucksmann-candidat-ps-place-publique-a-la-presidentielle_VN-202611080366.html"
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "lr",
+        "quoi": "Se dit opposé à la revalorisation anticipée du Smic au 1er décembre que le gouvernement va accepter, selon BFMTV ; aucun chiffre.",
+        "source": "https://www.bfmtv.com/politique/video-revalorisation-du-smic-je-ne-suis-pas-favorable-a-cela-detaille-geoffroy-didier-president-delegue-lr-de-la-region-ile-de-france_VN-202611080450.html"
+      },
+      {
+        "date": "2026-11-08",
+        "parti": "ren",
+        "quoi": "Rappelle ses propositions d'un « crédit d'impôt productivité » pour financer l'adoption de l'IA dans les entreprises et de « former 20 millions de Français en trois ans » ; aucun coût énoncé.",
+        "source": "https://www.lefigaro.fr/conjoncture/c-est-essentiel-pour-faire-monter-les-salaires-gabriel-attal-juge-siderant-le-peu-de-place-fait-a-l-ia-dans-la-campagne-presidentielle-20261108"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "parties.sondages.Toluna Harris Interactive",
+        "avant": {
+          "rn": 35,
+          "lfi": 17,
+          "lr": 6,
+          "ren": 5,
+          "hor": 13,
+          "ps": 12,
+          "eco": 2,
+          "rec": 6
+        },
+        "apres": {
+          "rn": 36,
+          "lfi": 18,
+          "lr": 7,
+          "ren": 6,
+          "hor": 11,
+          "ps": 11,
+          "eco": 2,
+          "rec": 4
+        },
+        "source": "https://tolunacorporate.com/wp-content/uploads/2026/11/Rapport-Toluna-Barometre-Presidentielle-2027-Vague-9-M6-RTL-9-novembre-2026-1.pdf"
+      }
+    ]
+  }
+}
