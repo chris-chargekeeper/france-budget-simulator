@@ -4761,6 +4761,45 @@
    ],
    "note": "Le coût budgétaire porte sur la fonction publique ; l'effet sur l'emploi privé est un canal à part."
   },
+  "smic1700": {
+   "type": "conso_publique",
+   "partDemande": 0.2,
+   "partDemandeDe": "Seuls les salaires publics (3,7 Md€ sur 19,2 selon Montaigne, environ 20 %) soutiennent la demande comme une dépense. Le reste compense une partie de la hausse du coût du travail pour les employeurs : son effet est déjà dans le chiffrage net des emplois perdus, il n'est pas compté une seconde fois.",
+   "canaux": [
+    {
+     "coef": "elasticite_emploi_cout_smic",
+     "quoi": "emplois privés perdus : le coût du travail au Smic monte de 15 % pour les employeurs",
+     "extrapolation": true,
+     "moteur": "projection",
+     "chomage": {
+      "1": 0.7,
+      "3": 1.0
+     },
+     "chomageLo": 0.75,
+     "chomageHi": 1.25,
+     "pib": {
+      "1": -0.2,
+      "3": -0.3
+     },
+     "pibLo": -0.2,
+     "pibHi": -0.5,
+     "de": "Institut Montaigne (2024), pour +14,4 % : 300 000 emplois perdus (230 000 à 380 000), dont 220 000 la première année. Porté à +15 % : environ 310 000 (240 000 à 395 000). Converti en chômage en supposant que les emplois perdus restent dans la population active (31 millions d'actifs) : +1 point (0,75 à 1,25). Effet sur la production : emplois au Smic, payés environ la moitié du salaire moyen, avec une part du travail de 0,6 dans la production, soit −0,3 % (calcul de ce site, −0,2 à −0,5 %).",
+     "longTerme": {
+      "emplois": -310,
+      "emploisLo": -240,
+      "emploisHi": -395,
+      "chomage": 1.0,
+      "chomageLo": 0.75,
+      "chomageHi": 1.25,
+      "pib": -0.3,
+      "pibLo": -0.2,
+      "pibHi": -0.5,
+      "de": "Mêmes ordres de grandeur que ci-dessus : le modèle de Montaigne donne l'effet de long terme ; élasticité de l'emploi au coût de −0,6 au Smic (Groupe d'experts Smic 2025 : −0,6 à −0,9)."
+     }
+    }
+   ],
+   "note": "Le coût budgétaire comprend les allègements de cotisations, qui suivent le Smic ; la hausse de salaire des smicards du privé est payée par les employeurs et n'entre pas dans le budget."
+  },
   "ecolo": {
    "type": "invest_public",
    "canaux": [

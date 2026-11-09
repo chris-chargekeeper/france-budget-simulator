@@ -712,6 +712,23 @@
    ]
   },
   {
+   "id": "smic1700",
+   "parts": {
+    "pme": 0.55,
+    "grandes": 0.2,
+    "agents": 0.2,
+    "nonreparti": 0.05
+   },
+   "fiabilite": "convention",
+   "explication": "Le montant est le coût budgétaire : surtout des allègements de cotisations en plus (21,5 Md€ sur 19,2 nets selon Montaigne), qui vont aux employeurs, en majorité des petites entreprises où se concentrent les smicards, et la hausse des salaires publics. La hausse de salaire des smicards du privé, payée par les employeurs, et les emplois perdus n'entrent pas dans ce montant.",
+   "sources": [
+    {
+     "t": "Institut Montaigne, « Augmenter le Smic à 1 600 € net », 24 juin 2024",
+     "u": "https://www.institutmontaigne.org/legislatives-2024/nouveau-front-populaire/augmenter-le-smic-a-1600-e-net"
+    }
+   ]
+  },
+  {
    "id": "effectifs",
    "parts": {
     "nonreparti": 1.0

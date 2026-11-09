@@ -149,7 +149,7 @@
           "sim": "mid",
           "annonce": 20
         },
-        "smic": {
+        "smic1700": {
           "sim": "mid"
         },
         "services": {
@@ -241,7 +241,7 @@
         "mesures": 1069,
         "budgetaires": 240,
         "regroupement": "Environ 830 mesures n'ont pas d'effet direct sur le budget (institutions, droits, normes, diplomatie). Les quelque 240 autres sont regroupées par poste : les « niches fiscales » couvrent une vingtaine de lignes du programme (kérosène, LBO, assurance-vie, mécénat, meublés touristiques…), le « plan d'investissement écologique » la rénovation, l'eau, le rail ou l'éolien en mer, les « recrutements » l'école, l'hôpital, l'université et la justice.",
-        "nonChiffre": "Restent hors du simulateur, faute de chiffrage publié par la campagne ou par une source indépendante : le « 100 % Sécu », l'AAH et les pensions au niveau du Smic, les 500 000 places de crèche, la garantie d'emploi, la culture à 1 % du PIB, l'aide au développement à 0,7 % ; ainsi que les nationalisations et les 100 Md€ par an du pôle public bancaire, opérations en capital hors budget de l'État. Le chiffrage d'ensemble de la campagne est annoncé pour le début de 2027.",
+        "nonChiffre": "Restent hors du simulateur, faute de chiffrage publié par la campagne ou par une source indépendante : le « 100 % Sécu », l'AAH et les pensions au niveau du Smic, les 500 000 places de crèche, la garantie d'emploi, la culture à 1 % du PIB, l'aide au développement à 0,7 % ; ainsi que les nationalisations et les 100 Md€ par an du pôle public bancaire, opérations en capital hors budget de l'État. D'autres mesures pèsent sur l'économie sans passer par le budget : réduction du temps de travail et sixième semaine de congés, blocage de prix, sortie du marché européen de l'électricité, protection commerciale. Les études publiées ne s'accordent pas sur leurs effets sur l'emploi et les prix ; elles ne sont pas comptées. Le chiffrage d'ensemble de la campagne est annoncé pour le début de 2027.",
         "source": {
           "t": "L'Avenir en commun 2027 — texte intégral (melenchon2027.fr)",
           "u": "https://melenchon2027.fr/programme/livre/"
@@ -568,7 +568,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 50 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 9,1 Md€ d'économies et 16,5 Md€ de recettes en 2032, dont une partie rendue en dépenses (7,0 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,2 % du PIB en 2032 et une production plus élevée à long terme (+0,3 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 51 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 9,1 Md€ d'économies et 16,5 Md€ de recettes en 2032, dont une partie rendue en dépenses (7,0 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,2 % du PIB en 2032 et une production plus élevée à long terme (+0,3 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -668,6 +668,7 @@
         "ecolo": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,30 point de PIB, production +0,28 % en 2032 et +0,07 % à long terme.",
         "age": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,14 point de PIB, production +0,13 % en 2032 et +0,08 % à long terme.",
         "pointindice": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,19 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",
+        "smic1700": "Fait double emploi avec « Hausse du SMIC et des bas salaires du secteur public », retenue à sa place : elle donne un meilleur bilan d'ensemble.",
         "pointindice10": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,72 point de PIB, production +0,66 % en 2032 et +0,12 % à long terme.",
         "autonomie": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,37 point de PIB, production +0,29 % en 2032 et +0,20 % à long terme.",
         "cantine": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,18 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",

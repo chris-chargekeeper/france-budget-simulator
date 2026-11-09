@@ -140,7 +140,7 @@
           for (let s = START; s <= y; s++) {
             const dI = impulsion(m, (hist[id][s] || 0) - (hist[id][s - 1] || 0));
             if (dI) {
-              const e = dI * multiplicateur(type, y - s + 1, b.demande);
+              const e = dI * multiplicateur(type, y - s + 1, b.demande) * (MC.classement[id].partDemande ?? 1);
               demande += e; contrib[id] = (contrib[id] || 0) + e;
             }
           }
@@ -278,7 +278,7 @@
             if (lt.emplois != null) emplois += f * lire('emplois');
             if (lt.chomage != null) chomage += f * lire('chomage');
           }
-          if (!remplace) e += impulsion(m, pts) * multiplicateurLT(MC.classement[id].type, borne);
+          if (!remplace) e += impulsion(m, pts) * multiplicateurLT(MC.classement[id].type, borne) * (MC.classement[id].partDemande ?? 1);
           pib += e; contrib[id] = e;
         }
         return {pib, emplois, chomage, soldePct: budget + part * pib, contrib};
