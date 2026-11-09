@@ -91,14 +91,18 @@
       "candidat": "Jean-Luc Mélenchon",
       "avatar": "h",
       "couleur": "#C1272D",
-      "statutCandidature": "Candidat déclaré (3 mai 2026) ; programme L'Avenir en commun 2027 publié le 6 novembre 2026 (1 069 mesures), meeting de présentation prévu au Bourget le 7 novembre",
+      "statutCandidature": "Candidat déclaré (3 mai 2026) ; programme officiel L'Avenir en commun 2027 publié le 6 novembre 2026 (1 069 mesures) ; chiffrage d'ensemble annoncé pour le début de 2027",
       "statut": "partiel",
       "annonce": {
-        "titre": "106,4 Md€ de recettes nouvelles en 2027",
-        "texte": "Le budget « rectificatif » pour 2027 présenté le 14 octobre 2026 par Jean-Luc Mélenchon et Éric Coquerel prévoit 106,4 Md€ de recettes supplémentaires et 81,7 Md€ de dépenses nouvelles, l'écart d'environ 25 Md€ allant à la réduction de la dette. Recettes chiffrées poste par poste : niches fiscales 22 Md€, droits de succession 20 Md€, taxe Zucman 15 Md€, ISF climatique 10 Md€, fin de la flat tax 9 Md€, taxe sur les transactions financières 5 Md€, IS progressif 3 Md€. Le programme présidentiel complet est annoncé pour novembre 2026 et son chiffrage pour le début de 2027.",
+        "titre": "Programme publié le 6 novembre ; 106,4 Md€ de recettes chiffrées pour 2027",
+        "texte": "Le programme officiel, L'Avenir en commun 2027, est public depuis le 6 novembre 2026 : 1 069 mesures, mais presque aucun montant ; le chiffrage d'ensemble est annoncé pour le début de 2027. Le seul chiffrage poste par poste publié par la campagne est le document « Comment nous allons remettre de l'ordre dans les comptes publics » (14 octobre 2026), qui porte sur 2027 : 106,4 Md€ de recettes, 81,7 Md€ de dépenses, 24,7 Md€ de réduction du déficit, plus 100 Md€ par an d'investissements confiés à un pôle public bancaire, hors budget. Recettes : niches fiscales et sociales 22 Md€, droits de succession 20, taxe Zucman 15, ISF renforcé 10, fin de la flat tax 9, taxe universelle sur les multinationales 5, superprofits 5, transactions financières 5, taxe Gafam renforcée 3,9, impôt sur les sociétés 3, CVAE sur les grandes entreprises 3, rachats d'actions 2,5, fraude fiscale 2, crypto-actifs 1. Dépenses : point d'indice +10 % (17 Md€), garantie d'autonomie des jeunes (9,5), retour à 62 ans (9), pensions, allocations familiales et APL indexées et relevées de 10 % (8), annulation des coupes de 2026 (7), cantine gratuite (3,6), 250 000 places à l'université (3,5), hôpital (3), logement d'urgence (3), assurance chômage (3), violences sexistes et sexuelles (2,6), violences faites aux enfants (2), planification écologique (10), 10 000 postes d'enseignants (0,5). Environ 31 Md€ de ces dépenses n'ont pas encore d'équivalent dans le catalogue du simulateur (garantie d'autonomie, annulation des coupes, cantine, logement d'urgence, assurance chômage, violences) et le point d'indice y est plafonné à 8 Md€ : le déficit simulé pour ce programme est donc, pour l'instant, plus favorable que ce qu'il annonce lui-même. À l'inverse, la réduction des allègements de cotisations n'est plus comptée à part : la campagne la range dans les 22 Md€ de niches fiscales et sociales, et elle ne vise que les salaires au-dessus de 2 Smic.",
         "revendique": 106.4,
-        "detaille": 84,
-        "cote": "recette"
+        "detaille": 106.4,
+        "cote": "recette",
+        "horsCatalogue": {
+          "v": 7.9,
+          "quoi": "CVAE rétablie sur les plus grandes entreprises, 3 Md€ ; taxe Gafam renforcée, 3,9 Md€ ; taxe sur les crypto-actifs, 1 Md€"
+        }
       },
       "set": {
         "isfclim": {
@@ -106,7 +110,8 @@
           "annonce": 10
         },
         "superp": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 5
         },
         "ttf": {
           "sim": "mid",
@@ -129,13 +134,12 @@
           "annonce": 3
         },
         "minimum15": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 5
         },
         "fraude": {
-          "sim": "mid"
-        },
-        "alleg": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 2
         },
         "niches": {
           "sim": "mid",
@@ -153,16 +157,23 @@
         },
         "ecolo": {
           "sim": "mid",
-          "annonce": 30
+          "annonce": 10
         },
         "age": {
           "sim": "mid"
         },
         "pointindice": {
-          "sim": "mid",
+          "sim": "hi",
           "annonce": 17
         },
         "indexation": {
+          "sim": "mid"
+        },
+        "rachats": {
+          "sim": "mid",
+          "annonce": 2.5
+        },
+        "exit": {
           "sim": "mid"
         }
       },
@@ -190,6 +201,14 @@
         {
           "t": "LCP — Présidentielle 2027 : ce qui change dans le nouveau programme de Jean-Luc Mélenchon (6 novembre 2026)",
           "u": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+        },
+        {
+          "t": "L'Avenir en commun 2027 — programme officiel de Jean-Luc Mélenchon, texte intégral (melenchon2027.fr, 6 novembre 2026)",
+          "u": "https://melenchon2027.fr/programme/livre/"
+        },
+        {
+          "t": "« Comment nous allons remettre de l'ordre dans les comptes publics » — document budgétaire de la campagne Mélenchon 2027 (14 octobre 2026)",
+          "u": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf"
         }
       ]
     },
