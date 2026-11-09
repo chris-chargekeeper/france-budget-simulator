@@ -4833,6 +4833,34 @@
    "type": "generique_depense",
    "canaux": [],
    "note": "Transfert vers l'Union européenne : aucun multiplicateur publié."
+  },
+  "pointindice10": {
+   "type": "conso_publique",
+   "canaux": []
+  },
+  "autonomie": {
+   "type": "prestations",
+   "canaux": []
+  },
+  "cantine": {
+   "type": "conso_publique",
+   "canaux": []
+  },
+  "chomageplus": {
+   "type": "prestations",
+   "canaux": []
+  },
+  "violences": {
+   "type": "conso_publique",
+   "canaux": []
+  },
+  "logurgence": {
+   "type": "conso_publique",
+   "canaux": []
+  },
+  "coupes2026": {
+   "type": "conso_publique",
+   "canaux": []
   }
  },
  "moteur": {

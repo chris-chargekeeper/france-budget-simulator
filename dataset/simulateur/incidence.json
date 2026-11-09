@@ -872,6 +872,139 @@
    "fiabilite": "convention",
    "explication": "Le fonctionnement des institutions (Élysée, Parlement, Conseil constitutionnel) n'a pas de bénéficiaire identifiable parmi les groupes.",
    "sources": []
+  },
+  {
+   "id": "pointindice10",
+   "parts": {
+    "agents": 1.0
+   },
+   "fiabilite": "sourcee",
+   "explication": "La valeur du point sert au calcul du traitement de tous les agents des trois fonctions publiques : la hausse leur revient intégralement.",
+   "sources": [
+    {
+     "t": "DGAFP, rendez-vous salarial du 8 juillet 2026 : « une hausse de 1 % de la valeur du point représente un coût de 2,4 Md€ » (diaporama)",
+     "u": "https://www.cfdt-ufetam.org/wp-content/uploads/2026/07/rdv_salarial_2026_diapo_presentation.pdf"
+    },
+    {
+     "t": "Sénat, avis de Catherine Di Folco sur le PLF 2024 : coût des hausses de 3,5 % (7,6 Md€) et 1,5 % (3,2 Md€), repris par Acteurs publics",
+     "u": "https://acteurspublics.fr/articles/la-facture-de-la-hausse-du-point-dindice-pour-chacun-des-3-versants-de-la-fonction-publique"
+    }
+   ]
+  },
+  {
+   "id": "autonomie",
+   "parts": {
+    "sansemploi": 0.35,
+    "smic": 0.3,
+    "moyens": 0.05,
+    "nonreparti": 0.3
+   },
+   "fiabilite": "convention",
+   "explication": "Le revenu va aux jeunes sous le seuil de pauvreté : chômeurs et inactifs, jeunes salariés à bas salaire, et étudiants, qui n'entrent dans aucun groupe de la carte (part non attribuée). L'IPP note qu'une part des montants irait à des jeunes aidés par leurs parents. Les parts sont une convention.",
+   "sources": [
+    {
+     "t": "Rapport Sirugue, « Repenser les minima sociaux », avril 2016, p. 50 (chiffrages Drees et DG Trésor d'un RSA jeunes)",
+     "u": "https://www.vie-publique.fr/files/rapport/pdf/164000239.pdf"
+    },
+    {
+     "t": "IPP, rapport n° 44, « Les effets d'un RSA jeunes », juillet 2023, p. 16",
+     "u": "https://www.ipp.eu/wp-content/uploads/2025/06/44_Rapport_ESH_jeunes-5.pdf"
+    }
+   ]
+  },
+  {
+   "id": "cantine",
+   "parts": {
+    "moyens": 0.4,
+    "aises": 0.2,
+    "smic": 0.2,
+    "agents": 0.1,
+    "sansemploi": 0.1
+   },
+   "fiabilite": "convention",
+   "explication": "Le gain va aux familles qui paient aujourd'hui la cantine. Les plus modestes bénéficient déjà de tarifs sociaux, d'où une part plus faible pour les bas revenus que leur nombre ne le suggère (HCFEA). Les parts sont une convention.",
+   "sources": [
+    {
+     "t": "Haut Conseil de la famille, de l'enfance et de l'âge, « La restauration scolaire », 26 novembre 2024, p. 133-134",
+     "u": "https://www.hcfea.gouv.fr/sites/hcfea/files/files-spip/pdf/la_restauration_scolaire_rapport.pdf"
+    },
+    {
+     "t": "OFCE, chiffrage des programmes des législatives 2024, politiques familiales, tableau 3",
+     "u": "https://www.ofce-legislatives2024.fr/analyses/familles.html"
+    }
+   ]
+  },
+  {
+   "id": "chomageplus",
+   "parts": {
+    "sansemploi": 0.9,
+    "smic": 0.1
+   },
+   "fiabilite": "convention",
+   "explication": "Les allocations reviennent aux demandeurs d'emploi indemnisés ; une partie aux salariés précaires qui alternent emploi et chômage. Les parts sont une convention.",
+   "sources": [
+    {
+     "t": "Unédic, « Évaluation de la réforme d'assurance chômage 2019-2021 », 20 mars 2025",
+     "u": "https://www.unedic.org/publications"
+    },
+    {
+     "t": "Unédic, « Premiers effets de la réforme de contracyclicité » et étude d'impact de la convention du 15 novembre 2024 (25 février 2025)",
+     "u": "https://www.unedic.org/publications"
+    }
+   ]
+  },
+  {
+   "id": "violences",
+   "parts": {
+    "nonreparti": 1.0
+   },
+   "fiabilite": "convention",
+   "explication": "Des moyens pour la justice, la police, l'hébergement et l'accompagnement des victimes : un service public dont les bénéficiaires ne se rattachent à aucun groupe de revenu.",
+   "sources": [
+    {
+     "t": "Sénat, question écrite n° 06031 (4 septembre 2025), reprenant le chiffrage de la Fondation des femmes",
+     "u": "https://www.senat.fr/questions/base/2025/qSEQ250906031.html"
+    },
+    {
+     "t": "Drees, dépenses d'aide sociale des départements en 2024 (avril 2026)",
+     "u": "https://drees.solidarites-sante.gouv.fr/communique-de-presse-jeux-de-donnees/jeux-de-donnees/laugmentation-des-depenses-daide-sociale-des"
+    }
+   ]
+  },
+  {
+   "id": "logurgence",
+   "parts": {
+    "sansemploi": 0.6,
+    "nonreparti": 0.4
+   },
+   "fiabilite": "convention",
+   "explication": "Les personnes hébergées sont en majorité sans emploi ; une partie n'entre dans aucun groupe de la carte (part non attribuée). Les parts sont une convention.",
+   "sources": [
+    {
+     "t": "Sénat, avis de la commission des affaires sociales sur le programme 177, PLF 2026 (26 novembre 2025)",
+     "u": "https://www.senat.fr/rap/a25-142-2/a25-142-2-syn.pdf"
+    }
+   ]
+  },
+  {
+   "id": "coupes2026",
+   "parts": {
+    "sansemploi": 0.3,
+    "pme": 0.1,
+    "nonreparti": 0.6
+   },
+   "fiabilite": "convention",
+   "explication": "Les crédits du travail et de l'emploi (formation, contrats aidés) vont surtout aux demandeurs d'emploi ; le reste (culture, sport, logement, diplomatie, aide au développement) n'est rattaché à aucun groupe. Les parts sont une convention.",
+   "sources": [
+    {
+     "t": "Sénat, rapport sur la mission Travail et emploi, PLF 2026",
+     "u": "https://www.senat.fr/rap/l25-139-331/l25-139-331-syn.pdf"
+    },
+    {
+     "t": "Focus 2030, plafonds de dépenses du PLF 2027 (juillet 2026)",
+     "u": "https://focus2030.org/wp-content/uploads/2026/07/Tire-a-part-PLF2027.pdf"
+    }
+   ]
   }
  ]
 }

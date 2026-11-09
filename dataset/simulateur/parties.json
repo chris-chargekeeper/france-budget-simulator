@@ -95,7 +95,7 @@
       "statut": "partiel",
       "annonce": {
         "titre": "Programme publié le 6 novembre ; 106,4 Md€ de recettes chiffrées pour 2027",
-        "texte": "Le programme officiel, L'Avenir en commun 2027, est public depuis le 6 novembre 2026 : 1 069 mesures, mais presque aucun montant ; le chiffrage d'ensemble est annoncé pour le début de 2027. Le seul chiffrage poste par poste publié par la campagne est le document « Comment nous allons remettre de l'ordre dans les comptes publics » (14 octobre 2026), qui porte sur 2027 : 106,4 Md€ de recettes, 81,7 Md€ de dépenses, 24,7 Md€ de réduction du déficit, plus 100 Md€ par an d'investissements confiés à un pôle public bancaire, hors budget. Recettes : niches fiscales et sociales 22 Md€, droits de succession 20, taxe Zucman 15, ISF renforcé 10, fin de la flat tax 9, taxe universelle sur les multinationales 5, superprofits 5, transactions financières 5, taxe Gafam renforcée 3,9, impôt sur les sociétés 3, CVAE sur les grandes entreprises 3, rachats d'actions 2,5, fraude fiscale 2, crypto-actifs 1. Dépenses : point d'indice +10 % (17 Md€), garantie d'autonomie des jeunes (9,5), retour à 62 ans (9), pensions, allocations familiales et APL indexées et relevées de 10 % (8), annulation des coupes de 2026 (7), cantine gratuite (3,6), 250 000 places à l'université (3,5), hôpital (3), logement d'urgence (3), assurance chômage (3), violences sexistes et sexuelles (2,6), violences faites aux enfants (2), planification écologique (10), 10 000 postes d'enseignants (0,5). Environ 31 Md€ de ces dépenses n'ont pas encore d'équivalent dans le catalogue du simulateur (garantie d'autonomie, annulation des coupes, cantine, logement d'urgence, assurance chômage, violences) et le point d'indice y est plafonné à 8 Md€ : le déficit simulé pour ce programme est donc, pour l'instant, plus favorable que ce qu'il annonce lui-même. À l'inverse, la réduction des allègements de cotisations n'est plus comptée à part : la campagne la range dans les 22 Md€ de niches fiscales et sociales, et elle ne vise que les salaires au-dessus de 2 Smic.",
+        "texte": "Le programme officiel, L'Avenir en commun 2027, est public depuis le 6 novembre 2026 : 1 069 mesures, mais presque aucun montant ; le chiffrage d'ensemble est annoncé pour le début de 2027. Le seul chiffrage poste par poste publié par la campagne est le document « Comment nous allons remettre de l'ordre dans les comptes publics » (14 octobre 2026), qui porte sur 2027 : 106,4 Md€ de recettes, 81,7 Md€ de dépenses, 24,7 Md€ de réduction du déficit, plus 100 Md€ par an d'investissements confiés à un pôle public bancaire, hors budget. Recettes : niches fiscales et sociales 22 Md€, droits de succession 20, taxe Zucman 15, ISF renforcé 10, fin de la flat tax 9, taxe universelle sur les multinationales 5, superprofits 5, transactions financières 5, taxe Gafam renforcée 3,9, impôt sur les sociétés 3, CVAE sur les grandes entreprises 3, rachats d'actions 2,5, fraude fiscale 2, crypto-actifs 1. Dépenses : point d'indice +10 % (17 Md€), garantie d'autonomie des jeunes (9,5), retour à 62 ans (9), pensions, allocations familiales et APL indexées et relevées de 10 % (8), annulation des coupes de 2026 (7), cantine gratuite (3,6), 250 000 places à l'université (3,5), hôpital (3), logement d'urgence (3), assurance chômage (3), violences sexistes et sexuelles (2,6), violences faites aux enfants (2), planification écologique (10), 10 000 postes d'enseignants (0,5). Ces dépenses sont toutes simulées, aux chiffrages indépendants centraux du catalogue, souvent plus élevés que ceux de la campagne : point d'indice +10 % (23 Md€ bruts contre 17 annoncés), garantie d'autonomie (12 contre 9,5), assurance chômage (7 contre 3), cantine (6 contre 3,6). Restent hors du simulateur les mesures que la campagne n'a pas chiffrées, comme le « 100 % Sécu », l'AAH ou les pensions au niveau du Smic, ou les 500 000 places de crèche. À l'inverse, la réduction des allègements de cotisations n'est plus comptée à part : la campagne la range dans les 22 Md€ de niches fiscales et sociales, et elle ne vise que les salaires au-dessus de 2 Smic.",
         "revendique": 106.4,
         "detaille": 106.4,
         "cote": "recette",
@@ -162,10 +162,6 @@
         "age": {
           "sim": "mid"
         },
-        "pointindice": {
-          "sim": "hi",
-          "annonce": 17
-        },
         "indexation": {
           "sim": "mid"
         },
@@ -175,6 +171,34 @@
         },
         "exit": {
           "sim": "mid"
+        },
+        "pointindice10": {
+          "sim": "mid",
+          "annonce": 17
+        },
+        "autonomie": {
+          "sim": "mid",
+          "annonce": 9.5
+        },
+        "cantine": {
+          "sim": "mid",
+          "annonce": 3.6
+        },
+        "chomageplus": {
+          "sim": "mid",
+          "annonce": 3
+        },
+        "violences": {
+          "sim": "mid",
+          "annonce": 4.6
+        },
+        "logurgence": {
+          "sim": "mid",
+          "annonce": 3
+        },
+        "coupes2026": {
+          "sim": "mid",
+          "annonce": 7
         }
       },
       "sources": [
@@ -532,7 +556,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 43 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 9,1 Md€ d'économies et 16,9 Md€ de recettes en 2032, dont une partie rendue en dépenses (7,0 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,1 % du PIB en 2032 et une production plus élevée à long terme (+0,3 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 50 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 9,1 Md€ d'économies et 16,9 Md€ de recettes en 2032, dont une partie rendue en dépenses (7,0 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,1 % du PIB en 2032 et une production plus élevée à long terme (+0,3 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -563,13 +587,16 @@
         "csgcap": {
           "sim": "mid"
         },
-        "effectifs": {
-          "sim": "mid"
+        "fraude": {
+          "sim": "lo"
         },
         "ttf": {
           "sim": "lo"
         },
         "exit": {
+          "sim": "lo"
+        },
+        "institutions": {
           "sim": "lo"
         },
         "csgbaisse": {
@@ -578,14 +605,11 @@
         "niches": {
           "sim": "lo"
         },
-        "institutions": {
-          "sim": "lo"
-        },
         "smic": {
           "sim": "mid"
         },
-        "fraude": {
-          "sim": "lo"
+        "effectifs": {
+          "sim": "mid"
         }
       },
       "pourquoi": {
@@ -594,14 +618,14 @@
         "pfu": "Retenue à son chiffrage central (4,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,10 point de PIB ; effet sur la production : −0,05 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
         "succ": "Retenue à son chiffrage central (3,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,07 point de PIB ; effet sur la production : −0,03 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
         "csgcap": "Retenue à son chiffrage central (3,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,08 point de PIB ; effet sur la production : −0,03 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
-        "effectifs": "Retenue à son chiffrage central (4,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,11 point de PIB ; effet sur la production : −0,08 % en 2032, −0,03 % à long terme, d'après les effets publiés.",
+        "fraude": "Retenue à sa borne basse (1,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 15,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,03 point de PIB ; effet sur la production : −0,01 % en 2032, −0,01 % à long terme, d'après les effets publiés.",
         "ttf": "Retenue à sa borne basse (1,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 6,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,02 point de PIB ; effet sur la production : −0,01 % en 2032, −0,00 % à long terme, d'après les effets publiés.",
         "exit": "Retenue à sa borne basse (0,20 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 1,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,00 point de PIB ; effet sur la production : −0,00 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
+        "institutions": "Retenue à sa borne basse (0,05 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 0,30 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,00 point de PIB ; effet sur la production : −0,00 % en 2032, −0,00 % à long terme, d'après les effets publiés.",
         "csgbaisse": "Retenue à son chiffrage central (8,0 Md€ par an). Dans ce budget, elle dégrade le solde public 2032 de 0,27 point de PIB ; effet sur la production : +0,17 % en 2032, +0,24 % à long terme, d'après les effets publiés.",
         "niches": "Retenue à sa borne basse (5,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 25,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,15 point de PIB ; effet sur la production : −0,06 % en 2032, −0,03 % à long terme, d'après les effets publiés.",
-        "institutions": "Retenue à sa borne basse (0,05 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 0,30 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,00 point de PIB ; effet sur la production : −0,00 % en 2032, −0,00 % à long terme, d'après les effets publiés.",
         "smic": "Retenue à son chiffrage central (4,0 Md€ par an). Dans ce budget, elle dégrade le solde public 2032 de 0,12 point de PIB ; effet sur la production : +0,11 % en 2032, +0,02 % à long terme, d'après les effets publiés.",
-        "fraude": "Retenue à sa borne basse (1,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 15,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,03 point de PIB ; effet sur la production : −0,01 % en 2032, −0,01 % à long terme, d'après les effets publiés."
+        "effectifs": "Retenue à son chiffrage central (4,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,11 point de PIB ; effet sur la production : −0,08 % en 2032, −0,03 % à long terme, d'après les effets publiés."
       },
       "ecartees": {
         "tva1": "Garde-fou : pas de hausse générale des prix ; une hausse de TVA se répercute sur tous les achats.",
@@ -629,6 +653,13 @@
         "ecolo": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,30 point de PIB, production +0,28 % en 2032 et +0,07 % à long terme.",
         "age": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,14 point de PIB, production +0,13 % en 2032 et +0,08 % à long terme.",
         "pointindice": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,19 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",
+        "pointindice10": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,72 point de PIB, production +0,66 % en 2032 et +0,12 % à long terme.",
+        "autonomie": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,37 point de PIB, production +0,29 % en 2032 et +0,20 % à long terme.",
+        "cantine": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,18 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",
+        "chomageplus": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,22 point de PIB, production +0,17 % en 2032 et +0,12 % à long terme.",
+        "violences": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,10 point de PIB, production +0,10 % en 2032 et +0,02 % à long terme.",
+        "logurgence": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,04 point de PIB, production +0,03 % en 2032 et +0,01 % à long terme.",
+        "coupes2026": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,19 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",
         "collectivites": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,09 %).",
         "chomage": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,10 %).",
         "blanche": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,16 %).",
@@ -646,7 +677,7 @@
         }
       ],
       "calcul": {
-        "date": "2026-11-07",
+        "date": "2026-11-09",
         "deficit2032": 7.14,
         "dette2032": 138.6,
         "economies": 9.1,
