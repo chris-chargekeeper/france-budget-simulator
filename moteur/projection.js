@@ -45,10 +45,27 @@
                   charge0: BL.charge, taux0: BL.tauxApparent, refi: BL.partRefinancee};
 
     /* ---- mêmes règles de montée en charge que la page ---- */
-    function amountAt(m, val, y, P) {
+    /* Cumul des impôts sur les très hauts patrimoines (macro.json, moteur.cumulCapital) : même code que
+       cumulCapital() dans template.html. */
+    function cumulCapital(C, M, m, y, P, active) {
+      if (!C || !active || !m || m.behav !== 'capital' || y < START) return 1;
+      const Dd = C.deduction, ded = id => (id === Dd.mesure && Dd.si.some(x => active[x] != null)) ? 1 - Dd.part : 1;
+      let tot = 0;
+      for (const id in active) if (M[id] && M[id].behav === 'capital') tot += active[id] * ded(id);
+      let net = 0, bas = 0;
+      for (const p of C.paliers) {
+        const haut = p.jusqua == null ? Infinity : p.jusqua;
+        net += Math.max(0, Math.min(tot, haut) - bas) * p.rendement; bas = haut;
+        if (tot <= haut) break;
+      }
+      const k = tot > 0 ? net / tot : 1;
+      const kk = 1 - (1 - k) * Math.min(1, P.erosion / C.erosionRef);
+      return ded(m.id) * (1 - (1 - kk) * Math.min(1, (y - START + 1) / 3));
+    }
+    function amountAt(m, val, y, P, active) {
       if (y < START) return 0;
       const ero = (!m.behav) ? 1 : 1 - (P.erosion / 100) * Math.min(1, (y - START + 1) / 3);
-      return val * Math.min(1, (y - START + 1) / m.ramp) * ero;
+      return val * Math.min(1, (y - START + 1) / m.ramp) * ero * cumulCapital(MOT.cumulCapital, M, m, y, P, active);
     }
     /** Impulsion d'une mesure, en Md€ : positive quand elle creuse le déficit (relance). */
     function impulsion(m, a) {
@@ -114,7 +131,7 @@
         const contrib = {};        // effet de chaque mesure sur le PIB (Md€), demande et offre
         for (const id in active) {
           const m = M[id]; if (!m) continue;
-          const a = amountAt(m, active[id], y, P);
+          const a = amountAt(m, active[id], y, P, active);
           if (m.g === 'dep+') dDep += a; else if (m.g === 'dep-') dDep -= a;
           else if (m.g === 'rec+') dRec += a; else if (m.g === 'rec-') dRec -= a;
           (hist[id] = hist[id] || {})[y] = a;
@@ -245,7 +262,7 @@
           const m = M[id]; if (!m) continue;
           // contribution temporaire : plus perçue à long terme, donc ni recette ni effet d'offre
           if (MC.classement[id].temporaire) { contrib[id] = 0; continue; }
-          const a = amountAt(m, active[id], 2100, P);          // plein régime, érosion comprise
+          const a = amountAt(m, active[id], 2100, P, active);          // plein régime, érosion comprise
           const pts = a / BASE.pib0 * 100;
           budget += (m.g === 'dep-' || m.g === 'rec+') ? pts : -pts;
           let e = 0, remplace = false;

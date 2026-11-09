@@ -77,10 +77,10 @@ const actif = ids => Object.fromEntries([...ids].map(id => [id, M[id][niveau(M[i
 
 /** Effet sur le revenu de chaque groupe, en % de son revenu de référence (négatif : il perd). */
 function pouvoirAchat(ids) {
-  const G = {};
+  const G = {}, act = actif(ids);
   for (const id of ids) {
     const m = M[id], k = INC_ID[id]; if (!k || HORS_POUVOIR_ACHAT.has(id)) continue;
-    const a = PAGE.amountAt(m, m[niveau(m)], AN, P);
+    const a = PAGE.amountAt(m, m[niveau(m)], AN, P, act);
     for (const g in k.parts) {
       if (!GR[g] || !GR[g].revenu) continue;
       G[g] = (G[g] || 0) + (gagne(m) ? -1 : 1) * a * k.parts[g] * 1e9 / GR[g].effectif / GR[g].revenu.v * 100;
@@ -214,7 +214,8 @@ function calculer() {
       ? `Coûte davantage aux finances publiques qu'elle n'apporte en activité : ${chiffres}.`
       : `Rapporte moins qu'elle ne coûte en activité, surtout à long terme : ${chiffres}.`;
   }
-  const somme = g => [...ids].filter(id => M[id].g === g).reduce((t, id) => t + PAGE.amountAt(M[id], M[id][niveau(M[id])], AN, P), 0);
+  const actS = actif(ids);
+  const somme = g => [...ids].filter(id => M[id].g === g).reduce((t, id) => t + PAGE.amountAt(M[id], M[id][niveau(M[id])], AN, P, actS), 0);
   return {set, notes, ecartees, ids, fin: cur.page, c: cur.c, L: cur.L, pa: cur.pa,
           somme: {dep: somme('dep-'), rec: somme('rec+'), depPlus: somme('dep+'), recMoins: somme('rec-')}};
 }

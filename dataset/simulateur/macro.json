@@ -4925,6 +4925,45 @@
   },
   "longTerme": {
    "de": "Régime permanent, environ 10 à 20 ans après l'entrée en vigueur : effet sur le PIB de chaque mesure (multiplicateur de long terme de son instrument, ou effet d'offre publié de la réforme), et solde public qui en découle (recettes proportionnelles au PIB)."
+  },
+  "cumulCapital": {
+   "paliers": [
+    {
+     "jusqua": 15,
+     "rendement": 1
+    },
+    {
+     "jusqua": 40,
+     "rendement": 0.8
+    },
+    {
+     "rendement": 0.53
+    }
+   ],
+   "erosionRef": 25,
+   "deduction": {
+    "mesure": "zucman",
+    "si": [
+     "isf",
+     "isfclim"
+    ],
+    "part": 0.15
+   },
+   "de": "Quand plusieurs impôts frappent les mêmes très hauts patrimoines, chaque euro de plus rapporte moins : l'assiette fuit davantage (optimisation, moindre épargne déclarée, départs). Jusqu'à 15 Md€ cumulés, l'érosion reste celle de chaque mesure (25 %) ; de 15 à 40 Md€, chaque euro mécanique ne rapporte plus que 0,60 € ; au-delà, 0,40 €. Paliers calculés par ce site avec une élasticité de 0,5 de l'assiette au rendement net, au milieu des valeurs publiées. Les recettes perdues par réaction des contribuables atteignent 74 % du rendement mécanique en Scandinavie (CAE). Par ailleurs, l'impôt plancher sur les patrimoines de plus de 100 M€ déduit les impôts déjà payés : un impôt sur la fortune rétabli à côté en réduit le rendement d'environ 15 % (calcul de ce site, 10 à 18 %).",
+   "sources": [
+    {
+     "t": "Conseil d'analyse économique, Focus n° 118, « Fiscalité du capital : quels sont les effets de l'exil fiscal sur l'économie ? », juillet 2025, p. 10 et 16",
+     "u": "https://cae-eco.fr/static/pdf/Focus_118_emigration_fiscale_250725_v2.pdf"
+    },
+    {
+     "t": "Jakobsen, Jakobsen, Kleven, Zucman, « Wealth Taxation and Wealth Accumulation », Quarterly Journal of Economics, 2020 (élasticités de long terme de 0,6 à 1,15)",
+     "u": "https://www.econ.ku.dk/cebi/news/JJKZ_QJE_Aug2019.pdf"
+    },
+    {
+     "t": "Sénat, rapport n° 689 (2024-2025) d'Emmanuel Capus sur l'impôt plancher de 2 %, p. 30 (impôts déduits) et p. 41-42 (chiffrage statique)",
+     "u": "https://www.senat.fr/rap/l24-689/l24-6891.pdf"
+    }
+   ]
   }
  }
 }

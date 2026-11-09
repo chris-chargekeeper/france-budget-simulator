@@ -2005,15 +2005,35 @@ function erosionFactor(m, y, P){
   if (!m.behav || y < START) return 1;
   return 1 - (P.erosion / 100) * Math.min(1, (y - START + 1) / 3);
 }
-function amountAt(m, val, y, P){
+/* Cumul des impôts sur les très hauts patrimoines (macro.json, moteur.cumulCapital) : plus ils
+   s'empilent, moins chaque euro rapporte ; même règle pour tous. Recopié dans moteur/page.js et
+   moteur/projection.js. */
+function cumulCapital(C, M, m, y, P, active){
+  if (!C || !active || !m || m.behav !== 'capital' || y < START) return 1;
+  const D = C.deduction, ded = id => (id === D.mesure && D.si.some(x => active[x] != null)) ? 1 - D.part : 1;
+  let tot = 0;
+  for (const id in active) if (M[id] && M[id].behav === 'capital') tot += active[id] * ded(id);
+  let net = 0, bas = 0;
+  for (const p of C.paliers){
+    const haut = p.jusqua == null ? Infinity : p.jusqua;
+    net += Math.max(0, Math.min(tot, haut) - bas) * p.rendement; bas = haut;
+    if (tot <= haut) break;
+  }
+  const k = tot > 0 ? net / tot : 1;
+  const kk = 1 - (1 - k) * Math.min(1, P.erosion / C.erosionRef);
+  return ded(m.id) * (1 - (1 - kk) * Math.min(1, (y - START + 1) / 3));
+}
+const CUMUL = DATA.macro && DATA.macro.moteur ? DATA.macro.moteur.cumulCapital : null;
+/** active : l'ensemble des mesures retenues, pour le cumul ; sans lui, la mesure est prise seule. */
+function amountAt(m, val, y, P, active){
   if (y < START) return 0;
-  return val * Math.min(1, (y - START + 1) / m.ramp) * erosionFactor(m, y, P);
+  return val * Math.min(1, (y - START + 1) / m.ramp) * erosionFactor(m, y, P) * cumulCapital(CUMUL, M_BY_ID, m, y, P, active);
 }
 function measuresAt(active, y, P){
   let dDep = 0, dRec = 0, impDep = 0, impTax = 0;
   for (const id in active){
     const m = M_BY_ID[id]; if (!m) continue;
-    const a = amountAt(m, active[id], y, P);
+    const a = amountAt(m, active[id], y, P, active);
     if (m.g === 'dep+'){ dDep += a; impDep += a; }
     else if (m.g === 'dep-'){ dDep -= a; impDep -= a; }
     else if (m.g === 'rec+'){ dRec += a; impTax -= a; }
@@ -2178,11 +2198,11 @@ function activeSplit(active){
   let up = 0, down = 0, behavGross = 0, behavNet = 0;
   for (const id in active){
     const m = M_BY_ID[id];
-    const v = amountAt(m, active[id], 2032, state.P);
+    const v = amountAt(m, active[id], 2032, state.P, active);
     if (improves(m)) up += v; else down += v;
     if (m.behav){
       behavNet += v;
-      behavGross += amountAt(m, active[id], 2032, {...state.P, erosion:0});
+      behavGross += amountAt(m, active[id], 2032, {...state.P, erosion:0}, active);
     }
   }
   return {up, down, net: up - down, behavGross, behavNet};
@@ -2243,7 +2263,7 @@ function render(){
   /* impact par mesure */
   let items = Object.keys(state.active).map(id => {
     const m = M_BY_ID[id];
-    return {m, v:(improves(m) ? 1 : -1) * amountAt(m, state.active[id], 2032, state.P)};
+    return {m, v:(improves(m) ? 1 : -1) * amountAt(m, state.active[id], 2032, state.P, state.active)};
   }).sort((a,b) => b.v - a.v);
   const more = $('#impactMore'), total = items.length, CAP = 8;
   if (!state.adv && total > CAP){
@@ -3725,6 +3745,13 @@ un point d'impôt produit son plein effet en un an, une réforme des retraites e
 réduit leur rendement d'un pourcentage réglable, atteint en trois ans. Elle représente en bloc l'exil, les
 holdings, le report de distribution des dividendes et la requalification de revenus : c'est une convention, pas
 une estimation.</p>
+<p><b>Quand les impôts sur les très hauts patrimoines s'additionnent</b>, chaque euro de plus rapporte moins :
+les mêmes contribuables réagissent davantage à un taux total plus élevé. Le simulateur garde l'érosion réglée
+jusqu'à 15 Md€ de ces impôts cumulés ; de 15 à 40 Md€, chaque euro prévu ne rapporte plus que 60 centimes ; au-delà,
+40 centimes. L'impôt plancher sur les patrimoines de plus de 100 M€ déduit les impôts déjà payés : à côté d'un
+impôt sur la fortune, il rapporte environ 15 % de moins. Paliers calculés par ce site, au milieu des réactions
+publiées (Conseil d'analyse économique, Focus n° 118, 2025 ; Jakobsen, Kleven, Zucman et al., 2020) ; la même
+règle vaut pour tous les programmes.</p>
 <p><b>Le retour macroéconomique</b> passe par un multiplicateur appliqué à l'<i>impulsion</i> budgétaire,
 c'est-à-dire à la variation annuelle de l'orientation, et non à son niveau : un plan d'économies pèse sur
 l'activité pendant sa montée en charge, puis l'écart de production se referme progressivement
@@ -3955,7 +3982,7 @@ function incidence(active, P, y=2032){
   let total = 0, sourcee = 0;
   for (const id in active){
     const m = M_BY_ID[id], k = INC_BY_ID[id]; if (!m || !k) continue;
-    const a = amountAt(m, active[id], y, P); if (!(a > 0)) continue;
+    const a = amountAt(m, active[id], y, P, active); if (!(a > 0)) continue;
     const perte = improves(m), cote = perte ? 'perte' : 'gain';
     total += a; if (k.fiabilite === 'sourcee') sourcee += a;
     for (const gid in k.parts){
@@ -4336,7 +4363,7 @@ const SEUIL_AMPLEUR = 3;
 function ampleurBrute(p){
   const a = partySet(p), pib = run(state.P, {}).at(-1).pib;
   let t = 0;
-  for (const id in a) t += amountAt(M_BY_ID[id], a[id], 2032, state.P);
+  for (const id in a) t += amountAt(M_BY_ID[id], a[id], 2032, state.P, a);
   return t / pib * 100;
 }
 function ampleur(p){
@@ -4413,7 +4440,7 @@ function progList(p){
       + "son propre chiffre, il est indiqué à côté. Cliquez sur une mesure pour l'explication."));
   const act = partySet(p);
   const kept = Object.keys(act).map(id => ({id, m:M_BY_ID[id], e:p.set[id],
-      v:amountAt(M_BY_ID[id], act[id], 2032, state.P)}))
+      v:amountAt(M_BY_ID[id], act[id], 2032, state.P, act)}))
     .sort((a,b) => (improves(b.m) - improves(a.m)) || (b.v - a.v));
   const dl = el('div','ia-list');
   kept.forEach(({m, e, v}) => {
@@ -4440,11 +4467,16 @@ function progList(p){
  *  indépendants, le dire, et inviter à basculer. Rien quand l'écart est négligeable. */
 function ecartPromesse(p){
   let reel = 0, promis = 0;
+  const actR = {}, actP = {};
+  for (const id in p.set){
+    const m = M_BY_ID[id], e = p.set[id]; if (!m) continue;
+    actR[id] = m[e.sim || 'mid']; actP[id] = e.annonce != null ? e.annonce : actR[id];
+  }
   for (const id in p.set){
     const m = M_BY_ID[id], e = p.set[id]; if (!m) continue;
     const sg = improves(m) ? 1 : -1, ind = m[e.sim || 'mid'];
-    reel   += sg * amountAt(m, ind, 2032, state.P);
-    promis += sg * amountAt(m, e.annonce != null ? e.annonce : ind, 2032, state.P);
+    reel   += sg * amountAt(m, ind, 2032, state.P, actR);
+    promis += sg * amountAt(m, e.annonce != null ? e.annonce : ind, 2032, state.P, actP);
   }
   const ecart = promis - reel;
   const box = el('div','ecart-cta');
@@ -4481,7 +4513,7 @@ function iaWhy(p){
   const ul = el('ol'); (p.criteres || []).forEach(x => ul.appendChild(el('li', null, x))); col1.appendChild(ul);
   c.appendChild(col1);
   const col2 = el('div'); col2.appendChild(el('h4', null, "Ce que le calcul retient, du plus gros au plus petit"));
-  const kept = Object.keys(p.set).map(id => ({id, m:M_BY_ID[id], v:amountAt(M_BY_ID[id], partySet(p)[id], 2032, state.P)}))
+  const kept = Object.keys(p.set).map(id => ({id, m:M_BY_ID[id], v:amountAt(M_BY_ID[id], partySet(p)[id], 2032, state.P, partySet(p))}))
     .sort((a,b) => b.v - a.v);
   const dl = el('div','ia-list');
   kept.forEach(({id, m, v}) => {

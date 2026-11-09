@@ -568,7 +568,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 50 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 9,1 Md€ d'économies et 16,9 Md€ de recettes en 2032, dont une partie rendue en dépenses (7,0 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,1 % du PIB en 2032 et une production plus élevée à long terme (+0,3 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 50 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 9,1 Md€ d'économies et 16,5 Md€ de recettes en 2032, dont une partie rendue en dépenses (7,0 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,2 % du PIB en 2032 et une production plus élevée à long terme (+0,3 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -599,16 +599,7 @@
         "csgcap": {
           "sim": "mid"
         },
-        "fraude": {
-          "sim": "lo"
-        },
-        "ttf": {
-          "sim": "lo"
-        },
         "exit": {
-          "sim": "lo"
-        },
-        "institutions": {
           "sim": "lo"
         },
         "csgbaisse": {
@@ -622,22 +613,35 @@
         },
         "effectifs": {
           "sim": "mid"
+        },
+        "fraude": {
+          "sim": "lo"
+        },
+        "ttf": {
+          "sim": "lo"
+        },
+        "rachats": {
+          "sim": "lo"
+        },
+        "institutions": {
+          "sim": "lo"
         }
       },
       "pourquoi": {
         "innov": "Retenue à son chiffrage central (3,0 Md€ par an). Dans ce budget, elle dégrade le solde public 2032 de 0,09 point de PIB ; effet sur la production : +0,08 % en 2032, +0,15 % à long terme, d'après les effets publiés.",
-        "isfclim": "Retenue à son chiffrage central (10,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,25 point de PIB ; effet sur la production : −0,09 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
-        "pfu": "Retenue à son chiffrage central (4,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,10 point de PIB ; effet sur la production : −0,05 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
-        "succ": "Retenue à son chiffrage central (3,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,07 point de PIB ; effet sur la production : −0,03 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
-        "csgcap": "Retenue à son chiffrage central (3,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,08 point de PIB ; effet sur la production : −0,03 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
-        "fraude": "Retenue à sa borne basse (1,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 15,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,03 point de PIB ; effet sur la production : −0,01 % en 2032, −0,01 % à long terme, d'après les effets publiés.",
-        "ttf": "Retenue à sa borne basse (1,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 6,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,02 point de PIB ; effet sur la production : −0,01 % en 2032, −0,00 % à long terme, d'après les effets publiés.",
+        "isfclim": "Retenue à son chiffrage central (10,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,22 point de PIB ; effet sur la production : −0,08 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
+        "pfu": "Retenue à son chiffrage central (4,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,08 point de PIB ; effet sur la production : −0,04 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
+        "succ": "Retenue à son chiffrage central (3,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,06 point de PIB ; effet sur la production : −0,02 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
+        "csgcap": "Retenue à son chiffrage central (3,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,06 point de PIB ; effet sur la production : −0,03 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
         "exit": "Retenue à sa borne basse (0,20 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 1,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,00 point de PIB ; effet sur la production : −0,00 % en 2032, +0,00 % à long terme, d'après les effets publiés.",
-        "institutions": "Retenue à sa borne basse (0,05 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 0,30 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,00 point de PIB ; effet sur la production : −0,00 % en 2032, −0,00 % à long terme, d'après les effets publiés.",
         "csgbaisse": "Retenue à son chiffrage central (8,0 Md€ par an). Dans ce budget, elle dégrade le solde public 2032 de 0,27 point de PIB ; effet sur la production : +0,17 % en 2032, +0,24 % à long terme, d'après les effets publiés.",
         "niches": "Retenue à sa borne basse (5,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 25,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,15 point de PIB ; effet sur la production : −0,06 % en 2032, −0,03 % à long terme, d'après les effets publiés.",
         "smic": "Retenue à son chiffrage central (4,0 Md€ par an). Dans ce budget, elle dégrade le solde public 2032 de 0,12 point de PIB ; effet sur la production : +0,11 % en 2032, +0,02 % à long terme, d'après les effets publiés.",
-        "effectifs": "Retenue à son chiffrage central (4,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,11 point de PIB ; effet sur la production : −0,08 % en 2032, −0,03 % à long terme, d'après les effets publiés."
+        "effectifs": "Retenue à son chiffrage central (4,0 Md€ par an). Dans ce budget, elle améliore le solde public 2032 de 0,11 point de PIB ; effet sur la production : −0,08 % en 2032, −0,03 % à long terme, d'après les effets publiés.",
+        "fraude": "Retenue à sa borne basse (1,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 15,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,03 point de PIB ; effet sur la production : −0,01 % en 2032, −0,01 % à long terme, d'après les effets publiés.",
+        "ttf": "Retenue à sa borne basse (1,0 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 6,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,02 point de PIB ; effet sur la production : −0,01 % en 2032, −0,00 % à long terme, d'après les effets publiés.",
+        "rachats": "Retenue à sa borne basse (0,50 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 2,0 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,01 point de PIB ; effet sur la production : −0,00 % en 2032, −0,00 % à long terme, d'après les effets publiés.",
+        "institutions": "Retenue à sa borne basse (0,05 Md€ par an), par prudence : les chiffrages publiés vont jusqu'à 0,30 Md€. Dans ce budget, elle améliore le solde public 2032 de 0,00 point de PIB ; effet sur la production : −0,00 % en 2032, −0,00 % à long terme, d'après les effets publiés."
       },
       "ecartees": {
         "tva1": "Garde-fou : pas de hausse générale des prix ; une hausse de TVA se répercute sur tous les achats.",
@@ -649,7 +653,6 @@
         "isf": "Fait double emploi avec « ISF climatique (assiette élargie, barème progressif) », retenue à sa place : elle donne un meilleur bilan d'ensemble.",
         "isgrandes": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,09 %).",
         "superp": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,02 %).",
-        "rachats": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,00 %).",
         "minimum15": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,02 %).",
         "cir": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,03 %).",
         "cirgrandes": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,02 %).",
@@ -690,10 +693,10 @@
       ],
       "calcul": {
         "date": "2026-11-09",
-        "deficit2032": 7.14,
+        "deficit2032": 7.15,
         "dette2032": 138.6,
         "economies": 9.1,
-        "recettes": 16.9,
+        "recettes": 16.5,
         "depenses": 7,
         "baissesImpots": 8,
         "pibLongTerme": 0.35
