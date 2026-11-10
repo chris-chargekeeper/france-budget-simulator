@@ -1,6 +1,6 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "avertissement": "Les candidatures ne seront officielles qu'après validation des parrainages par le Conseil constitutionnel, au printemps 2027. Le site suit les candidats déclarés ou investis qui pèsent dans les sondages ; la liste est revérifiée chaque matin. Les programmes 2027 sont pour la plupart non publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
@@ -512,7 +512,7 @@
       "candidat": "Marine Tondelier",
       "avatar": "f",
       "couleur": "#4C9A54",
-      "statutCandidature": "Candidate, mais prête à se retirer pour une union de la gauche ; les adhérents tranchent le 13 décembre 2026",
+      "statutCandidature": "Candidate ; « ne se désistera pas » mais Les Écologistes sont « prêts à rejoindre une coalition » (TF1, 9 novembre 2026) ; les adhérents tranchent le 13 décembre 2026",
       "statut": "reconstitution",
       "annonce": {
         "titre": "Amendements chiffrés au budget 2027, pas de chiffrage présidentiel",
@@ -553,6 +553,10 @@
         {
           "t": "Marine Tondelier prête à retirer sa candidature « s'il y a un chemin de victoire » pour la gauche — BFMTV avec AFP, 26 octobre 2026",
           "u": "https://fr.news.yahoo.com/marine-tondelier-prete-a-retirer-114947363.html"
+        },
+        {
+          "t": "TF1 Info — Marine Tondelier invitée du 20H, 9 novembre 2026",
+          "u": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-marine-tondelier-invitee-du-20h-de-tf1-ce-lundi-9-novembre-colere-sociale-crise-lyceenne-pouvoir-d-achat-2474836.html"
         }
       ]
     },
@@ -659,14 +663,14 @@
         "retr62": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,72 %).",
         "retr60": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −1,33 %).",
         "indexation": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,10 % en 2032 et +0,07 % à long terme.",
-        "defense": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,58 point de PIB, production +0,62 % en 2032 et +0,12 % à long terme.",
+        "defense": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,59 point de PIB, production +0,62 % en 2032 et +0,12 % à long terme.",
         "services": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,07 % en 2032 et +0,03 % à long terme.",
         "ecolo": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,30 point de PIB, production +0,28 % en 2032 et +0,07 % à long terme.",
         "age": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,14 point de PIB, production +0,13 % en 2032 et +0,08 % à long terme.",
         "pointindice": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,19 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",
         "smic": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,11 % en 2032 et +0,02 % à long terme.",
         "smic1700": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,27 %).",
-        "pointindice10": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,71 point de PIB, production +0,66 % en 2032 et +0,12 % à long terme.",
+        "pointindice10": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,72 point de PIB, production +0,66 % en 2032 et +0,12 % à long terme.",
         "autonomie": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,37 point de PIB, production +0,29 % en 2032 et +0,20 % à long terme.",
         "cantine": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,18 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",
         "chomageplus": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,22 point de PIB, production +0,17 % en 2032 et +0,12 % à long terme.",
@@ -691,9 +695,9 @@
         }
       ],
       "calcul": {
-        "date": "2026-11-09",
-        "deficit2032": 7.15,
-        "dette2032": 138.3,
+        "date": "2026-11-10",
+        "deficit2032": 7.18,
+        "dette2032": 138.4,
         "economies": 0.1,
         "recettes": 21.6,
         "depenses": 4.2,

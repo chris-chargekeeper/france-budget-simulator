@@ -1,179 +1,758 @@
 {
   "_comment": "Catalogue de mesures. lo/mid/hi = bornes de chiffrage publiées, en Md€ à plein régime. ramp = années pour atteindre le plein régime à partir de 2027. behav = assiette exposée à une réaction des contribuables (capital, profit) ou null.",
   "measures": [
-
-  {"id":"zucman","g":"rec+","inst":"imp","lo":5,"mid":8,"hi":20,"ramp":2,"behav":"capital","disp":true,
-   "lab":"Impôt plancher de 2 % sur les patrimoines supérieurs à 100 M€",
-   "note":"Environ 1 800 foyers, un patrimoine agrégé de l'ordre de 1 000 Md€. Gabriel Zucman avance 15 à 25 Md€ ; l'administration et plusieurs économistes retiennent plutôt 5 Md€. L'écart ne porte pas sur le taux mais sur l'assiette retenue et sur la réaction des redevables. Rejetée par l'Assemblée nationale le 31 octobre 2025."},
-  {"id":"isf","g":"rec+","inst":"imp","lo":2,"mid":4,"hi":6,"ramp":1,"behav":"capital",
-   "lab":"Rétablissement d'un impôt sur la fortune au-delà de l'IFI",
-   "note":"L'ISF rapportait environ 5 Md€ en 2017 ; l'IFI qui l'a remplacé en rapporte environ 2. L'écart donne l'ordre de grandeur du rétablissement."},
-  {"id":"isfclim","g":"rec+","inst":"imp","lo":5,"mid":10,"hi":15,"ramp":2,"behav":"capital","disp":true,
-   "lab":"ISF climatique (assiette élargie, barème progressif)",
-   "note":"Chiffré à 12 Md€ par les programmes de gauche. Combine un ISF renforcé et une modulation selon l'empreinte carbone des actifs, dont le rendement propre n'a jamais été mesuré."},
-  {"id":"csgcap","g":"rec+","inst":"imp","lo":2,"mid":3,"hi":4,"ramp":1,"behav":"capital",
-   "lab":"CSG sur les revenus du capital : +2 points",
-   "note":"Assiette d'environ 150 Md€ de revenus du patrimoine et de placement."},
-  {"id":"pfu","g":"rec+","inst":"imp","lo":2,"mid":4,"hi":6,"ramp":1,"behav":"capital","disp":true,
-   "lab":"Fin du prélèvement forfaitaire unique : dividendes au barème progressif",
-   "note":"Rendement très sensible au comportement de distribution : la réforme de 2018 avait été suivie d'une forte hausse des dividendes versés. Une bonne part des 100 Md€ de dividendes va à des non-résidents ou à des sociétés mères, hors de portée du barème des particuliers."},
-  {"id":"isgrandes","g":"rec+","inst":"imp","lo":4,"mid":8,"hi":12,"ramp":2,"behav":"profit","disp":true,
-   "lab":"Surtaxe d'impôt sur les sociétés pour les grandes entreprises",
-   "note":"L'IS rapporte environ 60 Md€ sur 300 Md€ de bénéfices imposables. Les surtaxes votées en 2025 ont montré qu'un rendement affiché se réduit vite par optimisation du résultat imposable et localisation des charges."},
-  {"id":"superp","g":"rec+","inst":"imp","lo":2,"mid":4,"hi":15,"ramp":1,"behav":"profit","disp":true,
-   "lab":"Contribution sur les superprofits (énergie, transport, finance)",
-   "note":"Chiffrée jusqu'à 15 Md€ dans les programmes de gauche. Rendement structurellement volatil : il dépend du prix de l'énergie et des taux, donc il ne finance pas une dépense pérenne."},
-  {"id":"rachats","g":"rec+","inst":"imp","lo":0.5,"mid":1,"hi":2,"ramp":1,"behav":"profit",
-   "lab":"Taxe sur les rachats d'actions",
-   "note":"La taxe instaurée en 2024 rapporte quelques centaines de millions. Élargie, elle reste d'un ordre de grandeur inférieur aux annonces qui l'accompagnent."},
-  {"id":"minimum15","g":"rec+","inst":"imp","lo":1,"mid":1.5,"hi":3,"ramp":2,
-   "lab":"Impôt minimum mondial de 15 % sur les multinationales",
-   "note":"Le pilier 2 de l'accord OCDE est déjà transposé. Son rendement français est estimé entre 1 et 3 Md€, très en deçà des attentes initiales."},
-  {"id":"ttf","g":"rec+","inst":"imp","lo":1,"mid":3,"hi":6,"ramp":2,"behav":"profit","disp":true,
-   "lab":"Taxe sur les transactions financières élargie",
-   "note":"Chiffrée à 20 Md€ dans certains programmes. La TTF française actuelle rapporte environ 2 Md€ ; l'élargissement aux produits dérivés déplace une partie de l'activité hors de France, ce que les chiffrages hauts ne prennent pas en compte."},
-  {"id":"exit","g":"rec+","inst":"imp","lo":0.2,"mid":0.5,"hi":1,"ramp":2,"behav":"capital",
-   "lab":"Renforcement de l'exit tax",
-   "note":"Mesure défensive : son intérêt n'est pas son rendement propre mais la réduction de l'érosion d'assiette des autres impôts sur le capital."},
-  {"id":"succ","g":"rec+","inst":"imp","lo":2,"mid":3,"hi":5,"ramp":2,"behav":"capital",
-   "lab":"Réforme des droits de succession sur les hauts patrimoines",
-   "note":"Les droits de succession et de donation ont rapporté 20,8 Md€ en 2023 (16,6 sur les successions, 4,3 sur les donations) ; l'essentiel des transmissions est déjà exonéré, et les grandes transmissions d'entreprises le sont en grande partie par le pacte Dutreil (4 Md€ en 2026).",
-   "sources":[{"t": "Fipeco (François Ecalle), « Les droits de succession », novembre 2024, p. 1", "u": "https://fipeco.fr/pdf/Droits%20successions%202024.pdf", "d": "2026-11-09"}]},
-  {"id":"heritmax","g":"rec+","inst":"imp","lo":7,"mid":9,"hi":11,"ramp":2,"behav":"capital",
-   "lab":"Héritage maximum : tranche à 100 % au-delà de 12 M€ et droits relevés sur les plus hauts patrimoines",
-   "note":"L'Institut Montaigne chiffre une tranche à 100 % au-delà de 12 M€ reçus à 9 Md€ par an (7 à 11) : 8,7 Md€ avant réaction des héritiers, 20 % de pertes par départs dans l'hypothèse basse, jusqu'à 2 Md€ de plus si le pacte Dutreil et l'avantage de l'assurance-vie disparaissent au-delà de 12 M€. Il signale un « risque très important d'inconstitutionnalité » (impôt confiscatoire). Ni le cumul des dons et héritages sur toute la vie ni l'exonération des héritages sous 150 000 € ne sont chiffrés. LFI : 20 Md€ dès 2027, pour des recettes actuelles de 20,8 Md€.",
-   "sources":[{"t": "Institut Montaigne, présidentielle 2022, « Augmenter les droits de succession sur les plus hauts patrimoines et créer un héritage maximal de 12 M€ »", "u": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon/augmenter-les-droits-de-succession-sur-les-plus-hauts-patrimoines-et-creer-un-heritage-maximal-de-12-me", "d": "2026-11-09"}, {"t": "Fipeco (François Ecalle), « Les droits de succession », novembre 2024", "u": "https://fipeco.fr/pdf/Droits%20successions%202024.pdf", "d": "2026-11-09"}]},
-  {"id":"tva1","g":"rec+","inst":"imp","lo":8,"mid":9,"hi":10,"ramp":1,
-   "lab":"TVA : +1 point sur le taux normal (20 → 21 %)",
-   "note":"Un point de taux normal représente environ 9 Md€. C'est l'un des rares leviers de rendement immédiat et massif — et le plus régressif."},
-  {"id":"cir","g":"rec+","inst":"imp","lo":2,"mid":3,"hi":7,"ramp":2,
-   "lab":"Rabot du crédit d'impôt recherche",
-   "note":"Le CIR coûte environ 7,7 Md€ par an. Son efficacité sur la R&D privée fait l'objet d'évaluations contradictoires. En 2021, les grandes entreprises ont reçu 2,9 Md€ des 6,9 Md€ du CIR recherche (42 %), les PME 2,1 Md€ (31 %) : un rabot peut cibler les unes sans toucher les autres.",
-   "sources":[{"t":"Ministère de l'Enseignement supérieur et de la Recherche, « Le crédit d'impôt recherche en 2021 »","u":"https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2023-11/le-cr-dit-d-imp-t-recherche-en-2021---provisoire-30075.pdf","d":"2026-11-01"}]},
-  {"id":"cirgrandes","g":"rec+","inst":"imp","lo":1,"mid":1.5,"hi":3,"ramp":2,
-   "lab":"Rabot du crédit d'impôt recherche des seules grandes entreprises",
-   "note":"En 2021, les grandes entreprises ont reçu 2,9 Md€ des 6,9 Md€ du CIR recherche (42 %). Le rabot ne touche que leur créance : de 1 Md€ (un tiers) à 3 Md€ (la totalité), 1,5 Md€ pour une division par deux. Les PME et ETI gardent la leur.",
-   "sources":[{"t":"Ministère de l'Enseignement supérieur et de la Recherche, « Le crédit d'impôt recherche en 2021 »","u":"https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2023-11/le-cr-dit-d-imp-t-recherche-en-2021---provisoire-30075.pdf","d":"2026-11-06"}]},
-  {"id":"alleg","g":"rec+","inst":"imp","lo":3,"mid":6,"hi":12,"ramp":2,"disp":true,
-   "lab":"Réduction des allègements de cotisations sur les bas salaires",
-   "note":"Environ 75 Md€ d'allègements. Le rapport Bozio-Wasmer souligne que le rendement budgétaire se paie en partie en emplois détruits, donc en recettes perdues ailleurs."},
-  {"id":"fraude","g":"rec+","inst":"imp","lo":1,"mid":3,"hi":15,"ramp":3,"disp":true,
-   "lab":"Renforcement de la lutte contre la fraude fiscale et sociale",
-   "note":"Chiffré à 15 Md€ par le RN, jusqu'à 80 Md€ par LFI. L'écart fiscal estimé est effectivement de cet ordre, mais il mesure l'impôt manquant, pas l'impôt récupérable : les redressements notifiés dépassent 15 Md€ par an, les encaissements réels sont autour de 10, et l'essentiel serait recouvré même sans mesure nouvelle."},
-
-  {"id":"irbaisse","g":"rec-","inst":"imp","lo":3,"mid":5,"hi":10,"ramp":1,
-   "lab":"Baisse de l'impôt sur le revenu",
-   "note":"L'IR rapporte environ 95 Md€ et est acquitté par un peu moins de la moitié des foyers."},
-  {"id":"tvaener","g":"rec-","inst":"imp","lo":6,"mid":10,"hi":14,"ramp":1,
-   "lab":"TVA à 5,5 % sur l'électricité, le gaz et les carburants",
-   "note":"La fiscalité de l'énergie rapporte environ 40 Md€, la TVA sur l'énergie environ 12. Mesure portée par le RN comme par une partie de la gauche."},
-  {"id":"prod","g":"rec-","inst":"imp","lo":3,"mid":5,"hi":8,"ramp":2,
-   "lab":"Nouvelle baisse des impôts de production",
-   "note":"Après la CVAE, il reste principalement la CFE et la taxe foncière des entreprises."},
-  {"id":"csgbaisse","g":"rec-","inst":"imp","lo":5,"mid":8,"hi":12,"ramp":1,
-   "lab":"Baisse de la CSG ou des cotisations sur les revenus d'activité",
-   "note":"La CSG d'activité rapporte environ 105 Md€ : un point vaut à peu près 9 Md€."},
-
-  {"id":"retr62","g":"dep+","inst":"dep","lo":8,"mid":13,"hi":18,"ramp":5,
-   "lab":"Retour de l'âge légal à 62 ans",
-   "note":"Environ 3 Md€ dès la première année, la charge montant au fil des générations. Les retraites pèsent 390 Md€, soit près d'un quart de la dépense publique."},
-  {"id":"retr60","g":"dep+","inst":"dep","lo":20,"mid":30,"hi":45,"ramp":6,"disp":true,
-   "lab":"Retraite à 60 ans à taux plein",
-   "note":"Les chiffrages publiés vont de 20 à 45 Md€ à horizon 2035 selon la durée de cotisation exigée et l'hypothèse d'emploi des seniors. C'est la mesure la plus coûteuse du catalogue."},
-  {"id":"indexation","g":"dep+","inst":"dep","lo":2,"mid":4,"hi":6,"ramp":3,
-   "lab":"Indexation intégrale des retraites et prestations sur l'inflation",
-   "note":"Chaque point de sous-indexation des pensions représente environ 4 Md€ d'économie — et réciproquement."},
-  {"id":"defense","g":"dep+","inst":"dep","lo":12,"mid":22,"hi":32,"ramp":5,
-   "lab":"Effort de défense porté vers 3 % du PIB",
-   "note":"La mission Défense pèse environ 57 Md€ en 2026, soit un peu moins de 2 % du PIB."},
-  {"id":"services","g":"dep+","inst":"dep","lo":2,"mid":4,"hi":8,"ramp":3,
-   "lab":"Recrutements dans la santé, l'école et la justice",
-   "note":"Un poste coûte en moyenne 45 à 55 k€ par an, charges comprises : 50 000 postes représentent environ 2,5 Md€."},
-  {"id":"ecolo","g":"dep+","inst":"dep","lo":5,"mid":10,"hi":30,"ramp":3,
-   "lab":"Plan d'investissement écologique (rénovation, réseaux, ferroviaire)",
-   "note":"Le rapport Pisani-Ferry / Mahfouz chiffre le besoin d'investissement public additionnel autour de 25 à 30 Md€ par an."},
-  {"id":"innov","g":"dep+","inst":"dep","lo":1,"mid":3,"hi":6,"ramp":3,
-   "lab":"Innovation et souveraineté technologique : prolonger France 2030 (IA, deeptech, Bpifrance)",
-   "note":"France 2030 engage 54 Md€, opérés par Bpifrance, l'ANR, l'ADEME et la Caisse des dépôts. Ses crédits reculent : 4,0 Md€ en 2027 contre 4,4 Md€ en 2026 et 7,3 Md€ en 2024, sans nouvel engagement en 2027. Aucun chiffrage publié n'existe pour la suite : les bornes sont tirées du budget. Basse : retrouver le niveau de 2026 et rouvrir les engagements. Centrale : revenir au rythme de 2024. Haute : un plan successeur de la taille de France 2030, environ 6 Md€ par an.",
-   "sources":[{"t":"Projet annuel de performances 2027, mission « Investir pour la France de 2030 »","u":"https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1128240/file/PAP%202027%20-%20Investir%20pour%20la%20France%20de%202030.pdf","d":"2026-11-01"},
-              {"t":"Sénat, rapport sur le PLF 2024, mission « Investir pour la France de 2030 » (7,3 Md€ pour France 2030 en 2024)","u":"https://www.senat.fr/rap/l23-128-317/l23-128-31715.html","d":"2026-11-01"}]},
-  {"id":"age","g":"dep+","inst":"dep","lo":3,"mid":5,"hi":9,"ramp":4,
-   "lab":"Montée en charge de la branche autonomie (grand âge)",
-   "note":"La branche autonomie pèse environ 40 Md€ ; le nombre de personnes de plus de 85 ans double d'ici 2040."},
-  {"id":"pointindice","g":"dep+","inst":"dep","lo":4,"mid":6,"hi":8,"ramp":2,
-   "lab":"Revalorisation du point d'indice de la fonction publique (+3 %)",
-   "note":"Un point d'indice vaut environ 2 Md€ pour l'ensemble des trois fonctions publiques."},
-  {"id":"smic","g":"dep+","inst":"dep","lo":2,"mid":4,"hi":7,"ramp":2,
-   "lab":"Hausse du SMIC et des bas salaires du secteur public",
-   "note":"Effet budgétaire direct par la fonction publique et par le glissement des allègements de cotisations, qui se déclenchent en proportion du SMIC."},
-  {"id":"smic1700","g":"dep+","inst":"dep","lo":16,"mid":20,"hi":25,"ramp":1,
-   "lab":"Smic à 1 700 € net (+15 %), allègements de cotisations suivant le Smic",
-   "note":"Le Smic net est d'environ 1 478 € depuis juin 2026 : 1 700 € font +15 %. L'Institut Montaigne chiffre une hausse de 14,4 % (Smic à 1 600 €, 2024) à 19,2 Md€ par an pour les administrations (17 à 21) : allègements de cotisations +21,5, salaires publics +3,7, impôts et cotisations en plus −6. Porté à +15 % : environ 20 Md€. Borne basse : baisse de la prime d'activité, non comptée par Montaigne ; borne haute : coût des emplois perdus pour l'assurance chômage, exclu par Montaigne. Si les allègements restaient calculés sur l'ancien Smic, le coût budgétaire baisserait mais les pertes d'emplois augmenteraient. Les pertes d'emplois privés sont comptées dans les effets en chaîne.",
-   "sources":[{"t": "Institut Montaigne, « Augmenter le Smic à 1 600 € net », chiffrage du programme du Nouveau Front populaire, 24 juin 2024", "u": "https://www.institutmontaigne.org/legislatives-2024/nouveau-front-populaire/augmenter-le-smic-a-1600-e-net", "d": "2026-11-09"}, {"t": "Groupe d'experts sur le Smic, rapport de novembre 2025 (élasticités de l'emploi au coût du travail au Smic, p. 145)", "u": "https://www.vie-publique.fr/files/rapport/pdf/301429_0.pdf", "d": "2026-11-09"}]},
-  {"id":"pointindice10","g":"dep+","inst":"dep","lo":21,"mid":23,"hi":24,"ramp":2,
-   "lab":"Revalorisation du point d'indice de la fonction publique (+10 %)",
-   "note":"Une hausse de 1 % du point coûte 2,4 Md€ pour les trois fonctions publiques (DGAFP, rendez-vous salarial de juillet 2026), contre 2,1 à 2,2 Md€ en 2022-2023 (Sénat). Coût brut ; une partie revient en cotisations et en impôt, d'où des chiffrages nets plus bas (17 Md€ selon LFI).",
-   "sources":[{"t": "DGAFP, rendez-vous salarial du 8 juillet 2026 : « une hausse de 1 % de la valeur du point représente un coût de 2,4 Md€ » (diaporama)", "u": "https://www.cfdt-ufetam.org/wp-content/uploads/2026/07/rdv_salarial_2026_diapo_presentation.pdf", "d": "2026-11-09"}, {"t": "Sénat, avis de Catherine Di Folco sur le PLF 2024 : coût des hausses de 3,5 % (7,6 Md€) et 1,5 % (3,2 Md€), repris par Acteurs publics", "u": "https://acteurspublics.fr/articles/la-facture-de-la-hausse-du-point-dindice-pour-chacun-des-3-versants-de-la-fonction-publique", "d": "2026-11-09"}]},
-  {"id":"autonomie","g":"dep+","inst":"dep","lo":7,"mid":12,"hi":20,"ramp":2,
-   "lab":"Garantie d'autonomie des jeunes (revenu porté au seuil de pauvreté)",
-   "note":"Aucun chiffrage indépendant ne porte sur un revenu de 1 337 € par mois. Ouvrir le RSA dès 18 ans coûterait jusqu'à 6,6 Md€ (DG Trésor, cité par le rapport Sirugue, 2016) ; l'Institut Montaigne (2022) chiffrait 12,3 Md€ pour une garantie à 1 063 €, avec un recours complet. LFI : 9,5 Md€.",
-   "sources":[{"t": "Rapport Sirugue, « Repenser les minima sociaux », avril 2016, p. 50 (chiffrages Drees et DG Trésor d'un RSA jeunes)", "u": "https://www.vie-publique.fr/files/rapport/pdf/164000239.pdf", "d": "2026-11-09"}, {"t": "IPP, rapport n° 44, « Les effets d'un RSA jeunes », juillet 2023, p. 16", "u": "https://www.ipp.eu/wp-content/uploads/2025/06/44_Rapport_ESH_jeunes-5.pdf", "d": "2026-11-09"}]},
-  {"id":"cantine","g":"dep+","inst":"dep","lo":3.2,"mid":6,"hi":9,"ramp":3,
-   "lab":"Gratuité de la cantine scolaire",
-   "note":"Les familles paient environ la moitié des quelque 12 Md€ que coûte la cantine. Gratuité de la maternelle au lycée : 7 à 9 Md€ avec la hausse de fréquentation (HCFEA, 2024). Public seul et fréquentation constante : environ 4,4 Md€, dont 3,2 Md€ pour le primaire et le collège (calcul d'après l'OFCE). LFI : 3,6 Md€.",
-   "sources":[{"t": "Haut Conseil de la famille, de l'enfance et de l'âge, « La restauration scolaire », 26 novembre 2024, p. 133-134", "u": "https://www.hcfea.gouv.fr/sites/hcfea/files/files-spip/pdf/la_restauration_scolaire_rapport.pdf", "d": "2026-11-09"}, {"t": "OFCE, chiffrage des programmes des législatives 2024, politiques familiales, tableau 3", "u": "https://www.ofce-legislatives2024.fr/analyses/familles.html", "d": "2026-11-09"}]},
-  {"id":"chomageplus","g":"dep+","inst":"dep","lo":5,"mid":7,"hi":9,"ramp":2,
-   "lab":"Abrogation des réformes de l'assurance chômage depuis 2019",
-   "note":"Économies chiffrées par l'Unédic, à plein régime : 2,3 Md€ par an pour la réforme 2019-2021, 4,5 Md€ pour la contracyclicité de 2023, 1,5 Md€ pour la convention de 2024. LFI : 3 Md€.",
-   "sources":[{"t": "Unédic, « Évaluation de la réforme d'assurance chômage 2019-2021 », 20 mars 2025", "u": "https://www.unedic.org/publications", "d": "2026-11-09"}, {"t": "Unédic, « Premiers effets de la réforme de contracyclicité » et étude d'impact de la convention du 15 novembre 2024 (25 février 2025)", "u": "https://www.unedic.org/publications", "d": "2026-11-09"}]},
-  {"id":"violences","g":"dep+","inst":"dep","lo":1.8,"mid":3.5,"hi":4.6,"ramp":3,
-   "lab":"Plans contre les violences sexistes et sexuelles et les violences faites aux enfants",
-   "note":"Le gouvernement compte environ 1,5 Md€ déjà engagés contre les violences sexistes et sexuelles (septembre 2026). La Fondation des femmes, une association, estime le besoin entre 2,6 et 5,4 Md€ par an ; l'aide sociale à l'enfance coûte 11,7 Md€ aux départements (Drees). LFI : +2,6 et +2 Md€.",
-   "sources":[{"t": "Sénat, question écrite n° 06031 (4 septembre 2025), reprenant le chiffrage de la Fondation des femmes", "u": "https://www.senat.fr/questions/base/2025/qSEQ250906031.html", "d": "2026-11-09"}, {"t": "Drees, dépenses d'aide sociale des départements en 2024 (avril 2026)", "u": "https://drees.solidarites-sante.gouv.fr/communique-de-presse-jeux-de-donnees/jeux-de-donnees/laugmentation-des-depenses-daide-sociale-des", "d": "2026-11-09"}]},
-  {"id":"logurgence","g":"dep+","inst":"dep","lo":0.4,"mid":1.2,"hi":3,"ramp":3,
-   "lab":"Hébergement et logement d'urgence (places nouvelles, réquisitions)",
-   "note":"Le programme 177 dispose d'environ 3 Md€ pour 203 000 places ; plus de 60 % des demandes au 115 restent sans réponse (Sénat, PLF 2026). 1,2 Md€ représentent environ 80 000 places de plus ; 3 Md€, un doublement du parc. LFI : 3 Md€.",
-   "sources":[{"t": "Sénat, avis de la commission des affaires sociales sur le programme 177, PLF 2026 (26 novembre 2025)", "u": "https://www.senat.fr/rap/a25-142-2/a25-142-2-syn.pdf", "d": "2026-11-09"}]},
-  {"id":"coupes2026","g":"dep+","inst":"dep","lo":4,"mid":6,"hi":7.5,"ramp":1,
-   "lab":"Annulation des coupes budgétaires de 2026 et indexation des crédits sur l'inflation",
-   "note":"La loi de finances 2026 a réduit notamment le travail et l'emploi (−2,4 Md€), la culture et l'aide au développement ; le PLF 2027 prévoit −2,8 Md€ sur le travail et des crédits hors défense en hausse de 0,4 %, quatre fois moins que l'inflation (Bercy, plafonds de dépenses, juillet 2026). LFI : 7 Md€.",
-   "sources":[{"t": "Sénat, rapport sur la mission Travail et emploi, PLF 2026", "u": "https://www.senat.fr/rap/l25-139-331/l25-139-331-syn.pdf", "d": "2026-11-09"}, {"t": "Focus 2030, plafonds de dépenses du PLF 2027 (juillet 2026)", "u": "https://focus2030.org/wp-content/uploads/2026/07/Tire-a-part-PLF2027.pdf", "d": "2026-11-09"}]},
-
-  {"id":"effectifs","g":"dep-","inst":"dep","lo":3,"mid":4,"hi":6,"ramp":4,
-   "lab":"Réduction de 5 % des effectifs de l'État et de ses opérateurs",
-   "note":"2,5 millions d'agents pour l'État et ses opérateurs. Une baisse de 5 % suppose de ne pas remplacer environ 125 000 départs."},
-  {"id":"collectivites","g":"dep-","inst":"dep","lo":3,"mid":5,"hi":10,"ramp":2,
-   "lab":"Baisse des concours financiers aux collectivités",
-   "note":"Les collectivités portent environ 290 Md€ de dépenses, dont l'essentiel de l'investissement public civil."},
-  {"id":"chomage","g":"dep-","inst":"dep","lo":2,"mid":4,"hi":6,"ramp":2,
-   "lab":"Nouvelle réforme de l'assurance chômage",
-   "note":"L'Unédic verse environ 32 Md€ d'allocations. Le rendement dépend de la conjoncture : il s'effondre en récession."},
-  {"id":"niches","g":"dep-","inst":"dep","lo":5,"mid":10,"hi":25,"ramp":3,"disp":true,
-   "lab":"Rabot des niches fiscales et des aides aux entreprises",
-   "note":"Selon le périmètre retenu, les aides publiques aux entreprises sont estimées entre 110 et 200 Md€. Le désaccord porte sur ce qui compte comme « aide » : les allègements de cotisations en représentent à eux seuls 75."},
-  {"id":"blanche","g":"dep-","inst":"dep","lo":5,"mid":7,"hi":10,"ramp":1,
-   "lab":"Année blanche : gel des barèmes et des prestations",
-   "note":"Économie immédiate et large, mais non reconductible indéfiniment : elle se rattrape en partie l'année suivante."},
-  {"id":"age65","g":"dep-","inst":"dep","lo":5,"mid":9,"hi":14,"ramp":6,
-   "lab":"Âge légal de départ porté à 65 ans",
-   "note":"Le rendement d'une réforme des retraites est lent : il croît avec chaque génération concernée."},
-  {"id":"ondam","g":"dep-","inst":"dep","lo":3,"mid":5,"hi":9,"ramp":2,
-   "lab":"Freinage de l'ONDAM (dépenses d'assurance maladie)",
-   "note":"L'ONDAM approche 270 Md€ : un ralentissement de 0,5 point de sa progression représente environ 1,4 Md€ par an."},
-  {"id":"agences","g":"dep-","inst":"dep","lo":1,"mid":2,"hi":3,"ramp":3,
-   "lab":"Suppression ou fusion d'agences et d'opérateurs de l'État",
-   "note":"Les rapports parlementaires convergent vers 2 à 3 Md€, à condition de supprimer les missions et pas seulement les structures."},
-  {"id":"immigration","g":"dep-","inst":"dep","lo":1,"mid":3,"hi":10,"ramp":3,"disp":true,
-   "lab":"Réduction des dépenses liées à l'immigration",
-   "note":"Chiffrée à 25 Md€ par le RN. Les postes identifiables sont d'un tout autre ordre : aide médicale d'État 1,3 Md€, hébergement d'urgence et demande d'asile environ 3 Md€, aide au retour quelques centaines de millions. Les chiffrages hauts agrègent des prestations de droit commun versées à des personnes en situation régulière, et ne déduisent pas les cotisations et impôts que ces mêmes personnes acquittent."},
-  {"id":"ue","g":"dep-","inst":"dep","lo":0,"mid":2,"hi":8,"ramp":3,"disp":true,
-   "lab":"Réduction de la contribution française au budget de l'Union européenne",
-   "note":"Chiffrée à 10 Md€ par le RN. La contribution brute est d'environ 27 Md€ pour environ 15 Md€ de retours. La réduire unilatéralement n'est pas possible : le cadre financier pluriannuel se décide à l'unanimité et la contribution est une ressource propre de l'Union."},
-  {"id":"ame","g":"dep-","inst":"dep","lo":0.5,"mid":0.9,"hi":1.3,"ramp":1,
-   "lab":"Suppression de l'aide médicale d'État",
-   "note":"1,3 Md€, soit 0,08 % de la dépense publique."},
-  {"id":"institutions","g":"dep-","inst":"dep","lo":0.05,"mid":0.15,"hi":0.3,"ramp":2,
-   "lab":"Réduction du train de vie des institutions et du nombre de parlementaires",
-   "note":"L'ensemble Élysée, Assemblée, Sénat et Conseil constitutionnel coûte 1,14 Md€, soit un euro pour mille euros de dépense publique. Supprimé en totalité, ce poste modifierait peu la trajectoire."}
+    {
+      "id": "zucman",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 5,
+      "mid": 8,
+      "hi": 20,
+      "ramp": 2,
+      "behav": "capital",
+      "disp": true,
+      "lab": "Impôt plancher de 2 % sur les patrimoines supérieurs à 100 M€",
+      "note": "Environ 1 800 foyers, un patrimoine agrégé de l'ordre de 1 000 Md€. Gabriel Zucman avance 15 à 25 Md€ ; l'administration et plusieurs économistes retiennent plutôt 5 Md€. L'écart ne porte pas sur le taux mais sur l'assiette retenue et sur la réaction des redevables. Rejetée par l'Assemblée nationale le 31 octobre 2025."
+    },
+    {
+      "id": "isf",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 2,
+      "mid": 4,
+      "hi": 6,
+      "ramp": 1,
+      "behav": "capital",
+      "lab": "Rétablissement d'un impôt sur la fortune au-delà de l'IFI",
+      "note": "L'ISF rapportait environ 5 Md€ en 2017 ; l'IFI qui l'a remplacé en rapporte environ 2. L'écart donne l'ordre de grandeur du rétablissement."
+    },
+    {
+      "id": "isfclim",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 5,
+      "mid": 10,
+      "hi": 15,
+      "ramp": 2,
+      "behav": "capital",
+      "disp": true,
+      "lab": "ISF climatique (assiette élargie, barème progressif)",
+      "note": "Chiffré à 12 Md€ par les programmes de gauche. Combine un ISF renforcé et une modulation selon l'empreinte carbone des actifs, dont le rendement propre n'a jamais été mesuré."
+    },
+    {
+      "id": "csgcap",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 2,
+      "mid": 3,
+      "hi": 4,
+      "ramp": 1,
+      "behav": "capital",
+      "lab": "CSG sur les revenus du capital : +2 points",
+      "note": "Assiette d'environ 150 Md€ de revenus du patrimoine et de placement."
+    },
+    {
+      "id": "pfu",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 2,
+      "mid": 4,
+      "hi": 6,
+      "ramp": 1,
+      "behav": "capital",
+      "disp": true,
+      "lab": "Fin du prélèvement forfaitaire unique : dividendes au barème progressif",
+      "note": "Rendement très sensible au comportement de distribution : la réforme de 2018 avait été suivie d'une forte hausse des dividendes versés. Une bonne part des 100 Md€ de dividendes va à des non-résidents ou à des sociétés mères, hors de portée du barème des particuliers."
+    },
+    {
+      "id": "isgrandes",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 4,
+      "mid": 8,
+      "hi": 12,
+      "ramp": 2,
+      "behav": "profit",
+      "disp": true,
+      "lab": "Surtaxe d'impôt sur les sociétés pour les grandes entreprises",
+      "note": "L'IS rapporte environ 60 Md€ sur 300 Md€ de bénéfices imposables. Les surtaxes votées en 2025 ont montré qu'un rendement affiché se réduit vite par optimisation du résultat imposable et localisation des charges."
+    },
+    {
+      "id": "superp",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 2,
+      "mid": 4,
+      "hi": 15,
+      "ramp": 1,
+      "behav": "profit",
+      "disp": true,
+      "lab": "Contribution sur les superprofits (énergie, transport, finance)",
+      "note": "Chiffrée jusqu'à 15 Md€ dans les programmes de gauche. Rendement structurellement volatil : il dépend du prix de l'énergie et des taux, donc il ne finance pas une dépense pérenne."
+    },
+    {
+      "id": "rachats",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 0.5,
+      "mid": 1,
+      "hi": 2,
+      "ramp": 1,
+      "behav": "profit",
+      "lab": "Taxe sur les rachats d'actions",
+      "note": "La taxe instaurée en 2024 rapporte quelques centaines de millions. Élargie, elle reste d'un ordre de grandeur inférieur aux annonces qui l'accompagnent."
+    },
+    {
+      "id": "minimum15",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 1,
+      "mid": 1.5,
+      "hi": 3,
+      "ramp": 2,
+      "lab": "Impôt minimum mondial de 15 % sur les multinationales",
+      "note": "Le pilier 2 de l'accord OCDE est déjà transposé. Son rendement français est estimé entre 1 et 3 Md€, très en deçà des attentes initiales."
+    },
+    {
+      "id": "ttf",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 1,
+      "mid": 3,
+      "hi": 6,
+      "ramp": 2,
+      "behav": "profit",
+      "disp": true,
+      "lab": "Taxe sur les transactions financières élargie",
+      "note": "Chiffrée à 20 Md€ dans certains programmes. La TTF française actuelle rapporte environ 2 Md€ ; l'élargissement aux produits dérivés déplace une partie de l'activité hors de France, ce que les chiffrages hauts ne prennent pas en compte."
+    },
+    {
+      "id": "exit",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 0.2,
+      "mid": 0.5,
+      "hi": 1,
+      "ramp": 2,
+      "behav": "capital",
+      "lab": "Renforcement de l'exit tax",
+      "note": "Mesure défensive : son intérêt n'est pas son rendement propre mais la réduction de l'érosion d'assiette des autres impôts sur le capital."
+    },
+    {
+      "id": "succ",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 2,
+      "mid": 3,
+      "hi": 5,
+      "ramp": 2,
+      "behav": "capital",
+      "lab": "Réforme des droits de succession sur les hauts patrimoines",
+      "note": "Les droits de succession et de donation ont rapporté 20,8 Md€ en 2023 (16,6 sur les successions, 4,3 sur les donations) ; l'essentiel des transmissions est déjà exonéré, et les grandes transmissions d'entreprises le sont en grande partie par le pacte Dutreil (4 Md€ en 2026).",
+      "sources": [
+        {
+          "t": "Fipeco (François Ecalle), « Les droits de succession », novembre 2024, p. 1",
+          "u": "https://fipeco.fr/pdf/Droits%20successions%202024.pdf",
+          "d": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "heritmax",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 7,
+      "mid": 9,
+      "hi": 11,
+      "ramp": 2,
+      "behav": "capital",
+      "lab": "Héritage maximum : tranche à 100 % au-delà de 12 M€ et droits relevés sur les plus hauts patrimoines",
+      "note": "L'Institut Montaigne chiffre une tranche à 100 % au-delà de 12 M€ reçus à 9 Md€ par an (7 à 11) : 8,7 Md€ avant réaction des héritiers, 20 % de pertes par départs dans l'hypothèse basse, jusqu'à 2 Md€ de plus si le pacte Dutreil et l'avantage de l'assurance-vie disparaissent au-delà de 12 M€. Il signale un « risque très important d'inconstitutionnalité » (impôt confiscatoire). Ni le cumul des dons et héritages sur toute la vie ni l'exonération des héritages sous 150 000 € ne sont chiffrés. LFI : 20 Md€ dès 2027, pour des recettes actuelles de 20,8 Md€.",
+      "sources": [
+        {
+          "t": "Institut Montaigne, présidentielle 2022, « Augmenter les droits de succession sur les plus hauts patrimoines et créer un héritage maximal de 12 M€ »",
+          "u": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon/augmenter-les-droits-de-succession-sur-les-plus-hauts-patrimoines-et-creer-un-heritage-maximal-de-12-me",
+          "d": "2026-11-09"
+        },
+        {
+          "t": "Fipeco (François Ecalle), « Les droits de succession », novembre 2024",
+          "u": "https://fipeco.fr/pdf/Droits%20successions%202024.pdf",
+          "d": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "tva1",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 8,
+      "mid": 9,
+      "hi": 10,
+      "ramp": 1,
+      "lab": "TVA : +1 point sur le taux normal (20 → 21 %)",
+      "note": "Un point de taux normal représente environ 9 Md€. C'est l'un des rares leviers de rendement immédiat et massif — et le plus régressif."
+    },
+    {
+      "id": "cir",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 2,
+      "mid": 3,
+      "hi": 7,
+      "ramp": 2,
+      "lab": "Rabot du crédit d'impôt recherche",
+      "note": "Le CIR coûte environ 7,7 Md€ par an. Son efficacité sur la R&D privée fait l'objet d'évaluations contradictoires. En 2021, les grandes entreprises ont reçu 2,9 Md€ des 6,9 Md€ du CIR recherche (42 %), les PME 2,1 Md€ (31 %) : un rabot peut cibler les unes sans toucher les autres.",
+      "sources": [
+        {
+          "t": "Ministère de l'Enseignement supérieur et de la Recherche, « Le crédit d'impôt recherche en 2021 »",
+          "u": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2023-11/le-cr-dit-d-imp-t-recherche-en-2021---provisoire-30075.pdf",
+          "d": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "cirgrandes",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 1,
+      "mid": 1.5,
+      "hi": 3,
+      "ramp": 2,
+      "lab": "Rabot du crédit d'impôt recherche des seules grandes entreprises",
+      "note": "En 2021, les grandes entreprises ont reçu 2,9 Md€ des 6,9 Md€ du CIR recherche (42 %). Le rabot ne touche que leur créance : de 1 Md€ (un tiers) à 3 Md€ (la totalité), 1,5 Md€ pour une division par deux. Les PME et ETI gardent la leur.",
+      "sources": [
+        {
+          "t": "Ministère de l'Enseignement supérieur et de la Recherche, « Le crédit d'impôt recherche en 2021 »",
+          "u": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2023-11/le-cr-dit-d-imp-t-recherche-en-2021---provisoire-30075.pdf",
+          "d": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "alleg",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 3,
+      "mid": 6,
+      "hi": 12,
+      "ramp": 2,
+      "disp": true,
+      "lab": "Réduction des allègements de cotisations sur les bas salaires",
+      "note": "Environ 75 Md€ d'allègements. Le rapport Bozio-Wasmer souligne que le rendement budgétaire se paie en partie en emplois détruits, donc en recettes perdues ailleurs.",
+      "sources": [
+        {
+          "t": "Cour des comptes, Contribution au rétablissement des finances publiques, 9 nov. 2026, mesure n° 13 : 3,5 Md€, dont 2,5 Md€ pour le gel des allègements généraux jusqu'à fin 2027",
+          "u": "https://www.ccomptes.fr/fr/publications/contribution-au-retablissement-des-finances-publiques",
+          "d": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "fraude",
+      "g": "rec+",
+      "inst": "imp",
+      "lo": 1,
+      "mid": 3,
+      "hi": 15,
+      "ramp": 3,
+      "disp": true,
+      "lab": "Renforcement de la lutte contre la fraude fiscale et sociale",
+      "note": "Chiffré à 15 Md€ par le RN, jusqu'à 80 Md€ par LFI. L'écart fiscal estimé est effectivement de cet ordre, mais il mesure l'impôt manquant, pas l'impôt récupérable : les redressements notifiés dépassent 15 Md€ par an, les encaissements réels sont autour de 10, et l'essentiel serait recouvré même sans mesure nouvelle."
+    },
+    {
+      "id": "irbaisse",
+      "g": "rec-",
+      "inst": "imp",
+      "lo": 3,
+      "mid": 5,
+      "hi": 10,
+      "ramp": 1,
+      "lab": "Baisse de l'impôt sur le revenu",
+      "note": "L'IR rapporte environ 95 Md€ et est acquitté par un peu moins de la moitié des foyers."
+    },
+    {
+      "id": "tvaener",
+      "g": "rec-",
+      "inst": "imp",
+      "lo": 6,
+      "mid": 10,
+      "hi": 14,
+      "ramp": 1,
+      "lab": "TVA à 5,5 % sur l'électricité, le gaz et les carburants",
+      "note": "La fiscalité de l'énergie rapporte environ 40 Md€, la TVA sur l'énergie environ 12. Mesure portée par le RN comme par une partie de la gauche."
+    },
+    {
+      "id": "prod",
+      "g": "rec-",
+      "inst": "imp",
+      "lo": 3,
+      "mid": 5,
+      "hi": 8,
+      "ramp": 2,
+      "lab": "Nouvelle baisse des impôts de production",
+      "note": "Après la CVAE, il reste principalement la CFE et la taxe foncière des entreprises."
+    },
+    {
+      "id": "csgbaisse",
+      "g": "rec-",
+      "inst": "imp",
+      "lo": 5,
+      "mid": 8,
+      "hi": 12,
+      "ramp": 1,
+      "lab": "Baisse de la CSG ou des cotisations sur les revenus d'activité",
+      "note": "La CSG d'activité rapporte environ 105 Md€ : un point vaut à peu près 9 Md€."
+    },
+    {
+      "id": "retr62",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 8,
+      "mid": 13,
+      "hi": 18,
+      "ramp": 5,
+      "lab": "Retour de l'âge légal à 62 ans",
+      "note": "Environ 3 Md€ dès la première année, la charge montant au fil des générations. Les retraites pèsent 390 Md€, soit près d'un quart de la dépense publique."
+    },
+    {
+      "id": "retr60",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 20,
+      "mid": 30,
+      "hi": 45,
+      "ramp": 6,
+      "disp": true,
+      "lab": "Retraite à 60 ans à taux plein",
+      "note": "Les chiffrages publiés vont de 20 à 45 Md€ à horizon 2035 selon la durée de cotisation exigée et l'hypothèse d'emploi des seniors. C'est la mesure la plus coûteuse du catalogue."
+    },
+    {
+      "id": "indexation",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 2,
+      "mid": 4,
+      "hi": 6,
+      "ramp": 3,
+      "lab": "Indexation intégrale des retraites et prestations sur l'inflation",
+      "note": "Chaque point de sous-indexation des pensions représente environ 4 Md€ d'économie — et réciproquement."
+    },
+    {
+      "id": "defense",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 12,
+      "mid": 22,
+      "hi": 32,
+      "ramp": 5,
+      "lab": "Effort de défense porté vers 3 % du PIB",
+      "note": "La mission Défense pèse environ 57 Md€ en 2026, soit un peu moins de 2 % du PIB."
+    },
+    {
+      "id": "services",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 2,
+      "mid": 4,
+      "hi": 8,
+      "ramp": 3,
+      "lab": "Recrutements dans la santé, l'école et la justice",
+      "note": "Un poste coûte en moyenne 45 à 55 k€ par an, charges comprises : 50 000 postes représentent environ 2,5 Md€."
+    },
+    {
+      "id": "ecolo",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 5,
+      "mid": 10,
+      "hi": 30,
+      "ramp": 3,
+      "lab": "Plan d'investissement écologique (rénovation, réseaux, ferroviaire)",
+      "note": "Le rapport Pisani-Ferry / Mahfouz chiffre le besoin d'investissement public additionnel autour de 25 à 30 Md€ par an."
+    },
+    {
+      "id": "innov",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 1,
+      "mid": 3,
+      "hi": 6,
+      "ramp": 3,
+      "lab": "Innovation et souveraineté technologique : prolonger France 2030 (IA, deeptech, Bpifrance)",
+      "note": "France 2030 engage 54 Md€, opérés par Bpifrance, l'ANR, l'ADEME et la Caisse des dépôts. Ses crédits reculent : 4,0 Md€ en 2027 contre 4,4 Md€ en 2026 et 7,3 Md€ en 2024, sans nouvel engagement en 2027. Aucun chiffrage publié n'existe pour la suite : les bornes sont tirées du budget. Basse : retrouver le niveau de 2026 et rouvrir les engagements. Centrale : revenir au rythme de 2024. Haute : un plan successeur de la taille de France 2030, environ 6 Md€ par an.",
+      "sources": [
+        {
+          "t": "Projet annuel de performances 2027, mission « Investir pour la France de 2030 »",
+          "u": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1128240/file/PAP%202027%20-%20Investir%20pour%20la%20France%20de%202030.pdf",
+          "d": "2026-11-01"
+        },
+        {
+          "t": "Sénat, rapport sur le PLF 2024, mission « Investir pour la France de 2030 » (7,3 Md€ pour France 2030 en 2024)",
+          "u": "https://www.senat.fr/rap/l23-128-317/l23-128-31715.html",
+          "d": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "age",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 3,
+      "mid": 5,
+      "hi": 9,
+      "ramp": 4,
+      "lab": "Montée en charge de la branche autonomie (grand âge)",
+      "note": "La branche autonomie pèse environ 40 Md€ ; le nombre de personnes de plus de 85 ans double d'ici 2040."
+    },
+    {
+      "id": "pointindice",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 4,
+      "mid": 6,
+      "hi": 8,
+      "ramp": 2,
+      "lab": "Revalorisation du point d'indice de la fonction publique (+3 %)",
+      "note": "Un point d'indice vaut environ 2 Md€ pour l'ensemble des trois fonctions publiques."
+    },
+    {
+      "id": "smic",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 2,
+      "mid": 4,
+      "hi": 7,
+      "ramp": 2,
+      "lab": "Hausse du SMIC et des bas salaires du secteur public",
+      "note": "Effet budgétaire direct par la fonction publique et par le glissement des allègements de cotisations, qui se déclenchent en proportion du SMIC."
+    },
+    {
+      "id": "smic1700",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 16,
+      "mid": 20,
+      "hi": 25,
+      "ramp": 1,
+      "lab": "Smic à 1 700 € net (+15 %), allègements de cotisations suivant le Smic",
+      "note": "Le Smic net est d'environ 1 478 € depuis juin 2026 : 1 700 € font +15 %. L'Institut Montaigne chiffre une hausse de 14,4 % (Smic à 1 600 €, 2024) à 19,2 Md€ par an pour les administrations (17 à 21) : allègements de cotisations +21,5, salaires publics +3,7, impôts et cotisations en plus −6. Porté à +15 % : environ 20 Md€. Borne basse : baisse de la prime d'activité, non comptée par Montaigne ; borne haute : coût des emplois perdus pour l'assurance chômage, exclu par Montaigne. Si les allègements restaient calculés sur l'ancien Smic, le coût budgétaire baisserait mais les pertes d'emplois augmenteraient. Les pertes d'emplois privés sont comptées dans les effets en chaîne.",
+      "sources": [
+        {
+          "t": "Institut Montaigne, « Augmenter le Smic à 1 600 € net », chiffrage du programme du Nouveau Front populaire, 24 juin 2024",
+          "u": "https://www.institutmontaigne.org/legislatives-2024/nouveau-front-populaire/augmenter-le-smic-a-1600-e-net",
+          "d": "2026-11-09"
+        },
+        {
+          "t": "Groupe d'experts sur le Smic, rapport de novembre 2025 (élasticités de l'emploi au coût du travail au Smic, p. 145)",
+          "u": "https://www.vie-publique.fr/files/rapport/pdf/301429_0.pdf",
+          "d": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "pointindice10",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 21,
+      "mid": 23,
+      "hi": 24,
+      "ramp": 2,
+      "lab": "Revalorisation du point d'indice de la fonction publique (+10 %)",
+      "note": "Une hausse de 1 % du point coûte 2,4 Md€ pour les trois fonctions publiques (DGAFP, rendez-vous salarial de juillet 2026), contre 2,1 à 2,2 Md€ en 2022-2023 (Sénat). Coût brut ; une partie revient en cotisations et en impôt, d'où des chiffrages nets plus bas (17 Md€ selon LFI).",
+      "sources": [
+        {
+          "t": "DGAFP, rendez-vous salarial du 8 juillet 2026 : « une hausse de 1 % de la valeur du point représente un coût de 2,4 Md€ » (diaporama)",
+          "u": "https://www.cfdt-ufetam.org/wp-content/uploads/2026/07/rdv_salarial_2026_diapo_presentation.pdf",
+          "d": "2026-11-09"
+        },
+        {
+          "t": "Sénat, avis de Catherine Di Folco sur le PLF 2024 : coût des hausses de 3,5 % (7,6 Md€) et 1,5 % (3,2 Md€), repris par Acteurs publics",
+          "u": "https://acteurspublics.fr/articles/la-facture-de-la-hausse-du-point-dindice-pour-chacun-des-3-versants-de-la-fonction-publique",
+          "d": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "autonomie",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 7,
+      "mid": 12,
+      "hi": 20,
+      "ramp": 2,
+      "lab": "Garantie d'autonomie des jeunes (revenu porté au seuil de pauvreté)",
+      "note": "Aucun chiffrage indépendant ne porte sur un revenu de 1 337 € par mois. Ouvrir le RSA dès 18 ans coûterait jusqu'à 6,6 Md€ (DG Trésor, cité par le rapport Sirugue, 2016) ; l'Institut Montaigne (2022) chiffrait 12,3 Md€ pour une garantie à 1 063 €, avec un recours complet. LFI : 9,5 Md€.",
+      "sources": [
+        {
+          "t": "Rapport Sirugue, « Repenser les minima sociaux », avril 2016, p. 50 (chiffrages Drees et DG Trésor d'un RSA jeunes)",
+          "u": "https://www.vie-publique.fr/files/rapport/pdf/164000239.pdf",
+          "d": "2026-11-09"
+        },
+        {
+          "t": "IPP, rapport n° 44, « Les effets d'un RSA jeunes », juillet 2023, p. 16",
+          "u": "https://www.ipp.eu/wp-content/uploads/2025/06/44_Rapport_ESH_jeunes-5.pdf",
+          "d": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "cantine",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 3.2,
+      "mid": 6,
+      "hi": 9,
+      "ramp": 3,
+      "lab": "Gratuité de la cantine scolaire",
+      "note": "Les familles paient environ la moitié des quelque 12 Md€ que coûte la cantine. Gratuité de la maternelle au lycée : 7 à 9 Md€ avec la hausse de fréquentation (HCFEA, 2024). Public seul et fréquentation constante : environ 4,4 Md€, dont 3,2 Md€ pour le primaire et le collège (calcul d'après l'OFCE). LFI : 3,6 Md€.",
+      "sources": [
+        {
+          "t": "Haut Conseil de la famille, de l'enfance et de l'âge, « La restauration scolaire », 26 novembre 2024, p. 133-134",
+          "u": "https://www.hcfea.gouv.fr/sites/hcfea/files/files-spip/pdf/la_restauration_scolaire_rapport.pdf",
+          "d": "2026-11-09"
+        },
+        {
+          "t": "OFCE, chiffrage des programmes des législatives 2024, politiques familiales, tableau 3",
+          "u": "https://www.ofce-legislatives2024.fr/analyses/familles.html",
+          "d": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "chomageplus",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 5,
+      "mid": 7,
+      "hi": 9,
+      "ramp": 2,
+      "lab": "Abrogation des réformes de l'assurance chômage depuis 2019",
+      "note": "Économies chiffrées par l'Unédic, à plein régime : 2,3 Md€ par an pour la réforme 2019-2021, 4,5 Md€ pour la contracyclicité de 2023, 1,5 Md€ pour la convention de 2024. LFI : 3 Md€.",
+      "sources": [
+        {
+          "t": "Unédic, « Évaluation de la réforme d'assurance chômage 2019-2021 », 20 mars 2025",
+          "u": "https://www.unedic.org/publications",
+          "d": "2026-11-09"
+        },
+        {
+          "t": "Unédic, « Premiers effets de la réforme de contracyclicité » et étude d'impact de la convention du 15 novembre 2024 (25 février 2025)",
+          "u": "https://www.unedic.org/publications",
+          "d": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "violences",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 1.8,
+      "mid": 3.5,
+      "hi": 4.6,
+      "ramp": 3,
+      "lab": "Plans contre les violences sexistes et sexuelles et les violences faites aux enfants",
+      "note": "Le gouvernement compte environ 1,5 Md€ déjà engagés contre les violences sexistes et sexuelles (septembre 2026). La Fondation des femmes, une association, estime le besoin entre 2,6 et 5,4 Md€ par an ; l'aide sociale à l'enfance coûte 11,7 Md€ aux départements (Drees). LFI : +2,6 et +2 Md€.",
+      "sources": [
+        {
+          "t": "Sénat, question écrite n° 06031 (4 septembre 2025), reprenant le chiffrage de la Fondation des femmes",
+          "u": "https://www.senat.fr/questions/base/2025/qSEQ250906031.html",
+          "d": "2026-11-09"
+        },
+        {
+          "t": "Drees, dépenses d'aide sociale des départements en 2024 (avril 2026)",
+          "u": "https://drees.solidarites-sante.gouv.fr/communique-de-presse-jeux-de-donnees/jeux-de-donnees/laugmentation-des-depenses-daide-sociale-des",
+          "d": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "logurgence",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 0.4,
+      "mid": 1.2,
+      "hi": 3,
+      "ramp": 3,
+      "lab": "Hébergement et logement d'urgence (places nouvelles, réquisitions)",
+      "note": "Le programme 177 dispose d'environ 3 Md€ pour 203 000 places ; plus de 60 % des demandes au 115 restent sans réponse (Sénat, PLF 2026). 1,2 Md€ représentent environ 80 000 places de plus ; 3 Md€, un doublement du parc. LFI : 3 Md€.",
+      "sources": [
+        {
+          "t": "Sénat, avis de la commission des affaires sociales sur le programme 177, PLF 2026 (26 novembre 2025)",
+          "u": "https://www.senat.fr/rap/a25-142-2/a25-142-2-syn.pdf",
+          "d": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "coupes2026",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 4,
+      "mid": 6,
+      "hi": 7.5,
+      "ramp": 1,
+      "lab": "Annulation des coupes budgétaires de 2026 et indexation des crédits sur l'inflation",
+      "note": "La loi de finances 2026 a réduit notamment le travail et l'emploi (−2,4 Md€), la culture et l'aide au développement ; le PLF 2027 prévoit −2,8 Md€ sur le travail et des crédits hors défense en hausse de 0,4 %, quatre fois moins que l'inflation (Bercy, plafonds de dépenses, juillet 2026). LFI : 7 Md€.",
+      "sources": [
+        {
+          "t": "Sénat, rapport sur la mission Travail et emploi, PLF 2026",
+          "u": "https://www.senat.fr/rap/l25-139-331/l25-139-331-syn.pdf",
+          "d": "2026-11-09"
+        },
+        {
+          "t": "Focus 2030, plafonds de dépenses du PLF 2027 (juillet 2026)",
+          "u": "https://focus2030.org/wp-content/uploads/2026/07/Tire-a-part-PLF2027.pdf",
+          "d": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "effectifs",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 3,
+      "mid": 4,
+      "hi": 6,
+      "ramp": 4,
+      "lab": "Réduction de 5 % des effectifs de l'État et de ses opérateurs",
+      "note": "2,5 millions d'agents pour l'État et ses opérateurs. Une baisse de 5 % suppose de ne pas remplacer environ 125 000 départs."
+    },
+    {
+      "id": "collectivites",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 3,
+      "mid": 5,
+      "hi": 10,
+      "ramp": 2,
+      "lab": "Baisse des concours financiers aux collectivités",
+      "note": "Les collectivités portent environ 290 Md€ de dépenses, dont l'essentiel de l'investissement public civil.",
+      "sources": [
+        {
+          "t": "Cour des comptes, Contribution au rétablissement des finances publiques, 9 nov. 2026, mesure n° 12 : 4 à 4,9 Md€ d'effet sur le solde public",
+          "u": "https://www.ccomptes.fr/fr/publications/contribution-au-retablissement-des-finances-publiques",
+          "d": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "chomage",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 2,
+      "mid": 4,
+      "hi": 6,
+      "ramp": 2,
+      "lab": "Nouvelle réforme de l'assurance chômage",
+      "note": "L'Unédic verse environ 32 Md€ d'allocations. Le rendement dépend de la conjoncture : il s'effondre en récession."
+    },
+    {
+      "id": "niches",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 5,
+      "mid": 10,
+      "hi": 25,
+      "ramp": 3,
+      "disp": true,
+      "lab": "Rabot des niches fiscales et des aides aux entreprises",
+      "note": "Selon le périmètre retenu, les aides publiques aux entreprises sont estimées entre 110 et 200 Md€. Le désaccord porte sur ce qui compte comme « aide » : les allègements de cotisations en représentent à eux seuls 75."
+    },
+    {
+      "id": "blanche",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 5,
+      "mid": 7,
+      "hi": 10,
+      "ramp": 1,
+      "lab": "Année blanche : gel des barèmes et des prestations",
+      "note": "Économie immédiate et large, mais non reconductible indéfiniment : elle se rattrape en partie l'année suivante.",
+      "sources": [
+        {
+          "t": "Cour des comptes, Contribution au rétablissement des finances publiques, 9 nov. 2026, mesure n° 1 : non-revalorisation des prestations hors minima, 4,8 Md€ en 2027 et 5,2 Md€ en année pleine (sans le gel des barèmes fiscaux)",
+          "u": "https://www.ccomptes.fr/fr/publications/contribution-au-retablissement-des-finances-publiques",
+          "d": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "age65",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 5,
+      "mid": 9,
+      "hi": 14,
+      "ramp": 6,
+      "lab": "Âge légal de départ porté à 65 ans",
+      "note": "Le rendement d'une réforme des retraites est lent : il croît avec chaque génération concernée."
+    },
+    {
+      "id": "ondam",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 3,
+      "mid": 5,
+      "hi": 9,
+      "ramp": 2,
+      "lab": "Freinage de l'ONDAM (dépenses d'assurance maladie)",
+      "note": "L'ONDAM approche 270 Md€ : un ralentissement de 0,5 point de sa progression représente environ 1,4 Md€ par an."
+    },
+    {
+      "id": "agences",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 1,
+      "mid": 2,
+      "hi": 3,
+      "ramp": 3,
+      "lab": "Suppression ou fusion d'agences et d'opérateurs de l'État",
+      "note": "Les rapports parlementaires convergent vers 2 à 3 Md€, à condition de supprimer les missions et pas seulement les structures."
+    },
+    {
+      "id": "immigration",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 1,
+      "mid": 3,
+      "hi": 10,
+      "ramp": 3,
+      "disp": true,
+      "lab": "Réduction des dépenses liées à l'immigration",
+      "note": "Chiffrée à 25 Md€ par le RN. Les postes identifiables sont d'un tout autre ordre : aide médicale d'État 1,3 Md€, hébergement d'urgence et demande d'asile environ 3 Md€, aide au retour quelques centaines de millions. Les chiffrages hauts agrègent des prestations de droit commun versées à des personnes en situation régulière, et ne déduisent pas les cotisations et impôts que ces mêmes personnes acquittent."
+    },
+    {
+      "id": "ue",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 0,
+      "mid": 2,
+      "hi": 8,
+      "ramp": 3,
+      "disp": true,
+      "lab": "Réduction de la contribution française au budget de l'Union européenne",
+      "note": "Chiffrée à 10 Md€ par le RN. La contribution brute est d'environ 27 Md€ pour environ 15 Md€ de retours. La réduire unilatéralement n'est pas possible : le cadre financier pluriannuel se décide à l'unanimité et la contribution est une ressource propre de l'Union."
+    },
+    {
+      "id": "ame",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 0.5,
+      "mid": 0.9,
+      "hi": 1.3,
+      "ramp": 1,
+      "lab": "Suppression de l'aide médicale d'État",
+      "note": "1,3 Md€, soit 0,08 % de la dépense publique."
+    },
+    {
+      "id": "institutions",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 0.05,
+      "mid": 0.15,
+      "hi": 0.3,
+      "ramp": 2,
+      "lab": "Réduction du train de vie des institutions et du nombre de parlementaires",
+      "note": "L'ensemble Élysée, Assemblée, Sénat et Conseil constitutionnel coûte 1,14 Md€, soit un euro pour mille euros de dépense publique. Supprimé en totalité, ce poste modifierait peu la trajectoire."
+    }
   ]
 }
