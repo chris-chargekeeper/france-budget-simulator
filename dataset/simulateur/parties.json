@@ -1,6 +1,6 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "avertissement": "Les candidatures ne seront officielles qu'après validation des parrainages par le Conseil constitutionnel, au printemps 2027. Le site suit les candidats déclarés ou investis qui pèsent dans les sondages ; la liste est revérifiée chaque matin. Les programmes 2027 sont pour la plupart non publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
@@ -255,7 +255,7 @@
       "candidat": "Bruno Retailleau",
       "avatar": "h",
       "couleur": "#2E6FB7",
-      "statutCandidature": "Investi par les militants LR (19 avril 2026) ; veut une primaire de la droite et du centre « fin janvier » et, d'ici là, des débats avec Attal, Philippe et Lisnard (franceinfo, 5 novembre 2026)",
+      "statutCandidature": "Investi par les militants LR (19 avril 2026) ; propose par lettre à Attal, Philippe et Lisnard une primaire de la droite et du centre les 31 janvier et 7 février 2027 (10 novembre 2026), Philippe y reste opposé",
       "statut": "partiel",
       "annonce": {
         "titre": "197 Md€ d'économies par an en 2032, chiffrées poste par poste",
@@ -333,6 +333,10 @@
         {
           "t": "Bruno Retailleau appelle la droite à « se réveiller » et défend son idée de débats avant une éventuelle primaire — franceinfo, 5 novembre 2026",
           "u": "https://www.franceinfo.fr/politique/bruno-retailleau/bruno-retailleau-appelle-la-droite-a-se-reveiller-pour-la-presidentielle-et-defend-son-idee-de-debats-avant-une-eventuelle-primaire_8269013.html"
+        },
+        {
+          "t": "TF1 Info — Bruno Retailleau propose une primaire de la droite et du centre les 31 janvier et 7 février, 11 novembre 2026",
+          "u": "https://www.tf1info.fr/politique/elections/presidentielle/le-temps-joue-contre-nous-bruno-retailleau-propose-une-primaire-de-la-droite-et-du-centre-les-31-janvier-et-7-fevrier-2475141.html"
         }
       ]
     },
@@ -572,7 +576,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 52 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,2 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 52 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,1 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -658,19 +662,19 @@
         "cirgrandes": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,02 %).",
         "alleg": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,09 %).",
         "irbaisse": "Départage : son effet sur l'activité est comparable à celui de « Baisse de la CSG ou des cotisations sur les revenus d'activité » (les fourchettes publiées se recouvrent), qui profite davantage aux classes moyennes, aux bas salaires, aux retraités et aux agents publics ; c'est celle-ci qui est retenue.",
-        "tvaener": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,34 point de PIB, production +0,23 % en 2032 et +0,23 % à long terme.",
+        "tvaener": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,33 point de PIB, production +0,23 % en 2032 et +0,23 % à long terme.",
         "prod": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,16 point de PIB, production +0,06 % en 2032 et +0,03 % à long terme.",
         "retr62": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,72 %).",
         "retr60": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −1,33 %).",
         "indexation": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,10 % en 2032 et +0,07 % à long terme.",
-        "defense": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,59 point de PIB, production +0,62 % en 2032 et +0,12 % à long terme.",
+        "defense": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,58 point de PIB, production +0,62 % en 2032 et +0,12 % à long terme.",
         "services": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,07 % en 2032 et +0,03 % à long terme.",
         "ecolo": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,30 point de PIB, production +0,28 % en 2032 et +0,07 % à long terme.",
         "age": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,14 point de PIB, production +0,13 % en 2032 et +0,08 % à long terme.",
         "pointindice": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,19 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",
         "smic": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,11 % en 2032 et +0,02 % à long terme.",
         "smic1700": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,27 %).",
-        "pointindice10": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,72 point de PIB, production +0,66 % en 2032 et +0,12 % à long terme.",
+        "pointindice10": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,71 point de PIB, production +0,66 % en 2032 et +0,12 % à long terme.",
         "autonomie": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,37 point de PIB, production +0,29 % en 2032 et +0,20 % à long terme.",
         "cantine": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,18 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",
         "chomageplus": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,22 point de PIB, production +0,17 % en 2032 et +0,12 % à long terme.",
@@ -695,9 +699,9 @@
         }
       ],
       "calcul": {
-        "date": "2026-11-10",
-        "deficit2032": 7.18,
-        "dette2032": 138.4,
+        "date": "2026-11-11",
+        "deficit2032": 7.07,
+        "dette2032": 138,
         "economies": 0.1,
         "recettes": 21.6,
         "depenses": 4.2,
@@ -772,7 +776,7 @@
       "candidat": "Éric Zemmour",
       "avatar": "h",
       "couleur": "#3B3F8F",
-      "statutCandidature": "Candidat déclaré (17 septembre 2026) ; 4 à 4,5 % chez Ipsos (21-22 octobre 2026)",
+      "statutCandidature": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026) ; 4 à 4,5 % chez Ipsos (21-22 octobre 2026)",
       "statut": "reconstitution",
       "annonce": {
         "titre": "Pas de chiffrage 2027 publié",
@@ -808,6 +812,10 @@
         {
           "t": "Sarah Knafo : 20 Md€ sur l'immigration, 40 Md€ sur la fonction publique — franceinfo",
           "u": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html"
+        },
+        {
+          "t": "TF1 Info — Éric Zemmour officialise sa candidature au 20H, 10 novembre 2026",
+          "u": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-eric-zemmour-invite-du-jt-de-20h-ce-mardi-2475074.html"
         }
       ],
       "depuis": "2026-10-30"

@@ -1,0 +1,274 @@
+{
+  "patch": {
+    "_comment": "Relève locale du 11 novembre 2026 : émissions du mardi 10 novembre (20H de TF1 avec Zemmour, RTL Matin avec Alloncle, France Inter 8h20 avec Attal), lettre de Retailleau pour une primaire les 31 janvier et 7 février. Assemblée, questions au gouvernement du 10 novembre ; Sénat, PLFSS 2027, séance du 10 novembre (compte rendu analytique) ; OAT et écart avec le Bund au 10 novembre. Aucun nouveau sondage de premier tour (notices de la Commission des sondages lues jusqu'au n° 10363). Teddy Riner, déclaré le 9 novembre, n'est pas ajouté : aucun sondage d'intentions de vote au premier tour ne le teste encore.",
+    "releve": "2026-11-11",
+    "annonces": [
+      {
+        "date": "2026-11-10",
+        "parti": "rec",
+        "qui": "Éric Zemmour",
+        "fonction": "Président de Reconquête, candidat à la présidentielle",
+        "media": "TF1, journal de 20h",
+        "quoi": "En officialisant sa candidature, annonce « un grand plan de redressement des finances publiques et de baisse des dépenses publiques et des impôts » qu'il estime à 280 Md€, sans détail ni horizon (par an ou sur le quinquennat).",
+        "verbatim": "un grand plan de redressement des finances publiques et de baisse des dépenses publiques et des impôts",
+        "mesure": null,
+        "montant": 280,
+        "type": "economie",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-eric-zemmour-invite-du-jt-de-20h-ce-mardi-2475074.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucun programme chiffré publié. Le montant additionne baisse des dépenses et baisse des impôts, sans répartition ni horizon : il ne se compare ni au catalogue ni aux 20 Md€ (immigration) et 40 Md€ (fonction publique) avancés par Sarah Knafo."
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "rec",
+        "qui": "Éric Zemmour",
+        "fonction": "Président de Reconquête, candidat à la présidentielle",
+        "media": "TF1, journal de 20h",
+        "quoi": "Vise « deux millions d'immigrés en moins à la fin du quinquennat », notamment en renvoyant les étrangers au chômage depuis plus de six mois, et annonce un référendum sur l'immigration ; aucun montant budgétaire énoncé.",
+        "verbatim": "deux millions d'immigrés en moins à la fin du quinquennat",
+        "mesure": "immigration",
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-eric-zemmour-invite-du-jt-de-20h-ce-mardi-2475074.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucun programme publié ; objectif en nombre de personnes, qui ne se convertit pas en euros."
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "rn",
+        "qui": "Charles Alloncle",
+        "fonction": "Député UDR, porte-parole de campagne de Marine Le Pen",
+        "media": "RTL Matin (7h40)",
+        "quoi": "Annonce que la réforme des retraites de Marine Le Pen, présentée « la semaine prochaine », pourrait comporter un étage de capitalisation ; ne tranche pas l'âge de départ, aucun chiffre.",
+        "verbatim": "un étage de capitalisation pourrait être annoncé",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.rtl.fr/actu/politique/une-convergence-des-vues-sur-rtl-charles-alloncle-udr-se-rejouit-de-l-etage-de-capitalisation-de-la-future-reforme-des-retraites-de-marine-le-pen-7900694665",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le RN défendait jusqu'ici un retour vers 62 ans sans capitalisation ; l'étage de capitalisation n'est pas encore annoncé par la candidate. Réforme attendue vers le 17 novembre."
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "rn",
+        "qui": "Gaëtan Dussausaye",
+        "fonction": "Député RN des Vosges, question au gouvernement au nom du groupe (pas responsable du programme)",
+        "media": "Assemblée nationale, 1re séance du 10 novembre 2026 (questions au gouvernement)",
+        "quoi": "Reprend l'engagement de Marine Le Pen d'une hausse d'au moins 10 % des salaires jusqu'à 3 Smic sans hausse des cotisations patronales correspondantes, et demande de revenir sur la non-revalorisation de la prime d'activité ; aucun coût énoncé.",
+        "verbatim": "une augmentation minimale de 10 % de tous les salaires jusqu'à 3 smics, sans hausse des cotisations patronales correspondantes",
+        "mesure": null,
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-10-novembre-2026",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": null
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "rn",
+        "qui": "Bruno Clavet",
+        "fonction": "Député RN, question au gouvernement (pas responsable du programme)",
+        "media": "Assemblée nationale, 1re séance du 10 novembre 2026 (questions au gouvernement)",
+        "quoi": "Demande de reprendre les propositions de Marine Le Pen : TVA à 5,5 % sur le gaz, l'électricité, le fioul et les carburants, et suppression de la contribution tarifaire d'acheminement ; aucun coût énoncé.",
+        "verbatim": "Allez-vous enfin reprendre les propositions de Marine Le Pen et baisser à 5,5 % la TVA sur l'énergie",
+        "mesure": "tvaener",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-10-novembre-2026",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": null
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "eco",
+        "qui": "Jérémie Iordanoff",
+        "fonction": "Député du groupe Écologiste et social, question au gouvernement (pas porte-parole de la candidate)",
+        "media": "Assemblée nationale, 1re séance du 10 novembre 2026 (questions au gouvernement)",
+        "quoi": "Le groupe écologiste défend un Smic net à 1 700 €, l'indexation des salaires sur l'inflation et des aides aux entreprises conditionnées à des hausses de salaire ; position de groupe, pas engagement de Marine Tondelier.",
+        "verbatim": "Le groupe Écologiste et social défend un smic net à 1 700 euros ainsi qu'une indexation des salaires sur l'inflation.",
+        "mesure": "smic1700",
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-10-novembre-2026",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucun programme présidentiel publié ; le Smic à 1 700 € n'est pas dans le scénario reconstitué des Écologistes."
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "ps",
+        "qui": "Fanny Dombre Coste",
+        "fonction": "Députée du groupe Socialistes et apparentés, question au gouvernement (pas porte-parole de Raphaël Glucksmann)",
+        "media": "Assemblée nationale, 1re séance du 10 novembre 2026 (questions au gouvernement)",
+        "quoi": "Le groupe PS propose une hausse de 125 € net du Smic avec une CSG plus juste, 20 centimes de moins par litre de carburant par l'encadrement des marges des raffineurs et une mutuelle publique gratuite pour les 18-25 ans, « financé par la justice fiscale » ; aucun coût énoncé.",
+        "verbatim": "Nous, socialistes, proposons une hausse de 125 euros net du smic, avec une CSG plus juste",
+        "mesure": "smic",
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-10-novembre-2026",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucun programme présidentiel publié ; le contre-budget PS de septembre ne prévoyait pas cette hausse du Smic, qui passe en partie par la CSG."
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "lr",
+        "qui": "Frédérique Puissat",
+        "fonction": "Sénatrice LR de l'Isère, oratrice du groupe sur l'article 8 (pas présidente de groupe)",
+        "media": "Sénat, séance du 10 novembre 2026 (PLFSS 2027, article 8)",
+        "quoi": "Le groupe LR vote contre la suppression de l'extension de la taxe sur les produits sucrés (300 M€) pour ne pas aggraver le déficit ; amendements de suppression rejetés (scrutin n° 66) et article 8 adopté. Taxe absente du catalogue.",
+        "verbatim": "cette taxe rapportera 300 millions d'euros et la majorité sénatoriale veille à ne pas aggraver le déficit",
+        "mesure": null,
+        "montant": 0.3,
+        "type": "recette",
+        "source": "https://www.senat.fr/cra/s20261110/s20261110_mono.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Vote de soutien au budget du gouvernement au Sénat, pas un engagement présidentiel ; le plan Retailleau promet de redresser les comptes « sans impôt nouveau », ce que cette taxe nouvelle ne contredit pas formellement à ce stade."
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "ps",
+        "qui": "Patrick Kanner",
+        "fonction": "Président du groupe socialiste au Sénat",
+        "media": "Sénat, séance du 10 novembre 2026 (PLFSS 2027, article 5)",
+        "quoi": "Annonce que le groupe socialiste combattra au PLF la baisse de 64 M€ des crédits du service civique ; obtient avec tous les groupes la suppression de l'article 5 (exonérations des chantiers d'insertion, 15 M€). Montants du gouvernement, pas du PS.",
+        "verbatim": "Lors de l'examen du PLF, nous dénoncerons la baisse des crédits de 64 millions d'euros pour le service civique",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.senat.fr/cra/s20261110/s20261110_mono.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucun programme présidentiel publié ; position de groupe parlementaire sur le budget en cours."
+      }
+    ],
+    "partis": {
+      "rec": {
+        "statutCandidature": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026) ; 4 à 4,5 % chez Ipsos (21-22 octobre 2026)",
+        "source": {
+          "t": "TF1 Info — Éric Zemmour officialise sa candidature au 20H, 10 novembre 2026",
+          "u": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-eric-zemmour-invite-du-jt-de-20h-ce-mardi-2475074.html"
+        }
+      },
+      "lr": {
+        "statutCandidature": "Investi par les militants LR (19 avril 2026) ; propose par lettre à Attal, Philippe et Lisnard une primaire de la droite et du centre les 31 janvier et 7 février 2027 (10 novembre 2026), Philippe y reste opposé",
+        "source": {
+          "t": "TF1 Info — Bruno Retailleau propose une primaire de la droite et du centre les 31 janvier et 7 février, 11 novembre 2026",
+          "u": "https://www.tf1info.fr/politique/elections/presidentielle/le-temps-joue-contre-nous-bruno-retailleau-propose-une-primaire-de-la-droite-et-du-centre-les-31-janvier-et-7-fevrier-2475141.html"
+        }
+      }
+    },
+    "contexte": {
+      "oat10": {
+        "valeur": 4.66,
+        "date": "2026-11-10",
+        "detail": "OAT 10 ans à 4,66 % à la clôture du 10 novembre, contre 4,79 % le 9 ; Bund à 3,24 %.",
+        "source": {
+          "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Idéal Investisseur (clôture du 10 novembre 2026)",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      },
+      "spread": {
+        "valeur": 142,
+        "date": "2026-11-10",
+        "detail": "Écart OAT-Bund à 10 ans de 142,4 pb (OAT 4,66 %, Bund 3,24 %), en baisse de 10,5 pb sur la séance ; plus haut sur un an à 174,6 pb (22 octobre).",
+        "source": {
+          "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Idéal Investisseur (clôture du 10 novembre 2026)",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-11-11",
+    "applique": "2026-11-11",
+    "ajouts": [
+      {
+        "date": "2026-11-10",
+        "parti": "rec",
+        "quoi": "En officialisant sa candidature, annonce « un grand plan de redressement des finances publiques et de baisse des dépenses publiques et des impôts » qu'il estime à 280 Md€, sans détail ni horizon (par an ou sur le quinquennat).",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-eric-zemmour-invite-du-jt-de-20h-ce-mardi-2475074.html"
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "rec",
+        "quoi": "Vise « deux millions d'immigrés en moins à la fin du quinquennat », notamment en renvoyant les étrangers au chômage depuis plus de six mois, et annonce un référendum sur l'immigration ; aucun montant budgétaire énoncé.",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-eric-zemmour-invite-du-jt-de-20h-ce-mardi-2475074.html"
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "rn",
+        "quoi": "Annonce que la réforme des retraites de Marine Le Pen, présentée « la semaine prochaine », pourrait comporter un étage de capitalisation ; ne tranche pas l'âge de départ, aucun chiffre.",
+        "source": "https://www.rtl.fr/actu/politique/une-convergence-des-vues-sur-rtl-charles-alloncle-udr-se-rejouit-de-l-etage-de-capitalisation-de-la-future-reforme-des-retraites-de-marine-le-pen-7900694665"
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "rn",
+        "quoi": "Reprend l'engagement de Marine Le Pen d'une hausse d'au moins 10 % des salaires jusqu'à 3 Smic sans hausse des cotisations patronales correspondantes, et demande de revenir sur la non-revalorisation de la prime d'activité ; aucun coût énoncé.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-10-novembre-2026"
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "rn",
+        "quoi": "Demande de reprendre les propositions de Marine Le Pen : TVA à 5,5 % sur le gaz, l'électricité, le fioul et les carburants, et suppression de la contribution tarifaire d'acheminement ; aucun coût énoncé.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-10-novembre-2026"
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "eco",
+        "quoi": "Le groupe écologiste défend un Smic net à 1 700 €, l'indexation des salaires sur l'inflation et des aides aux entreprises conditionnées à des hausses de salaire ; position de groupe, pas engagement de Marine Tondelier.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-10-novembre-2026"
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "ps",
+        "quoi": "Le groupe PS propose une hausse de 125 € net du Smic avec une CSG plus juste, 20 centimes de moins par litre de carburant par l'encadrement des marges des raffineurs et une mutuelle publique gratuite pour les 18-25 ans, « financé par la justice fiscale » ; aucun coût énoncé.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-10-novembre-2026"
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "lr",
+        "quoi": "Le groupe LR vote contre la suppression de l'extension de la taxe sur les produits sucrés (300 M€) pour ne pas aggraver le déficit ; amendements de suppression rejetés (scrutin n° 66) et article 8 adopté. Taxe absente du catalogue.",
+        "source": "https://www.senat.fr/cra/s20261110/s20261110_mono.html"
+      },
+      {
+        "date": "2026-11-10",
+        "parti": "ps",
+        "quoi": "Annonce que le groupe socialiste combattra au PLF la baisse de 64 M€ des crédits du service civique ; obtient avec tous les groupes la suppression de l'article 5 (exonérations des chantiers d'insertion, 15 M€). Montants du gouvernement, pas du PS.",
+        "source": "https://www.senat.fr/cra/s20261110/s20261110_mono.html"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "parties.rec.statutCandidature",
+        "avant": "Candidat déclaré (17 septembre 2026) ; 4 à 4,5 % chez Ipsos (21-22 octobre 2026)",
+        "apres": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026) ; 4 à 4,5 % chez Ipsos (21-22 octobre 2026)",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-eric-zemmour-invite-du-jt-de-20h-ce-mardi-2475074.html"
+      },
+      {
+        "quoi": "parties.lr.statutCandidature",
+        "avant": "Investi par les militants LR (19 avril 2026) ; veut une primaire de la droite et du centre « fin janvier » et, d'ici là, des débats avec Attal, Philippe et Lisnard (franceinfo, 5 novembre 2026)",
+        "apres": "Investi par les militants LR (19 avril 2026) ; propose par lettre à Attal, Philippe et Lisnard une primaire de la droite et du centre les 31 janvier et 7 février 2027 (10 novembre 2026), Philippe y reste opposé",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/le-temps-joue-contre-nous-bruno-retailleau-propose-une-primaire-de-la-droite-et-du-centre-les-31-janvier-et-7-fevrier-2475141.html"
+      },
+      {
+        "quoi": "contexte.oat10",
+        "avant": 4.79,
+        "apres": 4.66,
+        "source": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      },
+      {
+        "quoi": "contexte.spread",
+        "avant": 153,
+        "apres": 142,
+        "source": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      }
+    ]
+  }
+}
