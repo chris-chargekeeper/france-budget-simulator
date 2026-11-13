@@ -42,8 +42,28 @@ Interactive Toluna, Cluster17, Viavoice, YouGov, CSA, Verian), cherchez un sonda
 vote au premier tour plus récent que celui affiché par `etat`, ou le premier d'un institut absent.
 Le plus sûr est la liste du mois de la Commission des sondages
 (commission-des-sondages.fr, rubrique « notices ») : chaque sondage publié y dépose sa notice, avec
-les scores de chaque hypothèse. Lisez les chiffres dans cette notice ou chez l'institut, jamais dans
-un article qui les reprend. Quand plusieurs hypothèses existent, prenez celle qui teste le plus de
+les scores de chaque hypothèse. Mais la Commission met parfois plusieurs jours à publier une notice :
+**ouvrez aussi, chaque jour, la page de publications de chaque institut**, où le rapport complet
+(PDF) paraît le jour même. Le 13 novembre 2026, une relève a raté le PrésiTrack OpinionWay paru la
+veille au soir, faute de notice.
+
+| institut | page à ouvrir |
+|---|---|
+| OpinionWay | https://www.opinion-way.com/fr/sondage-d-opinion/sondages-publies.html |
+| Ifop | https://www.ifop.com/sujets/politique/ |
+| Elabe | https://elabe.fr/category/etudes-sondages/ |
+| Ipsos BVA | https://www.ipsos.com/fr-fr/enquetes-et-sondages |
+| Odoxa | https://www.odoxa.fr/les-sondages/ |
+| Toluna Harris Interactive | https://tolunacorporate.com/fr/ |
+| Cluster17 | https://cluster17.com/nos-sondages/ |
+| YouGov | https://yougov.com/fr-fr/articles |
+| Viavoice | https://www.institut-viavoice.com/category/politique/ |
+| CSA | https://csa.eu/news/nos-sondages-dactualite-csa-cnews-europe-1-le-jdd/ |
+
+Si une page ne s'ouvre pas, cherchez « sondage présidentielle 2027 » avec le nom de l'institut et la
+date du jour, puis remontez au rapport de l'institut. Lisez les chiffres dans la notice ou dans le
+rapport de l'institut, jamais dans un article qui les reprend. Un seul sondage ne fait jamais le
+classement : la page moyenne le dernier de chaque institut ; ne calculez rien vous-même. Quand plusieurs hypothèses existent, prenez celle qui teste le plus de
 candidats suivis, et à égalité celle où figurent Attal et Philippe. Chacun entre
 **entier** par la section `sondages` du patch et remplace le précédent du même institut. Pas de
 nouveau sondage, rien à faire.
