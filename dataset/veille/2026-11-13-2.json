@@ -1,0 +1,74 @@
+{
+  "patch": {
+    "_comment": "Cohérence du 13 novembre 2026",
+    "releve": "2026-11-13",
+    "partis": {
+      "ren": {
+        "set": {
+          "chomage": {
+            "annonce": 5
+          }
+        },
+        "annonce": {
+          "detaille": 12,
+          "texte": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Deux postes sont chiffrés : plus de 7 Md€ par an de réorganisation de l'État et des collectivités, et 5 Md€ d'économies par la réduction de la durée d'indemnisation du chômage (Gabriel Attal, LCI, 12 novembre 2026). Le scénario est reconstitué par le simulateur à partir de ces orientations."
+        },
+        "source": {
+          "t": "TF1info — Gabriel Attal face aux petits patrons sur LCI (12 novembre 2026)",
+          "u": "https://www.tf1info.fr/politique/elections/presidentielle/gabriel-attal-face-aux-petits-patrons-sur-lci-si-on-veut-que-les-salaires-augmentent-durablement-il-faut-qu-on-ait-une-economie-plus-prospere-2475543.html"
+        }
+      },
+      "eco": {
+        "set": {
+          "succ": {
+            "annonce": 15
+          }
+        },
+        "annonce": {
+          "texte": "Le groupe écologiste a chiffré plusieurs amendements au budget 2027 : ISF climatique incluant un plancher de 2 % au-delà de 100 M€ (taxe Zucman, 15 à 25 Md€ selon le groupe), réforme de l'héritage (10 Md€ en 2027, puis 15 Md€ par an selon Marine Tondelier le 12 novembre 2026, montant retenu), contribution sur les pétro-gaziers (2,8 Md€). Aucun chiffrage d'ensemble du programme présidentiel n'est publié : le scénario est reconstitué par le simulateur à partir de ces positions."
+        },
+        "source": {
+          "t": "franceinfo — Marine Tondelier promet l'ouverture de 2 000 centres de santé d'ici 2030 (12 novembre 2026)",
+          "u": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-marine-tondelier-promet-l-ouverture-de-2-000-centres-de-sante-d-ici-2030-en-france_8279639.html"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-11-13",
+    "applique": "2026-11-13",
+    "ajouts": [],
+    "revisions": [
+      {
+        "quoi": "parties.ren.annonce.detaille",
+        "avant": 7,
+        "apres": 12,
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/gabriel-attal-face-aux-petits-patrons-sur-lci-si-on-veut-que-les-salaires-augmentent-durablement-il-faut-qu-on-ait-une-economie-plus-prospere-2475543.html"
+      },
+      {
+        "quoi": "parties.ren.annonce.texte",
+        "avant": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Un seul poste est chiffré : plus de 7 Md€ par an de réorganisation de l'État et des collectivités. Le scénario est reconstitué par le simulateur à partir de ces orientations.",
+        "apres": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Deux postes sont chiffrés : plus de 7 Md€ par an de réorganisation de l'État et des collectivités, et 5 Md€ d'économies par la réduction de la durée d'indemnisation du chômage (Gabriel Attal, LCI, 12 novembre 2026). Le scénario est reconstitué par le simulateur à partir de ces orientations.",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/gabriel-attal-face-aux-petits-patrons-sur-lci-si-on-veut-que-les-salaires-augmentent-durablement-il-faut-qu-on-ait-une-economie-plus-prospere-2475543.html"
+      },
+      {
+        "quoi": "parties.ren.set.chomage.annonce",
+        "avant": null,
+        "apres": 5,
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/gabriel-attal-face-aux-petits-patrons-sur-lci-si-on-veut-que-les-salaires-augmentent-durablement-il-faut-qu-on-ait-une-economie-plus-prospere-2475543.html"
+      },
+      {
+        "quoi": "parties.eco.annonce.texte",
+        "avant": "Le groupe écologiste a chiffré plusieurs amendements au budget 2027 : ISF climatique incluant un plancher de 2 % au-delà de 100 M€ (taxe Zucman, 15 à 25 Md€ selon le groupe), réforme de l'héritage (10 Md€), contribution sur les pétro-gaziers (2,8 Md€). Aucun chiffrage d'ensemble du programme présidentiel n'est publié : le scénario est reconstitué par le simulateur à partir de ces positions.",
+        "apres": "Le groupe écologiste a chiffré plusieurs amendements au budget 2027 : ISF climatique incluant un plancher de 2 % au-delà de 100 M€ (taxe Zucman, 15 à 25 Md€ selon le groupe), réforme de l'héritage (10 Md€ en 2027, puis 15 Md€ par an selon Marine Tondelier le 12 novembre 2026, montant retenu), contribution sur les pétro-gaziers (2,8 Md€). Aucun chiffrage d'ensemble du programme présidentiel n'est publié : le scénario est reconstitué par le simulateur à partir de ces positions.",
+        "source": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-marine-tondelier-promet-l-ouverture-de-2-000-centres-de-sante-d-ici-2030-en-france_8279639.html"
+      },
+      {
+        "quoi": "parties.eco.set.succ.annonce",
+        "avant": 10,
+        "apres": 15,
+        "source": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-marine-tondelier-promet-l-ouverture-de-2-000-centres-de-sante-d-ici-2030-en-france_8279639.html"
+      }
+    ]
+  }
+}

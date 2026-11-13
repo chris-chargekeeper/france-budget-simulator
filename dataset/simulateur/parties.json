@@ -1,6 +1,6 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-11-11",
+  "updated": "2026-11-13",
   "avertissement": "Les candidatures ne seront officielles qu'après validation des parrainages par le Conseil constitutionnel, au printemps 2027. Le site suit les candidats déclarés ou investis qui pèsent dans les sondages ; la liste est revérifiée chaque matin. Les programmes 2027 sont pour la plupart non publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
@@ -351,9 +351,9 @@
       "statut": "reconstitution",
       "annonce": {
         "titre": "150 Md€ d'économies sur le quinquennat",
-        "texte": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Un seul poste est chiffré : plus de 7 Md€ par an de réorganisation de l'État et des collectivités. Le scénario est reconstitué par le simulateur à partir de ces orientations.",
+        "texte": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Deux postes sont chiffrés : plus de 7 Md€ par an de réorganisation de l'État et des collectivités, et 5 Md€ d'économies par la réduction de la durée d'indemnisation du chômage (Gabriel Attal, LCI, 12 novembre 2026). Le scénario est reconstitué par le simulateur à partir de ces orientations.",
         "revendique": 150,
-        "detaille": 7,
+        "detaille": 12,
         "cote": "economie",
         "horsCatalogue": {
           "v": 7,
@@ -379,7 +379,8 @@
           "sim": "mid"
         },
         "chomage": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 5
         },
         "niches": {
           "sim": "lo"
@@ -396,6 +397,10 @@
         {
           "t": "Lettre de Gabriel Attal aux Français sur les finances publiques — Renaissance, 15 octobre 2026",
           "u": "https://doc.parti.re/2026/Lettre-finances-publiques.pdf"
+        },
+        {
+          "t": "TF1info — Gabriel Attal face aux petits patrons sur LCI (12 novembre 2026)",
+          "u": "https://www.tf1info.fr/politique/elections/presidentielle/gabriel-attal-face-aux-petits-patrons-sur-lci-si-on-veut-que-les-salaires-augmentent-durablement-il-faut-qu-on-ait-une-economie-plus-prospere-2475543.html"
         }
       ]
     },
@@ -516,11 +521,11 @@
       "candidat": "Marine Tondelier",
       "avatar": "f",
       "couleur": "#4C9A54",
-      "statutCandidature": "Candidate ; « ne se désistera pas » mais Les Écologistes sont « prêts à rejoindre une coalition » (TF1, 9 novembre 2026) ; les adhérents tranchent le 13 décembre 2026",
+      "statutCandidature": "Candidate ; « prête à rejoindre une coalition » de gauche et fera campagne pour un autre candidat si son parti le décide (BFMTV, 12 novembre 2026) ; les adhérents votent du 10 au 13 décembre 2026",
       "statut": "reconstitution",
       "annonce": {
         "titre": "Amendements chiffrés au budget 2027, pas de chiffrage présidentiel",
-        "texte": "Le groupe écologiste a chiffré plusieurs amendements au budget 2027 : ISF climatique incluant un plancher de 2 % au-delà de 100 M€ (taxe Zucman, 15 à 25 Md€ selon le groupe), réforme de l'héritage (10 Md€), contribution sur les pétro-gaziers (2,8 Md€). Aucun chiffrage d'ensemble du programme présidentiel n'est publié : le scénario est reconstitué par le simulateur à partir de ces positions.",
+        "texte": "Le groupe écologiste a chiffré plusieurs amendements au budget 2027 : ISF climatique incluant un plancher de 2 % au-delà de 100 M€ (taxe Zucman, 15 à 25 Md€ selon le groupe), réforme de l'héritage (10 Md€ en 2027, puis 15 Md€ par an selon Marine Tondelier le 12 novembre 2026, montant retenu), contribution sur les pétro-gaziers (2,8 Md€). Aucun chiffrage d'ensemble du programme présidentiel n'est publié : le scénario est reconstitué par le simulateur à partir de ces positions.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -544,7 +549,7 @@
         },
         "succ": {
           "sim": "mid",
-          "annonce": 10
+          "annonce": 15
         },
         "age": {
           "sim": "mid"
@@ -561,6 +566,14 @@
         {
           "t": "TF1 Info — Marine Tondelier invitée du 20H, 9 novembre 2026",
           "u": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-marine-tondelier-invitee-du-20h-de-tf1-ce-lundi-9-novembre-colere-sociale-crise-lyceenne-pouvoir-d-achat-2474836.html"
+        },
+        {
+          "t": "BFMTV — Smic, coalition à gauche, immigration, nucléaire : ce qu'il faut retenir de l'entretien de Marine Tondelier (12 novembre 2026)",
+          "u": "https://www.bfmtv.com/politique/elections/presidentielle/smic-coalition-a-gauche-immigration-nuclaire-ce-qu-il-faut-retenir-de-l-entretien-de-marine-tondelier-sur-bfmtv_AV-202611120997.html"
+        },
+        {
+          "t": "franceinfo — Marine Tondelier promet l'ouverture de 2 000 centres de santé d'ici 2030 (12 novembre 2026)",
+          "u": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-marine-tondelier-promet-l-ouverture-de-2-000-centres-de-sante-d-ici-2030-en-france_8279639.html"
         }
       ]
     },
@@ -576,7 +589,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 52 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,1 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 52 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,2 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -662,7 +675,7 @@
         "cirgrandes": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,02 %).",
         "alleg": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,09 %).",
         "irbaisse": "Départage : son effet sur l'activité est comparable à celui de « Baisse de la CSG ou des cotisations sur les revenus d'activité » (les fourchettes publiées se recouvrent), qui profite davantage aux classes moyennes, aux bas salaires, aux retraités et aux agents publics ; c'est celle-ci qui est retenue.",
-        "tvaener": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,33 point de PIB, production +0,23 % en 2032 et +0,23 % à long terme.",
+        "tvaener": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,34 point de PIB, production +0,23 % en 2032 et +0,23 % à long terme.",
         "prod": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,16 point de PIB, production +0,06 % en 2032 et +0,03 % à long terme.",
         "retr62": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,72 %).",
         "retr60": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −1,33 %).",
@@ -699,9 +712,9 @@
         }
       ],
       "calcul": {
-        "date": "2026-11-11",
-        "deficit2032": 7.07,
-        "dette2032": 138,
+        "date": "2026-11-13",
+        "deficit2032": 7.15,
+        "dette2032": 138.3,
         "economies": 0.1,
         "recettes": 21.6,
         "depenses": 4.2,
@@ -829,6 +842,30 @@
   },
   "sondages": [
     {
+      "terrain_debut": "2026-11-09",
+      "date": "2026-11-11",
+      "institut": "Cluster17",
+      "scores": {
+        "rn": 27,
+        "lfi": 19,
+        "lr": 5,
+        "ren": 2,
+        "hor": 8,
+        "ps": 8,
+        "eco": 1,
+        "ne": 8,
+        "rec": 2
+      },
+      "hypothese": "Hypothèse 4 (18 candidats, avec Philippe, Attal, Lagarde, Riner, Villepin, Ruffin, Polony)",
+      "source": {
+        "t": "Notice 10368 Pres IV CLUSTER17 Politico 11 novembre (Commission des sondages)",
+        "u": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2387"
+      },
+      "terrain_fin": "2026-11-10",
+      "commanditaire": "Politico",
+      "echantillon": 1164
+    },
+    {
       "terrain_fin": "2026-11-05",
       "commanditaire": "M6 et RTL",
       "institut": "Toluna Harris Interactive",
@@ -923,28 +960,6 @@
       "hypothese": "Hypothèse unique"
     },
     {
-      "terrain_fin": "2026-10-22",
-      "terrain_debut": "2026-10-19",
-      "scores": {
-        "rn": 33,
-        "lfi": 18.5,
-        "lr": 8,
-        "hor": 16,
-        "ps": 13,
-        "eco": 2,
-        "rec": 4
-      },
-      "date": "2026-10-26",
-      "institut": "Cluster17",
-      "echantillon": 2817,
-      "source": {
-        "t": "Notice Cluster17 pour Politico, Commission des sondages (n° 10339)",
-        "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10339-pres-iv-cluster17-politico-26-octobre.pdf"
-      },
-      "commanditaire": "Politico",
-      "hypothese": "Hypothèse 1 – Édouard Philippe"
-    },
-    {
       "terrain_fin": "2026-10-16",
       "terrain_debut": "2026-10-14",
       "scores": {
@@ -1015,6 +1030,21 @@
     }
   ],
   "sondages_historique": [
+    {
+      "institut": "Cluster17",
+      "commanditaire": "Politico",
+      "terrain_fin": "2026-10-22",
+      "scores": {
+        "rn": 33,
+        "lfi": 18.5,
+        "lr": 8,
+        "hor": 16,
+        "ps": 13,
+        "eco": 2,
+        "rec": 4
+      },
+      "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10339-pres-iv-cluster17-politico-26-octobre.pdf"
+    },
     {
       "institut": "Toluna Harris Interactive",
       "commanditaire": "M6 et RTL",
