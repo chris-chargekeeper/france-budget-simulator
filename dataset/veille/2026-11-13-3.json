@@ -1,0 +1,67 @@
+{
+  "patch": {
+    "releve": "2026-11-13",
+    "annonces": [],
+    "partis": {},
+    "mesures": {},
+    "sondages": [
+      {
+        "institut": "OpinionWay",
+        "commanditaire": "Les Echos et Radio Classique",
+        "terrain_debut": "2026-11-09",
+        "terrain_fin": "2026-11-10",
+        "date": "2026-11-12",
+        "echantillon": 982,
+        "hypothese": "Hypothèse 1 : Gabriel Attal et Édouard Philippe candidats",
+        "scores": {
+          "rn": 34,
+          "lfi": 17,
+          "lr": 4,
+          "ren": 4,
+          "hor": 11,
+          "ps": 11,
+          "eco": 3,
+          "ne": 10,
+          "rec": 3
+        },
+        "source": {
+          "t": "OpinionWay pour Les Echos et Radio Classique – Baromètre PrésiTrack 2027, vague 4, 12 novembre 2026 (p. 21)",
+          "u": "https://www.opinion-way.com/wp-content/uploads/2026/11/OpinionWay-pour-Les-Echos-et-Radio-Classique-Barometre-Presitrack-2027-Vague-4-Novembre-2026.pdf"
+        }
+      }
+    ]
+  },
+  "trace": {
+    "releve": "2026-11-13",
+    "applique": "2026-11-13",
+    "ajouts": [],
+    "revisions": [
+      {
+        "quoi": "parties.sondages.OpinionWay",
+        "avant": {
+          "rn": 36,
+          "lfi": 16,
+          "lr": 6,
+          "ren": 4,
+          "hor": 12,
+          "ps": 13,
+          "eco": 1,
+          "ne": 6,
+          "rec": 4
+        },
+        "apres": {
+          "rn": 34,
+          "lfi": 17,
+          "lr": 4,
+          "ren": 4,
+          "hor": 11,
+          "ps": 11,
+          "eco": 3,
+          "ne": 10,
+          "rec": 3
+        },
+        "source": "https://www.opinion-way.com/wp-content/uploads/2026/11/OpinionWay-pour-Les-Echos-et-Radio-Classique-Barometre-Presitrack-2027-Vague-4-Novembre-2026.pdf"
+      }
+    ]
+  }
+}

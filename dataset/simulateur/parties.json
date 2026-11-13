@@ -866,6 +866,30 @@
       "echantillon": 1164
     },
     {
+      "date": "2026-11-12",
+      "terrain_fin": "2026-11-10",
+      "source": {
+        "t": "OpinionWay pour Les Echos et Radio Classique – Baromètre PrésiTrack 2027, vague 4, 12 novembre 2026 (p. 21)",
+        "u": "https://www.opinion-way.com/wp-content/uploads/2026/11/OpinionWay-pour-Les-Echos-et-Radio-Classique-Barometre-Presitrack-2027-Vague-4-Novembre-2026.pdf"
+      },
+      "echantillon": 982,
+      "institut": "OpinionWay",
+      "scores": {
+        "rn": 34,
+        "lfi": 17,
+        "lr": 4,
+        "ren": 4,
+        "hor": 11,
+        "ps": 11,
+        "eco": 3,
+        "ne": 10,
+        "rec": 3
+      },
+      "hypothese": "Hypothèse 1 : Gabriel Attal et Édouard Philippe candidats",
+      "terrain_debut": "2026-11-09",
+      "commanditaire": "Les Echos et Radio Classique"
+    },
+    {
       "terrain_fin": "2026-11-05",
       "commanditaire": "M6 et RTL",
       "institut": "Toluna Harris Interactive",
@@ -934,30 +958,6 @@
       },
       "commanditaire": "Le Parisien",
       "hypothese": "Hypothèse Gabriel Attal et Édouard Philippe"
-    },
-    {
-      "terrain_fin": "2026-10-22",
-      "terrain_debut": "2026-10-21",
-      "scores": {
-        "rn": 36,
-        "lfi": 16,
-        "lr": 6,
-        "ren": 4,
-        "hor": 12,
-        "ps": 13,
-        "eco": 1,
-        "ne": 6,
-        "rec": 4
-      },
-      "date": "2026-10-22",
-      "institut": "OpinionWay",
-      "echantillon": 973,
-      "source": {
-        "t": "OpinionWay pour CNEWS – Intentions de vote à l'élection présidentielle 2027, 22 octobre 2026",
-        "u": "https://www.opinion-way.com/wp-content/uploads/2026/10/OpinionWay-pour-CNEWS-Les-intentions-de-vote-a-lelection-presidentielle-2027-22-octobre-2026.pdf"
-      },
-      "commanditaire": "CNEWS",
-      "hypothese": "Hypothèse unique"
     },
     {
       "terrain_fin": "2026-10-16",
@@ -1030,6 +1030,23 @@
     }
   ],
   "sondages_historique": [
+    {
+      "institut": "OpinionWay",
+      "commanditaire": "CNEWS",
+      "terrain_fin": "2026-10-22",
+      "scores": {
+        "rn": 36,
+        "lfi": 16,
+        "lr": 6,
+        "ren": 4,
+        "hor": 12,
+        "ps": 13,
+        "eco": 1,
+        "ne": 6,
+        "rec": 4
+      },
+      "u": "https://www.opinion-way.com/wp-content/uploads/2026/10/OpinionWay-pour-CNEWS-Les-intentions-de-vote-a-lelection-presidentielle-2027-22-octobre-2026.pdf"
+    },
     {
       "institut": "Cluster17",
       "commanditaire": "Politico",
