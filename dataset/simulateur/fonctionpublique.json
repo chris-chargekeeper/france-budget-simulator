@@ -1,0 +1,207 @@
+{
+ "_comment": "Carte « postes publics » : effectifs réels, départs à la retraite, coût d'un poste, précédent de la RGPP, agences, et ce que chaque candidat annonce en nombre de postes. Mis à jour à la main ; les annonces renvoient au journal de veille.",
+ "updated": "2026-11-14",
+ "effectifs": {
+  "date": "fin 2024",
+  "total": 5848300,
+  "versants": [
+   {
+    "id": "etat",
+    "lab": "État",
+    "n": 2581900,
+    "detail": "dont 1 142 500 à l'Éducation nationale et l'Enseignement supérieur, 299 700 à l'Intérieur, 278 900 aux Armées"
+   },
+   {
+    "id": "fpt",
+    "lab": "Collectivités",
+    "n": 2017800,
+    "detail": "communes, départements, régions, intercommunalités"
+   },
+   {
+    "id": "fph",
+    "lab": "Hôpitaux",
+    "n": 1248600,
+    "detail": "établissements publics de santé et médico-sociaux"
+   }
+  ],
+  "contractuels": 1407700,
+  "source": {
+   "t": "DGAFP, Chiffres clés de la fonction publique 2026 (p. 2, 6, 8, 11)",
+   "u": "https://www.fonction-publique.gouv.fr/files/files/publications/publications-dgafp/cc-2026-web.pdf"
+  }
+ },
+ "reperes": [
+  {
+   "lab": "enseignants du public",
+   "n": 747400,
+   "source": {
+    "t": "DEPP, Panorama des personnels 2025-2026",
+    "u": "https://www.education.gouv.fr/sites/default/files/document/panorama-des-personnels-2025-2026-521122.pdf"
+   }
+  },
+  {
+   "lab": "policiers et gendarmes",
+   "n": 256000,
+   "source": {
+    "t": "Assemblée nationale, avis sur la mission Sécurités, PLF 2026 (153 285 policiers et environ 103 000 gendarmes, en ETPT)",
+    "u": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1090827/file/EAT%20S%C3%A9curit%C3%A9s%20-%20PLF%202026.pdf"
+   }
+  }
+ ],
+ "departs": {
+  "parAn": 144000,
+  "annee": 2025,
+  "quinquennat": 720000,
+  "note": "144 000 départs à la retraite en 2025 (fonctionnaires des trois versants, militaires et contractuels). Faute de projection officielle pour 2027-2032, le simulateur compte cinq fois ce rythme : environ 720 000 sur un quinquennat ; Édouard Philippe cite lui-même 750 000.",
+  "source": {
+   "t": "DGAFP, Chiffres clés de la fonction publique 2026 (p. 4 et 22)",
+   "u": "https://www.fonction-publique.gouv.fr/files/files/publications/publications-dgafp/cc-2026-web.pdf"
+  }
+ },
+ "cout": {
+  "masse": 370.0,
+  "annee": 2025,
+  "parPoste": 63000,
+  "note": "Rémunérations des administrations publiques en 2025, 370 Md€, rapportées aux 5,85 millions d'agents : environ 63 000 € par poste et par an, cotisations comprises. Un ordre de grandeur : les périmètres de l'Insee et de la DGAFP diffèrent.",
+  "source": {
+   "t": "Insee Première n° 2106, Le compte des administrations publiques en 2025",
+   "u": "https://www.insee.fr/fr/statistiques/8997691"
+  }
+ },
+ "rgpp": {
+  "postes": 150000,
+  "periode": "2008-2012",
+  "economies": 11.9,
+  "note": "La révision générale des politiques publiques ne remplaçait qu'un départ sur deux à l'État : 150 000 emplois en moins de 2008 à 2012, et 11,9 Md€ d'économies sur 2009-2012, dont près de la moitié sur les crédits d'intervention plutôt que sur les postes.",
+  "source": {
+   "t": "IGA, IGF, IGAS, Bilan de la RGPP et conditions de réussite d'une nouvelle politique de réforme de l'État, septembre 2012 (p. 3, 52, 56)",
+   "u": "https://www.fonction-publique.gouv.fr/files/files/ArchivePortailFP/www.fonction-publique.gouv.fr/files/files/publications/hors_collections/20120925-rapport-bilan-RGPP_sans-annexes.pdf"
+  }
+ },
+ "agences": {
+  "operateurs": 434,
+  "organismes": 1153,
+  "emplois": 402218,
+  "financement": 77.0,
+  "economieSenat": 0.54,
+  "gros": [
+   {
+    "lab": "France compétences (apprentissage, formation)",
+    "v": 15.1
+   },
+   {
+    "lab": "AFITF (infrastructures de transport)",
+    "v": 4.6
+   },
+   {
+    "lab": "Anah (rénovation des logements)",
+    "v": 3.8
+   },
+   {
+    "lab": "France Travail",
+    "v": 2.0
+   },
+   {
+    "lab": "Agences de l'eau",
+    "v": 1.9
+   }
+  ],
+  "note": "434 opérateurs de l'État, 402 000 emplois sous plafond, 77 Md€ de financements publics. La commission d'enquête du Sénat chiffre à environ 540 M€ ce que rapporteraient des fonctions support réduites de 20 % ; les fusions de 2015 à 2019 n'ont réduit les emplois que de 0,8 %. Cinq structures portent les trois quarts des dépenses d'intervention : supprimer des milliards, c'est supprimer ce qu'elles financent.",
+  "source": {
+   "t": "Sénat, rapport n° 807 (2024-2025) de la commission d'enquête sur les agences, synthèse (p. 1, 6, 7) et tome I (p. 53, 81, 89)",
+   "u": "https://www.senat.fr/rap/r24-807-1/r24-807-1-syn.pdf"
+  },
+  "annonces": [
+   {
+    "parti": "rec",
+    "v": 31.5,
+    "quoi": "suppression de l'Anah, de l'Ademe, des ARS et de la politique de la Ville",
+    "source": {
+     "t": "« 140 milliards d'économies par an : le plan de Sarah Knafo » — budget2027.fr",
+     "u": "https://budget2027.fr/"
+    }
+   },
+   {
+    "parti": "lr",
+    "v": 7.5,
+    "quoi": "agences et opérateurs, en 2032",
+    "source": {
+     "t": "Fiches presse « comptes publics » de Bruno Retailleau, 11 octobre 2026",
+     "u": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+    }
+   },
+   {
+    "parti": "rn",
+    "v": 3.4,
+    "vHaut": 8,
+    "quoi": "agences : 3,4 Md€ dans le contre-budget 2027, « 8 milliards » à l'Assemblée (3 novembre 2026)",
+    "source": {
+     "t": "Assemblée nationale, compte rendu de la première séance du 3 novembre 2026",
+     "u": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-03-novembre-2026"
+    }
+   }
+  ]
+ },
+ "candidats": [
+  {
+   "parti": "rec",
+   "postes": -800000,
+   "quoi": "800 000 emplois publics non remplacés, présentés comme « un départ à la retraite sur trois » ; 2,2 millions d'emplois sanctuarisés (enseignants, militaires, policiers, soignants)",
+   "horizon": "non précisé",
+   "sanctuaire": 2200000,
+   "date": "2026-11-12",
+   "source": {
+    "t": "franceinfo — Éric Zemmour souhaite supprimer 800 000 postes dans la fonction publique, 12 novembre 2026",
+    "u": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-eric-zemmour-souhaite-supprimer-800-000-postes-dans-la-fonction-publique_8279303.html"
+   },
+   "regle": 3
+  },
+  {
+   "parti": "lr",
+   "postes": -400000,
+   "quoi": "400 000 départs à la retraite non remplacés d'ici 2032, pour 25 Md€ ; « avec l'IA », 300 000 postes économisés dans l'État et les collectivités",
+   "horizon": "d'ici 2032",
+   "date": "2026-11-12",
+   "source": {
+    "t": "franceinfo — Bruno Retailleau veut économiser 300 000 postes grâce à l'intelligence artificielle, 12 novembre 2026",
+    "u": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-bruno-retailleau-veut-economiser-300-000-postes-dans-la-fonction-publique-grace-a-l-intelligence-artificielle_8279522.html"
+   }
+  },
+  {
+   "parti": "hor",
+   "postes": -250000,
+   "quoi": "ne remplacer que deux des 750 000 départs à la retraite sur trois",
+   "horizon": "quinquennat",
+   "date": "2026-10-08",
+   "source": {
+    "t": "franceinfo — ce qu'il faut retenir de l'interview d'Édouard Philippe dans « L'Heure de vérité », 8 octobre 2026",
+    "u": "https://www.franceinfo.fr/politique/edouard-philippe/immigration-retraites-allocations-familiales-parcoursup-ce-qu-il-faut-retenir-de-l-interview-d-edouard-philippe-dans-l-emission-l-heure-de-verite_8228416.html"
+   },
+   "regle": 3
+  },
+  {
+   "parti": "ren",
+   "postes": -100000,
+   "quoi": "plan de départs volontaires de 100 000 postes ; aucun poste supprimé dans l'Éducation nationale",
+   "horizon": "non précisé",
+   "date": "2026-11-12",
+   "source": {
+    "t": "franceinfo — opération « Nos services publics », 12 novembre 2026",
+    "u": "https://www.franceinfo.fr/elections/presidentielle/direct-presidentielle-2027-education-sante-transports-suivez-les-interviews-de-huit-candidats-dans-le-cadre-de-l-operation-nos-services-publics_8276135.html"
+   }
+  },
+  {
+   "parti": "eco",
+   "postes": 275000,
+   "lo": 250000,
+   "hi": 300000,
+   "quoi": "250 000 à 300 000 postes de fonctionnaires créés, dont environ 80 000 à l'hôpital et 26 000 dans la justice",
+   "horizon": "quinquennat",
+   "date": "2026-11-12",
+   "source": {
+    "t": "franceinfo — Marine Tondelier promet l'ouverture de 2 000 centres de santé d'ici 2030, 12 novembre 2026",
+    "u": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-marine-tondelier-promet-l-ouverture-de-2-000-centres-de-sante-d-ici-2030-en-france_8279639.html"
+   }
+  }
+ ]
+}
