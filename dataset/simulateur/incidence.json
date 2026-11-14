@@ -1065,6 +1065,33 @@
      "u": "https://focus2030.org/wp-content/uploads/2026/07/Tire-a-part-PLF2027.pdf"
     }
    ]
+  },
+  {
+   "id": "effectifs250",
+   "parts": {
+    "nonreparti": 1.0
+   },
+   "fiabilite": "convention",
+   "explication": "L'économie vient de la masse salariale : des départs à la retraite non remplacés. Aucun agent en poste ne perd de revenu : ce sont des postes qui ne sont pas pourvus. Ceux qui en supportent l'effet sont les usagers des services publics, c'est-à-dire tout le monde à la fois ; cet effet n'est pas chiffré, donc l'économie n'est attribuée à aucun groupe.",
+   "sources": []
+  },
+  {
+   "id": "effectifs400",
+   "parts": {
+    "nonreparti": 1.0
+   },
+   "fiabilite": "convention",
+   "explication": "L'économie vient de la masse salariale : des départs à la retraite non remplacés. Aucun agent en poste ne perd de revenu : ce sont des postes qui ne sont pas pourvus. Ceux qui en supportent l'effet sont les usagers des services publics, c'est-à-dire tout le monde à la fois ; cet effet n'est pas chiffré, donc l'économie n'est attribuée à aucun groupe.",
+   "sources": []
+  },
+  {
+   "id": "effectifs800",
+   "parts": {
+    "nonreparti": 1.0
+   },
+   "fiabilite": "convention",
+   "explication": "L'économie vient de la masse salariale : des départs à la retraite non remplacés. Aucun agent en poste ne perd de revenu : ce sont des postes qui ne sont pas pourvus. Ceux qui en supportent l'effet sont les usagers des services publics, c'est-à-dire tout le monde à la fois ; cet effet n'est pas chiffré, donc l'économie n'est attribuée à aucun groupe.",
+   "sources": []
   }
  ]
 }

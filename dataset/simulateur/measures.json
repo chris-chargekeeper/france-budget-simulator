@@ -668,6 +668,69 @@
       "note": "2,5 millions d'agents pour l'État et ses opérateurs. Une baisse de 5 % suppose de ne pas remplacer environ 125 000 départs."
     },
     {
+      "id": "effectifs250",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 7.5,
+      "mid": 10,
+      "hi": 12.5,
+      "ramp": 5,
+      "lab": "Non-remplacement d'un départ à la retraite sur trois (≈ 250 000 postes en cinq ans)",
+      "note": "Même règle pour tous les plans de non-remplacement : chaque poste non pourvu économise de 30 000 à 50 000 € par an une fois l'effet complet, 40 000 € au centre — le rendement observé de la RGPP (environ 6 Md€ pour 150 000 postes, les agents restants récupérant une partie des économies). La montée en charge suit les départs à la retraite que le candidat peut ne pas remplacer : environ 144 000 par an dans toute la fonction publique. 250 000 postes sur un quinquennat, soit un départ sur trois : l'effet complet est atteint en cinq ans.",
+      "sources": [
+        {
+          "t": "IGA, IGF, IGAS, Bilan de la RGPP, septembre 2012 : 150 000 emplois supprimés (p. 56), 11,9 Md€ d'économies dont près de la moitié hors postes (p. 52), soit environ 40 000 € par poste",
+          "u": "https://www.fonction-publique.gouv.fr/files/files/ArchivePortailFP/www.fonction-publique.gouv.fr/files/files/publications/hors_collections/20120925-rapport-bilan-RGPP_sans-annexes.pdf"
+        },
+        {
+          "t": "DGAFP, Chiffres clés de la fonction publique 2026 : 5,85 millions d'agents, 144 000 départs à la retraite en 2025",
+          "u": "https://www.fonction-publique.gouv.fr/files/files/publications/publications-dgafp/cc-2026-web.pdf"
+        }
+      ]
+    },
+    {
+      "id": "effectifs400",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 12,
+      "mid": 16,
+      "hi": 20,
+      "ramp": 6,
+      "lab": "400 000 départs à la retraite non remplacés d'ici 2032",
+      "note": "Même règle pour tous les plans de non-remplacement : chaque poste non pourvu économise de 30 000 à 50 000 € par an une fois l'effet complet, 40 000 € au centre — le rendement observé de la RGPP (environ 6 Md€ pour 150 000 postes, les agents restants récupérant une partie des économies). La montée en charge suit les départs à la retraite que le candidat peut ne pas remplacer : environ 144 000 par an dans toute la fonction publique. 400 000 postes de 2027 à 2032, soit environ deux départs sur trois : l'effet complet est atteint en six ans. Le candidat chiffre 25 Md€, soit 62 500 € par poste.",
+      "sources": [
+        {
+          "t": "IGA, IGF, IGAS, Bilan de la RGPP, septembre 2012 : 150 000 emplois supprimés (p. 56), 11,9 Md€ d'économies dont près de la moitié hors postes (p. 52), soit environ 40 000 € par poste",
+          "u": "https://www.fonction-publique.gouv.fr/files/files/ArchivePortailFP/www.fonction-publique.gouv.fr/files/files/publications/hors_collections/20120925-rapport-bilan-RGPP_sans-annexes.pdf"
+        },
+        {
+          "t": "DGAFP, Chiffres clés de la fonction publique 2026 : 5,85 millions d'agents, 144 000 départs à la retraite en 2025",
+          "u": "https://www.fonction-publique.gouv.fr/files/files/publications/publications-dgafp/cc-2026-web.pdf"
+        }
+      ]
+    },
+    {
+      "id": "effectifs800",
+      "g": "dep-",
+      "inst": "dep",
+      "lo": 24,
+      "mid": 32,
+      "hi": 40,
+      "ramp": 9,
+      "lab": "800 000 postes publics en moins, hors 2,2 millions d'emplois protégés",
+      "note": "Même règle pour tous les plans de non-remplacement : chaque poste non pourvu économise de 30 000 à 50 000 € par an une fois l'effet complet, 40 000 € au centre — le rendement observé de la RGPP (environ 6 Md€ pour 150 000 postes, les agents restants récupérant une partie des économies). La montée en charge suit les départs à la retraite que le candidat peut ne pas remplacer : environ 144 000 par an dans toute la fonction publique. 800 000 postes, c'est plus que les 720 000 départs à la retraite d'un quinquennat. Hors les 2,2 millions d'emplois protégés (enseignants, militaires, policiers, soignants), il reste environ 89 000 départs par an à ne pas remplacer : l'effet complet demande neuf ans, au-delà de 2032. Le plan Knafo chiffre 40 Md€, soit 50 000 € par poste.",
+      "sources": [
+        {
+          "t": "IGA, IGF, IGAS, Bilan de la RGPP, septembre 2012 : 150 000 emplois supprimés (p. 56), 11,9 Md€ d'économies dont près de la moitié hors postes (p. 52), soit environ 40 000 € par poste",
+          "u": "https://www.fonction-publique.gouv.fr/files/files/ArchivePortailFP/www.fonction-publique.gouv.fr/files/files/publications/hors_collections/20120925-rapport-bilan-RGPP_sans-annexes.pdf"
+        },
+        {
+          "t": "DGAFP, Chiffres clés de la fonction publique 2026 : 5,85 millions d'agents, 144 000 départs à la retraite en 2025",
+          "u": "https://www.fonction-publique.gouv.fr/files/files/publications/publications-dgafp/cc-2026-web.pdf"
+        }
+      ]
+    },
+    {
       "id": "collectivites",
       "g": "dep-",
       "inst": "dep",

@@ -273,8 +273,8 @@
         }
       },
       "set": {
-        "effectifs": {
-          "sim": "hi",
+        "effectifs400": {
+          "sim": "mid",
           "annonce": 25
         },
         "agences": {
@@ -431,7 +431,7 @@
           "sim": "hi",
           "annonce": 50
         },
-        "effectifs": {
+        "effectifs250": {
           "sim": "mid"
         },
         "ondam": {
@@ -607,7 +607,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 54 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,3 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 57 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,3 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -714,6 +714,9 @@
         "violences": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,10 point de PIB, production +0,10 % en 2032 et +0,02 % à long terme.",
         "coupes2026": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,19 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",
         "effectifs": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,08 %).",
+        "effectifs250": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,22 %).",
+        "effectifs400": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,38 %).",
+        "effectifs800": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,50 %).",
         "collectivites": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,09 %).",
         "chomage": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,10 %).",
         "niches": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,06 %).",
@@ -831,7 +834,7 @@
         "agences": {
           "sim": "mid"
         },
-        "effectifs": {
+        "effectifs800": {
           "sim": "mid",
           "annonce": 40
         },

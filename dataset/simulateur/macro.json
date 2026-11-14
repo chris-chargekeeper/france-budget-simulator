@@ -4921,6 +4921,18 @@
   "coupes2026": {
    "type": "conso_publique",
    "canaux": []
+  },
+  "effectifs250": {
+   "type": "emploi_public",
+   "canaux": []
+  },
+  "effectifs400": {
+   "type": "emploi_public",
+   "canaux": []
+  },
+  "effectifs800": {
+   "type": "emploi_public",
+   "canaux": []
   }
  },
  "moteur": {

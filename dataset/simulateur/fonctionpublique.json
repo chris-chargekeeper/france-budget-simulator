@@ -62,11 +62,12 @@
   "masse": 370.0,
   "annee": 2025,
   "parPoste": 63000,
-  "note": "Rémunérations des administrations publiques en 2025, 370 Md€, rapportées aux 5,85 millions d'agents : environ 63 000 € par poste et par an, cotisations comprises. Un ordre de grandeur : les périmètres de l'Insee et de la DGAFP diffèrent.",
+  "note": "Un agent public coûte en moyenne environ 63 000 € par an, cotisations comprises (370 Md€ de rémunérations en 2025 pour 5,85 millions d'agents ; ordre de grandeur, les périmètres de l'Insee et de la DGAFP diffèrent). Ne pas remplacer un départ rapporte moins : le partant est souvent remplacé par un agent moins payé, et une partie des économies revient aux agents restants. La RGPP a donné environ 40 000 € par poste ; c'est le montant que le simulateur retient.",
   "source": {
    "t": "Insee Première n° 2106, Le compte des administrations publiques en 2025",
    "u": "https://www.insee.fr/fr/statistiques/8997691"
-  }
+  },
+  "economieParPoste": 40000
  },
  "rgpp": {
   "postes": 150000,

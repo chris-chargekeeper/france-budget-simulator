@@ -3316,7 +3316,7 @@ function renderPostesPublics(){
     const pr = proche(n); if (pr) bits.push(`≈ autant que les ${pr.lab} (${mil(pr.n)})`);
     const dit = el('div', 'fp-dit');
     dit.innerHTML = bits.join(' ; ') + '.'
-      + `<span class="adv-only"> À ${nf(C.parPoste / 1000)} 000 € le poste en moyenne, ≈ <b>${nf(n * C.parPoste / 1e9)} Md€ par an</b> une fois en place`
+      + `<span class="adv-only"> À ${nf(C.economieParPoste / 1000)} 000 € par poste (rendement de la RGPP), ≈ <b>${nf(n * C.economieParPoste / 1e9)} Md€ par an</b> une fois l’effet complet`
       + (c.sanctuaire ? ` ; hors les ${nf(c.sanctuaire / 1e6, 1)} millions d’emplois protégés, ces postes se prennent sur ${nf((E.total - c.sanctuaire) / 1e6, 2)} millions d’agents, soit ${nf(n / (E.total - c.sanctuaire) * 100)} sur 100` : '')
       + `. Annonce : ${c.quoi} (${lien(c.source)}).</span>`;
     row.appendChild(dit);
@@ -3339,7 +3339,7 @@ function renderPostesPublics(){
     + `<h4>Ce que les candidats en attendent</h4><ul>${sumAg}</ul></div>`;
   const srcs = [E.source, D.source, ...FP.reperes.map(r => r.source), C.source, R.source, A.source];
   $('#fpSrc').innerHTML = 'Sources : ' + srcs.filter((s, i) => srcs.findIndex(x => x.u === s.u) === i).map(lien).join(' ; ')
-    + '. Annonces des candidats : déclarations datées, reprises dans la veille ; un nombre de postes n’est pas un chiffrage, et le simulateur ne le convertit pas encore en mesure budgétaire.';
+    + '. Annonces des candidats : déclarations datées, reprises dans la veille ; dans les scénarios, le non-remplacement est compté à 40 000 € par poste, au rythme des départs à la retraite que chaque candidat peut ne pas remplacer : les 800 000 postes de Zemmour ne sont qu’aux deux tiers atteints en 2032.';
 }
 
 /** Qui paie les retraites : actifs par retraité, poids dans le PIB, et qui finance 100 € de pension. */
