@@ -749,7 +749,7 @@
       "candidat": "David Lisnard",
       "avatar": "h",
       "couleur": "#0E7C86",
-      "statutCandidature": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite ; 7 % chez Ifop-Fiducial pour LCI (27-29 octobre 2026)",
+      "statutCandidature": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite et en accepte le principe proposé par Bruno Retailleau (10 novembre 2026)",
       "statut": "partiel",
       "annonce": {
         "titre": "200 Md€ d'économies d'ici 2032",
@@ -809,11 +809,13 @@
       "candidat": "Éric Zemmour",
       "avatar": "h",
       "couleur": "#3B3F8F",
-      "statutCandidature": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026) ; 4 à 4,5 % chez Ipsos (21-22 octobre 2026)",
+      "statutCandidature": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026)",
       "statut": "reconstitution",
       "annonce": {
-        "titre": "Pas de chiffrage 2027 publié",
-        "texte": "Reconstitution du simulateur à partir des positions publiques constantes du candidat : réduction des dépenses liées à l'immigration, suppression de l'aide médicale d'État, baisse de la contribution française au budget européen, réduction du train de vie de l'État. Aucun chiffrage d'ensemble n'a été publié pour 2027 : les montants sont ceux du catalogue."
+        "titre": "Plan Knafo : 140 Md€ d'économies par an",
+        "texte": "Le chiffrage de référence du camp Zemmour est le plan de Sarah Knafo (vice-présidente de Reconquête), publié sur budget2027.fr : « 140 milliards d'économies par an » au minimum, en 24 mesures. Fonction publique, environ 45 Md€, dont 40 Md€ par le non-remplacement de 800 000 départs (sur 2,3 millions de départs naturels attendus) ; relations internationales et immigration, environ 35 Md€ (aide publique au développement, contribution au budget européen, AME) ; suppression ou fusion d'agences, environ 31 Md€ (Anah, Ademe, ARS, politique de la Ville) ; prestations sociales, environ 25 Md€. Le plan ne fixe pas de cible de déficit. Le scénario du simulateur reprend ces orientations avec les montants du catalogue, qui chiffrent plus bas la plupart de ces postes.",
+        "revendique": 140,
+        "cote": "economie"
       },
       "set": {
         "immigration": {
@@ -849,6 +851,10 @@
         {
           "t": "TF1 Info — Éric Zemmour officialise sa candidature au 20H, 10 novembre 2026",
           "u": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-eric-zemmour-invite-du-jt-de-20h-ce-mardi-2475074.html"
+        },
+        {
+          "t": "« 140 milliards d'économies par an : le plan de Sarah Knafo » — budget2027.fr",
+          "u": "https://budget2027.fr/"
         }
       ],
       "depuis": "2026-10-30"
