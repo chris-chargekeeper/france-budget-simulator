@@ -589,6 +589,7 @@ SITE = "https://quipaie2027.fr"
 # propriétaire. La CI s'en sert pour signaler chaque publication.
 INDEXNOW_CLE = "bc390a87cc157f6e7e0faa701998cc8a"
 WEB = ROOT / "web"
+PAGES = ROOT / "pages"     # pages annexes (mentions légales…), copiées telles quelles dans web/
 # Robots d'indexation et d'IA explicitement invités : moteurs (Google, Bing — dont se
 # sert ChatGPT —, Qwant, DuckDuckGo, Ecosia s'appuient sur l'un des deux) et assistants.
 ROBOTS_IA = ["Googlebot", "Bingbot", "Google-Extended", "GPTBot", "OAI-SearchBot",
@@ -615,7 +616,10 @@ def fichiers_web(payload):
                "<changefreq>daily</changefreq><priority>1.0</priority></url>\n"
                f"  <url><loc>{SITE}/llms.txt</loc><lastmod>{jour}</lastmod>"
                "<changefreq>daily</changefreq><priority>0.5</priority></url>\n"
-               "</urlset>\n")
+               + "".join(f"  <url><loc>{SITE}/{f.name}</loc>"
+                         "<changefreq>yearly</changefreq><priority>0.2</priority></url>\n"
+                         for f in sorted(PAGES.glob("*.html")))
+               + "</urlset>\n")
     cands = [x for x in payload["parties"]["parties"] if not x.get("retire")]
     course = [x for x in cands if not x.get("horsCourse")]
     lignes = [f"- {x['candidat']} ({x['nom']}) : {x['statutCandidature']}" for x in course]
@@ -653,8 +657,9 @@ Données au {jour}, mises à jour chaque matin (veille des déclarations chiffr�
 
 - [Le simulateur]({SITE}/) : toutes les données, la méthode et les sources sont dans la page (section « Méthode, sources et limites »).
 """
+    pages = {f.name: f.read_text(encoding="utf-8") for f in sorted(PAGES.glob("*.html"))}
     return {"robots.txt": "\n".join(robots), "sitemap.xml": sitemap, "llms.txt": llms,
-            f"{INDEXNOW_CLE}.txt": INDEXNOW_CLE}
+            f"{INDEXNOW_CLE}.txt": INDEXNOW_CLE, **pages}
 
 
 def moteur_js():
