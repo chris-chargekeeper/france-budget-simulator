@@ -293,6 +293,34 @@
       "note": "Après la CVAE, il reste principalement la CFE et la taxe foncière des entreprises."
     },
     {
+      "id": "prod50",
+      "g": "rec-",
+      "inst": "imp",
+      "lo": 45,
+      "mid": 50,
+      "hi": 50,
+      "ramp": 1,
+      "lab": "Baisse de 50 Md€ des impôts de production (CVAE, C3S, CFE et au-delà)",
+      "note": "Les impôts de production rapportent environ 75 Md€ (Public Sénat, d'après Horizons) à 106 Md€ selon le périmètre (Institut Montaigne, 2025) ; la CVAE résiduelle, la C3S et la CFE n'en font qu'une partie, il faut donc toucher aussi la taxe foncière des entreprises ou les taxes sur les salaires. La baisse d'impôt est un coût certain ; ce que l'État récupère en impôt sur les bénéfices et en activité passe par les effets en chaîne. Effets mesurés de la baisse de la CVAE : faibles sur l'investissement, nuls à court terme sur l'emploi (IPP). Borne basse : une partie non compensée aux collectivités.",
+      "sources": [
+        {
+          "t": "Public Sénat, « Entreprises : un deal à 250 milliards d'euros sur un quinquennat », 6 novembre 2025",
+          "u": "https://www.publicsenat.fr/actualites/economie/entreprises-un-deal-a-250-milliards-deuros-sur-un-quinquennat-que-represente-la-proposition-dedouard-philippe",
+          "d": "2026-11-14"
+        },
+        {
+          "t": "IPP, rapport n° 60 sur les impôts de production, octobre 2025",
+          "u": "https://www.ipp.eu/wp-content/uploads/2025/10/FS_ImpotsProductions-9.pdf",
+          "d": "2026-11-14"
+        },
+        {
+          "t": "Conseil d'analyse économique, note n° 53 (Martin et Trannoy), juin 2019",
+          "u": "https://cae-eco.fr/static/pdf/cae-note053.pdf",
+          "d": "2026-11-14"
+        }
+      ]
+    },
+    {
       "id": "csgbaisse",
       "g": "rec-",
       "inst": "imp",
@@ -469,6 +497,29 @@
           "t": "Sénat, avis de Catherine Di Folco sur le PLF 2024 : coût des hausses de 3,5 % (7,6 Md€) et 1,5 % (3,2 Md€), repris par Acteurs publics",
           "u": "https://acteurspublics.fr/articles/la-facture-de-la-hausse-du-point-dindice-pour-chacun-des-3-versants-de-la-fonction-publique",
           "d": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "profs20",
+      "g": "dep+",
+      "inst": "dep",
+      "lo": 7,
+      "mid": 9,
+      "hi": 12,
+      "ramp": 5,
+      "lab": "Salaire des enseignants relevé de 20 % en moyenne sur le quinquennat",
+      "note": "Une hausse de 1 % du point d'indice coûte 2,4 Md€ pour les 5,7 millions d'agents publics (DGAFP, juillet 2026). Les quelque 870 000 enseignants du public et du privé sous contrat, mieux payés que la moyenne, en représentent environ un cinquième : environ 0,45 Md€ par point, soit environ 9 Md€ pour +20 %, cotisations de pension comprises (calcul de ce site, 7 à 12 selon l'effectif et la part des primes). Une partie revient en impôts et cotisations.",
+      "sources": [
+        {
+          "t": "DGAFP, rendez-vous salarial du 8 juillet 2026 : « une hausse de 1 % de la valeur du point représente un coût de 2,4 Md€ » (diaporama)",
+          "u": "https://www.cfdt-ufetam.org/wp-content/uploads/2026/07/rdv_salarial_2026_diapo_presentation.pdf",
+          "d": "2026-11-14"
+        },
+        {
+          "t": "Édouard Philippe, programme, page « École » (mise à jour du 12 novembre 2026)",
+          "u": "https://www.edouardphilippe.fr/programme/ecole",
+          "d": "2026-11-14"
         }
       ]
     },

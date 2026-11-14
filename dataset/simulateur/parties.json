@@ -414,8 +414,8 @@
       "statutCandidature": "Candidat déclaré depuis septembre 2024",
       "statut": "reconstitution",
       "annonce": {
-        "titre": "Budget alternatif 2027 publié, pas de chiffrage présidentiel",
-        "texte": "Horizons a publié le 13 octobre 2026 un « budget alternatif » pour le PLF 2027 : 10 Md€ d'économies (moitié État, moitié dépenses sociales) pour annuler 10 Md€ de hausses d'impôts. Édouard Philippe a présenté le 29 septembre 2026 une réforme des retraites portant l'âge légal à 65 ans. Aucun chiffrage d'ensemble de son programme présidentiel n'est publié : le scénario est reconstitué par le simulateur à partir de ces positions, aux montants du catalogue.",
+        "titre": "Programme en ligne (15 thèmes, mis à jour le 12 novembre 2026), sans chiffrage d'ensemble",
+        "texte": "Édouard Philippe publie son programme thème par thème sur son site de campagne (15 thèmes, dernière mise à jour le 12 novembre 2026) ; il « s'écrit tout au long de la campagne » et n'a pas de chiffrage d'ensemble. Objectif : un déficit d'environ 2 % du PIB en fin de mandat, avec une règle d'or votée par référendum ; l'effort porterait pour moitié sur les dépenses sociales, pour un quart sur l'État et les collectivités, pour un quart sur la croissance. Simulé : retraite à 65 ans, un départ sur trois non remplacé, suppression d'agences, freinage des dépenses d'assurance maladie et des concours aux collectivités, chômage limité à 12 mois avant 50 ans, hausse de 20 % du salaire des enseignants, et le « pacte fiscal » : 50 Md€ d'impôts de production en moins contre 50 Md€ d'aides aux entreprises en moins. La baisse d'impôt est comptée à son montant ; les aides supprimées au haut de la fourchette des chiffrages (25 Md€), car le Sénat (211 Md€ d'aides, dont 75 d'allègements que Philippe ne touche pas) et le Haut-commissariat au plan ne trouvent pas 50 Md€ d'aides « improductives ». Restent hors du simulateur, faute de barème : l'allocation familiale unique de 350 € dès le premier enfant (dégressive, à la place des aides actuelles), l'impôt sur le revenu supprimé pendant les trois premières années de l'enfant, les heures au-delà de 35 h sans cotisations ni impôt, et 500 € sur un plan d'épargne retraite au premier emploi. Horizons a aussi publié le 13 octobre 2026 un « budget alternatif » au PLF 2027 (10 Md€ d'économies pour annuler 10 Md€ de hausses d'impôts).",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -428,7 +428,7 @@
           "sim": "hi"
         },
         "niches": {
-          "sim": "mid",
+          "sim": "hi",
           "annonce": 50
         },
         "effectifs": {
@@ -442,6 +442,16 @@
         },
         "agences": {
           "sim": "mid"
+        },
+        "prod50": {
+          "sim": "mid",
+          "annonce": 50
+        },
+        "profs20": {
+          "sim": "mid"
+        },
+        "chomage": {
+          "sim": "mid"
         }
       },
       "sources": [
@@ -452,6 +462,14 @@
         {
           "t": "Premier débat des candidats : Édouard Philippe, 50 Md€ d'aides aux entreprises supprimées — Public Sénat",
           "u": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle"
+        },
+        {
+          "t": "Édouard Philippe, programme en ligne, pages « Comptes publics », « Entreprises », « Travail », « Famille », « École », « Retraites » (mises à jour du 12 novembre 2026)",
+          "u": "https://www.edouardphilippe.fr/programme"
+        },
+        {
+          "t": "Public Sénat, « Entreprises : un deal à 250 milliards d'euros sur un quinquennat », 6 novembre 2025",
+          "u": "https://www.publicsenat.fr/actualites/economie/entreprises-un-deal-a-250-milliards-deuros-sur-un-quinquennat-que-represente-la-proposition-dedouard-philippe"
         }
       ]
     },
@@ -589,7 +607,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 52 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,3 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 54 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,3 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -677,6 +695,7 @@
         "irbaisse": "Départage : son effet sur l'activité est comparable à celui de « Baisse de la CSG ou des cotisations sur les revenus d'activité » (les fourchettes publiées se recouvrent), qui profite davantage aux classes moyennes, aux bas salaires, aux retraités et aux agents publics ; c'est celle-ci qui est retenue.",
         "tvaener": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,34 point de PIB, production +0,23 % en 2032 et +0,23 % à long terme.",
         "prod": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,16 point de PIB, production +0,06 % en 2032 et +0,03 % à long terme.",
+        "prod50": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −1,68 point de PIB, production +0,61 % en 2032 et +0,31 % à long terme.",
         "retr62": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,72 %).",
         "retr60": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −1,33 %).",
         "indexation": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,10 % en 2032 et +0,07 % à long terme.",
@@ -688,6 +707,7 @@
         "smic": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,11 % en 2032 et +0,02 % à long terme.",
         "smic1700": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,27 %).",
         "pointindice10": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,72 point de PIB, production +0,66 % en 2032 et +0,12 % à long terme.",
+        "profs20": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,24 point de PIB, production +0,26 % en 2032 et +0,05 % à long terme.",
         "autonomie": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,37 point de PIB, production +0,29 % en 2032 et +0,20 % à long terme.",
         "cantine": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,18 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",
         "chomageplus": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,22 point de PIB, production +0,17 % en 2032 et +0,12 % à long terme.",

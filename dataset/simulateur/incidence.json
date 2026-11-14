@@ -570,6 +570,21 @@
    ]
   },
   {
+   "id": "prod50",
+   "parts": {
+    "pme": 0.6,
+    "grandes": 0.4
+   },
+   "fiabilite": "convention",
+   "explication": "Convention : la baisse profite aux entreprises redevables de la CFE, de la taxe foncière et de la C3S, réparties approximativement selon leur poids dans l'activité, la C3S étant concentrée sur les entreprises au chiffre d'affaires élevé. Aucune ventilation officielle récente par taille n'a été trouvée ; une partie de l'effet peut à terme se diffuser aux salariés et aux clients.",
+   "sources": [
+    {
+     "t": "Conseil d'analyse économique, Focus n° 035-2019, « Impôts sur la production : quel impact sur la compétitivité ? »",
+     "u": "https://cae-eco.fr/static/pdf/cae-focus035v2.pdf"
+    }
+   ]
+  },
+  {
    "id": "csgbaisse",
    "parts": {
     "moyens": 0.42,
@@ -919,6 +934,20 @@
     {
      "t": "Sénat, avis de Catherine Di Folco sur le PLF 2024 : coût des hausses de 3,5 % (7,6 Md€) et 1,5 % (3,2 Md€), repris par Acteurs publics",
      "u": "https://acteurspublics.fr/articles/la-facture-de-la-hausse-du-point-dindice-pour-chacun-des-3-versants-de-la-fonction-publique"
+    }
+   ]
+  },
+  {
+   "id": "profs20",
+   "parts": {
+    "agents": 1.0
+   },
+   "fiabilite": "sourcee",
+   "explication": "La hausse va aux enseignants, agents publics (et maîtres du privé sous contrat, payés par l'État).",
+   "sources": [
+    {
+     "t": "Édouard Philippe, programme, page « École »",
+     "u": "https://www.edouardphilippe.fr/programme/ecole"
     }
    ]
   },

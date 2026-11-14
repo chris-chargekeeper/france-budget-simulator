@@ -7,7 +7,7 @@ Données au 2026-11-14, mises à jour chaque matin (veille des déclarations chi
 ## Ce que fait le site
 
 - Point de départ : la trajectoire des finances publiques « si rien ne change » (Insee, PLF, Haut Conseil des finances publiques, Commission européenne).
-- Chaque programme est découpé en mesures (52 au total), chacune chiffrée par une borne basse, une valeur centrale et une borne haute tirées de travaux publics : Cour des comptes, HCFP, OFCE, IPP, Conseil d'analyse économique, Fipeco, Banque de France, rapports parlementaires.
+- Chaque programme est découpé en mesures (54 au total), chacune chiffrée par une borne basse, une valeur centrale et une borne haute tirées de travaux publics : Cour des comptes, HCFP, OFCE, IPP, Conseil d'analyse économique, Fipeco, Banque de France, rapports parlementaires.
 - Deux lectures côte à côte : « Leurs promesses » (les chiffres annoncés par les partis) et « Bas les masques » (ce que disent les chiffrages indépendants).
 - Effets en chaîne en 2032 : emploi, chômage, PIB par habitant, taux d'emprunt de l'État, intérêts de la dette, à partir de multiplicateurs et de lois économiques publiés (Trésor, Banque de France, BCE, OFCE, Commission européenne), avec une fourchette.
 - Journal des annonces : chaque déclaration chiffrée relevée, datée, sourcée, et marquée quand elle contredit le programme écrit.
@@ -31,7 +31,7 @@ Données au 2026-11-14, mises à jour chaque matin (veille des déclarations chi
 - Jean-Luc Mélenchon : Programme publié le 6 novembre ; 106,4 Md€ de recettes chiffrées pour 2027
 - Bruno Retailleau : 197 Md€ d'économies par an en 2032, chiffrées poste par poste
 - Gabriel Attal : 150 Md€ d'économies sur le quinquennat
-- Édouard Philippe : Budget alternatif 2027 publié, pas de chiffrage présidentiel
+- Édouard Philippe : Programme en ligne (15 thèmes, mis à jour le 12 novembre 2026), sans chiffrage d'ensemble
 - Raphaël Glucksmann : Contre-budget 2027 publié (39,5 Md€ de recettes), pas de chiffrage présidentiel
 - Marine Tondelier : Amendements chiffrés au budget 2027, pas de chiffrage présidentiel
 - David Lisnard : 200 Md€ d'économies d'ici 2032

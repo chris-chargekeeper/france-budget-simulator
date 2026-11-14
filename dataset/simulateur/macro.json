@@ -4578,6 +4578,18 @@
    ],
    "note": "Le seul chiffrage publié porte sur la C3S ; il reste la CFE et la taxe foncière, que le CAE juge peu distorsives."
   },
+  "prod50": {
+   "type": "production",
+   "canaux": [
+    {
+     "coef": "impots_production_c3s",
+     "quoi": "perte de productivité due aux impôts sur le chiffre d'affaires",
+     "extrapolation": true,
+     "moteur": "apres2032"
+    }
+   ],
+   "note": "Le seul chiffrage publié porte sur la C3S ; il reste la CFE et la taxe foncière, que le CAE juge peu distorsives."
+  },
   "csgbaisse": {
    "type": "csg_activite",
    "canaux": []
@@ -4880,6 +4892,11 @@
   "pointindice10": {
    "type": "conso_publique",
    "canaux": []
+  },
+  "profs20": {
+   "type": "conso_publique",
+   "canaux": [],
+   "note": "Hausse de salaires publics : même traitement que le point d'indice."
   },
   "autonomie": {
    "type": "prestations",
