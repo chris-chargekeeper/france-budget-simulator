@@ -1,0 +1,261 @@
+{
+  "patch": {
+    "_comment": "Relève du 14 novembre 2026 (tâche locale) : OAT et écart au 13 novembre, IPCH d'octobre définitif ; AN 2e séance du 12 novembre (vote PLFG, Coquerel) ; Sénat PLFSS du 13 novembre ; déclarations du 13 novembre (primaire, Ukraine, cumul emploi-retraite). Aucun nouveau sondage avec notice ou rapport d'institut.",
+    "releve": "2026-11-14",
+    "contexte": {
+      "oat10": {
+        "valeur": 4.89,
+        "date": "2026-11-13",
+        "detail": "OAT 10 ans à 4,89 % à la clôture du 13 novembre (4,76 % le 12, 4,76 % le 11) ; Bund à 3,37 %.",
+        "source": {
+          "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Idéal Investisseur (clôture du 13 novembre 2026)",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      },
+      "spread": {
+        "valeur": 152,
+        "date": "2026-11-13",
+        "detail": "Écart OAT-Bund à 10 ans de 151,8 pb (OAT 4,89 %, Bund 3,37 %), +4,6 pb sur la séance ; plus haut sur un an à 174,6 pb (22 octobre).",
+        "source": {
+          "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Idéal Investisseur (clôture du 13 novembre 2026)",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      },
+      "ipch": {
+        "valeur": 3.7,
+        "date": "2026-11-13",
+        "detail": "Indice harmonisé, résultat définitif : +3,7 % sur un an en octobre (estimation provisoire : 3,8 %), +0,4 % sur un mois. IPC +3,4 %, inflation sous-jacente 1,7 %, énergie +24,1 %.",
+        "source": {
+          "t": "En octobre 2026, les prix à la consommation augmentent de 3,4 % sur un an — Insee, Informations rapides n° 271, 13 novembre 2026",
+          "u": "https://www.insee.fr/fr/statistiques/9131332"
+        }
+      }
+    },
+    "annonces": [
+      {
+        "date": "2026-11-12",
+        "parti": null,
+        "qui": "Assemblée nationale (vote sur l'ensemble)",
+        "fonction": "Scrutin public sur l'ensemble du projet de loi de finances de fin de gestion pour 2026",
+        "media": "Assemblée nationale, compte rendu de la 2e séance du 12 novembre 2026 (PLFG 2026, explications de vote et vote sur l'ensemble)",
+        "quoi": "L'Assemblée rejette le PLFG 2026 par 49 voix contre 63. Pour : DR, EPR, Dem et HOR ; contre : EcoS et LFI ; abstention : RN, UDR et SOC. Le rapporteur général Philippe Juvin estime le texte dégradé de 186 M€ en séance, déficit 2026 maintenu à 5,4 % ; le texte part au Sénat puis en CMP.",
+        "verbatim": "(Le projet de loi n'est pas adopté.)",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-12-novembre-2026",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Vote des groupes sur un texte de fin de gestion, sans lien direct avec les programmes des candidats."
+      },
+      {
+        "date": "2026-11-12",
+        "parti": "lfi",
+        "qui": "Éric Coquerel",
+        "fonction": "Président de la commission des finances de l'Assemblée nationale (LFI)",
+        "media": "Assemblée nationale, compte rendu de la 2e séance du 12 novembre 2026 (PLFG 2026, explication de vote)",
+        "quoi": "Attribue 2,5 Md€ des 3,5 Md€ de hausse de la charge de la dette aux OAT indexées sur l'inflation, dont son camp demandait la suppression ; redemande d'abaisser à 0,5 % des crédits le seuil imposant une loi de finances rectificative ; vote contre le PLFG.",
+        "verbatim": "l'augmentation de la charge de la dette s'explique pour 2,5 milliards d'euros par l'émission d'obligations assimilables du Trésor indexées sur l'inflation (OATI). Or nous avions demandé la suppression de ces titres.",
+        "mesure": null,
+        "montant": 2.5,
+        "type": "contexte",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-12-novembre-2026",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Constat sur l'exécution 2026, pas une mesure chiffrée ; la présence de l'arrêt des OATi dans L'Avenir en commun 2027 n'a pas été vérifiée. Parle comme président de commission, pas comme porte-parole de campagne."
+      },
+      {
+        "date": "2026-11-13",
+        "parti": null,
+        "qui": "Olivier Henno",
+        "fonction": "Rapporteur général de la commission des affaires sociales du Sénat (Union centriste)",
+        "media": "Sénat, compte rendu de la séance du 13 novembre 2026 (PLFSS 2027, article 19, amendement n° 286 rectifié bis, scrutin n° 99)",
+        "quoi": "Le Sénat adopte (195 pour, 129 contre) un amendement de la commission demandant aux partenaires sociaux de travailler à porter la durée du travail de 35 à 37 heures, pour 10 Md€ de recettes pour la Sécurité sociale. Le groupe LR vote pour en bloc (122 voix) ; SER, CRCE-K, RDSE, RDPI et GEST contre ; le groupe UNT (RN) s'abstient ; Patrick Kanner (PS) parle d'une « idée saugrenue ».",
+        "verbatim": "nous demandons aux partenaires sociaux de travailler sur une augmentation du temps de travail de 35 à 37 heures, destinée à accroître les recettes de la sécurité sociale de 10 milliards d'euros.",
+        "mesure": null,
+        "montant": 10,
+        "type": "recette",
+        "source": "https://www.senat.fr/cra/s20261113/s20261113_mono.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Amendement d'un rapporteur centriste, qui n'engage aucun candidat ; aucune mesure « durée du travail » au catalogue. Vote de groupe LR (scrutin n° 99, https://www.senat.fr/scrutin-public/2026/scr2026-99.html), à ne pas lire comme un engagement de programme."
+      },
+      {
+        "date": "2026-11-13",
+        "parti": null,
+        "qui": "David Amiel",
+        "fonction": "Ministre de l'action et des comptes publics",
+        "media": "Sénat, compte rendu de la séance du 13 novembre 2026 (PLFSS 2027, amendement n° 1766 du gouvernement, tableau d'équilibre)",
+        "quoi": "Les votes du Sénat dégradent de 3,2 Md€ le solde 2027 de la Sécurité sociale par rapport au texte initial : suppression de la contribution des complémentaires (1,2 Md€), report au 1er avril de l'article 7 (0,5 Md€), déduction sur la TSA (0,5 Md€), plafonnement de la cotisation CNRACL (0,4 Md€), concours de la CNSA (0,4 Md€).",
+        "verbatim": "Ces premiers mouvements dégradent le solde de 3,2 milliards d'euros par rapport au texte initial",
+        "mesure": null,
+        "montant": 3.2,
+        "type": "contexte",
+        "source": "https://www.senat.fr/cra/s20261113/s20261113_mono.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Chiffrage du gouvernement, qui n'engage aucun candidat suivi."
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "rn",
+        "qui": "Aleksandar Nikolic",
+        "fonction": "Porte-parole de la campagne de Marine Le Pen",
+        "media": "franceinfo, « Avant le 20h », le Duel (face à Jean-Charles Orsucci)",
+        "quoi": "Propose, pour garder des soignants à l'hôpital, le cumul emploi-retraite avec une « non-imposition » des retraités qui restent en poste ; aucun coût annoncé. Cite un taux de prélèvements obligatoires de 46 % et une dette à 120 % du PIB.",
+        "verbatim": "c'est le cumul emploi-retraite, justement, pour les retraités. Une non-imposition pour les inciter à rester",
+        "mesure": null,
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.franceinfo.fr/replay-magazine/franceinfo/avant-le-20h/peut-il-mettre-a-mal-l-annonce-faite-d-un-combat-entre-le-rn-et-lfi-jean-charles-orsucci-porte-parole-de-campagne-de-gabriel-attal-ne-ferme-par-la-porte-a-teddy-riner_8281595.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Exonération d'impôt non chiffrée et sans périmètre ; sa présence dans le programme RN du 6 octobre n'a pas été vérifiée."
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "rn",
+        "qui": "Marine Le Pen",
+        "fonction": "Candidate du RN à la présidentielle",
+        "media": "Salon du Made in France, Paris (propos rapportés par TF1info)",
+        "quoi": "Se dit prête à rencontrer Volodymyr Zelensky à Bruxelles pour parler du financement de l'aide à l'Ukraine ; aucun montant.",
+        "verbatim": "Oui, si je peux le rencontrer à Bruxelles, je le dirai à l'ambassadeur d'Ukraine",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/marine-le-pen-prete-a-rencontrer-volodymyr-zelensky-pour-discuter-de-l-aide-financiere-a-l-ukraine-2475755.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Aucun montant ; pas de mesure « aide à l'Ukraine » au catalogue, rien à comparer au programme."
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Candidat LR à la présidentielle, président de LR",
+        "media": "France 2, « Les 4 Vérités » (propos rapportés par Le Figaro)",
+        "quoi": "Primaire de la droite et du centre : demande une participation de « quelques euros », des engagements et « une forme de loyauté » envers le vainqueur ; se mettra en retrait si Attal gagne ; mènera une campagne « sobre », sans prêt bancaire. Les équipes Retailleau, Attal et Lisnard se réunissent le 17 novembre.",
+        "verbatim": "Tout est négociable, il faut que ce soit quelques euros",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-bruno-retailleau-plaide-pour-une-forme-de-loyaute-a-l-egard-des-vainqueurs-de-la-primaire-20261113",
+        "verifie": false,
+        "contredit": "inconnu",
+        "ecart": "Déclaration sur la candidature, sans mesure budgétaire ; lue dans le compte rendu du Figaro, pas dans le replay de France 2."
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "hor",
+        "qui": "Édouard Philippe",
+        "fonction": "Candidat Horizons à la présidentielle",
+        "media": "LCI",
+        "quoi": "Réaffirme son refus d'une primaire de la droite et du centre, qui « rallie des alliés de circonstance » : « Je ne changerai pas d'avis ».",
+        "verbatim": "Franchement, ces histoires-là ne m'intéressent pas",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/video-ces-histoires-ne-m-interessent-pas-edouard-philippe-reaffirme-son-opposition-a-une-primaire-du-centre-et-de-la-droite-2475746.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Pas de programme Horizons publié ; déclaration sur la candidature, sans contenu budgétaire."
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "rec",
+        "qui": "Éric Zemmour",
+        "fonction": "Candidat de Reconquête à la présidentielle",
+        "media": "Salon du Made in France, Paris (propos rapportés par RTL et l'AFP)",
+        "quoi": "Veut être candidat à une primaire de la droite sans Gabriel Attal et demande à David Lisnard d'« imposer la présence de Reconquête » ; dénonce une « reconstitution de LR et du bloc central ».",
+        "verbatim": "J'espère que M. Lisnard résistera à (la) pression de ses amis de LR et qu'il imposera la présence de Reconquête et je serai ravi d'être candidat à cette primaire",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.rtl.fr/actu/politique/presidentielle-2027-eric-zemmour-veut-participer-a-la-primaire-de-la-droite-et-appelle-david-lisnard-a-l-integrer-7900695914",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Pas de programme Reconquête publié ; déclaration sur la candidature, sans contenu budgétaire."
+      }
+    ]
+  },
+  "trace": {
+    "releve": "2026-11-14",
+    "applique": "2026-11-14",
+    "ajouts": [
+      {
+        "date": "2026-11-12",
+        "parti": null,
+        "quoi": "L'Assemblée rejette le PLFG 2026 par 49 voix contre 63. Pour : DR, EPR, Dem et HOR ; contre : EcoS et LFI ; abstention : RN, UDR et SOC. Le rapporteur général Philippe Juvin estime le texte dégradé de 186 M€ en séance, déficit 2026 maintenu à 5,4 % ; le texte part au Sénat puis en CMP.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-12-novembre-2026"
+      },
+      {
+        "date": "2026-11-12",
+        "parti": "lfi",
+        "quoi": "Attribue 2,5 Md€ des 3,5 Md€ de hausse de la charge de la dette aux OAT indexées sur l'inflation, dont son camp demandait la suppression ; redemande d'abaisser à 0,5 % des crédits le seuil imposant une loi de finances rectificative ; vote contre le PLFG.",
+        "source": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-12-novembre-2026"
+      },
+      {
+        "date": "2026-11-13",
+        "parti": null,
+        "quoi": "Le Sénat adopte (195 pour, 129 contre) un amendement de la commission demandant aux partenaires sociaux de travailler à porter la durée du travail de 35 à 37 heures, pour 10 Md€ de recettes pour la Sécurité sociale. Le groupe LR vote pour en bloc (122 voix) ; SER, CRCE-K, RDSE, RDPI et GEST contre ; le groupe UNT (RN) s'abstient ; Patrick Kanner (PS) parle d'une « idée saugrenue ».",
+        "source": "https://www.senat.fr/cra/s20261113/s20261113_mono.html"
+      },
+      {
+        "date": "2026-11-13",
+        "parti": null,
+        "quoi": "Les votes du Sénat dégradent de 3,2 Md€ le solde 2027 de la Sécurité sociale par rapport au texte initial : suppression de la contribution des complémentaires (1,2 Md€), report au 1er avril de l'article 7 (0,5 Md€), déduction sur la TSA (0,5 Md€), plafonnement de la cotisation CNRACL (0,4 Md€), concours de la CNSA (0,4 Md€).",
+        "source": "https://www.senat.fr/cra/s20261113/s20261113_mono.html"
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "rn",
+        "quoi": "Propose, pour garder des soignants à l'hôpital, le cumul emploi-retraite avec une « non-imposition » des retraités qui restent en poste ; aucun coût annoncé. Cite un taux de prélèvements obligatoires de 46 % et une dette à 120 % du PIB.",
+        "source": "https://www.franceinfo.fr/replay-magazine/franceinfo/avant-le-20h/peut-il-mettre-a-mal-l-annonce-faite-d-un-combat-entre-le-rn-et-lfi-jean-charles-orsucci-porte-parole-de-campagne-de-gabriel-attal-ne-ferme-par-la-porte-a-teddy-riner_8281595.html"
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "rn",
+        "quoi": "Se dit prête à rencontrer Volodymyr Zelensky à Bruxelles pour parler du financement de l'aide à l'Ukraine ; aucun montant.",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/marine-le-pen-prete-a-rencontrer-volodymyr-zelensky-pour-discuter-de-l-aide-financiere-a-l-ukraine-2475755.html"
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "lr",
+        "quoi": "Primaire de la droite et du centre : demande une participation de « quelques euros », des engagements et « une forme de loyauté » envers le vainqueur ; se mettra en retrait si Attal gagne ; mènera une campagne « sobre », sans prêt bancaire. Les équipes Retailleau, Attal et Lisnard se réunissent le 17 novembre.",
+        "source": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-bruno-retailleau-plaide-pour-une-forme-de-loyaute-a-l-egard-des-vainqueurs-de-la-primaire-20261113"
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "hor",
+        "quoi": "Réaffirme son refus d'une primaire de la droite et du centre, qui « rallie des alliés de circonstance » : « Je ne changerai pas d'avis ».",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/video-ces-histoires-ne-m-interessent-pas-edouard-philippe-reaffirme-son-opposition-a-une-primaire-du-centre-et-de-la-droite-2475746.html"
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "rec",
+        "quoi": "Veut être candidat à une primaire de la droite sans Gabriel Attal et demande à David Lisnard d'« imposer la présence de Reconquête » ; dénonce une « reconstitution de LR et du bloc central ».",
+        "source": "https://www.rtl.fr/actu/politique/presidentielle-2027-eric-zemmour-veut-participer-a-la-primaire-de-la-droite-et-appelle-david-lisnard-a-l-integrer-7900695914"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "contexte.oat10",
+        "avant": 4.76,
+        "apres": 4.89,
+        "source": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      },
+      {
+        "quoi": "contexte.spread",
+        "avant": 147,
+        "apres": 152,
+        "source": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      },
+      {
+        "quoi": "contexte.ipch",
+        "avant": 3.8,
+        "apres": 3.7,
+        "source": "https://www.insee.fr/fr/statistiques/9131332"
+      }
+    ]
+  }
+}

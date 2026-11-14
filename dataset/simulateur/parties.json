@@ -589,7 +589,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 52 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,2 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 52 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,3 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -680,14 +680,14 @@
         "retr62": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,72 %).",
         "retr60": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −1,33 %).",
         "indexation": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,10 % en 2032 et +0,07 % à long terme.",
-        "defense": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,58 point de PIB, production +0,62 % en 2032 et +0,12 % à long terme.",
+        "defense": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,59 point de PIB, production +0,62 % en 2032 et +0,12 % à long terme.",
         "services": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,07 % en 2032 et +0,03 % à long terme.",
         "ecolo": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,30 point de PIB, production +0,28 % en 2032 et +0,07 % à long terme.",
         "age": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,14 point de PIB, production +0,13 % en 2032 et +0,08 % à long terme.",
         "pointindice": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,19 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",
         "smic": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,11 % en 2032 et +0,02 % à long terme.",
         "smic1700": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,27 %).",
-        "pointindice10": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,71 point de PIB, production +0,66 % en 2032 et +0,12 % à long terme.",
+        "pointindice10": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,72 point de PIB, production +0,66 % en 2032 et +0,12 % à long terme.",
         "autonomie": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,37 point de PIB, production +0,29 % en 2032 et +0,20 % à long terme.",
         "cantine": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,18 point de PIB, production +0,17 % en 2032 et +0,03 % à long terme.",
         "chomageplus": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,22 point de PIB, production +0,17 % en 2032 et +0,12 % à long terme.",
@@ -712,9 +712,9 @@
         }
       ],
       "calcul": {
-        "date": "2026-11-13",
-        "deficit2032": 7.15,
-        "dette2032": 138.3,
+        "date": "2026-11-14",
+        "deficit2032": 7.26,
+        "dette2032": 138.8,
         "economies": 0.1,
         "recettes": 21.6,
         "depenses": 4.2,

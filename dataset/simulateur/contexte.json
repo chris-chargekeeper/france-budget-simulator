@@ -1,6 +1,6 @@
 {
   "_comment": "Contexte macroéconomique et financier, tenu à jour par la veille quotidienne. Chaque indicateur porte une valeur, une date et une source. `hypothese` (réglé à la main) relie un indicateur à une hypothèse du simulateur, qui remplace alors la valeur par défaut : rmkt (taux d'emprunt à 10 ans), g (croissance en volume), infl (inflation). `bornes` (réglé à la main) refuse une valeur invraisemblable. L'ancienne valeur part dans `historique` : rien ne s'efface.",
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "avertissement": "Trois valeurs nourrissent le calcul : le taux à 10 ans remplace l'hypothèse de taux de marché, la croissance et l'inflation prévues pour 2027 sont prolongées jusqu'en 2032. Elles restent réglables en mode avancé.",
   "indicateurs": [
     {
@@ -9,6 +9,11 @@
       "unite": "%",
       "groupe": "marches",
       "historique": [
+        {
+          "valeur": 4.76,
+          "date": "2026-11-12",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        },
         {
           "valeur": 4.66,
           "date": "2026-11-10",
@@ -50,11 +55,11 @@
           "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
         }
       ],
-      "valeur": 4.76,
-      "date": "2026-11-12",
-      "detail": "OAT 10 ans à 4,76 % à la clôture du 12 novembre (4,76 % le 11, 4,66 % le 10) ; Bund à 3,29 %.",
+      "valeur": 4.89,
+      "date": "2026-11-13",
+      "detail": "OAT 10 ans à 4,89 % à la clôture du 13 novembre (4,76 % le 12, 4,76 % le 11) ; Bund à 3,37 %.",
       "source": {
-        "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Idéal Investisseur (clôture du 12 novembre 2026)",
+        "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Idéal Investisseur (clôture du 13 novembre 2026)",
         "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
       },
       "hypothese": "rmkt",
@@ -69,6 +74,11 @@
       "unite": "pb",
       "groupe": "marches",
       "historique": [
+        {
+          "valeur": 147,
+          "date": "2026-11-12",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        },
         {
           "valeur": 142,
           "date": "2026-11-10",
@@ -110,11 +120,11 @@
           "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
         }
       ],
-      "valeur": 147,
-      "date": "2026-11-12",
-      "detail": "Écart OAT-Bund à 10 ans de 147,2 pb (OAT 4,76 %, Bund 3,29 %), +1,5 pb sur la séance ; plus haut sur un an à 174,6 pb (22 octobre).",
+      "valeur": 152,
+      "date": "2026-11-13",
+      "detail": "Écart OAT-Bund à 10 ans de 151,8 pb (OAT 4,89 %, Bund 3,37 %), +4,6 pb sur la séance ; plus haut sur un an à 174,6 pb (22 octobre).",
       "source": {
-        "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Idéal Investisseur (clôture du 12 novembre 2026)",
+        "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Idéal Investisseur (clôture du 13 novembre 2026)",
         "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
       },
       "bornes": [
@@ -237,13 +247,19 @@
       "lab": "Inflation sur un an, octobre 2026",
       "unite": "%",
       "groupe": "previsions",
-      "historique": [],
-      "valeur": 3.8,
-      "date": "2026-10-30",
-      "detail": "Indice harmonisé, estimation provisoire. Énergie : +24 % sur un an.",
+      "historique": [
+        {
+          "valeur": 3.8,
+          "date": "2026-10-30",
+          "u": "https://www.insee.fr/fr/statistiques/9107965"
+        }
+      ],
+      "valeur": 3.7,
+      "date": "2026-11-13",
+      "detail": "Indice harmonisé, résultat définitif : +3,7 % sur un an en octobre (estimation provisoire : 3,8 %), +0,4 % sur un mois. IPC +3,4 %, inflation sous-jacente 1,7 %, énergie +24,1 %.",
       "source": {
-        "t": "En octobre 2026, les prix à la consommation augmenteraient de 3,4 % sur un an — INSEE, Informations rapides n° 266",
-        "u": "https://www.insee.fr/fr/statistiques/9107965"
+        "t": "En octobre 2026, les prix à la consommation augmentent de 3,4 % sur un an — Insee, Informations rapides n° 271, 13 novembre 2026",
+        "u": "https://www.insee.fr/fr/statistiques/9131332"
       },
       "bornes": [
         -5,
