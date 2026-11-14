@@ -1092,6 +1092,24 @@
    "fiabilite": "convention",
    "explication": "L'économie vient de la masse salariale : des départs à la retraite non remplacés. Aucun agent en poste ne perd de revenu : ce sont des postes qui ne sont pas pourvus. Ceux qui en supportent l'effet sont les usagers des services publics, c'est-à-dire tout le monde à la fois ; cet effet n'est pas chiffré, donc l'économie n'est attribuée à aucun groupe.",
    "sources": []
+  },
+  {
+   "id": "heritgrand",
+   "parts": {
+    "thp": 1.0
+   },
+   "fiabilite": "convention",
+   "explication": "Les seuils reprennent ceux du CAE : le centile supérieur des héritiers reçoit plus de 4,2 M€ sur sa vie, le millième supérieur environ 13 M€. Au-delà de 4 M€, la surtaxe, le pacte Dutreil resserré et la taxation des plus-values latentes ne touchent que ces très hauts patrimoines.",
+   "sources": [
+    {
+     "t": "CAE, Note n° 69, Repenser l'héritage (décembre 2021)",
+     "u": "https://cae-eco.fr/static/pdf/cae-note069.pdf"
+    },
+    {
+     "t": "CAE, Focus n° 077 (2021), Repenser l'héritage : analyses supplémentaires",
+     "u": "https://cae-eco.fr/static/pdf/cae-focus077-2021.pdf"
+    }
+   ]
   }
  ]
 }

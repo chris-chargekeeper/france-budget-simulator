@@ -55,7 +55,7 @@ const PRINCIPE = {
   tva1: "Garde-fou : pas de hausse générale des prix ; une hausse de TVA se répercute sur tous les achats."
 };
 /* Mêmes assiettes ou mesures contraires : une seule par groupe. */
-const DOUBLONS = [['isf', 'isfclim', 'zucman'], ['succ', 'heritmax'], ['retr62', 'retr60', 'age65'], ['irbaisse', 'csgbaisse'], ['prod', 'prod50'], ['cir', 'cirgrandes'], ['pointindice', 'pointindice10'], ['chomage', 'chomageplus'], ['smic', 'smic1700'], ['effectifs', 'effectifs250', 'effectifs400', 'effectifs800']];
+const DOUBLONS = [['isf', 'isfclim', 'zucman'], ['succ', 'heritmax', 'heritgrand'], ['retr62', 'retr60', 'age65'], ['irbaisse', 'csgbaisse'], ['prod', 'prod50'], ['cir', 'cirgrandes'], ['pointindice', 'pointindice10'], ['chomage', 'chomageplus'], ['smic', 'smic1700'], ['effectifs', 'effectifs250', 'effectifs400', 'effectifs800']];
 /* Garde-fou de pouvoir d'achat : perte maximale, en % du revenu de référence du groupe. */
 const PROTEGES = ['moyens', 'smic', 'retraites', 'sansemploi', 'pme'];
 // les petites entreprises portent l'emploi et la création d'entreprises : elles ne perdent rien

@@ -4933,6 +4933,10 @@
   "effectifs800": {
    "type": "emploi_public",
    "canaux": []
+  },
+  "heritgrand": {
+   "type": "patrimoine",
+   "canaux": []
   }
  },
  "moteur": {

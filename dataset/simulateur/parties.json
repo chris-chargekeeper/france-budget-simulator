@@ -543,7 +543,7 @@
       "statut": "reconstitution",
       "annonce": {
         "titre": "Amendements chiffrés au budget 2027, pas de chiffrage présidentiel",
-        "texte": "Le groupe écologiste a chiffré plusieurs amendements au budget 2027 : ISF climatique incluant un plancher de 2 % au-delà de 100 M€ (taxe Zucman, 15 à 25 Md€ selon le groupe), réforme de l'héritage (10 Md€ en 2027, puis 15 Md€ par an selon Marine Tondelier le 12 novembre 2026, montant retenu), contribution sur les pétro-gaziers (2,8 Md€). Aucun chiffrage d'ensemble du programme présidentiel n'est publié : le scénario est reconstitué par le simulateur à partir de ces positions.",
+        "texte": "Le groupe écologiste a chiffré plusieurs amendements au budget 2027 : ISF climatique incluant un plancher de 2 % au-delà de 100 M€ (taxe Zucman, 15 à 25 Md€ selon le groupe), réforme de l'héritage (surtaxe de 10 % au-delà de 4 M€ et de 20 % au-delà de 13 M€, pacte Dutreil resserré, plus-values latentes taxées : 10 Md€ en 2027, puis 15 Md€ par an selon Marine Tondelier le 12 novembre 2026 ; 5 à 10 Md€ selon le calcul du simulateur), contribution sur les pétro-gaziers (2,8 Md€). Aucun chiffrage d'ensemble du programme présidentiel n'est publié : le scénario est reconstitué par le simulateur à partir de ces positions.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -565,7 +565,7 @@
         "niches": {
           "sim": "mid"
         },
-        "succ": {
+        "heritgrand": {
           "sim": "mid",
           "annonce": 15
         },
@@ -607,7 +607,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 57 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,3 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 58 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,3 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -689,6 +689,7 @@
         "isgrandes": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,09 %).",
         "minimum15": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,02 %).",
         "succ": "Fait double emploi avec « Héritage maximum : tranche à 100 % au-delà de 12 M€ et droits relevés sur les plus hauts patrimoines », retenue à sa place : elle donne un meilleur bilan d'ensemble.",
+        "heritgrand": "Fait double emploi avec « Héritage maximum : tranche à 100 % au-delà de 12 M€ et droits relevés sur les plus hauts patrimoines », retenue à sa place : elle donne un meilleur bilan d'ensemble.",
         "cir": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,03 %).",
         "cirgrandes": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,02 %).",
         "alleg": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,09 %).",

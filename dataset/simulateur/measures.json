@@ -182,6 +182,45 @@
       ]
     },
     {
+      "id": "heritgrand",
+      "g": "rec+",
+      "inst": "rec",
+      "lo": 5,
+      "mid": 7,
+      "hi": 10,
+      "ramp": 3,
+      "behav": "capital",
+      "lab": "Surtaxe sur les héritages au-delà de 4 M€ (+10 points, +20 au-delà de 13 M€), pacte Dutreil resserré, plus-values latentes taxées à la transmission",
+      "note": "Calcul de ce site, faute de chiffrage indépendant du dispositif. Surtaxe : l'Institut Montaigne chiffre à 8,7 Md€ une tranche à 100 % au-delà de 12 M€, soit 55 points de plus que le taux actuel de 45 % : la part des héritages taxée au-delà de ce seuil avoisine 16 Md€ par an, et 20 points de plus y rapportent environ 3 Md€ ; la tranche de 4 à 13 M€ ajoute 1 à 2 Md€ (hypothèse du site). Pacte Dutreil ramené de 75 % à 50 % d'exonération : environ 1 Md€ sur les 4 Md€ qu'il coûte. Plus-values latentes taxées à la transmission : 1 à 4 Md€ à terme, le haut étant le chiffre du groupe écologiste, l'effet montant avec les années. Total 5 à 10 Md€ avant les départs et l'optimisation que le simulateur applique ensuite. Les 15 Md€ annoncés reprennent l'ordre de grandeur de la proposition de loi Ouizille (Sénat, décembre 2025), dont 10,5 Md€ viennent des plus-values latentes, sur des estimations de ses auteurs.",
+      "sources": [
+        {
+          "t": "AFP, repris par L'Info Durable — Les Écologistes veulent taxer davantage les héritages des plus fortunés, 27 août 2026 (contribution de 10 % au-delà de 4 M€, 10 % de plus au-delà de 13 M€, pacte Dutreil ramené de 75 % à 50 %, démembrement, « environ 15 milliards »)",
+          "u": "https://www.linfodurable.fr/politique/les-ecologistes-veulent-taxer-davantage-les-heritages-des-plus-fortunes-58714",
+          "d": "2026-11-14"
+        },
+        {
+          "t": "Sénat, proposition de loi n° 190 (2025-2026) d'Alexandre Ouizille, impôt sur les grandes successions, exposé des motifs : 4,7 Md€ par le barème et 10,5 Md€ par les plus-values latentes, estimations des auteurs",
+          "u": "https://www.senat.fr/leg/exposes-des-motifs/ppl25-190-expose.html",
+          "d": "2026-11-14"
+        },
+        {
+          "t": "Assemblée nationale, amendement n° 53 du groupe écologiste au PLF 2027 (fin de la purge des plus-values latentes au-delà de 1,3 M€, « près de 4 milliards » à terme selon le groupe)",
+          "u": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/53",
+          "d": "2026-11-14"
+        },
+        {
+          "t": "Institut Montaigne, présidentielle 2022, « Augmenter les droits de succession sur les plus hauts patrimoines et créer un héritage maximal de 12 M€ »",
+          "u": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon/augmenter-les-droits-de-succession-sur-les-plus-hauts-patrimoines-et-creer-un-heritage-maximal-de-12-me",
+          "d": "2026-11-09"
+        },
+        {
+          "t": "Fipeco (François Ecalle), « Les droits de succession », novembre 2024, p. 1",
+          "u": "https://fipeco.fr/pdf/Droits%20successions%202024.pdf",
+          "d": "2026-11-09"
+        }
+      ]
+    },
+    {
       "id": "tva1",
       "g": "rec+",
       "inst": "imp",
