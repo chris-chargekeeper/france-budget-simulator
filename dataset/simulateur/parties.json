@@ -1,6 +1,6 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "avertissement": "Les candidatures ne seront officielles qu'après validation des parrainages par le Conseil constitutionnel, au printemps 2027. Le site suit les candidats déclarés ou investis qui pèsent dans les sondages ; la liste est revérifiée chaque matin. Les programmes 2027 sont pour la plupart non publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
@@ -862,6 +862,30 @@
   },
   "sondages": [
     {
+      "hypothese": "Hypothèse 1 : avec Teddy Riner (Attal et Philippe candidats)",
+      "echantillon": 964,
+      "terrain_fin": "2026-11-12",
+      "commanditaire": "CNews",
+      "source": {
+        "t": "Notice OpinionWay pour CNews, intentions de vote présidentielle 2027 (Pres IV), 12 novembre 2026",
+        "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10371-pres-iv-opinionway-cnews-12-novembre.pdf"
+      },
+      "terrain_debut": "2026-11-10",
+      "date": "2026-11-12",
+      "institut": "OpinionWay",
+      "scores": {
+        "rn": 31,
+        "lfi": 16,
+        "lr": 4,
+        "ren": 3,
+        "hor": 12,
+        "ps": 10,
+        "eco": 3,
+        "ne": 9,
+        "rec": 3
+      }
+    },
+    {
       "terrain_debut": "2026-11-09",
       "date": "2026-11-11",
       "institut": "Cluster17",
@@ -884,30 +908,6 @@
       "terrain_fin": "2026-11-10",
       "commanditaire": "Politico",
       "echantillon": 1164
-    },
-    {
-      "date": "2026-11-12",
-      "terrain_fin": "2026-11-10",
-      "source": {
-        "t": "OpinionWay pour Les Echos et Radio Classique – Baromètre PrésiTrack 2027, vague 4, 12 novembre 2026 (p. 21)",
-        "u": "https://www.opinion-way.com/wp-content/uploads/2026/11/OpinionWay-pour-Les-Echos-et-Radio-Classique-Barometre-Presitrack-2027-Vague-4-Novembre-2026.pdf"
-      },
-      "echantillon": 982,
-      "institut": "OpinionWay",
-      "scores": {
-        "rn": 34,
-        "lfi": 17,
-        "lr": 4,
-        "ren": 4,
-        "hor": 11,
-        "ps": 11,
-        "eco": 3,
-        "ne": 10,
-        "rec": 3
-      },
-      "hypothese": "Hypothèse 1 : Gabriel Attal et Édouard Philippe candidats",
-      "terrain_debut": "2026-11-09",
-      "commanditaire": "Les Echos et Radio Classique"
     },
     {
       "terrain_fin": "2026-11-05",
@@ -1050,6 +1050,23 @@
     }
   ],
   "sondages_historique": [
+    {
+      "institut": "OpinionWay",
+      "commanditaire": "Les Echos et Radio Classique",
+      "terrain_fin": "2026-11-10",
+      "scores": {
+        "rn": 34,
+        "lfi": 17,
+        "lr": 4,
+        "ren": 4,
+        "hor": 11,
+        "ps": 11,
+        "eco": 3,
+        "ne": 10,
+        "rec": 3
+      },
+      "u": "https://www.opinion-way.com/wp-content/uploads/2026/11/OpinionWay-pour-Les-Echos-et-Radio-Classique-Barometre-Presitrack-2027-Vague-4-Novembre-2026.pdf"
+    },
     {
       "institut": "OpinionWay",
       "commanditaire": "CNEWS",

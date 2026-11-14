@@ -1,0 +1,67 @@
+{
+  "patch": {
+    "releve": "2026-11-14",
+    "annonces": [],
+    "partis": {},
+    "mesures": {},
+    "sondages": [
+      {
+        "institut": "OpinionWay",
+        "commanditaire": "CNews",
+        "terrain_debut": "2026-11-10",
+        "terrain_fin": "2026-11-12",
+        "date": "2026-11-12",
+        "echantillon": 964,
+        "hypothese": "Hypothèse 1 : avec Teddy Riner (Attal et Philippe candidats)",
+        "scores": {
+          "rn": 31,
+          "lfi": 16,
+          "lr": 4,
+          "ren": 3,
+          "hor": 12,
+          "ps": 10,
+          "eco": 3,
+          "ne": 9,
+          "rec": 3
+        },
+        "source": {
+          "t": "Notice OpinionWay pour CNews, intentions de vote présidentielle 2027 (Pres IV), 12 novembre 2026",
+          "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10371-pres-iv-opinionway-cnews-12-novembre.pdf"
+        }
+      }
+    ]
+  },
+  "trace": {
+    "releve": "2026-11-14",
+    "applique": "2026-11-14",
+    "ajouts": [],
+    "revisions": [
+      {
+        "quoi": "parties.sondages.OpinionWay",
+        "avant": {
+          "rn": 34,
+          "lfi": 17,
+          "lr": 4,
+          "ren": 4,
+          "hor": 11,
+          "ps": 11,
+          "eco": 3,
+          "ne": 10,
+          "rec": 3
+        },
+        "apres": {
+          "rn": 31,
+          "lfi": 16,
+          "lr": 4,
+          "ren": 3,
+          "hor": 12,
+          "ps": 10,
+          "eco": 3,
+          "ne": 9,
+          "rec": 3
+        },
+        "source": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10371-pres-iv-opinionway-cnews-12-novembre.pdf"
+      }
+    ]
+  }
+}
