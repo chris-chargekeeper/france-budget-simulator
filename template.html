@@ -282,6 +282,18 @@ footer .fbrand{font-family:"IBM Plex Mono",ui-monospace,monospace;color:var(--in
 .consent-act button{flex:1;font:inherit;font-weight:600;padding:8px 12px;border-radius:10px;cursor:pointer;
   border:1px solid var(--rule);background:var(--surface-2);color:var(--ink)}
 .consent-act button.oui{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.foot-legal{display:inline-block;margin-left:6px;color:var(--accent)}
+.legal{margin-top:14px;border-top:1px solid var(--rule);padding-top:10px}
+.legal summary{cursor:pointer;font-weight:600;color:var(--ink-2)}
+.legal h4{margin:14px 0 4px;font-size:13px;color:var(--ink)}
+.legal p,.legal li{line-height:1.5;margin:4px 0}
+.legal ul{padding-left:18px;margin:6px 0}
+.legal a{color:var(--accent)}
+.poll-ment{margin:6px 0 0;font-size:12px;color:var(--ink-3)}
+.poll-ment summary{cursor:pointer}
+.poll-ment ul{margin:6px 0;padding-left:18px;display:grid;gap:3px}
+.poll-ment b{color:var(--ink-2);font-weight:600}
+.poll-ment a{color:var(--accent)}
 .foot-consent{font:inherit;color:var(--accent);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
 @media (max-width:640px){.consent{left:16px;right:16px;width:auto;bottom:calc(16px + env(safe-area-inset-bottom))}}
 .btn{border:1px solid var(--rule);background:var(--surface);color:var(--ink-2);border-radius:7px;padding:6px 12px;font:inherit;font-size:12.5px;cursor:pointer}
@@ -1530,6 +1542,10 @@ footer{padding-bottom:120px}
     </div>
     <div class="cards" id="cards"></div>
     <p class="poll-note" id="pollNote"></p>
+    <details class="poll-ment" id="pollMent" hidden>
+      <summary>Mentions légales des sondages utilisés</summary>
+      <div id="pollMentBody"></div>
+    </details>
     <div class="modebar">
       <div class="seg" role="group" aria-label="Niveau de détail">
         <button type="button" id="mSimple" aria-pressed="true">Vue simple</button>
@@ -1893,6 +1909,49 @@ footer{padding-bottom:120px}
     d'auteur, et les avatars affichés sont des pictogrammes génériques.
     Mesure d'audience anonyme (Google Analytics), seulement si vous l'acceptez :
     <button type="button" class="foot-consent" id="consentRevoir">changer mon choix</button>.
+    <a class="foot-legal" href="#mentions" id="mentionsLien">Mentions légales et confidentialité</a>
+    <details class="legal" id="mentions">
+      <summary>Mentions légales et confidentialité</summary>
+      <h4>Éditeur</h4>
+      <p>quipaie2027.fr est édité à titre non professionnel par un particulier, sans publicité, sans
+        abonnement et sans lien avec un parti ou un candidat. Comme le permet la loi n° 2004-575 du 21 juin
+        2004 pour la confiance dans l'économie numérique, l'éditeur a choisi de ne pas rendre public son
+        nom : ses coordonnées ont été communiquées à l'hébergeur.</p>
+      <p>Contact : <a href="mailto:contact@quipaie2027.fr">contact@quipaie2027.fr</a> — pour signaler une
+        erreur, demander une correction ou exercer vos droits sur vos données.</p>
+      <h4>Hébergeur</h4>
+      <p>Hostinger International Limited, société de droit chypriote, 61 Lordou Vironos, 6023 Larnaca,
+        Chypre — <a href="https://www.hostinger.com/fr" target="_blank" rel="noopener">hostinger.com</a>,
+        <a href="mailto:compliance@hostinger.com">compliance@hostinger.com</a>.</p>
+      <h4>Contenus et sources</h4>
+      <p>Les chiffres viennent de sources publiques citées à côté de chaque montant (Insee, Cour des
+        comptes, Haut Conseil des finances publiques, rapports parlementaires, instituts de sondage…). Les
+        calculs du simulateur sont des ordres de grandeur, sans valeur officielle. Les textes et calculs
+        propres au site peuvent être repris en citant quipaie2027.fr.</p>
+      <h4>Sondages</h4>
+      <p>Les sondages affichés sont repris de leur publication, avec les mentions prévues par la loi
+        n° 77-808 du 19 juillet 1977 (organisme, commanditaire, dates, échantillon, marges d'erreur, renvoi
+        aux notices de la Commission des sondages). Ils ne s'affichent pas la veille et le jour de chaque tour.</p>
+      <h4>Vos données</h4>
+      <p>Le site ne demande ni compte, ni inscription, ni formulaire. Il ne collecte pas directement de
+        donnée personnelle.</p>
+      <ul>
+        <li><b>Mesure d'audience</b>, seulement si vous l'acceptez : Google Analytics 4 (Google Ireland
+          Limited et Google LLC) compte les pages vues, le type d'appareil et la région approximative, pour
+          savoir combien de personnes utilisent le simulateur. Base légale : votre consentement, que vous
+          pouvez retirer à tout moment par le lien « changer mon choix ». Cookies <code>_ga</code> gardés
+          13 mois au plus. Les données peuvent être traitées aux États-Unis, dans le cadre du Data Privacy
+          Framework UE–États-Unis. Sans votre accord, rien n'est chargé ni envoyé à Google.</li>
+        <li><b>Préférences</b> : votre choix de thème, de mode et de consentement est gardé dans votre
+          navigateur (stockage local), jamais envoyé.</li>
+        <li><b>Journaux du serveur</b> : comme tout hébergeur, Hostinger enregistre les connexions (adresse IP,
+          date, page demandée) pour la sécurité et le bon fonctionnement du service, selon sa propre
+          politique de confidentialité.</li>
+      </ul>
+      <p>Vous pouvez demander l'accès à vos données, leur effacement ou vous opposer à leur traitement en
+        écrivant à <a href="mailto:contact@quipaie2027.fr">contact@quipaie2027.fr</a>, et adresser une
+        réclamation à la <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">CNIL</a>.</p>
+    </details>
   </footer>
 </div>
 
@@ -1906,6 +1965,9 @@ footer{padding-bottom:120px}
   </div>
 </div>
 <script>
+document.getElementById('mentionsLien').addEventListener('click', function(){
+  document.getElementById('mentions').open = true; });
+if (location.hash === '#mentions') document.getElementById('mentions').open = true;
 /* Mesure d'audience (Google Analytics 4), conforme aux recommandations de la CNIL :
    rien n'est chargé ni envoyé à Google tant que le visiteur n'a pas cliqué « Accepter » ;
    « Refuser » est aussi simple qu'« Accepter » ; le choix est gardé 6 mois puis redemandé
@@ -1930,7 +1992,7 @@ footer{padding-bottom:120px}
     charge = true;
     gtag('consent', 'update', {analytics_storage:'granted'});
     gtag('js', new Date());
-    gtag('config', ID);
+    gtag('config', ID, {cookie_expires: 395 * 86400});   // 13 mois au plus (CNIL)
     var s = document.createElement('script');
     s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
     document.head.appendChild(s);
@@ -1973,9 +2035,18 @@ const ALL_PARTIES = DATA.parties.parties;
    comptent les sondages dont le terrain finit moins de 21 jours avant le plus récent ; un score
    en fourchette [bas, haut] compte pour son milieu. Chaque candidat est moyenné sur les sondages
    qui l'ont testé. */
+/* Silence électoral (loi n° 77-808, article 11) : aucun sondage ne s'affiche du vendredi 0 h, heure
+   de Paris, au dimanche 20 h de chaque tour. Le vendredi couvre l'outre-mer, qui vote le samedi. */
+const SILENCE = (() => {
+  const tours = (DATA.parties.scrutins && DATA.parties.scrutins.tours) || [];
+  const paris = new Date(new Date().toLocaleString('en-US', {timeZone: 'Europe/Paris'}));
+  return tours.find(t => { const d = new Date(t.date + 'T00:00:00');
+    const deb = new Date(d - 2 * 864e5), fin = new Date(+d + 20 * 36e5);
+    return paris >= deb && paris < fin; }) || null;
+})();
 const SONDAGES = (() => {
   const l = DATA.parties.sondages || (DATA.parties.sondage ? [DATA.parties.sondage] : []);
-  if (!l.length) return [];
+  if (!l.length || SILENCE) return [];
   const fin = l.map(x => x.terrain_fin).sort().pop();
   const limite = new Date(new Date(fin) - 21 * 864e5).toISOString().slice(0, 10);
   return l.filter(x => x.terrain_fin >= limite).sort((a, b) => b.terrain_fin.localeCompare(a.terrain_fin));
@@ -2977,6 +3048,33 @@ function buildCards(){
       : `Classés selon le dernier sondage : ${liste}, ${fmtDate(dates[0])}.`;
     $('#pollNote').textContent += " Les instituts ne testent pas tous les mêmes candidats : la moyenne "
       + "rapproche des hypothèses différentes, c'est un ordre de grandeur, pas un classement officiel.";
+    /* Loi n° 77-808 du 19 juillet 1977, article 2 : organisme, commanditaire, nombre de personnes
+       interrogées, dates, marges d'erreur, droit de consulter la notice. */
+    const marge = n => 1.96 * Math.sqrt(0.25 / n) * 100;
+    const ul = el('ul');
+    SONDAGES.forEach(x => {
+      const li = el('li');
+      li.appendChild(el('b', null, sdNom(x)));
+      li.appendChild(document.createTextNode(` — terrain ${x.terrain_debut ? 'du ' + fmtDate(x.terrain_debut) + ' au ' : 'le '}`
+        + `${fmtDate(x.terrain_fin)}, ${x.echantillon ? nf(x.echantillon) + ' personnes interrogées' : 'échantillon non précisé'}`
+        + (x.echantillon ? ` (marge d’erreur jusqu’à ± ${nf(marge(x.echantillon), 1)} point${marge(x.echantillon) >= 2 ? 's' : ''})` : '')
+        + (x.hypothese ? `, ${/^Hypoth/.test(x.hypothese) ? 'h' + x.hypothese.slice(1) : 'hypothèse : ' + x.hypothese}` : '') + ' ; '));
+      if (x.source && x.source.u){ const a = el('a', null, 'notice ou publication');
+        a.href = x.source.u; a.target = '_blank'; a.rel = 'noopener'; li.appendChild(a); }
+      ul.appendChild(li);
+    });
+    const body = $('#pollMentBody'); body.textContent = ''; body.appendChild(ul);
+    body.insertAdjacentHTML('beforeend', '<p>Question posée : intentions de vote au premier tour de l’élection '
+      + 'présidentielle ; son texte intégral figure dans chaque notice. Tout sondage est affecté de marges '
+      + 'd’erreur : celles indiquées ici valent pour un score de 50 % sur l’ensemble des personnes interrogées, '
+      + 'comme pour un tirage au hasard ; elles sont plus faibles pour les petits scores, plus fortes quand seule '
+      + 'une partie de l’échantillon exprime un vote. Les marges exactes figurent dans chaque notice. Toute personne a le droit de consulter la notice de chaque '
+      + 'sondage auprès de la <a href="https://www.commission-des-sondages.fr/notices/" target="_blank" '
+      + 'rel="noopener">Commission des sondages</a>.</p>');
+    $('#pollMent').hidden = false;
+  } else if (SILENCE) {
+    $('#pollNote').textContent = `Aucun sondage n’est affiché la veille et le jour du ${SILENCE.tour === 1 ? 'premier' : 'second'} `
+      + 'tour : la loi du 19 juillet 1977 l’interdit. Les candidats sont présentés sans classement.';
   }
   $('#candWarn').textContent = DATA.parties.avertissement;
   const nbM = document.getElementById('nbMesures'); if (nbM) nbM.textContent = MEASURES.length;

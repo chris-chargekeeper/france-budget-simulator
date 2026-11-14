@@ -1159,5 +1159,22 @@
       },
       "u": "https://www.opinion-way.com/wp-content/uploads/2026/10/OpinionWay-pour-CNEWS-Les-intentions-de-vote-a-lelection-presidentielle-2027-22-octobre-2026.pdf"
     }
-  ]
+  ],
+  "scrutins": {
+    "_comment": "Dates des tours. La loi n° 77-808 du 19 juillet 1977 (article 11) interdit de publier, diffuser ou commenter un sondage électoral la veille et le jour de chaque tour ; la page masque les sondages du vendredi 0 h (heure de Paris, pour couvrir l'outre-mer qui vote le samedi) jusqu'au dimanche 20 h.",
+    "tours": [
+      {
+        "tour": 1,
+        "date": "2027-04-18"
+      },
+      {
+        "tour": 2,
+        "date": "2027-05-02"
+      }
+    ],
+    "source": {
+      "t": "Service-Public.fr — Élection présidentielle 2027 : dates fixées par le Conseil des ministres du 1er juillet 2026",
+      "u": "https://www.service-public.gouv.fr/particuliers/actualites/A15053"
+    }
+  }
 }
