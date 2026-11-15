@@ -2,7 +2,7 @@
 
 > Simulateur budgétaire neutre et gratuit pour l'élection présidentielle française de 2027. On choisit un candidat et on voit ce que son programme changerait au budget de la France d'ici 2032 : déficit public, dette publique, qui paie et qui reçoit, effets sur l'emploi, le chômage, la richesse par habitant et les taux d'intérêt, et l'écart entre ce que le candidat annonce et ce que donnent des chiffrages indépendants.
 
-Données au 2026-11-14, mises à jour chaque matin (veille des déclarations chiffrées, des chiffrages indépendants, des sondages et du contexte économique).
+Données au 2026-11-15, mises à jour chaque matin (veille des déclarations chiffrées, des chiffrages indépendants, des sondages et du contexte économique).
 
 ## Ce que fait le site
 
@@ -35,7 +35,7 @@ Données au 2026-11-14, mises à jour chaque matin (veille des déclarations chi
 - Raphaël Glucksmann : Contre-budget 2027 publié (39,5 Md€ de recettes), pas de chiffrage présidentiel
 - Marine Tondelier : Amendements chiffrés au budget 2027, pas de chiffrage présidentiel
 - David Lisnard : 200 Md€ d'économies d'ici 2032
-- Éric Zemmour : Plan Knafo : 140 Md€ d'économies par an
+- Éric Zemmour : 280 Md€ d'économies par an en 2032
 
 ## Limites
 

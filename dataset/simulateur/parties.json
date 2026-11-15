@@ -1,6 +1,6 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "avertissement": "Les candidatures ne seront officielles qu'après validation des parrainages par le Conseil constitutionnel, au printemps 2027. Le site suit les candidats déclarés ou investis qui pèsent dans les sondages ; la liste est revérifiée chaque matin. Les programmes 2027 sont pour la plupart non publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
@@ -816,10 +816,11 @@
       "statutCandidature": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026)",
       "statut": "reconstitution",
       "annonce": {
-        "titre": "Plan Knafo : 140 Md€ d'économies par an",
-        "texte": "Le chiffrage de référence du camp Zemmour est le plan de Sarah Knafo (vice-présidente de Reconquête), publié sur budget2027.fr : « 140 milliards d'économies par an » au minimum, en 24 mesures. Fonction publique, environ 45 Md€, dont 40 Md€ par le non-remplacement de 800 000 départs (sur 2,3 millions de départs naturels attendus) ; relations internationales et immigration, environ 35 Md€ (aide publique au développement, contribution au budget européen, AME) ; suppression ou fusion d'agences, environ 31 Md€ (Anah, Ademe, ARS, politique de la Ville) ; prestations sociales, environ 25 Md€. Le plan ne fixe pas de cible de déficit. Le scénario du simulateur reprend ces orientations avec les montants du catalogue, qui chiffrent plus bas la plupart de ces postes.",
-        "revendique": 140,
-        "cote": "economie"
+        "titre": "280 Md€ d'économies par an en 2032",
+        "texte": "Éric Zemmour chiffre son plan dans le JDD du 15 novembre 2026 : 280 Md€ de baisse des dépenses par an atteints en 2032, dont 140 Md€ pour financer des baisses d'impôts (CSG sur les revenus d'activité, carburants, IFI, succession en ligne directe, impôts de production) et 140 Md€ pour ramener le déficit à zéro. Postes chiffrés par lui : 800 000 postes de fonctionnaires en moins (plus de 40 Md€), une centaine d'agences supprimées (30 Md€), aides sociales non contributives réservées aux Français (20 Md€), aide au développement (14 Md€), soutien aux énergies intermittentes (près de 8 Md€), RSA limité à trois ans (5 Md€). Il double le plan de Sarah Knafo (budget2027.fr, 140 Md€ par an). Aucun programme chiffré n'est publié : le scénario du simulateur reprend ces orientations avec les montants du catalogue, qui chiffrent plus bas la plupart de ces postes, et ne compte pas les baisses d'impôts.",
+        "revendique": 280,
+        "cote": "economie",
+        "detaille": 90
       },
       "set": {
         "immigration": {
@@ -833,7 +834,8 @@
           "sim": "mid"
         },
         "agences": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 30
         },
         "effectifs800": {
           "sim": "mid",
@@ -859,6 +861,10 @@
         {
           "t": "« 140 milliards d'économies par an : le plan de Sarah Knafo » — budget2027.fr",
           "u": "https://budget2027.fr/"
+        },
+        {
+          "t": "Éric Zemmour au JDD : « Tout faire pour que notre avenir soit français », 15 novembre 2026",
+          "u": "https://www.lejdd.fr/politique/eric-zemmour-au-jdd-tout-faire-pour-que-notre-avenir-soit-francais-188724"
         }
       ],
       "depuis": "2026-10-30"
@@ -871,6 +877,30 @@
     "note": "Le ministère de l'Intérieur publie, une fois les candidatures validées par le Conseil constitutionnel, la profession de foi et le programme officiel de chaque candidat. C'est la seule source de rang officiel pour un programme : dès sa mise en ligne, elle remplace ici toute reprise de presse, et les scénarios « reconstitution » sont rebâtis à partir d'elle. Non disponible à ce jour pour 2027 : publication attendue après la liste officielle des candidats, au plus tard le 26 mars 2027 (premier tour le 18 avril 2027)."
   },
   "sondages": [
+    {
+      "institut": "Elabe",
+      "terrain_debut": "2026-11-12",
+      "terrain_fin": "2026-11-13",
+      "date": "2026-11-14",
+      "hypothese": "Configuration 6 (seule à tester les 9 candidats suivis) : Tondelier pour les écologistes, Philippe et Attal pour le bloc central, Lisnard, Retailleau, Teddy Riner et Natacha Polony candidats ; sans Villepin ni Ruffin",
+      "scores": {
+        "rn": 31,
+        "lfi": 17,
+        "lr": 4,
+        "ren": 4,
+        "hor": 9.5,
+        "ps": 10.5,
+        "eco": 3,
+        "ne": 8,
+        "rec": 3
+      },
+      "echantillon": 1500,
+      "commanditaire": "BFMTV et La Tribune Dimanche",
+      "source": {
+        "t": "Les Français et l'élection présidentielle 2027 – sondage Elabe pour BFMTV et La Tribune Dimanche, 14 novembre 2026",
+        "u": "https://elabe.fr/fichier-pdf/13399-les-francais-et-lelection-presidentielle-2027/"
+      }
+    },
     {
       "hypothese": "Hypothèse 1 : avec Teddy Riner (Attal et Philippe candidats)",
       "echantillon": 964,
@@ -990,29 +1020,6 @@
       "hypothese": "Hypothèse Gabriel Attal et Édouard Philippe"
     },
     {
-      "terrain_fin": "2026-10-16",
-      "terrain_debut": "2026-10-14",
-      "scores": {
-        "rn": 32.5,
-        "lfi": 15.5,
-        "lr": 7.5,
-        "ren": 4.5,
-        "hor": 13.5,
-        "ps": 15.5,
-        "eco": 2.5,
-        "rec": 3.5
-      },
-      "date": "2026-10-17",
-      "institut": "Elabe",
-      "echantillon": 1701,
-      "source": {
-        "t": "Notice technique Elabe, Commission des sondages (n° 10324)",
-        "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10324-pres-iv-elabe-17-octobre.pdf"
-      },
-      "commanditaire": "BFMTV et La Tribune Dimanche",
-      "hypothese": "Q7 – Hypothèse Gabriel Attal et Édouard Philippe"
-    },
-    {
       "terrain_fin": "2026-10-15",
       "terrain_debut": "2026-10-12",
       "scores": {
@@ -1060,6 +1067,22 @@
     }
   ],
   "sondages_historique": [
+    {
+      "institut": "Elabe",
+      "commanditaire": "BFMTV et La Tribune Dimanche",
+      "terrain_fin": "2026-10-16",
+      "scores": {
+        "rn": 32.5,
+        "lfi": 15.5,
+        "lr": 7.5,
+        "ren": 4.5,
+        "hor": 13.5,
+        "ps": 15.5,
+        "eco": 2.5,
+        "rec": 3.5
+      },
+      "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10324-pres-iv-elabe-17-octobre.pdf"
+    },
     {
       "institut": "OpinionWay",
       "commanditaire": "Les Echos et Radio Classique",
