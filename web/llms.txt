@@ -2,7 +2,7 @@
 
 > Simulateur budgétaire neutre et gratuit pour l'élection présidentielle française de 2027. On choisit un candidat et on voit ce que son programme changerait au budget de la France d'ici 2032 : déficit public, dette publique, qui paie et qui reçoit, effets sur l'emploi, le chômage, la richesse par habitant et les taux d'intérêt, et l'écart entre ce que le candidat annonce et ce que donnent des chiffrages indépendants.
 
-Données au 2026-11-15, mises à jour chaque matin (veille des déclarations chiffrées, des chiffrages indépendants, des sondages et du contexte économique).
+Données au 2026-11-16, mises à jour chaque matin (veille des déclarations chiffrées, des chiffrages indépendants, des sondages et du contexte économique).
 
 ## Ce que fait le site
 
@@ -19,7 +19,7 @@ Données au 2026-11-15, mises à jour chaque matin (veille des déclarations chi
 - Jean-Luc Mélenchon (La France insoumise) : Candidat déclaré (3 mai 2026) ; programme officiel L'Avenir en commun 2027 publié le 6 novembre 2026 (1 069 mesures) ; chiffrage d'ensemble annoncé pour le début de 2027
 - Bruno Retailleau (Les Républicains) : Investi par les militants LR (19 avril 2026) ; propose par lettre à Attal, Philippe et Lisnard une primaire de la droite et du centre les 31 janvier et 7 février 2027 (10 novembre 2026), Philippe y reste opposé
 - Gabriel Attal (Renaissance) : Candidat déclaré (22 mai 2026) ; appelle à « une grande primaire des démocrates »
-- Édouard Philippe (Horizons) : Candidat déclaré depuis septembre 2024
+- Édouard Philippe (Horizons) : Candidat déclaré depuis septembre 2024 ; refuse à nouveau toute primaire de la droite et du centre (« Je n'y participerai pas. Point. », La Tribune Dimanche, 15 novembre 2026), tout en acceptant de discuter avec Gérard Larcher d'un rassemblement
 - Raphaël Glucksmann (Parti socialiste / Place publique) : Investi : vainqueur de la primaire PS – Place publique – GRS dès le premier tour (66 %, 11 octobre 2026)
 - Marine Tondelier (Les Écologistes) : Candidate ; « prête à rejoindre une coalition » de gauche et fera campagne pour un autre candidat si son parti le décide (BFMTV, 12 novembre 2026) ; les adhérents votent du 10 au 13 décembre 2026
 - David Lisnard (Nouvelle Énergie) : Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite et en accepte le principe proposé par Bruno Retailleau (10 novembre 2026)

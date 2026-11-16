@@ -1,0 +1,163 @@
+{
+  "patch": {
+    "_comment": "Relève locale du 16 novembre 2026 : entretien Philippe (Le Parisien, 15/11), refus de la primaire (La Tribune Dimanche), CR du Sénat du 13/11 (PLFSS). Aucun nouveau sondage, aucun indicateur macro nouveau.",
+    "releve": "2026-11-16",
+    "annonces": [
+      {
+        "date": "2026-11-15",
+        "parti": "hor",
+        "qui": "Édouard Philippe",
+        "fonction": "Candidat Horizons à l'élection présidentielle",
+        "media": "Le Parisien (entretien du dimanche)",
+        "quoi": "Présente un volet logement et famille : 4 millions de logements de plus en dix ans, suppression des frais de notaire pour les moins de 35 ans, un prêt à taux zéro à chaque nouvel enfant, une exonération d'impôt sur le revenu pendant les trois premières années de l'enfant pour les classes moyennes, et une allocation familiale « de l'ordre de 350 euros par mois » dès le premier enfant. Aucun coût global n'est donné.",
+        "verbatim": "Le pire ennemi du pouvoir d'achat des Français aujourd'hui, c'est le logement, qui est devenu tellement cher qu'il contraint comme jamais toutes les autres dépenses.",
+        "mesure": null,
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.leparisien.fr/elections/presidentielle/edouard-philippe-le-temps-de-travail-doit-pouvoir-etre-negocie-dans-lentreprise-15-11-2026-XBXJXNDKPZALPBOLULDIV7W5JE.php",
+        "verifie": false,
+        "contredit": "inconnu",
+        "ecart": "Programme Horizons en reconstitution, sans chiffrage d'ensemble ; ces dépenses et baisses d'impôt ne figurent pas dans le scénario HOR et leur coût n'est pas annoncé. Article réservé aux abonnés : corps de l'entretien lu dans les reprises AFP/BFMTV et franceinfo."
+      },
+      {
+        "date": "2026-11-15",
+        "parti": "hor",
+        "qui": "Édouard Philippe",
+        "fonction": "Candidat Horizons à l'élection présidentielle",
+        "media": "Le Parisien (entretien du dimanche)",
+        "quoi": "Propose un temps de travail négocié dans l'entreprise : au-delà de 35 heures, heures sans impôt ni cotisation salariale, et sans cotisation patronale au-delà de 37 heures ; veut aussi diminuer la prime d'activité et « revoir la pente des allègements » de cotisations. Aucun chiffrage.",
+        "verbatim": "Dès lors qu'un accord sera trouvé pour travailler au-delà de 35 heures, toutes les heures en plus iront directement dans la poche du salarié, sans impôt, ni cotisation.",
+        "mesure": "alleg",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.leparisien.fr/elections/presidentielle/edouard-philippe-le-temps-de-travail-doit-pouvoir-etre-negocie-dans-lentreprise-15-11-2026-XBXJXNDKPZALPBOLULDIV7W5JE.php",
+        "verifie": false,
+        "contredit": "inconnu",
+        "ecart": "Programme en reconstitution. La fiche HOR dit que Philippe ne touche pas aux allègements ; il annonce désormais revoir leur pente, tout en créant des exonérations sur les heures au-delà de 35 et 37 heures, qui jouent en sens inverse. Solde non chiffré. Article réservé aux abonnés, lu dans les reprises."
+      },
+      {
+        "date": "2026-11-13",
+        "parti": null,
+        "qui": "Vincent Delahaye",
+        "fonction": "Sénateur (Union centriste)",
+        "media": "Sénat, compte rendu de la séance du 13 novembre 2026 (PLFSS 2027, amendement n° 392 rectifié ter)",
+        "quoi": "Propose une « TVA sociale » : CSG sur les revenus du travail ramenée de 9,2 à 7,2 % et relevée de 6,2 à 7,2 % sur les revenus de remplacement, pour environ 20 Md€ compensés par une hausse des taux normal et intermédiaire de TVA. Le rapporteur général Olivier Henno parle d'un « choc fiscal de 20 milliards » et renvoie le sujet à la présidentielle. Amendement rejeté.",
+        "verbatim": "Je propose 20 milliards en moins d'un côté, 20 milliards en plus de l'autre : ce n'est donc pas un choc.",
+        "mesure": null,
+        "montant": 20,
+        "type": "contexte",
+        "source": "https://www.senat.fr/cra/s20261113/s20261113_mono.html#par_686",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Amendement d'un sénateur centriste qui n'engage aucun candidat suivi ; bascule à rendement nul, sans mesure « TVA sociale » au catalogue (tva1 = +1 point sans baisse de CSG)."
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "ps",
+        "qui": "Corinne Féret",
+        "fonction": "Sénatrice, groupe Socialiste, Écologiste et Républicain",
+        "media": "Sénat, compte rendu de la séance du 13 novembre 2026 (PLFSS 2027, amendement n° 834 du groupe SER)",
+        "quoi": "Au nom des groupes de gauche, propose de doubler la contribution solidarité autonomie payée par les employeurs (0,3 → 0,6 %) : 2 Md€ de plus pour la branche autonomie, dont le sous-financement est estimé entre 8 et 10 Md€ par an. Amendement rejeté, comme les identiques CRCE-K et GEST. Rattachement au PS à prendre avec prudence : amendement de groupe, la sénatrice n'est ni porte-parole ni responsable du programme.",
+        "verbatim": "La CSA rapporte 2,4 milliards d'euros en 2027 ; la doubler permet d'apporter 2 milliards d'euros de plus, ce à la charge de l'employeur.",
+        "mesure": null,
+        "montant": 2,
+        "type": "recette",
+        "source": "https://www.senat.fr/cra/s20261113/s20261113_mono.html#par_447",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le scénario PS est une reconstitution, sans programme publié ; amendement de groupe parlementaire, pas engagement de la candidature. Aucune mesure CSA au catalogue."
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "lfi",
+        "qui": "Marc Péré",
+        "fonction": "Sénateur de la Haute-Garonne, groupe Écologiste - Solidarité et Territoires, rattaché à LFI (amendement cosigné avec Gabriel Amard)",
+        "media": "Sénat, compte rendu de la séance du 13 novembre 2026 (PLFSS 2027, amendement n° 1742 rectifié)",
+        "quoi": "Propose de porter la CSG sur les revenus du capital à 15 %, pour 8,5 Md€ de recettes pour la Sécurité sociale. Le gouvernement juge qu'une hausse de 8 milliards déstabiliserait l'économie ; amendement rejeté. Rattachement à LFI à prendre avec prudence : aucun des deux sénateurs n'est porte-parole de la campagne.",
+        "verbatim": "Cet amendement vise à dégager des recettes pour la sécurité sociale au moyen d'une hausse du taux de CSG sur le capital à 15 %. À la clé, 8,5 milliards d'euros.",
+        "mesure": "csgcap",
+        "montant": 8.5,
+        "type": "recette",
+        "source": "https://www.senat.fr/cra/s20261113/s20261113_mono.html#par_721",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "csgcap n'est pas dans le scénario LFI et le catalogue la chiffre à +2 points (3 Md€) ; l'amendement va au-delà (+4,4 points). Amendement de sénateurs, pas chiffrage de la campagne Mélenchon."
+      },
+      {
+        "date": "2026-11-13",
+        "parti": null,
+        "qui": null,
+        "fonction": "Sénat, scrutin public n° 101",
+        "media": "Sénat, scrutin n° 101 du 13 novembre 2026 sur l'ensemble de la deuxième partie (recettes) du PLFSS 2027",
+        "quoi": "Le Sénat adopte la partie recettes du PLFSS 2027 par 200 voix contre 110 : LR, Union centriste et RDPI pour ; SER, CRCE-K, GEST et les sénateurs RN contre.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.senat.fr/scrutin-public/2026/scr2026-101.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Vote de groupes parlementaires sur un texte du gouvernement, qui ne dit rien des programmes présidentiels."
+      }
+    ],
+    "partis": {
+      "hor": {
+        "statutCandidature": "Candidat déclaré depuis septembre 2024 ; refuse à nouveau toute primaire de la droite et du centre (« Je n'y participerai pas. Point. », La Tribune Dimanche, 15 novembre 2026), tout en acceptant de discuter avec Gérard Larcher d'un rassemblement",
+        "source": {
+          "t": "La Tribune Dimanche — « Je n'y participerai pas. Point » : Édouard Philippe réaffirme son opposition à une primaire (15 novembre 2026)",
+          "u": "https://www.latribune.fr/article/la-tribune-dimanche/politique/27804315725775/je-n-y-participerai-pas-point-edouard-philippe-reaffirme-son-opposition-a-une-primaire-de-la-droite-et-du-centre"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-11-16",
+    "applique": "2026-11-16",
+    "ajouts": [
+      {
+        "date": "2026-11-15",
+        "parti": "hor",
+        "quoi": "Présente un volet logement et famille : 4 millions de logements de plus en dix ans, suppression des frais de notaire pour les moins de 35 ans, un prêt à taux zéro à chaque nouvel enfant, une exonération d'impôt sur le revenu pendant les trois premières années de l'enfant pour les classes moyennes, et une allocation familiale « de l'ordre de 350 euros par mois » dès le premier enfant. Aucun coût global n'est donné.",
+        "source": "https://www.leparisien.fr/elections/presidentielle/edouard-philippe-le-temps-de-travail-doit-pouvoir-etre-negocie-dans-lentreprise-15-11-2026-XBXJXNDKPZALPBOLULDIV7W5JE.php"
+      },
+      {
+        "date": "2026-11-15",
+        "parti": "hor",
+        "quoi": "Propose un temps de travail négocié dans l'entreprise : au-delà de 35 heures, heures sans impôt ni cotisation salariale, et sans cotisation patronale au-delà de 37 heures ; veut aussi diminuer la prime d'activité et « revoir la pente des allègements » de cotisations. Aucun chiffrage.",
+        "source": "https://www.leparisien.fr/elections/presidentielle/edouard-philippe-le-temps-de-travail-doit-pouvoir-etre-negocie-dans-lentreprise-15-11-2026-XBXJXNDKPZALPBOLULDIV7W5JE.php"
+      },
+      {
+        "date": "2026-11-13",
+        "parti": null,
+        "quoi": "Propose une « TVA sociale » : CSG sur les revenus du travail ramenée de 9,2 à 7,2 % et relevée de 6,2 à 7,2 % sur les revenus de remplacement, pour environ 20 Md€ compensés par une hausse des taux normal et intermédiaire de TVA. Le rapporteur général Olivier Henno parle d'un « choc fiscal de 20 milliards » et renvoie le sujet à la présidentielle. Amendement rejeté.",
+        "source": "https://www.senat.fr/cra/s20261113/s20261113_mono.html#par_686"
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "ps",
+        "quoi": "Au nom des groupes de gauche, propose de doubler la contribution solidarité autonomie payée par les employeurs (0,3 → 0,6 %) : 2 Md€ de plus pour la branche autonomie, dont le sous-financement est estimé entre 8 et 10 Md€ par an. Amendement rejeté, comme les identiques CRCE-K et GEST. Rattachement au PS à prendre avec prudence : amendement de groupe, la sénatrice n'est ni porte-parole ni responsable du programme.",
+        "source": "https://www.senat.fr/cra/s20261113/s20261113_mono.html#par_447"
+      },
+      {
+        "date": "2026-11-13",
+        "parti": "lfi",
+        "quoi": "Propose de porter la CSG sur les revenus du capital à 15 %, pour 8,5 Md€ de recettes pour la Sécurité sociale. Le gouvernement juge qu'une hausse de 8 milliards déstabiliserait l'économie ; amendement rejeté. Rattachement à LFI à prendre avec prudence : aucun des deux sénateurs n'est porte-parole de la campagne.",
+        "source": "https://www.senat.fr/cra/s20261113/s20261113_mono.html#par_721"
+      },
+      {
+        "date": "2026-11-13",
+        "parti": null,
+        "quoi": "Le Sénat adopte la partie recettes du PLFSS 2027 par 200 voix contre 110 : LR, Union centriste et RDPI pour ; SER, CRCE-K, GEST et les sénateurs RN contre.",
+        "source": "https://www.senat.fr/scrutin-public/2026/scr2026-101.html"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "parties.hor.statutCandidature",
+        "avant": "Candidat déclaré depuis septembre 2024",
+        "apres": "Candidat déclaré depuis septembre 2024 ; refuse à nouveau toute primaire de la droite et du centre (« Je n'y participerai pas. Point. », La Tribune Dimanche, 15 novembre 2026), tout en acceptant de discuter avec Gérard Larcher d'un rassemblement",
+        "source": "https://www.latribune.fr/article/la-tribune-dimanche/politique/27804315725775/je-n-y-participerai-pas-point-edouard-philippe-reaffirme-son-opposition-a-une-primaire-de-la-droite-et-du-centre"
+      }
+    ]
+  }
+}
