@@ -700,7 +700,7 @@
         "irbaisse": "Départage : son effet sur l'activité est comparable à celui de « Baisse de la CSG ou des cotisations sur les revenus d'activité » (les fourchettes publiées se recouvrent), qui profite davantage aux classes moyennes, aux bas salaires, aux retraités et aux agents publics ; c'est celle-ci qui est retenue.",
         "tvaener": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,34 point de PIB, production +0,23 % en 2032 et +0,23 % à long terme.",
         "prod": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,16 point de PIB, production +0,06 % en 2032 et +0,03 % à long terme.",
-        "prod50": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −1,68 point de PIB, production +0,61 % en 2032 et +0,31 % à long terme.",
+        "prod50": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −1,69 point de PIB, production +0,61 % en 2032 et +0,31 % à long terme.",
         "retr62": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −0,72 %).",
         "retr60": "Garde-fou : l'activité, donc l'emploi, reculerait en 2032 (production −1,33 %).",
         "indexation": "Coûte davantage aux finances publiques qu'elle n'apporte en activité : solde public 2032 −0,12 point de PIB, production +0,10 % en 2032 et +0,07 % à long terme.",
@@ -740,9 +740,9 @@
         }
       ],
       "calcul": {
-        "date": "2026-11-14",
-        "deficit2032": 7.26,
-        "dette2032": 138.8,
+        "date": "2026-11-17",
+        "deficit2032": 7.3,
+        "dette2032": 138.9,
         "economies": 0.1,
         "recettes": 21.6,
         "depenses": 4.2,
