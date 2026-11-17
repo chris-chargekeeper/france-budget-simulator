@@ -16,6 +16,8 @@ import struct
 import subprocess
 import sys
 
+import pages_ia
+
 ROOT = pathlib.Path(__file__).parent
 DATA = ROOT / "dataset" / "simulateur"
 FILES = ["baseline", "measures", "parties", "announcements", "assises", "contexte", "incidence", "histoire", "pouvoir", "fonctionpublique"]
@@ -605,6 +607,9 @@ def fichiers_web(payload):
     la liste des candidats de llms.txt celle de parties.json (les retirés n'y sont plus).
     """
     jour = fraicheur(payload)
+    ia, R = pages_ia.fichiers(jour)
+    pages_quot = ["comparatif.html"] + sorted(f for f in ia if f.startswith("candidat-")) \
+        + sorted(f for f in ia if f == "budget-apolitique.html")
     robots = ["# quipaie2027.fr — tout le site peut être lu et cité, par les moteurs comme par les IA.",
               "User-agent: *", "Allow: /", ""]
     for ua in ROBOTS_IA:
@@ -616,6 +621,13 @@ def fichiers_web(payload):
                "<changefreq>daily</changefreq><priority>1.0</priority></url>\n"
                f"  <url><loc>{SITE}/llms.txt</loc><lastmod>{jour}</lastmod>"
                "<changefreq>daily</changefreq><priority>0.5</priority></url>\n"
+               + "".join(f"  <url><loc>{SITE}/{f}</loc><lastmod>{jour}</lastmod>"
+                         f"<changefreq>daily</changefreq><priority>{'0.9' if f == 'comparatif.html' else '0.8'}</priority></url>\n"
+                         for f in pages_quot)
+               + f"  <url><loc>{SITE}/llms-full.txt</loc><lastmod>{jour}</lastmod>"
+               "<changefreq>daily</changefreq><priority>0.4</priority></url>\n"
+               + f"  <url><loc>{SITE}/resultats.json</loc><lastmod>{jour}</lastmod>"
+               "<changefreq>daily</changefreq><priority>0.4</priority></url>\n"
                + "".join(f"  <url><loc>{SITE}/{f.name}</loc>"
                          "<changefreq>yearly</changefreq><priority>0.2</priority></url>\n"
                          for f in sorted(PAGES.glob("*.html")))
@@ -648,6 +660,12 @@ Données au {jour}, mises à jour chaque matin (veille des déclarations chiffr�
 
 {chr(10).join(annonces)}
 
+## Résultats au {jour}
+
+Déficit et dette publics en 2032, avec les chiffrages indépendants (valeurs centrales), comme les affiche le simulateur :
+
+{pages_ia.tableau_llms(R)}
+
 ## Limites
 
 - Ordres de grandeur arrondis, pas un modèle macroéconométrique complet : un chiffrage officiel se fait avec un modèle bouclé (type Mésange à la direction générale du Trésor).
@@ -655,11 +673,15 @@ Données au {jour}, mises à jour chaque matin (veille des déclarations chiffr�
 
 ## Liens
 
-- [Le simulateur]({SITE}/) : toutes les données, la méthode et les sources sont dans la page (section « Méthode, sources et limites »).
+- [Le simulateur]({SITE}/) : toutes les données, la méthode et les sources sont dans la page (section « Méthode, sources et limites »). Les résultats y sont calculés en JavaScript ; les pages ci-dessous les donnent en HTML simple.
+- [Comparatif des candidats]({SITE}/comparatif.html) : déficit, dette, effet net des mesures et emplois en 2032, pour tous les candidats.
+- Une page par candidat, avec chaque mesure, son chiffrage et ses sources : {", ".join(f"[{c['candidat']}]({c['page']})" for c in R["candidats"] if not c["horsCourse"])}.
+- [Résultats complets en texte]({SITE}/llms-full.txt) et [en JSON]({SITE}/resultats.json) ({pages_ia.LICENCE[0]}, en citant « quipaie2027.fr »).
+- [Mentions légales]({SITE}/mentions-legales.html)
 """
     pages = {f.name: f.read_text(encoding="utf-8") for f in sorted(PAGES.glob("*.html"))}
     return {"robots.txt": "\n".join(robots), "sitemap.xml": sitemap, "llms.txt": llms,
-            f"{INDEXNOW_CLE}.txt": INDEXNOW_CLE, **pages}
+            f"{INDEXNOW_CLE}.txt": INDEXNOW_CLE, **pages, **ia}
 
 
 def moteur_js():
@@ -746,8 +768,13 @@ def main():
     index.write_text(html, encoding="utf-8")
     STAMP.write_text(hashlib.sha256(html.encode("utf-8")).hexdigest() + "\n", encoding="utf-8")
     WEB.mkdir(exist_ok=True)
-    for nom, contenu in fichiers_web(payload).items():
+    web = fichiers_web(payload)
+    for nom, contenu in web.items():
         (WEB / nom).write_text(contenu, encoding="utf-8")
+    # la page d'un candidat retiré ne doit plus partir en ligne avec le reste
+    for vieux in WEB.glob("candidat-*.html"):
+        if vieux.name not in web:
+            vieux.unlink()
     print(f"index.html écrit — {len(html):,} octets, "
           f"{len(payload['measures']['measures'])} mesures, "
           f"{len(payload['parties']['parties'])} partis, "

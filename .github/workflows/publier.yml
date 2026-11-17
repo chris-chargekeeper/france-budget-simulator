@@ -11,6 +11,7 @@ on:
     paths:
       - 'template.html'
       - 'build.py'
+      - 'pages_ia.py'
       - 'dataset/simulateur/**'
       - 'moteur/**'
       - 'web/**'
@@ -131,11 +132,17 @@ jobs:
       - name: Signaler la mise à jour aux moteurs (IndexNow)
         continue-on-error: true
         run: |
-          cle=$(python3 -c "import build; print(build.INDEXNOW_CLE)")
+          # toutes les adresses du sitemap (page, comparatif, pages candidats, llms.txt…)
+          python3 - > corps.json <<'PY'
+          import json, re, build
+          urls = re.findall(r"<loc>([^<]+)</loc>", open("web/sitemap.xml", encoding="utf-8").read())
+          print(json.dumps({"host": "quipaie2027.fr", "key": build.INDEXNOW_CLE,
+                            "keyLocation": f"https://quipaie2027.fr/{build.INDEXNOW_CLE}.txt",
+                            "urlList": urls}))
+          PY
           curl -s -o reponse.txt -w "IndexNow : HTTP %{http_code}\n" --max-time 30 \
                -H 'Content-Type: application/json; charset=utf-8' \
-               -d "{\"host\":\"quipaie2027.fr\",\"key\":\"$cle\",\"keyLocation\":\"https://quipaie2027.fr/$cle.txt\",\"urlList\":[\"https://quipaie2027.fr/\",\"https://quipaie2027.fr/llms.txt\"]}" \
-               https://api.indexnow.org/indexnow
+               --data @corps.json https://api.indexnow.org/indexnow
           cat reponse.txt
 
       # `master` suit ce qui est en ligne. Fast-forward strict : si les branches ont

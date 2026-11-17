@@ -1,0 +1,262 @@
+# quipaie2027.fr — résultats complets (données au 2026-11-17)
+
+> Simulateur budgétaire neutre de la présidentielle 2027. Pour chaque candidat : déficit et dette publics en 2032, effets sur l'emploi et le chômage, et chaque mesure avec son chiffrage. Même moteur et mêmes hypothèses que la page ; mêmes règles pour tous les candidats.
+
+Licence : Licence Ouverte / Open Licence 2.0 (Etalab) (https://www.etalab.gouv.fr/licence-ouverte-open-licence/), en citant « quipaie2027.fr ». Données en JSON : https://quipaie2027.fr/resultats.json
+
+## Si rien ne change
+
+Déficit public de 7,6 % du PIB et dette de 140,6 % du PIB en 2032.
+
+## Marine Le Pen (Rassemblement national)
+
+Page : https://quipaie2027.fr/candidat-marine-le-pen.html
+
+Le programme de Marine Le Pen (Rassemblement national) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-17) et avec les chiffrages indépendants, à un déficit public de 7,5 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 140,2 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 6,0 % du PIB : l'écart vient de mesures que le parti chiffre à +52,4 Md€ par an en 2032, quand les chiffrages indépendants donnent +3,4 Md€.
+
+- Statut : Programme en partie chiffré par le parti, complété par le simulateur
+- Candidature : Candidate ; éligible après l'arrêt d'appel du 7 juillet 2026 ; Jordan Bardella la soutient
+- Annonce du parti : 140 Md€ d'économies
+- Effets en 2032 par rapport à « si rien ne change » : emplois −298 000 (de −527 000 à −151 000), chômage 0,0 point, PIB −1,11 %, taux d'emprunt de l'État +0,09 point
+
+Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par le parti) :
+
+- Retour de l'âge légal à 62 ans (dépense nouvelle) : −13,0 Md€ ; 8,0 à 18,0 Md€ ; annoncé 13,0 Md€
+- Réduction des dépenses liées à l'immigration (économie) : +10,0 Md€ ; 1,0 à 10,0 Md€ ; annoncé 29,0 Md€
+- TVA à 5,5 % sur l'électricité, le gaz et les carburants (baisse d'impôt) : −10,0 Md€ ; 6,0 à 14,0 Md€ ; annoncé 17,0 Md€
+- Réduction de 5 % des effectifs de l'État et de ses opérateurs (économie) : +4,0 Md€ ; 3,0 à 6,0 Md€ ; annoncé 6,0 Md€
+- Renforcement de la lutte contre la fraude fiscale et sociale (recette nouvelle) : +3,0 Md€ ; 1,0 à 15,0 Md€ ; annoncé 15,0 Md€
+- Suppression ou fusion d'agences et d'opérateurs de l'État (économie) : +3,0 Md€ ; 1,0 à 3,0 Md€ ; annoncé 3,4 Md€
+- Baisse des concours financiers aux collectivités (économie) : +3,0 Md€ ; 3,0 à 10,0 Md€ ; annoncé 18,4 Md€
+- Réduction de la contribution française au budget de l'Union européenne (économie) : +2,0 Md€ ; 0,0 à 8,0 Md€ ; annoncé 9,0 Md€
+- Suppression de l'aide médicale d'État (économie) : +1,3 Md€ ; 0,5 à 1,3 Md€ ; annoncé 1,3 Md€
+- Réduction du train de vie des institutions et du nombre de parlementaires (économie) : +0,2 Md€ ; 0,1 à 0,3 Md€ ; annoncé 0,3 Md€
+
+## Jean-Luc Mélenchon (La France insoumise)
+
+Page : https://quipaie2027.fr/candidat-jean-luc-melenchon.html
+
+Le programme de Jean-Luc Mélenchon (La France insoumise) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-17) et avec les chiffrages indépendants, à un déficit public de 10,1 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 149,0 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 8,4 % du PIB : l'écart vient de mesures que le parti chiffre à −32,0 Md€ par an en 2032, quand les chiffrages indépendants donnent −88,8 Md€.
+
+- Statut : Programme en partie chiffré par le parti, complété par le simulateur
+- Candidature : Candidat déclaré (3 mai 2026) ; programme officiel L'Avenir en commun 2027 publié le 6 novembre 2026 (1 069 mesures) ; chiffrage d'ensemble annoncé pour le début de 2027
+- Annonce du parti : Programme publié le 6 novembre ; 106,4 Md€ de recettes chiffrées pour 2027
+- Effets en 2032 par rapport à « si rien ne change » : emplois −616 000 (de −1 296 000 à +149 000), chômage +0,1 point, PIB +0,02 %, taux d'emprunt de l'État +0,25 point
+
+Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par le parti) :
+
+- Retraite à 60 ans à taux plein (dépense nouvelle) : −30,0 Md€ ; 20,0 à 45,0 Md€ ; annoncé 9,0 Md€
+- Revalorisation du point d'indice de la fonction publique (+10 %) (dépense nouvelle) : −23,0 Md€ ; 21,0 à 24,0 Md€ ; annoncé 17,0 Md€
+- Smic à 1 700 € net (+15 %), allègements de cotisations suivant le Smic (dépense nouvelle) : −20,0 Md€ ; 16,0 à 25,0 Md€
+- Garantie d'autonomie des jeunes (revenu porté au seuil de pauvreté) (dépense nouvelle) : −12,0 Md€ ; 7,0 à 20,0 Md€ ; annoncé 9,5 Md€
+- Rabot des niches fiscales et des aides aux entreprises (économie) : +10,0 Md€ ; 5,0 à 25,0 Md€ ; annoncé 22,0 Md€
+- Plan d'investissement écologique (rénovation, réseaux, ferroviaire) (dépense nouvelle) : −10,0 Md€ ; 5,0 à 30,0 Md€ ; annoncé 10,0 Md€
+- Recrutements dans la santé, l'école et la justice (dépense nouvelle) : −8,0 Md€ ; 2,0 à 8,0 Md€
+- Abrogation des réformes de l'assurance chômage depuis 2019 (dépense nouvelle) : −7,0 Md€ ; 5,0 à 9,0 Md€ ; annoncé 3,0 Md€
+- ISF climatique (assiette élargie, barème progressif) (recette nouvelle) : +6,7 Md€ ; 5,0 à 15,0 Md€ ; annoncé 10,0 Md€
+- Héritage maximum : tranche à 100 % au-delà de 12 M€ et droits relevés sur les plus hauts patrimoines (recette nouvelle) : +6,1 Md€ ; 7,0 à 11,0 Md€ ; annoncé 20,0 Md€
+- Surtaxe d'impôt sur les sociétés pour les grandes entreprises (recette nouvelle) : +6,0 Md€ ; 4,0 à 12,0 Md€ ; annoncé 3,0 Md€
+- Gratuité de la cantine scolaire (dépense nouvelle) : −6,0 Md€ ; 3,2 à 9,0 Md€ ; annoncé 3,6 Md€
+- Annulation des coupes budgétaires de 2026 et indexation des crédits sur l'inflation (dépense nouvelle) : −6,0 Md€ ; 4,0 à 7,5 Md€ ; annoncé 7,0 Md€
+- Montée en charge de la branche autonomie (grand âge) (dépense nouvelle) : −5,0 Md€ ; 3,0 à 9,0 Md€
+- Impôt plancher de 2 % sur les patrimoines supérieurs à 100 M€ (recette nouvelle) : +4,6 Md€ ; 5,0 à 20,0 Md€ ; annoncé 15,0 Md€
+- Indexation intégrale des retraites et prestations sur l'inflation (dépense nouvelle) : −4,0 Md€ ; 2,0 à 6,0 Md€
+- Plans contre les violences sexistes et sexuelles et les violences faites aux enfants (dépense nouvelle) : −3,5 Md€ ; 1,8 à 4,6 Md€ ; annoncé 4,6 Md€
+- Contribution sur les superprofits (énergie, transport, finance) (recette nouvelle) : +3,0 Md€ ; 2,0 à 15,0 Md€ ; annoncé 5,0 Md€
+- Renforcement de la lutte contre la fraude fiscale et sociale (recette nouvelle) : +3,0 Md€ ; 1,0 à 15,0 Md€ ; annoncé 2,0 Md€
+- Fin du prélèvement forfaitaire unique : dividendes au barème progressif (recette nouvelle) : +2,7 Md€ ; 2,0 à 6,0 Md€ ; annoncé 9,0 Md€
+- Taxe sur les transactions financières élargie (recette nouvelle) : +2,3 Md€ ; 1,0 à 6,0 Md€ ; annoncé 5,0 Md€
+- Impôt minimum mondial de 15 % sur les multinationales (recette nouvelle) : +1,5 Md€ ; 1,0 à 3,0 Md€ ; annoncé 5,0 Md€
+- Hébergement et logement d'urgence (places nouvelles, réquisitions) (dépense nouvelle) : −1,2 Md€ ; 0,4 à 3,0 Md€ ; annoncé 3,0 Md€
+- Taxe sur les rachats d'actions (recette nouvelle) : +0,8 Md€ ; 0,5 à 2,0 Md€ ; annoncé 2,5 Md€
+- Renforcement de l'exit tax (recette nouvelle) : +0,3 Md€ ; 0,2 à 1,0 Md€
+
+## Bruno Retailleau (Les Républicains)
+
+Page : https://quipaie2027.fr/candidat-bruno-retailleau.html
+
+Le programme de Bruno Retailleau (Les Républicains) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-17) et avec les chiffrages indépendants, à un déficit public de 6,8 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 138,5 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 5,8 % du PIB : l'écart vient de mesures que le parti chiffre à +68,5 Md€ par an en 2032, quand les chiffrages indépendants donnent +32,0 Md€.
+
+- Statut : Programme en partie chiffré par le parti, complété par le simulateur
+- Candidature : Investi par les militants LR (19 avril 2026) ; propose par lettre à Attal, Philippe et Lisnard une primaire de la droite et du centre les 31 janvier et 7 février 2027 (10 novembre 2026), Philippe y reste opposé
+- Annonce du parti : 197 Md€ d'économies par an en 2032, chiffrées poste par poste
+- Effets en 2032 par rapport à « si rien ne change » : emplois +106 000 (de −23 000 à +328 000), chômage +0,1 point, PIB −0,35 %, taux d'emprunt de l'État −0,04 point
+
+Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par le parti) :
+
+- 400 000 départs à la retraite non remplacés d'ici 2032 (économie) : +16,0 Md€ ; 12,0 à 20,0 Md€ ; annoncé 25,0 Md€
+- Âge légal de départ porté à 65 ans (économie) : +9,0 Md€ ; 5,0 à 14,0 Md€ ; annoncé 12,0 Md€
+- Baisse de la CSG ou des cotisations sur les revenus d'activité (baisse d'impôt) : −8,0 Md€ ; 5,0 à 12,0 Md€
+- Baisse des concours financiers aux collectivités (économie) : +5,0 Md€ ; 3,0 à 10,0 Md€ ; annoncé 10,0 Md€
+- Freinage de l'ONDAM (dépenses d'assurance maladie) (économie) : +5,0 Md€ ; 3,0 à 9,0 Md€ ; annoncé 4,0 Md€
+- Nouvelle baisse des impôts de production (baisse d'impôt) : −5,0 Md€ ; 3,0 à 8,0 Md€ ; annoncé 15,0 Md€
+- Nouvelle réforme de l'assurance chômage (économie) : +4,0 Md€ ; 2,0 à 6,0 Md€ ; annoncé 14,0 Md€
+- Renforcement de la lutte contre la fraude fiscale et sociale (recette nouvelle) : +3,0 Md€ ; 1,0 à 15,0 Md€ ; annoncé 9,0 Md€
+- Suppression ou fusion d'agences et d'opérateurs de l'État (économie) : +2,0 Md€ ; 1,0 à 3,0 Md€ ; annoncé 7,5 Md€
+- Réduction des dépenses liées à l'immigration (économie) : +1,0 Md€ ; 1,0 à 10,0 Md€ ; annoncé 10,0 Md€
+
+## Gabriel Attal (Renaissance)
+
+Page : https://quipaie2027.fr/candidat-gabriel-attal.html
+
+Le programme de Gabriel Attal (Renaissance) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-17) et avec les chiffrages indépendants, à un déficit public de 6,9 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 137,6 % du PIB.
+
+- Statut : Scénario reconstitué par le site : le parti n'a pas publié de chiffrage, les mesures sont tirées de ses positions publiques
+- Candidature : Candidat déclaré (22 mai 2026) ; appelle à « une grande primaire des démocrates »
+- Annonce du parti : 150 Md€ d'économies sur le quinquennat
+- Effets en 2032 par rapport à « si rien ne change » : emplois −2 000 (de −82 000 à +105 000), chômage 0,0 point, PIB −0,56 %, taux d'emprunt de l'État −0,02 point
+
+Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par le parti) :
+
+- Année blanche : gel des barèmes et des prestations (économie) : +7,0 Md€ ; 5,0 à 10,0 Md€
+- Freinage de l'ONDAM (dépenses d'assurance maladie) (économie) : +5,0 Md€ ; 3,0 à 9,0 Md€
+- Rabot des niches fiscales et des aides aux entreprises (économie) : +5,0 Md€ ; 5,0 à 25,0 Md€
+- Réduction de 5 % des effectifs de l'État et de ses opérateurs (économie) : +4,0 Md€ ; 3,0 à 6,0 Md€
+- Nouvelle réforme de l'assurance chômage (économie) : +4,0 Md€ ; 2,0 à 6,0 Md€ ; annoncé 5,0 Md€
+- Nouvelle baisse des impôts de production (baisse d'impôt) : −3,0 Md€ ; 3,0 à 8,0 Md€
+- Suppression ou fusion d'agences et d'opérateurs de l'État (économie) : +2,0 Md€ ; 1,0 à 3,0 Md€
+
+## Édouard Philippe (Horizons)
+
+Page : https://quipaie2027.fr/candidat-edouard-philippe.html
+
+Le programme de Édouard Philippe (Horizons) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-17) et avec les chiffrages indépendants, à un déficit public de 7,5 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 141,8 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 6,7 % du PIB : l'écart vient de mesures que le parti chiffre à +36,0 Md€ par an en 2032, quand les chiffrages indépendants donnent +11,0 Md€.
+
+- Statut : Scénario reconstitué par le site : le parti n'a pas publié de chiffrage, les mesures sont tirées de ses positions publiques
+- Candidature : Candidat déclaré depuis septembre 2024 ; refuse à nouveau toute primaire de la droite et du centre (« Je n'y participerai pas. Point. », La Tribune Dimanche, 15 novembre 2026), tout en acceptant de discuter avec Gérard Larcher d'un rassemblement
+- Annonce du parti : Programme en ligne (15 thèmes, mis à jour le 12 novembre 2026), sans chiffrage d'ensemble
+- Effets en 2032 par rapport à « si rien ne change » : emplois +143 000 (de −6 000 à +361 000), chômage 0,0 point, PIB −0,04 %, taux d'emprunt de l'État +0,02 point
+
+Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par le parti) :
+
+- Baisse de 50 Md€ des impôts de production (CVAE, C3S, CFE et au-delà) (baisse d'impôt) : −50,0 Md€ ; 45,0 à 50,0 Md€ ; annoncé 50,0 Md€
+- Rabot des niches fiscales et des aides aux entreprises (économie) : +25,0 Md€ ; 5,0 à 25,0 Md€ ; annoncé 50,0 Md€
+- Année blanche : gel des barèmes et des prestations (économie) : +10,0 Md€ ; 5,0 à 10,0 Md€
+- Non-remplacement d'un départ à la retraite sur trois (≈ 250 000 postes en cinq ans) (économie) : +10,0 Md€ ; 7,5 à 12,5 Md€
+- Âge légal de départ porté à 65 ans (économie) : +9,0 Md€ ; 5,0 à 14,0 Md€
+- Salaire des enseignants relevé de 20 % en moyenne sur le quinquennat (dépense nouvelle) : −9,0 Md€ ; 7,0 à 12,0 Md€
+- Freinage de l'ONDAM (dépenses d'assurance maladie) (économie) : +5,0 Md€ ; 3,0 à 9,0 Md€
+- Baisse des concours financiers aux collectivités (économie) : +5,0 Md€ ; 3,0 à 10,0 Md€
+- Nouvelle réforme de l'assurance chômage (économie) : +4,0 Md€ ; 2,0 à 6,0 Md€
+- Suppression ou fusion d'agences et d'opérateurs de l'État (économie) : +2,0 Md€ ; 1,0 à 3,0 Md€
+
+## Raphaël Glucksmann (Parti socialiste / Place publique)
+
+Page : https://quipaie2027.fr/candidat-raphael-glucksmann.html
+
+Le programme de Raphaël Glucksmann (Parti socialiste / Place publique) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-17) et avec les chiffrages indépendants, à un déficit public de 7,7 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 140,3 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 7,4 % du PIB : l'écart vient de mesures que le parti chiffre à +5,3 Md€ par an en 2032, quand les chiffrages indépendants donnent −4,6 Md€.
+
+- Statut : Scénario reconstitué par le site : le parti n'a pas publié de chiffrage, les mesures sont tirées de ses positions publiques
+- Candidature : Investi : vainqueur de la primaire PS – Place publique – GRS dès le premier tour (66 %, 11 octobre 2026)
+- Annonce du parti : Contre-budget 2027 publié (39,5 Md€ de recettes), pas de chiffrage présidentiel
+- Effets en 2032 par rapport à « si rien ne change » : emplois −134 000 (de −297 000 à +24 000), chômage −0,1 point, PIB −0,27 %, taux d'emprunt de l'État +0,01 point
+
+Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par le parti) :
+
+- Rabot des niches fiscales et des aides aux entreprises (économie) : +10,0 Md€ ; 5,0 à 25,0 Md€
+- Plan d'investissement écologique (rénovation, réseaux, ferroviaire) (dépense nouvelle) : −10,0 Md€ ; 5,0 à 30,0 Md€ ; annoncé 10,0 Md€
+- Retour de l'âge légal à 62 ans (dépense nouvelle) : −8,0 Md€ ; 8,0 à 18,0 Md€
+- Indexation intégrale des retraites et prestations sur l'inflation (dépense nouvelle) : −4,0 Md€ ; 2,0 à 6,0 Md€
+- Recrutements dans la santé, l'école et la justice (dépense nouvelle) : −4,0 Md€ ; 2,0 à 8,0 Md€
+- Impôt plancher de 2 % sur les patrimoines supérieurs à 100 M€ (recette nouvelle) : +3,2 Md€ ; 5,0 à 20,0 Md€ ; annoncé 15,0 Md€
+- Rétablissement d'un impôt sur la fortune au-delà de l'IFI (recette nouvelle) : +3,0 Md€ ; 2,0 à 6,0 Md€
+- Surtaxe d'impôt sur les sociétés pour les grandes entreprises (recette nouvelle) : +3,0 Md€ ; 4,0 à 12,0 Md€
+- Réforme des droits de succession sur les hauts patrimoines (recette nouvelle) : +2,3 Md€ ; 2,0 à 5,0 Md€ ; annoncé 10,0 Md€
+
+## Marine Tondelier (Les Écologistes)
+
+Page : https://quipaie2027.fr/candidat-marine-tondelier.html
+
+Le programme de Marine Tondelier (Les Écologistes) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-17) et avec les chiffrages indépendants, à un déficit public de 7,9 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 141,0 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 7,8 % du PIB : l'écart vient de mesures que le parti chiffre à −6,6 Md€ par an en 2032, quand les chiffrages indépendants donnent −10,5 Md€.
+
+- Statut : Scénario reconstitué par le site : le parti n'a pas publié de chiffrage, les mesures sont tirées de ses positions publiques
+- Candidature : Candidate ; « prête à rejoindre une coalition » de gauche et fera campagne pour un autre candidat si son parti le décide (BFMTV, 12 novembre 2026) ; les adhérents votent du 10 au 13 décembre 2026
+- Annonce du parti : Amendements chiffrés au budget 2027, pas de chiffrage présidentiel
+- Effets en 2032 par rapport à « si rien ne change » : emplois +78 000 (de +18 000 à +262 000), chômage −0,2 point, PIB +0,66 %, taux d'emprunt de l'État −0,06 point
+
+Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par le parti) :
+
+- Plan d'investissement écologique (rénovation, réseaux, ferroviaire) (dépense nouvelle) : −30,0 Md€ ; 5,0 à 30,0 Md€
+- Rabot des niches fiscales et des aides aux entreprises (économie) : +10,0 Md€ ; 5,0 à 25,0 Md€
+- ISF climatique (assiette élargie, barème progressif) (recette nouvelle) : +7,3 Md€ ; 5,0 à 15,0 Md€
+- Surtaxe sur les héritages au-delà de 4 M€ (+10 points, +20 au-delà de 13 M€), pacte Dutreil resserré, plus-values latentes taxées à la transmission (recette nouvelle) : +5,1 Md€ ; 5,0 à 10,0 Md€ ; annoncé 15,0 Md€
+- Montée en charge de la branche autonomie (grand âge) (dépense nouvelle) : −5,0 Md€ ; 3,0 à 9,0 Md€
+- Recrutements dans la santé, l'école et la justice (dépense nouvelle) : −4,0 Md€ ; 2,0 à 8,0 Md€
+- Contribution sur les superprofits (énergie, transport, finance) (recette nouvelle) : +3,0 Md€ ; 2,0 à 15,0 Md€ ; annoncé 2,8 Md€
+- Rabot du crédit d'impôt recherche (recette nouvelle) : +3,0 Md€ ; 2,0 à 7,0 Md€
+
+## Budget apolitique (calculé par une IA, hors course)
+
+Page : https://quipaie2027.fr/budget-apolitique.html
+
+Le budget apolitique calculé par une intelligence artificielle conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-17) et avec les chiffrages indépendants, à un déficit public de 7,3 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 138,9 % du PIB.
+
+- Statut : Budget calculé par une intelligence artificielle, hors course : ce n'est le programme de personne
+- Candidature : Pas un candidat : un budget calculé par l'intelligence artificielle, à partir des chiffrages publiés
+- Annonce du parti : Un budget calculé, pas promis
+- Effets en 2032 par rapport à « si rien ne change » : emplois +1 000 (de −11 000 à +104 000), chômage 0,0 point, PIB +0,01 %, taux d'emprunt de l'État −0,04 point
+
+Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par le parti) :
+
+- Baisse de la CSG ou des cotisations sur les revenus d'activité (baisse d'impôt) : −8,0 Md€ ; 5,0 à 12,0 Md€
+- ISF climatique (assiette élargie, barème progressif) (recette nouvelle) : +6,9 Md€ ; 5,0 à 15,0 Md€
+- Héritage maximum : tranche à 100 % au-delà de 12 M€ et droits relevés sur les plus hauts patrimoines (recette nouvelle) : +6,2 Md€ ; 7,0 à 11,0 Md€
+- Innovation et souveraineté technologique : prolonger France 2030 (IA, deeptech, Bpifrance) (dépense nouvelle) : −3,0 Md€ ; 1,0 à 6,0 Md€
+- Fin du prélèvement forfaitaire unique : dividendes au barème progressif (recette nouvelle) : +2,7 Md€ ; 2,0 à 6,0 Md€
+- CSG sur les revenus du capital : +2 points (recette nouvelle) : +2,1 Md€ ; 2,0 à 4,0 Md€
+- Contribution sur les superprofits (énergie, transport, finance) (recette nouvelle) : +1,5 Md€ ; 2,0 à 15,0 Md€
+- Hébergement et logement d'urgence (places nouvelles, réquisitions) (dépense nouvelle) : −1,2 Md€ ; 0,4 à 3,0 Md€
+- Renforcement de la lutte contre la fraude fiscale et sociale (recette nouvelle) : +1,0 Md€ ; 1,0 à 15,0 Md€
+- Taxe sur les transactions financières élargie (recette nouvelle) : +0,8 Md€ ; 1,0 à 6,0 Md€
+- Taxe sur les rachats d'actions (recette nouvelle) : +0,4 Md€ ; 0,5 à 2,0 Md€
+- Renforcement de l'exit tax (recette nouvelle) : +0,1 Md€ ; 0,2 à 1,0 Md€
+- Réduction du train de vie des institutions et du nombre de parlementaires (économie) : +0,1 Md€ ; 0,1 à 0,3 Md€
+
+## David Lisnard (Nouvelle Énergie)
+
+Page : https://quipaie2027.fr/candidat-david-lisnard.html
+
+Le programme de David Lisnard (Nouvelle Énergie) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-17) et avec les chiffrages indépendants, à un déficit public de 6,8 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 138,2 % du PIB.
+
+- Statut : Programme en partie chiffré par le parti, complété par le simulateur
+- Candidature : Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite et en accepte le principe proposé par Bruno Retailleau (10 novembre 2026)
+- Annonce du parti : 200 Md€ d'économies d'ici 2032
+- Effets en 2032 par rapport à « si rien ne change » : emplois +146 000 (de +48 000 à +403 000), chômage 0,0 point, PIB −0,29 %, taux d'emprunt de l'État −0,05 point
+
+Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par le parti) :
+
+- Baisse de la CSG ou des cotisations sur les revenus d'activité (baisse d'impôt) : −12,0 Md€ ; 5,0 à 12,0 Md€
+- Baisse des concours financiers aux collectivités (économie) : +10,0 Md€ ; 3,0 à 10,0 Md€
+- Rabot des niches fiscales et des aides aux entreprises (économie) : +10,0 Md€ ; 5,0 à 25,0 Md€
+- Âge légal de départ porté à 65 ans (économie) : +9,0 Md€ ; 5,0 à 14,0 Md€
+- Nouvelle baisse des impôts de production (baisse d'impôt) : −8,0 Md€ ; 3,0 à 8,0 Md€
+- Réduction de 5 % des effectifs de l'État et de ses opérateurs (économie) : +6,0 Md€ ; 3,0 à 6,0 Md€
+- Nouvelle réforme de l'assurance chômage (économie) : +6,0 Md€ ; 2,0 à 6,0 Md€
+- Freinage de l'ONDAM (dépenses d'assurance maladie) (économie) : +5,0 Md€ ; 3,0 à 9,0 Md€
+- Suppression ou fusion d'agences et d'opérateurs de l'État (économie) : +3,0 Md€ ; 1,0 à 3,0 Md€
+- Réduction des dépenses liées à l'immigration (économie) : +1,0 Md€ ; 1,0 à 10,0 Md€ ; annoncé 2,5 Md€
+- Réduction du train de vie des institutions et du nombre de parlementaires (économie) : +0,3 Md€ ; 0,1 à 0,3 Md€
+
+## Éric Zemmour (Reconquête)
+
+Page : https://quipaie2027.fr/candidat-eric-zemmour.html
+
+Le programme de Éric Zemmour (Reconquête) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-17) et avec les chiffrages indépendants, à un déficit public de 6,6 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 137,4 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 5,4 % du PIB : l'écart vient de mesures que le parti chiffre à +80,1 Md€ par an en 2032, quand les chiffrages indépendants donnent +36,8 Md€.
+
+- Statut : Scénario reconstitué par le site : le parti n'a pas publié de chiffrage, les mesures sont tirées de ses positions publiques
+- Candidature : Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026)
+- Annonce du parti : 280 Md€ d'économies par an en 2032
+- Effets en 2032 par rapport à « si rien ne change » : emplois −106 000 (de −217 000 à −52 000), chômage +0,3 point, PIB −0,90 %, taux d'emprunt de l'État −0,02 point
+
+Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par le parti) :
+
+- 800 000 postes publics en moins, hors 2,2 millions d'emplois protégés (économie) : +21,3 Md€ ; 24,0 à 40,0 Md€ ; annoncé 40,0 Md€
+- Réduction des dépenses liées à l'immigration (économie) : +10,0 Md€ ; 1,0 à 10,0 Md€ ; annoncé 20,0 Md€
+- Réduction de la contribution française au budget de l'Union européenne (économie) : +2,0 Md€ ; 0,0 à 8,0 Md€
+- Suppression ou fusion d'agences et d'opérateurs de l'État (économie) : +2,0 Md€ ; 1,0 à 3,0 Md€ ; annoncé 30,0 Md€
+- Suppression de l'aide médicale d'État (économie) : +1,3 Md€ ; 0,5 à 1,3 Md€
+- Réduction du train de vie des institutions et du nombre de parlementaires (économie) : +0,2 Md€ ; 0,1 à 0,3 Md€
+
+## Méthode et limites
+
+Chaque mesure est chiffrée par une borne basse, une valeur centrale et une borne haute tirées de travaux publics (Cour des comptes, HCFP, OFCE, IPP, CAE, Fipeco, Banque de France, rapports parlementaires). Les scénarios « reconstitués » sont bâtis par le site à partir des positions publiques, faute de chiffrage publié par le parti. Ordres de grandeur arrondis, pas un modèle macroéconométrique complet.

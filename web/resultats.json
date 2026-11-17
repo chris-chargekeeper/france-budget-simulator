@@ -1,0 +1,3103 @@
+{
+ "site": "https://quipaie2027.fr",
+ "date": "2026-11-17",
+ "licence": {
+  "nom": "Licence Ouverte / Open Licence 2.0 (Etalab)",
+  "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
+ },
+ "citation": "quipaie2027.fr, données au 2026-11-17",
+ "unites": {
+  "deficit": "% du PIB (déficit public, signe positif)",
+  "dette": "% du PIB",
+  "montants": "Md€ par an, effet sur le solde en 2032 (positif = améliore)",
+  "emplois": "écart au « si rien ne change » en 2032",
+  "chomage": "points d'écart au « si rien ne change » en 2032",
+  "pib": "% d'écart au « si rien ne change » en 2032",
+  "tauxEtat": "points d'écart du taux d'emprunt de l'État en 2032"
+ },
+ "hypotheses": {
+  "croissance": 1,
+  "inflation": 1.8,
+  "derive": 0.7,
+  "tauxMarche": 4.93,
+  "multiplicateur": 0.9,
+  "erosion": 25
+ },
+ "siRienNeChange": {
+  "deficit2032": 7.6,
+  "dette2032": 140.6,
+  "trajectoire": [
+   {
+    "annee": 2025,
+    "deficitPct": 5.4,
+    "dettePct": 115.9
+   },
+   {
+    "annee": 2026,
+    "deficitPct": 6.1,
+    "dettePct": 119.5
+   },
+   {
+    "annee": 2027,
+    "deficitPct": 6.4,
+    "dettePct": 122.9
+   },
+   {
+    "annee": 2028,
+    "deficitPct": 6.6,
+    "dettePct": 125.9
+   },
+   {
+    "annee": 2029,
+    "deficitPct": 6.9,
+    "dettePct": 129.4
+   },
+   {
+    "annee": 2030,
+    "deficitPct": 7.1,
+    "dettePct": 132.9
+   },
+   {
+    "annee": 2031,
+    "deficitPct": 7.4,
+    "dettePct": 136.7
+   },
+   {
+    "annee": 2032,
+    "deficitPct": 7.6,
+    "dettePct": 140.6
+   }
+  ]
+ },
+ "candidats": [
+  {
+   "id": "rn",
+   "candidat": "Marine Le Pen",
+   "parti": "Rassemblement national",
+   "sigle": "RN",
+   "horsCourse": false,
+   "statutCandidature": "Candidate ; éligible après l'arrêt d'appel du 7 juillet 2026 ; Jordan Bardella la soutient",
+   "statutChiffrage": "partiel",
+   "annonce": {
+    "titre": "140 Md€ d'économies",
+    "texte": "Marine Le Pen et Jordan Bardella ont présenté le 6 octobre 2026 une trajectoire reposant sur 140 Md€ d'économies nettes, relevée des 125 Md€ annoncés le 27 août. Il s'agit d'un niveau atteint en 2032, non d'une coupe dans le budget 2027. Environ 82 Md€ sont rattachés publiquement à des postes identifiés, une fois les mesures en place : immigration (29 Md€ en année pleine), collectivités (18,4 Md€ en 2031), fraude fiscale et sociale, contribution au budget de l'Union européenne (9 Md€), organisation de l'État. Le 3 novembre, une députée RN a présenté en séance un autre découpage (71,5 Md€ nets, dont 60 Md€ sur la politique migratoire), que la candidate n'a pas repris. La ventilation du total annoncé n'a pas été publiée, et la cible d'un déficit sous 3 % est datée de 2030, deux ans avant que ces économies soient atteintes.",
+    "revendique": 140,
+    "detaille": 82.4
+   },
+   "deficit2032": 7.5,
+   "dette2032": 140.2,
+   "deficit2032Promesses": 6,
+   "dette2032Promesses": 134.6,
+   "effetNet2032": 3.4,
+   "effetNet2032Promesses": 52.4,
+   "trajectoire": [
+    {
+     "annee": 2025,
+     "deficitPct": 5.4,
+     "dettePct": 115.9
+    },
+    {
+     "annee": 2026,
+     "deficitPct": 6.1,
+     "dettePct": 119.5
+    },
+    {
+     "annee": 2027,
+     "deficitPct": 6.5,
+     "dettePct": 123.1
+    },
+    {
+     "annee": 2028,
+     "deficitPct": 6.6,
+     "dettePct": 126.2
+    },
+    {
+     "annee": 2029,
+     "deficitPct": 6.7,
+     "dettePct": 129.6
+    },
+    {
+     "annee": 2030,
+     "deficitPct": 7,
+     "dettePct": 132.9
+    },
+    {
+     "annee": 2031,
+     "deficitPct": 7.3,
+     "dettePct": 136.4
+    },
+    {
+     "annee": 2032,
+     "deficitPct": 7.5,
+     "dettePct": 140.2
+    }
+   ],
+   "effets2032": {
+    "pibPct": {
+     "centre": -1.11,
+     "fourchette": [
+      -1.27,
+      -0.78
+     ]
+    },
+    "emplois": {
+     "centre": -298000,
+     "fourchette": [
+      -527000,
+      -151000
+     ]
+    },
+    "chomagePts": {
+     "centre": 0,
+     "fourchette": [
+      -0.6,
+      0.8
+     ]
+    },
+    "tauxEtatPts": {
+     "centre": 0.09,
+     "fourchette": [
+      0.04,
+      0.21
+     ]
+    }
+   },
+   "mesures": [
+    {
+     "id": "retr62",
+     "libelle": "Retour de l'âge légal à 62 ans",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 13,
+     "bas": 8,
+     "centre": 13,
+     "haut": 18,
+     "annonce": 13,
+     "montee": 5,
+     "effet2032": -13,
+     "note": "Environ 3 Md€ dès la première année, la charge montant au fil des générations. Les retraites pèsent 390 Md€, soit près d'un quart de la dépense publique.",
+     "sources": []
+    },
+    {
+     "id": "immigration",
+     "libelle": "Réduction des dépenses liées à l'immigration",
+     "sens": "dep-",
+     "borne": "hi",
+     "retenu": 10,
+     "bas": 1,
+     "centre": 3,
+     "haut": 10,
+     "annonce": 29,
+     "montee": 3,
+     "effet2032": 10,
+     "note": "Chiffrée à 25 Md€ par le RN. Les postes identifiables sont d'un tout autre ordre : aide médicale d'État 1,3 Md€, hébergement d'urgence et demande d'asile environ 3 Md€, aide au retour quelques centaines de millions. Les chiffrages hauts agrègent des prestations de droit commun versées à des personnes en situation régulière, et ne déduisent pas les cotisations et impôts que ces mêmes personnes acquittent.",
+     "sources": []
+    },
+    {
+     "id": "tvaener",
+     "libelle": "TVA à 5,5 % sur l'électricité, le gaz et les carburants",
+     "sens": "rec-",
+     "borne": "mid",
+     "retenu": 10,
+     "bas": 6,
+     "centre": 10,
+     "haut": 14,
+     "annonce": 17,
+     "montee": 1,
+     "effet2032": -10,
+     "note": "La fiscalité de l'énergie rapporte environ 40 Md€, la TVA sur l'énergie environ 12. Mesure portée par le RN comme par une partie de la gauche.",
+     "sources": []
+    },
+    {
+     "id": "effectifs",
+     "libelle": "Réduction de 5 % des effectifs de l'État et de ses opérateurs",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 3,
+     "centre": 4,
+     "haut": 6,
+     "annonce": 6,
+     "montee": 4,
+     "effet2032": 4,
+     "note": "2,5 millions d'agents pour l'État et ses opérateurs. Une baisse de 5 % suppose de ne pas remplacer environ 125 000 départs.",
+     "sources": []
+    },
+    {
+     "id": "fraude",
+     "libelle": "Renforcement de la lutte contre la fraude fiscale et sociale",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 3,
+     "bas": 1,
+     "centre": 3,
+     "haut": 15,
+     "annonce": 15,
+     "montee": 3,
+     "effet2032": 3,
+     "note": "Chiffré à 15 Md€ par le RN, jusqu'à 80 Md€ par LFI. L'écart fiscal estimé est effectivement de cet ordre, mais il mesure l'impôt manquant, pas l'impôt récupérable : les redressements notifiés dépassent 15 Md€ par an, les encaissements réels sont autour de 10, et l'essentiel serait recouvré même sans mesure nouvelle.",
+     "sources": []
+    },
+    {
+     "id": "agences",
+     "libelle": "Suppression ou fusion d'agences et d'opérateurs de l'État",
+     "sens": "dep-",
+     "borne": "hi",
+     "retenu": 3,
+     "bas": 1,
+     "centre": 2,
+     "haut": 3,
+     "annonce": 3.4,
+     "montee": 3,
+     "effet2032": 3,
+     "note": "Les rapports parlementaires convergent vers 2 à 3 Md€, à condition de supprimer les missions et pas seulement les structures.",
+     "sources": []
+    },
+    {
+     "id": "collectivites",
+     "libelle": "Baisse des concours financiers aux collectivités",
+     "sens": "dep-",
+     "borne": "lo",
+     "retenu": 3,
+     "bas": 3,
+     "centre": 5,
+     "haut": 10,
+     "annonce": 18.4,
+     "montee": 2,
+     "effet2032": 3,
+     "note": "Les collectivités portent environ 290 Md€ de dépenses, dont l'essentiel de l'investissement public civil.",
+     "sources": [
+      {
+       "t": "Cour des comptes, Contribution au rétablissement des finances publiques, 9 nov. 2026, mesure n° 12 : 4 à 4,9 Md€ d'effet sur le solde public",
+       "u": "https://www.ccomptes.fr/fr/publications/contribution-au-retablissement-des-finances-publiques",
+       "d": "2026-11-10"
+      }
+     ]
+    },
+    {
+     "id": "ue",
+     "libelle": "Réduction de la contribution française au budget de l'Union européenne",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 2,
+     "bas": 0,
+     "centre": 2,
+     "haut": 8,
+     "annonce": 9,
+     "montee": 3,
+     "effet2032": 2,
+     "note": "Chiffrée à 10 Md€ par le RN. La contribution brute est d'environ 27 Md€ pour environ 15 Md€ de retours. La réduire unilatéralement n'est pas possible : le cadre financier pluriannuel se décide à l'unanimité et la contribution est une ressource propre de l'Union.",
+     "sources": []
+    },
+    {
+     "id": "ame",
+     "libelle": "Suppression de l'aide médicale d'État",
+     "sens": "dep-",
+     "borne": "hi",
+     "retenu": 1.3,
+     "bas": 0.5,
+     "centre": 0.9,
+     "haut": 1.3,
+     "annonce": 1.3,
+     "montee": 1,
+     "effet2032": 1.3,
+     "note": "1,3 Md€, soit 0,08 % de la dépense publique.",
+     "sources": []
+    },
+    {
+     "id": "institutions",
+     "libelle": "Réduction du train de vie des institutions et du nombre de parlementaires",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 0.15,
+     "bas": 0.05,
+     "centre": 0.15,
+     "haut": 0.3,
+     "annonce": 0.3,
+     "montee": 2,
+     "effet2032": 0.2,
+     "note": "L'ensemble Élysée, Assemblée, Sénat et Conseil constitutionnel coûte 1,14 Md€, soit un euro pour mille euros de dépense publique. Supprimé en totalité, ce poste modifierait peu la trajectoire.",
+     "sources": []
+    }
+   ],
+   "sources": [
+    {
+     "t": "Présidentielle : Marine Le Pen promet « 140 milliards d'euros nets d'économies » d'ici 2032 — dépêche, 6 octobre 2026",
+     "u": "https://www.boursorama.com/actualite-economique/actualites/presidentielle-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032-70784e1d524f6a627b04d825118d0b51"
+    },
+    {
+     "t": "Budget 2027 : Marine Le Pen promet 140 milliards d'euros nets d'économies d'ici 2032 — Europe 1 avec l'AFP, 6 octobre 2026",
+     "u": "https://www.europe1.fr/politique/budget-2027-marine-le-pen-promet-140-milliards-deuros-nets-deconomies-dici-2032-pour-eviter-a-la-france-le-defaut-de-paiement-1126400"
+    },
+    {
+     "t": "Programme économique du RN — OFCE législatives 2024",
+     "u": "https://www.ofce-legislatives2024.fr/programmes/rn.html"
+    },
+    {
+     "t": "Condamnée en appel, Marine Le Pen pourra se présenter en 2027 — RTS avec AFP, 7 juillet 2026",
+     "u": "https://www.rts.ch/info/monde/2026/article/condamnee-en-appel-marine-le-pen-pourra-se-presenter-en-2027-29296439.html"
+    },
+    {
+     "t": "Contre-budget RN de 140 Md€ (6 octobre 2026) et débat du 2 novembre 2026 à l'Assemblée",
+     "u": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f"
+    }
+   ],
+   "page": "https://quipaie2027.fr/candidat-marine-le-pen.html"
+  },
+  {
+   "id": "lfi",
+   "candidat": "Jean-Luc Mélenchon",
+   "parti": "La France insoumise",
+   "sigle": "LFI",
+   "horsCourse": false,
+   "statutCandidature": "Candidat déclaré (3 mai 2026) ; programme officiel L'Avenir en commun 2027 publié le 6 novembre 2026 (1 069 mesures) ; chiffrage d'ensemble annoncé pour le début de 2027",
+   "statutChiffrage": "partiel",
+   "annonce": {
+    "titre": "Programme publié le 6 novembre ; 106,4 Md€ de recettes chiffrées pour 2027",
+    "texte": "Le programme officiel, L'Avenir en commun 2027, est public depuis le 6 novembre 2026 : 1 069 mesures, mais presque aucun montant ; le chiffrage d'ensemble est annoncé pour le début de 2027. Le seul chiffrage poste par poste publié par la campagne est le document « Comment nous allons remettre de l'ordre dans les comptes publics » (14 octobre 2026), qui porte sur 2027 : 106,4 Md€ de recettes, 81,7 Md€ de dépenses, 24,7 Md€ de réduction du déficit, plus 100 Md€ par an d'investissements confiés à un pôle public bancaire, hors budget. Recettes : niches fiscales et sociales 22 Md€, droits de succession 20, taxe Zucman 15, ISF renforcé 10, fin de la flat tax 9, taxe universelle sur les multinationales 5, superprofits 5, transactions financières 5, taxe Gafam renforcée 3,9, impôt sur les sociétés 3, CVAE sur les grandes entreprises 3, rachats d'actions 2,5, fraude fiscale 2, crypto-actifs 1. Dépenses : point d'indice +10 % (17 Md€), garantie d'autonomie des jeunes (9,5), retour à 62 ans (9), pensions, allocations familiales et APL indexées et relevées de 10 % (8), annulation des coupes de 2026 (7), cantine gratuite (3,6), 250 000 places à l'université (3,5), hôpital (3), logement d'urgence (3), assurance chômage (3), violences sexistes et sexuelles (2,6), violences faites aux enfants (2), planification écologique (10), 10 000 postes d'enseignants (0,5). Ces dépenses sont toutes simulées, aux chiffrages indépendants centraux du catalogue, souvent plus élevés que ceux de la campagne. Les 9 Md€ du « retour à 62 ans » ne sont qu'un « premier pas » : le programme vise 60 ans avec 40 annuités sur le mandat, simulé comme tel (30 Md€ en 2032). Côté recettes, les 20 Md€ de droits de succession correspondent à l'héritage maximum de 12 M€, que l'Institut Montaigne chiffrait à 9 Md€ (7 à 11). Autres écarts : point d'indice +10 % (23 Md€ bruts contre 17 annoncés), garantie d'autonomie (12 contre 9,5), assurance chômage (7 contre 3), cantine (6 contre 3,6). Restent hors du simulateur les mesures que la campagne n'a pas chiffrées, comme le « 100 % Sécu », l'AAH ou les pensions au niveau du Smic, ou les 500 000 places de crèche. À l'inverse, la réduction des allègements de cotisations n'est plus comptée à part : la campagne la range dans les 22 Md€ de niches fiscales et sociales, et elle ne vise que les salaires au-dessus de 2 Smic.",
+    "revendique": 106.4,
+    "detaille": 106.4
+   },
+   "deficit2032": 10.1,
+   "dette2032": 149,
+   "deficit2032Promesses": 8.4,
+   "dette2032Promesses": 142.7,
+   "effetNet2032": -88.8,
+   "effetNet2032Promesses": -32,
+   "trajectoire": [
+    {
+     "annee": 2025,
+     "deficitPct": 5.4,
+     "dettePct": 115.9
+    },
+    {
+     "annee": 2026,
+     "deficitPct": 6.1,
+     "dettePct": 119.5
+    },
+    {
+     "annee": 2027,
+     "deficitPct": 6.8,
+     "dettePct": 121.8
+    },
+    {
+     "annee": 2028,
+     "deficitPct": 7.4,
+     "dettePct": 125.4
+    },
+    {
+     "annee": 2029,
+     "deficitPct": 8.3,
+     "dettePct": 130.5
+    },
+    {
+     "annee": 2030,
+     "deficitPct": 9,
+     "dettePct": 136.4
+    },
+    {
+     "annee": 2031,
+     "deficitPct": 9.5,
+     "dettePct": 142.6
+    },
+    {
+     "annee": 2032,
+     "deficitPct": 10.1,
+     "dettePct": 149
+    }
+   ],
+   "effets2032": {
+    "pibPct": {
+     "centre": 0.02,
+     "fourchette": [
+      -2.03,
+      1.45
+     ]
+    },
+    "emplois": {
+     "centre": -616000,
+     "fourchette": [
+      -1296000,
+      149000
+     ]
+    },
+    "chomagePts": {
+     "centre": 0.1,
+     "fourchette": [
+      -2.6,
+      2.3
+     ]
+    },
+    "tauxEtatPts": {
+     "centre": 0.25,
+     "fourchette": [
+      0.07,
+      0.91
+     ]
+    }
+   },
+   "mesures": [
+    {
+     "id": "retr60",
+     "libelle": "Retraite à 60 ans à taux plein",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 30,
+     "bas": 20,
+     "centre": 30,
+     "haut": 45,
+     "annonce": 9,
+     "montee": 6,
+     "effet2032": -30,
+     "note": "Les chiffrages publiés vont de 20 à 45 Md€ à horizon 2035 selon la durée de cotisation exigée et l'hypothèse d'emploi des seniors. C'est la mesure la plus coûteuse du catalogue.",
+     "sources": []
+    },
+    {
+     "id": "pointindice10",
+     "libelle": "Revalorisation du point d'indice de la fonction publique (+10 %)",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 23,
+     "bas": 21,
+     "centre": 23,
+     "haut": 24,
+     "annonce": 17,
+     "montee": 2,
+     "effet2032": -23,
+     "note": "Une hausse de 1 % du point coûte 2,4 Md€ pour les trois fonctions publiques (DGAFP, rendez-vous salarial de juillet 2026), contre 2,1 à 2,2 Md€ en 2022-2023 (Sénat). Coût brut ; une partie revient en cotisations et en impôt, d'où des chiffrages nets plus bas (17 Md€ selon LFI).",
+     "sources": [
+      {
+       "t": "DGAFP, rendez-vous salarial du 8 juillet 2026 : « une hausse de 1 % de la valeur du point représente un coût de 2,4 Md€ » (diaporama)",
+       "u": "https://www.cfdt-ufetam.org/wp-content/uploads/2026/07/rdv_salarial_2026_diapo_presentation.pdf",
+       "d": "2026-11-09"
+      },
+      {
+       "t": "Sénat, avis de Catherine Di Folco sur le PLF 2024 : coût des hausses de 3,5 % (7,6 Md€) et 1,5 % (3,2 Md€), repris par Acteurs publics",
+       "u": "https://acteurspublics.fr/articles/la-facture-de-la-hausse-du-point-dindice-pour-chacun-des-3-versants-de-la-fonction-publique",
+       "d": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "id": "smic1700",
+     "libelle": "Smic à 1 700 € net (+15 %), allègements de cotisations suivant le Smic",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 20,
+     "bas": 16,
+     "centre": 20,
+     "haut": 25,
+     "annonce": null,
+     "montee": 1,
+     "effet2032": -20,
+     "note": "Le Smic net est d'environ 1 478 € depuis juin 2026 : 1 700 € font +15 %. L'Institut Montaigne chiffre une hausse de 14,4 % (Smic à 1 600 €, 2024) à 19,2 Md€ par an pour les administrations (17 à 21) : allègements de cotisations +21,5, salaires publics +3,7, impôts et cotisations en plus −6. Porté à +15 % : environ 20 Md€. Borne basse : baisse de la prime d'activité, non comptée par Montaigne ; borne haute : coût des emplois perdus pour l'assurance chômage, exclu par Montaigne. Si les allègements restaient calculés sur l'ancien Smic, le coût budgétaire baisserait mais les pertes d'emplois augmenteraient. Les pertes d'emplois privés sont comptées dans les effets en chaîne.",
+     "sources": [
+      {
+       "t": "Institut Montaigne, « Augmenter le Smic à 1 600 € net », chiffrage du programme du Nouveau Front populaire, 24 juin 2024",
+       "u": "https://www.institutmontaigne.org/legislatives-2024/nouveau-front-populaire/augmenter-le-smic-a-1600-e-net",
+       "d": "2026-11-09"
+      },
+      {
+       "t": "Groupe d'experts sur le Smic, rapport de novembre 2025 (élasticités de l'emploi au coût du travail au Smic, p. 145)",
+       "u": "https://www.vie-publique.fr/files/rapport/pdf/301429_0.pdf",
+       "d": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "id": "autonomie",
+     "libelle": "Garantie d'autonomie des jeunes (revenu porté au seuil de pauvreté)",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 12,
+     "bas": 7,
+     "centre": 12,
+     "haut": 20,
+     "annonce": 9.5,
+     "montee": 2,
+     "effet2032": -12,
+     "note": "Aucun chiffrage indépendant ne porte sur un revenu de 1 337 € par mois. Ouvrir le RSA dès 18 ans coûterait jusqu'à 6,6 Md€ (DG Trésor, cité par le rapport Sirugue, 2016) ; l'Institut Montaigne (2022) chiffrait 12,3 Md€ pour une garantie à 1 063 €, avec un recours complet. LFI : 9,5 Md€.",
+     "sources": [
+      {
+       "t": "Rapport Sirugue, « Repenser les minima sociaux », avril 2016, p. 50 (chiffrages Drees et DG Trésor d'un RSA jeunes)",
+       "u": "https://www.vie-publique.fr/files/rapport/pdf/164000239.pdf",
+       "d": "2026-11-09"
+      },
+      {
+       "t": "IPP, rapport n° 44, « Les effets d'un RSA jeunes », juillet 2023, p. 16",
+       "u": "https://www.ipp.eu/wp-content/uploads/2025/06/44_Rapport_ESH_jeunes-5.pdf",
+       "d": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "id": "niches",
+     "libelle": "Rabot des niches fiscales et des aides aux entreprises",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 10,
+     "bas": 5,
+     "centre": 10,
+     "haut": 25,
+     "annonce": 22,
+     "montee": 3,
+     "effet2032": 10,
+     "note": "Selon le périmètre retenu, les aides publiques aux entreprises sont estimées entre 110 et 200 Md€. Le désaccord porte sur ce qui compte comme « aide » : les allègements de cotisations en représentent à eux seuls 75.",
+     "sources": []
+    },
+    {
+     "id": "ecolo",
+     "libelle": "Plan d'investissement écologique (rénovation, réseaux, ferroviaire)",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 10,
+     "bas": 5,
+     "centre": 10,
+     "haut": 30,
+     "annonce": 10,
+     "montee": 3,
+     "effet2032": -10,
+     "note": "Le rapport Pisani-Ferry / Mahfouz chiffre le besoin d'investissement public additionnel autour de 25 à 30 Md€ par an.",
+     "sources": []
+    },
+    {
+     "id": "services",
+     "libelle": "Recrutements dans la santé, l'école et la justice",
+     "sens": "dep+",
+     "borne": "hi",
+     "retenu": 8,
+     "bas": 2,
+     "centre": 4,
+     "haut": 8,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": -8,
+     "note": "Un poste coûte en moyenne 45 à 55 k€ par an, charges comprises : 50 000 postes représentent environ 2,5 Md€.",
+     "sources": []
+    },
+    {
+     "id": "chomageplus",
+     "libelle": "Abrogation des réformes de l'assurance chômage depuis 2019",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 7,
+     "bas": 5,
+     "centre": 7,
+     "haut": 9,
+     "annonce": 3,
+     "montee": 2,
+     "effet2032": -7,
+     "note": "Économies chiffrées par l'Unédic, à plein régime : 2,3 Md€ par an pour la réforme 2019-2021, 4,5 Md€ pour la contracyclicité de 2023, 1,5 Md€ pour la convention de 2024. LFI : 3 Md€.",
+     "sources": [
+      {
+       "t": "Unédic, « Évaluation de la réforme d'assurance chômage 2019-2021 », 20 mars 2025",
+       "u": "https://www.unedic.org/publications",
+       "d": "2026-11-09"
+      },
+      {
+       "t": "Unédic, « Premiers effets de la réforme de contracyclicité » et étude d'impact de la convention du 15 novembre 2024 (25 février 2025)",
+       "u": "https://www.unedic.org/publications",
+       "d": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "id": "isfclim",
+     "libelle": "ISF climatique (assiette élargie, barème progressif)",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 10,
+     "bas": 5,
+     "centre": 10,
+     "haut": 15,
+     "annonce": 10,
+     "montee": 2,
+     "effet2032": 6.7,
+     "note": "Chiffré à 12 Md€ par les programmes de gauche. Combine un ISF renforcé et une modulation selon l'empreinte carbone des actifs, dont le rendement propre n'a jamais été mesuré.",
+     "sources": []
+    },
+    {
+     "id": "heritmax",
+     "libelle": "Héritage maximum : tranche à 100 % au-delà de 12 M€ et droits relevés sur les plus hauts patrimoines",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 9,
+     "bas": 7,
+     "centre": 9,
+     "haut": 11,
+     "annonce": 20,
+     "montee": 2,
+     "effet2032": 6.1,
+     "note": "L'Institut Montaigne chiffre une tranche à 100 % au-delà de 12 M€ reçus à 9 Md€ par an (7 à 11) : 8,7 Md€ avant réaction des héritiers, 20 % de pertes par départs dans l'hypothèse basse, jusqu'à 2 Md€ de plus si le pacte Dutreil et l'avantage de l'assurance-vie disparaissent au-delà de 12 M€. Il signale un « risque très important d'inconstitutionnalité » (impôt confiscatoire). Ni le cumul des dons et héritages sur toute la vie ni l'exonération des héritages sous 150 000 € ne sont chiffrés. LFI : 20 Md€ dès 2027, pour des recettes actuelles de 20,8 Md€.",
+     "sources": [
+      {
+       "t": "Institut Montaigne, présidentielle 2022, « Augmenter les droits de succession sur les plus hauts patrimoines et créer un héritage maximal de 12 M€ »",
+       "u": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon/augmenter-les-droits-de-succession-sur-les-plus-hauts-patrimoines-et-creer-un-heritage-maximal-de-12-me",
+       "d": "2026-11-09"
+      },
+      {
+       "t": "Fipeco (François Ecalle), « Les droits de succession », novembre 2024",
+       "u": "https://fipeco.fr/pdf/Droits%20successions%202024.pdf",
+       "d": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "id": "isgrandes",
+     "libelle": "Surtaxe d'impôt sur les sociétés pour les grandes entreprises",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 8,
+     "bas": 4,
+     "centre": 8,
+     "haut": 12,
+     "annonce": 3,
+     "montee": 2,
+     "effet2032": 6,
+     "note": "L'IS rapporte environ 60 Md€ sur 300 Md€ de bénéfices imposables. Les surtaxes votées en 2025 ont montré qu'un rendement affiché se réduit vite par optimisation du résultat imposable et localisation des charges.",
+     "sources": []
+    },
+    {
+     "id": "cantine",
+     "libelle": "Gratuité de la cantine scolaire",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 6,
+     "bas": 3.2,
+     "centre": 6,
+     "haut": 9,
+     "annonce": 3.6,
+     "montee": 3,
+     "effet2032": -6,
+     "note": "Les familles paient environ la moitié des quelque 12 Md€ que coûte la cantine. Gratuité de la maternelle au lycée : 7 à 9 Md€ avec la hausse de fréquentation (HCFEA, 2024). Public seul et fréquentation constante : environ 4,4 Md€, dont 3,2 Md€ pour le primaire et le collège (calcul d'après l'OFCE). LFI : 3,6 Md€.",
+     "sources": [
+      {
+       "t": "Haut Conseil de la famille, de l'enfance et de l'âge, « La restauration scolaire », 26 novembre 2024, p. 133-134",
+       "u": "https://www.hcfea.gouv.fr/sites/hcfea/files/files-spip/pdf/la_restauration_scolaire_rapport.pdf",
+       "d": "2026-11-09"
+      },
+      {
+       "t": "OFCE, chiffrage des programmes des législatives 2024, politiques familiales, tableau 3",
+       "u": "https://www.ofce-legislatives2024.fr/analyses/familles.html",
+       "d": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "id": "coupes2026",
+     "libelle": "Annulation des coupes budgétaires de 2026 et indexation des crédits sur l'inflation",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 6,
+     "bas": 4,
+     "centre": 6,
+     "haut": 7.5,
+     "annonce": 7,
+     "montee": 1,
+     "effet2032": -6,
+     "note": "La loi de finances 2026 a réduit notamment le travail et l'emploi (−2,4 Md€), la culture et l'aide au développement ; le PLF 2027 prévoit −2,8 Md€ sur le travail et des crédits hors défense en hausse de 0,4 %, quatre fois moins que l'inflation (Bercy, plafonds de dépenses, juillet 2026). LFI : 7 Md€.",
+     "sources": [
+      {
+       "t": "Sénat, rapport sur la mission Travail et emploi, PLF 2026",
+       "u": "https://www.senat.fr/rap/l25-139-331/l25-139-331-syn.pdf",
+       "d": "2026-11-09"
+      },
+      {
+       "t": "Focus 2030, plafonds de dépenses du PLF 2027 (juillet 2026)",
+       "u": "https://focus2030.org/wp-content/uploads/2026/07/Tire-a-part-PLF2027.pdf",
+       "d": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "id": "age",
+     "libelle": "Montée en charge de la branche autonomie (grand âge)",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 5,
+     "bas": 3,
+     "centre": 5,
+     "haut": 9,
+     "annonce": null,
+     "montee": 4,
+     "effet2032": -5,
+     "note": "La branche autonomie pèse environ 40 Md€ ; le nombre de personnes de plus de 85 ans double d'ici 2040.",
+     "sources": []
+    },
+    {
+     "id": "zucman",
+     "libelle": "Impôt plancher de 2 % sur les patrimoines supérieurs à 100 M€",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 8,
+     "bas": 5,
+     "centre": 8,
+     "haut": 20,
+     "annonce": 15,
+     "montee": 2,
+     "effet2032": 4.6,
+     "note": "Environ 1 800 foyers, un patrimoine agrégé de l'ordre de 1 000 Md€. Gabriel Zucman avance 15 à 25 Md€ ; l'administration et plusieurs économistes retiennent plutôt 5 Md€. L'écart ne porte pas sur le taux mais sur l'assiette retenue et sur la réaction des redevables. Rejetée par l'Assemblée nationale le 31 octobre 2025.",
+     "sources": []
+    },
+    {
+     "id": "indexation",
+     "libelle": "Indexation intégrale des retraites et prestations sur l'inflation",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 2,
+     "centre": 4,
+     "haut": 6,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": -4,
+     "note": "Chaque point de sous-indexation des pensions représente environ 4 Md€ d'économie — et réciproquement.",
+     "sources": []
+    },
+    {
+     "id": "violences",
+     "libelle": "Plans contre les violences sexistes et sexuelles et les violences faites aux enfants",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 3.5,
+     "bas": 1.8,
+     "centre": 3.5,
+     "haut": 4.6,
+     "annonce": 4.6,
+     "montee": 3,
+     "effet2032": -3.5,
+     "note": "Le gouvernement compte environ 1,5 Md€ déjà engagés contre les violences sexistes et sexuelles (septembre 2026). La Fondation des femmes, une association, estime le besoin entre 2,6 et 5,4 Md€ par an ; l'aide sociale à l'enfance coûte 11,7 Md€ aux départements (Drees). LFI : +2,6 et +2 Md€.",
+     "sources": [
+      {
+       "t": "Sénat, question écrite n° 06031 (4 septembre 2025), reprenant le chiffrage de la Fondation des femmes",
+       "u": "https://www.senat.fr/questions/base/2025/qSEQ250906031.html",
+       "d": "2026-11-09"
+      },
+      {
+       "t": "Drees, dépenses d'aide sociale des départements en 2024 (avril 2026)",
+       "u": "https://drees.solidarites-sante.gouv.fr/communique-de-presse-jeux-de-donnees/jeux-de-donnees/laugmentation-des-depenses-daide-sociale-des",
+       "d": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "id": "superp",
+     "libelle": "Contribution sur les superprofits (énergie, transport, finance)",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 2,
+     "centre": 4,
+     "haut": 15,
+     "annonce": 5,
+     "montee": 1,
+     "effet2032": 3,
+     "note": "Chiffrée jusqu'à 15 Md€ dans les programmes de gauche. Rendement structurellement volatil : il dépend du prix de l'énergie et des taux, donc il ne finance pas une dépense pérenne.",
+     "sources": []
+    },
+    {
+     "id": "fraude",
+     "libelle": "Renforcement de la lutte contre la fraude fiscale et sociale",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 3,
+     "bas": 1,
+     "centre": 3,
+     "haut": 15,
+     "annonce": 2,
+     "montee": 3,
+     "effet2032": 3,
+     "note": "Chiffré à 15 Md€ par le RN, jusqu'à 80 Md€ par LFI. L'écart fiscal estimé est effectivement de cet ordre, mais il mesure l'impôt manquant, pas l'impôt récupérable : les redressements notifiés dépassent 15 Md€ par an, les encaissements réels sont autour de 10, et l'essentiel serait recouvré même sans mesure nouvelle.",
+     "sources": []
+    },
+    {
+     "id": "pfu",
+     "libelle": "Fin du prélèvement forfaitaire unique : dividendes au barème progressif",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 2,
+     "centre": 4,
+     "haut": 6,
+     "annonce": 9,
+     "montee": 1,
+     "effet2032": 2.7,
+     "note": "Rendement très sensible au comportement de distribution : la réforme de 2018 avait été suivie d'une forte hausse des dividendes versés. Une bonne part des 100 Md€ de dividendes va à des non-résidents ou à des sociétés mères, hors de portée du barème des particuliers.",
+     "sources": []
+    },
+    {
+     "id": "ttf",
+     "libelle": "Taxe sur les transactions financières élargie",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 3,
+     "bas": 1,
+     "centre": 3,
+     "haut": 6,
+     "annonce": 5,
+     "montee": 2,
+     "effet2032": 2.3,
+     "note": "Chiffrée à 20 Md€ dans certains programmes. La TTF française actuelle rapporte environ 2 Md€ ; l'élargissement aux produits dérivés déplace une partie de l'activité hors de France, ce que les chiffrages hauts ne prennent pas en compte.",
+     "sources": []
+    },
+    {
+     "id": "minimum15",
+     "libelle": "Impôt minimum mondial de 15 % sur les multinationales",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 1.5,
+     "bas": 1,
+     "centre": 1.5,
+     "haut": 3,
+     "annonce": 5,
+     "montee": 2,
+     "effet2032": 1.5,
+     "note": "Le pilier 2 de l'accord OCDE est déjà transposé. Son rendement français est estimé entre 1 et 3 Md€, très en deçà des attentes initiales.",
+     "sources": []
+    },
+    {
+     "id": "logurgence",
+     "libelle": "Hébergement et logement d'urgence (places nouvelles, réquisitions)",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 1.2,
+     "bas": 0.4,
+     "centre": 1.2,
+     "haut": 3,
+     "annonce": 3,
+     "montee": 3,
+     "effet2032": -1.2,
+     "note": "Le programme 177 dispose d'environ 3 Md€ pour 203 000 places ; plus de 60 % des demandes au 115 restent sans réponse (Sénat, PLF 2026). 1,2 Md€ représentent environ 80 000 places de plus ; 3 Md€, un doublement du parc. LFI : 3 Md€.",
+     "sources": [
+      {
+       "t": "Sénat, avis de la commission des affaires sociales sur le programme 177, PLF 2026 (26 novembre 2025)",
+       "u": "https://www.senat.fr/rap/a25-142-2/a25-142-2-syn.pdf",
+       "d": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "id": "rachats",
+     "libelle": "Taxe sur les rachats d'actions",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 1,
+     "bas": 0.5,
+     "centre": 1,
+     "haut": 2,
+     "annonce": 2.5,
+     "montee": 1,
+     "effet2032": 0.8,
+     "note": "La taxe instaurée en 2024 rapporte quelques centaines de millions. Élargie, elle reste d'un ordre de grandeur inférieur aux annonces qui l'accompagnent.",
+     "sources": []
+    },
+    {
+     "id": "exit",
+     "libelle": "Renforcement de l'exit tax",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 0.5,
+     "bas": 0.2,
+     "centre": 0.5,
+     "haut": 1,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 0.3,
+     "note": "Mesure défensive : son intérêt n'est pas son rendement propre mais la réduction de l'érosion d'assiette des autres impôts sur le capital.",
+     "sources": []
+    }
+   ],
+   "sources": [
+    {
+     "t": "Chiffrage des recettes fiscales du programme — La Grande Conversation",
+     "u": "https://www.lagrandeconversation.com/economie/chiffrage-des-recettes-fiscales-duprogramme-du-nouveau-front-populaire/"
+    },
+    {
+     "t": "Les pistes de la gauche pour augmenter les recettes — Public Sénat",
+     "u": "https://www.publicsenat.fr/actualites/politique/programme-du-nouveau-front-populaire-les-pistes-de-la-gauche-pour-augmenter-les-recettes-fiscales-et-redistribuer-les-richesses"
+    },
+    {
+     "t": "Taxe Zucman — Wikipédia (état du débat parlementaire)",
+     "u": "https://fr.wikipedia.org/wiki/Taxe_Zucman"
+    },
+    {
+     "t": "Jean-Luc Mélenchon officialise sa candidature à la présidentielle 2027 — RTL, 3 mai 2026",
+     "u": "https://www.rtl.fr/actu/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-a-un-an-du-scrutin-7900630247"
+    },
+    {
+     "t": "Contre-budget : LFI propose 106,4 milliards d'euros de recettes supplémentaires et 81,7 milliards de dépenses nouvelles — LCP, 14 octobre 2026",
+     "u": "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+    },
+    {
+     "t": "LCP — Présidentielle 2027 : ce qui change dans le nouveau programme de Jean-Luc Mélenchon (6 novembre 2026)",
+     "u": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
+    },
+    {
+     "t": "L'Avenir en commun 2027 — programme officiel de Jean-Luc Mélenchon, texte intégral (melenchon2027.fr, 6 novembre 2026)",
+     "u": "https://melenchon2027.fr/programme/livre/"
+    },
+    {
+     "t": "« Comment nous allons remettre de l'ordre dans les comptes publics » — document budgétaire de la campagne Mélenchon 2027 (14 octobre 2026)",
+     "u": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf"
+    }
+   ],
+   "page": "https://quipaie2027.fr/candidat-jean-luc-melenchon.html"
+  },
+  {
+   "id": "lr",
+   "candidat": "Bruno Retailleau",
+   "parti": "Les Républicains",
+   "sigle": "LR",
+   "horsCourse": false,
+   "statutCandidature": "Investi par les militants LR (19 avril 2026) ; propose par lettre à Attal, Philippe et Lisnard une primaire de la droite et du centre les 31 janvier et 7 février 2027 (10 novembre 2026), Philippe y reste opposé",
+   "statutChiffrage": "partiel",
+   "annonce": {
+    "titre": "197 Md€ d'économies par an en 2032, chiffrées poste par poste",
+    "texte": "Le 12 octobre 2026, Bruno Retailleau a publié des fiches presse qui chiffrent son plan poste par poste : 197 Md€ d'économies par an atteintes en 2032 (12 Md€ dès 2027), dont 146 Md€ affectés au déficit et 51 Md€ rendus en baisses de prélèvements (30 Md€ aux entreprises, 21 Md€ aux ménages). Le déficit passerait sous 3 % en 2031, à 2,2 % en 2032, sans impôt nouveau. La ventilation : 96 Md€ pour l'État (dont 25 Md€ de 400 000 départs non remplacés et 7,5 Md€ d'agences supprimées), 91 Md€ pour le social (dont 42 Md€ sur les retraites et 30 Md€ sur le chômage et les aides, restitués en baisses de cotisations) et 10 Md€ pour les collectivités. Le scénario reprend ces montants poste par poste quand le catalogue du simulateur a la mesure correspondante ; plusieurs dépassent nettement les chiffrages indépendants. La baisse de cotisations salariales (21 Md€ rendus aux ménages) est retenue au niveau du catalogue.",
+    "revendique": 197,
+    "detaille": 133.5
+   },
+   "deficit2032": 6.8,
+   "dette2032": 138.5,
+   "deficit2032Promesses": 5.8,
+   "dette2032Promesses": 134.9,
+   "effetNet2032": 32,
+   "effetNet2032Promesses": 68.5,
+   "trajectoire": [
+    {
+     "annee": 2025,
+     "deficitPct": 5.4,
+     "dettePct": 115.9
+    },
+    {
+     "annee": 2026,
+     "deficitPct": 6.1,
+     "dettePct": 119.5
+    },
+    {
+     "annee": 2027,
+     "deficitPct": 6.5,
+     "dettePct": 123.2
+    },
+    {
+     "annee": 2028,
+     "deficitPct": 6.4,
+     "dettePct": 126.3
+    },
+    {
+     "annee": 2029,
+     "deficitPct": 6.5,
+     "dettePct": 129.3
+    },
+    {
+     "annee": 2030,
+     "deficitPct": 6.6,
+     "dettePct": 132.3
+    },
+    {
+     "annee": 2031,
+     "deficitPct": 6.7,
+     "dettePct": 135.4
+    },
+    {
+     "annee": 2032,
+     "deficitPct": 6.8,
+     "dettePct": 138.5
+    }
+   ],
+   "effets2032": {
+    "pibPct": {
+     "centre": -0.35,
+     "fourchette": [
+      -0.36,
+      0.11
+     ]
+    },
+    "emplois": {
+     "centre": 106000,
+     "fourchette": [
+      -23000,
+      328000
+     ]
+    },
+    "chomagePts": {
+     "centre": 0.1,
+     "fourchette": [
+      -0.6,
+      0.6
+     ]
+    },
+    "tauxEtatPts": {
+     "centre": -0.04,
+     "fourchette": [
+      -0.17,
+      -0.03
+     ]
+    }
+   },
+   "mesures": [
+    {
+     "id": "effectifs400",
+     "libelle": "400 000 départs à la retraite non remplacés d'ici 2032",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 16,
+     "bas": 12,
+     "centre": 16,
+     "haut": 20,
+     "annonce": 25,
+     "montee": 6,
+     "effet2032": 16,
+     "note": "Même règle pour tous les plans de non-remplacement : chaque poste non pourvu économise de 30 000 à 50 000 € par an une fois l'effet complet, 40 000 € au centre — le rendement observé de la RGPP (environ 6 Md€ pour 150 000 postes, les agents restants récupérant une partie des économies). La montée en charge suit les départs à la retraite que le candidat peut ne pas remplacer : environ 144 000 par an dans toute la fonction publique. 400 000 postes de 2027 à 2032, soit environ deux départs sur trois : l'effet complet est atteint en six ans. Le candidat chiffre 25 Md€, soit 62 500 € par poste.",
+     "sources": [
+      {
+       "t": "IGA, IGF, IGAS, Bilan de la RGPP, septembre 2012 : 150 000 emplois supprimés (p. 56), 11,9 Md€ d'économies dont près de la moitié hors postes (p. 52), soit environ 40 000 € par poste",
+       "u": "https://www.fonction-publique.gouv.fr/files/files/ArchivePortailFP/www.fonction-publique.gouv.fr/files/files/publications/hors_collections/20120925-rapport-bilan-RGPP_sans-annexes.pdf"
+      },
+      {
+       "t": "DGAFP, Chiffres clés de la fonction publique 2026 : 5,85 millions d'agents, 144 000 départs à la retraite en 2025",
+       "u": "https://www.fonction-publique.gouv.fr/files/files/publications/publications-dgafp/cc-2026-web.pdf"
+      }
+     ]
+    },
+    {
+     "id": "age65",
+     "libelle": "Âge légal de départ porté à 65 ans",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 9,
+     "bas": 5,
+     "centre": 9,
+     "haut": 14,
+     "annonce": 12,
+     "montee": 6,
+     "effet2032": 9,
+     "note": "Le rendement d'une réforme des retraites est lent : il croît avec chaque génération concernée.",
+     "sources": []
+    },
+    {
+     "id": "csgbaisse",
+     "libelle": "Baisse de la CSG ou des cotisations sur les revenus d'activité",
+     "sens": "rec-",
+     "borne": "mid",
+     "retenu": 8,
+     "bas": 5,
+     "centre": 8,
+     "haut": 12,
+     "annonce": null,
+     "montee": 1,
+     "effet2032": -8,
+     "note": "La CSG d'activité rapporte environ 105 Md€ : un point vaut à peu près 9 Md€.",
+     "sources": []
+    },
+    {
+     "id": "collectivites",
+     "libelle": "Baisse des concours financiers aux collectivités",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 5,
+     "bas": 3,
+     "centre": 5,
+     "haut": 10,
+     "annonce": 10,
+     "montee": 2,
+     "effet2032": 5,
+     "note": "Les collectivités portent environ 290 Md€ de dépenses, dont l'essentiel de l'investissement public civil.",
+     "sources": [
+      {
+       "t": "Cour des comptes, Contribution au rétablissement des finances publiques, 9 nov. 2026, mesure n° 12 : 4 à 4,9 Md€ d'effet sur le solde public",
+       "u": "https://www.ccomptes.fr/fr/publications/contribution-au-retablissement-des-finances-publiques",
+       "d": "2026-11-10"
+      }
+     ]
+    },
+    {
+     "id": "ondam",
+     "libelle": "Freinage de l'ONDAM (dépenses d'assurance maladie)",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 5,
+     "bas": 3,
+     "centre": 5,
+     "haut": 9,
+     "annonce": 4,
+     "montee": 2,
+     "effet2032": 5,
+     "note": "L'ONDAM approche 270 Md€ : un ralentissement de 0,5 point de sa progression représente environ 1,4 Md€ par an.",
+     "sources": []
+    },
+    {
+     "id": "prod",
+     "libelle": "Nouvelle baisse des impôts de production",
+     "sens": "rec-",
+     "borne": "mid",
+     "retenu": 5,
+     "bas": 3,
+     "centre": 5,
+     "haut": 8,
+     "annonce": 15,
+     "montee": 2,
+     "effet2032": -5,
+     "note": "Après la CVAE, il reste principalement la CFE et la taxe foncière des entreprises.",
+     "sources": []
+    },
+    {
+     "id": "chomage",
+     "libelle": "Nouvelle réforme de l'assurance chômage",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 2,
+     "centre": 4,
+     "haut": 6,
+     "annonce": 14,
+     "montee": 2,
+     "effet2032": 4,
+     "note": "L'Unédic verse environ 32 Md€ d'allocations. Le rendement dépend de la conjoncture : il s'effondre en récession.",
+     "sources": []
+    },
+    {
+     "id": "fraude",
+     "libelle": "Renforcement de la lutte contre la fraude fiscale et sociale",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 3,
+     "bas": 1,
+     "centre": 3,
+     "haut": 15,
+     "annonce": 9,
+     "montee": 3,
+     "effet2032": 3,
+     "note": "Chiffré à 15 Md€ par le RN, jusqu'à 80 Md€ par LFI. L'écart fiscal estimé est effectivement de cet ordre, mais il mesure l'impôt manquant, pas l'impôt récupérable : les redressements notifiés dépassent 15 Md€ par an, les encaissements réels sont autour de 10, et l'essentiel serait recouvré même sans mesure nouvelle.",
+     "sources": []
+    },
+    {
+     "id": "agences",
+     "libelle": "Suppression ou fusion d'agences et d'opérateurs de l'État",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 2,
+     "bas": 1,
+     "centre": 2,
+     "haut": 3,
+     "annonce": 7.5,
+     "montee": 3,
+     "effet2032": 2,
+     "note": "Les rapports parlementaires convergent vers 2 à 3 Md€, à condition de supprimer les missions et pas seulement les structures.",
+     "sources": []
+    },
+    {
+     "id": "immigration",
+     "libelle": "Réduction des dépenses liées à l'immigration",
+     "sens": "dep-",
+     "borne": "lo",
+     "retenu": 1,
+     "bas": 1,
+     "centre": 3,
+     "haut": 10,
+     "annonce": 10,
+     "montee": 3,
+     "effet2032": 1,
+     "note": "Chiffrée à 25 Md€ par le RN. Les postes identifiables sont d'un tout autre ordre : aide médicale d'État 1,3 Md€, hébergement d'urgence et demande d'asile environ 3 Md€, aide au retour quelques centaines de millions. Les chiffrages hauts agrègent des prestations de droit commun versées à des personnes en situation régulière, et ne déduisent pas les cotisations et impôts que ces mêmes personnes acquittent.",
+     "sources": []
+    }
+   ],
+   "sources": [
+    {
+     "t": "Présidentielle : Retailleau sort le « bulldozer » pour réduire la dépense publique — AFP, 12 octobre 2026",
+     "u": "https://www.france24.com/fr/info-en-continu/20261012-pr%C3%A9sidentielle-retailleau-sort-le-bulldozer-pour-r%C3%A9duire-la-d%C3%A9pense-publique"
+    },
+    {
+     "t": "Bruno Retailleau estime qu'une primaire « ne sert à rien » si Édouard Philippe n'y participe pas — BFMTV, 28 octobre 2026",
+     "u": "https://www.bfmtv.com/politique/les-republicains/presidentielle-2027-favorable-a-une-primaire-bruno-retailleau-estime-qu-elle-ne-sert-a-rien-si-edouard-philippe-n-y-participe-pas_AN-202610280400.html"
+    },
+    {
+     "t": "Les Républicains — Fiches presse « Rétablir l'ordre dans les comptes publics », 12 octobre 2026",
+     "u": "https://www.avecretailleau.fr/api/media/file/20261011_Fiches_presse_comptes_publics_mise_en_page%20(1).pdf"
+    },
+    {
+     "t": "Colère lycéenne, Jordan Bardella, primaire… Ce qu'il faut retenir de l'entretien de Bruno Retailleau sur BFMTV",
+     "u": "https://www.bfmtv.com/politique/elections/presidentielle/colere-lyceenne-jordan-bardella-primaire-ce-qu-il-faut-retenir-de-l-entretien-de-bruno-retailleau-sur-bfmtv_AV-202611031007.html"
+    },
+    {
+     "t": "Bruno Retailleau appelle la droite à « se réveiller » et défend son idée de débats avant une éventuelle primaire — franceinfo, 5 novembre 2026",
+     "u": "https://www.franceinfo.fr/politique/bruno-retailleau/bruno-retailleau-appelle-la-droite-a-se-reveiller-pour-la-presidentielle-et-defend-son-idee-de-debats-avant-une-eventuelle-primaire_8269013.html"
+    },
+    {
+     "t": "TF1 Info — Bruno Retailleau propose une primaire de la droite et du centre les 31 janvier et 7 février, 11 novembre 2026",
+     "u": "https://www.tf1info.fr/politique/elections/presidentielle/le-temps-joue-contre-nous-bruno-retailleau-propose-une-primaire-de-la-droite-et-du-centre-les-31-janvier-et-7-fevrier-2475141.html"
+    }
+   ],
+   "page": "https://quipaie2027.fr/candidat-bruno-retailleau.html"
+  },
+  {
+   "id": "ren",
+   "candidat": "Gabriel Attal",
+   "parti": "Renaissance",
+   "sigle": "REN",
+   "horsCourse": false,
+   "statutCandidature": "Candidat déclaré (22 mai 2026) ; appelle à « une grande primaire des démocrates »",
+   "statutChiffrage": "reconstitution",
+   "annonce": {
+    "titre": "150 Md€ d'économies sur le quinquennat",
+    "texte": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Deux postes sont chiffrés : plus de 7 Md€ par an de réorganisation de l'État et des collectivités, et 5 Md€ d'économies par la réduction de la durée d'indemnisation du chômage (Gabriel Attal, LCI, 12 novembre 2026). Le scénario est reconstitué par le simulateur à partir de ces orientations.",
+    "revendique": 150,
+    "detaille": 12
+   },
+   "deficit2032": 6.9,
+   "dette2032": 137.6,
+   "deficit2032Promesses": 6.9,
+   "dette2032Promesses": 137.5,
+   "effetNet2032": 24,
+   "effetNet2032Promesses": 25,
+   "trajectoire": [
+    {
+     "annee": 2025,
+     "deficitPct": 5.4,
+     "dettePct": 115.9
+    },
+    {
+     "annee": 2026,
+     "deficitPct": 6.1,
+     "dettePct": 119.5
+    },
+    {
+     "annee": 2027,
+     "deficitPct": 6.3,
+     "dettePct": 123.2
+    },
+    {
+     "annee": 2028,
+     "deficitPct": 6.2,
+     "dettePct": 125.9
+    },
+    {
+     "annee": 2029,
+     "deficitPct": 6.3,
+     "dettePct": 128.7
+    },
+    {
+     "annee": 2030,
+     "deficitPct": 6.5,
+     "dettePct": 131.5
+    },
+    {
+     "annee": 2031,
+     "deficitPct": 6.7,
+     "dettePct": 134.5
+    },
+    {
+     "annee": 2032,
+     "deficitPct": 6.9,
+     "dettePct": 137.6
+    }
+   ],
+   "effets2032": {
+    "pibPct": {
+     "centre": -0.56,
+     "fourchette": [
+      -0.66,
+      -0.26
+     ]
+    },
+    "emplois": {
+     "centre": -2000,
+     "fourchette": [
+      -82000,
+      105000
+     ]
+    },
+    "chomagePts": {
+     "centre": 0,
+     "fourchette": [
+      -0.3,
+      0.3
+     ]
+    },
+    "tauxEtatPts": {
+     "centre": -0.02,
+     "fourchette": [
+      -0.12,
+      -0.01
+     ]
+    }
+   },
+   "mesures": [
+    {
+     "id": "blanche",
+     "libelle": "Année blanche : gel des barèmes et des prestations",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 7,
+     "bas": 5,
+     "centre": 7,
+     "haut": 10,
+     "annonce": null,
+     "montee": 1,
+     "effet2032": 7,
+     "note": "Économie immédiate et large, mais non reconductible indéfiniment : elle se rattrape en partie l'année suivante.",
+     "sources": [
+      {
+       "t": "Cour des comptes, Contribution au rétablissement des finances publiques, 9 nov. 2026, mesure n° 1 : non-revalorisation des prestations hors minima, 4,8 Md€ en 2027 et 5,2 Md€ en année pleine (sans le gel des barèmes fiscaux)",
+       "u": "https://www.ccomptes.fr/fr/publications/contribution-au-retablissement-des-finances-publiques",
+       "d": "2026-11-10"
+      }
+     ]
+    },
+    {
+     "id": "ondam",
+     "libelle": "Freinage de l'ONDAM (dépenses d'assurance maladie)",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 5,
+     "bas": 3,
+     "centre": 5,
+     "haut": 9,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 5,
+     "note": "L'ONDAM approche 270 Md€ : un ralentissement de 0,5 point de sa progression représente environ 1,4 Md€ par an.",
+     "sources": []
+    },
+    {
+     "id": "niches",
+     "libelle": "Rabot des niches fiscales et des aides aux entreprises",
+     "sens": "dep-",
+     "borne": "lo",
+     "retenu": 5,
+     "bas": 5,
+     "centre": 10,
+     "haut": 25,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": 5,
+     "note": "Selon le périmètre retenu, les aides publiques aux entreprises sont estimées entre 110 et 200 Md€. Le désaccord porte sur ce qui compte comme « aide » : les allègements de cotisations en représentent à eux seuls 75.",
+     "sources": []
+    },
+    {
+     "id": "effectifs",
+     "libelle": "Réduction de 5 % des effectifs de l'État et de ses opérateurs",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 3,
+     "centre": 4,
+     "haut": 6,
+     "annonce": null,
+     "montee": 4,
+     "effet2032": 4,
+     "note": "2,5 millions d'agents pour l'État et ses opérateurs. Une baisse de 5 % suppose de ne pas remplacer environ 125 000 départs.",
+     "sources": []
+    },
+    {
+     "id": "chomage",
+     "libelle": "Nouvelle réforme de l'assurance chômage",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 2,
+     "centre": 4,
+     "haut": 6,
+     "annonce": 5,
+     "montee": 2,
+     "effet2032": 4,
+     "note": "L'Unédic verse environ 32 Md€ d'allocations. Le rendement dépend de la conjoncture : il s'effondre en récession.",
+     "sources": []
+    },
+    {
+     "id": "prod",
+     "libelle": "Nouvelle baisse des impôts de production",
+     "sens": "rec-",
+     "borne": "lo",
+     "retenu": 3,
+     "bas": 3,
+     "centre": 5,
+     "haut": 8,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": -3,
+     "note": "Après la CVAE, il reste principalement la CFE et la taxe foncière des entreprises.",
+     "sources": []
+    },
+    {
+     "id": "agences",
+     "libelle": "Suppression ou fusion d'agences et d'opérateurs de l'État",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 2,
+     "bas": 1,
+     "centre": 2,
+     "haut": 3,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": 2,
+     "note": "Les rapports parlementaires convergent vers 2 à 3 Md€, à condition de supprimer les missions et pas seulement les structures.",
+     "sources": []
+    }
+   ],
+   "sources": [
+    {
+     "t": "« Une grande primaire des démocrates » : l'appel de Gabriel Attal dans le 20H de TF1 — TF1 Info, 28 octobre 2026",
+     "u": "https://www.tf1info.fr/politique/elections/presidentielle/video-une-grande-primaire-des-democrates-l-appel-de-gabriel-attal-dans-le-20h-de-tf1-2472572.html"
+    },
+    {
+     "t": "Lettre de Gabriel Attal aux Français sur les finances publiques — Renaissance, 15 octobre 2026",
+     "u": "https://doc.parti.re/2026/Lettre-finances-publiques.pdf"
+    },
+    {
+     "t": "TF1info — Gabriel Attal face aux petits patrons sur LCI (12 novembre 2026)",
+     "u": "https://www.tf1info.fr/politique/elections/presidentielle/gabriel-attal-face-aux-petits-patrons-sur-lci-si-on-veut-que-les-salaires-augmentent-durablement-il-faut-qu-on-ait-une-economie-plus-prospere-2475543.html"
+    }
+   ],
+   "page": "https://quipaie2027.fr/candidat-gabriel-attal.html"
+  },
+  {
+   "id": "hor",
+   "candidat": "Édouard Philippe",
+   "parti": "Horizons",
+   "sigle": "HOR",
+   "horsCourse": false,
+   "statutCandidature": "Candidat déclaré depuis septembre 2024 ; refuse à nouveau toute primaire de la droite et du centre (« Je n'y participerai pas. Point. », La Tribune Dimanche, 15 novembre 2026), tout en acceptant de discuter avec Gérard Larcher d'un rassemblement",
+   "statutChiffrage": "reconstitution",
+   "annonce": {
+    "titre": "Programme en ligne (15 thèmes, mis à jour le 12 novembre 2026), sans chiffrage d'ensemble",
+    "texte": "Édouard Philippe publie son programme thème par thème sur son site de campagne (15 thèmes, dernière mise à jour le 12 novembre 2026) ; il « s'écrit tout au long de la campagne » et n'a pas de chiffrage d'ensemble. Objectif : un déficit d'environ 2 % du PIB en fin de mandat, avec une règle d'or votée par référendum ; l'effort porterait pour moitié sur les dépenses sociales, pour un quart sur l'État et les collectivités, pour un quart sur la croissance. Simulé : retraite à 65 ans, un départ sur trois non remplacé, suppression d'agences, freinage des dépenses d'assurance maladie et des concours aux collectivités, chômage limité à 12 mois avant 50 ans, hausse de 20 % du salaire des enseignants, et le « pacte fiscal » : 50 Md€ d'impôts de production en moins contre 50 Md€ d'aides aux entreprises en moins. La baisse d'impôt est comptée à son montant ; les aides supprimées au haut de la fourchette des chiffrages (25 Md€), car le Sénat (211 Md€ d'aides, dont 75 d'allègements que Philippe ne touche pas) et le Haut-commissariat au plan ne trouvent pas 50 Md€ d'aides « improductives ». Restent hors du simulateur, faute de barème : l'allocation familiale unique de 350 € dès le premier enfant (dégressive, à la place des aides actuelles), l'impôt sur le revenu supprimé pendant les trois premières années de l'enfant, les heures au-delà de 35 h sans cotisations ni impôt, et 500 € sur un plan d'épargne retraite au premier emploi. Horizons a aussi publié le 13 octobre 2026 un « budget alternatif » au PLF 2027 (10 Md€ d'économies pour annuler 10 Md€ de hausses d'impôts).",
+    "revendique": null,
+    "detaille": null
+   },
+   "deficit2032": 7.5,
+   "dette2032": 141.8,
+   "deficit2032Promesses": 6.7,
+   "dette2032Promesses": 138.9,
+   "effetNet2032": 11,
+   "effetNet2032Promesses": 36,
+   "trajectoire": [
+    {
+     "annee": 2025,
+     "deficitPct": 5.4,
+     "dettePct": 115.9
+    },
+    {
+     "annee": 2026,
+     "deficitPct": 6.1,
+     "dettePct": 119.5
+    },
+    {
+     "annee": 2027,
+     "deficitPct": 7.1,
+     "dettePct": 123.5
+    },
+    {
+     "annee": 2028,
+     "deficitPct": 7,
+     "dettePct": 127.6
+    },
+    {
+     "annee": 2029,
+     "deficitPct": 7,
+     "dettePct": 131.3
+    },
+    {
+     "annee": 2030,
+     "deficitPct": 7.2,
+     "dettePct": 134.6
+    },
+    {
+     "annee": 2031,
+     "deficitPct": 7.3,
+     "dettePct": 138.1
+    },
+    {
+     "annee": 2032,
+     "deficitPct": 7.5,
+     "dettePct": 141.8
+    }
+   ],
+   "effets2032": {
+    "pibPct": {
+     "centre": -0.04,
+     "fourchette": [
+      -0.29,
+      0.47
+     ]
+    },
+    "emplois": {
+     "centre": 143000,
+     "fourchette": [
+      -6000,
+      361000
+     ]
+    },
+    "chomagePts": {
+     "centre": 0,
+     "fourchette": [
+      -0.7,
+      0.6
+     ]
+    },
+    "tauxEtatPts": {
+     "centre": 0.02,
+     "fourchette": [
+      -0.07,
+      0.09
+     ]
+    }
+   },
+   "mesures": [
+    {
+     "id": "prod50",
+     "libelle": "Baisse de 50 Md€ des impôts de production (CVAE, C3S, CFE et au-delà)",
+     "sens": "rec-",
+     "borne": "mid",
+     "retenu": 50,
+     "bas": 45,
+     "centre": 50,
+     "haut": 50,
+     "annonce": 50,
+     "montee": 1,
+     "effet2032": -50,
+     "note": "Les impôts de production rapportent environ 75 Md€ (Public Sénat, d'après Horizons) à 106 Md€ selon le périmètre (Institut Montaigne, 2025) ; la CVAE résiduelle, la C3S et la CFE n'en font qu'une partie, il faut donc toucher aussi la taxe foncière des entreprises ou les taxes sur les salaires. La baisse d'impôt est un coût certain ; ce que l'État récupère en impôt sur les bénéfices et en activité passe par les effets en chaîne. Effets mesurés de la baisse de la CVAE : faibles sur l'investissement, nuls à court terme sur l'emploi (IPP). Borne basse : une partie non compensée aux collectivités.",
+     "sources": [
+      {
+       "t": "Public Sénat, « Entreprises : un deal à 250 milliards d'euros sur un quinquennat », 6 novembre 2025",
+       "u": "https://www.publicsenat.fr/actualites/economie/entreprises-un-deal-a-250-milliards-deuros-sur-un-quinquennat-que-represente-la-proposition-dedouard-philippe",
+       "d": "2026-11-14"
+      },
+      {
+       "t": "IPP, rapport n° 60 sur les impôts de production, octobre 2025",
+       "u": "https://www.ipp.eu/wp-content/uploads/2025/10/FS_ImpotsProductions-9.pdf",
+       "d": "2026-11-14"
+      },
+      {
+       "t": "Conseil d'analyse économique, note n° 53 (Martin et Trannoy), juin 2019",
+       "u": "https://cae-eco.fr/static/pdf/cae-note053.pdf",
+       "d": "2026-11-14"
+      }
+     ]
+    },
+    {
+     "id": "niches",
+     "libelle": "Rabot des niches fiscales et des aides aux entreprises",
+     "sens": "dep-",
+     "borne": "hi",
+     "retenu": 25,
+     "bas": 5,
+     "centre": 10,
+     "haut": 25,
+     "annonce": 50,
+     "montee": 3,
+     "effet2032": 25,
+     "note": "Selon le périmètre retenu, les aides publiques aux entreprises sont estimées entre 110 et 200 Md€. Le désaccord porte sur ce qui compte comme « aide » : les allègements de cotisations en représentent à eux seuls 75.",
+     "sources": []
+    },
+    {
+     "id": "blanche",
+     "libelle": "Année blanche : gel des barèmes et des prestations",
+     "sens": "dep-",
+     "borne": "hi",
+     "retenu": 10,
+     "bas": 5,
+     "centre": 7,
+     "haut": 10,
+     "annonce": null,
+     "montee": 1,
+     "effet2032": 10,
+     "note": "Économie immédiate et large, mais non reconductible indéfiniment : elle se rattrape en partie l'année suivante.",
+     "sources": [
+      {
+       "t": "Cour des comptes, Contribution au rétablissement des finances publiques, 9 nov. 2026, mesure n° 1 : non-revalorisation des prestations hors minima, 4,8 Md€ en 2027 et 5,2 Md€ en année pleine (sans le gel des barèmes fiscaux)",
+       "u": "https://www.ccomptes.fr/fr/publications/contribution-au-retablissement-des-finances-publiques",
+       "d": "2026-11-10"
+      }
+     ]
+    },
+    {
+     "id": "effectifs250",
+     "libelle": "Non-remplacement d'un départ à la retraite sur trois (≈ 250 000 postes en cinq ans)",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 10,
+     "bas": 7.5,
+     "centre": 10,
+     "haut": 12.5,
+     "annonce": null,
+     "montee": 5,
+     "effet2032": 10,
+     "note": "Même règle pour tous les plans de non-remplacement : chaque poste non pourvu économise de 30 000 à 50 000 € par an une fois l'effet complet, 40 000 € au centre — le rendement observé de la RGPP (environ 6 Md€ pour 150 000 postes, les agents restants récupérant une partie des économies). La montée en charge suit les départs à la retraite que le candidat peut ne pas remplacer : environ 144 000 par an dans toute la fonction publique. 250 000 postes sur un quinquennat, soit un départ sur trois : l'effet complet est atteint en cinq ans.",
+     "sources": [
+      {
+       "t": "IGA, IGF, IGAS, Bilan de la RGPP, septembre 2012 : 150 000 emplois supprimés (p. 56), 11,9 Md€ d'économies dont près de la moitié hors postes (p. 52), soit environ 40 000 € par poste",
+       "u": "https://www.fonction-publique.gouv.fr/files/files/ArchivePortailFP/www.fonction-publique.gouv.fr/files/files/publications/hors_collections/20120925-rapport-bilan-RGPP_sans-annexes.pdf"
+      },
+      {
+       "t": "DGAFP, Chiffres clés de la fonction publique 2026 : 5,85 millions d'agents, 144 000 départs à la retraite en 2025",
+       "u": "https://www.fonction-publique.gouv.fr/files/files/publications/publications-dgafp/cc-2026-web.pdf"
+      }
+     ]
+    },
+    {
+     "id": "age65",
+     "libelle": "Âge légal de départ porté à 65 ans",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 9,
+     "bas": 5,
+     "centre": 9,
+     "haut": 14,
+     "annonce": null,
+     "montee": 6,
+     "effet2032": 9,
+     "note": "Le rendement d'une réforme des retraites est lent : il croît avec chaque génération concernée.",
+     "sources": []
+    },
+    {
+     "id": "profs20",
+     "libelle": "Salaire des enseignants relevé de 20 % en moyenne sur le quinquennat",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 9,
+     "bas": 7,
+     "centre": 9,
+     "haut": 12,
+     "annonce": null,
+     "montee": 5,
+     "effet2032": -9,
+     "note": "Une hausse de 1 % du point d'indice coûte 2,4 Md€ pour les 5,7 millions d'agents publics (DGAFP, juillet 2026). Les quelque 870 000 enseignants du public et du privé sous contrat, mieux payés que la moyenne, en représentent environ un cinquième : environ 0,45 Md€ par point, soit environ 9 Md€ pour +20 %, cotisations de pension comprises (calcul de ce site, 7 à 12 selon l'effectif et la part des primes). Une partie revient en impôts et cotisations.",
+     "sources": [
+      {
+       "t": "DGAFP, rendez-vous salarial du 8 juillet 2026 : « une hausse de 1 % de la valeur du point représente un coût de 2,4 Md€ » (diaporama)",
+       "u": "https://www.cfdt-ufetam.org/wp-content/uploads/2026/07/rdv_salarial_2026_diapo_presentation.pdf",
+       "d": "2026-11-14"
+      },
+      {
+       "t": "Édouard Philippe, programme, page « École » (mise à jour du 12 novembre 2026)",
+       "u": "https://www.edouardphilippe.fr/programme/ecole",
+       "d": "2026-11-14"
+      }
+     ]
+    },
+    {
+     "id": "ondam",
+     "libelle": "Freinage de l'ONDAM (dépenses d'assurance maladie)",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 5,
+     "bas": 3,
+     "centre": 5,
+     "haut": 9,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 5,
+     "note": "L'ONDAM approche 270 Md€ : un ralentissement de 0,5 point de sa progression représente environ 1,4 Md€ par an.",
+     "sources": []
+    },
+    {
+     "id": "collectivites",
+     "libelle": "Baisse des concours financiers aux collectivités",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 5,
+     "bas": 3,
+     "centre": 5,
+     "haut": 10,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 5,
+     "note": "Les collectivités portent environ 290 Md€ de dépenses, dont l'essentiel de l'investissement public civil.",
+     "sources": [
+      {
+       "t": "Cour des comptes, Contribution au rétablissement des finances publiques, 9 nov. 2026, mesure n° 12 : 4 à 4,9 Md€ d'effet sur le solde public",
+       "u": "https://www.ccomptes.fr/fr/publications/contribution-au-retablissement-des-finances-publiques",
+       "d": "2026-11-10"
+      }
+     ]
+    },
+    {
+     "id": "chomage",
+     "libelle": "Nouvelle réforme de l'assurance chômage",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 2,
+     "centre": 4,
+     "haut": 6,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 4,
+     "note": "L'Unédic verse environ 32 Md€ d'allocations. Le rendement dépend de la conjoncture : il s'effondre en récession.",
+     "sources": []
+    },
+    {
+     "id": "agences",
+     "libelle": "Suppression ou fusion d'agences et d'opérateurs de l'État",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 2,
+     "bas": 1,
+     "centre": 2,
+     "haut": 3,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": 2,
+     "note": "Les rapports parlementaires convergent vers 2 à 3 Md€, à condition de supprimer les missions et pas seulement les structures.",
+     "sources": []
+    }
+   ],
+   "sources": [
+    {
+     "t": "Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? — franceinfo, liste au 22 octobre 2026",
+     "u": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+    },
+    {
+     "t": "Premier débat des candidats : Édouard Philippe, 50 Md€ d'aides aux entreprises supprimées — Public Sénat",
+     "u": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle"
+    },
+    {
+     "t": "Édouard Philippe, programme en ligne, pages « Comptes publics », « Entreprises », « Travail », « Famille », « École », « Retraites » (mises à jour du 12 novembre 2026)",
+     "u": "https://www.edouardphilippe.fr/programme"
+    },
+    {
+     "t": "Public Sénat, « Entreprises : un deal à 250 milliards d'euros sur un quinquennat », 6 novembre 2025",
+     "u": "https://www.publicsenat.fr/actualites/economie/entreprises-un-deal-a-250-milliards-deuros-sur-un-quinquennat-que-represente-la-proposition-dedouard-philippe"
+    },
+    {
+     "t": "La Tribune Dimanche — « Je n'y participerai pas. Point » : Édouard Philippe réaffirme son opposition à une primaire (15 novembre 2026)",
+     "u": "https://www.latribune.fr/article/la-tribune-dimanche/politique/27804315725775/je-n-y-participerai-pas-point-edouard-philippe-reaffirme-son-opposition-a-une-primaire-de-la-droite-et-du-centre"
+    }
+   ],
+   "page": "https://quipaie2027.fr/candidat-edouard-philippe.html"
+  },
+  {
+   "id": "ps",
+   "candidat": "Raphaël Glucksmann",
+   "parti": "Parti socialiste / Place publique",
+   "sigle": "PS",
+   "horsCourse": false,
+   "statutCandidature": "Investi : vainqueur de la primaire PS – Place publique – GRS dès le premier tour (66 %, 11 octobre 2026)",
+   "statutChiffrage": "reconstitution",
+   "annonce": {
+    "titre": "Contre-budget 2027 publié (39,5 Md€ de recettes), pas de chiffrage présidentiel",
+    "texte": "Le groupe socialiste a publié le 16 septembre 2026 un contre-budget pour 2027 : 39,5 Md€ de recettes nouvelles (taxe Zucman 15 Md€, CSG sur les gros héritages 10 Md€, taxe sur les géants du numérique 10 Md€), 12,1 Md€ d'économies, 22 Md€ de dépenses nouvelles. Raphaël Glucksmann, désigné le 11 octobre, n'a pas publié de chiffrage d'ensemble de son programme présidentiel : le scénario est reconstitué par le simulateur, en reprenant les montants du contre-budget quand le catalogue a la mesure.",
+    "revendique": null,
+    "detaille": null
+   },
+   "deficit2032": 7.7,
+   "dette2032": 140.3,
+   "deficit2032Promesses": 7.4,
+   "dette2032Promesses": 138.8,
+   "effetNet2032": -4.6,
+   "effetNet2032Promesses": 5.3,
+   "trajectoire": [
+    {
+     "annee": 2025,
+     "deficitPct": 5.4,
+     "dettePct": 115.9
+    },
+    {
+     "annee": 2026,
+     "deficitPct": 6.1,
+     "dettePct": 119.5
+    },
+    {
+     "annee": 2027,
+     "deficitPct": 6.3,
+     "dettePct": 122.8
+    },
+    {
+     "annee": 2028,
+     "deficitPct": 6.4,
+     "dettePct": 125.6
+    },
+    {
+     "annee": 2029,
+     "deficitPct": 6.8,
+     "dettePct": 128.8
+    },
+    {
+     "annee": 2030,
+     "deficitPct": 7.1,
+     "dettePct": 132.4
+    },
+    {
+     "annee": 2031,
+     "deficitPct": 7.4,
+     "dettePct": 136.3
+    },
+    {
+     "annee": 2032,
+     "deficitPct": 7.7,
+     "dettePct": 140.3
+    }
+   ],
+   "effets2032": {
+    "pibPct": {
+     "centre": -0.27,
+     "fourchette": [
+      -0.66,
+      0.08
+     ]
+    },
+    "emplois": {
+     "centre": -134000,
+     "fourchette": [
+      -297000,
+      24000
+     ]
+    },
+    "chomagePts": {
+     "centre": -0.1,
+     "fourchette": [
+      -0.7,
+      0.4
+     ]
+    },
+    "tauxEtatPts": {
+     "centre": 0.01,
+     "fourchette": [
+      -0.05,
+      0.1
+     ]
+    }
+   },
+   "mesures": [
+    {
+     "id": "niches",
+     "libelle": "Rabot des niches fiscales et des aides aux entreprises",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 10,
+     "bas": 5,
+     "centre": 10,
+     "haut": 25,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": 10,
+     "note": "Selon le périmètre retenu, les aides publiques aux entreprises sont estimées entre 110 et 200 Md€. Le désaccord porte sur ce qui compte comme « aide » : les allègements de cotisations en représentent à eux seuls 75.",
+     "sources": []
+    },
+    {
+     "id": "ecolo",
+     "libelle": "Plan d'investissement écologique (rénovation, réseaux, ferroviaire)",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 10,
+     "bas": 5,
+     "centre": 10,
+     "haut": 30,
+     "annonce": 10,
+     "montee": 3,
+     "effet2032": -10,
+     "note": "Le rapport Pisani-Ferry / Mahfouz chiffre le besoin d'investissement public additionnel autour de 25 à 30 Md€ par an.",
+     "sources": []
+    },
+    {
+     "id": "retr62",
+     "libelle": "Retour de l'âge légal à 62 ans",
+     "sens": "dep+",
+     "borne": "lo",
+     "retenu": 8,
+     "bas": 8,
+     "centre": 13,
+     "haut": 18,
+     "annonce": null,
+     "montee": 5,
+     "effet2032": -8,
+     "note": "Environ 3 Md€ dès la première année, la charge montant au fil des générations. Les retraites pèsent 390 Md€, soit près d'un quart de la dépense publique.",
+     "sources": []
+    },
+    {
+     "id": "indexation",
+     "libelle": "Indexation intégrale des retraites et prestations sur l'inflation",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 2,
+     "centre": 4,
+     "haut": 6,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": -4,
+     "note": "Chaque point de sous-indexation des pensions représente environ 4 Md€ d'économie — et réciproquement.",
+     "sources": []
+    },
+    {
+     "id": "services",
+     "libelle": "Recrutements dans la santé, l'école et la justice",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 2,
+     "centre": 4,
+     "haut": 8,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": -4,
+     "note": "Un poste coûte en moyenne 45 à 55 k€ par an, charges comprises : 50 000 postes représentent environ 2,5 Md€.",
+     "sources": []
+    },
+    {
+     "id": "zucman",
+     "libelle": "Impôt plancher de 2 % sur les patrimoines supérieurs à 100 M€",
+     "sens": "rec+",
+     "borne": "lo",
+     "retenu": 5,
+     "bas": 5,
+     "centre": 8,
+     "haut": 20,
+     "annonce": 15,
+     "montee": 2,
+     "effet2032": 3.2,
+     "note": "Environ 1 800 foyers, un patrimoine agrégé de l'ordre de 1 000 Md€. Gabriel Zucman avance 15 à 25 Md€ ; l'administration et plusieurs économistes retiennent plutôt 5 Md€. L'écart ne porte pas sur le taux mais sur l'assiette retenue et sur la réaction des redevables. Rejetée par l'Assemblée nationale le 31 octobre 2025.",
+     "sources": []
+    },
+    {
+     "id": "isf",
+     "libelle": "Rétablissement d'un impôt sur la fortune au-delà de l'IFI",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 2,
+     "centre": 4,
+     "haut": 6,
+     "annonce": null,
+     "montee": 1,
+     "effet2032": 3,
+     "note": "L'ISF rapportait environ 5 Md€ en 2017 ; l'IFI qui l'a remplacé en rapporte environ 2. L'écart donne l'ordre de grandeur du rétablissement.",
+     "sources": []
+    },
+    {
+     "id": "isgrandes",
+     "libelle": "Surtaxe d'impôt sur les sociétés pour les grandes entreprises",
+     "sens": "rec+",
+     "borne": "lo",
+     "retenu": 4,
+     "bas": 4,
+     "centre": 8,
+     "haut": 12,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 3,
+     "note": "L'IS rapporte environ 60 Md€ sur 300 Md€ de bénéfices imposables. Les surtaxes votées en 2025 ont montré qu'un rendement affiché se réduit vite par optimisation du résultat imposable et localisation des charges.",
+     "sources": []
+    },
+    {
+     "id": "succ",
+     "libelle": "Réforme des droits de succession sur les hauts patrimoines",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 3,
+     "bas": 2,
+     "centre": 3,
+     "haut": 5,
+     "annonce": 10,
+     "montee": 2,
+     "effet2032": 2.3,
+     "note": "Les droits de succession et de donation ont rapporté 20,8 Md€ en 2023 (16,6 sur les successions, 4,3 sur les donations) ; l'essentiel des transmissions est déjà exonéré, et les grandes transmissions d'entreprises le sont en grande partie par le pacte Dutreil (4 Md€ en 2026).",
+     "sources": [
+      {
+       "t": "Fipeco (François Ecalle), « Les droits de succession », novembre 2024, p. 1",
+       "u": "https://fipeco.fr/pdf/Droits%20successions%202024.pdf",
+       "d": "2026-11-09"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "t": "Primaire de la gauche : Raphaël Glucksmann plie le match et remporte le scrutin dès le premier tour avec 66 % — Public Sénat, 11 octobre 2026",
+     "u": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66"
+    },
+    {
+     "t": "Budget : les socialistes présentent leurs propositions — LCP",
+     "u": "https://lcp.fr/actualites/budget-a-l-assemblee-les-socialistes-presentent-leurs-propositions-et-previennent-qu-ils"
+    }
+   ],
+   "page": "https://quipaie2027.fr/candidat-raphael-glucksmann.html"
+  },
+  {
+   "id": "eco",
+   "candidat": "Marine Tondelier",
+   "parti": "Les Écologistes",
+   "sigle": "ÉCO",
+   "horsCourse": false,
+   "statutCandidature": "Candidate ; « prête à rejoindre une coalition » de gauche et fera campagne pour un autre candidat si son parti le décide (BFMTV, 12 novembre 2026) ; les adhérents votent du 10 au 13 décembre 2026",
+   "statutChiffrage": "reconstitution",
+   "annonce": {
+    "titre": "Amendements chiffrés au budget 2027, pas de chiffrage présidentiel",
+    "texte": "Le groupe écologiste a chiffré plusieurs amendements au budget 2027 : ISF climatique incluant un plancher de 2 % au-delà de 100 M€ (taxe Zucman, 15 à 25 Md€ selon le groupe), réforme de l'héritage (surtaxe de 10 % au-delà de 4 M€ et de 20 % au-delà de 13 M€, pacte Dutreil resserré, plus-values latentes taxées : 10 Md€ en 2027, puis 15 Md€ par an selon Marine Tondelier le 12 novembre 2026 ; 5 à 10 Md€ selon le calcul du simulateur), contribution sur les pétro-gaziers (2,8 Md€). Aucun chiffrage d'ensemble du programme présidentiel n'est publié : le scénario est reconstitué par le simulateur à partir de ces positions.",
+    "revendique": null,
+    "detaille": null
+   },
+   "deficit2032": 7.9,
+   "dette2032": 141,
+   "deficit2032Promesses": 7.8,
+   "dette2032Promesses": 140.5,
+   "effetNet2032": -10.5,
+   "effetNet2032Promesses": -6.6,
+   "trajectoire": [
+    {
+     "annee": 2025,
+     "deficitPct": 5.4,
+     "dettePct": 115.9
+    },
+    {
+     "annee": 2026,
+     "deficitPct": 6.1,
+     "dettePct": 119.5
+    },
+    {
+     "annee": 2027,
+     "deficitPct": 6.3,
+     "dettePct": 122.7
+    },
+    {
+     "annee": 2028,
+     "deficitPct": 6.5,
+     "dettePct": 125.5
+    },
+    {
+     "annee": 2029,
+     "deficitPct": 6.9,
+     "dettePct": 128.8
+    },
+    {
+     "annee": 2030,
+     "deficitPct": 7.3,
+     "dettePct": 132.7
+    },
+    {
+     "annee": 2031,
+     "deficitPct": 7.6,
+     "dettePct": 136.8
+    },
+    {
+     "annee": 2032,
+     "deficitPct": 7.9,
+     "dettePct": 141
+    }
+   ],
+   "effets2032": {
+    "pibPct": {
+     "centre": 0.66,
+     "fourchette": [
+      0.19,
+      1.18
+     ]
+    },
+    "emplois": {
+     "centre": 78000,
+     "fourchette": [
+      18000,
+      262000
+     ]
+    },
+    "chomagePts": {
+     "centre": -0.2,
+     "fourchette": [
+      -0.8,
+      -0.1
+     ]
+    },
+    "tauxEtatPts": {
+     "centre": -0.06,
+     "fourchette": [
+      -0.25,
+      0
+     ]
+    }
+   },
+   "mesures": [
+    {
+     "id": "ecolo",
+     "libelle": "Plan d'investissement écologique (rénovation, réseaux, ferroviaire)",
+     "sens": "dep+",
+     "borne": "hi",
+     "retenu": 30,
+     "bas": 5,
+     "centre": 10,
+     "haut": 30,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": -30,
+     "note": "Le rapport Pisani-Ferry / Mahfouz chiffre le besoin d'investissement public additionnel autour de 25 à 30 Md€ par an.",
+     "sources": []
+    },
+    {
+     "id": "niches",
+     "libelle": "Rabot des niches fiscales et des aides aux entreprises",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 10,
+     "bas": 5,
+     "centre": 10,
+     "haut": 25,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": 10,
+     "note": "Selon le périmètre retenu, les aides publiques aux entreprises sont estimées entre 110 et 200 Md€. Le désaccord porte sur ce qui compte comme « aide » : les allègements de cotisations en représentent à eux seuls 75.",
+     "sources": []
+    },
+    {
+     "id": "isfclim",
+     "libelle": "ISF climatique (assiette élargie, barème progressif)",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 10,
+     "bas": 5,
+     "centre": 10,
+     "haut": 15,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 7.3,
+     "note": "Chiffré à 12 Md€ par les programmes de gauche. Combine un ISF renforcé et une modulation selon l'empreinte carbone des actifs, dont le rendement propre n'a jamais été mesuré.",
+     "sources": []
+    },
+    {
+     "id": "heritgrand",
+     "libelle": "Surtaxe sur les héritages au-delà de 4 M€ (+10 points, +20 au-delà de 13 M€), pacte Dutreil resserré, plus-values latentes taxées à la transmission",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 7,
+     "bas": 5,
+     "centre": 7,
+     "haut": 10,
+     "annonce": 15,
+     "montee": 3,
+     "effet2032": 5.1,
+     "note": "Calcul de ce site, faute de chiffrage indépendant du dispositif. Surtaxe : l'Institut Montaigne chiffre à 8,7 Md€ une tranche à 100 % au-delà de 12 M€, soit 55 points de plus que le taux actuel de 45 % : la part des héritages taxée au-delà de ce seuil avoisine 16 Md€ par an, et 20 points de plus y rapportent environ 3 Md€ ; la tranche de 4 à 13 M€ ajoute 1 à 2 Md€ (hypothèse du site). Pacte Dutreil ramené de 75 % à 50 % d'exonération : environ 1 Md€ sur les 4 Md€ qu'il coûte. Plus-values latentes taxées à la transmission : 1 à 4 Md€ à terme, le haut étant le chiffre du groupe écologiste, l'effet montant avec les années. Total 5 à 10 Md€ avant les départs et l'optimisation que le simulateur applique ensuite. Les 15 Md€ annoncés reprennent l'ordre de grandeur de la proposition de loi Ouizille (Sénat, décembre 2025), dont 10,5 Md€ viennent des plus-values latentes, sur des estimations de ses auteurs.",
+     "sources": [
+      {
+       "t": "AFP, repris par L'Info Durable — Les Écologistes veulent taxer davantage les héritages des plus fortunés, 27 août 2026 (contribution de 10 % au-delà de 4 M€, 10 % de plus au-delà de 13 M€, pacte Dutreil ramené de 75 % à 50 %, démembrement, « environ 15 milliards »)",
+       "u": "https://www.linfodurable.fr/politique/les-ecologistes-veulent-taxer-davantage-les-heritages-des-plus-fortunes-58714",
+       "d": "2026-11-14"
+      },
+      {
+       "t": "Sénat, proposition de loi n° 190 (2025-2026) d'Alexandre Ouizille, impôt sur les grandes successions, exposé des motifs : 4,7 Md€ par le barème et 10,5 Md€ par les plus-values latentes, estimations des auteurs",
+       "u": "https://www.senat.fr/leg/exposes-des-motifs/ppl25-190-expose.html",
+       "d": "2026-11-14"
+      },
+      {
+       "t": "Assemblée nationale, amendement n° 53 du groupe écologiste au PLF 2027 (fin de la purge des plus-values latentes au-delà de 1,3 M€, « près de 4 milliards » à terme selon le groupe)",
+       "u": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/53",
+       "d": "2026-11-14"
+      },
+      {
+       "t": "Institut Montaigne, présidentielle 2022, « Augmenter les droits de succession sur les plus hauts patrimoines et créer un héritage maximal de 12 M€ »",
+       "u": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon/augmenter-les-droits-de-succession-sur-les-plus-hauts-patrimoines-et-creer-un-heritage-maximal-de-12-me",
+       "d": "2026-11-09"
+      },
+      {
+       "t": "Fipeco (François Ecalle), « Les droits de succession », novembre 2024, p. 1",
+       "u": "https://fipeco.fr/pdf/Droits%20successions%202024.pdf",
+       "d": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "id": "age",
+     "libelle": "Montée en charge de la branche autonomie (grand âge)",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 5,
+     "bas": 3,
+     "centre": 5,
+     "haut": 9,
+     "annonce": null,
+     "montee": 4,
+     "effet2032": -5,
+     "note": "La branche autonomie pèse environ 40 Md€ ; le nombre de personnes de plus de 85 ans double d'ici 2040.",
+     "sources": []
+    },
+    {
+     "id": "services",
+     "libelle": "Recrutements dans la santé, l'école et la justice",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 2,
+     "centre": 4,
+     "haut": 8,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": -4,
+     "note": "Un poste coûte en moyenne 45 à 55 k€ par an, charges comprises : 50 000 postes représentent environ 2,5 Md€.",
+     "sources": []
+    },
+    {
+     "id": "superp",
+     "libelle": "Contribution sur les superprofits (énergie, transport, finance)",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 2,
+     "centre": 4,
+     "haut": 15,
+     "annonce": 2.8,
+     "montee": 1,
+     "effet2032": 3,
+     "note": "Chiffrée jusqu'à 15 Md€ dans les programmes de gauche. Rendement structurellement volatil : il dépend du prix de l'énergie et des taux, donc il ne finance pas une dépense pérenne.",
+     "sources": []
+    },
+    {
+     "id": "cir",
+     "libelle": "Rabot du crédit d'impôt recherche",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 3,
+     "bas": 2,
+     "centre": 3,
+     "haut": 7,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 3,
+     "note": "Le CIR coûte environ 7,7 Md€ par an. Son efficacité sur la R&D privée fait l'objet d'évaluations contradictoires. En 2021, les grandes entreprises ont reçu 2,9 Md€ des 6,9 Md€ du CIR recherche (42 %), les PME 2,1 Md€ (31 %) : un rabot peut cibler les unes sans toucher les autres.",
+     "sources": [
+      {
+       "t": "Ministère de l'Enseignement supérieur et de la Recherche, « Le crédit d'impôt recherche en 2021 »",
+       "u": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2023-11/le-cr-dit-d-imp-t-recherche-en-2021---provisoire-30075.pdf",
+       "d": "2026-11-01"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "t": "Marine Tondelier prête à retirer sa candidature « s'il y a un chemin de victoire » pour la gauche — BFMTV avec AFP, 26 octobre 2026",
+     "u": "https://fr.news.yahoo.com/marine-tondelier-prete-a-retirer-114947363.html"
+    },
+    {
+     "t": "TF1 Info — Marine Tondelier invitée du 20H, 9 novembre 2026",
+     "u": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-marine-tondelier-invitee-du-20h-de-tf1-ce-lundi-9-novembre-colere-sociale-crise-lyceenne-pouvoir-d-achat-2474836.html"
+    },
+    {
+     "t": "BFMTV — Smic, coalition à gauche, immigration, nucléaire : ce qu'il faut retenir de l'entretien de Marine Tondelier (12 novembre 2026)",
+     "u": "https://www.bfmtv.com/politique/elections/presidentielle/smic-coalition-a-gauche-immigration-nuclaire-ce-qu-il-faut-retenir-de-l-entretien-de-marine-tondelier-sur-bfmtv_AV-202611120997.html"
+    },
+    {
+     "t": "franceinfo — Marine Tondelier promet l'ouverture de 2 000 centres de santé d'ici 2030 (12 novembre 2026)",
+     "u": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-marine-tondelier-promet-l-ouverture-de-2-000-centres-de-sante-d-ici-2030-en-france_8279639.html"
+    }
+   ],
+   "page": "https://quipaie2027.fr/candidat-marine-tondelier.html"
+  },
+  {
+   "id": "ia",
+   "candidat": "Le budget apolitique",
+   "parti": "Calculé par une intelligence artificielle",
+   "sigle": "IA",
+   "horsCourse": true,
+   "statutCandidature": "Pas un candidat : un budget calculé par l'intelligence artificielle, à partir des chiffrages publiés",
+   "statutChiffrage": "ia",
+   "annonce": {
+    "titre": "Un budget calculé, pas promis",
+    "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 58 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,3 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+    "revendique": null,
+    "detaille": null
+   },
+   "deficit2032": 7.3,
+   "dette2032": 138.9,
+   "deficit2032Promesses": 7.3,
+   "dette2032Promesses": 138.9,
+   "effetNet2032": 9.4,
+   "effetNet2032Promesses": 9.4,
+   "trajectoire": [
+    {
+     "annee": 2025,
+     "deficitPct": 5.4,
+     "dettePct": 115.9
+    },
+    {
+     "annee": 2026,
+     "deficitPct": 6.1,
+     "dettePct": 119.5
+    },
+    {
+     "annee": 2027,
+     "deficitPct": 6.2,
+     "dettePct": 122.9
+    },
+    {
+     "annee": 2028,
+     "deficitPct": 6.3,
+     "dettePct": 125.6
+    },
+    {
+     "annee": 2029,
+     "deficitPct": 6.5,
+     "dettePct": 128.5
+    },
+    {
+     "annee": 2030,
+     "deficitPct": 6.8,
+     "dettePct": 131.8
+    },
+    {
+     "annee": 2031,
+     "deficitPct": 7,
+     "dettePct": 135.3
+    },
+    {
+     "annee": 2032,
+     "deficitPct": 7.3,
+     "dettePct": 138.9
+    }
+   ],
+   "effets2032": {
+    "pibPct": {
+     "centre": 0.01,
+     "fourchette": [
+      -0.05,
+      0.47
+     ]
+    },
+    "emplois": {
+     "centre": 1000,
+     "fourchette": [
+      -11000,
+      104000
+     ]
+    },
+    "chomagePts": {
+     "centre": 0,
+     "fourchette": [
+      -0.3,
+      0
+     ]
+    },
+    "tauxEtatPts": {
+     "centre": -0.04,
+     "fourchette": [
+      -0.19,
+      -0.03
+     ]
+    }
+   },
+   "mesures": [
+    {
+     "id": "csgbaisse",
+     "libelle": "Baisse de la CSG ou des cotisations sur les revenus d'activité",
+     "sens": "rec-",
+     "borne": "mid",
+     "retenu": 8,
+     "bas": 5,
+     "centre": 8,
+     "haut": 12,
+     "annonce": null,
+     "montee": 1,
+     "effet2032": -8,
+     "note": "La CSG d'activité rapporte environ 105 Md€ : un point vaut à peu près 9 Md€.",
+     "sources": []
+    },
+    {
+     "id": "isfclim",
+     "libelle": "ISF climatique (assiette élargie, barème progressif)",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 10,
+     "bas": 5,
+     "centre": 10,
+     "haut": 15,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 6.9,
+     "note": "Chiffré à 12 Md€ par les programmes de gauche. Combine un ISF renforcé et une modulation selon l'empreinte carbone des actifs, dont le rendement propre n'a jamais été mesuré.",
+     "sources": []
+    },
+    {
+     "id": "heritmax",
+     "libelle": "Héritage maximum : tranche à 100 % au-delà de 12 M€ et droits relevés sur les plus hauts patrimoines",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 9,
+     "bas": 7,
+     "centre": 9,
+     "haut": 11,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 6.2,
+     "note": "L'Institut Montaigne chiffre une tranche à 100 % au-delà de 12 M€ reçus à 9 Md€ par an (7 à 11) : 8,7 Md€ avant réaction des héritiers, 20 % de pertes par départs dans l'hypothèse basse, jusqu'à 2 Md€ de plus si le pacte Dutreil et l'avantage de l'assurance-vie disparaissent au-delà de 12 M€. Il signale un « risque très important d'inconstitutionnalité » (impôt confiscatoire). Ni le cumul des dons et héritages sur toute la vie ni l'exonération des héritages sous 150 000 € ne sont chiffrés. LFI : 20 Md€ dès 2027, pour des recettes actuelles de 20,8 Md€.",
+     "sources": [
+      {
+       "t": "Institut Montaigne, présidentielle 2022, « Augmenter les droits de succession sur les plus hauts patrimoines et créer un héritage maximal de 12 M€ »",
+       "u": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon/augmenter-les-droits-de-succession-sur-les-plus-hauts-patrimoines-et-creer-un-heritage-maximal-de-12-me",
+       "d": "2026-11-09"
+      },
+      {
+       "t": "Fipeco (François Ecalle), « Les droits de succession », novembre 2024",
+       "u": "https://fipeco.fr/pdf/Droits%20successions%202024.pdf",
+       "d": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "id": "innov",
+     "libelle": "Innovation et souveraineté technologique : prolonger France 2030 (IA, deeptech, Bpifrance)",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 3,
+     "bas": 1,
+     "centre": 3,
+     "haut": 6,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": -3,
+     "note": "France 2030 engage 54 Md€, opérés par Bpifrance, l'ANR, l'ADEME et la Caisse des dépôts. Ses crédits reculent : 4,0 Md€ en 2027 contre 4,4 Md€ en 2026 et 7,3 Md€ en 2024, sans nouvel engagement en 2027. Aucun chiffrage publié n'existe pour la suite : les bornes sont tirées du budget. Basse : retrouver le niveau de 2026 et rouvrir les engagements. Centrale : revenir au rythme de 2024. Haute : un plan successeur de la taille de France 2030, environ 6 Md€ par an.",
+     "sources": [
+      {
+       "t": "Projet annuel de performances 2027, mission « Investir pour la France de 2030 »",
+       "u": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1128240/file/PAP%202027%20-%20Investir%20pour%20la%20France%20de%202030.pdf",
+       "d": "2026-11-01"
+      },
+      {
+       "t": "Sénat, rapport sur le PLF 2024, mission « Investir pour la France de 2030 » (7,3 Md€ pour France 2030 en 2024)",
+       "u": "https://www.senat.fr/rap/l23-128-317/l23-128-31715.html",
+       "d": "2026-11-01"
+      }
+     ]
+    },
+    {
+     "id": "pfu",
+     "libelle": "Fin du prélèvement forfaitaire unique : dividendes au barème progressif",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 4,
+     "bas": 2,
+     "centre": 4,
+     "haut": 6,
+     "annonce": null,
+     "montee": 1,
+     "effet2032": 2.7,
+     "note": "Rendement très sensible au comportement de distribution : la réforme de 2018 avait été suivie d'une forte hausse des dividendes versés. Une bonne part des 100 Md€ de dividendes va à des non-résidents ou à des sociétés mères, hors de portée du barème des particuliers.",
+     "sources": []
+    },
+    {
+     "id": "csgcap",
+     "libelle": "CSG sur les revenus du capital : +2 points",
+     "sens": "rec+",
+     "borne": "mid",
+     "retenu": 3,
+     "bas": 2,
+     "centre": 3,
+     "haut": 4,
+     "annonce": null,
+     "montee": 1,
+     "effet2032": 2.1,
+     "note": "Assiette d'environ 150 Md€ de revenus du patrimoine et de placement.",
+     "sources": []
+    },
+    {
+     "id": "superp",
+     "libelle": "Contribution sur les superprofits (énergie, transport, finance)",
+     "sens": "rec+",
+     "borne": "lo",
+     "retenu": 2,
+     "bas": 2,
+     "centre": 4,
+     "haut": 15,
+     "annonce": null,
+     "montee": 1,
+     "effet2032": 1.5,
+     "note": "Chiffrée jusqu'à 15 Md€ dans les programmes de gauche. Rendement structurellement volatil : il dépend du prix de l'énergie et des taux, donc il ne finance pas une dépense pérenne.",
+     "sources": []
+    },
+    {
+     "id": "logurgence",
+     "libelle": "Hébergement et logement d'urgence (places nouvelles, réquisitions)",
+     "sens": "dep+",
+     "borne": "mid",
+     "retenu": 1.2,
+     "bas": 0.4,
+     "centre": 1.2,
+     "haut": 3,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": -1.2,
+     "note": "Le programme 177 dispose d'environ 3 Md€ pour 203 000 places ; plus de 60 % des demandes au 115 restent sans réponse (Sénat, PLF 2026). 1,2 Md€ représentent environ 80 000 places de plus ; 3 Md€, un doublement du parc. LFI : 3 Md€.",
+     "sources": [
+      {
+       "t": "Sénat, avis de la commission des affaires sociales sur le programme 177, PLF 2026 (26 novembre 2025)",
+       "u": "https://www.senat.fr/rap/a25-142-2/a25-142-2-syn.pdf",
+       "d": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "id": "fraude",
+     "libelle": "Renforcement de la lutte contre la fraude fiscale et sociale",
+     "sens": "rec+",
+     "borne": "lo",
+     "retenu": 1,
+     "bas": 1,
+     "centre": 3,
+     "haut": 15,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": 1,
+     "note": "Chiffré à 15 Md€ par le RN, jusqu'à 80 Md€ par LFI. L'écart fiscal estimé est effectivement de cet ordre, mais il mesure l'impôt manquant, pas l'impôt récupérable : les redressements notifiés dépassent 15 Md€ par an, les encaissements réels sont autour de 10, et l'essentiel serait recouvré même sans mesure nouvelle.",
+     "sources": []
+    },
+    {
+     "id": "ttf",
+     "libelle": "Taxe sur les transactions financières élargie",
+     "sens": "rec+",
+     "borne": "lo",
+     "retenu": 1,
+     "bas": 1,
+     "centre": 3,
+     "haut": 6,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 0.8,
+     "note": "Chiffrée à 20 Md€ dans certains programmes. La TTF française actuelle rapporte environ 2 Md€ ; l'élargissement aux produits dérivés déplace une partie de l'activité hors de France, ce que les chiffrages hauts ne prennent pas en compte.",
+     "sources": []
+    },
+    {
+     "id": "rachats",
+     "libelle": "Taxe sur les rachats d'actions",
+     "sens": "rec+",
+     "borne": "lo",
+     "retenu": 0.5,
+     "bas": 0.5,
+     "centre": 1,
+     "haut": 2,
+     "annonce": null,
+     "montee": 1,
+     "effet2032": 0.4,
+     "note": "La taxe instaurée en 2024 rapporte quelques centaines de millions. Élargie, elle reste d'un ordre de grandeur inférieur aux annonces qui l'accompagnent.",
+     "sources": []
+    },
+    {
+     "id": "exit",
+     "libelle": "Renforcement de l'exit tax",
+     "sens": "rec+",
+     "borne": "lo",
+     "retenu": 0.2,
+     "bas": 0.2,
+     "centre": 0.5,
+     "haut": 1,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 0.1,
+     "note": "Mesure défensive : son intérêt n'est pas son rendement propre mais la réduction de l'érosion d'assiette des autres impôts sur le capital.",
+     "sources": []
+    },
+    {
+     "id": "institutions",
+     "libelle": "Réduction du train de vie des institutions et du nombre de parlementaires",
+     "sens": "dep-",
+     "borne": "lo",
+     "retenu": 0.05,
+     "bas": 0.05,
+     "centre": 0.15,
+     "haut": 0.3,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 0.1,
+     "note": "L'ensemble Élysée, Assemblée, Sénat et Conseil constitutionnel coûte 1,14 Md€, soit un euro pour mille euros de dépense publique. Supprimé en totalité, ce poste modifierait peu la trajectoire.",
+     "sources": []
+    }
+   ],
+   "sources": [
+    {
+     "t": "« Budget 2027 : qu'en pensent les économistes ? » — audition de Rexecode, de l'IFE et de GSA, commission des finances du Sénat, 21 octobre 2026",
+     "u": "https://www.senat.fr/travaux-parlementaires/commissions/commission-des-finances/detail-actualite/audition-plf-2027-sur-les-perspectives-de-leconomie-francaise-et-la-situation-des-finances-publiques-8474.html"
+    },
+    {
+     "t": "Taux de marge des entreprises et effet boule de neige — présentation de Rexecode au Sénat, 21 octobre 2026",
+     "u": "https://www.senat.fr/fileadmin/cru-1792598966/Commissions/Finances/2026-2027/Divers/Presentation_TableRonde_20261021_Rexecode.pdf"
+    }
+   ],
+   "page": "https://quipaie2027.fr/budget-apolitique.html"
+  },
+  {
+   "id": "ne",
+   "candidat": "David Lisnard",
+   "parti": "Nouvelle Énergie",
+   "sigle": "NE",
+   "horsCourse": false,
+   "statutCandidature": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite et en accepte le principe proposé par Bruno Retailleau (10 novembre 2026)",
+   "statutChiffrage": "partiel",
+   "annonce": {
+    "titre": "200 Md€ d'économies d'ici 2032",
+    "texte": "David Lisnard annonce 80 Md€ d'économies dès la première année et 200 Md€ à l'horizon 2032. Mais il ne les affecte pas au déficit : 120 Md€ seraient rendus aux actifs en salaire net et 40 Md€ en baisse des impôts de production, les 40 Md€ restants allant à la dette ou à la modernisation de l'État. Il chiffre seulement 2 à 3 Md€ d'économies sociales dès la première année (gel des retraites au-delà de 2 200 €, désindexations, allocations non contributives réservées aux étrangers résidant depuis cinq ans), et ce dernier poste à environ 8 Md€ par an. Le scénario chargé reprend ses orientations avec les bornes du catalogue, qui ne contient pas de baisse de cotisations de l'ampleur annoncée.",
+    "revendique": 200,
+    "detaille": 2.5
+   },
+   "deficit2032": 6.8,
+   "dette2032": 138.2,
+   "deficit2032Promesses": 6.8,
+   "dette2032Promesses": 138,
+   "effetNet2032": 30.3,
+   "effetNet2032Promesses": 31.8,
+   "trajectoire": [
+    {
+     "annee": 2025,
+     "deficitPct": 5.4,
+     "dettePct": 115.9
+    },
+    {
+     "annee": 2026,
+     "deficitPct": 6.1,
+     "dettePct": 119.5
+    },
+    {
+     "annee": 2027,
+     "deficitPct": 6.5,
+     "dettePct": 123.3
+    },
+    {
+     "annee": 2028,
+     "deficitPct": 6.4,
+     "dettePct": 126.5
+    },
+    {
+     "annee": 2029,
+     "deficitPct": 6.4,
+     "dettePct": 129.5
+    },
+    {
+     "annee": 2030,
+     "deficitPct": 6.5,
+     "dettePct": 132.3
+    },
+    {
+     "annee": 2031,
+     "deficitPct": 6.7,
+     "dettePct": 135.2
+    },
+    {
+     "annee": 2032,
+     "deficitPct": 6.8,
+     "dettePct": 138.2
+    }
+   ],
+   "effets2032": {
+    "pibPct": {
+     "centre": -0.29,
+     "fourchette": [
+      -0.29,
+      0.23
+     ]
+    },
+    "emplois": {
+     "centre": 146000,
+     "fourchette": [
+      48000,
+      403000
+     ]
+    },
+    "chomagePts": {
+     "centre": 0,
+     "fourchette": [
+      -0.8,
+      0.4
+     ]
+    },
+    "tauxEtatPts": {
+     "centre": -0.05,
+     "fourchette": [
+      -0.2,
+      -0.05
+     ]
+    }
+   },
+   "mesures": [
+    {
+     "id": "csgbaisse",
+     "libelle": "Baisse de la CSG ou des cotisations sur les revenus d'activité",
+     "sens": "rec-",
+     "borne": "hi",
+     "retenu": 12,
+     "bas": 5,
+     "centre": 8,
+     "haut": 12,
+     "annonce": null,
+     "montee": 1,
+     "effet2032": -12,
+     "note": "La CSG d'activité rapporte environ 105 Md€ : un point vaut à peu près 9 Md€.",
+     "sources": []
+    },
+    {
+     "id": "collectivites",
+     "libelle": "Baisse des concours financiers aux collectivités",
+     "sens": "dep-",
+     "borne": "hi",
+     "retenu": 10,
+     "bas": 3,
+     "centre": 5,
+     "haut": 10,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 10,
+     "note": "Les collectivités portent environ 290 Md€ de dépenses, dont l'essentiel de l'investissement public civil.",
+     "sources": [
+      {
+       "t": "Cour des comptes, Contribution au rétablissement des finances publiques, 9 nov. 2026, mesure n° 12 : 4 à 4,9 Md€ d'effet sur le solde public",
+       "u": "https://www.ccomptes.fr/fr/publications/contribution-au-retablissement-des-finances-publiques",
+       "d": "2026-11-10"
+      }
+     ]
+    },
+    {
+     "id": "niches",
+     "libelle": "Rabot des niches fiscales et des aides aux entreprises",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 10,
+     "bas": 5,
+     "centre": 10,
+     "haut": 25,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": 10,
+     "note": "Selon le périmètre retenu, les aides publiques aux entreprises sont estimées entre 110 et 200 Md€. Le désaccord porte sur ce qui compte comme « aide » : les allègements de cotisations en représentent à eux seuls 75.",
+     "sources": []
+    },
+    {
+     "id": "age65",
+     "libelle": "Âge légal de départ porté à 65 ans",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 9,
+     "bas": 5,
+     "centre": 9,
+     "haut": 14,
+     "annonce": null,
+     "montee": 6,
+     "effet2032": 9,
+     "note": "Le rendement d'une réforme des retraites est lent : il croît avec chaque génération concernée.",
+     "sources": []
+    },
+    {
+     "id": "prod",
+     "libelle": "Nouvelle baisse des impôts de production",
+     "sens": "rec-",
+     "borne": "hi",
+     "retenu": 8,
+     "bas": 3,
+     "centre": 5,
+     "haut": 8,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": -8,
+     "note": "Après la CVAE, il reste principalement la CFE et la taxe foncière des entreprises.",
+     "sources": []
+    },
+    {
+     "id": "effectifs",
+     "libelle": "Réduction de 5 % des effectifs de l'État et de ses opérateurs",
+     "sens": "dep-",
+     "borne": "hi",
+     "retenu": 6,
+     "bas": 3,
+     "centre": 4,
+     "haut": 6,
+     "annonce": null,
+     "montee": 4,
+     "effet2032": 6,
+     "note": "2,5 millions d'agents pour l'État et ses opérateurs. Une baisse de 5 % suppose de ne pas remplacer environ 125 000 départs.",
+     "sources": []
+    },
+    {
+     "id": "chomage",
+     "libelle": "Nouvelle réforme de l'assurance chômage",
+     "sens": "dep-",
+     "borne": "hi",
+     "retenu": 6,
+     "bas": 2,
+     "centre": 4,
+     "haut": 6,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 6,
+     "note": "L'Unédic verse environ 32 Md€ d'allocations. Le rendement dépend de la conjoncture : il s'effondre en récession.",
+     "sources": []
+    },
+    {
+     "id": "ondam",
+     "libelle": "Freinage de l'ONDAM (dépenses d'assurance maladie)",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 5,
+     "bas": 3,
+     "centre": 5,
+     "haut": 9,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 5,
+     "note": "L'ONDAM approche 270 Md€ : un ralentissement de 0,5 point de sa progression représente environ 1,4 Md€ par an.",
+     "sources": []
+    },
+    {
+     "id": "agences",
+     "libelle": "Suppression ou fusion d'agences et d'opérateurs de l'État",
+     "sens": "dep-",
+     "borne": "hi",
+     "retenu": 3,
+     "bas": 1,
+     "centre": 2,
+     "haut": 3,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": 3,
+     "note": "Les rapports parlementaires convergent vers 2 à 3 Md€, à condition de supprimer les missions et pas seulement les structures.",
+     "sources": []
+    },
+    {
+     "id": "immigration",
+     "libelle": "Réduction des dépenses liées à l'immigration",
+     "sens": "dep-",
+     "borne": "lo",
+     "retenu": 1,
+     "bas": 1,
+     "centre": 3,
+     "haut": 10,
+     "annonce": 2.5,
+     "montee": 3,
+     "effet2032": 1,
+     "note": "Chiffrée à 25 Md€ par le RN. Les postes identifiables sont d'un tout autre ordre : aide médicale d'État 1,3 Md€, hébergement d'urgence et demande d'asile environ 3 Md€, aide au retour quelques centaines de millions. Les chiffrages hauts agrègent des prestations de droit commun versées à des personnes en situation régulière, et ne déduisent pas les cotisations et impôts que ces mêmes personnes acquittent.",
+     "sources": []
+    },
+    {
+     "id": "institutions",
+     "libelle": "Réduction du train de vie des institutions et du nombre de parlementaires",
+     "sens": "dep-",
+     "borne": "hi",
+     "retenu": 0.3,
+     "bas": 0.05,
+     "centre": 0.15,
+     "haut": 0.3,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 0.3,
+     "note": "L'ensemble Élysée, Assemblée, Sénat et Conseil constitutionnel coûte 1,14 Md€, soit un euro pour mille euros de dépense publique. Supprimé en totalité, ce poste modifierait peu la trajectoire.",
+     "sources": []
+    }
+   ],
+   "sources": [
+    {
+     "t": "Le maire de Cannes, David Lisnard, annonce sa candidature à l'élection présidentielle — franceinfo, 31 mars 2026",
+     "u": "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-cannes-david-lisnard-annonce-sa-candidature-a-l-election-presidentielle-et-officialise-son-depart-des-republicains_7907063.html"
+    }
+   ],
+   "page": "https://quipaie2027.fr/candidat-david-lisnard.html"
+  },
+  {
+   "id": "rec",
+   "candidat": "Éric Zemmour",
+   "parti": "Reconquête",
+   "sigle": "REC",
+   "horsCourse": false,
+   "statutCandidature": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026)",
+   "statutChiffrage": "reconstitution",
+   "annonce": {
+    "titre": "280 Md€ d'économies par an en 2032",
+    "texte": "Éric Zemmour chiffre son plan dans le JDD du 15 novembre 2026 : 280 Md€ de baisse des dépenses par an atteints en 2032, dont 140 Md€ pour financer des baisses d'impôts (CSG sur les revenus d'activité, carburants, IFI, succession en ligne directe, impôts de production) et 140 Md€ pour ramener le déficit à zéro. Postes chiffrés par lui : 800 000 postes de fonctionnaires en moins (plus de 40 Md€), une centaine d'agences supprimées (30 Md€), aides sociales non contributives réservées aux Français (20 Md€), aide au développement (14 Md€), soutien aux énergies intermittentes (près de 8 Md€), RSA limité à trois ans (5 Md€). Il double le plan de Sarah Knafo (budget2027.fr, 140 Md€ par an). Aucun programme chiffré n'est publié : le scénario du simulateur reprend ces orientations avec les montants du catalogue, qui chiffrent plus bas la plupart de ces postes, et ne compte pas les baisses d'impôts.",
+    "revendique": 280,
+    "detaille": 90
+   },
+   "deficit2032": 6.6,
+   "dette2032": 137.4,
+   "deficit2032Promesses": 5.4,
+   "dette2032Promesses": 132.7,
+   "effetNet2032": 36.8,
+   "effetNet2032Promesses": 80.1,
+   "trajectoire": [
+    {
+     "annee": 2025,
+     "deficitPct": 5.4,
+     "dettePct": 115.9
+    },
+    {
+     "annee": 2026,
+     "deficitPct": 6.1,
+     "dettePct": 119.5
+    },
+    {
+     "annee": 2027,
+     "deficitPct": 6.3,
+     "dettePct": 123.1
+    },
+    {
+     "annee": 2028,
+     "deficitPct": 6.3,
+     "dettePct": 125.9
+    },
+    {
+     "annee": 2029,
+     "deficitPct": 6.3,
+     "dettePct": 128.9
+    },
+    {
+     "annee": 2030,
+     "deficitPct": 6.4,
+     "dettePct": 131.6
+    },
+    {
+     "annee": 2031,
+     "deficitPct": 6.5,
+     "dettePct": 134.5
+    },
+    {
+     "annee": 2032,
+     "deficitPct": 6.6,
+     "dettePct": 137.4
+    }
+   ],
+   "effets2032": {
+    "pibPct": {
+     "centre": -0.9,
+     "fourchette": [
+      -0.98,
+      -0.56
+     ]
+    },
+    "emplois": {
+     "centre": -106000,
+     "fourchette": [
+      -217000,
+      -52000
+     ]
+    },
+    "chomagePts": {
+     "centre": 0.3,
+     "fourchette": [
+      0.2,
+      0.7
+     ]
+    },
+    "tauxEtatPts": {
+     "centre": -0.02,
+     "fourchette": [
+      -0.1,
+      -0.01
+     ]
+    }
+   },
+   "mesures": [
+    {
+     "id": "effectifs800",
+     "libelle": "800 000 postes publics en moins, hors 2,2 millions d'emplois protégés",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 32,
+     "bas": 24,
+     "centre": 32,
+     "haut": 40,
+     "annonce": 40,
+     "montee": 9,
+     "effet2032": 21.3,
+     "note": "Même règle pour tous les plans de non-remplacement : chaque poste non pourvu économise de 30 000 à 50 000 € par an une fois l'effet complet, 40 000 € au centre — le rendement observé de la RGPP (environ 6 Md€ pour 150 000 postes, les agents restants récupérant une partie des économies). La montée en charge suit les départs à la retraite que le candidat peut ne pas remplacer : environ 144 000 par an dans toute la fonction publique. 800 000 postes, c'est plus que les 720 000 départs à la retraite d'un quinquennat. Hors les 2,2 millions d'emplois protégés (enseignants, militaires, policiers, soignants), il reste environ 89 000 départs par an à ne pas remplacer : l'effet complet demande neuf ans, au-delà de 2032. Le plan Knafo chiffre 40 Md€, soit 50 000 € par poste.",
+     "sources": [
+      {
+       "t": "IGA, IGF, IGAS, Bilan de la RGPP, septembre 2012 : 150 000 emplois supprimés (p. 56), 11,9 Md€ d'économies dont près de la moitié hors postes (p. 52), soit environ 40 000 € par poste",
+       "u": "https://www.fonction-publique.gouv.fr/files/files/ArchivePortailFP/www.fonction-publique.gouv.fr/files/files/publications/hors_collections/20120925-rapport-bilan-RGPP_sans-annexes.pdf"
+      },
+      {
+       "t": "DGAFP, Chiffres clés de la fonction publique 2026 : 5,85 millions d'agents, 144 000 départs à la retraite en 2025",
+       "u": "https://www.fonction-publique.gouv.fr/files/files/publications/publications-dgafp/cc-2026-web.pdf"
+      }
+     ]
+    },
+    {
+     "id": "immigration",
+     "libelle": "Réduction des dépenses liées à l'immigration",
+     "sens": "dep-",
+     "borne": "hi",
+     "retenu": 10,
+     "bas": 1,
+     "centre": 3,
+     "haut": 10,
+     "annonce": 20,
+     "montee": 3,
+     "effet2032": 10,
+     "note": "Chiffrée à 25 Md€ par le RN. Les postes identifiables sont d'un tout autre ordre : aide médicale d'État 1,3 Md€, hébergement d'urgence et demande d'asile environ 3 Md€, aide au retour quelques centaines de millions. Les chiffrages hauts agrègent des prestations de droit commun versées à des personnes en situation régulière, et ne déduisent pas les cotisations et impôts que ces mêmes personnes acquittent.",
+     "sources": []
+    },
+    {
+     "id": "ue",
+     "libelle": "Réduction de la contribution française au budget de l'Union européenne",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 2,
+     "bas": 0,
+     "centre": 2,
+     "haut": 8,
+     "annonce": null,
+     "montee": 3,
+     "effet2032": 2,
+     "note": "Chiffrée à 10 Md€ par le RN. La contribution brute est d'environ 27 Md€ pour environ 15 Md€ de retours. La réduire unilatéralement n'est pas possible : le cadre financier pluriannuel se décide à l'unanimité et la contribution est une ressource propre de l'Union.",
+     "sources": []
+    },
+    {
+     "id": "agences",
+     "libelle": "Suppression ou fusion d'agences et d'opérateurs de l'État",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 2,
+     "bas": 1,
+     "centre": 2,
+     "haut": 3,
+     "annonce": 30,
+     "montee": 3,
+     "effet2032": 2,
+     "note": "Les rapports parlementaires convergent vers 2 à 3 Md€, à condition de supprimer les missions et pas seulement les structures.",
+     "sources": []
+    },
+    {
+     "id": "ame",
+     "libelle": "Suppression de l'aide médicale d'État",
+     "sens": "dep-",
+     "borne": "hi",
+     "retenu": 1.3,
+     "bas": 0.5,
+     "centre": 0.9,
+     "haut": 1.3,
+     "annonce": null,
+     "montee": 1,
+     "effet2032": 1.3,
+     "note": "1,3 Md€, soit 0,08 % de la dépense publique.",
+     "sources": []
+    },
+    {
+     "id": "institutions",
+     "libelle": "Réduction du train de vie des institutions et du nombre de parlementaires",
+     "sens": "dep-",
+     "borne": "mid",
+     "retenu": 0.15,
+     "bas": 0.05,
+     "centre": 0.15,
+     "haut": 0.3,
+     "annonce": null,
+     "montee": 2,
+     "effet2032": 0.2,
+     "note": "L'ensemble Élysée, Assemblée, Sénat et Conseil constitutionnel coûte 1,14 Md€, soit un euro pour mille euros de dépense publique. Supprimé en totalité, ce poste modifierait peu la trajectoire.",
+     "sources": []
+    }
+   ],
+   "sources": [
+    {
+     "t": "« Je serai candidat » : Éric Zemmour annonce sur BFMTV qu'il se présentera à l'élection présidentielle — BFMTV, 17 septembre 2026",
+     "u": "https://www.bfmtv.com/politique/elections/presidentielle/je-serai-candidat-eric-zemmour-annonce-sur-bfmtv-qu-il-se-presentera-a-l-election-presidentielle_AV-202609170947.html"
+    },
+    {
+     "t": "Sarah Knafo : 20 Md€ sur l'immigration, 40 Md€ sur la fonction publique — franceinfo",
+     "u": "https://www.franceinfo.fr/economie/budget/budget-sebastien-lecornu-propose-juste-de-freiner-la-voiture-qui-fonce-dans-le-mur-estime-sarah-knafo_8198717.html"
+    },
+    {
+     "t": "TF1 Info — Éric Zemmour officialise sa candidature au 20H, 10 novembre 2026",
+     "u": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-eric-zemmour-invite-du-jt-de-20h-ce-mardi-2475074.html"
+    },
+    {
+     "t": "« 140 milliards d'économies par an : le plan de Sarah Knafo » — budget2027.fr",
+     "u": "https://budget2027.fr/"
+    },
+    {
+     "t": "Éric Zemmour au JDD : « Tout faire pour que notre avenir soit français », 15 novembre 2026",
+     "u": "https://www.lejdd.fr/politique/eric-zemmour-au-jdd-tout-faire-pour-que-notre-avenir-soit-francais-188724"
+    }
+   ],
+   "page": "https://quipaie2027.fr/candidat-eric-zemmour.html"
+  }
+ ]
+}
