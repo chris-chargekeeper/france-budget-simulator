@@ -171,6 +171,7 @@ body.adv .simple-only{display:none!important}
 .live .k{font-size:12.5px;color:#9FB2DA}
 .live .v{font:600 clamp(18px,2.6vw,24px) "IBM Plex Mono",monospace;color:var(--c,#fff);transition:color .3s}
 #g-coeur text{fill:#9FB2DA}
+#g-coeur{cursor:pointer}
 #g-coeur .actif{filter:drop-shadow(0 0 7px var(--c))}
 .bande{animation:pulse-bande 1.8s ease-in-out infinite}
 @keyframes pulse-bande{0%,100%{opacity:.10}50%{opacity:.24}}
@@ -241,7 +242,7 @@ body.adv .simple-only{display:none!important}
 <section class="carte coeur" id="coeur">
   <p class="surtitre">LE CŒUR DU SUJET</p>
   <h2>Quatre courbes, une même histoire</h2>
-  <p>On fait défiler 45 ans de séances. Chaque courbe va de son niveau le plus bas (en bas) à son plus haut (en haut) : on compare des formes, pas des unités. L'animation tourne en boucle ; touchez une étape ou une courbe pour la regarder de près, et survolez le graphique pour lire les vraies valeurs.</p>
+  <p>On fait défiler 45 ans de séances. Chaque courbe va de son niveau le plus bas (en bas) à son plus haut (en haut) : on compare des formes, pas des unités. L'animation tourne en boucle ; touchez le graphique pour passer à l'étape suivante, une étape ou une courbe pour la regarder de près, et survolez-le pour lire les vraies valeurs.</p>
   <div class="scene-haut"><div class="annee" id="c-annee">1981</div><div class="live" id="c-live"></div></div>
   <div class="viz" id="g-coeur" role="img" aria-label="Sièges aux extrémités, agitation, langage et politesse superposés par législature, de 1981 à 2026"></div>
   <div class="puces-c" id="c-puces"></div>
@@ -1071,7 +1072,7 @@ body.adv .simple-only{display:none!important}
       txt: "Depuis 2022, les quatre courbes montent en même temps que les sièges aux extrémités. <b>Le langage</b> est le signal le plus net. <b>Le volume de bruit</b> dépend aussi du rapport de force entre camps, et <b>la politesse</b> s'effritait déjà avant. Ce sont des corrélations, pas une preuve de cause à effet." }
   ];
   var C = { etape: 0, jeu: true, visible: false, focus: null, raf: null, t0: 0, phase: "balayage", attente: null, vus: {} };
-  var DUREE = 2600, PAUSE = 3200, PAUSE_FIN = 6500;
+  var DUREE = 1500, PAUSE = 1900, PAUSE_FIN = 4500;
   var reduit = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var SC = null;   // éléments de la scène construite
   (function initCoeur() {
@@ -1094,10 +1095,12 @@ body.adv .simple-only{display:none!important}
       puces.appendChild(b);
     });
     $("jouer").addEventListener("click", function () { if (C.jeu) pauseCoeur(); else { C.focus = null; C.jeu = true; majBouton(); allerEtape(C.etape >= ETAPES.length - 1 ? 0 : C.etape + 1, true); } });
+    // un clic sur le graphique passe à l'étape suivante, sans arrêter la lecture
+    $("g-coeur").addEventListener("click", function () { C.focus = null; if (!C.jeu) { C.jeu = true; majBouton(); } allerEtape(C.etape >= ETAPES.length - 1 ? 0 : C.etape + 1, true); });
     // la boucle ne tourne que lorsque la scène est à l'écran
     function verifVisible() {
       var r = $("coeur").getBoundingClientRect(), h = window.innerHeight || 800;
-      var vis = r.top < h * 0.7 && r.bottom > h * 0.3;
+      var vis = r.top < h * 0.85 && r.bottom > h * 0.2;
       if (vis === C.visible) return;
       C.visible = vis;
       if (vis && C.jeu && !C.raf && !C.attente) allerEtape(C.etape, true);
@@ -1114,14 +1117,16 @@ body.adv .simple-only{display:none!important}
     $("lecture-superpo").innerHTML = "<b>Comment lire ce tableau.</b> Une corrélation de 1 signifie que deux courbes montent et descendent exactement ensemble ; 0, aucun lien ; un signe moins, qu'elles vont en sens contraire. Calculée sur 11 législatures, elle ne prouve pas une cause. Les disqualifications restent liées aux sièges même sans les années 2022-26 (" + fr(R.disq.avant, 2) + "), à cause du pic de 1986. Le volume de bruit, lui, ne l'est plus (" + fr(R.scenes.avant, 2) + "). En 2022-26, les groupes des deux extrémités prononcent environ 70 % des disqualifications et des insultes que le compte rendu attribue à un groupe, la gauche radicale à elle seule environ la moitié.";
   })();
   function majBouton() { var b = $("jouer"); b.textContent = C.jeu ? "❚❚" : "▶"; b.setAttribute("aria-label", C.jeu ? "Pause" : "Lancer l'animation"); }
-  function pauseCoeur() { C.jeu = false; clearTimeout(C.raf); C.raf = null; clearTimeout(C.attente); C.attente = null; majBouton(); if (SC) dessinerProgres(1); }
+  function pauseCoeur() { C.jeu = false; clearTimeout(C.raf); C.raf = null; clearTimeout(C.attente); C.attente = null; majBouton(); if (SC) dessinerProgres(1);
+    var bar = document.querySelectorAll(".piste")[C.etape]; if (bar) { var bi = bar.querySelector(".barre i"); bi.style.transition = "none"; bi.style.width = "100%"; } }
   function allerEtape(i, anime) {
     clearTimeout(C.raf); C.raf = null; clearTimeout(C.attente); C.attente = null;
     if (i === 0 && anime) C.vus = {};
     C.etape = i;
     var E = ETAPES[i];
     document.querySelectorAll(".piste").forEach(function (b, j) {
-      b.classList.toggle("fait", j < i); b.setAttribute("aria-current", String(j === i)); b.querySelector(".barre i").style.width = j < i ? "100%" : "0";
+      var bi = b.querySelector(".barre i"); bi.style.transition = "none";
+      b.classList.toggle("fait", j < i); b.setAttribute("aria-current", String(j === i)); bi.style.width = j < i ? "100%" : "0";
     });
     document.querySelectorAll(".puce-c").forEach(function (b) {
       var k = b.dataset.k, montre = C.focus ? k === C.focus : (E.actifs.indexOf(k) >= 0);
@@ -1137,13 +1142,16 @@ body.adv .simple-only{display:none!important}
     E.actifs.forEach(function (k) { C.vus[k] = true; });
   }
   function programmeSuite() {
-    var fin = C.etape === ETAPES.length - 1;
-    C.attente = setTimeout(function () { C.attente = null; if (C.jeu && C.visible) allerEtape(fin ? 0 : C.etape + 1, true); }, fin ? PAUSE_FIN : PAUSE);
+    var fin = C.etape === ETAPES.length - 1, pause = fin ? PAUSE_FIN : PAUSE;
+    // la barre de l'étape continue d'avancer pendant la pause : on voit que la suite arrive
+    var bar = document.querySelectorAll(".piste")[C.etape];
+    if (bar && C.visible) { var bi = bar.querySelector(".barre i"); void bi.offsetWidth; bi.style.transition = "width " + pause + "ms linear"; bi.style.width = "100%"; }
+    C.attente = setTimeout(function () { C.attente = null; if (C.jeu && C.visible) allerEtape(fin ? 0 : C.etape + 1, true); }, pause);
   }
   function boucle(t) {
     var p = Math.max(0, Math.min(1, (t - C.t0) / DUREE)), e = 1 - Math.pow(1 - p, 3);
     dessinerProgres(e);
-    var bar = document.querySelectorAll(".piste")[C.etape]; if (bar) bar.querySelector(".barre i").style.width = (100 * p) + "%";
+    var bar = document.querySelectorAll(".piste")[C.etape]; if (bar) bar.querySelector(".barre i").style.width = (100 * p * DUREE / (DUREE + (C.etape === ETAPES.length - 1 ? PAUSE_FIN : PAUSE))) + "%";
     if (p < 1) C.raf = setTimeout(function () { boucle(performance.now()); }, 16);
     else { C.raf = null; if (C.jeu) programmeSuite(); }
   }
