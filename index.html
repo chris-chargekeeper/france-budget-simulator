@@ -1533,6 +1533,52 @@ footer{padding-bottom:120px}
 </div>
 
 <div class="wrap">
+  <!-- Annonce du module « L'Assemblée à la loupe » (page assemblee.html, produite à part
+       par l'étude : scripts annonce.py et page_html.py --prod). -->
+<style>
+/* --- carte d'annonce : module « L'Assemblée à la loupe » --- */
+.mod-annonce{display:grid;grid-template-columns:1.25fr 1fr;gap:0;margin-top:28px;border-radius:var(--radius,18px);overflow:hidden;
+  background:var(--surface);border:1px solid var(--rule);box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
+.mod-annonce:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.mod-annonce:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.mod-txt{padding:20px 22px;display:grid;gap:8px;align-content:center}
+.mod-k{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font:600 10.5px "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.mod-k .neuf{background:#E3263B;color:#fff;border-radius:999px;padding:2px 9px;letter-spacing:.08em}
+.mod-txt h2{font-family:Newsreader,Georgia,serif;font-weight:600;font-size:clamp(22px,2.6vw,28px);line-height:1.15;letter-spacing:-.01em;color:var(--ink)}
+.mod-txt h2 em{color:var(--bleu,#1F4FD1)}
+:root[data-theme="dark"] .mod-txt h2 em{color:#7EA2FF}
+.mod-txt p{margin:0;font-size:14.5px;color:var(--ink-2);max-width:52ch}
+.mod-chiffres{display:flex;gap:18px;flex-wrap:wrap;margin-top:2px}
+.mod-chiffres div{display:grid}
+.mod-chiffres b{font:600 20px "IBM Plex Mono",monospace;color:var(--ink);letter-spacing:-.02em}
+.mod-chiffres span{font-size:12px;color:var(--ink-3)}
+.mod-go{justify-self:start;margin-top:4px;font-weight:600;font-size:14px;color:var(--bleu,#1F4FD1)}
+:root[data-theme="dark"] .mod-go{color:#7EA2FF}
+.mod-vis{position:relative;display:grid;align-content:center;gap:8px;padding:18px 18px 14px;color:#C9D6F2;
+  background:radial-gradient(500px 240px at 100% 0%,rgba(227,38,59,.28),transparent 60%),linear-gradient(160deg,#0A1530,#14306E)}
+.mod-spark{width:100%;height:120px;display:block}
+.mod-leg{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:11.5px}
+.mod-leg i{display:inline-block;width:12px;height:3px;border-radius:2px;margin-right:5px;vertical-align:middle}
+.mod-ax{display:flex;justify-content:space-between;font:500 10.5px "IBM Plex Mono",monospace;color:#9FB2DA}
+@media (max-width:720px){.mod-annonce{grid-template-columns:1fr}.mod-vis{order:-1}}
+</style>
+<a class="mod-annonce" href="/assemblee.html" aria-label="Nouveau module : L'Assemblée, de plus en plus tendue ? 45 ans de débats passés au crible">
+  <div class="mod-txt">
+    <div class="mod-k"><span class="neuf">Nouveau module</span><span>L'Assemblée à la loupe</span></div>
+    <h2>L'Assemblée, <em>de plus en plus tendue&nbsp;?</em></h2>
+    <p>45 ans de débats officiels passés au crible, avec la même règle pour tous les groupes : qui fait le bruit, pourquoi les mots ont changé, et ce qui n'y est pour rien.</p>
+    <div class="mod-chiffres">
+      <div><b>×2,4</b><span>d'agitation depuis 1981-2002</span></div>
+      <div><b>55-64 %</b><span>du bruit vient des deux extrémités</span></div>
+    </div>
+    <span class="mod-go">Découvrir le module →</span>
+  </div>
+  <div class="mod-vis">
+    <svg class="mod-spark" viewBox="0 0 320 120" aria-hidden="true" preserveAspectRatio="none"><path d="M8.0,93.7 L38.4,85.1 L68.8,106.7 L99.2,108.1 L129.6,101.7 L160.0,108.4 L190.4,107.0 L220.8,112.0 L251.2,104.5 L281.6,29.4 L312.0,8.0 L312,112 L8,112 Z" fill="#ffffff" opacity=".14"/><path d="M8.0,112.0 L38.4,43.4 L68.8,104.9 L99.2,110.8 L129.6,78.2 L160.0,37.1 L190.4,36.1 L220.8,74.8 L251.2,81.1 L281.6,8.0 L312.0,17.8" fill="none" stroke="#eb6834" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M8.0,98.6 L38.4,66.1 L68.8,100.0 L99.2,106.3 L129.6,97.8 L160.0,106.6 L190.4,104.0 L220.8,112.0 L251.2,109.7 L281.6,61.0 L312.0,8.0" fill="none" stroke="#1baf7a" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M8.0,77.8 L38.4,35.9 L68.8,112.0 L99.2,101.3 L129.6,90.3 L160.0,82.3 L190.4,58.5 L220.8,88.2 L251.2,96.3 L281.6,52.6 L312.0,8.0" fill="none" stroke="#eda100" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M8.0,42.7 L38.4,79.3 L68.8,70.6 L99.2,81.5 L129.6,92.2 L160.0,87.7 L190.4,112.0 L220.8,96.9 L251.2,49.9 L281.6,16.9 L312.0,8.0" fill="none" stroke="#6da7ec" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+    <div class="mod-ax"><span>1981</span><span>2026</span></div>
+    <div class="mod-leg"><span><i style="background:rgba(255,255,255,.35);height:8px"></i>Sièges aux extrémités</span><span><i style="background:#eb6834"></i>Agitation</span><span><i style="background:#1baf7a"></i>Disqualifications</span><span><i style="background:#eda100"></i>Insultes</span><span><i style="background:#6da7ec"></i>Recul de la politesse</span></div>
+  </div>
+</a>
 
   <section id="candidats" aria-labelledby="h-cand">
     <div class="sec-head">
