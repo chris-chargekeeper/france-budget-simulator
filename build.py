@@ -628,8 +628,11 @@ def fichiers_web(payload):
                "<changefreq>daily</changefreq><priority>0.4</priority></url>\n"
                + f"  <url><loc>{SITE}/resultats.json</loc><lastmod>{jour}</lastmod>"
                "<changefreq>daily</changefreq><priority>0.4</priority></url>\n"
+               # pages annexes : les mentions légales bougent peu ; le module « L'Assemblée à la loupe »
+               # (assemblee.html, étude produite à part et copiée telle quelle) est un contenu à part entière
                + "".join(f"  <url><loc>{SITE}/{f.name}</loc>"
-                         "<changefreq>yearly</changefreq><priority>0.2</priority></url>\n"
+                         + ("<changefreq>monthly</changefreq><priority>0.7</priority></url>\n" if f.name == "assemblee.html"
+                            else "<changefreq>yearly</changefreq><priority>0.2</priority></url>\n")
                          for f in sorted(PAGES.glob("*.html")))
                + "</urlset>\n")
     cands = [x for x in payload["parties"]["parties"] if not x.get("retire")]
@@ -677,6 +680,7 @@ Déficit et dette publics en 2032, avec les chiffrages indépendants (valeurs ce
 - [Comparatif des candidats]({SITE}/comparatif.html) : déficit, dette, effet net des mesures et emplois en 2032, pour tous les candidats.
 - Une page par candidat, avec chaque mesure, son chiffrage et ses sources : {", ".join(f"[{c['candidat']}]({c['page']})" for c in R["candidats"] if not c["horsCourse"])}.
 - [Résultats complets en texte]({SITE}/llms-full.txt) et [en JSON]({SITE}/resultats.json) ({pages_ia.LICENCE[0]}, en citant « quipaie2027.fr »).
+- [L'Assemblée à la loupe]({SITE}/assemblee.html) : 45 ans de débats de l'Assemblée nationale (1981-2026) mesurés avec la même règle pour tous les groupes — qui fait le bruit, comment le langage et la politesse ont évolué, et quelles explications tiennent face aux chiffres.
 - [Mentions légales]({SITE}/mentions-legales.html)
 """
     pages = {f.name: f.read_text(encoding="utf-8") for f in sorted(PAGES.glob("*.html"))}
