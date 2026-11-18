@@ -1,0 +1,32 @@
+{
+  "patch": {
+    "_comment": "Cohérence du 18 novembre 2026 : RN.retr62 recalé sur le plan retraites du 17 novembre (règles 1, 2 et 4 : candidate et porte-voix, plan le plus récent, coût en 2032). Les 10,1 Md€ nets de Jean-Philippe Tanguy valent 18,6 − 5,8 (plancher de 160 trimestres) − 2,7 (décote) : ils retranchent deux économies distinctes, hors catalogue ; le périmètre du retour à 62 ans est le coût brut.",
+    "releve": "2026-11-18",
+    "partis": {
+      "rn": {
+        "set": {
+          "retr62": {
+            "annonce": 18.6
+          }
+        },
+        "source": {
+          "t": "Public Sénat, « Présidentielle 2027 : que contient la réforme des retraites présentée par Marine Le Pen », 17 novembre 2026 (coût brut évalué par le RN à 18,6 Md€ en 2032)",
+          "u": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-11-18",
+    "applique": "2026-11-18",
+    "ajouts": [],
+    "revisions": [
+      {
+        "quoi": "parties.rn.set.retr62.annonce",
+        "avant": 13,
+        "apres": 18.6,
+        "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen"
+      }
+    ]
+  }
+}
