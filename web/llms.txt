@@ -2,7 +2,7 @@
 
 > Simulateur budgétaire neutre et gratuit pour l'élection présidentielle française de 2027. On choisit un candidat et on voit ce que son programme changerait au budget de la France d'ici 2032 : déficit public, dette publique, qui paie et qui reçoit, effets sur l'emploi, le chômage, la richesse par habitant et les taux d'intérêt, et l'écart entre ce que le candidat annonce et ce que donnent des chiffrages indépendants.
 
-Données au 2026-11-18, mises à jour chaque matin (veille des déclarations chiffrées, des chiffrages indépendants, des sondages et du contexte économique).
+Données au 2026-11-19, mises à jour chaque matin (veille des déclarations chiffrées, des chiffrages indépendants, des sondages et du contexte économique).
 
 ## Ce que fait le site
 
@@ -31,13 +31,13 @@ Données au 2026-11-18, mises à jour chaque matin (veille des déclarations chi
 - Jean-Luc Mélenchon : Programme publié le 6 novembre ; 106,4 Md€ de recettes chiffrées pour 2027
 - Bruno Retailleau : 197 Md€ d'économies par an en 2032, chiffrées poste par poste
 - Gabriel Attal : 150 Md€ d'économies sur le quinquennat
-- Édouard Philippe : Programme en ligne (15 thèmes, mis à jour le 12 novembre 2026), sans chiffrage d'ensemble
+- Édouard Philippe : Près de 150 Md€ d'économies annoncés, sans détail poste par poste
 - Raphaël Glucksmann : Contre-budget 2027 publié (39,5 Md€ de recettes), pas de chiffrage présidentiel
 - Marine Tondelier : Amendements chiffrés au budget 2027, pas de chiffrage présidentiel
 - David Lisnard : 200 Md€ d'économies d'ici 2032
 - Éric Zemmour : 280 Md€ d'économies par an en 2032
 
-## Résultats au 2026-11-18
+## Résultats au 2026-11-19
 
 Déficit et dette publics en 2032, avec les chiffrages indépendants (valeurs centrales), comme les affiche le simulateur :
 

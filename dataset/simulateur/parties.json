@@ -1,6 +1,6 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "avertissement": "Les candidatures ne seront officielles qu'après validation des parrainages par le Conseil constitutionnel, au printemps 2027. Le site suit les candidats déclarés ou investis qui pèsent dans les sondages ; la liste est revérifiée chaque matin. Les programmes 2027 sont pour la plupart non publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
@@ -418,11 +418,11 @@
       "statutCandidature": "Candidat déclaré depuis septembre 2024 ; refuse à nouveau toute primaire de la droite et du centre (« Je n'y participerai pas. Point. », La Tribune Dimanche, 15 novembre 2026), tout en acceptant de discuter avec Gérard Larcher d'un rassemblement",
       "statut": "reconstitution",
       "annonce": {
-        "titre": "Programme en ligne (15 thèmes, mis à jour le 12 novembre 2026), sans chiffrage d'ensemble",
-        "texte": "Édouard Philippe publie son programme thème par thème sur son site de campagne (15 thèmes, dernière mise à jour le 12 novembre 2026) ; il « s'écrit tout au long de la campagne » et n'a pas de chiffrage d'ensemble. Objectif : un déficit d'environ 2 % du PIB en fin de mandat, avec une règle d'or votée par référendum ; l'effort porterait pour moitié sur les dépenses sociales, pour un quart sur l'État et les collectivités, pour un quart sur la croissance. Simulé : retraite à 65 ans, un départ sur trois non remplacé, suppression d'agences, freinage des dépenses d'assurance maladie et des concours aux collectivités, chômage limité à 12 mois avant 50 ans, hausse de 20 % du salaire des enseignants, et le « pacte fiscal » : 50 Md€ d'impôts de production en moins contre 50 Md€ d'aides aux entreprises en moins. La baisse d'impôt est comptée à son montant ; les aides supprimées au haut de la fourchette des chiffrages (25 Md€), car le Sénat (211 Md€ d'aides, dont 75 d'allègements que Philippe ne touche pas) et le Haut-commissariat au plan ne trouvent pas 50 Md€ d'aides « improductives ». Restent hors du simulateur, faute de barème : l'allocation familiale unique de 350 € dès le premier enfant (dégressive, à la place des aides actuelles), l'impôt sur le revenu supprimé pendant les trois premières années de l'enfant, les heures au-delà de 35 h sans cotisations ni impôt, et 500 € sur un plan d'épargne retraite au premier emploi. Horizons a aussi publié le 13 octobre 2026 un « budget alternatif » au PLF 2027 (10 Md€ d'économies pour annuler 10 Md€ de hausses d'impôts).",
-        "revendique": null,
+        "titre": "Près de 150 Md€ d'économies annoncés, sans détail poste par poste",
+        "texte": "Édouard Philippe publie son programme thème par thème sur son site de campagne (volume 1 présenté le 18 novembre 2026). Il annonce désormais « près de 150 milliards d'économies » pour ramener le déficit sous 2,5 % du PIB à la fin du quinquennat, avec une règle d'or votée par référendum et aucun nouvel impôt pendant cinq ans, mais sans chiffrage poste par poste : le scénario reste un assemblage de ce simulateur. L'effort porterait pour moitié sur les dépenses sociales, pour un quart sur l'État et les collectivités, pour un quart sur la croissance. Simulé : retraite à 65 ans, un départ sur trois non remplacé, suppression d'agences, freinage des dépenses d'assurance maladie et des concours aux collectivités, chômage limité à 12 mois avant 50 ans, hausse de 20 % du salaire des enseignants, et le « pacte fiscal » : 50 Md€ d'impôts de production en moins contre 50 Md€ d'aides aux entreprises en moins. La baisse d'impôt est comptée à son montant ; les aides supprimées au haut de la fourchette des chiffrages (25 Md€), car le Sénat (211 Md€ d'aides, dont 75 d'allègements que Philippe ne touche pas) et le Haut-commissariat au plan ne trouvent pas 50 Md€ d'aides « improductives ». Restent hors du simulateur, faute de barème : l'allocation familiale unique de 350 € dès le premier enfant (dégressive, à la place des aides actuelles), l'impôt sur le revenu supprimé pendant les trois premières années de l'enfant, les heures au-delà de 35 h sans cotisations ni impôt, et 500 € sur un plan d'épargne retraite au premier emploi. Horizons a aussi publié le 13 octobre 2026 un « budget alternatif » au PLF 2027 (10 Md€ d'économies pour annuler 10 Md€ de hausses d'impôts).",
+        "revendique": 150,
         "detaille": null,
-        "cote": null
+        "cote": "economie"
       },
       "set": {
         "age65": {
@@ -478,6 +478,10 @@
         {
           "t": "La Tribune Dimanche — « Je n'y participerai pas. Point » : Édouard Philippe réaffirme son opposition à une primaire (15 novembre 2026)",
           "u": "https://www.latribune.fr/article/la-tribune-dimanche/politique/27804315725775/je-n-y-participerai-pas-point-edouard-philippe-reaffirme-son-opposition-a-une-primaire-de-la-droite-et-du-centre"
+        },
+        {
+          "t": "Édouard Philippe, programme en ligne, page « Finances publiques » (mise à jour du 18 novembre 2026) : « près de 150 milliards d'économies »",
+          "u": "https://www.edouardphilippe.fr/programme/comptes-publics"
         }
       ]
     },
@@ -886,6 +890,30 @@
   },
   "sondages": [
     {
+      "date": "2026-11-18",
+      "terrain_fin": "2026-11-16",
+      "scores": {
+        "rn": 34,
+        "lfi": 19,
+        "lr": 4,
+        "ren": 4,
+        "hor": 11,
+        "ps": 10,
+        "eco": 2.5,
+        "ne": 9,
+        "rec": 3
+      },
+      "source": {
+        "t": "Ifop-Fiducial pour TF1-LCI, Le Figaro et Sud Radio, intentions de vote à l'élection présidentielle, notice FD n° 122919 (Commission des sondages n° 10384, novembre 2026)",
+        "u": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2406"
+      },
+      "institut": "Ifop-Fiducial",
+      "terrain_debut": "2026-11-13",
+      "echantillon": 1690,
+      "hypothese": "Hypothèse avec quatre candidats de la droite et du centre (Attal, Philippe, Retailleau, Lisnard), sans Teddy Riner",
+      "commanditaire": "TF1-LCI, Le Figaro et Sud Radio"
+    },
+    {
       "institut": "Elabe",
       "terrain_debut": "2026-11-12",
       "terrain_fin": "2026-11-13",
@@ -981,30 +1009,6 @@
       }
     },
     {
-      "hypothese": "Attal, Philippe, Retailleau et Lisnard tous candidats",
-      "echantillon": 1501,
-      "terrain_debut": "2026-10-27",
-      "scores": {
-        "rn": 35,
-        "lfi": 18,
-        "lr": 4,
-        "ren": 5,
-        "hor": 9.5,
-        "ps": 10,
-        "eco": 3,
-        "ne": 7,
-        "rec": 4.5
-      },
-      "commanditaire": "LCI",
-      "terrain_fin": "2026-10-29",
-      "date": "2026-11-03",
-      "source": {
-        "t": "SONDAGE LCI - Présidentielle 2027 : à six mois du scrutin, un duel Le Pen-Mélenchon toujours plus vraisemblable",
-        "u": "https://www.tf1info.fr/politique/elections/presidentielle/sondage-lci-a-six-mois-de-la-presidentielle-2027-marine-le-pen-et-jean-luc-melenchon-sans-adversaires-au-premier-tour-philippe-attal-retailleau-lisnard-2473663.html"
-      },
-      "institut": "Ifop-Fiducial"
-    },
-    {
       "terrain_fin": "2026-10-22",
       "terrain_debut": "2026-10-21",
       "scores": {
@@ -1075,6 +1079,23 @@
     }
   ],
   "sondages_historique": [
+    {
+      "institut": "Ifop-Fiducial",
+      "commanditaire": "LCI",
+      "terrain_fin": "2026-10-29",
+      "scores": {
+        "rn": 35,
+        "lfi": 18,
+        "lr": 4,
+        "ren": 5,
+        "hor": 9.5,
+        "ps": 10,
+        "eco": 3,
+        "ne": 7,
+        "rec": 4.5
+      },
+      "u": "https://www.tf1info.fr/politique/elections/presidentielle/sondage-lci-a-six-mois-de-la-presidentielle-2027-marine-le-pen-et-jean-luc-melenchon-sans-adversaires-au-premier-tour-philippe-attal-retailleau-lisnard-2473663.html"
+    },
     {
       "institut": "Elabe",
       "commanditaire": "BFMTV et La Tribune Dimanche",
