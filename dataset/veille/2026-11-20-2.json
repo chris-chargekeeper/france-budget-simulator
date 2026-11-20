@@ -1,0 +1,48 @@
+{
+  "patch": {
+    "_comment": "Cohérence du 2026-11-20 : REN.blanche chiffrée 15 Md€ par Gabriel Attal (France 2, 19 nov.) ; detaille = 7 (hors catalogue) + 5 (chômage) + 15 (année blanche) = 27.",
+    "releve": "2026-11-20",
+    "partis": {
+      "ren": {
+        "set": {
+          "blanche": {
+            "annonce": 15
+          }
+        },
+        "annonce": {
+          "detaille": 27,
+          "texte": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Trois postes sont chiffrés : plus de 7 Md€ par an de réorganisation de l'État et des collectivités, 5 Md€ d'économies par la réduction de la durée d'indemnisation du chômage (Gabriel Attal, LCI, 12 novembre 2026) et 15 Md€ par une « année blanche » sur les dépenses de l'État la première année du mandat (Gabriel Attal, France 2, 19 novembre 2026). Le scénario est reconstitué par le simulateur à partir de ces orientations."
+        },
+        "source": {
+          "t": "Ce qu'il faut retenir de l'interview de Gabriel Attal dans « L'Heure de vérité » — franceinfo, 19 novembre 2026",
+          "u": "https://www.franceinfo.fr/politique/gabriel-attal/primaire-racisme-referendums-ia-ce-qu-il-faut-retenir-de-l-interview-de-gabriel-attal-dans-l-emission-l-heure-de-verite-sur-france-2_8290544.html"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-11-20",
+    "applique": "2026-11-20",
+    "ajouts": [],
+    "revisions": [
+      {
+        "quoi": "parties.ren.annonce.detaille",
+        "avant": 12,
+        "apres": 27,
+        "source": "https://www.franceinfo.fr/politique/gabriel-attal/primaire-racisme-referendums-ia-ce-qu-il-faut-retenir-de-l-interview-de-gabriel-attal-dans-l-emission-l-heure-de-verite-sur-france-2_8290544.html"
+      },
+      {
+        "quoi": "parties.ren.annonce.texte",
+        "avant": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Deux postes sont chiffrés : plus de 7 Md€ par an de réorganisation de l'État et des collectivités, et 5 Md€ d'économies par la réduction de la durée d'indemnisation du chômage (Gabriel Attal, LCI, 12 novembre 2026). Le scénario est reconstitué par le simulateur à partir de ces orientations.",
+        "apres": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Trois postes sont chiffrés : plus de 7 Md€ par an de réorganisation de l'État et des collectivités, 5 Md€ d'économies par la réduction de la durée d'indemnisation du chômage (Gabriel Attal, LCI, 12 novembre 2026) et 15 Md€ par une « année blanche » sur les dépenses de l'État la première année du mandat (Gabriel Attal, France 2, 19 novembre 2026). Le scénario est reconstitué par le simulateur à partir de ces orientations.",
+        "source": "https://www.franceinfo.fr/politique/gabriel-attal/primaire-racisme-referendums-ia-ce-qu-il-faut-retenir-de-l-interview-de-gabriel-attal-dans-l-emission-l-heure-de-verite-sur-france-2_8290544.html"
+      },
+      {
+        "quoi": "parties.ren.set.blanche.annonce",
+        "avant": null,
+        "apres": 15,
+        "source": "https://www.franceinfo.fr/politique/gabriel-attal/primaire-racisme-referendums-ia-ce-qu-il-faut-retenir-de-l-interview-de-gabriel-attal-dans-l-emission-l-heure-de-verite-sur-france-2_8290544.html"
+      }
+    ]
+  }
+}

@@ -1,11 +1,11 @@
 {
  "site": "https://quipaie2027.fr",
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "licence": {
   "nom": "Licence Ouverte / Open Licence 2.0 (Etalab)",
   "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
  },
- "citation": "quipaie2027.fr, données au 2026-11-19",
+ "citation": "quipaie2027.fr, données au 2026-11-20",
  "unites": {
   "deficit": "% du PIB (déficit public, signe positif)",
   "dette": "% du PIB",
@@ -19,13 +19,13 @@
   "croissance": 1,
   "inflation": 1.8,
   "derive": 0.7,
-  "tauxMarche": 4.91,
+  "tauxMarche": 4.88,
   "multiplicateur": 0.9,
   "erosion": 25
  },
  "siRienNeChange": {
   "deficit2032": 7.6,
-  "dette2032": 140.5,
+  "dette2032": 140.4,
   "trajectoire": [
    {
     "annee": 2025,
@@ -59,13 +59,13 @@
    },
    {
     "annee": 2031,
-    "deficitPct": 7.4,
+    "deficitPct": 7.3,
     "dettePct": 136.6
    },
    {
     "annee": 2032,
     "deficitPct": 7.6,
-    "dettePct": 140.5
+    "dettePct": 140.4
    }
   ]
  },
@@ -85,9 +85,9 @@
     "detaille": 82.4
    },
    "deficit2032": 7.5,
-   "dette2032": 140.1,
-   "deficit2032Promesses": 6.2,
-   "dette2032Promesses": 134.9,
+   "dette2032": 140,
+   "deficit2032Promesses": 6.1,
+   "dette2032Promesses": 134.8,
    "effetNet2032": 3.4,
    "effetNet2032Promesses": 46.8,
    "trajectoire": [
@@ -114,11 +114,11 @@
     {
      "annee": 2029,
      "deficitPct": 6.7,
-     "dettePct": 129.6
+     "dettePct": 129.5
     },
     {
      "annee": 2030,
-     "deficitPct": 7,
+     "deficitPct": 6.9,
      "dettePct": 132.8
     },
     {
@@ -129,7 +129,7 @@
     {
      "annee": 2032,
      "deficitPct": 7.5,
-     "dettePct": 140.1
+     "dettePct": 140
     }
    ],
    "effets2032": {
@@ -362,8 +362,8 @@
     "revendique": 106.4,
     "detaille": 106.4
    },
-   "deficit2032": 10.1,
-   "dette2032": 149,
+   "deficit2032": 10,
+   "dette2032": 148.9,
    "deficit2032Promesses": 8.4,
    "dette2032Promesses": 142.6,
    "effetNet2032": -88.8,
@@ -382,7 +382,7 @@
     {
      "annee": 2027,
      "deficitPct": 6.8,
-     "dettePct": 121.8
+     "dettePct": 121.7
     },
     {
      "annee": 2028,
@@ -396,18 +396,18 @@
     },
     {
      "annee": 2030,
-     "deficitPct": 9,
-     "dettePct": 136.4
+     "deficitPct": 8.9,
+     "dettePct": 136.3
     },
     {
      "annee": 2031,
      "deficitPct": 9.5,
-     "dettePct": 142.6
+     "dettePct": 142.5
     },
     {
      "annee": 2032,
-     "deficitPct": 10.1,
-     "dettePct": 149
+     "deficitPct": 10,
+     "dettePct": 148.9
     }
    ],
    "effets2032": {
@@ -962,9 +962,9 @@
     "detaille": 133.5
    },
    "deficit2032": 6.8,
-   "dette2032": 138.4,
+   "dette2032": 138.3,
    "deficit2032Promesses": 5.8,
-   "dette2032Promesses": 134.8,
+   "dette2032Promesses": 134.7,
    "effetNet2032": 32,
    "effetNet2032Promesses": 68.5,
    "trajectoire": [
@@ -981,7 +981,7 @@
     {
      "annee": 2027,
      "deficitPct": 6.5,
-     "dettePct": 123.2
+     "dettePct": 123.1
     },
     {
      "annee": 2028,
@@ -996,7 +996,7 @@
     {
      "annee": 2030,
      "deficitPct": 6.6,
-     "dettePct": 132.3
+     "dettePct": 132.2
     },
     {
      "annee": 2031,
@@ -1006,7 +1006,7 @@
     {
      "annee": 2032,
      "deficitPct": 6.8,
-     "dettePct": 138.4
+     "dettePct": 138.3
     }
    ],
    "effets2032": {
@@ -1244,16 +1244,16 @@
    "statutChiffrage": "reconstitution",
    "annonce": {
     "titre": "150 Md€ d'économies sur le quinquennat",
-    "texte": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Deux postes sont chiffrés : plus de 7 Md€ par an de réorganisation de l'État et des collectivités, et 5 Md€ d'économies par la réduction de la durée d'indemnisation du chômage (Gabriel Attal, LCI, 12 novembre 2026). Le scénario est reconstitué par le simulateur à partir de ces orientations.",
+    "texte": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Trois postes sont chiffrés : plus de 7 Md€ par an de réorganisation de l'État et des collectivités, 5 Md€ d'économies par la réduction de la durée d'indemnisation du chômage (Gabriel Attal, LCI, 12 novembre 2026) et 15 Md€ par une « année blanche » sur les dépenses de l'État la première année du mandat (Gabriel Attal, France 2, 19 novembre 2026). Le scénario est reconstitué par le simulateur à partir de ces orientations.",
     "revendique": 150,
-    "detaille": 12
+    "detaille": 27
    },
    "deficit2032": 6.9,
-   "dette2032": 137.6,
-   "deficit2032Promesses": 6.8,
-   "dette2032Promesses": 137.4,
+   "dette2032": 137.5,
+   "deficit2032Promesses": 6.6,
+   "dette2032Promesses": 136.2,
    "effetNet2032": 24,
-   "effetNet2032Promesses": 25,
+   "effetNet2032Promesses": 33,
    "trajectoire": [
     {
      "annee": 2025,
@@ -1273,7 +1273,7 @@
     {
      "annee": 2028,
      "deficitPct": 6.2,
-     "dettePct": 125.9
+     "dettePct": 125.8
     },
     {
      "annee": 2029,
@@ -1283,17 +1283,17 @@
     {
      "annee": 2030,
      "deficitPct": 6.5,
-     "dettePct": 131.5
+     "dettePct": 131.4
     },
     {
      "annee": 2031,
-     "deficitPct": 6.7,
+     "deficitPct": 6.6,
      "dettePct": 134.4
     },
     {
      "annee": 2032,
      "deficitPct": 6.9,
-     "dettePct": 137.6
+     "dettePct": 137.5
     }
    ],
    "effets2032": {
@@ -1336,7 +1336,7 @@
      "bas": 5,
      "centre": 7,
      "haut": 10,
-     "annonce": null,
+     "annonce": 15,
      "montee": 1,
      "effet2032": 7,
      "note": "Économie immédiate et large, mais non reconductible indéfiniment : elle se rattrape en partie l'année suivante.",
@@ -1451,6 +1451,10 @@
     {
      "t": "TF1info — Gabriel Attal face aux petits patrons sur LCI (12 novembre 2026)",
      "u": "https://www.tf1info.fr/politique/elections/presidentielle/gabriel-attal-face-aux-petits-patrons-sur-lci-si-on-veut-que-les-salaires-augmentent-durablement-il-faut-qu-on-ait-une-economie-plus-prospere-2475543.html"
+    },
+    {
+     "t": "Ce qu'il faut retenir de l'interview de Gabriel Attal dans « L'Heure de vérité » — franceinfo, 19 novembre 2026",
+     "u": "https://www.franceinfo.fr/politique/gabriel-attal/primaire-racisme-referendums-ia-ce-qu-il-faut-retenir-de-l-interview-de-gabriel-attal-dans-l-emission-l-heure-de-verite-sur-france-2_8290544.html"
     }
    ],
    "page": "https://quipaie2027.fr/candidat-gabriel-attal.html"
@@ -1470,9 +1474,9 @@
     "detaille": null
    },
    "deficit2032": 7.5,
-   "dette2032": 141.7,
+   "dette2032": 141.6,
    "deficit2032Promesses": 6.7,
-   "dette2032Promesses": 138.8,
+   "dette2032Promesses": 138.7,
    "effetNet2032": 11,
    "effetNet2032Promesses": 36,
    "trajectoire": [
@@ -1499,22 +1503,22 @@
     {
      "annee": 2029,
      "deficitPct": 7,
-     "dettePct": 131.3
+     "dettePct": 131.2
     },
     {
      "annee": 2030,
      "deficitPct": 7.1,
-     "dettePct": 134.6
+     "dettePct": 134.5
     },
     {
      "annee": 2031,
      "deficitPct": 7.3,
-     "dettePct": 138.1
+     "dettePct": 138
     },
     {
      "annee": 2032,
      "deficitPct": 7.5,
-     "dettePct": 141.7
+     "dettePct": 141.6
     }
    ],
    "effets2032": {
@@ -1790,9 +1794,9 @@
     "detaille": null
    },
    "deficit2032": 7.7,
-   "dette2032": 140.3,
-   "deficit2032Promesses": 7.4,
-   "dette2032Promesses": 138.7,
+   "dette2032": 140.2,
+   "deficit2032Promesses": 7.3,
+   "dette2032Promesses": 138.6,
    "effetNet2032": -4.6,
    "effetNet2032Promesses": 5.3,
    "trajectoire": [
@@ -1829,12 +1833,12 @@
     {
      "annee": 2031,
      "deficitPct": 7.4,
-     "dettePct": 136.2
+     "dettePct": 136.1
     },
     {
      "annee": 2032,
      "deficitPct": 7.7,
-     "dettePct": 140.3
+     "dettePct": 140.2
     }
    ],
    "effets2032": {
@@ -2028,7 +2032,7 @@
    "parti": "Les Écologistes",
    "sigle": "ÉCO",
    "horsCourse": false,
-   "statutCandidature": "Candidate ; « prête à rejoindre une coalition » de gauche et fera campagne pour un autre candidat si son parti le décide (BFMTV, 12 novembre 2026) ; les adhérents votent du 10 au 13 décembre 2026",
+   "statutCandidature": "Candidate ; s'est dite prête à travailler à une coalition avec La France insoumise, à quoi Jean-Luc Mélenchon a répondu « ça devrait pouvoir se faire » (RTL, 19 novembre 2026) ; les adhérents votent du 10 au 13 décembre 2026",
    "statutChiffrage": "reconstitution",
    "annonce": {
     "titre": "Amendements chiffrés au budget 2027, pas de chiffrage présidentiel",
@@ -2036,10 +2040,10 @@
     "revendique": null,
     "detaille": null
    },
-   "deficit2032": 7.9,
-   "dette2032": 141,
+   "deficit2032": 7.8,
+   "dette2032": 140.9,
    "deficit2032Promesses": 7.7,
-   "dette2032Promesses": 140.5,
+   "dette2032Promesses": 140.4,
    "effetNet2032": -10.5,
    "effetNet2032Promesses": -6.6,
    "trajectoire": [
@@ -2066,22 +2070,22 @@
     {
      "annee": 2029,
      "deficitPct": 6.9,
-     "dettePct": 128.8
+     "dettePct": 128.7
     },
     {
      "annee": 2030,
-     "deficitPct": 7.3,
+     "deficitPct": 7.2,
      "dettePct": 132.6
     },
     {
      "annee": 2031,
-     "deficitPct": 7.6,
+     "deficitPct": 7.5,
      "dettePct": 136.7
     },
     {
      "annee": 2032,
-     "deficitPct": 7.9,
-     "dettePct": 141
+     "deficitPct": 7.8,
+     "dettePct": 140.9
     }
    ],
    "effets2032": {
@@ -2284,6 +2288,10 @@
     {
      "t": "franceinfo — Marine Tondelier promet l'ouverture de 2 000 centres de santé d'ici 2030 (12 novembre 2026)",
      "u": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-marine-tondelier-promet-l-ouverture-de-2-000-centres-de-sante-d-ici-2030-en-france_8279639.html"
+    },
+    {
+     "t": "« Ça devrait pouvoir se faire » : Jean-Luc Mélenchon salue la main tendue de Marine Tondelier — RTL, 19 novembre 2026",
+     "u": "https://www.rtl.fr/actu/politique/ca-devrait-pouvoir-se-faire-jean-luc-melenchon-salue-la-main-tendue-par-marine-tondelier-pour-la-presidentielle-plutot-une-bonne-nouvelle-7900698435"
     }
    ],
    "page": "https://quipaie2027.fr/candidat-marine-tondelier.html"
@@ -2303,9 +2311,9 @@
     "detaille": null
    },
    "deficit2032": 7.3,
-   "dette2032": 138.8,
+   "dette2032": 138.7,
    "deficit2032Promesses": 7.3,
-   "dette2032Promesses": 138.8,
+   "dette2032Promesses": 138.7,
    "effetNet2032": 9.4,
    "effetNet2032Promesses": 9.4,
    "trajectoire": [
@@ -2327,7 +2335,7 @@
     {
      "annee": 2028,
      "deficitPct": 6.2,
-     "dettePct": 125.6
+     "dettePct": 125.5
     },
     {
      "annee": 2029,
@@ -2337,7 +2345,7 @@
     {
      "annee": 2030,
      "deficitPct": 6.8,
-     "dettePct": 131.8
+     "dettePct": 131.7
     },
     {
      "annee": 2031,
@@ -2347,7 +2355,7 @@
     {
      "annee": 2032,
      "deficitPct": 7.3,
-     "dettePct": 138.8
+     "dettePct": 138.7
     }
    ],
    "effets2032": {
@@ -2632,9 +2640,9 @@
     "detaille": 2.5
    },
    "deficit2032": 6.8,
-   "dette2032": 138.1,
-   "deficit2032Promesses": 6.8,
-   "dette2032Promesses": 138,
+   "dette2032": 138,
+   "deficit2032Promesses": 6.7,
+   "dette2032Promesses": 137.9,
    "effetNet2032": 30.3,
    "effetNet2032Promesses": 31.8,
    "trajectoire": [
@@ -2661,7 +2669,7 @@
     {
      "annee": 2029,
      "deficitPct": 6.4,
-     "dettePct": 129.5
+     "dettePct": 129.4
     },
     {
      "annee": 2030,
@@ -2671,12 +2679,12 @@
     {
      "annee": 2031,
      "deficitPct": 6.6,
-     "dettePct": 135.1
+     "dettePct": 135
     },
     {
      "annee": 2032,
      "deficitPct": 6.8,
-     "dettePct": 138.1
+     "dettePct": 138
     }
    ],
    "effets2032": {
@@ -2905,9 +2913,9 @@
     "detaille": 90
    },
    "deficit2032": 6.6,
-   "dette2032": 137.4,
-   "deficit2032Promesses": 5.4,
-   "dette2032Promesses": 132.7,
+   "dette2032": 137.3,
+   "deficit2032Promesses": 5.3,
+   "dette2032Promesses": 132.6,
    "effetNet2032": 36.8,
    "effetNet2032Promesses": 80.1,
    "trajectoire": [
@@ -2928,7 +2936,7 @@
     },
     {
      "annee": 2028,
-     "deficitPct": 6.3,
+     "deficitPct": 6.2,
      "dettePct": 125.9
     },
     {
@@ -2949,7 +2957,7 @@
     {
      "annee": 2032,
      "deficitPct": 6.6,
-     "dettePct": 137.4
+     "dettePct": 137.3
     }
    ],
    "effets2032": {

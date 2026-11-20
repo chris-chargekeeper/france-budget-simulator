@@ -1,6 +1,6 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "avertissement": "Les candidatures ne seront officielles qu'après validation des parrainages par le Conseil constitutionnel, au printemps 2027. Le site suit les candidats déclarés ou investis qui pèsent dans les sondages ; la liste est revérifiée chaque matin. Les programmes 2027 sont pour la plupart non publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
@@ -355,9 +355,9 @@
       "statut": "reconstitution",
       "annonce": {
         "titre": "150 Md€ d'économies sur le quinquennat",
-        "texte": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Deux postes sont chiffrés : plus de 7 Md€ par an de réorganisation de l'État et des collectivités, et 5 Md€ d'économies par la réduction de la durée d'indemnisation du chômage (Gabriel Attal, LCI, 12 novembre 2026). Le scénario est reconstitué par le simulateur à partir de ces orientations.",
+        "texte": "Lettre aux Français du 15 octobre 2026 : frein d'urgence de 20 Md€ dès l'élection, puis « 150 milliards d'euros d'économies sur le quinquennat », dont deux tiers sur les dépenses sociales (arrêts maladie, assurance chômage, retraites) ; Sécurité sociale à l'équilibre en trois ans, déficit sous 3 % avant 2032, équilibre en 2037. La lettre ne précise pas si les 150 Md€ sont annuels ou cumulés. Trois postes sont chiffrés : plus de 7 Md€ par an de réorganisation de l'État et des collectivités, 5 Md€ d'économies par la réduction de la durée d'indemnisation du chômage (Gabriel Attal, LCI, 12 novembre 2026) et 15 Md€ par une « année blanche » sur les dépenses de l'État la première année du mandat (Gabriel Attal, France 2, 19 novembre 2026). Le scénario est reconstitué par le simulateur à partir de ces orientations.",
         "revendique": 150,
-        "detaille": 12,
+        "detaille": 27,
         "cote": "economie",
         "horsCatalogue": {
           "v": 7,
@@ -371,7 +371,8 @@
       },
       "set": {
         "blanche": {
-          "sim": "mid"
+          "sim": "mid",
+          "annonce": 15
         },
         "ondam": {
           "sim": "mid"
@@ -405,6 +406,10 @@
         {
           "t": "TF1info — Gabriel Attal face aux petits patrons sur LCI (12 novembre 2026)",
           "u": "https://www.tf1info.fr/politique/elections/presidentielle/gabriel-attal-face-aux-petits-patrons-sur-lci-si-on-veut-que-les-salaires-augmentent-durablement-il-faut-qu-on-ait-une-economie-plus-prospere-2475543.html"
+        },
+        {
+          "t": "Ce qu'il faut retenir de l'interview de Gabriel Attal dans « L'Heure de vérité » — franceinfo, 19 novembre 2026",
+          "u": "https://www.franceinfo.fr/politique/gabriel-attal/primaire-racisme-referendums-ia-ce-qu-il-faut-retenir-de-l-interview-de-gabriel-attal-dans-l-emission-l-heure-de-verite-sur-france-2_8290544.html"
         }
       ]
     },
@@ -551,7 +556,7 @@
       "candidat": "Marine Tondelier",
       "avatar": "f",
       "couleur": "#4C9A54",
-      "statutCandidature": "Candidate ; « prête à rejoindre une coalition » de gauche et fera campagne pour un autre candidat si son parti le décide (BFMTV, 12 novembre 2026) ; les adhérents votent du 10 au 13 décembre 2026",
+      "statutCandidature": "Candidate ; s'est dite prête à travailler à une coalition avec La France insoumise, à quoi Jean-Luc Mélenchon a répondu « ça devrait pouvoir se faire » (RTL, 19 novembre 2026) ; les adhérents votent du 10 au 13 décembre 2026",
       "statut": "reconstitution",
       "annonce": {
         "titre": "Amendements chiffrés au budget 2027, pas de chiffrage présidentiel",
@@ -604,6 +609,10 @@
         {
           "t": "franceinfo — Marine Tondelier promet l'ouverture de 2 000 centres de santé d'ici 2030 (12 novembre 2026)",
           "u": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-marine-tondelier-promet-l-ouverture-de-2-000-centres-de-sante-d-ici-2030-en-france_8279639.html"
+        },
+        {
+          "t": "« Ça devrait pouvoir se faire » : Jean-Luc Mélenchon salue la main tendue de Marine Tondelier — RTL, 19 novembre 2026",
+          "u": "https://www.rtl.fr/actu/politique/ca-devrait-pouvoir-se-faire-jean-luc-melenchon-salue-la-main-tendue-par-marine-tondelier-pour-la-presidentielle-plutot-une-bonne-nouvelle-7900698435"
         }
       ]
     },
@@ -748,9 +757,9 @@
         }
       ],
       "calcul": {
-        "date": "2026-11-18",
-        "deficit2032": 7.28,
-        "dette2032": 138.8,
+        "date": "2026-11-20",
+        "deficit2032": 7.26,
+        "dette2032": 138.7,
         "economies": 0.1,
         "recettes": 21.6,
         "depenses": 4.2,
@@ -889,6 +898,30 @@
     "note": "Le ministère de l'Intérieur publie, une fois les candidatures validées par le Conseil constitutionnel, la profession de foi et le programme officiel de chaque candidat. C'est la seule source de rang officiel pour un programme : dès sa mise en ligne, elle remplace ici toute reprise de presse, et les scénarios « reconstitution » sont rebâtis à partir d'elle. Non disponible à ce jour pour 2027 : publication attendue après la liste officielle des candidats, au plus tard le 26 mars 2027 (premier tour le 18 avril 2027)."
   },
   "sondages": [
+    {
+      "echantillon": 1030,
+      "scores": {
+        "rn": 32,
+        "lfi": 19,
+        "lr": 6,
+        "ren": 5,
+        "hor": 8,
+        "ps": 9,
+        "eco": 4,
+        "ne": 9,
+        "rec": 3
+      },
+      "institut": "YouGov",
+      "source": {
+        "t": "YouGov pour Le HuffPost, intentions de vote à l'élection présidentielle, novembre 2026 (notice Commission des sondages n° 10382)",
+        "u": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2410"
+      },
+      "hypothese": "Hypothèse 1 : douze candidats dont les neuf suivis, sans Teddy Riner (Le Pen pour le RN) ; résultats pondérés",
+      "commanditaire": "Le HuffPost",
+      "terrain_debut": "2026-11-12",
+      "date": "2026-11-19",
+      "terrain_fin": "2026-11-17"
+    },
     {
       "date": "2026-11-18",
       "terrain_fin": "2026-11-16",
@@ -1032,30 +1065,6 @@
       "hypothese": "Hypothèse Gabriel Attal et Édouard Philippe"
     },
     {
-      "terrain_fin": "2026-10-15",
-      "terrain_debut": "2026-10-12",
-      "scores": {
-        "rn": 35,
-        "lfi": 13,
-        "lr": 5,
-        "ren": 6,
-        "hor": 8,
-        "ps": 12,
-        "eco": 5,
-        "ne": 4,
-        "rec": 4
-      },
-      "date": "2026-10-18",
-      "institut": "YouGov",
-      "echantillon": 1094,
-      "source": {
-        "t": "Notice YouGov pour Le HuffPost, Commission des sondages (n° 10323)",
-        "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10323-pres-iv-yougov-le-huffpost-18-octobre.pdf"
-      },
-      "commanditaire": "Le HuffPost",
-      "hypothese": "Hypothèse 5"
-    },
-    {
       "date": "2026-10-14",
       "terrain_debut": "2026-09-24",
       "commanditaire": "Backbone, Public Sénat, la presse régionale et Le Nouvel Obs",
@@ -1079,6 +1088,23 @@
     }
   ],
   "sondages_historique": [
+    {
+      "institut": "YouGov",
+      "commanditaire": "Le HuffPost",
+      "terrain_fin": "2026-10-15",
+      "scores": {
+        "rn": 35,
+        "lfi": 13,
+        "lr": 5,
+        "ren": 6,
+        "hor": 8,
+        "ps": 12,
+        "eco": 5,
+        "ne": 4,
+        "rec": 4
+      },
+      "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10323-pres-iv-yougov-le-huffpost-18-octobre.pdf"
+    },
     {
       "institut": "Ifop-Fiducial",
       "commanditaire": "LCI",

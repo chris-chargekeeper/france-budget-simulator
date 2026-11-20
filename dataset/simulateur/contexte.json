@@ -1,6 +1,6 @@
 {
   "_comment": "Contexte macroéconomique et financier, tenu à jour par la veille quotidienne. Chaque indicateur porte une valeur, une date et une source. `hypothese` (réglé à la main) relie un indicateur à une hypothèse du simulateur, qui remplace alors la valeur par défaut : rmkt (taux d'emprunt à 10 ans), g (croissance en volume), infl (inflation). `bornes` (réglé à la main) refuse une valeur invraisemblable. L'ancienne valeur part dans `historique` : rien ne s'efface.",
-  "updated": "2026-11-18",
+  "updated": "2026-11-20",
   "avertissement": "Trois valeurs nourrissent le calcul : le taux à 10 ans remplace l'hypothèse de taux de marché, la croissance et l'inflation prévues pour 2027 sont prolongées jusqu'en 2032. Elles restent réglables en mode avancé.",
   "indicateurs": [
     {
@@ -9,6 +9,11 @@
       "unite": "%",
       "groupe": "marches",
       "historique": [
+        {
+          "valeur": 4.91,
+          "date": "2026-11-17",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        },
         {
           "valeur": 4.93,
           "date": "2026-11-16",
@@ -65,12 +70,12 @@
           "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
         }
       ],
-      "valeur": 4.91,
-      "date": "2026-11-17",
-      "detail": "OAT 10 ans à 4,91 % à la clôture du 17 novembre (4,93 % le 16, 4,89 % le 13) ; Bund à 3,35 %.",
+      "valeur": 4.88,
+      "date": "2026-11-19",
+      "detail": "TEC 10 de la Banque de France à 4,884 % le 19 novembre (4,836 % le 18, 4,913 % le 17).",
       "source": {
-        "t": "Écart OAT 10 ans / Bund — données Banque de France et Bundesbank, Idéal Investisseur (clôture du 17 novembre 2026)",
-        "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        "t": "Banque de France — indices obligataires TEC du 19 novembre 2026",
+        "u": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-19"
       },
       "hypothese": "rmkt",
       "bornes": [
