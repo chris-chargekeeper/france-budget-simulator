@@ -628,7 +628,7 @@
       "horsCourse": true,
       "annonce": {
         "titre": "Un budget calculé, pas promis",
-        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 58 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,3 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+        "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 58 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,2 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
         "revendique": null,
         "detaille": null,
         "cote": null
@@ -757,8 +757,8 @@
         }
       ],
       "calcul": {
-        "date": "2026-11-20",
-        "deficit2032": 7.26,
+        "date": "2026-11-21",
+        "deficit2032": 7.25,
         "dette2032": 138.7,
         "economies": 0.1,
         "recettes": 21.6,

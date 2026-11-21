@@ -1,4 +1,4 @@
-# quipaie2027.fr — résultats complets (données au 2026-11-20)
+# quipaie2027.fr — résultats complets (données au 2026-11-21)
 
 > Simulateur budgétaire neutre de la présidentielle 2027. Pour chaque candidat : déficit et dette publics en 2032, effets sur l'emploi et le chômage, et chaque mesure avec son chiffrage. Même moteur et mêmes hypothèses que la page ; mêmes règles pour tous les candidats.
 
@@ -12,7 +12,7 @@ Déficit public de 7,6 % du PIB et dette de 140,4 % du PIB en 2032.
 
 Page : https://quipaie2027.fr/candidat-marine-le-pen.html
 
-Le programme de Marine Le Pen (Rassemblement national) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-20) et avec les chiffrages indépendants, à un déficit public de 7,5 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 140,0 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 6,1 % du PIB : l'écart vient de mesures que le parti chiffre à +46,8 Md€ par an en 2032, quand les chiffrages indépendants donnent +3,4 Md€.
+Le programme de Marine Le Pen (Rassemblement national) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-21) et avec les chiffrages indépendants, à un déficit public de 7,5 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 140,0 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 6,1 % du PIB : l'écart vient de mesures que le parti chiffre à +46,8 Md€ par an en 2032, quand les chiffrages indépendants donnent +3,4 Md€.
 
 - Statut : Programme en partie chiffré par le parti, complété par le simulateur
 - Candidature : Candidate ; éligible après l'arrêt d'appel du 7 juillet 2026 ; Jordan Bardella la soutient
@@ -36,7 +36,7 @@ Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par
 
 Page : https://quipaie2027.fr/candidat-jean-luc-melenchon.html
 
-Le programme de Jean-Luc Mélenchon (La France insoumise) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-20) et avec les chiffrages indépendants, à un déficit public de 10,0 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 148,9 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 8,4 % du PIB : l'écart vient de mesures que le parti chiffre à −32,0 Md€ par an en 2032, quand les chiffrages indépendants donnent −88,8 Md€.
+Le programme de Jean-Luc Mélenchon (La France insoumise) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-21) et avec les chiffrages indépendants, à un déficit public de 10,0 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 148,8 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 8,4 % du PIB : l'écart vient de mesures que le parti chiffre à −32,0 Md€ par an en 2032, quand les chiffrages indépendants donnent −88,8 Md€.
 
 - Statut : Programme en partie chiffré par le parti, complété par le simulateur
 - Candidature : Candidat déclaré (3 mai 2026) ; programme officiel L'Avenir en commun 2027 publié le 6 novembre 2026 (1 069 mesures) ; chiffrage d'ensemble annoncé pour le début de 2027
@@ -75,7 +75,7 @@ Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par
 
 Page : https://quipaie2027.fr/candidat-bruno-retailleau.html
 
-Le programme de Bruno Retailleau (Les Républicains) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-20) et avec les chiffrages indépendants, à un déficit public de 6,8 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 138,3 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 5,8 % du PIB : l'écart vient de mesures que le parti chiffre à +68,5 Md€ par an en 2032, quand les chiffrages indépendants donnent +32,0 Md€.
+Le programme de Bruno Retailleau (Les Républicains) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-21) et avec les chiffrages indépendants, à un déficit public de 6,8 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 138,3 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 5,7 % du PIB : l'écart vient de mesures que le parti chiffre à +68,5 Md€ par an en 2032, quand les chiffrages indépendants donnent +32,0 Md€.
 
 - Statut : Programme en partie chiffré par le parti, complété par le simulateur
 - Candidature : Investi par les militants LR (19 avril 2026) ; propose par lettre à Attal, Philippe et Lisnard une primaire de la droite et du centre les 31 janvier et 7 février 2027 (10 novembre 2026), Philippe y reste opposé
@@ -99,7 +99,7 @@ Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par
 
 Page : https://quipaie2027.fr/candidat-gabriel-attal.html
 
-Le programme de Gabriel Attal (Renaissance) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-20) et avec les chiffrages indépendants, à un déficit public de 6,9 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 137,5 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 6,6 % du PIB : l'écart vient de mesures que le parti chiffre à +33,0 Md€ par an en 2032, quand les chiffrages indépendants donnent +24,0 Md€.
+Le programme de Gabriel Attal (Renaissance) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-21) et avec les chiffrages indépendants, à un déficit public de 6,8 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 137,5 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 6,6 % du PIB : l'écart vient de mesures que le parti chiffre à +33,0 Md€ par an en 2032, quand les chiffrages indépendants donnent +24,0 Md€.
 
 - Statut : Scénario reconstitué par le site : le parti n'a pas publié de chiffrage, les mesures sont tirées de ses positions publiques
 - Candidature : Candidat déclaré (22 mai 2026) ; appelle à « une grande primaire des démocrates »
@@ -120,7 +120,7 @@ Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par
 
 Page : https://quipaie2027.fr/candidat-edouard-philippe.html
 
-Le programme de Édouard Philippe (Horizons) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-20) et avec les chiffrages indépendants, à un déficit public de 7,5 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 141,6 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 6,7 % du PIB : l'écart vient de mesures que le parti chiffre à +36,0 Md€ par an en 2032, quand les chiffrages indépendants donnent +11,0 Md€.
+Le programme de Édouard Philippe (Horizons) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-21) et avec les chiffrages indépendants, à un déficit public de 7,4 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 141,6 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 6,7 % du PIB : l'écart vient de mesures que le parti chiffre à +36,0 Md€ par an en 2032, quand les chiffrages indépendants donnent +11,0 Md€.
 
 - Statut : Scénario reconstitué par le site : le parti n'a pas publié de chiffrage, les mesures sont tirées de ses positions publiques
 - Candidature : Candidat déclaré depuis septembre 2024 ; refuse à nouveau toute primaire de la droite et du centre (« Je n'y participerai pas. Point. », La Tribune Dimanche, 15 novembre 2026), tout en acceptant de discuter avec Gérard Larcher d'un rassemblement
@@ -144,7 +144,7 @@ Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par
 
 Page : https://quipaie2027.fr/candidat-raphael-glucksmann.html
 
-Le programme de Raphaël Glucksmann (Parti socialiste / Place publique) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-20) et avec les chiffrages indépendants, à un déficit public de 7,7 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 140,2 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 7,3 % du PIB : l'écart vient de mesures que le parti chiffre à +5,3 Md€ par an en 2032, quand les chiffrages indépendants donnent −4,6 Md€.
+Le programme de Raphaël Glucksmann (Parti socialiste / Place publique) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-21) et avec les chiffrages indépendants, à un déficit public de 7,6 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 140,1 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 7,3 % du PIB : l'écart vient de mesures que le parti chiffre à +5,3 Md€ par an en 2032, quand les chiffrages indépendants donnent −4,6 Md€.
 
 - Statut : Scénario reconstitué par le site : le parti n'a pas publié de chiffrage, les mesures sont tirées de ses positions publiques
 - Candidature : Investi : vainqueur de la primaire PS – Place publique – GRS dès le premier tour (66 %, 11 octobre 2026)
@@ -167,7 +167,7 @@ Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par
 
 Page : https://quipaie2027.fr/candidat-marine-tondelier.html
 
-Le programme de Marine Tondelier (Les Écologistes) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-20) et avec les chiffrages indépendants, à un déficit public de 7,8 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 140,9 % du PIB.
+Le programme de Marine Tondelier (Les Écologistes) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-21) et avec les chiffrages indépendants, à un déficit public de 7,8 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 140,8 % du PIB.
 
 - Statut : Scénario reconstitué par le site : le parti n'a pas publié de chiffrage, les mesures sont tirées de ses positions publiques
 - Candidature : Candidate ; s'est dite prête à travailler à une coalition avec La France insoumise, à quoi Jean-Luc Mélenchon a répondu « ça devrait pouvoir se faire » (RTL, 19 novembre 2026) ; les adhérents votent du 10 au 13 décembre 2026
@@ -189,7 +189,7 @@ Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par
 
 Page : https://quipaie2027.fr/budget-apolitique.html
 
-Le budget apolitique calculé par une intelligence artificielle conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-20) et avec les chiffrages indépendants, à un déficit public de 7,3 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 138,7 % du PIB.
+Le budget apolitique calculé par une intelligence artificielle conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-21) et avec les chiffrages indépendants, à un déficit public de 7,2 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 138,7 % du PIB.
 
 - Statut : Budget calculé par une intelligence artificielle, hors course : ce n'est le programme de personne
 - Candidature : Pas un candidat : un budget calculé par l'intelligence artificielle, à partir des chiffrages publiés
@@ -216,7 +216,7 @@ Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par
 
 Page : https://quipaie2027.fr/candidat-david-lisnard.html
 
-Le programme de David Lisnard (Nouvelle Énergie) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-20) et avec les chiffrages indépendants, à un déficit public de 6,8 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 138,0 % du PIB.
+Le programme de David Lisnard (Nouvelle Énergie) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-21) et avec les chiffrages indépendants, à un déficit public de 6,8 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 138,0 % du PIB.
 
 - Statut : Programme en partie chiffré par le parti, complété par le simulateur
 - Candidature : Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite et en accepte le principe proposé par Bruno Retailleau (10 novembre 2026)
@@ -241,7 +241,7 @@ Mesures (effet sur le solde en 2032 ; fourchette publiée ; montant annoncé par
 
 Page : https://quipaie2027.fr/candidat-eric-zemmour.html
 
-Le programme de Éric Zemmour (Reconquête) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-20) et avec les chiffrages indépendants, à un déficit public de 6,6 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 137,3 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 5,3 % du PIB : l'écart vient de mesures que le parti chiffre à +80,1 Md€ par an en 2032, quand les chiffrages indépendants donnent +36,8 Md€.
+Le programme de Éric Zemmour (Reconquête) conduirait, selon le simulateur quipaie2027.fr (données au 2026-11-21) et avec les chiffrages indépendants, à un déficit public de 6,6 % du PIB en 2032, contre 7,6 % si rien ne change, et à une dette publique de 137,2 % du PIB. Avec les montants annoncés par le parti, le déficit serait de 5,3 % du PIB : l'écart vient de mesures que le parti chiffre à +80,1 Md€ par an en 2032, quand les chiffrages indépendants donnent +36,8 Md€.
 
 - Statut : Scénario reconstitué par le site : le parti n'a pas publié de chiffrage, les mesures sont tirées de ses positions publiques
 - Candidature : Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026)
