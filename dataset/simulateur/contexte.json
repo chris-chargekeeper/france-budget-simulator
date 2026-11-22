@@ -1,6 +1,6 @@
 {
   "_comment": "Contexte macroéconomique et financier, tenu à jour par la veille quotidienne. Chaque indicateur porte une valeur, une date et une source. `hypothese` (réglé à la main) relie un indicateur à une hypothèse du simulateur, qui remplace alors la valeur par défaut : rmkt (taux d'emprunt à 10 ans), g (croissance en volume), infl (inflation). `bornes` (réglé à la main) refuse une valeur invraisemblable. L'ancienne valeur part dans `historique` : rien ne s'efface.",
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "avertissement": "Trois valeurs nourrissent le calcul : le taux à 10 ans remplace l'hypothèse de taux de marché, la croissance et l'inflation prévues pour 2027 sont prolongées jusqu'en 2032. Elles restent réglables en mode avancé.",
   "indicateurs": [
     {
@@ -306,13 +306,19 @@
       "lab": "Déficit public visé pour 2027 (projet de budget)",
       "unite": "% du PIB",
       "groupe": "finances",
-      "historique": [],
-      "valeur": 5.0,
-      "date": "2026-10-01",
-      "detail": "Après 5,4 % attendus en 2026. L'OFCE prévoit 5,4 % en 2027.",
+      "historique": [
+        {
+          "valeur": 5.0,
+          "date": "2026-10-01",
+          "u": "https://www.france24.com/fr/france/20261001-budget-2027-le-gouvernement-d%C3%A9voile-son-projet-sous-la-pression-des-march%C3%A9s"
+        }
+      ],
+      "valeur": 5.2,
+      "date": "2026-11-20",
+      "detail": "Solde public 2027 actualisé par le Gouvernement au Sénat (amendement I-3070 à l'article liminaire du PLF, adopté) après les votes du PLFG 2026 et du PLFSS 2027 : « dégradé, à moins 5,2 % du PIB », contre 5,0 % au dépôt du PLF le 1er octobre. La Commission européenne prévoit 5,4 % à politique inchangée (17 novembre).",
       "source": {
-        "t": "Budget 2027 : le gouvernement dévoile son projet, sous la pression des marchés — France 24 avec AFP, 1er octobre 2026",
-        "u": "https://www.france24.com/fr/france/20261001-budget-2027-le-gouvernement-d%C3%A9voile-son-projet-sous-la-pression-des-march%C3%A9s"
+        "t": "Sénat, compte rendu analytique du 20 novembre 2026, PLF 2027, article liminaire (David Amiel, ministre de l'action et des comptes publics)",
+        "u": "https://www.senat.fr/cra/s20261120/s20261120_0.html#par_441"
       },
       "bornes": [
         0,
