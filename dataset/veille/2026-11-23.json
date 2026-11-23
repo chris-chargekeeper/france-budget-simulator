@@ -1,0 +1,155 @@
+{
+  "patch": {
+    "_comment": "Relève locale du 23 novembre 2026 : sondage Toluna Harris Interactive vague 10 (18-19 nov., publié le 23) ; Le Pen dans Franc-Jeu (22 nov.), Retailleau au 20 h de TF1 (22 nov.), Lisnard au Grand Oral BFMTV-Le Figaro (22 nov.). Pas de séance au Parlement les 21 et 22 nov. ; OAT, spread, notes et prévisions inchangés (prévisions d'automne de la Commission non retenues : pas de même nature que pib27 et infl27).",
+    "releve": "2026-11-23",
+    "annonces": [
+      {
+        "date": "2026-11-22",
+        "parti": "rn",
+        "qui": "Marine Le Pen",
+        "fonction": "Candidate (Rassemblement national)",
+        "media": "Franc-Jeu, France Inter et France 2, 22 novembre 2026",
+        "quoi": "Défend le pilier de capitalisation de son plan retraites, financé selon elle par une partie du 1 % logement, du compte personnel de formation et par le Fonds de réserve pour les retraites ; un jeune entrant aujourd'hui dans la vie active disposerait de « 80 000 euros de capital » en fin de carrière. Aucun montant budgétaire global.",
+        "verbatim": "C'est une révolution, c'est vrai, ce pilier de capitalisation",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.radiofrance.fr/franceinter/podcasts/franc-jeu/franc-jeu-du-dimanche-22-novembre-2026-2672721",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Cohérent avec le plan retraites du RN des 17 et 18 novembre (au moins 12 Md€ par an pris sur le 1 % logement, le Fnal et la formation professionnelle ; 80 000 € de capital selon Tanguy). Le Fonds de réserve pour les retraites, cité ici comme ressource, ne figure pas dans les sources du plan relevées le 18 novembre : apport non chiffré, non vérifiable."
+      },
+      {
+        "date": "2026-11-22",
+        "parti": "rn",
+        "qui": "Marine Le Pen",
+        "fonction": "Candidate (Rassemblement national)",
+        "media": "Franc-Jeu, France Inter et France 2, 22 novembre 2026 (article franceinfo)",
+        "quoi": "Maintient la suppression des subventions publiques aux associations qu'elle juge politisées (le Planning familial cité), sans montant d'économie.",
+        "verbatim": "Ce n'est pas du chantage, c'est un principe de respect de ce que versent les Français au budget de l'État",
+        "mesure": null,
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.franceinfo.fr/elections/la-candidate-a-l-election-presidentielle-marine-le-pen-estime-que-couper-les-subventions-aux-associations-politisees-n-est-pas-du-chantage_8294897.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Mesure jamais chiffrée par le RN ; rien ne permet de dire si elle figure dans son contre-budget."
+      },
+      {
+        "date": "2026-11-22",
+        "parti": "lr",
+        "qui": "Bruno Retailleau",
+        "fonction": "Candidat (Les Républicains)",
+        "media": "Route nationale, 20 h de TF1, 22 novembre 2026",
+        "quoi": "Redit le plafonnement à 70 % du Smic de toutes les prestations sociales et l'exonération de charges dès la première heure supplémentaire au-delà de 35 heures ; veut revenir à 6 000 € d'aide par apprenti embauché, sans coût total.",
+        "verbatim": "À partir des premières heures supplémentaires, on annule les charges sociales. Jusqu'aux 35 heures, chacun paie son dû.",
+        "mesure": null,
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.tf1info.fr/politique/un-policier-ce-n-est-pas-un-animateur-socio-culturel-bruno-retailleau-prend-la-route-avec-anne-claire-coudray-2477375.html",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le plafond à 70 % du Smic est conforme aux fiches du 12 octobre (compte social unique, 10 Md€ en 2032). Le seuil des heures supplémentaires exonérées varie selon les déclarations (35 h ici, « au-delà de 36 heures » le 5 novembre). L'aide de 6 000 € par apprenti n'est pas chiffrée et n'a pas de mesure au catalogue."
+      },
+      {
+        "date": "2026-11-22",
+        "parti": "ne",
+        "qui": "David Lisnard",
+        "fonction": "Candidat (Nouvelle Énergie)",
+        "media": "Le Grand Oral 2027, BFMTV-Le Figaro, 22 novembre 2026",
+        "quoi": "Plaide pour la suppression ou le non-remplacement de 400 000 à 450 000 fonctionnaires (fourchette donnée par le titre de la vidéo BFMTV, l'émission n'a pas été visionnée) et annonce sa réforme des retraites par capitalisation pour décembre ou janvier. Aucun montant en euros.",
+        "verbatim": null,
+        "mesure": null,
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.bfmtv.com/replay-emissions/le-grand-oral-2027/video-fonction-publique-david-lisnard-candidat-nouvelle-energie-a-la-presidentielle-plaide-pour-la-suppression-ou-le-non-remplacement-de-400-000-a-450-000-fonctionnaires_VN-202611220371.html",
+        "verifie": false,
+        "contredit": "annonce",
+        "ecart": "Fourchette plus large que les 400 000 rapportés le 18 novembre (non vérifié à la source) et différente des 300 000 postes « avec l'IA » avancés ailleurs. Chiffre lu dans le titre de la page vidéo, pas dans la bouche du candidat : non vérifié."
+      }
+    ],
+    "sondages": [
+      {
+        "institut": "Toluna Harris Interactive",
+        "commanditaire": "M6, RTL et L'Express",
+        "terrain_debut": "2026-11-18",
+        "terrain_fin": "2026-11-19",
+        "date": "2026-11-23",
+        "echantillon": 2088,
+        "hypothese": "Attal et Philippe tous deux candidats (seule hypothèse testant les 9 candidats suivis) ; Arthaud, Roussel, Dupont-Aignan, Villepin et Riner aussi testés",
+        "scores": {
+          "rn": 31,
+          "lfi": 18,
+          "lr": 4,
+          "ren": 4,
+          "hor": 9,
+          "ps": 11,
+          "eco": 1,
+          "ne": 11,
+          "rec": 3
+        },
+        "source": {
+          "t": "Toluna Harris Interactive — Baromètre Présidentielle 2027, vague 10, M6/RTL/L'Express, 23 novembre 2026 (rapport, p. 12-13)",
+          "u": "https://tolunacorporate.com/wp-content/uploads/2026/11/Rapport-Toluna-Barometre-Presidentielle-2027-Vague-10-M6-RTL-LExpress-23-novembre-2026.pdf"
+        }
+      }
+    ]
+  },
+  "trace": {
+    "releve": "2026-11-23",
+    "applique": "2026-11-23",
+    "ajouts": [
+      {
+        "date": "2026-11-22",
+        "parti": "rn",
+        "quoi": "Défend le pilier de capitalisation de son plan retraites, financé selon elle par une partie du 1 % logement, du compte personnel de formation et par le Fonds de réserve pour les retraites ; un jeune entrant aujourd'hui dans la vie active disposerait de « 80 000 euros de capital » en fin de carrière. Aucun montant budgétaire global.",
+        "source": "https://www.radiofrance.fr/franceinter/podcasts/franc-jeu/franc-jeu-du-dimanche-22-novembre-2026-2672721"
+      },
+      {
+        "date": "2026-11-22",
+        "parti": "rn",
+        "quoi": "Maintient la suppression des subventions publiques aux associations qu'elle juge politisées (le Planning familial cité), sans montant d'économie.",
+        "source": "https://www.franceinfo.fr/elections/la-candidate-a-l-election-presidentielle-marine-le-pen-estime-que-couper-les-subventions-aux-associations-politisees-n-est-pas-du-chantage_8294897.html"
+      },
+      {
+        "date": "2026-11-22",
+        "parti": "lr",
+        "quoi": "Redit le plafonnement à 70 % du Smic de toutes les prestations sociales et l'exonération de charges dès la première heure supplémentaire au-delà de 35 heures ; veut revenir à 6 000 € d'aide par apprenti embauché, sans coût total.",
+        "source": "https://www.tf1info.fr/politique/un-policier-ce-n-est-pas-un-animateur-socio-culturel-bruno-retailleau-prend-la-route-avec-anne-claire-coudray-2477375.html"
+      },
+      {
+        "date": "2026-11-22",
+        "parti": "ne",
+        "quoi": "Plaide pour la suppression ou le non-remplacement de 400 000 à 450 000 fonctionnaires (fourchette donnée par le titre de la vidéo BFMTV, l'émission n'a pas été visionnée) et annonce sa réforme des retraites par capitalisation pour décembre ou janvier. Aucun montant en euros.",
+        "source": "https://www.bfmtv.com/replay-emissions/le-grand-oral-2027/video-fonction-publique-david-lisnard-candidat-nouvelle-energie-a-la-presidentielle-plaide-pour-la-suppression-ou-le-non-remplacement-de-400-000-a-450-000-fonctionnaires_VN-202611220371.html"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "parties.sondages.Toluna Harris Interactive",
+        "avant": {
+          "rn": 36,
+          "lfi": 18,
+          "lr": 7,
+          "ren": 6,
+          "hor": 11,
+          "ps": 11,
+          "eco": 2,
+          "rec": 4
+        },
+        "apres": {
+          "rn": 31,
+          "lfi": 18,
+          "lr": 4,
+          "ren": 4,
+          "hor": 9,
+          "ps": 11,
+          "eco": 1,
+          "ne": 11,
+          "rec": 3
+        },
+        "source": "https://tolunacorporate.com/wp-content/uploads/2026/11/Rapport-Toluna-Barometre-Presidentielle-2027-Vague-10-M6-RTL-LExpress-23-novembre-2026.pdf"
+      }
+    ]
+  }
+}
