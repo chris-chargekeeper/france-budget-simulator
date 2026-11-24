@@ -1,6 +1,6 @@
 {
   "_comment": "Contexte macroéconomique et financier, tenu à jour par la veille quotidienne. Chaque indicateur porte une valeur, une date et une source. `hypothese` (réglé à la main) relie un indicateur à une hypothèse du simulateur, qui remplace alors la valeur par défaut : rmkt (taux d'emprunt à 10 ans), g (croissance en volume), infl (inflation). `bornes` (réglé à la main) refuse une valeur invraisemblable. L'ancienne valeur part dans `historique` : rien ne s'efface.",
-  "updated": "2026-11-22",
+  "updated": "2026-11-24",
   "avertissement": "Trois valeurs nourrissent le calcul : le taux à 10 ans remplace l'hypothèse de taux de marché, la croissance et l'inflation prévues pour 2027 sont prolongées jusqu'en 2032. Elles restent réglables en mode avancé.",
   "indicateurs": [
     {
@@ -9,6 +9,11 @@
       "unite": "%",
       "groupe": "marches",
       "historique": [
+        {
+          "valeur": 4.87,
+          "date": "2026-11-20",
+          "u": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-20"
+        },
         {
           "valeur": 4.88,
           "date": "2026-11-19",
@@ -75,12 +80,12 @@
           "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
         }
       ],
-      "valeur": 4.87,
-      "date": "2026-11-20",
-      "detail": "TEC 10 de la Banque de France à 4,874 % le 20 novembre (4,884 % le 19).",
+      "valeur": 4.83,
+      "date": "2026-11-23",
+      "detail": "TEC 10 de la Banque de France à 4,831 % le 23 novembre (4,874 % le 20).",
       "source": {
-        "t": "Banque de France — indices obligataires TEC du 20 novembre 2026",
-        "u": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-20"
+        "t": "Banque de France — indices obligataires TEC du 23 novembre 2026",
+        "u": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-23"
       },
       "hypothese": "rmkt",
       "bornes": [
@@ -94,6 +99,11 @@
       "unite": "pb",
       "groupe": "marches",
       "historique": [
+        {
+          "valeur": 155,
+          "date": "2026-11-20",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        },
         {
           "valeur": 156,
           "date": "2026-11-17",
@@ -155,9 +165,9 @@
           "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
         }
       ],
-      "valeur": 155,
-      "date": "2026-11-20",
-      "detail": "OAT 10 ans 4,87 %, Bund 3,32 % : écart de 155,4 pb à la clôture du 20 novembre (150,4 pb le 19).",
+      "valeur": 153,
+      "date": "2026-11-23",
+      "detail": "OAT 10 ans 4,83 %, Bund 3,30 % : écart de 153,1 pb à la clôture du 23 novembre (155,4 pb le 20).",
       "source": {
         "t": "Idéal Investisseur — écart OAT-Bund, tableau quotidien",
         "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"

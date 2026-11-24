@@ -1,11 +1,11 @@
 {
  "site": "https://quipaie2027.fr",
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "licence": {
   "nom": "Licence Ouverte / Open Licence 2.0 (Etalab)",
   "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
  },
- "citation": "quipaie2027.fr, données au 2026-11-23",
+ "citation": "quipaie2027.fr, données au 2026-11-24",
  "unites": {
   "deficit": "% du PIB (déficit public, signe positif)",
   "dette": "% du PIB",
@@ -19,13 +19,13 @@
   "croissance": 1,
   "inflation": 1.8,
   "derive": 0.7,
-  "tauxMarche": 4.87,
+  "tauxMarche": 4.83,
   "multiplicateur": 0.9,
   "erosion": 25
  },
  "siRienNeChange": {
-  "deficit2032": 7.6,
-  "dette2032": 140.4,
+  "deficit2032": 7.5,
+  "dette2032": 140.3,
   "trajectoire": [
    {
     "annee": 2025,
@@ -50,22 +50,22 @@
    {
     "annee": 2029,
     "deficitPct": 6.8,
-    "dettePct": 129.3
+    "dettePct": 129.2
    },
    {
     "annee": 2030,
-    "deficitPct": 7.1,
+    "deficitPct": 7,
     "dettePct": 132.8
    },
    {
     "annee": 2031,
     "deficitPct": 7.3,
-    "dettePct": 136.5
+    "dettePct": 136.4
    },
    {
     "annee": 2032,
-    "deficitPct": 7.6,
-    "dettePct": 140.4
+    "deficitPct": 7.5,
+    "dettePct": 140.3
    }
   ]
  },
@@ -84,10 +84,10 @@
     "revendique": 140,
     "detaille": 82.4
    },
-   "deficit2032": 7.5,
-   "dette2032": 140,
+   "deficit2032": 7.4,
+   "dette2032": 139.9,
    "deficit2032Promesses": 6.1,
-   "dette2032Promesses": 134.8,
+   "dette2032Promesses": 134.7,
    "effetNet2032": 3.4,
    "effetNet2032Promesses": 46.8,
    "trajectoire": [
@@ -119,17 +119,17 @@
     {
      "annee": 2030,
      "deficitPct": 6.9,
-     "dettePct": 132.8
+     "dettePct": 132.7
     },
     {
      "annee": 2031,
      "deficitPct": 7.2,
-     "dettePct": 136.2
+     "dettePct": 136.1
     },
     {
      "annee": 2032,
-     "deficitPct": 7.5,
-     "dettePct": 140
+     "deficitPct": 7.4,
+     "dettePct": 139.9
     }
    ],
    "effets2032": {
@@ -363,9 +363,9 @@
     "detaille": 106.4
    },
    "deficit2032": 10,
-   "dette2032": 148.8,
+   "dette2032": 148.7,
    "deficit2032Promesses": 8.4,
-   "dette2032Promesses": 142.5,
+   "dette2032Promesses": 142.4,
    "effetNet2032": -88.8,
    "effetNet2032Promesses": -32,
    "trajectoire": [
@@ -387,12 +387,12 @@
     {
      "annee": 2028,
      "deficitPct": 7.4,
-     "dettePct": 125.4
+     "dettePct": 125.3
     },
     {
      "annee": 2029,
      "deficitPct": 8.3,
-     "dettePct": 130.5
+     "dettePct": 130.4
     },
     {
      "annee": 2030,
@@ -402,12 +402,12 @@
     {
      "annee": 2031,
      "deficitPct": 9.5,
-     "dettePct": 142.5
+     "dettePct": 142.4
     },
     {
      "annee": 2032,
      "deficitPct": 10,
-     "dettePct": 148.8
+     "dettePct": 148.7
     }
    ],
    "effets2032": {
@@ -961,10 +961,10 @@
     "revendique": 197,
     "detaille": 133.5
    },
-   "deficit2032": 6.8,
-   "dette2032": 138.3,
+   "deficit2032": 6.7,
+   "dette2032": 138.2,
    "deficit2032Promesses": 5.7,
-   "dette2032Promesses": 134.7,
+   "dette2032Promesses": 134.6,
    "effetNet2032": 32,
    "effetNet2032Promesses": 68.5,
    "trajectoire": [
@@ -980,33 +980,33 @@
     },
     {
      "annee": 2027,
-     "deficitPct": 6.5,
+     "deficitPct": 6.4,
      "dettePct": 123.1
     },
     {
      "annee": 2028,
      "deficitPct": 6.4,
-     "dettePct": 126.3
+     "dettePct": 126.2
     },
     {
      "annee": 2029,
-     "deficitPct": 6.5,
-     "dettePct": 129.3
+     "deficitPct": 6.4,
+     "dettePct": 129.2
     },
     {
      "annee": 2030,
-     "deficitPct": 6.6,
-     "dettePct": 132.2
+     "deficitPct": 6.5,
+     "dettePct": 132.1
     },
     {
      "annee": 2031,
-     "deficitPct": 6.7,
-     "dettePct": 135.2
+     "deficitPct": 6.6,
+     "dettePct": 135.1
     },
     {
      "annee": 2032,
-     "deficitPct": 6.8,
-     "dettePct": 138.3
+     "deficitPct": 6.7,
+     "dettePct": 138.2
     }
    ],
    "effets2032": {
@@ -1249,9 +1249,9 @@
     "detaille": 27
    },
    "deficit2032": 6.8,
-   "dette2032": 137.5,
-   "deficit2032Promesses": 6.6,
-   "dette2032Promesses": 136.1,
+   "dette2032": 137.3,
+   "deficit2032Promesses": 6.5,
+   "dette2032Promesses": 136,
    "effetNet2032": 24,
    "effetNet2032Promesses": 33,
    "trajectoire": [
@@ -1278,22 +1278,22 @@
     {
      "annee": 2029,
      "deficitPct": 6.3,
-     "dettePct": 128.6
+     "dettePct": 128.5
     },
     {
      "annee": 2030,
-     "deficitPct": 6.5,
-     "dettePct": 131.4
+     "deficitPct": 6.4,
+     "dettePct": 131.3
     },
     {
      "annee": 2031,
      "deficitPct": 6.6,
-     "dettePct": 134.3
+     "dettePct": 134.2
     },
     {
      "annee": 2032,
      "deficitPct": 6.8,
-     "dettePct": 137.5
+     "dettePct": 137.3
     }
    ],
    "effets2032": {
@@ -1474,9 +1474,9 @@
     "detaille": null
    },
    "deficit2032": 7.4,
-   "dette2032": 141.6,
+   "dette2032": 141.4,
    "deficit2032Promesses": 6.7,
-   "dette2032Promesses": 138.7,
+   "dette2032Promesses": 138.6,
    "effetNet2032": 11,
    "effetNet2032Promesses": 36,
    "trajectoire": [
@@ -1498,7 +1498,7 @@
     {
      "annee": 2028,
      "deficitPct": 7,
-     "dettePct": 127.6
+     "dettePct": 127.5
     },
     {
      "annee": 2029,
@@ -1508,17 +1508,17 @@
     {
      "annee": 2030,
      "deficitPct": 7.1,
-     "dettePct": 134.5
+     "dettePct": 134.4
     },
     {
      "annee": 2031,
-     "deficitPct": 7.3,
-     "dettePct": 138
+     "deficitPct": 7.2,
+     "dettePct": 137.9
     },
     {
      "annee": 2032,
      "deficitPct": 7.4,
-     "dettePct": 141.6
+     "dettePct": 141.4
     }
    ],
    "effets2032": {
@@ -1794,9 +1794,9 @@
     "detaille": null
    },
    "deficit2032": 7.6,
-   "dette2032": 140.1,
+   "dette2032": 140,
    "deficit2032Promesses": 7.3,
-   "dette2032Promesses": 138.6,
+   "dette2032Promesses": 138.4,
    "effetNet2032": -4.6,
    "effetNet2032Promesses": 5.3,
    "trajectoire": [
@@ -1818,27 +1818,27 @@
     {
      "annee": 2028,
      "deficitPct": 6.4,
-     "dettePct": 125.6
+     "dettePct": 125.5
     },
     {
      "annee": 2029,
-     "deficitPct": 6.8,
-     "dettePct": 128.8
+     "deficitPct": 6.7,
+     "dettePct": 128.7
     },
     {
      "annee": 2030,
-     "deficitPct": 7.1,
+     "deficitPct": 7,
      "dettePct": 132.3
     },
     {
      "annee": 2031,
-     "deficitPct": 7.4,
-     "dettePct": 136.1
+     "deficitPct": 7.3,
+     "dettePct": 136
     },
     {
      "annee": 2032,
      "deficitPct": 7.6,
-     "dettePct": 140.1
+     "dettePct": 140
     }
    ],
    "effets2032": {
@@ -2041,9 +2041,9 @@
     "detaille": null
    },
    "deficit2032": 7.8,
-   "dette2032": 140.8,
+   "dette2032": 140.7,
    "deficit2032Promesses": 7.7,
-   "dette2032Promesses": 140.3,
+   "dette2032Promesses": 140.2,
    "effetNet2032": -10.5,
    "effetNet2032Promesses": -6.6,
    "trajectoire": [
@@ -2065,7 +2065,7 @@
     {
      "annee": 2028,
      "deficitPct": 6.5,
-     "dettePct": 125.5
+     "dettePct": 125.4
     },
     {
      "annee": 2029,
@@ -2075,17 +2075,17 @@
     {
      "annee": 2030,
      "deficitPct": 7.2,
-     "dettePct": 132.6
+     "dettePct": 132.5
     },
     {
      "annee": 2031,
      "deficitPct": 7.5,
-     "dettePct": 136.6
+     "dettePct": 136.5
     },
     {
      "annee": 2032,
      "deficitPct": 7.8,
-     "dettePct": 140.8
+     "dettePct": 140.7
     }
    ],
    "effets2032": {
@@ -2311,9 +2311,9 @@
     "detaille": null
    },
    "deficit2032": 7.2,
-   "dette2032": 138.7,
+   "dette2032": 138.6,
    "deficit2032Promesses": 7.2,
-   "dette2032Promesses": 138.7,
+   "dette2032Promesses": 138.6,
    "effetNet2032": 9.4,
    "effetNet2032Promesses": 9.4,
    "trajectoire": [
@@ -2330,7 +2330,7 @@
     {
      "annee": 2027,
      "deficitPct": 6.2,
-     "dettePct": 122.9
+     "dettePct": 122.8
     },
     {
      "annee": 2028,
@@ -2340,22 +2340,22 @@
     {
      "annee": 2029,
      "deficitPct": 6.5,
-     "dettePct": 128.5
+     "dettePct": 128.4
     },
     {
      "annee": 2030,
-     "deficitPct": 6.8,
-     "dettePct": 131.7
+     "deficitPct": 6.7,
+     "dettePct": 131.6
     },
     {
      "annee": 2031,
      "deficitPct": 7,
-     "dettePct": 135.1
+     "dettePct": 135
     },
     {
      "annee": 2032,
      "deficitPct": 7.2,
-     "dettePct": 138.7
+     "dettePct": 138.6
     }
    ],
    "effets2032": {
@@ -2639,10 +2639,10 @@
     "revendique": 200,
     "detaille": 2.5
    },
-   "deficit2032": 6.8,
-   "dette2032": 138,
+   "deficit2032": 6.7,
+   "dette2032": 137.9,
    "deficit2032Promesses": 6.7,
-   "dette2032Promesses": 137.8,
+   "dette2032Promesses": 137.7,
    "effetNet2032": 30.3,
    "effetNet2032Promesses": 31.8,
    "trajectoire": [
@@ -2674,17 +2674,17 @@
     {
      "annee": 2030,
      "deficitPct": 6.5,
-     "dettePct": 132.2
+     "dettePct": 132.1
     },
     {
      "annee": 2031,
      "deficitPct": 6.6,
-     "dettePct": 135
+     "dettePct": 134.9
     },
     {
      "annee": 2032,
-     "deficitPct": 6.8,
-     "dettePct": 138
+     "deficitPct": 6.7,
+     "dettePct": 137.9
     }
    ],
    "effets2032": {
@@ -2913,9 +2913,9 @@
     "detaille": 90
    },
    "deficit2032": 6.6,
-   "dette2032": 137.2,
+   "dette2032": 137.1,
    "deficit2032Promesses": 5.3,
-   "dette2032Promesses": 132.5,
+   "dette2032Promesses": 132.4,
    "effetNet2032": 36.8,
    "effetNet2032Promesses": 80.1,
    "trajectoire": [
@@ -2937,7 +2937,7 @@
     {
      "annee": 2028,
      "deficitPct": 6.2,
-     "dettePct": 125.9
+     "dettePct": 125.8
     },
     {
      "annee": 2029,
@@ -2946,18 +2946,18 @@
     },
     {
      "annee": 2030,
-     "deficitPct": 6.4,
+     "deficitPct": 6.3,
      "dettePct": 131.5
     },
     {
      "annee": 2031,
-     "deficitPct": 6.5,
+     "deficitPct": 6.4,
      "dettePct": 134.3
     },
     {
      "annee": 2032,
      "deficitPct": 6.6,
-     "dettePct": 137.2
+     "dettePct": 137.1
     }
    ],
    "effets2032": {

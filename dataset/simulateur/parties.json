@@ -757,9 +757,9 @@
         }
       ],
       "calcul": {
-        "date": "2026-11-21",
-        "deficit2032": 7.25,
-        "dette2032": 138.7,
+        "date": "2026-11-24",
+        "deficit2032": 7.21,
+        "dette2032": 138.6,
         "economies": 0.1,
         "recettes": 21.6,
         "depenses": 4.2,

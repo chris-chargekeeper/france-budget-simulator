@@ -2,7 +2,7 @@
 
 > Simulateur budgétaire neutre et gratuit pour l'élection présidentielle française de 2027. On choisit un candidat et on voit ce que son programme changerait au budget de la France d'ici 2032 : déficit public, dette publique, qui paie et qui reçoit, effets sur l'emploi, le chômage, la richesse par habitant et les taux d'intérêt, et l'écart entre ce que le candidat annonce et ce que donnent des chiffrages indépendants.
 
-Données au 2026-11-23, mises à jour chaque matin (veille des déclarations chiffrées, des chiffrages indépendants, des sondages et du contexte économique).
+Données au 2026-11-24, mises à jour chaque matin (veille des déclarations chiffrées, des chiffrages indépendants, des sondages et du contexte économique).
 
 ## Ce que fait le site
 
@@ -37,23 +37,23 @@ Données au 2026-11-23, mises à jour chaque matin (veille des déclarations chi
 - David Lisnard : 200 Md€ d'économies d'ici 2032
 - Éric Zemmour : 280 Md€ d'économies par an en 2032
 
-## Résultats au 2026-11-23
+## Résultats au 2026-11-24
 
 Déficit et dette publics en 2032, avec les chiffrages indépendants (valeurs centrales), comme les affiche le simulateur :
 
 | Candidat | Déficit 2032 (% PIB) | Dette 2032 (% PIB) | Déficit avec les chiffres du parti | Page |
 |---|---|---|---|---|
-| Si rien ne change | 7,6 | 140,4 | — | — |
-| Marine Le Pen (RN) | 7,5 | 140,0 | 6,1 | https://quipaie2027.fr/candidat-marine-le-pen.html |
-| Jean-Luc Mélenchon (LFI) | 10,0 | 148,8 | 8,4 | https://quipaie2027.fr/candidat-jean-luc-melenchon.html |
-| Bruno Retailleau (LR) | 6,8 | 138,3 | 5,7 | https://quipaie2027.fr/candidat-bruno-retailleau.html |
-| Gabriel Attal (REN) | 6,8 | 137,5 | 6,6 | https://quipaie2027.fr/candidat-gabriel-attal.html |
-| Édouard Philippe (HOR) | 7,4 | 141,6 | 6,7 | https://quipaie2027.fr/candidat-edouard-philippe.html |
-| Raphaël Glucksmann (PS) | 7,6 | 140,1 | 7,3 | https://quipaie2027.fr/candidat-raphael-glucksmann.html |
-| Marine Tondelier (ÉCO) | 7,8 | 140,8 | 7,7 | https://quipaie2027.fr/candidat-marine-tondelier.html |
-| Budget apolitique (IA, hors course) | 7,2 | 138,7 | 7,2 | https://quipaie2027.fr/budget-apolitique.html |
-| David Lisnard (NE) | 6,8 | 138,0 | 6,7 | https://quipaie2027.fr/candidat-david-lisnard.html |
-| Éric Zemmour (REC) | 6,6 | 137,2 | 5,3 | https://quipaie2027.fr/candidat-eric-zemmour.html |
+| Si rien ne change | 7,5 | 140,3 | — | — |
+| Marine Le Pen (RN) | 7,4 | 139,9 | 6,1 | https://quipaie2027.fr/candidat-marine-le-pen.html |
+| Jean-Luc Mélenchon (LFI) | 10,0 | 148,7 | 8,4 | https://quipaie2027.fr/candidat-jean-luc-melenchon.html |
+| Bruno Retailleau (LR) | 6,7 | 138,2 | 5,7 | https://quipaie2027.fr/candidat-bruno-retailleau.html |
+| Gabriel Attal (REN) | 6,8 | 137,3 | 6,5 | https://quipaie2027.fr/candidat-gabriel-attal.html |
+| Édouard Philippe (HOR) | 7,4 | 141,4 | 6,7 | https://quipaie2027.fr/candidat-edouard-philippe.html |
+| Raphaël Glucksmann (PS) | 7,6 | 140,0 | 7,3 | https://quipaie2027.fr/candidat-raphael-glucksmann.html |
+| Marine Tondelier (ÉCO) | 7,8 | 140,7 | 7,7 | https://quipaie2027.fr/candidat-marine-tondelier.html |
+| Budget apolitique (IA, hors course) | 7,2 | 138,6 | 7,2 | https://quipaie2027.fr/budget-apolitique.html |
+| David Lisnard (NE) | 6,7 | 137,9 | 6,7 | https://quipaie2027.fr/candidat-david-lisnard.html |
+| Éric Zemmour (REC) | 6,6 | 137,1 | 5,3 | https://quipaie2027.fr/candidat-eric-zemmour.html |
 
 ## Limites
 

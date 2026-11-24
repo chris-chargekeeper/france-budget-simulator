@@ -1,0 +1,201 @@
+{
+  "patch": {
+    "_comment": "Relève locale du 24 novembre 2026 : Sénat, séance du 23 novembre (PLF 2027, première partie) ; OAT et spread du 23 novembre.",
+    "releve": "2026-11-24",
+    "annonces": [
+      {
+        "date": "2026-11-23",
+        "parti": "rn",
+        "qui": "Laurent Jacobelli",
+        "fonction": "Député de la Moselle, porte-parole de la campagne de Marine Le Pen",
+        "media": "Sud Radio, l'invité politique du 23 novembre 2026",
+        "quoi": "Défend la réforme des retraites du RN (62 ans et 42 annuités au plus, part de capitalisation d'environ 5 % du revenu) et chiffre le déficit prévisionnel du système de retraites à 4,5 Md€ avec cette réforme, contre 10 Md€ avec la réforme Borne ; c'est un solde du régime, pas le coût de la mesure, d'où l'absence de montant ici.",
+        "verbatim": "Notre déficit prévisionnel avec notre réforme est de 4,5 milliards d'euros, contre 10 milliards avec la réforme Borne.",
+        "mesure": "retr62",
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.sudradio.fr/linvite-politique/laurent-jacobelli-david-lisnard-le-macron-de-la-croisette",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Agrégat différent du coût de la mesure (18,6 Md€ bruts en 2032 au plan du 17 novembre) ; horizon non précisé, rapprochement impossible."
+      },
+      {
+        "date": "2026-11-23",
+        "parti": "eco",
+        "qui": "Thomas Dossus",
+        "fonction": "Sénateur du Rhône, groupe écologiste (GEST)",
+        "media": "Sénat, séance publique du 23 novembre 2026",
+        "quoi": "Défend l'amendement I-422 qui rétablit un ISF climatique incluant l'impôt plancher, modulé selon la performance énergétique des biens et l'empreinte carbone des placements, et en attend 20 Md€ par an ; amendement rejeté. Amendement de groupe : n'engage pas formellement la campagne de Marine Tondelier.",
+        "verbatim": "Cette mesure pourrait rapporter 20 milliards d'euros par an, pour redresser nos comptes et financer la transition écologique.",
+        "mesure": "isfclim",
+        "montant": 20,
+        "type": "recette",
+        "source": "https://www.senat.fr/cra/s20261123/s20261123_0.html#par_1907",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Les Écologistes n'ont publié aucun programme chiffré pour 2027 ; montant d'un amendement sénatorial, non repris par la candidate."
+      },
+      {
+        "date": "2026-11-23",
+        "parti": "eco",
+        "qui": "Thomas Dossus",
+        "fonction": "Sénateur du Rhône, groupe écologiste (GEST)",
+        "media": "Sénat, séance publique du 23 novembre 2026",
+        "quoi": "Défend l'amendement I-2597, impôt plancher de 2 % sur les patrimoines au-delà de 100 M€ (taxe Zucman), identique à ceux de LFI, du PS et du CRCE-K, et le dit rapporter « entre 15 et 25 milliards d'euros par an » ; rejeté.",
+        "verbatim": "qui rapporterait entre 15 et 25 milliards d'euros par an",
+        "mesure": "zucman",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.senat.fr/cra/s20261123/s20261123_0.html#par_1901",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Fourchette sans valeur unique ; pas de programme chiffré publié par les Écologistes."
+      },
+      {
+        "date": "2026-11-23",
+        "parti": "lfi",
+        "qui": "Gabriel Amard",
+        "fonction": "Sénateur du Rhône, seul sénateur insoumis",
+        "media": "Sénat, séance publique du 23 novembre 2026",
+        "quoi": "Défend l'amendement I-2722 rectifié qui rétablit l'ISF et en attend 3,5 Md€ de recettes ; rejeté. N'engage pas formellement la campagne.",
+        "verbatim": "Les 3,5 milliards d'euros de recettes attendues redonneraient des marges de manoeuvre à la puissance publique plutôt que de faire payer les ménages qui peinent à vivre dignement.",
+        "mesure": "isf",
+        "montant": 3.5,
+        "type": "recette",
+        "source": "https://www.senat.fr/cra/s20261123/s20261123_0.html#par_1918",
+        "verifie": true,
+        "contredit": "annonce",
+        "ecart": "Le programme LFI retient un ISF climatique (10 Md€ annoncés au scénario, 15 Md€ selon le même sénateur le 20 novembre) ; ici un ISF classique à 3,5 Md€, autre périmètre."
+      },
+      {
+        "date": "2026-11-23",
+        "parti": "lfi",
+        "qui": "Gabriel Amard",
+        "fonction": "Sénateur du Rhône, seul sénateur insoumis",
+        "media": "Sénat, séance publique du 23 novembre 2026",
+        "quoi": "Défend l'amendement I-2724 rectifié tiré de L'Avenir en commun : abattement en ligne directe porté de 100 000 à 150 000 €, prise en compte de tous les héritages reçus dans la vie et héritage maximum de 12 M€ ; rendement non chiffré, rejeté.",
+        "verbatim": "Nous instaurons un héritage maximum de 12 millions d'euros - c'est 700 années de Smic !",
+        "mesure": "heritmax",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.senat.fr/cra/s20261123/s20261123_0.html#par_1481",
+        "verifie": true,
+        "contredit": "non"
+      },
+      {
+        "date": "2026-11-23",
+        "parti": "rn",
+        "qui": "Christopher Szczurek",
+        "fonction": "Sénateur du Pas-de-Calais, groupe UNT (RN)",
+        "media": "Sénat, séance publique du 23 novembre 2026",
+        "quoi": "Défend l'amendement I-1705 qui porte de 100 000 à 150 000 € l'abattement sur les successions en ligne directe ; coût non chiffré, rejeté au scrutin n° 155 (16 pour, 328 contre).",
+        "verbatim": "Nous portons de 100 000 à 150 000 euros l'abattement sur les successions entre parents et enfants",
+        "mesure": "succ",
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.senat.fr/cra/s20261123/s20261123_0.html#par_1488",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Amendement d'un sénateur RN sans chiffrage ; le contre-budget RN ne chiffre pas ce poste."
+      },
+      {
+        "date": "2026-11-23",
+        "parti": "rn",
+        "qui": "Edwige Diaz",
+        "fonction": "Sénatrice, groupe UNT (RN)",
+        "media": "Sénat, séance publique du 23 novembre 2026",
+        "quoi": "Défend l'amendement I-3035 exonérant de droits de succession en ligne directe les biens immobiliers jusqu'à 300 000 € ; coût non chiffré, rejeté au scrutin n° 157 (17 pour, 327 contre).",
+        "verbatim": "Nous exonérons de droits de succession en ligne directe les biens immobiliers jusqu'à 300 000 euros, à l'exception des parts de société.",
+        "mesure": "succ",
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.senat.fr/cra/s20261123/s20261123_0.html#par_1561",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Amendement sans chiffrage ; le contre-budget RN ne chiffre pas ce poste."
+      }
+    ],
+    "contexte": {
+      "oat10": {
+        "valeur": 4.83,
+        "date": "2026-11-23",
+        "detail": "TEC 10 de la Banque de France à 4,831 % le 23 novembre (4,874 % le 20).",
+        "source": {
+          "t": "Banque de France — indices obligataires TEC du 23 novembre 2026",
+          "u": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-23"
+        }
+      },
+      "spread": {
+        "valeur": 153,
+        "date": "2026-11-23",
+        "detail": "OAT 10 ans 4,83 %, Bund 3,30 % : écart de 153,1 pb à la clôture du 23 novembre (155,4 pb le 20).",
+        "source": {
+          "t": "Idéal Investisseur — écart OAT-Bund, tableau quotidien",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-11-24",
+    "applique": "2026-11-24",
+    "ajouts": [
+      {
+        "date": "2026-11-23",
+        "parti": "rn",
+        "quoi": "Défend la réforme des retraites du RN (62 ans et 42 annuités au plus, part de capitalisation d'environ 5 % du revenu) et chiffre le déficit prévisionnel du système de retraites à 4,5 Md€ avec cette réforme, contre 10 Md€ avec la réforme Borne ; c'est un solde du régime, pas le coût de la mesure, d'où l'absence de montant ici.",
+        "source": "https://www.sudradio.fr/linvite-politique/laurent-jacobelli-david-lisnard-le-macron-de-la-croisette"
+      },
+      {
+        "date": "2026-11-23",
+        "parti": "eco",
+        "quoi": "Défend l'amendement I-422 qui rétablit un ISF climatique incluant l'impôt plancher, modulé selon la performance énergétique des biens et l'empreinte carbone des placements, et en attend 20 Md€ par an ; amendement rejeté. Amendement de groupe : n'engage pas formellement la campagne de Marine Tondelier.",
+        "source": "https://www.senat.fr/cra/s20261123/s20261123_0.html#par_1907"
+      },
+      {
+        "date": "2026-11-23",
+        "parti": "eco",
+        "quoi": "Défend l'amendement I-2597, impôt plancher de 2 % sur les patrimoines au-delà de 100 M€ (taxe Zucman), identique à ceux de LFI, du PS et du CRCE-K, et le dit rapporter « entre 15 et 25 milliards d'euros par an » ; rejeté.",
+        "source": "https://www.senat.fr/cra/s20261123/s20261123_0.html#par_1901"
+      },
+      {
+        "date": "2026-11-23",
+        "parti": "lfi",
+        "quoi": "Défend l'amendement I-2722 rectifié qui rétablit l'ISF et en attend 3,5 Md€ de recettes ; rejeté. N'engage pas formellement la campagne.",
+        "source": "https://www.senat.fr/cra/s20261123/s20261123_0.html#par_1918"
+      },
+      {
+        "date": "2026-11-23",
+        "parti": "lfi",
+        "quoi": "Défend l'amendement I-2724 rectifié tiré de L'Avenir en commun : abattement en ligne directe porté de 100 000 à 150 000 €, prise en compte de tous les héritages reçus dans la vie et héritage maximum de 12 M€ ; rendement non chiffré, rejeté.",
+        "source": "https://www.senat.fr/cra/s20261123/s20261123_0.html#par_1481"
+      },
+      {
+        "date": "2026-11-23",
+        "parti": "rn",
+        "quoi": "Défend l'amendement I-1705 qui porte de 100 000 à 150 000 € l'abattement sur les successions en ligne directe ; coût non chiffré, rejeté au scrutin n° 155 (16 pour, 328 contre).",
+        "source": "https://www.senat.fr/cra/s20261123/s20261123_0.html#par_1488"
+      },
+      {
+        "date": "2026-11-23",
+        "parti": "rn",
+        "quoi": "Défend l'amendement I-3035 exonérant de droits de succession en ligne directe les biens immobiliers jusqu'à 300 000 € ; coût non chiffré, rejeté au scrutin n° 157 (17 pour, 327 contre).",
+        "source": "https://www.senat.fr/cra/s20261123/s20261123_0.html#par_1561"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "contexte.oat10",
+        "avant": 4.87,
+        "apres": 4.83,
+        "source": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-23"
+      },
+      {
+        "quoi": "contexte.spread",
+        "avant": 155,
+        "apres": 153,
+        "source": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      }
+    ]
+  }
+}
