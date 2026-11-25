@@ -1,0 +1,114 @@
+{
+  "patch": {
+    "_comment": "Relève du 25 novembre 2026 : interviews et Sénat du 24 novembre, contexte de marché du 24 novembre. Aucun nouveau sondage d'intentions de vote (Odoxa du 18-19 nov. sans intentions de vote).",
+    "releve": "2026-11-25",
+    "annonces": [
+      {
+        "date": "2026-11-24",
+        "parti": "hor",
+        "qui": "Édouard Philippe",
+        "fonction": "Candidat d'Horizons à l'élection présidentielle",
+        "media": "LCI, Le Grand Entretien, 24 novembre 2026 (direct TF1info)",
+        "quoi": "Réaffirme sur LCI ne vouloir remplacer que deux des trois fonctionnaires qui partiront à la retraite pendant le quinquennat (750 000 départs), soit 250 000 agents en moins, pour revenir « quasiment » au niveau de 2018 ; aucun montant en euros.",
+        "verbatim": "Mon objectif est d'intervenir au niveau des 750.000 fonctionnaires qui vont partir à la retraite au cours du prochain quinquennat, afin de ne recruter que deux fonctionnaire sur trois et donc faire disparaître un poste sur trois",
+        "mesure": "effectifs250",
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-crise-sociale-crise-lyceenne-de-nombreux-candidats-de-villepin-lisnard-riner-glucksmann-le-pen-melenchon-se-pressent-au-congres-des-maires-de-france-les-dernieres-informations-de-ce-mardi-24-novembre-2026-2477741.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Horizons n'a publié aucun programme chiffré ; même engagement que sur le site du candidat le 18 novembre, sans coût budgétaire énoncé."
+      },
+      {
+        "date": "2026-11-24",
+        "parti": "lfi",
+        "qui": "Manuel Bompard",
+        "fonction": "Coordinateur de La France insoumise et directeur de campagne de Jean-Luc Mélenchon",
+        "media": "Face à BFM, BFMTV, 24 novembre 2026",
+        "quoi": "Demande de revenir sur la privatisation des autoroutes ; les 40 Md€ cités sont le manque à gagner d'ici 2030 selon un rapport sénatorial, pas le coût ni le rendement de la mesure, d'où l'absence de montant ici ; ni le mode de rachat ni son coût ne sont précisés.",
+        "verbatim": "Il faut revenir sur la privatisation des autoroutes […] c'est un manque à gagner d'ici à 2030 de 40 milliards d'euros",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.bfmtv.com/politique/la-france-insoumise/presidentielle-police-soutien-a-l-ukraine-ce-qu-il-faut-retenir-du-face-a-bfm-de-manuel-bompard_AN-202611241018.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Mesure absente du catalogue du simulateur et non chiffrée dans le contre-budget LFI du 14 octobre ; le coût du rachat n'est pas énoncé, rapprochement impossible."
+      },
+      {
+        "date": "2026-11-24",
+        "parti": "ps",
+        "qui": "Grégory Blanc",
+        "fonction": "Sénateur Place publique, apparenté au groupe écologiste (ni porte-parole ni responsable du programme de Raphaël Glucksmann)",
+        "media": "Sénat, séance publique du 24 novembre 2026, PLF 2027 (compte rendu Public Sénat)",
+        "quoi": "Défend un amendement relevant le taux du prélèvement forfaitaire unique de 31,4 % à « un peu plus de 33 % » et en attend 800 M€ de recettes ; amendement rejeté. N'engage pas formellement la campagne de Raphaël Glucksmann.",
+        "verbatim": "Ça permettra de faire rentrer 800 millions d'euros dans les caisses de l'État",
+        "mesure": "pfu",
+        "montant": 0.8,
+        "type": "recette",
+        "source": "https://www.publicsenat.fr/actualites/politique/budget-2027-la-gauche-du-senat-echoue-a-supprimer-la-flat-tax",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le camp Glucksmann n'a publié aucun programme chiffré ; amendement sénatorial d'un élu qui n'est pas porte-voix de la campagne, simple hausse du taux et non suppression du PFU."
+      }
+    ],
+    "contexte": {
+      "oat10": {
+        "valeur": 4.77,
+        "date": "2026-11-24",
+        "detail": "TEC 10 de la Banque de France à 4,766 % le 24 novembre (4,831 % le 23).",
+        "source": {
+          "t": "Banque de France — indices obligataires TEC du 24 novembre 2026",
+          "u": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-24"
+        }
+      },
+      "spread": {
+        "valeur": 150,
+        "date": "2026-11-24",
+        "detail": "OAT 10 ans 4,77 %, Bund 3,27 % : écart de 149,6 pb à la clôture du 24 novembre (153,1 pb le 23).",
+        "source": {
+          "t": "Idéal Investisseur — écart OAT-Bund, tableau quotidien",
+          "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-11-25",
+    "applique": "2026-11-25",
+    "ajouts": [
+      {
+        "date": "2026-11-24",
+        "parti": "hor",
+        "quoi": "Réaffirme sur LCI ne vouloir remplacer que deux des trois fonctionnaires qui partiront à la retraite pendant le quinquennat (750 000 départs), soit 250 000 agents en moins, pour revenir « quasiment » au niveau de 2018 ; aucun montant en euros.",
+        "source": "https://www.tf1info.fr/politique/elections/presidentielle/en-direct-presidentielle-2027-crise-sociale-crise-lyceenne-de-nombreux-candidats-de-villepin-lisnard-riner-glucksmann-le-pen-melenchon-se-pressent-au-congres-des-maires-de-france-les-dernieres-informations-de-ce-mardi-24-novembre-2026-2477741.html"
+      },
+      {
+        "date": "2026-11-24",
+        "parti": "lfi",
+        "quoi": "Demande de revenir sur la privatisation des autoroutes ; les 40 Md€ cités sont le manque à gagner d'ici 2030 selon un rapport sénatorial, pas le coût ni le rendement de la mesure, d'où l'absence de montant ici ; ni le mode de rachat ni son coût ne sont précisés.",
+        "source": "https://www.bfmtv.com/politique/la-france-insoumise/presidentielle-police-soutien-a-l-ukraine-ce-qu-il-faut-retenir-du-face-a-bfm-de-manuel-bompard_AN-202611241018.html"
+      },
+      {
+        "date": "2026-11-24",
+        "parti": "ps",
+        "quoi": "Défend un amendement relevant le taux du prélèvement forfaitaire unique de 31,4 % à « un peu plus de 33 % » et en attend 800 M€ de recettes ; amendement rejeté. N'engage pas formellement la campagne de Raphaël Glucksmann.",
+        "source": "https://www.publicsenat.fr/actualites/politique/budget-2027-la-gauche-du-senat-echoue-a-supprimer-la-flat-tax"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "contexte.oat10",
+        "avant": 4.83,
+        "apres": 4.77,
+        "source": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-24"
+      },
+      {
+        "quoi": "contexte.spread",
+        "avant": 153,
+        "apres": 150,
+        "source": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      }
+    ]
+  }
+}
