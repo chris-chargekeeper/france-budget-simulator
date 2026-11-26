@@ -1,11 +1,11 @@
 {
  "site": "https://quipaie2027.fr",
- "date": "2026-11-25",
+ "date": "2026-11-26",
  "licence": {
   "nom": "Licence Ouverte / Open Licence 2.0 (Etalab)",
   "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
  },
- "citation": "quipaie2027.fr, données au 2026-11-25",
+ "citation": "quipaie2027.fr, données au 2026-11-26",
  "unites": {
   "deficit": "% du PIB (déficit public, signe positif)",
   "dette": "% du PIB",
@@ -19,13 +19,13 @@
   "croissance": 1,
   "inflation": 1.8,
   "derive": 0.7,
-  "tauxMarche": 4.77,
+  "tauxMarche": 4.73,
   "multiplicateur": 0.9,
   "erosion": 25
  },
  "siRienNeChange": {
   "deficit2032": 7.5,
-  "dette2032": 140.1,
+  "dette2032": 140,
   "trajectoire": [
    {
     "annee": 2025,
@@ -50,22 +50,22 @@
    {
     "annee": 2029,
     "deficitPct": 6.8,
-    "dettePct": 129.2
+    "dettePct": 129.1
    },
    {
     "annee": 2030,
     "deficitPct": 7,
-    "dettePct": 132.7
+    "dettePct": 132.6
    },
    {
     "annee": 2031,
     "deficitPct": 7.2,
-    "dettePct": 136.3
+    "dettePct": 136.2
    },
    {
     "annee": 2032,
     "deficitPct": 7.5,
-    "dettePct": 140.1
+    "dettePct": 140
    }
   ]
  },
@@ -84,10 +84,10 @@
     "revendique": 140,
     "detaille": 82.4
    },
-   "deficit2032": 7.4,
-   "dette2032": 139.7,
-   "deficit2032Promesses": 6.1,
-   "dette2032Promesses": 134.5,
+   "deficit2032": 7.3,
+   "dette2032": 139.6,
+   "deficit2032Promesses": 6,
+   "dette2032Promesses": 134.4,
    "effetNet2032": 3.4,
    "effetNet2032Promesses": 46.8,
    "trajectoire": [
@@ -113,23 +113,23 @@
     },
     {
      "annee": 2029,
-     "deficitPct": 6.7,
+     "deficitPct": 6.6,
      "dettePct": 129.4
     },
     {
      "annee": 2030,
      "deficitPct": 6.9,
-     "dettePct": 132.6
+     "dettePct": 132.5
     },
     {
      "annee": 2031,
      "deficitPct": 7.1,
-     "dettePct": 136
+     "dettePct": 135.9
     },
     {
      "annee": 2032,
-     "deficitPct": 7.4,
-     "dettePct": 139.7
+     "deficitPct": 7.3,
+     "dettePct": 139.6
     }
    ],
    "effets2032": {
@@ -362,10 +362,10 @@
     "revendique": 106.4,
     "detaille": 106.4
    },
-   "deficit2032": 10,
-   "dette2032": 148.5,
+   "deficit2032": 9.9,
+   "dette2032": 148.4,
    "deficit2032Promesses": 8.3,
-   "dette2032Promesses": 142.2,
+   "dette2032Promesses": 142.1,
    "effetNet2032": -88.8,
    "effetNet2032Promesses": -32,
    "trajectoire": [
@@ -392,22 +392,22 @@
     {
      "annee": 2029,
      "deficitPct": 8.2,
-     "dettePct": 130.4
+     "dettePct": 130.3
     },
     {
      "annee": 2030,
-     "deficitPct": 8.9,
-     "dettePct": 136.2
+     "deficitPct": 8.8,
+     "dettePct": 136.1
     },
     {
      "annee": 2031,
      "deficitPct": 9.4,
-     "dettePct": 142.2
+     "dettePct": 142.1
     },
     {
      "annee": 2032,
-     "deficitPct": 10,
-     "dettePct": 148.5
+     "deficitPct": 9.9,
+     "dettePct": 148.4
     }
    ],
    "effets2032": {
@@ -421,7 +421,7 @@
     "emplois": {
      "centre": -616000,
      "fourchette": [
-      -1296000,
+      -1295000,
       149000
      ]
     },
@@ -962,9 +962,9 @@
     "detaille": 133.5
    },
    "deficit2032": 6.7,
-   "dette2032": 138,
-   "deficit2032Promesses": 5.7,
-   "dette2032Promesses": 134.4,
+   "dette2032": 137.8,
+   "deficit2032Promesses": 5.6,
+   "dette2032Promesses": 134.3,
    "effetNet2032": 32,
    "effetNet2032Promesses": 68.5,
    "trajectoire": [
@@ -1001,12 +1001,12 @@
     {
      "annee": 2031,
      "deficitPct": 6.6,
-     "dettePct": 135
+     "dettePct": 134.9
     },
     {
      "annee": 2032,
      "deficitPct": 6.7,
-     "dettePct": 138
+     "dettePct": 137.8
     }
    ],
    "effets2032": {
@@ -1248,10 +1248,10 @@
     "revendique": 150,
     "detaille": 27
    },
-   "deficit2032": 6.8,
-   "dette2032": 137.1,
-   "deficit2032Promesses": 6.5,
-   "dette2032Promesses": 135.8,
+   "deficit2032": 6.7,
+   "dette2032": 137,
+   "deficit2032Promesses": 6.4,
+   "dette2032Promesses": 135.7,
    "effetNet2032": 24,
    "effetNet2032Promesses": 33,
    "trajectoire": [
@@ -1273,12 +1273,12 @@
     {
      "annee": 2028,
      "deficitPct": 6.2,
-     "dettePct": 125.8
+     "dettePct": 125.7
     },
     {
      "annee": 2029,
-     "deficitPct": 6.3,
-     "dettePct": 128.5
+     "deficitPct": 6.2,
+     "dettePct": 128.4
     },
     {
      "annee": 2030,
@@ -1287,13 +1287,13 @@
     },
     {
      "annee": 2031,
-     "deficitPct": 6.6,
-     "dettePct": 134.1
+     "deficitPct": 6.5,
+     "dettePct": 134
     },
     {
      "annee": 2032,
-     "deficitPct": 6.8,
-     "dettePct": 137.1
+     "deficitPct": 6.7,
+     "dettePct": 137
     }
    ],
    "effets2032": {
@@ -1473,10 +1473,10 @@
     "revendique": 150,
     "detaille": null
    },
-   "deficit2032": 7.4,
-   "dette2032": 141.2,
+   "deficit2032": 7.3,
+   "dette2032": 141.1,
    "deficit2032Promesses": 6.6,
-   "dette2032Promesses": 138.4,
+   "dette2032Promesses": 138.3,
    "effetNet2032": 11,
    "effetNet2032Promesses": 36,
    "trajectoire": [
@@ -1502,23 +1502,23 @@
     },
     {
      "annee": 2029,
-     "deficitPct": 7,
-     "dettePct": 131.1
+     "deficitPct": 6.9,
+     "dettePct": 131
     },
     {
      "annee": 2030,
-     "deficitPct": 7.1,
+     "deficitPct": 7,
      "dettePct": 134.3
     },
     {
      "annee": 2031,
      "deficitPct": 7.2,
-     "dettePct": 137.7
+     "dettePct": 137.6
     },
     {
      "annee": 2032,
-     "deficitPct": 7.4,
-     "dettePct": 141.2
+     "deficitPct": 7.3,
+     "dettePct": 141.1
     }
    ],
    "effets2032": {
@@ -1793,10 +1793,10 @@
     "revendique": null,
     "detaille": null
    },
-   "deficit2032": 7.6,
-   "dette2032": 139.8,
+   "deficit2032": 7.5,
+   "dette2032": 139.7,
    "deficit2032Promesses": 7.2,
-   "dette2032Promesses": 138.3,
+   "dette2032Promesses": 138.1,
    "effetNet2032": -4.6,
    "effetNet2032Promesses": 5.3,
    "trajectoire": [
@@ -1828,17 +1828,17 @@
     {
      "annee": 2030,
      "deficitPct": 7,
-     "dettePct": 132.2
+     "dettePct": 132.1
     },
     {
      "annee": 2031,
      "deficitPct": 7.3,
-     "dettePct": 135.9
+     "dettePct": 135.8
     },
     {
      "annee": 2032,
-     "deficitPct": 7.6,
-     "dettePct": 139.8
+     "deficitPct": 7.5,
+     "dettePct": 139.7
     }
    ],
    "effets2032": {
@@ -2041,9 +2041,9 @@
     "detaille": null
    },
    "deficit2032": 7.7,
-   "dette2032": 140.5,
+   "dette2032": 140.4,
    "deficit2032Promesses": 7.6,
-   "dette2032Promesses": 140,
+   "dette2032Promesses": 139.9,
    "effetNet2032": -10.5,
    "effetNet2032Promesses": -6.6,
    "trajectoire": [
@@ -2070,22 +2070,22 @@
     {
      "annee": 2029,
      "deficitPct": 6.8,
-     "dettePct": 128.6
+     "dettePct": 128.5
     },
     {
      "annee": 2030,
-     "deficitPct": 7.2,
-     "dettePct": 132.4
+     "deficitPct": 7.1,
+     "dettePct": 132.3
     },
     {
      "annee": 2031,
-     "deficitPct": 7.5,
-     "dettePct": 136.4
+     "deficitPct": 7.4,
+     "dettePct": 136.3
     },
     {
      "annee": 2032,
      "deficitPct": 7.7,
-     "dettePct": 140.5
+     "dettePct": 140.4
     }
    ],
    "effets2032": {
@@ -2306,14 +2306,14 @@
    "statutChiffrage": "ia",
    "annonce": {
     "titre": "Un budget calculé, pas promis",
-    "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 58 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,2 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
+    "texte": "Ce budget n'est le programme de personne. Il est calculé par une intelligence artificielle, qui cherche la meilleure trajectoire d'ensemble pour le pays, et pas seulement le plus petit déficit : elle applique les règles ci-dessous aux 58 mesures chiffrées du simulateur, aux mêmes chiffrages que pour les candidats, sans aucun choix au cas par cas. Il est recalculé chaque jour. Résultat : 0,05 Md€ d'économies et 21,6 Md€ de recettes en 2032, dont une partie rendue en dépenses (4,2 Md€) et baisses d'impôts (8,0 Md€), pour un déficit de 7,1 % du PIB en 2032 et une production plus élevée à long terme (+0,4 %). Avec les effets publiés, on ne peut pas à la fois ramener vite le déficit sous 3 % et préserver l'activité : ce budget fait baisser le déficit sans faire reculer l'emploi en 2032, quitte à aller moins vite. Les règles elles-mêmes sont des conventions : elles sont écrites ici pour être discutées.",
     "revendique": null,
     "detaille": null
    },
-   "deficit2032": 7.2,
-   "dette2032": 138.4,
-   "deficit2032Promesses": 7.2,
-   "dette2032Promesses": 138.4,
+   "deficit2032": 7.1,
+   "dette2032": 138.2,
+   "deficit2032Promesses": 7.1,
+   "dette2032Promesses": 138.2,
    "effetNet2032": 9.4,
    "effetNet2032Promesses": 9.4,
    "trajectoire": [
@@ -2335,7 +2335,7 @@
     {
      "annee": 2028,
      "deficitPct": 6.2,
-     "dettePct": 125.5
+     "dettePct": 125.4
     },
     {
      "annee": 2029,
@@ -2350,12 +2350,12 @@
     {
      "annee": 2031,
      "deficitPct": 6.9,
-     "dettePct": 134.9
+     "dettePct": 134.8
     },
     {
      "annee": 2032,
-     "deficitPct": 7.2,
-     "dettePct": 138.4
+     "deficitPct": 7.1,
+     "dettePct": 138.2
     }
    ],
    "effets2032": {
@@ -2640,9 +2640,9 @@
     "detaille": 2.5
    },
    "deficit2032": 6.7,
-   "dette2032": 137.7,
+   "dette2032": 137.6,
    "deficit2032Promesses": 6.6,
-   "dette2032Promesses": 137.5,
+   "dette2032Promesses": 137.4,
    "effetNet2032": 30.3,
    "effetNet2032Promesses": 31.8,
    "trajectoire": [
@@ -2668,23 +2668,23 @@
     },
     {
      "annee": 2029,
-     "deficitPct": 6.4,
-     "dettePct": 129.3
+     "deficitPct": 6.3,
+     "dettePct": 129.2
     },
     {
      "annee": 2030,
      "deficitPct": 6.4,
-     "dettePct": 132
+     "dettePct": 131.9
     },
     {
      "annee": 2031,
      "deficitPct": 6.5,
-     "dettePct": 134.8
+     "dettePct": 134.7
     },
     {
      "annee": 2032,
      "deficitPct": 6.7,
-     "dettePct": 137.7
+     "dettePct": 137.6
     }
    ],
    "effets2032": {
@@ -2913,9 +2913,9 @@
     "detaille": 90
    },
    "deficit2032": 6.5,
-   "dette2032": 136.9,
+   "dette2032": 136.8,
    "deficit2032Promesses": 5.2,
-   "dette2032Promesses": 132.2,
+   "dette2032Promesses": 132.1,
    "effetNet2032": 36.8,
    "effetNet2032Promesses": 80.1,
    "trajectoire": [
@@ -2931,7 +2931,7 @@
     },
     {
      "annee": 2027,
-     "deficitPct": 6.3,
+     "deficitPct": 6.2,
      "dettePct": 123
     },
     {
@@ -2942,22 +2942,22 @@
     {
      "annee": 2029,
      "deficitPct": 6.2,
-     "dettePct": 128.7
+     "dettePct": 128.6
     },
     {
      "annee": 2030,
      "deficitPct": 6.3,
-     "dettePct": 131.4
+     "dettePct": 131.3
     },
     {
      "annee": 2031,
      "deficitPct": 6.4,
-     "dettePct": 134.1
+     "dettePct": 134
     },
     {
      "annee": 2032,
      "deficitPct": 6.5,
-     "dettePct": 136.9
+     "dettePct": 136.8
     }
    ],
    "effets2032": {
