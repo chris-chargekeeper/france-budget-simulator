@@ -694,6 +694,7 @@ body.adv .simple-only{display:none!important}
 .eu-l .eu-v.nc{font-weight:400;color:var(--ink-3)}
 .eu-l .eu-t{grid-column:1/-1;font-size:12.5px;line-height:1.45;color:var(--ink-2)}
 .eu-l .eu-t a{color:inherit}
+.eu-rep>summary{cursor:pointer;padding:6px 0}.eu-rep>summary .eu-q{display:inline;margin-left:6px;font-size:12.5px;color:var(--ink-3)}.eu-rep[open]>summary{margin-bottom:8px}
 .eu-faits{margin-top:12px}
 .eu-faits ul{margin:6px 0 0;padding-left:18px;display:grid;gap:4px;font-size:12.5px;line-height:1.45;color:var(--ink-2)}
 .eu-faits a{color:inherit}
@@ -718,6 +719,7 @@ body.adv .simple-only{display:none!important}
 .eu-regle summary{cursor:pointer;color:var(--ink)}
 @media (max-width:640px){.eu-grille{grid-template-columns:1fr}.eu-vrow{grid-template-columns:1fr}.eu-vnote{grid-column:1}}
 
+.eu-tout{margin-top:12px}.eu-tout>summary{cursor:pointer;font-weight:600;font-size:.9rem;padding:6px 0}
 /* qui paie les retraites */
 .repart{margin-top:16px;background:linear-gradient(160deg,color-mix(in srgb,var(--rec) 7%,var(--surface)),var(--surface) 60%)}
 .panel .repart-t,.repart-t{font-family:Newsreader,serif;font-size:26px;font-weight:600;margin:4px 0 4px;color:var(--ink)}
@@ -3513,7 +3515,9 @@ function renderEuropeUkraine(){
     const faits = (C.ukraine.russie || []).slice().sort((a, b) => (b.date || '').localeCompare(a.date || ''))
       .map(f => `<li><b>${frDate(f.date)}</b> — ${f.fait}${f.source ? ` (${lien(f.source)})` : ''}</li>`).join('');
     det.innerHTML = `<h4>${p.candidat}</h4><p class="eu-sous">${p.nom}</p>`
-      + `<div class="eu-grille">${bloc('europe', 'Europe')}${bloc('ukraine', 'Ukraine')}</div>`
+      + `<details class="eu-rep"${state.adv ? ' open' : ''}><summary><b>Ses réponses question par question, avec les sources</b>`
+      + ` <span class="eu-q">Europe ${connus(sel, 'europe')}/${crit('europe').length} · Ukraine ${connus(sel, 'ukraine')}/${crit('ukraine').length} réponses connues</span></summary>`
+      + `<div class="eu-grille">${bloc('europe', 'Europe')}${bloc('ukraine', 'Ukraine')}</div></details>`
       + (faits ? `<details class="eu-faits"><summary><b>Son rapport à la Russie : les faits relevés</b></summary>`
         + `<ul>${faits}</ul></details>` : '');
   }
@@ -3536,10 +3540,10 @@ function renderEuropeUkraine(){
       + `<div><div class="eu-barre">${barre}</div><div class="eu-vnote">${note}</div></div></div>`;
   });
   const code = v => ({pour: 'P', contre: 'C', abstention: 'A', partage: '½', absent: '–'})[v] || '–';
-  html += `<div class="adv-only scroller"><table class="eu-liste"><thead><tr><th>Vote</th>${ids.map(id => `<th>${byId[id].sigle}</th>`).join('')}</tr></thead><tbody>`
+  html += `<details class="adv-only eu-tout"><summary>Voir le détail des ${sc.length} votes, parti par parti</summary><div class="scroller"><table class="eu-liste"><thead><tr><th>Vote</th>${ids.map(id => `<th>${byId[id].sigle}</th>`).join('')}</tr></thead><tbody>`
     + sc.map(s => `<tr><td>${frDate(s.date)} · ${s.assemblee === 'AN' ? 'Assemblée' : 'Parl. européen'} · ${lien({t: s.intitule, u: s.source && s.source.u})}</td>`
       + ids.map(id => { const v = (s.votes[id] || {}).position; return `<td class="${v}">${code(v)}</td>`; }).join('') + '</tr>').join('')
-    + `</tbody></table><p class="repart-src">P pour, C contre, A abstention, ½ partagé, – pas d'élu. ${VO.regle}</p></div>`;
+    + `</tbody></table><p class="repart-src">P pour, C contre, A abstention, ½ partagé, – pas d'élu. ${VO.regle}</p></div></details>`;
   vh.innerHTML = html;
   $('#euRegle').textContent = EU.regle + " Une case « non précisé » signifie qu'aucune source fiable n'a été trouvée : elle ne vaut ni pour ni contre.";
   $('#euSrc').innerHTML = `Positions relevées le ${frDate(EU.updated)} dans les programmes, discours, entretiens et comptes rendus parlementaires (une source par réponse). Votes : `
