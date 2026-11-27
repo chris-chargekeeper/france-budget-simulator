@@ -1,0 +1,458 @@
+{
+  "patch": {
+    "_comment": "Relève locale du 27 novembre 2026 : Objectif Élysée 2027 avec Éric Zemmour (CNews/Europe 1, 26 nov.), Philippe à l'Institut Curie, Alloncle (Les 4 Vérités), Tanguy (franceinfo, 25 nov.), Sénat (PLF 2027, 26 nov.), sondage OpinionWay pour CNews (25-26 nov.), OAT et spread du 26 nov.",
+    "releve": "2026-11-27",
+    "annonces": [
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "qui": "Éric Zemmour",
+        "fonction": "Président de Reconquête, candidat à la présidentielle",
+        "media": "Objectif Élysée 2027, CNews et Europe 1, 26 novembre 2026",
+        "verifie": true,
+        "quoi": "Met en tête de son programme la suppression de la CSG sur les revenus d'activité, qui augmenterait selon lui de 10 % les revenus des actifs, et la chiffre à 90 Md€ financés par des économies sur la dépense (montant rapporté par Europe 1, « selon lui »).",
+        "verbatim": "Le plus important, c'est la suppression de CSG d'activité. Soit 10% d'augmentation de salaire pour tout le monde.",
+        "mesure": "csgbaisse",
+        "montant": 90,
+        "type": "recette",
+        "source": "https://www.europe1.fr/politique/objectif-elysee-2027-suppression-de-la-csg-hausse-de-10-des-revenus-les-annonces-fiscales-deric-zemmour-1245685",
+        "contredit": "inconnu",
+        "ecart": "Le 21 novembre, la même suppression était annoncée sans montant ; Reconquête n'a pas publié de chiffrage poste par poste de ses 140 Md€ de baisses d'impôts (15 novembre)."
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "qui": "Éric Zemmour",
+        "fonction": "Président de Reconquête, candidat à la présidentielle",
+        "media": "Objectif Élysée 2027, CNews et Europe 1, 26 novembre 2026",
+        "verifie": true,
+        "quoi": "Veut réduire d'un tiers l'accise sur l'essence, soit 40 centimes de moins par litre, pour un coût qu'il estime à 12 Md€ (accise, pas TVA : non rattaché à la mesure de TVA sur l'énergie du catalogue).",
+        "verbatim": "Je supprime un tiers de l'assise sur l'essence et ça fait une baisse de 40 centimes par litre. Ça coûtera 12 milliards.",
+        "mesure": null,
+        "montant": 12,
+        "type": "recette",
+        "source": "https://www.europe1.fr/politique/en-direct-primaire-pouvoir-dachat-fiscalite-ecole-ce-quil-faut-retenir-de-lemission-objectif-elysee-2027-avec-eric-zemmour-1245655",
+        "contredit": "inconnu",
+        "ecart": "Pas de chiffrage publié par Reconquête pour cette mesure ; le catalogue n'a pas de mesure d'accise sur les carburants."
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "qui": "Éric Zemmour",
+        "fonction": "Président de Reconquête, candidat à la présidentielle",
+        "media": "Objectif Élysée 2027, CNews et Europe 1, 26 novembre 2026",
+        "verifie": true,
+        "quoi": "Supprimerait les impôts de production des entreprises, pour un coût de 16 Md€ (montant rapporté par le direct d'Europe 1, hors guillemets).",
+        "verbatim": null,
+        "mesure": "prod",
+        "montant": 16,
+        "type": "recette",
+        "source": "https://www.europe1.fr/politique/en-direct-primaire-pouvoir-dachat-fiscalite-ecole-ce-quil-faut-retenir-de-lemission-objectif-elysee-2027-avec-eric-zemmour-1245655",
+        "contredit": "inconnu",
+        "ecart": "Pas de chiffrage publié par Reconquête ; la mesure ne figure pas dans le scénario reconstitué de Reconquête."
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "qui": "Éric Zemmour",
+        "fonction": "Président de Reconquête, candidat à la présidentielle",
+        "media": "Objectif Élysée 2027, CNews et Europe 1, 26 novembre 2026",
+        "verifie": true,
+        "quoi": "Supprimerait les droits de succession en ligne directe pour 8 Md€, ainsi que l'IFI (sans montant), sans impôt de remplacement (montant rapporté par Europe 1, hors guillemets).",
+        "verbatim": null,
+        "mesure": "succ",
+        "montant": 8,
+        "type": "recette",
+        "source": "https://www.europe1.fr/politique/en-direct-primaire-pouvoir-dachat-fiscalite-ecole-ce-quil-faut-retenir-de-lemission-objectif-elysee-2027-avec-eric-zemmour-1245655",
+        "contredit": "annonce",
+        "ecart": "À Toulon, le 21 novembre, il promettait la suppression des droits de succession sans la restreindre à la ligne directe et sans montant ; le 26, il la limite aux transmissions en ligne directe."
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "qui": "Éric Zemmour",
+        "fonction": "Président de Reconquête, candidat à la présidentielle",
+        "media": "Objectif Élysée 2027, CNews et Europe 1, 26 novembre 2026",
+        "verifie": true,
+        "quoi": "Attend 30 Md€ d'une réforme de l'assurance chômage : indemnisation ramenée de 18 à 12 mois, taux dégressif de 75 % à 50 %, trois mois de travail pour un mois d'indemnisation, fin de l'indemnisation des ruptures conventionnelles.",
+        "verbatim": "La réforme du chômage va rapporter 30 milliards. Au lieu de 18 mois d'indemnisation, on réduit à un an.",
+        "mesure": "chomage",
+        "montant": 30,
+        "type": "economie",
+        "source": "https://www.europe1.fr/politique/en-direct-primaire-pouvoir-dachat-fiscalite-ecole-ce-quil-faut-retenir-de-lemission-objectif-elysee-2027-avec-eric-zemmour-1245655",
+        "contredit": "inconnu",
+        "ecart": "Pas de chiffrage publié ; la mesure chomage ne figure pas dans le scénario reconstitué de Reconquête."
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "qui": "Éric Zemmour",
+        "fonction": "Président de Reconquête, candidat à la présidentielle",
+        "media": "Objectif Élysée 2027, CNews et Europe 1, 26 novembre 2026",
+        "verifie": true,
+        "quoi": "Redit son plan de 280 Md€ : 140 Md€ de baisses d'impôts et 140 Md€ d'économies pour ramener le déficit à zéro ; le programme détaillé reste à paraître.",
+        "verbatim": "Je suis le seul candidat qui a donné tous les chiffres. Dans le programme, il y aura les 140 milliards d'économies.",
+        "mesure": null,
+        "montant": 280,
+        "type": "contexte",
+        "source": "https://www.europe1.fr/politique/en-direct-primaire-pouvoir-dachat-fiscalite-ecole-ce-quil-faut-retenir-de-lemission-objectif-elysee-2027-avec-eric-zemmour-1245655",
+        "contredit": "inconnu",
+        "ecart": "Cohérent avec l'annonce du 15 novembre (280 Md€), mais aucun programme chiffré poste par poste n'est publié."
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "qui": "Éric Zemmour",
+        "fonction": "Président de Reconquête, candidat à la présidentielle",
+        "media": "Objectif Élysée 2027, CNews et Europe 1, 26 novembre 2026",
+        "verifie": true,
+        "quoi": "Propose un départ à la retraite à 64 ans puis à 65 ans à partir de 2032, indexé ensuite sur l'espérance de vie, et une bascule progressive vers la capitalisation sur 20 à 30 ans pour les personnes nées après 1980, financée par son plan de baisse des dépenses ; aucun montant.",
+        "verbatim": "Ceux nés après 1980, on passe petit à petit à la capitalisation. On a un plan de baisse des dépenses et c'est comme ça qu'on va le financer.",
+        "mesure": "age65",
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.europe1.fr/politique/en-direct-primaire-pouvoir-dachat-fiscalite-ecole-ce-quil-faut-retenir-de-lemission-objectif-elysee-2027-avec-eric-zemmour-1245655",
+        "contredit": "inconnu",
+        "ecart": "Pas de chiffrage publié ; l'âge de 65 ans en 2032 n'avait pas été donné le 15 novembre."
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "hor",
+        "qui": "Édouard Philippe",
+        "fonction": "Candidat Horizons à la présidentielle",
+        "media": "Déplacement à l'Institut Curie, 26 novembre 2026 (BFM Business)",
+        "quoi": "Présente son programme santé : « investir » dans la santé grâce aux économies sur les retraites (65 ans, 45 annuités) et le chômage (12 mois maximum avant 50 ans), former 14 000 médecins par an, recruter 20 000 assistants médicaux et 10 000 infirmiers en pratique avancée ; aucun montant en euros.",
+        "verbatim": "Nous allons devoir investir dans la santé, nous ne devons pas dépenser moins dans la santé",
+        "mesure": "ondam",
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.bfmtv.com/economie/economie-social/depenser-moins-pour-les-retraites-et-les-chomeurs-mais-plus-pour-les-malades-malgre-un-deficit-de-pres-de-16-milliards-d-euros-edouard-philippe-explique-comment-il-veut-depenser-plus-dans-la-sante_AV-202611260756.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Pas de chiffrage poste par poste publié ; une hausse de la dépense de santé va à l'encontre de l'économie sur l'ONDAM que le scénario reconstitué d'Horizons lui prête."
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rn",
+        "qui": "Charles Alloncle",
+        "fonction": "Député UDR, porte-parole de la campagne de Marine Le Pen",
+        "media": "Les 4 Vérités, France 2, 26 novembre 2026",
+        "quoi": "Défend la capitalisation du projet retraites de Marine Le Pen, qu'il dit « 100 % financée », et la fin de l'aide financière à l'Ukraine, en rappelant que la France a versé « près de 30 milliards » depuis le début du conflit ; parle d'un plan contre la bureaucratie de « plusieurs milliards », sans montant.",
+        "verbatim": "Depuis le début du conflit, la France a contribué à hauteur de près de 30 milliards, ce qui est quand même un montant conséquent.",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.franceinfo.fr/politique/nouvelles-revelations-sur-des-ecrits-antisemites-attribues-a-jordan-bardella-une-polemique-parmi-mille-autres-reagit-charles-alloncle-porte-parole-udr-de-marine-le-pen_8300934.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Les 30 Md€ sont un constat de dépense passée, pas une économie chiffrée ; le financement de la capitalisation n'est pas détaillé."
+      },
+      {
+        "date": "2026-11-25",
+        "parti": "rn",
+        "qui": "Jean-Philippe Tanguy",
+        "fonction": "Député RN de la Somme, président délégué du groupe à l'Assemblée",
+        "media": "8h30 franceinfo, 25 novembre 2026",
+        "quoi": "Défend, dans la réforme des retraites du RN, la fin de la majoration de pension de 10 % pour les pères de trois enfants, pour concentrer l'avantage sur les mères ; aucun montant.",
+        "verbatim": "On veut concentrer l'avantage sur les mères de famille qui ont une carrière difficile liée à la maternité, qui ont été discriminées pendant toute leur carrière",
+        "mesure": "retr62",
+        "montant": null,
+        "type": "economie",
+        "source": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/reforme-des-retraites-presence-d-un-procureur-au-siege-du-rn-le-8h30-franceinfo-de-jean-philippe-tanguy_8277152.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Le contre-budget RN ne chiffre pas ce volet de la réforme des retraites."
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rn",
+        "qui": "Marine Le Pen",
+        "fonction": "Candidate du RN à la présidentielle",
+        "media": "Message sur X, 26 novembre 2026 (rapporté par CNews)",
+        "quoi": "Dénonce de « basses manœuvres politiciennes » visant à boucler le budget pluriannuel de l'UE 2028-2034 avant la présidentielle pour l'empêcher de réduire la contribution française ; aucun montant.",
+        "verbatim": "Notre pays est au bord du défaut et de l'explosion sociale.",
+        "mesure": "ue",
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.cnews.fr/france/2026-11-26/marine-le-pen-condamne-de-basses-manoeuvres-pour-conclure-un-accord-sur-le-budget",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": null
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rn",
+        "qui": "Joshua Hochart",
+        "fonction": "Sénateur RN ; n'est ni porte-parole de campagne ni responsable du programme",
+        "media": "Sénat, séance publique, PLF 2027 première partie (après l'article 19), compte rendu analytique",
+        "quoi": "Défend les amendements RN I-670 (TVA à 5,5 % sur gaz, électricité, fioul et carburants), I-989 et I-2118, présentés comme une mesure phare du programme de Marine Le Pen, sans montant ; tous rejetés. La rapporteure générale chiffre l'ensemble de la discussion commune, tous groupes confondus, à 17 Md€ : ce n'est pas un chiffrage RN.",
+        "verbatim": "C'est l'une des mesures phares du programme de Marine Le Pen : la baisse massive de la TVA sur l'énergie.",
+        "mesure": "tvaener",
+        "montant": null,
+        "type": "depense",
+        "source": "https://www.senat.fr/cra/s20261126/s20261126_mono.html",
+        "verifie": true,
+        "contredit": "non",
+        "ecart": null
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rn",
+        "qui": "Aymeric Durox",
+        "fonction": "Sénateur RN, cosignataire de l'amendement I-857 ; n'est pas porte-voix de la campagne",
+        "media": "Sénat, séance publique, PLF 2027 première partie (après l'article 12)",
+        "quoi": "Propose de supprimer la déduction fiscale de 7 650 € des journalistes, pour un gain annoncé de 50 M€ ; amendement rejeté.",
+        "verbatim": "Supprimons la déduction fiscale de 7 650 euros des journalistes, pour un gain de 50 millions d'euros.",
+        "mesure": "niches",
+        "montant": 0.05,
+        "type": "recette",
+        "source": "https://www.senat.fr/amendements/2026-2027/155/Amdt_I-857.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Cette niche n'est pas détaillée dans le contre-budget RN ; amendement d'un sénateur, il ne remplace pas le chiffre du plan."
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "ps",
+        "qui": "Grégory Blanc",
+        "fonction": "Sénateur Place publique (groupe écologiste) ; n'est pas porte-voix de la campagne Glucksmann",
+        "media": "Sénat, séance publique, PLF 2027 première partie (après l'article 17)",
+        "quoi": "Défend l'amendement I-2884 qui étend la TTF aux achats revendus dans la journée, sans en chiffrer le rendement ; compare les 5 Md€ de l'équivalent britannique aux 2 Md€ de la TTF française ; amendement rejeté.",
+        "verbatim": "L'équivalent anglais de la TTF rapporte plus de 5 milliards d'euros, contre 2 milliards pour nous.",
+        "mesure": "ttf",
+        "montant": null,
+        "type": "recette",
+        "source": "https://www.senat.fr/amendements/2026-2027/155/Amdt_I-2884.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Pas de chiffrage présidentiel publié par le camp Glucksmann ; les 5 et 2 Md€ sont des rendements de taxes existantes."
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "eco",
+        "qui": "Daniel Salmon",
+        "fonction": "Sénateur écologiste ; n'est pas porte-voix de la campagne Tondelier",
+        "media": "Sénat, séance publique, PLF 2027 première partie (après l'article 13), compte rendu analytique",
+        "quoi": "Oppose le coût du crédit d'impôt haies (9 M€) à celui du CIR, « 7 milliards », jugé difficile à contrôler ; ne propose ni économie ni réforme chiffrée du CIR.",
+        "verbatim": "Le crédit d'impôt recherche (CIR), lui, en coûte 7 milliards.",
+        "mesure": "cir",
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.senat.fr/cra/s20261126/s20261126_mono.html",
+        "verifie": true,
+        "contredit": "inconnu",
+        "ecart": "Pas de chiffrage présidentiel des Écologistes ; 7 Md€ est le coût du CIR cité, pas une recette revendiquée."
+      }
+    ],
+    "partis": {
+      "rec": {
+        "statutCandidature": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026) ; dit avoir 300 à 350 promesses de parrainage sur les 500 requises et annonce « ma dernière campagne » (26 novembre 2026)",
+        "source": {
+          "t": "franceinfo — « C'est ma dernière campagne », annonce Éric Zemmour, 26 novembre 2026",
+          "u": "https://www.franceinfo.fr/politique/eric-zemmour/c-est-ma-derniere-campagne-annonce-le-candidat-de-reconquete-a-la-presidentielle-eric-zemmour_8302101.html"
+        }
+      },
+      "ne": {
+        "statutCandidature": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite et en accepte le principe proposé par Bruno Retailleau (10 novembre 2026) ; réélu président de l'AMF (25 novembre) ; soutenu par huit députés LR de la Droite républicaine plutôt que Bruno Retailleau (26 novembre 2026)",
+        "source": {
+          "t": "franceinfo — Huit députés LR annoncent leur soutien à David Lisnard, 26 novembre 2026",
+          "u": "https://www.franceinfo.fr/elections/huit-deputes-des-republicains-annoncent-leur-soutien-a-david-lisnard-plutot-que-bruno-retailleau-pour-la-presidentielle-2027_8301579.html"
+        }
+      }
+    },
+    "contexte": {
+      "oat10": {
+        "valeur": 4.75,
+        "date": "2026-11-26",
+        "detail": "TEC 10 de la Banque de France à 4,745 % le 26 novembre (4,731 % le 25).",
+        "source": {
+          "t": "Banque de France — indices obligataires TEC du 26 novembre 2026",
+          "u": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-26"
+        }
+      },
+      "spread": {
+        "valeur": 149.5,
+        "date": "2026-11-26",
+        "detail": "OAT 10 ans 4,75 %, Bund 3,25 % : écart de 149,5 pb à la clôture du 26 novembre (151 pb le 25). S&P doit se prononcer sur la note de la France le 27 novembre au soir.",
+        "source": {
+          "t": "Idéal Investisseur — spread OAT-Bund, tableau quotidien",
+          "u": "https://www.ideal-investisseur.fr/marches/macro/spread-oat-bund.html"
+        }
+      }
+    },
+    "sondages": [
+      {
+        "institut": "OpinionWay",
+        "commanditaire": "CNews",
+        "terrain_debut": "2026-11-25",
+        "terrain_fin": "2026-11-26",
+        "date": "2026-11-26",
+        "echantillon": 912,
+        "hypothese": "Hypothèse unique : Arthaud, Mélenchon, Roussel, Tondelier, Glucksmann, Bouamrane, Villepin, Attal, Philippe, Riner, Retailleau, Lisnard, Dupont-Aignan, Zemmour, Le Pen",
+        "scores": {
+          "rn": 33,
+          "lfi": 16,
+          "ps": 10,
+          "ne": 12,
+          "hor": 8,
+          "ren": 4,
+          "lr": 4,
+          "rec": 3,
+          "eco": 1
+        },
+        "source": {
+          "t": "OpinionWay pour CNews, intentions de vote à la présidentielle 2027, vague 5, notice à la Commission des sondages du 26 novembre 2026",
+          "u": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2424"
+        }
+      }
+    ]
+  },
+  "trace": {
+    "releve": "2026-11-27",
+    "applique": "2026-11-27",
+    "ajouts": [
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "quoi": "Met en tête de son programme la suppression de la CSG sur les revenus d'activité, qui augmenterait selon lui de 10 % les revenus des actifs, et la chiffre à 90 Md€ financés par des économies sur la dépense (montant rapporté par Europe 1, « selon lui »).",
+        "source": "https://www.europe1.fr/politique/objectif-elysee-2027-suppression-de-la-csg-hausse-de-10-des-revenus-les-annonces-fiscales-deric-zemmour-1245685"
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "quoi": "Veut réduire d'un tiers l'accise sur l'essence, soit 40 centimes de moins par litre, pour un coût qu'il estime à 12 Md€ (accise, pas TVA : non rattaché à la mesure de TVA sur l'énergie du catalogue).",
+        "source": "https://www.europe1.fr/politique/en-direct-primaire-pouvoir-dachat-fiscalite-ecole-ce-quil-faut-retenir-de-lemission-objectif-elysee-2027-avec-eric-zemmour-1245655"
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "quoi": "Supprimerait les impôts de production des entreprises, pour un coût de 16 Md€ (montant rapporté par le direct d'Europe 1, hors guillemets).",
+        "source": "https://www.europe1.fr/politique/en-direct-primaire-pouvoir-dachat-fiscalite-ecole-ce-quil-faut-retenir-de-lemission-objectif-elysee-2027-avec-eric-zemmour-1245655"
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "quoi": "Supprimerait les droits de succession en ligne directe pour 8 Md€, ainsi que l'IFI (sans montant), sans impôt de remplacement (montant rapporté par Europe 1, hors guillemets).",
+        "source": "https://www.europe1.fr/politique/en-direct-primaire-pouvoir-dachat-fiscalite-ecole-ce-quil-faut-retenir-de-lemission-objectif-elysee-2027-avec-eric-zemmour-1245655"
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "quoi": "Attend 30 Md€ d'une réforme de l'assurance chômage : indemnisation ramenée de 18 à 12 mois, taux dégressif de 75 % à 50 %, trois mois de travail pour un mois d'indemnisation, fin de l'indemnisation des ruptures conventionnelles.",
+        "source": "https://www.europe1.fr/politique/en-direct-primaire-pouvoir-dachat-fiscalite-ecole-ce-quil-faut-retenir-de-lemission-objectif-elysee-2027-avec-eric-zemmour-1245655"
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "quoi": "Redit son plan de 280 Md€ : 140 Md€ de baisses d'impôts et 140 Md€ d'économies pour ramener le déficit à zéro ; le programme détaillé reste à paraître.",
+        "source": "https://www.europe1.fr/politique/en-direct-primaire-pouvoir-dachat-fiscalite-ecole-ce-quil-faut-retenir-de-lemission-objectif-elysee-2027-avec-eric-zemmour-1245655"
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rec",
+        "quoi": "Propose un départ à la retraite à 64 ans puis à 65 ans à partir de 2032, indexé ensuite sur l'espérance de vie, et une bascule progressive vers la capitalisation sur 20 à 30 ans pour les personnes nées après 1980, financée par son plan de baisse des dépenses ; aucun montant.",
+        "source": "https://www.europe1.fr/politique/en-direct-primaire-pouvoir-dachat-fiscalite-ecole-ce-quil-faut-retenir-de-lemission-objectif-elysee-2027-avec-eric-zemmour-1245655"
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "hor",
+        "quoi": "Présente son programme santé : « investir » dans la santé grâce aux économies sur les retraites (65 ans, 45 annuités) et le chômage (12 mois maximum avant 50 ans), former 14 000 médecins par an, recruter 20 000 assistants médicaux et 10 000 infirmiers en pratique avancée ; aucun montant en euros.",
+        "source": "https://www.bfmtv.com/economie/economie-social/depenser-moins-pour-les-retraites-et-les-chomeurs-mais-plus-pour-les-malades-malgre-un-deficit-de-pres-de-16-milliards-d-euros-edouard-philippe-explique-comment-il-veut-depenser-plus-dans-la-sante_AV-202611260756.html"
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rn",
+        "quoi": "Défend la capitalisation du projet retraites de Marine Le Pen, qu'il dit « 100 % financée », et la fin de l'aide financière à l'Ukraine, en rappelant que la France a versé « près de 30 milliards » depuis le début du conflit ; parle d'un plan contre la bureaucratie de « plusieurs milliards », sans montant.",
+        "source": "https://www.franceinfo.fr/politique/nouvelles-revelations-sur-des-ecrits-antisemites-attribues-a-jordan-bardella-une-polemique-parmi-mille-autres-reagit-charles-alloncle-porte-parole-udr-de-marine-le-pen_8300934.html"
+      },
+      {
+        "date": "2026-11-25",
+        "parti": "rn",
+        "quoi": "Défend, dans la réforme des retraites du RN, la fin de la majoration de pension de 10 % pour les pères de trois enfants, pour concentrer l'avantage sur les mères ; aucun montant.",
+        "source": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/reforme-des-retraites-presence-d-un-procureur-au-siege-du-rn-le-8h30-franceinfo-de-jean-philippe-tanguy_8277152.html"
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rn",
+        "quoi": "Dénonce de « basses manœuvres politiciennes » visant à boucler le budget pluriannuel de l'UE 2028-2034 avant la présidentielle pour l'empêcher de réduire la contribution française ; aucun montant.",
+        "source": "https://www.cnews.fr/france/2026-11-26/marine-le-pen-condamne-de-basses-manoeuvres-pour-conclure-un-accord-sur-le-budget"
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rn",
+        "quoi": "Défend les amendements RN I-670 (TVA à 5,5 % sur gaz, électricité, fioul et carburants), I-989 et I-2118, présentés comme une mesure phare du programme de Marine Le Pen, sans montant ; tous rejetés. La rapporteure générale chiffre l'ensemble de la discussion commune, tous groupes confondus, à 17 Md€ : ce n'est pas un chiffrage RN.",
+        "source": "https://www.senat.fr/cra/s20261126/s20261126_mono.html"
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "rn",
+        "quoi": "Propose de supprimer la déduction fiscale de 7 650 € des journalistes, pour un gain annoncé de 50 M€ ; amendement rejeté.",
+        "source": "https://www.senat.fr/amendements/2026-2027/155/Amdt_I-857.html"
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "ps",
+        "quoi": "Défend l'amendement I-2884 qui étend la TTF aux achats revendus dans la journée, sans en chiffrer le rendement ; compare les 5 Md€ de l'équivalent britannique aux 2 Md€ de la TTF française ; amendement rejeté.",
+        "source": "https://www.senat.fr/amendements/2026-2027/155/Amdt_I-2884.html"
+      },
+      {
+        "date": "2026-11-26",
+        "parti": "eco",
+        "quoi": "Oppose le coût du crédit d'impôt haies (9 M€) à celui du CIR, « 7 milliards », jugé difficile à contrôler ; ne propose ni économie ni réforme chiffrée du CIR.",
+        "source": "https://www.senat.fr/cra/s20261126/s20261126_mono.html"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "parties.rec.statutCandidature",
+        "avant": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026)",
+        "apres": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026) ; dit avoir 300 à 350 promesses de parrainage sur les 500 requises et annonce « ma dernière campagne » (26 novembre 2026)",
+        "source": "https://www.franceinfo.fr/politique/eric-zemmour/c-est-ma-derniere-campagne-annonce-le-candidat-de-reconquete-a-la-presidentielle-eric-zemmour_8302101.html"
+      },
+      {
+        "quoi": "parties.ne.statutCandidature",
+        "avant": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite et en accepte le principe proposé par Bruno Retailleau (10 novembre 2026)",
+        "apres": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite et en accepte le principe proposé par Bruno Retailleau (10 novembre 2026) ; réélu président de l'AMF (25 novembre) ; soutenu par huit députés LR de la Droite républicaine plutôt que Bruno Retailleau (26 novembre 2026)",
+        "source": "https://www.franceinfo.fr/elections/huit-deputes-des-republicains-annoncent-leur-soutien-a-david-lisnard-plutot-que-bruno-retailleau-pour-la-presidentielle-2027_8301579.html"
+      },
+      {
+        "quoi": "contexte.oat10",
+        "avant": 4.73,
+        "apres": 4.75,
+        "source": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-26"
+      },
+      {
+        "quoi": "contexte.spread",
+        "avant": 151,
+        "apres": 149.5,
+        "source": "https://www.ideal-investisseur.fr/marches/macro/spread-oat-bund.html"
+      },
+      {
+        "quoi": "parties.sondages.OpinionWay",
+        "avant": {
+          "rn": 31,
+          "lfi": 16,
+          "lr": 4,
+          "ren": 3,
+          "hor": 12,
+          "ps": 10,
+          "eco": 3,
+          "ne": 9,
+          "rec": 3
+        },
+        "apres": {
+          "rn": 33,
+          "lfi": 16,
+          "ps": 10,
+          "ne": 12,
+          "hor": 8,
+          "ren": 4,
+          "lr": 4,
+          "rec": 3,
+          "eco": 1
+        },
+        "source": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2424"
+      }
+    ]
+  }
+}

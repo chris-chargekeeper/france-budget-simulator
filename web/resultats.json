@@ -1,11 +1,11 @@
 {
  "site": "https://quipaie2027.fr",
- "date": "2026-11-26",
+ "date": "2026-11-27",
  "licence": {
   "nom": "Licence Ouverte / Open Licence 2.0 (Etalab)",
   "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
  },
- "citation": "quipaie2027.fr, données au 2026-11-26",
+ "citation": "quipaie2027.fr, données au 2026-11-27",
  "unites": {
   "deficit": "% du PIB (déficit public, signe positif)",
   "dette": "% du PIB",
@@ -19,7 +19,7 @@
   "croissance": 1,
   "inflation": 1.8,
   "derive": 0.7,
-  "tauxMarche": 4.73,
+  "tauxMarche": 4.75,
   "multiplicateur": 0.9,
   "erosion": 25
  },
@@ -60,7 +60,7 @@
    {
     "annee": 2031,
     "deficitPct": 7.2,
-    "dettePct": 136.2
+    "dettePct": 136.3
    },
    {
     "annee": 2032,
@@ -84,7 +84,7 @@
     "revendique": 140,
     "detaille": 82.4
    },
-   "deficit2032": 7.3,
+   "deficit2032": 7.4,
    "dette2032": 139.6,
    "deficit2032Promesses": 6,
    "dette2032Promesses": 134.4,
@@ -113,13 +113,13 @@
     },
     {
      "annee": 2029,
-     "deficitPct": 6.6,
+     "deficitPct": 6.7,
      "dettePct": 129.4
     },
     {
      "annee": 2030,
      "deficitPct": 6.9,
-     "dettePct": 132.5
+     "dettePct": 132.6
     },
     {
      "annee": 2031,
@@ -128,7 +128,7 @@
     },
     {
      "annee": 2032,
-     "deficitPct": 7.3,
+     "deficitPct": 7.4,
      "dettePct": 139.6
     }
    ],
@@ -396,13 +396,13 @@
     },
     {
      "annee": 2030,
-     "deficitPct": 8.8,
+     "deficitPct": 8.9,
      "dettePct": 136.1
     },
     {
      "annee": 2031,
      "deficitPct": 9.4,
-     "dettePct": 142.1
+     "dettePct": 142.2
     },
     {
      "annee": 2032,
@@ -962,7 +962,7 @@
     "detaille": 133.5
    },
    "deficit2032": 6.7,
-   "dette2032": 137.8,
+   "dette2032": 137.9,
    "deficit2032Promesses": 5.6,
    "dette2032Promesses": 134.3,
    "effetNet2032": 32,
@@ -1006,7 +1006,7 @@
     {
      "annee": 2032,
      "deficitPct": 6.7,
-     "dettePct": 137.8
+     "dettePct": 137.9
     }
    ],
    "effets2032": {
@@ -1249,9 +1249,9 @@
     "detaille": 27
    },
    "deficit2032": 6.7,
-   "dette2032": 137,
-   "deficit2032Promesses": 6.4,
-   "dette2032Promesses": 135.7,
+   "dette2032": 137.1,
+   "deficit2032Promesses": 6.5,
+   "dette2032Promesses": 135.8,
    "effetNet2032": 24,
    "effetNet2032Promesses": 33,
    "trajectoire": [
@@ -1278,7 +1278,7 @@
     {
      "annee": 2029,
      "deficitPct": 6.2,
-     "dettePct": 128.4
+     "dettePct": 128.5
     },
     {
      "annee": 2030,
@@ -1287,13 +1287,13 @@
     },
     {
      "annee": 2031,
-     "deficitPct": 6.5,
+     "deficitPct": 6.6,
      "dettePct": 134
     },
     {
      "annee": 2032,
      "deficitPct": 6.7,
-     "dettePct": 137
+     "dettePct": 137.1
     }
    ],
    "effets2032": {
@@ -1474,7 +1474,7 @@
     "detaille": null
    },
    "deficit2032": 7.3,
-   "dette2032": 141.1,
+   "dette2032": 141.2,
    "deficit2032Promesses": 6.6,
    "dette2032Promesses": 138.3,
    "effetNet2032": 11,
@@ -1503,7 +1503,7 @@
     {
      "annee": 2029,
      "deficitPct": 6.9,
-     "dettePct": 131
+     "dettePct": 131.1
     },
     {
      "annee": 2030,
@@ -1513,12 +1513,12 @@
     {
      "annee": 2031,
      "deficitPct": 7.2,
-     "dettePct": 137.6
+     "dettePct": 137.7
     },
     {
      "annee": 2032,
      "deficitPct": 7.3,
-     "dettePct": 141.1
+     "dettePct": 141.2
     }
    ],
    "effets2032": {
@@ -1796,7 +1796,7 @@
    "deficit2032": 7.5,
    "dette2032": 139.7,
    "deficit2032Promesses": 7.2,
-   "dette2032Promesses": 138.1,
+   "dette2032Promesses": 138.2,
    "effetNet2032": -4.6,
    "effetNet2032Promesses": 5.3,
    "trajectoire": [
@@ -2070,16 +2070,16 @@
     {
      "annee": 2029,
      "deficitPct": 6.8,
-     "dettePct": 128.5
+     "dettePct": 128.6
     },
     {
      "annee": 2030,
-     "deficitPct": 7.1,
-     "dettePct": 132.3
+     "deficitPct": 7.2,
+     "dettePct": 132.4
     },
     {
      "annee": 2031,
-     "deficitPct": 7.4,
+     "deficitPct": 7.5,
      "dettePct": 136.3
     },
     {
@@ -2311,9 +2311,9 @@
     "detaille": null
    },
    "deficit2032": 7.1,
-   "dette2032": 138.2,
+   "dette2032": 138.3,
    "deficit2032Promesses": 7.1,
-   "dette2032Promesses": 138.2,
+   "dette2032Promesses": 138.3,
    "effetNet2032": 9.4,
    "effetNet2032Promesses": 9.4,
    "trajectoire": [
@@ -2355,7 +2355,7 @@
     {
      "annee": 2032,
      "deficitPct": 7.1,
-     "dettePct": 138.2
+     "dettePct": 138.3
     }
    ],
    "effets2032": {
@@ -2631,7 +2631,7 @@
    "parti": "Nouvelle Énergie",
    "sigle": "NE",
    "horsCourse": false,
-   "statutCandidature": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite et en accepte le principe proposé par Bruno Retailleau (10 novembre 2026)",
+   "statutCandidature": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite et en accepte le principe proposé par Bruno Retailleau (10 novembre 2026) ; réélu président de l'AMF (25 novembre) ; soutenu par huit députés LR de la Droite républicaine plutôt que Bruno Retailleau (26 novembre 2026)",
    "statutChiffrage": "partiel",
    "annonce": {
     "titre": "200 Md€ d'économies d'ici 2032",
@@ -2642,7 +2642,7 @@
    "deficit2032": 6.7,
    "dette2032": 137.6,
    "deficit2032Promesses": 6.6,
-   "dette2032Promesses": 137.4,
+   "dette2032Promesses": 137.5,
    "effetNet2032": 30.3,
    "effetNet2032Promesses": 31.8,
    "trajectoire": [
@@ -2669,12 +2669,12 @@
     {
      "annee": 2029,
      "deficitPct": 6.3,
-     "dettePct": 129.2
+     "dettePct": 129.3
     },
     {
      "annee": 2030,
      "deficitPct": 6.4,
-     "dettePct": 131.9
+     "dettePct": 132
     },
     {
      "annee": 2031,
@@ -2894,6 +2894,10 @@
     {
      "t": "Le maire de Cannes, David Lisnard, annonce sa candidature à l'élection présidentielle — franceinfo, 31 mars 2026",
      "u": "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-cannes-david-lisnard-annonce-sa-candidature-a-l-election-presidentielle-et-officialise-son-depart-des-republicains_7907063.html"
+    },
+    {
+     "t": "franceinfo — Huit députés LR annoncent leur soutien à David Lisnard, 26 novembre 2026",
+     "u": "https://www.franceinfo.fr/elections/huit-deputes-des-republicains-annoncent-leur-soutien-a-david-lisnard-plutot-que-bruno-retailleau-pour-la-presidentielle-2027_8301579.html"
     }
    ],
    "page": "https://quipaie2027.fr/candidat-david-lisnard.html"
@@ -2904,7 +2908,7 @@
    "parti": "Reconquête",
    "sigle": "REC",
    "horsCourse": false,
-   "statutCandidature": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026)",
+   "statutCandidature": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026) ; dit avoir 300 à 350 promesses de parrainage sur les 500 requises et annonce « ma dernière campagne » (26 novembre 2026)",
    "statutChiffrage": "reconstitution",
    "annonce": {
     "titre": "280 Md€ d'économies par an en 2032",
@@ -2915,7 +2919,7 @@
    "deficit2032": 6.5,
    "dette2032": 136.8,
    "deficit2032Promesses": 5.2,
-   "dette2032Promesses": 132.1,
+   "dette2032Promesses": 132.2,
    "effetNet2032": 36.8,
    "effetNet2032Promesses": 80.1,
    "trajectoire": [
@@ -2931,7 +2935,7 @@
     },
     {
      "annee": 2027,
-     "deficitPct": 6.2,
+     "deficitPct": 6.3,
      "dettePct": 123
     },
     {
@@ -2942,7 +2946,7 @@
     {
      "annee": 2029,
      "deficitPct": 6.2,
-     "dettePct": 128.6
+     "dettePct": 128.7
     },
     {
      "annee": 2030,
@@ -2952,7 +2956,7 @@
     {
      "annee": 2031,
      "deficitPct": 6.4,
-     "dettePct": 134
+     "dettePct": 134.1
     },
     {
      "annee": 2032,
@@ -3111,6 +3115,10 @@
     {
      "t": "Éric Zemmour au JDD : « Tout faire pour que notre avenir soit français », 15 novembre 2026",
      "u": "https://www.lejdd.fr/politique/eric-zemmour-au-jdd-tout-faire-pour-que-notre-avenir-soit-francais-188724"
+    },
+    {
+     "t": "franceinfo — « C'est ma dernière campagne », annonce Éric Zemmour, 26 novembre 2026",
+     "u": "https://www.franceinfo.fr/politique/eric-zemmour/c-est-ma-derniere-campagne-annonce-le-candidat-de-reconquete-a-la-presidentielle-eric-zemmour_8302101.html"
     }
    ],
    "page": "https://quipaie2027.fr/candidat-eric-zemmour.html"

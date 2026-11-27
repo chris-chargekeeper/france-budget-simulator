@@ -1,6 +1,6 @@
 {
   "_comment": "Un candidat pressenti par parti. 'annonce' = le chiffre revendiqué publiquement, avec sa source. 'sim' = la borne du catalogue retenue par défaut dans le simulateur. statut: publie | partiel | reconstitution. 'avatar' choisit la variante du buste dessiné sur la carte : 'h', 'f', ou null pour retomber sur le monogramme. C'est un pictogramme générique, sans ressemblance recherchée ; la valeur se corrige dans ce fichier.",
-  "updated": "2026-11-23",
+  "updated": "2026-11-27",
   "avertissement": "Les candidatures ne seront officielles qu'après validation des parrainages par le Conseil constitutionnel, au printemps 2027. Le site suit les candidats déclarés ou investis qui pèsent dans les sondages ; la liste est revérifiée chaque matin. Les programmes 2027 sont pour la plupart non publiés : les scénarios marqués « reconstitution » sont bâtis par ce simulateur à partir de positions publiques, pas par les partis eux-mêmes.",
   "parties": [
     {
@@ -757,9 +757,9 @@
         }
       ],
       "calcul": {
-        "date": "2026-11-26",
-        "deficit2032": 7.13,
-        "dette2032": 138.2,
+        "date": "2026-11-27",
+        "deficit2032": 7.15,
+        "dette2032": 138.3,
         "economies": 0.1,
         "recettes": 21.6,
         "depenses": 4.2,
@@ -774,7 +774,7 @@
       "candidat": "David Lisnard",
       "avatar": "h",
       "couleur": "#0E7C86",
-      "statutCandidature": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite et en accepte le principe proposé par Bruno Retailleau (10 novembre 2026)",
+      "statutCandidature": "Maire de Cannes, candidat déclaré (31 mars 2026) ; réclame une primaire de la droite et en accepte le principe proposé par Bruno Retailleau (10 novembre 2026) ; réélu président de l'AMF (25 novembre) ; soutenu par huit députés LR de la Droite républicaine plutôt que Bruno Retailleau (26 novembre 2026)",
       "statut": "partiel",
       "annonce": {
         "titre": "200 Md€ d'économies d'ici 2032",
@@ -823,6 +823,10 @@
         {
           "t": "Le maire de Cannes, David Lisnard, annonce sa candidature à l'élection présidentielle — franceinfo, 31 mars 2026",
           "u": "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-cannes-david-lisnard-annonce-sa-candidature-a-l-election-presidentielle-et-officialise-son-depart-des-republicains_7907063.html"
+        },
+        {
+          "t": "franceinfo — Huit députés LR annoncent leur soutien à David Lisnard, 26 novembre 2026",
+          "u": "https://www.franceinfo.fr/elections/huit-deputes-des-republicains-annoncent-leur-soutien-a-david-lisnard-plutot-que-bruno-retailleau-pour-la-presidentielle-2027_8301579.html"
         }
       ],
       "depuis": "2026-10-30"
@@ -834,7 +838,7 @@
       "candidat": "Éric Zemmour",
       "avatar": "h",
       "couleur": "#3B3F8F",
-      "statutCandidature": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026)",
+      "statutCandidature": "Candidat déclaré (17 septembre 2026), candidature officialisée au 20H de TF1 (10 novembre 2026) ; dit avoir 300 à 350 promesses de parrainage sur les 500 requises et annonce « ma dernière campagne » (26 novembre 2026)",
       "statut": "reconstitution",
       "annonce": {
         "titre": "280 Md€ d'économies par an en 2032",
@@ -886,6 +890,10 @@
         {
           "t": "Éric Zemmour au JDD : « Tout faire pour que notre avenir soit français », 15 novembre 2026",
           "u": "https://www.lejdd.fr/politique/eric-zemmour-au-jdd-tout-faire-pour-que-notre-avenir-soit-francais-188724"
+        },
+        {
+          "t": "franceinfo — « C'est ma dernière campagne », annonce Éric Zemmour, 26 novembre 2026",
+          "u": "https://www.franceinfo.fr/politique/eric-zemmour/c-est-ma-derniere-campagne-annonce-le-candidat-de-reconquete-a-la-presidentielle-eric-zemmour_8302101.html"
         }
       ],
       "depuis": "2026-10-30"
@@ -898,6 +906,30 @@
     "note": "Le ministère de l'Intérieur publie, une fois les candidatures validées par le Conseil constitutionnel, la profession de foi et le programme officiel de chaque candidat. C'est la seule source de rang officiel pour un programme : dès sa mise en ligne, elle remplace ici toute reprise de presse, et les scénarios « reconstitution » sont rebâtis à partir d'elle. Non disponible à ce jour pour 2027 : publication attendue après la liste officielle des candidats, au plus tard le 26 mars 2027 (premier tour le 18 avril 2027)."
   },
   "sondages": [
+    {
+      "commanditaire": "CNews",
+      "institut": "OpinionWay",
+      "terrain_debut": "2026-11-25",
+      "echantillon": 912,
+      "source": {
+        "t": "OpinionWay pour CNews, intentions de vote à la présidentielle 2027, vague 5, notice à la Commission des sondages du 26 novembre 2026",
+        "u": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2424"
+      },
+      "scores": {
+        "rn": 33,
+        "lfi": 16,
+        "ps": 10,
+        "ne": 12,
+        "hor": 8,
+        "ren": 4,
+        "lr": 4,
+        "rec": 3,
+        "eco": 1
+      },
+      "date": "2026-11-26",
+      "terrain_fin": "2026-11-26",
+      "hypothese": "Hypothèse unique : Arthaud, Mélenchon, Roussel, Tondelier, Glucksmann, Bouamrane, Villepin, Attal, Philippe, Riner, Retailleau, Lisnard, Dupont-Aignan, Zemmour, Le Pen"
+    },
     {
       "source": {
         "t": "Toluna Harris Interactive — Baromètre Présidentielle 2027, vague 10, M6/RTL/L'Express, 23 novembre 2026 (rapport, p. 12-13)",
@@ -995,30 +1027,6 @@
       }
     },
     {
-      "hypothese": "Hypothèse 1 : avec Teddy Riner (Attal et Philippe candidats)",
-      "echantillon": 964,
-      "terrain_fin": "2026-11-12",
-      "commanditaire": "CNews",
-      "source": {
-        "t": "Notice OpinionWay pour CNews, intentions de vote présidentielle 2027 (Pres IV), 12 novembre 2026",
-        "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10371-pres-iv-opinionway-cnews-12-novembre.pdf"
-      },
-      "terrain_debut": "2026-11-10",
-      "date": "2026-11-12",
-      "institut": "OpinionWay",
-      "scores": {
-        "rn": 31,
-        "lfi": 16,
-        "lr": 4,
-        "ren": 3,
-        "hor": 12,
-        "ps": 10,
-        "eco": 3,
-        "ne": 9,
-        "rec": 3
-      }
-    },
-    {
       "terrain_debut": "2026-11-09",
       "date": "2026-11-11",
       "institut": "Cluster17",
@@ -1089,6 +1097,23 @@
     }
   ],
   "sondages_historique": [
+    {
+      "institut": "OpinionWay",
+      "commanditaire": "CNews",
+      "terrain_fin": "2026-11-12",
+      "scores": {
+        "rn": 31,
+        "lfi": 16,
+        "lr": 4,
+        "ren": 3,
+        "hor": 12,
+        "ps": 10,
+        "eco": 3,
+        "ne": 9,
+        "rec": 3
+      },
+      "u": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10371-pres-iv-opinionway-cnews-12-novembre.pdf"
+    },
     {
       "institut": "Toluna Harris Interactive",
       "commanditaire": "M6 et RTL",
