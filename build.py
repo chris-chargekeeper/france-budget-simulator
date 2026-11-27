@@ -20,7 +20,7 @@ import pages_ia
 
 ROOT = pathlib.Path(__file__).parent
 DATA = ROOT / "dataset" / "simulateur"
-FILES = ["baseline", "measures", "parties", "announcements", "assises", "contexte", "incidence", "histoire", "pouvoir", "fonctionpublique"]
+FILES = ["baseline", "measures", "parties", "announcements", "assises", "contexte", "incidence", "histoire", "pouvoir", "fonctionpublique", "europe"]
 CONTRADICTION = {"non", "programme", "annonce", "inconnu"}
 
 DERIVE = ROOT / "dataset" / "derive"

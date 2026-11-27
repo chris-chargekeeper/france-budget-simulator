@@ -664,6 +664,60 @@ body.adv .simple-only{display:none!important}
   .mass{padding:12px 14px 11px}
 }
 
+/* Europe et Ukraine : deux axes, une grille identique pour tous */
+.eu-axe{margin:4px 0 22px}
+.eu-axe h3{font:600 15px "IBM Plex Sans",sans-serif;color:var(--ink);margin:0 0 2px}
+.eu-axe .eu-q{margin:0 0 10px;font-size:12.5px;color:var(--ink-3)}
+.eu-piste{position:relative;margin:0 6px}
+.eu-ligne{position:absolute;left:0;right:0;height:6px;border-radius:3px;
+  background:linear-gradient(90deg,color-mix(in srgb,var(--dep) 55%,var(--surface)),var(--rule-soft) 50%,color-mix(in srgb,var(--rec) 55%,var(--surface)))}
+.eu-bouts{display:flex;justify-content:space-between;font-size:12px;color:var(--ink-2);margin-top:6px}
+.eu-bouts b{color:var(--ink);font-weight:600}
+.eu-pt{position:absolute;transform:translateX(-50%);display:flex;align-items:center;gap:5px;padding:3px 9px 3px 4px;border-radius:999px;
+  background:var(--surface);border:1.5px solid var(--pc,var(--ink-3));font:600 12px "IBM Plex Sans",sans-serif;color:var(--ink);
+  cursor:pointer;white-space:nowrap;box-shadow:0 1px 3px rgba(0,0,0,.12);line-height:1.2}
+.eu-pt i{width:10px;height:10px;border-radius:50%;background:var(--pc,var(--ink-3));flex:none}
+.eu-pt:hover,.eu-pt.on{background:color-mix(in srgb,var(--pc) 14%,var(--surface))}
+.eu-pt.on{outline:2px solid var(--pc);outline-offset:1px}
+.eu-pt.peu{border-style:dashed;color:var(--ink-2)}
+.eu-peu{margin:6px 0 0}
+.eu-pt:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.eu-aide{font-size:12.5px;color:var(--ink-3);margin:0 0 10px}
+.eu-detail:empty{display:none}
+.eu-detail{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:14px 16px;margin-bottom:14px}
+.eu-detail h4{margin:0 0 2px;font-size:16px;color:var(--ink)}
+.eu-detail .eu-sous{margin:0 0 10px;font-size:12.5px;color:var(--ink-3)}
+.eu-grille{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.eu-grille h5{margin:0 0 6px;font-size:13px;color:var(--ink)}
+.eu-l{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:6px 0;border-top:1px solid var(--rule-soft);font-size:13px;color:var(--ink-2)}
+.eu-l .eu-v{font-weight:600;color:var(--ink);text-align:right}
+.eu-l .eu-v.nc{font-weight:400;color:var(--ink-3)}
+.eu-l .eu-t{grid-column:1/-1;font-size:12.5px;line-height:1.45;color:var(--ink-2)}
+.eu-l .eu-t a{color:inherit}
+.eu-faits{margin-top:12px}
+.eu-faits ul{margin:6px 0 0;padding-left:18px;display:grid;gap:4px;font-size:12.5px;line-height:1.45;color:var(--ink-2)}
+.eu-faits a{color:inherit}
+.eu-votes h4{margin:4px 0 2px;font-size:14px;color:var(--ink)}
+.eu-votes .eu-q{margin:0 0 8px;font-size:12.5px;color:var(--ink-3)}
+.eu-vrow{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:center;padding:4px 0}
+.eu-vrow.on .eu-who{text-decoration:underline}
+.eu-who{font-size:13px;font-weight:600;color:var(--ink);line-height:1.2}
+.eu-who small{display:block;font-weight:400;font-size:11.5px;color:var(--ink-3)}
+.eu-barre{display:flex;height:18px;border-radius:5px;overflow:hidden;background:var(--rule-soft)}
+.eu-barre span{display:block;height:100%}
+.eu-barre .pour{background:var(--rec)} .eu-barre .abstention{background:color-mix(in srgb,var(--ink) 30%,var(--surface))}
+.eu-barre .contre{background:var(--dep)} .eu-barre .partage{background:repeating-linear-gradient(45deg,var(--rule) 0 3px,var(--surface) 3px 6px)}
+.eu-leg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--ink-2);margin:6px 0 4px}
+.eu-leg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.eu-vnote{font-size:12.5px;color:var(--ink-2);grid-column:2;line-height:1.4}
+.eu-liste{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px}
+.eu-liste th,.eu-liste td{padding:4px 5px;border-bottom:1px solid var(--rule-soft);text-align:center;color:var(--ink-2)}
+.eu-liste th:first-child,.eu-liste td:first-child{text-align:left}
+.eu-liste td.pour{color:var(--rec);font-weight:600} .eu-liste td.contre{color:var(--dep);font-weight:600}
+.eu-regle{margin-top:12px;font-size:13px;color:var(--ink-2)}
+.eu-regle summary{cursor:pointer;color:var(--ink)}
+@media (max-width:640px){.eu-grille{grid-template-columns:1fr}.eu-vrow{grid-template-columns:1fr}.eu-vnote{grid-column:1}}
+
 /* qui paie les retraites */
 .repart{margin-top:16px;background:linear-gradient(160deg,color-mix(in srgb,var(--rec) 7%,var(--surface)),var(--surface) 60%)}
 .panel .repart-t,.repart-t{font-family:Newsreader,serif;font-size:26px;font-weight:600;margin:4px 0 4px;color:var(--ink)}
@@ -1642,6 +1696,22 @@ footer{padding-bottom:120px}
     <div id="rangementDeficit" hidden></div>
   </section>
 
+  <section id="europe" aria-labelledby="h-eu">
+    <div class="sec-head">
+      <div><div class="eyebrow">Au-delà du budget</div><h2 id="h-eu">Europe et Ukraine : où se situe chaque candidat</h2></div>
+      <p>Deux choix qui engagent la France bien au-delà de ses comptes. Même grille de questions pour tous ; chaque réponse renvoie à sa source.</p>
+    </div>
+    <div class="panel eu">
+      <div class="eu-axe" id="euAxeEurope"></div>
+      <div class="eu-axe" id="euAxeUkraine"></div>
+      <p class="eu-aide">Cliquez sur un candidat pour voir ses réponses, leurs sources et les votes de son parti.</p>
+      <div class="eu-detail" id="euDetail"></div>
+      <div class="eu-votes" id="euVotes"></div>
+      <details class="eu-regle"><summary>Comment les candidats sont placés</summary><p id="euRegle"></p></details>
+      <p class="repart-src" id="euSrc"></p>
+    </div>
+  </section>
+
   <section id="histoire" aria-labelledby="h-hist">
     <div class="sec-head">
       <div><div class="eyebrow">Pour comprendre</div><h2 id="h-hist">D'où vient la dette ?</h2></div>
@@ -2323,6 +2393,7 @@ function render(){
   const split = activeSplit();
   renderRepartition();   // la projection 2070 des retraites suit le programme
   renderPostesPublics(); // la ligne du candidat choisi est mise en avant
+  renderEuropeUkraine();
 
   /* cockpit */
   const under3 = scen.findIndex((r,i) => i > 0 && r.soldePct >= -3);
@@ -3364,6 +3435,116 @@ function renderBalances(scen, base){
 }
 
 /** Les postes de fonctionnaires en jeu : chaque annonce rapportée aux effectifs réels et aux départs à la retraite. */
+/** Europe et Ukraine : chaque candidat placé sur deux axes par une grille identique (dataset/simulateur/europe.json),
+ *  le détail de ses réponses sourcées, et les votes de son parti au Parlement. */
+let euSel = null, euLarg = 0;
+// les voies se recalculent quand la largeur change vraiment (rotation d'un téléphone, fenêtre redimensionnée)
+window.addEventListener('resize', () => {
+  const h = document.getElementById('euAxeEurope'); if (!h) return;
+  if (Math.abs(h.clientWidth - euLarg) > 40) { clearTimeout(window.__euT); window.__euT = setTimeout(renderEuropeUkraine, 150); }
+});
+const frDate = d => !d ? '' : d.length === 4 ? d : fmtDate(d);
+function renderEuropeUkraine(){
+  const EU = DATA.europe, hostE = $('#euAxeEurope'); if (!EU || !hostE) return;
+  euLarg = hostE.clientWidth;
+  const byId = Object.fromEntries(ALL_PARTIES.map(p => [p.id, p]));
+  const ids = Object.keys(EU.candidats).filter(id => byId[id] && !byId[id].retire && !byId[id].horsCourse);
+  const lien = s => s && s.u ? `<a href="${s.u}" target="_blank" rel="noopener">${s.t}</a>` : '';
+  const court = p => p.candidat.split(' ').slice(1).join(' ') || p.candidat;
+  const crit = ax => EU.criteres[ax];
+  const points = (id, ax) => crit(ax).reduce((t, c) => {
+    const r = EU.candidats[id][ax][c.id]; return t + ((r && c.valeurs[r.position]) ? c.valeurs[r.position].points : 0); }, 0);
+  const connus = (id, ax) => crit(ax).filter(c => { const r = EU.candidats[id][ax][c.id]; return r && c.valeurs[r.position]; }).length;
+  const borne = (ax, f) => crit(ax).reduce((t, c) => t + f(...Object.values(c.valeurs).map(v => v.points), 0), 0);
+  if (euSel && !ids.includes(euSel)) euSel = null;
+  const sel = euSel || (ids.includes(state.party) ? state.party : null);
+
+  function axe(host, ax, titre, question, gauche, droite){
+    const min = borne(ax, Math.min), max = borne(ax, Math.max);
+    let peuConnus = false;
+    host.innerHTML = `<h3>${titre}</h3><p class="eu-q">${question}</p>`;
+    const piste = el('div', 'eu-piste'); host.appendChild(piste);
+    // largeur réelle si la page est déjà mise en page, sinon celle de la colonne de contenu
+    const W = Math.max(280, (host.clientWidth || (host.closest('.panel') || document.body).clientWidth || 720) - 12);
+    const pts = ids.map(id => ({id, v: points(id, ax)})).sort((a, b) => a.v - b.v);
+    const voies = [];                       // un candidat par voie tant qu'il chevaucherait son voisin
+    pts.forEach(o => {
+      const p = byId[o.id], x = (o.v - min) / (max - min);
+      const larg = court(p).length * 7.2 + 30;
+      let px = Math.min(Math.max(x * W, larg / 2), W - larg / 2);
+      let k = voies.findIndex(fin => fin + 6 < px - larg / 2);
+      if (k < 0) { voies.push(0); k = voies.length - 1; }
+      voies[k] = px + larg / 2;
+      const peu = connus(o.id, ax) * 2 < crit(ax).length;   // moins de la moitié des réponses connues
+      if (peu) peuConnus = true;
+      const b = el('button', 'eu-pt' + (o.id === sel ? ' on' : '') + (peu ? ' peu' : ''));
+      b.type = 'button'; b.style.setProperty('--pc', p.couleur);
+      b.style.left = (px / W * 100).toFixed(2) + '%'; b.style.top = (k * 30) + 'px';
+      b.innerHTML = `<i></i>${court(p)}`;
+      b.title = `${p.candidat} : ${o.v > 0 ? '+' : ''}${o.v} point${Math.abs(o.v) > 1 ? 's' : ''}, ${connus(o.id, ax)} réponses sur ${crit(ax).length} connues`;
+      b.setAttribute('aria-pressed', String(o.id === sel));
+      b.addEventListener('click', () => { euSel = o.id; renderEuropeUkraine();
+        const d = $('#euDetail'); if (d && d.scrollIntoView) d.scrollIntoView({block: 'nearest', behavior: 'smooth'}); });
+      piste.appendChild(b);
+    });
+    const h = voies.length * 30;
+    piste.style.height = (h + 14) + 'px';
+    const ligne = el('div', 'eu-ligne'); ligne.style.top = (h + 4) + 'px'; piste.prepend(ligne);
+    host.insertAdjacentHTML('beforeend', `<div class="eu-bouts"><span>← <b>${gauche}</b></span><span><b>${droite}</b> →</span></div>`
+      + (peuConnus ? `<p class="eu-q eu-peu">Contour en pointillés : moins de la moitié des réponses sont connues, la place est donc provisoire.</p>` : ''));
+  }
+  axe(hostE, 'europe', "L'Europe", "Sortir, reprendre la main sur les règles, ou aller plus loin ensemble ?", "Moins d'Europe", "Plus d'Europe");
+  axe($('#euAxeUkraine'), 'ukraine', "L'Ukraine", "Aide, sanctions contre la Russie, garanties de sécurité : s'engager davantage ou se désengager ?", "Désengagement", "Soutien renforcé");
+
+  // détail du candidat choisi
+  const det = $('#euDetail'); det.textContent = '';
+  if (sel){
+    const p = byId[sel], C = EU.candidats[sel];
+    const bloc = (ax, titre) => {
+      const lignes = crit(ax).map(c => {
+        const r = C[ax][c.id] || {}, v = c.valeurs[r.position];
+        const t = [r.texte, r.source ? `Source : ${lien(r.source)}` : ''].filter(Boolean).join(' ');
+        const evo = r.evolution ? `<span class="adv-only"> Auparavant : ${r.evolution}</span>` : '';
+        return `<div class="eu-l"><span>${c.lab}</span><span class="eu-v${v ? '' : ' nc'}">${v ? v.lab : 'Non précisé'}</span>`
+          + `<span class="eu-t">${t}${evo}</span></div>`;
+      }).join('');
+      return `<div><h5>${titre} · ${connus(sel, ax)} réponses sur ${crit(ax).length} connues</h5>${lignes}</div>`;
+    };
+    const faits = (C.ukraine.russie || []).slice().sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+      .map(f => `<li><b>${frDate(f.date)}</b> — ${f.fait}${f.source ? ` (${lien(f.source)})` : ''}</li>`).join('');
+    det.innerHTML = `<h4>${p.candidat}</h4><p class="eu-sous">${p.nom}</p>`
+      + `<div class="eu-grille">${bloc('europe', 'Europe')}${bloc('ukraine', 'Ukraine')}</div>`
+      + (faits ? `<details class="eu-faits"><summary><b>Son rapport à la Russie : les faits relevés</b></summary>`
+        + `<ul>${faits}</ul></details>` : '');
+  }
+
+  // votes des partis
+  const VO = EU.votes, sc = VO.scrutins, vh = $('#euVotes');
+  const ORDRE = ['pour', 'abstention', 'contre', 'partage'];
+  const LAB = {pour: 'pour', abstention: 'abstention', contre: 'contre', partage: 'partagé'};
+  let html = `<h4>Ce que leur parti a voté</h4><p class="eu-q">${sc.length} votes sur l'Ukraine et la Russie depuis 2022, `
+    + `à l'Assemblée nationale et au Parlement européen : soutien à l'Ukraine, prêts, sanctions, enfants déportés…</p>`
+    + `<div class="eu-leg">${ORDRE.map(k => `<span><i class="eu-barre-${k}" style="background:${k === 'pour' ? 'var(--rec)' : k === 'contre' ? 'var(--dep)' : k === 'abstention' ? 'color-mix(in srgb,var(--ink) 30%,var(--surface))' : 'var(--rule)'}"></i>${LAB[k]}</span>`).join('')}</div>`;
+  ids.forEach(id => {
+    const p = byId[id], n = {}; let tot = 0;
+    sc.forEach(s => { const v = (s.votes[id] || {}).position; if (v && v !== 'absent') { n[v] = (n[v] || 0) + 1; tot++; } });
+    const barre = tot ? ORDRE.map(k => n[k] ? `<span class="${k}" style="width:${(n[k] / tot * 100).toFixed(1)}%" title="${n[k]} ${LAB[k]}"></span>` : '').join('') : '';
+    const an = sc.filter(s => s.assemblee === 'AN' && (s.votes[id] || {}).position !== 'absent').length;
+    const note = !tot ? "Aucun élu, ni député ni député européen : pas de vote à relever."
+      : `<b>${n.pour || 0} pour</b> sur ${tot} votes où le parti avait des élus` + (an ? '' : ' (au Parlement européen seulement : aucun député)') + '.';
+    html += `<div class="eu-vrow${id === sel ? ' on' : ''}"><div class="eu-who">${p.sigle}<small>${court(p)}</small></div>`
+      + `<div><div class="eu-barre">${barre}</div><div class="eu-vnote">${note}</div></div></div>`;
+  });
+  const code = v => ({pour: 'P', contre: 'C', abstention: 'A', partage: '½', absent: '–'})[v] || '–';
+  html += `<div class="adv-only scroller"><table class="eu-liste"><thead><tr><th>Vote</th>${ids.map(id => `<th>${byId[id].sigle}</th>`).join('')}</tr></thead><tbody>`
+    + sc.map(s => `<tr><td>${frDate(s.date)} · ${s.assemblee === 'AN' ? 'Assemblée' : 'Parl. européen'} · ${lien({t: s.intitule, u: s.source && s.source.u})}</td>`
+      + ids.map(id => { const v = (s.votes[id] || {}).position; return `<td class="${v}">${code(v)}</td>`; }).join('') + '</tr>').join('')
+    + `</tbody></table><p class="repart-src">P pour, C contre, A abstention, ½ partagé, – pas d'élu. ${VO.regle}</p></div>`;
+  vh.innerHTML = html;
+  $('#euRegle').textContent = EU.regle + " Une case « non précisé » signifie qu'aucune source fiable n'a été trouvée : elle ne vaut ni pour ni contre.";
+  $('#euSrc').innerHTML = `Positions relevées le ${frDate(EU.updated)} dans les programmes, discours, entretiens et comptes rendus parlementaires (une source par réponse). Votes : `
+    + VO.sources.map(lien).join(' ; ') + '.';
+}
 function renderPostesPublics(){
   const FP = DATA.fonctionpublique, host = $('#fpRows'); if (!FP || !host) return;
   const E = FP.effectifs, D = FP.departs, C = FP.cout, R = FP.rgpp, A = FP.agences;
