@@ -247,6 +247,48 @@ Le sondage remplacé part dans `sondages_historique`.
 
 ---
 
+## `europe` — la carte « Europe et Ukraine »
+
+Trois listes, toutes facultatives. La grille (critères, valeurs, points, règle) est dans
+`dataset/simulateur/europe.json` et ne se change qu'à la main.
+
+```json
+"europe": {
+  "positions": [{
+    "candidat": "lr", "axe": "ukraine", "critere": "troupes", "position": "conditionnel",
+    "texte": "Bruno Retailleau accepte des soldats français seulement après un cessez-le-feu.",
+    "citation": "…mots exacts, facultatif…",
+    "source": {"t": "Titre — média, date", "u": "https://…", "d": "2026-11-26"},
+    "evolution": "facultatif : ce qu'il disait auparavant, daté"
+  }],
+  "russie": [{
+    "candidat": "rec", "date": "2026-11-26",
+    "fait": "Une phrase factuelle, sans adjectif.",
+    "source": {"t": "…", "u": "https://…"}
+  }],
+  "scrutins": [{
+    "assemblee": "AN", "date": "2026-11-26", "numero": "17e législature, scrutin n° 1234",
+    "intitule": "…", "resultat": "Adopté : 300 pour, 10 contre, 50 abstentions",
+    "source": {"t": "Assemblée nationale, analyse du scrutin n° 1234", "u": "https://…"},
+    "votes": {"rn": {"position": "abstention", "detail": "groupe RN : 0 pour, 0 contre, 80 abstentions"},
+              "rec": {"position": "absent"}, "…": "un par candidat suivi"}
+  }]
+}
+```
+
+| champ | règle |
+|---|---|
+| `positions[].position` | une valeur de la grille du critère (`watch.py` refuse le reste) ; jamais « inconnu » : on n'efface pas |
+| `positions[].source.d` | date de la déclaration, obligatoire |
+| `russie[]` | un fait daté, sourcé, vérifiable ; les deux sens (condamnations comme liens) ; jamais une enquête dont le candidat est la cible |
+| `scrutins[].votes` | une entrée par candidat suivi ; `pour`, `contre`, `abstention`, `partage` (pas de majorité des deux tiers) ou `absent` (aucun élu) ; `detail` obligatoire sauf `absent` |
+
+Même règle pour tous : une position ne s'appuie que sur les mots du candidat, de son programme ou
+d'un porte-parole qui l'engage ; une même phrase ne remplit pas deux cases. La position remplacée
+reste dans la trace archivée.
+
+---
+
 ## Ce qui ne passe pas par un patch
 
 Retirer une annonce erronée, changer la nature d'une mesure, corriger un cadrage : ce sont des

@@ -46,6 +46,12 @@ STRUCTURELS = {"id", "g", "inst", "lab", "ramp", "behav", "disp"}
 # avec une source ; il ne peut pas toucher au scénario chiffré d'un parti existant.
 CHAMPS_SONDAGE = {"institut", "commanditaire", "terrain_debut", "terrain_fin", "date", "echantillon",
                   "hypothese", "note", "source", "scores"}
+# La carte « Europe et Ukraine » (europe.json) : la grille (critères, points, règle) se règle à la
+# main ; la veille n'y ajoute que des positions sourcées, des faits datés et des votes.
+CHAMPS_EU_POSITION = {"candidat", "axe", "critere", "position", "texte", "citation", "source", "evolution"}
+CHAMPS_EU_FAIT = {"candidat", "date", "fait", "citation", "source"}
+CHAMPS_EU_SCRUTIN = {"assemblee", "date", "numero", "intitule", "resultat", "source", "votes"}
+POSITIONS_VOTE = {"pour", "contre", "abstention", "partage", "absent"}
 CHAMPS_PARTI_HAUT = {"annonce", "source", "candidat", "statutCandidature", "avatar", "retrait",
                      "set"}
 CHAMPS_NOUVEAU = {"id", "nom", "sigle", "candidat", "avatar", "couleur", "statutCandidature",
@@ -64,8 +70,9 @@ GROUPES = {"marches", "notation", "previsions", "finances"}
 
 def charger():
     noms = ["baseline", "measures", "parties", "announcements"]
-    if (DATA / "contexte.json").is_file():
-        noms.append("contexte")
+    for opt in ("contexte", "europe"):
+        if (DATA / f"{opt}.json").is_file():
+            noms.append(opt)
     return {n: json.loads((DATA / f"{n}.json").read_text(encoding="utf-8")) for n in noms}
 
 
@@ -74,9 +81,9 @@ def source_ok(src):
     return str(src.get("u", "")).startswith("http") and bool(src.get("t"))
 
 
-def ecrire(nom, obj):
+def ecrire(nom, obj, indent=2):
     (DATA / f"{nom}.json").write_text(
-        json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        json.dumps(obj, ensure_ascii=False, indent=indent) + "\n", encoding="utf-8")
 
 
 def aujourdhui():
@@ -175,6 +182,26 @@ def etat(d):
     if off:
         print(f"\nSource qui fait foi : {off.get('u') or off.get('url', '—')}\n"
               f"  statut : {off.get('statut', '—')}")
+    eu = d.get("europe")
+    if eu:
+        print(f"\nEurope et Ukraine — positions au {eu['updated']}, {len(eu['votes']['scrutins'])} "
+              f"votes relevés (dernier le {max(s['date'] for s in eu['votes']['scrutins'])}). "
+              "Réponses connues par candidat ; les cases « inconnu » sont à chercher :")
+        for p in partis:
+            c = eu["candidats"].get(p["id"])
+            if not c:
+                print(f"  {p['sigle']:5} {p['candidat']:22} ABSENT de la carte")
+                continue
+            trous = []
+            for ax, crs in eu["criteres"].items():
+                trous += [f"{ax}.{cr['id']}" for cr in crs
+                          if (c.get(ax, {}).get(cr["id"]) or {}).get("position") not in cr["valeurs"]]
+            n = sum(len(v) for v in eu["criteres"].values())
+            dernier = max((f.get("date") or "" for f in c.get("ukraine", {}).get("russie") or []), default="—")
+            print(f"  {p['sigle']:5} {p['candidat']:22} {n - len(trous):>2}/{n}"
+                  f"  dernier fait Russie {dernier or '—':>10}"
+                  + (f"  inconnu : {', '.join(trous)}" if trous else ""))
+
     print("\nÀ chercher : déclarations chiffrées depuis les dates ci-dessus, chiffrages "
           "nouvellement publiés (OFCE, Institut Montaigne, Cour des comptes, IPP),\n"
           "et surtout la publication des programmes officiels, qui écrase toute reprise "
@@ -191,7 +218,7 @@ def valider(d, patch):
     existantes = d["announcements"]["items"]
 
     inconnu = set(patch) - {"_comment", "releve", "annonces", "partis", "mesures",
-                            "nouveaux_partis", "contexte", "sondages"}
+                            "nouveaux_partis", "contexte", "sondages", "europe"}
     ids_partis |= {n.get("id") for n in patch.get("nouveaux_partis", [])}
     if inconnu:
         erreurs.append(f"clés inconnues dans le patch : {sorted(inconnu)}")
@@ -444,7 +471,92 @@ def valider(d, patch):
                     + ", ".join(f"{k} {v}" for k, v in sorted(scores.items(),
                                 key=lambda kv: -(kv[1][0] if isinstance(kv[1], list) else kv[1]))))
 
+    valider_europe(d, patch.get("europe"), suivis, erreurs, plan)
+    vide = "  (patch sans effet : rien à ajouter ni à modifier)"
+    if len(plan) > 1 and vide in plan:
+        plan.remove(vide)
     return erreurs, plan
+
+
+def valider_europe(d, lot, suivis, erreurs, plan):
+    """La section `europe` : positions, faits sur la Russie, votes. Chaque entrée est sourcée ;
+    une position ne peut prendre qu'une valeur de la grille (pas de « inconnu » : on n'efface pas)."""
+    if not lot:
+        return
+    eu = d.get("europe")
+    if not eu:
+        erreurs.append("europe : dataset/simulateur/europe.json introuvable")
+        return
+    trop = set(lot) - {"positions", "russie", "scrutins"}
+    if trop:
+        erreurs.append(f"europe : clés inconnues {sorted(trop)}")
+    for i, x in enumerate(lot.get("positions") or []):
+        ou = f"europe.positions[{i}]"
+        if set(x) - CHAMPS_EU_POSITION:
+            erreurs.append(f"{ou} : champs non autorisés {sorted(set(x) - CHAMPS_EU_POSITION)}")
+        cid, ax, cr = x.get("candidat"), x.get("axe"), x.get("critere")
+        if cid not in suivis:
+            erreurs.append(f"{ou} : candidat inconnu ou hors course {cid!r}")
+        crit = next((c for c in eu["criteres"].get(ax) or [] if c["id"] == cr), None)
+        if not crit:
+            erreurs.append(f"{ou} : critère inconnu {ax}.{cr} (la grille se change à la main)")
+            continue
+        if x.get("position") not in crit["valeurs"]:
+            erreurs.append(f"{ou} : position {x.get('position')!r} hors grille, attendu "
+                           f"{sorted(crit['valeurs'])}")
+        if not x.get("texte"):
+            erreurs.append(f"{ou} : 'texte' obligatoire (ce qui établit la position, en une phrase)")
+        if not source_ok(x.get("source")):
+            erreurs.append(f"{ou} : une source (titre + URL) est obligatoire")
+        else:
+            ok, pourquoi = date_valide((x["source"] or {}).get("d"))
+            if not ok:
+                erreurs.append(f"{ou}.source.d : {pourquoi}")
+        avant = ((eu["candidats"].get(cid) or {}).get(ax) or {}).get(cr) or {}
+        plan.append(f"  ± europe {cid}.{ax}.{cr} : {avant.get('position', 'inconnu')} → {x.get('position')}")
+    for i, f in enumerate(lot.get("russie") or []):
+        ou = f"europe.russie[{i}]"
+        if set(f) - CHAMPS_EU_FAIT:
+            erreurs.append(f"{ou} : champs non autorisés {sorted(set(f) - CHAMPS_EU_FAIT)}")
+        if f.get("candidat") not in suivis:
+            erreurs.append(f"{ou} : candidat inconnu ou hors course {f.get('candidat')!r}")
+        ok, pourquoi = date_valide(f.get("date"))
+        if not ok:
+            erreurs.append(f"{ou}.date : {pourquoi}")
+        if not f.get("fait"):
+            erreurs.append(f"{ou} : 'fait' obligatoire")
+        if not source_ok(f.get("source")):
+            erreurs.append(f"{ou} : une source (titre + URL) est obligatoire")
+        plan.append(f"  + europe fait Russie {f.get('candidat')} ({f.get('date')}) : {str(f.get('fait'))[:70]}")
+    connus = {(s["assemblee"], s.get("numero")) for s in eu["votes"]["scrutins"]}
+    for i, s in enumerate(lot.get("scrutins") or []):
+        ou = f"europe.scrutins[{i}]"
+        if set(s) - CHAMPS_EU_SCRUTIN:
+            erreurs.append(f"{ou} : champs non autorisés {sorted(set(s) - CHAMPS_EU_SCRUTIN)}")
+        if s.get("assemblee") not in ("AN", "PE"):
+            erreurs.append(f"{ou} : 'assemblee' vaut AN ou PE")
+        ok, pourquoi = date_valide(s.get("date"))
+        if not ok:
+            erreurs.append(f"{ou}.date : {pourquoi}")
+        for champ in ("numero", "intitule", "resultat"):
+            if not s.get(champ):
+                erreurs.append(f"{ou} : '{champ}' obligatoire")
+        if not source_ok(s.get("source")):
+            erreurs.append(f"{ou} : une source (titre + URL) est obligatoire — la fiche officielle du scrutin")
+        if (s.get("assemblee"), s.get("numero")) in connus:
+            erreurs.append(f"{ou} : scrutin déjà relevé ({s.get('assemblee')} {s.get('numero')})")
+        votes = s.get("votes") or {}
+        manque = {c for c in suivis if c in eu["candidats"]} - set(votes)
+        if manque:
+            erreurs.append(f"{ou}.votes : position manquante pour {sorted(manque)} (« absent » s'il n'a pas d'élu)")
+        for pid, v in votes.items():
+            if pid not in suivis:
+                erreurs.append(f"{ou}.votes : candidat inconnu ou hors course {pid!r}")
+            if (v or {}).get("position") not in POSITIONS_VOTE:
+                erreurs.append(f"{ou}.votes.{pid} : position attendue parmi {sorted(POSITIONS_VOTE)}")
+            elif v["position"] != "absent" and not v.get("detail"):
+                erreurs.append(f"{ou}.votes.{pid} : 'detail' obligatoire (décompte du groupe)")
+        plan.append(f"  + europe scrutin {s.get('assemblee')} {s.get('date')} : {str(s.get('intitule'))[:70]}")
 
 
 # ------------------------------------------------------------------ application
@@ -570,6 +682,37 @@ def appliquer(d, patch, ecrire_vraiment):
                                    "avant": (ancien or {}).get("scores"), "apres": sd["scores"],
                                    "source": sd["source"]["u"]})
 
+    lot = patch.get("europe") or {}
+    if lot:
+        eu = d["europe"]
+        for x in lot.get("positions") or []:
+            c = eu["candidats"].setdefault(x["candidat"], {"europe": {}, "ukraine": {}})
+            case = c.setdefault(x["axe"], {})
+            avant = case.get(x["critere"])
+            neuf = {k: x[k] for k in ("position", "texte", "citation", "source", "evolution") if k in x}
+            if avant and "evolution" not in neuf and avant.get("evolution"):
+                neuf["evolution"] = avant["evolution"]
+            if avant != neuf:
+                case[x["critere"]] = neuf
+                trace["revisions"].append({"quoi": f"europe.{x['candidat']}.{x['axe']}.{x['critere']}",
+                                           "avant": avant, "apres": neuf, "source": x["source"]["u"]})
+        for f in lot.get("russie") or []:
+            c = eu["candidats"].setdefault(f["candidat"], {"europe": {}, "ukraine": {}})
+            liste = c.setdefault("ukraine", {}).setdefault("russie", [])
+            fait = {k: f[k] for k in ("date", "fait", "citation", "source") if k in f}
+            if any(g.get("date") == fait["date"] and (g.get("source") or {}).get("u") == fait["source"]["u"]
+                   and g.get("fait") == fait["fait"] for g in liste):
+                continue
+            liste.append(fait)
+            trace["ajouts"].append({"europe": f"{f['candidat']}.russie", "date": f["date"],
+                                    "quoi": f["fait"], "source": f["source"]["u"]})
+        for sc in lot.get("scrutins") or []:
+            eu["votes"]["scrutins"].append({k: sc[k] for k in ("assemblee", "date", "numero", "intitule",
+                                                               "resultat", "source", "votes") if k in sc})
+            trace["ajouts"].append({"europe": "scrutin", "date": sc["date"], "quoi": sc["intitule"],
+                                    "source": sc["source"]["u"]})
+        eu["updated"] = releve
+
     if not ecrire_vraiment:
         print("\nRien n'a été écrit — relancer avec --write pour appliquer.")
         return trace
@@ -581,6 +724,8 @@ def appliquer(d, patch, ecrire_vraiment):
         ecrire("contexte", d["contexte"])
     if patch.get("mesures"):
         ecrire("measures", d["measures"])
+    if patch.get("europe"):
+        ecrire("europe", d["europe"], indent=1)
 
     JOURNAL.mkdir(parents=True, exist_ok=True)
     archive = JOURNAL / f"{releve}.json"

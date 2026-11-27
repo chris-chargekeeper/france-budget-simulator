@@ -135,6 +135,27 @@ dans la presse. Un député n'engage son parti que s'il en est porte-parole, pr�
 ou responsable du programme ; sinon renseignez `fonction` et rattachez l'annonce au parti
 avec prudence, en le disant dans `quoi`.
 
+**L'Europe et l'Ukraine, chaque jour.** La carte « Europe et Ukraine » place chaque candidat
+sur une grille fixe (5 questions sur l'Europe, 6 sur l'Ukraine) et relève les votes de son parti
+sur l'Ukraine et la Russie. `etat` liste, par candidat, les cases encore « inconnu » et la date du
+dernier fait relevé sur son rapport à la Russie. À guetter, dans les mêmes émissions et comptes
+rendus :
+
+- une **prise de position nouvelle ou qui change** sur une question de la grille (sortie de l'UE,
+  primauté du droit français, non-application de règles européennes, budget européen,
+  approfondissement ; aide militaire, aide financière, sanctions et avoirs gelés, soldats pour un
+  cessez-le-feu, adhésion de l'Ukraine à l'UE et à l'OTAN) — de préférence pour combler une case
+  « inconnu » ;
+- un **fait daté et vérifiable** sur le rapport du candidat à la Russie : condamnation, prise de
+  distance, rencontre, financement, déclaration — dans un sens comme dans l'autre, et jamais
+  une enquête dont il est la cible ;
+- un **scrutin public** sur l'Ukraine ou la Russie, à l'Assemblée nationale (fiche officielle du
+  scrutin) ou au Parlement européen (HowTheyVote.eu), avec la position de chaque parti suivi selon
+  la règle des deux tiers.
+
+Tout cela entre par la section `europe` du patch (voir references/patch.md). La grille elle-même
+— questions, points, règle — ne bouge pas par patch : elle se discute.
+
 Pour chaque trouvaille, il faut **une URL**, une date, un auteur ou au moins sa fonction. Sans ça,
 n'entrez rien : le script refusera, et il aura raison.
 
