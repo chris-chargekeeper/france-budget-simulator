@@ -9,6 +9,9 @@ page, les mêmes hypothèses) et en tire, dans web/ :
   candidat-<nom>.html    une page par candidat : déficit, dette, effets, mesures, sources
   llms-full.txt          le tout en texte brut, pour les assistants d'IA
 
+Les positions sur l'Europe et l'Ukraine (dataset/simulateur/europe.json) y sont jointes, notées
+comme sur la carte « Europe et Ukraine » de la page : mêmes points, même règle pour tous.
+
 Mêmes règles pour tous : un seul gabarit, aucun chiffre que la page ne montre pas, et aucun
 sondage (rien à masquer pendant le silence électoral).
 """
@@ -278,6 +281,8 @@ def page_candidat(c, R, jour):
     if c["sources"]:
         corps.append("  <section class=\"carte\">\n    <h2>Sources du scénario</h2>\n    <ul>"
                      + "".join(f"<li>{lien_source(s)}</li>" for s in c["sources"]) + "</ul>\n  </section>")
+    if c.get("europeUkraine"):
+        corps.append(europe_html(c, R["europeUkraine"]))
     corps += [methode_html(R), citer_html(titre, url, jour)]
     jsonld = {"@context": "https://schema.org", "@type": "WebPage", "@id": url, "url": url,
               "name": titre, "description": resume, "inLanguage": "fr-FR", "dateModified": jour,
@@ -321,6 +326,7 @@ def page_comparatif(R, jour):
     <p class="src">Déficit et dette en % du PIB. Effet net : effet des mesures sur le solde public en 2032, en Md€ par an (positif : améliore le solde). Emplois : écart avec « si rien ne change » en 2032. Candidats par ordre alphabétique.</p>
     {ia_txt}
   </section>
+{comparatif_europe_html(R, R['europeUkraine']) if R.get('europeUkraine') else ''}
 {methode_html(R)}
 {citer_html(titre, url, jour)}"""
     if any(c["deficit2032"] < 3 for c in course):
@@ -370,13 +376,192 @@ def llms_full(R, jour):
             ann = f" ; annoncé {md(m['annonce'])}" if m["annonce"] is not None else ""
             out.append(f"- {m['libelle']} ({SENS.get(m['sens'], m['sens'])}) : {mdsg(m['effet2032'])} ; "
                        f"{nf(m['bas'])} à {nf(m['haut'])} Md€{ann}")
+        eu = europe_llms(c)
+        if eu:
+            out += ["", "Europe et Ukraine (même grille pour tous ; une case non précisée compte zéro) :", ""] + eu
         out.append("")
     out += ["## Méthode et limites", "",
             "Chaque mesure est chiffrée par une borne basse, une valeur centrale et une borne haute tirées de travaux "
             "publics (Cour des comptes, HCFP, OFCE, IPP, CAE, Fipeco, Banque de France, rapports parlementaires). "
             "Les scénarios « reconstitués » sont bâtis par le site à partir des positions publiques, faute de chiffrage "
             "publié par le parti. Ordres de grandeur arrondis, pas un modèle macroéconométrique complet.", ""]
+    if R.get("europeUkraine"):
+        out += ["Europe et Ukraine : " + R["europeUkraine"]["regle"] + " " + R["europeUkraine"]["votes"]["regle"], ""]
     return "\n".join(out)
+
+
+# ── Europe et Ukraine ────────────────────────────────────────────────────────────────────────
+MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
+        "octobre", "novembre", "décembre"]
+AXES = {"europe": ("L'Europe", "Moins d'Europe", "Plus d'Europe"),
+        "ukraine": ("L'Ukraine", "Désengagement", "Soutien renforcé")}
+VOTE = {"pour": "pour", "contre": "contre", "abstention": "abstention", "partage": "partagé"}
+
+
+def fr_date(d):
+    if not d:
+        return ""
+    p = d.split("-")
+    if len(p) == 1:
+        return d
+    if len(p) == 2:
+        return f"{MOIS[int(p[1]) - 1]} {p[0]}"
+    return f"{int(p[2])}{'er' if p[2] == '01' else ''} {MOIS[int(p[1]) - 1]} {p[0]}"
+
+
+def europe_ukraine(R):
+    """Les positions sur l'Europe et l'Ukraine, notées comme sur la page (template.html,
+    renderEuropeUkraine) : chaque réponse rapporte les points de la grille, une case non précisée
+    compte zéro, et l'échelle va de la somme des minimums à la somme des maximums."""
+    f = ROOT / "dataset" / "simulateur" / "europe.json"
+    if not f.exists():
+        return None
+    EU = json.loads(f.read_text(encoding="utf-8"))
+    ids = [c["id"] for c in R["candidats"] if not c["horsCourse"] and c["id"] in EU["candidats"]]
+    axes = {}
+    for ax, (titre, gauche, droite) in AXES.items():
+        cr = EU["criteres"][ax]
+        axes[ax] = {"titre": titre, "gauche": gauche, "droite": droite,
+                    "min": sum(min(v["points"] for v in c["valeurs"].values()) for c in cr),
+                    "max": sum(max(v["points"] for v in c["valeurs"].values()) for c in cr),
+                    "questions": [c["lab"] for c in cr]}
+    sc = EU["votes"]["scrutins"]
+    par = {}
+    for cid in ids:
+        C, out = EU["candidats"][cid], {}
+        for ax in AXES:
+            rep, pts = [], 0
+            for c in EU["criteres"][ax]:
+                r = C[ax].get(c["id"]) or {}
+                v = c["valeurs"].get(r.get("position"))
+                pts += v["points"] if v else 0
+                rep.append({"question": c["lab"], "reponse": v["lab"] if v else "Non précisé",
+                            "points": v["points"] if v else None, "texte": r.get("texte") if v else None,
+                            "source": r.get("source") if v else None, "auparavant": r.get("evolution")})
+            connues = sum(1 for x in rep if x["points"] is not None)
+            out[ax] = {"points": pts, "min": axes[ax]["min"], "max": axes[ax]["max"],
+                       "connues": connues, "questions": len(rep), "provisoire": connues * 2 < len(rep),
+                       "reponses": rep}
+        out["russie"] = sorted(C["ukraine"].get("russie") or [], key=lambda x: x.get("date") or "", reverse=True)
+        n = {k: 0 for k in VOTE}
+        for s in sc:
+            v = (s["votes"].get(cid) or {}).get("position")
+            if v in n:
+                n[v] += 1
+        tot = sum(n.values())
+        out["votes"] = {**n, "total": tot,
+                        "assembleeNationale": any(s["assemblee"] == "AN" and (s["votes"].get(cid) or {}).get("position") in VOTE for s in sc)}
+        par[cid] = out
+    meta = {"date": EU["updated"], "regle": EU["regle"], "axes": axes,
+            "votes": {"regle": EU["votes"]["regle"], "sources": EU["votes"]["sources"],
+                      "scrutins": [{"date": s["date"], "assemblee": s["assemblee"], "numero": s.get("numero"),
+                                    "intitule": s["intitule"], "resultat": s.get("resultat"), "source": s.get("source"),
+                                    "positions": {cid: (s["votes"].get(cid) or {}).get("position", "absent") for cid in ids}}
+                                   for s in sc]}}
+    return meta, par
+
+
+def place_txt(a, ax):
+    _, gauche, droite = AXES[ax]
+    s = (f"{sg(a['points'], 0)} point{'s' if abs(a['points']) > 1 else ''} sur une échelle de "
+         f"{sg(a['min'], 0)} ({gauche[0].lower() + gauche[1:]}) à {sg(a['max'], 0)} ({droite[0].lower() + droite[1:]}), "
+         f"{a['connues']} réponses connues sur {a['questions']}")
+    return s + (" : place provisoire" if a["provisoire"] else "")
+
+
+def votes_txt(v):
+    if not v["total"]:
+        return "Aucun élu, ni député ni député européen : pas de vote à relever."
+    s = (f"{v['pour']} pour, {v['abstention']} abstention{'s' if v['abstention'] > 1 else ''}, {v['contre']} contre"
+         + (f", {v['partage']} partagé{'s' if v['partage'] > 1 else ''}" if v["partage"] else "")
+         + f", sur {v['total']} votes où le parti avait des élus")
+    return s + ("" if v["assembleeNationale"] else " (au Parlement européen seulement : aucun député)") + "."
+
+
+def europe_html(c, EUM):
+    E = c.get("europeUkraine")
+    if not E:
+        return ""
+    blocs = []
+    for ax in AXES:
+        a = E[ax]
+        lignes = "".join(
+            f"<tr><td>{e(r['question'])}</td><td>{e(r['reponse'])}</td><td>"
+            + (e(r['texte']) if r['texte'] else "")
+            + (f" Source : {lien_source(r['source'])}." if r['source'] else "")
+            + (f" Auparavant : {e(r['auparavant'])}" if r['auparavant'] and r['points'] is not None else "")
+            + "</td></tr>" for r in a["reponses"])
+        blocs.append(f"""    <h3>{e(AXES[ax][0])} : {e(place_txt(a, ax))}</h3>
+    <div class="table"><table>
+      <thead><tr><th>Question</th><th>Réponse</th><th>Ce qui l'établit</th></tr></thead>
+      <tbody>{lignes}</tbody>
+    </table></div>""")
+    faits = "".join(f"<li><b>{e(fr_date(f.get('date')))}</b> — {e(f['fait'])}"
+                    + (f" ({lien_source(f['source'])})" if f.get("source") else "") + "</li>" for f in E["russie"])
+    faits = f"    <h3>Son rapport à la Russie : les faits relevés</h3>\n    <ul>{faits}</ul>\n" if faits else ""
+    return f"""  <section class="carte">
+    <h2>Europe et Ukraine</h2>
+    <p>Même grille de questions pour tous les candidats ; « non précisé » signifie qu'aucune source fiable n'a été trouvée. {e(EUM['regle'])}</p>
+{chr(10).join(blocs)}
+{faits}    <h3>Ce que son parti a voté sur l'Ukraine et la Russie depuis 2022</h3>
+    <p>{e(votes_txt(E['votes']))} {e(EUM['votes']['regle'])} Liste des {len(EUM['votes']['scrutins'])} votes : <a href="/comparatif.html#europe">comparatif</a>.</p>
+    <p class="src">Positions relevées le {e(fr_date(EUM['date']))}. Votes : {' ; '.join(lien_source(s) for s in EUM['votes']['sources'])}.</p>
+  </section>"""
+
+
+def comparatif_europe_html(R, EUM):
+    course = [c for c in R["candidats"] if c.get("europeUkraine")]
+    if not course:
+        return ""
+    course.sort(key=lambda c: c["candidat"].split()[-1])
+    ax = EUM["axes"]
+    lignes = "".join(
+        f"<tr><td><a href=\"/{page_de(c)}\">{e(c['candidat'])}</a></td>"
+        + "".join(f"<td class=\"n\">{sg(c['europeUkraine'][k]['points'], 0)}{' *' if c['europeUkraine'][k]['provisoire'] else ''}</td>"
+                  f"<td class=\"n\">{c['europeUkraine'][k]['connues']}/{c['europeUkraine'][k]['questions']}</td>" for k in AXES)
+        + f"<td class=\"n\">{c['europeUkraine']['votes']['pour']}/{c['europeUkraine']['votes']['total']}</td></tr>"
+        for c in course)
+    ids = [c["id"] for c in course]
+    sig = {c["id"]: c["sigle"] for c in course}
+    code = {"pour": "P", "contre": "C", "abstention": "A", "partage": "½"}
+    sc = "".join(
+        f"<tr><td>{e(fr_date(s['date']))} · {'Assemblée nationale' if s['assemblee'] == 'AN' else 'Parlement européen'} · "
+        f"{lien_source({'t': s['intitule'], 'u': (s.get('source') or {}).get('u')})}</td>"
+        + "".join(f"<td class=\"n\">{code.get(s['positions'][i], '–')}</td>" for i in ids) + "</tr>"
+        for s in EUM["votes"]["scrutins"])
+    return f"""  <section class="carte" id="europe">
+    <h2>Europe et Ukraine : où se situe chaque candidat</h2>
+    <p>Même grille pour tous : {len(ax['europe']['questions'])} questions sur l'Europe ({e(', '.join(q.lower() for q in ax['europe']['questions']))}) et {len(ax['ukraine']['questions'])} sur l'Ukraine ({e(', '.join(q.lower() for q in ax['ukraine']['questions']))}). {e(EUM['regle'])}</p>
+    <div class="table"><table>
+      <thead><tr><th>Candidat</th><th class="n">Europe ({sg(ax['europe']['min'], 0)} à {sg(ax['europe']['max'], 0)})</th><th class="n">réponses connues</th><th class="n">Ukraine ({sg(ax['ukraine']['min'], 0)} à {sg(ax['ukraine']['max'], 0)})</th><th class="n">réponses connues</th><th class="n">Votes « pour » du parti</th></tr></thead>
+      <tbody>{lignes}</tbody>
+    </table></div>
+    <p class="src">Europe : négatif = moins d'Europe, positif = plus d'Europe. Ukraine : négatif = désengagement, positif = soutien renforcé. * place provisoire : moins de la moitié des réponses sont connues. Le détail de chaque réponse, avec sa source, est sur la page de chaque candidat. Positions relevées le {e(fr_date(EUM['date']))}.</p>
+    <h3>Les {len(EUM['votes']['scrutins'])} votes sur l'Ukraine et la Russie depuis 2022</h3>
+    <div class="table"><table>
+      <thead><tr><th>Vote</th>{''.join(f'<th class="n">{e(sig[i])}</th>' for i in ids)}</tr></thead>
+      <tbody>{sc}</tbody>
+    </table></div>
+    <p class="src">P pour, C contre, A abstention, ½ partagé, – pas d'élu. {e(EUM['votes']['regle'])} Sources : {' ; '.join(lien_source(s) for s in EUM['votes']['sources'])}.</p>
+  </section>"""
+
+
+def europe_llms(c):
+    E = c.get("europeUkraine")
+    if not E:
+        return []
+    out = []
+    for ax in AXES:
+        a = E[ax]
+        out.append(f"- {AXES[ax][0]} : {place_txt(a, ax)}")
+        for r in a["reponses"]:
+            src = f" ({r['source'].get('t')}, {r['source'].get('u')})" if r["source"] else ""
+            out.append(f"  - {r['question']} : {r['reponse']}{' — ' + r['texte'] if r['texte'] else ''}{src}")
+    if E["russie"]:
+        out.append("- Rapport à la Russie, faits relevés :")
+        out += [f"  - {fr_date(f.get('date'))} : {f['fait']}" + (f" ({f['source'].get('u')})" if f.get("source") else "") for f in E["russie"]]
+    out.append(f"- Votes de son parti sur l'Ukraine et la Russie depuis 2022 : {votes_txt(E['votes'])}")
+    return out
 
 
 def tableau_llms(R):
@@ -397,6 +582,12 @@ def fichiers(jour):
          "citation": f"quipaie2027.fr, données au {jour}", **R}
     for c in R["candidats"]:
         c["page"] = f"{SITE}/{page_de(c)}"
+    eu = europe_ukraine(R)
+    if eu:
+        R["europeUkraine"], par = eu
+        for c in R["candidats"]:
+            if c["id"] in par:
+                c["europeUkraine"] = par[c["id"]]
     out = {"resultats.json": json.dumps(R, ensure_ascii=False, indent=1) + "\n",
            "comparatif.html": page_comparatif(R, jour),
            "llms-full.txt": llms_full(R, jour)}

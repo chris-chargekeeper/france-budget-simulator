@@ -346,7 +346,257 @@
      "u": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen"
     }
    ],
-   "page": "https://quipaie2027.fr/candidat-marine-le-pen.html"
+   "page": "https://quipaie2027.fr/candidat-marine-le-pen.html",
+   "europeUkraine": {
+    "europe": {
+     "points": -4,
+     "min": -7,
+     "max": 2,
+     "connues": 5,
+     "questions": 5,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Sortir de l'UE ou de l'euro",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Marine Le Pen ne propose plus de référendum sur la sortie de l'UE et plaide pour une réforme de l'intérieur.",
+       "source": {
+        "t": "Marine Le Pen veut-elle ou non organiser un référendum sur le Frexit si elle est élue ? — Euronews, 17 sept. 2026",
+        "u": "https://fr.euronews.com/my-europe/2026/09/17/marine-le-pen-veut-elle-ou-non-organiser-un-referendum-sur-le-frexit-si-elle-est-elue",
+        "d": "2026-09-17"
+       },
+       "auparavant": "En 2012 et 2017, elle proposait la sortie de l'UE et de l'euro (référendum en 2017) ; en 2022, elle a opté pour une réforme de l'UE de l'intérieur."
+      },
+      {
+       "question": "Faire primer le droit français sur le droit européen",
+       "reponse": "Le propose",
+       "points": -1,
+       "texte": "La proposition de loi constitutionnelle « Citoyenneté-Identité-Immigration » déposée par Marine Le Pen et le groupe RN comporte un titre III consacré à la primauté de la Constitution et du droit national, permettant aux juges d'écarter le droit européen.",
+       "source": {
+        "t": "Proposition de loi constitutionnelle n° 2120 Citoyenneté-Identité-Immigration — Assemblée nationale, enregistrée le 25 janv. 2024",
+        "u": "https://www.assemblee-nationale.fr/dyn/16/textes/l16b2120_proposition-loi.pdf",
+        "d": "2024-01-25"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Ne plus appliquer, seul, certaines règles européennes",
+       "reponse": "Le propose",
+       "points": -1,
+       "texte": "Le RN a proposé de réduire unilatéralement la contribution française au budget de l'UE pour 2027 (amendement rejeté par l'Assemblée nationale en octobre 2026) ; sur l'électricité, Jordan Bardella dit vouloir rester dans le marché européen mais « remettre en cause les règles de fixation des prix » (avril 2026).",
+       "source": {
+        "t": "Moins de fonds pour l'Ukraine et budget de l'UE en baisse : que changerait une victoire de Le Pen ? — Euronews, 17 oct. 2026",
+        "u": "https://fr.euronews.com/2026/10/17/moins-de-fonds-pour-lukraine-et-budget-de-lue-en-baisse-que-changerait-une-victoire-de-le-",
+        "d": "2026-10-17"
+       },
+       "auparavant": "Le programme 2022 et Jordan Bardella en 2024 proposaient de sortir du marché européen de l'électricité ; en avril 2026, Bardella a affirmé que la France y resterait (Public Sénat, 23 avr. 2026)."
+      },
+      {
+       "question": "Contribution de la France au budget européen",
+       "reponse": "La baisser",
+       "points": -1,
+       "texte": "Marine Le Pen veut plafonner la contribution nette de la France au budget de l'UE à 5 Md€ par an, contre environ 8 Md€ selon les chiffres du Sénat cités.",
+       "source": {
+        "t": "Le Pen lands in Brussels lashing out at the European Commission — Euronews, 14 oct. 2026",
+        "u": "https://www.euronews.com/2026/10/14/le-pen-lands-in-brussels-lashing-out-at-the-european-commission",
+        "d": "2026-10-14"
+       },
+       "auparavant": "En juin 2026 (entretien à Politico), Jordan Bardella parlait de diviser par deux la contribution française."
+      },
+      {
+       "question": "Aller plus loin ensemble (défense commune, emprunt commun, décisions à la majorité)",
+       "reponse": "Contre",
+       "points": -1,
+       "texte": "Marine Le Pen refuse une défense européenne commune et le partage de la dissuasion, et s'oppose à l'adhésion de l'Ukraine à l'UE.",
+       "source": {
+        "t": "Compte rendu de la séance du 3 mars 2025 (débat sur l'Ukraine et la sécurité en Europe) — Assemblée nationale",
+        "u": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/seance-du-lundi-03-mars-2025.pdf",
+        "d": "2025-03-03"
+       },
+       "auparavant": null
+      }
+     ]
+    },
+    "ukraine": {
+     "points": -3,
+     "min": -9,
+     "max": 9,
+     "connues": 5,
+     "questions": 6,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Aide militaire (armes, matériel, formation)",
+       "reponse": "La poursuivre",
+       "points": 1,
+       "texte": "Elle dit vouloir continuer les aides matérielles, notamment militaires, et la formation des soldats ukrainiens, tout en arrêtant l'aide financière.",
+       "source": {
+        "t": "Aide à l'Ukraine : que proposent les candidats à la présidentielle ? — Public Sénat, 16 nov. 2026",
+        "u": "https://www.publicsenat.fr/actualites/international/aide-a-lukraine-que-proposent-les-candidats-a-la-presidentielle",
+        "d": "2026-11-16"
+       },
+       "auparavant": "Le RN se disait réticent en 2024 aux livraisons d'armes à longue portée ; selon The Moscow Times (14 oct. 2026, reprenant le Financial Times), elle mettrait fin à l'aide bilatérale hors soutien opérationnel et formation."
+      },
+      {
+       "question": "Aide financière",
+       "reponse": "L'arrêter",
+       "points": -2,
+       "texte": "Élue, elle mettrait fin à l'aide financière française à l'Ukraine dans les six mois, tout en disant respecter les engagements déjà pris, dont la participation au prêt européen de 90 Md€ pour 2026-2027.",
+       "source": {
+        "t": "Ukraine : Marine Le Pen revendique un « soutien sans faille » mais veut fermer le robinet financier — LCP, 17 nov. 2026",
+        "u": "https://lcp.fr/actualites/ukraine-marine-le-pen-revendique-un-soutien-sans-faille-mais-veut-fermer-le-robinet",
+        "d": "2026-11-17"
+       },
+       "auparavant": "Le 19 sept. 2026, le communiqué Le Pen-Bardella demandait un débat sur « le niveau du soutien financier » ; à la mi-octobre 2026, elle a annoncé que ce financement « cessera »."
+      },
+      {
+       "question": "Sanctions contre la Russie, avoirs russes gelés",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": "Fin 2025, le RN s'est abstenu de réclamer la saisie des avoirs russes gelés (Le Grand Continent, 28 sept. 2026)."
+      },
+      {
+       "question": "Soldats français pour garantir un cessez-le-feu",
+       "reponse": "Seulement sous mandat de l'ONU",
+       "points": 0,
+       "texte": "Marine Le Pen juge l'envoi de troupes françaises combattantes en Ukraine « une folie » et n'envisage qu'une éventuelle participation à une opération sous mandat de casques bleus de l'ONU.",
+       "source": {
+        "t": "Compte rendu de la séance du 3 mars 2025 — Assemblée nationale",
+        "u": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/seance-du-lundi-03-mars-2025.pdf",
+        "d": "2025-03-03"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'UE",
+       "reponse": "Contre",
+       "points": -1,
+       "texte": "Marine Le Pen estime que l'adhésion de l'Ukraine à l'UE coûterait des milliards à la France et ruinerait ses agriculteurs ; elle l'a de nouveau rejetée dans un entretien au Financial Times en octobre 2026.",
+       "source": {
+        "t": "Compte rendu de la séance du 3 mars 2025 — Assemblée nationale",
+        "u": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/seance-du-lundi-03-mars-2025.pdf",
+        "d": "2025-03-03"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'OTAN",
+       "reponse": "Contre",
+       "points": -1,
+       "texte": "Marine Le Pen juge qu'on ne peut pas promettre à l'Ukraine une adhésion à l'OTAN.",
+       "source": {
+        "t": "Compte rendu de la séance du 3 mars 2025 — Assemblée nationale",
+        "u": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/seance-du-lundi-03-mars-2025.pdf",
+        "d": "2025-03-03"
+       },
+       "auparavant": null
+      }
+     ]
+    },
+    "russie": [
+     {
+      "date": "2026-11-16",
+      "fait": "Elle rencontre l'ambassadeur d'Ukraine en France et se dit prête à rencontrer Volodymyr Zelensky à Paris ou à Bruxelles.",
+      "source": {
+       "t": "Ukraine : Marine Le Pen revendique un « soutien sans faille » mais veut fermer le robinet financier — LCP, 17 nov. 2026",
+       "u": "https://lcp.fr/actualites/ukraine-marine-le-pen-revendique-un-soutien-sans-faille-mais-veut-fermer-le-robinet",
+       "d": "2026-11-17"
+      }
+     },
+     {
+      "date": "2026-10",
+      "fait": "Interrogée par le Financial Times sur la menace russe, elle répond : « I cannot read Mr Putin's mind and I do not know his plans ».",
+      "source": {
+       "t": "Le Pen backtracks on Putin. Cuts to aid for Kyiv — Il Foglio, 15 oct. 2026",
+       "u": "https://www.ilfoglio.it/en/world/2026/10/15/news/le-pen-backtracks-on-putin-cuts-to-aid-for-kyiv--410596",
+       "d": "2026-10-15"
+      }
+     },
+     {
+      "date": "2026-09-19",
+      "fait": "Communiqué Le Pen-Bardella : la Russie ne peut espérer dicter la politique française « par l'intimidation, la menace » ; ils condamnent les actes « hostiles » russes, dont la mise sous administration d'entreprises françaises en Russie.",
+      "source": {
+       "t": "La Russie ne peut « dicter la politique de la France par la menace », selon Marine Le Pen et Jordan Bardella — franceinfo, 19 sept. 2026",
+       "u": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/la-russie-ne-peut-dicter-la-politique-de-la-france-par-la-menace-selon-marine-le-pen-et-jordan-bardella_8200694.html",
+       "d": "2026-09-19"
+      }
+     },
+     {
+      "date": "2026-09",
+      "fait": "Dmitri Medvedev critique les dirigeants du RN après ce communiqué.",
+      "source": {
+       "t": "Marine Le Pen peut-elle vraiment rompre avec Poutine ? — Le Grand Continent, 28 sept. 2026",
+       "u": "https://legrandcontinent.eu/fr/2026/09/28/marine-le-pen-peut-elle-vraiment-rompre-avec-poutine/",
+       "d": "2026-09-28"
+      }
+     },
+     {
+      "date": "2025-03-03",
+      "fait": "À l'Assemblée, elle salue la résistance ukrainienne face à « l'indéfendable agression russe », estime que l'Ukraine ne peut gagner sans entrée en guerre de l'OTAN et refuse l'entrée de la France dans le groupe des plans nucléaires de l'OTAN.",
+      "source": {
+       "t": "Compte rendu de la séance du 3 mars 2025 — Assemblée nationale",
+       "u": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/seance-du-lundi-03-mars-2025.pdf",
+       "d": "2025-03-03"
+      }
+     },
+     {
+      "date": "2024-06-19",
+      "fait": "Jordan Bardella renonce à la sortie du commandement intégré de l'OTAN, que prévoyait le programme 2022, « alors que nous sommes en guerre ».",
+      "source": {
+       "t": "Le dirigeant de l'extrême droite en France recule sur le retrait de l'OTAN — Noovo (AFP), 19 juin 2024",
+       "u": "https://www.noovo.info/nouvelle/le-dirigeant-de-lextreme-droite-en-france-recule-sur-le-retrait-de-lotan.html",
+       "d": "2024-06-19"
+      }
+     },
+     {
+      "date": "2023-05",
+      "fait": "Devant la commission d'enquête sur les ingérences étrangères, elle déclare : « La Crimée a été russe pendant deux siècles. »",
+      "source": {
+       "t": "Marine Le Pen peut-elle vraiment rompre avec Poutine ? — Le Grand Continent, 28 sept. 2026",
+       "u": "https://legrandcontinent.eu/fr/2026/09/28/marine-le-pen-peut-elle-vraiment-rompre-avec-poutine/",
+       "d": "2026-09-28"
+      }
+     },
+     {
+      "date": "2022-02",
+      "fait": "Au lendemain de l'invasion, Marine Le Pen condamne « sans ambiguïté » l'agression russe.",
+      "source": {
+       "t": "Marine Le Pen peut-elle vraiment rompre avec Poutine ? — Le Grand Continent, 28 sept. 2026",
+       "u": "https://legrandcontinent.eu/fr/2026/09/28/marine-le-pen-peut-elle-vraiment-rompre-avec-poutine/",
+       "d": "2026-09-28"
+      }
+     },
+     {
+      "date": "2017-03-24",
+      "fait": "Marine Le Pen est reçue par Vladimir Poutine au Kremlin et y juge les sanctions « profondément injustes ».",
+      "source": {
+       "t": "Marine Le Pen peut-elle vraiment rompre avec Poutine ? — Le Grand Continent, 28 sept. 2026",
+       "u": "https://legrandcontinent.eu/fr/2026/09/28/marine-le-pen-peut-elle-vraiment-rompre-avec-poutine/",
+       "d": "2026-09-28"
+      }
+     },
+     {
+      "date": "2014",
+      "fait": "Le Front national contracte un emprunt de 9 M€ auprès d'une banque tchéco-russe, remboursé en 2023.",
+      "source": {
+       "t": "Marine Le Pen peut-elle vraiment rompre avec Poutine ? — Le Grand Continent, 28 sept. 2026",
+       "u": "https://legrandcontinent.eu/fr/2026/09/28/marine-le-pen-peut-elle-vraiment-rompre-avec-poutine/",
+       "d": "2026-09-28"
+      }
+     }
+    ],
+    "votes": {
+     "pour": 5,
+     "contre": 9,
+     "abstention": 8,
+     "partage": 0,
+     "total": 22,
+     "assembleeNationale": true
+    }
+   }
   },
   {
    "id": "lfi",
@@ -945,7 +1195,226 @@
      "u": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf"
     }
    ],
-   "page": "https://quipaie2027.fr/candidat-jean-luc-melenchon.html"
+   "page": "https://quipaie2027.fr/candidat-jean-luc-melenchon.html",
+   "europeUkraine": {
+    "europe": {
+     "points": -2,
+     "min": -7,
+     "max": 2,
+     "connues": 4,
+     "questions": 5,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Sortir de l'UE ou de l'euro",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Le programme L'Avenir en commun écarte explicitement toute sortie de l'Union européenne comme de la zone euro.",
+       "source": {
+        "t": "L'Avenir en commun, partie 6, chapitre 1 « Se libérer du libéralisme en Europe » — melenchon2027.fr, 2026",
+        "u": "https://melenchon2027.fr/?p=26663",
+        "d": "2026-11-06"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Faire primer le droit français sur le droit européen",
+       "reponse": "Le propose",
+       "points": -1,
+       "texte": "Le programme prévoit d'appliquer le programme voté par les Français même quand les traités ne le permettent pas, et de faire voter par le Parlement français la suspension de certaines règles européennes le temps de leur révision.",
+       "source": {
+        "t": "L'Avenir en commun, partie 6, chapitre 1 — melenchon2027.fr, 2026",
+        "u": "https://melenchon2027.fr/?p=26663",
+        "d": "2026-11-06"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Ne plus appliquer, seul, certaines règles européennes",
+       "reponse": "Le propose",
+       "points": -1,
+       "texte": "Le programme assume « la désobéissance aux règles bloquantes » et cite la sortie coordonnée du marché européen de l'énergie, la suspension du pacte sur la migration et l'asile et du règlement « retour », la suspension des règles budgétaires des 3 % de déficit et celle des accords de libre-échange (le Mercosur est cité).",
+       "source": {
+        "t": "L'Avenir en commun, partie 6, chapitre 1 — melenchon2027.fr, 2026",
+        "u": "https://melenchon2027.fr/?p=26663",
+        "d": "2026-11-06"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Contribution de la France au budget européen",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Aller plus loin ensemble (défense commune, emprunt commun, décisions à la majorité)",
+       "reponse": "En partie",
+       "points": 0,
+       "texte": "Le programme rejette l'Europe de la défense conçue comme « pilier européen de l'OTAN » et cite le veto sur l'élargissement comme levier, mais demande de préciser et d'organiser la clause de défense mutuelle (art. 42-7 TUE) ; l'emprunt commun et le vote à la majorité qualifiée ne sont pas évoqués.",
+       "source": {
+        "t": "L'Avenir en commun, partie 6, chapitre 1 — melenchon2027.fr, 2026",
+        "u": "https://melenchon2027.fr/?p=26663",
+        "d": "2026-11-06"
+       },
+       "auparavant": null
+      }
+     ]
+    },
+    "ukraine": {
+     "points": 0,
+     "min": -9,
+     "max": 9,
+     "connues": 5,
+     "questions": 6,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Aide militaire (armes, matériel, formation)",
+       "reponse": "La poursuivre",
+       "points": 1,
+       "texte": "Un communiqué de LFI du 9 novembre 2026 dit que le soutien doit durer tant que dure l'agression russe ; LFI exclut la livraison de missiles à longue portée et l'envoi de forces au sol.",
+       "source": {
+        "t": "Aide à l'Ukraine : que proposent les candidats à la présidentielle ? — Public Sénat, 16 nov. 2026",
+        "u": "https://www.publicsenat.fr/actualites/international/aide-a-lukraine-que-proposent-les-candidats-a-la-presidentielle",
+        "d": "2026-11-16"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Aide financière",
+       "reponse": "La poursuivre",
+       "points": 1,
+       "texte": "Selon Public Sénat, LFI a régulièrement voté le soutien financier et militaire à l'Ukraine au Parlement européen, et son communiqué du 9 novembre 2026 veut le prolonger tant que dure l'agression.",
+       "source": {
+        "t": "Aide à l'Ukraine : que proposent les candidats à la présidentielle ? — Public Sénat, 16 nov. 2026",
+        "u": "https://www.publicsenat.fr/actualites/international/aide-a-lukraine-que-proposent-les-candidats-a-la-presidentielle",
+        "d": "2026-11-16"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Sanctions contre la Russie, avoirs russes gelés",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Soldats français pour garantir un cessez-le-feu",
+       "reponse": "Seulement sous mandat de l'ONU",
+       "points": 0,
+       "texte": "Le programme refuse « toute intervention militaire sans mandat clair de l'ONU » ; Jean-Luc Mélenchon s'est dit favorable à des « troupes de l'ONU » et à des casques bleus pour protéger les centrales nucléaires dans un accord de paix. Aucune position sur la force de réassurance de la coalition des volontaires n'a été trouvée.",
+       "source": {
+        "t": "« Ukraine : celui qui nous menace physiquement c'est monsieur Trump », lance Mélenchon — La Gazette France (AFP), 16 mars 2025",
+        "u": "https://www.lagazettefrance.fr/article/ukraine-celui-qui-nous-menace-physiquement-c-est-monsieur-trump-lance-melenchon",
+        "d": "2025-03-16"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'UE",
+       "reponse": "Contre",
+       "points": -1,
+       "texte": "LFI se dit opposée à tout élargissement de l'Union européenne, quel que soit le conflit ; le programme 2027 cite le veto sur les « projets d'élargissement » parmi ses leviers au Conseil européen.",
+       "source": {
+        "t": "Guerre en Ukraine : « nous sommes contre tout élargissement de l'Union européenne », déclare Adrien Quatennens — franceinfo, 11 mars 2022",
+        "u": "https://www.franceinfo.fr/monde/russie/vladimir-poutine/guerre-en-ukraine-independamment-du-conflit-nous-sommes-contre-tout-elargissement-de-l-union-europeenne-declare-adrien-quatennens_5004308.html",
+        "d": "2022-03-11"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'OTAN",
+       "reponse": "Contre",
+       "points": -1,
+       "texte": "À l'Assemblée, LFI a voté contre l'accord de sécurité franco-ukrainien en raison du soutien de principe qu'il apporte à l'adhésion de l'Ukraine à l'UE et à l'OTAN ; son programme 2027 prévoit de quitter l'OTAN par étapes.",
+       "source": {
+        "t": "Assemblée nationale, scrutin n° 3461 du 12 mars 2024 et explication de vote d'Arnaud Le Gall",
+        "u": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3461",
+        "d": "2024-03-12"
+       },
+       "auparavant": null
+      }
+     ]
+    },
+    "russie": [
+     {
+      "date": "2026-11-10",
+      "fait": "Accusé par le ministre Jean-Noël Barrot de s'être fait « le porte-parole du Kremlin », Jean-Luc Mélenchon dément toute volonté de cession territoriale et dit vouloir « conditionner toute modification de la frontière à un vote des populations concernées ».",
+      "source": {
+       "t": "Accusé de se faire le « porte-parole du Kremlin », Jean-Luc Mélenchon réplique sur l'Ukraine — LCP, 10 novembre 2026",
+       "u": "https://lcp.fr/actualites/accuse-de-se-faire-le-porte-parole-du-kremlin-jean-luc-melenchon-replique-sur-l-ukraine",
+       "d": "2026-11-10"
+      }
+     },
+     {
+      "date": "2026-11-07",
+      "fait": "Au meeting du Bourget, Jean-Luc Mélenchon refuse une paix avec concessions territoriales et demande que les habitants du sud-est de l'Ukraine soient « consultés » ; Kiev répond que les frontières ont été tranchées par le référendum de 1991.",
+      "source": {
+       "t": "Statut du Donbass : la diplomatie ukrainienne recadre Jean-Luc Mélenchon — Euronews, 9 novembre 2026",
+       "u": "https://fr.euronews.com/2026/11/09/statut-du-donbass-la-diplomatie-ukrainienne-recadre-jean-luc-melenchon",
+       "d": "2026-11-09"
+      }
+     },
+     {
+      "date": "2026-11-06",
+      "fait": "Le programme L'Avenir en commun 2027 rappelle la condamnation de la « guerre d'agression contre l'Ukraine » et demande un cessez-le-feu, le retrait des troupes russes et un vote des populations concernées pour valider toute modification de frontière.",
+      "source": {
+       "t": "L'Avenir en commun, partie 6, chapitre 2 — melenchon2027.fr",
+       "u": "https://melenchon2027.fr/?p=26664",
+       "d": "2026-11-06"
+      }
+     },
+     {
+      "date": "2026-11-06",
+      "fait": "Le programme prévoit de quitter immédiatement le commandement intégré de l'OTAN puis, par étapes, l'organisation, au nom d'une action internationale « non-alignée ».",
+      "source": {
+       "t": "L'Avenir en commun, partie 6, chapitre 2 — melenchon2027.fr",
+       "u": "https://melenchon2027.fr/?p=26664",
+       "d": "2026-11-06"
+      }
+     },
+     {
+      "date": "2026-05-07",
+      "fait": "Le groupe LFI à l'Assemblée s'oppose à la confiscation des avoirs de la Banque centrale de Russie (immunité souveraine) et propose de ne confisquer que les biens privés des auteurs de crimes internationaux.",
+      "source": {
+       "t": "Amendement n° 2 à la PPL n° 2756 — Assemblée nationale, 7 mai 2026",
+       "u": "https://www.assemblee-nationale.fr/dyn/17/amendements/2756/AN/2.pdf",
+       "d": "2026-05-07"
+      }
+     },
+     {
+      "date": "2025-03-16",
+      "fait": "Sur France 3, Jean-Luc Mélenchon se dit « ni Trump, ni Poutine », juge « d'intérêt vital » que la guerre s'arrête et réclame la sortie de l'OTAN.",
+      "source": {
+       "t": "« Ukraine : celui qui nous menace physiquement c'est monsieur Trump » — La Gazette France (AFP), 16 mars 2025",
+       "u": "https://www.lagazettefrance.fr/article/ukraine-celui-qui-nous-menace-physiquement-c-est-monsieur-trump-lance-melenchon",
+       "d": "2025-03-16"
+      }
+     },
+     {
+      "date": "2024-03-12",
+      "fait": "Le groupe LFI vote contre l'accord bilatéral de sécurité franco-ukrainien à l'Assemblée nationale (adopté par 372 voix contre 99).",
+      "source": {
+       "t": "L'Assemblée nationale soutient largement l'accord avec l'Ukraine, sans le RN qui s'abstient et LFI qui vote contre — LCP, 12 mars 2024",
+       "u": "https://lcp.fr/actualites/l-assemblee-nationale-soutient-largement-l-accord-avec-l-ukraine-sans-le-rn-qui-s",
+       "d": "2024-03-12"
+      }
+     }
+    ],
+    "votes": {
+     "pour": 7,
+     "contre": 6,
+     "abstention": 9,
+     "partage": 0,
+     "total": 22,
+     "assembleeNationale": true
+    }
+   }
   },
   {
    "id": "lr",
@@ -1232,7 +1701,195 @@
      "u": "https://www.tf1info.fr/politique/elections/presidentielle/le-temps-joue-contre-nous-bruno-retailleau-propose-une-primaire-de-la-droite-et-du-centre-les-31-janvier-et-7-fevrier-2475141.html"
     }
    ],
-   "page": "https://quipaie2027.fr/candidat-bruno-retailleau.html"
+   "page": "https://quipaie2027.fr/candidat-bruno-retailleau.html",
+   "europeUkraine": {
+    "europe": {
+     "points": -3,
+     "min": -7,
+     "max": 2,
+     "connues": 4,
+     "questions": 5,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Sortir de l'UE ou de l'euro",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Bruno Retailleau se présente comme « pro-européen » et veut négocier avec l'UE plutôt que réduire unilatéralement la contribution française.",
+       "source": {
+        "t": "Retailleau calls for French rebate on EU contribution (d'après Politico Europe) — UA.NEWS, 13 oct. 2026",
+        "u": "https://ua.news/en/world/kandidat-u-prezidenti-retaio-zaklikav-frantsiiu-vimagati-znizhku-na-vnesok-do-es-politico-europe",
+        "d": "2026-10-13"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Faire primer le droit français sur le droit européen",
+       "reponse": "Le propose",
+       "points": -1,
+       "texte": "Il veut soumettre à référendum un « pacte constitutionnel » dès la rentrée 2027, avec une « charte de l'ordre républicain » servant de bouclier face aux juridictions européennes ; la France pourrait déroger « dans certains cas » à la primauté du droit européen.",
+       "source": {
+        "t": "Présidentielle 2027 : Bruno Retailleau propose une « révolution copernicienne » — Public Sénat, 3 sept. 2026",
+        "u": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-propose-une-revolution-copernicienne-dans-laquelle-la-constitution-ne-serait-plus-le-bouclier-qui-prote",
+        "d": "2026-09-03"
+       },
+       "auparavant": "La citation est tirée de sa vidéo de candidature (Public Sénat, 13 févr. 2026)."
+      },
+      {
+       "question": "Ne plus appliquer, seul, certaines règles européennes",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Contribution de la France au budget européen",
+       "reponse": "La baisser",
+       "points": -1,
+       "texte": "Il veut que la France obtienne par la négociation un rabais sur sa contribution, en réduisant les fonds structurels et en comptant les dépenses de défense et de dissuasion nucléaire dans le calcul.",
+       "source": {
+        "t": "Retailleau calls for French rebate on EU contribution (d'après Politico Europe) — UA.NEWS, 13 oct. 2026",
+        "u": "https://ua.news/en/world/kandidat-u-prezidenti-retaio-zaklikav-frantsiiu-vimagati-znizhku-na-vnesok-do-es-politico-europe",
+        "d": "2026-10-13"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Aller plus loin ensemble (défense commune, emprunt commun, décisions à la majorité)",
+       "reponse": "Contre",
+       "points": -1,
+       "texte": "Selon Public Sénat, il critique une défense européenne commune et préfère renforcer les capacités nationales et les accords de sécurité bilatéraux ; il juge l'adhésion de l'Ukraine impossible tant que dure la guerre.",
+       "source": {
+        "t": "Aide à l'Ukraine : que proposent les candidats à la présidentielle ? — Public Sénat, 16 nov. 2026",
+        "u": "https://www.publicsenat.fr/actualites/international/aide-a-lukraine-que-proposent-les-candidats-a-la-presidentielle",
+        "d": "2026-11-16"
+       },
+       "auparavant": null
+      }
+     ]
+    },
+    "ukraine": {
+     "points": 3,
+     "min": -9,
+     "max": 9,
+     "connues": 4,
+     "questions": 6,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Aide militaire (armes, matériel, formation)",
+       "reponse": "La poursuivre",
+       "points": 1,
+       "texte": "Début novembre 2026 sur BFMTV, il veut maintenir l'aide à l'Ukraine au même niveau et estime que la paix ne viendra que lorsque Vladimir Poutine sera convaincu de ne pas pouvoir gagner militairement.",
+       "source": {
+        "t": "Aide à l'Ukraine : que proposent les candidats à la présidentielle ? — Public Sénat, 16 nov. 2026",
+        "u": "https://www.publicsenat.fr/actualites/international/aide-a-lukraine-que-proposent-les-candidats-a-la-presidentielle",
+        "d": "2026-11-16"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Aide financière",
+       "reponse": "La poursuivre",
+       "points": 1,
+       "texte": "Il dit vouloir maintenir l'aide à l'Ukraine au même niveau (BFMTV, début novembre 2026), sans distinguer l'aide militaire de l'aide financière.",
+       "source": {
+        "t": "Aide à l'Ukraine : que proposent les candidats à la présidentielle ? — Public Sénat, 16 nov. 2026",
+        "u": "https://www.publicsenat.fr/actualites/international/aide-a-lukraine-que-proposent-les-candidats-a-la-presidentielle",
+        "d": "2026-11-16"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Sanctions contre la Russie, avoirs russes gelés",
+       "reponse": "Les maintenir",
+       "points": 1,
+       "texte": "En mars 2022, il demandait que la France prenne toute sa part aux sanctions européennes ; aucune déclaration plus récente sur les sanctions ou les avoirs gelés n'a été trouvée.",
+       "source": {
+        "t": "« Il faut que la France s'affirme aux côtés du peuple ukrainien » : Bruno Retailleau touché par le discours de Zelensky — Public Sénat, 23 mars 2022",
+        "u": "https://www.publicsenat.fr/actualites/non-classe/il-faut-que-la-france-s-affirme-aux-cotes-du-peuple-ukrainien-bruno-retailleau",
+        "d": "2022-03-23"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Soldats français pour garantir un cessez-le-feu",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'UE",
+       "reponse": "Sous conditions, plus tard",
+       "points": 0,
+       "texte": "Lors de son déplacement à Kiev, il a jugé l'intégration impossible tant que dure la guerre, puis subordonnée à la préservation de la PAC et à la lutte contre la corruption ; il refuse l'intégration de l'Ukraine au marché agricole européen.",
+       "source": {
+        "t": "Adhésion de l'Ukraine à l'UE : la France devra-t-elle organiser un référendum ? — Kohen Avocats, citant Le Point du 27 mai 2026 (Le Point non lu)",
+        "u": "https://kohenavocats.com/adhesion-ukraine-union-europeenne-referendum-france-article-88-5-presidentielle-2027/",
+        "d": "2026-05-27"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'OTAN",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      }
+     ]
+    },
+    "russie": [
+     {
+      "date": "2026-11",
+      "fait": "Sur BFMTV, il estime que des négociations ne pourront s'ouvrir que lorsque Vladimir Poutine sera convaincu qu'il ne peut pas gagner militairement.",
+      "source": {
+       "t": "Aide à l'Ukraine : que proposent les candidats à la présidentielle ? — Public Sénat, 16 nov. 2026",
+       "u": "https://www.publicsenat.fr/actualites/international/aide-a-lukraine-que-proposent-les-candidats-a-la-presidentielle",
+       "d": "2026-11-16"
+      }
+     },
+     {
+      "date": "2026-05-20",
+      "fait": "Il consacre à l'Ukraine son premier déplacement de campagne à l'étranger (Kiev, trois jours), sans rencontrer Volodymyr Zelensky, et rejette une politique où l'agression « can pay off ».",
+      "source": {
+       "t": "Bruno Retailleau arrived in Kyiv ahead of the French elections — ThePublic, 20 mai 2026",
+       "u": "https://thepublic.info/en/news/bruno-retailleau-arrived-in-kyiv-ahead-of-the-french-elections",
+       "d": "2026-05-20"
+      }
+     },
+     {
+      "date": "2024-02-27",
+      "fait": "Réagissant aux propos d'Emmanuel Macron sur des troupes au sol, il écrit qu'une entrée en guerre contre la Russie « serait une folie aux conséquences incalculables ».",
+      "source": {
+       "t": "Troupes au sol en Ukraine — Public Sénat, 27 févr. 2024",
+       "u": "https://www.publicsenat.fr/actualites/international/troupes-au-sol-en-ukraine-le-senateur-lr-cedric-perrin-pointe-les-propos-tres-alambiques-et-potentiellement-dangereux-demmanuel-macron",
+       "d": "2024-02-27"
+      }
+     },
+     {
+      "date": "2022-03-23",
+      "fait": "Après le discours de Volodymyr Zelensky au Parlement, il demande une aide « avec des armes » et une pleine participation française aux sanctions.",
+      "source": {
+       "t": "« Il faut que la France s'affirme aux côtés du peuple ukrainien » — Public Sénat, 23 mars 2022",
+       "u": "https://www.publicsenat.fr/actualites/non-classe/il-faut-que-la-france-s-affirme-aux-cotes-du-peuple-ukrainien-bruno-retailleau",
+       "d": "2022-03-23"
+      }
+     }
+    ],
+    "votes": {
+     "pour": 15,
+     "contre": 0,
+     "abstention": 3,
+     "partage": 4,
+     "total": 22,
+     "assembleeNationale": true
+    }
+   }
   },
   {
    "id": "ren",
@@ -1457,7 +2114,199 @@
      "u": "https://www.franceinfo.fr/politique/gabriel-attal/primaire-racisme-referendums-ia-ce-qu-il-faut-retenir-de-l-interview-de-gabriel-attal-dans-l-emission-l-heure-de-verite-sur-france-2_8290544.html"
     }
    ],
-   "page": "https://quipaie2027.fr/candidat-gabriel-attal.html"
+   "page": "https://quipaie2027.fr/candidat-gabriel-attal.html",
+   "europeUkraine": {
+    "europe": {
+     "points": 1,
+     "min": -7,
+     "max": 2,
+     "connues": 4,
+     "questions": 5,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Sortir de l'UE ou de l'euro",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Gabriel Attal propose au contraire de « bâtir les États-Unis d'Europe » avec un noyau dur de huit à dix pays volontaires (mesure 115 de son programme, discours de Reims).",
+       "source": {
+        "t": "Gabriel Attal veut construire « les Etats-Unis d'Europe » — Public Sénat, 17 sept. 2026",
+        "u": "https://www.publicsenat.fr/actualites/politique/gabriel-attal-veut-construire-les-etats-unis-deurope-proposition-choc-pour-relancer-lideal-europeen",
+        "d": "2026-09-17"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Faire primer le droit français sur le droit européen",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Aucune mesure de son programme (154 mesures) ne prévoit de faire primer le droit national sur le droit européen ; il propose à l'inverse un « premier référendum européen » pour approfondir l'intégration.",
+       "source": {
+        "t": "Gabriel Attal veut construire « les Etats-Unis d'Europe » — Public Sénat, 17 sept. 2026",
+        "u": "https://www.publicsenat.fr/actualites/politique/gabriel-attal-veut-construire-les-etats-unis-deurope-proposition-choc-pour-relancer-lideal-europeen",
+        "d": "2026-09-17"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Ne plus appliquer, seul, certaines règles européennes",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Son programme propose de « refuser le traité Mercosur en l'état » et de réclamer des clauses miroirs, sans annoncer de refus unilatéral d'appliquer une règle européenne ; aucune autre mesure de ce type n'a été trouvée.",
+       "source": {
+        "t": "Mesure 84 « Refuser le traité Mercosur » — attalpresident.fr, 4 juin 2026",
+        "u": "https://attalpresident.fr/programme/mesures/refuser-mercosur",
+        "d": "2026-06-04"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Contribution de la France au budget européen",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Aller plus loin ensemble (défense commune, emprunt commun, décisions à la majorité)",
+       "reponse": "Pour",
+       "points": 1,
+       "texte": "Il propose une fusion économique, technologique et écologique avec un noyau dur de pays (rapprochement des impôts et du droit du travail, dette commune pour l'adaptation climatique), en critiquant le fait qu'« un seul pays peut bloquer une décision » ; en défense : préférence européenne dans la commande publique, « dôme de fer européen », extension du parapluie nucléaire français à l'Europe. Les compétences régaliennes resteraient nationales ; rien trouvé sur l'élargissement.",
+       "source": {
+        "t": "Mesure 115 « Bâtir les États-Unis d'Europe » — attalpresident.fr, 17 sept. 2026",
+        "u": "https://attalpresident.fr/programme/mesures/etats-unis-d-europe",
+        "d": "2026-09-17"
+       },
+       "auparavant": null
+      }
+     ]
+    },
+    "ukraine": {
+     "points": 7,
+     "min": -9,
+     "max": 9,
+     "connues": 4,
+     "questions": 6,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Aide militaire (armes, matériel, formation)",
+       "reponse": "L'augmenter",
+       "points": 2,
+       "texte": "Dans un entretien à POLITICO, il appelle les Européens à se coordonner pour répondre aux demandes ukrainiennes, notamment « davantage de capacités sol-air ».",
+       "source": {
+        "t": "Gabriel Attal dans POLITICO : Europe, Ukraine, IA et finances publiques — attalpresident.fr, 24 sept. 2026",
+        "u": "https://attalpresident.fr/actualites/gabriel-attal-dans-politico-europe-ukraine-ia-et-finances-publiques-quatre-priorites-pour-preparer-la-france-de-demain",
+        "d": "2026-09-24"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Aide financière",
+       "reponse": "L'augmenter",
+       "points": 2,
+       "texte": "Son programme prévoit de saisir les avoirs russes gelés en Europe pour financer le soutien à l'Ukraine et sa reconstruction (mesure 134, position exprimée dès mars 2025).",
+       "source": {
+        "t": "Mesure 134 « Saisir les avoirs russes gelés » — attalpresident.fr (tribune au Monde du 5 mars 2025)",
+        "u": "https://attalpresident.fr/programme/mesures/saisir-avoirs-russes-geles",
+        "d": "2025-03-05"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Sanctions contre la Russie, avoirs russes gelés",
+       "reponse": "Les renforcer",
+       "points": 2,
+       "texte": "Il demande de passer du gel à la saisie des avoirs russes pour « faire payer la guerre à la Russie » ; aucune déclaration trouvée sur les autres paquets de sanctions.",
+       "source": {
+        "t": "Programme, mesure 134 — attalpresident.fr",
+        "u": "https://attalpresident.fr/programme",
+        "d": "2026-11-27"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Soldats français pour garantir un cessez-le-feu",
+       "reponse": "Pour",
+       "points": 1,
+       "texte": "Pieyre-Alexandre Anglade (EPR), aujourd'hui « ambassadeur » Europe et International de sa campagne, a demandé à l'Assemblée, au nom des priorités défendues « avec Gabriel Attal », une force multinationale conduite par les Européens après un cessez-le-feu ; Attal lui-même n'a pas été trouvé s'exprimant sur ce point en 2026.",
+       "source": {
+        "t": "Question au Gouvernement n° 1145 (P.-A. Anglade) — Assemblée nationale, JO du 7 janv. 2026",
+        "u": "https://questions.assemblee-nationale.fr/dyn/17/questions/QANR5L17QG1145",
+        "d": "2026-01-07"
+       },
+       "auparavant": "Comme Premier ministre (Sénat, 28 févr. 2024), il évoquait des soldats français pour des « actions de formation », sans combat au front."
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'UE",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'OTAN",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      }
+     ]
+    },
+    "russie": [
+     {
+      "date": "2026-11-16",
+      "fait": "Public Sénat indique qu'il s'est rendu en Ukraine au cours de l'année écoulée et qu'il défend, comme Édouard Philippe, la saisie des avoirs russes gelés.",
+      "citation": null,
+      "source": {
+       "t": "Aide à l'Ukraine : que proposent les candidats à la présidentielle ? — Public Sénat, 16 nov. 2026",
+       "u": "https://www.publicsenat.fr/actualites/international/aide-a-lukraine-que-proposent-les-candidats-a-la-presidentielle",
+       "d": "2026-11-16"
+      }
+     },
+     {
+      "date": "2026-09-24",
+      "fait": "Dans POLITICO, il dit vouloir que Moscou supporte le coût de la guerre et présente les États-Unis d'Europe comme une réponse aux puissances américaine, chinoise et russe.",
+      "citation": "Face aux puissances américaine, chinoise et russe, je suis convaincu que les États-Unis d'Europe sont notre chance.",
+      "source": {
+       "t": "Gabriel Attal dans POLITICO — attalpresident.fr, 24 sept. 2026",
+       "u": "https://attalpresident.fr/actualites/gabriel-attal-dans-politico-europe-ukraine-ia-et-finances-publiques-quatre-priorites-pour-preparer-la-france-de-demain",
+       "d": "2026-09-24"
+      }
+     },
+     {
+      "date": "2025-03-05",
+      "fait": "Il propose dans une tribune au Monde la saisie des avoirs russes gelés en Europe, reprise comme mesure 134 de son programme.",
+      "citation": null,
+      "source": {
+       "t": "Mesure 134 — attalpresident.fr",
+       "u": "https://attalpresident.fr/programme/mesures/saisir-avoirs-russes-geles",
+       "d": "2025-03-05"
+      }
+     },
+     {
+      "date": "2024-02-28",
+      "fait": "Premier ministre, il déclare au Sénat que la Russie est une menace directe pour la France et qu'on ne peut accepter que « la Russie gagne cette guerre ».",
+      "citation": "La réalité est que Russie est une menace directe et immédiate pour la France sur tous les plans",
+      "source": {
+       "t": "Gabriel Attal : « La Russie est une menace directe et immédiate… » — Public Sénat, 28 févr. 2024",
+       "u": "https://www.publicsenat.fr/actualites/parlementaire/gabriel-attal-la-russie-est-une-menace-directe-et-immediate-pour-la-france-sur-tous-les-plans",
+       "d": "2024-02-28"
+      }
+     }
+    ],
+    "votes": {
+     "pour": 22,
+     "contre": 0,
+     "abstention": 0,
+     "partage": 0,
+     "total": 22,
+     "assembleeNationale": true
+    }
+   }
   },
   {
    "id": "hor",
@@ -1777,7 +2626,189 @@
      "u": "https://www.edouardphilippe.fr/programme/comptes-publics"
     }
    ],
-   "page": "https://quipaie2027.fr/candidat-edouard-philippe.html"
+   "page": "https://quipaie2027.fr/candidat-edouard-philippe.html",
+   "europeUkraine": {
+    "europe": {
+     "points": 1,
+     "min": -7,
+     "max": 2,
+     "connues": 3,
+     "questions": 5,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Sortir de l'UE ou de l'euro",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Son programme veut « achever le marché unique européen », bâtir une union des marchés de capitaux et un « Buy European Tech Act » : il s'inscrit dans l'UE et l'euro, sans aucune proposition de sortie.",
+       "source": {
+        "t": "Programme, thème Défense (préférence européenne) — edouardphilippe.fr, mis à jour le 18 nov. 2026",
+        "u": "https://www.edouardphilippe.fr/programme/defense",
+        "d": "2026-11-18"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Faire primer le droit français sur le droit européen",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Ne plus appliquer, seul, certaines règles européennes",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Aucune mesure de s'affranchir unilatéralement d'une règle européenne dans son programme ; il propose de changer les règles au niveau européen (régime européen d'urgence sur l'asile, verrou Schengen sur les régularisations massives, renforcement du mécanisme carbone aux frontières).",
+       "source": {
+        "t": "Programme, thème Immigration — edouardphilippe.fr",
+        "u": "https://www.edouardphilippe.fr/programme/immigration",
+        "d": "2026-11-18"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Contribution de la France au budget européen",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Aller plus loin ensemble (défense commune, emprunt commun, décisions à la majorité)",
+       "reponse": "Pour",
+       "points": 1,
+       "texte": "En défense, il veut qu'au moins 1 % de la richesse nationale des pays de l'UE aille à des équipements fabriqués en Europe, avec une préférence européenne pour l'armement ; il veut aussi une union des marchés de capitaux et arrimer l'Ukraine à l'UE. Rien trouvé de vérifiable sur l'emprunt commun ni sur le vote à la majorité qualifiée.",
+       "source": {
+        "t": "Programme, thème Défense — edouardphilippe.fr, mis à jour le 18 nov. 2026",
+        "u": "https://www.edouardphilippe.fr/programme/defense",
+        "d": "2026-11-18"
+       },
+       "auparavant": null
+      }
+     ]
+    },
+    "ukraine": {
+     "points": 6,
+     "min": -9,
+     "max": 9,
+     "connues": 5,
+     "questions": 6,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Aide militaire (armes, matériel, formation)",
+       "reponse": "La poursuivre",
+       "points": 1,
+       "texte": "Son programme promet de « soutenir pleinement l'Ukraine », la France prenant « toute sa part » dans le soutien financier et opérationnel.",
+       "source": {
+        "t": "Programme, thème Défense — edouardphilippe.fr, mis à jour le 18 nov. 2026",
+        "u": "https://www.edouardphilippe.fr/programme/defense",
+        "d": "2026-11-18"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Aide financière",
+       "reponse": "La poursuivre",
+       "points": 1,
+       "texte": "Même engagement au soutien financier dans son programme ; il s'oppose au projet de couper l'aide défendu par le RN et se prononce pour la saisie des avoirs russes gelés (Public Sénat, 16 nov. 2026).",
+       "source": {
+        "t": "Passe d'armes entre Le Pen et Philippe sur l'aide à l'Ukraine — dépêche AFP reprise par La Gazette France, 4 sept. 2026",
+        "u": "https://www.lagazettefrance.fr/article/passe-d-armes-entre-le-pen-et-philippe-sur-l-aide-a-l-ukraine",
+        "d": "2026-09-04"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Sanctions contre la Russie, avoirs russes gelés",
+       "reponse": "Les renforcer",
+       "points": 2,
+       "texte": "Il reproche à Marine Le Pen de s'être opposée aux sanctions contre Moscou (AFP, 4 sept. 2026) et se prononce pour la saisie des avoirs russes gelés (Public Sénat, 16 nov. 2026).",
+       "source": {
+        "t": "Passe d'armes entre Le Pen et Philippe sur l'aide à l'Ukraine — AFP via La Gazette France, 4 sept. 2026",
+        "u": "https://www.lagazettefrance.fr/article/passe-d-armes-entre-le-pen-et-philippe-sur-l-aide-a-l-ukraine",
+        "d": "2026-09-04"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Soldats français pour garantir un cessez-le-feu",
+       "reponse": "Pour",
+       "points": 1,
+       "texte": "Après sa visite à Kiev en mai 2026, il s'est dit favorable au déploiement de troupes européennes en Ukraine « une fois la paix revenue », pour dissuader une nouvelle attaque russe ; il dit ne pas vouloir entraîner la France dans un conflit direct avec Moscou.",
+       "source": {
+        "t": "Aide à l'Ukraine : que proposent les candidats à la présidentielle ? — Public Sénat, 16 nov. 2026",
+        "u": "https://www.publicsenat.fr/actualites/international/aide-a-lukraine-que-proposent-les-candidats-a-la-presidentielle",
+        "d": "2026-11-16"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'UE",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'OTAN",
+       "reponse": "Pour",
+       "points": 1,
+       "texte": "Son programme affirme que l'Ukraine a vocation à intégrer l'OTAN ; à Kiev, il a qualifié l'adhésion de « meilleure garantie de sécurité ».",
+       "source": {
+        "t": "Programme, thème Défense — edouardphilippe.fr, mis à jour le 18 nov. 2026",
+        "u": "https://www.edouardphilippe.fr/programme/defense",
+        "d": "2026-11-18"
+       },
+       "auparavant": null
+      }
+     ]
+    },
+    "russie": [
+     {
+      "date": "2026-11-18",
+      "fait": "En présentant son programme, il accuse Marine Le Pen et Jean-Luc Mélenchon d'une « fascination malsaine » pour Vladimir Poutine.",
+      "citation": "fascination malsaine",
+      "source": {
+       "t": "Immigration, retraites, Ukraine : Édouard Philippe dévoile les grandes lignes de son programme — Euronews, 18 nov. 2026",
+       "u": "https://fr.euronews.com/2026/11/18/immigration-retraites-ukraine-edouard-philippe-devoile-les-grandes-lignes-de-son-programme",
+       "d": "2026-11-18"
+      }
+     },
+     {
+      "date": "2026-09-04",
+      "fait": "Répondant au RN sur l'aide à l'Ukraine, il déclare que couper cette aide reviendrait à servir la Russie.",
+      "citation": "couper le robinet à l'Ukraine, c'est servir la Russie",
+      "source": {
+       "t": "Passe d'armes entre Le Pen et Philippe sur l'aide à l'Ukraine — AFP via La Gazette France, 4 sept. 2026",
+       "u": "https://www.lagazettefrance.fr/article/passe-d-armes-entre-le-pen-et-philippe-sur-l-aide-a-l-ukraine",
+       "d": "2026-09-04"
+      }
+     },
+     {
+      "date": "2026-05-26",
+      "fait": "À Kiev, il rencontre Volodymyr Zelensky, s'engage à œuvrer pour l'entrée de l'Ukraine dans l'OTAN et se dit favorable à des troupes européennes après la paix pour dissuader la Russie.",
+      "citation": "meilleure garantie de sécurité",
+      "source": {
+       "t": "Édouard Philippe a rencontré Volodymyr Zelensky à Kyiv — Euronews, 26 mai 2026",
+       "u": "https://fr.euronews.com/2026/05/26/edouard-philippe-a-rencontre-volodymyr-zelensky-a-kyiv",
+       "d": "2026-05-26"
+      }
+     }
+    ],
+    "votes": {
+     "pour": 22,
+     "contre": 0,
+     "abstention": 0,
+     "partage": 0,
+     "total": 22,
+     "assembleeNationale": true
+    }
+   }
   },
   {
    "id": "ps",
@@ -2024,7 +3055,208 @@
      "u": "https://lcp.fr/actualites/budget-a-l-assemblee-les-socialistes-presentent-leurs-propositions-et-previennent-qu-ils"
     }
    ],
-   "page": "https://quipaie2027.fr/candidat-raphael-glucksmann.html"
+   "page": "https://quipaie2027.fr/candidat-raphael-glucksmann.html",
+   "europeUkraine": {
+    "europe": {
+     "points": 2,
+     "min": -7,
+     "max": 2,
+     "connues": 5,
+     "questions": 5,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Sortir de l'UE ou de l'euro",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Le projet de Place publique, repris par Raphaël Glucksmann, défend une « Europe fédérale » et ne prévoit aucune sortie de l'UE ni de l'euro.",
+       "source": {
+        "t": "Acte I « Notre vision pour la France », chantier 3 « Pour une Europe fédérale » — Place publique, juin 2025",
+        "u": "https://drive.google.com/file/d/1Ols_EJxRAxOJeR-fLEKp7IzEk8-TSI1Q/view",
+        "d": "2025-06-23"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Faire primer le droit français sur le droit européen",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Aucune proposition de primauté du droit national n'apparaît ; le projet propose au contraire un traité de refondation européenne d'ici 2030 et un « contrat de souveraineté » répartissant les compétences entre échelons.",
+       "source": {
+        "t": "Acte I, chantier 3 — Place publique, juin 2025",
+        "u": "https://drive.google.com/file/d/1Ols_EJxRAxOJeR-fLEKp7IzEk8-TSI1Q/view",
+        "d": "2025-06-23"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Ne plus appliquer, seul, certaines règles européennes",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Le projet ne prévoit pas de s'affranchir unilatéralement de règles européennes ; il veut « s'opposer » à des traités comme le Mercosur et imposer des mesures miroirs au niveau européen.",
+       "source": {
+        "t": "Acte I, chantier 14 — Place publique, juin 2025",
+        "u": "https://drive.google.com/file/d/1Ols_EJxRAxOJeR-fLEKp7IzEk8-TSI1Q/view",
+        "d": "2025-06-23"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Contribution de la France au budget européen",
+       "reponse": "L'augmenter",
+       "points": 1,
+       "texte": "Le projet veut augmenter massivement le budget de l'Union et lui attribuer de nouvelles ressources propres.",
+       "source": {
+        "t": "Acte I, chantier 3 — Place publique, juin 2025",
+        "u": "https://drive.google.com/file/d/1Ols_EJxRAxOJeR-fLEKp7IzEk8-TSI1Q/view",
+        "d": "2025-06-23"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Aller plus loin ensemble (défense commune, emprunt commun, décisions à la majorité)",
+       "reponse": "Pour",
+       "points": 1,
+       "texte": "Le projet prévoit un fonds européen de défense de 500 Md€ financé par emprunt commun, l'extension de la dissuasion nucléaire française aux partenaires de l'UE, et un traité d'ici 2030 faisant passer le Conseil européen à la majorité qualifiée.",
+       "source": {
+        "t": "Acte I, chantiers 2 et 3 — Place publique, juin 2025",
+        "u": "https://drive.google.com/file/d/1Ols_EJxRAxOJeR-fLEKp7IzEk8-TSI1Q/view",
+        "d": "2025-06-23"
+       },
+       "auparavant": null
+      }
+     ]
+    },
+    "ukraine": {
+     "points": 7,
+     "min": -9,
+     "max": 9,
+     "connues": 4,
+     "questions": 6,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Aide militaire (armes, matériel, formation)",
+       "reponse": "L'augmenter",
+       "points": 2,
+       "texte": "Le projet veut augmenter « drastiquement » l'aide militaire à l'Ukraine, présentée comme la « première ligne de défense » de l'Europe.",
+       "source": {
+        "t": "Acte I, chantier 2 « Bâtir la défense européenne » — Place publique, juin 2025",
+        "u": "https://drive.google.com/file/d/1Ols_EJxRAxOJeR-fLEKp7IzEk8-TSI1Q/view",
+        "d": "2025-06-23"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Aide financière",
+       "reponse": "L'augmenter",
+       "points": 2,
+       "texte": "Raphaël Glucksmann demande de saisir les avoirs publics russes gelés pour financer l'Ukraine.",
+       "source": {
+        "t": "Clash entre Trump et Zelensky, défense européenne… Le « 8h30 franceinfo » de Raphaël Glucksmann — franceinfo, 1er mars 2025",
+        "u": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/clash-entre-trump-et-zelensky-defense-europeenne-le-8h30-franceinfo-de-raphael-glucksmann_7075134.html",
+        "d": "2025-03-01"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Sanctions contre la Russie, avoirs russes gelés",
+       "reponse": "Les renforcer",
+       "points": 2,
+       "texte": "Raphaël Glucksmann réclame la saisie des avoirs publics russes gelés et la fin des « trous » dans les sanctions, notamment sur le GNL ; le projet de Place publique veut interdire immédiatement toute importation de gaz russe.",
+       "source": {
+        "t": "Clash entre Trump et Zelensky, défense européenne… Le « 8h30 franceinfo » de Raphaël Glucksmann — franceinfo, 1er mars 2025",
+        "u": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/clash-entre-trump-et-zelensky-defense-europeenne-le-8h30-franceinfo-de-raphael-glucksmann_7075134.html",
+        "d": "2025-03-01"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Soldats français pour garantir un cessez-le-feu",
+       "reponse": "Pour",
+       "points": 1,
+       "texte": "Raphaël Glucksmann s'est dit favorable à l'envoi de soldats européens en Ukraine pour garantir un cessez-le-feu et offrir des garanties de sécurité.",
+       "source": {
+        "t": "Le « 8h30 franceinfo » de Raphaël Glucksmann — franceinfo, 1er mars 2025",
+        "u": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/clash-entre-trump-et-zelensky-defense-europeenne-le-8h30-franceinfo-de-raphael-glucksmann_7075134.html",
+        "d": "2025-03-01"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'UE",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'OTAN",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      }
+     ]
+    },
+    "russie": [
+     {
+      "date": "2026-05-26",
+      "fait": "Dans son livre « Nous avons encore envie », il dénonce le « déni » de ceux qui refusent de voir la menace de la Russie de Vladimir Poutine.",
+      "source": {
+       "t": "Présidentielle : Raphaël Glucksmann dévoile les premières lignes de son possible programme — LCP, 26 mai 2026",
+       "u": "https://lcp.fr/actualites/presidentielle-raphael-glucksmann-devoile-les-premieres-lignes-de-son-possible-programme",
+       "d": "2026-05-26"
+      }
+     },
+     {
+      "date": "2025-11-24",
+      "fait": "Il qualifie le plan Trump pour l'Ukraine de « plan de capitulation » « dicté par le Kremlin ».",
+      "source": {
+       "t": "Le « 8h30 franceinfo » de Raphaël Glucksmann — franceinfo, 24 novembre 2025",
+       "u": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/plan-de-trump-pour-l-ukraine-retour-du-service-militaire-et-desunion-de-la-gauche-le-8-30-franceinfo-de-raphael-glucksmann_7606847.html",
+       "d": "2025-11-24"
+      }
+     },
+     {
+      "date": "2025-06-23",
+      "fait": "Le projet de Place publique évoque la « guerre hybride que Vladimir Poutine et d'autres dictateurs mènent contre nos démocraties » et veut interdire immédiatement les importations de gaz russe.",
+      "source": {
+       "t": "Acte I — Place publique, juin 2025",
+       "u": "https://drive.google.com/file/d/1Ols_EJxRAxOJeR-fLEKp7IzEk8-TSI1Q/view",
+       "d": "2025-06-23"
+      }
+     },
+     {
+      "date": "2025-03-01",
+      "fait": "Il appelle à augmenter « drastiquement » les livraisons d'armes, à saisir les 209 Md€ d'avoirs publics russes gelés et à combler les trous des sanctions sur l'énergie.",
+      "source": {
+       "t": "Le « 8h30 franceinfo » de Raphaël Glucksmann — franceinfo, 1er mars 2025",
+       "u": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/clash-entre-trump-et-zelensky-defense-europeenne-le-8h30-franceinfo-de-raphael-glucksmann_7075134.html",
+       "d": "2025-03-01"
+      }
+     },
+     {
+      "date": "2024-03-12",
+      "fait": "Le groupe socialiste vote à l'unanimité pour l'accord bilatéral de sécurité franco-ukrainien à l'Assemblée nationale.",
+      "source": {
+       "t": "L'Assemblée nationale soutient largement l'accord avec l'Ukraine — LCP, 12 mars 2024",
+       "u": "https://lcp.fr/actualites/l-assemblee-nationale-soutient-largement-l-accord-avec-l-ukraine-sans-le-rn-qui-s",
+       "d": "2024-03-12"
+      }
+     }
+    ],
+    "votes": {
+     "pour": 22,
+     "contre": 0,
+     "abstention": 0,
+     "partage": 0,
+     "total": 22,
+     "assembleeNationale": true
+    }
+   }
   },
   {
    "id": "eco",
@@ -2294,7 +3526,174 @@
      "u": "https://www.rtl.fr/actu/politique/ca-devrait-pouvoir-se-faire-jean-luc-melenchon-salue-la-main-tendue-par-marine-tondelier-pour-la-presidentielle-plutot-une-bonne-nouvelle-7900698435"
     }
    ],
-   "page": "https://quipaie2027.fr/candidat-marine-tondelier.html"
+   "page": "https://quipaie2027.fr/candidat-marine-tondelier.html",
+   "europeUkraine": {
+    "europe": {
+     "points": 1,
+     "min": -7,
+     "max": 2,
+     "connues": 2,
+     "questions": 5,
+     "provisoire": true,
+     "reponses": [
+      {
+       "question": "Sortir de l'UE ou de l'euro",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Les Écologistes défendent l'approfondissement du fédéralisme européen et une défense européenne ; aucune proposition de sortie.",
+       "source": {
+        "t": "Conseil fédéral des Écologistes, contribution « Europe de la défense », 14-15 juin 2025",
+        "u": "https://cf.eelv.fr/wp-content/uploads/sites/6/2025/06/CF-2025-06-1415-vcontrib-europe.pdf",
+        "d": "2025-06-15"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Faire primer le droit français sur le droit européen",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Ne plus appliquer, seul, certaines règles européennes",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Contribution de la France au budget européen",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Aller plus loin ensemble (défense commune, emprunt commun, décisions à la majorité)",
+       "reponse": "Pour",
+       "points": 1,
+       "texte": "Le Conseil fédéral des Écologistes juge qu'une stratégie de défense commune suppose « un saut fédéral » et vise à terme un « corps d'armée européen » ; le projet 2027 veut aussi accélérer l'accueil de nouveaux États membres.",
+       "source": {
+        "t": "Motion « Europe de la Défense », Conseil fédéral des Écologistes, 4-5 octobre 2025 (adoptée à 69,23 %)",
+        "u": "https://cf.eelv.fr/wp-content/uploads/sites/6/2025/10/CF-2025-10-45-MA-europe-defense.pdf",
+        "d": "2025-10-05"
+       },
+       "auparavant": null
+      }
+     ]
+    },
+    "ukraine": {
+     "points": 5,
+     "min": -9,
+     "max": 9,
+     "connues": 3,
+     "questions": 6,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Aide militaire (armes, matériel, formation)",
+       "reponse": "La poursuivre",
+       "points": 1,
+       "texte": "Le parti veut venir en aide à l'Ukraine et la soutenir, y compris militairement.",
+       "source": {
+        "t": "Conseil fédéral des Écologistes, contribution « Europe de la défense », 14-15 juin 2025",
+        "u": "https://cf.eelv.fr/wp-content/uploads/sites/6/2025/06/CF-2025-06-1415-vcontrib-europe.pdf",
+        "d": "2025-06-15"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Aide financière",
+       "reponse": "L'augmenter",
+       "points": 2,
+       "texte": "Le projet 2027 prévoit un soutien économique à l'Ukraine et l'affectation des 140 Md€ d'avoirs russes gelés aux réparations de guerre et au remboursement du prêt européen.",
+       "source": {
+        "t": "Projet 2027 des Écologistes, mesures Europe n° 3 et 6, relayé par Votons 2027",
+        "u": "https://votons-2027.fr/candidats/tondelier/programme/europe",
+        "d": "2026-09-21"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Sanctions contre la Russie, avoirs russes gelés",
+       "reponse": "Les renforcer",
+       "points": 2,
+       "texte": "Le projet 2027 demande l'arrêt immédiat des importations de gaz, d'uranium et d'engrais russes et biélorusses et l'affectation des avoirs russes gelés à l'Ukraine ; Marine Tondelier s'est dite « choquée » par ceux qui refusent de geler ces avoirs.",
+       "source": {
+        "t": "Augmentation du budget de la défense : « c'est la solidarité nationale qui doit jouer », affirme Marine Tondelier — Public Sénat, 14 mars 2025",
+        "u": "https://www.publicsenat.fr/actualites/politique/augmentation-du-budget-de-la-defense-quand-on-a-des-defis-pareils-cest-la-solidarite-nationale-qui-doit-jouer-affirme-marine-tondelier",
+        "d": "2025-03-14"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Soldats français pour garantir un cessez-le-feu",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'UE",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'OTAN",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      }
+     ]
+    },
+    "russie": [
+     {
+      "date": "2025-10-05",
+      "fait": "Le Conseil fédéral des Écologistes qualifie l'invasion de l'Ukraine de « violation flagrante du droit international » et évoque la « menace existentielle que fait peser la Russie de Poutine » sur la sécurité européenne.",
+      "source": {
+       "t": "Motion « Europe de la Défense » — Conseil fédéral des Écologistes, 4-5 octobre 2025",
+       "u": "https://cf.eelv.fr/wp-content/uploads/sites/6/2025/10/CF-2025-10-45-MA-europe-defense.pdf",
+       "d": "2025-10-05"
+      }
+     },
+     {
+      "date": "2025-03-14",
+      "fait": "Marine Tondelier qualifie de « patriotes de pacotille » ceux qui s'opposent au gel des avoirs russes et estime que le pacifisme ne doit pas signifier laisser des pays « se faire amputer d'une partie de leur territoire ».",
+      "source": {
+       "t": "« C'est la solidarité nationale qui doit jouer », affirme Marine Tondelier — Public Sénat, 14 mars 2025",
+       "u": "https://www.publicsenat.fr/actualites/politique/augmentation-du-budget-de-la-defense-quand-on-a-des-defis-pareils-cest-la-solidarite-nationale-qui-doit-jouer-affirme-marine-tondelier",
+       "d": "2025-03-14"
+      }
+     },
+     {
+      "date": "2024-03-12",
+      "fait": "Le groupe écologiste vote pour l'accord bilatéral de sécurité franco-ukrainien, tout en critiquant la « rhétorique belliciste » d'Emmanuel Macron.",
+      "source": {
+       "t": "L'Assemblée nationale soutient largement l'accord avec l'Ukraine — LCP, 12 mars 2024",
+       "u": "https://lcp.fr/actualites/l-assemblee-nationale-soutient-largement-l-accord-avec-l-ukraine-sans-le-rn-qui-s",
+       "d": "2024-03-12"
+      }
+     }
+    ],
+    "votes": {
+     "pour": 22,
+     "contre": 0,
+     "abstention": 0,
+     "partage": 0,
+     "total": 22,
+     "assembleeNationale": true
+    }
+   }
   },
   {
    "id": "ia",
@@ -2900,7 +4299,183 @@
      "u": "https://www.franceinfo.fr/elections/huit-deputes-des-republicains-annoncent-leur-soutien-a-david-lisnard-plutot-que-bruno-retailleau-pour-la-presidentielle-2027_8301579.html"
     }
    ],
-   "page": "https://quipaie2027.fr/candidat-david-lisnard.html"
+   "page": "https://quipaie2027.fr/candidat-david-lisnard.html",
+   "europeUkraine": {
+    "europe": {
+     "points": -1,
+     "min": -7,
+     "max": 2,
+     "connues": 3,
+     "questions": 5,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Sortir de l'UE ou de l'euro",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Le programme de Nouvelle Énergie écarte à la fois le fédéralisme et le repli sur des États-nations isolés, et propose de renégocier les compétences par un traité, sans sortie de l'UE ni de l'euro.",
+       "source": {
+        "t": "Notre programme, axe « Être maître de notre destin » — unenouvelleenergie.fr",
+        "u": "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/",
+        "d": "2026-11-27"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Faire primer le droit français sur le droit européen",
+       "reponse": "Le propose",
+       "points": -1,
+       "texte": "Le programme prévoit qu'en cas de blocage dû à des règles supranationales, les citoyens puissent trancher par référendum, ce qui implique de « revoir partiellement la hiérarchie des normes ».",
+       "source": {
+        "t": "Notre programme, axe « Être maître de notre destin » — unenouvelleenergie.fr",
+        "u": "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/",
+        "d": "2026-11-27"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Ne plus appliquer, seul, certaines règles européennes",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Contribution de la France au budget européen",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Aller plus loin ensemble (défense commune, emprunt commun, décisions à la majorité)",
+       "reponse": "En partie",
+       "points": 0,
+       "texte": "Il rejette le fédéralisme et propose un « Traité de démocratisation de l'Europe » pour revoir la répartition des compétences et renforcer le Conseil européen et le Parlement ; le programme entend redéfinir les compétences où l'Europe apporte une plus-value. Rien trouvé sur la défense commune, l'emprunt commun, la majorité qualifiée ou l'élargissement.",
+       "source": {
+        "t": "Notre programme, axe « Être maître de notre destin » — unenouvelleenergie.fr",
+        "u": "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/",
+        "d": "2026-11-27"
+       },
+       "auparavant": null
+      }
+     ]
+    },
+    "ukraine": {
+     "points": 1,
+     "min": -9,
+     "max": 9,
+     "connues": 1,
+     "questions": 6,
+     "provisoire": true,
+     "reponses": [
+      {
+       "question": "Aide militaire (armes, matériel, formation)",
+       "reponse": "La poursuivre",
+       "points": 1,
+       "texte": "Son mouvement résume sa ligne : invasion russe, intérêt de la France à ce que la Russie ne gagne pas, et demande de munitions plutôt que de discours ; les déclarations citées datent de 2024-2025, et il a dit en avril 2026 que la France ne pourrait pas tenir son soutien sans le renseignement américain.",
+       "source": {
+        "t": "Quelle est la position de David Lisnard sur la guerre en Ukraine ? — unenouvelleenergie.fr",
+        "u": "https://www.unenouvelleenergie.fr/questions/quelle-est-la-position-de-david-lisnard-sur-la-guerre-en-ukraine/",
+        "d": "2026-04-20"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Aide financière",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Sanctions contre la Russie, avoirs russes gelés",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Soldats français pour garantir un cessez-le-feu",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'UE",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'OTAN",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      }
+     ]
+    },
+    "russie": [
+     {
+      "date": "2026-04-20",
+      "fait": "Sur BFMTV, il estime que la France est incapable de maintenir son soutien à l'Ukraine sans le renseignement américain.",
+      "citation": "incapable aujourd'hui de tenir position en Ukraine de soutien",
+      "source": {
+       "t": "Quelle est la position de David Lisnard sur la guerre en Ukraine ? — unenouvelleenergie.fr",
+       "u": "https://www.unenouvelleenergie.fr/questions/quelle-est-la-position-de-david-lisnard-sur-la-guerre-en-ukraine/",
+       "d": "2026-04-20"
+      }
+     },
+     {
+      "date": "2025-03-05",
+      "fait": "Sur TF1, il qualifie le conflit d'« invasion russe » et défend le droit du peuple ukrainien à disposer de lui-même.",
+      "citation": "le peuple ukrainien doit pouvoir disposer de lui-même",
+      "source": {
+       "t": "Quelle est la position de David Lisnard sur la guerre en Ukraine ? — unenouvelleenergie.fr",
+       "u": "https://www.unenouvelleenergie.fr/questions/quelle-est-la-position-de-david-lisnard-sur-la-guerre-en-ukraine/",
+       "d": "2025-03-05"
+      }
+     },
+     {
+      "date": "2024-03-18",
+      "fait": "Il décrit la Russie comme un empire « de nouveau expansionniste » qui se prépare à un conflit avec l'Occident et l'OTAN, et appelle à ne pas faiblir dans le soutien à l'Ukraine.",
+      "citation": "nous ne pouvons pas faiblir dans notre soutien à l'Ukraine car si nous cédons, nous nous soumettons.",
+      "source": {
+       "t": "David Lisnard : « Nous ne pouvons pas faiblir dans notre soutien à l'Ukraine » — France Ukraine News, 18 mars 2024",
+       "u": "https://franceukrainenews.org/david-lisnard-nous-ne-pouvons-pas-faiblir-dans-notre-soutien-a-lukraine/",
+       "d": "2024-03-18"
+      }
+     },
+     {
+      "date": "2024-02-29",
+      "fait": "Sur Sud Radio, il décrit Vladimir Poutine comme rationnel mais déraisonnable et parle d'un « axe des empires qui sont des dictatures » (Russie, Iran, Chine) ; il juge que les propos d'Emmanuel Macron sur l'envoi de troupes ont affaibli l'Occident.",
+      "citation": "Il n'est pas fou du tout. Il est très rationnel, mais il est déraisonnable.",
+      "source": {
+       "t": "Ukraine : Emmanuel Macron « a affaibli la position de l'Occident », juge David Lisnard — Sud Radio, 29 févr. 2024",
+       "u": "https://www.sudradio.fr/linvite-politique/ukraine-emmanuel-macron-a-affaibli-la-position-de-loccident-juge-david-lisnard",
+       "d": "2024-02-29"
+      }
+     }
+    ],
+    "votes": {
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "partage": 0,
+     "total": 0,
+     "assembleeNationale": false
+    }
+   }
   },
   {
    "id": "rec",
@@ -3121,7 +4696,743 @@
      "u": "https://www.franceinfo.fr/politique/eric-zemmour/c-est-ma-derniere-campagne-annonce-le-candidat-de-reconquete-a-la-presidentielle-eric-zemmour_8302101.html"
     }
    ],
-   "page": "https://quipaie2027.fr/candidat-eric-zemmour.html"
+   "page": "https://quipaie2027.fr/candidat-eric-zemmour.html",
+   "europeUkraine": {
+    "europe": {
+     "points": -3,
+     "min": -7,
+     "max": 2,
+     "connues": 4,
+     "questions": 5,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Sortir de l'UE ou de l'euro",
+       "reponse": "Ne le propose pas",
+       "points": 0,
+       "texte": "Le dernier programme européen de Reconquête propose une Europe « confédérale » réformée, sans sortie de l'UE ni de l'euro. (Programme européen de Reconquête de 2024 ; le programme présidentiel 2027 n'est pas publié.)",
+       "source": {
+        "t": "Programme Reconquête pour les élections européennes 2024 (PDF)",
+        "u": "https://ojim.fr/wp-content/uploads/2024/06/Programme-Reconque%CC%82te-Europe%CC%81ennes-2024.pdf",
+        "d": "2024-06-01"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Faire primer le droit français sur le droit européen",
+       "reponse": "Le propose",
+       "points": -1,
+       "texte": "Reconquête propose de modifier l'article 55 de la Constitution pour faire primer le droit national sur le droit européen. (Programme européen de Reconquête de 2024 ; le programme présidentiel 2027 n'est pas publié.)",
+       "source": {
+        "t": "Programme Reconquête pour les élections européennes 2024 (PDF)",
+        "u": "https://ojim.fr/wp-content/uploads/2024/06/Programme-Reconque%CC%82te-Europe%CC%81ennes-2024.pdf",
+        "d": "2024-06-01"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Ne plus appliquer, seul, certaines règles européennes",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Contribution de la France au budget européen",
+       "reponse": "La baisser",
+       "points": -1,
+       "texte": "Reconquête propose de baisser de 20 % la contribution annuelle de la France au budget de l'UE, avec un plafond de 20 Md€ par an, et refuse tout impôt européen. (Programme européen de Reconquête de 2024 ; le programme présidentiel 2027 n'est pas publié.)",
+       "source": {
+        "t": "Programme Reconquête pour les élections européennes 2024 (PDF)",
+        "u": "https://ojim.fr/wp-content/uploads/2024/06/Programme-Reconque%CC%82te-Europe%CC%81ennes-2024.pdf",
+        "d": "2024-06-01"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Aller plus loin ensemble (défense commune, emprunt commun, décisions à la majorité)",
+       "reponse": "Contre",
+       "points": -1,
+       "texte": "Reconquête refuse tout nouvel élargissement, la création d'une armée européenne, tout partage de la dissuasion, tout impôt européen et tout nouveau transfert de compétences, et défend le droit de veto. (Programme européen de Reconquête de 2024 ; le programme présidentiel 2027 n'est pas publié.)",
+       "source": {
+        "t": "Programme Reconquête pour les élections européennes 2024 (PDF)",
+        "u": "https://ojim.fr/wp-content/uploads/2024/06/Programme-Reconque%CC%82te-Europe%CC%81ennes-2024.pdf",
+        "d": "2024-06-01"
+       },
+       "auparavant": null
+      }
+     ]
+    },
+    "ukraine": {
+     "points": -5,
+     "min": -9,
+     "max": 9,
+     "connues": 3,
+     "questions": 6,
+     "provisoire": false,
+     "reponses": [
+      {
+       "question": "Aide militaire (armes, matériel, formation)",
+       "reponse": "L'arrêter",
+       "points": -2,
+       "texte": "Selon Public Sénat, Éric Zemmour veut mettre fin à toute forme de soutien à Kiev et privilégier la diplomatie ; le 26 nov. 2026, il a dit que la France devait user de son influence pour arrêter la guerre.",
+       "source": {
+        "t": "Aide à l'Ukraine : que proposent les candidats à la présidentielle ? — Public Sénat, 16 nov. 2026",
+        "u": "https://www.publicsenat.fr/actualites/international/aide-a-lukraine-que-proposent-les-candidats-a-la-presidentielle",
+        "d": "2026-11-16"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Aide financière",
+       "reponse": "L'arrêter",
+       "points": -2,
+       "texte": "Selon Public Sénat, Éric Zemmour veut mettre fin à toute forme de soutien à Kiev, dont l'aide financière.",
+       "source": {
+        "t": "Aide à l'Ukraine : que proposent les candidats à la présidentielle ? — Public Sénat, 16 nov. 2026",
+        "u": "https://www.publicsenat.fr/actualites/international/aide-a-lukraine-que-proposent-les-candidats-a-la-presidentielle",
+        "d": "2026-11-16"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Sanctions contre la Russie, avoirs russes gelés",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Soldats français pour garantir un cessez-le-feu",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'UE",
+       "reponse": "Contre",
+       "points": -1,
+       "texte": "Reconquête refuse tout nouvel élargissement de l'UE et veut rétablir les droits de douane sur les produits agricoles ukrainiens.",
+       "source": {
+        "t": "Programme Reconquête pour les élections européennes 2024 (PDF)",
+        "u": "https://ojim.fr/wp-content/uploads/2024/06/Programme-Reconque%CC%82te-Europe%CC%81ennes-2024.pdf",
+        "d": "2024-06-01"
+       },
+       "auparavant": null
+      },
+      {
+       "question": "Entrée de l'Ukraine dans l'OTAN",
+       "reponse": "Non précisé",
+       "points": null,
+       "texte": null,
+       "source": null,
+       "auparavant": null
+      }
+     ]
+    },
+    "russie": [
+     {
+      "date": "2026-11-26",
+      "fait": "À Objectif Élysée 2027 (CNews/Europe 1), il dit que « la France doit user de son influence pour arrêter la guerre en Ukraine », se propose en intermédiaire entre Kiev et Moscou et approuve les efforts de Donald Trump pour arrêter les combats.",
+      "source": {
+       "t": "« La France doit user de son influence pour arrêter la guerre en Ukraine », souhaite Éric Zemmour — CNews, 26 nov. 2026 (lu via la reprise titrespresse.com et HeadTopics)",
+       "u": "https://www.cnews.fr/france/2026-11-26/la-france-doit-user-de-son-influence-pour-arreter-la-guerre-en-ukraine-souhaite",
+       "d": "2026-11-26"
+      }
+     },
+     {
+      "date": "2022-04-04",
+      "fait": "Sur franceinfo, à propos de Boutcha : « Si ce qu'on voit est avéré et que ce sont les troupes russes qui l'ont fait, évidemment que c'est un crime de guerre. »",
+      "source": {
+       "t": "Crimes de guerre à Boutcha : Zemmour demande « qui va aller chercher Vladimir Poutine » — Bénin Web TV, 6 avr. 2022",
+       "u": "https://beninwebtv.bj/crimes-de-guerre-a-boutcha-zemmour-demande-qui-va-aller-chercher-vladimir-poutine/",
+       "d": "2022-04-06"
+      }
+     },
+     {
+      "date": "2022-03",
+      "fait": "Son programme présidentiel prévoit de sortir du commandement intégré de l'OTAN.",
+      "source": {
+       "t": "Éric Zemmour : sortir la France de l'Otan — Institut Montaigne, présidentielle 2022",
+       "u": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/sortir-la-france-de-lotan",
+       "d": "2022-03-15"
+      }
+     },
+     {
+      "date": "2022-02-28",
+      "fait": "Sur RTL, il reconnaît avoir « dit une bêtise » en prédisant que la Russie n'envahirait pas l'Ukraine.",
+      "source": {
+       "t": "Ukraine : l'horreur signée et assumée publiquement par Zemmour — Tunisie Numérique, 28 févr. 2022",
+       "u": "https://www.tunisienumerique.com/ukraine-lhorreur-signee-et-assumee-publiquement-par-zemmour/",
+       "d": "2022-02-28"
+      }
+     },
+     {
+      "date": "2022-02-24",
+      "fait": "Il publie : « Je condamne sans réserve l'usage de la force par la Russie ».",
+      "source": {
+       "t": "Message d'Éric Zemmour, blog de l'auteur (miroir Goodreads), 25 févr. 2022",
+       "u": "https://www.goodreads.com/author_blog_posts/22275157-je-condamne-sans-r-serve-l-usage-de-la-force-par-la-russie-et-mes-premi",
+       "d": "2022-02-25"
+      }
+     },
+     {
+      "date": "2022-01-23",
+      "fait": "Sur C dans l'air, Éric Zemmour propose de quitter le commandement intégré de l'OTAN et déclare : « l'OTAN ne sert qu'à légitimer l'industrie américaine et l'asservissement des pays européens ».",
+      "source": {
+       "t": "Le candidat à la présidence Zemmour veut garder la France dans l'OTAN pour ne pas y laisser entrer l'Ukraine — Ievropeïska Pravda, 24 janv. 2022",
+       "u": "https://www.eurointegration.com.ua/news/2022/01/24/7132990/",
+       "d": "2022-01-24"
+      }
+     }
+    ],
+    "votes": {
+     "pour": 3,
+     "contre": 3,
+     "abstention": 7,
+     "partage": 0,
+     "total": 13,
+     "assembleeNationale": false
+    }
+   }
   }
- ]
+ ],
+ "europeUkraine": {
+  "date": "2026-11-27",
+  "regle": "Chaque réponse rapporte des points, les mêmes pour tous ; une case non précisée compte zéro. Europe : sortir de l'UE −3, primauté du droit français −1, non-application unilatérale de règles −1, contribution en baisse −1 ou en hausse +1, approfondissement contre −1 ou pour +1. Ukraine : augmenter une aide +2, la poursuivre +1, la réduire −1, l'arrêter −2 ; mêmes points pour les sanctions ; pour les soldats et les adhésions, pour +1, contre −1, sous conditions 0.",
+  "axes": {
+   "europe": {
+    "titre": "L'Europe",
+    "gauche": "Moins d'Europe",
+    "droite": "Plus d'Europe",
+    "min": -7,
+    "max": 2,
+    "questions": [
+     "Sortir de l'UE ou de l'euro",
+     "Faire primer le droit français sur le droit européen",
+     "Ne plus appliquer, seul, certaines règles européennes",
+     "Contribution de la France au budget européen",
+     "Aller plus loin ensemble (défense commune, emprunt commun, décisions à la majorité)"
+    ]
+   },
+   "ukraine": {
+    "titre": "L'Ukraine",
+    "gauche": "Désengagement",
+    "droite": "Soutien renforcé",
+    "min": -9,
+    "max": 9,
+    "questions": [
+     "Aide militaire (armes, matériel, formation)",
+     "Aide financière",
+     "Sanctions contre la Russie, avoirs russes gelés",
+     "Soldats français pour garantir un cessez-le-feu",
+     "Entrée de l'Ukraine dans l'UE",
+     "Entrée de l'Ukraine dans l'OTAN"
+    ]
+   }
+  },
+  "votes": {
+   "regle": "Position d'un parti : celle d'au moins deux tiers de ses élus qui ont voté ; sinon « partagé ». Au Parlement européen, PS et Place publique sont comptés ensemble ; Renaissance sans le MoDem.",
+   "sources": [
+    {
+     "t": "Assemblée nationale, open data des scrutins",
+     "u": "https://data.assemblee-nationale.fr/travaux-parlementaires/votes"
+    },
+    {
+     "t": "HowTheyVote.eu, votes nominatifs du Parlement européen",
+     "u": "https://howtheyvote.eu/"
+    }
+   ],
+   "scrutins": [
+    {
+     "date": "2022-11-30",
+     "assemblee": "AN",
+     "numero": "16e législature, scrutin n° 652",
+     "intitule": "Proposition de résolution (art. 34-1) affirmant le soutien de l'Assemblée nationale à l'Ukraine et condamnant la guerre menée par la Fédération de Russie",
+     "resultat": "Adopté : 303 pour, 1 contre, 95 abstentions (399 votants)",
+     "source": {
+      "t": "Assemblée nationale, analyse du scrutin n° 652 (16e législature)",
+      "u": "https://www.assemblee-nationale.fr/dyn/16/scrutins/652"
+     },
+     "positions": {
+      "rn": "abstention",
+      "lfi": "abstention",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "absent"
+     }
+    },
+    {
+     "date": "2023-05-09",
+     "assemblee": "AN",
+     "numero": "16e législature, scrutin n° 1483",
+     "intitule": "Proposition de résolution (art. 34-1) appelant la France et l'UE à inscrire le groupe militaire privé Wagner sur la liste des organisations terroristes",
+     "resultat": "Adopté : 331 pour, 0 contre, 0 abstentions (331 votants)",
+     "source": {
+      "t": "Assemblée nationale, analyse du scrutin n° 1483 (16e législature)",
+      "u": "https://www.assemblee-nationale.fr/dyn/16/scrutins/1483"
+     },
+     "positions": {
+      "rn": "pour",
+      "lfi": "pour",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "absent"
+     }
+    },
+    {
+     "date": "2024-03-12",
+     "assemblee": "AN",
+     "numero": "16e législature, scrutin n° 3461",
+     "intitule": "Déclaration du Gouvernement (art. 50-1) sur l'accord de sécurité franco-ukrainien et la situation en Ukraine, suivie d'un vote",
+     "resultat": "Adopté : 372 pour, 99 contre, 101 abstentions (572 votants)",
+     "source": {
+      "t": "Assemblée nationale, analyse du scrutin n° 3461 (16e législature)",
+      "u": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3461"
+     },
+     "positions": {
+      "rn": "abstention",
+      "lfi": "contre",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "absent"
+     }
+    },
+    {
+     "date": "2025-03-12",
+     "assemblee": "AN",
+     "numero": "17e législature, scrutin n° 981",
+     "intitule": "Amendement n° 5 de Mme Le Grip (EPR) à la proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine : saisie et utilisation des avoirs russes gelés",
+     "resultat": "Adopté : 150 pour, 103 contre, 7 abstentions (260 votants)",
+     "source": {
+      "t": "Assemblée nationale, analyse du scrutin n° 981 (17e législature)",
+      "u": "https://www.assemblee-nationale.fr/dyn/17/scrutins/981"
+     },
+     "positions": {
+      "rn": "contre",
+      "lfi": "contre",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "absent"
+     }
+    },
+    {
+     "date": "2025-03-12",
+     "assemblee": "AN",
+     "numero": "17e législature, scrutin n° 988",
+     "intitule": "Proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine (article unique, vote solennel)",
+     "resultat": "Adopté : 288 pour, 54 contre, 132 abstentions (474 votants)",
+     "source": {
+      "t": "Assemblée nationale, analyse du scrutin n° 988 (17e législature)",
+      "u": "https://www.assemblee-nationale.fr/dyn/17/scrutins/988"
+     },
+     "positions": {
+      "rn": "abstention",
+      "lfi": "contre",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "absent"
+     }
+    },
+    {
+     "date": "2024-07-17",
+     "assemblee": "PE",
+     "numero": "B10-0007/2024 (HowTheyVote id 169362)",
+     "intitule": "Résolution sur la nécessité du soutien continu de l'UE à l'Ukraine (B10-0007/2024)",
+     "resultat": "Adopté : 495 pour, 137 contre, 47 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2024-07-17-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/169362"
+     },
+     "positions": {
+      "rn": "contre",
+      "lfi": "pour",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "contre"
+     }
+    },
+    {
+     "date": "2024-09-19",
+     "assemblee": "PE",
+     "numero": "RC-B10-0028/2024 (HowTheyVote id 169676)",
+     "intitule": "Résolution sur la poursuite du soutien financier et militaire des États membres à l'Ukraine",
+     "resultat": "Adopté : 425 pour, 131 contre, 63 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2024-09-19-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/169676"
+     },
+     "positions": {
+      "rn": "contre",
+      "lfi": "abstention",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "abstention"
+     }
+    },
+    {
+     "date": "2024-10-22",
+     "assemblee": "PE",
+     "numero": "A10-0006/2024 (HowTheyVote id 169889)",
+     "intitule": "Mécanisme de coopération pour les prêts à l'Ukraine et assistance macrofinancière exceptionnelle (jusqu'à 35 Md€, remboursée par les recettes des avoirs russes immobilisés)",
+     "resultat": "Adopté : 518 pour, 56 contre, 61 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2024-10-22-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/169889"
+     },
+     "positions": {
+      "rn": "abstention",
+      "lfi": "pour",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "contre"
+     }
+    },
+    {
+     "date": "2024-11-28",
+     "assemblee": "PE",
+     "numero": "RC-B10-0191/2024 (HowTheyVote id 170917)",
+     "intitule": "Résolution sur le renforcement du soutien de l'UE à l'Ukraine face à la guerre d'agression russe et à la coopération militaire croissante entre la Corée du Nord et la Russie",
+     "resultat": "Adopté : 390 pour, 135 contre, 52 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2024-11-28-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/170917"
+     },
+     "positions": {
+      "rn": "contre",
+      "lfi": "contre",
+      "lr": "partage",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "abstention"
+     }
+    },
+    {
+     "date": "2025-03-12",
+     "assemblee": "PE",
+     "numero": "RC-B10-0156/2025 (HowTheyVote id 172663)",
+     "intitule": "Résolution sur la poursuite du soutien de l'UE à l'Ukraine après trois ans de guerre d'agression russe",
+     "resultat": "Adopté : 442 pour, 98 contre, 126 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2025-03-12-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/172663"
+     },
+     "positions": {
+      "rn": "abstention",
+      "lfi": "abstention",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "abstention"
+     }
+    },
+    {
+     "date": "2025-05-22",
+     "assemblee": "PE",
+     "numero": "A10-0087/2025 (HowTheyVote id 176844)",
+     "intitule": "Règlement relevant les droits de douane sur certains produits russes et biélorusses (engrais, produits agricoles)",
+     "resultat": "Adopté : 411 pour, 100 contre, 78 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2025-05-22-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/176844"
+     },
+     "positions": {
+      "rn": "contre",
+      "lfi": "pour",
+      "lr": "abstention",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "contre"
+     }
+    },
+    {
+     "date": "2025-07-09",
+     "assemblee": "PE",
+     "numero": "RC-B10-0304/2025 (HowTheyVote id 178062)",
+     "intitule": "Résolution sur le coût humain de la guerre de la Russie contre l'Ukraine (civils et prisonniers détenus illégalement)",
+     "resultat": "Adopté : 507 pour, 77 contre, 45 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2025-07-09-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/178062"
+     },
+     "positions": {
+      "rn": "pour",
+      "lfi": "pour",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "abstention"
+     }
+    },
+    {
+     "date": "2025-09-09",
+     "assemblee": "PE",
+     "numero": "A10-0154/2025 (HowTheyVote id 178334)",
+     "intitule": "Rapport 2023-2024 de la Commission sur l'Ukraine (élargissement)",
+     "resultat": "Adopté : 418 pour, 135 contre, 41 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2025-09-09-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/178334"
+     },
+     "positions": {
+      "rn": "contre",
+      "lfi": "contre",
+      "lr": "partage",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "abstention"
+     }
+    },
+    {
+     "date": "2025-10-09",
+     "assemblee": "PE",
+     "numero": "RC-B10-0419/2025 (HowTheyVote id 179770)",
+     "intitule": "Résolution sur une réponse unie aux violations russes de l'espace aérien et des infrastructures critiques des États membres",
+     "resultat": "Adopté : 469 pour, 97 contre, 38 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2025-10-09-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/179770"
+     },
+     "positions": {
+      "rn": "pour",
+      "lfi": "contre",
+      "lr": "partage",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "pour"
+     }
+    },
+    {
+     "date": "2025-11-27",
+     "assemblee": "PE",
+     "numero": "RC-B10-0545/2025 (HowTheyVote id 182353)",
+     "intitule": "Résolution sur la position de l'UE sur le plan de paix proposé et son engagement pour une paix juste et durable en Ukraine",
+     "resultat": "Adopté : 401 pour, 70 contre, 90 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2025-11-27-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/182353"
+     },
+     "positions": {
+      "rn": "abstention",
+      "lfi": "abstention",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "absent"
+     }
+    },
+    {
+     "date": "2025-12-17",
+     "assemblee": "PE",
+     "numero": "A10-0195/2025 (HowTheyVote id 182807)",
+     "intitule": "Règlement sur la sortie progressive des importations de gaz naturel russe (accord provisoire)",
+     "resultat": "Adopté : 500 pour, 120 contre, 32 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2025-12-17-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/182807"
+     },
+     "positions": {
+      "rn": "contre",
+      "lfi": "pour",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "abstention"
+     }
+    },
+    {
+     "date": "2026-02-11",
+     "assemblee": "PE",
+     "numero": "C10-0005/2026 (HowTheyVote id 184699)",
+     "intitule": "Règlement sur le prêt de soutien à l'Ukraine pour 2026 et 2027 (90 Md€, coopération renforcée)",
+     "resultat": "Adopté : 458 pour, 140 contre, 44 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2026-02-11-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/184699"
+     },
+     "positions": {
+      "rn": "contre",
+      "lfi": "abstention",
+      "lr": "abstention",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "absent"
+     }
+    },
+    {
+     "date": "2026-02-24",
+     "assemblee": "PE",
+     "numero": "RC-B10-0143/2026 (HowTheyVote id 185885)",
+     "intitule": "Résolution sur les quatre ans de guerre d'agression russe contre l'Ukraine et les contributions européennes à une paix juste",
+     "resultat": "Adopté : 437 pour, 82 contre, 70 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2026-02-24-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/185885"
+     },
+     "positions": {
+      "rn": "abstention",
+      "lfi": "abstention",
+      "lr": "abstention",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "absent"
+     }
+    },
+    {
+     "date": "2026-04-30",
+     "assemblee": "PE",
+     "numero": "RC-B10-0201/2026 (HowTheyVote id 192341)",
+     "intitule": "Résolution sur la responsabilité et la justice face aux attaques russes contre la population civile ukrainienne",
+     "resultat": "Adopté : 446 pour, 63 contre, 52 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2026-04-30-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/192341"
+     },
+     "positions": {
+      "rn": "pour",
+      "lfi": "abstention",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "pour"
+     }
+    },
+    {
+     "date": "2026-07-08",
+     "assemblee": "PE",
+     "numero": "A10-0172/2026 (HowTheyVote id 195067)",
+     "intitule": "Rapport 2025 de la Commission sur l'Ukraine (élargissement)",
+     "resultat": "Adopté : 460 pour, 136 contre, 59 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2026-07-08-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/195067"
+     },
+     "positions": {
+      "rn": "contre",
+      "lfi": "abstention",
+      "lr": "partage",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "abstention"
+     }
+    },
+    {
+     "date": "2026-10-22",
+     "assemblee": "PE",
+     "numero": "RC-B10-0476/2026 (HowTheyVote id 199517)",
+     "intitule": "Résolution sur l'escalade des frappes russes, notamment contre la navigation en mer Noire",
+     "resultat": "Adopté : 432 pour, 52 contre, 88 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2026-10-22-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/199517"
+     },
+     "positions": {
+      "rn": "abstention",
+      "lfi": "abstention",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "absent"
+     }
+    },
+    {
+     "date": "2026-11-12",
+     "assemblee": "PE",
+     "numero": "RC-B10-0497/2026 (HowTheyVote id 200503)",
+     "intitule": "Résolution sur les enfants ukrainiens déportés en Russie ou vivant dans les territoires occupés",
+     "resultat": "Adopté : 536 pour, 8 contre, 37 abstentions",
+     "source": {
+      "t": "HowTheyVote.eu (d'après le procès-verbal des votes par appel nominal du Parlement européen : https://www.europarl.europa.eu/doceo/document/PV-10-2026-11-12-RCV_FR.xml)",
+      "u": "https://howtheyvote.eu/votes/200503"
+     },
+     "positions": {
+      "rn": "pour",
+      "lfi": "pour",
+      "lr": "pour",
+      "ren": "pour",
+      "hor": "pour",
+      "ps": "pour",
+      "eco": "pour",
+      "ne": "absent",
+      "rec": "pour"
+     }
+    }
+   ]
+  }
+ }
 }
