@@ -1,6 +1,6 @@
 {
   "_comment": "Contexte macroéconomique et financier, tenu à jour par la veille quotidienne. Chaque indicateur porte une valeur, une date et une source. `hypothese` (réglé à la main) relie un indicateur à une hypothèse du simulateur, qui remplace alors la valeur par défaut : rmkt (taux d'emprunt à 10 ans), g (croissance en volume), infl (inflation). `bornes` (réglé à la main) refuse une valeur invraisemblable. L'ancienne valeur part dans `historique` : rien ne s'efface.",
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "avertissement": "Trois valeurs nourrissent le calcul : le taux à 10 ans remplace l'hypothèse de taux de marché, la croissance et l'inflation prévues pour 2027 sont prolongées jusqu'en 2032. Elles restent réglables en mode avancé.",
   "indicateurs": [
     {
@@ -9,6 +9,11 @@
       "unite": "%",
       "groupe": "marches",
       "historique": [
+        {
+          "valeur": 4.75,
+          "date": "2026-11-26",
+          "u": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-26"
+        },
         {
           "valeur": 4.73,
           "date": "2026-11-25",
@@ -95,12 +100,12 @@
           "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
         }
       ],
-      "valeur": 4.75,
-      "date": "2026-11-26",
-      "detail": "TEC 10 de la Banque de France à 4,745 % le 26 novembre (4,731 % le 25).",
+      "valeur": 4.74,
+      "date": "2026-11-27",
+      "detail": "TEC 10 de la Banque de France à 4,741 % le 27 novembre (4,745 % le 26).",
       "source": {
-        "t": "Banque de France — indices obligataires TEC du 26 novembre 2026",
-        "u": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-26"
+        "t": "Banque de France — indices obligataires TEC du 27 novembre 2026",
+        "u": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-27"
       },
       "hypothese": "rmkt",
       "bornes": [
@@ -114,6 +119,11 @@
       "unite": "pb",
       "groupe": "marches",
       "historique": [
+        {
+          "valeur": 149.5,
+          "date": "2026-11-26",
+          "u": "https://www.ideal-investisseur.fr/marches/macro/spread-oat-bund.html"
+        },
         {
           "valeur": 151,
           "date": "2026-11-25",
@@ -195,9 +205,9 @@
           "u": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
         }
       ],
-      "valeur": 149.5,
-      "date": "2026-11-26",
-      "detail": "OAT 10 ans 4,75 %, Bund 3,25 % : écart de 149,5 pb à la clôture du 26 novembre (151 pb le 25). S&P doit se prononcer sur la note de la France le 27 novembre au soir.",
+      "valeur": 145.1,
+      "date": "2026-11-27",
+      "detail": "OAT 10 ans 4,74 %, Bund 3,29 % : écart de 145,1 pb à la clôture du 27 novembre (149,5 pb le 26).",
       "source": {
         "t": "Idéal Investisseur — spread OAT-Bund, tableau quotidien",
         "u": "https://www.ideal-investisseur.fr/marches/macro/spread-oat-bund.html"
@@ -247,16 +257,21 @@
       "historique": [
         {
           "valeur": "A+",
+          "date": "2026-05-29",
+          "u": "https://www.franceinfo.fr/economie/budget/dette-de-la-france-l-agende-de-notation-standard-poor-s-s-p-laisse-la-note-de-la-france-inchangee-a-a_8036402.html"
+        },
+        {
+          "valeur": "A+",
           "date": "2025-10",
           "u": "https://www.touteleurope.eu/economie-et-social/l-agence-moody-s-maintient-la-note-de-la-france-aa3-mais-avec-perspective-negative/"
         }
       ],
       "valeur": "A+",
-      "date": "2026-05-29",
-      "detail": "Note inchangée, perspective stable, lors de la revue du 29 mai 2026.",
+      "date": "2026-11-27",
+      "detail": "Note maintenue à A+, perspective abaissée de stable à négative le 27 novembre 2026, en raison des difficultés à réduire le déficit ; le ministre de l'Économie veut un budget ramenant le déficit « à 5 % au plus ».",
       "source": {
-        "t": "Dette de la France : S&P laisse la note de la France inchangée à A+ (franceinfo, 29 mai 2026)",
-        "u": "https://www.franceinfo.fr/economie/budget/dette-de-la-france-l-agende-de-notation-standard-poor-s-s-p-laisse-la-note-de-la-france-inchangee-a-a_8036402.html"
+        "t": "L'agence de notation Standard & Poor's menace de dégrader prochainement la note de la France — franceinfo (avec AFP), 27 novembre 2026",
+        "u": "https://www.franceinfo.fr/economie/budget/l-agende-de-notation-standard-poor-s-menace-de-degrader-prochainement-la-note-de-la-france_8302788.html"
       }
     },
     {
@@ -319,22 +334,27 @@
     },
     {
       "id": "ipch",
-      "lab": "Inflation sur un an, octobre 2026",
+      "lab": "Inflation sur un an, novembre 2026",
       "unite": "%",
       "groupe": "previsions",
       "historique": [
+        {
+          "valeur": 3.7,
+          "date": "2026-11-13",
+          "u": "https://www.insee.fr/fr/statistiques/9131332"
+        },
         {
           "valeur": 3.8,
           "date": "2026-10-30",
           "u": "https://www.insee.fr/fr/statistiques/9107965"
         }
       ],
-      "valeur": 3.7,
-      "date": "2026-11-13",
-      "detail": "Indice harmonisé, résultat définitif : +3,7 % sur un an en octobre (estimation provisoire : 3,8 %), +0,4 % sur un mois. IPC +3,4 %, inflation sous-jacente 1,7 %, énergie +24,1 %.",
+      "valeur": 3.2,
+      "date": "2026-11-27",
+      "detail": "Indice harmonisé, estimation provisoire : +3,2 % sur un an en novembre (après +3,7 % en octobre), −0,7 % sur un mois, sous l'effet du repli des produits pétroliers. IPC +2,9 %. Résultat définitif attendu le 11 décembre.",
       "source": {
-        "t": "En octobre 2026, les prix à la consommation augmentent de 3,4 % sur un an — Insee, Informations rapides n° 271, 13 novembre 2026",
-        "u": "https://www.insee.fr/fr/statistiques/9131332"
+        "t": "En novembre 2026, les prix à la consommation augmenteraient de 2,9 % sur un an — Insee, Informations rapides n° 295, 27 novembre 2026",
+        "u": "https://www.insee.fr/fr/statistiques/9161375"
       },
       "bornes": [
         -5,

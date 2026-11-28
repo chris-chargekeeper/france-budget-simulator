@@ -1,0 +1,211 @@
+{
+  "patch": {
+    "_comment": "Relève locale du 28 novembre 2026 : Sénat (PLF 2027, 27 nov.), S&P (perspective négative, 27 nov.), OAT et spread du 27 nov., IPCH provisoire de novembre.",
+    "releve": "2026-11-28",
+    "annonces": [
+      {
+        "date": "2026-11-27",
+        "parti": "rn",
+        "qui": "Edwige Diaz",
+        "fonction": "Présidente du groupe RN au Sénat",
+        "media": "Sénat, séance du 27 novembre 2026, PLF 2027 première partie (article 26)",
+        "verifie": true,
+        "quoi": "Défend l'amendement RN I-865 qui supprime la CFE au 1er janvier 2027, chiffrée à 8,8 Md€ par l'exposé des motifs (« un peu plus de 8 milliards » à l'oral) et compensée par la DGF ; rejeté au scrutin public n° 178 (15 pour, 328 contre).",
+        "verbatim": "Nous proposons de supprimer la cotisation foncière des entreprises (CFE), dont le coût s'élève à un peu plus de 8 milliards d'euros.",
+        "mesure": "prod",
+        "montant": 8.8,
+        "type": "recette",
+        "source": "https://www.senat.fr/amendements/2026-2027/155/Amdt_I-865.html",
+        "contredit": "inconnu",
+        "ecart": "La mesure prod n'est pas dans le scénario RN, alors que l'objet de l'amendement dit la suppression de la CFE « un engagement de Jordan Bardella et de Marine Le Pen » ; même chiffre (8,8 Md€) que l'amendement Mauvieux à l'Assemblée le 2 novembre, Verny chiffrait CVAE + CFE + C3S à 17 Md€ le 4 novembre. Compte rendu : https://www.senat.fr/cra/s20261127/s20261127_mono.html"
+      },
+      {
+        "date": "2026-11-27",
+        "parti": "rn",
+        "qui": "Edwige Diaz",
+        "fonction": "Présidente du groupe RN au Sénat",
+        "media": "Sénat, séance du 27 novembre 2026, PLF 2027 première partie (après l'article 19)",
+        "verifie": true,
+        "quoi": "Défend l'amendement RN I-654 qui crée une « redevance d'accès au marché historique » sur les fournisseurs alternatifs d'électricité et de gaz (20 à 120 € par site et par an, EDF et Engie exonérés), qu'elle chiffre à 500 M€ de recettes ; rejeté.",
+        "verbatim": "Notre amendement génère 500 millions d'euros de recettes fiscales, sans imposer les contribuables",
+        "mesure": null,
+        "montant": 0.5,
+        "type": "recette",
+        "source": "https://www.senat.fr/cra/s20261127/s20261127_mono.html#par_216",
+        "contredit": "inconnu",
+        "ecart": "Recette absente du programme RN tel que relevé ; l'objet de l'amendement ne donne pas de montant, seule la sénatrice le chiffre à l'oral."
+      },
+      {
+        "date": "2026-11-27",
+        "parti": "rn",
+        "qui": "Edwige Diaz",
+        "fonction": "Présidente du groupe RN au Sénat",
+        "media": "Sénat, séance du 27 novembre 2026, PLF 2027 première partie (après l'article 19)",
+        "verifie": true,
+        "quoi": "Défend deux amendements RN sans coût chiffré, rejetés : I-672, qui ramène pour 2027 l'accise sur les carburants à son niveau de 2017 (environ 9,2 c/l de gazole et 4,7 c/l d'essence selon l'objet), en complément de la TVA à 5,5 % ; I-868, qui gèle le prix du tabac, au nom d'un engagement de Marine Le Pen auprès des buralistes.",
+        "verbatim": "Marine Le Pen s'est engagée auprès des buralistes, dans une lettre du 7 septembre 2026.",
+        "mesure": null,
+        "montant": null,
+        "type": "contexte",
+        "source": "https://www.senat.fr/amendements/2026-2027/155/Amdt_I-672.html",
+        "contredit": "inconnu",
+        "ecart": "Aucun chiffrage, ni dans l'objet ni à l'oral ; à l'oral, I-672 est présenté comme une baisse de TVA alors que le texte porte sur l'accise."
+      },
+      {
+        "date": "2026-11-27",
+        "parti": "rn",
+        "qui": "Jordan Bardella",
+        "fonction": "Président du Rassemblement national",
+        "media": "Conférence de presse de Marine Le Pen sur son programme pour l'outre-mer, Paris, 27 novembre 2026 (compte rendu franceinfo)",
+        "verifie": true,
+        "quoi": "Maintient la réforme de l'octroi de mer pour qu'il ne frappe plus les produits français et européens, pour un coût de 1,8 Md€ compensé aux collectivités locales.",
+        "verbatim": "à l'euro près",
+        "mesure": null,
+        "montant": 1.8,
+        "type": "depense",
+        "source": "https://www.franceinfo.fr/france/outremer/marine-le-pen-promet-une-grande-loi-programme-pour-l-outre-mer_8303604.html",
+        "contredit": "inconnu",
+        "ecart": "L'outre-mer et l'octroi de mer ne figurent pas dans le contre-budget RN relevé : on ne sait pas si ce coût est compris dans les économies annoncées."
+      },
+      {
+        "date": "2026-11-27",
+        "parti": "rn",
+        "qui": "Jordan Bardella",
+        "fonction": "Président du Rassemblement national",
+        "media": "Conférence de presse de Marine Le Pen sur son programme pour l'outre-mer, Paris, 27 novembre 2026 (compte rendu franceinfo)",
+        "verifie": true,
+        "quoi": "Annonce, dans une « grande loi-programme pour l'outre-mer » sur douze ans que Marine Le Pen ferait voter en début de mandat, un effort de l'État relevé de 10 %, soit près de 3 Md€ de plus d'ici 2032 ; la candidate y ajoute un « bouclier tarifaire » sur les billets d'avion vers l'Hexagone, non chiffré.",
+        "verbatim": "effort de l'Etat relevé de 10%, soit près de 3 milliards d'euros supplémentaires d'ici 2032",
+        "mesure": null,
+        "montant": 3,
+        "type": "depense",
+        "source": "https://www.franceinfo.fr/france/outremer/marine-le-pen-promet-une-grande-loi-programme-pour-l-outre-mer_8303604.html",
+        "contredit": "inconnu",
+        "ecart": "Dépense nouvelle rattachable à aucune ligne du contre-budget RN relevé ; le bouclier tarifaire n'est pas chiffré."
+      },
+      {
+        "date": "2026-11-27",
+        "parti": "eco",
+        "qui": "Antoinette Guhl",
+        "fonction": "Sénatrice écologiste (n'est pas porte-parole de la campagne de Marine Tondelier)",
+        "media": "Sénat, séance du 27 novembre 2026, PLF 2027 première partie",
+        "verifie": true,
+        "quoi": "Défend l'amendement écologiste I-479 rectifié qui met fin à l'exonération de taxe sur le kérosène pour les vols intérieurs, hors Corse et outre-mer, pour 520 M€ de recettes par an ; rejeté. Proposition du groupe, rattachée au parti avec prudence.",
+        "verbatim": "nous vous proposons 520 millions d'euros de recettes fiscales annuelles",
+        "mesure": null,
+        "montant": 0.52,
+        "type": "recette",
+        "source": "https://www.senat.fr/cra/s20261127/s20261127_mono.html",
+        "contredit": "inconnu",
+        "ecart": "Marine Tondelier n'a pas publié de programme chiffré."
+      }
+    ],
+    "contexte": {
+      "oat10": {
+        "valeur": 4.74,
+        "date": "2026-11-27",
+        "detail": "TEC 10 de la Banque de France à 4,741 % le 27 novembre (4,745 % le 26).",
+        "source": {
+          "t": "Banque de France — indices obligataires TEC du 27 novembre 2026",
+          "u": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-27"
+        }
+      },
+      "spread": {
+        "valeur": 145.1,
+        "date": "2026-11-27",
+        "detail": "OAT 10 ans 4,74 %, Bund 3,29 % : écart de 145,1 pb à la clôture du 27 novembre (149,5 pb le 26).",
+        "source": {
+          "t": "Idéal Investisseur — spread OAT-Bund, tableau quotidien",
+          "u": "https://www.ideal-investisseur.fr/marches/macro/spread-oat-bund.html"
+        }
+      },
+      "sp": {
+        "valeur": "A+",
+        "date": "2026-11-27",
+        "detail": "Note maintenue à A+, perspective abaissée de stable à négative le 27 novembre 2026, en raison des difficultés à réduire le déficit ; le ministre de l'Économie veut un budget ramenant le déficit « à 5 % au plus ».",
+        "source": {
+          "t": "L'agence de notation Standard & Poor's menace de dégrader prochainement la note de la France — franceinfo (avec AFP), 27 novembre 2026",
+          "u": "https://www.franceinfo.fr/economie/budget/l-agende-de-notation-standard-poor-s-menace-de-degrader-prochainement-la-note-de-la-france_8302788.html"
+        }
+      },
+      "ipch": {
+        "lab": "Inflation sur un an, novembre 2026",
+        "valeur": 3.2,
+        "date": "2026-11-27",
+        "detail": "Indice harmonisé, estimation provisoire : +3,2 % sur un an en novembre (après +3,7 % en octobre), −0,7 % sur un mois, sous l'effet du repli des produits pétroliers. IPC +2,9 %. Résultat définitif attendu le 11 décembre.",
+        "source": {
+          "t": "En novembre 2026, les prix à la consommation augmenteraient de 2,9 % sur un an — Insee, Informations rapides n° 295, 27 novembre 2026",
+          "u": "https://www.insee.fr/fr/statistiques/9161375"
+        }
+      }
+    }
+  },
+  "trace": {
+    "releve": "2026-11-28",
+    "applique": "2026-11-28",
+    "ajouts": [
+      {
+        "date": "2026-11-27",
+        "parti": "rn",
+        "quoi": "Défend l'amendement RN I-865 qui supprime la CFE au 1er janvier 2027, chiffrée à 8,8 Md€ par l'exposé des motifs (« un peu plus de 8 milliards » à l'oral) et compensée par la DGF ; rejeté au scrutin public n° 178 (15 pour, 328 contre).",
+        "source": "https://www.senat.fr/amendements/2026-2027/155/Amdt_I-865.html"
+      },
+      {
+        "date": "2026-11-27",
+        "parti": "rn",
+        "quoi": "Défend l'amendement RN I-654 qui crée une « redevance d'accès au marché historique » sur les fournisseurs alternatifs d'électricité et de gaz (20 à 120 € par site et par an, EDF et Engie exonérés), qu'elle chiffre à 500 M€ de recettes ; rejeté.",
+        "source": "https://www.senat.fr/cra/s20261127/s20261127_mono.html#par_216"
+      },
+      {
+        "date": "2026-11-27",
+        "parti": "rn",
+        "quoi": "Défend deux amendements RN sans coût chiffré, rejetés : I-672, qui ramène pour 2027 l'accise sur les carburants à son niveau de 2017 (environ 9,2 c/l de gazole et 4,7 c/l d'essence selon l'objet), en complément de la TVA à 5,5 % ; I-868, qui gèle le prix du tabac, au nom d'un engagement de Marine Le Pen auprès des buralistes.",
+        "source": "https://www.senat.fr/amendements/2026-2027/155/Amdt_I-672.html"
+      },
+      {
+        "date": "2026-11-27",
+        "parti": "rn",
+        "quoi": "Maintient la réforme de l'octroi de mer pour qu'il ne frappe plus les produits français et européens, pour un coût de 1,8 Md€ compensé aux collectivités locales.",
+        "source": "https://www.franceinfo.fr/france/outremer/marine-le-pen-promet-une-grande-loi-programme-pour-l-outre-mer_8303604.html"
+      },
+      {
+        "date": "2026-11-27",
+        "parti": "rn",
+        "quoi": "Annonce, dans une « grande loi-programme pour l'outre-mer » sur douze ans que Marine Le Pen ferait voter en début de mandat, un effort de l'État relevé de 10 %, soit près de 3 Md€ de plus d'ici 2032 ; la candidate y ajoute un « bouclier tarifaire » sur les billets d'avion vers l'Hexagone, non chiffré.",
+        "source": "https://www.franceinfo.fr/france/outremer/marine-le-pen-promet-une-grande-loi-programme-pour-l-outre-mer_8303604.html"
+      },
+      {
+        "date": "2026-11-27",
+        "parti": "eco",
+        "quoi": "Défend l'amendement écologiste I-479 rectifié qui met fin à l'exonération de taxe sur le kérosène pour les vols intérieurs, hors Corse et outre-mer, pour 520 M€ de recettes par an ; rejeté. Proposition du groupe, rattachée au parti avec prudence.",
+        "source": "https://www.senat.fr/cra/s20261127/s20261127_mono.html"
+      }
+    ],
+    "revisions": [
+      {
+        "quoi": "contexte.oat10",
+        "avant": 4.75,
+        "apres": 4.74,
+        "source": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/indices-obligataires-2026-11-27"
+      },
+      {
+        "quoi": "contexte.spread",
+        "avant": 149.5,
+        "apres": 145.1,
+        "source": "https://www.ideal-investisseur.fr/marches/macro/spread-oat-bund.html"
+      },
+      {
+        "quoi": "contexte.sp",
+        "avant": "A+",
+        "apres": "A+",
+        "source": "https://www.franceinfo.fr/economie/budget/l-agende-de-notation-standard-poor-s-menace-de-degrader-prochainement-la-note-de-la-france_8302788.html"
+      },
+      {
+        "quoi": "contexte.ipch",
+        "avant": 3.7,
+        "apres": 3.2,
+        "source": "https://www.insee.fr/fr/statistiques/9161375"
+      }
+    ]
+  }
+}
